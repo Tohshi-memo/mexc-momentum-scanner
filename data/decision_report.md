@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-21T16:11:24.695217+00:00
+- generated_at: 2026-09-21T16:16:29.323726+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15267**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$123.11** / 初期 $100.00 (+23.11%)
-- 確定: 3043件 (Win 895 / Loss 1189 / Flat 959) / pending 5件 / skip 3691件
+- 確定: 3043件 (Win 895 / Loss 1189 / Flat 959) / pending 6件 / skip 3691件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000185 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: STONK/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $123.11
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-21T16:11:13.646834+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=85766.0
-- Funnel: target 1055 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-21T16:16:16.033286+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=85834.8
+- Funnel: target 1055 → liquid 168 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +4.47% | $42,720,639.39 |
-| PHA/USDT:USDT | +2.82% | $7,588,876.79 |
-| PTB/USDT:USDT | +2.05% | $1,214,043.56 |
-| XPL/USDT:USDT | +1.73% | $7,538,700.82 |
-| RAY/USDT:USDT | +1.53% | $1,938,898.63 |
+| AKE/USDT:USDT | +5.93% | $42,969,974.48 |
+| USELESS/USDT:USDT | +4.03% | $4,442,051.29 |
+| ORDI/USDT:USDT | +3.29% | $2,931,491.30 |
+| PENGU/USDT:USDT | +2.66% | $10,488,180.57 |
+| PHA/USDT:USDT | +2.40% | $7,615,585.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +4.61% | +4.74% |
-| PHA/USDT:USDT | below_1h_threshold | +2.82% | +2.95% |
-| PTB/USDT:USDT | below_1h_threshold | +2.06% | +2.19% |
-| XPL/USDT:USDT | below_1h_threshold | +1.73% | +1.87% |
-| METASTOCK/USDT:USDT | below_1h_threshold | +1.55% | +1.68% |
+| USELESS/USDT:USDT | below_1h_threshold | +4.03% | +4.08% |
+| ORDI/USDT:USDT | below_1h_threshold | +3.29% | +3.35% |
+| PENGU/USDT:USDT | below_1h_threshold | +2.70% | +2.75% |
+| PTB/USDT:USDT | below_1h_threshold | +2.33% | +2.38% |
+| PHA/USDT:USDT | below_1h_threshold | +2.28% | +2.33% |
 
 ## 7. 次に見るべき不足
 
