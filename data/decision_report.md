@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-21T22:21:23.085982+00:00
+- generated_at: 2026-09-21T22:26:27.997589+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15280**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-21T22:21:12.133570+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=86645.5
+- 更新: 2026-09-21T22:26:16.884220+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=86520.0
 - Funnel: target 1055 → liquid 179 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FORM/USDT:USDT | +27.75% | $8,266,330.98 |
-| ALCH/USDT:USDT | +27.36% | $1,890,191.10 |
-| PTB/USDT:USDT | +15.59% | $1,189,458.41 |
-| SYN/USDT:USDT | +14.61% | $6,984,783.24 |
-| 4STOCK/USDT:USDT | +14.50% | $1,001,083.20 |
+| ALCH/USDT:USDT | +29.34% | $1,919,441.31 |
+| FORM/USDT:USDT | +29.32% | $8,277,814.53 |
+| SYN/USDT:USDT | +16.19% | $7,002,234.02 |
+| PTB/USDT:USDT | +15.88% | $1,192,523.33 |
+| 4STOCK/USDT:USDT | +15.21% | $1,002,283.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SHIB/USDT:USDT | below_1h_threshold | +2.38% | +2.27% |
-| DOGE/USDT:USDT | below_1h_threshold | +2.22% | +2.10% |
-| WLD/USDT:USDT | below_1h_threshold | +2.04% | +1.92% |
-| ONDO/USDT:USDT | below_1h_threshold | +2.02% | +1.90% |
-| RAY/USDT:USDT | below_1h_threshold | +1.94% | +1.82% |
+| PTB/USDT:USDT | below_1h_threshold | +2.27% | +2.30% |
+| RAY/USDT:USDT | below_1h_threshold | +2.10% | +2.13% |
+| RUNE/USDT:USDT | below_1h_threshold | +1.54% | +1.57% |
+| WLD/USDT:USDT | below_1h_threshold | +1.53% | +1.56% |
+| CRV/USDT:USDT | below_1h_threshold | +1.43% | +1.46% |
 
 ## 7. 次に見るべき不足
 
