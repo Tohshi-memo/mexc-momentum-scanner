@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-21T10:26:24.768540+00:00
+- generated_at: 2026-09-21T10:31:46.375313+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15248**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-21T10:26:13.526361+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=84520.3
-- Funnel: target 1050 → liquid 156 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 96.0 >= 65=1
+- 更新: 2026-09-21T10:31:37.559388+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.30% price=84367.1
+- Funnel: target 1050 → liquid 157 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 95.9 >= 65=1, 4h RSI 70.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZETA/USDT:USDT | +71.79% | $6,333,880.87 |
-| PHA/USDT:USDT | +62.28% | $1,996,174.99 |
-| NIL/USDT:USDT | +31.14% | $7,443,837.90 |
-| PTB/USDT:USDT | +26.55% | $1,157,074.48 |
-| UAI/USDT:USDT | +23.32% | $1,647,750.30 |
+| ZETA/USDT:USDT | +70.23% | $6,369,581.45 |
+| PHA/USDT:USDT | +61.03% | $2,077,362.25 |
+| NIL/USDT:USDT | +30.78% | $7,448,186.73 |
+| PTB/USDT:USDT | +27.71% | $1,158,769.20 |
+| UAI/USDT:USDT | +26.63% | $1,703,633.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CHIP/USDT:USDT | below_1h_threshold | +4.79% | +4.91% |
-| PONS/USDT:USDT | below_1h_threshold | +4.47% | +4.60% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +3.78% | +3.90% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +3.37% | +3.50% |
-| ENA/USDT:USDT | below_1h_threshold | +3.33% | +3.45% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +3.76% | +4.07% |
+| SEI/USDT:USDT | below_1h_threshold | +2.99% | +3.30% |
+| ARB/USDT:USDT | below_1h_threshold | +2.61% | +2.91% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +2.60% | +2.90% |
+| ENA/USDT:USDT | below_1h_threshold | +2.59% | +2.90% |
 
 ## 7. 次に見るべき不足
 
