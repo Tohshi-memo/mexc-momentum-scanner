@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-21T08:01:26.715970+00:00
+- generated_at: 2026-09-21T08:06:23.467736+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15240**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-21T08:01:15.780209+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=81788.7
-- Funnel: target 1050 → liquid 152 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-21T08:06:12.275800+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.12% price=81795.7
+- Funnel: target 1050 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZETA/USDT:USDT | +65.83% | $3,920,371.62 |
-| NIL/USDT:USDT | +32.97% | $6,781,011.75 |
-| PTB/USDT:USDT | +28.08% | $1,064,095.45 |
-| MINA/USDT:USDT | +23.37% | $1,092,232.62 |
-| SEI/USDT:USDT | +18.72% | $18,459,133.00 |
+| ZETA/USDT:USDT | +65.91% | $3,960,629.64 |
+| NIL/USDT:USDT | +30.78% | $6,813,829.20 |
+| PTB/USDT:USDT | +28.20% | $1,067,598.56 |
+| MINA/USDT:USDT | +24.94% | $1,113,464.90 |
+| SEI/USDT:USDT | +17.60% | $18,530,086.70 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ONE/USDT:USDT | below_1h_threshold | +1.83% | +1.72% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +0.58% | +0.47% |
-| KMNO/USDT:USDT | below_1h_threshold | +0.57% | +0.46% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.55% | +0.44% |
-| ORDI/USDT:USDT | below_1h_threshold | +0.42% | +0.31% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +3.03% | +2.91% |
+| PONS/USDT:USDT | below_1h_threshold | +1.75% | +1.63% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +1.45% | +1.33% |
+| MINA/USDT:USDT | below_1h_threshold | +1.33% | +1.22% |
+| AR/USDT:USDT | below_1h_threshold | +1.02% | +0.90% |
 
 ## 7. 次に見るべき不足
 
