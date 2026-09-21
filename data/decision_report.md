@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-21T18:26:27.961897+00:00
+- generated_at: 2026-09-21T18:31:26.373709+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15277**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-21T18:26:16.605370+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=85879.7
+- 更新: 2026-09-21T18:31:15.345292+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=85884.5
 - Funnel: target 1055 → liquid 170 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.8 >= 65=1
+- Strict後reject: 4h RSI 65.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FORM/USDT:USDT | +28.18% | $5,802,499.45 |
-| SYN/USDT:USDT | +12.90% | $4,431,041.78 |
-| EVAA/USDT:USDT | +8.22% | $1,037,169.03 |
-| PTB/USDT:USDT | +6.92% | $1,182,202.43 |
-| BTW/USDT:USDT | +4.37% | $4,669,975.48 |
+| FORM/USDT:USDT | +26.93% | $5,875,903.69 |
+| SYN/USDT:USDT | +11.15% | $4,493,153.32 |
+| EVAA/USDT:USDT | +8.21% | $1,055,451.10 |
+| PTB/USDT:USDT | +6.84% | $1,182,876.90 |
+| BTW/USDT:USDT | +5.18% | $4,736,572.92 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZETA/USDT:USDT | below_1h_threshold | +3.28% | +3.25% |
-| BTW/USDT:USDT | below_1h_threshold | +2.26% | +2.23% |
-| LAB/USDT:USDT | below_1h_threshold | +2.18% | +2.15% |
+| ZETA/USDT:USDT | below_1h_threshold | +3.68% | +3.65% |
+| BTW/USDT:USDT | below_1h_threshold | +2.63% | +2.60% |
+| LAB/USDT:USDT | below_1h_threshold | +2.29% | +2.25% |
+| VVV/USDT:USDT | below_1h_threshold | +2.13% | +2.09% |
 | METASTOCK/USDT:USDT | below_1h_threshold | +2.10% | +2.07% |
-| SYN/USDT:USDT | below_1h_threshold | +1.90% | +1.87% |
 
 ## 7. 次に見るべき不足
 
