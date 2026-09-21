@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-21T09:51:29.681845+00:00
+- generated_at: 2026-09-21T09:56:16.470327+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15244**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-21T09:51:17.709364+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +1.31% price=84820.0
-- Funnel: target 1050 → liquid 158 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=44, below_relative_strength=3, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 94.7 >= 65=1, 4h RSI 74.4 >= 65=1, 4h RSI 79.0 >= 65=1
+- 更新: 2026-09-21T09:56:08.104585+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +1.17% price=84701.6
+- Funnel: target 1050 → liquid 159 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=45, below_relative_strength=3, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 94.7 >= 65=1, 4h RSI 74.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZETA/USDT:USDT | +71.05% | $5,785,640.19 |
-| PHA/USDT:USDT | +44.89% | $1,182,618.63 |
-| NIL/USDT:USDT | +37.32% | $7,241,342.82 |
-| PTB/USDT:USDT | +31.60% | $1,124,173.71 |
-| UAI/USDT:USDT | +24.68% | $1,540,061.02 |
+| ZETA/USDT:USDT | +73.31% | $5,853,250.69 |
+| PHA/USDT:USDT | +43.94% | $1,240,376.31 |
+| NIL/USDT:USDT | +36.75% | $7,270,641.02 |
+| PTB/USDT:USDT | +32.13% | $1,126,150.18 |
+| UAI/USDT:USDT | +24.97% | $1,576,587.91 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UAI/USDT:USDT | below_relative_strength | +5.68% | +4.37% |
-| USELESS/USDT:USDT | below_relative_strength | +5.54% | +4.23% |
-| PTB/USDT:USDT | below_relative_strength | +5.14% | +3.83% |
-| SYN/USDT:USDT | below_1h_threshold | +4.18% | +2.87% |
-| CHIP/USDT:USDT | below_1h_threshold | +4.01% | +2.70% |
+| UAI/USDT:USDT | below_relative_strength | +6.02% | +4.85% |
+| PTB/USDT:USDT | below_relative_strength | +5.87% | +4.70% |
+| USELESS/USDT:USDT | below_relative_strength | +5.76% | +4.59% |
+| SYN/USDT:USDT | below_1h_threshold | +3.69% | +2.52% |
+| CHIP/USDT:USDT | below_1h_threshold | +3.37% | +2.20% |
 
 ## 7. 次に見るべき不足
 
