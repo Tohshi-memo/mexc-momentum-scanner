@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-21T03:41:20.414575+00:00
+- generated_at: 2026-09-21T03:46:27.026279+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15226**
 
@@ -70,10 +70,10 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-21T03:41:09.299946+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.22% price=81455.1
+- 更新: 2026-09-21T03:46:15.740084+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.22% price=81462.5
 - Funnel: target 1050 → liquid 147 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 73.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -81,21 +81,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIL/USDT:USDT | +26.21% | $5,383,908.29 |
-| KMNO/USDT:USDT | +23.00% | $1,025,555.03 |
-| JUP/USDT:USDT | +16.21% | $4,603,502.14 |
-| SEI/USDT:USDT | +14.51% | $15,617,137.35 |
-| EGLD/USDT:USDT | +13.10% | $2,145,136.73 |
+| NIL/USDT:USDT | +25.62% | $5,401,207.90 |
+| KMNO/USDT:USDT | +23.56% | $1,039,829.92 |
+| JUP/USDT:USDT | +15.40% | $4,614,360.51 |
+| SEI/USDT:USDT | +14.55% | $15,643,510.97 |
+| EGLD/USDT:USDT | +14.18% | $2,160,061.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MARSCOIN/USDT:USDT | below_relative_strength | +5.17% | +4.95% |
-| JUP/USDT:USDT | below_1h_threshold | +3.83% | +3.62% |
-| G/USDT:USDT | below_1h_threshold | +3.81% | +3.59% |
-| EGLD/USDT:USDT | below_1h_threshold | +3.45% | +3.24% |
-| ZKSYNC/USDT:USDT | below_1h_threshold | +2.49% | +2.28% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +4.83% | +4.61% |
+| EGLD/USDT:USDT | below_1h_threshold | +4.49% | +4.27% |
+| G/USDT:USDT | below_1h_threshold | +4.04% | +3.82% |
+| W/USDT:USDT | below_1h_threshold | +3.28% | +3.06% |
+| JUP/USDT:USDT | below_1h_threshold | +3.08% | +2.86% |
 
 ## 7. 次に見るべき不足
 
