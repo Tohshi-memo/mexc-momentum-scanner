@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-21T18:46:28.958784+00:00
+- generated_at: 2026-09-21T18:51:26.085523+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15277**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-21T18:46:17.767910+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=85912.2
-- Funnel: target 1055 → liquid 172 → pre 50 → checked 49 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=1
-- Strict後reject: 4h RSI 66.8 >= 65=1
+- 更新: 2026-09-21T18:51:14.937299+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=85947.1
+- Funnel: target 1055 → liquid 172 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 66.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FORM/USDT:USDT | +29.11% | $6,026,898.11 |
-| SYN/USDT:USDT | +11.50% | $4,599,133.91 |
-| PTB/USDT:USDT | +9.00% | $1,189,543.16 |
-| EVAA/USDT:USDT | +7.95% | $1,119,968.04 |
-| BTW/USDT:USDT | +4.70% | $4,819,137.79 |
+| FORM/USDT:USDT | +30.10% | $6,085,326.34 |
+| SYN/USDT:USDT | +11.50% | $4,618,082.24 |
+| EVAA/USDT:USDT | +10.26% | $1,159,759.45 |
+| PTB/USDT:USDT | +8.04% | $1,191,953.49 |
+| BTW/USDT:USDT | +5.05% | $4,833,202.36 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PENGU/USDT:USDT | below_1h_threshold | +4.64% | +4.58% |
-| ZETA/USDT:USDT | below_1h_threshold | +2.84% | +2.77% |
-| DOGE/USDT:USDT | below_1h_threshold | +2.43% | +2.37% |
-| RUNE/USDT:USDT | below_1h_threshold | +2.30% | +2.23% |
-| LAB/USDT:USDT | below_1h_threshold | +2.22% | +2.15% |
+| PENGU/USDT:USDT | below_1h_threshold | +4.54% | +4.43% |
+| ZETA/USDT:USDT | below_1h_threshold | +3.90% | +3.79% |
+| STONK/USDT:USDT | below_1h_threshold | +3.54% | +3.43% |
+| EVAA/USDT:USDT | below_1h_threshold | +3.32% | +3.21% |
+| RAY/USDT:USDT | below_1h_threshold | +2.98% | +2.87% |
 
 ## 7. 次に見るべき不足
 
