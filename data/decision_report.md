@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-21T14:01:24.200485+00:00
+- generated_at: 2026-09-21T14:06:53.877795+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15262**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-21T14:01:11.221681+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=85403.3
-- Funnel: target 1055 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-21T14:06:43.063651+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.47% price=85017.6
+- Funnel: target 1055 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZETA/USDT:USDT | +63.59% | $8,748,890.75 |
-| PHA/USDT:USDT | +59.80% | $6,207,442.91 |
-| UAI/USDT:USDT | +47.08% | $2,766,188.63 |
-| PTB/USDT:USDT | +30.28% | $1,198,433.10 |
-| NIL/USDT:USDT | +27.90% | $7,997,541.95 |
+| ZETA/USDT:USDT | +66.51% | $8,836,232.20 |
+| PHA/USDT:USDT | +57.14% | $6,249,570.11 |
+| UAI/USDT:USDT | +47.34% | $2,923,497.09 |
+| MUBARAK/USDT:USDT | +39.06% | $1,008,566.33 |
+| PTB/USDT:USDT | +27.37% | $1,202,760.98 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +4.75% | +4.77% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.53% | +1.55% |
-| KORU/USDT:USDT | below_1h_threshold | +0.64% | +0.66% |
-| MINA/USDT:USDT | below_1h_threshold | +0.51% | +0.53% |
-| LUNANEW/USDT:USDT | below_1h_threshold | +0.39% | +0.40% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +4.75% | +5.22% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +3.20% | +3.67% |
+| ONE/USDT:USDT | below_1h_threshold | +1.72% | +2.19% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.53% | +2.00% |
+| ZETA/USDT:USDT | below_1h_threshold | +1.51% | +1.98% |
 
 ## 7. 次に見るべき不足
 
