@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-21T08:41:22.051217+00:00
+- generated_at: 2026-09-21T08:46:16.566290+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15242**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-21T08:41:09.007005+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +2.43% price=83685.3
+- 更新: 2026-09-21T08:46:05.654417+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +1.99% price=83324.1
 - Funnel: target 1050 → liquid 155 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=2, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZETA/USDT:USDT | +68.20% | $4,429,462.79 |
-| NIL/USDT:USDT | +34.14% | $6,939,558.79 |
-| PTB/USDT:USDT | +29.51% | $1,087,804.88 |
-| KMNO/USDT:USDT | +22.27% | $1,229,919.37 |
-| MINA/USDT:USDT | +22.18% | $1,247,882.01 |
+| ZETA/USDT:USDT | +71.10% | $4,456,780.09 |
+| NIL/USDT:USDT | +31.58% | $6,969,823.44 |
+| PTB/USDT:USDT | +31.06% | $1,089,778.61 |
+| KMNO/USDT:USDT | +22.13% | $1,231,983.20 |
+| MINA/USDT:USDT | +19.86% | $1,273,121.21 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ONE/USDT:USDT | below_relative_strength | +6.61% | +4.18% |
-| KMNO/USDT:USDT | below_1h_threshold | +4.70% | +2.27% |
-| 1000BONK/USDT:USDT | below_1h_threshold | +3.98% | +1.55% |
-| SAGA/USDT:USDT | below_1h_threshold | +3.87% | +1.43% |
-| SOL/USDT:USDT | below_1h_threshold | +3.16% | +0.73% |
+| SAGA/USDT:USDT | below_relative_strength | +6.21% | +4.22% |
+| ONE/USDT:USDT | below_relative_strength | +5.66% | +3.67% |
+| KMNO/USDT:USDT | below_1h_threshold | +4.49% | +2.50% |
+| 1000BONK/USDT:USDT | below_1h_threshold | +4.08% | +2.09% |
+| ZAMA/USDT:USDT | below_1h_threshold | +3.51% | +1.52% |
 
 ## 7. 次に見るべき不足
 
