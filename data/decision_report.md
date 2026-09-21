@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-21T20:41:25.528564+00:00
+- generated_at: 2026-09-21T20:46:24.064666+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15280**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-21T20:41:16.379139+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.51% price=86894.2
-- Funnel: target 1055 → liquid 176 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.2 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-21T20:46:15.306946+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.54% price=86919.0
+- Funnel: target 1055 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FORM/USDT:USDT | +28.89% | $7,781,534.71 |
-| SYN/USDT:USDT | +15.10% | $6,581,209.37 |
-| PTB/USDT:USDT | +14.43% | $1,189,258.58 |
-| EVAA/USDT:USDT | +11.58% | $1,534,901.48 |
-| USELESS/USDT:USDT | +6.69% | $5,718,284.65 |
+| FORM/USDT:USDT | +28.82% | $7,799,683.36 |
+| PTB/USDT:USDT | +14.75% | $1,191,825.97 |
+| SYN/USDT:USDT | +12.46% | $6,725,984.12 |
+| EVAA/USDT:USDT | +11.91% | $1,562,221.07 |
+| SAGA/USDT:USDT | +7.23% | $7,471,955.16 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MINA/USDT:USDT | below_1h_threshold | +4.76% | +4.25% |
-| WLD/USDT:USDT | below_1h_threshold | +4.60% | +4.08% |
-| PTB/USDT:USDT | below_1h_threshold | +3.48% | +2.97% |
-| FORM/USDT:USDT | below_1h_threshold | +3.31% | +2.79% |
-| EVAA/USDT:USDT | below_1h_threshold | +2.83% | +2.31% |
+| USELESS/USDT:USDT | below_relative_strength | +5.34% | +4.80% |
+| WLD/USDT:USDT | below_1h_threshold | +4.14% | +3.60% |
+| PTB/USDT:USDT | below_1h_threshold | +3.76% | +3.22% |
+| MINA/USDT:USDT | below_1h_threshold | +3.70% | +3.16% |
+| FORM/USDT:USDT | below_1h_threshold | +3.16% | +2.62% |
 
 ## 7. 次に見るべき不足
 
