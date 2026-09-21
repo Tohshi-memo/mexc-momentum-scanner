@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-21T00:26:27.053457+00:00
+- generated_at: 2026-09-21T00:31:22.833000+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15221**
 
@@ -70,31 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-21T00:26:13.696346+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.70% price=81713.7
+- 更新: 2026-09-21T00:31:09.501472+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.64% price=81662.5
 - Funnel: target 1050 → liquid 149 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIL/USDT:USDT | +26.25% | $4,841,123.39 |
-| SAGA/USDT:USDT | +19.59% | $7,839,213.47 |
-| S/USDT:USDT | +16.35% | $3,574,863.26 |
-| AR/USDT:USDT | +14.88% | $7,303,069.90 |
-| SEI/USDT:USDT | +14.14% | $14,221,040.24 |
+| NIL/USDT:USDT | +27.64% | $4,849,883.26 |
+| SAGA/USDT:USDT | +19.74% | $7,882,263.36 |
+| S/USDT:USDT | +15.83% | $3,595,004.88 |
+| SEI/USDT:USDT | +14.43% | $14,260,286.64 |
+| LUNANEW/USDT:USDT | +13.53% | $2,397,062.73 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SUI/USDT:USDT | below_1h_threshold | +4.87% | +4.17% |
-| B2/USDT:USDT | below_1h_threshold | +3.97% | +3.27% |
-| NIL/USDT:USDT | below_1h_threshold | +3.44% | +2.74% |
-| AR/USDT:USDT | below_1h_threshold | +3.36% | +2.66% |
-| SAGA/USDT:USDT | below_1h_threshold | +3.33% | +2.63% |
+| SUI/USDT:USDT | below_relative_strength | +5.24% | +4.60% |
+| NIL/USDT:USDT | below_1h_threshold | +3.68% | +3.04% |
+| B2/USDT:USDT | below_1h_threshold | +3.38% | +2.74% |
+| SAGA/USDT:USDT | below_1h_threshold | +3.31% | +2.67% |
+| SEI/USDT:USDT | below_1h_threshold | +3.02% | +2.38% |
 
 ## 7. 次に見るべき不足
 
