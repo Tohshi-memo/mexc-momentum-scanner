@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-21T09:46:30.101022+00:00
+- generated_at: 2026-09-21T09:51:29.681845+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15244**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-21T09:46:18.006820+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +1.48% price=84960.0
-- Funnel: target 1050 → liquid 157 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=45, below_relative_strength=2, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 94.9 >= 65=1, 4h RSI 74.6 >= 65=1, 4h RSI 79.3 >= 65=1
+- 更新: 2026-09-21T09:51:17.709364+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +1.31% price=84820.0
+- Funnel: target 1050 → liquid 158 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=44, below_relative_strength=3, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 94.7 >= 65=1, 4h RSI 74.4 >= 65=1, 4h RSI 79.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZETA/USDT:USDT | +69.78% | $5,741,336.48 |
-| PHA/USDT:USDT | +47.03% | $1,134,734.44 |
-| NIL/USDT:USDT | +35.85% | $7,218,315.20 |
-| PTB/USDT:USDT | +30.64% | $1,120,441.27 |
-| KMNO/USDT:USDT | +24.33% | $1,266,696.21 |
+| ZETA/USDT:USDT | +71.05% | $5,785,640.19 |
+| PHA/USDT:USDT | +44.89% | $1,182,618.63 |
+| NIL/USDT:USDT | +37.32% | $7,241,342.82 |
+| PTB/USDT:USDT | +31.60% | $1,124,173.71 |
+| UAI/USDT:USDT | +24.68% | $1,540,061.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UAI/USDT:USDT | below_relative_strength | +5.35% | +3.88% |
-| USELESS/USDT:USDT | below_relative_strength | +5.02% | +3.55% |
-| PTB/USDT:USDT | below_1h_threshold | +4.57% | +3.10% |
-| CHIP/USDT:USDT | below_1h_threshold | +3.83% | +2.35% |
-| AAVE/USDT:USDT | below_1h_threshold | +3.81% | +2.33% |
+| UAI/USDT:USDT | below_relative_strength | +5.68% | +4.37% |
+| USELESS/USDT:USDT | below_relative_strength | +5.54% | +4.23% |
+| PTB/USDT:USDT | below_relative_strength | +5.14% | +3.83% |
+| SYN/USDT:USDT | below_1h_threshold | +4.18% | +2.87% |
+| CHIP/USDT:USDT | below_1h_threshold | +4.01% | +2.70% |
 
 ## 7. 次に見るべき不足
 
