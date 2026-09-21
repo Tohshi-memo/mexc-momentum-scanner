@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-21T20:01:24.660595+00:00
+- generated_at: 2026-09-21T20:06:29.795555+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15279**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-21T20:01:14.488604+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=86503.1
+- 更新: 2026-09-21T20:06:18.500078+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.19% price=86614.5
 - Funnel: target 1055 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FORM/USDT:USDT | +25.30% | $7,201,765.28 |
-| SYN/USDT:USDT | +15.80% | $5,670,441.11 |
-| PTB/USDT:USDT | +11.16% | $1,177,889.92 |
-| EVAA/USDT:USDT | +9.16% | $1,453,600.19 |
-| BTW/USDT:USDT | +6.93% | $4,892,483.56 |
+| FORM/USDT:USDT | +25.44% | $7,221,375.40 |
+| SYN/USDT:USDT | +17.25% | $5,739,990.44 |
+| PTB/USDT:USDT | +10.93% | $1,179,242.33 |
+| EVAA/USDT:USDT | +9.37% | $1,456,535.37 |
+| BTW/USDT:USDT | +6.64% | $4,906,630.25 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +1.30% | +1.24% |
-| BTW/USDT:USDT | below_1h_threshold | +0.86% | +0.80% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +0.75% | +0.69% |
-| MSFTSTOCK/USDT:USDT | below_1h_threshold | +0.71% | +0.65% |
-| EVAA/USDT:USDT | below_1h_threshold | +0.64% | +0.58% |
+| PHA/USDT:USDT | below_1h_threshold | +1.65% | +1.46% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +1.30% | +1.12% |
+| SYN/USDT:USDT | below_1h_threshold | +0.91% | +0.72% |
+| EVAA/USDT:USDT | below_1h_threshold | +0.80% | +0.61% |
+| CRO/USDT:USDT | below_1h_threshold | +0.77% | +0.58% |
 
 ## 7. 次に見るべき不足
 
