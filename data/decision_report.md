@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-21T16:21:40.168354+00:00
+- generated_at: 2026-09-21T16:26:26.931426+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15268**
 
@@ -63,39 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$122.89** / 初期 $100.00 (+22.89%)
-- 確定: 3044件 (Win 895 / Loss 1190 / Flat 959) / pending 6件 / skip 3691件
+- 確定: 3044件 (Win 895 / Loss 1190 / Flat 959) / pending 6件 / skip 3692件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000182 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: LONGXIA/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $122.89
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-21T16:21:23.848995+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=85754.8
-- Funnel: target 1055 → liquid 169 → pre 50 → checked 50 → surge 2 → strict 1
+- 更新: 2026-09-21T16:26:11.251092+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=85797.6
+- Funnel: target 1055 → liquid 169 → pre 50 → checked 50 → surge 2 → strict 2
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +6.01% | $43,291,580.54 |
-| USELESS/USDT:USDT | +5.88% | $4,526,805.63 |
-| MUBARAK/USDT:USDT | +4.88% | $1,277,155.80 |
-| ORDI/USDT:USDT | +4.84% | $3,032,536.59 |
-| ZETA/USDT:USDT | +3.00% | $10,264,324.83 |
+| AKE/USDT:USDT | +7.02% | $43,425,995.41 |
+| SYN/USDT:USDT | +5.53% | $4,277,154.05 |
+| USELESS/USDT:USDT | +4.74% | $4,586,713.85 |
+| ORDI/USDT:USDT | +3.05% | $3,113,499.81 |
+| PTB/USDT:USDT | +2.53% | $1,216,950.78 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ORDI/USDT:USDT | below_1h_threshold | +4.90% | +5.05% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +4.76% | +4.90% |
-| ZETA/USDT:USDT | below_1h_threshold | +2.97% | +3.11% |
-| UAI/USDT:USDT | below_1h_threshold | +2.68% | +2.83% |
-| XPL/USDT:USDT | below_1h_threshold | +2.35% | +2.49% |
+| USELESS/USDT:USDT | below_1h_threshold | +4.74% | +4.84% |
+| ORDI/USDT:USDT | below_1h_threshold | +3.09% | +3.19% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +2.75% | +2.85% |
+| PTB/USDT:USDT | below_1h_threshold | +2.53% | +2.62% |
+| SPX/USDT:USDT | below_1h_threshold | +2.44% | +2.53% |
 
 ## 7. 次に見るべき不足
 
