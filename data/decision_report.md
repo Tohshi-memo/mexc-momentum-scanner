@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-22T15:41:26.702890+00:00
+- generated_at: 2026-09-22T15:46:30.350583+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15335**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-22T15:41:16.438290+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.19% price=86369.9
+- 更新: 2026-09-22T15:46:20.063170+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.42% price=86573.8
 - Funnel: target 1058 → liquid 181 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.9 >= 65=1
+- Strict後reject: 4h RSI 81.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 4STOCK/USDT:USDT | +53.75% | $4,161,787.43 |
-| MUBARAK/USDT:USDT | +46.78% | $8,191,711.06 |
-| NIL/USDT:USDT | +27.25% | $4,771,741.43 |
-| MINA/USDT:USDT | +27.01% | $1,361,671.71 |
-| BCH/USDT:USDT | +23.91% | $33,669,197.12 |
+| 4STOCK/USDT:USDT | +54.86% | $4,174,218.79 |
+| MUBARAK/USDT:USDT | +49.84% | $8,227,650.19 |
+| NIL/USDT:USDT | +28.18% | $4,782,461.68 |
+| MINA/USDT:USDT | +27.03% | $1,370,008.38 |
+| BCH/USDT:USDT | +24.48% | $33,814,950.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BSV/USDT:USDT | below_1h_threshold | +4.10% | +3.92% |
-| ZRO/USDT:USDT | below_1h_threshold | +3.79% | +3.60% |
-| ETC/USDT:USDT | below_1h_threshold | +2.85% | +2.66% |
-| BAT/USDT:USDT | below_1h_threshold | +2.61% | +2.42% |
-| TRB/USDT:USDT | below_1h_threshold | +2.58% | +2.39% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +4.45% | +4.03% |
+| BSV/USDT:USDT | below_1h_threshold | +4.44% | +4.02% |
+| UNI/USDT:USDT | below_1h_threshold | +3.66% | +3.23% |
+| TRB/USDT:USDT | below_1h_threshold | +3.54% | +3.11% |
+| BAT/USDT:USDT | below_1h_threshold | +3.29% | +2.87% |
 
 ## 7. 次に見るべき不足
 
