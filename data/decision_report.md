@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-22T08:16:25.241056+00:00
+- generated_at: 2026-09-22T08:21:23.287817+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15308**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-22T08:16:14.154469+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=85439.0
+- 更新: 2026-09-22T08:21:12.263495+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=85468.3
 - Funnel: target 1056 → liquid 186 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 65.2 >= 65=1
@@ -81,21 +81,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +52.41% | $1,082,789.98 |
-| 4STOCK/USDT:USDT | +35.59% | $1,743,707.23 |
-| KERNEL/USDT:USDT | +35.14% | $3,982,392.97 |
-| MUBARAK/USDT:USDT | +24.44% | $2,921,328.36 |
-| GRASS/USDT:USDT | +21.99% | $3,096,857.97 |
+| AGT/USDT:USDT | +53.12% | $1,094,976.98 |
+| 4STOCK/USDT:USDT | +37.01% | $1,754,734.80 |
+| KERNEL/USDT:USDT | +33.98% | $4,009,097.56 |
+| MUBARAK/USDT:USDT | +23.72% | $2,937,358.32 |
+| ALCH/USDT:USDT | +20.74% | $2,637,152.29 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| USELESS/USDT:USDT | below_1h_threshold | +4.31% | +4.17% |
-| 4STOCK/USDT:USDT | below_1h_threshold | +2.30% | +2.16% |
-| SAGA/USDT:USDT | below_1h_threshold | +2.08% | +1.94% |
-| MINA/USDT:USDT | below_1h_threshold | +1.80% | +1.67% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +1.53% | +1.39% |
+| USELESS/USDT:USDT | below_1h_threshold | +3.66% | +3.50% |
+| 4STOCK/USDT:USDT | below_1h_threshold | +3.29% | +3.12% |
+| SAGA/USDT:USDT | below_1h_threshold | +2.13% | +1.96% |
+| NIL/USDT:USDT | below_1h_threshold | +1.76% | +1.59% |
+| SYN/USDT:USDT | below_1h_threshold | +1.32% | +1.16% |
 
 ## 7. 次に見るべき不足
 
