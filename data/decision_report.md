@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-22T01:31:15.920356+00:00
+- generated_at: 2026-09-22T01:36:18.123203+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15288**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-22T01:31:07.779164+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.19% price=85696.2
+- 更新: 2026-09-22T01:36:08.587938+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=85750.4
 - Funnel: target 1055 → liquid 180 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 92.1 >= 65=1
+- Strict後reject: 4h RSI 92.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KERNEL/USDT:USDT | +37.38% | $1,395,922.64 |
-| FORM/USDT:USDT | +27.25% | $8,900,714.76 |
-| ALCH/USDT:USDT | +26.24% | $2,280,661.39 |
-| GRASS/USDT:USDT | +9.38% | $2,328,689.86 |
-| 4STOCK/USDT:USDT | +9.33% | $1,094,880.09 |
+| KERNEL/USDT:USDT | +40.40% | $1,467,505.14 |
+| ALCH/USDT:USDT | +26.62% | $2,295,009.45 |
+| FORM/USDT:USDT | +25.30% | $8,928,305.78 |
+| TAO/USDT:USDT | +9.59% | $138,830,466.90 |
+| GRASS/USDT:USDT | +9.38% | $2,332,530.25 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| S/USDT:USDT | below_1h_threshold | +2.18% | +2.37% |
-| NIL/USDT:USDT | below_1h_threshold | +2.07% | +2.26% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.65% | +1.84% |
-| ONE/USDT:USDT | below_1h_threshold | +1.64% | +1.83% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.53% | +1.72% |
+| S/USDT:USDT | below_1h_threshold | +2.56% | +2.69% |
+| NIL/USDT:USDT | below_1h_threshold | +2.50% | +2.62% |
+| ONE/USDT:USDT | below_1h_threshold | +2.28% | +2.40% |
+| NEAR/USDT:USDT | below_1h_threshold | +2.18% | +2.31% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +2.06% | +2.18% |
 
 ## 7. 次に見るべき不足
 
