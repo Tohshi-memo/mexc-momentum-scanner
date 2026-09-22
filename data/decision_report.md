@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-22T03:31:59.637666+00:00
+- generated_at: 2026-09-22T03:36:17.446910+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15291**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-22T03:31:48.700363+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.24% price=85476.0
+- 更新: 2026-09-22T03:36:06.373885+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=85526.2
 - Funnel: target 1055 → liquid 180 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KERNEL/USDT:USDT | +39.28% | $2,652,799.48 |
-| ALCH/USDT:USDT | +18.29% | $2,420,687.81 |
-| GRASS/USDT:USDT | +13.64% | $2,483,687.14 |
-| FORM/USDT:USDT | +13.16% | $9,386,193.91 |
-| PHA/USDT:USDT | +9.34% | $8,899,507.91 |
+| KERNEL/USDT:USDT | +35.31% | $2,713,860.52 |
+| ALCH/USDT:USDT | +17.80% | $2,425,818.45 |
+| GRASS/USDT:USDT | +13.72% | $2,484,872.08 |
+| FORM/USDT:USDT | +11.81% | $9,434,142.36 |
+| TAO/USDT:USDT | +9.23% | $144,010,927.21 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SYN/USDT:USDT | below_1h_threshold | +4.68% | +4.92% |
-| 4STOCK/USDT:USDT | below_1h_threshold | +3.61% | +3.85% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +3.40% | +3.64% |
-| PHA/USDT:USDT | below_1h_threshold | +3.35% | +3.59% |
-| PEPE/USDT:USDT | below_1h_threshold | +3.27% | +3.51% |
+| SYN/USDT:USDT | below_1h_threshold | +4.51% | +4.69% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +2.96% | +3.15% |
+| 4STOCK/USDT:USDT | below_1h_threshold | +2.34% | +2.52% |
+| LAB/USDT:USDT | below_1h_threshold | +2.21% | +2.39% |
+| AKE/USDT:USDT | below_1h_threshold | +1.90% | +2.09% |
 
 ## 7. 次に見るべき不足
 
