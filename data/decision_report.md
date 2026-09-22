@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-22T08:11:28.742420+00:00
+- generated_at: 2026-09-22T08:16:25.241056+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15308**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$122.65** / 初期 $100.00 (+22.65%)
-- 確定: 3080件 (Win 905 / Loss 1206 / Flat 969) / pending 3件 / skip 3695件
+- 確定: 3080件 (Win 905 / Loss 1206 / Flat 969) / pending 4件 / skip 3695件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000166 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $122.65
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-22T08:11:19.738549+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.15% price=85453.7
-- Funnel: target 1056 → liquid 186 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-22T08:16:14.154469+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.13% price=85439.0
+- Funnel: target 1056 → liquid 186 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 65.2 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +52.26% | $1,076,603.03 |
-| KERNEL/USDT:USDT | +36.70% | $3,965,115.01 |
-| 4STOCK/USDT:USDT | +31.64% | $1,729,007.50 |
-| MUBARAK/USDT:USDT | +23.85% | $2,908,755.60 |
-| GRASS/USDT:USDT | +21.35% | $3,079,386.13 |
+| AGT/USDT:USDT | +52.41% | $1,082,789.98 |
+| 4STOCK/USDT:USDT | +35.59% | $1,743,707.23 |
+| KERNEL/USDT:USDT | +35.14% | $3,982,392.97 |
+| MUBARAK/USDT:USDT | +24.44% | $2,921,328.36 |
+| GRASS/USDT:USDT | +21.99% | $3,096,857.97 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| USELESS/USDT:USDT | below_1h_threshold | +4.65% | +4.50% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +4.63% | +4.48% |
-| SAGA/USDT:USDT | below_1h_threshold | +1.78% | +1.63% |
-| MINA/USDT:USDT | below_1h_threshold | +1.63% | +1.48% |
-| NIL/USDT:USDT | below_1h_threshold | +1.26% | +1.10% |
+| USELESS/USDT:USDT | below_1h_threshold | +4.31% | +4.17% |
+| 4STOCK/USDT:USDT | below_1h_threshold | +2.30% | +2.16% |
+| SAGA/USDT:USDT | below_1h_threshold | +2.08% | +1.94% |
+| MINA/USDT:USDT | below_1h_threshold | +1.80% | +1.67% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +1.53% | +1.39% |
 
 ## 7. 次に見るべき不足
 
