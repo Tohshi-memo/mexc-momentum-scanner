@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-22T12:26:23.837812+00:00
+- generated_at: 2026-09-22T12:31:30.707061+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15325**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-22T12:26:11.268104+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=85962.9
+- 更新: 2026-09-22T12:31:20.655945+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.21% price=86127.8
 - Funnel: target 1058 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 4STOCK/USDT:USDT | +62.37% | $3,457,208.09 |
-| MUBARAK/USDT:USDT | +50.22% | $4,911,162.95 |
-| KERNEL/USDT:USDT | +27.32% | $5,256,219.47 |
-| NIL/USDT:USDT | +25.51% | $3,550,659.92 |
-| MARSCOIN/USDT:USDT | +24.50% | $2,169,373.34 |
+| 4STOCK/USDT:USDT | +62.27% | $3,476,696.03 |
+| MUBARAK/USDT:USDT | +48.30% | $4,967,900.73 |
+| KERNEL/USDT:USDT | +28.96% | $5,297,797.75 |
+| NIL/USDT:USDT | +27.60% | $3,571,372.54 |
+| AGT/USDT:USDT | +24.41% | $1,883,676.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIL/USDT:USDT | below_1h_threshold | +3.47% | +3.45% |
-| WIF/USDT:USDT | below_1h_threshold | +2.62% | +2.61% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +2.52% | +2.50% |
-| 4STOCK/USDT:USDT | below_1h_threshold | +2.17% | +2.16% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.54% | +1.52% |
+| NIL/USDT:USDT | below_relative_strength | +5.20% | +4.99% |
+| WIF/USDT:USDT | below_1h_threshold | +3.48% | +3.28% |
+| UNI/USDT:USDT | below_1h_threshold | +3.32% | +3.11% |
+| BCH/USDT:USDT | below_1h_threshold | +3.24% | +3.03% |
+| 4STOCK/USDT:USDT | below_1h_threshold | +2.17% | +1.96% |
 
 ## 7. 次に見るべき不足
 
