@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-22T07:36:33.794120+00:00
+- generated_at: 2026-09-22T07:41:26.069092+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15306**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$122.87** / 初期 $100.00 (+22.87%)
-- 確定: 3078件 (Win 905 / Loss 1205 / Flat 968) / pending 2件 / skip 3695件
+- 確定: 3078件 (Win 905 / Loss 1205 / Flat 968) / pending 3件 / skip 3695件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000195 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: 4STOCK/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.26% 残高後 $122.87
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-22T07:36:23.362825+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.23% price=85155.3
-- Funnel: target 1056 → liquid 186 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.1 >= 65=1
+- 更新: 2026-09-22T07:41:14.490138+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=85244.8
+- Funnel: target 1056 → liquid 188 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 66.2 >= 65=1, 4h RSI 92.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +51.87% | $1,028,574.95 |
-| 4STOCK/USDT:USDT | +40.36% | $1,518,958.08 |
-| KERNEL/USDT:USDT | +35.86% | $3,202,659.09 |
-| MUBARAK/USDT:USDT | +19.95% | $2,762,085.44 |
-| GRASS/USDT:USDT | +18.90% | $2,944,493.46 |
+| AGT/USDT:USDT | +53.11% | $1,037,928.24 |
+| 4STOCK/USDT:USDT | +40.87% | $1,545,625.24 |
+| KERNEL/USDT:USDT | +38.92% | $3,265,240.83 |
+| GRASS/USDT:USDT | +19.48% | $2,958,777.25 |
+| MUBARAK/USDT:USDT | +18.48% | $2,778,676.75 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| S/USDT:USDT | below_1h_threshold | +3.61% | +3.84% |
-| KERNEL/USDT:USDT | below_1h_threshold | +3.59% | +3.82% |
-| SAGA/USDT:USDT | below_1h_threshold | +2.63% | +2.86% |
-| WIF/USDT:USDT | below_1h_threshold | +1.54% | +1.77% |
-| AGT/USDT:USDT | below_1h_threshold | +1.31% | +1.54% |
+| S/USDT:USDT | below_1h_threshold | +4.55% | +4.68% |
+| HBAR/USDT:USDT | below_1h_threshold | +2.16% | +2.28% |
+| AGT/USDT:USDT | below_1h_threshold | +2.07% | +2.20% |
+| AKT/USDT:USDT | below_1h_threshold | +2.06% | +2.19% |
+| SAGA/USDT:USDT | below_1h_threshold | +2.06% | +2.18% |
 
 ## 7. 次に見るべき不足
 
