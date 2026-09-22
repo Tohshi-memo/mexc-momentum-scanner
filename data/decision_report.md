@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-22T06:31:16.702051+00:00
+- generated_at: 2026-09-22T06:36:13.430108+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15300**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-22T06:31:08.231541+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=85312.7
-- Funnel: target 1056 → liquid 185 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.2 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-22T06:36:02.493055+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=85467.1
+- Funnel: target 1056 → liquid 186 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KERNEL/USDT:USDT | +32.42% | $3,142,183.61 |
-| MUBARAK/USDT:USDT | +29.93% | $2,232,720.78 |
-| ALCH/USDT:USDT | +19.86% | $2,554,761.11 |
-| GRASS/USDT:USDT | +15.40% | $2,818,863.68 |
-| NIL/USDT:USDT | +14.05% | $3,706,083.37 |
+| KERNEL/USDT:USDT | +30.80% | $3,163,376.80 |
+| MUBARAK/USDT:USDT | +28.67% | $2,253,270.44 |
+| ALCH/USDT:USDT | +20.67% | $2,557,731.27 |
+| GRASS/USDT:USDT | +17.75% | $2,825,531.52 |
+| NIL/USDT:USDT | +12.88% | $3,719,425.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SAGA/USDT:USDT | below_1h_threshold | +3.52% | +3.59% |
-| CHIP/USDT:USDT | below_1h_threshold | +2.11% | +2.18% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.22% | +1.30% |
-| STRK/USDT:USDT | below_1h_threshold | +1.20% | +1.27% |
-| EGLD/USDT:USDT | below_1h_threshold | +0.67% | +0.74% |
+| NIL/USDT:USDT | below_relative_strength | +5.04% | +4.93% |
+| CHIP/USDT:USDT | below_1h_threshold | +3.03% | +2.92% |
+| SAGA/USDT:USDT | below_1h_threshold | +1.97% | +1.86% |
+| ARKM/USDT:USDT | below_1h_threshold | +1.78% | +1.68% |
+| EGLD/USDT:USDT | below_1h_threshold | +1.78% | +1.68% |
 
 ## 7. 次に見るべき不足
 
