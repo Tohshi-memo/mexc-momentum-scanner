@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-22T23:01:25.991210+00:00
+- generated_at: 2026-09-22T23:06:20.457433+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15370**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-22T23:01:14.586169+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=86110.5
+- 更新: 2026-09-22T23:06:09.525858+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.19% price=86250.0
 - Funnel: target 1058 → liquid 189 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DRIFT/USDT:USDT | +25.58% | $1,644,895.07 |
-| FOLKS/USDT:USDT | +24.72% | $2,357,903.18 |
-| 4/USDT:USDT | +19.88% | $2,287,388.73 |
-| USELESS/USDT:USDT | +15.25% | $10,416,675.07 |
-| BR/USDT:USDT | +13.34% | $6,186,757.40 |
+| DRIFT/USDT:USDT | +27.45% | $1,645,782.35 |
+| FOLKS/USDT:USDT | +25.67% | $2,429,479.56 |
+| 4/USDT:USDT | +20.59% | $2,298,812.03 |
+| USELESS/USDT:USDT | +17.33% | $10,461,687.41 |
+| MUBARAK/USDT:USDT | +15.67% | $17,098,128.16 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KORU/USDT:USDT | below_1h_threshold | +1.15% | +1.11% |
-| MUU/USDT:USDT | below_1h_threshold | +0.80% | +0.77% |
-| ARB/USDT:USDT | below_1h_threshold | +0.55% | +0.52% |
-| FOLKS/USDT:USDT | below_1h_threshold | +0.51% | +0.48% |
-| ZRO/USDT:USDT | below_1h_threshold | +0.42% | +0.39% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +2.42% | +2.23% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.30% | +2.10% |
+| ARB/USDT:USDT | below_1h_threshold | +1.57% | +1.38% |
+| FOLKS/USDT:USDT | below_1h_threshold | +1.31% | +1.12% |
+| ALLO/USDT:USDT | below_1h_threshold | +1.31% | +1.11% |
 
 ## 7. 次に見るべき不足
 
