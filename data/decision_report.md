@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-22T21:41:32.522611+00:00
+- generated_at: 2026-09-22T21:46:18.830508+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15363**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$122.15** / 初期 $100.00 (+22.15%)
-- 確定: 3115件 (Win 914 / Loss 1222 / Flat 979) / pending 5件 / skip 3723件
+- 確定: 3115件 (Win 914 / Loss 1222 / Flat 979) / pending 5件 / skip 3724件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `見送り` (no_strategy_passed_causal_filters) / causal_score n/a / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MUSEBOOK/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $122.15
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-22T21:41:19.673975+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=86178.4
-- Funnel: target 1058 → liquid 192 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-22T21:46:09.640327+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=86165.2
+- Funnel: target 1058 → liquid 192 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.7 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MUSEBOOK/USDT:USDT | +30.32% | $1,090,675.00 |
-| DRIFT/USDT:USDT | +24.76% | $1,564,384.44 |
-| FOLKS/USDT:USDT | +24.36% | $1,781,173.10 |
-| 4/USDT:USDT | +18.60% | $2,122,666.35 |
-| PONS/USDT:USDT | +15.45% | $4,902,940.12 |
+| MUSEBOOK/USDT:USDT | +30.78% | $1,092,008.27 |
+| FOLKS/USDT:USDT | +25.76% | $1,827,549.15 |
+| DRIFT/USDT:USDT | +25.69% | $1,566,449.82 |
+| 4/USDT:USDT | +20.32% | $2,131,572.93 |
+| PONS/USDT:USDT | +15.95% | $4,928,169.79 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PONS/USDT:USDT | below_1h_threshold | +3.96% | +4.02% |
-| SAGA/USDT:USDT | below_1h_threshold | +2.58% | +2.64% |
-| ALLO/USDT:USDT | below_1h_threshold | +2.12% | +2.18% |
-| QNT/USDT:USDT | below_1h_threshold | +2.09% | +2.15% |
-| KERNEL/USDT:USDT | below_1h_threshold | +1.90% | +1.96% |
+| PONS/USDT:USDT | below_1h_threshold | +4.58% | +4.66% |
+| FOLKS/USDT:USDT | below_1h_threshold | +2.73% | +2.81% |
+| ALLO/USDT:USDT | below_1h_threshold | +2.31% | +2.38% |
+| SAGA/USDT:USDT | below_1h_threshold | +2.21% | +2.29% |
+| 4/USDT:USDT | below_1h_threshold | +2.10% | +2.18% |
 
 ## 7. 次に見るべき不足
 
