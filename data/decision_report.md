@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-22T22:31:23.297235+00:00
+- generated_at: 2026-09-22T22:36:22.539585+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15369**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-22T22:31:12.339438+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=86149.3
+- 更新: 2026-09-22T22:36:11.760418+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=86208.6
 - Funnel: target 1058 → liquid 191 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MUSEBOOK/USDT:USDT | +30.00% | $1,037,768.75 |
-| DRIFT/USDT:USDT | +24.54% | $1,616,061.47 |
-| FOLKS/USDT:USDT | +22.37% | $2,202,428.56 |
-| 4/USDT:USDT | +17.84% | $2,291,249.90 |
-| USELESS/USDT:USDT | +16.20% | $10,508,165.82 |
+| MUSEBOOK/USDT:USDT | +33.77% | $1,038,672.11 |
+| DRIFT/USDT:USDT | +24.00% | $1,618,383.86 |
+| FOLKS/USDT:USDT | +23.59% | $2,256,399.61 |
+| 4/USDT:USDT | +18.82% | $2,300,180.91 |
+| USELESS/USDT:USDT | +16.17% | $10,530,697.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UNI/USDT:USDT | below_1h_threshold | +3.77% | +3.77% |
-| BTW/USDT:USDT | below_1h_threshold | +3.50% | +3.50% |
-| SAGA/USDT:USDT | below_1h_threshold | +2.44% | +2.43% |
-| ZAMA/USDT:USDT | below_1h_threshold | +2.19% | +2.18% |
-| PHA/USDT:USDT | below_1h_threshold | +1.20% | +1.20% |
+| UNI/USDT:USDT | below_1h_threshold | +4.31% | +4.24% |
+| SAGA/USDT:USDT | below_1h_threshold | +2.97% | +2.90% |
+| BTW/USDT:USDT | below_1h_threshold | +2.59% | +2.51% |
+| ZAMA/USDT:USDT | below_1h_threshold | +2.46% | +2.39% |
+| ZRO/USDT:USDT | below_1h_threshold | +1.92% | +1.84% |
 
 ## 7. 次に見るべき不足
 
