@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-09-22T20:56:32.611248+00:00
+- generated_at: 2026-09-22T21:01:27.094363+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **15361**
+- closed shadow trades: **15362**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=15361, expectancy=+0.00%
+- 全期間 MARKET基準: n=15362, expectancy=+0.00%
 - 直近20件 MARKET基準: n=20, expectancy=-1.29%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -21,11 +21,11 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_3PCT | 16/20 | 80.0% | +1.31% | **+1.05%** |
-| LIMIT_2PCT | 18/20 | 90.0% | +0.54% | **+0.49%** |
-| LIMIT_7PCT | 3/20 | 15.0% | +2.27% | **+0.34%** |
-| LIMIT_9PCT | 2/20 | 10.0% | +2.00% | **+0.20%** |
-| LIMIT_8PCT | 2/20 | 10.0% | +2.00% | **+0.20%** |
+| LIMIT_3PCT | 16/20 | 80.0% | +1.12% | **+0.90%** |
+| LIMIT_2PCT | 18/20 | 90.0% | +0.43% | **+0.39%** |
+| LIMIT_BB3S | 9/14 | 64.3% | +0.45% | **+0.29%** |
+| LIMIT_FIB1272 | 7/20 | 35.0% | +0.65% | **+0.23%** |
+| LIMIT_7PCT | 4/20 | 20.0% | +0.70% | **+0.14%** |
 
 ### シャドウ上位 LONG
 
@@ -47,15 +47,15 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,155.82** / 初期 $100.00 (+1055.82%)
-- 確定: 5844件 (Win 1729 / Loss 1880 / Flat 2235) / skip 6078件
+- 確定: 5845件 (Win 1729 / Loss 1880 / Flat 2236) / skip 6078件
 - 成長率目線: 平均log +0.000419 / 幾何平均 +0.042% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_8PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: MUSEBOOK/USDT:USDT `LIMIT_8PCT_LONG` SL_HIT account -0.50% 残高後 $1,155.82
+- 最新: MUSEBOOK/USDT:USDT `LIMIT_8PCT_LONG` EXPIRED account +0.00% 残高後 $1,155.82
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$249.51** / 初期 $100.00 (+149.51%)
-- 確定: 3353件 (Win 926 / Loss 781 / Flat 1646) / skip 5419件
+- 確定: 3353件 (Win 926 / Loss 781 / Flat 1646) / skip 5420件
 - 成長率目線: 平均log +0.000273 / 幾何平均 +0.027% per trade / maxDD +3.96%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: KERNEL/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.35% 残高後 $249.51
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-22T20:56:19.175732+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=86193.8
-- Funnel: target 1058 → liquid 190 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.8 >= 65=1, 4h RSI 88.9 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-22T21:01:13.474224+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=86238.8
+- Funnel: target 1058 → liquid 188 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MUSEBOOK/USDT:USDT | +26.32% | $1,099,693.89 |
-| DRIFT/USDT:USDT | +22.19% | $1,502,932.31 |
-| FOLKS/USDT:USDT | +21.56% | $1,400,478.94 |
-| 4/USDT:USDT | +17.62% | $2,009,322.14 |
-| MUBARAK/USDT:USDT | +16.71% | $16,031,017.08 |
+| MUSEBOOK/USDT:USDT | +31.85% | $1,055,778.22 |
+| DRIFT/USDT:USDT | +22.35% | $1,514,763.48 |
+| FOLKS/USDT:USDT | +22.01% | $1,431,135.89 |
+| 4/USDT:USDT | +17.62% | $2,008,592.37 |
+| MUBARAK/USDT:USDT | +16.61% | $16,076,072.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| USELESS/USDT:USDT | below_1h_threshold | +4.20% | +4.14% |
-| PONS/USDT:USDT | below_1h_threshold | +2.50% | +2.44% |
-| UNI/USDT:USDT | below_1h_threshold | +2.43% | +2.37% |
-| APT/USDT:USDT | below_1h_threshold | +2.13% | +2.07% |
-| ZRO/USDT:USDT | below_1h_threshold | +2.12% | +2.06% |
+| ZAMA/USDT:USDT | below_1h_threshold | +0.86% | +0.85% |
+| GRT/USDT:USDT | below_1h_threshold | +0.60% | +0.59% |
+| LIT/USDT:USDT | below_1h_threshold | +0.52% | +0.51% |
+| BR/USDT:USDT | below_1h_threshold | +0.38% | +0.37% |
+| DASH/USDT:USDT | below_1h_threshold | +0.28% | +0.27% |
 
 ## 7. 次に見るべき不足
 
