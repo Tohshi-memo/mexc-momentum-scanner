@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-22T02:01:18.053422+00:00
+- generated_at: 2026-09-22T02:06:16.249082+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15288**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-22T02:01:08.856956+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=85580.5
+- 更新: 2026-09-22T02:06:07.513578+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=85492.7
 - Funnel: target 1055 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KERNEL/USDT:USDT | +40.31% | $1,693,712.68 |
-| FORM/USDT:USDT | +26.58% | $8,954,655.96 |
-| ALCH/USDT:USDT | +17.69% | $2,353,152.73 |
-| GRASS/USDT:USDT | +10.10% | $2,323,616.46 |
-| NIL/USDT:USDT | +10.01% | $4,291,308.17 |
+| KERNEL/USDT:USDT | +43.92% | $1,838,529.36 |
+| FORM/USDT:USDT | +24.76% | $8,963,162.55 |
+| ALCH/USDT:USDT | +18.62% | $2,356,224.33 |
+| NIL/USDT:USDT | +11.40% | $4,306,014.94 |
+| EVAA/USDT:USDT | +11.08% | $2,388,845.74 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KERNEL/USDT:USDT | below_1h_threshold | +1.29% | +1.30% |
-| SAGA/USDT:USDT | below_1h_threshold | +0.83% | +0.83% |
-| AKE/USDT:USDT | below_1h_threshold | +0.26% | +0.27% |
-| TAO/USDT:USDT | below_1h_threshold | +0.26% | +0.26% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +0.25% | +0.25% |
+| KERNEL/USDT:USDT | below_1h_threshold | +3.90% | +4.01% |
+| EVAA/USDT:USDT | below_1h_threshold | +1.69% | +1.79% |
+| NIL/USDT:USDT | below_1h_threshold | +0.86% | +0.97% |
+| S/USDT:USDT | below_1h_threshold | +0.82% | +0.92% |
+| GRASS/USDT:USDT | below_1h_threshold | +0.73% | +0.83% |
 
 ## 7. 次に見るべき不足
 
