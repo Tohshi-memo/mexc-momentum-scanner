@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-22T08:46:29.193497+00:00
+- generated_at: 2026-09-22T08:51:30.366135+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15309**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-22T08:46:17.023259+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.89% price=86083.5
-- Funnel: target 1056 → liquid 188 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=46, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.9 >= 65=1, 4h RSI 87.9 >= 65=1, 4h RSI 67.0 >= 65=1
+- 更新: 2026-09-22T08:51:20.263653+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.99% price=86167.6
+- Funnel: target 1056 → liquid 189 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.7 >= 65=1, 4h RSI 67.1 >= 65=1, 4h RSI 87.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +53.39% | $1,168,680.13 |
-| 4STOCK/USDT:USDT | +40.36% | $1,925,283.66 |
-| KERNEL/USDT:USDT | +34.02% | $4,065,347.27 |
-| NIL/USDT:USDT | +22.44% | $3,118,279.76 |
-| MUBARAK/USDT:USDT | +22.02% | $3,052,813.33 |
+| AGT/USDT:USDT | +53.14% | $1,173,252.04 |
+| 4STOCK/USDT:USDT | +45.84% | $1,974,608.37 |
+| KERNEL/USDT:USDT | +34.66% | $4,077,314.42 |
+| MUBARAK/USDT:USDT | +22.75% | $3,089,901.09 |
+| GRASS/USDT:USDT | +22.60% | $3,248,454.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| USELESS/USDT:USDT | below_relative_strength | +5.53% | +4.64% |
-| FET/USDT:USDT | below_1h_threshold | +3.66% | +2.77% |
-| PONS/USDT:USDT | below_1h_threshold | +3.59% | +2.70% |
-| AERO/USDT:USDT | below_1h_threshold | +3.50% | +2.61% |
-| WIF/USDT:USDT | below_1h_threshold | +3.02% | +2.13% |
+| WIF/USDT:USDT | below_1h_threshold | +4.99% | +4.00% |
+| USELESS/USDT:USDT | below_1h_threshold | +4.55% | +3.56% |
+| AERO/USDT:USDT | below_1h_threshold | +4.34% | +3.35% |
+| SYN/USDT:USDT | below_1h_threshold | +3.81% | +2.82% |
+| FET/USDT:USDT | below_1h_threshold | +3.71% | +2.72% |
 
 ## 7. 次に見るべき不足
 
