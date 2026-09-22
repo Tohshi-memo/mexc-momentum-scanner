@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-09-22T18:21:16.566881+00:00
+- generated_at: 2026-09-22T18:26:26.706772+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **15351**
+- closed shadow trades: **15352**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=15351, expectancy=-0.00%
+- 全期間 MARKET基準: n=15352, expectancy=-0.00%
 - 直近20件 MARKET基準: n=20, expectancy=-1.06%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -22,7 +22,7 @@
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | LIMIT_FIB1272 | 8/20 | 40.0% | +0.45% | **+0.18%** |
-| LIMIT_ATR | 16/20 | 80.0% | +0.15% | **+0.12%** |
+| LIMIT_ATR | 15/20 | 75.0% | +0.15% | **+0.11%** |
 | LIMIT_6PCT | 4/20 | 20.0% | +0.42% | **+0.08%** |
 | LIMIT_5PCT | 5/20 | 25.0% | -0.04% | **-0.01%** |
 | LIMIT_7PCT | 2/20 | 10.0% | -0.60% | **-0.06%** |
@@ -31,9 +31,9 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET_LONG | 20/20 | 100.0% | +1.36% | **+1.36%** |
 | LIMIT_BB3S_LONG | 2/4 | 50.0% | +2.01% | **+1.01%** |
-| LIMIT_1PCT_LONG | 12/20 | 60.0% | +1.19% | **+0.71%** |
+| MARKET_LONG | 20/20 | 100.0% | +0.96% | **+0.96%** |
+| LIMIT_4PCT_LONG | 8/20 | 40.0% | +1.01% | **+0.41%** |
 | LIMIT_8PCT_LONG | 4/20 | 20.0% | +2.01% | **+0.40%** |
 | LIMIT_3PCT_LONG | 8/20 | 40.0% | +0.69% | **+0.28%** |
 
@@ -47,15 +47,15 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,167.58** / 初期 $100.00 (+1067.58%)
-- 確定: 5835件 (Win 1727 / Loss 1875 / Flat 2233) / skip 6077件
+- 確定: 5836件 (Win 1727 / Loss 1875 / Flat 2234) / skip 6077件
 - 成長率目線: 平均log +0.000421 / 幾何平均 +0.042% per trade / maxDD +8.46%
 - 次の候補: `MARKET_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: MARSCOIN/USDT:USDT `LIMIT_8PCT_LONG` EXPIRED account +0.00% 残高後 $1,167.58
+- 最新: MUSEBOOK/USDT:USDT `LIMIT_8PCT_LONG` EXPIRED account +0.00% 残高後 $1,167.58
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$249.51** / 初期 $100.00 (+149.51%)
-- 確定: 3353件 (Win 926 / Loss 781 / Flat 1646) / skip 5409件
+- 確定: 3353件 (Win 926 / Loss 781 / Flat 1646) / skip 5410件
 - 成長率目線: 平均log +0.000273 / 幾何平均 +0.027% per trade / maxDD +3.96%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: KERNEL/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.35% 残高後 $249.51
@@ -65,13 +65,13 @@
 - 残高: **$122.80** / 初期 $100.00 (+22.80%)
 - 確定: 3108件 (Win 913 / Loss 1217 / Flat 978) / pending 5件 / skip 3719件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000134 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000133 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: 4/USDT:USDT `LIMIT_5PCT` SL_HIT account +0.04% 残高後 $122.80
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-22T18:21:08.315904+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=86514.7
+- 更新: 2026-09-22T18:26:13.657675+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.19% price=86358.3
 - Funnel: target 1058 → liquid 183 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 4/USDT:USDT | +18.20% | $1,443,451.59 |
-| CHR/USDT:USDT | +16.17% | $3,578,081.44 |
-| MUBARAK/USDT:USDT | +15.16% | $12,845,470.10 |
-| MARSCOIN/USDT:USDT | +13.85% | $2,833,716.64 |
-| BR/USDT:USDT | +12.88% | $6,128,970.72 |
+| 4/USDT:USDT | +18.46% | $1,481,514.27 |
+| CHR/USDT:USDT | +17.61% | $3,607,760.25 |
+| MUBARAK/USDT:USDT | +16.24% | $12,923,546.03 |
+| MUSEBOOK/USDT:USDT | +13.44% | $1,044,317.27 |
+| MARSCOIN/USDT:USDT | +13.14% | $2,853,551.79 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| 4/USDT:USDT | below_1h_threshold | +4.26% | +4.27% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +4.03% | +4.05% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.48% | +2.50% |
-| AIN/USDT:USDT | below_1h_threshold | +2.39% | +2.41% |
-| PENGU/USDT:USDT | below_1h_threshold | +2.15% | +2.16% |
+| AIN/USDT:USDT | below_1h_threshold | +4.74% | +4.94% |
+| 4/USDT:USDT | below_1h_threshold | +4.49% | +4.69% |
+| MUSEBOOK/USDT:USDT | below_1h_threshold | +3.47% | +3.67% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +3.38% | +3.58% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.27% | +3.47% |
 
 ## 7. 次に見るべき不足
 
