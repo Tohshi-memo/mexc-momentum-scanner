@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-22T04:26:07.947380+00:00
+- generated_at: 2026-09-22T04:31:24.398101+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15294**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$122.76** / 初期 $100.00 (+22.76%)
-- 確定: 3066件 (Win 902 / Loss 1200 / Flat 964) / pending 2件 / skip 3695件
+- 確定: 3066件 (Win 902 / Loss 1200 / Flat 964) / pending 3件 / skip 3695件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000190 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: AKE/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $122.76
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-22T04:26:00.310615+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.20% price=85490.3
-- Funnel: target 1057 → liquid 180 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-22T04:31:13.234469+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.17% price=85513.7
+- Funnel: target 1057 → liquid 180 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 85.1 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KERNEL/USDT:USDT | +37.70% | $3,062,655.30 |
-| ALCH/USDT:USDT | +17.43% | $2,481,547.06 |
-| GRASS/USDT:USDT | +13.30% | $2,528,964.45 |
-| FORM/USDT:USDT | +12.31% | $9,559,680.16 |
-| CRO/USDT:USDT | +8.63% | $1,364,780.82 |
+| KERNEL/USDT:USDT | +35.33% | $3,073,767.67 |
+| ALCH/USDT:USDT | +17.59% | $2,484,462.26 |
+| FORM/USDT:USDT | +14.91% | $9,593,231.73 |
+| GRASS/USDT:USDT | +13.11% | $2,530,679.20 |
+| MUBARAK/USDT:USDT | +12.00% | $1,601,694.42 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MUBARAK/USDT:USDT | below_1h_threshold | +3.99% | +4.19% |
-| SAGA/USDT:USDT | below_1h_threshold | +3.34% | +3.54% |
-| DOGE/USDT:USDT | below_1h_threshold | +2.67% | +2.87% |
-| SHIB/USDT:USDT | below_1h_threshold | +1.98% | +2.18% |
-| MINA/USDT:USDT | below_1h_threshold | +1.67% | +1.88% |
+| SAGA/USDT:USDT | below_1h_threshold | +2.83% | +3.00% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +2.02% | +2.19% |
+| FORM/USDT:USDT | below_1h_threshold | +1.92% | +2.10% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.69% | +1.87% |
+| DOGE/USDT:USDT | below_1h_threshold | +1.49% | +1.66% |
 
 ## 7. 次に見るべき不足
 
