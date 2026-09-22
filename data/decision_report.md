@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-22T09:46:31.579371+00:00
+- generated_at: 2026-09-22T09:51:26.419180+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15311**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-22T09:46:19.697051+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=86028.5
+- 更新: 2026-09-22T09:51:14.798309+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.21% price=85998.8
 - Funnel: target 1056 → liquid 182 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 89.1 >= 65=1, 4h RSI 89.6 >= 65=1
+- Strict後reject: 4h RSI 89.8 >= 65=1, 4h RSI 88.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 4STOCK/USDT:USDT | +47.16% | $2,266,304.23 |
-| KERNEL/USDT:USDT | +38.37% | $4,287,419.54 |
-| AGT/USDT:USDT | +36.16% | $1,333,002.63 |
-| MUBARAK/USDT:USDT | +30.33% | $3,444,513.27 |
-| NIL/USDT:USDT | +27.34% | $3,410,009.13 |
+| 4STOCK/USDT:USDT | +48.47% | $2,289,193.02 |
+| KERNEL/USDT:USDT | +36.09% | $4,307,661.28 |
+| MUBARAK/USDT:USDT | +32.48% | $3,483,827.77 |
+| AGT/USDT:USDT | +28.87% | $1,352,005.86 |
+| NIL/USDT:USDT | +23.79% | $3,477,504.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| S/USDT:USDT | below_1h_threshold | +3.17% | +3.34% |
-| 4STOCK/USDT:USDT | below_1h_threshold | +1.90% | +2.07% |
-| KERNEL/USDT:USDT | below_1h_threshold | +1.64% | +1.82% |
-| ALCH/USDT:USDT | below_1h_threshold | +0.58% | +0.75% |
-| EGLD/USDT:USDT | below_1h_threshold | +0.46% | +0.63% |
+| S/USDT:USDT | below_1h_threshold | +3.06% | +3.27% |
+| VVV/USDT:USDT | below_1h_threshold | +2.90% | +3.11% |
+| 4STOCK/USDT:USDT | below_1h_threshold | +2.81% | +3.02% |
+| EGLD/USDT:USDT | below_1h_threshold | +1.74% | +1.94% |
+| ALCH/USDT:USDT | below_1h_threshold | +0.85% | +1.06% |
 
 ## 7. 次に見るべき不足
 
