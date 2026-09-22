@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-22T01:16:16.231194+00:00
+- generated_at: 2026-09-22T01:21:20.787341+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15286**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$122.56** / 初期 $100.00 (+22.56%)
-- 確定: 3058件 (Win 899 / Loss 1196 / Flat 963) / pending 3件 / skip 3695件
+- 確定: 3058件 (Win 899 / Loss 1196 / Flat 963) / pending 4件 / skip 3695件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000208 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: PTB/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $122.56
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-22T01:16:07.369558+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=85819.1
-- Funnel: target 1055 → liquid 176 → pre 50 → checked 50 → surge 1 → strict 0
+- 更新: 2026-09-22T01:21:11.734427+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.29% price=85613.1
+- Funnel: target 1055 → liquid 178 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.6 >= 65=1
+- Strict後reject: 4h RSI 92.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FORM/USDT:USDT | +27.47% | $8,862,520.59 |
-| ALCH/USDT:USDT | +25.24% | $2,271,035.23 |
-| EVAA/USDT:USDT | +12.42% | $2,310,218.92 |
-| GRASS/USDT:USDT | +12.29% | $2,244,973.63 |
-| 4STOCK/USDT:USDT | +9.22% | $1,093,725.19 |
+| KERNEL/USDT:USDT | +36.28% | $1,104,109.23 |
+| FORM/USDT:USDT | +26.61% | $8,871,608.44 |
+| ALCH/USDT:USDT | +23.91% | $2,276,893.90 |
+| EVAA/USDT:USDT | +9.59% | $2,343,888.22 |
+| 4STOCK/USDT:USDT | +8.41% | $1,094,022.70 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ONE/USDT:USDT | below_1h_threshold | +4.92% | +4.97% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.65% | +1.70% |
-| NIL/USDT:USDT | below_1h_threshold | +1.55% | +1.60% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +1.53% | +1.58% |
-| S/USDT:USDT | below_1h_threshold | +1.38% | +1.43% |
+| ONE/USDT:USDT | below_1h_threshold | +3.53% | +3.82% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.65% | +1.94% |
+| S/USDT:USDT | below_1h_threshold | +1.58% | +1.87% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.30% | +1.59% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +1.29% | +1.58% |
 
 ## 7. 次に見るべき不足
 
