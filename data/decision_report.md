@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-22T09:41:18.838275+00:00
+- generated_at: 2026-09-22T09:46:31.579371+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15311**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$122.97** / 初期 $100.00 (+22.97%)
-- 確定: 3083件 (Win 906 / Loss 1206 / Flat 971) / pending 6件 / skip 3695件
+- 確定: 3083件 (Win 906 / Loss 1206 / Flat 971) / pending 6件 / skip 3696件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000095 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: NIL/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.26% 残高後 $122.97
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-22T09:41:10.030595+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.30% price=85921.8
-- Funnel: target 1056 → liquid 181 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 88.9 >= 65=1
+- 更新: 2026-09-22T09:46:19.697051+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.17% price=86028.5
+- Funnel: target 1056 → liquid 182 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 89.1 >= 65=1, 4h RSI 89.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 4STOCK/USDT:USDT | +48.27% | $2,240,335.63 |
-| AGT/USDT:USDT | +37.27% | $1,326,457.65 |
-| KERNEL/USDT:USDT | +36.20% | $4,262,698.59 |
-| MUBARAK/USDT:USDT | +30.19% | $3,405,613.25 |
-| NIL/USDT:USDT | +27.62% | $3,342,916.53 |
+| 4STOCK/USDT:USDT | +47.16% | $2,266,304.23 |
+| KERNEL/USDT:USDT | +38.37% | $4,287,419.54 |
+| AGT/USDT:USDT | +36.16% | $1,333,002.63 |
+| MUBARAK/USDT:USDT | +30.33% | $3,444,513.27 |
+| NIL/USDT:USDT | +27.34% | $3,410,009.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MUBARAK/USDT:USDT | below_1h_threshold | +4.73% | +5.03% |
-| 4STOCK/USDT:USDT | below_1h_threshold | +2.74% | +3.04% |
-| ALCH/USDT:USDT | below_1h_threshold | +1.64% | +1.94% |
-| SAGA/USDT:USDT | below_1h_threshold | +1.16% | +1.46% |
-| S/USDT:USDT | below_1h_threshold | +1.03% | +1.33% |
+| S/USDT:USDT | below_1h_threshold | +3.17% | +3.34% |
+| 4STOCK/USDT:USDT | below_1h_threshold | +1.90% | +2.07% |
+| KERNEL/USDT:USDT | below_1h_threshold | +1.64% | +1.82% |
+| ALCH/USDT:USDT | below_1h_threshold | +0.58% | +0.75% |
+| EGLD/USDT:USDT | below_1h_threshold | +0.46% | +0.63% |
 
 ## 7. 次に見るべき不足
 
