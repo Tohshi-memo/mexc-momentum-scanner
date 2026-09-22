@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-22T20:01:34.453433+00:00
+- generated_at: 2026-09-22T20:06:23.471423+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15357**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-22T20:01:21.352785+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=86158.4
+- 更新: 2026-09-22T20:06:15.745632+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=86191.1
 - Funnel: target 1058 → liquid 186 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DRIFT/USDT:USDT | +32.21% | $1,253,005.92 |
-| MUBARAK/USDT:USDT | +18.80% | $15,187,312.59 |
-| 4/USDT:USDT | +17.58% | $1,785,123.82 |
-| BR/USDT:USDT | +14.38% | $6,214,390.27 |
-| CHR/USDT:USDT | +13.05% | $4,137,869.27 |
+| DRIFT/USDT:USDT | +32.21% | $1,284,641.06 |
+| MUBARAK/USDT:USDT | +16.46% | $15,259,281.92 |
+| 4/USDT:USDT | +15.85% | $1,809,258.34 |
+| BR/USDT:USDT | +14.30% | $6,231,661.12 |
+| CHR/USDT:USDT | +13.34% | $4,153,620.61 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KORU/USDT:USDT | below_1h_threshold | +1.84% | +1.82% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +1.59% | +1.57% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.51% | +1.49% |
-| MUU/USDT:USDT | below_1h_threshold | +1.30% | +1.28% |
-| PENGU/USDT:USDT | below_1h_threshold | +1.29% | +1.27% |
+| FORM/USDT:USDT | below_1h_threshold | +1.91% | +1.85% |
+| KORU/USDT:USDT | below_1h_threshold | +1.84% | +1.78% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.84% | +1.78% |
+| PENGU/USDT:USDT | below_1h_threshold | +1.71% | +1.65% |
+| TIA/USDT:USDT | below_1h_threshold | +1.51% | +1.45% |
 
 ## 7. 次に見るべき不足
 
