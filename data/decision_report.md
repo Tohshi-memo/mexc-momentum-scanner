@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-22T19:11:35.060958+00:00
+- generated_at: 2026-09-22T19:16:25.474163+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15354**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$122.37** / 初期 $100.00 (+22.37%)
-- 確定: 3110件 (Win 913 / Loss 1219 / Flat 978) / pending 5件 / skip 3719件
+- 確定: 3110件 (Win 913 / Loss 1219 / Flat 978) / pending 6件 / skip 3719件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000087 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MUSEBOOK/USDT:USDT `MARKET_LONG` SL_HIT account -0.17% 残高後 $122.37
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-22T19:11:25.763142+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=86444.4
-- Funnel: target 1058 → liquid 184 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-22T19:16:16.575193+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=86458.9
+- Funnel: target 1058 → liquid 184 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 77.1 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MUBARAK/USDT:USDT | +23.90% | $14,148,262.16 |
-| ON/USDT:USDT | +23.76% | $1,104,666.40 |
-| MUSEBOOK/USDT:USDT | +22.05% | $1,029,474.75 |
-| CHR/USDT:USDT | +18.57% | $3,844,711.50 |
-| 4/USDT:USDT | +16.74% | $1,648,879.11 |
+| MUSEBOOK/USDT:USDT | +28.33% | $1,037,087.62 |
+| ON/USDT:USDT | +24.39% | $1,159,719.11 |
+| MUBARAK/USDT:USDT | +23.05% | $14,237,160.15 |
+| 4/USDT:USDT | +17.22% | $1,672,826.56 |
+| CHR/USDT:USDT | +16.51% | $3,852,943.97 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ON/USDT:USDT | below_1h_threshold | +2.27% | +2.22% |
-| MUSEBOOK/USDT:USDT | below_1h_threshold | +1.79% | +1.75% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +1.77% | +1.72% |
-| CHR/USDT:USDT | below_1h_threshold | +1.69% | +1.64% |
-| KAITO/USDT:USDT | below_1h_threshold | +1.47% | +1.42% |
+| ON/USDT:USDT | below_1h_threshold | +2.52% | +2.46% |
+| PENGU/USDT:USDT | below_1h_threshold | +2.03% | +1.97% |
+| BCH/USDT:USDT | below_1h_threshold | +1.75% | +1.68% |
+| LTC/USDT:USDT | below_1h_threshold | +1.55% | +1.49% |
+| PONS/USDT:USDT | below_1h_threshold | +1.48% | +1.42% |
 
 ## 7. 次に見るべき不足
 
