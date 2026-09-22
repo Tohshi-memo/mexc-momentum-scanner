@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-22T21:16:27.813683+00:00
+- generated_at: 2026-09-22T21:21:24.664225+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15362**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-22T21:16:16.378761+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=86190.5
-- Funnel: target 1058 → liquid 189 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.6 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-22T21:21:13.874501+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=86213.6
+- Funnel: target 1058 → liquid 190 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MUSEBOOK/USDT:USDT | +44.92% | $1,073,197.58 |
-| DRIFT/USDT:USDT | +23.89% | $1,535,004.88 |
-| FOLKS/USDT:USDT | +22.60% | $1,557,828.51 |
-| 4/USDT:USDT | +17.53% | $2,037,705.32 |
-| MUBARAK/USDT:USDT | +14.06% | $16,213,929.61 |
+| MUSEBOOK/USDT:USDT | +40.41% | $1,077,843.15 |
+| DRIFT/USDT:USDT | +26.02% | $1,540,009.94 |
+| FOLKS/USDT:USDT | +23.37% | $1,623,966.20 |
+| 4/USDT:USDT | +17.80% | $2,048,055.00 |
+| BR/USDT:USDT | +14.32% | $6,338,262.88 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LUNC/USDT:USDT | below_1h_threshold | +1.56% | +1.60% |
-| LIT/USDT:USDT | below_1h_threshold | +1.40% | +1.44% |
-| CHR/USDT:USDT | below_1h_threshold | +1.38% | +1.43% |
-| ALLO/USDT:USDT | below_1h_threshold | +1.23% | +1.27% |
-| GRT/USDT:USDT | below_1h_threshold | +0.88% | +0.92% |
+| MUSEBOOK/USDT:USDT | below_1h_threshold | +4.17% | +4.19% |
+| DRIFT/USDT:USDT | below_1h_threshold | +2.27% | +2.29% |
+| ALLO/USDT:USDT | below_1h_threshold | +1.52% | +1.54% |
+| SAGA/USDT:USDT | below_1h_threshold | +1.47% | +1.49% |
+| GRT/USDT:USDT | below_1h_threshold | +1.40% | +1.41% |
 
 ## 7. 次に見るべき不足
 
