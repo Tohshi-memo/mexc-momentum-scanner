@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-22T03:11:30.767443+00:00
+- generated_at: 2026-09-22T03:16:30.291274+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15291**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-22T03:11:17.793010+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=85547.5
+- 更新: 2026-09-22T03:16:19.248222+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.17% price=85539.8
 - Funnel: target 1055 → liquid 179 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KERNEL/USDT:USDT | +37.40% | $2,513,618.18 |
-| ALCH/USDT:USDT | +19.34% | $2,407,560.92 |
-| FORM/USDT:USDT | +16.51% | $9,281,027.80 |
-| GRASS/USDT:USDT | +13.11% | $2,427,528.12 |
-| ZETA/USDT:USDT | +12.05% | $12,719,422.27 |
+| KERNEL/USDT:USDT | +40.25% | $2,602,192.18 |
+| ALCH/USDT:USDT | +19.58% | $2,410,389.24 |
+| FORM/USDT:USDT | +17.65% | $9,289,830.95 |
+| GRASS/USDT:USDT | +13.06% | $2,438,420.08 |
+| NEAR/USDT:USDT | +9.83% | $147,777,065.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZETA/USDT:USDT | below_1h_threshold | +4.91% | +5.07% |
-| AKE/USDT:USDT | below_1h_threshold | +4.01% | +4.17% |
-| SYN/USDT:USDT | below_1h_threshold | +2.72% | +2.88% |
-| PHA/USDT:USDT | below_1h_threshold | +2.65% | +2.81% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +1.55% | +1.71% |
+| SYN/USDT:USDT | below_1h_threshold | +3.02% | +3.19% |
+| AKE/USDT:USDT | below_1h_threshold | +2.52% | +2.69% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +2.24% | +2.41% |
+| 4STOCK/USDT:USDT | below_1h_threshold | +2.24% | +2.41% |
+| PHA/USDT:USDT | below_1h_threshold | +1.97% | +2.14% |
 
 ## 7. 次に見るべき不足
 
