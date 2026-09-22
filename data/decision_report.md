@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-22T18:56:33.885138+00:00
+- generated_at: 2026-09-22T19:01:29.801052+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15353**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-22T18:56:23.695910+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=86497.9
-- Funnel: target 1058 → liquid 186 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.9 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-22T19:01:18.516044+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=86419.6
+- Funnel: target 1058 → liquid 184 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MUBARAK/USDT:USDT | +21.42% | $13,626,633.87 |
-| 4/USDT:USDT | +17.22% | $1,647,369.83 |
-| CHR/USDT:USDT | +16.94% | $3,799,233.04 |
-| MUSEBOOK/USDT:USDT | +16.50% | $1,084,417.61 |
-| BR/USDT:USDT | +14.97% | $6,323,992.12 |
+| MUBARAK/USDT:USDT | +23.94% | $13,739,422.11 |
+| MUSEBOOK/USDT:USDT | +22.42% | $1,023,613.30 |
+| ON/USDT:USDT | +20.86% | $1,040,529.70 |
+| 4/USDT:USDT | +17.27% | $1,621,966.41 |
+| CHR/USDT:USDT | +16.17% | $3,802,567.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| 4/USDT:USDT | below_1h_threshold | +3.40% | +3.43% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +3.13% | +3.17% |
-| AIN/USDT:USDT | below_1h_threshold | +2.69% | +2.72% |
-| BCH/USDT:USDT | below_1h_threshold | +2.11% | +2.14% |
-| LAB/USDT:USDT | below_1h_threshold | +2.07% | +2.10% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +2.00% | +1.98% |
+| MUSEBOOK/USDT:USDT | below_1h_threshold | +1.65% | +1.64% |
+| MUU/USDT:USDT | below_1h_threshold | +1.37% | +1.35% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +0.79% | +0.77% |
+| 4STOCK/USDT:USDT | below_1h_threshold | +0.77% | +0.75% |
 
 ## 7. 次に見るべき不足
 
