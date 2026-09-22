@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-22T11:01:23.633717+00:00
+- generated_at: 2026-09-22T11:06:20.787332+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15317**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-22T11:01:12.618063+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=85927.0
+- 更新: 2026-09-22T11:06:09.819048+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=85935.9
 - Funnel: target 1056 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 4STOCK/USDT:USDT | +69.16% | $3,043,340.59 |
-| MUBARAK/USDT:USDT | +40.11% | $4,107,398.16 |
-| KERNEL/USDT:USDT | +32.80% | $4,417,542.81 |
-| AGT/USDT:USDT | +29.74% | $1,571,572.28 |
-| NIL/USDT:USDT | +22.87% | $3,333,493.37 |
+| 4STOCK/USDT:USDT | +65.61% | $3,066,737.46 |
+| MUBARAK/USDT:USDT | +36.89% | $4,160,812.10 |
+| AGT/USDT:USDT | +33.30% | $1,586,377.96 |
+| KERNEL/USDT:USDT | +31.01% | $4,441,224.57 |
+| NIL/USDT:USDT | +21.98% | $3,357,908.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AGT/USDT:USDT | below_1h_threshold | +1.00% | +0.92% |
-| USELESS/USDT:USDT | below_1h_threshold | +0.71% | +0.64% |
-| NEAR/USDT:USDT | below_1h_threshold | +0.49% | +0.41% |
-| 4STOCK/USDT:USDT | below_1h_threshold | +0.36% | +0.29% |
-| KERNEL/USDT:USDT | below_1h_threshold | +0.24% | +0.16% |
+| AGT/USDT:USDT | below_1h_threshold | +4.34% | +4.26% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.19% | +1.11% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +0.83% | +0.75% |
+| SAGA/USDT:USDT | below_1h_threshold | +0.77% | +0.68% |
+| S/USDT:USDT | below_1h_threshold | +0.53% | +0.45% |
 
 ## 7. 次に見るべき不足
 
