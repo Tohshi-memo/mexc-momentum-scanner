@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-22T19:26:26.080735+00:00
+- generated_at: 2026-09-22T19:31:34.632781+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15354**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-22T19:26:14.884785+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=86491.0
+- 更新: 2026-09-22T19:31:23.434330+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=86427.7
 - Funnel: target 1058 → liquid 186 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.2 >= 65=1
+- Strict後reject: 4h RSI 80.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MUSEBOOK/USDT:USDT | +22.02% | $1,041,765.98 |
-| MUBARAK/USDT:USDT | +19.51% | $14,498,981.81 |
-| 4/USDT:USDT | +16.12% | $1,693,378.80 |
-| BR/USDT:USDT | +14.54% | $6,243,215.15 |
-| MARSCOIN/USDT:USDT | +14.11% | $3,011,289.74 |
+| MUSEBOOK/USDT:USDT | +20.44% | $1,044,061.02 |
+| MUBARAK/USDT:USDT | +19.70% | $14,557,330.17 |
+| 4/USDT:USDT | +15.54% | $1,727,996.09 |
+| CHR/USDT:USDT | +15.31% | $3,977,043.78 |
+| BR/USDT:USDT | +14.35% | $6,256,587.81 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KAITO/USDT:USDT | below_1h_threshold | +3.22% | +3.12% |
-| PONS/USDT:USDT | below_1h_threshold | +2.58% | +2.48% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.58% | +2.48% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +1.95% | +1.85% |
-| LTC/USDT:USDT | below_1h_threshold | +1.89% | +1.79% |
+| KAITO/USDT:USDT | below_1h_threshold | +3.81% | +3.79% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.69% | +2.67% |
+| PONS/USDT:USDT | below_1h_threshold | +2.57% | +2.54% |
+| PENGU/USDT:USDT | below_1h_threshold | +2.46% | +2.43% |
+| LTC/USDT:USDT | below_1h_threshold | +2.33% | +2.30% |
 
 ## 7. 次に見るべき不足
 
