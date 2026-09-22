@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-22T22:46:21.523899+00:00
+- generated_at: 2026-09-22T22:51:19.363905+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15369**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-22T22:46:10.884809+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=86204.2
+- 更新: 2026-09-22T22:51:10.196564+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=86146.8
 - Funnel: target 1058 → liquid 191 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.8 >= 65=1
+- Strict後reject: 4h RSI 78.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MUSEBOOK/USDT:USDT | +30.37% | $1,040,756.09 |
-| DRIFT/USDT:USDT | +27.23% | $1,635,819.21 |
-| FOLKS/USDT:USDT | +24.36% | $2,305,953.96 |
-| 4/USDT:USDT | +18.73% | $2,308,921.60 |
-| MUBARAK/USDT:USDT | +16.58% | $17,001,568.32 |
+| MUSEBOOK/USDT:USDT | +34.16% | $1,041,427.81 |
+| DRIFT/USDT:USDT | +28.05% | $1,642,418.77 |
+| FOLKS/USDT:USDT | +24.00% | $2,328,370.51 |
+| 4/USDT:USDT | +19.70% | $2,321,082.85 |
+| MUBARAK/USDT:USDT | +15.72% | $17,033,761.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +3.02% | +2.95% |
-| ENA/USDT:USDT | below_1h_threshold | +2.94% | +2.87% |
-| ARB/USDT:USDT | below_1h_threshold | +2.73% | +2.65% |
-| ZAMA/USDT:USDT | below_1h_threshold | +2.56% | +2.49% |
-| ALLO/USDT:USDT | below_1h_threshold | +2.49% | +2.41% |
+| ENA/USDT:USDT | below_1h_threshold | +3.74% | +3.74% |
+| BTW/USDT:USDT | below_1h_threshold | +3.55% | +3.55% |
+| ARB/USDT:USDT | below_1h_threshold | +2.94% | +2.93% |
+| SAGA/USDT:USDT | below_1h_threshold | +2.64% | +2.64% |
+| DRIFT/USDT:USDT | below_1h_threshold | +2.50% | +2.49% |
 
 ## 7. 次に見るべき不足
 
