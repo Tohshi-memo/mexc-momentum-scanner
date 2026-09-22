@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-22T18:01:35.967822+00:00
+- generated_at: 2026-09-22T18:06:25.781864+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15349**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-22T18:01:22.598615+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=86516.5
+- 更新: 2026-09-22T18:06:14.871283+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=86529.1
 - Funnel: target 1058 → liquid 183 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CHR/USDT:USDT | +18.33% | $3,396,828.48 |
-| MUBARAK/USDT:USDT | +16.86% | $12,335,296.25 |
-| 4/USDT:USDT | +15.45% | $1,342,014.17 |
-| BR/USDT:USDT | +15.36% | $5,822,558.84 |
-| ZRO/USDT:USDT | +11.06% | $5,122,474.22 |
+| MUBARAK/USDT:USDT | +18.63% | $12,469,367.76 |
+| CHR/USDT:USDT | +17.13% | $3,474,489.37 |
+| BR/USDT:USDT | +16.31% | $5,918,291.36 |
+| 4/USDT:USDT | +15.85% | $1,367,036.75 |
+| MUSEBOOK/USDT:USDT | +10.98% | $1,033,452.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| 4/USDT:USDT | below_1h_threshold | +1.99% | +2.00% |
-| KORU/USDT:USDT | below_1h_threshold | +1.64% | +1.65% |
-| FCXSTOCK/USDT:USDT | below_1h_threshold | +0.97% | +0.98% |
-| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +0.63% | +0.64% |
-| MELISTOCK/USDT:USDT | below_1h_threshold | +0.61% | +0.62% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.53% | +2.53% |
+| 4/USDT:USDT | below_1h_threshold | +2.38% | +2.38% |
+| APE/USDT:USDT | below_1h_threshold | +1.97% | +1.97% |
+| AIN/USDT:USDT | below_1h_threshold | +1.71% | +1.71% |
+| KORU/USDT:USDT | below_1h_threshold | +1.64% | +1.64% |
 
 ## 7. 次に見るべき不足
 
