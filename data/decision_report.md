@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-22T17:11:34.959613+00:00
+- generated_at: 2026-09-22T17:16:32.308334+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15344**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$122.76** / 初期 $100.00 (+22.76%)
-- 確定: 3107件 (Win 912 / Loss 1217 / Flat 978) / pending 5件 / skip 3713件
+- 確定: 3107件 (Win 912 / Loss 1217 / Flat 978) / pending 6件 / skip 3713件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000079 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: CHR/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $122.76
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-22T17:11:21.928296+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=86433.1
-- Funnel: target 1058 → liquid 182 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-22T17:16:19.008133+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=86456.7
+- Funnel: target 1058 → liquid 182 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CHR/USDT:USDT | +23.37% | $2,533,468.89 |
-| MUBARAK/USDT:USDT | +21.80% | $10,497,644.79 |
-| BR/USDT:USDT | +13.03% | $5,343,297.35 |
-| ZRO/USDT:USDT | +9.25% | $3,953,217.42 |
-| 4/USDT:USDT | +9.03% | $1,230,434.40 |
+| CHR/USDT:USDT | +24.19% | $2,688,426.82 |
+| MUBARAK/USDT:USDT | +20.90% | $10,857,155.83 |
+| BR/USDT:USDT | +14.45% | $5,463,450.96 |
+| ZRO/USDT:USDT | +10.94% | $4,082,792.77 |
+| 4/USDT:USDT | +8.94% | $1,252,612.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| 4/USDT:USDT | below_1h_threshold | +4.52% | +4.46% |
-| DASH/USDT:USDT | below_1h_threshold | +4.41% | +4.35% |
-| USELESS/USDT:USDT | below_1h_threshold | +3.24% | +3.18% |
-| ZEN/USDT:USDT | below_1h_threshold | +1.70% | +1.64% |
-| SNXX/USDT:USDT | below_1h_threshold | +1.64% | +1.58% |
+| DASH/USDT:USDT | below_1h_threshold | +4.56% | +4.47% |
+| USELESS/USDT:USDT | below_1h_threshold | +3.32% | +3.22% |
+| BR/USDT:USDT | below_1h_threshold | +2.58% | +2.49% |
+| CHR/USDT:USDT | below_1h_threshold | +2.54% | +2.45% |
+| UAI/USDT:USDT | below_1h_threshold | +2.33% | +2.24% |
 
 ## 7. 次に見るべき不足
 
