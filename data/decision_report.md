@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-22T09:56:28.400788+00:00
+- generated_at: 2026-09-22T10:01:18.909377+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15311**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-22T09:56:16.834025+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=86112.0
-- Funnel: target 1056 → liquid 183 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 90.1 >= 65=1, 4h RSI 87.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-22T10:01:10.012990+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=86170.3
+- Funnel: target 1056 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 4STOCK/USDT:USDT | +47.16% | $2,304,861.36 |
-| KERNEL/USDT:USDT | +36.01% | $4,312,637.56 |
-| MUBARAK/USDT:USDT | +33.63% | $3,522,071.39 |
-| AGT/USDT:USDT | +28.90% | $1,361,308.84 |
-| NIL/USDT:USDT | +22.97% | $3,539,082.30 |
+| 4STOCK/USDT:USDT | +45.03% | $2,296,296.84 |
+| KERNEL/USDT:USDT | +35.29% | $4,285,274.79 |
+| MUBARAK/USDT:USDT | +34.82% | $3,496,712.15 |
+| AGT/USDT:USDT | +29.19% | $1,364,256.81 |
+| NIL/USDT:USDT | +23.26% | $3,300,290.23 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| S/USDT:USDT | below_1h_threshold | +2.77% | +2.84% |
-| VVV/USDT:USDT | below_1h_threshold | +2.05% | +2.13% |
-| 4STOCK/USDT:USDT | below_1h_threshold | +1.90% | +1.97% |
-| ALCH/USDT:USDT | below_1h_threshold | +1.18% | +1.26% |
-| EGLD/USDT:USDT | below_1h_threshold | +1.10% | +1.17% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.96% | +2.01% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.83% | +1.87% |
+| MVLL/USDT:USDT | below_1h_threshold | +1.40% | +1.45% |
+| OPENSTOCK/USDT:USDT | below_1h_threshold | +1.11% | +1.16% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +1.03% | +1.08% |
 
 ## 7. 次に見るべき不足
 
