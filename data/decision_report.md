@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-22T00:21:23.019832+00:00
+- generated_at: 2026-09-22T00:26:22.437758+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15284**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$122.78** / 初期 $100.00 (+22.78%)
-- 確定: 3057件 (Win 899 / Loss 1195 / Flat 963) / pending 2件 / skip 3695件
+- 確定: 3057件 (Win 899 / Loss 1195 / Flat 963) / pending 3件 / skip 3695件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000228 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: SYN/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $122.78
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-22T00:21:11.990512+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.25% price=86368.9
-- Funnel: target 1055 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-22T00:26:11.118052+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.27% price=86350.7
+- Funnel: target 1055 → liquid 178 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 69.7 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FORM/USDT:USDT | +27.58% | $8,682,762.54 |
-| ALCH/USDT:USDT | +24.35% | $2,217,408.29 |
-| EVAA/USDT:USDT | +17.14% | $1,997,581.55 |
-| PTB/USDT:USDT | +16.75% | $1,202,843.37 |
-| GRASS/USDT:USDT | +9.78% | $2,205,912.05 |
+| FORM/USDT:USDT | +28.46% | $8,695,683.83 |
+| ALCH/USDT:USDT | +25.38% | $2,228,420.67 |
+| PTB/USDT:USDT | +18.31% | $1,204,003.52 |
+| EVAA/USDT:USDT | +17.11% | $2,009,388.43 |
+| TAO/USDT:USDT | +10.66% | $134,187,620.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PTB/USDT:USDT | below_1h_threshold | +4.05% | +4.30% |
-| PI/USDT:USDT | below_1h_threshold | +2.17% | +2.41% |
-| ALCH/USDT:USDT | below_1h_threshold | +1.87% | +2.11% |
-| UNI/USDT:USDT | below_1h_threshold | +1.79% | +2.04% |
-| EVAA/USDT:USDT | below_1h_threshold | +1.46% | +1.71% |
+| ALCH/USDT:USDT | below_1h_threshold | +2.44% | +2.71% |
+| WLD/USDT:USDT | below_1h_threshold | +2.14% | +2.41% |
+| PI/USDT:USDT | below_1h_threshold | +2.05% | +2.32% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.94% | +2.21% |
+| FORM/USDT:USDT | below_1h_threshold | +1.72% | +1.99% |
 
 ## 7. 次に見るべき不足
 
