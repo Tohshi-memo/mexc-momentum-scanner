@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-22T14:21:54.642552+00:00
+- generated_at: 2026-09-22T14:26:46.207503+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15333**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-22T14:21:37.605368+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.25% price=86081.4
-- Funnel: target 1058 → liquid 180 → pre 50 → checked 50 → surge 8 → strict 0
-- Surge前reject: below_1h_threshold=42, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.7 >= 65=2, 4h RSI 73.1 >= 65=1, 4h RSI 78.7 >= 65=1, 4h RSI 77.3 >= 65=1, 4h RSI 71.3 >= 65=1, 4h RSI 73.8 >= 65=1, 4h RSI 72.7 >= 65=1
+- 更新: 2026-09-22T14:26:35.180926+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.26% price=86080.1
+- Funnel: target 1058 → liquid 180 → pre 50 → checked 50 → surge 7 → strict 0
+- Surge前reject: below_1h_threshold=43, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 73.3 >= 65=1, 4h RSI 73.8 >= 65=1, 4h RSI 78.7 >= 65=1, 4h RSI 74.1 >= 65=1, 4h RSI 77.9 >= 65=1, 4h RSI 71.4 >= 65=1, 4h RSI 72.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 4STOCK/USDT:USDT | +65.82% | $3,740,964.79 |
-| MUBARAK/USDT:USDT | +43.61% | $7,074,129.99 |
-| NIL/USDT:USDT | +30.91% | $3,996,053.44 |
-| AGT/USDT:USDT | +25.86% | $1,956,405.26 |
-| KERNEL/USDT:USDT | +24.83% | $5,789,802.60 |
+| 4STOCK/USDT:USDT | +65.11% | $3,759,856.79 |
+| MUBARAK/USDT:USDT | +41.58% | $7,229,242.71 |
+| NIL/USDT:USDT | +32.42% | $4,087,236.75 |
+| AGT/USDT:USDT | +27.94% | $1,959,227.78 |
+| KERNEL/USDT:USDT | +25.04% | $5,797,978.66 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
+| 4STOCK/USDT:USDT | below_1h_threshold | +4.68% | +4.94% |
+| NIL/USDT:USDT | below_1h_threshold | +4.62% | +4.88% |
 | MUSTOCK/USDT:USDT | below_1h_threshold | +3.90% | +4.15% |
 | DRAM/USDT:USDT | below_1h_threshold | +3.86% | +4.12% |
 | SKHYSTOCK/USDT:USDT | below_1h_threshold | +3.72% | +3.98% |
-| NIL/USDT:USDT | below_1h_threshold | +3.33% | +3.58% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +3.31% | +3.57% |
 
 ## 7. 次に見るべき不足
 
