@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-22T05:41:10.624751+00:00
+- generated_at: 2026-09-22T05:46:18.217639+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15298**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$122.77** / 初期 $100.00 (+22.77%)
-- 確定: 3070件 (Win 903 / Loss 1202 / Flat 965) / pending 1件 / skip 3695件
+- 確定: 3070件 (Win 903 / Loss 1202 / Flat 965) / pending 2件 / skip 3695件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000231 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MUBARAK/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.26% 残高後 $122.77
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-22T05:41:02.517577+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=85364.6
-- Funnel: target 1057 → liquid 183 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-22T05:46:09.314862+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=85458.5
+- Funnel: target 1057 → liquid 184 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 71.5 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KERNEL/USDT:USDT | +35.44% | $3,222,353.47 |
-| ALCH/USDT:USDT | +21.14% | $2,542,772.16 |
-| MUBARAK/USDT:USDT | +18.76% | $1,986,408.72 |
-| GRASS/USDT:USDT | +17.56% | $2,766,371.04 |
-| FORM/USDT:USDT | +12.17% | $9,762,861.28 |
+| KERNEL/USDT:USDT | +34.32% | $3,236,123.00 |
+| ALCH/USDT:USDT | +20.69% | $2,543,755.79 |
+| MUBARAK/USDT:USDT | +18.94% | $1,998,796.86 |
+| GRASS/USDT:USDT | +18.28% | $2,779,538.86 |
+| FORM/USDT:USDT | +12.56% | $9,766,059.75 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EVAA/USDT:USDT | below_1h_threshold | +4.28% | +4.34% |
-| SAGA/USDT:USDT | below_1h_threshold | +4.18% | +4.24% |
-| ENA/USDT:USDT | below_1h_threshold | +3.47% | +3.53% |
-| TAO/USDT:USDT | below_1h_threshold | +2.25% | +2.32% |
-| 4STOCK/USDT:USDT | below_1h_threshold | +2.20% | +2.27% |
+| ENA/USDT:USDT | below_1h_threshold | +4.25% | +4.20% |
+| EVAA/USDT:USDT | below_1h_threshold | +3.36% | +3.32% |
+| FORM/USDT:USDT | below_1h_threshold | +2.43% | +2.38% |
+| TAO/USDT:USDT | below_1h_threshold | +2.30% | +2.25% |
+| PENGU/USDT:USDT | below_1h_threshold | +2.27% | +2.22% |
 
 ## 7. 次に見るべき不足
 
