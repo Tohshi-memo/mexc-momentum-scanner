@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-22T01:46:32.781148+00:00
+- generated_at: 2026-09-22T01:51:24.264791+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15288**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-22T01:46:21.302112+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.19% price=85694.5
+- 更新: 2026-09-22T01:51:12.991022+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.38% price=85530.5
 - Funnel: target 1055 → liquid 180 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 92.1 >= 65=1
@@ -81,21 +81,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KERNEL/USDT:USDT | +37.74% | $1,580,218.34 |
-| FORM/USDT:USDT | +27.25% | $8,939,244.45 |
-| ALCH/USDT:USDT | +24.26% | $2,305,497.67 |
-| GRASS/USDT:USDT | +9.89% | $2,335,432.80 |
-| TAO/USDT:USDT | +9.75% | $139,762,952.02 |
+| KERNEL/USDT:USDT | +37.15% | $1,632,319.73 |
+| FORM/USDT:USDT | +26.54% | $8,946,539.71 |
+| ALCH/USDT:USDT | +15.78% | $2,341,624.33 |
+| GRASS/USDT:USDT | +9.94% | $2,336,053.63 |
+| TAO/USDT:USDT | +9.02% | $140,241,504.78 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIL/USDT:USDT | below_1h_threshold | +3.47% | +3.67% |
-| S/USDT:USDT | below_1h_threshold | +2.61% | +2.80% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +1.74% | +1.94% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.65% | +1.84% |
-| GRT/USDT:USDT | below_1h_threshold | +1.45% | +1.64% |
+| NIL/USDT:USDT | below_1h_threshold | +3.53% | +3.92% |
+| S/USDT:USDT | below_1h_threshold | +2.06% | +2.44% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.65% | +2.03% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +1.61% | +2.00% |
+| NEAR/USDT:USDT | below_1h_threshold | +1.58% | +1.96% |
 
 ## 7. 次に見るべき不足
 
