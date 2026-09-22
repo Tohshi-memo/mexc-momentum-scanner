@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-22T06:21:21.943903+00:00
+- generated_at: 2026-09-22T06:26:12.892429+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15300**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-22T06:21:10.786519+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=85235.5
-- Funnel: target 1056 → liquid 185 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.5 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-22T06:26:01.827670+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.16% price=85234.7
+- Funnel: target 1056 → liquid 185 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KERNEL/USDT:USDT | +34.81% | $3,095,112.57 |
-| MUBARAK/USDT:USDT | +27.40% | $2,198,624.61 |
-| ALCH/USDT:USDT | +19.09% | $2,553,712.16 |
-| GRASS/USDT:USDT | +16.47% | $2,811,125.89 |
-| SAGA/USDT:USDT | +15.32% | $4,236,064.18 |
+| KERNEL/USDT:USDT | +32.06% | $3,126,300.53 |
+| MUBARAK/USDT:USDT | +29.20% | $2,213,459.29 |
+| ALCH/USDT:USDT | +19.04% | $2,554,217.36 |
+| GRASS/USDT:USDT | +16.68% | $2,816,909.95 |
+| SAGA/USDT:USDT | +12.88% | $4,297,222.35 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIL/USDT:USDT | below_1h_threshold | +3.36% | +3.52% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.44% | +2.61% |
-| CHIP/USDT:USDT | below_1h_threshold | +1.47% | +1.63% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.43% | +1.59% |
-| AKE/USDT:USDT | below_1h_threshold | +1.25% | +1.42% |
+| NIL/USDT:USDT | below_1h_threshold | +3.90% | +4.06% |
+| SAGA/USDT:USDT | below_1h_threshold | +3.02% | +3.18% |
+| CHIP/USDT:USDT | below_1h_threshold | +2.00% | +2.17% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.67% | +1.83% |
+| STRK/USDT:USDT | below_1h_threshold | +1.55% | +1.71% |
 
 ## 7. 次に見るべき不足
 
