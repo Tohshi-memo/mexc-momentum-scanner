@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-22T06:41:15.512917+00:00
+- generated_at: 2026-09-22T06:46:22.892269+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15300**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-22T06:41:07.618325+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.15% price=85502.3
+- 更新: 2026-09-22T06:46:11.573241+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=85434.5
 - Funnel: target 1056 → liquid 186 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.1 >= 65=1
+- Strict後reject: 4h RSI 85.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KERNEL/USDT:USDT | +31.39% | $3,169,194.05 |
-| MUBARAK/USDT:USDT | +29.47% | $2,266,817.84 |
-| ALCH/USDT:USDT | +21.21% | $2,558,932.89 |
-| GRASS/USDT:USDT | +17.19% | $2,827,738.11 |
-| NIL/USDT:USDT | +13.96% | $3,719,896.02 |
+| KERNEL/USDT:USDT | +31.01% | $3,176,985.28 |
+| MUBARAK/USDT:USDT | +30.99% | $2,288,798.81 |
+| ALCH/USDT:USDT | +20.93% | $2,562,351.14 |
+| GRASS/USDT:USDT | +17.62% | $2,844,232.51 |
+| NIL/USDT:USDT | +16.78% | $3,770,017.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CHIP/USDT:USDT | below_1h_threshold | +2.60% | +2.45% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +1.70% | +1.55% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.67% | +1.52% |
-| MINA/USDT:USDT | below_1h_threshold | +1.57% | +1.42% |
-| EGLD/USDT:USDT | below_1h_threshold | +1.46% | +1.31% |
+| CHIP/USDT:USDT | below_1h_threshold | +2.18% | +2.11% |
+| EGLD/USDT:USDT | below_1h_threshold | +1.95% | +1.88% |
+| SEI/USDT:USDT | below_1h_threshold | +1.68% | +1.61% |
+| VVV/USDT:USDT | below_1h_threshold | +1.31% | +1.24% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +1.16% | +1.09% |
 
 ## 7. 次に見るべき不足
 
