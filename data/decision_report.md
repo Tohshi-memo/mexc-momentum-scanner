@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-22T11:56:37.532472+00:00
+- generated_at: 2026-09-22T12:01:26.897240+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15323**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-22T11:56:23.129790+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=85913.5
-- Funnel: target 1058 → liquid 177 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.7 >= 65=1, 4h RSI 72.3 >= 65=1, 4h RSI 91.9 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-22T12:01:15.641327+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=85969.8
+- Funnel: target 1058 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 4STOCK/USDT:USDT | +63.38% | $3,396,634.68 |
-| MUBARAK/USDT:USDT | +47.81% | $4,712,320.88 |
-| AGT/USDT:USDT | +40.13% | $1,789,715.76 |
-| KERNEL/USDT:USDT | +32.63% | $4,557,956.92 |
-| MARSCOIN/USDT:USDT | +24.45% | $2,020,376.03 |
+| 4STOCK/USDT:USDT | +59.63% | $3,364,964.11 |
+| MUBARAK/USDT:USDT | +48.06% | $4,493,618.15 |
+| AGT/USDT:USDT | +41.25% | $1,801,353.34 |
+| KERNEL/USDT:USDT | +31.72% | $5,088,403.07 |
+| NIL/USDT:USDT | +21.65% | $3,457,727.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RAY/USDT:USDT | below_1h_threshold | +2.54% | +2.48% |
-| TAO/USDT:USDT | below_1h_threshold | +2.52% | +2.46% |
-| LAB/USDT:USDT | below_1h_threshold | +2.42% | +2.36% |
-| QNT/USDT:USDT | below_1h_threshold | +2.17% | +2.11% |
-| USELESS/USDT:USDT | below_1h_threshold | +2.08% | +2.03% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.54% | +1.51% |
+| NEAR/USDT:USDT | below_1h_threshold | +0.53% | +0.50% |
+| MSFTSTOCK/USDT:USDT | below_1h_threshold | +0.43% | +0.41% |
+| LAB/USDT:USDT | below_1h_threshold | +0.42% | +0.40% |
+| OPENSTOCK/USDT:USDT | below_1h_threshold | +0.37% | +0.34% |
 
 ## 7. 次に見るべき不足
 
