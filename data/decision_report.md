@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-22T04:51:27.356880+00:00
+- generated_at: 2026-09-22T04:56:26.457068+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15295**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-22T04:51:13.525340+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.29% price=85411.7
+- 更新: 2026-09-22T04:56:11.728237+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.19% price=85499.5
 - Funnel: target 1057 → liquid 181 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.1 >= 65=1
+- Strict後reject: 4h RSI 87.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KERNEL/USDT:USDT | +35.59% | $3,121,112.12 |
-| MUBARAK/USDT:USDT | +20.22% | $1,731,976.02 |
-| ALCH/USDT:USDT | +18.81% | $2,491,551.70 |
-| GRASS/USDT:USDT | +15.75% | $2,576,581.30 |
-| FORM/USDT:USDT | +12.84% | $9,675,434.60 |
+| KERNEL/USDT:USDT | +35.02% | $3,132,283.02 |
+| MUBARAK/USDT:USDT | +22.37% | $1,755,504.26 |
+| ALCH/USDT:USDT | +19.27% | $2,501,107.34 |
+| GRASS/USDT:USDT | +17.59% | $2,622,291.74 |
+| FORM/USDT:USDT | +12.98% | $9,680,631.17 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| 1000BONK/USDT:USDT | below_1h_threshold | +2.89% | +3.18% |
-| H/USDT:USDT | below_1h_threshold | +2.33% | +2.63% |
-| GRASS/USDT:USDT | below_1h_threshold | +1.95% | +2.24% |
-| SAGA/USDT:USDT | below_1h_threshold | +1.52% | +1.81% |
-| LAB/USDT:USDT | below_1h_threshold | +1.40% | +1.69% |
+| GRASS/USDT:USDT | below_1h_threshold | +3.40% | +3.59% |
+| 1000BONK/USDT:USDT | below_1h_threshold | +3.03% | +3.23% |
+| H/USDT:USDT | below_1h_threshold | +2.39% | +2.58% |
+| LAB/USDT:USDT | below_1h_threshold | +2.02% | +2.21% |
+| SAGA/USDT:USDT | below_1h_threshold | +1.98% | +2.17% |
 
 ## 7. 次に見るべき不足
 
