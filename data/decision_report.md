@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-22T07:51:36.842223+00:00
+- generated_at: 2026-09-22T07:56:30.860272+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15306**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-22T07:51:21.926289+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=85261.4
-- Funnel: target 1056 → liquid 189 → pre 50 → checked 50 → surge 4 → strict 1
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.3 >= 65=1, 4h RSI 78.9 >= 65=1, 4h RSI 92.1 >= 65=1
+- 更新: 2026-09-22T07:56:16.707362+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=85279.1
+- Funnel: target 1056 → liquid 189 → pre 50 → checked 50 → surge 3 → strict 2
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 79.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +50.08% | $1,053,556.56 |
-| KERNEL/USDT:USDT | +38.01% | $3,344,746.94 |
-| 4STOCK/USDT:USDT | +37.11% | $1,610,054.48 |
-| ALCH/USDT:USDT | +19.83% | $2,620,717.65 |
-| GRASS/USDT:USDT | +19.67% | $2,999,509.21 |
+| AGT/USDT:USDT | +52.47% | $1,065,364.72 |
+| KERNEL/USDT:USDT | +37.93% | $3,362,129.14 |
+| 4STOCK/USDT:USDT | +34.68% | $1,642,596.10 |
+| MUBARAK/USDT:USDT | +21.56% | $2,854,245.84 |
+| GRASS/USDT:USDT | +20.07% | $3,017,127.35 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PUMPFUN/USDT:USDT | below_1h_threshold | +2.61% | +2.72% |
-| SEI/USDT:USDT | below_1h_threshold | +2.32% | +2.42% |
-| AKT/USDT:USDT | below_1h_threshold | +2.27% | +2.38% |
-| DASH/USDT:USDT | below_1h_threshold | +1.89% | +2.00% |
-| HBAR/USDT:USDT | below_1h_threshold | +1.83% | +1.93% |
+| KERNEL/USDT:USDT | below_1h_threshold | +4.99% | +5.07% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.87% | +2.95% |
+| AKT/USDT:USDT | below_1h_threshold | +2.24% | +2.33% |
+| SAGA/USDT:USDT | below_1h_threshold | +2.23% | +2.32% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.90% | +1.98% |
 
 ## 7. 次に見るべき不足
 
