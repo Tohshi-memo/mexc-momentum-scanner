@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-22T02:51:31.143266+00:00
+- generated_at: 2026-09-22T02:56:25.740772+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15290**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-22T02:51:17.456515+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.19% price=85750.0
-- Funnel: target 1055 → liquid 179 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.2 >= 65=1, 4h RSI 72.0 >= 65=1
+- 更新: 2026-09-22T02:56:14.486266+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=85679.9
+- Funnel: target 1055 → liquid 180 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KERNEL/USDT:USDT | +37.89% | $2,411,323.21 |
-| FORM/USDT:USDT | +22.74% | $9,111,155.81 |
-| ALCH/USDT:USDT | +20.20% | $2,403,917.67 |
-| GRASS/USDT:USDT | +12.98% | $2,398,072.07 |
-| NEAR/USDT:USDT | +11.42% | $148,040,429.29 |
+| KERNEL/USDT:USDT | +38.45% | $2,440,365.60 |
+| FORM/USDT:USDT | +20.07% | $9,190,001.29 |
+| ALCH/USDT:USDT | +19.51% | $2,407,652.62 |
+| GRASS/USDT:USDT | +13.48% | $2,400,520.51 |
+| NIL/USDT:USDT | +9.71% | $4,434,803.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ONE/USDT:USDT | below_relative_strength | +5.11% | +4.92% |
-| NEAR/USDT:USDT | below_1h_threshold | +3.50% | +3.31% |
-| CRO/USDT:USDT | below_1h_threshold | +2.64% | +2.45% |
-| GRASS/USDT:USDT | below_1h_threshold | +2.62% | +2.42% |
-| RAY/USDT:USDT | below_1h_threshold | +2.38% | +2.19% |
+| PHA/USDT:USDT | below_1h_threshold | +4.70% | +4.59% |
+| GRASS/USDT:USDT | below_1h_threshold | +3.10% | +2.99% |
+| ONE/USDT:USDT | below_1h_threshold | +2.63% | +2.52% |
+| NEAR/USDT:USDT | below_1h_threshold | +2.15% | +2.04% |
+| CRO/USDT:USDT | below_1h_threshold | +1.87% | +1.76% |
 
 ## 7. 次に見るべき不足
 
