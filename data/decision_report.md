@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-22T05:51:27.917879+00:00
+- generated_at: 2026-09-22T05:56:22.427506+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15298**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$122.77** / 初期 $100.00 (+22.77%)
-- 確定: 3070件 (Win 903 / Loss 1202 / Flat 965) / pending 2件 / skip 3695件
+- 確定: 3070件 (Win 903 / Loss 1202 / Flat 965) / pending 3件 / skip 3695件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000231 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MUBARAK/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.26% 残高後 $122.77
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-22T05:51:16.844013+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=85489.0
-- Funnel: target 1057 → liquid 185 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.6 >= 65=1
+- 更新: 2026-09-22T05:56:10.770284+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=85490.7
+- Funnel: target 1057 → liquid 185 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 88.7 >= 65=1, 4h RSI 71.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KERNEL/USDT:USDT | +34.51% | $3,244,166.29 |
-| MUBARAK/USDT:USDT | +22.57% | $2,016,779.10 |
-| ALCH/USDT:USDT | +20.55% | $2,546,924.57 |
-| GRASS/USDT:USDT | +17.78% | $2,789,228.49 |
-| FORM/USDT:USDT | +12.45% | $9,774,294.29 |
+| KERNEL/USDT:USDT | +36.30% | $3,251,851.58 |
+| MUBARAK/USDT:USDT | +28.76% | $2,068,372.78 |
+| ALCH/USDT:USDT | +19.86% | $2,551,722.91 |
+| GRASS/USDT:USDT | +18.02% | $2,795,646.58 |
+| FORM/USDT:USDT | +12.41% | $9,781,742.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| 1000BONK/USDT:USDT | below_relative_strength | +5.03% | +4.95% |
-| PENGU/USDT:USDT | below_1h_threshold | +3.96% | +3.88% |
-| ENA/USDT:USDT | below_1h_threshold | +3.94% | +3.86% |
-| MINA/USDT:USDT | below_1h_threshold | +2.94% | +2.86% |
-| S/USDT:USDT | below_1h_threshold | +2.89% | +2.80% |
+| TAO/USDT:USDT | below_1h_threshold | +3.82% | +3.73% |
+| ENA/USDT:USDT | below_1h_threshold | +3.63% | +3.55% |
+| 4STOCK/USDT:USDT | below_1h_threshold | +3.60% | +3.52% |
+| 1000BONK/USDT:USDT | below_1h_threshold | +3.49% | +3.40% |
+| PENGU/USDT:USDT | below_1h_threshold | +3.47% | +3.38% |
 
 ## 7. 次に見るべき不足
 
