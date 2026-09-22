@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-22T02:16:18.701218+00:00
+- generated_at: 2026-09-22T02:21:21.325246+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15288**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-22T02:16:07.781763+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=85587.8
+- 更新: 2026-09-22T02:21:10.408332+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=85538.0
 - Funnel: target 1055 → liquid 179 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KERNEL/USDT:USDT | +42.04% | $1,981,846.09 |
-| FORM/USDT:USDT | +24.94% | $9,011,304.37 |
-| ALCH/USDT:USDT | +19.60% | $2,386,113.66 |
-| GRASS/USDT:USDT | +11.59% | $2,331,753.76 |
-| TAO/USDT:USDT | +10.26% | $138,753,682.10 |
+| KERNEL/USDT:USDT | +44.43% | $2,034,190.40 |
+| FORM/USDT:USDT | +25.94% | $9,022,758.28 |
+| ALCH/USDT:USDT | +19.20% | $2,387,921.47 |
+| GRASS/USDT:USDT | +12.47% | $2,338,295.63 |
+| TAO/USDT:USDT | +10.63% | $139,370,670.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KERNEL/USDT:USDT | below_1h_threshold | +2.30% | +2.30% |
-| RENDER/USDT:USDT | below_1h_threshold | +1.57% | +1.57% |
-| ALCH/USDT:USDT | below_1h_threshold | +1.52% | +1.52% |
-| GRASS/USDT:USDT | below_1h_threshold | +1.36% | +1.35% |
-| S/USDT:USDT | below_1h_threshold | +1.33% | +1.33% |
+| KERNEL/USDT:USDT | below_1h_threshold | +4.54% | +4.59% |
+| GRASS/USDT:USDT | below_1h_threshold | +2.18% | +2.23% |
+| RENDER/USDT:USDT | below_1h_threshold | +2.16% | +2.22% |
+| PTB/USDT:USDT | below_1h_threshold | +1.41% | +1.46% |
+| S/USDT:USDT | below_1h_threshold | +1.26% | +1.32% |
 
 ## 7. 次に見るべき不足
 
