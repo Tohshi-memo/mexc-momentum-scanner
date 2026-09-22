@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-22T02:36:30.811414+00:00
+- generated_at: 2026-09-22T02:41:18.679865+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15289**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$122.55** / 初期 $100.00 (+22.55%)
-- 確定: 3061件 (Win 900 / Loss 1198 / Flat 963) / pending 2件 / skip 3695件
+- 確定: 3061件 (Win 900 / Loss 1198 / Flat 963) / pending 3件 / skip 3695件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000222 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: KERNEL/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $122.55
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-22T02:36:17.844432+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.15% price=85712.9
-- Funnel: target 1055 → liquid 179 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-22T02:41:07.615602+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.21% price=85760.9
+- Funnel: target 1055 → liquid 179 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 71.6 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KERNEL/USDT:USDT | +41.98% | $2,281,939.02 |
-| FORM/USDT:USDT | +23.77% | $9,056,364.91 |
-| ALCH/USDT:USDT | +20.27% | $2,396,746.37 |
-| GRASS/USDT:USDT | +13.83% | $2,375,543.34 |
-| TAO/USDT:USDT | +12.31% | $141,771,148.15 |
+| KERNEL/USDT:USDT | +40.18% | $2,330,363.83 |
+| FORM/USDT:USDT | +23.91% | $9,065,859.46 |
+| ALCH/USDT:USDT | +19.95% | $2,398,446.52 |
+| GRASS/USDT:USDT | +13.54% | $2,384,092.47 |
+| TAO/USDT:USDT | +12.25% | $142,254,306.63 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GRASS/USDT:USDT | below_1h_threshold | +3.41% | +3.27% |
-| NEAR/USDT:USDT | below_1h_threshold | +3.09% | +2.94% |
-| ONE/USDT:USDT | below_1h_threshold | +2.86% | +2.71% |
-| TAO/USDT:USDT | below_1h_threshold | +2.59% | +2.44% |
-| SEI/USDT:USDT | below_1h_threshold | +2.55% | +2.40% |
+| ZETA/USDT:USDT | below_1h_threshold | +4.84% | +4.64% |
+| PHA/USDT:USDT | below_1h_threshold | +4.76% | +4.55% |
+| NEAR/USDT:USDT | below_1h_threshold | +4.48% | +4.28% |
+| ONE/USDT:USDT | below_1h_threshold | +3.14% | +2.94% |
+| GRASS/USDT:USDT | below_1h_threshold | +3.12% | +2.92% |
 
 ## 7. 次に見るべき不足
 
