@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-22T20:36:34.753899+00:00
+- generated_at: 2026-09-22T20:41:27.394588+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15358**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$122.36** / 初期 $100.00 (+22.36%)
-- 確定: 3113件 (Win 914 / Loss 1221 / Flat 978) / pending 5件 / skip 3720件
+- 確定: 3113件 (Win 914 / Loss 1221 / Flat 978) / pending 6件 / skip 3720件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000048 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: NIL/USDT:USDT `MARKET` TP_HIT account +0.34% 残高後 $122.36
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-22T20:36:20.719183+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=86284.8
-- Funnel: target 1058 → liquid 189 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.9 >= 65=1, 4h RSI 89.0 >= 65=1
+- 更新: 2026-09-22T20:41:16.016328+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.19% price=86299.9
+- Funnel: target 1058 → liquid 190 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 79.5 >= 65=1, 4h RSI 89.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DRIFT/USDT:USDT | +33.86% | $1,384,655.66 |
-| FOLKS/USDT:USDT | +22.55% | $1,069,531.98 |
-| 4/USDT:USDT | +19.26% | $1,953,888.79 |
-| MUBARAK/USDT:USDT | +17.31% | $15,752,601.52 |
-| USELESS/USDT:USDT | +15.25% | $9,792,254.45 |
+| MUSEBOOK/USDT:USDT | +51.61% | $1,043,690.99 |
+| DRIFT/USDT:USDT | +34.79% | $1,405,206.61 |
+| FOLKS/USDT:USDT | +22.33% | $1,135,976.12 |
+| MUBARAK/USDT:USDT | +18.44% | $15,812,644.82 |
+| 4/USDT:USDT | +18.15% | $1,973,681.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PONS/USDT:USDT | below_1h_threshold | +3.53% | +3.36% |
-| ZRO/USDT:USDT | below_1h_threshold | +2.57% | +2.40% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +2.36% | +2.19% |
-| UNI/USDT:USDT | below_1h_threshold | +2.20% | +2.03% |
-| CHZ/USDT:USDT | below_1h_threshold | +2.09% | +1.93% |
+| USELESS/USDT:USDT | below_relative_strength | +5.08% | +4.89% |
+| PONS/USDT:USDT | below_1h_threshold | +3.54% | +3.36% |
+| PENGU/USDT:USDT | below_1h_threshold | +2.32% | +2.14% |
+| DRIFT/USDT:USDT | below_1h_threshold | +2.16% | +1.97% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +1.88% | +1.69% |
 
 ## 7. 次に見るべき不足
 
