@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-23T18:11:34.184798+00:00
+- generated_at: 2026-09-23T18:16:34.074491+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15442**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-23T18:11:18.686969+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=84196.8
+- 更新: 2026-09-23T18:16:20.250096+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=84186.7
 - Funnel: target 1061 → liquid 192 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MARSCOIN/USDT:USDT | +8.57% | $3,652,765.50 |
-| PENDLE/USDT:USDT | +5.93% | $2,853,013.60 |
-| ZRO/USDT:USDT | +5.76% | $10,723,816.56 |
-| BR/USDT:USDT | +5.36% | $6,241,921.50 |
-| FIGHT/USDT:USDT | +4.65% | $1,196,742.65 |
+| MARSCOIN/USDT:USDT | +9.49% | $3,670,463.83 |
+| BR/USDT:USDT | +7.80% | $6,442,109.57 |
+| ZRO/USDT:USDT | +5.99% | $10,736,567.48 |
+| PENDLE/USDT:USDT | +5.75% | $2,881,071.64 |
+| SAGA/USDT:USDT | +5.25% | $4,028,352.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ONE/USDT:USDT | below_1h_threshold | +2.47% | +2.57% |
-| SOXL/USDT:USDT | below_1h_threshold | +2.24% | +2.34% |
-| LSK/USDT:USDT | below_1h_threshold | +1.94% | +2.04% |
-| NIL/USDT:USDT | below_1h_threshold | +1.77% | +1.87% |
-| BTW/USDT:USDT | below_1h_threshold | +1.25% | +1.34% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.24% | +2.35% |
+| AKE/USDT:USDT | below_1h_threshold | +2.07% | +2.18% |
+| BTW/USDT:USDT | below_1h_threshold | +2.01% | +2.12% |
+| NIL/USDT:USDT | below_1h_threshold | +1.86% | +1.97% |
+| ONE/USDT:USDT | below_1h_threshold | +1.26% | +1.37% |
 
 ## 7. 次に見るべき不足
 
