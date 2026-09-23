@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-23T16:16:41.599065+00:00
+- generated_at: 2026-09-23T16:21:51.318368+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15437**
 
@@ -70,31 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-23T16:16:27.872266+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.34% price=84248.8
-- Funnel: target 1061 → liquid 194 → pre 50 → checked 50 → surge 2 → strict 2
-- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-23T16:21:41.939006+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.30% price=84216.4
+- Funnel: target 1061 → liquid 194 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MARSCOIN/USDT:USDT | +6.78% | $3,082,782.17 |
-| TAKE/USDT:USDT | +6.28% | $11,579,818.01 |
-| USELESS/USDT:USDT | +5.28% | $10,473,325.05 |
-| BLESS/USDT:USDT | +4.17% | $1,583,286.61 |
-| ZRO/USDT:USDT | +3.94% | $12,743,364.34 |
+| MARSCOIN/USDT:USDT | +9.71% | $3,131,470.78 |
+| TAKE/USDT:USDT | +4.79% | $11,616,022.26 |
+| ZRO/USDT:USDT | +4.69% | $12,808,219.54 |
+| USELESS/USDT:USDT | +3.83% | $10,516,466.44 |
+| BLESS/USDT:USDT | +3.39% | $1,594,866.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| USELESS/USDT:USDT | below_relative_strength | +5.07% | +4.72% |
-| ON/USDT:USDT | below_1h_threshold | +4.21% | +3.87% |
-| BLESS/USDT:USDT | below_1h_threshold | +3.93% | +3.59% |
-| ZRO/USDT:USDT | below_1h_threshold | +3.87% | +3.52% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +2.96% | +2.62% |
+| ZRO/USDT:USDT | below_1h_threshold | +4.70% | +4.40% |
+| TAKE/USDT:USDT | below_1h_threshold | +4.61% | +4.31% |
+| USELESS/USDT:USDT | below_1h_threshold | +3.80% | +3.50% |
+| BLESS/USDT:USDT | below_1h_threshold | +3.39% | +3.09% |
+| RAY/USDT:USDT | below_1h_threshold | +2.96% | +2.66% |
 
 ## 7. 次に見るべき不足
 
