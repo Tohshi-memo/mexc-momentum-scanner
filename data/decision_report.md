@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-23T05:11:17.743181+00:00
+- generated_at: 2026-09-23T05:16:22.374111+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15392**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-23T05:11:08.193229+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.26% price=86889.8
+- 更新: 2026-09-23T05:16:11.092939+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.25% price=86897.4
 - Funnel: target 1058 → liquid 192 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SHROOM/USDT:USDT | +66.03% | $1,204,524.04 |
-| NIL/USDT:USDT | +20.25% | $6,593,445.25 |
-| ALLO/USDT:USDT | +17.86% | $2,623,927.54 |
-| PENGU/USDT:USDT | +17.67% | $16,488,832.86 |
-| USELESS/USDT:USDT | +16.85% | $11,045,602.89 |
+| SHROOM/USDT:USDT | +67.10% | $1,205,471.87 |
+| NIL/USDT:USDT | +21.96% | $6,630,400.36 |
+| ALLO/USDT:USDT | +17.90% | $2,624,626.08 |
+| USELESS/USDT:USDT | +17.39% | $11,063,896.20 |
+| PENGU/USDT:USDT | +16.89% | $16,534,768.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIL/USDT:USDT | below_1h_threshold | +3.05% | +3.31% |
-| GRASS/USDT:USDT | below_1h_threshold | +2.66% | +2.91% |
-| SHROOM/USDT:USDT | below_1h_threshold | +2.54% | +2.80% |
-| CHR/USDT:USDT | below_1h_threshold | +1.93% | +2.19% |
-| HNT/USDT:USDT | below_1h_threshold | +1.43% | +1.69% |
+| NIL/USDT:USDT | below_1h_threshold | +4.78% | +5.03% |
+| SHROOM/USDT:USDT | below_1h_threshold | +3.65% | +3.90% |
+| GRASS/USDT:USDT | below_1h_threshold | +3.12% | +3.37% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +2.83% | +3.08% |
+| HNT/USDT:USDT | below_1h_threshold | +2.54% | +2.79% |
 
 ## 7. 次に見るべき不足
 
