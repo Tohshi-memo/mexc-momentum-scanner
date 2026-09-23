@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-23T17:46:22.206726+00:00
+- generated_at: 2026-09-23T17:51:16.304483+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15441**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-23T17:46:10.984931+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.26% price=84219.2
-- Funnel: target 1061 → liquid 194 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-23T17:51:08.233274+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.33% price=84274.8
+- Funnel: target 1061 → liquid 195 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MARSCOIN/USDT:USDT | +12.44% | $3,736,192.63 |
-| PENDLE/USDT:USDT | +6.08% | $2,684,200.98 |
-| BTW/USDT:USDT | +4.96% | $2,943,904.94 |
-| ENA/USDT:USDT | +4.95% | $32,556,311.98 |
-| COTI/USDT:USDT | +4.91% | $1,821,533.74 |
+| MARSCOIN/USDT:USDT | +10.91% | $3,765,742.29 |
+| PENDLE/USDT:USDT | +8.25% | $2,743,420.11 |
+| ZRO/USDT:USDT | +5.94% | $12,088,468.30 |
+| ENA/USDT:USDT | +5.59% | $32,746,143.60 |
+| CHR/USDT:USDT | +4.96% | $3,810,845.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| COTI/USDT:USDT | below_1h_threshold | +2.76% | +2.49% |
-| PENDLE/USDT:USDT | below_1h_threshold | +2.73% | +2.46% |
-| ZRO/USDT:USDT | below_1h_threshold | +2.50% | +2.23% |
-| VVV/USDT:USDT | below_1h_threshold | +2.21% | +1.95% |
-| KAS/USDT:USDT | below_1h_threshold | +2.18% | +1.92% |
+| PENDLE/USDT:USDT | below_1h_threshold | +4.83% | +4.50% |
+| ZRO/USDT:USDT | below_1h_threshold | +3.74% | +3.41% |
+| SAGA/USDT:USDT | below_1h_threshold | +3.09% | +2.76% |
+| COTI/USDT:USDT | below_1h_threshold | +3.06% | +2.73% |
+| ENA/USDT:USDT | below_1h_threshold | +2.32% | +1.99% |
 
 ## 7. 次に見るべき不足
 
