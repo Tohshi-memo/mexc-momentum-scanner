@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-23T01:36:26.624585+00:00
+- generated_at: 2026-09-23T01:41:30.737006+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15380**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$122.56** / 初期 $100.00 (+22.56%)
-- 確定: 3123件 (Win 919 / Loss 1225 / Flat 979) / pending 6件 / skip 3724件
+- 確定: 3123件 (Win 919 / Loss 1225 / Flat 979) / pending 6件 / skip 3725件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000127 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: UNI/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $122.56
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-23T01:36:12.732941+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=86507.3
+- 更新: 2026-09-23T01:41:18.806611+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=86363.4
 - Funnel: target 1058 → liquid 191 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.4 >= 65=1, 4h RSI 84.7 >= 65=1
+- Strict後reject: 4h RSI 78.6 >= 65=1, 4h RSI 84.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SHROOM/USDT:USDT | +72.10% | $1,005,761.76 |
-| FOLKS/USDT:USDT | +23.96% | $5,328,191.56 |
-| ALLO/USDT:USDT | +17.06% | $2,287,243.72 |
-| DRIFT/USDT:USDT | +16.32% | $1,760,702.77 |
-| 4/USDT:USDT | +15.27% | $2,620,752.70 |
+| SHROOM/USDT:USDT | +66.52% | $1,020,839.11 |
+| FOLKS/USDT:USDT | +29.74% | $5,460,280.74 |
+| ALLO/USDT:USDT | +16.35% | $2,302,990.56 |
+| DRIFT/USDT:USDT | +15.61% | $1,761,590.13 |
+| 4/USDT:USDT | +14.48% | $2,628,435.82 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BSV/USDT:USDT | below_1h_threshold | +4.85% | +4.75% |
-| CAKE/USDT:USDT | below_1h_threshold | +3.66% | +3.56% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +3.23% | +3.13% |
-| ZRO/USDT:USDT | below_1h_threshold | +3.00% | +2.90% |
-| 1000BONK/USDT:USDT | below_1h_threshold | +2.74% | +2.64% |
+| BSV/USDT:USDT | below_1h_threshold | +4.85% | +4.92% |
+| NIL/USDT:USDT | below_1h_threshold | +4.73% | +4.80% |
+| CAKE/USDT:USDT | below_1h_threshold | +4.19% | +4.26% |
+| 1000BONK/USDT:USDT | below_1h_threshold | +3.42% | +3.49% |
+| ZRO/USDT:USDT | below_1h_threshold | +3.32% | +3.39% |
 
 ## 7. 次に見るべき不足
 
