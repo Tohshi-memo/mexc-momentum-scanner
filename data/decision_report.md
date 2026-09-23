@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-23T00:16:30.040303+00:00
+- generated_at: 2026-09-23T00:21:15.102308+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15374**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-23T00:16:18.476756+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=86302.0
+- 更新: 2026-09-23T00:21:07.062153+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.32% price=86435.6
 - Funnel: target 1058 → liquid 187 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 93.6 >= 65=1
@@ -81,21 +81,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FOLKS/USDT:USDT | +45.29% | $3,827,161.22 |
-| DRIFT/USDT:USDT | +23.06% | $1,702,708.10 |
-| 4/USDT:USDT | +21.92% | $2,443,002.53 |
-| ALLO/USDT:USDT | +17.54% | $2,035,621.52 |
-| TIA/USDT:USDT | +15.44% | $27,222,668.98 |
+| FOLKS/USDT:USDT | +44.80% | $4,029,436.28 |
+| DRIFT/USDT:USDT | +23.01% | $1,705,197.40 |
+| 4/USDT:USDT | +21.03% | $2,449,407.58 |
+| ALLO/USDT:USDT | +17.57% | $2,045,268.05 |
+| TIA/USDT:USDT | +15.08% | $27,344,909.82 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ARB/USDT:USDT | below_1h_threshold | +3.96% | +3.79% |
-| UNI/USDT:USDT | below_1h_threshold | +2.06% | +1.90% |
-| LAB/USDT:USDT | below_1h_threshold | +2.00% | +1.83% |
-| KAITO/USDT:USDT | below_1h_threshold | +1.71% | +1.55% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +1.63% | +1.47% |
+| INJ/USDT:USDT | below_1h_threshold | +5.00% | +4.68% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +3.77% | +3.45% |
+| ARB/USDT:USDT | below_1h_threshold | +3.06% | +2.74% |
+| PHA/USDT:USDT | below_1h_threshold | +2.06% | +1.73% |
+| ZEN/USDT:USDT | below_1h_threshold | +1.91% | +1.59% |
 
 ## 7. 次に見るべき不足
 
