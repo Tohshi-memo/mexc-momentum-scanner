@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-23T00:41:29.197610+00:00
+- generated_at: 2026-09-23T00:46:21.700447+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15376**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$122.78** / 初期 $100.00 (+22.78%)
-- 確定: 3122件 (Win 919 / Loss 1224 / Flat 979) / pending 4件 / skip 3724件
+- 確定: 3122件 (Win 919 / Loss 1224 / Flat 979) / pending 5件 / skip 3724件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000068 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: FOLKS/USDT:USDT `MARKET` TP_HIT account +0.34% 残高後 $122.78
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-23T00:41:16.108032+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.39% price=86497.9
-- Funnel: target 1058 → liquid 188 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-23T00:46:10.523967+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.32% price=86432.0
+- Funnel: target 1058 → liquid 188 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 84.0 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FOLKS/USDT:USDT | +35.75% | $4,511,787.36 |
-| DRIFT/USDT:USDT | +22.84% | $1,729,566.13 |
-| ZAMA/USDT:USDT | +17.29% | $2,249,085.57 |
-| ALLO/USDT:USDT | +17.06% | $2,099,322.71 |
-| 4/USDT:USDT | +15.85% | $2,524,805.52 |
+| FOLKS/USDT:USDT | +29.20% | $4,678,076.26 |
+| DRIFT/USDT:USDT | +21.64% | $1,731,193.66 |
+| ALLO/USDT:USDT | +17.38% | $2,112,969.69 |
+| ZAMA/USDT:USDT | +16.35% | $2,280,022.45 |
+| TIA/USDT:USDT | +14.68% | $29,683,127.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VVV/USDT:USDT | below_1h_threshold | +4.19% | +3.79% |
-| INJ/USDT:USDT | below_1h_threshold | +3.25% | +2.86% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +2.43% | +2.03% |
-| ARB/USDT:USDT | below_1h_threshold | +2.33% | +1.94% |
-| KERNEL/USDT:USDT | below_1h_threshold | +1.93% | +1.54% |
+| VVV/USDT:USDT | below_1h_threshold | +3.25% | +2.93% |
+| EVAA/USDT:USDT | below_1h_threshold | +2.86% | +2.54% |
+| INJ/USDT:USDT | below_1h_threshold | +2.24% | +1.92% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +1.88% | +1.57% |
+| ARB/USDT:USDT | below_1h_threshold | +1.78% | +1.47% |
 
 ## 7. 次に見るべき不足
 
