@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-23T19:31:29.807263+00:00
+- generated_at: 2026-09-23T19:36:26.687373+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15444**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-23T19:31:18.649742+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=84371.0
+- 更新: 2026-09-23T19:36:15.906684+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=84420.8
 - Funnel: target 1061 → liquid 194 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MARSCOIN/USDT:USDT | +11.75% | $3,541,550.58 |
-| BR/USDT:USDT | +8.58% | $7,073,209.45 |
-| UAI/USDT:USDT | +7.63% | $2,336,521.44 |
-| ZRO/USDT:USDT | +7.46% | $10,370,137.35 |
-| LSK/USDT:USDT | +6.82% | $2,658,968.54 |
+| MARSCOIN/USDT:USDT | +12.37% | $3,551,855.96 |
+| BR/USDT:USDT | +8.37% | $7,089,878.12 |
+| UAI/USDT:USDT | +7.21% | $2,340,270.13 |
+| LSK/USDT:USDT | +7.17% | $2,676,245.25 |
+| ZRO/USDT:USDT | +6.50% | $10,442,918.93 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LSK/USDT:USDT | below_1h_threshold | +2.49% | +2.38% |
-| GRASS/USDT:USDT | below_1h_threshold | +1.58% | +1.47% |
-| ZRO/USDT:USDT | below_1h_threshold | +1.48% | +1.37% |
-| NIL/USDT:USDT | below_1h_threshold | +1.44% | +1.33% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +1.37% | +1.26% |
+| LSK/USDT:USDT | below_1h_threshold | +2.82% | +2.65% |
+| LIT/USDT:USDT | below_1h_threshold | +1.37% | +1.21% |
+| 1000BONK/USDT:USDT | below_1h_threshold | +0.98% | +0.81% |
+| XPL/USDT:USDT | below_1h_threshold | +0.92% | +0.76% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +0.87% | +0.70% |
 
 ## 7. 次に見るべき不足
 
