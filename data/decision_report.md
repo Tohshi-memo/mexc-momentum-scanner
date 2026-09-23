@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-23T01:51:33.135644+00:00
+- generated_at: 2026-09-23T01:56:12.634288+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15381**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-23T01:51:20.816801+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.24% price=86217.6
-- Funnel: target 1058 → liquid 191 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 88.3 >= 65=1, 4h RSI 77.6 >= 65=1, 4h RSI 84.4 >= 65=1
+- 更新: 2026-09-23T01:56:04.125081+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.28% price=86177.8
+- Funnel: target 1058 → liquid 191 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 84.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SHROOM/USDT:USDT | +57.01% | $1,047,992.03 |
-| FOLKS/USDT:USDT | +33.09% | $5,682,628.03 |
-| ALLO/USDT:USDT | +18.29% | $2,354,130.45 |
-| ZAMA/USDT:USDT | +15.18% | $2,361,852.41 |
-| 4/USDT:USDT | +14.52% | $2,642,881.08 |
+| SHROOM/USDT:USDT | +64.06% | $1,059,265.28 |
+| FOLKS/USDT:USDT | +30.69% | $5,720,660.78 |
+| ALLO/USDT:USDT | +17.88% | $2,376,126.39 |
+| ZAMA/USDT:USDT | +14.64% | $2,372,634.83 |
+| 4/USDT:USDT | +14.48% | $2,649,001.86 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CAKE/USDT:USDT | below_1h_threshold | +4.04% | +4.28% |
-| AERO/USDT:USDT | below_1h_threshold | +2.62% | +2.86% |
-| ZRO/USDT:USDT | below_1h_threshold | +2.42% | +2.66% |
-| ALLO/USDT:USDT | below_1h_threshold | +2.08% | +2.31% |
-| ZAMA/USDT:USDT | below_1h_threshold | +1.97% | +2.20% |
+| GRASS/USDT:USDT | below_1h_threshold | +4.51% | +4.79% |
+| CAKE/USDT:USDT | below_1h_threshold | +4.16% | +4.44% |
+| NIL/USDT:USDT | below_1h_threshold | +3.98% | +4.26% |
+| AERO/USDT:USDT | below_1h_threshold | +3.71% | +3.99% |
+| ZRO/USDT:USDT | below_1h_threshold | +2.09% | +2.38% |
 
 ## 7. 次に見るべき不足
 
