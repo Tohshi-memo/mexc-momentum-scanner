@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-23T01:56:12.634288+00:00
+- generated_at: 2026-09-23T02:01:24.181447+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15381**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-23T01:56:04.125081+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.28% price=86177.8
-- Funnel: target 1058 → liquid 191 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.3 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-23T02:01:12.905448+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=86330.3
+- Funnel: target 1058 → liquid 189 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SHROOM/USDT:USDT | +64.06% | $1,059,265.28 |
-| FOLKS/USDT:USDT | +30.69% | $5,720,660.78 |
-| ALLO/USDT:USDT | +17.88% | $2,376,126.39 |
-| ZAMA/USDT:USDT | +14.64% | $2,372,634.83 |
-| 4/USDT:USDT | +14.48% | $2,649,001.86 |
+| SHROOM/USDT:USDT | +65.13% | $1,053,857.62 |
+| FOLKS/USDT:USDT | +29.83% | $5,769,057.02 |
+| ALLO/USDT:USDT | +17.65% | $2,365,503.92 |
+| UNI/USDT:USDT | +15.50% | $52,146,164.98 |
+| ZAMA/USDT:USDT | +15.31% | $2,278,126.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GRASS/USDT:USDT | below_1h_threshold | +4.51% | +4.79% |
-| CAKE/USDT:USDT | below_1h_threshold | +4.16% | +4.44% |
-| NIL/USDT:USDT | below_1h_threshold | +3.98% | +4.26% |
-| AERO/USDT:USDT | below_1h_threshold | +3.71% | +3.99% |
-| ZRO/USDT:USDT | below_1h_threshold | +2.09% | +2.38% |
+| SHROOM/USDT:USDT | below_1h_threshold | +2.78% | +2.78% |
+| BTW/USDT:USDT | below_1h_threshold | +0.75% | +0.74% |
+| FOLKS/USDT:USDT | below_1h_threshold | +0.52% | +0.52% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +0.37% | +0.36% |
+| ZAMA/USDT:USDT | below_1h_threshold | +0.29% | +0.28% |
 
 ## 7. 次に見るべき不足
 
