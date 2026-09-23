@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-23T04:06:21.141437+00:00
+- generated_at: 2026-09-23T04:11:22.773050+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15387**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-23T04:06:10.038044+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=86602.3
+- 更新: 2026-09-23T04:11:11.617057+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.16% price=86806.5
 - Funnel: target 1058 → liquid 190 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SHROOM/USDT:USDT | +71.20% | $1,152,678.62 |
-| MUBARAK/USDT:USDT | +19.74% | $18,486,253.89 |
-| ALLO/USDT:USDT | +18.39% | $2,586,595.61 |
-| FOLKS/USDT:USDT | +16.36% | $6,673,576.64 |
-| 4/USDT:USDT | +16.03% | $2,649,150.78 |
+| SHROOM/USDT:USDT | +70.79% | $1,154,773.36 |
+| MUBARAK/USDT:USDT | +19.30% | $18,534,646.15 |
+| ALLO/USDT:USDT | +18.12% | $2,604,782.17 |
+| USELESS/USDT:USDT | +17.11% | $10,612,037.10 |
+| 4/USDT:USDT | +16.82% | $2,650,567.15 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ALLO/USDT:USDT | below_1h_threshold | +1.92% | +1.99% |
-| SHROOM/USDT:USDT | below_1h_threshold | +1.55% | +1.62% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +1.19% | +1.26% |
-| NIL/USDT:USDT | below_1h_threshold | +0.86% | +0.93% |
-| BTW/USDT:USDT | below_1h_threshold | +0.72% | +0.79% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.75% | +1.58% |
+| ALLO/USDT:USDT | below_1h_threshold | +1.69% | +1.53% |
+| NIL/USDT:USDT | below_1h_threshold | +1.48% | +1.31% |
+| BTW/USDT:USDT | below_1h_threshold | +1.13% | +0.97% |
+| BSV/USDT:USDT | below_1h_threshold | +1.07% | +0.90% |
 
 ## 7. 次に見るべき不足
 
