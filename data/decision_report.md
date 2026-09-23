@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-23T00:06:20.871306+00:00
+- generated_at: 2026-09-23T00:12:04.917838+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15374**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-23T00:06:11.998130+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=86131.1
+- 更新: 2026-09-23T00:11:53.999993+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=86215.1
 - Funnel: target 1058 → liquid 187 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FOLKS/USDT:USDT | +40.73% | $3,274,096.96 |
-| 4/USDT:USDT | +22.40% | $2,429,508.65 |
-| DRIFT/USDT:USDT | +21.75% | $1,698,377.59 |
-| ALLO/USDT:USDT | +17.32% | $1,991,289.40 |
-| MARSCOIN/USDT:USDT | +16.59% | $3,479,783.22 |
+| FOLKS/USDT:USDT | +40.73% | $3,503,108.51 |
+| 4/USDT:USDT | +22.23% | $2,440,945.18 |
+| DRIFT/USDT:USDT | +21.31% | $1,702,416.51 |
+| ALLO/USDT:USDT | +17.31% | $2,020,091.66 |
+| ZAMA/USDT:USDT | +15.93% | $2,194,663.93 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FOLKS/USDT:USDT | below_1h_threshold | +4.53% | +4.56% |
-| ARB/USDT:USDT | below_1h_threshold | +1.64% | +1.67% |
-| ZEN/USDT:USDT | below_1h_threshold | +1.52% | +1.55% |
-| GRT/USDT:USDT | below_1h_threshold | +1.45% | +1.49% |
-| PHA/USDT:USDT | below_1h_threshold | +1.32% | +1.36% |
+| FOLKS/USDT:USDT | below_1h_threshold | +4.49% | +4.43% |
+| ARB/USDT:USDT | below_1h_threshold | +3.18% | +3.11% |
+| EVAA/USDT:USDT | below_1h_threshold | +2.54% | +2.47% |
+| INJ/USDT:USDT | below_1h_threshold | +2.01% | +1.95% |
+| ALLO/USDT:USDT | below_1h_threshold | +1.26% | +1.19% |
 
 ## 7. 次に見るべき不足
 
