@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-23T23:21:23.235340+00:00
+- generated_at: 2026-09-23T23:26:12.918062+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15446**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-23T23:21:12.015774+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=84422.3
+- 更新: 2026-09-23T23:26:04.925770+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=84407.5
 - Funnel: target 1061 → liquid 189 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 82.1 >= 65=1
@@ -81,21 +81,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIL/USDT:USDT | +34.64% | $10,680,999.95 |
-| LSK/USDT:USDT | +12.51% | $4,037,112.41 |
-| BTW/USDT:USDT | +10.04% | $3,739,819.70 |
-| MARSCOIN/USDT:USDT | +8.15% | $3,381,009.66 |
-| UAI/USDT:USDT | +7.63% | $2,545,434.22 |
+| NIL/USDT:USDT | +34.91% | $10,845,218.99 |
+| LSK/USDT:USDT | +14.40% | $4,084,221.08 |
+| BTW/USDT:USDT | +9.85% | $3,750,385.01 |
+| MARSCOIN/USDT:USDT | +7.81% | $3,382,450.71 |
+| UAI/USDT:USDT | +7.46% | $2,546,547.87 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZAMA/USDT:USDT | below_1h_threshold | +2.49% | +2.61% |
-| UAI/USDT:USDT | below_1h_threshold | +1.29% | +1.41% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +1.20% | +1.32% |
-| KERNEL/USDT:USDT | below_1h_threshold | +1.13% | +1.25% |
-| SUPER/USDT:USDT | below_1h_threshold | +1.03% | +1.15% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +2.05% | +2.19% |
+| COTI/USDT:USDT | below_1h_threshold | +1.83% | +1.97% |
+| ZAMA/USDT:USDT | below_1h_threshold | +1.71% | +1.85% |
+| 4STOCK/USDT:USDT | below_1h_threshold | +1.50% | +1.64% |
+| SUPER/USDT:USDT | below_1h_threshold | +1.36% | +1.50% |
 
 ## 7. 次に見るべき不足
 
