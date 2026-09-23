@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-23T17:31:30.963470+00:00
+- generated_at: 2026-09-23T17:36:27.411354+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15440**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-23T17:31:17.642062+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=84007.7
+- 更新: 2026-09-23T17:36:13.854561+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=83956.7
 - Funnel: target 1061 → liquid 194 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAKE/USDT:USDT | +14.25% | $12,208,362.40 |
-| MARSCOIN/USDT:USDT | +10.81% | $3,688,329.94 |
-| FIGHT/USDT:USDT | +6.97% | $1,168,767.66 |
-| PENDLE/USDT:USDT | +5.04% | $2,623,190.75 |
-| COTI/USDT:USDT | +4.45% | $1,776,457.01 |
+| TAKE/USDT:USDT | +14.08% | $12,238,361.66 |
+| MARSCOIN/USDT:USDT | +11.62% | $3,700,326.76 |
+| FIGHT/USDT:USDT | +5.94% | $1,171,898.08 |
+| PENDLE/USDT:USDT | +5.17% | $2,667,654.62 |
+| BSV/USDT:USDT | +4.19% | $3,817,512.25 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| COTI/USDT:USDT | below_1h_threshold | +2.41% | +2.40% |
-| ZRO/USDT:USDT | below_1h_threshold | +2.05% | +2.04% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.78% | +1.77% |
-| PENDLE/USDT:USDT | below_1h_threshold | +1.71% | +1.70% |
-| BSV/USDT:USDT | below_1h_threshold | +1.57% | +1.56% |
+| COTI/USDT:USDT | below_1h_threshold | +1.98% | +2.03% |
+| ZRO/USDT:USDT | below_1h_threshold | +1.93% | +1.98% |
+| ON/USDT:USDT | below_1h_threshold | +1.79% | +1.84% |
+| AKE/USDT:USDT | below_1h_threshold | +1.71% | +1.75% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.67% | +1.72% |
 
 ## 7. 次に見るべき不足
 
