@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-23T12:41:36.467301+00:00
+- generated_at: 2026-09-23T12:46:35.444949+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15431**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$121.57** / 初期 $100.00 (+21.57%)
-- 確定: 3136件 (Win 923 / Loss 1234 / Flat 979) / pending 0件 / skip 3767件
+- 確定: 3136件 (Win 923 / Loss 1234 / Flat 979) / pending 0件 / skip 3768件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000201 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: GRASS/USDT:USDT `MARKET` EXPIRED account -0.14% 残高後 $121.57
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-23T12:41:25.229633+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.19% price=85455.6
-- Funnel: target 1061 → liquid 191 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.7 >= 65=1
+- 更新: 2026-09-23T12:46:23.297282+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.19% price=85450.7
+- Funnel: target 1061 → liquid 191 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 76.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KIMISTOCK/USDT:USDT | +788.54% | $1,653,292.69 |
-| TAKE/USDT:USDT | +225.56% | $6,821,156.89 |
-| SHROOM/USDT:USDT | +67.51% | $1,405,777.32 |
-| ALLO/USDT:USDT | +31.49% | $4,883,221.22 |
-| SAGA/USDT:USDT | +31.21% | $2,015,658.91 |
+| KIMISTOCK/USDT:USDT | +792.50% | $1,714,673.85 |
+| TAKE/USDT:USDT | +221.59% | $6,908,967.07 |
+| SHROOM/USDT:USDT | +69.48% | $1,408,857.38 |
+| SAGA/USDT:USDT | +31.45% | $2,048,341.81 |
+| ALLO/USDT:USDT | +31.44% | $4,941,336.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SHROOM/USDT:USDT | below_1h_threshold | +3.82% | +4.00% |
-| NIL/USDT:USDT | below_1h_threshold | +3.12% | +3.31% |
-| BR/USDT:USDT | below_1h_threshold | +3.00% | +3.18% |
-| COTI/USDT:USDT | below_1h_threshold | +2.03% | +2.22% |
-| GRASS/USDT:USDT | below_1h_threshold | +2.02% | +2.21% |
+| POLYMARKETSTOCK/USDT:USDT | below_1h_threshold | +3.49% | +3.68% |
+| NIL/USDT:USDT | below_1h_threshold | +3.40% | +3.59% |
+| COTI/USDT:USDT | below_1h_threshold | +2.00% | +2.20% |
+| ON/USDT:USDT | below_1h_threshold | +1.67% | +1.86% |
+| DRIFT/USDT:USDT | below_1h_threshold | +1.49% | +1.68% |
 
 ## 7. 次に見るべき不足
 
