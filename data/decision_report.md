@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-23T03:41:28.516916+00:00
+- generated_at: 2026-09-23T03:46:32.550013+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15386**
 
@@ -70,32 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-23T03:41:14.935585+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.43% price=86881.0
-- Funnel: target 1058 → liquid 192 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.3 >= 65=1
+- 更新: 2026-09-23T03:46:19.137648+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.31% price=86775.1
+- Funnel: target 1058 → liquid 192 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SHROOM/USDT:USDT | +71.28% | $1,138,302.01 |
-| NIL/USDT:USDT | +23.72% | $6,042,130.48 |
-| ALLO/USDT:USDT | +18.21% | $2,560,513.53 |
-| HNT/USDT:USDT | +17.56% | $1,244,972.21 |
-| UNI/USDT:USDT | +17.40% | $58,476,926.96 |
+| SHROOM/USDT:USDT | +70.54% | $1,144,728.18 |
+| NIL/USDT:USDT | +22.29% | $6,068,849.93 |
+| ALLO/USDT:USDT | +18.13% | $2,560,899.05 |
+| UNI/USDT:USDT | +17.80% | $58,625,139.44 |
+| 4/USDT:USDT | +17.31% | $2,665,859.79 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VIRTUAL/USDT:USDT | below_1h_threshold | +3.56% | +3.13% |
-| PENGU/USDT:USDT | below_1h_threshold | +3.54% | +3.11% |
-| 4STOCK/USDT:USDT | below_1h_threshold | +3.32% | +2.88% |
-| AAVE/USDT:USDT | below_1h_threshold | +2.89% | +2.46% |
-| RAY/USDT:USDT | below_1h_threshold | +2.71% | +2.28% |
+| HNT/USDT:USDT | below_1h_threshold | +4.00% | +3.68% |
+| PENGU/USDT:USDT | below_1h_threshold | +3.93% | +3.62% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +3.85% | +3.54% |
+| APE/USDT:USDT | below_1h_threshold | +3.39% | +3.07% |
+| VIRTUAL/USDT:USDT | below_1h_threshold | +3.35% | +3.04% |
 
 ## 7. 次に見るべき不足
 
