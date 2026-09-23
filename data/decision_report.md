@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-23T01:01:26.517762+00:00
+- generated_at: 2026-09-23T01:06:22.790994+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15376**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-23T01:01:15.485121+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=86438.6
+- 更新: 2026-09-23T01:06:11.560575+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=86540.0
 - Funnel: target 1058 → liquid 189 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FOLKS/USDT:USDT | +22.96% | $5,020,124.13 |
-| DRIFT/USDT:USDT | +16.49% | $1,748,331.34 |
-| 4/USDT:USDT | +16.47% | $2,557,862.65 |
-| ALLO/USDT:USDT | +16.06% | $2,210,364.99 |
-| USELESS/USDT:USDT | +14.54% | $10,519,730.66 |
+| DRIFT/USDT:USDT | +17.15% | $1,750,019.74 |
+| FOLKS/USDT:USDT | +16.27% | $5,092,442.12 |
+| 4/USDT:USDT | +16.12% | $2,570,259.59 |
+| ALLO/USDT:USDT | +15.66% | $2,213,830.40 |
+| UNI/USDT:USDT | +13.93% | $48,793,141.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZAMA/USDT:USDT | below_1h_threshold | +0.79% | +0.77% |
-| GRT/USDT:USDT | below_1h_threshold | +0.43% | +0.41% |
-| SAGA/USDT:USDT | below_1h_threshold | +0.32% | +0.31% |
-| ENA/USDT:USDT | below_1h_threshold | +0.30% | +0.29% |
-| BCH/USDT:USDT | below_1h_threshold | +0.29% | +0.27% |
+| GRASS/USDT:USDT | below_1h_threshold | +0.94% | +0.80% |
+| VVV/USDT:USDT | below_1h_threshold | +0.91% | +0.77% |
+| LIT/USDT:USDT | below_1h_threshold | +0.77% | +0.64% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +0.76% | +0.62% |
+| PHA/USDT:USDT | below_1h_threshold | +0.75% | +0.61% |
 
 ## 7. 次に見るべき不足
 
