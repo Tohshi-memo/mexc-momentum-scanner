@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-23T15:16:21.285881+00:00
+- generated_at: 2026-09-23T15:21:16.533577+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15437**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$121.57** / 初期 $100.00 (+21.57%)
-- 確定: 3136件 (Win 923 / Loss 1234 / Flat 979) / pending 0件 / skip 3769件
+- 確定: 3136件 (Win 923 / Loss 1234 / Flat 979) / pending 0件 / skip 3770件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000312 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: GRASS/USDT:USDT `MARKET` EXPIRED account -0.14% 残高後 $121.57
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-23T15:16:10.291827+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.24% price=84684.1
-- Funnel: target 1061 → liquid 194 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-23T15:21:07.542140+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=84559.3
+- Funnel: target 1061 → liquid 194 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.0 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KIMISTOCK/USDT:USDT | +795.95% | $3,033,738.72 |
-| TAKE/USDT:USDT | +81.85% | $10,428,534.76 |
-| SHROOM/USDT:USDT | +49.13% | $1,455,477.58 |
-| SAGA/USDT:USDT | +34.28% | $3,097,895.23 |
-| MET/USDT:USDT | +25.59% | $2,314,755.62 |
+| KIMISTOCK/USDT:USDT | +794.03% | $3,042,648.38 |
+| TAKE/USDT:USDT | +61.31% | $10,565,406.15 |
+| SHROOM/USDT:USDT | +50.53% | $1,456,506.89 |
+| SAGA/USDT:USDT | +29.78% | $3,167,345.20 |
+| MET/USDT:USDT | +24.64% | $2,328,764.05 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SAGA/USDT:USDT | below_1h_threshold | +4.25% | +4.01% |
-| RAY/USDT:USDT | below_1h_threshold | +4.14% | +3.90% |
-| NIL/USDT:USDT | below_1h_threshold | +4.11% | +3.87% |
-| FOLKS/USDT:USDT | below_1h_threshold | +3.70% | +3.46% |
-| USELESS/USDT:USDT | below_1h_threshold | +1.70% | +1.46% |
+| RAY/USDT:USDT | below_1h_threshold | +3.61% | +3.52% |
+| BLESS/USDT:USDT | below_1h_threshold | +2.47% | +2.37% |
+| FOLKS/USDT:USDT | below_1h_threshold | +1.90% | +1.80% |
+| AR/USDT:USDT | below_1h_threshold | +1.76% | +1.66% |
+| TUT/USDT:USDT | below_1h_threshold | +1.58% | +1.49% |
 
 ## 7. 次に見るべき不足
 
