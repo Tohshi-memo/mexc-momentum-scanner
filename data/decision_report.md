@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-23T16:37:02.646378+00:00
+- generated_at: 2026-09-23T16:41:26.742523+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15439**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-23T16:36:49.554041+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=84099.9
+- 更新: 2026-09-23T16:41:16.368967+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=83971.1
 - Funnel: target 1061 → liquid 195 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.5 >= 65=1
+- Strict後reject: 4h RSI 67.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MARSCOIN/USDT:USDT | +13.58% | $3,307,343.40 |
-| BLESS/USDT:USDT | +3.73% | $1,614,441.34 |
-| MUBARAK/USDT:USDT | +3.38% | $16,518,768.51 |
-| PENDLE/USDT:USDT | +3.04% | $2,509,300.34 |
-| ZRO/USDT:USDT | +2.93% | $12,983,762.41 |
+| MARSCOIN/USDT:USDT | +11.51% | $3,357,426.00 |
+| BTW/USDT:USDT | +4.35% | $2,803,596.57 |
+| TAKE/USDT:USDT | +3.57% | $11,796,092.59 |
+| BLESS/USDT:USDT | +3.25% | $1,621,079.31 |
+| AIN/USDT:USDT | +3.24% | $1,005,698.41 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_1h_threshold | +3.73% | +3.57% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +3.38% | +3.22% |
-| PENDLE/USDT:USDT | below_1h_threshold | +3.12% | +2.96% |
-| UAI/USDT:USDT | below_1h_threshold | +2.90% | +2.73% |
-| AIN/USDT:USDT | below_1h_threshold | +2.84% | +2.68% |
+| BTW/USDT:USDT | below_1h_threshold | +4.13% | +4.12% |
+| TAKE/USDT:USDT | below_1h_threshold | +3.79% | +3.78% |
+| BLESS/USDT:USDT | below_1h_threshold | +3.29% | +3.28% |
+| AIN/USDT:USDT | below_1h_threshold | +3.25% | +3.24% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +2.96% | +2.95% |
 
 ## 7. 次に見るべき不足
 
