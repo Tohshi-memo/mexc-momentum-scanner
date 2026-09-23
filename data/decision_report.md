@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-23T09:56:30.920529+00:00
+- generated_at: 2026-09-23T10:01:19.761873+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15425**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-23T09:56:16.817716+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=85808.4
-- Funnel: target 1061 → liquid 192 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.1 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-23T10:01:08.571627+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=85831.7
+- Funnel: target 1061 → liquid 187 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAKE/USDT:USDT | +218.09% | $4,377,723.43 |
-| SHROOM/USDT:USDT | +62.10% | $1,355,691.60 |
-| MET/USDT:USDT | +31.98% | $1,258,924.53 |
-| ALLO/USDT:USDT | +27.85% | $3,459,593.98 |
-| SUPER/USDT:USDT | +26.36% | $1,076,319.67 |
+| TAKE/USDT:USDT | +200.40% | $4,519,303.46 |
+| SHROOM/USDT:USDT | +64.88% | $1,353,905.71 |
+| MET/USDT:USDT | +31.03% | $1,242,921.73 |
+| ALLO/USDT:USDT | +27.41% | $3,459,187.95 |
+| SUPER/USDT:USDT | +23.09% | $1,093,671.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MET/USDT:USDT | below_1h_threshold | +4.89% | +4.97% |
-| COTI/USDT:USDT | below_1h_threshold | +3.66% | +3.74% |
-| SAGA/USDT:USDT | below_1h_threshold | +3.14% | +3.22% |
-| GRASS/USDT:USDT | below_1h_threshold | +2.72% | +2.80% |
-| INJ/USDT:USDT | below_1h_threshold | +2.65% | +2.73% |
+| ALLO/USDT:USDT | below_1h_threshold | +1.13% | +1.12% |
+| CHR/USDT:USDT | below_1h_threshold | +0.82% | +0.81% |
+| AR/USDT:USDT | below_1h_threshold | +0.54% | +0.53% |
+| MYX/USDT:USDT | below_1h_threshold | +0.51% | +0.50% |
+| EIGEN/USDT:USDT | below_1h_threshold | +0.51% | +0.50% |
 
 ## 7. 次に見るべき不足
 
