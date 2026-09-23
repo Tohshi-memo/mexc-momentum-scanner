@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-23T00:12:04.917838+00:00
+- generated_at: 2026-09-23T00:16:30.040303+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15374**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$122.36** / 初期 $100.00 (+22.36%)
-- 確定: 3121件 (Win 918 / Loss 1224 / Flat 979) / pending 4件 / skip 3724件
+- 確定: 3121件 (Win 918 / Loss 1224 / Flat 979) / pending 5件 / skip 3724件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000047 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: FOLKS/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $122.36
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-23T00:11:53.999993+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=86215.1
-- Funnel: target 1058 → liquid 187 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-23T00:16:18.476756+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=86302.0
+- Funnel: target 1058 → liquid 187 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 93.6 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FOLKS/USDT:USDT | +40.73% | $3,503,108.51 |
-| 4/USDT:USDT | +22.23% | $2,440,945.18 |
-| DRIFT/USDT:USDT | +21.31% | $1,702,416.51 |
-| ALLO/USDT:USDT | +17.31% | $2,020,091.66 |
-| ZAMA/USDT:USDT | +15.93% | $2,194,663.93 |
+| FOLKS/USDT:USDT | +45.29% | $3,827,161.22 |
+| DRIFT/USDT:USDT | +23.06% | $1,702,708.10 |
+| 4/USDT:USDT | +21.92% | $2,443,002.53 |
+| ALLO/USDT:USDT | +17.54% | $2,035,621.52 |
+| TIA/USDT:USDT | +15.44% | $27,222,668.98 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FOLKS/USDT:USDT | below_1h_threshold | +4.49% | +4.43% |
-| ARB/USDT:USDT | below_1h_threshold | +3.18% | +3.11% |
-| EVAA/USDT:USDT | below_1h_threshold | +2.54% | +2.47% |
-| INJ/USDT:USDT | below_1h_threshold | +2.01% | +1.95% |
-| ALLO/USDT:USDT | below_1h_threshold | +1.26% | +1.19% |
+| ARB/USDT:USDT | below_1h_threshold | +3.96% | +3.79% |
+| UNI/USDT:USDT | below_1h_threshold | +2.06% | +1.90% |
+| LAB/USDT:USDT | below_1h_threshold | +2.00% | +1.83% |
+| KAITO/USDT:USDT | below_1h_threshold | +1.71% | +1.55% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +1.63% | +1.47% |
 
 ## 7. 次に見るべき不足
 
