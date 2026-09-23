@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-23T13:16:16.716823+00:00
+- generated_at: 2026-09-23T13:21:23.847991+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15431**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-23T13:16:08.888359+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=85358.7
+- 更新: 2026-09-23T13:21:12.774444+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=85453.3
 - Funnel: target 1061 → liquid 191 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KIMISTOCK/USDT:USDT | +798.88% | $1,916,647.39 |
-| TAKE/USDT:USDT | +225.95% | $7,066,932.80 |
-| SHROOM/USDT:USDT | +63.49% | $1,411,142.83 |
-| ALLO/USDT:USDT | +30.56% | $5,105,933.65 |
-| MET/USDT:USDT | +28.38% | $1,967,392.34 |
+| KIMISTOCK/USDT:USDT | +801.31% | $1,958,402.50 |
+| TAKE/USDT:USDT | +226.00% | $7,103,079.74 |
+| SHROOM/USDT:USDT | +63.90% | $1,413,654.40 |
+| ALLO/USDT:USDT | +32.88% | $5,159,268.53 |
+| SAGA/USDT:USDT | +30.15% | $2,293,533.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| COTI/USDT:USDT | below_1h_threshold | +4.36% | +4.49% |
-| ICP/USDT:USDT | below_1h_threshold | +1.54% | +1.67% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +1.20% | +1.33% |
-| ON/USDT:USDT | below_1h_threshold | +1.12% | +1.24% |
-| POLYMARKETSTOCK/USDT:USDT | below_1h_threshold | +0.99% | +1.12% |
+| COTI/USDT:USDT | below_1h_threshold | +4.72% | +4.73% |
+| RAY/USDT:USDT | below_1h_threshold | +2.60% | +2.62% |
+| ON/USDT:USDT | below_1h_threshold | +1.79% | +1.80% |
+| 4/USDT:USDT | below_1h_threshold | +1.74% | +1.75% |
+| GRT/USDT:USDT | below_1h_threshold | +1.66% | +1.68% |
 
 ## 7. 次に見るべき不足
 
