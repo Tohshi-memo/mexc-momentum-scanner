@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-23T16:06:34.943759+00:00
+- generated_at: 2026-09-23T16:11:45.037788+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15437**
 
@@ -63,38 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$121.57** / 初期 $100.00 (+21.57%)
-- 確定: 3136件 (Win 923 / Loss 1234 / Flat 979) / pending 0件 / skip 3771件
+- 確定: 3136件 (Win 923 / Loss 1234 / Flat 979) / pending 0件 / skip 3772件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000312 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: GRASS/USDT:USDT `MARKET` EXPIRED account -0.14% 残高後 $121.57
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-23T16:06:20.955080+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=84028.6
-- Funnel: target 1061 → liquid 193 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-23T16:11:34.193492+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.33% price=84240.6
+- Funnel: target 1061 → liquid 194 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAKE/USDT:USDT | +5.31% | $11,466,874.60 |
-| ZRO/USDT:USDT | +2.45% | $12,580,922.47 |
-| USELESS/USDT:USDT | +1.80% | $10,305,775.85 |
-| SYN/USDT:USDT | +1.49% | $3,744,182.51 |
-| BSV/USDT:USDT | +1.47% | $3,838,834.95 |
+| MARSCOIN/USDT:USDT | +6.52% | $3,043,789.36 |
+| BLESS/USDT:USDT | +5.05% | $1,545,283.92 |
+| USELESS/USDT:USDT | +4.68% | $10,393,400.59 |
+| SHROOM/USDT:USDT | +3.77% | $1,476,266.77 |
+| ZRO/USDT:USDT | +3.75% | $12,692,201.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZRO/USDT:USDT | below_1h_threshold | +2.38% | +2.30% |
-| USELESS/USDT:USDT | below_1h_threshold | +1.80% | +1.72% |
-| BSV/USDT:USDT | below_1h_threshold | +1.80% | +1.72% |
-| BCH/USDT:USDT | below_1h_threshold | +1.70% | +1.62% |
-| SYN/USDT:USDT | below_1h_threshold | +1.64% | +1.56% |
+| BLESS/USDT:USDT | below_relative_strength | +5.05% | +4.72% |
+| USELESS/USDT:USDT | below_1h_threshold | +4.72% | +4.39% |
+| TAKE/USDT:USDT | below_1h_threshold | +3.99% | +3.66% |
+| ZRO/USDT:USDT | below_1h_threshold | +3.61% | +3.28% |
+| SHROOM/USDT:USDT | below_1h_threshold | +3.50% | +3.17% |
 
 ## 7. 次に見るべき不足
 
