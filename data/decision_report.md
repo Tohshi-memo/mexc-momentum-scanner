@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-23T11:46:22.277339+00:00
+- generated_at: 2026-09-23T11:51:18.724647+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15429**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$121.57** / 初期 $100.00 (+21.57%)
-- 確定: 3136件 (Win 923 / Loss 1234 / Flat 979) / pending 0件 / skip 3765件
+- 確定: 3136件 (Win 923 / Loss 1234 / Flat 979) / pending 0件 / skip 3766件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000206 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: GRASS/USDT:USDT `MARKET` EXPIRED account -0.14% 残高後 $121.57
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-23T11:46:11.000296+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.44% price=85497.5
-- Funnel: target 1061 → liquid 191 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-23T11:51:07.406290+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.33% price=85595.3
+- Funnel: target 1061 → liquid 191 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 86.7 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KIMISTOCK/USDT:USDT | +784.71% | $1,450,095.33 |
-| TAKE/USDT:USDT | +229.60% | $6,166,845.93 |
-| SHROOM/USDT:USDT | +62.59% | $1,395,628.79 |
-| MET/USDT:USDT | +37.32% | $1,632,765.91 |
-| ALLO/USDT:USDT | +28.30% | $4,322,044.60 |
+| KIMISTOCK/USDT:USDT | +784.71% | $1,475,690.26 |
+| TAKE/USDT:USDT | +226.46% | $6,201,445.75 |
+| SHROOM/USDT:USDT | +61.60% | $1,396,133.42 |
+| MET/USDT:USDT | +38.44% | $1,679,765.84 |
+| ALLO/USDT:USDT | +29.40% | $4,403,585.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ALLO/USDT:USDT | below_1h_threshold | +4.60% | +5.04% |
-| TAKE/USDT:USDT | below_1h_threshold | +1.96% | +2.41% |
-| RAY/USDT:USDT | below_1h_threshold | +1.90% | +2.34% |
-| SAGA/USDT:USDT | below_1h_threshold | +1.50% | +1.94% |
-| COTI/USDT:USDT | below_1h_threshold | +1.23% | +1.68% |
+| NEAR/USDT:USDT | below_1h_threshold | +2.18% | +2.51% |
+| RAY/USDT:USDT | below_1h_threshold | +1.39% | +1.72% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +1.37% | +1.70% |
+| SAGA/USDT:USDT | below_1h_threshold | +1.30% | +1.63% |
+| ICP/USDT:USDT | below_1h_threshold | +1.20% | +1.53% |
 
 ## 7. 次に見るべき不足
 
