@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-23T03:26:23.423375+00:00
+- generated_at: 2026-09-23T03:31:20.031290+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15386**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-23T03:26:12.421521+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.19% price=86669.9
+- 更新: 2026-09-23T03:31:11.305008+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.19% price=86668.9
 - Funnel: target 1058 → liquid 191 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SHROOM/USDT:USDT | +68.33% | $1,125,775.87 |
-| NIL/USDT:USDT | +24.84% | $5,880,287.72 |
-| ALLO/USDT:USDT | +18.99% | $2,525,908.59 |
-| ARB/USDT:USDT | +18.08% | $55,148,188.23 |
-| UNI/USDT:USDT | +16.74% | $57,792,636.68 |
+| SHROOM/USDT:USDT | +70.63% | $1,128,277.54 |
+| NIL/USDT:USDT | +25.34% | $5,926,028.42 |
+| ALLO/USDT:USDT | +19.23% | $2,545,503.39 |
+| ARB/USDT:USDT | +17.01% | $55,396,257.36 |
+| UNI/USDT:USDT | +16.97% | $58,095,929.40 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIL/USDT:USDT | below_1h_threshold | +3.45% | +3.26% |
-| PHA/USDT:USDT | below_1h_threshold | +2.97% | +2.79% |
-| HNT/USDT:USDT | below_1h_threshold | +2.64% | +2.45% |
-| PENGU/USDT:USDT | below_1h_threshold | +2.39% | +2.20% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +2.35% | +2.16% |
+| NIL/USDT:USDT | below_1h_threshold | +3.77% | +3.59% |
+| PHA/USDT:USDT | below_1h_threshold | +3.10% | +2.91% |
+| HNT/USDT:USDT | below_1h_threshold | +2.92% | +2.74% |
+| PENGU/USDT:USDT | below_1h_threshold | +2.58% | +2.39% |
+| RAY/USDT:USDT | below_1h_threshold | +1.98% | +1.79% |
 
 ## 7. 次に見るべき不足
 
