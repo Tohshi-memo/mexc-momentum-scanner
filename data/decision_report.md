@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-23T17:11:29.366118+00:00
+- generated_at: 2026-09-23T17:16:21.937902+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15439**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$121.57** / 初期 $100.00 (+21.57%)
-- 確定: 3136件 (Win 923 / Loss 1234 / Flat 979) / pending 0件 / skip 3773件
+- 確定: 3136件 (Win 923 / Loss 1234 / Flat 979) / pending 0件 / skip 3774件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000245 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: GRASS/USDT:USDT `MARKET` EXPIRED account -0.14% 残高後 $121.57
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-23T17:11:21.427479+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.22% price=83810.0
-- Funnel: target 1061 → liquid 193 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-23T17:16:11.197878+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.20% price=83833.0
+- Funnel: target 1061 → liquid 194 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MARSCOIN/USDT:USDT | +11.14% | $3,556,787.43 |
-| TAKE/USDT:USDT | +5.23% | $11,919,366.99 |
-| DRIFT/USDT:USDT | +5.12% | $1,946,139.53 |
-| MUBARAK/USDT:USDT | +4.31% | $14,582,134.18 |
-| BEAT/USDT:USDT | +3.65% | $4,273,556.22 |
+| TAKE/USDT:USDT | +12.05% | $11,961,505.30 |
+| MARSCOIN/USDT:USDT | +11.19% | $3,614,226.70 |
+| SAGA/USDT:USDT | +4.81% | $3,723,315.72 |
+| DRIFT/USDT:USDT | +4.80% | $1,946,596.99 |
+| MUBARAK/USDT:USDT | +4.25% | $14,593,963.73 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DRIFT/USDT:USDT | below_1h_threshold | +1.18% | +1.41% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.11% | +1.34% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.96% | +1.19% |
-| ASTER/USDT:USDT | below_1h_threshold | +0.93% | +1.15% |
-| NEMSTOCK/USDT:USDT | below_1h_threshold | +0.92% | +1.15% |
+| SAGA/USDT:USDT | below_1h_threshold | +3.03% | +3.22% |
+| SHROOM/USDT:USDT | below_1h_threshold | +1.18% | +1.38% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.96% | +1.16% |
+| DRIFT/USDT:USDT | below_1h_threshold | +0.87% | +1.07% |
+| BSV/USDT:USDT | below_1h_threshold | +0.85% | +1.05% |
 
 ## 7. 次に見るべき不足
 
