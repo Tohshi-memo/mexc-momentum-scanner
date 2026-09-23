@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-23T15:41:26.574748+00:00
+- generated_at: 2026-09-23T15:46:35.966798+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15437**
 
@@ -70,30 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-23T15:41:15.628491+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.25% price=84273.3
-- Funnel: target 1061 → liquid 195 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-23T15:46:24.714168+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.26% price=84265.1
+- Funnel: target 1061 → liquid 195 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.8 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KIMISTOCK/USDT:USDT | +791.61% | $3,104,981.51 |
-| TAKE/USDT:USDT | +65.95% | $11,098,385.34 |
-| SHROOM/USDT:USDT | +53.32% | $1,465,341.53 |
-| SAGA/USDT:USDT | +30.58% | $3,366,425.51 |
-| MET/USDT:USDT | +24.16% | $2,385,578.42 |
+| KIMISTOCK/USDT:USDT | +792.50% | $3,131,994.54 |
+| TAKE/USDT:USDT | +70.39% | $11,166,271.47 |
+| SHROOM/USDT:USDT | +53.48% | $1,466,320.60 |
+| SAGA/USDT:USDT | +28.57% | $3,420,851.13 |
+| MET/USDT:USDT | +23.75% | $2,389,573.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIL/USDT:USDT | below_1h_threshold | +2.94% | +3.19% |
-| FOLKS/USDT:USDT | below_1h_threshold | +1.90% | +2.14% |
-| ON/USDT:USDT | below_1h_threshold | +1.73% | +1.98% |
-| AR/USDT:USDT | below_1h_threshold | +1.60% | +1.85% |
-| SAGA/USDT:USDT | below_1h_threshold | +1.29% | +1.54% |
+| ON/USDT:USDT | below_1h_threshold | +3.92% | +4.18% |
+| BR/USDT:USDT | below_1h_threshold | +3.34% | +3.59% |
+| FOLKS/USDT:USDT | below_1h_threshold | +2.60% | +2.86% |
+| TUT/USDT:USDT | below_1h_threshold | +2.49% | +2.75% |
+| AR/USDT:USDT | below_1h_threshold | +1.69% | +1.95% |
 
 ## 7. 次に見るべき不足
 
