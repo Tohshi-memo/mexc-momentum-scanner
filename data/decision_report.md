@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-23T03:46:32.550013+00:00
+- generated_at: 2026-09-23T03:51:36.454406+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15386**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-23T03:46:19.137648+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.31% price=86775.1
+- 更新: 2026-09-23T03:51:23.041166+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.21% price=86690.1
 - Funnel: target 1058 → liquid 192 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SHROOM/USDT:USDT | +70.54% | $1,144,728.18 |
-| NIL/USDT:USDT | +22.29% | $6,068,849.93 |
-| ALLO/USDT:USDT | +18.13% | $2,560,899.05 |
-| UNI/USDT:USDT | +17.80% | $58,625,139.44 |
-| 4/USDT:USDT | +17.31% | $2,665,859.79 |
+| SHROOM/USDT:USDT | +74.81% | $1,149,104.47 |
+| NIL/USDT:USDT | +20.86% | $6,111,147.47 |
+| UNI/USDT:USDT | +17.31% | $58,850,947.21 |
+| ALLO/USDT:USDT | +16.72% | $2,574,650.52 |
+| ARB/USDT:USDT | +16.55% | $56,284,672.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HNT/USDT:USDT | below_1h_threshold | +4.00% | +3.68% |
-| PENGU/USDT:USDT | below_1h_threshold | +3.93% | +3.62% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +3.85% | +3.54% |
-| APE/USDT:USDT | below_1h_threshold | +3.39% | +3.07% |
-| VIRTUAL/USDT:USDT | below_1h_threshold | +3.35% | +3.04% |
+| PENGU/USDT:USDT | below_1h_threshold | +4.31% | +4.10% |
+| TIA/USDT:USDT | below_1h_threshold | +4.14% | +3.93% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +3.49% | +3.28% |
+| APE/USDT:USDT | below_1h_threshold | +3.45% | +3.24% |
+| AAVE/USDT:USDT | below_1h_threshold | +3.15% | +2.94% |
 
 ## 7. 次に見るべき不足
 
