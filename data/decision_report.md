@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-23T05:16:22.374111+00:00
+- generated_at: 2026-09-23T05:21:18.342301+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15392**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$122.43** / 初期 $100.00 (+22.43%)
-- 確定: 3125件 (Win 920 / Loss 1226 / Flat 979) / pending 4件 / skip 3739件
+- 確定: 3125件 (Win 920 / Loss 1226 / Flat 979) / pending 5件 / skip 3739件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000076 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: USELESS/USDT:USDT `MARKET_LONG` EXPIRED account +0.07% 残高後 $122.43
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-23T05:16:11.092939+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.25% price=86897.4
-- Funnel: target 1058 → liquid 192 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-23T05:21:06.546919+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.29% price=86859.6
+- Funnel: target 1058 → liquid 192 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SHROOM/USDT:USDT | +67.10% | $1,205,471.87 |
-| NIL/USDT:USDT | +21.96% | $6,630,400.36 |
-| ALLO/USDT:USDT | +17.90% | $2,624,626.08 |
-| USELESS/USDT:USDT | +17.39% | $11,063,896.20 |
-| PENGU/USDT:USDT | +16.89% | $16,534,768.62 |
+| SHROOM/USDT:USDT | +67.59% | $1,206,409.46 |
+| NIL/USDT:USDT | +21.98% | $6,672,597.32 |
+| SAGA/USDT:USDT | +18.12% | $1,969,984.41 |
+| ALLO/USDT:USDT | +17.44% | $2,625,096.56 |
+| PENGU/USDT:USDT | +17.33% | $16,643,622.29 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIL/USDT:USDT | below_1h_threshold | +4.78% | +5.03% |
-| SHROOM/USDT:USDT | below_1h_threshold | +3.65% | +3.90% |
-| GRASS/USDT:USDT | below_1h_threshold | +3.12% | +3.37% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +2.83% | +3.08% |
-| HNT/USDT:USDT | below_1h_threshold | +2.54% | +2.79% |
+| NIL/USDT:USDT | below_1h_threshold | +4.54% | +4.83% |
+| BTW/USDT:USDT | below_1h_threshold | +4.39% | +4.68% |
+| SHROOM/USDT:USDT | below_1h_threshold | +3.71% | +4.00% |
+| SAGA/USDT:USDT | below_1h_threshold | +3.43% | +3.72% |
+| GRASS/USDT:USDT | below_1h_threshold | +2.61% | +2.90% |
 
 ## 7. 次に見るべき不足
 
