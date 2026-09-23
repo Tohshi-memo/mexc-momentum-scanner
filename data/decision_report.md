@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-23T02:26:20.456163+00:00
+- generated_at: 2026-09-23T02:31:23.394094+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15382**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-23T02:26:09.334509+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.28% price=86568.0
-- Funnel: target 1058 → liquid 189 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.9 >= 65=1
+- 更新: 2026-09-23T02:31:13.592768+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.20% price=86499.7
+- Funnel: target 1058 → liquid 189 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 73.0 >= 65=1, 4h RSI 70.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SHROOM/USDT:USDT | +67.35% | $1,085,771.95 |
-| FOLKS/USDT:USDT | +17.94% | $6,138,210.98 |
-| ALLO/USDT:USDT | +17.55% | $2,443,567.11 |
-| ARB/USDT:USDT | +15.21% | $51,590,822.39 |
-| UNI/USDT:USDT | +14.67% | $53,924,863.15 |
+| SHROOM/USDT:USDT | +71.04% | $1,088,297.34 |
+| FOLKS/USDT:USDT | +17.22% | $6,188,571.02 |
+| ALLO/USDT:USDT | +16.53% | $2,461,098.30 |
+| ARB/USDT:USDT | +15.61% | $51,923,356.12 |
+| UNI/USDT:USDT | +14.75% | $54,028,451.51 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SHROOM/USDT:USDT | below_1h_threshold | +3.29% | +3.01% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +3.20% | +2.92% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +1.97% | +1.69% |
-| VVV/USDT:USDT | below_1h_threshold | +1.58% | +1.30% |
-| PONS/USDT:USDT | below_1h_threshold | +1.57% | +1.29% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +3.42% | +3.21% |
+| NIL/USDT:USDT | below_1h_threshold | +2.72% | +2.52% |
+| VVV/USDT:USDT | below_1h_threshold | +2.11% | +1.90% |
+| MYX/USDT:USDT | below_1h_threshold | +1.90% | +1.69% |
+| BTW/USDT:USDT | below_1h_threshold | +1.90% | +1.69% |
 
 ## 7. 次に見るべき不足
 
