@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-23T17:56:16.082874+00:00
+- generated_at: 2026-09-23T18:01:22.783364+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15441**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-23T17:56:07.004417+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.26% price=84216.8
-- Funnel: target 1061 → liquid 195 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-23T18:01:11.971931+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=84280.0
+- Funnel: target 1061 → liquid 192 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MARSCOIN/USDT:USDT | +10.55% | $3,771,553.50 |
-| PENDLE/USDT:USDT | +7.61% | $2,758,324.34 |
-| ZRO/USDT:USDT | +6.19% | $12,108,815.01 |
-| CHR/USDT:USDT | +5.73% | $3,816,140.55 |
-| ENA/USDT:USDT | +5.51% | $32,899,410.50 |
+| MARSCOIN/USDT:USDT | +9.92% | $3,620,604.92 |
+| PENDLE/USDT:USDT | +7.69% | $2,744,168.46 |
+| ZRO/USDT:USDT | +6.59% | $10,660,685.49 |
+| CHR/USDT:USDT | +5.93% | $2,508,879.61 |
+| COTI/USDT:USDT | +5.39% | $1,797,725.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PENDLE/USDT:USDT | below_1h_threshold | +4.20% | +3.94% |
-| ZRO/USDT:USDT | below_1h_threshold | +3.97% | +3.71% |
-| COTI/USDT:USDT | below_1h_threshold | +3.13% | +2.87% |
-| CHR/USDT:USDT | below_1h_threshold | +2.79% | +2.53% |
-| SAGA/USDT:USDT | below_1h_threshold | +2.55% | +2.28% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.24% | +2.24% |
+| BLESS/USDT:USDT | below_1h_threshold | +0.58% | +0.57% |
+| NEMSTOCK/USDT:USDT | below_1h_threshold | +0.51% | +0.51% |
+| CHR/USDT:USDT | below_1h_threshold | +0.39% | +0.39% |
+| SXT/USDT:USDT | below_1h_threshold | +0.07% | +0.07% |
 
 ## 7. 次に見るべき不足
 
