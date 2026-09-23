@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-23T11:31:11.161375+00:00
+- generated_at: 2026-09-23T11:36:21.225554+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15428**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-23T11:31:02.991543+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.49% price=85454.9
+- 更新: 2026-09-23T11:36:12.294634+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.49% price=85459.8
 - Funnel: target 1061 → liquid 189 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KIMISTOCK/USDT:USDT | +780.50% | $1,383,805.88 |
-| TAKE/USDT:USDT | +217.03% | $6,010,376.35 |
-| SHROOM/USDT:USDT | +62.42% | $1,386,927.15 |
-| MET/USDT:USDT | +35.72% | $1,572,163.48 |
-| ALLO/USDT:USDT | +27.16% | $4,234,044.93 |
+| KIMISTOCK/USDT:USDT | +781.39% | $1,404,933.78 |
+| TAKE/USDT:USDT | +225.13% | $6,055,451.00 |
+| SHROOM/USDT:USDT | +62.67% | $1,387,812.91 |
+| MET/USDT:USDT | +35.99% | $1,585,365.93 |
+| ALLO/USDT:USDT | +26.91% | $4,247,645.42 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ALLO/USDT:USDT | below_1h_threshold | +3.78% | +4.27% |
-| SAGA/USDT:USDT | below_1h_threshold | +1.85% | +2.34% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +0.67% | +1.16% |
-| RAY/USDT:USDT | below_1h_threshold | +0.61% | +1.11% |
-| NGAS/USDT:USDT | below_1h_threshold | +0.53% | +1.03% |
+| ALLO/USDT:USDT | below_1h_threshold | +3.61% | +4.10% |
+| SAGA/USDT:USDT | below_1h_threshold | +1.58% | +2.07% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +1.02% | +1.51% |
+| RAY/USDT:USDT | below_1h_threshold | +0.73% | +1.22% |
+| ZAMA/USDT:USDT | below_1h_threshold | +0.65% | +1.14% |
 
 ## 7. 次に見るべき不足
 
