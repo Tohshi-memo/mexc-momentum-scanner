@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-23T01:16:19.521109+00:00
+- generated_at: 2026-09-23T01:21:18.188462+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15377**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-23T01:16:08.857456+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.29% price=86671.4
+- 更新: 2026-09-23T01:21:07.136195+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.27% price=86653.4
 - Funnel: target 1058 → liquid 189 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FOLKS/USDT:USDT | +20.16% | $5,186,910.27 |
-| DRIFT/USDT:USDT | +17.36% | $1,751,947.43 |
-| ALLO/USDT:USDT | +17.12% | $2,232,735.09 |
-| UNI/USDT:USDT | +16.58% | $50,108,567.87 |
-| 4/USDT:USDT | +15.63% | $2,587,235.26 |
+| FOLKS/USDT:USDT | +19.12% | $5,208,923.96 |
+| UNI/USDT:USDT | +17.96% | $51,203,902.73 |
+| DRIFT/USDT:USDT | +17.69% | $1,754,034.43 |
+| ALLO/USDT:USDT | +16.62% | $2,236,151.93 |
+| 4/USDT:USDT | +16.07% | $2,601,240.21 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GRASS/USDT:USDT | below_1h_threshold | +4.99% | +4.70% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +2.76% | +2.47% |
-| UNI/USDT:USDT | below_1h_threshold | +2.56% | +2.27% |
-| ZRO/USDT:USDT | below_1h_threshold | +2.33% | +2.04% |
-| ENS/USDT:USDT | below_1h_threshold | +1.98% | +1.70% |
+| GRASS/USDT:USDT | below_1h_threshold | +4.85% | +4.58% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +4.49% | +4.23% |
+| ZRO/USDT:USDT | below_1h_threshold | +4.38% | +4.12% |
+| NIL/USDT:USDT | below_1h_threshold | +4.09% | +3.82% |
+| UNI/USDT:USDT | below_1h_threshold | +3.73% | +3.46% |
 
 ## 7. 次に見るべき不足
 
