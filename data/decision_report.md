@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-23T14:26:15.730250+00:00
+- generated_at: 2026-09-23T14:31:24.459961+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15436**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$121.57** / 初期 $100.00 (+21.57%)
-- 確定: 3136件 (Win 923 / Loss 1234 / Flat 979) / pending 0件 / skip 3768件
+- 確定: 3136件 (Win 923 / Loss 1234 / Flat 979) / pending 0件 / skip 3769件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000312 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: GRASS/USDT:USDT `MARKET` EXPIRED account -0.14% 残高後 $121.57
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-23T14:26:06.830194+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -1.67% price=84317.8
-- Funnel: target 1061 → liquid 198 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-23T14:31:13.188895+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -2.05% price=83989.9
+- Funnel: target 1061 → liquid 198 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 81.6 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KIMISTOCK/USDT:USDT | +798.76% | $2,662,413.62 |
-| TAKE/USDT:USDT | +159.01% | $9,074,155.99 |
-| SHROOM/USDT:USDT | +52.91% | $1,437,515.93 |
-| ALLO/USDT:USDT | +33.84% | $6,615,021.34 |
-| MET/USDT:USDT | +27.19% | $2,163,417.20 |
+| KIMISTOCK/USDT:USDT | +796.84% | $2,693,615.64 |
+| TAKE/USDT:USDT | +188.45% | $9,241,937.39 |
+| SHROOM/USDT:USDT | +51.35% | $1,442,990.43 |
+| ALLO/USDT:USDT | +33.39% | $6,710,468.71 |
+| MET/USDT:USDT | +26.13% | $2,171,410.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +1.82% | +3.49% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.85% | +2.52% |
-| EGLD/USDT:USDT | below_1h_threshold | +0.00% | +1.67% |
-| BTW/USDT:USDT | below_1h_threshold | -0.48% | +1.19% |
-| ZRO/USDT:USDT | below_1h_threshold | -0.63% | +1.04% |
+| ACE/USDT:USDT | below_1h_threshold | +3.09% | +5.14% |
+| TESLA/USDT:USDT | below_1h_threshold | +1.86% | +3.92% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.82% | +3.88% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.85% | +2.90% |
+| MSFTSTOCK/USDT:USDT | below_1h_threshold | +0.40% | +2.46% |
 
 ## 7. 次に見るべき不足
 
