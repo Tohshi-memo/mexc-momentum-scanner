@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-23T08:31:27.375387+00:00
+- generated_at: 2026-09-23T08:36:21.056708+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15419**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-23T08:31:14.430172+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=86148.0
+- 更新: 2026-09-23T08:36:09.850793+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=86113.0
 - Funnel: target 1061 → liquid 192 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAKE/USDT:USDT | +178.70% | $2,389,536.43 |
-| SHROOM/USDT:USDT | +67.18% | $1,333,068.01 |
-| LONGXIA/USDT:USDT | +26.78% | $1,936,453.63 |
-| MET/USDT:USDT | +24.03% | $1,010,897.95 |
-| ALLO/USDT:USDT | +22.64% | $2,865,579.16 |
+| TAKE/USDT:USDT | +182.71% | $2,448,795.35 |
+| SHROOM/USDT:USDT | +68.99% | $1,335,672.73 |
+| LONGXIA/USDT:USDT | +27.15% | $1,943,449.50 |
+| ALLO/USDT:USDT | +24.00% | $2,880,051.36 |
+| MET/USDT:USDT | +23.41% | $1,015,805.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_1h_threshold | +3.79% | +3.73% |
-| BCH/USDT:USDT | below_1h_threshold | +3.44% | +3.38% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +2.90% | +2.85% |
-| TIA/USDT:USDT | below_1h_threshold | +2.34% | +2.28% |
-| ALLO/USDT:USDT | below_1h_threshold | +2.23% | +2.17% |
+| BLESS/USDT:USDT | below_1h_threshold | +3.56% | +3.55% |
+| BCH/USDT:USDT | below_1h_threshold | +3.46% | +3.45% |
+| ALLO/USDT:USDT | below_1h_threshold | +3.43% | +3.42% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +2.96% | +2.95% |
+| TIA/USDT:USDT | below_1h_threshold | +2.01% | +1.99% |
 
 ## 7. 次に見るべき不足
 
