@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-23T07:51:28.989013+00:00
+- generated_at: 2026-09-23T07:56:25.921151+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15415**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-23T07:51:16.271649+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.36% price=86119.9
-- Funnel: target 1061 → liquid 190 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 97.3 >= 65=1, 4h RSI 69.4 >= 65=1
+- 更新: 2026-09-23T07:56:11.939237+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.30% price=86167.6
+- Funnel: target 1061 → liquid 190 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 97.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAKE/USDT:USDT | +187.04% | $1,764,727.79 |
-| SHROOM/USDT:USDT | +82.03% | $1,312,188.63 |
-| NIL/USDT:USDT | +28.35% | $8,249,473.52 |
-| LONGXIA/USDT:USDT | +24.20% | $1,872,134.42 |
-| SAGA/USDT:USDT | +21.90% | $1,823,616.29 |
+| TAKE/USDT:USDT | +177.80% | $1,823,202.49 |
+| SHROOM/USDT:USDT | +73.83% | $1,320,162.35 |
+| NIL/USDT:USDT | +28.35% | $8,311,134.69 |
+| SAGA/USDT:USDT | +22.16% | $1,831,505.52 |
+| ALLO/USDT:USDT | +19.92% | $2,761,550.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIL/USDT:USDT | below_1h_threshold | +2.04% | +2.39% |
-| MYX/USDT:USDT | below_1h_threshold | +1.58% | +1.93% |
-| GRASS/USDT:USDT | below_1h_threshold | +1.03% | +1.39% |
-| BTW/USDT:USDT | below_1h_threshold | +0.77% | +1.13% |
-| ALLO/USDT:USDT | below_1h_threshold | +0.77% | +1.12% |
+| NIL/USDT:USDT | below_1h_threshold | +2.04% | +2.34% |
+| MYX/USDT:USDT | below_1h_threshold | +0.82% | +1.12% |
+| BTW/USDT:USDT | below_1h_threshold | +0.81% | +1.11% |
+| ALLO/USDT:USDT | below_1h_threshold | +0.80% | +1.10% |
+| GRASS/USDT:USDT | below_1h_threshold | +0.53% | +0.83% |
 
 ## 7. 次に見るべき不足
 
