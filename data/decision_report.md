@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-23T17:41:27.925167+00:00
+- generated_at: 2026-09-23T17:46:22.206726+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15441**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-23T17:41:14.547120+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=84013.6
+- 更新: 2026-09-23T17:46:10.984931+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.26% price=84219.2
 - Funnel: target 1061 → liquid 194 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MARSCOIN/USDT:USDT | +12.54% | $3,717,846.20 |
-| COTI/USDT:USDT | +6.13% | $1,804,938.92 |
-| PENDLE/USDT:USDT | +5.51% | $2,677,389.38 |
-| ZRO/USDT:USDT | +4.38% | $12,037,218.73 |
-| BEAT/USDT:USDT | +4.33% | $4,336,168.33 |
+| MARSCOIN/USDT:USDT | +12.44% | $3,736,192.63 |
+| PENDLE/USDT:USDT | +6.08% | $2,684,200.98 |
+| BTW/USDT:USDT | +4.96% | $2,943,904.94 |
+| ENA/USDT:USDT | +4.95% | $32,556,311.98 |
+| COTI/USDT:USDT | +4.91% | $1,821,533.74 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| COTI/USDT:USDT | below_1h_threshold | +4.00% | +3.98% |
-| ZRO/USDT:USDT | below_1h_threshold | +2.21% | +2.19% |
-| PENDLE/USDT:USDT | below_1h_threshold | +2.18% | +2.16% |
-| KERNEL/USDT:USDT | below_1h_threshold | +1.77% | +1.75% |
-| AKE/USDT:USDT | below_1h_threshold | +1.73% | +1.71% |
+| COTI/USDT:USDT | below_1h_threshold | +2.76% | +2.49% |
+| PENDLE/USDT:USDT | below_1h_threshold | +2.73% | +2.46% |
+| ZRO/USDT:USDT | below_1h_threshold | +2.50% | +2.23% |
+| VVV/USDT:USDT | below_1h_threshold | +2.21% | +1.95% |
+| KAS/USDT:USDT | below_1h_threshold | +2.18% | +1.92% |
 
 ## 7. 次に見るべき不足
 
