@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-23T08:01:18.971116+00:00
+- generated_at: 2026-09-23T08:06:25.628752+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15415**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-23T08:01:07.901749+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=86125.9
+- 更新: 2026-09-23T08:06:14.520937+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=86103.6
 - Funnel: target 1061 → liquid 190 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAKE/USDT:USDT | +181.37% | $1,872,172.24 |
-| SHROOM/USDT:USDT | +75.88% | $1,313,118.32 |
-| NIL/USDT:USDT | +30.91% | $8,170,522.56 |
-| LONGXIA/USDT:USDT | +22.07% | $1,870,067.22 |
-| SAGA/USDT:USDT | +21.29% | $1,698,197.08 |
+| TAKE/USDT:USDT | +183.97% | $1,949,186.53 |
+| SHROOM/USDT:USDT | +71.45% | $1,317,069.87 |
+| SAGA/USDT:USDT | +21.95% | $1,704,684.34 |
+| NIL/USDT:USDT | +21.16% | $8,269,085.82 |
+| ALLO/USDT:USDT | +20.07% | $2,733,840.20 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BCH/USDT:USDT | below_1h_threshold | +0.61% | +0.58% |
-| BR/USDT:USDT | below_1h_threshold | +0.51% | +0.48% |
-| PONS/USDT:USDT | below_1h_threshold | +0.51% | +0.47% |
-| TAKE/USDT:USDT | below_1h_threshold | +0.47% | +0.43% |
-| PENGU/USDT:USDT | below_1h_threshold | +0.40% | +0.37% |
+| SAGA/USDT:USDT | below_1h_threshold | +0.66% | +0.65% |
+| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +0.41% | +0.41% |
+| TAKE/USDT:USDT | below_1h_threshold | +0.33% | +0.33% |
+| VET/USDT:USDT | below_1h_threshold | +0.27% | +0.26% |
+| ZAMA/USDT:USDT | below_1h_threshold | +0.25% | +0.25% |
 
 ## 7. 次に見るべき不足
 
