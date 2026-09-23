@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-23T07:56:25.921151+00:00
+- generated_at: 2026-09-23T08:01:18.971116+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15415**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-23T07:56:11.939237+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.30% price=86167.6
-- Funnel: target 1061 → liquid 190 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 97.2 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-23T08:01:07.901749+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=86125.9
+- Funnel: target 1061 → liquid 190 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAKE/USDT:USDT | +177.80% | $1,823,202.49 |
-| SHROOM/USDT:USDT | +73.83% | $1,320,162.35 |
-| NIL/USDT:USDT | +28.35% | $8,311,134.69 |
-| SAGA/USDT:USDT | +22.16% | $1,831,505.52 |
-| ALLO/USDT:USDT | +19.92% | $2,761,550.46 |
+| TAKE/USDT:USDT | +181.37% | $1,872,172.24 |
+| SHROOM/USDT:USDT | +75.88% | $1,313,118.32 |
+| NIL/USDT:USDT | +30.91% | $8,170,522.56 |
+| LONGXIA/USDT:USDT | +22.07% | $1,870,067.22 |
+| SAGA/USDT:USDT | +21.29% | $1,698,197.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIL/USDT:USDT | below_1h_threshold | +2.04% | +2.34% |
-| MYX/USDT:USDT | below_1h_threshold | +0.82% | +1.12% |
-| BTW/USDT:USDT | below_1h_threshold | +0.81% | +1.11% |
-| ALLO/USDT:USDT | below_1h_threshold | +0.80% | +1.10% |
-| GRASS/USDT:USDT | below_1h_threshold | +0.53% | +0.83% |
+| BCH/USDT:USDT | below_1h_threshold | +0.61% | +0.58% |
+| BR/USDT:USDT | below_1h_threshold | +0.51% | +0.48% |
+| PONS/USDT:USDT | below_1h_threshold | +0.51% | +0.47% |
+| TAKE/USDT:USDT | below_1h_threshold | +0.47% | +0.43% |
+| PENGU/USDT:USDT | below_1h_threshold | +0.40% | +0.37% |
 
 ## 7. 次に見るべき不足
 
