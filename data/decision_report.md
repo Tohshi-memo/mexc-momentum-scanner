@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-23T02:42:09.362439+00:00
+- generated_at: 2026-09-23T02:46:33.141249+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15384**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-23T02:41:54.501556+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=86467.5
-- Funnel: target 1058 → liquid 190 → pre 50 → checked 50 → surge 4 → strict 1
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.7 >= 65=1, 4h RSI 71.0 >= 65=1, 4h RSI 75.4 >= 65=1
+- 更新: 2026-09-23T02:46:21.075229+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.18% price=86480.4
+- Funnel: target 1058 → liquid 190 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 71.6 >= 65=1, 4h RSI 73.0 >= 65=1, 4h RSI 75.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SHROOM/USDT:USDT | +76.12% | $1,099,190.21 |
-| FOLKS/USDT:USDT | +19.03% | $6,230,747.51 |
-| ALLO/USDT:USDT | +17.41% | $2,475,155.09 |
-| MARSCOIN/USDT:USDT | +17.08% | $3,589,807.10 |
-| ARB/USDT:USDT | +15.94% | $52,828,657.45 |
+| SHROOM/USDT:USDT | +78.67% | $1,103,227.16 |
+| FOLKS/USDT:USDT | +19.52% | $6,243,923.88 |
+| ALLO/USDT:USDT | +17.93% | $2,478,098.42 |
+| PONS/USDT:USDT | +16.95% | $5,669,539.34 |
+| MARSCOIN/USDT:USDT | +16.92% | $3,596,773.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIL/USDT:USDT | below_1h_threshold | +3.92% | +3.75% |
-| PONS/USDT:USDT | below_1h_threshold | +3.22% | +3.05% |
-| GRT/USDT:USDT | below_1h_threshold | +2.41% | +2.24% |
-| ZRO/USDT:USDT | below_1h_threshold | +2.30% | +2.14% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +2.20% | +2.03% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +4.42% | +4.24% |
+| MYX/USDT:USDT | below_1h_threshold | +4.33% | +4.15% |
+| PONS/USDT:USDT | below_1h_threshold | +4.24% | +4.05% |
+| NIL/USDT:USDT | below_1h_threshold | +3.02% | +2.84% |
+| ZRO/USDT:USDT | below_1h_threshold | +2.51% | +2.33% |
 
 ## 7. 次に見るべき不足
 
