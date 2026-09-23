@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-23T04:41:22.562551+00:00
+- generated_at: 2026-09-23T04:46:22.367486+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15389**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$122.43** / 初期 $100.00 (+22.43%)
-- 確定: 3125件 (Win 920 / Loss 1226 / Flat 979) / pending 4件 / skip 3737件
+- 確定: 3125件 (Win 920 / Loss 1226 / Flat 979) / pending 4件 / skip 3738件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `見送り` (no_strategy_passed_causal_filters) / causal_score n/a / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: USELESS/USDT:USDT `MARKET_LONG` EXPIRED account +0.07% 残高後 $122.43
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-23T04:41:11.618869+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.45% price=87053.7
-- Funnel: target 1058 → liquid 191 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-23T04:46:11.185073+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.49% price=87089.5
+- Funnel: target 1058 → liquid 191 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 68.3 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SHROOM/USDT:USDT | +59.39% | $1,190,340.68 |
-| MUBARAK/USDT:USDT | +23.50% | $18,809,438.90 |
-| ALLO/USDT:USDT | +18.68% | $2,639,285.11 |
-| USELESS/USDT:USDT | +16.92% | $10,927,771.33 |
-| DRIFT/USDT:USDT | +16.27% | $1,799,320.42 |
+| SHROOM/USDT:USDT | +61.44% | $1,193,770.52 |
+| MUBARAK/USDT:USDT | +22.48% | $18,892,221.57 |
+| ALLO/USDT:USDT | +17.83% | $2,642,254.11 |
+| DRIFT/USDT:USDT | +17.58% | $1,799,578.25 |
+| PENGU/USDT:USDT | +17.11% | $16,547,151.41 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MUBARAK/USDT:USDT | below_1h_threshold | +4.38% | +3.93% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +3.44% | +2.99% |
-| SAGA/USDT:USDT | below_1h_threshold | +3.40% | +2.95% |
-| TUT/USDT:USDT | below_1h_threshold | +2.65% | +2.20% |
-| 1000BONK/USDT:USDT | below_1h_threshold | +2.15% | +1.70% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +3.81% | +3.32% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +3.61% | +3.12% |
+| TUT/USDT:USDT | below_1h_threshold | +3.15% | +2.66% |
+| PENGU/USDT:USDT | below_1h_threshold | +2.77% | +2.27% |
+| 1000BONK/USDT:USDT | below_1h_threshold | +2.34% | +1.84% |
 
 ## 7. 次に見るべき不足
 
