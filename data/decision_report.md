@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-23T17:06:18.397032+00:00
+- generated_at: 2026-09-23T17:11:29.366118+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15439**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-23T17:06:09.176201+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.20% price=83826.8
+- 更新: 2026-09-23T17:11:21.427479+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.22% price=83810.0
 - Funnel: target 1061 → liquid 193 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MARSCOIN/USDT:USDT | +13.18% | $3,504,055.58 |
-| DRIFT/USDT:USDT | +5.17% | $1,945,315.01 |
-| FIGHT/USDT:USDT | +4.75% | $1,159,313.30 |
-| TAKE/USDT:USDT | +4.58% | $11,899,499.04 |
-| RAY/USDT:USDT | +4.32% | $5,600,560.44 |
+| MARSCOIN/USDT:USDT | +11.14% | $3,556,787.43 |
+| TAKE/USDT:USDT | +5.23% | $11,919,366.99 |
+| DRIFT/USDT:USDT | +5.12% | $1,946,139.53 |
+| MUBARAK/USDT:USDT | +4.31% | $14,582,134.18 |
+| BEAT/USDT:USDT | +3.65% | $4,273,556.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DRIFT/USDT:USDT | below_1h_threshold | +1.54% | +1.75% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.96% | +1.17% |
-| NEMSTOCK/USDT:USDT | below_1h_threshold | +0.92% | +1.13% |
-| AKE/USDT:USDT | below_1h_threshold | +0.78% | +0.98% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +0.71% | +0.92% |
+| DRIFT/USDT:USDT | below_1h_threshold | +1.18% | +1.41% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.11% | +1.34% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.96% | +1.19% |
+| ASTER/USDT:USDT | below_1h_threshold | +0.93% | +1.15% |
+| NEMSTOCK/USDT:USDT | below_1h_threshold | +0.92% | +1.15% |
 
 ## 7. 次に見るべき不足
 
