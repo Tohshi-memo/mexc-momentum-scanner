@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-24T08:01:27.112392+00:00
+- generated_at: 2026-09-24T08:06:20.688369+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15467**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$120.44** / 初期 $100.00 (+20.44%)
-- 確定: 3157件 (Win 930 / Loss 1246 / Flat 981) / pending 2件 / skip 3778件
+- 確定: 3157件 (Win 930 / Loss 1246 / Flat 981) / pending 2件 / skip 3779件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000316 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: LSK/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $120.44
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-24T08:01:15.986699+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=84472.9
-- Funnel: target 1065 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-24T08:06:09.347439+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=84512.1
+- Funnel: target 1065 → liquid 173 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 78.7 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NOM/USDT:USDT | +58.28% | $3,654,638.76 |
-| LSK/USDT:USDT | +39.77% | $8,953,432.41 |
-| NIL/USDT:USDT | +32.34% | $18,686,248.49 |
-| LTC/USDT:USDT | +15.57% | $48,250,898.73 |
-| CHR/USDT:USDT | +9.98% | $1,300,238.78 |
+| NOM/USDT:USDT | +56.98% | $3,670,851.82 |
+| LSK/USDT:USDT | +45.75% | $9,161,691.88 |
+| NIL/USDT:USDT | +40.07% | $18,922,836.16 |
+| LTC/USDT:USDT | +15.87% | $48,600,461.76 |
+| CHR/USDT:USDT | +10.49% | $1,300,813.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +2.25% | +2.24% |
-| ETC/USDT:USDT | below_1h_threshold | +0.46% | +0.46% |
-| PENGU/USDT:USDT | below_1h_threshold | +0.34% | +0.33% |
-| CAKE/USDT:USDT | below_1h_threshold | +0.20% | +0.19% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +0.16% | +0.15% |
+| LSK/USDT:USDT | below_1h_threshold | +2.95% | +2.89% |
+| ETC/USDT:USDT | below_1h_threshold | +1.09% | +1.04% |
+| RAY/USDT:USDT | below_1h_threshold | +0.60% | +0.55% |
+| CHR/USDT:USDT | below_1h_threshold | +0.56% | +0.51% |
+| BTW/USDT:USDT | below_1h_threshold | +0.55% | +0.49% |
 
 ## 7. 次に見るべき不足
 
