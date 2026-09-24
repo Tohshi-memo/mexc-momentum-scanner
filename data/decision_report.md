@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-24T21:56:29.276752+00:00
+- generated_at: 2026-09-24T22:01:16.430408+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15499**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-24T21:56:17.544645+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=84330.4
-- Funnel: target 1069 → liquid 174 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.8 >= 65=1, 4h RSI 71.6 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-24T22:01:07.346724+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=84273.9
+- Funnel: target 1069 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SAGA/USDT:USDT | +48.70% | $3,547,784.75 |
-| XAI/USDT:USDT | +16.89% | $10,345,610.96 |
-| LSK/USDT:USDT | +12.07% | $19,122,701.69 |
-| XPL/USDT:USDT | +11.80% | $12,187,236.08 |
-| CHIP/USDT:USDT | +10.67% | $1,349,229.25 |
+| SAGA/USDT:USDT | +44.92% | $3,631,648.74 |
+| XAI/USDT:USDT | +16.79% | $10,390,787.64 |
+| LSK/USDT:USDT | +11.84% | $18,561,282.83 |
+| XPL/USDT:USDT | +11.19% | $12,218,244.59 |
+| CHIP/USDT:USDT | +9.99% | $1,334,028.25 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ONDO/USDT:USDT | below_1h_threshold | +3.48% | +3.47% |
-| QNT/USDT:USDT | below_1h_threshold | +2.39% | +2.38% |
-| CHIP/USDT:USDT | below_1h_threshold | +2.05% | +2.04% |
-| AVAX/USDT:USDT | below_1h_threshold | +2.01% | +2.00% |
-| XLM/USDT:USDT | below_1h_threshold | +1.47% | +1.46% |
+| SAGA/USDT:USDT | below_1h_threshold | +1.12% | +1.16% |
+| LSK/USDT:USDT | below_1h_threshold | +0.47% | +0.51% |
+| XPT/USDT:USDT | below_1h_threshold | +0.11% | +0.15% |
+| NKESTOCK/USDT:USDT | below_1h_threshold | +0.11% | +0.15% |
+| MUU/USDT:USDT | below_1h_threshold | +0.11% | +0.15% |
 
 ## 7. 次に見るべき不足
 
