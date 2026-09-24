@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-24T14:42:30.854548+00:00
+- generated_at: 2026-09-24T14:46:38.824475+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15481**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-24T14:42:13.845142+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.34% price=84500.8
-- Funnel: target 1069 → liquid 185 → pre 50 → checked 50 → surge 4 → strict 2
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.4 >= 65=1, 4h RSI 73.6 >= 65=1
+- 更新: 2026-09-24T14:46:25.088607+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=84270.7
+- Funnel: target 1069 → liquid 185 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NOM/USDT:USDT | +37.49% | $5,732,855.10 |
-| LSK/USDT:USDT | +30.71% | $14,706,170.96 |
-| LTC/USDT:USDT | +23.63% | $89,739,492.04 |
-| ONDO/USDT:USDT | +23.09% | $64,739,669.11 |
-| NIL/USDT:USDT | +20.14% | $26,153,261.40 |
+| NOM/USDT:USDT | +37.55% | $5,745,460.30 |
+| LSK/USDT:USDT | +31.47% | $14,747,511.07 |
+| LTC/USDT:USDT | +22.32% | $90,896,652.21 |
+| ONDO/USDT:USDT | +22.29% | $65,668,687.31 |
+| NIL/USDT:USDT | +19.64% | $26,180,776.16 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| XPL/USDT:USDT | below_1h_threshold | +4.83% | +4.49% |
-| ONDO/USDT:USDT | below_1h_threshold | +4.43% | +4.09% |
-| OP/USDT:USDT | below_1h_threshold | +4.40% | +4.06% |
-| EIGEN/USDT:USDT | below_1h_threshold | +4.25% | +3.91% |
-| LTC/USDT:USDT | below_1h_threshold | +3.91% | +3.57% |
+| APT/USDT:USDT | below_1h_threshold | +4.90% | +4.84% |
+| XPL/USDT:USDT | below_1h_threshold | +4.25% | +4.19% |
+| OP/USDT:USDT | below_1h_threshold | +4.01% | +3.95% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.64% | +3.57% |
+| EIGEN/USDT:USDT | below_1h_threshold | +3.55% | +3.49% |
 
 ## 7. 次に見るべき不足
 
