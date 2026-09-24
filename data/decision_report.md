@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-24T19:36:42.231101+00:00
+- generated_at: 2026-09-24T19:41:35.772079+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15488**
 
@@ -70,9 +70,9 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-24T19:36:25.439798+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=84532.5
-- Funnel: target 1069 → liquid 173 → pre 50 → checked 50 → surge 2 → strict 2
+- 更新: 2026-09-24T19:41:22.649460+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=84399.9
+- Funnel: target 1069 → liquid 174 → pre 50 → checked 50 → surge 2 → strict 2
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| XAI/USDT:USDT | +23.69% | $6,702,395.54 |
-| LSK/USDT:USDT | +11.73% | $16,404,849.60 |
-| CHIP/USDT:USDT | +9.60% | $1,093,871.18 |
-| RAY/USDT:USDT | +5.21% | $10,176,638.27 |
-| QNT/USDT:USDT | +4.77% | $2,459,657.06 |
+| XAI/USDT:USDT | +24.92% | $6,848,724.74 |
+| LSK/USDT:USDT | +12.50% | $16,470,696.50 |
+| CHIP/USDT:USDT | +8.97% | $1,105,996.56 |
+| PLUME/USDT:USDT | +5.40% | $1,008,285.64 |
+| RAY/USDT:USDT | +5.06% | $10,184,470.20 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RIVER/USDT:USDT | below_1h_threshold | +3.75% | +3.63% |
-| PENDLE/USDT:USDT | below_1h_threshold | +3.20% | +3.09% |
-| MVLL/USDT:USDT | below_1h_threshold | +2.79% | +2.68% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +2.70% | +2.59% |
-| NEAR/USDT:USDT | below_1h_threshold | +2.66% | +2.54% |
+| PENDLE/USDT:USDT | below_1h_threshold | +3.31% | +3.35% |
+| RIVER/USDT:USDT | below_1h_threshold | +3.12% | +3.17% |
+| MVLL/USDT:USDT | below_1h_threshold | +2.79% | +2.84% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +2.70% | +2.74% |
+| COMP/USDT:USDT | below_1h_threshold | +2.23% | +2.28% |
 
 ## 7. 次に見るべき不足
 
