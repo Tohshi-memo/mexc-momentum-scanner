@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-24T05:06:25.064659+00:00
+- generated_at: 2026-09-24T05:11:15.741844+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15460**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-24T05:06:11.997620+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.28% price=84237.2
+- 更新: 2026-09-24T05:11:04.327929+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.33% price=84279.0
 - Funnel: target 1066 → liquid 179 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIL/USDT:USDT | +45.93% | $16,915,563.76 |
-| NOM/USDT:USDT | +39.69% | $2,423,290.97 |
-| LSK/USDT:USDT | +17.68% | $6,124,579.32 |
-| LTC/USDT:USDT | +15.79% | $44,658,849.77 |
-| BTW/USDT:USDT | +15.31% | $4,573,849.04 |
+| NIL/USDT:USDT | +45.44% | $16,956,652.05 |
+| NOM/USDT:USDT | +37.96% | $2,430,341.02 |
+| LSK/USDT:USDT | +19.77% | $6,147,694.22 |
+| LTC/USDT:USDT | +14.78% | $44,999,115.87 |
+| BTW/USDT:USDT | +14.31% | $4,602,986.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FILECOIN/USDT:USDT | below_1h_threshold | +1.97% | +1.69% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +1.75% | +1.47% |
-| USELESS/USDT:USDT | below_1h_threshold | +1.57% | +1.28% |
-| NIL/USDT:USDT | below_1h_threshold | +1.54% | +1.26% |
-| INJ/USDT:USDT | below_1h_threshold | +1.44% | +1.16% |
+| PENGU/USDT:USDT | below_1h_threshold | +2.40% | +2.07% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +2.37% | +2.04% |
+| CRO/USDT:USDT | below_1h_threshold | +2.07% | +1.74% |
+| TIA/USDT:USDT | below_1h_threshold | +1.93% | +1.60% |
+| ENA/USDT:USDT | below_1h_threshold | +1.77% | +1.44% |
 
 ## 7. 次に見るべき不足
 
