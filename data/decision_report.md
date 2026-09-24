@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-24T04:16:17.441504+00:00
+- generated_at: 2026-09-24T04:21:18.731146+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15459**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$121.51** / 初期 $100.00 (+21.51%)
-- 確定: 3149件 (Win 929 / Loss 1239 / Flat 981) / pending 2件 / skip 3777件
+- 確定: 3149件 (Win 929 / Loss 1239 / Flat 981) / pending 3件 / skip 3777件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000374 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: LTC/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $121.51
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-24T04:16:06.561237+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=83809.8
-- Funnel: target 1066 → liquid 180 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-24T04:21:07.368683+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=83823.6
+- Funnel: target 1066 → liquid 180 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NOM/USDT:USDT | +45.15% | $2,307,247.38 |
-| NIL/USDT:USDT | +40.76% | $16,405,943.69 |
-| LSK/USDT:USDT | +17.37% | $6,040,487.72 |
-| BTW/USDT:USDT | +14.93% | $4,497,803.40 |
-| LTC/USDT:USDT | +13.45% | $43,216,391.15 |
+| NOM/USDT:USDT | +42.95% | $2,320,937.25 |
+| NIL/USDT:USDT | +42.79% | $16,504,570.62 |
+| LSK/USDT:USDT | +17.97% | $6,087,945.83 |
+| BTW/USDT:USDT | +15.02% | $4,523,064.55 |
+| LTC/USDT:USDT | +13.49% | $43,386,657.16 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| WIF/USDT:USDT | below_1h_threshold | +1.64% | +1.76% |
-| COMP/USDT:USDT | below_1h_threshold | +1.41% | +1.52% |
-| LTC/USDT:USDT | below_1h_threshold | +1.37% | +1.48% |
-| ETC/USDT:USDT | below_1h_threshold | +1.35% | +1.46% |
-| NOM/USDT:USDT | below_1h_threshold | +1.24% | +1.35% |
+| NIL/USDT:USDT | below_1h_threshold | +2.19% | +2.29% |
+| WIF/USDT:USDT | below_1h_threshold | +1.77% | +1.87% |
+| BR/USDT:USDT | below_1h_threshold | +1.67% | +1.76% |
+| LTC/USDT:USDT | below_1h_threshold | +1.59% | +1.69% |
+| ETC/USDT:USDT | below_1h_threshold | +1.04% | +1.14% |
 
 ## 7. 次に見るべき不足
 
