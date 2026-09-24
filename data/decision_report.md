@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-24T18:06:33.793592+00:00
+- generated_at: 2026-09-24T18:11:35.941265+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15486**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-24T18:06:22.605636+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=83969.3
-- Funnel: target 1069 → liquid 171 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-24T18:11:24.805820+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=84152.0
+- Funnel: target 1069 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| XAI/USDT:USDT | +33.97% | $2,358,292.26 |
-| LSK/USDT:USDT | +4.21% | $15,640,251.22 |
-| ZEC/USDT:USDT | +2.00% | $964,714,639.92 |
-| QNT/USDT:USDT | +1.94% | $2,155,495.84 |
-| NBISSTOCK/USDT:USDT | +1.90% | $3,306,122.31 |
+| XAI/USDT:USDT | +29.15% | $2,732,369.80 |
+| LSK/USDT:USDT | +5.68% | $15,720,499.87 |
+| RAY/USDT:USDT | +3.50% | $9,969,631.38 |
+| ZEC/USDT:USDT | +3.45% | $970,428,791.04 |
+| SOXL/USDT:USDT | +2.40% | $29,619,661.81 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LSK/USDT:USDT | below_1h_threshold | +1.37% | +1.50% |
-| XAI/USDT:USDT | below_1h_threshold | +0.92% | +1.04% |
-| NGAS/USDT:USDT | below_1h_threshold | +0.60% | +0.72% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.32% | +0.44% |
-| RAY/USDT:USDT | below_1h_threshold | +0.27% | +0.39% |
+| RAY/USDT:USDT | below_1h_threshold | +2.69% | +2.60% |
+| LSK/USDT:USDT | below_1h_threshold | +2.65% | +2.56% |
+| ZEC/USDT:USDT | below_1h_threshold | +1.24% | +1.15% |
+| PENDLE/USDT:USDT | below_1h_threshold | +0.85% | +0.76% |
+| LINK/USDT:USDT | below_1h_threshold | +0.76% | +0.67% |
 
 ## 7. 次に見るべき不足
 
