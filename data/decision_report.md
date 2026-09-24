@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-24T03:27:00.010380+00:00
+- generated_at: 2026-09-24T03:31:22.623830+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15457**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-24T03:26:48.971935+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.38% price=84008.0
-- Funnel: target 1061 → liquid 184 → pre 50 → checked 49 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=1
-- Strict後reject: 4h RSI 84.6 >= 65=1
+- 更新: 2026-09-24T03:31:11.348210+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.39% price=84001.8
+- Funnel: target 1061 → liquid 184 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 84.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIL/USDT:USDT | +48.06% | $16,170,073.84 |
-| NOM/USDT:USDT | +35.41% | $2,124,797.08 |
-| BTW/USDT:USDT | +13.87% | $4,350,873.15 |
-| LTC/USDT:USDT | +11.53% | $38,498,394.36 |
-| LSK/USDT:USDT | +11.29% | $5,470,586.48 |
+| NIL/USDT:USDT | +47.31% | $16,236,242.18 |
+| NOM/USDT:USDT | +37.01% | $2,141,796.57 |
+| BTW/USDT:USDT | +13.42% | $4,373,220.96 |
+| LTC/USDT:USDT | +12.04% | $38,953,668.62 |
+| LSK/USDT:USDT | +11.94% | $5,494,784.89 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +4.41% | +4.79% |
-| LTC/USDT:USDT | below_1h_threshold | +0.84% | +1.22% |
-| FOLKS/USDT:USDT | below_1h_threshold | +0.83% | +1.21% |
-| ETC/USDT:USDT | below_1h_threshold | +0.75% | +1.13% |
-| XPL/USDT:USDT | below_1h_threshold | +0.56% | +0.94% |
+| BTW/USDT:USDT | below_1h_threshold | +3.99% | +4.38% |
+| FOLKS/USDT:USDT | below_1h_threshold | +1.37% | +1.75% |
+| LTC/USDT:USDT | below_1h_threshold | +1.26% | +1.65% |
+| CHR/USDT:USDT | below_1h_threshold | +0.93% | +1.32% |
+| ETC/USDT:USDT | below_1h_threshold | +0.60% | +0.99% |
 
 ## 7. 次に見るべき不足
 
