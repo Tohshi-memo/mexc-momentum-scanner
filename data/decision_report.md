@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-24T16:01:32.755831+00:00
+- generated_at: 2026-09-24T16:06:11.232017+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15482**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-24T16:01:21.981216+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=84254.7
+- 更新: 2026-09-24T16:06:03.687807+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.22% price=84179.2
 - Funnel: target 1069 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +0.47% | $5,375,168.22 |
-| SOXS/USDT:USDT | +0.45% | $18,593,749.05 |
-| SYN/USDT:USDT | +0.15% | $2,233,599.01 |
-| USOIL/USDT:USDT | +0.14% | $49,244,904.19 |
-| POLYMARKETSTOCK/USDT:USDT | +0.12% | $2,277,589.96 |
+| BTW/USDT:USDT | +2.62% | $5,405,120.45 |
+| WLD/USDT:USDT | +1.11% | $44,928,185.69 |
+| TUT/USDT:USDT | +1.01% | $2,922,327.70 |
+| ZRO/USDT:USDT | +0.91% | $7,915,489.14 |
+| NGAS/USDT:USDT | +0.78% | $1,845,332.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NGAS/USDT:USDT | below_1h_threshold | +1.93% | +2.06% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.20% | +1.33% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.96% | +1.10% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.87% | +1.00% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +0.51% | +0.64% |
+| BTW/USDT:USDT | below_1h_threshold | +2.65% | +2.87% |
+| NGAS/USDT:USDT | below_1h_threshold | +1.93% | +2.15% |
+| WLD/USDT:USDT | below_1h_threshold | +1.16% | +1.38% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.96% | +1.19% |
+| ZRO/USDT:USDT | below_1h_threshold | +0.91% | +1.14% |
 
 ## 7. 次に見るべき不足
 
