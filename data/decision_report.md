@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-24T17:21:24.789914+00:00
+- generated_at: 2026-09-24T17:26:28.283453+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15484**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-24T17:21:13.506198+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=84314.3
-- Funnel: target 1069 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-24T17:26:17.178768+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.28% price=84215.8
+- Funnel: target 1069 → liquid 171 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| QNT/USDT:USDT | +3.97% | $2,060,766.32 |
-| TRB/USDT:USDT | +3.97% | $1,079,135.56 |
-| SOXL/USDT:USDT | +3.63% | $37,739,830.82 |
-| EGLD/USDT:USDT | +3.05% | $2,164,179.43 |
-| NIL/USDT:USDT | +2.88% | $26,627,164.13 |
+| TRB/USDT:USDT | +4.42% | $1,137,139.42 |
+| QNT/USDT:USDT | +4.08% | $2,072,661.85 |
+| LSK/USDT:USDT | +4.00% | $15,452,395.31 |
+| NIL/USDT:USDT | +3.78% | $26,683,081.64 |
+| SOXL/USDT:USDT | +3.49% | $37,760,517.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXL/USDT:USDT | below_1h_threshold | +4.52% | +4.68% |
-| MVLL/USDT:USDT | below_1h_threshold | +2.87% | +3.03% |
-| MUU/USDT:USDT | below_1h_threshold | +2.73% | +2.89% |
-| TQQQ/USDT:USDT | below_1h_threshold | +2.43% | +2.59% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +2.37% | +2.53% |
+| SOXL/USDT:USDT | below_1h_threshold | +4.52% | +4.80% |
+| MVLL/USDT:USDT | below_1h_threshold | +2.87% | +3.15% |
+| MUU/USDT:USDT | below_1h_threshold | +2.73% | +3.01% |
+| TQQQ/USDT:USDT | below_1h_threshold | +2.43% | +2.70% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +2.37% | +2.65% |
 
 ## 7. 次に見るべき不足
 
