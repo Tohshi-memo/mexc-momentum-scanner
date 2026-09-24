@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-24T09:36:24.273765+00:00
+- generated_at: 2026-09-24T09:41:11.726988+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15470**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-24T09:36:10.949704+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.56% price=83143.7
+- 更新: 2026-09-24T09:41:02.778976+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.45% price=83234.3
 - Funnel: target 1065 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NOM/USDT:USDT | +54.78% | $4,228,724.01 |
-| NIL/USDT:USDT | +40.49% | $20,344,007.97 |
-| LSK/USDT:USDT | +33.68% | $10,961,803.90 |
-| LTC/USDT:USDT | +12.24% | $57,694,586.36 |
-| CHR/USDT:USDT | +9.06% | $1,274,762.02 |
+| NOM/USDT:USDT | +54.24% | $4,251,653.07 |
+| NIL/USDT:USDT | +40.70% | $20,393,899.26 |
+| LSK/USDT:USDT | +35.63% | $11,067,597.98 |
+| LTC/USDT:USDT | +13.20% | $58,202,347.53 |
+| CHR/USDT:USDT | +9.77% | $1,276,301.63 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +3.08% | +3.64% |
-| BTW/USDT:USDT | below_1h_threshold | +2.45% | +3.01% |
-| USOIL/USDT:USDT | below_1h_threshold | +1.70% | +2.26% |
-| UKOIL/USDT:USDT | below_1h_threshold | +1.56% | +2.12% |
-| ALGO/USDT:USDT | below_1h_threshold | +0.10% | +0.67% |
+| SOXS/USDT:USDT | below_1h_threshold | +3.08% | +3.53% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.70% | +2.15% |
+| UKOIL/USDT:USDT | below_1h_threshold | +1.56% | +2.02% |
+| LSK/USDT:USDT | below_1h_threshold | +1.42% | +1.87% |
+| BR/USDT:USDT | below_1h_threshold | +0.75% | +1.20% |
 
 ## 7. 次に見るべき不足
 
