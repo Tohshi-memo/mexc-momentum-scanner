@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-24T23:41:19.850882+00:00
+- generated_at: 2026-09-24T23:46:16.978383+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15504**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-24T23:41:08.783885+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.19% price=84394.9
+- 更新: 2026-09-24T23:46:06.803638+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.16% price=84368.6
 - Funnel: target 1069 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SAGA/USDT:USDT | +67.14% | $7,863,728.42 |
-| XAI/USDT:USDT | +11.62% | $11,124,541.73 |
-| QNT/USDT:USDT | +9.24% | $3,394,407.50 |
-| XPL/USDT:USDT | +9.17% | $14,793,445.38 |
-| CHIP/USDT:USDT | +8.20% | $1,419,650.34 |
+| SAGA/USDT:USDT | +66.54% | $7,918,958.21 |
+| XAI/USDT:USDT | +10.02% | $11,158,907.11 |
+| QNT/USDT:USDT | +8.95% | $3,405,216.69 |
+| XPL/USDT:USDT | +8.88% | $14,806,557.13 |
+| CHIP/USDT:USDT | +7.86% | $1,420,123.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SAGA/USDT:USDT | below_1h_threshold | +4.85% | +4.66% |
-| SYN/USDT:USDT | below_1h_threshold | +3.51% | +3.32% |
-| XPL/USDT:USDT | below_1h_threshold | +1.75% | +1.56% |
-| FET/USDT:USDT | below_1h_threshold | +1.41% | +1.22% |
-| AAVE/USDT:USDT | below_1h_threshold | +1.39% | +1.20% |
+| SAGA/USDT:USDT | below_1h_threshold | +4.63% | +4.47% |
+| SYN/USDT:USDT | below_1h_threshold | +3.46% | +3.30% |
+| XPL/USDT:USDT | below_1h_threshold | +1.42% | +1.26% |
+| FET/USDT:USDT | below_1h_threshold | +1.28% | +1.12% |
+| NEAR/USDT:USDT | below_1h_threshold | +1.27% | +1.11% |
 
 ## 7. 次に見るべき不足
 
