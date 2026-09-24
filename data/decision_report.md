@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-24T17:41:48.981428+00:00
+- generated_at: 2026-09-24T17:46:35.553660+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15485**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$121.27** / 初期 $100.00 (+21.27%)
-- 確定: 3159件 (Win 932 / Loss 1246 / Flat 981) / pending 0件 / skip 3799件
+- 確定: 3159件 (Win 932 / Loss 1246 / Flat 981) / pending 0件 / skip 3800件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000156 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BLESS/USDT:USDT `MARKET` TP_HIT account +0.34% 残高後 $121.27
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-24T17:41:35.837831+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.30% price=84194.8
-- Funnel: target 1069 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-24T17:46:24.168095+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.41% price=84106.3
+- Funnel: target 1069 → liquid 173 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 87.6 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOXL/USDT:USDT | +3.66% | $37,797,389.01 |
-| NIL/USDT:USDT | +3.62% | $26,771,578.43 |
-| QNT/USDT:USDT | +3.06% | $2,118,189.97 |
-| LSK/USDT:USDT | +2.94% | $15,515,780.17 |
-| TRB/USDT:USDT | +2.91% | $1,301,519.18 |
+| XAI/USDT:USDT | +27.56% | $1,219,524.76 |
+| LSK/USDT:USDT | +3.19% | $15,553,453.59 |
+| TRB/USDT:USDT | +2.70% | $1,319,445.14 |
+| SOXL/USDT:USDT | +2.69% | $37,810,519.30 |
+| QNT/USDT:USDT | +2.69% | $2,145,368.89 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXL/USDT:USDT | below_1h_threshold | +4.52% | +4.82% |
-| MVLL/USDT:USDT | below_1h_threshold | +2.87% | +3.17% |
-| SYN/USDT:USDT | below_1h_threshold | +2.82% | +3.12% |
-| MUU/USDT:USDT | below_1h_threshold | +2.73% | +3.03% |
-| TQQQ/USDT:USDT | below_1h_threshold | +2.43% | +2.73% |
+| SOXL/USDT:USDT | below_1h_threshold | +4.52% | +4.93% |
+| MVLL/USDT:USDT | below_1h_threshold | +2.87% | +3.28% |
+| MUU/USDT:USDT | below_1h_threshold | +2.73% | +3.14% |
+| TQQQ/USDT:USDT | below_1h_threshold | +2.43% | +2.83% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +2.37% | +2.78% |
 
 ## 7. 次に見るべき不足
 
