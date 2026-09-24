@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-24T15:56:49.289052+00:00
+- generated_at: 2026-09-24T16:01:32.755831+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15482**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-24T15:56:31.681796+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.91% price=84395.1
-- Funnel: target 1069 → liquid 173 → pre 50 → checked 50 → surge 3 → strict 2
-- Surge前reject: below_1h_threshold=46, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-24T16:01:21.981216+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=84254.7
+- Funnel: target 1069 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NOM/USDT:USDT | +39.92% | $5,961,928.92 |
-| LSK/USDT:USDT | +28.81% | $15,083,842.04 |
-| ONDO/USDT:USDT | +25.57% | $80,223,555.85 |
-| LTC/USDT:USDT | +25.48% | $112,404,599.27 |
-| H/USDT:USDT | +22.56% | $1,072,735.32 |
+| BTW/USDT:USDT | +0.47% | $5,375,168.22 |
+| SOXS/USDT:USDT | +0.45% | $18,593,749.05 |
+| SYN/USDT:USDT | +0.15% | $2,233,599.01 |
+| USOIL/USDT:USDT | +0.14% | $49,244,904.19 |
+| POLYMARKETSTOCK/USDT:USDT | +0.12% | $2,277,589.96 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RIVER/USDT:USDT | below_relative_strength | +5.10% | +4.19% |
-| LAB/USDT:USDT | below_1h_threshold | +4.48% | +3.57% |
-| INJ/USDT:USDT | below_1h_threshold | +4.39% | +3.48% |
-| FET/USDT:USDT | below_1h_threshold | +3.93% | +3.02% |
-| CYS/USDT:USDT | below_1h_threshold | +3.85% | +2.94% |
+| NGAS/USDT:USDT | below_1h_threshold | +1.93% | +2.06% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.20% | +1.33% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.96% | +1.10% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.87% | +1.00% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +0.51% | +0.64% |
 
 ## 7. 次に見るべき不足
 
