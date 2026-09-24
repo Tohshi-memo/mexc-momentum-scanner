@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-24T16:41:37.661197+00:00
+- generated_at: 2026-09-24T16:46:34.443895+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15484**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-24T16:41:24.571278+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.48% price=84775.1
-- Funnel: target 1069 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-24T16:46:23.195277+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=84481.7
+- Funnel: target 1069 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NOM/USDT:USDT | +4.30% | $6,104,097.90 |
-| EGLD/USDT:USDT | +4.21% | $2,093,475.30 |
-| SOXL/USDT:USDT | +4.00% | $46,932,482.53 |
-| MUU/USDT:USDT | +3.14% | $4,267,331.99 |
-| USELESS/USDT:USDT | +3.11% | $6,070,725.63 |
+| NOM/USDT:USDT | +4.30% | $6,116,152.60 |
+| EGLD/USDT:USDT | +4.19% | $2,149,204.36 |
+| SOXL/USDT:USDT | +3.69% | $47,035,716.55 |
+| NIL/USDT:USDT | +3.51% | $26,619,116.12 |
+| USELESS/USDT:USDT | +2.73% | $6,102,358.97 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NOM/USDT:USDT | below_1h_threshold | +4.31% | +3.82% |
-| EGLD/USDT:USDT | below_1h_threshold | +4.22% | +3.73% |
-| USELESS/USDT:USDT | below_1h_threshold | +3.55% | +3.07% |
-| BTW/USDT:USDT | below_1h_threshold | +3.04% | +2.55% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +2.93% | +2.44% |
+| EGLD/USDT:USDT | below_1h_threshold | +4.19% | +4.06% |
+| NOM/USDT:USDT | below_1h_threshold | +4.18% | +4.04% |
+| NIL/USDT:USDT | below_1h_threshold | +3.51% | +3.38% |
+| OP/USDT:USDT | below_1h_threshold | +2.78% | +2.64% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.74% | +2.60% |
 
 ## 7. 次に見るべき不足
 
