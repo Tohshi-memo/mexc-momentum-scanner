@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-24T02:31:21.210735+00:00
+- generated_at: 2026-09-24T02:36:21.901463+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15456**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-24T02:31:10.740050+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=84149.9
+- 更新: 2026-09-24T02:36:10.733289+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.12% price=84174.8
 - Funnel: target 1061 → liquid 186 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NOM/USDT:USDT | +47.53% | $1,955,028.14 |
-| NIL/USDT:USDT | +38.04% | $15,690,673.29 |
-| LSK/USDT:USDT | +21.00% | $5,016,280.31 |
-| BTW/USDT:USDT | +12.12% | $4,169,780.65 |
-| ZRO/USDT:USDT | +9.68% | $10,116,176.44 |
+| NOM/USDT:USDT | +47.95% | $1,972,419.02 |
+| NIL/USDT:USDT | +40.24% | $15,758,113.64 |
+| LSK/USDT:USDT | +21.58% | $5,043,049.41 |
+| BTW/USDT:USDT | +12.46% | $4,177,152.41 |
+| ZRO/USDT:USDT | +10.09% | $10,138,348.66 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIL/USDT:USDT | below_1h_threshold | +2.97% | +2.88% |
-| WIF/USDT:USDT | below_1h_threshold | +2.57% | +2.48% |
-| LSK/USDT:USDT | below_1h_threshold | +2.43% | +2.33% |
-| MINA/USDT:USDT | below_1h_threshold | +2.19% | +2.10% |
-| ZRO/USDT:USDT | below_1h_threshold | +1.92% | +1.82% |
+| NIL/USDT:USDT | below_1h_threshold | +3.70% | +3.58% |
+| WIF/USDT:USDT | below_1h_threshold | +3.04% | +2.92% |
+| LSK/USDT:USDT | below_1h_threshold | +2.93% | +2.81% |
+| FOLKS/USDT:USDT | below_1h_threshold | +2.44% | +2.31% |
+| ZRO/USDT:USDT | below_1h_threshold | +2.24% | +2.12% |
 
 ## 7. 次に見るべき不足
 
