@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-24T11:31:18.125603+00:00
+- generated_at: 2026-09-24T11:36:20.825955+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15474**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$121.27** / 初期 $100.00 (+21.27%)
-- 確定: 3159件 (Win 932 / Loss 1246 / Flat 981) / pending 0件 / skip 3783件
+- 確定: 3159件 (Win 932 / Loss 1246 / Flat 981) / pending 0件 / skip 3784件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000186 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BLESS/USDT:USDT `MARKET` TP_HIT account +0.34% 残高後 $121.27
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-24T11:31:06.931714+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=83480.4
-- Funnel: target 1070 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-24T11:36:01.077284+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=83410.1
+- Funnel: target 1070 → liquid 176 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NOM/USDT:USDT | +42.00% | $4,851,971.51 |
-| NIL/USDT:USDT | +33.61% | $22,311,740.80 |
-| LSK/USDT:USDT | +29.64% | $12,413,459.55 |
-| TUT/USDT:USDT | +21.18% | $2,193,969.51 |
-| CYS/USDT:USDT | +15.36% | $1,055,738.59 |
+| NOM/USDT:USDT | +42.95% | $4,874,090.11 |
+| NIL/USDT:USDT | +33.07% | $22,405,212.67 |
+| LSK/USDT:USDT | +27.18% | $12,493,895.31 |
+| TUT/USDT:USDT | +20.69% | $2,247,604.13 |
+| CYS/USDT:USDT | +15.79% | $1,062,766.75 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BR/USDT:USDT | below_1h_threshold | +4.44% | +4.43% |
-| 4/USDT:USDT | below_1h_threshold | +2.52% | +2.51% |
-| CAKE/USDT:USDT | below_1h_threshold | +1.46% | +1.45% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.43% | +1.42% |
-| CYS/USDT:USDT | below_1h_threshold | +1.35% | +1.35% |
+| 4/USDT:USDT | below_1h_threshold | +2.23% | +2.30% |
+| NEAR/USDT:USDT | below_1h_threshold | +1.72% | +1.79% |
+| CYS/USDT:USDT | below_1h_threshold | +1.63% | +1.70% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +1.39% | +1.47% |
+| VET/USDT:USDT | below_1h_threshold | +1.24% | +1.32% |
 
 ## 7. 次に見るべき不足
 
