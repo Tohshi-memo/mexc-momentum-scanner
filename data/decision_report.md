@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-24T16:21:31.174876+00:00
+- generated_at: 2026-09-24T16:26:39.023785+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15482**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-24T16:21:20.090603+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.34% price=84655.8
+- 更新: 2026-09-24T16:26:27.989026+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=84485.2
 - Funnel: target 1069 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TRUMPOFFICIAL/USDT:USDT | +3.21% | $7,654,211.58 |
-| SOXL/USDT:USDT | +2.93% | $46,723,230.57 |
-| WLD/USDT:USDT | +2.61% | $46,808,936.52 |
-| BTW/USDT:USDT | +2.52% | $5,508,471.09 |
-| KORU/USDT:USDT | +2.41% | $14,456,411.84 |
+| NOM/USDT:USDT | +3.75% | $6,051,692.72 |
+| TRUMPOFFICIAL/USDT:USDT | +3.46% | $7,676,651.28 |
+| BTW/USDT:USDT | +3.32% | $5,544,902.66 |
+| EGLD/USDT:USDT | +3.12% | $2,030,661.21 |
+| WLD/USDT:USDT | +2.92% | $47,042,754.67 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +3.22% | +2.88% |
-| BTW/USDT:USDT | below_1h_threshold | +2.58% | +2.24% |
-| WLD/USDT:USDT | below_1h_threshold | +2.56% | +2.22% |
-| NOM/USDT:USDT | below_1h_threshold | +2.39% | +2.04% |
-| H/USDT:USDT | below_1h_threshold | +2.30% | +1.95% |
+| NOM/USDT:USDT | below_1h_threshold | +3.71% | +3.57% |
+| BTW/USDT:USDT | below_1h_threshold | +3.32% | +3.18% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +3.27% | +3.13% |
+| EGLD/USDT:USDT | below_1h_threshold | +3.12% | +2.98% |
+| WLD/USDT:USDT | below_1h_threshold | +3.11% | +2.97% |
 
 ## 7. 次に見るべき不足
 
