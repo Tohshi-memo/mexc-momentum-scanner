@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-24T10:26:19.139943+00:00
+- generated_at: 2026-09-24T10:31:24.340217+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15471**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-24T10:26:08.399786+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=83216.6
+- 更新: 2026-09-24T10:31:16.109829+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=83161.0
 - Funnel: target 1070 → liquid 177 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.1 >= 65=1
+- Strict後reject: 4h RSI 78.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIL/USDT:USDT | +43.63% | $21,122,076.71 |
-| NOM/USDT:USDT | +42.42% | $4,544,878.96 |
-| LSK/USDT:USDT | +24.50% | $11,930,011.31 |
-| TUT/USDT:USDT | +21.67% | $1,306,281.02 |
-| LTC/USDT:USDT | +12.76% | $59,178,525.59 |
+| NOM/USDT:USDT | +43.90% | $4,580,926.76 |
+| NIL/USDT:USDT | +41.48% | $21,232,537.40 |
+| LSK/USDT:USDT | +24.46% | $11,983,957.13 |
+| TUT/USDT:USDT | +21.06% | $1,412,522.92 |
+| CYS/USDT:USDT | +13.07% | $1,041,075.49 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| 4/USDT:USDT | below_1h_threshold | +4.34% | +4.35% |
-| JASMY/USDT:USDT | below_1h_threshold | +1.25% | +1.27% |
-| AERO/USDT:USDT | below_1h_threshold | +1.22% | +1.23% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +0.99% | +1.00% |
-| ETC/USDT:USDT | below_1h_threshold | +0.86% | +0.87% |
+| 4/USDT:USDT | below_1h_threshold | +4.97% | +5.05% |
+| JASMY/USDT:USDT | below_1h_threshold | +1.25% | +1.34% |
+| AERO/USDT:USDT | below_1h_threshold | +1.20% | +1.28% |
+| INJ/USDT:USDT | below_1h_threshold | +0.99% | +1.07% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +0.81% | +0.89% |
 
 ## 7. 次に見るべき不足
 
