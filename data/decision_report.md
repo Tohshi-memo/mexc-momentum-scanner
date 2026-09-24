@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-24T14:26:29.226207+00:00
+- generated_at: 2026-09-24T14:31:40.242910+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15481**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$121.27** / 初期 $100.00 (+21.27%)
-- 確定: 3159件 (Win 932 / Loss 1246 / Flat 981) / pending 0件 / skip 3791件
+- 確定: 3159件 (Win 932 / Loss 1246 / Flat 981) / pending 0件 / skip 3794件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000158 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BLESS/USDT:USDT `MARKET` TP_HIT account +0.34% 残高後 $121.27
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-24T14:26:18.184224+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.26% price=84437.4
-- Funnel: target 1069 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-24T14:31:25.825127+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.55% price=84680.7
+- Funnel: target 1069 → liquid 179 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=46, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 75.3 >= 65=1, 4h RSI 65.2 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NOM/USDT:USDT | +42.24% | $5,651,664.03 |
-| LSK/USDT:USDT | +32.84% | $14,604,775.75 |
-| LTC/USDT:USDT | +23.46% | $85,045,457.60 |
-| ONDO/USDT:USDT | +23.04% | $60,509,226.41 |
-| NIL/USDT:USDT | +20.21% | $26,022,720.02 |
+| NOM/USDT:USDT | +41.83% | $5,666,584.31 |
+| LSK/USDT:USDT | +30.92% | $14,643,501.94 |
+| ONDO/USDT:USDT | +23.85% | $62,167,071.12 |
+| LTC/USDT:USDT | +23.85% | $86,421,836.99 |
+| NIL/USDT:USDT | +21.06% | $26,079,303.60 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ETC/USDT:USDT | below_relative_strength | +5.20% | +4.94% |
-| WLD/USDT:USDT | below_1h_threshold | +4.90% | +4.64% |
-| XPL/USDT:USDT | below_1h_threshold | +4.67% | +4.41% |
-| APT/USDT:USDT | below_1h_threshold | +4.40% | +4.14% |
-| ONDO/USDT:USDT | below_1h_threshold | +4.10% | +3.84% |
+| EIGEN/USDT:USDT | below_relative_strength | +5.28% | +4.73% |
+| ONDO/USDT:USDT | below_1h_threshold | +4.97% | +4.41% |
+| WLD/USDT:USDT | below_1h_threshold | +4.46% | +3.91% |
+| LTC/USDT:USDT | below_1h_threshold | +4.12% | +3.57% |
+| OP/USDT:USDT | below_1h_threshold | +3.94% | +3.39% |
 
 ## 7. 次に見るべき不足
 
