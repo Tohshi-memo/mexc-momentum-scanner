@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-24T02:46:19.070897+00:00
+- generated_at: 2026-09-24T02:51:26.730714+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15457**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$121.30** / 初期 $100.00 (+21.30%)
-- 確定: 3147件 (Win 928 / Loss 1238 / Flat 981) / pending 1件 / skip 3777件
+- 確定: 3147件 (Win 928 / Loss 1238 / Flat 981) / pending 3件 / skip 3777件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000332 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: KERNEL/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $121.30
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-24T02:46:08.081446+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.29% price=84311.1
-- Funnel: target 1061 → liquid 187 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-24T02:51:11.999876+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.30% price=84322.1
+- Funnel: target 1061 → liquid 187 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 68.3 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIL/USDT:USDT | +39.70% | $15,904,648.03 |
-| NOM/USDT:USDT | +38.44% | $2,031,699.83 |
-| LSK/USDT:USDT | +15.41% | $5,162,450.42 |
-| BTW/USDT:USDT | +10.60% | $4,235,757.18 |
-| ZRO/USDT:USDT | +10.10% | $10,209,426.42 |
+| NIL/USDT:USDT | +39.91% | $16,022,160.29 |
+| NOM/USDT:USDT | +39.75% | $2,058,598.55 |
+| LSK/USDT:USDT | +14.39% | $5,210,075.66 |
+| WIF/USDT:USDT | +11.42% | $7,579,768.75 |
+| LTC/USDT:USDT | +10.98% | $37,321,467.33 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| WIF/USDT:USDT | below_relative_strength | +5.10% | +4.81% |
-| USELESS/USDT:USDT | below_1h_threshold | +4.88% | +4.60% |
-| LTC/USDT:USDT | below_1h_threshold | +4.64% | +4.35% |
-| NIL/USDT:USDT | below_1h_threshold | +3.77% | +3.49% |
-| 1000BONK/USDT:USDT | below_1h_threshold | +3.45% | +3.17% |
+| USELESS/USDT:USDT | below_1h_threshold | +4.60% | +4.30% |
+| NIL/USDT:USDT | below_1h_threshold | +3.98% | +3.68% |
+| ORDI/USDT:USDT | below_1h_threshold | +3.46% | +3.16% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +3.43% | +3.14% |
+| ICP/USDT:USDT | below_1h_threshold | +3.43% | +3.13% |
 
 ## 7. 次に見るべき不足
 
