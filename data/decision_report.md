@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-24T19:16:33.061486+00:00
+- generated_at: 2026-09-24T19:21:22.637819+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15487**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-24T19:16:21.815075+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=84516.6
+- 更新: 2026-09-24T19:21:11.645181+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=84566.9
 - Funnel: target 1069 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| XAI/USDT:USDT | +25.96% | $6,182,509.17 |
-| LSK/USDT:USDT | +10.38% | $16,115,106.08 |
-| RAY/USDT:USDT | +4.86% | $10,106,797.98 |
-| CHIP/USDT:USDT | +4.75% | $1,013,717.65 |
-| LIT/USDT:USDT | +4.20% | $8,895,467.81 |
+| XAI/USDT:USDT | +26.25% | $6,248,491.70 |
+| LSK/USDT:USDT | +10.08% | $16,239,898.63 |
+| CHIP/USDT:USDT | +5.32% | $1,020,922.21 |
+| LIT/USDT:USDT | +4.90% | $8,933,628.60 |
+| RAY/USDT:USDT | +4.82% | $10,150,376.19 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LSK/USDT:USDT | below_1h_threshold | +4.38% | +4.29% |
-| MVLL/USDT:USDT | below_1h_threshold | +2.79% | +2.70% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +2.70% | +2.61% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.65% | +1.55% |
-| RIVER/USDT:USDT | below_1h_threshold | +1.64% | +1.55% |
+| LSK/USDT:USDT | below_1h_threshold | +3.96% | +3.80% |
+| RIVER/USDT:USDT | below_1h_threshold | +2.89% | +2.74% |
+| MVLL/USDT:USDT | below_1h_threshold | +2.79% | +2.64% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +2.70% | +2.55% |
+| QNT/USDT:USDT | below_1h_threshold | +2.25% | +2.10% |
 
 ## 7. 次に見るべき不足
 
