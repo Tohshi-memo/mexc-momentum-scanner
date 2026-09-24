@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-24T20:16:20.826684+00:00
+- generated_at: 2026-09-24T20:21:21.823205+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15488**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-24T20:16:12.071308+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=84234.0
+- 更新: 2026-09-24T20:21:13.059578+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=84224.8
 - Funnel: target 1069 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| XAI/USDT:USDT | +19.28% | $8,257,985.32 |
-| LSK/USDT:USDT | +13.51% | $16,878,680.88 |
-| CHIP/USDT:USDT | +8.38% | $1,171,808.49 |
-| QNT/USDT:USDT | +5.27% | $2,537,791.03 |
-| RAY/USDT:USDT | +4.02% | $9,929,266.48 |
+| XAI/USDT:USDT | +18.63% | $8,347,818.20 |
+| LSK/USDT:USDT | +15.18% | $17,027,870.96 |
+| CHIP/USDT:USDT | +7.72% | $1,187,959.28 |
+| QNT/USDT:USDT | +5.83% | $2,543,449.87 |
+| PLUME/USDT:USDT | +4.77% | $1,033,324.89 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LSK/USDT:USDT | below_1h_threshold | +2.39% | +2.56% |
-| MUU/USDT:USDT | below_1h_threshold | +0.80% | +0.97% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +0.75% | +0.92% |
-| NKESTOCK/USDT:USDT | below_1h_threshold | +0.57% | +0.75% |
-| SEI/USDT:USDT | below_1h_threshold | +0.54% | +0.71% |
+| XMR/USDT:USDT | below_1h_threshold | +3.48% | +3.66% |
+| LSK/USDT:USDT | below_1h_threshold | +3.46% | +3.64% |
+| QNT/USDT:USDT | below_1h_threshold | +1.11% | +1.30% |
+| SEI/USDT:USDT | below_1h_threshold | +1.09% | +1.27% |
+| COMP/USDT:USDT | below_1h_threshold | +0.83% | +1.01% |
 
 ## 7. 次に見るべき不足
 
