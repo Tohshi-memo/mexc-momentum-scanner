@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-24T19:26:32.315268+00:00
+- generated_at: 2026-09-24T19:31:27.897543+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15487**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$121.27** / 初期 $100.00 (+21.27%)
-- 確定: 3159件 (Win 932 / Loss 1246 / Flat 981) / pending 0件 / skip 3801件
+- 確定: 3159件 (Win 932 / Loss 1246 / Flat 981) / pending 0件 / skip 3802件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000174 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BLESS/USDT:USDT `MARKET` TP_HIT account +0.34% 残高後 $121.27
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-24T19:26:21.091532+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.20% price=84608.7
-- Funnel: target 1069 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-24T19:31:19.307582+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.12% price=84540.5
+- Funnel: target 1069 → liquid 173 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| XAI/USDT:USDT | +27.93% | $6,395,664.82 |
-| LSK/USDT:USDT | +11.11% | $16,295,872.28 |
-| CHIP/USDT:USDT | +6.41% | $1,026,564.57 |
-| RAY/USDT:USDT | +5.66% | $10,160,234.50 |
-| LIT/USDT:USDT | +5.37% | $8,952,133.86 |
+| XAI/USDT:USDT | +26.20% | $6,482,029.30 |
+| LSK/USDT:USDT | +12.23% | $16,354,281.23 |
+| CHIP/USDT:USDT | +7.29% | $1,033,626.66 |
+| RAY/USDT:USDT | +5.38% | $10,171,965.93 |
+| LIT/USDT:USDT | +4.91% | $8,982,035.29 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LSK/USDT:USDT | below_1h_threshold | +4.81% | +4.60% |
-| PENDLE/USDT:USDT | below_1h_threshold | +3.33% | +3.12% |
-| CHIP/USDT:USDT | below_1h_threshold | +3.07% | +2.87% |
-| MVLL/USDT:USDT | below_1h_threshold | +2.79% | +2.59% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +2.70% | +2.50% |
+| CHIP/USDT:USDT | below_1h_threshold | +3.86% | +3.74% |
+| NEAR/USDT:USDT | below_1h_threshold | +3.13% | +3.01% |
+| RIVER/USDT:USDT | below_1h_threshold | +2.97% | +2.84% |
+| XPL/USDT:USDT | below_1h_threshold | +2.96% | +2.84% |
+| PENDLE/USDT:USDT | below_1h_threshold | +2.85% | +2.73% |
 
 ## 7. 次に見るべき不足
 
