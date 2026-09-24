@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-24T17:56:33.538587+00:00
+- generated_at: 2026-09-24T18:01:34.078977+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15486**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-24T17:56:22.371171+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.54% price=83989.4
-- Funnel: target 1069 → liquid 173 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 88.6 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-24T18:01:22.940021+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=84049.9
+- Funnel: target 1069 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| XAI/USDT:USDT | +31.25% | $1,881,458.84 |
-| LSK/USDT:USDT | +3.87% | $15,642,416.24 |
-| QNT/USDT:USDT | +3.12% | $2,168,596.54 |
-| SOXL/USDT:USDT | +2.50% | $38,433,783.99 |
-| NBISSTOCK/USDT:USDT | +2.34% | $3,360,553.08 |
+| XAI/USDT:USDT | +32.93% | $2,088,060.97 |
+| LSK/USDT:USDT | +3.42% | $15,610,841.36 |
+| QNT/USDT:USDT | +3.08% | $2,117,664.49 |
+| TRB/USDT:USDT | +2.89% | $1,310,787.29 |
+| NBISSTOCK/USDT:USDT | +2.68% | $3,293,390.15 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXL/USDT:USDT | below_1h_threshold | +4.52% | +5.06% |
-| MVLL/USDT:USDT | below_1h_threshold | +2.87% | +3.42% |
-| MUU/USDT:USDT | below_1h_threshold | +2.73% | +3.27% |
-| TQQQ/USDT:USDT | below_1h_threshold | +2.43% | +2.97% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +2.37% | +2.92% |
+| NGAS/USDT:USDT | below_1h_threshold | +0.60% | +0.63% |
+| XAI/USDT:USDT | below_1h_threshold | +0.51% | +0.54% |
+| LSK/USDT:USDT | below_1h_threshold | +0.43% | +0.46% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.32% | +0.35% |
+| POLYMARKETSTOCK/USDT:USDT | below_1h_threshold | +0.25% | +0.28% |
 
 ## 7. 次に見るべき不足
 
