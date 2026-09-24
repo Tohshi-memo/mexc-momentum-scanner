@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-24T22:41:25.654290+00:00
+- generated_at: 2026-09-24T22:46:25.662213+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15503**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-24T22:41:12.304357+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.32% price=84038.8
+- 更新: 2026-09-24T22:46:14.470903+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.24% price=84105.0
 - Funnel: target 1069 → liquid 175 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.3 >= 65=1
+- Strict後reject: 4h RSI 81.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SAGA/USDT:USDT | +58.48% | $5,676,687.17 |
-| XAI/USDT:USDT | +12.19% | $10,755,671.37 |
-| LSK/USDT:USDT | +9.50% | $18,837,311.87 |
-| CHIP/USDT:USDT | +8.90% | $1,383,473.65 |
-| QNT/USDT:USDT | +8.32% | $3,215,667.13 |
+| SAGA/USDT:USDT | +60.42% | $5,945,927.31 |
+| XAI/USDT:USDT | +12.10% | $10,774,422.84 |
+| LSK/USDT:USDT | +9.18% | $18,869,815.82 |
+| CHIP/USDT:USDT | +8.49% | $1,399,390.72 |
+| QNT/USDT:USDT | +8.15% | $3,233,494.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CYS/USDT:USDT | below_1h_threshold | +1.50% | +1.82% |
-| NEAR/USDT:USDT | below_1h_threshold | +0.22% | +0.54% |
-| PHA/USDT:USDT | below_1h_threshold | +0.14% | +0.46% |
-| NKESTOCK/USDT:USDT | below_1h_threshold | +0.11% | +0.43% |
-| MUU/USDT:USDT | below_1h_threshold | +0.11% | +0.42% |
+| CYS/USDT:USDT | below_1h_threshold | +1.66% | +1.90% |
+| RAY/USDT:USDT | below_1h_threshold | +0.34% | +0.58% |
+| PHA/USDT:USDT | below_1h_threshold | +0.34% | +0.58% |
+| NEAR/USDT:USDT | below_1h_threshold | +0.26% | +0.50% |
+| AVNT/USDT:USDT | below_1h_threshold | +0.26% | +0.50% |
 
 ## 7. 次に見るべき不足
 
