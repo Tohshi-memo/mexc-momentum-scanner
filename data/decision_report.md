@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-24T13:46:31.431606+00:00
+- generated_at: 2026-09-24T13:51:36.344387+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15479**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-24T13:46:19.611823+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.41% price=83901.4
-- Funnel: target 1069 → liquid 182 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.5 >= 65=1, 4h RSI 74.4 >= 65=1
+- 更新: 2026-09-24T13:51:24.622664+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.42% price=83914.8
+- Funnel: target 1069 → liquid 183 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.4 >= 65=1, 4h RSI 69.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NOM/USDT:USDT | +50.44% | $5,365,084.81 |
-| LSK/USDT:USDT | +36.12% | $14,070,060.13 |
-| ONDO/USDT:USDT | +16.88% | $52,323,790.73 |
-| LTC/USDT:USDT | +16.50% | $70,017,683.77 |
-| NIL/USDT:USDT | +14.98% | $25,795,534.77 |
+| NOM/USDT:USDT | +48.36% | $5,397,244.90 |
+| LSK/USDT:USDT | +37.36% | $14,172,925.97 |
+| ONDO/USDT:USDT | +18.10% | $53,341,163.01 |
+| LTC/USDT:USDT | +16.77% | $71,632,425.06 |
+| NIL/USDT:USDT | +16.69% | $25,928,393.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ONDO/USDT:USDT | below_relative_strength | +5.19% | +4.78% |
-| QNT/USDT:USDT | below_1h_threshold | +4.13% | +3.72% |
-| LTC/USDT:USDT | below_1h_threshold | +3.64% | +3.23% |
-| ENA/USDT:USDT | below_1h_threshold | +3.28% | +2.88% |
-| DASH/USDT:USDT | below_1h_threshold | +3.13% | +2.72% |
+| QNT/USDT:USDT | below_1h_threshold | +4.51% | +4.09% |
+| ENA/USDT:USDT | below_1h_threshold | +4.01% | +3.58% |
+| LTC/USDT:USDT | below_1h_threshold | +3.86% | +3.44% |
+| NOM/USDT:USDT | below_1h_threshold | +3.79% | +3.37% |
+| AERO/USDT:USDT | below_1h_threshold | +3.63% | +3.20% |
 
 ## 7. 次に見るべき不足
 
