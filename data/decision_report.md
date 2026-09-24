@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-24T15:21:31.619535+00:00
+- generated_at: 2026-09-24T15:26:35.386406+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15481**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$121.27** / 初期 $100.00 (+21.27%)
-- 確定: 3159件 (Win 932 / Loss 1246 / Flat 981) / pending 0件 / skip 3796件
+- 確定: 3159件 (Win 932 / Loss 1246 / Flat 981) / pending 0件 / skip 3797件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000158 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BLESS/USDT:USDT `MARKET` TP_HIT account +0.34% 残高後 $121.27
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-24T15:21:20.555607+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.40% price=83968.0
-- Funnel: target 1069 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-24T15:26:22.025560+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.56% price=84099.8
+- Funnel: target 1069 → liquid 170 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NOM/USDT:USDT | +36.66% | $5,832,099.21 |
-| LSK/USDT:USDT | +25.36% | $14,803,417.35 |
-| ONDO/USDT:USDT | +24.79% | $71,388,180.32 |
-| LTC/USDT:USDT | +23.04% | $105,394,442.30 |
-| NIL/USDT:USDT | +17.70% | $26,209,169.45 |
+| NOM/USDT:USDT | +34.87% | $5,843,109.64 |
+| LSK/USDT:USDT | +26.24% | $14,857,369.36 |
+| ONDO/USDT:USDT | +25.96% | $73,174,207.35 |
+| LTC/USDT:USDT | +22.99% | $105,955,524.47 |
+| H/USDT:USDT | +21.44% | $1,004,977.67 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NGAS/USDT:USDT | below_1h_threshold | +3.78% | +3.38% |
-| ONDO/USDT:USDT | below_1h_threshold | +3.20% | +2.80% |
-| PYTH/USDT:USDT | below_1h_threshold | +2.22% | +1.82% |
-| ETC/USDT:USDT | below_1h_threshold | +1.67% | +1.27% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.61% | +1.22% |
+| ONDO/USDT:USDT | below_1h_threshold | +4.10% | +3.55% |
+| NGAS/USDT:USDT | below_1h_threshold | +3.78% | +3.23% |
+| ETC/USDT:USDT | below_1h_threshold | +3.69% | +3.14% |
+| RIVER/USDT:USDT | below_1h_threshold | +3.09% | +2.54% |
+| XPL/USDT:USDT | below_1h_threshold | +3.06% | +2.50% |
 
 ## 7. 次に見るべき不足
 
