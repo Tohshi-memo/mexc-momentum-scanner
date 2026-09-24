@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-24T21:16:31.066681+00:00
+- generated_at: 2026-09-24T21:21:29.398519+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15490**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$121.27** / 初期 $100.00 (+21.27%)
-- 確定: 3159件 (Win 932 / Loss 1246 / Flat 981) / pending 1件 / skip 3803件
+- 確定: 3159件 (Win 932 / Loss 1246 / Flat 981) / pending 3件 / skip 3803件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000077 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BLESS/USDT:USDT `MARKET` TP_HIT account +0.34% 残高後 $121.27
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-24T21:16:20.018871+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=84325.1
-- Funnel: target 1069 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-24T21:21:18.341126+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=84403.3
+- Funnel: target 1069 → liquid 174 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 66.5 >= 65=1, 4h RSI 87.2 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| XAI/USDT:USDT | +23.12% | $9,398,435.31 |
-| LSK/USDT:USDT | +15.60% | $18,550,166.10 |
-| CHIP/USDT:USDT | +9.17% | $1,205,245.72 |
-| XPL/USDT:USDT | +6.60% | $11,014,039.87 |
-| QNT/USDT:USDT | +5.93% | $2,664,975.23 |
+| XAI/USDT:USDT | +26.31% | $9,532,654.88 |
+| LSK/USDT:USDT | +14.54% | $18,597,115.12 |
+| SAGA/USDT:USDT | +9.08% | $2,122,964.04 |
+| CHIP/USDT:USDT | +8.72% | $1,205,573.18 |
+| XPL/USDT:USDT | +6.90% | $11,027,834.23 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| XAI/USDT:USDT | below_1h_threshold | +2.33% | +2.33% |
-| ICP/USDT:USDT | below_1h_threshold | +0.93% | +0.93% |
-| DASH/USDT:USDT | below_1h_threshold | +0.90% | +0.89% |
-| TIA/USDT:USDT | below_1h_threshold | +0.90% | +0.89% |
-| CHIP/USDT:USDT | below_1h_threshold | +0.77% | +0.77% |
+| TIA/USDT:USDT | below_1h_threshold | +1.38% | +1.28% |
+| 1000BONK/USDT:USDT | below_1h_threshold | +1.27% | +1.17% |
+| DASH/USDT:USDT | below_1h_threshold | +0.96% | +0.87% |
+| ICP/USDT:USDT | below_1h_threshold | +0.90% | +0.80% |
+| CYS/USDT:USDT | below_1h_threshold | +0.85% | +0.75% |
 
 ## 7. 次に見るべき不足
 
