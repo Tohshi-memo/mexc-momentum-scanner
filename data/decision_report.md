@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-24T05:36:10.217308+00:00
+- generated_at: 2026-09-24T05:41:26.887736+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15460**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$121.29** / 初期 $100.00 (+21.29%)
-- 確定: 3150件 (Win 929 / Loss 1240 / Flat 981) / pending 4件 / skip 3777件
+- 確定: 3150件 (Win 929 / Loss 1240 / Flat 981) / pending 5件 / skip 3777件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000374 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MUBARAK/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $121.29
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-24T05:36:02.318076+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=84087.9
-- Funnel: target 1066 → liquid 180 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-24T05:41:18.804959+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.19% price=84160.0
+- Funnel: target 1066 → liquid 180 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 86.0 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIL/USDT:USDT | +49.06% | $17,717,993.79 |
-| NOM/USDT:USDT | +40.22% | $2,463,132.38 |
-| LSK/USDT:USDT | +23.09% | $6,526,044.28 |
-| LTC/USDT:USDT | +13.79% | $46,328,646.00 |
-| BTW/USDT:USDT | +13.63% | $4,700,979.05 |
+| NOM/USDT:USDT | +46.82% | $2,483,668.95 |
+| NIL/USDT:USDT | +44.62% | $17,906,983.49 |
+| LSK/USDT:USDT | +21.87% | $6,553,496.01 |
+| LTC/USDT:USDT | +14.43% | $46,514,945.59 |
+| BTW/USDT:USDT | +12.98% | $4,716,502.39 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_1h_threshold | +3.90% | +3.79% |
-| NIL/USDT:USDT | below_1h_threshold | +3.71% | +3.60% |
-| RAY/USDT:USDT | below_1h_threshold | +3.20% | +3.10% |
-| LSK/USDT:USDT | below_1h_threshold | +2.57% | +2.47% |
-| NOM/USDT:USDT | below_1h_threshold | +1.63% | +1.53% |
+| BLESS/USDT:USDT | below_1h_threshold | +4.56% | +4.37% |
+| RAY/USDT:USDT | below_1h_threshold | +3.95% | +3.76% |
+| KAS/USDT:USDT | below_1h_threshold | +1.81% | +1.62% |
+| ENA/USDT:USDT | below_1h_threshold | +1.61% | +1.42% |
+| ETHFI/USDT:USDT | below_1h_threshold | +1.60% | +1.41% |
 
 ## 7. 次に見るべき不足
 
