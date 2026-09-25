@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-25T08:06:15.675948+00:00
+- generated_at: 2026-09-25T08:11:18.536749+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15516**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-25T08:06:05.470941+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=84092.7
+- 更新: 2026-09-25T08:11:07.486909+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=84025.6
 - Funnel: target 1069 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| QNT/USDT:USDT | +23.77% | $11,063,241.52 |
-| XPL/USDT:USDT | +12.26% | $22,159,303.26 |
-| SYN/USDT:USDT | +11.64% | $3,250,871.70 |
-| PHA/USDT:USDT | +11.36% | $1,547,051.01 |
-| ONDO/USDT:USDT | +10.58% | $168,590,302.01 |
+| QNT/USDT:USDT | +23.10% | $11,224,719.58 |
+| XPL/USDT:USDT | +13.51% | $22,279,726.80 |
+| PHA/USDT:USDT | +12.58% | $1,568,891.16 |
+| ONDO/USDT:USDT | +11.22% | $169,884,609.58 |
+| SYN/USDT:USDT | +10.76% | $3,263,588.24 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CHIP/USDT:USDT | below_1h_threshold | +1.04% | +0.92% |
-| SEI/USDT:USDT | below_1h_threshold | +0.78% | +0.66% |
-| KORU/USDT:USDT | below_1h_threshold | +0.76% | +0.65% |
-| POLYMARKETSTOCK/USDT:USDT | below_1h_threshold | +0.59% | +0.47% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.57% | +0.46% |
+| SEI/USDT:USDT | below_1h_threshold | +2.11% | +2.07% |
+| PHA/USDT:USDT | below_1h_threshold | +1.22% | +1.18% |
+| EGLD/USDT:USDT | below_1h_threshold | +0.91% | +0.87% |
+| CHIP/USDT:USDT | below_1h_threshold | +0.89% | +0.85% |
+| LDO/USDT:USDT | below_1h_threshold | +0.83% | +0.79% |
 
 ## 7. 次に見るべき不足
 
