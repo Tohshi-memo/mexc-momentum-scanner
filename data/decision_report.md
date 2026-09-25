@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-25T01:11:25.668339+00:00
+- generated_at: 2026-09-25T01:16:27.172319+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15507**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-25T01:11:14.413722+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.18% price=84714.9
+- 更新: 2026-09-25T01:16:15.991265+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.13% price=84674.0
 - Funnel: target 1069 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SAGA/USDT:USDT | +60.79% | $13,076,060.10 |
-| XPL/USDT:USDT | +14.27% | $15,522,539.65 |
-| SYN/USDT:USDT | +10.71% | $2,061,998.61 |
-| QNT/USDT:USDT | +9.83% | $3,611,188.84 |
-| CHIP/USDT:USDT | +8.47% | $1,409,568.67 |
+| SAGA/USDT:USDT | +61.26% | $13,181,886.36 |
+| XPL/USDT:USDT | +13.60% | $15,606,362.86 |
+| SYN/USDT:USDT | +10.81% | $2,067,767.76 |
+| QNT/USDT:USDT | +9.03% | $3,611,583.47 |
+| CHIP/USDT:USDT | +8.11% | $1,410,261.75 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SAGA/USDT:USDT | below_1h_threshold | +4.62% | +4.43% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +2.34% | +2.16% |
-| XPL/USDT:USDT | below_1h_threshold | +2.28% | +2.09% |
-| LDO/USDT:USDT | below_1h_threshold | +2.15% | +1.97% |
-| ONDO/USDT:USDT | below_1h_threshold | +1.94% | +1.76% |
+| SAGA/USDT:USDT | below_1h_threshold | +4.71% | +4.57% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +2.34% | +2.21% |
+| XPL/USDT:USDT | below_1h_threshold | +1.80% | +1.66% |
+| LDO/USDT:USDT | below_1h_threshold | +1.67% | +1.53% |
+| AVNT/USDT:USDT | below_1h_threshold | +1.55% | +1.42% |
 
 ## 7. 次に見るべき不足
 
