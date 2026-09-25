@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-25T08:01:28.361012+00:00
+- generated_at: 2026-09-25T08:06:15.675948+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15516**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-25T08:01:17.161014+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=84013.4
+- 更新: 2026-09-25T08:06:05.470941+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.12% price=84092.7
 - Funnel: target 1069 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| QNT/USDT:USDT | +24.03% | $10,827,994.51 |
-| XPL/USDT:USDT | +13.67% | $21,972,507.98 |
-| SYN/USDT:USDT | +12.32% | $3,231,565.26 |
-| ACE/USDT:USDT | +11.23% | $1,007,035.59 |
-| AXS/USDT:USDT | +10.90% | $1,586,013.86 |
+| QNT/USDT:USDT | +23.77% | $11,063,241.52 |
+| XPL/USDT:USDT | +12.26% | $22,159,303.26 |
+| SYN/USDT:USDT | +11.64% | $3,250,871.70 |
+| PHA/USDT:USDT | +11.36% | $1,547,051.01 |
+| ONDO/USDT:USDT | +10.58% | $168,590,302.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CHIP/USDT:USDT | below_1h_threshold | +0.87% | +0.84% |
-| KORU/USDT:USDT | below_1h_threshold | +0.76% | +0.74% |
-| ACE/USDT:USDT | below_1h_threshold | +0.58% | +0.55% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.57% | +0.55% |
-| AXS/USDT:USDT | below_1h_threshold | +0.51% | +0.49% |
+| CHIP/USDT:USDT | below_1h_threshold | +1.04% | +0.92% |
+| SEI/USDT:USDT | below_1h_threshold | +0.78% | +0.66% |
+| KORU/USDT:USDT | below_1h_threshold | +0.76% | +0.65% |
+| POLYMARKETSTOCK/USDT:USDT | below_1h_threshold | +0.59% | +0.47% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.57% | +0.46% |
 
 ## 7. 次に見るべき不足
 
