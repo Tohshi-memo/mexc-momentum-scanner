@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-25T00:16:17.471884+00:00
+- generated_at: 2026-09-25T00:21:27.995493+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15506**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$119.99** / 初期 $100.00 (+19.99%)
-- 確定: 3170件 (Win 933 / Loss 1254 / Flat 983) / pending 1件 / skip 3804件
+- 確定: 3170件 (Win 933 / Loss 1254 / Flat 983) / pending 1件 / skip 3805件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000086 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: SAGA/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $119.99
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-25T00:16:08.757938+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.26% price=84593.4
-- Funnel: target 1069 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-25T00:21:16.472520+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.23% price=84564.4
+- Funnel: target 1069 → liquid 175 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 84.4 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SAGA/USDT:USDT | +77.64% | $10,155,253.46 |
-| XPL/USDT:USDT | +11.32% | $15,025,566.52 |
-| MRNASTOCK/USDT:USDT | +8.81% | $1,235,379.63 |
-| SYN/USDT:USDT | +8.68% | $1,990,940.01 |
-| QNT/USDT:USDT | +8.59% | $3,483,228.65 |
+| SAGA/USDT:USDT | +80.88% | $10,326,584.99 |
+| XPL/USDT:USDT | +11.59% | $15,058,076.93 |
+| SYN/USDT:USDT | +9.10% | $1,995,482.89 |
+| QNT/USDT:USDT | +8.41% | $3,489,161.53 |
+| CHIP/USDT:USDT | +8.08% | $1,430,575.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SYN/USDT:USDT | below_1h_threshold | +3.67% | +3.41% |
-| SAGA/USDT:USDT | below_1h_threshold | +3.64% | +3.38% |
-| XPL/USDT:USDT | below_1h_threshold | +3.10% | +2.83% |
-| 1000BONK/USDT:USDT | below_1h_threshold | +1.74% | +1.48% |
-| RENDER/USDT:USDT | below_1h_threshold | +1.46% | +1.19% |
+| SYN/USDT:USDT | below_1h_threshold | +4.07% | +3.84% |
+| XPL/USDT:USDT | below_1h_threshold | +3.36% | +3.13% |
+| XLM/USDT:USDT | below_1h_threshold | +2.00% | +1.77% |
+| PHA/USDT:USDT | below_1h_threshold | +1.71% | +1.48% |
+| ENA/USDT:USDT | below_1h_threshold | +1.68% | +1.45% |
 
 ## 7. 次に見るべき不足
 
