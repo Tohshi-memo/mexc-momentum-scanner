@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-25T01:01:24.094162+00:00
+- generated_at: 2026-09-25T01:06:30.586193+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15507**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$119.99** / 初期 $100.00 (+19.99%)
-- 確定: 3170件 (Win 933 / Loss 1254 / Flat 983) / pending 1件 / skip 3806件
+- 確定: 3170件 (Win 933 / Loss 1254 / Flat 983) / pending 1件 / skip 3807件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000086 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: SAGA/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $119.99
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-25T01:01:13.155650+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=84551.7
-- Funnel: target 1069 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-25T01:06:19.323144+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=84646.3
+- Funnel: target 1069 → liquid 173 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 77.9 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SAGA/USDT:USDT | +56.04% | $12,572,460.41 |
-| SYN/USDT:USDT | +12.27% | $2,038,629.32 |
-| XPL/USDT:USDT | +11.21% | $15,256,210.83 |
-| QNT/USDT:USDT | +9.35% | $3,587,288.16 |
-| CHIP/USDT:USDT | +8.24% | $1,408,993.83 |
+| SAGA/USDT:USDT | +65.15% | $12,907,781.63 |
+| XPL/USDT:USDT | +14.14% | $15,412,227.80 |
+| SYN/USDT:USDT | +12.27% | $2,050,177.86 |
+| QNT/USDT:USDT | +9.85% | $3,595,654.84 |
+| ENA/USDT:USDT | +8.91% | $30,050,887.31 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +2.34% | +2.35% |
-| SAGA/USDT:USDT | below_1h_threshold | +2.08% | +2.09% |
-| SYN/USDT:USDT | below_1h_threshold | +1.50% | +1.51% |
-| QNT/USDT:USDT | below_1h_threshold | +0.60% | +0.61% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +0.55% | +0.56% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +2.34% | +2.24% |
+| XPL/USDT:USDT | below_1h_threshold | +2.15% | +2.04% |
+| SYN/USDT:USDT | below_1h_threshold | +1.46% | +1.36% |
+| AVNT/USDT:USDT | below_1h_threshold | +1.21% | +1.11% |
+| SAND/USDT:USDT | below_1h_threshold | +1.18% | +1.08% |
 
 ## 7. 次に見るべき不足
 
