@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-25T13:46:22.524583+00:00
+- generated_at: 2026-09-25T13:51:29.221146+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15530**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$119.91** / 初期 $100.00 (+19.91%)
-- 確定: 3171件 (Win 933 / Loss 1255 / Flat 983) / pending 0件 / skip 3831件
+- 確定: 3171件 (Win 933 / Loss 1255 / Flat 983) / pending 0件 / skip 3832件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000190 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: XPL/USDT:USDT `MARKET` EXPIRED account -0.07% 残高後 $119.91
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-25T13:46:11.437254+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.56% price=83950.0
-- Funnel: target 1066 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-25T13:51:17.655379+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.76% price=83785.1
+- Funnel: target 1066 → liquid 177 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 80.3 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PHA/USDT:USDT | +45.43% | $4,936,571.63 |
-| ARK/USDT:USDT | +25.87% | $2,201,592.54 |
-| BP/USDT:USDT | +24.85% | $1,065,780.08 |
-| B3/USDT:USDT | +19.25% | $1,059,063.25 |
-| QNT/USDT:USDT | +15.15% | $16,930,327.31 |
+| PHA/USDT:USDT | +50.34% | $5,163,317.40 |
+| ARK/USDT:USDT | +25.92% | $2,214,108.08 |
+| BP/USDT:USDT | +25.31% | $1,070,846.39 |
+| B3/USDT:USDT | +19.52% | $1,060,222.32 |
+| QNT/USDT:USDT | +14.65% | $16,958,531.90 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +3.35% | +3.92% |
-| PHA/USDT:USDT | below_1h_threshold | +2.68% | +3.24% |
-| PLUME/USDT:USDT | below_1h_threshold | +1.71% | +2.27% |
-| AERO/USDT:USDT | below_1h_threshold | +1.09% | +1.66% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +1.01% | +1.58% |
+| BTW/USDT:USDT | below_1h_threshold | +4.12% | +4.88% |
+| NEAR/USDT:USDT | below_1h_threshold | +1.68% | +2.44% |
+| PLUME/USDT:USDT | below_1h_threshold | +1.55% | +2.31% |
+| AR/USDT:USDT | below_1h_threshold | +1.22% | +1.98% |
+| ZRO/USDT:USDT | below_1h_threshold | +1.17% | +1.92% |
 
 ## 7. 次に見るべき不足
 
