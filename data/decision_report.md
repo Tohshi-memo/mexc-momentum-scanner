@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-25T06:01:21.598407+00:00
+- generated_at: 2026-09-25T06:06:23.127834+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15515**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-25T06:01:11.350439+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=84131.0
+- 更新: 2026-09-25T06:06:13.981366+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=84191.6
 - Funnel: target 1069 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| QNT/USDT:USDT | +18.94% | $6,208,383.82 |
-| SYN/USDT:USDT | +13.78% | $2,943,480.13 |
-| XPL/USDT:USDT | +13.24% | $18,353,605.35 |
-| SOXL/USDT:USDT | +8.17% | $29,430,782.13 |
-| PHA/USDT:USDT | +6.29% | $1,077,146.38 |
+| QNT/USDT:USDT | +19.17% | $6,448,254.59 |
+| SYN/USDT:USDT | +13.83% | $2,952,901.39 |
+| XPL/USDT:USDT | +13.32% | $18,375,881.93 |
+| SOXL/USDT:USDT | +8.56% | $29,711,562.53 |
+| PHA/USDT:USDT | +6.93% | $1,086,899.00 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXL/USDT:USDT | below_1h_threshold | +1.27% | +1.30% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +0.74% | +0.76% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +0.69% | +0.72% |
-| KORU/USDT:USDT | below_1h_threshold | +0.68% | +0.70% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +0.63% | +0.65% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.27% | +1.23% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +0.74% | +0.69% |
+| SYN/USDT:USDT | below_1h_threshold | +0.74% | +0.69% |
+| QNT/USDT:USDT | below_1h_threshold | +0.73% | +0.68% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +0.69% | +0.64% |
 
 ## 7. 次に見るべき不足
 
