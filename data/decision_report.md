@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-25T17:06:16.734399+00:00
+- generated_at: 2026-09-25T17:11:59.234178+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15536**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$119.91** / 初期 $100.00 (+19.91%)
-- 確定: 3171件 (Win 933 / Loss 1255 / Flat 983) / pending 0件 / skip 3837件
+- 確定: 3171件 (Win 933 / Loss 1255 / Flat 983) / pending 0件 / skip 3838件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000181 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: XPL/USDT:USDT `MARKET` EXPIRED account -0.07% 残高後 $119.91
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-25T17:06:07.460855+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=83848.5
-- Funnel: target 1067 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-25T17:11:45.689125+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.21% price=83890.3
+- Funnel: target 1067 → liquid 170 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LYN/USDT:USDT | +51.58% | $1,443,802.10 |
-| BR/USDT:USDT | +9.96% | $7,712,619.79 |
-| PHA/USDT:USDT | +6.07% | $11,827,721.04 |
-| AERO/USDT:USDT | +6.05% | $2,115,114.47 |
-| GRASS/USDT:USDT | +5.17% | $1,391,280.43 |
+| LYN/USDT:USDT | +59.58% | $1,775,405.84 |
+| BR/USDT:USDT | +12.35% | $7,786,501.32 |
+| GRASS/USDT:USDT | +6.15% | $1,405,470.79 |
+| PHA/USDT:USDT | +5.82% | $11,984,530.75 |
+| ENA/USDT:USDT | +4.49% | $55,884,957.55 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BR/USDT:USDT | below_1h_threshold | +3.46% | +3.30% |
-| MVLL/USDT:USDT | below_1h_threshold | +2.07% | +1.91% |
-| XPL/USDT:USDT | below_1h_threshold | +1.92% | +1.76% |
-| RARE/USDT:USDT | below_1h_threshold | +1.60% | +1.44% |
-| ENA/USDT:USDT | below_1h_threshold | +1.43% | +1.27% |
+| ENA/USDT:USDT | below_1h_threshold | +2.23% | +2.02% |
+| MVLL/USDT:USDT | below_1h_threshold | +2.07% | +1.86% |
+| ARB/USDT:USDT | below_1h_threshold | +1.74% | +1.53% |
+| XPL/USDT:USDT | below_1h_threshold | +1.64% | +1.43% |
+| GRASS/USDT:USDT | below_1h_threshold | +1.49% | +1.28% |
 
 ## 7. 次に見るべき不足
 
