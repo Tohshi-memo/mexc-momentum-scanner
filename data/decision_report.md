@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-25T22:11:25.453068+00:00
+- generated_at: 2026-09-25T22:16:24.085506+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15544**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-25T22:11:16.234840+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=83885.3
+- 更新: 2026-09-25T22:16:12.925396+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=83888.9
 - Funnel: target 1067 → liquid 171 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PHA/USDT:USDT | +31.26% | $20,723,283.54 |
-| BR/USDT:USDT | +16.74% | $9,195,658.72 |
-| SEI/USDT:USDT | +10.72% | $32,680,389.95 |
-| AERO/USDT:USDT | +7.68% | $3,015,283.46 |
-| SUI/USDT:USDT | +6.80% | $253,311,064.55 |
+| PHA/USDT:USDT | +31.35% | $20,899,036.67 |
+| BR/USDT:USDT | +16.96% | $9,204,710.78 |
+| SEI/USDT:USDT | +10.56% | $32,842,152.75 |
+| SUI/USDT:USDT | +7.23% | $255,021,911.54 |
+| AERO/USDT:USDT | +7.10% | $3,027,401.23 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CHIP/USDT:USDT | below_1h_threshold | +1.93% | +1.77% |
-| LDO/USDT:USDT | below_1h_threshold | +1.91% | +1.75% |
-| PENGU/USDT:USDT | below_1h_threshold | +1.81% | +1.65% |
-| SUI/USDT:USDT | below_1h_threshold | +1.64% | +1.48% |
-| TAO/USDT:USDT | below_1h_threshold | +1.33% | +1.16% |
+| SUI/USDT:USDT | below_1h_threshold | +2.11% | +1.94% |
+| CHIP/USDT:USDT | below_1h_threshold | +2.00% | +1.83% |
+| PENGU/USDT:USDT | below_1h_threshold | +1.99% | +1.82% |
+| APT/USDT:USDT | below_1h_threshold | +1.48% | +1.32% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +1.48% | +1.31% |
 
 ## 7. 次に見るべき不足
 
