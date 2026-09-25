@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-25T05:11:26.313127+00:00
+- generated_at: 2026-09-25T05:16:21.024456+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15514**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-25T05:11:15.095708+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=84182.4
+- 更新: 2026-09-25T05:16:12.098761+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=84152.3
 - Funnel: target 1069 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| QNT/USDT:USDT | +17.23% | $5,298,225.96 |
-| SYN/USDT:USDT | +14.24% | $2,826,250.66 |
-| XPL/USDT:USDT | +12.69% | $17,761,577.81 |
-| SOXL/USDT:USDT | +7.04% | $28,160,922.02 |
-| MRNASTOCK/USDT:USDT | +6.27% | $1,402,694.20 |
+| SYN/USDT:USDT | +15.96% | $2,845,961.53 |
+| QNT/USDT:USDT | +15.04% | $5,481,269.57 |
+| XPL/USDT:USDT | +10.65% | $17,959,781.06 |
+| SOXL/USDT:USDT | +7.15% | $28,323,525.31 |
+| MRNASTOCK/USDT:USDT | +6.25% | $1,405,374.09 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VIRTUAL/USDT:USDT | below_1h_threshold | +2.83% | +2.82% |
-| EGLD/USDT:USDT | below_1h_threshold | +1.40% | +1.38% |
-| SYN/USDT:USDT | below_1h_threshold | +0.87% | +0.86% |
-| TAO/USDT:USDT | below_1h_threshold | +0.71% | +0.70% |
-| XPL/USDT:USDT | below_1h_threshold | +0.64% | +0.62% |
+| VIRTUAL/USDT:USDT | below_1h_threshold | +3.54% | +3.56% |
+| SYN/USDT:USDT | below_1h_threshold | +2.39% | +2.41% |
+| EGLD/USDT:USDT | below_1h_threshold | +1.13% | +1.15% |
+| KORU/USDT:USDT | below_1h_threshold | +0.44% | +0.46% |
+| ONDO/USDT:USDT | below_1h_threshold | +0.26% | +0.29% |
 
 ## 7. 次に見るべき不足
 
