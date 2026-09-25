@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-25T10:21:22.014483+00:00
+- generated_at: 2026-09-25T10:26:24.222907+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15518**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$119.91** / 初期 $100.00 (+19.91%)
-- 確定: 3171件 (Win 933 / Loss 1255 / Flat 983) / pending 0件 / skip 3819件
+- 確定: 3171件 (Win 933 / Loss 1255 / Flat 983) / pending 0件 / skip 3820件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000161 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: XPL/USDT:USDT `MARKET` EXPIRED account -0.07% 残高後 $119.91
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-25T10:21:10.902504+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=84439.3
-- Funnel: target 1069 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-25T10:26:10.664368+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=84507.6
+- Funnel: target 1069 → liquid 175 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARK/USDT:USDT | +25.36% | $1,344,949.44 |
-| PHA/USDT:USDT | +20.00% | $2,135,559.68 |
-| QNT/USDT:USDT | +19.99% | $14,367,956.04 |
-| GRASS/USDT:USDT | +15.58% | $1,107,988.47 |
-| SYN/USDT:USDT | +13.26% | $3,542,258.70 |
+| ARK/USDT:USDT | +25.14% | $1,359,867.34 |
+| PHA/USDT:USDT | +19.78% | $2,142,446.57 |
+| QNT/USDT:USDT | +19.61% | $14,442,789.81 |
+| GRASS/USDT:USDT | +15.72% | $1,111,675.46 |
+| SYN/USDT:USDT | +13.46% | $3,553,444.39 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ARK/USDT:USDT | below_1h_threshold | +3.91% | +4.02% |
-| QNT/USDT:USDT | below_1h_threshold | +2.82% | +2.93% |
-| AR/USDT:USDT | below_1h_threshold | +1.75% | +1.86% |
-| FET/USDT:USDT | below_1h_threshold | +1.45% | +1.55% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.40% | +1.51% |
+| NIL/USDT:USDT | below_1h_threshold | +4.23% | +4.26% |
+| ARK/USDT:USDT | below_1h_threshold | +3.73% | +3.75% |
+| QNT/USDT:USDT | below_1h_threshold | +2.44% | +2.46% |
+| AR/USDT:USDT | below_1h_threshold | +1.94% | +1.96% |
+| FET/USDT:USDT | below_1h_threshold | +1.91% | +1.94% |
 
 ## 7. 次に見るべき不足
 
