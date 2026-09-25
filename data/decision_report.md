@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-25T04:21:20.668974+00:00
+- generated_at: 2026-09-25T04:26:26.789062+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15514**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-25T04:21:09.481832+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=84080.1
+- 更新: 2026-09-25T04:26:17.874801+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=84085.0
 - Funnel: target 1069 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| QNT/USDT:USDT | +15.64% | $4,342,156.37 |
-| XPL/USDT:USDT | +13.82% | $17,110,463.22 |
-| SYN/USDT:USDT | +13.26% | $2,827,973.77 |
-| SOXL/USDT:USDT | +6.62% | $27,725,653.15 |
-| XLM/USDT:USDT | +6.33% | $16,207,895.66 |
+| QNT/USDT:USDT | +16.03% | $4,378,783.60 |
+| XPL/USDT:USDT | +13.59% | $17,126,930.38 |
+| SYN/USDT:USDT | +12.74% | $2,843,269.08 |
+| SOXL/USDT:USDT | +6.69% | $27,855,295.09 |
+| XLM/USDT:USDT | +6.25% | $16,224,038.14 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +2.97% | +3.11% |
-| XAI/USDT:USDT | below_1h_threshold | +2.59% | +2.74% |
-| SYN/USDT:USDT | below_1h_threshold | +2.11% | +2.25% |
-| ONDO/USDT:USDT | below_1h_threshold | +1.78% | +1.93% |
-| QNT/USDT:USDT | below_1h_threshold | +1.53% | +1.67% |
+| XAI/USDT:USDT | below_1h_threshold | +3.22% | +3.35% |
+| QNT/USDT:USDT | below_1h_threshold | +1.89% | +2.03% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.70% | +1.83% |
+| SYN/USDT:USDT | below_1h_threshold | +1.59% | +1.73% |
+| ALGO/USDT:USDT | below_1h_threshold | +1.34% | +1.48% |
 
 ## 7. 次に見るべき不足
 
