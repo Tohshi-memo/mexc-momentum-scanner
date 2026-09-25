@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-25T08:41:26.264907+00:00
+- generated_at: 2026-09-25T08:46:25.079327+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15516**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$119.91** / 初期 $100.00 (+19.91%)
-- 確定: 3171件 (Win 933 / Loss 1255 / Flat 983) / pending 0件 / skip 3817件
+- 確定: 3171件 (Win 933 / Loss 1255 / Flat 983) / pending 0件 / skip 3818件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000164 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: XPL/USDT:USDT `MARKET` EXPIRED account -0.07% 残高後 $119.91
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-25T08:41:15.092345+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.36% price=84299.7
+- 更新: 2026-09-25T08:46:13.737651+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.32% price=84259.0
 - Funnel: target 1069 → liquid 178 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.0 >= 65=1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| XPL/USDT:USDT | +20.57% | $24,217,947.98 |
-| QNT/USDT:USDT | +20.15% | $12,107,995.63 |
-| PHA/USDT:USDT | +13.04% | $1,629,929.31 |
-| LDO/USDT:USDT | +11.89% | $6,250,927.42 |
-| GRASS/USDT:USDT | +11.86% | $1,005,289.92 |
+| XPL/USDT:USDT | +19.77% | $24,697,457.73 |
+| QNT/USDT:USDT | +19.59% | $12,278,899.19 |
+| PHA/USDT:USDT | +14.06% | $1,641,801.50 |
+| GRASS/USDT:USDT | +11.62% | $1,008,692.23 |
+| LDO/USDT:USDT | +11.23% | $6,264,475.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIL/USDT:USDT | below_1h_threshold | +4.06% | +3.70% |
-| AR/USDT:USDT | below_1h_threshold | +4.05% | +3.69% |
-| XAI/USDT:USDT | below_1h_threshold | +3.91% | +3.55% |
-| AERO/USDT:USDT | below_1h_threshold | +2.81% | +2.45% |
-| LDO/USDT:USDT | below_1h_threshold | +2.32% | +1.95% |
+| XPL/USDT:USDT | below_relative_strength | +5.29% | +4.97% |
+| XAI/USDT:USDT | below_1h_threshold | +3.51% | +3.19% |
+| AR/USDT:USDT | below_1h_threshold | +3.46% | +3.14% |
+| PHA/USDT:USDT | below_1h_threshold | +2.39% | +2.07% |
+| AERO/USDT:USDT | below_1h_threshold | +2.18% | +1.87% |
 
 ## 7. 次に見るべき不足
 
