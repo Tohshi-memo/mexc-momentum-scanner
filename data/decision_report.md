@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-25T12:26:37.089697+00:00
+- generated_at: 2026-09-25T12:31:24.504517+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15527**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-25T12:26:23.517200+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.36% price=84227.1
+- 更新: 2026-09-25T12:31:13.048242+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=84463.5
 - Funnel: target 1069 → liquid 175 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.0 >= 65=1
+- Strict後reject: 4h RSI 76.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PHA/USDT:USDT | +35.44% | $3,422,845.35 |
-| BP/USDT:USDT | +30.99% | $1,025,803.44 |
-| ARK/USDT:USDT | +29.24% | $2,034,676.66 |
-| B3/USDT:USDT | +20.19% | $1,027,695.78 |
-| QNT/USDT:USDT | +17.23% | $15,916,779.56 |
+| PHA/USDT:USDT | +35.96% | $3,639,479.42 |
+| BP/USDT:USDT | +34.24% | $1,030,513.97 |
+| ARK/USDT:USDT | +30.08% | $2,054,825.47 |
+| B3/USDT:USDT | +20.03% | $1,033,893.27 |
+| QNT/USDT:USDT | +17.37% | $15,975,108.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +1.37% | +1.74% |
-| TAO/USDT:USDT | below_1h_threshold | +1.12% | +1.48% |
-| XPL/USDT:USDT | below_1h_threshold | +1.05% | +1.42% |
-| ONDO/USDT:USDT | below_1h_threshold | +0.93% | +1.29% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.81% | +1.17% |
+| XPL/USDT:USDT | below_1h_threshold | +1.55% | +1.63% |
+| XRP/USDT:USDT | below_1h_threshold | +1.41% | +1.49% |
+| TAO/USDT:USDT | below_1h_threshold | +1.33% | +1.42% |
+| ONDO/USDT:USDT | below_1h_threshold | +1.24% | +1.33% |
+| BTW/USDT:USDT | below_1h_threshold | +1.17% | +1.25% |
 
 ## 7. 次に見るべき不足
 
