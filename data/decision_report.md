@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-25T20:36:18.092614+00:00
+- generated_at: 2026-09-25T20:41:22.200728+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15542**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$120.22** / 初期 $100.00 (+20.22%)
-- 確定: 3172件 (Win 934 / Loss 1255 / Flat 983) / pending 2件 / skip 3839件
+- 確定: 3172件 (Win 934 / Loss 1255 / Flat 983) / pending 3件 / skip 3839件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000255 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BP/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.26% 残高後 $120.22
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-25T20:36:07.147127+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=84034.0
-- Funnel: target 1067 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-25T20:41:10.491647+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.16% price=84104.5
+- Funnel: target 1067 → liquid 170 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BR/USDT:USDT | +15.36% | $9,128,140.12 |
-| BP/USDT:USDT | +13.91% | $1,206,820.27 |
-| PHA/USDT:USDT | +12.01% | $16,135,791.54 |
-| SEI/USDT:USDT | +11.88% | $29,026,745.28 |
-| LYN/USDT:USDT | +10.51% | $7,210,114.47 |
+| BR/USDT:USDT | +15.74% | $9,143,825.24 |
+| BP/USDT:USDT | +11.75% | $1,214,219.55 |
+| SEI/USDT:USDT | +11.36% | $30,377,378.10 |
+| PHA/USDT:USDT | +11.04% | $16,276,772.75 |
+| EIGEN/USDT:USDT | +8.92% | $2,923,332.26 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| WLD/USDT:USDT | below_1h_threshold | +3.88% | +3.81% |
-| SEI/USDT:USDT | below_1h_threshold | +3.53% | +3.45% |
-| EIGEN/USDT:USDT | below_1h_threshold | +3.50% | +3.43% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +3.33% | +3.26% |
-| GRT/USDT:USDT | below_1h_threshold | +2.96% | +2.88% |
+| WLD/USDT:USDT | below_1h_threshold | +3.65% | +3.49% |
+| SUI/USDT:USDT | below_1h_threshold | +3.54% | +3.38% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +3.30% | +3.15% |
+| SEI/USDT:USDT | below_1h_threshold | +3.06% | +2.90% |
+| EIGEN/USDT:USDT | below_1h_threshold | +3.04% | +2.88% |
 
 ## 7. 次に見るべき不足
 
