@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-25T01:56:22.282670+00:00
+- generated_at: 2026-09-25T02:01:28.121414+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15508**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-25T01:56:10.964813+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=84486.4
-- Funnel: target 1069 → liquid 175 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.5 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-25T02:01:17.107578+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=84551.3
+- Funnel: target 1069 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SAGA/USDT:USDT | +68.44% | $14,002,608.68 |
-| SYN/USDT:USDT | +11.44% | $2,140,662.17 |
-| QNT/USDT:USDT | +8.50% | $3,690,408.84 |
-| XPL/USDT:USDT | +7.74% | $16,164,683.72 |
-| SOXL/USDT:USDT | +6.73% | $24,871,459.11 |
+| SAGA/USDT:USDT | +67.63% | $13,913,615.68 |
+| SYN/USDT:USDT | +11.28% | $2,072,735.86 |
+| XPL/USDT:USDT | +10.23% | $16,465,685.99 |
+| QNT/USDT:USDT | +9.12% | $3,682,264.00 |
+| SOXL/USDT:USDT | +6.80% | $24,777,323.92 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +2.34% | +2.43% |
-| LINK/USDT:USDT | below_1h_threshold | +1.08% | +1.17% |
-| SNXX/USDT:USDT | below_1h_threshold | +0.76% | +0.85% |
-| SYN/USDT:USDT | below_1h_threshold | +0.75% | +0.84% |
-| ALGO/USDT:USDT | below_1h_threshold | +0.64% | +0.73% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.44% | +2.47% |
+| MVLL/USDT:USDT | below_1h_threshold | +1.76% | +1.79% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.62% | +1.65% |
+| MUU/USDT:USDT | below_1h_threshold | +1.47% | +1.50% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +1.33% | +1.36% |
 
 ## 7. 次に見るべき不足
 
