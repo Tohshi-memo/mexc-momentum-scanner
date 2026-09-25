@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-25T15:36:20.384490+00:00
+- generated_at: 2026-09-25T15:41:22.967437+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15534**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-25T15:36:09.293958+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.34% price=83691.2
-- Funnel: target 1067 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-25T15:41:11.948173+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.55% price=83512.0
+- Funnel: target 1067 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PHA/USDT:USDT | +51.28% | $8,711,568.81 |
-| BP/USDT:USDT | +28.11% | $1,073,539.71 |
-| ARK/USDT:USDT | +26.54% | $2,408,443.25 |
-| B3/USDT:USDT | +20.49% | $1,076,725.98 |
-| ENA/USDT:USDT | +17.02% | $50,375,285.14 |
+| PHA/USDT:USDT | +47.45% | $9,054,805.78 |
+| BP/USDT:USDT | +27.50% | $1,076,444.31 |
+| ARK/USDT:USDT | +26.71% | $2,415,021.53 |
+| B3/USDT:USDT | +20.30% | $1,077,801.44 |
+| BTW/USDT:USDT | +16.40% | $8,037,387.73 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PYTH/USDT:USDT | below_1h_threshold | +1.42% | +1.76% |
-| ENA/USDT:USDT | below_1h_threshold | +1.31% | +1.65% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +1.21% | +1.54% |
-| BTW/USDT:USDT | below_1h_threshold | +1.09% | +1.43% |
-| NIL/USDT:USDT | below_1h_threshold | +1.01% | +1.35% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +1.19% | +1.74% |
+| PYTH/USDT:USDT | below_1h_threshold | +1.15% | +1.70% |
+| WLD/USDT:USDT | below_1h_threshold | +0.97% | +1.52% |
+| LDO/USDT:USDT | below_1h_threshold | +0.81% | +1.37% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +0.73% | +1.28% |
 
 ## 7. 次に見るべき不足
 
