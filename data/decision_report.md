@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-25T17:56:33.500916+00:00
+- generated_at: 2026-09-25T18:01:23.945790+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15537**
 
@@ -70,31 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-25T17:56:18.024625+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=83698.5
-- Funnel: target 1067 → liquid 172 → pre 50 → checked 50 → surge 2 → strict 2
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-25T18:01:12.867565+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=83792.0
+- Funnel: target 1067 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LYN/USDT:USDT | +34.96% | $4,078,679.10 |
-| BR/USDT:USDT | +11.89% | $8,428,133.82 |
-| PHA/USDT:USDT | +9.95% | $13,132,078.18 |
-| GRASS/USDT:USDT | +7.64% | $1,748,524.40 |
-| AERO/USDT:USDT | +6.65% | $2,411,165.38 |
+| LYN/USDT:USDT | +49.83% | $4,275,318.20 |
+| BR/USDT:USDT | +11.99% | $8,322,698.28 |
+| PHA/USDT:USDT | +9.06% | $13,223,047.92 |
+| GRASS/USDT:USDT | +9.04% | $1,740,785.86 |
+| AERO/USDT:USDT | +6.89% | $2,387,936.53 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GRASS/USDT:USDT | below_1h_threshold | +3.08% | +3.10% |
-| TAKE/USDT:USDT | below_1h_threshold | +2.76% | +2.78% |
-| ONE/USDT:USDT | below_1h_threshold | +2.71% | +2.73% |
-| ZAMA/USDT:USDT | below_1h_threshold | +2.21% | +2.23% |
-| MVLL/USDT:USDT | below_1h_threshold | +2.07% | +2.09% |
+| LYN/USDT:USDT | below_1h_threshold | +1.55% | +1.50% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.03% | +0.98% |
+| BR/USDT:USDT | below_1h_threshold | +1.02% | +0.97% |
+| ONE/USDT:USDT | below_1h_threshold | +0.99% | +0.94% |
+| KORU/USDT:USDT | below_1h_threshold | +0.98% | +0.93% |
 
 ## 7. 次に見るべき不足
 
