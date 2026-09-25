@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-25T14:02:06.797524+00:00
+- generated_at: 2026-09-25T14:06:28.790877+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15530**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-25T14:01:55.646924+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=83905.2
+- 更新: 2026-09-25T14:06:20.711500+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.86% price=83169.9
 - Funnel: target 1066 → liquid 171 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PHA/USDT:USDT | +49.57% | $5,402,334.56 |
-| BP/USDT:USDT | +26.61% | $1,053,780.63 |
-| ARK/USDT:USDT | +23.39% | $2,237,351.83 |
-| B3/USDT:USDT | +20.88% | $1,056,954.64 |
-| NIL/USDT:USDT | +14.04% | $8,125,915.06 |
+| PHA/USDT:USDT | +50.70% | $5,607,494.58 |
+| BP/USDT:USDT | +27.06% | $1,055,311.78 |
+| ARK/USDT:USDT | +24.29% | $2,249,890.26 |
+| B3/USDT:USDT | +18.81% | $1,057,532.98 |
+| BTW/USDT:USDT | +13.18% | $7,193,940.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MSFTSTOCK/USDT:USDT | below_1h_threshold | +3.51% | +3.49% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +2.39% | +2.37% |
-| KORU/USDT:USDT | below_1h_threshold | +0.99% | +0.97% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.93% | +0.91% |
-| B3/USDT:USDT | below_1h_threshold | +0.81% | +0.79% |
+| MSFTSTOCK/USDT:USDT | below_1h_threshold | +3.51% | +4.37% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +2.39% | +3.25% |
+| PHA/USDT:USDT | below_1h_threshold | +1.17% | +2.02% |
+| KORU/USDT:USDT | below_1h_threshold | +0.99% | +1.85% |
+| SOXL/USDT:USDT | below_1h_threshold | +0.93% | +1.79% |
 
 ## 7. 次に見るべき不足
 
