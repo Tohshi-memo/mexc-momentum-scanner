@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-25T16:51:22.349803+00:00
+- generated_at: 2026-09-25T16:56:26.980525+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15536**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$119.91** / 初期 $100.00 (+19.91%)
-- 確定: 3171件 (Win 933 / Loss 1255 / Flat 983) / pending 0件 / skip 3836件
+- 確定: 3171件 (Win 933 / Loss 1255 / Flat 983) / pending 0件 / skip 3837件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000181 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: XPL/USDT:USDT `MARKET` EXPIRED account -0.07% 残高後 $119.91
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-25T16:51:13.081460+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=83762.0
-- Funnel: target 1067 → liquid 171 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.4 >= 65=1
+- 更新: 2026-09-25T16:56:15.349086+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=83825.0
+- Funnel: target 1067 → liquid 171 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 82.8 >= 65=1, 4h RSI 77.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PHA/USDT:USDT | +8.73% | $11,389,182.01 |
-| GRASS/USDT:USDT | +4.67% | $1,419,610.04 |
-| SYN/USDT:USDT | +4.37% | $4,088,564.99 |
-| BP/USDT:USDT | +4.20% | $1,096,246.78 |
-| AERO/USDT:USDT | +4.10% | $2,030,276.02 |
+| PHA/USDT:USDT | +8.85% | $11,489,055.56 |
+| AERO/USDT:USDT | +6.19% | $2,114,419.16 |
+| GRASS/USDT:USDT | +4.37% | $1,424,077.90 |
+| SYN/USDT:USDT | +4.20% | $4,095,015.35 |
+| SEI/USDT:USDT | +3.24% | $24,699,566.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GRASS/USDT:USDT | below_1h_threshold | +4.67% | +4.67% |
-| SYN/USDT:USDT | below_1h_threshold | +4.26% | +4.26% |
-| AERO/USDT:USDT | below_1h_threshold | +4.11% | +4.11% |
-| ENA/USDT:USDT | below_1h_threshold | +3.64% | +3.64% |
-| QNT/USDT:USDT | below_1h_threshold | +3.59% | +3.60% |
+| SYN/USDT:USDT | below_1h_threshold | +4.21% | +4.13% |
+| GRASS/USDT:USDT | below_1h_threshold | +4.17% | +4.10% |
+| SEI/USDT:USDT | below_1h_threshold | +3.26% | +3.18% |
+| ONE/USDT:USDT | below_1h_threshold | +3.22% | +3.14% |
+| BR/USDT:USDT | below_1h_threshold | +2.86% | +2.78% |
 
 ## 7. 次に見るべき不足
 
