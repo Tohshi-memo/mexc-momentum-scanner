@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-25T21:26:26.936477+00:00
+- generated_at: 2026-09-25T21:31:21.191744+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15543**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-25T21:26:15.606080+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.19% price=83682.1
-- Funnel: target 1067 → liquid 170 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.5 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-25T21:31:12.188251+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=83733.0
+- Funnel: target 1067 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PHA/USDT:USDT | +17.84% | $17,963,996.30 |
-| BR/USDT:USDT | +16.67% | $9,116,175.07 |
-| SEI/USDT:USDT | +7.03% | $31,754,887.14 |
-| GRT/USDT:USDT | +6.25% | $1,235,483.52 |
-| AERO/USDT:USDT | +6.15% | $2,962,827.93 |
+| BR/USDT:USDT | +17.46% | $9,185,442.61 |
+| PHA/USDT:USDT | +16.25% | $18,098,960.16 |
+| SEI/USDT:USDT | +8.31% | $31,906,722.29 |
+| SYN/USDT:USDT | +6.84% | $3,987,562.98 |
+| GRT/USDT:USDT | +6.40% | $1,248,775.54 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AERO/USDT:USDT | below_1h_threshold | +1.50% | +1.69% |
-| BR/USDT:USDT | below_1h_threshold | +1.42% | +1.60% |
-| PHA/USDT:USDT | below_1h_threshold | +1.00% | +1.18% |
-| HYPE/USDT:USDT | below_1h_threshold | +0.18% | +0.37% |
-| SYN/USDT:USDT | below_1h_threshold | +0.05% | +0.24% |
+| BR/USDT:USDT | below_1h_threshold | +2.07% | +2.19% |
+| AERO/USDT:USDT | below_1h_threshold | +1.07% | +1.20% |
+| SYN/USDT:USDT | below_1h_threshold | +0.74% | +0.87% |
+| BTW/USDT:USDT | below_1h_threshold | +0.44% | +0.57% |
+| AVNT/USDT:USDT | below_1h_threshold | +0.33% | +0.45% |
 
 ## 7. 次に見るべき不足
 
