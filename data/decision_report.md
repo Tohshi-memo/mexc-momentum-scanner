@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-25T11:51:27.832080+00:00
+- generated_at: 2026-09-25T11:56:31.207834+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15524**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$119.91** / 初期 $100.00 (+19.91%)
-- 確定: 3171件 (Win 933 / Loss 1255 / Flat 983) / pending 0件 / skip 3826件
+- 確定: 3171件 (Win 933 / Loss 1255 / Flat 983) / pending 0件 / skip 3827件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000200 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: XPL/USDT:USDT `MARKET` EXPIRED account -0.07% 残高後 $119.91
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-25T11:51:16.577633+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=84589.3
-- Funnel: target 1069 → liquid 179 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.2 >= 65=1
+- 更新: 2026-09-25T11:56:16.888374+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=84592.9
+- Funnel: target 1069 → liquid 180 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 76.0 >= 65=1, 4h RSI 72.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARK/USDT:USDT | +32.78% | $1,849,190.80 |
-| BP/USDT:USDT | +31.52% | $1,006,964.23 |
-| PHA/USDT:USDT | +24.97% | $2,596,768.26 |
-| B3/USDT:USDT | +20.87% | $1,011,010.63 |
-| QNT/USDT:USDT | +18.78% | $15,863,564.49 |
+| ARK/USDT:USDT | +33.57% | $1,912,146.07 |
+| BP/USDT:USDT | +32.72% | $1,010,882.87 |
+| PHA/USDT:USDT | +24.27% | $2,632,604.85 |
+| B3/USDT:USDT | +21.11% | $1,013,401.23 |
+| QNT/USDT:USDT | +19.62% | $15,914,681.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UNI/USDT:USDT | below_1h_threshold | +4.85% | +4.96% |
-| ENA/USDT:USDT | below_1h_threshold | +4.63% | +4.73% |
-| NIL/USDT:USDT | below_1h_threshold | +4.42% | +4.52% |
-| BTW/USDT:USDT | below_1h_threshold | +3.14% | +3.25% |
-| FET/USDT:USDT | below_1h_threshold | +3.04% | +3.15% |
+| ENA/USDT:USDT | below_1h_threshold | +4.77% | +4.88% |
+| BTW/USDT:USDT | below_1h_threshold | +4.25% | +4.36% |
+| LDO/USDT:USDT | below_1h_threshold | +2.90% | +3.00% |
+| BP/USDT:USDT | below_1h_threshold | +2.65% | +2.76% |
+| XRP/USDT:USDT | below_1h_threshold | +2.54% | +2.64% |
 
 ## 7. 次に見るべき不足
 
