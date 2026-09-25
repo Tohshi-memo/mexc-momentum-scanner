@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-25T11:46:28.068851+00:00
+- generated_at: 2026-09-25T11:51:27.832080+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15524**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-25T11:46:16.246435+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=84664.1
-- Funnel: target 1069 → liquid 177 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.0 >= 65=1, 4h RSI 72.1 >= 65=1
+- 更新: 2026-09-25T11:51:16.577633+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=84589.3
+- Funnel: target 1069 → liquid 179 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 76.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARK/USDT:USDT | +33.97% | $1,823,633.70 |
-| PHA/USDT:USDT | +30.22% | $2,544,516.60 |
-| BP/USDT:USDT | +29.94% | $1,002,147.89 |
-| B3/USDT:USDT | +21.01% | $1,008,359.70 |
-| QNT/USDT:USDT | +19.02% | $15,758,701.63 |
+| ARK/USDT:USDT | +32.78% | $1,849,190.80 |
+| BP/USDT:USDT | +31.52% | $1,006,964.23 |
+| PHA/USDT:USDT | +24.97% | $2,596,768.26 |
+| B3/USDT:USDT | +20.87% | $1,011,010.63 |
+| QNT/USDT:USDT | +18.78% | $15,863,564.49 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UNI/USDT:USDT | below_1h_threshold | +4.88% | +4.89% |
-| PHA/USDT:USDT | below_1h_threshold | +3.73% | +3.75% |
-| NIL/USDT:USDT | below_1h_threshold | +3.44% | +3.45% |
-| FET/USDT:USDT | below_1h_threshold | +3.30% | +3.31% |
-| SEI/USDT:USDT | below_1h_threshold | +3.15% | +3.17% |
+| UNI/USDT:USDT | below_1h_threshold | +4.85% | +4.96% |
+| ENA/USDT:USDT | below_1h_threshold | +4.63% | +4.73% |
+| NIL/USDT:USDT | below_1h_threshold | +4.42% | +4.52% |
+| BTW/USDT:USDT | below_1h_threshold | +3.14% | +3.25% |
+| FET/USDT:USDT | below_1h_threshold | +3.04% | +3.15% |
 
 ## 7. 次に見るべき不足
 
