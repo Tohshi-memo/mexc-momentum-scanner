@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-25T15:56:16.355439+00:00
+- generated_at: 2026-09-25T16:01:18.558657+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15534**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-25T15:56:05.365759+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.52% price=83533.9
-- Funnel: target 1067 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-25T16:01:07.357691+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=83808.3
+- Funnel: target 1067 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PHA/USDT:USDT | +44.81% | $9,517,769.56 |
-| ARK/USDT:USDT | +28.23% | $2,446,736.51 |
-| BP/USDT:USDT | +23.74% | $1,092,326.10 |
-| B3/USDT:USDT | +19.73% | $1,082,178.56 |
-| BTW/USDT:USDT | +16.78% | $8,209,120.03 |
+| USELESS/USDT:USDT | +0.79% | $4,861,727.12 |
+| ARK/USDT:USDT | +0.78% | $2,439,708.45 |
+| NIL/USDT:USDT | +0.54% | $7,747,921.83 |
+| BTW/USDT:USDT | +0.46% | $8,128,099.34 |
+| FET/USDT:USDT | +0.29% | $24,387,198.40 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MUBARAK/USDT:USDT | below_1h_threshold | +3.52% | +4.05% |
-| ARK/USDT:USDT | below_1h_threshold | +1.42% | +1.95% |
-| ZRO/USDT:USDT | below_1h_threshold | +1.03% | +1.55% |
-| BTW/USDT:USDT | below_1h_threshold | +1.02% | +1.54% |
-| AXS/USDT:USDT | below_1h_threshold | +0.83% | +1.36% |
+| KORU/USDT:USDT | below_1h_threshold | +0.86% | +0.80% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.82% | +0.76% |
+| USELESS/USDT:USDT | below_1h_threshold | +0.80% | +0.74% |
+| ARK/USDT:USDT | below_1h_threshold | +0.79% | +0.73% |
+| NIL/USDT:USDT | below_1h_threshold | +0.55% | +0.50% |
 
 ## 7. 次に見るべき不足
 
