@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-25T22:31:25.295747+00:00
+- generated_at: 2026-09-25T22:36:23.129121+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15544**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$120.01** / 初期 $100.00 (+20.01%)
-- 確定: 3174件 (Win 934 / Loss 1256 / Flat 984) / pending 3件 / skip 3839件
+- 確定: 3174件 (Win 934 / Loss 1256 / Flat 984) / pending 4件 / skip 3839件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000275 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: PHA/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $120.01
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-25T22:31:13.968034+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.15% price=83873.8
-- Funnel: target 1067 → liquid 171 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-25T22:36:09.682353+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.31% price=84006.0
+- Funnel: target 1067 → liquid 171 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PHA/USDT:USDT | +26.83% | $21,675,470.77 |
-| BR/USDT:USDT | +17.15% | $9,234,826.32 |
-| SEI/USDT:USDT | +11.44% | $33,309,339.20 |
-| SUI/USDT:USDT | +8.48% | $264,274,519.43 |
-| BP/USDT:USDT | +7.45% | $1,273,457.55 |
+| BATON/USDT:USDT | +37.94% | $1,056,220.81 |
+| PHA/USDT:USDT | +26.39% | $21,908,534.89 |
+| BR/USDT:USDT | +17.60% | $9,242,401.17 |
+| SEI/USDT:USDT | +11.00% | $33,383,595.37 |
+| EIGEN/USDT:USDT | +7.94% | $3,277,756.98 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BATON/USDT:USDT | below_1h_threshold | +4.09% | +3.94% |
-| SUI/USDT:USDT | below_1h_threshold | +3.24% | +3.09% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +2.78% | +2.63% |
-| PENGU/USDT:USDT | below_1h_threshold | +2.76% | +2.61% |
-| LTC/USDT:USDT | below_1h_threshold | +2.68% | +2.53% |
+| LTC/USDT:USDT | below_1h_threshold | +3.83% | +3.52% |
+| WLD/USDT:USDT | below_1h_threshold | +3.49% | +3.18% |
+| PENGU/USDT:USDT | below_1h_threshold | +3.26% | +2.95% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +2.99% | +2.68% |
+| ONDO/USDT:USDT | below_1h_threshold | +2.84% | +2.53% |
 
 ## 7. 次に見るべき不足
 
