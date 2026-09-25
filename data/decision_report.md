@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-25T16:01:18.558657+00:00
+- generated_at: 2026-09-25T16:06:11.162337+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15534**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-25T16:01:07.357691+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=83808.3
+- 更新: 2026-09-25T16:06:03.328875+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.24% price=83961.2
 - Funnel: target 1067 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| USELESS/USDT:USDT | +0.79% | $4,861,727.12 |
-| ARK/USDT:USDT | +0.78% | $2,439,708.45 |
-| NIL/USDT:USDT | +0.54% | $7,747,921.83 |
-| BTW/USDT:USDT | +0.46% | $8,128,099.34 |
-| FET/USDT:USDT | +0.29% | $24,387,198.40 |
+| AKE/USDT:USDT | +4.19% | $10,613,614.02 |
+| SYN/USDT:USDT | +3.19% | $3,907,865.57 |
+| MUBARAK/USDT:USDT | +2.64% | $1,698,645.98 |
+| NIL/USDT:USDT | +2.19% | $7,784,129.16 |
+| ZKSYNC/USDT:USDT | +2.09% | $1,139,727.61 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KORU/USDT:USDT | below_1h_threshold | +0.86% | +0.80% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.82% | +0.76% |
-| USELESS/USDT:USDT | below_1h_threshold | +0.80% | +0.74% |
-| ARK/USDT:USDT | below_1h_threshold | +0.79% | +0.73% |
-| NIL/USDT:USDT | below_1h_threshold | +0.55% | +0.50% |
+| AKE/USDT:USDT | below_1h_threshold | +4.08% | +3.85% |
+| SYN/USDT:USDT | below_1h_threshold | +3.20% | +2.96% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +2.57% | +2.33% |
+| NIL/USDT:USDT | below_1h_threshold | +2.14% | +1.90% |
+| ZKSYNC/USDT:USDT | below_1h_threshold | +2.02% | +1.78% |
 
 ## 7. 次に見るべき不足
 
