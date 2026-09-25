@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-25T02:11:26.909273+00:00
+- generated_at: 2026-09-25T02:16:13.509907+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15509**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-25T02:11:15.915281+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.29% price=84819.4
-- Funnel: target 1069 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-25T02:16:05.985595+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.31% price=84839.9
+- Funnel: target 1069 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SAGA/USDT:USDT | +42.33% | $14,315,955.89 |
-| SYN/USDT:USDT | +13.05% | $2,108,778.37 |
-| XPL/USDT:USDT | +11.05% | $16,814,647.79 |
-| QNT/USDT:USDT | +8.64% | $3,687,666.10 |
-| SOXL/USDT:USDT | +7.05% | $24,805,437.50 |
+| SAGA/USDT:USDT | +36.60% | $14,524,657.18 |
+| SYN/USDT:USDT | +14.19% | $2,131,248.99 |
+| XPL/USDT:USDT | +11.12% | $16,881,970.26 |
+| QNT/USDT:USDT | +7.53% | $3,693,861.39 |
+| SOXL/USDT:USDT | +6.81% | $24,869,389.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXL/USDT:USDT | below_1h_threshold | +2.44% | +2.15% |
-| MVLL/USDT:USDT | below_1h_threshold | +1.76% | +1.47% |
-| SYN/USDT:USDT | below_1h_threshold | +1.64% | +1.35% |
-| SNXX/USDT:USDT | below_1h_threshold | +1.62% | +1.34% |
-| MUU/USDT:USDT | below_1h_threshold | +1.47% | +1.18% |
+| SYN/USDT:USDT | below_1h_threshold | +3.23% | +2.91% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.44% | +2.13% |
+| MVLL/USDT:USDT | below_1h_threshold | +1.76% | +1.45% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.62% | +1.31% |
+| NEAR/USDT:USDT | below_1h_threshold | +1.60% | +1.29% |
 
 ## 7. 次に見るべき不足
 
