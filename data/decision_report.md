@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-25T15:11:29.310561+00:00
+- generated_at: 2026-09-25T15:16:21.052122+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15534**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-25T15:11:18.258220+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.18% price=83823.3
+- 更新: 2026-09-25T15:16:12.100178+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=83960.5
 - Funnel: target 1067 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PHA/USDT:USDT | +55.92% | $7,795,436.48 |
-| BP/USDT:USDT | +29.54% | $1,064,284.72 |
-| ARK/USDT:USDT | +25.87% | $2,362,251.67 |
-| B3/USDT:USDT | +19.87% | $1,071,098.59 |
-| GRASS/USDT:USDT | +16.39% | $1,198,520.30 |
+| PHA/USDT:USDT | +55.30% | $7,949,037.63 |
+| BP/USDT:USDT | +27.52% | $1,065,346.75 |
+| ARK/USDT:USDT | +24.91% | $2,377,989.42 |
+| B3/USDT:USDT | +19.74% | $1,071,620.92 |
+| ENA/USDT:USDT | +17.51% | $48,656,683.70 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PHA/USDT:USDT | below_1h_threshold | +2.90% | +3.08% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +1.85% | +2.03% |
-| PYTH/USDT:USDT | below_1h_threshold | +1.83% | +2.01% |
-| ACE/USDT:USDT | below_1h_threshold | +1.38% | +1.56% |
-| JUP/USDT:USDT | below_1h_threshold | +0.95% | +1.13% |
+| PHA/USDT:USDT | below_1h_threshold | +2.56% | +2.58% |
+| PYTH/USDT:USDT | below_1h_threshold | +2.43% | +2.45% |
+| JUP/USDT:USDT | below_1h_threshold | +1.51% | +1.52% |
+| ENA/USDT:USDT | below_1h_threshold | +1.50% | +1.51% |
+| ACE/USDT:USDT | below_1h_threshold | +1.38% | +1.40% |
 
 ## 7. 次に見るべき不足
 
