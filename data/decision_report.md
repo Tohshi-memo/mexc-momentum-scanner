@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-25T16:16:27.262538+00:00
+- generated_at: 2026-09-25T16:21:16.281440+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15535**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-25T16:16:18.050256+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.30% price=84018.0
+- 更新: 2026-09-25T16:21:07.506606+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.30% price=84011.2
 - Funnel: target 1067 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MUBARAK/USDT:USDT | +3.53% | $1,769,117.77 |
-| AKE/USDT:USDT | +3.26% | $10,742,060.52 |
-| SYN/USDT:USDT | +3.19% | $3,973,557.79 |
-| ZKSYNC/USDT:USDT | +2.65% | $1,155,802.10 |
-| ENA/USDT:USDT | +2.53% | $52,364,594.41 |
+| GRASS/USDT:USDT | +3.69% | $1,330,852.37 |
+| MUBARAK/USDT:USDT | +3.55% | $1,804,810.75 |
+| SYN/USDT:USDT | +3.36% | $3,999,643.59 |
+| AKE/USDT:USDT | +3.06% | $10,777,234.24 |
+| ZKSYNC/USDT:USDT | +2.52% | $1,160,202.82 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MUBARAK/USDT:USDT | below_1h_threshold | +3.55% | +3.25% |
-| AKE/USDT:USDT | below_1h_threshold | +3.28% | +2.98% |
-| SYN/USDT:USDT | below_1h_threshold | +3.08% | +2.78% |
-| ZKSYNC/USDT:USDT | below_1h_threshold | +2.73% | +2.42% |
-| ENA/USDT:USDT | below_1h_threshold | +2.60% | +2.30% |
+| GRASS/USDT:USDT | below_1h_threshold | +3.51% | +3.22% |
+| SYN/USDT:USDT | below_1h_threshold | +3.37% | +3.07% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +3.15% | +2.86% |
+| AKE/USDT:USDT | below_1h_threshold | +3.02% | +2.72% |
+| ZKSYNC/USDT:USDT | below_1h_threshold | +2.57% | +2.27% |
 
 ## 7. 次に見るべき不足
 
