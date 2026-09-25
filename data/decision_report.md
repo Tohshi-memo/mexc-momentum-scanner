@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-25T02:26:24.454227+00:00
+- generated_at: 2026-09-25T02:31:24.500113+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15510**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$119.99** / 初期 $100.00 (+19.99%)
-- 確定: 3170件 (Win 933 / Loss 1254 / Flat 983) / pending 1件 / skip 3808件
+- 確定: 3170件 (Win 933 / Loss 1254 / Flat 983) / pending 1件 / skip 3809件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000133 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: SAGA/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $119.99
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-25T02:26:13.469405+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=84713.1
-- Funnel: target 1069 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-25T02:31:13.085979+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=84641.9
+- Funnel: target 1069 → liquid 176 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SAGA/USDT:USDT | +33.52% | $14,824,524.92 |
-| SYN/USDT:USDT | +16.48% | $2,179,690.02 |
-| XPL/USDT:USDT | +10.18% | $16,956,560.00 |
-| QNT/USDT:USDT | +8.20% | $3,715,316.49 |
-| SOXL/USDT:USDT | +6.73% | $24,912,433.16 |
+| SAGA/USDT:USDT | +27.89% | $15,045,861.84 |
+| SYN/USDT:USDT | +17.83% | $2,212,094.91 |
+| XPL/USDT:USDT | +10.59% | $16,990,238.15 |
+| QNT/USDT:USDT | +8.56% | $3,719,774.68 |
+| SOXL/USDT:USDT | +6.42% | $25,005,049.61 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SYN/USDT:USDT | below_1h_threshold | +4.72% | +4.56% |
-| SOXL/USDT:USDT | below_1h_threshold | +2.44% | +2.28% |
-| SEI/USDT:USDT | below_1h_threshold | +2.27% | +2.11% |
-| MVLL/USDT:USDT | below_1h_threshold | +1.76% | +1.60% |
-| SNXX/USDT:USDT | below_1h_threshold | +1.62% | +1.46% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.44% | +2.36% |
+| MVLL/USDT:USDT | below_1h_threshold | +1.76% | +1.68% |
+| ONDO/USDT:USDT | below_1h_threshold | +1.73% | +1.65% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.62% | +1.55% |
+| MUU/USDT:USDT | below_1h_threshold | +1.47% | +1.39% |
 
 ## 7. 次に見るべき不足
 
