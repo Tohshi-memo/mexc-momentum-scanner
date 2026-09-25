@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-25T14:41:38.575938+00:00
+- generated_at: 2026-09-25T14:46:34.163181+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15533**
 
@@ -39,9 +39,9 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$120.56** / 初期 $100.00 (+20.56%)
-- 確定トレード: 221件 (TP 81 / SL 135 / EXP 5)
-- 最新: SYN/USDT:USDT TP_HIT PnL +8.00% 残高後 $120.56
+- 残高: **$120.55** / 初期 $100.00 (+20.55%)
+- 確定トレード: 222件 (TP 81 / SL 135 / EXP 6)
+- 最新: APT/USDT:USDT EXPIRED PnL -0.12% 残高後 $120.55
 - 最新戦略メタ: tier=S, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
@@ -70,9 +70,9 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-25T14:41:24.129037+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.19% price=83730.9
-- Funnel: target 1066 → liquid 175 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-09-25T14:46:20.614656+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.36% price=83587.3
+- Funnel: target 1067 → liquid 176 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PHA/USDT:USDT | +52.56% | $6,952,723.57 |
-| BP/USDT:USDT | +28.92% | $1,079,551.47 |
-| ARK/USDT:USDT | +24.85% | $2,326,866.84 |
-| B3/USDT:USDT | +20.83% | $1,070,438.55 |
-| NIL/USDT:USDT | +15.96% | $8,343,851.88 |
+| PHA/USDT:USDT | +51.02% | $7,167,037.62 |
+| BP/USDT:USDT | +29.31% | $1,081,274.42 |
+| ARK/USDT:USDT | +25.25% | $2,335,176.10 |
+| B3/USDT:USDT | +20.42% | $1,070,790.69 |
+| NIL/USDT:USDT | +17.01% | $8,424,685.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MSFTSTOCK/USDT:USDT | below_1h_threshold | +3.51% | +3.70% |
-| PHA/USDT:USDT | below_1h_threshold | +2.45% | +2.64% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +2.39% | +2.58% |
-| BP/USDT:USDT | below_1h_threshold | +1.95% | +2.14% |
-| NIL/USDT:USDT | below_1h_threshold | +1.86% | +2.04% |
+| MSFTSTOCK/USDT:USDT | below_1h_threshold | +3.51% | +3.87% |
+| GRASS/USDT:USDT | below_1h_threshold | +2.98% | +3.34% |
+| NIL/USDT:USDT | below_1h_threshold | +2.78% | +3.14% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +2.39% | +2.75% |
+| BP/USDT:USDT | below_1h_threshold | +2.26% | +2.61% |
 
 ## 7. 次に見るべき不足
 
