@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-25T16:31:26.515805+00:00
+- generated_at: 2026-09-25T16:36:09.060586+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15535**
 
@@ -63,38 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$119.91** / 初期 $100.00 (+19.91%)
-- 確定: 3171件 (Win 933 / Loss 1255 / Flat 983) / pending 0件 / skip 3834件
+- 確定: 3171件 (Win 933 / Loss 1255 / Flat 983) / pending 0件 / skip 3835件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000214 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: XPL/USDT:USDT `MARKET` EXPIRED account -0.07% 残高後 $119.91
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-25T16:31:13.422973+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.23% price=83952.7
-- Funnel: target 1067 → liquid 171 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-09-25T16:36:00.523470+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=83796.2
+- Funnel: target 1067 → liquid 171 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 82.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SYN/USDT:USDT | +5.32% | $4,041,963.76 |
-| AKE/USDT:USDT | +4.86% | $10,898,344.17 |
-| PHA/USDT:USDT | +3.41% | $10,316,323.92 |
-| GRASS/USDT:USDT | +3.41% | $1,359,154.16 |
-| XPL/USDT:USDT | +3.34% | $34,777,794.56 |
+| PHA/USDT:USDT | +5.99% | $10,612,756.40 |
+| SYN/USDT:USDT | +4.43% | $4,047,290.89 |
+| GRASS/USDT:USDT | +3.49% | $1,378,158.38 |
+| ENA/USDT:USDT | +3.46% | $55,203,059.39 |
+| PLUME/USDT:USDT | +3.22% | $1,232,448.35 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +4.88% | +4.66% |
-| GRASS/USDT:USDT | below_1h_threshold | +3.79% | +3.57% |
-| PHA/USDT:USDT | below_1h_threshold | +3.70% | +3.48% |
-| XPL/USDT:USDT | below_1h_threshold | +3.41% | +3.18% |
-| AAVE/USDT:USDT | below_1h_threshold | +3.14% | +2.92% |
+| SYN/USDT:USDT | below_1h_threshold | +4.43% | +4.39% |
+| ENA/USDT:USDT | below_1h_threshold | +3.52% | +3.48% |
+| GRASS/USDT:USDT | below_1h_threshold | +3.49% | +3.46% |
+| PLUME/USDT:USDT | below_1h_threshold | +3.23% | +3.19% |
+| AAVE/USDT:USDT | below_1h_threshold | +3.07% | +3.03% |
 
 ## 7. 次に見るべき不足
 
