@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-25T04:01:10.744268+00:00
+- generated_at: 2026-09-25T04:06:17.720280+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15514**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-25T04:01:02.983347+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=84193.6
+- 更新: 2026-09-25T04:06:10.020548+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=84150.0
 - Funnel: target 1069 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| QNT/USDT:USDT | +13.61% | $4,167,438.63 |
-| XPL/USDT:USDT | +12.50% | $16,931,458.47 |
-| SYN/USDT:USDT | +10.66% | $2,695,500.88 |
-| SOXL/USDT:USDT | +6.45% | $27,156,810.73 |
-| MRNASTOCK/USDT:USDT | +5.95% | $1,393,451.23 |
+| QNT/USDT:USDT | +12.60% | $4,199,223.07 |
+| XPL/USDT:USDT | +12.12% | $16,996,195.89 |
+| SYN/USDT:USDT | +11.54% | $2,758,861.57 |
+| SOXL/USDT:USDT | +6.32% | $27,352,071.81 |
+| MRNASTOCK/USDT:USDT | +5.98% | $1,393,829.39 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNXX/USDT:USDT | below_1h_threshold | +0.57% | +0.58% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +0.44% | +0.45% |
-| MVLL/USDT:USDT | below_1h_threshold | +0.40% | +0.41% |
-| MUU/USDT:USDT | below_1h_threshold | +0.34% | +0.35% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.30% | +0.31% |
+| XLM/USDT:USDT | below_1h_threshold | +0.76% | +0.82% |
+| SNXX/USDT:USDT | below_1h_threshold | +0.57% | +0.63% |
+| ALGO/USDT:USDT | below_1h_threshold | +0.52% | +0.58% |
+| SYN/USDT:USDT | below_1h_threshold | +0.52% | +0.58% |
+| AXS/USDT:USDT | below_1h_threshold | +0.51% | +0.57% |
 
 ## 7. 次に見るべき不足
 
