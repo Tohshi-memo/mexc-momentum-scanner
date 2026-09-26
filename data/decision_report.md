@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-26T05:26:25.430359+00:00
+- generated_at: 2026-09-26T05:31:22.698823+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15571**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-26T05:26:14.098257+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=83948.8
+- 更新: 2026-09-26T05:31:11.270411+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=83891.6
 - Funnel: target 1067 → liquid 163 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.8 >= 65=1
+- Strict後reject: 4h RSI 85.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PAID/USDT:USDT | +323.29% | $1,069,445.65 |
-| BATON/USDT:USDT | +33.00% | $1,517,975.88 |
-| ARK/USDT:USDT | +16.40% | $3,413,763.59 |
-| H/USDT:USDT | +14.99% | $1,169,427.05 |
-| PHA/USDT:USDT | +14.31% | $29,384,429.73 |
+| PAID/USDT:USDT | +324.24% | $1,077,684.77 |
+| BATON/USDT:USDT | +35.29% | $1,521,813.38 |
+| ARK/USDT:USDT | +16.01% | $3,422,369.96 |
+| PHA/USDT:USDT | +15.10% | $29,407,865.02 |
+| H/USDT:USDT | +14.82% | $1,171,840.19 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ARK/USDT:USDT | below_1h_threshold | +2.93% | +2.93% |
-| GRASS/USDT:USDT | below_1h_threshold | +1.89% | +1.89% |
-| BATON/USDT:USDT | below_1h_threshold | +1.85% | +1.85% |
-| AVNT/USDT:USDT | below_1h_threshold | +1.77% | +1.77% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +1.22% | +1.22% |
+| BATON/USDT:USDT | below_1h_threshold | +3.60% | +3.67% |
+| ARK/USDT:USDT | below_1h_threshold | +2.58% | +2.65% |
+| GRASS/USDT:USDT | below_1h_threshold | +1.70% | +1.76% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +0.91% | +0.98% |
+| AVNT/USDT:USDT | below_1h_threshold | +0.85% | +0.91% |
 
 ## 7. 次に見るべき不足
 
