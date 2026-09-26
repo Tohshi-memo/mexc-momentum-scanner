@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-26T15:51:21.823787+00:00
+- generated_at: 2026-09-26T15:56:17.934283+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15605**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-26T15:51:10.560002+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=84042.1
-- Funnel: target 1070 → liquid 155 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.5 >= 65=1
+- 更新: 2026-09-26T15:56:08.583673+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=84102.5
+- Funnel: target 1070 → liquid 156 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 87.3 >= 65=1, 4h RSI 76.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PAID/USDT:USDT | +298.10% | $3,078,249.18 |
-| RARE/USDT:USDT | +37.42% | $8,264,529.98 |
-| BATON/USDT:USDT | +36.29% | $1,153,311.34 |
-| BR/USDT:USDT | +33.07% | $11,276,440.25 |
-| BEAT/USDT:USDT | +25.35% | $6,234,382.24 |
+| PAID/USDT:USDT | +301.42% | $3,085,186.07 |
+| RARE/USDT:USDT | +36.99% | $8,286,770.70 |
+| BATON/USDT:USDT | +35.23% | $1,155,414.74 |
+| BR/USDT:USDT | +32.59% | $11,381,424.37 |
+| BEAT/USDT:USDT | +25.46% | $6,267,434.00 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| WLD/USDT:USDT | below_1h_threshold | +4.44% | +4.37% |
-| BEAT/USDT:USDT | below_1h_threshold | +3.82% | +3.74% |
-| CHIP/USDT:USDT | below_1h_threshold | +3.77% | +3.70% |
-| ETHFI/USDT:USDT | below_1h_threshold | +3.26% | +3.18% |
-| VIRTUAL/USDT:USDT | below_1h_threshold | +2.86% | +2.78% |
+| CHIP/USDT:USDT | below_1h_threshold | +4.60% | +4.46% |
+| BEAT/USDT:USDT | below_1h_threshold | +4.09% | +3.94% |
+| TAO/USDT:USDT | below_1h_threshold | +3.05% | +2.90% |
+| ETHFI/USDT:USDT | below_1h_threshold | +2.71% | +2.56% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +2.70% | +2.55% |
 
 ## 7. 次に見るべき不足
 
