@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-26T08:01:21.951031+00:00
+- generated_at: 2026-09-26T08:06:24.489676+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15586**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-26T08:01:10.702644+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=84053.3
+- 更新: 2026-09-26T08:06:13.097869+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=84028.4
 - Funnel: target 1067 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PAID/USDT:USDT | +373.48% | $1,718,806.47 |
-| RARE/USDT:USDT | +35.01% | $3,524,149.23 |
-| BATON/USDT:USDT | +31.76% | $1,498,026.69 |
-| ARK/USDT:USDT | +26.30% | $3,978,864.89 |
-| 2Z/USDT:USDT | +22.55% | $1,004,261.04 |
+| PAID/USDT:USDT | +393.56% | $1,740,894.65 |
+| RARE/USDT:USDT | +37.97% | $3,606,083.14 |
+| BATON/USDT:USDT | +32.94% | $1,499,205.33 |
+| ARK/USDT:USDT | +26.43% | $4,002,295.10 |
+| 2Z/USDT:USDT | +22.46% | $1,020,409.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| H/USDT:USDT | below_1h_threshold | +0.98% | +1.01% |
-| GRASS/USDT:USDT | below_1h_threshold | +0.69% | +0.72% |
-| AERO/USDT:USDT | below_1h_threshold | +0.45% | +0.47% |
-| ENA/USDT:USDT | below_1h_threshold | +0.40% | +0.42% |
-| KAITO/USDT:USDT | below_1h_threshold | +0.30% | +0.32% |
+| PAID/USDT:USDT | below_1h_threshold | +4.89% | +4.95% |
+| RARE/USDT:USDT | below_1h_threshold | +1.92% | +1.97% |
+| H/USDT:USDT | below_1h_threshold | +1.53% | +1.59% |
+| BATON/USDT:USDT | below_1h_threshold | +0.80% | +0.86% |
+| PHA/USDT:USDT | below_1h_threshold | +0.78% | +0.84% |
 
 ## 7. 次に見るべき不足
 
