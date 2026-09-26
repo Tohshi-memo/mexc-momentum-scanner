@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-26T21:36:22.796642+00:00
+- generated_at: 2026-09-26T21:41:24.542590+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15619**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$119.63** / 初期 $100.00 (+19.63%)
-- 確定: 3202件 (Win 943 / Loss 1270 / Flat 989) / pending 6件 / skip 3884件
+- 確定: 3202件 (Win 943 / Loss 1270 / Flat 989) / pending 6件 / skip 3885件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000182 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: PAID/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.26% 残高後 $119.63
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-26T21:36:11.589425+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.23% price=84189.8
-- Funnel: target 1070 → liquid 144 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-26T21:41:14.879263+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=84140.1
+- Funnel: target 1070 → liquid 144 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.4 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MARSCOIN/USDT:USDT | +10.18% | $1,839,479.34 |
-| GRASS/USDT:USDT | +9.60% | $4,391,924.92 |
-| ZEC/USDT:USDT | +7.26% | $722,722,579.14 |
-| GRAM/USDT:USDT | +7.26% | $4,644,222.97 |
-| PAID/USDT:USDT | +6.71% | $3,893,833.08 |
+| MARSCOIN/USDT:USDT | +11.20% | $1,849,438.11 |
+| GRASS/USDT:USDT | +10.37% | $4,464,748.14 |
+| ZEC/USDT:USDT | +7.45% | $728,419,295.31 |
+| GRAM/USDT:USDT | +6.99% | $4,758,915.71 |
+| QNT/USDT:USDT | +6.24% | $20,350,498.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZEC/USDT:USDT | below_relative_strength | +5.01% | +4.78% |
-| PAID/USDT:USDT | below_1h_threshold | +4.00% | +3.76% |
-| ZEN/USDT:USDT | below_1h_threshold | +3.69% | +3.46% |
-| UNI/USDT:USDT | below_1h_threshold | +3.30% | +3.07% |
-| NEAR/USDT:USDT | below_1h_threshold | +3.11% | +2.88% |
+| UNI/USDT:USDT | below_1h_threshold | +3.01% | +2.84% |
+| RAY/USDT:USDT | below_1h_threshold | +2.80% | +2.63% |
+| PAID/USDT:USDT | below_1h_threshold | +2.73% | +2.56% |
+| NEAR/USDT:USDT | below_1h_threshold | +2.42% | +2.25% |
+| PYTH/USDT:USDT | below_1h_threshold | +2.18% | +2.01% |
 
 ## 7. 次に見るべき不足
 
