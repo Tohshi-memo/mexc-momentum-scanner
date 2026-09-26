@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-26T14:01:17.146554+00:00
+- generated_at: 2026-09-26T14:06:19.441062+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15602**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$119.20** / 初期 $100.00 (+19.20%)
-- 確定: 3187件 (Win 937 / Loss 1263 / Flat 987) / pending 0件 / skip 3882件
+- 確定: 3187件 (Win 937 / Loss 1263 / Flat 987) / pending 1件 / skip 3882件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000315 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MUBARAK/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $119.20
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-26T14:01:05.665598+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=83887.1
-- Funnel: target 1070 → liquid 155 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-26T14:06:08.041903+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=83885.4
+- Funnel: target 1070 → liquid 156 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 88.1 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PAID/USDT:USDT | +311.26% | $2,758,387.54 |
-| RARE/USDT:USDT | +46.11% | $7,021,024.29 |
-| BR/USDT:USDT | +32.73% | $10,596,118.93 |
-| 2Z/USDT:USDT | +28.44% | $3,570,392.50 |
-| BATON/USDT:USDT | +25.35% | $1,160,613.79 |
+| PAID/USDT:USDT | +328.97% | $2,815,672.98 |
+| RARE/USDT:USDT | +53.20% | $7,163,324.34 |
+| BR/USDT:USDT | +31.37% | $10,650,145.85 |
+| 2Z/USDT:USDT | +27.46% | $3,589,875.60 |
+| BATON/USDT:USDT | +27.05% | $1,161,334.39 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PAID/USDT:USDT | below_1h_threshold | +0.78% | +0.81% |
-| RARE/USDT:USDT | below_1h_threshold | +0.59% | +0.62% |
-| PYTH/USDT:USDT | below_1h_threshold | +0.48% | +0.51% |
-| CC/USDT:USDT | below_1h_threshold | +0.40% | +0.43% |
-| RUNE/USDT:USDT | below_1h_threshold | +0.30% | +0.33% |
+| PAID/USDT:USDT | below_1h_threshold | +4.14% | +4.17% |
+| BATON/USDT:USDT | below_1h_threshold | +1.55% | +1.58% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.23% | +1.26% |
+| PYTH/USDT:USDT | below_1h_threshold | +0.47% | +0.50% |
+| DASH/USDT:USDT | below_1h_threshold | +0.39% | +0.42% |
 
 ## 7. 次に見るべき不足
 
