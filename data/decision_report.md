@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-26T16:06:20.406393+00:00
+- generated_at: 2026-09-26T16:11:31.450774+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15605**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$119.64** / 初期 $100.00 (+19.64%)
-- 確定: 3190件 (Win 939 / Loss 1264 / Flat 987) / pending 5件 / skip 3882件
+- 確定: 3190件 (Win 939 / Loss 1264 / Flat 987) / pending 6件 / skip 3883件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000373 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BATON/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.26% 残高後 $119.64
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-26T16:06:09.167045+00:00 / 保存件数 288/288
+- 更新: 2026-09-26T16:11:17.933107+00:00 / 保存件数 288/288
 - BTC: STAGNANT 1h -0.01% price=84103.0
-- Funnel: target 1070 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Funnel: target 1070 → liquid 148 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 78.3 >= 65=1, 4h RSI 72.1 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ORDI/USDT:USDT | +3.79% | $2,072,744.49 |
-| PAID/USDT:USDT | +2.05% | $3,133,550.79 |
-| BR/USDT:USDT | +1.12% | $10,819,068.34 |
-| CC/USDT:USDT | +1.10% | $1,833,080.38 |
-| MUBARAK/USDT:USDT | +1.08% | $3,355,651.70 |
+| PAID/USDT:USDT | +6.97% | $3,154,971.99 |
+| ORDI/USDT:USDT | +5.25% | $2,363,685.86 |
+| GRASS/USDT:USDT | +2.11% | $3,033,287.66 |
+| FLOW/USDT:USDT | +1.79% | $1,245,329.52 |
+| WLD/USDT:USDT | +1.69% | $69,680,127.14 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ORDI/USDT:USDT | below_1h_threshold | +4.01% | +4.03% |
-| PAID/USDT:USDT | below_1h_threshold | +2.05% | +2.06% |
-| CC/USDT:USDT | below_1h_threshold | +1.13% | +1.14% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +1.09% | +1.10% |
-| BR/USDT:USDT | below_1h_threshold | +1.04% | +1.05% |
+| GRASS/USDT:USDT | below_1h_threshold | +2.11% | +2.12% |
+| FLOW/USDT:USDT | below_1h_threshold | +1.88% | +1.89% |
+| WLD/USDT:USDT | below_1h_threshold | +1.66% | +1.67% |
+| BTW/USDT:USDT | below_1h_threshold | +1.48% | +1.49% |
+| CC/USDT:USDT | below_1h_threshold | +1.35% | +1.36% |
 
 ## 7. 次に見るべき不足
 
