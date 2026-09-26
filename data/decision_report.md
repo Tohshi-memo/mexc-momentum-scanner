@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-26T14:21:50.188337+00:00
+- generated_at: 2026-09-26T14:26:26.115781+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15602**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$119.20** / 初期 $100.00 (+19.20%)
-- 確定: 3187件 (Win 937 / Loss 1263 / Flat 987) / pending 1件 / skip 3882件
+- 確定: 3187件 (Win 937 / Loss 1263 / Flat 987) / pending 3件 / skip 3882件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000315 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MUBARAK/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $119.20
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-26T14:21:39.047178+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=83925.2
-- Funnel: target 1070 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-26T14:26:14.274622+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=83932.6
+- Funnel: target 1070 → liquid 157 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 78.6 >= 65=1, 4h RSI 78.5 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PAID/USDT:USDT | +321.96% | $2,861,170.75 |
-| RARE/USDT:USDT | +44.14% | $7,384,452.26 |
-| BR/USDT:USDT | +31.59% | $10,831,063.39 |
-| 2Z/USDT:USDT | +27.99% | $3,644,805.90 |
-| BATON/USDT:USDT | +26.88% | $1,164,869.56 |
+| PAID/USDT:USDT | +318.65% | $2,875,515.16 |
+| RARE/USDT:USDT | +43.09% | $7,430,676.58 |
+| BR/USDT:USDT | +29.41% | $10,906,762.71 |
+| BATON/USDT:USDT | +28.64% | $1,165,986.99 |
+| 2Z/USDT:USDT | +28.22% | $3,654,437.00 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +3.21% | +3.19% |
-| PAID/USDT:USDT | below_1h_threshold | +2.87% | +2.86% |
-| AVNT/USDT:USDT | below_1h_threshold | +2.20% | +2.18% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +2.11% | +2.10% |
-| KAS/USDT:USDT | below_1h_threshold | +1.44% | +1.42% |
+| BATON/USDT:USDT | below_1h_threshold | +2.26% | +2.23% |
+| AVNT/USDT:USDT | below_1h_threshold | +1.74% | +1.71% |
+| PAID/USDT:USDT | below_1h_threshold | +1.43% | +1.40% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +1.41% | +1.38% |
+| JTO/USDT:USDT | below_1h_threshold | +1.18% | +1.15% |
 
 ## 7. 次に見るべき不足
 
