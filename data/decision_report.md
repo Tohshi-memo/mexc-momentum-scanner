@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-26T14:26:26.115781+00:00
+- generated_at: 2026-09-26T14:31:23.610236+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15602**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-26T14:26:14.274622+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=83932.6
-- Funnel: target 1070 → liquid 157 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.6 >= 65=1, 4h RSI 78.5 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-26T14:31:12.500028+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=83958.0
+- Funnel: target 1070 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PAID/USDT:USDT | +318.65% | $2,875,515.16 |
-| RARE/USDT:USDT | +43.09% | $7,430,676.58 |
-| BR/USDT:USDT | +29.41% | $10,906,762.71 |
-| BATON/USDT:USDT | +28.64% | $1,165,986.99 |
-| 2Z/USDT:USDT | +28.22% | $3,654,437.00 |
+| PAID/USDT:USDT | +328.78% | $2,886,038.66 |
+| RARE/USDT:USDT | +41.73% | $7,478,745.41 |
+| BR/USDT:USDT | +29.78% | $10,982,207.32 |
+| 2Z/USDT:USDT | +28.92% | $3,664,787.37 |
+| BATON/USDT:USDT | +28.76% | $1,168,698.53 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BATON/USDT:USDT | below_1h_threshold | +2.26% | +2.23% |
-| AVNT/USDT:USDT | below_1h_threshold | +1.74% | +1.71% |
-| PAID/USDT:USDT | below_1h_threshold | +1.43% | +1.40% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +1.41% | +1.38% |
-| JTO/USDT:USDT | below_1h_threshold | +1.18% | +1.15% |
+| KAS/USDT:USDT | below_relative_strength | +5.01% | +4.95% |
+| BEAT/USDT:USDT | below_1h_threshold | +4.72% | +4.66% |
+| PAID/USDT:USDT | below_1h_threshold | +3.89% | +3.83% |
+| BATON/USDT:USDT | below_1h_threshold | +2.91% | +2.86% |
+| AVNT/USDT:USDT | below_1h_threshold | +1.89% | +1.84% |
 
 ## 7. 次に見るべき不足
 
