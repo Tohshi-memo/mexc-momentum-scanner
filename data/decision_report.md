@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-26T16:46:27.513038+00:00
+- generated_at: 2026-09-26T16:51:23.303181+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15609**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-26T16:46:16.286495+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=84094.8
-- Funnel: target 1070 → liquid 150 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.0 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-26T16:51:12.312175+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=84094.6
+- Funnel: target 1070 → liquid 150 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ORDI/USDT:USDT | +5.43% | $4,882,584.71 |
-| QNT/USDT:USDT | +4.62% | $12,879,814.51 |
-| GALA/USDT:USDT | +3.53% | $2,087,459.69 |
-| FET/USDT:USDT | +2.41% | $13,011,245.64 |
-| FILECOIN/USDT:USDT | +2.16% | $10,482,906.01 |
+| GALA/USDT:USDT | +3.92% | $2,121,956.82 |
+| QNT/USDT:USDT | +3.84% | $13,064,274.37 |
+| ORDI/USDT:USDT | +3.28% | $5,148,641.88 |
+| GRAM/USDT:USDT | +2.42% | $1,904,460.91 |
+| GRASS/USDT:USDT | +2.26% | $3,097,453.58 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| QNT/USDT:USDT | below_1h_threshold | +4.75% | +4.77% |
-| GALA/USDT:USDT | below_1h_threshold | +3.66% | +3.69% |
-| FET/USDT:USDT | below_1h_threshold | +2.41% | +2.43% |
-| FLOW/USDT:USDT | below_1h_threshold | +2.22% | +2.24% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +2.20% | +2.22% |
+| GALA/USDT:USDT | below_1h_threshold | +3.93% | +3.95% |
+| QNT/USDT:USDT | below_1h_threshold | +3.88% | +3.91% |
+| ORDI/USDT:USDT | below_1h_threshold | +3.28% | +3.31% |
+| GRAM/USDT:USDT | below_1h_threshold | +2.42% | +2.44% |
+| GRASS/USDT:USDT | below_1h_threshold | +2.26% | +2.29% |
 
 ## 7. 次に見るべき不足
 
