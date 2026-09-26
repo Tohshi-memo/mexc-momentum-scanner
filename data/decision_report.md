@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-26T14:31:23.610236+00:00
+- generated_at: 2026-09-26T14:36:22.557499+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15602**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$119.20** / 初期 $100.00 (+19.20%)
-- 確定: 3187件 (Win 937 / Loss 1263 / Flat 987) / pending 3件 / skip 3882件
+- 確定: 3187件 (Win 937 / Loss 1263 / Flat 987) / pending 4件 / skip 3882件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000315 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MUBARAK/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $119.20
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-26T14:31:12.500028+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=83958.0
-- Funnel: target 1070 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-26T14:36:08.340688+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=83962.3
+- Funnel: target 1070 → liquid 157 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 79.2 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PAID/USDT:USDT | +328.78% | $2,886,038.66 |
-| RARE/USDT:USDT | +41.73% | $7,478,745.41 |
-| BR/USDT:USDT | +29.78% | $10,982,207.32 |
-| 2Z/USDT:USDT | +28.92% | $3,664,787.37 |
-| BATON/USDT:USDT | +28.76% | $1,168,698.53 |
+| PAID/USDT:USDT | +325.47% | $2,897,199.95 |
+| RARE/USDT:USDT | +43.27% | $7,514,761.78 |
+| BATON/USDT:USDT | +36.47% | $1,171,339.64 |
+| BR/USDT:USDT | +30.77% | $11,028,711.72 |
+| 2Z/USDT:USDT | +28.97% | $3,670,960.89 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KAS/USDT:USDT | below_relative_strength | +5.01% | +4.95% |
-| BEAT/USDT:USDT | below_1h_threshold | +4.72% | +4.66% |
-| PAID/USDT:USDT | below_1h_threshold | +3.89% | +3.83% |
-| BATON/USDT:USDT | below_1h_threshold | +2.91% | +2.86% |
-| AVNT/USDT:USDT | below_1h_threshold | +1.89% | +1.84% |
+| KAS/USDT:USDT | below_1h_threshold | +4.23% | +4.16% |
+| PAID/USDT:USDT | below_1h_threshold | +3.45% | +3.39% |
+| JTO/USDT:USDT | below_1h_threshold | +2.38% | +2.31% |
+| WLD/USDT:USDT | below_1h_threshold | +2.32% | +2.25% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.59% | +1.53% |
 
 ## 7. 次に見るべき不足
 
