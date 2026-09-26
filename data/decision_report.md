@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-26T06:41:30.033810+00:00
+- generated_at: 2026-09-26T06:46:23.701947+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15578**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-26T06:41:18.569008+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=83890.6
+- 更新: 2026-09-26T06:46:12.442344+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=83874.3
 - Funnel: target 1067 → liquid 161 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.3 >= 65=1
+- Strict後reject: 4h RSI 80.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PAID/USDT:USDT | +301.04% | $1,237,510.45 |
-| BATON/USDT:USDT | +32.94% | $1,570,246.32 |
-| ARK/USDT:USDT | +23.42% | $3,729,546.58 |
-| RARE/USDT:USDT | +22.56% | $2,009,276.98 |
-| AERO/USDT:USDT | +13.51% | $4,583,682.85 |
+| PAID/USDT:USDT | +313.82% | $1,252,374.36 |
+| BATON/USDT:USDT | +32.70% | $1,572,962.02 |
+| ARK/USDT:USDT | +24.52% | $3,743,197.48 |
+| RARE/USDT:USDT | +23.24% | $2,067,766.10 |
+| AERO/USDT:USDT | +13.92% | $4,600,589.31 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CC/USDT:USDT | below_1h_threshold | +2.72% | +2.72% |
-| QNT/USDT:USDT | below_1h_threshold | +2.39% | +2.40% |
-| BR/USDT:USDT | below_1h_threshold | +2.35% | +2.35% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +2.28% | +2.28% |
-| AVNT/USDT:USDT | below_1h_threshold | +2.07% | +2.07% |
+| PAID/USDT:USDT | below_1h_threshold | +4.57% | +4.59% |
+| CC/USDT:USDT | below_1h_threshold | +3.16% | +3.18% |
+| BR/USDT:USDT | below_1h_threshold | +2.55% | +2.57% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +2.35% | +2.37% |
+| EIGEN/USDT:USDT | below_1h_threshold | +2.21% | +2.23% |
 
 ## 7. 次に見るべき不足
 
