@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-26T07:51:37.889554+00:00
+- generated_at: 2026-09-26T07:56:29.949304+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15586**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-26T07:51:24.215595+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.22% price=84041.2
+- 更新: 2026-09-26T07:56:15.724280+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.25% price=84066.3
 - Funnel: target 1067 → liquid 164 → pre 50 → checked 50 → surge 3 → strict 1
 - Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 88.0 >= 65=1, 4h RSI 74.0 >= 65=1
+- Strict後reject: 4h RSI 87.9 >= 65=1, 4h RSI 74.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PAID/USDT:USDT | +390.15% | $1,691,958.03 |
-| RARE/USDT:USDT | +34.34% | $3,293,010.79 |
-| BATON/USDT:USDT | +32.05% | $1,588,931.40 |
-| ARK/USDT:USDT | +25.26% | $3,920,492.19 |
-| BR/USDT:USDT | +21.51% | $10,428,696.30 |
+| PAID/USDT:USDT | +379.92% | $1,704,091.64 |
+| RARE/USDT:USDT | +31.93% | $3,364,616.59 |
+| BATON/USDT:USDT | +31.64% | $1,589,607.93 |
+| ARK/USDT:USDT | +27.39% | $4,001,463.06 |
+| BR/USDT:USDT | +20.02% | $10,489,694.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STX/USDT:USDT | below_1h_threshold | +4.49% | +4.27% |
-| ENA/USDT:USDT | below_1h_threshold | +3.55% | +3.33% |
-| XPL/USDT:USDT | below_1h_threshold | +3.54% | +3.32% |
-| IMX/USDT:USDT | below_1h_threshold | +2.78% | +2.57% |
-| JASMY/USDT:USDT | below_1h_threshold | +2.61% | +2.39% |
+| STX/USDT:USDT | below_1h_threshold | +4.79% | +4.54% |
+| IMX/USDT:USDT | below_1h_threshold | +3.22% | +2.97% |
+| ARK/USDT:USDT | below_1h_threshold | +3.03% | +2.79% |
+| XPL/USDT:USDT | below_1h_threshold | +2.94% | +2.69% |
+| ENA/USDT:USDT | below_1h_threshold | +2.45% | +2.20% |
 
 ## 7. 次に見るべき不足
 
