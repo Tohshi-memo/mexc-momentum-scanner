@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-26T18:56:23.383456+00:00
+- generated_at: 2026-09-26T19:01:20.562177+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15613**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-26T18:56:11.927293+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=83964.1
-- Funnel: target 1070 → liquid 147 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.9 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-26T19:01:09.565392+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=83989.0
+- Funnel: target 1070 → liquid 139 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GRASS/USDT:USDT | +11.92% | $3,487,095.70 |
-| MARSCOIN/USDT:USDT | +8.85% | $1,425,140.55 |
-| GRAM/USDT:USDT | +6.79% | $3,046,705.37 |
-| LSK/USDT:USDT | +3.87% | $2,679,453.55 |
-| MUBARAK/USDT:USDT | +3.15% | $3,035,273.77 |
+| GRASS/USDT:USDT | +10.73% | $3,212,276.32 |
+| MARSCOIN/USDT:USDT | +9.74% | $1,397,097.37 |
+| GRAM/USDT:USDT | +4.57% | $3,097,047.60 |
+| LSK/USDT:USDT | +4.05% | $2,643,382.65 |
+| QNT/USDT:USDT | +3.69% | $17,092,897.70 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GRAM/USDT:USDT | below_1h_threshold | +3.39% | +3.55% |
-| TLM/USDT:USDT | below_1h_threshold | +0.82% | +0.98% |
-| AKE/USDT:USDT | below_1h_threshold | +0.60% | +0.76% |
-| KMNO/USDT:USDT | below_1h_threshold | +0.52% | +0.68% |
-| SKYAI/USDT:USDT | below_1h_threshold | +0.46% | +0.62% |
+| QNT/USDT:USDT | below_1h_threshold | +0.65% | +0.63% |
+| BTW/USDT:USDT | below_1h_threshold | +0.40% | +0.38% |
+| SKYAI/USDT:USDT | below_1h_threshold | +0.39% | +0.37% |
+| NKESTOCK/USDT:USDT | below_1h_threshold | +0.33% | +0.31% |
+| RARE/USDT:USDT | below_1h_threshold | +0.31% | +0.29% |
 
 ## 7. 次に見るべき不足
 
