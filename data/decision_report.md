@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-26T17:31:14.297259+00:00
+- generated_at: 2026-09-26T17:36:55.615629+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15610**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$120.05** / 初期 $100.00 (+20.05%)
-- 確定: 3194件 (Win 941 / Loss 1265 / Flat 988) / pending 5件 / skip 3883件
+- 確定: 3194件 (Win 941 / Loss 1265 / Flat 988) / pending 6件 / skip 3883件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000375 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: QNT/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.26% 残高後 $120.05
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-26T17:31:06.394997+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=84033.0
-- Funnel: target 1070 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-26T17:36:44.190204+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=84009.6
+- Funnel: target 1070 → liquid 148 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 66.8 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| QNT/USDT:USDT | +5.65% | $14,604,128.73 |
-| GALA/USDT:USDT | +3.92% | $2,605,907.21 |
-| GRAM/USDT:USDT | +3.02% | $2,196,563.90 |
-| LSK/USDT:USDT | +2.65% | $2,415,468.02 |
-| MUBARAK/USDT:USDT | +2.17% | $3,107,671.36 |
+| MARSCOIN/USDT:USDT | +10.54% | $1,010,043.63 |
+| LSK/USDT:USDT | +5.02% | $2,465,988.30 |
+| QNT/USDT:USDT | +4.99% | $14,724,629.57 |
+| GRAM/USDT:USDT | +3.76% | $2,241,292.07 |
+| GALA/USDT:USDT | +3.44% | $2,614,343.53 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PAID/USDT:USDT | below_1h_threshold | +4.06% | +4.11% |
-| RARE/USDT:USDT | below_1h_threshold | +2.64% | +2.68% |
-| WLD/USDT:USDT | below_1h_threshold | +1.48% | +1.53% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.31% | +1.35% |
-| KAS/USDT:USDT | below_1h_threshold | +1.08% | +1.12% |
+| PAID/USDT:USDT | below_1h_threshold | +4.72% | +4.79% |
+| RARE/USDT:USDT | below_1h_threshold | +3.56% | +3.63% |
+| LSK/USDT:USDT | below_1h_threshold | +1.65% | +1.72% |
+| KAS/USDT:USDT | below_1h_threshold | +1.59% | +1.66% |
+| WLD/USDT:USDT | below_1h_threshold | +1.37% | +1.44% |
 
 ## 7. 次に見るべき不足
 
