@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-26T15:46:15.816421+00:00
+- generated_at: 2026-09-26T15:51:21.823787+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15605**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-26T15:46:06.464607+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=84084.0
+- 更新: 2026-09-26T15:51:10.560002+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=84042.1
 - Funnel: target 1070 → liquid 155 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.1 >= 65=1
+- Strict後reject: 4h RSI 87.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PAID/USDT:USDT | +295.73% | $3,071,529.00 |
-| RARE/USDT:USDT | +38.65% | $8,238,022.64 |
-| BATON/USDT:USDT | +37.41% | $1,145,772.99 |
-| BR/USDT:USDT | +31.36% | $11,227,417.18 |
-| BEAT/USDT:USDT | +25.57% | $6,114,126.26 |
+| PAID/USDT:USDT | +298.10% | $3,078,249.18 |
+| RARE/USDT:USDT | +37.42% | $8,264,529.98 |
+| BATON/USDT:USDT | +36.29% | $1,153,311.34 |
+| BR/USDT:USDT | +33.07% | $11,276,440.25 |
+| BEAT/USDT:USDT | +25.35% | $6,234,382.24 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +3.91% | +3.78% |
-| WLD/USDT:USDT | below_1h_threshold | +3.48% | +3.36% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +3.21% | +3.09% |
-| ETHFI/USDT:USDT | below_1h_threshold | +2.46% | +2.33% |
-| VIRTUAL/USDT:USDT | below_1h_threshold | +2.23% | +2.10% |
+| WLD/USDT:USDT | below_1h_threshold | +4.44% | +4.37% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.82% | +3.74% |
+| CHIP/USDT:USDT | below_1h_threshold | +3.77% | +3.70% |
+| ETHFI/USDT:USDT | below_1h_threshold | +3.26% | +3.18% |
+| VIRTUAL/USDT:USDT | below_1h_threshold | +2.86% | +2.78% |
 
 ## 7. 次に見るべき不足
 
