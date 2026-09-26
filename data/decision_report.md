@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-09-26T16:31:28.985574+00:00
+- generated_at: 2026-09-26T16:36:29.643655+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **15608**
+- closed shadow trades: **15609**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=15608, expectancy=-0.00%
+- 全期間 MARKET基準: n=15609, expectancy=+0.00%
 - 直近20件 MARKET基準: n=20, expectancy=+0.03%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -33,7 +33,7 @@
 |---|---:|---:|---:|---:|
 | LIMIT_3PCT_LONG | 13/20 | 65.0% | +1.71% | **+1.11%** |
 | LIMIT_2PCT_LONG | 16/20 | 80.0% | +0.92% | **+0.74%** |
-| LIMIT_ATR_LONG | 12/20 | 60.0% | +1.06% | **+0.63%** |
+| LIMIT_ATR_LONG | 12/20 | 60.0% | +1.07% | **+0.64%** |
 | LIMIT_6PCT_LONG | 8/20 | 40.0% | +1.53% | **+0.61%** |
 | LIMIT_1PCT_LONG | 17/20 | 85.0% | +0.60% | **+0.51%** |
 
@@ -46,56 +46,56 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$1,274.13** / 初期 $100.00 (+1174.13%)
-- 確定: 5969件 (Win 1765 / Loss 1916 / Flat 2288) / skip 6200件
-- 成長率目線: 平均log +0.000426 / 幾何平均 +0.043% per trade / maxDD +8.46%
+- 残高: **$1,267.75** / 初期 $100.00 (+1167.75%)
+- 確定: 5970件 (Win 1765 / Loss 1917 / Flat 2288) / skip 6200件
+- 成長率目線: 平均log +0.000425 / 幾何平均 +0.043% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_1PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: ORDI/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $1,274.13
+- 最新: PAID/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.50% 残高後 $1,267.75
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$263.08** / 初期 $100.00 (+163.08%)
-- 確定: 3533件 (Win 974 / Loss 812 / Flat 1747) / skip 5486件
+- 確定: 3533件 (Win 974 / Loss 812 / Flat 1747) / skip 5487件
 - 成長率目線: 平均log +0.000274 / 幾何平均 +0.027% per trade / maxDD +3.96%
-- 次の候補: `LIMIT_2PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.1190 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 次の候補: `LIMIT_2PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0952 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: RARE/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.35% 残高後 $263.08
 
 ## 5. Causal Adaptive DryRun ($100)
 
-- 残高: **$119.95** / 初期 $100.00 (+19.95%)
-- 確定: 3192件 (Win 940 / Loss 1264 / Flat 988) / pending 6件 / skip 3883件
+- 残高: **$119.74** / 初期 $100.00 (+19.74%)
+- 確定: 3193件 (Win 940 / Loss 1265 / Flat 988) / pending 5件 / skip 3883件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000342 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
-- 最新: PAID/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $119.95
+- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000320 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 最新: PAID/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $119.74
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-26T16:31:17.859267+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=84076.9
+- 更新: 2026-09-26T16:36:16.257425+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=84114.0
 - Funnel: target 1070 → liquid 149 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.5 >= 65=1
+- Strict後reject: 4h RSI 72.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ORDI/USDT:USDT | +8.00% | $3,618,292.18 |
-| PAID/USDT:USDT | +3.75% | $3,243,989.46 |
-| FLOW/USDT:USDT | +3.09% | $1,343,515.36 |
-| QNT/USDT:USDT | +2.68% | $12,214,195.48 |
-| GRASS/USDT:USDT | +2.09% | $3,067,669.43 |
+| ORDI/USDT:USDT | +6.16% | $4,164,814.31 |
+| QNT/USDT:USDT | +2.65% | $12,345,116.50 |
+| GALA/USDT:USDT | +2.38% | $2,023,054.61 |
+| GRASS/USDT:USDT | +2.35% | $3,079,340.01 |
+| BTW/USDT:USDT | +2.33% | $11,248,624.03 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PAID/USDT:USDT | below_1h_threshold | +3.78% | +3.82% |
-| FLOW/USDT:USDT | below_1h_threshold | +3.10% | +3.14% |
-| GRASS/USDT:USDT | below_1h_threshold | +2.04% | +2.08% |
-| QNT/USDT:USDT | below_1h_threshold | +2.01% | +2.05% |
-| BTW/USDT:USDT | below_1h_threshold | +1.93% | +1.97% |
+| QNT/USDT:USDT | below_1h_threshold | +2.65% | +2.65% |
+| GALA/USDT:USDT | below_1h_threshold | +2.38% | +2.38% |
+| GRASS/USDT:USDT | below_1h_threshold | +2.36% | +2.36% |
+| BTW/USDT:USDT | below_1h_threshold | +2.28% | +2.28% |
+| FLOW/USDT:USDT | below_1h_threshold | +2.16% | +2.16% |
 
 ## 7. 次に見るべき不足
 
