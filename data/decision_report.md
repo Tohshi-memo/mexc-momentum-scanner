@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-26T03:26:17.187584+00:00
+- generated_at: 2026-09-26T03:31:57.760194+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15562**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$119.41** / 初期 $100.00 (+19.41%)
-- 確定: 3185件 (Win 937 / Loss 1262 / Flat 986) / pending 1件 / skip 3845件
+- 確定: 3185件 (Win 937 / Loss 1262 / Flat 986) / pending 1件 / skip 3846件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000272 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: LDO/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.03% 残高後 $119.41
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-26T03:26:05.817028+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=83962.2
-- Funnel: target 1067 → liquid 163 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-26T03:31:43.953968+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=84008.3
+- Funnel: target 1067 → liquid 163 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +24.70% | $1,461,126.77 |
-| ARK/USDT:USDT | +18.63% | $2,924,293.79 |
-| BR/USDT:USDT | +16.21% | $9,789,045.33 |
-| PHA/USDT:USDT | +14.16% | $28,449,112.51 |
-| H/USDT:USDT | +12.52% | $1,078,647.21 |
+| BATON/USDT:USDT | +22.47% | $1,462,393.45 |
+| ARK/USDT:USDT | +18.58% | $2,931,750.04 |
+| BR/USDT:USDT | +17.80% | $9,803,886.36 |
+| PHA/USDT:USDT | +13.65% | $28,510,363.05 |
+| H/USDT:USDT | +12.75% | $1,079,145.86 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ARK/USDT:USDT | below_1h_threshold | +2.60% | +2.63% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +1.35% | +1.37% |
-| CAKE/USDT:USDT | below_1h_threshold | +1.33% | +1.36% |
-| BR/USDT:USDT | below_1h_threshold | +0.68% | +0.70% |
-| AVNT/USDT:USDT | below_1h_threshold | +0.48% | +0.50% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +2.80% | +2.77% |
+| ARK/USDT:USDT | below_1h_threshold | +2.53% | +2.50% |
+| BR/USDT:USDT | below_1h_threshold | +2.06% | +2.02% |
+| KAS/USDT:USDT | below_1h_threshold | +1.23% | +1.20% |
+| CAKE/USDT:USDT | below_1h_threshold | +1.16% | +1.13% |
 
 ## 7. 次に見るべき不足
 
