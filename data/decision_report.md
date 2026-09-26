@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-26T10:41:28.143734+00:00
+- generated_at: 2026-09-26T10:46:22.723707+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15594**
 
@@ -70,9 +70,9 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-26T10:41:16.511154+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.15% price=84098.5
-- Funnel: target 1067 → liquid 163 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-09-26T10:46:09.361161+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=84114.1
+- Funnel: target 1067 → liquid 164 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PAID/USDT:USDT | +356.43% | $2,178,312.86 |
-| RARE/USDT:USDT | +40.07% | $4,983,986.00 |
-| 2Z/USDT:USDT | +29.02% | $2,919,941.80 |
-| BATON/USDT:USDT | +21.76% | $1,398,489.45 |
-| ARK/USDT:USDT | +20.98% | $3,897,817.33 |
+| PAID/USDT:USDT | +365.53% | $2,186,818.52 |
+| RARE/USDT:USDT | +42.66% | $5,048,085.99 |
+| 2Z/USDT:USDT | +29.39% | $2,950,270.19 |
+| BATON/USDT:USDT | +22.17% | $1,398,995.77 |
+| ARK/USDT:USDT | +20.94% | $3,912,130.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DASH/USDT:USDT | below_1h_threshold | +4.48% | +4.33% |
-| PAID/USDT:USDT | below_1h_threshold | +3.12% | +2.96% |
-| DOT/USDT:USDT | below_1h_threshold | +2.47% | +2.31% |
-| GALA/USDT:USDT | below_1h_threshold | +2.26% | +2.10% |
-| PHA/USDT:USDT | below_1h_threshold | +2.20% | +2.05% |
+| PAID/USDT:USDT | below_1h_threshold | +4.98% | +4.80% |
+| DASH/USDT:USDT | below_1h_threshold | +4.27% | +4.10% |
+| GALA/USDT:USDT | below_1h_threshold | +2.77% | +2.59% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +2.68% | +2.50% |
+| AVNT/USDT:USDT | below_1h_threshold | +2.30% | +2.13% |
 
 ## 7. 次に見るべき不足
 
