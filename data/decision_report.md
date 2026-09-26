@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-26T20:26:28.364566+00:00
+- generated_at: 2026-09-26T20:31:22.865390+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15614**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-26T20:26:14.921399+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=84041.6
+- 更新: 2026-09-26T20:31:13.432033+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=84045.3
 - Funnel: target 1070 → liquid 141 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.8 >= 65=1
+- Strict後reject: 4h RSI 73.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MARSCOIN/USDT:USDT | +11.89% | $1,598,039.24 |
-| GRASS/USDT:USDT | +11.07% | $4,028,840.88 |
-| LSK/USDT:USDT | +5.69% | $3,040,632.65 |
-| GRAM/USDT:USDT | +5.38% | $3,888,281.19 |
-| TAKE/USDT:USDT | +5.13% | $1,042,614.56 |
+| GRASS/USDT:USDT | +10.92% | $4,068,955.57 |
+| MARSCOIN/USDT:USDT | +10.56% | $1,623,197.27 |
+| GRAM/USDT:USDT | +6.46% | $3,979,334.11 |
+| LSK/USDT:USDT | +5.12% | $3,077,188.88 |
+| TAKE/USDT:USDT | +4.39% | $1,046,275.82 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PHA/USDT:USDT | below_1h_threshold | +2.30% | +2.23% |
-| DASH/USDT:USDT | below_1h_threshold | +1.73% | +1.66% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +1.05% | +0.98% |
-| GRASS/USDT:USDT | below_1h_threshold | +0.96% | +0.89% |
-| XMR/USDT:USDT | below_1h_threshold | +0.89% | +0.82% |
+| PHA/USDT:USDT | below_1h_threshold | +2.40% | +2.32% |
+| DASH/USDT:USDT | below_1h_threshold | +2.06% | +1.98% |
+| GRAM/USDT:USDT | below_1h_threshold | +1.61% | +1.53% |
+| UAI/USDT:USDT | below_1h_threshold | +1.35% | +1.27% |
+| GRASS/USDT:USDT | below_1h_threshold | +0.82% | +0.75% |
 
 ## 7. 次に見るべき不足
 
