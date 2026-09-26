@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-26T18:46:15.733024+00:00
+- generated_at: 2026-09-26T18:51:23.168790+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15613**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$119.63** / 初期 $100.00 (+19.63%)
-- 確定: 3197件 (Win 941 / Loss 1267 / Flat 989) / pending 5件 / skip 3884件
+- 確定: 3197件 (Win 941 / Loss 1267 / Flat 989) / pending 6件 / skip 3884件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000298 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: PAID/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $119.63
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-26T18:46:06.831682+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=83969.4
-- Funnel: target 1070 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-26T18:51:14.813795+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.16% price=83963.9
+- Funnel: target 1070 → liquid 147 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.7 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MARSCOIN/USDT:USDT | +10.95% | $1,374,804.69 |
-| GRASS/USDT:USDT | +7.35% | $3,182,842.56 |
-| GRAM/USDT:USDT | +5.31% | $2,928,591.10 |
-| LSK/USDT:USDT | +4.43% | $2,647,025.36 |
-| MUBARAK/USDT:USDT | +4.31% | $3,013,910.81 |
+| MARSCOIN/USDT:USDT | +10.39% | $1,385,881.95 |
+| GRASS/USDT:USDT | +8.97% | $3,298,907.62 |
+| GRAM/USDT:USDT | +6.25% | $2,969,706.63 |
+| MUBARAK/USDT:USDT | +4.06% | $3,020,555.23 |
+| LSK/USDT:USDT | +3.90% | $2,660,518.93 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GRASS/USDT:USDT | below_1h_threshold | +3.72% | +3.87% |
-| GRAM/USDT:USDT | below_1h_threshold | +2.08% | +2.24% |
-| AKE/USDT:USDT | below_1h_threshold | +1.00% | +1.15% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +0.85% | +1.00% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +0.84% | +0.99% |
+| GRAM/USDT:USDT | below_1h_threshold | +2.80% | +2.96% |
+| UAI/USDT:USDT | below_1h_threshold | +0.67% | +0.83% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +0.63% | +0.79% |
+| TLM/USDT:USDT | below_1h_threshold | +0.53% | +0.69% |
+| AKE/USDT:USDT | below_1h_threshold | +0.49% | +0.65% |
 
 ## 7. 次に見るべき不足
 
