@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-26T19:36:23.528521+00:00
+- generated_at: 2026-09-26T19:41:54.149322+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15613**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-26T19:36:12.305437+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=83996.0
+- 更新: 2026-09-26T19:41:42.871896+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=83954.0
 - Funnel: target 1070 → liquid 140 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MARSCOIN/USDT:USDT | +11.46% | $1,505,117.15 |
-| GRASS/USDT:USDT | +9.75% | $3,808,142.93 |
-| QNT/USDT:USDT | +6.54% | $17,936,587.23 |
-| GRAM/USDT:USDT | +4.84% | $3,554,916.29 |
-| TAKE/USDT:USDT | +4.70% | $1,009,965.92 |
+| MARSCOIN/USDT:USDT | +11.49% | $1,521,857.08 |
+| GRASS/USDT:USDT | +10.56% | $3,865,636.51 |
+| QNT/USDT:USDT | +5.70% | $18,102,605.52 |
+| GRAM/USDT:USDT | +4.97% | $3,589,083.79 |
+| MUBARAK/USDT:USDT | +4.13% | $2,919,931.40 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| QNT/USDT:USDT | below_1h_threshold | +3.35% | +3.32% |
-| TAKE/USDT:USDT | below_1h_threshold | +2.51% | +2.48% |
-| PYTH/USDT:USDT | below_1h_threshold | +2.40% | +2.37% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +1.75% | +1.72% |
-| UAI/USDT:USDT | below_1h_threshold | +1.12% | +1.09% |
+| PYTH/USDT:USDT | below_1h_threshold | +2.77% | +2.79% |
+| QNT/USDT:USDT | below_1h_threshold | +2.53% | +2.55% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +1.75% | +1.77% |
+| TAKE/USDT:USDT | below_1h_threshold | +1.51% | +1.53% |
+| UAI/USDT:USDT | below_1h_threshold | +1.15% | +1.17% |
 
 ## 7. 次に見るべき不足
 
