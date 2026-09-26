@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-26T17:11:15.565812+00:00
+- generated_at: 2026-09-26T17:16:23.352699+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15609**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-26T17:11:06.461894+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=84022.2
+- 更新: 2026-09-26T17:16:12.131014+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=84022.0
 - Funnel: target 1070 → liquid 146 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| QNT/USDT:USDT | +5.09% | $13,504,071.04 |
-| GALA/USDT:USDT | +4.10% | $2,436,421.78 |
-| LSK/USDT:USDT | +4.04% | $2,252,152.18 |
-| ZRO/USDT:USDT | +3.82% | $3,934,708.16 |
-| GRAM/USDT:USDT | +3.63% | $2,047,331.25 |
+| QNT/USDT:USDT | +5.88% | $13,929,471.69 |
+| GALA/USDT:USDT | +4.32% | $2,477,075.78 |
+| LSK/USDT:USDT | +3.82% | $2,289,015.44 |
+| GRAM/USDT:USDT | +3.63% | $2,118,400.44 |
+| ORDI/USDT:USDT | +2.71% | $5,545,576.47 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZRO/USDT:USDT | below_1h_threshold | +1.57% | +1.62% |
-| LSK/USDT:USDT | below_1h_threshold | +0.93% | +0.98% |
-| ZEC/USDT:USDT | below_1h_threshold | +0.30% | +0.36% |
-| GRAM/USDT:USDT | below_1h_threshold | +0.26% | +0.32% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +0.19% | +0.25% |
+| PAID/USDT:USDT | below_1h_threshold | +2.29% | +2.35% |
+| SAGA/USDT:USDT | below_1h_threshold | +1.27% | +1.32% |
+| LSK/USDT:USDT | below_1h_threshold | +0.69% | +0.75% |
+| GRAM/USDT:USDT | below_1h_threshold | +0.39% | +0.45% |
+| CFX/USDT:USDT | below_1h_threshold | +0.31% | +0.37% |
 
 ## 7. 次に見るべき不足
 
