@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-26T16:42:00.084896+00:00
+- generated_at: 2026-09-26T16:46:27.513038+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15609**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-26T16:41:48.834843+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=84108.9
+- 更新: 2026-09-26T16:46:16.286495+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=84094.8
 - Funnel: target 1070 → liquid 150 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.5 >= 65=1
+- Strict後reject: 4h RSI 71.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ORDI/USDT:USDT | +5.33% | $4,629,374.92 |
-| QNT/USDT:USDT | +3.90% | $12,698,668.39 |
-| GRASS/USDT:USDT | +3.22% | $3,082,387.99 |
-| GALA/USDT:USDT | +3.13% | $2,067,598.88 |
-| FLOW/USDT:USDT | +2.27% | $1,374,070.49 |
+| ORDI/USDT:USDT | +5.43% | $4,882,584.71 |
+| QNT/USDT:USDT | +4.62% | $12,879,814.51 |
+| GALA/USDT:USDT | +3.53% | $2,087,459.69 |
+| FET/USDT:USDT | +2.41% | $13,011,245.64 |
+| FILECOIN/USDT:USDT | +2.16% | $10,482,906.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| QNT/USDT:USDT | below_1h_threshold | +4.03% | +4.04% |
-| GALA/USDT:USDT | below_1h_threshold | +3.13% | +3.14% |
-| GRASS/USDT:USDT | below_1h_threshold | +3.06% | +3.06% |
-| FLOW/USDT:USDT | below_1h_threshold | +2.31% | +2.31% |
-| KAS/USDT:USDT | below_1h_threshold | +2.13% | +2.14% |
+| QNT/USDT:USDT | below_1h_threshold | +4.75% | +4.77% |
+| GALA/USDT:USDT | below_1h_threshold | +3.66% | +3.69% |
+| FET/USDT:USDT | below_1h_threshold | +2.41% | +2.43% |
+| FLOW/USDT:USDT | below_1h_threshold | +2.22% | +2.24% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +2.20% | +2.22% |
 
 ## 7. 次に見るべき不足
 
