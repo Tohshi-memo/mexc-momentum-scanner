@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-26T11:36:19.869290+00:00
+- generated_at: 2026-09-26T11:41:20.843234+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15599**
 
@@ -39,9 +39,9 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$120.79** / 初期 $100.00 (+20.79%)
-- 確定トレード: 223件 (TP 82 / SL 135 / EXP 6)
-- 最新: BATON/USDT:USDT TP_HIT PnL +8.00% 残高後 $120.79
+- 残高: **$120.87** / 初期 $100.00 (+20.87%)
+- 確定トレード: 224件 (TP 82 / SL 135 / EXP 7)
+- 最新: UNI/USDT:USDT EXPIRED PnL +1.69% 残高後 $120.87
 - 最新戦略メタ: tier=S, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-26T11:36:09.275684+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=84130.4
+- 更新: 2026-09-26T11:41:07.355834+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=84144.6
 - Funnel: target 1067 → liquid 161 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PAID/USDT:USDT | +309.18% | $2,359,551.07 |
-| RARE/USDT:USDT | +42.23% | $5,818,030.17 |
-| BATON/USDT:USDT | +35.11% | $1,347,094.03 |
-| 2Z/USDT:USDT | +25.94% | $3,173,388.82 |
-| BR/USDT:USDT | +25.60% | $11,081,466.62 |
+| PAID/USDT:USDT | +307.19% | $2,374,617.92 |
+| RARE/USDT:USDT | +42.04% | $5,872,030.34 |
+| BATON/USDT:USDT | +35.88% | $1,350,172.03 |
+| BR/USDT:USDT | +25.27% | $11,124,011.39 |
+| 2Z/USDT:USDT | +25.24% | $3,194,599.17 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RUNE/USDT:USDT | below_1h_threshold | +2.17% | +2.18% |
-| PYTH/USDT:USDT | below_1h_threshold | +1.85% | +1.86% |
-| DASH/USDT:USDT | below_1h_threshold | +1.77% | +1.78% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.66% | +1.66% |
-| SPX/USDT:USDT | below_1h_threshold | +1.56% | +1.56% |
+| RUNE/USDT:USDT | below_1h_threshold | +2.13% | +2.12% |
+| PYTH/USDT:USDT | below_1h_threshold | +2.06% | +2.05% |
+| PHA/USDT:USDT | below_1h_threshold | +1.94% | +1.93% |
+| DASH/USDT:USDT | below_1h_threshold | +1.67% | +1.66% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.66% | +1.65% |
 
 ## 7. 次に見るべき不足
 
