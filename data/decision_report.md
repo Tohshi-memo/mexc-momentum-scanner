@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-26T17:56:17.642328+00:00
+- generated_at: 2026-09-26T18:01:22.727397+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15612**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-26T17:56:08.328278+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=84071.3
-- Funnel: target 1070 → liquid 148 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.0 >= 65=1, 4h RSI 77.9 >= 65=1, 4h RSI 82.1 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-26T18:01:10.974933+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=84088.2
+- Funnel: target 1070 → liquid 143 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MARSCOIN/USDT:USDT | +9.75% | $1,111,112.46 |
-| PAID/USDT:USDT | +5.94% | $3,370,515.06 |
-| QNT/USDT:USDT | +5.93% | $15,497,670.02 |
-| GRASS/USDT:USDT | +3.33% | $3,165,988.48 |
-| LSK/USDT:USDT | +3.30% | $2,609,001.68 |
+| MARSCOIN/USDT:USDT | +9.96% | $1,104,831.10 |
+| QNT/USDT:USDT | +6.30% | $15,424,067.93 |
+| PAID/USDT:USDT | +5.92% | $3,368,035.46 |
+| LSK/USDT:USDT | +3.82% | $2,533,493.44 |
+| GRASS/USDT:USDT | +3.58% | $2,808,679.09 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GRASS/USDT:USDT | below_1h_threshold | +3.30% | +3.30% |
-| KAS/USDT:USDT | below_1h_threshold | +2.15% | +2.15% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +1.68% | +1.67% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.12% | +1.12% |
-| BTW/USDT:USDT | below_1h_threshold | +0.85% | +0.85% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.25% | +0.26% |
+| LSK/USDT:USDT | below_1h_threshold | +0.17% | +0.18% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.11% | +0.12% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +0.08% | +0.10% |
+| GRASS/USDT:USDT | below_1h_threshold | +0.07% | +0.08% |
 
 ## 7. 次に見るべき不足
 
