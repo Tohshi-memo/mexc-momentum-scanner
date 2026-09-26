@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-26T06:46:23.701947+00:00
+- generated_at: 2026-09-26T06:51:19.385202+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15578**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$119.41** / 初期 $100.00 (+19.41%)
-- 確定: 3185件 (Win 937 / Loss 1262 / Flat 986) / pending 1件 / skip 3862件
+- 確定: 3185件 (Win 937 / Loss 1262 / Flat 986) / pending 1件 / skip 3863件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000376 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: LDO/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.03% 残高後 $119.41
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-26T06:46:12.442344+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=83874.3
-- Funnel: target 1067 → liquid 161 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.7 >= 65=1
+- 更新: 2026-09-26T06:51:09.920501+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=83895.5
+- Funnel: target 1067 → liquid 161 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 80.9 >= 65=1, 4h RSI 87.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PAID/USDT:USDT | +313.82% | $1,252,374.36 |
-| BATON/USDT:USDT | +32.70% | $1,572,962.02 |
-| ARK/USDT:USDT | +24.52% | $3,743,197.48 |
-| RARE/USDT:USDT | +23.24% | $2,067,766.10 |
-| AERO/USDT:USDT | +13.92% | $4,600,589.31 |
+| PAID/USDT:USDT | +359.28% | $1,306,275.02 |
+| BATON/USDT:USDT | +34.82% | $1,575,574.15 |
+| ARK/USDT:USDT | +24.91% | $3,773,300.01 |
+| RARE/USDT:USDT | +20.34% | $2,130,147.21 |
+| AERO/USDT:USDT | +14.24% | $4,622,730.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PAID/USDT:USDT | below_1h_threshold | +4.57% | +4.59% |
-| CC/USDT:USDT | below_1h_threshold | +3.16% | +3.18% |
-| BR/USDT:USDT | below_1h_threshold | +2.55% | +2.57% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +2.35% | +2.37% |
-| EIGEN/USDT:USDT | below_1h_threshold | +2.21% | +2.23% |
+| CC/USDT:USDT | below_1h_threshold | +3.23% | +3.23% |
+| BR/USDT:USDT | below_1h_threshold | +2.49% | +2.49% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +2.36% | +2.35% |
+| EIGEN/USDT:USDT | below_1h_threshold | +2.33% | +2.32% |
+| SYN/USDT:USDT | below_1h_threshold | +1.58% | +1.58% |
 
 ## 7. 次に見るべき不足
 
