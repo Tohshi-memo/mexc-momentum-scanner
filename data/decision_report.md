@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-26T16:01:13.053239+00:00
+- generated_at: 2026-09-26T16:06:20.406393+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15605**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-26T16:01:03.821611+00:00 / 保存件数 288/288
+- 更新: 2026-09-26T16:06:09.167045+00:00 / 保存件数 288/288
 - BTC: STAGNANT 1h -0.01% price=84103.0
-- Funnel: target 1070 → liquid 146 → pre 50 → checked 50 → surge 0 → strict 0
+- Funnel: target 1070 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BEAT/USDT:USDT | +1.22% | $6,238,022.11 |
-| BTW/USDT:USDT | +0.77% | $10,939,574.27 |
-| AKE/USDT:USDT | +0.38% | $8,314,119.12 |
-| WLD/USDT:USDT | +0.36% | $68,118,099.46 |
-| FILECOIN/USDT:USDT | +0.31% | $9,822,442.16 |
+| ORDI/USDT:USDT | +3.79% | $2,072,744.49 |
+| PAID/USDT:USDT | +2.05% | $3,133,550.79 |
+| BR/USDT:USDT | +1.12% | $10,819,068.34 |
+| CC/USDT:USDT | +1.10% | $1,833,080.38 |
+| MUBARAK/USDT:USDT | +1.08% | $3,355,651.70 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +0.96% | +0.97% |
-| BTW/USDT:USDT | below_1h_threshold | +0.81% | +0.83% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.52% | +0.54% |
-| WLD/USDT:USDT | below_1h_threshold | +0.44% | +0.45% |
-| AKE/USDT:USDT | below_1h_threshold | +0.41% | +0.43% |
+| ORDI/USDT:USDT | below_1h_threshold | +4.01% | +4.03% |
+| PAID/USDT:USDT | below_1h_threshold | +2.05% | +2.06% |
+| CC/USDT:USDT | below_1h_threshold | +1.13% | +1.14% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +1.09% | +1.10% |
+| BR/USDT:USDT | below_1h_threshold | +1.04% | +1.05% |
 
 ## 7. 次に見るべき不足
 
