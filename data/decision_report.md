@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-27T19:01:22.742561+00:00
+- generated_at: 2026-09-27T19:06:13.175810+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15656**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-27T19:01:11.437810+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=84731.5
+- 更新: 2026-09-27T19:06:04.911465+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=84702.2
 - Funnel: target 1069 → liquid 140 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| Q/USDT:USDT | +13.32% | $1,005,154.93 |
-| GRT/USDT:USDT | +9.13% | $1,386,623.49 |
-| ENA/USDT:USDT | +7.07% | $48,324,626.60 |
-| QNT/USDT:USDT | +6.44% | $176,576,074.99 |
-| USELESS/USDT:USDT | +4.87% | $3,088,313.96 |
+| Q/USDT:USDT | +13.22% | $1,007,039.59 |
+| GRT/USDT:USDT | +8.18% | $1,446,793.37 |
+| QNT/USDT:USDT | +7.70% | $178,313,351.87 |
+| ENA/USDT:USDT | +6.04% | $48,699,678.05 |
+| USELESS/USDT:USDT | +4.48% | $3,148,664.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| QNT/USDT:USDT | below_1h_threshold | +0.66% | +0.71% |
-| RARE/USDT:USDT | below_1h_threshold | +0.20% | +0.25% |
-| GRT/USDT:USDT | below_1h_threshold | +0.13% | +0.19% |
-| VET/USDT:USDT | below_1h_threshold | +0.11% | +0.16% |
-| ZRO/USDT:USDT | below_1h_threshold | +0.07% | +0.12% |
+| QNT/USDT:USDT | below_1h_threshold | +1.94% | +2.03% |
+| SAGA/USDT:USDT | below_1h_threshold | +0.68% | +0.77% |
+| W/USDT:USDT | below_1h_threshold | +0.53% | +0.62% |
+| BTW/USDT:USDT | below_1h_threshold | +0.36% | +0.45% |
+| ONDO/USDT:USDT | below_1h_threshold | +0.29% | +0.38% |
 
 ## 7. 次に見るべき不足
 
