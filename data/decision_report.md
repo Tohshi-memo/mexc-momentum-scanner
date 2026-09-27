@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-27T07:56:21.385192+00:00
+- generated_at: 2026-09-27T08:01:19.393079+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15642**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-27T07:56:09.834352+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.19% price=84639.1
-- Funnel: target 1070 → liquid 144 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.8 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-27T08:01:08.239117+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=84709.4
+- Funnel: target 1070 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| QNT/USDT:USDT | +48.16% | $101,468,832.44 |
-| SOONNETWORK/USDT:USDT | +41.48% | $1,706,176.07 |
-| W/USDT:USDT | +17.50% | $1,490,188.71 |
-| PYTH/USDT:USDT | +11.83% | $4,732,370.90 |
-| NEAR/USDT:USDT | +11.23% | $158,623,411.55 |
+| QNT/USDT:USDT | +47.42% | $102,152,066.94 |
+| SOONNETWORK/USDT:USDT | +40.97% | $1,717,971.95 |
+| W/USDT:USDT | +18.46% | $1,518,260.28 |
+| PYTH/USDT:USDT | +12.33% | $4,737,242.44 |
+| NEAR/USDT:USDT | +11.60% | $156,110,688.97 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| W/USDT:USDT | below_1h_threshold | +3.14% | +2.95% |
-| ATOM/USDT:USDT | below_1h_threshold | +2.98% | +2.79% |
-| SEI/USDT:USDT | below_1h_threshold | +2.87% | +2.68% |
-| RAY/USDT:USDT | below_1h_threshold | +2.61% | +2.43% |
-| PYTH/USDT:USDT | below_1h_threshold | +2.58% | +2.39% |
+| TRIA/USDT:USDT | below_1h_threshold | +0.88% | +0.93% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +0.67% | +0.72% |
+| QNT/USDT:USDT | below_1h_threshold | +0.59% | +0.64% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.46% | +0.51% |
+| JTO/USDT:USDT | below_1h_threshold | +0.37% | +0.42% |
 
 ## 7. 次に見るべき不足
 
