@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-27T23:36:19.594644+00:00
+- generated_at: 2026-09-27T23:41:54.835496+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15674**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-27T23:36:08.463906+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.24% price=84351.5
+- 更新: 2026-09-27T23:41:43.546705+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.21% price=84331.9
 - Funnel: target 1069 → liquid 137 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| QNT/USDT:USDT | +59.39% | $263,086,794.56 |
-| BATON/USDT:USDT | +31.68% | $1,209,032.51 |
-| GRT/USDT:USDT | +25.04% | $7,240,593.53 |
-| RARE/USDT:USDT | +15.55% | $1,661,890.53 |
-| JUP/USDT:USDT | +11.50% | $5,218,253.65 |
+| QNT/USDT:USDT | +61.99% | $264,281,902.05 |
+| BATON/USDT:USDT | +34.00% | $1,212,776.04 |
+| GRT/USDT:USDT | +25.43% | $7,294,922.36 |
+| RARE/USDT:USDT | +18.08% | $1,665,385.89 |
+| JUP/USDT:USDT | +11.53% | $5,236,235.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +2.31% | +2.07% |
-| MONAD/USDT:USDT | below_1h_threshold | +1.98% | +1.75% |
-| SAGA/USDT:USDT | below_1h_threshold | +1.91% | +1.68% |
-| GRT/USDT:USDT | below_1h_threshold | +1.70% | +1.46% |
-| JUP/USDT:USDT | below_1h_threshold | +1.44% | +1.21% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.31% | +2.10% |
+| GRT/USDT:USDT | below_1h_threshold | +2.28% | +2.06% |
+| SEI/USDT:USDT | below_1h_threshold | +1.98% | +1.76% |
+| MONAD/USDT:USDT | below_1h_threshold | +1.91% | +1.70% |
+| RARE/USDT:USDT | below_1h_threshold | +1.65% | +1.43% |
 
 ## 7. 次に見るべき不足
 
