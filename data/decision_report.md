@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-27T13:41:15.680991+00:00
+- generated_at: 2026-09-27T13:46:21.145894+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15645**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-27T13:41:05.067207+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=84829.4
-- Funnel: target 1069 → liquid 148 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.1 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-27T13:46:10.017754+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=84733.0
+- Funnel: target 1069 → liquid 148 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| QNT/USDT:USDT | +39.18% | $139,714,405.87 |
-| SOONNETWORK/USDT:USDT | +34.01% | $2,830,828.29 |
-| Q/USDT:USDT | +27.71% | $1,028,653.25 |
-| US/USDT:USDT | +16.74% | $1,239,858.42 |
-| GRASS/USDT:USDT | +16.50% | $6,631,328.00 |
+| QNT/USDT:USDT | +39.54% | $140,118,177.94 |
+| SOONNETWORK/USDT:USDT | +34.28% | $2,837,280.33 |
+| Q/USDT:USDT | +25.83% | $1,034,910.52 |
+| GRASS/USDT:USDT | +16.78% | $6,638,238.75 |
+| US/USDT:USDT | +16.32% | $1,244,246.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| W/USDT:USDT | below_1h_threshold | +3.47% | +3.38% |
-| SOONNETWORK/USDT:USDT | below_1h_threshold | +1.97% | +1.88% |
-| BTW/USDT:USDT | below_1h_threshold | +1.40% | +1.31% |
-| NIL/USDT:USDT | below_1h_threshold | +1.35% | +1.26% |
-| CAKE/USDT:USDT | below_1h_threshold | +1.13% | +1.04% |
+| Q/USDT:USDT | below_1h_threshold | +3.56% | +3.59% |
+| W/USDT:USDT | below_1h_threshold | +3.16% | +3.19% |
+| SOONNETWORK/USDT:USDT | below_1h_threshold | +2.35% | +2.38% |
+| JASMY/USDT:USDT | below_1h_threshold | +1.53% | +1.56% |
+| ONDO/USDT:USDT | below_1h_threshold | +1.40% | +1.42% |
 
 ## 7. 次に見るべき不足
 
