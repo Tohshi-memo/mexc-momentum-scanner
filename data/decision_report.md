@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-27T09:21:19.613219+00:00
+- generated_at: 2026-09-27T09:26:17.988289+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15642**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.97** / 初期 $100.00 (+18.97%)
-- 確定: 3224件 (Win 946 / Loss 1276 / Flat 1002) / pending 3件 / skip 3885件
+- 確定: 3224件 (Win 946 / Loss 1276 / Flat 1002) / pending 4件 / skip 3885件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000055 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: RUNE/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $118.97
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-27T09:21:08.421559+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=84615.4
-- Funnel: target 1070 → liquid 144 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-27T09:26:06.472401+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=84654.6
+- Funnel: target 1070 → liquid 145 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 88.5 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| QNT/USDT:USDT | +52.25% | $111,785,023.48 |
-| SOONNETWORK/USDT:USDT | +41.67% | $2,002,629.33 |
-| W/USDT:USDT | +21.56% | $1,888,163.95 |
-| TRIA/USDT:USDT | +10.33% | $7,948,671.12 |
-| KITE/USDT:USDT | +8.46% | $1,061,625.18 |
+| QNT/USDT:USDT | +52.58% | $112,181,533.23 |
+| SOONNETWORK/USDT:USDT | +41.99% | $2,025,493.63 |
+| W/USDT:USDT | +23.35% | $1,984,276.65 |
+| TRIA/USDT:USDT | +11.38% | $7,951,935.49 |
+| KITE/USDT:USDT | +8.69% | $1,074,735.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| W/USDT:USDT | below_1h_threshold | +3.71% | +3.87% |
-| JASMY/USDT:USDT | below_1h_threshold | +3.25% | +3.41% |
-| NIL/USDT:USDT | below_1h_threshold | +1.37% | +1.53% |
-| BASED/USDT:USDT | below_1h_threshold | +0.98% | +1.15% |
-| BTW/USDT:USDT | below_1h_threshold | +0.83% | +0.99% |
+| JASMY/USDT:USDT | below_1h_threshold | +3.23% | +3.35% |
+| NIL/USDT:USDT | below_1h_threshold | +1.55% | +1.67% |
+| RAY/USDT:USDT | below_1h_threshold | +0.92% | +1.03% |
+| BTW/USDT:USDT | below_1h_threshold | +0.89% | +1.01% |
+| BASED/USDT:USDT | below_1h_threshold | +0.81% | +0.92% |
 
 ## 7. 次に見るべき不足
 
