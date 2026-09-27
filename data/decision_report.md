@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-27T07:01:36.185703+00:00
+- generated_at: 2026-09-27T07:06:19.827905+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15642**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-27T07:01:24.993302+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=84484.9
+- 更新: 2026-09-27T07:06:08.507267+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=84502.9
 - Funnel: target 1070 → liquid 144 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| QNT/USDT:USDT | +49.71% | $95,894,137.63 |
-| SOONNETWORK/USDT:USDT | +38.02% | $1,521,051.89 |
-| W/USDT:USDT | +14.90% | $1,329,383.47 |
-| NEAR/USDT:USDT | +11.87% | $150,363,038.68 |
-| KITE/USDT:USDT | +9.65% | $1,001,474.51 |
+| QNT/USDT:USDT | +50.69% | $96,219,336.13 |
+| SOONNETWORK/USDT:USDT | +39.31% | $1,553,201.15 |
+| W/USDT:USDT | +14.53% | $1,337,031.80 |
+| NEAR/USDT:USDT | +12.88% | $151,383,274.55 |
+| PYTH/USDT:USDT | +10.85% | $4,584,755.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| W/USDT:USDT | below_1h_threshold | +0.84% | +0.84% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.78% | +0.78% |
-| BTW/USDT:USDT | below_1h_threshold | +0.57% | +0.56% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +0.49% | +0.48% |
-| ZRO/USDT:USDT | below_1h_threshold | +0.36% | +0.35% |
+| PYTH/USDT:USDT | below_1h_threshold | +1.49% | +1.47% |
+| NEAR/USDT:USDT | below_1h_threshold | +1.05% | +1.03% |
+| TAKE/USDT:USDT | below_1h_threshold | +0.95% | +0.92% |
+| VVV/USDT:USDT | below_1h_threshold | +0.91% | +0.88% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +0.90% | +0.88% |
 
 ## 7. 次に見るべき不足
 
