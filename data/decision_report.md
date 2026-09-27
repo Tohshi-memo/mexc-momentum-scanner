@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-27T21:41:37.003329+00:00
+- generated_at: 2026-09-27T21:46:37.735154+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15663**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.76** / 初期 $100.00 (+18.76%)
-- 確定: 3239件 (Win 946 / Loss 1277 / Flat 1016) / pending 1件 / skip 3896件
+- 確定: 3239件 (Win 946 / Loss 1277 / Flat 1016) / pending 2件 / skip 3896件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000114 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BATON/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $118.76
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-27T21:41:20.102781+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=84486.9
-- Funnel: target 1069 → liquid 138 → pre 50 → checked 50 → surge 4 → strict 2
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 92.0 >= 65=1, 4h RSI 77.8 >= 65=1
+- 更新: 2026-09-27T21:46:20.064283+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=84537.6
+- Funnel: target 1069 → liquid 138 → pre 50 → checked 50 → surge 6 → strict 2
+- Surge前reject: below_1h_threshold=44, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 92.0 >= 65=1, 4h RSI 77.5 >= 65=1, 4h RSI 81.5 >= 65=1, 4h RSI 71.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +37.05% | $1,105,980.15 |
-| QNT/USDT:USDT | +30.30% | $212,581,374.40 |
-| ONE/USDT:USDT | +21.46% | $2,998,667.53 |
-| GRT/USDT:USDT | +19.41% | $4,848,672.34 |
-| GRASS/USDT:USDT | +11.14% | $6,428,122.18 |
+| BATON/USDT:USDT | +35.96% | $1,109,217.53 |
+| QNT/USDT:USDT | +28.71% | $213,745,400.90 |
+| GRT/USDT:USDT | +22.10% | $4,995,087.22 |
+| ONE/USDT:USDT | +21.22% | $3,024,311.82 |
+| GRASS/USDT:USDT | +10.23% | $6,474,465.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GRT/USDT:USDT | below_1h_threshold | +4.89% | +4.91% |
-| JUP/USDT:USDT | below_1h_threshold | +4.84% | +4.86% |
-| JASMY/USDT:USDT | below_1h_threshold | +2.95% | +2.97% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.98% | +2.01% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.56% | +1.58% |
+| JASMY/USDT:USDT | below_1h_threshold | +2.83% | +2.80% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.96% | +1.93% |
+| VIRTUAL/USDT:USDT | below_1h_threshold | +1.51% | +1.47% |
+| NEAR/USDT:USDT | below_1h_threshold | +1.43% | +1.39% |
+| STRK/USDT:USDT | below_1h_threshold | +1.37% | +1.34% |
 
 ## 7. 次に見るべき不足
 
