@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-27T01:26:24.898665+00:00
+- generated_at: 2026-09-27T01:31:18.301608+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15631**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-27T01:26:12.716988+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=84324.4
-- Funnel: target 1070 → liquid 143 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 95.4 >= 65=1, 4h RSI 75.3 >= 65=1
+- 更新: 2026-09-27T01:31:08.994986+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=84292.2
+- Funnel: target 1070 → liquid 143 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 95.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| QNT/USDT:USDT | +56.46% | $47,849,634.22 |
-| GRASS/USDT:USDT | +10.22% | $5,107,907.07 |
-| GRAM/USDT:USDT | +9.01% | $5,880,385.29 |
-| PYTH/USDT:USDT | +6.37% | $3,505,192.85 |
-| ZEC/USDT:USDT | +5.86% | $839,511,549.98 |
+| QNT/USDT:USDT | +55.48% | $49,428,343.17 |
+| GRASS/USDT:USDT | +9.96% | $5,132,674.03 |
+| PYTH/USDT:USDT | +7.93% | $3,514,349.79 |
+| GRAM/USDT:USDT | +7.80% | $5,913,524.45 |
+| ZEC/USDT:USDT | +5.97% | $843,435,553.95 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TRIA/USDT:USDT | below_1h_threshold | +2.53% | +2.46% |
-| BASED/USDT:USDT | below_1h_threshold | +2.10% | +2.04% |
-| GRAM/USDT:USDT | below_1h_threshold | +1.82% | +1.75% |
-| JTO/USDT:USDT | below_1h_threshold | +1.20% | +1.13% |
-| POL/USDT:USDT | below_1h_threshold | +0.84% | +0.77% |
+| ARK/USDT:USDT | below_1h_threshold | +4.05% | +4.02% |
+| TRIA/USDT:USDT | below_1h_threshold | +2.75% | +2.72% |
+| BASED/USDT:USDT | below_1h_threshold | +2.10% | +2.07% |
+| PYTH/USDT:USDT | below_1h_threshold | +1.77% | +1.74% |
+| JTO/USDT:USDT | below_1h_threshold | +1.47% | +1.44% |
 
 ## 7. 次に見るべき不足
 
