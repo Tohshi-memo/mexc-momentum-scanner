@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-27T06:11:19.032047+00:00
+- generated_at: 2026-09-27T06:16:18.749252+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15641**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-27T06:11:07.941933+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=84536.1
+- 更新: 2026-09-27T06:16:07.447923+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=84558.5
 - Funnel: target 1070 → liquid 144 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| QNT/USDT:USDT | +46.96% | $90,958,359.73 |
-| SOONNETWORK/USDT:USDT | +35.48% | $1,360,975.28 |
-| W/USDT:USDT | +13.50% | $1,190,793.78 |
-| NEAR/USDT:USDT | +12.05% | $144,155,416.65 |
-| GRASS/USDT:USDT | +8.94% | $5,117,672.62 |
+| QNT/USDT:USDT | +50.47% | $91,373,397.15 |
+| SOONNETWORK/USDT:USDT | +36.27% | $1,371,686.85 |
+| W/USDT:USDT | +15.11% | $1,209,227.70 |
+| NEAR/USDT:USDT | +11.19% | $146,078,607.45 |
+| PYTH/USDT:USDT | +8.95% | $4,461,647.03 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ARK/USDT:USDT | below_1h_threshold | +4.67% | +4.55% |
-| BCH/USDT:USDT | below_1h_threshold | +2.86% | +2.74% |
-| KAS/USDT:USDT | below_1h_threshold | +1.43% | +1.31% |
-| TRIA/USDT:USDT | below_1h_threshold | +1.01% | +0.89% |
-| RUNE/USDT:USDT | below_1h_threshold | +0.98% | +0.86% |
+| ARK/USDT:USDT | below_1h_threshold | +3.44% | +3.30% |
+| BCH/USDT:USDT | below_1h_threshold | +2.37% | +2.22% |
+| QNT/USDT:USDT | below_1h_threshold | +2.31% | +2.17% |
+| TRIA/USDT:USDT | below_1h_threshold | +2.02% | +1.88% |
+| KAS/USDT:USDT | below_1h_threshold | +1.93% | +1.79% |
 
 ## 7. 次に見るべき不足
 
