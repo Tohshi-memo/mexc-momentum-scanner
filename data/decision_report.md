@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-27T13:11:20.573085+00:00
+- generated_at: 2026-09-27T13:16:23.047892+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15645**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-27T13:11:09.678384+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=84714.4
-- Funnel: target 1069 → liquid 144 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-27T13:16:10.999191+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=84642.9
+- Funnel: target 1069 → liquid 145 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| QNT/USDT:USDT | +38.56% | $135,573,628.98 |
-| SOONNETWORK/USDT:USDT | +28.56% | $2,715,993.99 |
-| Q/USDT:USDT | +21.45% | $1,004,374.12 |
-| GRASS/USDT:USDT | +16.18% | $6,504,532.13 |
-| US/USDT:USDT | +16.02% | $1,197,914.69 |
+| QNT/USDT:USDT | +37.35% | $136,219,555.46 |
+| SOONNETWORK/USDT:USDT | +28.79% | $2,742,908.28 |
+| Q/USDT:USDT | +20.92% | $1,007,260.00 |
+| GRASS/USDT:USDT | +15.99% | $6,517,356.68 |
+| US/USDT:USDT | +15.14% | $1,206,133.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIL/USDT:USDT | below_1h_threshold | +0.82% | +0.87% |
-| CVXSTOCK/USDT:USDT | below_1h_threshold | +0.48% | +0.53% |
-| QNT/USDT:USDT | below_1h_threshold | +0.44% | +0.48% |
-| US/USDT:USDT | below_1h_threshold | +0.34% | +0.39% |
-| JASMY/USDT:USDT | below_1h_threshold | +0.27% | +0.32% |
+| CVXSTOCK/USDT:USDT | below_1h_threshold | +0.48% | +0.61% |
+| BTW/USDT:USDT | below_1h_threshold | +0.42% | +0.55% |
+| BASED/USDT:USDT | below_1h_threshold | +0.30% | +0.43% |
+| NIL/USDT:USDT | below_1h_threshold | +0.29% | +0.42% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.22% | +0.35% |
 
 ## 7. 次に見るべき不足
 
