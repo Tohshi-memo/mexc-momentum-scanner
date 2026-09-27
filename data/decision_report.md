@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-27T18:11:20.357047+00:00
+- generated_at: 2026-09-27T18:16:12.266849+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15655**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-27T18:11:07.312911+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=84534.6
+- 更新: 2026-09-27T18:16:03.039588+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=84588.8
 - Funnel: target 1069 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| Q/USDT:USDT | +8.78% | $1,018,678.68 |
-| AR/USDT:USDT | +4.71% | $3,471,023.40 |
-| APE/USDT:USDT | +3.78% | $1,949,114.00 |
-| SAGA/USDT:USDT | +3.45% | $2,920,478.19 |
-| KITE/USDT:USDT | +3.16% | $1,368,064.25 |
+| Q/USDT:USDT | +8.42% | $1,022,463.70 |
+| AR/USDT:USDT | +4.30% | $3,618,366.53 |
+| PUMPFUN/USDT:USDT | +3.79% | $24,805,372.37 |
+| SAGA/USDT:USDT | +3.45% | $2,922,819.38 |
+| QNT/USDT:USDT | +3.13% | $172,892,016.09 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NEAR/USDT:USDT | below_1h_threshold | +1.30% | +1.30% |
-| GRAM/USDT:USDT | below_1h_threshold | +1.02% | +1.02% |
-| USELESS/USDT:USDT | below_1h_threshold | +0.93% | +0.93% |
-| STRK/USDT:USDT | below_1h_threshold | +0.88% | +0.88% |
-| ARB/USDT:USDT | below_1h_threshold | +0.86% | +0.86% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.93% | +1.87% |
+| JASMY/USDT:USDT | below_1h_threshold | +1.83% | +1.77% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.50% | +1.44% |
+| AERO/USDT:USDT | below_1h_threshold | +1.25% | +1.19% |
+| DASH/USDT:USDT | below_1h_threshold | +1.17% | +1.11% |
 
 ## 7. 次に見るべき不足
 
