@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-27T19:41:15.614424+00:00
+- generated_at: 2026-09-27T19:46:20.295224+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15656**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.97** / 初期 $100.00 (+18.97%)
-- 確定: 3236件 (Win 946 / Loss 1276 / Flat 1014) / pending 1件 / skip 3887件
+- 確定: 3236件 (Win 946 / Loss 1276 / Flat 1014) / pending 1件 / skip 3888件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `見送り` (no_strategy_passed_causal_filters) / causal_score n/a / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: GRASS/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $118.97
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-27T19:41:04.624593+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=84732.7
-- Funnel: target 1069 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-27T19:46:08.331004+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=84762.9
+- Funnel: target 1069 → liquid 142 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 77.3 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GRT/USDT:USDT | +13.77% | $1,931,867.84 |
-| Q/USDT:USDT | +11.14% | $1,016,282.58 |
-| MONAD/USDT:USDT | +7.31% | $1,766,547.23 |
-| QNT/USDT:USDT | +6.56% | $182,840,338.47 |
-| ENA/USDT:USDT | +5.28% | $52,668,796.33 |
+| GRT/USDT:USDT | +14.48% | $2,150,390.45 |
+| Q/USDT:USDT | +11.10% | $1,017,508.17 |
+| MONAD/USDT:USDT | +7.88% | $1,814,672.93 |
+| QNT/USDT:USDT | +5.49% | $183,381,262.00 |
+| JUP/USDT:USDT | +5.15% | $3,684,403.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GRT/USDT:USDT | below_1h_threshold | +4.42% | +4.47% |
-| 2Z/USDT:USDT | below_1h_threshold | +1.82% | +1.88% |
-| MONAD/USDT:USDT | below_1h_threshold | +1.26% | +1.32% |
-| QNT/USDT:USDT | below_1h_threshold | +1.03% | +1.08% |
-| POL/USDT:USDT | below_1h_threshold | +0.90% | +0.96% |
+| ONE/USDT:USDT | below_1h_threshold | +2.82% | +2.83% |
+| MONAD/USDT:USDT | below_1h_threshold | +1.81% | +1.82% |
+| 2Z/USDT:USDT | below_1h_threshold | +1.61% | +1.63% |
+| POL/USDT:USDT | below_1h_threshold | +1.13% | +1.15% |
+| JUP/USDT:USDT | below_1h_threshold | +0.98% | +1.00% |
 
 ## 7. 次に見るべき不足
 
