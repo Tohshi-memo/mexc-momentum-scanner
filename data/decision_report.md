@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-27T16:01:19.244049+00:00
+- generated_at: 2026-09-27T16:06:23.254754+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15650**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-27T16:01:07.806185+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=84444.3
+- 更新: 2026-09-27T16:06:12.020481+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=84510.4
 - Funnel: target 1069 → liquid 145 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| Q/USDT:USDT | +1.99% | $1,078,400.49 |
-| UAI/USDT:USDT | +0.50% | $1,184,208.33 |
-| GRAM/USDT:USDT | +0.30% | $8,634,532.37 |
-| BTW/USDT:USDT | +0.27% | $5,905,763.12 |
-| DASH/USDT:USDT | +0.26% | $16,422,700.20 |
+| Q/USDT:USDT | +3.48% | $1,082,464.57 |
+| GRAM/USDT:USDT | +1.57% | $8,707,807.57 |
+| NIL/USDT:USDT | +1.49% | $3,672,127.18 |
+| BASED/USDT:USDT | +1.40% | $5,099,160.37 |
+| SOONNETWORK/USDT:USDT | +1.37% | $3,695,786.35 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| Q/USDT:USDT | below_1h_threshold | +1.88% | +1.86% |
-| UAI/USDT:USDT | below_1h_threshold | +0.47% | +0.45% |
-| ZEC/USDT:USDT | below_1h_threshold | +0.30% | +0.28% |
-| GRAM/USDT:USDT | below_1h_threshold | +0.30% | +0.28% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +0.28% | +0.26% |
+| Q/USDT:USDT | below_1h_threshold | +3.49% | +3.39% |
+| GRAM/USDT:USDT | below_1h_threshold | +1.57% | +1.47% |
+| NIL/USDT:USDT | below_1h_threshold | +1.36% | +1.26% |
+| BASED/USDT:USDT | below_1h_threshold | +1.35% | +1.25% |
+| SOONNETWORK/USDT:USDT | below_1h_threshold | +1.34% | +1.25% |
 
 ## 7. 次に見るべき不足
 
