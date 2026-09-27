@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-27T21:21:34.977854+00:00
+- generated_at: 2026-09-27T21:26:40.528292+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15661**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.97** / 初期 $100.00 (+18.97%)
-- 確定: 3237件 (Win 946 / Loss 1276 / Flat 1015) / pending 1件 / skip 3893件
+- 確定: 3237件 (Win 946 / Loss 1276 / Flat 1015) / pending 3件 / skip 3893件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000039 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: W/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $118.97
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-27T21:21:16.222149+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=84650.0
-- Funnel: target 1069 → liquid 138 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.8 >= 65=1
+- 更新: 2026-09-27T21:26:24.845905+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.16% price=84645.2
+- Funnel: target 1069 → liquid 138 → pre 50 → checked 50 → surge 4 → strict 1
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 91.2 >= 65=1, 4h RSI 73.0 >= 65=1, 4h RSI 81.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +48.40% | $1,083,074.74 |
-| ONE/USDT:USDT | +20.64% | $2,711,495.15 |
-| GRT/USDT:USDT | +16.89% | $4,111,750.51 |
-| QNT/USDT:USDT | +15.67% | $198,376,548.69 |
-| MONAD/USDT:USDT | +7.19% | $2,076,005.62 |
+| BATON/USDT:USDT | +48.93% | $1,087,409.54 |
+| QNT/USDT:USDT | +22.30% | $201,971,638.05 |
+| ONE/USDT:USDT | +21.03% | $2,811,775.99 |
+| GRT/USDT:USDT | +20.26% | $4,380,341.92 |
+| MONAD/USDT:USDT | +7.42% | $2,079,046.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| QNT/USDT:USDT | below_1h_threshold | +4.76% | +4.59% |
-| GRT/USDT:USDT | below_1h_threshold | +2.68% | +2.51% |
-| GRASS/USDT:USDT | below_1h_threshold | +2.09% | +1.93% |
-| STRK/USDT:USDT | below_1h_threshold | +1.64% | +1.47% |
-| SAGA/USDT:USDT | below_1h_threshold | +1.31% | +1.14% |
+| GRASS/USDT:USDT | below_1h_threshold | +3.08% | +2.91% |
+| STRK/USDT:USDT | below_1h_threshold | +2.89% | +2.73% |
+| JASMY/USDT:USDT | below_1h_threshold | +2.31% | +2.15% |
+| JUP/USDT:USDT | below_1h_threshold | +2.07% | +1.91% |
+| NEAR/USDT:USDT | below_1h_threshold | +1.69% | +1.52% |
 
 ## 7. 次に見るべき不足
 
