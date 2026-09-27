@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-27T20:06:17.981220+00:00
+- generated_at: 2026-09-27T20:11:12.160616+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15657**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-27T20:06:06.784090+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=84697.3
-- Funnel: target 1069 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-27T20:11:01.194167+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=84750.0
+- Funnel: target 1069 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +44.60% | $1,007,319.71 |
-| GRT/USDT:USDT | +17.78% | $2,772,126.33 |
-| MONAD/USDT:USDT | +8.92% | $1,921,728.94 |
-| ZRO/USDT:USDT | +6.32% | $4,757,014.42 |
-| ENA/USDT:USDT | +5.07% | $51,938,313.95 |
+| BATON/USDT:USDT | +46.79% | $1,016,937.56 |
+| GRT/USDT:USDT | +18.27% | $2,926,887.00 |
+| MONAD/USDT:USDT | +9.41% | $1,927,185.11 |
+| ZRO/USDT:USDT | +6.10% | $4,808,584.24 |
+| NEAR/USDT:USDT | +5.23% | $190,667,506.25 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ONDO/USDT:USDT | below_1h_threshold | +1.42% | +1.42% |
-| ARB/USDT:USDT | below_1h_threshold | +1.28% | +1.28% |
-| XPL/USDT:USDT | below_1h_threshold | +0.87% | +0.87% |
-| APT/USDT:USDT | below_1h_threshold | +0.74% | +0.74% |
-| ONE/USDT:USDT | below_1h_threshold | +0.73% | +0.73% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.88% | +1.81% |
+| ARB/USDT:USDT | below_1h_threshold | +1.88% | +1.81% |
+| BATON/USDT:USDT | below_1h_threshold | +1.66% | +1.60% |
+| GRASS/USDT:USDT | below_1h_threshold | +1.47% | +1.41% |
+| SAGA/USDT:USDT | below_1h_threshold | +1.36% | +1.29% |
 
 ## 7. 次に見るべき不足
 
