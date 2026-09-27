@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-27T06:26:15.402852+00:00
+- generated_at: 2026-09-27T06:31:22.560303+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15641**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.97** / 初期 $100.00 (+18.97%)
-- 確定: 3223件 (Win 946 / Loss 1276 / Flat 1001) / pending 2件 / skip 3885件
+- 確定: 3223件 (Win 946 / Loss 1276 / Flat 1001) / pending 3件 / skip 3885件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000055 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ZEN/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account -0.03% 残高後 $118.97
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-27T06:26:04.380732+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=84575.3
-- Funnel: target 1070 → liquid 144 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-27T06:31:14.135656+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.13% price=84545.8
+- Funnel: target 1070 → liquid 144 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 95.4 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| QNT/USDT:USDT | +53.98% | $92,861,063.02 |
-| SOONNETWORK/USDT:USDT | +35.07% | $1,408,400.79 |
-| W/USDT:USDT | +14.97% | $1,231,054.84 |
-| NEAR/USDT:USDT | +11.52% | $148,044,025.25 |
-| GRASS/USDT:USDT | +8.67% | $5,148,283.22 |
+| QNT/USDT:USDT | +55.70% | $93,466,617.70 |
+| SOONNETWORK/USDT:USDT | +34.37% | $1,439,702.20 |
+| W/USDT:USDT | +13.48% | $1,283,900.29 |
+| NEAR/USDT:USDT | +12.45% | $148,954,704.73 |
+| GRASS/USDT:USDT | +8.58% | $5,159,869.33 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| QNT/USDT:USDT | below_1h_threshold | +4.91% | +4.74% |
-| RUNE/USDT:USDT | below_1h_threshold | +2.78% | +2.62% |
-| BCH/USDT:USDT | below_1h_threshold | +2.64% | +2.48% |
-| ARK/USDT:USDT | below_1h_threshold | +2.07% | +1.90% |
-| ZRO/USDT:USDT | below_1h_threshold | +1.97% | +1.80% |
+| BCH/USDT:USDT | below_1h_threshold | +2.74% | +2.61% |
+| ZRO/USDT:USDT | below_1h_threshold | +2.46% | +2.33% |
+| RUNE/USDT:USDT | below_1h_threshold | +1.98% | +1.85% |
+| KAS/USDT:USDT | below_1h_threshold | +1.64% | +1.51% |
+| SUI/USDT:USDT | below_1h_threshold | +1.49% | +1.36% |
 
 ## 7. 次に見るべき不足
 
