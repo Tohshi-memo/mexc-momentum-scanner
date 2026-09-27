@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-27T21:01:22.826129+00:00
+- generated_at: 2026-09-27T21:06:58.685982+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15659**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-27T21:01:12.212330+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=84507.9
+- 更新: 2026-09-27T21:06:47.323950+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=84574.0
 - Funnel: target 1069 → liquid 137 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +37.75% | $1,050,686.98 |
-| ONE/USDT:USDT | +14.31% | $2,357,454.41 |
-| GRT/USDT:USDT | +14.06% | $3,871,526.23 |
-| QNT/USDT:USDT | +10.24% | $192,741,492.58 |
-| SKY/USDT:USDT | +7.01% | $1,630,093.39 |
+| BATON/USDT:USDT | +37.71% | $1,061,554.69 |
+| ONE/USDT:USDT | +17.21% | $2,465,046.27 |
+| GRT/USDT:USDT | +15.69% | $3,946,191.33 |
+| QNT/USDT:USDT | +10.83% | $194,183,770.12 |
+| SKY/USDT:USDT | +7.25% | $1,640,078.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BATON/USDT:USDT | below_1h_threshold | +0.48% | +0.48% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +0.40% | +0.40% |
-| GRT/USDT:USDT | below_1h_threshold | +0.22% | +0.22% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.21% | +0.21% |
-| ZEC/USDT:USDT | below_1h_threshold | +0.15% | +0.15% |
+| ONE/USDT:USDT | below_1h_threshold | +2.53% | +2.46% |
+| SAGA/USDT:USDT | below_1h_threshold | +1.80% | +1.72% |
+| GRT/USDT:USDT | below_1h_threshold | +1.65% | +1.57% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.14% | +1.06% |
+| PYTH/USDT:USDT | below_1h_threshold | +0.83% | +0.75% |
 
 ## 7. 次に見るべき不足
 
