@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-27T16:06:23.254754+00:00
+- generated_at: 2026-09-27T16:11:23.501014+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15650**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.97** / 初期 $100.00 (+18.97%)
-- 確定: 3232件 (Win 946 / Loss 1276 / Flat 1010) / pending 4件 / skip 3885件
+- 確定: 3232件 (Win 946 / Loss 1276 / Flat 1010) / pending 5件 / skip 3885件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000087 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: SUI/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $118.97
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-27T16:06:12.020481+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=84510.4
-- Funnel: target 1069 → liquid 145 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-27T16:11:09.894907+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.13% price=84533.6
+- Funnel: target 1069 → liquid 145 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| Q/USDT:USDT | +3.48% | $1,082,464.57 |
-| GRAM/USDT:USDT | +1.57% | $8,707,807.57 |
-| NIL/USDT:USDT | +1.49% | $3,672,127.18 |
-| BASED/USDT:USDT | +1.40% | $5,099,160.37 |
-| SOONNETWORK/USDT:USDT | +1.37% | $3,695,786.35 |
+| Q/USDT:USDT | +10.41% | $1,091,146.45 |
+| PAID/USDT:USDT | +3.06% | $1,610,678.33 |
+| SOONNETWORK/USDT:USDT | +2.42% | $3,756,499.26 |
+| US/USDT:USDT | +2.33% | $1,204,397.90 |
+| GRAM/USDT:USDT | +2.05% | $8,836,427.74 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| Q/USDT:USDT | below_1h_threshold | +3.49% | +3.39% |
-| GRAM/USDT:USDT | below_1h_threshold | +1.57% | +1.47% |
-| NIL/USDT:USDT | below_1h_threshold | +1.36% | +1.26% |
-| BASED/USDT:USDT | below_1h_threshold | +1.35% | +1.25% |
-| SOONNETWORK/USDT:USDT | below_1h_threshold | +1.34% | +1.25% |
+| PAID/USDT:USDT | below_1h_threshold | +3.56% | +3.43% |
+| SOONNETWORK/USDT:USDT | below_1h_threshold | +2.48% | +2.35% |
+| US/USDT:USDT | below_1h_threshold | +2.34% | +2.21% |
+| GRAM/USDT:USDT | below_1h_threshold | +2.00% | +1.87% |
+| QNT/USDT:USDT | below_1h_threshold | +1.88% | +1.76% |
 
 ## 7. 次に見るべき不足
 
