@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-27T04:11:19.064719+00:00
+- generated_at: 2026-09-27T04:16:17.789757+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15636**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-27T04:11:07.848899+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=84394.6
+- 更新: 2026-09-27T04:16:06.871491+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=84454.5
 - Funnel: target 1070 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| QNT/USDT:USDT | +51.69% | $70,311,434.31 |
-| W/USDT:USDT | +9.53% | $1,015,189.75 |
-| GRASS/USDT:USDT | +8.97% | $5,156,838.41 |
-| RUNE/USDT:USDT | +7.41% | $3,332,069.92 |
-| ZEC/USDT:USDT | +5.40% | $878,051,842.95 |
+| QNT/USDT:USDT | +54.36% | $71,142,024.72 |
+| W/USDT:USDT | +10.32% | $1,016,604.16 |
+| GRASS/USDT:USDT | +9.54% | $5,163,236.46 |
+| RUNE/USDT:USDT | +7.93% | $3,335,937.90 |
+| PYTH/USDT:USDT | +5.83% | $4,118,360.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| QNT/USDT:USDT | below_1h_threshold | +1.51% | +1.47% |
-| PYTH/USDT:USDT | below_1h_threshold | +0.90% | +0.86% |
-| JASMY/USDT:USDT | below_1h_threshold | +0.49% | +0.44% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +0.44% | +0.39% |
-| RUNE/USDT:USDT | below_1h_threshold | +0.40% | +0.35% |
+| QNT/USDT:USDT | below_1h_threshold | +3.13% | +3.01% |
+| PYTH/USDT:USDT | below_1h_threshold | +1.82% | +1.70% |
+| RUNE/USDT:USDT | below_1h_threshold | +0.88% | +0.76% |
+| JASMY/USDT:USDT | below_1h_threshold | +0.83% | +0.71% |
+| AAVE/USDT:USDT | below_1h_threshold | +0.63% | +0.52% |
 
 ## 7. 次に見るべき不足
 
