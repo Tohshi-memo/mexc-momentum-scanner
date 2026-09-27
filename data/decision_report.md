@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-27T03:51:20.373489+00:00
+- generated_at: 2026-09-27T03:56:18.520654+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15635**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-27T03:51:09.176345+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=84351.1
+- 更新: 2026-09-27T03:56:07.268216+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=84365.0
 - Funnel: target 1070 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| QNT/USDT:USDT | +49.90% | $68,787,047.37 |
-| GRASS/USDT:USDT | +8.77% | $5,270,046.81 |
-| RUNE/USDT:USDT | +7.04% | $3,350,802.75 |
-| ZEC/USDT:USDT | +5.80% | $879,593,110.08 |
-| PYTH/USDT:USDT | +4.54% | $4,110,010.02 |
+| QNT/USDT:USDT | +49.02% | $69,084,926.13 |
+| GRASS/USDT:USDT | +9.28% | $5,272,470.36 |
+| RUNE/USDT:USDT | +7.29% | $3,359,031.33 |
+| ZEC/USDT:USDT | +5.81% | $880,821,400.49 |
+| GRAM/USDT:USDT | +4.37% | $6,520,690.82 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RUNE/USDT:USDT | below_1h_threshold | +2.84% | +2.91% |
-| JTO/USDT:USDT | below_1h_threshold | +1.78% | +1.85% |
-| STX/USDT:USDT | below_1h_threshold | +1.69% | +1.76% |
-| QNT/USDT:USDT | below_1h_threshold | +1.27% | +1.35% |
-| DASH/USDT:USDT | below_1h_threshold | +0.96% | +1.04% |
+| RUNE/USDT:USDT | below_1h_threshold | +2.88% | +2.94% |
+| STX/USDT:USDT | below_1h_threshold | +1.63% | +1.69% |
+| JTO/USDT:USDT | below_1h_threshold | +1.57% | +1.63% |
+| FLOW/USDT:USDT | below_1h_threshold | +1.53% | +1.59% |
+| GRASS/USDT:USDT | below_1h_threshold | +0.99% | +1.05% |
 
 ## 7. 次に見るべき不足
 
