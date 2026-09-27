@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-27T21:46:37.735154+00:00
+- generated_at: 2026-09-27T21:51:36.165043+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15663**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-27T21:46:20.064283+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=84537.6
-- Funnel: target 1069 → liquid 138 → pre 50 → checked 50 → surge 6 → strict 2
-- Surge前reject: below_1h_threshold=44, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 92.0 >= 65=1, 4h RSI 77.5 >= 65=1, 4h RSI 81.5 >= 65=1, 4h RSI 71.8 >= 65=1
+- 更新: 2026-09-27T21:51:22.740623+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=84635.5
+- Funnel: target 1069 → liquid 138 → pre 50 → checked 50 → surge 5 → strict 0
+- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 92.0 >= 65=1, 4h RSI 81.6 >= 65=1, 4h RSI 72.5 >= 65=1, 4h RSI 65.7 >= 65=1, 4h RSI 77.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +35.96% | $1,109,217.53 |
-| QNT/USDT:USDT | +28.71% | $213,745,400.90 |
-| GRT/USDT:USDT | +22.10% | $4,995,087.22 |
-| ONE/USDT:USDT | +21.22% | $3,024,311.82 |
-| GRASS/USDT:USDT | +10.23% | $6,474,465.71 |
+| BATON/USDT:USDT | +37.05% | $1,111,840.34 |
+| QNT/USDT:USDT | +30.16% | $215,029,875.24 |
+| GRT/USDT:USDT | +22.77% | $5,045,806.20 |
+| ONE/USDT:USDT | +17.51% | $3,092,468.12 |
+| JUP/USDT:USDT | +10.00% | $3,994,471.25 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JASMY/USDT:USDT | below_1h_threshold | +2.83% | +2.80% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.96% | +1.93% |
-| VIRTUAL/USDT:USDT | below_1h_threshold | +1.51% | +1.47% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.43% | +1.39% |
-| STRK/USDT:USDT | below_1h_threshold | +1.37% | +1.34% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +3.12% | +2.97% |
+| ONE/USDT:USDT | below_1h_threshold | +2.87% | +2.72% |
+| VIRTUAL/USDT:USDT | below_1h_threshold | +2.83% | +2.68% |
+| SEI/USDT:USDT | below_1h_threshold | +2.56% | +2.41% |
+| JASMY/USDT:USDT | below_1h_threshold | +2.18% | +2.03% |
 
 ## 7. 次に見るべき不足
 
