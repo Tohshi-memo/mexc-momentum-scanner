@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-27T12:46:21.316364+00:00
+- generated_at: 2026-09-27T12:51:12.672275+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15644**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-27T12:46:12.130046+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=84931.7
-- Funnel: target 1070 → liquid 144 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.6 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-27T12:51:03.668068+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=84920.0
+- Funnel: target 1070 → liquid 144 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| QNT/USDT:USDT | +39.03% | $133,762,357.92 |
-| SOONNETWORK/USDT:USDT | +31.37% | $2,660,218.42 |
-| Q/USDT:USDT | +21.69% | $1,017,683.08 |
-| GRASS/USDT:USDT | +17.95% | $6,422,587.95 |
-| US/USDT:USDT | +16.02% | $1,160,542.76 |
+| QNT/USDT:USDT | +37.47% | $134,318,345.31 |
+| SOONNETWORK/USDT:USDT | +31.97% | $2,668,695.51 |
+| Q/USDT:USDT | +20.71% | $1,019,688.14 |
+| GRASS/USDT:USDT | +17.95% | $6,444,494.06 |
+| US/USDT:USDT | +16.88% | $1,171,541.66 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PENGU/USDT:USDT | below_1h_threshold | +3.93% | +3.84% |
-| US/USDT:USDT | below_1h_threshold | +3.25% | +3.17% |
-| VIRTUAL/USDT:USDT | below_1h_threshold | +2.02% | +1.93% |
-| EIGEN/USDT:USDT | below_1h_threshold | +1.97% | +1.89% |
-| SOONNETWORK/USDT:USDT | below_1h_threshold | +1.97% | +1.88% |
+| JASMY/USDT:USDT | below_relative_strength | +5.06% | +4.99% |
+| US/USDT:USDT | below_1h_threshold | +4.13% | +4.05% |
+| PENGU/USDT:USDT | below_1h_threshold | +3.40% | +3.33% |
+| SOONNETWORK/USDT:USDT | below_1h_threshold | +2.47% | +2.40% |
+| SUI/USDT:USDT | below_1h_threshold | +1.69% | +1.62% |
 
 ## 7. 次に見るべき不足
 
