@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-27T06:56:20.407089+00:00
+- generated_at: 2026-09-27T07:01:36.185703+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15642**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-27T06:56:09.229146+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=84463.3
-- Funnel: target 1070 → liquid 145 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-27T07:01:24.993302+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=84484.9
+- Funnel: target 1070 → liquid 144 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| QNT/USDT:USDT | +49.75% | $96,229,645.34 |
-| SOONNETWORK/USDT:USDT | +36.68% | $1,506,864.79 |
-| W/USDT:USDT | +12.90% | $1,341,064.50 |
-| NEAR/USDT:USDT | +11.72% | $151,830,401.98 |
-| KITE/USDT:USDT | +9.12% | $1,003,644.15 |
+| QNT/USDT:USDT | +49.71% | $95,894,137.63 |
+| SOONNETWORK/USDT:USDT | +38.02% | $1,521,051.89 |
+| W/USDT:USDT | +14.90% | $1,329,383.47 |
+| NEAR/USDT:USDT | +11.87% | $150,363,038.68 |
+| KITE/USDT:USDT | +9.65% | $1,001,474.51 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KAS/USDT:USDT | below_1h_threshold | +3.78% | +3.75% |
-| BCH/USDT:USDT | below_1h_threshold | +3.65% | +3.61% |
-| ZRO/USDT:USDT | below_1h_threshold | +2.77% | +2.74% |
-| TAKE/USDT:USDT | below_1h_threshold | +2.49% | +2.46% |
-| TRIA/USDT:USDT | below_1h_threshold | +2.06% | +2.03% |
+| W/USDT:USDT | below_1h_threshold | +0.84% | +0.84% |
+| SOXL/USDT:USDT | below_1h_threshold | +0.78% | +0.78% |
+| BTW/USDT:USDT | below_1h_threshold | +0.57% | +0.56% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +0.49% | +0.48% |
+| ZRO/USDT:USDT | below_1h_threshold | +0.36% | +0.35% |
 
 ## 7. 次に見るべき不足
 
