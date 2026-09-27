@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-27T17:21:15.563516+00:00
+- generated_at: 2026-09-27T17:26:21.547023+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15653**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-27T17:21:06.642770+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=84402.6
+- 更新: 2026-09-27T17:26:11.146169+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=84418.9
 - Funnel: target 1069 → liquid 144 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| Q/USDT:USDT | +8.61% | $1,036,518.66 |
-| APE/USDT:USDT | +6.99% | $1,339,619.91 |
-| QNT/USDT:USDT | +5.53% | $167,893,817.64 |
-| GRASS/USDT:USDT | +4.44% | $7,772,750.57 |
-| RARE/USDT:USDT | +3.77% | $2,365,925.15 |
+| Q/USDT:USDT | +8.04% | $1,037,738.39 |
+| APE/USDT:USDT | +7.69% | $1,406,785.81 |
+| QNT/USDT:USDT | +4.65% | $168,508,789.02 |
+| GRASS/USDT:USDT | +4.36% | $7,803,382.08 |
+| SAGA/USDT:USDT | +3.41% | $2,852,027.66 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| QNT/USDT:USDT | below_1h_threshold | +2.86% | +2.85% |
-| APE/USDT:USDT | below_1h_threshold | +2.85% | +2.84% |
-| PYTH/USDT:USDT | below_1h_threshold | +2.06% | +2.05% |
-| GRASS/USDT:USDT | below_1h_threshold | +1.89% | +1.88% |
-| SAGA/USDT:USDT | below_1h_threshold | +1.59% | +1.58% |
+| APE/USDT:USDT | below_1h_threshold | +3.52% | +3.49% |
+| PYTH/USDT:USDT | below_1h_threshold | +2.14% | +2.11% |
+| SAGA/USDT:USDT | below_1h_threshold | +2.05% | +2.02% |
+| QNT/USDT:USDT | below_1h_threshold | +2.00% | +1.97% |
+| KITE/USDT:USDT | below_1h_threshold | +1.94% | +1.91% |
 
 ## 7. 次に見るべき不足
 
