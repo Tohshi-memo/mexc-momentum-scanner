@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-26T23:56:12.310412+00:00
+- generated_at: 2026-09-27T00:01:27.853727+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15628**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-26T23:56:04.069752+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=84382.7
-- Funnel: target 1070 → liquid 143 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 93.4 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-27T00:01:16.817017+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=84403.6
+- Funnel: target 1070 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| QNT/USDT:USDT | +31.02% | $35,604,841.74 |
-| GRASS/USDT:USDT | +12.71% | $4,950,342.14 |
-| GRAM/USDT:USDT | +8.54% | $5,233,798.30 |
-| TAKE/USDT:USDT | +7.53% | $1,081,994.95 |
-| ZEC/USDT:USDT | +6.32% | $822,898,616.96 |
+| QNT/USDT:USDT | +31.01% | $35,902,210.95 |
+| GRASS/USDT:USDT | +13.11% | $4,947,930.28 |
+| GRAM/USDT:USDT | +8.74% | $5,243,363.66 |
+| TAKE/USDT:USDT | +7.44% | $1,065,678.99 |
+| ZEC/USDT:USDT | +6.54% | $810,509,372.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GRAM/USDT:USDT | below_1h_threshold | +3.00% | +2.84% |
-| TAKE/USDT:USDT | below_1h_threshold | +2.45% | +2.29% |
-| TRIA/USDT:USDT | below_1h_threshold | +2.28% | +2.12% |
-| KAS/USDT:USDT | below_1h_threshold | +1.83% | +1.68% |
-| RUNE/USDT:USDT | below_1h_threshold | +1.52% | +1.37% |
+| TAKE/USDT:USDT | below_1h_threshold | +0.70% | +0.70% |
+| KMNO/USDT:USDT | below_1h_threshold | +0.66% | +0.66% |
+| QNT/USDT:USDT | below_1h_threshold | +0.58% | +0.58% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +0.56% | +0.56% |
+| NKESTOCK/USDT:USDT | below_1h_threshold | +0.28% | +0.28% |
 
 ## 7. 次に見るべき不足
 
