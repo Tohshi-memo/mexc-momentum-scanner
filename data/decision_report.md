@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-27T22:11:22.280890+00:00
+- generated_at: 2026-09-27T22:16:22.316209+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15664**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-27T22:11:11.810985+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.32% price=84370.9
+- 更新: 2026-09-27T22:16:13.365597+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.47% price=84242.2
 - Funnel: target 1069 → liquid 136 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +38.36% | $1,100,089.92 |
-| QNT/USDT:USDT | +29.03% | $218,249,496.65 |
-| GRT/USDT:USDT | +20.93% | $5,740,835.76 |
-| ONE/USDT:USDT | +19.14% | $3,218,635.84 |
-| RARE/USDT:USDT | +8.99% | $1,586,129.29 |
+| BATON/USDT:USDT | +38.14% | $1,101,891.67 |
+| QNT/USDT:USDT | +28.16% | $219,493,981.66 |
+| GRT/USDT:USDT | +18.88% | $5,854,982.72 |
+| ONE/USDT:USDT | +15.52% | $3,255,683.75 |
+| RARE/USDT:USDT | +9.19% | $1,589,483.00 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| QNT/USDT:USDT | below_1h_threshold | +0.64% | +0.96% |
-| SKY/USDT:USDT | below_1h_threshold | +0.56% | +0.88% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.50% | +0.82% |
-| SAGA/USDT:USDT | below_1h_threshold | +0.30% | +0.62% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.29% | +0.61% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.50% | +0.97% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.29% | +0.76% |
+| QNT/USDT:USDT | below_1h_threshold | +0.25% | +0.72% |
+| SKY/USDT:USDT | below_1h_threshold | +0.18% | +0.65% |
+| CVXSTOCK/USDT:USDT | below_1h_threshold | +0.16% | +0.63% |
 
 ## 7. 次に見るべき不足
 
