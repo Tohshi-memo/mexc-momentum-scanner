@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-27T20:41:21.448064+00:00
+- generated_at: 2026-09-27T20:46:22.081044+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15658**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-27T20:41:09.983456+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=84557.3
+- 更新: 2026-09-27T20:46:10.428909+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=84603.9
 - Funnel: target 1069 → liquid 142 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.5 >= 65=1
+- Strict後reject: 4h RSI 67.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +43.91% | $1,052,155.56 |
-| GRT/USDT:USDT | +15.58% | $3,574,620.56 |
-| SKY/USDT:USDT | +9.93% | $1,560,802.56 |
-| QNT/USDT:USDT | +8.82% | $189,945,954.50 |
-| MONAD/USDT:USDT | +7.08% | $2,018,995.39 |
+| BATON/USDT:USDT | +41.24% | $1,054,195.33 |
+| GRT/USDT:USDT | +14.48% | $3,627,110.70 |
+| SKY/USDT:USDT | +9.64% | $1,615,803.37 |
+| QNT/USDT:USDT | +8.61% | $190,686,764.79 |
+| MONAD/USDT:USDT | +6.92% | $2,027,667.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ONE/USDT:USDT | below_1h_threshold | +4.27% | +4.43% |
-| QNT/USDT:USDT | below_1h_threshold | +4.25% | +4.42% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +2.34% | +2.51% |
-| APE/USDT:USDT | below_1h_threshold | +2.21% | +2.37% |
-| W/USDT:USDT | below_1h_threshold | +0.99% | +1.15% |
+| QNT/USDT:USDT | below_1h_threshold | +4.94% | +5.05% |
+| ONE/USDT:USDT | below_1h_threshold | +4.84% | +4.95% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +3.02% | +3.13% |
+| APE/USDT:USDT | below_1h_threshold | +2.33% | +2.44% |
+| W/USDT:USDT | below_1h_threshold | +1.51% | +1.62% |
 
 ## 7. 次に見るべき不足
 
