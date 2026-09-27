@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-27T18:06:18.544739+00:00
+- generated_at: 2026-09-27T18:11:20.357047+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15655**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-27T18:06:06.921771+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=84551.1
+- 更新: 2026-09-27T18:11:07.312911+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=84534.6
 - Funnel: target 1069 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| Q/USDT:USDT | +6.60% | $1,016,249.39 |
-| AR/USDT:USDT | +4.14% | $3,427,538.17 |
-| APE/USDT:USDT | +4.03% | $1,913,952.78 |
-| GRASS/USDT:USDT | +3.12% | $7,859,148.84 |
-| KITE/USDT:USDT | +3.09% | $1,367,596.23 |
+| Q/USDT:USDT | +8.78% | $1,018,678.68 |
+| AR/USDT:USDT | +4.71% | $3,471,023.40 |
+| APE/USDT:USDT | +3.78% | $1,949,114.00 |
+| SAGA/USDT:USDT | +3.45% | $2,920,478.19 |
+| KITE/USDT:USDT | +3.16% | $1,368,064.25 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STRK/USDT:USDT | below_1h_threshold | +0.49% | +0.47% |
-| ARB/USDT:USDT | below_1h_threshold | +0.38% | +0.36% |
-| PHA/USDT:USDT | below_1h_threshold | +0.37% | +0.35% |
-| NEAR/USDT:USDT | below_1h_threshold | +0.36% | +0.34% |
-| GRAM/USDT:USDT | below_1h_threshold | +0.36% | +0.34% |
+| NEAR/USDT:USDT | below_1h_threshold | +1.30% | +1.30% |
+| GRAM/USDT:USDT | below_1h_threshold | +1.02% | +1.02% |
+| USELESS/USDT:USDT | below_1h_threshold | +0.93% | +0.93% |
+| STRK/USDT:USDT | below_1h_threshold | +0.88% | +0.88% |
+| ARB/USDT:USDT | below_1h_threshold | +0.86% | +0.86% |
 
 ## 7. 次に見るべき不足
 
