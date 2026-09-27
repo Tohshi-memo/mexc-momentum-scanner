@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-27T13:46:21.145894+00:00
+- generated_at: 2026-09-27T13:51:20.106097+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15645**
 
@@ -70,30 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-27T13:46:10.017754+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=84733.0
-- Funnel: target 1069 → liquid 148 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-27T13:51:10.925659+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=84874.2
+- Funnel: target 1069 → liquid 148 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 69.4 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| QNT/USDT:USDT | +39.54% | $140,118,177.94 |
-| SOONNETWORK/USDT:USDT | +34.28% | $2,837,280.33 |
-| Q/USDT:USDT | +25.83% | $1,034,910.52 |
-| GRASS/USDT:USDT | +16.78% | $6,638,238.75 |
-| US/USDT:USDT | +16.32% | $1,244,246.50 |
+| QNT/USDT:USDT | +38.54% | $140,461,574.11 |
+| SOONNETWORK/USDT:USDT | +33.17% | $2,845,190.19 |
+| Q/USDT:USDT | +28.78% | $1,040,206.30 |
+| GRASS/USDT:USDT | +17.60% | $6,647,160.28 |
+| US/USDT:USDT | +17.17% | $1,250,376.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| Q/USDT:USDT | below_1h_threshold | +3.56% | +3.59% |
-| W/USDT:USDT | below_1h_threshold | +3.16% | +3.19% |
-| SOONNETWORK/USDT:USDT | below_1h_threshold | +2.35% | +2.38% |
-| JASMY/USDT:USDT | below_1h_threshold | +1.53% | +1.56% |
-| ONDO/USDT:USDT | below_1h_threshold | +1.40% | +1.42% |
+| W/USDT:USDT | below_1h_threshold | +3.18% | +3.04% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.75% | +1.61% |
+| ONDO/USDT:USDT | below_1h_threshold | +1.69% | +1.55% |
+| BTW/USDT:USDT | below_1h_threshold | +1.50% | +1.36% |
+| SOONNETWORK/USDT:USDT | below_1h_threshold | +1.33% | +1.19% |
 
 ## 7. 次に見るべき不足
 
