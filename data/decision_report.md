@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-27T07:36:16.408401+00:00
+- generated_at: 2026-09-27T07:41:16.030279+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15642**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-27T07:36:05.218891+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=84537.2
+- 更新: 2026-09-27T07:41:05.407523+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=84533.5
 - Funnel: target 1070 → liquid 144 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| QNT/USDT:USDT | +50.15% | $99,460,897.27 |
-| SOONNETWORK/USDT:USDT | +38.39% | $1,621,009.21 |
-| W/USDT:USDT | +15.99% | $1,404,386.71 |
-| NEAR/USDT:USDT | +11.97% | $156,313,198.59 |
-| PYTH/USDT:USDT | +11.11% | $4,700,114.42 |
+| QNT/USDT:USDT | +50.53% | $99,985,030.41 |
+| SOONNETWORK/USDT:USDT | +37.93% | $1,633,098.89 |
+| W/USDT:USDT | +16.27% | $1,418,308.09 |
+| NEAR/USDT:USDT | +12.05% | $156,873,451.92 |
+| PYTH/USDT:USDT | +10.59% | $4,705,989.89 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SUI/USDT:USDT | below_1h_threshold | +4.41% | +4.34% |
-| AVAX/USDT:USDT | below_1h_threshold | +2.00% | +1.94% |
-| W/USDT:USDT | below_1h_threshold | +1.80% | +1.73% |
-| PYTH/USDT:USDT | below_1h_threshold | +1.73% | +1.66% |
-| RAY/USDT:USDT | below_1h_threshold | +1.69% | +1.62% |
+| SUI/USDT:USDT | below_1h_threshold | +4.50% | +4.44% |
+| AVAX/USDT:USDT | below_1h_threshold | +2.19% | +2.12% |
+| W/USDT:USDT | below_1h_threshold | +2.05% | +1.98% |
+| SEI/USDT:USDT | below_1h_threshold | +1.79% | +1.72% |
+| TLM/USDT:USDT | below_1h_threshold | +1.78% | +1.72% |
 
 ## 7. 次に見るべき不足
 
