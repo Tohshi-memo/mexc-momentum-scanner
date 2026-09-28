@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-28T15:51:28.775120+00:00
+- generated_at: 2026-09-28T15:56:37.618065+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15733**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-28T15:51:16.727288+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.32% price=83254.9
-- Funnel: target 1066 → liquid 174 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.5 >= 65=1, 4h RSI 73.0 >= 65=1
+- 更新: 2026-09-28T15:56:26.414641+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.42% price=83337.9
+- Funnel: target 1066 → liquid 175 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.9 >= 65=1, 4h RSI 70.3 >= 65=1, 4h RSI 86.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +73.54% | $1,766,436.36 |
-| SI/USDT:USDT | +64.57% | $1,162,686.16 |
-| HBAR/USDT:USDT | +33.27% | $124,448,967.28 |
-| QNT/USDT:USDT | +23.65% | $336,990,863.70 |
-| AZTEC/USDT:USDT | +15.28% | $1,038,108.66 |
+| BATON/USDT:USDT | +70.88% | $1,771,742.44 |
+| SI/USDT:USDT | +64.43% | $1,164,889.81 |
+| HBAR/USDT:USDT | +34.16% | $127,692,588.52 |
+| QNT/USDT:USDT | +24.53% | $337,783,245.97 |
+| AZTEC/USDT:USDT | +16.13% | $1,046,933.26 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HBAR/USDT:USDT | below_relative_strength | +5.32% | +5.00% |
-| SOXS/USDT:USDT | below_1h_threshold | +4.58% | +4.26% |
-| ALGO/USDT:USDT | below_1h_threshold | +4.00% | +3.68% |
-| MONAD/USDT:USDT | below_1h_threshold | +3.03% | +2.71% |
-| STRK/USDT:USDT | below_1h_threshold | +2.57% | +2.26% |
+| SOXS/USDT:USDT | below_1h_threshold | +4.58% | +4.16% |
+| MONAD/USDT:USDT | below_1h_threshold | +3.74% | +3.32% |
+| ALGO/USDT:USDT | below_1h_threshold | +3.36% | +2.94% |
+| AZTEC/USDT:USDT | below_1h_threshold | +3.18% | +2.76% |
+| STRK/USDT:USDT | below_1h_threshold | +2.14% | +1.72% |
 
 ## 7. 次に見るべき不足
 
