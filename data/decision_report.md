@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-28T12:01:30.761315+00:00
+- generated_at: 2026-09-28T12:06:13.219990+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15714**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-28T12:01:19.540735+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=83005.7
-- Funnel: target 1059 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-28T12:06:04.070775+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.26% price=83274.1
+- Funnel: target 1059 → liquid 155 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| QNT/USDT:USDT | +33.37% | $315,647,536.84 |
-| HBAR/USDT:USDT | +25.35% | $76,516,219.76 |
-| MARSCOIN/USDT:USDT | +17.04% | $2,560,288.89 |
-| BATON/USDT:USDT | +15.01% | $1,503,092.46 |
-| ALGO/USDT:USDT | +12.31% | $6,721,680.66 |
+| QNT/USDT:USDT | +32.73% | $316,948,935.42 |
+| HBAR/USDT:USDT | +25.88% | $76,965,884.92 |
+| BATON/USDT:USDT | +18.72% | $1,503,985.56 |
+| MARSCOIN/USDT:USDT | +18.19% | $2,577,563.25 |
+| GRT/USDT:USDT | +13.99% | $13,105,984.16 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NVIDIA/USDT:USDT | below_1h_threshold | +1.53% | +1.59% |
-| QNT/USDT:USDT | below_1h_threshold | +0.60% | +0.66% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +0.50% | +0.56% |
-| EWY/USDT:USDT | below_1h_threshold | +0.26% | +0.31% |
-| BTW/USDT:USDT | below_1h_threshold | +0.24% | +0.30% |
+| CRO/USDT:USDT | below_1h_threshold | +2.43% | +2.17% |
+| BATON/USDT:USDT | below_1h_threshold | +2.37% | +2.11% |
+| MONAD/USDT:USDT | below_1h_threshold | +1.87% | +1.61% |
+| NVIDIA/USDT:USDT | below_1h_threshold | +1.53% | +1.27% |
+| GRT/USDT:USDT | below_1h_threshold | +1.42% | +1.15% |
 
 ## 7. 次に見るべき不足
 
