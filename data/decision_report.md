@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-28T13:56:41.460046+00:00
+- generated_at: 2026-09-28T14:01:23.477616+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15726**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-28T13:56:32.798448+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.18% price=83695.0
-- Funnel: target 1065 → liquid 172 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.7 >= 65=1, 4h RSI n/a=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-28T14:01:12.225908+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=83503.8
+- Funnel: target 1065 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SI/USDT:USDT | +79.12% | $1,064,778.65 |
-| BATON/USDT:USDT | +51.46% | $1,631,930.30 |
-| QNT/USDT:USDT | +35.80% | $331,666,232.21 |
-| HBAR/USDT:USDT | +28.72% | $105,551,932.51 |
-| MARSCOIN/USDT:USDT | +17.48% | $3,220,497.16 |
+| SI/USDT:USDT | +79.40% | $1,059,573.15 |
+| BATON/USDT:USDT | +59.18% | $1,590,255.52 |
+| QNT/USDT:USDT | +37.90% | $325,807,222.99 |
+| HBAR/USDT:USDT | +28.70% | $105,218,655.66 |
+| ALGO/USDT:USDT | +15.82% | $8,198,469.95 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +4.58% | +4.40% |
-| ALGO/USDT:USDT | below_1h_threshold | +3.92% | +3.74% |
-| QNT/USDT:USDT | below_1h_threshold | +3.78% | +3.60% |
-| NMR/USDT:USDT | below_1h_threshold | +3.09% | +2.91% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.93% | +0.75% |
+| OKTASTOCK/USDT:USDT | below_1h_threshold | +3.16% | +3.28% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +2.80% | +2.92% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.28% | +2.40% |
+| NVIDIA/USDT:USDT | below_1h_threshold | +1.00% | +1.12% |
+| AAPLSTOCK/USDT:USDT | below_1h_threshold | +0.49% | +0.61% |
 
 ## 7. 次に見るべき不足
 
