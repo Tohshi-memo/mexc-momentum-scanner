@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-28T13:31:27.994716+00:00
+- generated_at: 2026-09-28T13:36:23.714528+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15725**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$119.06** / 初期 $100.00 (+19.06%)
-- 確定: 3291件 (Win 954 / Loss 1290 / Flat 1047) / pending 5件 / skip 3903件
+- 確定: 3291件 (Win 954 / Loss 1290 / Flat 1047) / pending 6件 / skip 3903件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000170 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BATON/USDT:USDT `MARKET_LONG` TP_HIT account +0.34% 残高後 $119.06
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-28T13:31:16.363038+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=83664.8
-- Funnel: target 1064 → liquid 165 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.4 >= 65=1
+- 更新: 2026-09-28T13:36:13.740231+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=83600.0
+- Funnel: target 1064 → liquid 169 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.7 >= 65=1, 4h RSI n/a=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +58.75% | $1,601,831.36 |
-| QNT/USDT:USDT | +35.87% | $327,255,366.63 |
-| HBAR/USDT:USDT | +27.40% | $99,972,224.19 |
-| MARSCOIN/USDT:USDT | +22.60% | $3,063,517.35 |
-| BTW/USDT:USDT | +14.49% | $13,996,526.24 |
+| SI/USDT:USDT | +82.72% | $1,010,128.49 |
+| BATON/USDT:USDT | +55.87% | $1,608,813.30 |
+| QNT/USDT:USDT | +33.14% | $328,274,488.44 |
+| HBAR/USDT:USDT | +28.81% | $100,870,743.55 |
+| MARSCOIN/USDT:USDT | +21.62% | $3,080,679.26 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| QNT/USDT:USDT | below_1h_threshold | +4.07% | +3.92% |
-| NMR/USDT:USDT | below_1h_threshold | +3.33% | +3.19% |
-| BTW/USDT:USDT | below_1h_threshold | +3.22% | +3.07% |
-| GRASS/USDT:USDT | below_1h_threshold | +2.49% | +2.34% |
-| MONAD/USDT:USDT | below_1h_threshold | +1.31% | +1.17% |
+| BTW/USDT:USDT | below_1h_threshold | +3.11% | +3.04% |
+| GRASS/USDT:USDT | below_1h_threshold | +2.85% | +2.79% |
+| QNT/USDT:USDT | below_1h_threshold | +1.84% | +1.78% |
+| NMR/USDT:USDT | below_1h_threshold | +1.79% | +1.72% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.93% | +0.86% |
 
 ## 7. 次に見るべき不足
 
