@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-28T13:36:23.714528+00:00
+- generated_at: 2026-09-28T13:41:31.096016+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15725**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-28T13:36:13.740231+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=83600.0
-- Funnel: target 1064 → liquid 169 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.7 >= 65=1, 4h RSI n/a=1
+- 更新: 2026-09-28T13:41:21.926550+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.16% price=83681.6
+- Funnel: target 1064 → liquid 171 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SI/USDT:USDT | +82.72% | $1,010,128.49 |
-| BATON/USDT:USDT | +55.87% | $1,608,813.30 |
-| QNT/USDT:USDT | +33.14% | $328,274,488.44 |
-| HBAR/USDT:USDT | +28.81% | $100,870,743.55 |
-| MARSCOIN/USDT:USDT | +21.62% | $3,080,679.26 |
+| SI/USDT:USDT | +75.88% | $1,025,523.72 |
+| BATON/USDT:USDT | +55.87% | $1,614,297.49 |
+| QNT/USDT:USDT | +32.30% | $328,908,223.08 |
+| HBAR/USDT:USDT | +30.85% | $102,790,359.56 |
+| MARSCOIN/USDT:USDT | +21.82% | $3,091,782.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +3.11% | +3.04% |
-| GRASS/USDT:USDT | below_1h_threshold | +2.85% | +2.79% |
-| QNT/USDT:USDT | below_1h_threshold | +1.84% | +1.78% |
-| NMR/USDT:USDT | below_1h_threshold | +1.79% | +1.72% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.93% | +0.86% |
+| SI/USDT:USDT | below_1h_threshold | +4.00% | +3.84% |
+| BTW/USDT:USDT | below_1h_threshold | +3.59% | +3.42% |
+| NMR/USDT:USDT | below_1h_threshold | +2.34% | +2.18% |
+| HBAR/USDT:USDT | below_1h_threshold | +2.22% | +2.06% |
+| GRASS/USDT:USDT | below_1h_threshold | +1.99% | +1.83% |
 
 ## 7. 次に見るべき不足
 
