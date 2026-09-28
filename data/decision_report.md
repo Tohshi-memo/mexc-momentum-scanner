@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-28T15:06:25.928726+00:00
+- generated_at: 2026-09-28T15:11:26.138350+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15729**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.84** / 初期 $100.00 (+18.84%)
-- 確定: 3294件 (Win 955 / Loss 1292 / Flat 1047) / pending 5件 / skip 3903件
+- 確定: 3294件 (Win 955 / Loss 1292 / Flat 1047) / pending 6件 / skip 3903件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000169 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: SI/USDT:USDT `MARKET_LONG` SL_HIT account -0.17% 残高後 $118.84
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-28T15:06:14.769819+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=82996.8
-- Funnel: target 1065 → liquid 171 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-28T15:11:14.614162+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.23% price=83183.6
+- Funnel: target 1065 → liquid 171 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 71.9 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +66.30% | $1,644,347.91 |
-| SI/USDT:USDT | +63.49% | $1,131,495.35 |
-| QNT/USDT:USDT | +28.40% | $330,543,922.14 |
-| HBAR/USDT:USDT | +26.80% | $113,099,921.09 |
-| BTW/USDT:USDT | +18.78% | $14,184,377.30 |
+| BATON/USDT:USDT | +81.14% | $1,684,110.15 |
+| SI/USDT:USDT | +65.94% | $1,136,468.07 |
+| QNT/USDT:USDT | +30.43% | $331,172,189.38 |
+| HBAR/USDT:USDT | +25.67% | $114,242,532.28 |
+| NMR/USDT:USDT | +16.75% | $1,464,036.03 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +4.58% | +4.57% |
-| BATON/USDT:USDT | below_1h_threshold | +3.95% | +3.94% |
-| USOIL/USDT:USDT | below_1h_threshold | +1.85% | +1.85% |
-| LSK/USDT:USDT | below_1h_threshold | +1.78% | +1.78% |
-| UKOIL/USDT:USDT | below_1h_threshold | +1.60% | +1.60% |
+| SOXS/USDT:USDT | below_1h_threshold | +4.58% | +4.34% |
+| SI/USDT:USDT | below_1h_threshold | +2.54% | +2.30% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.85% | +1.62% |
+| NMR/USDT:USDT | below_1h_threshold | +1.70% | +1.47% |
+| UKOIL/USDT:USDT | below_1h_threshold | +1.60% | +1.37% |
 
 ## 7. 次に見るべき不足
 
