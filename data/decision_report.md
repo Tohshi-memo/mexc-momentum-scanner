@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-28T08:36:22.169657+00:00
+- generated_at: 2026-09-28T08:41:28.149539+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15702**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.87** / 初期 $100.00 (+18.87%)
-- 確定: 3271件 (Win 952 / Loss 1287 / Flat 1032) / pending 1件 / skip 3898件
+- 確定: 3271件 (Win 952 / Loss 1287 / Flat 1032) / pending 2件 / skip 3898件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000125 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BTW/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $118.87
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-28T08:36:10.684281+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=82928.5
-- Funnel: target 1059 → liquid 153 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.1 >= 65=1
+- 更新: 2026-09-28T08:41:15.946955+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=82853.0
+- Funnel: target 1059 → liquid 153 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.6 >= 65=1, 4h RSI 66.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| QNT/USDT:USDT | +45.37% | $287,772,851.39 |
-| BATON/USDT:USDT | +21.12% | $1,434,563.20 |
-| MARSCOIN/USDT:USDT | +20.76% | $2,214,532.59 |
-| BTW/USDT:USDT | +16.24% | $10,780,753.06 |
-| ONE/USDT:USDT | +14.52% | $6,045,209.61 |
+| QNT/USDT:USDT | +44.40% | $288,821,366.85 |
+| BATON/USDT:USDT | +21.47% | $1,437,951.91 |
+| MARSCOIN/USDT:USDT | +21.12% | $2,247,544.43 |
+| BTW/USDT:USDT | +16.75% | $10,843,638.21 |
+| ONE/USDT:USDT | +13.60% | $6,061,544.43 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HBAR/USDT:USDT | below_1h_threshold | +3.91% | +3.90% |
-| ALGO/USDT:USDT | below_1h_threshold | +2.27% | +2.25% |
-| GRASS/USDT:USDT | below_1h_threshold | +2.19% | +2.18% |
-| ZAMA/USDT:USDT | below_1h_threshold | +2.17% | +2.16% |
-| MONAD/USDT:USDT | below_1h_threshold | +1.82% | +1.80% |
+| ALGO/USDT:USDT | below_1h_threshold | +2.83% | +2.91% |
+| MONAD/USDT:USDT | below_1h_threshold | +2.03% | +2.11% |
+| ZAMA/USDT:USDT | below_1h_threshold | +1.26% | +1.33% |
+| GRAM/USDT:USDT | below_1h_threshold | +1.24% | +1.31% |
+| BR/USDT:USDT | below_1h_threshold | +1.14% | +1.22% |
 
 ## 7. 次に見るべき不足
 
