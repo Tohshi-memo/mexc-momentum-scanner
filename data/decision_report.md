@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-28T11:51:31.864917+00:00
+- generated_at: 2026-09-28T11:56:24.069778+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15714**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-28T11:51:18.073184+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=82957.4
+- 更新: 2026-09-28T11:56:11.012577+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=82966.9
 - Funnel: target 1059 → liquid 158 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| QNT/USDT:USDT | +33.60% | $322,900,520.99 |
-| HBAR/USDT:USDT | +25.96% | $76,172,004.12 |
-| BATON/USDT:USDT | +20.03% | $1,514,630.24 |
-| MARSCOIN/USDT:USDT | +15.79% | $2,715,942.42 |
-| ALGO/USDT:USDT | +12.75% | $6,723,571.05 |
+| QNT/USDT:USDT | +33.69% | $323,944,805.28 |
+| HBAR/USDT:USDT | +25.80% | $76,810,288.97 |
+| MARSCOIN/USDT:USDT | +16.30% | $2,724,459.27 |
+| BATON/USDT:USDT | +16.06% | $1,517,104.75 |
+| ALGO/USDT:USDT | +12.49% | $6,783,986.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PUMPFUN/USDT:USDT | below_1h_threshold | +3.54% | +3.51% |
-| QNT/USDT:USDT | below_1h_threshold | +3.50% | +3.47% |
-| MONAD/USDT:USDT | below_1h_threshold | +3.45% | +3.42% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +3.15% | +3.12% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +2.73% | +2.70% |
+| SAGA/USDT:USDT | below_1h_threshold | +3.92% | +3.87% |
+| QNT/USDT:USDT | below_1h_threshold | +3.60% | +3.56% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +3.60% | +3.55% |
+| MONAD/USDT:USDT | below_1h_threshold | +3.56% | +3.52% |
+| LSK/USDT:USDT | below_1h_threshold | +3.47% | +3.42% |
 
 ## 7. 次に見るべき不足
 
