@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-28T16:51:35.111563+00:00
+- generated_at: 2026-09-28T16:56:36.328677+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15738**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-28T16:51:19.733611+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.28% price=83575.7
+- 更新: 2026-09-28T16:56:21.093905+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.37% price=83646.1
 - Funnel: target 1066 → liquid 174 → pre 50 → checked 50 → surge 4 → strict 1
 - Surge前reject: below_1h_threshold=45, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.2 >= 65=1, 4h RSI 67.1 >= 65=1, 4h RSI 69.3 >= 65=1
+- Strict後reject: 4h RSI 67.8 >= 65=1, 4h RSI 70.3 >= 65=1, 4h RSI 74.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MARSCOIN/USDT:USDT | +8.40% | $3,627,071.27 |
-| QNT/USDT:USDT | +6.50% | $336,748,621.93 |
-| AZTEC/USDT:USDT | +6.39% | $1,106,417.50 |
-| GRASS/USDT:USDT | +5.53% | $6,051,311.88 |
-| PUMPFUN/USDT:USDT | +5.17% | $69,599,812.08 |
+| QNT/USDT:USDT | +7.90% | $337,896,359.32 |
+| AZTEC/USDT:USDT | +7.80% | $1,126,194.28 |
+| GRASS/USDT:USDT | +6.13% | $6,058,991.34 |
+| PUMPFUN/USDT:USDT | +5.88% | $69,824,824.03 |
+| MARSCOIN/USDT:USDT | +5.77% | $3,689,064.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PUMPFUN/USDT:USDT | below_relative_strength | +5.22% | +4.93% |
-| LINK/USDT:USDT | below_1h_threshold | +3.79% | +3.50% |
-| NMR/USDT:USDT | below_1h_threshold | +3.13% | +2.85% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.92% | +2.64% |
-| NIL/USDT:USDT | below_1h_threshold | +2.29% | +2.00% |
+| MARSCOIN/USDT:USDT | below_relative_strength | +5.33% | +4.96% |
+| LINK/USDT:USDT | below_1h_threshold | +4.58% | +4.21% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.15% | +2.78% |
+| CRV/USDT:USDT | below_1h_threshold | +2.68% | +2.31% |
+| AERO/USDT:USDT | below_1h_threshold | +2.62% | +2.25% |
 
 ## 7. 次に見るべき不足
 
