@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-28T08:26:16.479860+00:00
+- generated_at: 2026-09-28T08:31:23.420503+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15702**
 
@@ -70,30 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-28T08:26:05.224843+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=82801.0
-- Funnel: target 1059 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-28T08:31:11.577016+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=82832.2
+- Funnel: target 1059 → liquid 151 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 66.1 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| QNT/USDT:USDT | +47.50% | $279,887,522.92 |
-| BATON/USDT:USDT | +23.09% | $1,395,055.15 |
-| MARSCOIN/USDT:USDT | +20.78% | $2,100,772.51 |
-| BTW/USDT:USDT | +14.50% | $10,386,042.04 |
-| GRT/USDT:USDT | +14.48% | $11,479,259.40 |
+| QNT/USDT:USDT | +45.63% | $280,732,741.13 |
+| MARSCOIN/USDT:USDT | +20.99% | $2,128,344.90 |
+| BATON/USDT:USDT | +20.55% | $1,400,181.95 |
+| BTW/USDT:USDT | +15.11% | $10,464,945.52 |
+| ONE/USDT:USDT | +14.87% | $5,897,146.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MARSCOIN/USDT:USDT | below_1h_threshold | +4.74% | +4.88% |
-| GRASS/USDT:USDT | below_1h_threshold | +2.69% | +2.83% |
-| MONAD/USDT:USDT | below_1h_threshold | +2.53% | +2.67% |
-| SEI/USDT:USDT | below_1h_threshold | +2.36% | +2.50% |
-| ALGO/USDT:USDT | below_1h_threshold | +2.04% | +2.17% |
+| GRASS/USDT:USDT | below_1h_threshold | +2.66% | +2.76% |
+| ALGO/USDT:USDT | below_1h_threshold | +2.35% | +2.45% |
+| ZAMA/USDT:USDT | below_1h_threshold | +2.01% | +2.11% |
+| SEI/USDT:USDT | below_1h_threshold | +1.81% | +1.91% |
+| IMX/USDT:USDT | below_1h_threshold | +1.65% | +1.75% |
 
 ## 7. 次に見るべき不足
 
