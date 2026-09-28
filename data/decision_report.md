@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-28T13:41:31.096016+00:00
+- generated_at: 2026-09-28T13:46:29.070707+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15725**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-28T13:41:21.926550+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=83681.6
-- Funnel: target 1064 → liquid 171 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.7 >= 65=1
+- 更新: 2026-09-28T13:46:17.114732+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.21% price=83722.9
+- Funnel: target 1064 → liquid 172 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.3 >= 65=1, 4h RSI n/a=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SI/USDT:USDT | +75.88% | $1,025,523.72 |
-| BATON/USDT:USDT | +55.87% | $1,614,297.49 |
-| QNT/USDT:USDT | +32.30% | $328,908,223.08 |
-| HBAR/USDT:USDT | +30.85% | $102,790,359.56 |
-| MARSCOIN/USDT:USDT | +21.82% | $3,091,782.64 |
+| SI/USDT:USDT | +80.12% | $1,037,770.21 |
+| BATON/USDT:USDT | +54.73% | $1,622,039.91 |
+| QNT/USDT:USDT | +34.22% | $329,651,092.50 |
+| HBAR/USDT:USDT | +29.69% | $103,315,812.62 |
+| MARSCOIN/USDT:USDT | +21.95% | $3,106,913.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SI/USDT:USDT | below_1h_threshold | +4.00% | +3.84% |
-| BTW/USDT:USDT | below_1h_threshold | +3.59% | +3.42% |
-| NMR/USDT:USDT | below_1h_threshold | +2.34% | +2.18% |
-| HBAR/USDT:USDT | below_1h_threshold | +2.22% | +2.06% |
-| GRASS/USDT:USDT | below_1h_threshold | +1.99% | +1.83% |
+| BTW/USDT:USDT | below_1h_threshold | +4.08% | +3.86% |
+| QNT/USDT:USDT | below_1h_threshold | +2.66% | +2.45% |
+| NMR/USDT:USDT | below_1h_threshold | +2.66% | +2.44% |
+| ALGO/USDT:USDT | below_1h_threshold | +2.51% | +2.30% |
+| HBAR/USDT:USDT | below_1h_threshold | +1.32% | +1.11% |
 
 ## 7. 次に見るべき不足
 
