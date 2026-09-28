@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-28T12:21:27.309544+00:00
+- generated_at: 2026-09-28T12:27:01.341771+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15714**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$119.27** / 初期 $100.00 (+19.27%)
-- 確定: 3283件 (Win 953 / Loss 1287 / Flat 1043) / pending 5件 / skip 3898件
+- 確定: 3283件 (Win 953 / Loss 1287 / Flat 1043) / pending 6件 / skip 3901件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000136 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: QNT/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $119.27
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-28T12:21:15.070701+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.44% price=83417.3
-- Funnel: target 1059 → liquid 158 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.7 >= 65=1, 4h RSI 85.6 >= 65=1
+- 更新: 2026-09-28T12:26:42.012056+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.24% price=83253.4
+- Funnel: target 1064 → liquid 159 → pre 50 → checked 50 → surge 4 → strict 3
+- Surge前reject: below_1h_threshold=45, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 68.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| QNT/USDT:USDT | +37.58% | $320,314,143.63 |
-| HBAR/USDT:USDT | +32.26% | $80,553,796.27 |
-| MARSCOIN/USDT:USDT | +22.62% | $2,644,859.78 |
-| BATON/USDT:USDT | +20.47% | $1,506,159.69 |
-| GRT/USDT:USDT | +15.16% | $13,187,425.45 |
+| QNT/USDT:USDT | +33.93% | $321,575,539.03 |
+| HBAR/USDT:USDT | +32.22% | $82,300,346.28 |
+| MARSCOIN/USDT:USDT | +25.05% | $2,693,215.36 |
+| BATON/USDT:USDT | +23.09% | $1,508,543.66 |
+| GRT/USDT:USDT | +16.61% | $13,237,937.39 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CRO/USDT:USDT | below_relative_strength | +5.00% | +4.56% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +4.81% | +4.38% |
-| XLM/USDT:USDT | below_1h_threshold | +4.62% | +4.19% |
-| MONAD/USDT:USDT | below_1h_threshold | +3.93% | +3.49% |
-| BATON/USDT:USDT | below_1h_threshold | +3.88% | +3.44% |
+| LINK/USDT:USDT | below_relative_strength | +5.14% | +4.90% |
+| HBAR/USDT:USDT | below_1h_threshold | +5.00% | +4.76% |
+| MONAD/USDT:USDT | below_1h_threshold | +3.93% | +3.69% |
+| GRT/USDT:USDT | below_1h_threshold | +3.69% | +3.45% |
+| VIRTUAL/USDT:USDT | below_1h_threshold | +3.14% | +2.90% |
 
 ## 7. 次に見るべき不足
 
