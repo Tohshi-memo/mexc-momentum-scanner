@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-28T21:56:22.593921+00:00
+- generated_at: 2026-09-28T22:01:23.151017+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15747**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-28T21:56:11.331533+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.34% price=83220.4
-- Funnel: target 1066 → liquid 175 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-28T22:01:11.764294+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=83150.0
+- Funnel: target 1066 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NMR/USDT:USDT | +28.10% | $2,201,169.32 |
-| BTW/USDT:USDT | +11.99% | $18,198,012.27 |
-| CRV/USDT:USDT | +9.45% | $10,038,880.34 |
-| MARSCOIN/USDT:USDT | +8.16% | $4,264,986.41 |
-| QNT/USDT:USDT | +6.85% | $358,444,887.81 |
+| NMR/USDT:USDT | +26.49% | $2,298,263.44 |
+| BTW/USDT:USDT | +11.28% | $18,000,541.85 |
+| CRV/USDT:USDT | +9.45% | $9,776,455.13 |
+| QNT/USDT:USDT | +7.74% | $331,963,696.01 |
+| MARSCOIN/USDT:USDT | +7.48% | $4,241,071.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +2.99% | +3.32% |
-| XDC/USDT:USDT | below_1h_threshold | +1.67% | +2.00% |
-| PYTH/USDT:USDT | below_1h_threshold | +1.12% | +1.46% |
-| KORU/USDT:USDT | below_1h_threshold | +0.34% | +0.68% |
-| OKTASTOCK/USDT:USDT | below_1h_threshold | +0.33% | +0.67% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.59% | +0.62% |
+| QNT/USDT:USDT | below_1h_threshold | +0.27% | +0.30% |
+| SNXX/USDT:USDT | below_1h_threshold | +0.25% | +0.28% |
+| TQQQ/USDT:USDT | below_1h_threshold | +0.21% | +0.24% |
+| NGAS/USDT:USDT | below_1h_threshold | +0.19% | +0.22% |
 
 ## 7. 次に見るべき不足
 
