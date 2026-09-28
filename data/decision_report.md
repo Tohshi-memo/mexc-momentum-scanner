@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-28T09:41:21.154254+00:00
+- generated_at: 2026-09-28T09:46:22.876197+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15709**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-28T09:41:08.125404+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.40% price=82603.4
+- 更新: 2026-09-28T09:46:09.290814+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.36% price=82635.2
 - Funnel: target 1059 → liquid 156 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HBAR/USDT:USDT | +19.18% | $34,858,789.95 |
-| BTW/USDT:USDT | +16.76% | $11,803,740.34 |
-| QNT/USDT:USDT | +15.65% | $305,448,739.89 |
-| MARSCOIN/USDT:USDT | +14.55% | $2,565,778.74 |
-| MUBARAK/USDT:USDT | +13.76% | $1,516,069.52 |
+| HBAR/USDT:USDT | +20.72% | $35,293,196.70 |
+| BTW/USDT:USDT | +18.30% | $11,833,186.09 |
+| QNT/USDT:USDT | +17.31% | $306,802,821.56 |
+| MARSCOIN/USDT:USDT | +14.60% | $2,593,892.91 |
+| MUBARAK/USDT:USDT | +14.11% | $1,558,321.92 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HBAR/USDT:USDT | below_1h_threshold | +3.18% | +3.58% |
-| GRAM/USDT:USDT | below_1h_threshold | +2.58% | +2.97% |
-| UKOIL/USDT:USDT | below_1h_threshold | +1.62% | +2.02% |
-| USOIL/USDT:USDT | below_1h_threshold | +1.31% | +1.71% |
-| ALGO/USDT:USDT | below_1h_threshold | +1.03% | +1.43% |
+| HBAR/USDT:USDT | below_1h_threshold | +4.52% | +4.88% |
+| GRAM/USDT:USDT | below_1h_threshold | +2.03% | +2.38% |
+| BTW/USDT:USDT | below_1h_threshold | +1.85% | +2.21% |
+| UKOIL/USDT:USDT | below_1h_threshold | +1.62% | +1.98% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.31% | +1.67% |
 
 ## 7. 次に見るべき不足
 
