@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-28T05:41:17.781977+00:00
+- generated_at: 2026-09-28T05:46:17.705984+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15693**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$119.39** / 初期 $100.00 (+19.39%)
-- 確定: 3263件 (Win 951 / Loss 1283 / Flat 1029) / pending 1件 / skip 3898件
+- 確定: 3263件 (Win 951 / Loss 1283 / Flat 1029) / pending 2件 / skip 3898件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000194 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $119.39
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-28T05:41:06.542823+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.77% price=82804.6
-- Funnel: target 1069 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-28T05:46:07.189774+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.37% price=83134.7
+- Funnel: target 1069 → liquid 148 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| QNT/USDT:USDT | +43.27% | $264,193,175.94 |
-| BATON/USDT:USDT | +21.12% | $1,260,610.83 |
-| ONE/USDT:USDT | +21.10% | $4,747,245.17 |
-| GRT/USDT:USDT | +14.45% | $10,118,534.40 |
-| BTW/USDT:USDT | +11.72% | $6,614,304.42 |
+| QNT/USDT:USDT | +45.41% | $264,586,560.23 |
+| BATON/USDT:USDT | +22.87% | $1,262,258.64 |
+| ONE/USDT:USDT | +21.14% | $4,758,469.46 |
+| GRT/USDT:USDT | +15.33% | $10,146,004.04 |
+| BTW/USDT:USDT | +12.68% | $6,677,441.21 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ONE/USDT:USDT | below_1h_threshold | +1.73% | +2.50% |
-| BTW/USDT:USDT | below_1h_threshold | +1.55% | +2.32% |
-| GRASS/USDT:USDT | below_1h_threshold | +1.50% | +2.27% |
-| NVIDIA/USDT:USDT | below_1h_threshold | +0.20% | +0.96% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.18% | +0.95% |
+| GRASS/USDT:USDT | below_1h_threshold | +2.73% | +3.10% |
+| BTW/USDT:USDT | below_1h_threshold | +2.41% | +2.79% |
+| ONE/USDT:USDT | below_1h_threshold | +1.64% | +2.01% |
+| LTC/USDT:USDT | below_1h_threshold | +0.42% | +0.80% |
+| BATON/USDT:USDT | below_1h_threshold | +0.28% | +0.66% |
 
 ## 7. 次に見るべき不足
 
