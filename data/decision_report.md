@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-28T02:56:37.916155+00:00
+- generated_at: 2026-09-28T03:01:25.907871+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15680**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-28T02:56:23.122444+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.31% price=83389.9
-- Funnel: target 1069 → liquid 143 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-28T03:01:14.651904+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.12% price=83480.0
+- Funnel: target 1069 → liquid 143 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| QNT/USDT:USDT | +51.62% | $269,148,771.29 |
-| BATON/USDT:USDT | +28.54% | $1,243,768.90 |
-| GRT/USDT:USDT | +21.11% | $9,246,630.07 |
-| SEI/USDT:USDT | +14.76% | $37,263,428.83 |
-| ONE/USDT:USDT | +13.81% | $3,686,858.04 |
+| QNT/USDT:USDT | +52.26% | $261,373,660.85 |
+| BATON/USDT:USDT | +27.89% | $1,234,031.59 |
+| GRT/USDT:USDT | +18.80% | $9,267,844.97 |
+| SEI/USDT:USDT | +14.97% | $37,226,052.55 |
+| ONE/USDT:USDT | +13.91% | $3,669,648.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +2.80% | +3.11% |
-| SKY/USDT:USDT | below_1h_threshold | +2.43% | +2.74% |
-| ONE/USDT:USDT | below_1h_threshold | +1.94% | +2.25% |
-| BR/USDT:USDT | below_1h_threshold | +1.85% | +2.16% |
-| GRASS/USDT:USDT | below_1h_threshold | +1.83% | +2.14% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.55% | +1.43% |
+| SEI/USDT:USDT | below_1h_threshold | +1.52% | +1.40% |
+| FOXASTOCK/USDT:USDT | below_1h_threshold | +1.35% | +1.23% |
+| XPL/USDT:USDT | below_1h_threshold | +1.12% | +1.00% |
+| BATON/USDT:USDT | below_1h_threshold | +0.93% | +0.81% |
 
 ## 7. 次に見るべき不足
 
