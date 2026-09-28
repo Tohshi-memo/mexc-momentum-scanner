@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-28T10:16:22.664459+00:00
+- generated_at: 2026-09-28T10:21:20.524427+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15709**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-28T10:16:13.569552+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=82772.5
-- Funnel: target 1059 → liquid 156 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.9 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-28T10:21:09.137196+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=82704.2
+- Funnel: target 1059 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| QNT/USDT:USDT | +27.23% | $307,385,111.14 |
-| HBAR/USDT:USDT | +22.55% | $41,947,612.77 |
-| BTW/USDT:USDT | +19.04% | $11,740,599.94 |
-| MARSCOIN/USDT:USDT | +14.19% | $2,596,843.19 |
-| GRT/USDT:USDT | +12.50% | $12,827,011.59 |
+| QNT/USDT:USDT | +26.66% | $308,465,322.17 |
+| HBAR/USDT:USDT | +20.81% | $42,530,579.12 |
+| MARSCOIN/USDT:USDT | +13.40% | $2,603,037.60 |
+| GRT/USDT:USDT | +12.89% | $12,857,441.04 |
+| MUBARAK/USDT:USDT | +11.01% | $1,740,705.76 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BATON/USDT:USDT | below_1h_threshold | +4.10% | +3.94% |
-| IMX/USDT:USDT | below_1h_threshold | +2.62% | +2.46% |
-| HBAR/USDT:USDT | below_1h_threshold | +2.22% | +2.05% |
-| PYTH/USDT:USDT | below_1h_threshold | +1.78% | +1.61% |
-| ZAMA/USDT:USDT | below_1h_threshold | +1.17% | +1.01% |
+| QNT/USDT:USDT | below_1h_threshold | +4.65% | +4.57% |
+| BATON/USDT:USDT | below_1h_threshold | +4.26% | +4.18% |
+| SAGA/USDT:USDT | below_1h_threshold | +2.19% | +2.11% |
+| IMX/USDT:USDT | below_1h_threshold | +2.11% | +2.03% |
+| GRAM/USDT:USDT | below_1h_threshold | +1.74% | +1.66% |
 
 ## 7. 次に見るべき不足
 
