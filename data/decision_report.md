@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-28T05:06:20.396713+00:00
+- generated_at: 2026-09-28T05:11:18.461645+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15690**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-28T05:06:09.196057+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=83381.7
+- 更新: 2026-09-28T05:11:07.121261+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=83325.1
 - Funnel: target 1069 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| QNT/USDT:USDT | +44.36% | $260,852,952.09 |
-| BATON/USDT:USDT | +23.96% | $1,253,139.01 |
-| ONE/USDT:USDT | +19.90% | $4,597,258.00 |
-| GRT/USDT:USDT | +15.26% | $10,015,330.74 |
-| SEI/USDT:USDT | +12.26% | $40,969,230.57 |
+| QNT/USDT:USDT | +40.31% | $261,615,646.73 |
+| BATON/USDT:USDT | +23.00% | $1,254,618.06 |
+| ONE/USDT:USDT | +18.25% | $4,610,721.80 |
+| GRT/USDT:USDT | +14.77% | $10,062,426.90 |
+| SEI/USDT:USDT | +12.14% | $41,040,550.93 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BATON/USDT:USDT | below_1h_threshold | +1.18% | +1.25% |
-| GRASS/USDT:USDT | below_1h_threshold | +0.83% | +0.91% |
-| SOONNETWORK/USDT:USDT | below_1h_threshold | +0.69% | +0.76% |
-| SKY/USDT:USDT | below_1h_threshold | +0.57% | +0.65% |
-| RUNE/USDT:USDT | below_1h_threshold | +0.43% | +0.51% |
+| BATON/USDT:USDT | below_1h_threshold | +0.57% | +0.71% |
+| SOONNETWORK/USDT:USDT | below_1h_threshold | +0.46% | +0.60% |
+| NVIDIA/USDT:USDT | below_1h_threshold | +0.20% | +0.34% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.18% | +0.33% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.17% | +0.32% |
 
 ## 7. 次に見るべき不足
 
