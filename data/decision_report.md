@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-28T12:56:50.304635+00:00
+- generated_at: 2026-09-28T13:01:29.351749+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15722**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-28T12:56:30.423686+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.55% price=83508.1
-- Funnel: target 1064 → liquid 161 → pre 50 → checked 50 → surge 5 → strict 2
-- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.5 >= 65=1, 4h RSI 69.2 >= 65=1, 4h RSI 72.2 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-28T13:01:17.786096+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=83441.8
+- Funnel: target 1064 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +49.41% | $1,540,445.39 |
-| QNT/USDT:USDT | +32.75% | $327,748,282.45 |
-| HBAR/USDT:USDT | +29.07% | $87,313,107.85 |
-| MARSCOIN/USDT:USDT | +27.52% | $2,960,797.00 |
-| GRT/USDT:USDT | +14.87% | $13,530,332.08 |
+| BATON/USDT:USDT | +44.47% | $1,507,510.17 |
+| QNT/USDT:USDT | +31.12% | $321,418,717.11 |
+| HBAR/USDT:USDT | +27.38% | $88,028,609.48 |
+| MARSCOIN/USDT:USDT | +27.15% | $2,887,087.05 |
+| GRT/USDT:USDT | +14.38% | $13,522,239.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LINK/USDT:USDT | below_1h_threshold | +4.36% | +3.82% |
-| AZTEC/USDT:USDT | below_1h_threshold | +3.44% | +2.89% |
-| MONAD/USDT:USDT | below_1h_threshold | +3.15% | +2.60% |
-| VIRTUAL/USDT:USDT | below_1h_threshold | +3.13% | +2.58% |
-| RUNE/USDT:USDT | below_1h_threshold | +2.90% | +2.35% |
+| BATON/USDT:USDT | below_1h_threshold | +1.38% | +1.50% |
+| NVIDIA/USDT:USDT | below_1h_threshold | +0.68% | +0.81% |
+| ONE/USDT:USDT | below_1h_threshold | +0.45% | +0.57% |
+| NAS100/USDT:USDT | below_1h_threshold | +0.33% | +0.45% |
+| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +0.24% | +0.36% |
 
 ## 7. 次に見るべき不足
 
