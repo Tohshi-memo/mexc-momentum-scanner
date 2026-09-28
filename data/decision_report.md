@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-28T18:06:29.970833+00:00
+- generated_at: 2026-09-28T18:11:25.285180+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15741**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-28T18:06:18.796641+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=83920.5
-- Funnel: target 1066 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-28T18:11:14.055255+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=83910.1
+- Funnel: target 1066 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| QNT/USDT:USDT | +10.98% | $337,585,531.82 |
-| MARSCOIN/USDT:USDT | +8.32% | $3,824,985.17 |
-| GRASS/USDT:USDT | +7.59% | $5,385,538.23 |
-| CRV/USDT:USDT | +7.08% | $6,347,838.86 |
-| BTW/USDT:USDT | +5.85% | $17,261,379.24 |
+| QNT/USDT:USDT | +10.60% | $338,331,317.15 |
+| MARSCOIN/USDT:USDT | +8.80% | $3,833,472.22 |
+| GRASS/USDT:USDT | +8.78% | $5,426,526.06 |
+| BTW/USDT:USDT | +8.12% | $17,343,185.71 |
+| CRV/USDT:USDT | +7.50% | $6,368,889.29 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +1.31% | +1.20% |
-| ALGO/USDT:USDT | below_1h_threshold | +1.24% | +1.14% |
-| JUP/USDT:USDT | below_1h_threshold | +1.11% | +1.01% |
-| GRASS/USDT:USDT | below_1h_threshold | +1.08% | +0.98% |
-| ONE/USDT:USDT | below_1h_threshold | +1.05% | +0.95% |
+| BTW/USDT:USDT | below_1h_threshold | +3.54% | +3.45% |
+| XPL/USDT:USDT | below_1h_threshold | +2.32% | +2.23% |
+| GRASS/USDT:USDT | below_1h_threshold | +2.20% | +2.11% |
+| XLM/USDT:USDT | below_1h_threshold | +1.50% | +1.42% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.24% | +1.15% |
 
 ## 7. 次に見るべき不足
 
