@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-28T16:41:32.995130+00:00
+- generated_at: 2026-09-28T16:46:30.465677+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15738**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-28T16:41:18.639012+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.51% price=83765.1
-- Funnel: target 1066 → liquid 173 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.4 >= 65=1, 4h RSI 67.4 >= 65=1
+- 更新: 2026-09-28T16:46:16.560266+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.42% price=83688.1
+- Funnel: target 1066 → liquid 173 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 65.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MARSCOIN/USDT:USDT | +8.90% | $3,518,567.10 |
-| QNT/USDT:USDT | +7.41% | $334,531,095.45 |
-| GRASS/USDT:USDT | +6.06% | $6,011,941.86 |
-| AZTEC/USDT:USDT | +4.97% | $1,092,761.65 |
-| PUMPFUN/USDT:USDT | +4.76% | $69,142,878.54 |
+| MARSCOIN/USDT:USDT | +8.82% | $3,578,557.54 |
+| GRASS/USDT:USDT | +5.64% | $6,044,187.77 |
+| QNT/USDT:USDT | +5.26% | $335,697,737.18 |
+| PUMPFUN/USDT:USDT | +4.82% | $69,463,902.38 |
+| AZTEC/USDT:USDT | +4.76% | $1,096,884.85 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AZTEC/USDT:USDT | below_1h_threshold | +4.98% | +4.47% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +4.71% | +4.20% |
-| LINK/USDT:USDT | below_1h_threshold | +4.52% | +4.01% |
-| NMR/USDT:USDT | below_1h_threshold | +3.46% | +2.95% |
-| VIRTUAL/USDT:USDT | below_1h_threshold | +3.01% | +2.50% |
+| QNT/USDT:USDT | below_relative_strength | +5.34% | +4.93% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +4.78% | +4.37% |
+| AZTEC/USDT:USDT | below_1h_threshold | +4.77% | +4.35% |
+| LINK/USDT:USDT | below_1h_threshold | +4.09% | +3.67% |
+| NMR/USDT:USDT | below_1h_threshold | +3.73% | +3.31% |
 
 ## 7. 次に見るべき不足
 
