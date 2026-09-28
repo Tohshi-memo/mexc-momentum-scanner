@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-28T06:41:22.735887+00:00
+- generated_at: 2026-09-28T06:46:24.680815+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15697**
 
@@ -70,32 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-28T06:41:08.931399+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=83107.2
-- Funnel: target 1069 → liquid 146 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.5 >= 65=1
+- 更新: 2026-09-28T06:46:10.986006+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=83169.5
+- Funnel: target 1069 → liquid 146 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| QNT/USDT:USDT | +59.91% | $260,087,998.20 |
-| BATON/USDT:USDT | +27.49% | $1,263,786.92 |
-| ONE/USDT:USDT | +24.54% | $5,067,700.89 |
-| GRT/USDT:USDT | +14.94% | $10,314,604.41 |
-| BTW/USDT:USDT | +14.35% | $7,229,035.11 |
+| QNT/USDT:USDT | +56.40% | $260,983,452.36 |
+| BATON/USDT:USDT | +25.79% | $1,264,991.40 |
+| ONE/USDT:USDT | +23.72% | $5,088,091.14 |
+| GRT/USDT:USDT | +15.40% | $10,336,303.21 |
+| BTW/USDT:USDT | +15.23% | $7,308,279.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SAGA/USDT:USDT | below_1h_threshold | +2.91% | +2.96% |
-| BATON/USDT:USDT | below_1h_threshold | +2.60% | +2.64% |
-| RUNE/USDT:USDT | below_1h_threshold | +1.12% | +1.17% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.06% | +1.10% |
-| IMX/USDT:USDT | below_1h_threshold | +0.72% | +0.77% |
+| QNT/USDT:USDT | below_1h_threshold | +4.59% | +4.56% |
+| SAGA/USDT:USDT | below_1h_threshold | +3.26% | +3.23% |
+| RUNE/USDT:USDT | below_1h_threshold | +1.42% | +1.39% |
+| BATON/USDT:USDT | below_1h_threshold | +1.23% | +1.20% |
+| BTW/USDT:USDT | below_1h_threshold | +1.08% | +1.05% |
 
 ## 7. 次に見るべき不足
 
