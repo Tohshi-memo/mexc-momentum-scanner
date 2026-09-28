@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-28T16:21:30.419598+00:00
+- generated_at: 2026-09-28T16:26:31.437689+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15734**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-28T16:21:20.709502+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.41% price=83685.4
-- Funnel: target 1066 → liquid 172 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.9 >= 65=1, 4h RSI n/a=1
+- 更新: 2026-09-28T16:26:20.018309+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.66% price=83889.1
+- Funnel: target 1066 → liquid 172 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 75.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SI/USDT:USDT | +6.92% | $1,199,024.75 |
-| QNT/USDT:USDT | +6.28% | $330,568,555.13 |
-| XDP/USDT:USDT | +4.09% | $1,135,555.80 |
-| PUMPFUN/USDT:USDT | +3.41% | $65,340,684.61 |
-| PHA/USDT:USDT | +3.08% | $1,777,218.77 |
+| PUMPFUN/USDT:USDT | +7.76% | $66,737,556.49 |
+| QNT/USDT:USDT | +5.34% | $331,660,317.41 |
+| XDP/USDT:USDT | +4.81% | $1,149,870.00 |
+| SI/USDT:USDT | +4.38% | $1,202,072.17 |
+| MARSCOIN/USDT:USDT | +4.20% | $3,371,855.92 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AZTEC/USDT:USDT | below_1h_threshold | +4.25% | +3.83% |
-| XDP/USDT:USDT | below_1h_threshold | +4.05% | +3.63% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +3.61% | +3.19% |
-| PHA/USDT:USDT | below_1h_threshold | +3.08% | +2.67% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +2.94% | +2.53% |
+| QNT/USDT:USDT | below_relative_strength | +5.33% | +4.67% |
+| SI/USDT:USDT | below_1h_threshold | +4.82% | +4.17% |
+| XDP/USDT:USDT | below_1h_threshold | +4.72% | +4.06% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +4.11% | +3.45% |
+| AZTEC/USDT:USDT | below_1h_threshold | +3.77% | +3.11% |
 
 ## 7. 次に見るべき不足
 
