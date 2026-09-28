@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-28T03:42:03.647747+00:00
+- generated_at: 2026-09-28T03:46:24.431673+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15683**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-28T03:41:47.315885+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=83372.6
+- 更新: 2026-09-28T03:46:10.779650+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=83404.9
 - Funnel: target 1069 → liquid 147 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| QNT/USDT:USDT | +44.73% | $266,633,695.30 |
-| ONE/USDT:USDT | +27.15% | $3,940,397.96 |
-| BATON/USDT:USDT | +23.09% | $1,252,761.01 |
-| SKY/USDT:USDT | +13.94% | $1,836,146.27 |
-| GRT/USDT:USDT | +13.60% | $9,475,536.27 |
+| QNT/USDT:USDT | +42.51% | $267,260,073.28 |
+| ONE/USDT:USDT | +26.71% | $3,976,710.83 |
+| BATON/USDT:USDT | +22.65% | $1,254,385.99 |
+| SKY/USDT:USDT | +13.94% | $1,836,947.52 |
+| GRT/USDT:USDT | +13.53% | $9,478,646.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKY/USDT:USDT | below_1h_threshold | +1.86% | +1.87% |
-| RARE/USDT:USDT | below_1h_threshold | +1.71% | +1.72% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.55% | +1.56% |
-| BTW/USDT:USDT | below_1h_threshold | +0.98% | +0.99% |
-| XPL/USDT:USDT | below_1h_threshold | +0.49% | +0.50% |
+| SKY/USDT:USDT | below_1h_threshold | +1.86% | +1.83% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.55% | +1.52% |
+| BTW/USDT:USDT | below_1h_threshold | +1.20% | +1.17% |
+| RARE/USDT:USDT | below_1h_threshold | +1.11% | +1.08% |
+| ONDO/USDT:USDT | below_1h_threshold | +1.09% | +1.07% |
 
 ## 7. 次に見るべき不足
 
