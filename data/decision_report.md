@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-28T07:46:20.655350+00:00
+- generated_at: 2026-09-28T07:51:17.289309+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15700**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-28T07:46:09.309332+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.27% price=82900.1
-- Funnel: target 1059 → liquid 151 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.5 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-28T07:51:09.106533+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.19% price=82964.7
+- Funnel: target 1059 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| QNT/USDT:USDT | +52.40% | $275,227,190.95 |
-| BATON/USDT:USDT | +27.45% | $1,359,821.60 |
-| BTW/USDT:USDT | +22.65% | $8,943,200.97 |
-| ONE/USDT:USDT | +15.88% | $5,682,330.59 |
-| GRT/USDT:USDT | +13.74% | $11,020,296.83 |
+| QNT/USDT:USDT | +50.79% | $275,982,433.39 |
+| BATON/USDT:USDT | +26.88% | $1,360,338.00 |
+| BTW/USDT:USDT | +20.21% | $9,072,986.10 |
+| ONE/USDT:USDT | +16.38% | $5,708,691.09 |
+| GRT/USDT:USDT | +13.39% | $11,060,849.93 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UAI/USDT:USDT | below_1h_threshold | +4.64% | +4.91% |
-| GRAM/USDT:USDT | below_1h_threshold | +1.37% | +1.64% |
-| LSK/USDT:USDT | below_1h_threshold | +0.90% | +1.17% |
-| NICKEL/USDT:USDT | below_1h_threshold | +0.45% | +0.72% |
-| MONAD/USDT:USDT | below_1h_threshold | +0.43% | +0.70% |
+| UAI/USDT:USDT | below_1h_threshold | +4.00% | +4.20% |
+| BTW/USDT:USDT | below_1h_threshold | +3.47% | +3.66% |
+| MONAD/USDT:USDT | below_1h_threshold | +1.57% | +1.77% |
+| LSK/USDT:USDT | below_1h_threshold | +0.84% | +1.03% |
+| POLYMARKETSTOCK/USDT:USDT | below_1h_threshold | +0.63% | +0.82% |
 
 ## 7. 次に見るべき不足
 
