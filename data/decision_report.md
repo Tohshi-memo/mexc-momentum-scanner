@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-28T14:16:27.856383+00:00
+- generated_at: 2026-09-28T14:21:20.068987+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15728**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-28T14:16:14.526350+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.33% price=83331.8
-- Funnel: target 1065 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-28T14:21:09.014763+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.30% price=83352.4
+- Funnel: target 1065 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SI/USDT:USDT | +62.85% | $1,084,969.83 |
-| BATON/USDT:USDT | +58.31% | $1,605,530.77 |
-| QNT/USDT:USDT | +29.07% | $329,503,164.22 |
-| HBAR/USDT:USDT | +28.76% | $107,408,739.21 |
-| BTW/USDT:USDT | +16.66% | $13,995,263.51 |
+| SI/USDT:USDT | +67.02% | $1,098,014.46 |
+| BATON/USDT:USDT | +58.70% | $1,609,981.32 |
+| QNT/USDT:USDT | +28.62% | $330,542,352.30 |
+| HBAR/USDT:USDT | +28.06% | $108,230,464.63 |
+| NMR/USDT:USDT | +16.69% | $1,205,134.16 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| OKTASTOCK/USDT:USDT | below_1h_threshold | +3.16% | +3.49% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +2.80% | +3.12% |
-| SOXS/USDT:USDT | below_1h_threshold | +2.28% | +2.61% |
-| NMR/USDT:USDT | below_1h_threshold | +2.11% | +2.44% |
-| NVIDIA/USDT:USDT | below_1h_threshold | +1.00% | +1.33% |
+| OKTASTOCK/USDT:USDT | below_1h_threshold | +3.16% | +3.46% |
+| NMR/USDT:USDT | below_1h_threshold | +2.90% | +3.20% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +2.80% | +3.10% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.28% | +2.58% |
+| NVIDIA/USDT:USDT | below_1h_threshold | +1.00% | +1.30% |
 
 ## 7. 次に見るべき不足
 
