@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-09-28T11:11:21.259181+00:00
+- generated_at: 2026-09-28T11:16:30.400755+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **15711**
+- closed shadow trades: **15712**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.91% / filled 20/20。**
-- 全期間 MARKET基準: n=15711, expectancy=+0.00%
+- 全期間 MARKET基準: n=15712, expectancy=+0.00%
 - 直近20件 MARKET基準: n=20, expectancy=+0.91%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,233.41** / 初期 $100.00 (+1133.41%)
-- 確定: 5982件 (Win 1766 / Loss 1924 / Flat 2292) / skip 6290件
+- 確定: 5982件 (Win 1766 / Loss 1924 / Flat 2292) / skip 6291件
 - 成長率目線: 平均log +0.000420 / 幾何平均 +0.042% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_BB3S_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: MARSCOIN/USDT:USDT `LIMIT_BB3S_LONG` SL_HIT account -0.50% 残高後 $1,233.41
@@ -55,45 +55,45 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$263.08** / 初期 $100.00 (+163.08%)
-- 確定: 3534件 (Win 974 / Loss 812 / Flat 1748) / skip 5588件
+- 確定: 3534件 (Win 974 / Loss 812 / Flat 1748) / skip 5589件
 - 成長率目線: 平均log +0.000274 / 幾何平均 +0.027% per trade / maxDD +3.96%
-- 次の候補: `LIMIT_1PCT_LONG` (selected_by_robust_growth_score) / robust_score -0.0343 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 次の候補: `LIMIT_1PCT_LONG` (selected_by_robust_growth_score) / robust_score -0.0164 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: QNT/USDT:USDT `LIMIT_FIB1272` EXPIRED account +0.00% 残高後 $263.08
 
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$119.27** / 初期 $100.00 (+19.27%)
-- 確定: 3280件 (Win 953 / Loss 1287 / Flat 1040) / pending 3件 / skip 3898件
+- 確定: 3281件 (Win 953 / Loss 1287 / Flat 1041) / pending 2件 / skip 3898件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000157 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
-- 最新: BATON/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $119.27
+- 最新: QNT/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $119.27
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-28T11:11:10.020631+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=82978.1
-- Funnel: target 1059 → liquid 155 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-28T11:16:17.249793+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=82982.3
+- Funnel: target 1059 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| QNT/USDT:USDT | +30.18% | $310,362,990.78 |
-| HBAR/USDT:USDT | +23.97% | $60,601,513.53 |
-| BATON/USDT:USDT | +14.36% | $1,492,008.45 |
-| MARSCOIN/USDT:USDT | +13.25% | $2,599,522.07 |
-| GRT/USDT:USDT | +11.61% | $13,041,594.40 |
+| QNT/USDT:USDT | +33.17% | $311,741,665.05 |
+| HBAR/USDT:USDT | +22.80% | $61,602,382.22 |
+| MARSCOIN/USDT:USDT | +13.66% | $2,602,466.19 |
+| GRT/USDT:USDT | +12.07% | $13,052,684.88 |
+| BATON/USDT:USDT | +12.00% | $1,494,896.05 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MUBARAK/USDT:USDT | below_1h_threshold | +3.39% | +3.33% |
-| BTW/USDT:USDT | below_1h_threshold | +1.42% | +1.36% |
-| LSK/USDT:USDT | below_1h_threshold | +0.94% | +0.88% |
-| SAGA/USDT:USDT | below_1h_threshold | +0.87% | +0.81% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +0.85% | +0.79% |
+| BTW/USDT:USDT | below_1h_threshold | +3.36% | +3.30% |
+| QNT/USDT:USDT | below_1h_threshold | +2.96% | +2.89% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +2.66% | +2.60% |
+| MONAD/USDT:USDT | below_1h_threshold | +1.54% | +1.48% |
+| SAGA/USDT:USDT | below_1h_threshold | +1.32% | +1.25% |
 
 ## 7. 次に見るべき不足
 
