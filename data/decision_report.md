@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-28T19:31:26.623031+00:00
+- generated_at: 2026-09-28T19:36:24.386345+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15743**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-28T19:31:15.382189+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.47% price=83605.7
+- 更新: 2026-09-28T19:36:13.113761+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.65% price=83453.4
 - Funnel: target 1066 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MARSCOIN/USDT:USDT | +9.99% | $3,980,588.90 |
-| CRV/USDT:USDT | +8.42% | $8,076,009.55 |
-| QNT/USDT:USDT | +8.17% | $348,517,471.73 |
-| NIULAI/USDT:USDT | +7.10% | $1,025,766.23 |
-| BTW/USDT:USDT | +6.52% | $17,796,153.31 |
+| MARSCOIN/USDT:USDT | +10.27% | $3,991,855.91 |
+| CRV/USDT:USDT | +8.81% | $8,129,786.41 |
+| QNT/USDT:USDT | +7.77% | $349,040,182.33 |
+| NIULAI/USDT:USDT | +6.34% | $1,033,405.94 |
+| GRASS/USDT:USDT | +6.11% | $5,440,793.42 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +2.53% | +3.00% |
-| ONE/USDT:USDT | below_1h_threshold | +1.87% | +2.34% |
-| NIULAI/USDT:USDT | below_1h_threshold | +1.02% | +1.49% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.58% | +1.05% |
-| NGAS/USDT:USDT | below_1h_threshold | +0.58% | +1.05% |
+| BTW/USDT:USDT | below_1h_threshold | +1.72% | +2.37% |
+| ONE/USDT:USDT | below_1h_threshold | +0.88% | +1.53% |
+| NMR/USDT:USDT | below_1h_threshold | +0.59% | +1.24% |
+| SOXL/USDT:USDT | below_1h_threshold | +0.58% | +1.24% |
+| NGAS/USDT:USDT | below_1h_threshold | +0.58% | +1.23% |
 
 ## 7. 次に見るべき不足
 
