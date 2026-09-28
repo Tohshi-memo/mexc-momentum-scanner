@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-28T15:16:28.253152+00:00
+- generated_at: 2026-09-28T15:21:32.825113+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15729**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.84** / 初期 $100.00 (+18.84%)
-- 確定: 3294件 (Win 955 / Loss 1292 / Flat 1047) / pending 6件 / skip 3903件
+- 確定: 3294件 (Win 955 / Loss 1292 / Flat 1047) / pending 6件 / skip 3904件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000169 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: SI/USDT:USDT `MARKET_LONG` SL_HIT account -0.17% 残高後 $118.84
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-28T15:16:16.871948+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=82911.8
-- Funnel: target 1066 → liquid 172 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.3 >= 65=1
+- 更新: 2026-09-28T15:21:21.011186+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.17% price=82852.7
+- Funnel: target 1066 → liquid 173 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.9 >= 65=1, 4h RSI 73.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +76.34% | $1,696,110.88 |
-| SI/USDT:USDT | +64.57% | $1,143,257.57 |
-| QNT/USDT:USDT | +27.83% | $332,248,722.42 |
-| HBAR/USDT:USDT | +25.17% | $115,050,027.30 |
-| NMR/USDT:USDT | +15.24% | $1,473,782.50 |
+| BATON/USDT:USDT | +73.24% | $1,708,939.70 |
+| SI/USDT:USDT | +62.99% | $1,145,359.96 |
+| QNT/USDT:USDT | +29.02% | $332,883,661.80 |
+| HBAR/USDT:USDT | +24.23% | $115,611,969.68 |
+| NMR/USDT:USDT | +17.15% | $1,482,323.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +4.58% | +4.67% |
-| USOIL/USDT:USDT | below_1h_threshold | +1.85% | +1.95% |
-| SI/USDT:USDT | below_1h_threshold | +1.74% | +1.83% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +1.63% | +1.72% |
-| UKOIL/USDT:USDT | below_1h_threshold | +1.60% | +1.70% |
+| SOXS/USDT:USDT | below_1h_threshold | +4.58% | +4.74% |
+| NMR/USDT:USDT | below_1h_threshold | +2.68% | +2.84% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.85% | +2.02% |
+| UKOIL/USDT:USDT | below_1h_threshold | +1.60% | +1.77% |
+| ALGO/USDT:USDT | below_1h_threshold | +1.18% | +1.34% |
 
 ## 7. 次に見るべき不足
 
