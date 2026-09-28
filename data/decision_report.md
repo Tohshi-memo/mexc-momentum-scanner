@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-28T18:51:32.698505+00:00
+- generated_at: 2026-09-28T18:56:22.741945+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15742**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-28T18:51:21.097290+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=83859.3
+- 更新: 2026-09-28T18:56:11.317523+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=83977.8
 - Funnel: target 1066 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MARSCOIN/USDT:USDT | +11.10% | $3,914,948.96 |
-| QNT/USDT:USDT | +10.14% | $346,867,741.20 |
-| CRV/USDT:USDT | +9.45% | $7,338,648.02 |
-| GRASS/USDT:USDT | +7.84% | $5,619,944.51 |
-| XDC/USDT:USDT | +5.72% | $1,181,756.44 |
+| QNT/USDT:USDT | +11.89% | $348,231,454.71 |
+| MARSCOIN/USDT:USDT | +10.40% | $3,922,844.71 |
+| CRV/USDT:USDT | +10.15% | $7,477,545.20 |
+| GRASS/USDT:USDT | +8.17% | $5,625,264.90 |
+| RUNE/USDT:USDT | +6.55% | $3,714,634.53 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ONE/USDT:USDT | below_1h_threshold | +3.43% | +3.40% |
-| XDC/USDT:USDT | below_1h_threshold | +3.07% | +3.04% |
-| CRV/USDT:USDT | below_1h_threshold | +2.74% | +2.71% |
-| XLM/USDT:USDT | below_1h_threshold | +2.19% | +2.16% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +1.70% | +1.67% |
+| CRV/USDT:USDT | below_1h_threshold | +3.48% | +3.31% |
+| XDC/USDT:USDT | below_1h_threshold | +3.10% | +2.93% |
+| ONE/USDT:USDT | below_1h_threshold | +2.34% | +2.17% |
+| XLM/USDT:USDT | below_1h_threshold | +2.15% | +1.98% |
+| LIT/USDT:USDT | below_1h_threshold | +1.82% | +1.65% |
 
 ## 7. 次に見るべき不足
 
