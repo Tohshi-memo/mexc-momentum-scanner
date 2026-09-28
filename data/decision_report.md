@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-28T16:36:43.155376+00:00
+- generated_at: 2026-09-28T16:41:32.995130+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15738**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-28T16:36:24.525951+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.69% price=83914.7
+- 更新: 2026-09-28T16:41:18.639012+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.51% price=83765.1
 - Funnel: target 1066 → liquid 173 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=46, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.9 >= 65=1, 4h RSI 67.2 >= 65=1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 65.4 >= 65=1, 4h RSI 67.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MARSCOIN/USDT:USDT | +10.12% | $3,462,995.16 |
-| QNT/USDT:USDT | +6.26% | $333,460,325.67 |
-| GRASS/USDT:USDT | +5.89% | $6,002,831.57 |
-| PUMPFUN/USDT:USDT | +5.37% | $68,859,869.47 |
-| LINK/USDT:USDT | +5.16% | $105,113,931.40 |
+| MARSCOIN/USDT:USDT | +8.90% | $3,518,567.10 |
+| QNT/USDT:USDT | +7.41% | $334,531,095.45 |
+| GRASS/USDT:USDT | +6.06% | $6,011,941.86 |
+| AZTEC/USDT:USDT | +4.97% | $1,092,761.65 |
+| PUMPFUN/USDT:USDT | +4.76% | $69,142,878.54 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PUMPFUN/USDT:USDT | below_relative_strength | +5.18% | +4.49% |
-| LINK/USDT:USDT | below_1h_threshold | +5.00% | +4.31% |
-| AZTEC/USDT:USDT | below_1h_threshold | +4.61% | +3.92% |
-| VIRTUAL/USDT:USDT | below_1h_threshold | +3.68% | +2.99% |
-| SEI/USDT:USDT | below_1h_threshold | +2.82% | +2.13% |
+| AZTEC/USDT:USDT | below_1h_threshold | +4.98% | +4.47% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +4.71% | +4.20% |
+| LINK/USDT:USDT | below_1h_threshold | +4.52% | +4.01% |
+| NMR/USDT:USDT | below_1h_threshold | +3.46% | +2.95% |
+| VIRTUAL/USDT:USDT | below_1h_threshold | +3.01% | +2.50% |
 
 ## 7. 次に見るべき不足
 
