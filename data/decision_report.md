@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-09-28T15:26:38.726606+00:00
+- generated_at: 2026-09-28T15:31:27.712428+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **15731**
+- closed shadow trades: **15732**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=15731, expectancy=+0.00%
+- 全期間 MARKET基準: n=15732, expectancy=+0.00%
 - 直近20件 MARKET基準: n=20, expectancy=-0.46%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -24,7 +24,7 @@
 | LIMIT_9PCT | 3/20 | 15.0% | +8.00% | **+1.20%** |
 | LIMIT_10PCT | 3/20 | 15.0% | +8.00% | **+1.20%** |
 | LIMIT_BB3S | 4/19 | 21.1% | +5.57% | **+1.17%** |
-| LIMIT_FIB1272 | 9/20 | 45.0% | +2.40% | **+1.08%** |
+| LIMIT_FIB1272 | 8/20 | 40.0% | +2.73% | **+1.09%** |
 | LIMIT_8PCT | 3/20 | 15.0% | +4.00% | **+0.60%** |
 
 ### シャドウ上位 LONG
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,227.24** / 初期 $100.00 (+1127.24%)
-- 確定: 5983件 (Win 1766 / Loss 1925 / Flat 2292) / skip 6309件
+- 確定: 5983件 (Win 1766 / Loss 1925 / Flat 2292) / skip 6310件
 - 成長率目線: 平均log +0.000419 / 幾何平均 +0.042% per trade / maxDD +8.46%
 - 次の候補: `MARKET_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: BATON/USDT:USDT `MARKET_LONG` SL_HIT account -0.50% 残高後 $1,227.24
@@ -55,47 +55,47 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$263.08** / 初期 $100.00 (+163.08%)
-- 確定: 3534件 (Win 974 / Loss 812 / Flat 1748) / skip 5608件
+- 確定: 3534件 (Win 974 / Loss 812 / Flat 1748) / skip 5609件
 - 成長率目線: 平均log +0.000274 / 幾何平均 +0.027% per trade / maxDD +3.96%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: QNT/USDT:USDT `LIMIT_FIB1272` EXPIRED account +0.00% 残高後 $263.08
 
 ## 5. Causal Adaptive DryRun ($100)
 
-- 残高: **$118.63** / 初期 $100.00 (+18.63%)
-- 確定: 3295件 (Win 955 / Loss 1293 / Flat 1047) / pending 6件 / skip 3905件
+- 残高: **$118.83** / 初期 $100.00 (+18.83%)
+- 確定: 3296件 (Win 956 / Loss 1293 / Flat 1047) / pending 6件 / skip 3905件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000145 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
-- 最新: BATON/USDT:USDT `MARKET_LONG` SL_HIT account -0.17% 残高後 $118.63
+- 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000189 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 最新: BATON/USDT:USDT `MARKET_LONG` EXPIRED account +0.17% 残高後 $118.83
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-28T15:26:26.010190+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=82928.4
+- 更新: 2026-09-28T15:31:17.103545+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=83001.9
 - Funnel: target 1066 → liquid 174 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.8 >= 65=1, 4h RSI 73.4 >= 65=1
+- Strict後reject: 4h RSI 70.8 >= 65=1, 4h RSI 73.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +71.54% | $1,724,786.75 |
-| SI/USDT:USDT | +63.42% | $1,150,385.96 |
-| QNT/USDT:USDT | +27.74% | $333,524,940.31 |
-| HBAR/USDT:USDT | +25.85% | $116,082,968.17 |
-| NMR/USDT:USDT | +15.38% | $1,495,968.16 |
+| BATON/USDT:USDT | +74.20% | $1,741,342.95 |
+| SI/USDT:USDT | +66.16% | $1,153,312.30 |
+| QNT/USDT:USDT | +29.28% | $333,953,351.86 |
+| HBAR/USDT:USDT | +25.70% | $116,532,174.66 |
+| NMR/USDT:USDT | +15.98% | $1,512,901.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +4.58% | +4.65% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +3.29% | +3.37% |
-| USOIL/USDT:USDT | below_1h_threshold | +1.85% | +1.93% |
-| ALGO/USDT:USDT | below_1h_threshold | +1.76% | +1.83% |
-| UKOIL/USDT:USDT | below_1h_threshold | +1.60% | +1.68% |
+| SOXS/USDT:USDT | below_1h_threshold | +4.58% | +4.56% |
+| SI/USDT:USDT | below_1h_threshold | +2.71% | +2.70% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +2.61% | +2.60% |
+| ALGO/USDT:USDT | below_1h_threshold | +2.05% | +2.03% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.85% | +1.84% |
 
 ## 7. 次に見るべき不足
 
