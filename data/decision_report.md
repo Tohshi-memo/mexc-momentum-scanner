@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-28T10:06:17.081581+00:00
+- generated_at: 2026-09-28T10:11:16.525530+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15709**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-28T10:06:06.011030+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=82777.9
-- Funnel: target 1059 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-28T10:11:05.275086+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=82709.1
+- Funnel: target 1059 → liquid 155 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| QNT/USDT:USDT | +23.88% | $304,608,661.59 |
-| HBAR/USDT:USDT | +21.03% | $39,300,941.15 |
-| BTW/USDT:USDT | +19.13% | $11,625,741.77 |
-| MARSCOIN/USDT:USDT | +13.86% | $2,580,468.23 |
-| GRT/USDT:USDT | +12.07% | $12,731,579.67 |
+| QNT/USDT:USDT | +26.12% | $306,073,323.42 |
+| HBAR/USDT:USDT | +22.37% | $39,818,154.25 |
+| BTW/USDT:USDT | +18.92% | $11,705,335.61 |
+| MARSCOIN/USDT:USDT | +12.84% | $2,588,203.47 |
+| GRT/USDT:USDT | +12.29% | $12,766,176.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BATON/USDT:USDT | below_1h_threshold | +2.69% | +2.52% |
-| QNT/USDT:USDT | below_1h_threshold | +2.55% | +2.38% |
-| PYTH/USDT:USDT | below_1h_threshold | +2.02% | +1.84% |
-| IMX/USDT:USDT | below_1h_threshold | +1.37% | +1.20% |
-| BTW/USDT:USDT | below_1h_threshold | +1.31% | +1.14% |
+| QNT/USDT:USDT | below_1h_threshold | +3.85% | +3.76% |
+| BATON/USDT:USDT | below_1h_threshold | +3.60% | +3.52% |
+| HBAR/USDT:USDT | below_1h_threshold | +1.91% | +1.83% |
+| PYTH/USDT:USDT | below_1h_threshold | +1.89% | +1.80% |
+| IMX/USDT:USDT | below_1h_threshold | +1.88% | +1.79% |
 
 ## 7. 次に見るべき不足
 
