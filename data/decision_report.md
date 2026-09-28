@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-28T15:41:34.667348+00:00
+- generated_at: 2026-09-28T15:46:27.126183+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15733**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-28T15:41:20.276974+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.25% price=83196.2
+- 更新: 2026-09-28T15:46:17.999884+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.26% price=83210.0
 - Funnel: target 1066 → liquid 174 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.5 >= 65=1, 4h RSI 73.2 >= 65=1
+- Strict後reject: 4h RSI 73.0 >= 65=1, 4h RSI 70.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +72.85% | $1,754,337.38 |
-| SI/USDT:USDT | +66.66% | $1,157,061.29 |
-| HBAR/USDT:USDT | +30.60% | $119,610,469.31 |
-| QNT/USDT:USDT | +23.95% | $335,570,704.66 |
-| MARSCOIN/USDT:USDT | +15.14% | $3,327,515.68 |
+| BATON/USDT:USDT | +69.09% | $1,761,034.71 |
+| SI/USDT:USDT | +62.77% | $1,160,911.32 |
+| HBAR/USDT:USDT | +31.80% | $121,066,794.88 |
+| QNT/USDT:USDT | +24.81% | $336,284,401.31 |
+| AZTEC/USDT:USDT | +14.67% | $1,036,469.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +4.58% | +4.33% |
-| ALGO/USDT:USDT | below_1h_threshold | +3.75% | +3.50% |
-| ZRO/USDT:USDT | below_1h_threshold | +3.47% | +3.23% |
-| HBAR/USDT:USDT | below_1h_threshold | +3.17% | +2.92% |
-| SI/USDT:USDT | below_1h_threshold | +3.03% | +2.78% |
+| SOXS/USDT:USDT | below_1h_threshold | +4.58% | +4.31% |
+| ALGO/USDT:USDT | below_1h_threshold | +3.86% | +3.60% |
+| HBAR/USDT:USDT | below_1h_threshold | +3.84% | +3.58% |
+| ZRO/USDT:USDT | below_1h_threshold | +3.47% | +3.21% |
+| MONAD/USDT:USDT | below_1h_threshold | +2.63% | +2.37% |
 
 ## 7. 次に見るべき不足
 
