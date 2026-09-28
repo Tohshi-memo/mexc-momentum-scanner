@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-28T22:41:26.265325+00:00
+- generated_at: 2026-09-28T22:46:25.137964+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15747**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-28T22:41:14.539034+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.31% price=83436.8
+- 更新: 2026-09-28T22:46:13.819952+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.35% price=83467.4
 - Funnel: target 1066 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NMR/USDT:USDT | +26.84% | $3,339,156.55 |
-| BTW/USDT:USDT | +12.82% | $18,244,661.49 |
-| CRV/USDT:USDT | +10.82% | $10,020,413.58 |
-| MARSCOIN/USDT:USDT | +8.77% | $4,302,941.39 |
-| GRASS/USDT:USDT | +7.72% | $4,726,872.56 |
+| NMR/USDT:USDT | +27.09% | $3,389,082.04 |
+| BTW/USDT:USDT | +13.66% | $18,274,942.44 |
+| CRV/USDT:USDT | +11.79% | $10,055,972.88 |
+| MARSCOIN/USDT:USDT | +7.94% | $4,314,997.97 |
+| GRASS/USDT:USDT | +7.53% | $4,732,695.43 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GRASS/USDT:USDT | below_1h_threshold | +3.13% | +2.81% |
-| ICP/USDT:USDT | below_1h_threshold | +1.94% | +1.62% |
-| JASMY/USDT:USDT | below_1h_threshold | +1.38% | +1.07% |
-| AERO/USDT:USDT | below_1h_threshold | +1.33% | +1.02% |
-| XMR/USDT:USDT | below_1h_threshold | +1.30% | +0.98% |
+| GRASS/USDT:USDT | below_1h_threshold | +2.99% | +2.64% |
+| ICP/USDT:USDT | below_1h_threshold | +2.04% | +1.68% |
+| BTW/USDT:USDT | below_1h_threshold | +1.97% | +1.62% |
+| CRV/USDT:USDT | below_1h_threshold | +1.83% | +1.48% |
+| AERO/USDT:USDT | below_1h_threshold | +1.63% | +1.28% |
 
 ## 7. 次に見るべき不足
 
