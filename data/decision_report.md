@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-28T16:46:30.465677+00:00
+- generated_at: 2026-09-28T16:51:35.111563+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15738**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.20** / 初期 $100.00 (+18.20%)
-- 確定: 3302件 (Win 957 / Loss 1298 / Flat 1047) / pending 5件 / skip 3905件
+- 確定: 3302件 (Win 957 / Loss 1298 / Flat 1047) / pending 6件 / skip 3905件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000142 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: HBAR/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $118.20
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-28T16:46:16.560266+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.42% price=83688.1
-- Funnel: target 1066 → liquid 173 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.4 >= 65=1
+- 更新: 2026-09-28T16:51:19.733611+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.28% price=83575.7
+- Funnel: target 1066 → liquid 174 → pre 50 → checked 50 → surge 4 → strict 1
+- Surge前reject: below_1h_threshold=45, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 65.2 >= 65=1, 4h RSI 67.1 >= 65=1, 4h RSI 69.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MARSCOIN/USDT:USDT | +8.82% | $3,578,557.54 |
-| GRASS/USDT:USDT | +5.64% | $6,044,187.77 |
-| QNT/USDT:USDT | +5.26% | $335,697,737.18 |
-| PUMPFUN/USDT:USDT | +4.82% | $69,463,902.38 |
-| AZTEC/USDT:USDT | +4.76% | $1,096,884.85 |
+| MARSCOIN/USDT:USDT | +8.40% | $3,627,071.27 |
+| QNT/USDT:USDT | +6.50% | $336,748,621.93 |
+| AZTEC/USDT:USDT | +6.39% | $1,106,417.50 |
+| GRASS/USDT:USDT | +5.53% | $6,051,311.88 |
+| PUMPFUN/USDT:USDT | +5.17% | $69,599,812.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| QNT/USDT:USDT | below_relative_strength | +5.34% | +4.93% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +4.78% | +4.37% |
-| AZTEC/USDT:USDT | below_1h_threshold | +4.77% | +4.35% |
-| LINK/USDT:USDT | below_1h_threshold | +4.09% | +3.67% |
-| NMR/USDT:USDT | below_1h_threshold | +3.73% | +3.31% |
+| PUMPFUN/USDT:USDT | below_relative_strength | +5.22% | +4.93% |
+| LINK/USDT:USDT | below_1h_threshold | +3.79% | +3.50% |
+| NMR/USDT:USDT | below_1h_threshold | +3.13% | +2.85% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.92% | +2.64% |
+| NIL/USDT:USDT | below_1h_threshold | +2.29% | +2.00% |
 
 ## 7. 次に見るべき不足
 
