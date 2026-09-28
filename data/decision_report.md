@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-28T09:06:16.571923+00:00
+- generated_at: 2026-09-28T09:11:21.302926+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15704**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-28T09:06:07.602445+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.26% price=82713.3
-- Funnel: target 1059 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-28T09:11:10.125748+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.39% price=82605.4
+- Funnel: target 1059 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| QNT/USDT:USDT | +26.36% | $294,278,888.09 |
-| BTW/USDT:USDT | +18.07% | $11,338,608.24 |
-| MARSCOIN/USDT:USDT | +17.62% | $2,360,732.44 |
-| HBAR/USDT:USDT | +17.00% | $26,374,817.81 |
-| BATON/USDT:USDT | +16.10% | $1,468,031.90 |
+| QNT/USDT:USDT | +25.97% | $295,947,111.11 |
+| HBAR/USDT:USDT | +18.27% | $27,960,562.82 |
+| BTW/USDT:USDT | +18.20% | $11,428,409.57 |
+| MARSCOIN/USDT:USDT | +14.24% | $2,391,803.33 |
+| BATON/USDT:USDT | +13.09% | $1,470,530.58 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BATON/USDT:USDT | below_1h_threshold | +2.86% | +3.12% |
-| BTW/USDT:USDT | below_1h_threshold | +1.63% | +1.90% |
-| UKOIL/USDT:USDT | below_1h_threshold | +1.62% | +1.89% |
-| HBAR/USDT:USDT | below_1h_threshold | +1.42% | +1.68% |
-| USOIL/USDT:USDT | below_1h_threshold | +1.31% | +1.58% |
+| HBAR/USDT:USDT | below_1h_threshold | +2.43% | +2.82% |
+| BTW/USDT:USDT | below_1h_threshold | +1.70% | +2.09% |
+| UKOIL/USDT:USDT | below_1h_threshold | +1.62% | +2.02% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.31% | +1.71% |
+| ALGO/USDT:USDT | below_1h_threshold | +1.10% | +1.49% |
 
 ## 7. 次に見るべき不足
 
