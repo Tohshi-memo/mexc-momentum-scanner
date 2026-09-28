@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-28T05:16:21.065733+00:00
+- generated_at: 2026-09-28T05:21:38.399119+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15691**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$119.60** / 初期 $100.00 (+19.60%)
-- 確定: 3261件 (Win 951 / Loss 1282 / Flat 1028) / pending 2件 / skip 3898件
+- 確定: 3261件 (Win 951 / Loss 1282 / Flat 1028) / pending 3件 / skip 3898件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000180 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: JUP/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $119.60
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-28T05:16:08.308439+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=83309.4
-- Funnel: target 1069 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-28T05:21:26.926810+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.28% price=83212.9
+- Funnel: target 1069 → liquid 147 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| QNT/USDT:USDT | +42.90% | $262,127,616.78 |
-| BATON/USDT:USDT | +23.96% | $1,255,295.58 |
-| ONE/USDT:USDT | +18.88% | $4,636,854.91 |
-| GRT/USDT:USDT | +15.16% | $10,078,798.11 |
-| SEI/USDT:USDT | +11.22% | $41,312,199.67 |
+| QNT/USDT:USDT | +42.26% | $262,444,071.20 |
+| BATON/USDT:USDT | +24.44% | $1,255,886.31 |
+| ONE/USDT:USDT | +19.03% | $4,644,835.18 |
+| GRT/USDT:USDT | +15.44% | $10,086,566.58 |
+| SEI/USDT:USDT | +11.42% | $41,379,002.40 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BATON/USDT:USDT | below_1h_threshold | +1.18% | +1.34% |
-| SOONNETWORK/USDT:USDT | below_1h_threshold | +1.03% | +1.19% |
-| BTW/USDT:USDT | below_1h_threshold | +0.44% | +0.60% |
-| GRASS/USDT:USDT | below_1h_threshold | +0.30% | +0.47% |
-| NVIDIA/USDT:USDT | below_1h_threshold | +0.20% | +0.36% |
+| BATON/USDT:USDT | below_1h_threshold | +1.43% | +1.70% |
+| SOONNETWORK/USDT:USDT | below_1h_threshold | +1.06% | +1.34% |
+| BTW/USDT:USDT | below_1h_threshold | +0.80% | +1.08% |
+| SAGA/USDT:USDT | below_1h_threshold | +0.30% | +0.58% |
+| NVIDIA/USDT:USDT | below_1h_threshold | +0.20% | +0.48% |
 
 ## 7. 次に見るべき不足
 
