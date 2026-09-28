@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-28T21:26:30.835731+00:00
+- generated_at: 2026-09-28T21:31:14.092868+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15745**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-28T21:26:22.879588+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=83449.1
+- 更新: 2026-09-28T21:31:04.910645+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=83428.8
 - Funnel: target 1066 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| QNT/USDT:USDT | +12.46% | $350,954,176.88 |
-| BTW/USDT:USDT | +10.56% | $17,970,468.48 |
-| CRV/USDT:USDT | +9.06% | $9,791,993.15 |
-| MARSCOIN/USDT:USDT | +8.34% | $4,194,618.20 |
-| RUNE/USDT:USDT | +6.49% | $4,007,121.13 |
+| QNT/USDT:USDT | +10.75% | $351,753,814.74 |
+| BTW/USDT:USDT | +10.41% | $17,998,026.12 |
+| CRV/USDT:USDT | +9.06% | $9,806,854.49 |
+| MARSCOIN/USDT:USDT | +8.32% | $4,207,217.82 |
+| RUNE/USDT:USDT | +6.60% | $4,010,508.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +1.66% | +1.72% |
-| SOONNETWORK/USDT:USDT | below_1h_threshold | +1.65% | +1.71% |
-| PYTH/USDT:USDT | below_1h_threshold | +1.26% | +1.33% |
-| KORU/USDT:USDT | below_1h_threshold | +0.34% | +0.41% |
-| OKTASTOCK/USDT:USDT | below_1h_threshold | +0.33% | +0.39% |
+| PYTH/USDT:USDT | below_1h_threshold | +1.63% | +1.72% |
+| BTW/USDT:USDT | below_1h_threshold | +1.53% | +1.62% |
+| SOONNETWORK/USDT:USDT | below_1h_threshold | +1.53% | +1.62% |
+| SAGA/USDT:USDT | below_1h_threshold | +1.12% | +1.20% |
+| RUNE/USDT:USDT | below_1h_threshold | +0.38% | +0.47% |
 
 ## 7. 次に見るべき不足
 
