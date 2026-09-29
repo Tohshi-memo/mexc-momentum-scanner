@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-29T04:01:32.693412+00:00
+- generated_at: 2026-09-29T04:06:18.875539+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15753**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-29T04:01:21.433395+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=82996.3
+- 更新: 2026-09-29T04:06:08.021269+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=83035.1
 - Funnel: target 1069 → liquid 171 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NMR/USDT:USDT | +33.74% | $8,346,787.02 |
-| BTW/USDT:USDT | +19.78% | $18,246,786.21 |
-| GRASS/USDT:USDT | +18.47% | $4,791,038.58 |
-| CRV/USDT:USDT | +16.72% | $12,538,290.63 |
-| 0G/USDT:USDT | +16.65% | $1,330,502.18 |
+| NMR/USDT:USDT | +32.71% | $8,407,689.20 |
+| BTW/USDT:USDT | +19.73% | $18,273,176.55 |
+| GRASS/USDT:USDT | +19.07% | $4,857,146.58 |
+| 0G/USDT:USDT | +17.01% | $1,333,124.57 |
+| CRV/USDT:USDT | +15.90% | $12,610,274.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NMR/USDT:USDT | below_1h_threshold | +1.24% | +1.29% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.48% | +0.53% |
-| MUU/USDT:USDT | below_1h_threshold | +0.17% | +0.22% |
-| SNXX/USDT:USDT | below_1h_threshold | +0.13% | +0.17% |
-| RUNE/USDT:USDT | below_1h_threshold | +0.10% | +0.15% |
+| QNT/USDT:USDT | below_1h_threshold | +0.97% | +0.97% |
+| PHA/USDT:USDT | below_1h_threshold | +0.57% | +0.57% |
+| NMR/USDT:USDT | below_1h_threshold | +0.51% | +0.51% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.48% | +0.49% |
+| GRASS/USDT:USDT | below_1h_threshold | +0.48% | +0.48% |
 
 ## 7. 次に見るべき不足
 
