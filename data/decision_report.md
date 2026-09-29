@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-29T11:51:34.503843+00:00
+- generated_at: 2026-09-29T11:56:27.840290+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15761**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-29T11:51:21.458536+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.55% price=84450.6
-- Funnel: target 1067 → liquid 166 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.5 >= 65=1, 4h RSI 78.6 >= 65=1, 4h RSI 67.3 >= 65=1
+- 更新: 2026-09-29T11:56:16.475880+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.48% price=84391.2
+- Funnel: target 1067 → liquid 167 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 71.7 >= 65=1, 4h RSI 78.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +34.68% | $16,718,227.56 |
-| 0G/USDT:USDT | +31.44% | $2,116,810.73 |
-| GRASS/USDT:USDT | +27.21% | $8,211,316.96 |
-| CRV/USDT:USDT | +19.88% | $19,049,462.34 |
-| SYRUP/USDT:USDT | +18.16% | $2,884,455.42 |
+| BTW/USDT:USDT | +35.18% | $16,759,431.25 |
+| 0G/USDT:USDT | +31.44% | $2,151,385.07 |
+| GRASS/USDT:USDT | +27.41% | $8,230,828.80 |
+| CRV/USDT:USDT | +19.94% | $19,090,018.62 |
+| SYRUP/USDT:USDT | +18.16% | $2,897,792.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| XPL/USDT:USDT | below_1h_threshold | +3.41% | +2.86% |
-| FET/USDT:USDT | below_1h_threshold | +2.97% | +2.42% |
-| ICP/USDT:USDT | below_1h_threshold | +2.78% | +2.23% |
-| ARB/USDT:USDT | below_1h_threshold | +2.53% | +1.97% |
-| XLM/USDT:USDT | below_1h_threshold | +2.52% | +1.96% |
+| JASMY/USDT:USDT | below_1h_threshold | +4.80% | +4.31% |
+| XPL/USDT:USDT | below_1h_threshold | +2.85% | +2.37% |
+| EIGEN/USDT:USDT | below_1h_threshold | +2.59% | +2.11% |
+| ARB/USDT:USDT | below_1h_threshold | +2.47% | +1.99% |
+| AAVE/USDT:USDT | below_1h_threshold | +2.26% | +1.78% |
 
 ## 7. 次に見るべき不足
 
