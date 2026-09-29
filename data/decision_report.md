@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-29T09:01:19.461861+00:00
+- generated_at: 2026-09-29T09:06:13.432893+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15760**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-29T09:01:08.093022+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=83789.7
+- 更新: 2026-09-29T09:06:04.139590+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=83762.4
 - Funnel: target 1067 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +31.85% | $15,187,912.88 |
-| GRASS/USDT:USDT | +24.89% | $7,920,787.43 |
-| CRV/USDT:USDT | +21.19% | $16,770,967.28 |
-| 0G/USDT:USDT | +19.89% | $1,730,945.51 |
-| NMR/USDT:USDT | +15.02% | $12,084,121.28 |
+| BTW/USDT:USDT | +31.92% | $15,267,861.13 |
+| GRASS/USDT:USDT | +23.78% | $7,946,309.85 |
+| CRV/USDT:USDT | +21.76% | $16,919,684.89 |
+| 0G/USDT:USDT | +19.89% | $1,736,674.06 |
+| AAVE/USDT:USDT | +14.85% | $23,679,920.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXL/USDT:USDT | below_1h_threshold | +0.66% | +0.72% |
-| KORU/USDT:USDT | below_1h_threshold | +0.48% | +0.54% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.43% | +0.49% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.22% | +0.28% |
-| SOONNETWORK/USDT:USDT | below_1h_threshold | +0.14% | +0.20% |
+| PHA/USDT:USDT | below_1h_threshold | +2.47% | +2.56% |
+| SOXL/USDT:USDT | below_1h_threshold | +0.66% | +0.76% |
+| ETHFI/USDT:USDT | below_1h_threshold | +0.65% | +0.75% |
+| SYRUP/USDT:USDT | below_1h_threshold | +0.51% | +0.61% |
+| KORU/USDT:USDT | below_1h_threshold | +0.48% | +0.57% |
 
 ## 7. 次に見るべき不足
 
