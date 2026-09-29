@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-29T13:11:23.418669+00:00
+- generated_at: 2026-09-29T13:16:13.624795+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15766**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-29T13:11:12.155352+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=84380.6
-- Funnel: target 1067 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-29T13:16:05.587388+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=84294.9
+- Funnel: target 1067 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 0G/USDT:USDT | +40.47% | $3,177,249.41 |
-| BTW/USDT:USDT | +36.36% | $16,371,727.79 |
-| GRASS/USDT:USDT | +29.62% | $8,347,026.23 |
-| CELO/USDT:USDT | +24.41% | $1,092,869.68 |
-| BATON/USDT:USDT | +22.78% | $1,013,176.66 |
+| 0G/USDT:USDT | +39.66% | $3,267,700.54 |
+| BTW/USDT:USDT | +36.54% | $16,412,350.12 |
+| GRASS/USDT:USDT | +29.64% | $8,389,745.29 |
+| BATON/USDT:USDT | +23.82% | $1,015,110.52 |
+| CELO/USDT:USDT | +22.21% | $1,102,492.16 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| 1000BONK/USDT:USDT | below_1h_threshold | +4.98% | +4.87% |
-| QNT/USDT:USDT | below_1h_threshold | +2.02% | +1.91% |
-| PHA/USDT:USDT | below_1h_threshold | +1.90% | +1.79% |
-| BATON/USDT:USDT | below_1h_threshold | +1.66% | +1.54% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +1.42% | +1.30% |
+| 1000BONK/USDT:USDT | below_1h_threshold | +4.66% | +4.65% |
+| BATON/USDT:USDT | below_1h_threshold | +2.58% | +2.56% |
+| QNT/USDT:USDT | below_1h_threshold | +1.99% | +1.97% |
+| PHA/USDT:USDT | below_1h_threshold | +1.63% | +1.61% |
+| WIF/USDT:USDT | below_1h_threshold | +1.08% | +1.07% |
 
 ## 7. 次に見るべき不足
 
