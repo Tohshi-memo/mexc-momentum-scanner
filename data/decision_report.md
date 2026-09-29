@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-29T19:01:38.526023+00:00
+- generated_at: 2026-09-29T19:06:33.424061+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15786**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-29T19:01:27.313662+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=83601.0
+- 更新: 2026-09-29T19:06:23.988839+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=83599.7
 - Funnel: target 1073 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SI/USDT:USDT | +17.89% | $1,298,134.75 |
-| NIL/USDT:USDT | +6.23% | $2,604,420.81 |
-| QNT/USDT:USDT | +6.06% | $321,201,061.29 |
-| SOONNETWORK/USDT:USDT | +5.94% | $2,746,193.39 |
-| USELESS/USDT:USDT | +5.56% | $3,977,985.50 |
+| SI/USDT:USDT | +18.31% | $1,315,651.20 |
+| NIL/USDT:USDT | +6.08% | $2,636,679.96 |
+| QNT/USDT:USDT | +5.65% | $323,457,375.99 |
+| SOONNETWORK/USDT:USDT | +5.55% | $2,755,970.25 |
+| USELESS/USDT:USDT | +5.41% | $4,005,817.36 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KORU/USDT:USDT | below_1h_threshold | +2.44% | +2.45% |
+| KORU/USDT:USDT | below_1h_threshold | +2.44% | +2.46% |
 | SNXX/USDT:USDT | below_1h_threshold | +1.60% | +1.62% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.86% | +0.87% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +0.56% | +0.58% |
-| METASTOCK/USDT:USDT | below_1h_threshold | +0.52% | +0.54% |
+| NEAR/USDT:USDT | below_1h_threshold | +1.30% | +1.32% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +1.09% | +1.11% |
+| PYTH/USDT:USDT | below_1h_threshold | +0.97% | +0.99% |
 
 ## 7. 次に見るべき不足
 
