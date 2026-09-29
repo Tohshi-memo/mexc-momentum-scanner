@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-29T08:06:17.524014+00:00
+- generated_at: 2026-09-29T08:11:19.318322+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15758**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-29T08:06:08.383468+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=83974.6
+- 更新: 2026-09-29T08:11:07.966973+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=84006.2
 - Funnel: target 1067 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +27.67% | $16,017,856.82 |
-| GRASS/USDT:USDT | +25.55% | $7,802,472.11 |
-| QNT/USDT:USDT | +23.49% | $304,413,886.35 |
-| CRV/USDT:USDT | +19.88% | $16,171,735.83 |
-| PHA/USDT:USDT | +18.75% | $1,505,708.62 |
+| BTW/USDT:USDT | +29.06% | $16,075,984.08 |
+| GRASS/USDT:USDT | +25.17% | $7,832,903.16 |
+| QNT/USDT:USDT | +23.43% | $305,793,487.93 |
+| CRV/USDT:USDT | +20.18% | $16,197,009.67 |
+| PHA/USDT:USDT | +18.90% | $1,522,826.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| QNT/USDT:USDT | below_1h_threshold | +3.16% | +3.12% |
-| PHA/USDT:USDT | below_1h_threshold | +2.35% | +2.31% |
-| AAVE/USDT:USDT | below_1h_threshold | +1.54% | +1.50% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.05% | +1.01% |
-| SNXX/USDT:USDT | below_1h_threshold | +0.73% | +0.69% |
+| QNT/USDT:USDT | below_1h_threshold | +2.82% | +2.74% |
+| PHA/USDT:USDT | below_1h_threshold | +2.72% | +2.64% |
+| BTW/USDT:USDT | below_1h_threshold | +1.23% | +1.15% |
+| XDP/USDT:USDT | below_1h_threshold | +1.17% | +1.09% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.05% | +0.97% |
 
 ## 7. 次に見るべき不足
 
