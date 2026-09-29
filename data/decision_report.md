@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-29T12:56:37.604353+00:00
+- generated_at: 2026-09-29T13:01:25.803788+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15766**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-29T12:56:25.510500+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=84284.1
-- Funnel: target 1067 → liquid 169 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.3 >= 65=1, 4h RSI 83.5 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-29T13:01:16.792346+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=84310.6
+- Funnel: target 1067 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 0G/USDT:USDT | +42.50% | $2,928,744.28 |
-| BTW/USDT:USDT | +36.40% | $16,785,764.88 |
-| GRASS/USDT:USDT | +29.13% | $8,381,615.30 |
-| BATON/USDT:USDT | +24.22% | $1,044,618.87 |
-| CELO/USDT:USDT | +23.78% | $1,090,861.45 |
+| 0G/USDT:USDT | +41.73% | $3,034,413.38 |
+| BTW/USDT:USDT | +36.36% | $16,316,205.66 |
+| GRASS/USDT:USDT | +28.97% | $8,261,619.28 |
+| CELO/USDT:USDT | +23.62% | $1,083,883.53 |
+| BATON/USDT:USDT | +20.98% | $1,007,638.29 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| POL/USDT:USDT | below_1h_threshold | +4.59% | +4.62% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +2.98% | +3.01% |
-| PHA/USDT:USDT | below_1h_threshold | +2.46% | +2.50% |
-| XRP/USDT:USDT | below_1h_threshold | +2.04% | +2.07% |
-| GRASS/USDT:USDT | below_1h_threshold | +2.03% | +2.07% |
+| 1000BONK/USDT:USDT | below_1h_threshold | +0.48% | +0.45% |
+| BATON/USDT:USDT | below_1h_threshold | +0.44% | +0.41% |
+| JASMY/USDT:USDT | below_1h_threshold | +0.31% | +0.28% |
+| 0G/USDT:USDT | below_1h_threshold | +0.20% | +0.17% |
+| SYRUP/USDT:USDT | below_1h_threshold | +0.20% | +0.17% |
 
 ## 7. 次に見るべき不足
 
