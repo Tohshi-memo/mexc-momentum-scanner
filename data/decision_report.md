@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-29T18:41:35.035970+00:00
+- generated_at: 2026-09-29T18:46:46.398810+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15784**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 3947件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 3948件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000154 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-29T18:41:20.887107+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.65% price=83578.4
-- Funnel: target 1073 → liquid 165 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.7 >= 65=1, 4h RSI 68.4 >= 65=1
+- 更新: 2026-09-29T18:46:31.992661+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.71% price=83632.1
+- Funnel: target 1073 → liquid 165 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=46, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 74.9 >= 65=1, 4h RSI 69.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SI/USDT:USDT | +15.95% | $1,217,100.73 |
-| QNT/USDT:USDT | +7.49% | $326,172,020.72 |
-| NIL/USDT:USDT | +4.94% | $2,697,310.85 |
-| SOONNETWORK/USDT:USDT | +4.62% | $2,744,986.41 |
-| NMR/USDT:USDT | +4.13% | $15,297,089.77 |
+| SI/USDT:USDT | +17.22% | $1,240,491.22 |
+| QNT/USDT:USDT | +10.41% | $328,604,630.89 |
+| NIL/USDT:USDT | +5.90% | $2,723,728.34 |
+| NMR/USDT:USDT | +4.85% | $15,333,434.77 |
+| USELESS/USDT:USDT | +4.45% | $4,020,240.87 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NEAR/USDT:USDT | below_relative_strength | +5.29% | +4.65% |
-| NIL/USDT:USDT | below_1h_threshold | +4.16% | +3.52% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +3.95% | +3.31% |
-| USELESS/USDT:USDT | below_1h_threshold | +3.41% | +2.77% |
-| PENGU/USDT:USDT | below_1h_threshold | +3.00% | +2.35% |
+| NIL/USDT:USDT | below_relative_strength | +5.13% | +4.42% |
+| USELESS/USDT:USDT | below_1h_threshold | +4.58% | +3.87% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +3.76% | +3.05% |
+| PENGU/USDT:USDT | below_1h_threshold | +3.74% | +3.03% |
+| JUP/USDT:USDT | below_1h_threshold | +3.00% | +2.29% |
 
 ## 7. 次に見るべき不足
 
