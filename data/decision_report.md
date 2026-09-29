@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-29T15:41:38.188394+00:00
+- generated_at: 2026-09-29T15:46:42.014258+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15774**
 
@@ -63,38 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 3938件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 3940件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000141 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-29T15:41:24.223502+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.64% price=83171.1
-- Funnel: target 1073 → liquid 166 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-29T15:46:26.962439+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.65% price=83167.4
+- Funnel: target 1073 → liquid 166 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 65.8 >= 65=1, 4h RSI 70.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 0G/USDT:USDT | +36.54% | $4,903,464.82 |
-| BTW/USDT:USDT | +35.84% | $16,699,712.85 |
-| GRASS/USDT:USDT | +23.78% | $9,216,879.74 |
-| CRV/USDT:USDT | +22.07% | $22,681,841.92 |
-| BATON/USDT:USDT | +19.64% | $1,070,508.29 |
+| 0G/USDT:USDT | +40.88% | $4,966,850.85 |
+| BTW/USDT:USDT | +36.01% | $16,741,670.84 |
+| BATON/USDT:USDT | +24.05% | $1,075,007.82 |
+| GRASS/USDT:USDT | +23.96% | $9,268,430.55 |
+| CRV/USDT:USDT | +21.86% | $22,738,125.73 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| QNT/USDT:USDT | below_1h_threshold | +4.94% | +5.58% |
-| SOONNETWORK/USDT:USDT | below_1h_threshold | +2.13% | +2.77% |
-| KORU/USDT:USDT | below_1h_threshold | +1.76% | +2.40% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +1.60% | +2.24% |
-| MUU/USDT:USDT | below_1h_threshold | +1.32% | +1.96% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +1.84% | +2.49% |
+| KORU/USDT:USDT | below_1h_threshold | +1.76% | +2.41% |
+| BATON/USDT:USDT | below_1h_threshold | +1.49% | +2.14% |
+| MUU/USDT:USDT | below_1h_threshold | +1.32% | +1.97% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.23% | +1.88% |
 
 ## 7. 次に見るべき不足
 
