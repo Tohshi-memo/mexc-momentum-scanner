@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-29T22:06:21.218307+00:00
+- generated_at: 2026-09-29T22:11:23.052920+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15803**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-29T22:06:12.151390+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=83511.2
+- 更新: 2026-09-29T22:11:13.354235+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=83560.8
 - Funnel: target 1073 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SI/USDT:USDT | +104.33% | $5,006,047.61 |
-| GRASS/USDT:USDT | +8.93% | $12,402,607.58 |
-| TRB/USDT:USDT | +6.60% | $1,416,143.74 |
-| PHA/USDT:USDT | +6.58% | $2,760,096.74 |
-| SOONNETWORK/USDT:USDT | +5.81% | $2,968,536.07 |
+| SI/USDT:USDT | +97.97% | $5,055,081.19 |
+| GRASS/USDT:USDT | +8.47% | $12,421,250.46 |
+| PHA/USDT:USDT | +8.28% | $2,785,076.28 |
+| TRB/USDT:USDT | +6.32% | $1,506,110.79 |
+| BTW/USDT:USDT | +5.97% | $14,236,566.26 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SI/USDT:USDT | below_1h_threshold | +2.51% | +2.46% |
-| PHA/USDT:USDT | below_1h_threshold | +1.84% | +1.79% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +0.72% | +0.67% |
-| AVAX/USDT:USDT | below_1h_threshold | +0.60% | +0.55% |
-| SAND/USDT:USDT | below_1h_threshold | +0.43% | +0.39% |
+| PHA/USDT:USDT | below_1h_threshold | +3.75% | +3.64% |
+| NMR/USDT:USDT | below_1h_threshold | +0.66% | +0.55% |
+| INJ/USDT:USDT | below_1h_threshold | +0.60% | +0.49% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +0.59% | +0.48% |
+| USELESS/USDT:USDT | below_1h_threshold | +0.55% | +0.44% |
 
 ## 7. 次に見るべき不足
 
