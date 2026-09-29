@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-29T01:51:06.094035+00:00
+- generated_at: 2026-09-29T01:56:24.276090+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15752**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 3909件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 3910件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `見送り` (no_strategy_passed_causal_filters) / causal_score n/a / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-29T01:50:57.790546+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.25% price=82930.4
-- Funnel: target 1069 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-29T01:56:15.199096+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=82992.8
+- Funnel: target 1069 → liquid 175 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 85.7 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NMR/USDT:USDT | +30.76% | $6,277,263.97 |
-| 0G/USDT:USDT | +16.45% | $1,209,684.13 |
-| BTW/USDT:USDT | +14.89% | $18,663,571.99 |
-| CRV/USDT:USDT | +14.50% | $11,175,250.68 |
-| XDP/USDT:USDT | +13.49% | $1,703,799.90 |
+| NMR/USDT:USDT | +32.86% | $6,327,863.81 |
+| BTW/USDT:USDT | +16.44% | $18,700,881.54 |
+| 0G/USDT:USDT | +15.96% | $1,216,607.10 |
+| CRV/USDT:USDT | +15.20% | $11,257,967.12 |
+| XDP/USDT:USDT | +13.25% | $1,705,377.95 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NMR/USDT:USDT | below_1h_threshold | +4.10% | +4.35% |
-| XDP/USDT:USDT | below_1h_threshold | +1.86% | +2.11% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +1.74% | +1.99% |
-| CRV/USDT:USDT | below_1h_threshold | +1.32% | +1.57% |
-| XAU/USDT:USDT | below_1h_threshold | +0.37% | +0.62% |
+| CRV/USDT:USDT | below_1h_threshold | +1.80% | +1.98% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +1.74% | +1.91% |
+| XDP/USDT:USDT | below_1h_threshold | +1.73% | +1.91% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +0.60% | +0.77% |
+| PHA/USDT:USDT | below_1h_threshold | +0.57% | +0.75% |
 
 ## 7. 次に見るべき不足
 
