@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-29T00:41:17.716373+00:00
+- generated_at: 2026-09-29T00:46:06.566361+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15751**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-29T00:41:08.825593+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=83474.0
+- 更新: 2026-09-29T00:45:59.015573+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=83455.6
 - Funnel: target 1066 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NMR/USDT:USDT | +29.35% | $5,582,726.37 |
-| BTW/USDT:USDT | +16.91% | $18,560,479.72 |
-| CRV/USDT:USDT | +15.01% | $10,423,135.13 |
-| SYRUP/USDT:USDT | +11.69% | $1,001,388.95 |
-| LINK/USDT:USDT | +8.74% | $160,396,310.00 |
+| NMR/USDT:USDT | +29.77% | $5,603,078.31 |
+| BTW/USDT:USDT | +17.06% | $18,569,782.87 |
+| CRV/USDT:USDT | +14.25% | $10,438,561.73 |
+| SYRUP/USDT:USDT | +12.31% | $1,004,652.30 |
+| LINK/USDT:USDT | +8.50% | $161,850,288.36 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SYRUP/USDT:USDT | below_1h_threshold | +3.17% | +3.16% |
-| AVAX/USDT:USDT | below_1h_threshold | +2.35% | +2.33% |
-| JUP/USDT:USDT | below_1h_threshold | +1.92% | +1.91% |
-| RUNE/USDT:USDT | below_1h_threshold | +1.73% | +1.72% |
-| LINK/USDT:USDT | below_1h_threshold | +1.56% | +1.54% |
+| SYRUP/USDT:USDT | below_1h_threshold | +3.43% | +3.44% |
+| AVAX/USDT:USDT | below_1h_threshold | +2.16% | +2.16% |
+| JUP/USDT:USDT | below_1h_threshold | +2.05% | +2.05% |
+| PHA/USDT:USDT | below_1h_threshold | +2.03% | +2.04% |
+| RUNE/USDT:USDT | below_1h_threshold | +1.68% | +1.69% |
 
 ## 7. 次に見るべき不足
 
