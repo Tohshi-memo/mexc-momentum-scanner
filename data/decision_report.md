@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-29T14:46:40.171416+00:00
+- generated_at: 2026-09-29T14:51:29.756210+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15770**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-29T14:46:25.126168+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.29% price=83917.8
-- Funnel: target 1073 → liquid 169 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.0 >= 65=1, 4h RSI 68.8 >= 65=1
+- 更新: 2026-09-29T14:51:20.503785+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.54% price=83710.7
+- Funnel: target 1073 → liquid 170 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 0G/USDT:USDT | +41.16% | $4,467,000.33 |
-| BTW/USDT:USDT | +35.36% | $16,633,666.64 |
-| GRASS/USDT:USDT | +27.76% | $9,066,458.16 |
-| CRV/USDT:USDT | +22.65% | $21,260,289.41 |
-| AAVE/USDT:USDT | +20.19% | $57,386,636.51 |
+| 0G/USDT:USDT | +41.49% | $4,490,509.46 |
+| BTW/USDT:USDT | +35.28% | $16,696,640.00 |
+| GRASS/USDT:USDT | +28.40% | $9,082,858.22 |
+| CRV/USDT:USDT | +23.50% | $21,753,278.04 |
+| AAVE/USDT:USDT | +19.91% | $57,988,736.97 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| OPENAI/USDT:USDT | below_1h_threshold | +4.51% | +4.81% |
-| WLD/USDT:USDT | below_1h_threshold | +4.07% | +4.36% |
-| NIGHT/USDT:USDT | below_1h_threshold | +3.47% | +3.77% |
-| ZRO/USDT:USDT | below_1h_threshold | +2.56% | +2.86% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +2.48% | +2.77% |
+| ETHFI/USDT:USDT | below_1h_threshold | +4.86% | +5.41% |
+| NIGHT/USDT:USDT | below_1h_threshold | +4.28% | +4.82% |
+| OPENAI/USDT:USDT | below_1h_threshold | +3.78% | +4.33% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +3.33% | +3.87% |
+| WLD/USDT:USDT | below_1h_threshold | +2.97% | +3.51% |
 
 ## 7. 次に見るべき不足
 
