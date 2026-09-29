@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-29T22:41:26.485250+00:00
+- generated_at: 2026-09-29T22:46:23.397905+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15803**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 3964件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 3965件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000236 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-29T22:41:17.325864+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=83530.6
-- Funnel: target 1073 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-29T22:46:12.961500+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=83590.2
+- Funnel: target 1073 → liquid 169 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SI/USDT:USDT | +102.10% | $5,479,517.91 |
-| GRASS/USDT:USDT | +10.10% | $12,577,137.28 |
-| PHA/USDT:USDT | +8.41% | $3,057,532.34 |
-| BTW/USDT:USDT | +5.96% | $14,423,059.45 |
-| SOONNETWORK/USDT:USDT | +4.80% | $3,013,535.20 |
+| SI/USDT:USDT | +97.81% | $5,528,299.77 |
+| STONK/USDT:USDT | +14.98% | $1,006,086.48 |
+| PHA/USDT:USDT | +10.22% | $3,087,782.78 |
+| GRASS/USDT:USDT | +10.21% | $12,598,427.54 |
+| BTW/USDT:USDT | +6.36% | $14,513,866.39 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PHA/USDT:USDT | below_1h_threshold | +3.86% | +3.79% |
-| GRASS/USDT:USDT | below_1h_threshold | +0.97% | +0.89% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +0.72% | +0.65% |
-| USELESS/USDT:USDT | below_1h_threshold | +0.57% | +0.50% |
-| NMR/USDT:USDT | below_1h_threshold | +0.52% | +0.45% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.43% | +1.29% |
+| GRASS/USDT:USDT | below_1h_threshold | +1.18% | +1.04% |
+| USELESS/USDT:USDT | below_1h_threshold | +0.91% | +0.77% |
+| BTW/USDT:USDT | below_1h_threshold | +0.56% | +0.42% |
+| NMR/USDT:USDT | below_1h_threshold | +0.54% | +0.40% |
 
 ## 7. 次に見るべき不足
 
