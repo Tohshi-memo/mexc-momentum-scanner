@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-29T02:31:16.332815+00:00
+- generated_at: 2026-09-29T02:36:16.678575+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15752**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-29T02:31:07.217302+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=82987.0
-- Funnel: target 1069 → liquid 173 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-29T02:36:05.658729+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=82910.0
+- Funnel: target 1069 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NMR/USDT:USDT | +31.96% | $6,708,990.42 |
-| XDP/USDT:USDT | +19.51% | $1,843,120.13 |
-| BTW/USDT:USDT | +17.23% | $18,633,441.12 |
-| 0G/USDT:USDT | +13.69% | $1,261,262.09 |
-| CRV/USDT:USDT | +13.62% | $11,603,691.05 |
+| NMR/USDT:USDT | +28.74% | $6,760,529.32 |
+| BTW/USDT:USDT | +16.99% | $18,643,163.08 |
+| XDP/USDT:USDT | +16.62% | $1,876,218.64 |
+| CRV/USDT:USDT | +13.43% | $11,629,944.45 |
+| 0G/USDT:USDT | +11.83% | $1,275,375.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KORU/USDT:USDT | below_1h_threshold | +1.47% | +1.52% |
-| PHA/USDT:USDT | below_1h_threshold | +1.32% | +1.37% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +1.30% | +1.35% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +1.21% | +1.26% |
-| SAGA/USDT:USDT | below_1h_threshold | +0.86% | +0.92% |
+| XDP/USDT:USDT | below_1h_threshold | +2.33% | +2.48% |
+| KORU/USDT:USDT | below_1h_threshold | +1.47% | +1.62% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +1.30% | +1.44% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.66% | +0.80% |
+| SAGA/USDT:USDT | below_1h_threshold | +0.64% | +0.78% |
 
 ## 7. 次に見るべき不足
 
