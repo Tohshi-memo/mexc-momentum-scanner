@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-29T15:56:46.841960+00:00
+- generated_at: 2026-09-29T16:01:32.992726+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15775**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-29T15:56:34.601924+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.86% price=82993.2
-- Funnel: target 1073 → liquid 167 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.7 >= 65=1, 4h RSI 65.5 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-29T16:01:21.449611+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=83069.5
+- Funnel: target 1073 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 0G/USDT:USDT | +39.46% | $5,024,251.61 |
-| BTW/USDT:USDT | +36.03% | $16,836,806.89 |
-| GRASS/USDT:USDT | +24.80% | $9,325,136.02 |
-| CRV/USDT:USDT | +21.52% | $23,046,616.68 |
-| BATON/USDT:USDT | +19.29% | $1,084,818.92 |
+| NIL/USDT:USDT | +0.57% | $2,811,574.48 |
+| QNT/USDT:USDT | +0.38% | $323,468,419.15 |
+| SOONNETWORK/USDT:USDT | +0.38% | $1,932,064.15 |
+| PONS/USDT:USDT | +0.37% | $3,511,052.23 |
+| ONE/USDT:USDT | +0.36% | $2,926,063.23 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KORU/USDT:USDT | below_1h_threshold | +1.76% | +2.61% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +1.70% | +2.55% |
-| MUU/USDT:USDT | below_1h_threshold | +1.32% | +2.18% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +1.28% | +2.13% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.23% | +2.08% |
+| QNT/USDT:USDT | below_1h_threshold | +0.67% | +0.63% |
+| MONAD/USDT:USDT | below_1h_threshold | +0.58% | +0.55% |
+| NIL/USDT:USDT | below_1h_threshold | +0.58% | +0.54% |
+| JTO/USDT:USDT | below_1h_threshold | +0.45% | +0.42% |
+| FET/USDT:USDT | below_1h_threshold | +0.45% | +0.41% |
 
 ## 7. 次に見るべき不足
 
