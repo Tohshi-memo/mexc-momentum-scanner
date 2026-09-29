@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-29T00:51:15.757306+00:00
+- generated_at: 2026-09-29T00:56:15.578871+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15751**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-29T00:51:06.409263+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.19% price=83301.8
-- Funnel: target 1066 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-29T00:56:06.725072+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.24% price=83257.8
+- Funnel: target 1066 → liquid 174 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NMR/USDT:USDT | +29.67% | $5,631,545.36 |
-| BTW/USDT:USDT | +17.04% | $18,598,168.62 |
-| CRV/USDT:USDT | +13.62% | $10,492,242.03 |
-| SYRUP/USDT:USDT | +12.87% | $1,040,086.02 |
-| XDP/USDT:USDT | +9.20% | $1,612,236.12 |
+| NMR/USDT:USDT | +25.95% | $5,688,372.65 |
+| 0G/USDT:USDT | +21.51% | $1,022,970.74 |
+| BTW/USDT:USDT | +17.10% | $18,615,487.75 |
+| CRV/USDT:USDT | +13.31% | $10,558,022.99 |
+| SYRUP/USDT:USDT | +12.59% | $1,061,286.60 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| XDP/USDT:USDT | below_1h_threshold | +4.14% | +4.33% |
-| SYRUP/USDT:USDT | below_1h_threshold | +4.04% | +4.23% |
-| PHA/USDT:USDT | below_1h_threshold | +1.55% | +1.74% |
-| AVAX/USDT:USDT | below_1h_threshold | +1.41% | +1.60% |
-| RUNE/USDT:USDT | below_1h_threshold | +1.28% | +1.47% |
+| SYRUP/USDT:USDT | below_1h_threshold | +3.69% | +3.94% |
+| 0G/USDT:USDT | below_1h_threshold | +3.56% | +3.80% |
+| INJ/USDT:USDT | below_1h_threshold | +1.70% | +1.94% |
+| RUNE/USDT:USDT | below_1h_threshold | +1.32% | +1.56% |
+| PHA/USDT:USDT | below_1h_threshold | +1.20% | +1.45% |
 
 ## 7. 次に見るべき不足
 
