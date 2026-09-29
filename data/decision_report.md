@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-29T17:16:32.345359+00:00
+- generated_at: 2026-09-29T17:21:32.938874+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15779**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-29T17:16:21.213803+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=83114.0
+- 更新: 2026-09-29T17:21:21.952077+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=83099.9
 - Funnel: target 1073 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOONNETWORK/USDT:USDT | +5.76% | $2,279,266.02 |
-| NIGHT/USDT:USDT | +1.95% | $1,380,376.26 |
-| NIL/USDT:USDT | +1.94% | $2,635,508.38 |
-| XMR/USDT:USDT | +1.74% | $2,965,894.66 |
-| NMR/USDT:USDT | +1.59% | $14,489,597.26 |
+| SOONNETWORK/USDT:USDT | +6.25% | $2,325,243.42 |
+| NIGHT/USDT:USDT | +2.33% | $1,387,732.99 |
+| PHA/USDT:USDT | +1.94% | $2,467,408.55 |
+| NMR/USDT:USDT | +1.77% | $14,508,833.08 |
+| XMR/USDT:USDT | +1.53% | $2,995,980.33 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIGHT/USDT:USDT | below_1h_threshold | +1.79% | +1.69% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.68% | +1.57% |
-| BR/USDT:USDT | below_1h_threshold | +0.57% | +0.46% |
-| INJ/USDT:USDT | below_1h_threshold | +0.42% | +0.31% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.41% | +0.30% |
+| NIGHT/USDT:USDT | below_1h_threshold | +2.17% | +2.08% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.68% | +1.59% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.41% | +0.31% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.37% | +0.28% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.37% | +0.27% |
 
 ## 7. 次に見るべき不足
 
