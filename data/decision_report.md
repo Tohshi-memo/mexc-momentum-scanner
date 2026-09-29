@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-29T08:31:27.378571+00:00
+- generated_at: 2026-09-29T08:36:25.784911+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15758**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 3917件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 3918件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `見送り` (no_strategy_passed_causal_filters) / causal_score n/a / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-29T08:31:15.987255+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=84081.7
+- 更新: 2026-09-29T08:36:14.226164+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=83988.7
 - Funnel: target 1067 → liquid 166 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.4 >= 65=1
+- Strict後reject: 4h RSI 67.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +29.64% | $16,271,684.65 |
-| QNT/USDT:USDT | +25.87% | $312,219,865.92 |
-| GRASS/USDT:USDT | +25.77% | $7,979,987.47 |
-| CRV/USDT:USDT | +21.73% | $16,495,236.77 |
-| 0G/USDT:USDT | +19.20% | $1,714,828.49 |
+| BTW/USDT:USDT | +30.18% | $16,311,784.68 |
+| GRASS/USDT:USDT | +25.95% | $7,993,694.87 |
+| CRV/USDT:USDT | +21.31% | $16,604,401.90 |
+| QNT/USDT:USDT | +20.59% | $314,418,500.46 |
+| 0G/USDT:USDT | +18.43% | $1,733,362.63 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| 0G/USDT:USDT | below_1h_threshold | +2.26% | +2.09% |
-| BTW/USDT:USDT | below_1h_threshold | +1.83% | +1.66% |
-| UNI/USDT:USDT | below_1h_threshold | +1.80% | +1.63% |
-| AAVE/USDT:USDT | below_1h_threshold | +1.72% | +1.55% |
-| GALA/USDT:USDT | below_1h_threshold | +1.60% | +1.43% |
+| BTW/USDT:USDT | below_1h_threshold | +2.24% | +2.18% |
+| XDP/USDT:USDT | below_1h_threshold | +2.20% | +2.15% |
+| 0G/USDT:USDT | below_1h_threshold | +1.63% | +1.58% |
+| ETHFI/USDT:USDT | below_1h_threshold | +1.61% | +1.56% |
+| QNT/USDT:USDT | below_1h_threshold | +1.46% | +1.40% |
 
 ## 7. 次に見るべき不足
 
