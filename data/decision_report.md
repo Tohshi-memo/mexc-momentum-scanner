@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-29T10:01:23.381060+00:00
+- generated_at: 2026-09-29T10:06:25.836237+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15760**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-29T10:01:12.191781+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=84203.4
-- Funnel: target 1067 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-29T10:06:14.695277+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=84153.3
+- Funnel: target 1067 → liquid 163 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +29.89% | $16,378,817.09 |
-| GRASS/USDT:USDT | +27.78% | $7,913,955.00 |
-| 0G/USDT:USDT | +20.90% | $1,799,330.99 |
-| CRV/USDT:USDT | +20.15% | $17,719,808.05 |
-| QNT/USDT:USDT | +18.87% | $312,042,650.38 |
+| GRASS/USDT:USDT | +28.66% | $7,970,237.05 |
+| BTW/USDT:USDT | +28.44% | $16,561,758.06 |
+| 0G/USDT:USDT | +21.63% | $1,817,493.48 |
+| CRV/USDT:USDT | +21.31% | $17,830,559.90 |
+| QNT/USDT:USDT | +17.89% | $313,860,921.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SITMSTOCK/USDT:USDT | below_1h_threshold | +0.93% | +0.94% |
-| NMR/USDT:USDT | below_1h_threshold | +0.80% | +0.81% |
-| BTW/USDT:USDT | below_1h_threshold | +0.63% | +0.64% |
-| XDP/USDT:USDT | below_1h_threshold | +0.60% | +0.61% |
-| 0G/USDT:USDT | below_1h_threshold | +0.51% | +0.52% |
+| GRASS/USDT:USDT | below_1h_threshold | +1.29% | +1.37% |
+| NMR/USDT:USDT | below_1h_threshold | +1.15% | +1.22% |
+| 0G/USDT:USDT | below_1h_threshold | +1.11% | +1.18% |
+| XDP/USDT:USDT | below_1h_threshold | +0.85% | +0.93% |
+| CRV/USDT:USDT | below_1h_threshold | +0.83% | +0.91% |
 
 ## 7. 次に見るべき不足
 
