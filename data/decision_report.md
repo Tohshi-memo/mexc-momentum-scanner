@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-29T16:51:33.793593+00:00
+- generated_at: 2026-09-29T16:56:41.859245+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15776**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-29T16:51:20.608067+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=82991.1
-- Funnel: target 1073 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-29T16:56:31.835278+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.16% price=82908.8
+- Funnel: target 1073 → liquid 167 → pre 50 → checked 49 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=1
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +3.88% | $1,015,305.18 |
-| NIL/USDT:USDT | +2.98% | $2,890,064.61 |
-| NMR/USDT:USDT | +2.44% | $14,463,009.04 |
-| PHA/USDT:USDT | +2.06% | $2,406,080.62 |
-| JUP/USDT:USDT | +1.78% | $12,250,325.43 |
+| PHA/USDT:USDT | +2.80% | $2,431,840.93 |
+| NIL/USDT:USDT | +2.58% | $2,897,369.51 |
+| NMR/USDT:USDT | +1.99% | $14,522,638.74 |
+| SOXS/USDT:USDT | +1.77% | $41,672,657.64 |
+| SOONNETWORK/USDT:USDT | +1.49% | $2,150,120.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BATON/USDT:USDT | below_1h_threshold | +3.89% | +3.95% |
-| NIL/USDT:USDT | below_1h_threshold | +2.98% | +3.04% |
-| NMR/USDT:USDT | below_1h_threshold | +2.48% | +2.53% |
-| PHA/USDT:USDT | below_1h_threshold | +1.92% | +1.98% |
-| SOONNETWORK/USDT:USDT | below_1h_threshold | +1.81% | +1.87% |
+| PHA/USDT:USDT | below_1h_threshold | +2.81% | +2.97% |
+| NIL/USDT:USDT | below_1h_threshold | +2.55% | +2.70% |
+| NMR/USDT:USDT | below_1h_threshold | +1.99% | +2.15% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.80% | +1.96% |
+| SOONNETWORK/USDT:USDT | below_1h_threshold | +1.50% | +1.66% |
 
 ## 7. 次に見るべき不足
 
