@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-29T16:26:26.836138+00:00
+- generated_at: 2026-09-29T16:31:28.658885+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15775**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 3941件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 3942件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000132 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-29T16:26:15.415387+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.18% price=83186.3
-- Funnel: target 1073 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-29T16:31:14.977010+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=83152.8
+- Funnel: target 1073 → liquid 165 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| UAI/USDT:USDT | +3.49% | $1,052,036.41 |
-| NIL/USDT:USDT | +2.45% | $2,830,016.99 |
-| NMR/USDT:USDT | +2.04% | $14,195,679.46 |
-| JUP/USDT:USDT | +2.03% | $11,331,491.75 |
-| GRASS/USDT:USDT | +1.56% | $9,319,846.05 |
+| NMR/USDT:USDT | +5.28% | $14,254,305.27 |
+| UAI/USDT:USDT | +3.90% | $1,064,072.18 |
+| NIL/USDT:USDT | +2.59% | $2,850,645.09 |
+| JUP/USDT:USDT | +2.06% | $11,373,183.46 |
+| SOONNETWORK/USDT:USDT | +1.75% | $2,111,984.81 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UAI/USDT:USDT | below_1h_threshold | +3.43% | +3.25% |
-| NIL/USDT:USDT | below_1h_threshold | +2.46% | +2.28% |
-| NMR/USDT:USDT | below_1h_threshold | +2.05% | +1.87% |
-| JUP/USDT:USDT | below_1h_threshold | +2.00% | +1.83% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.80% | +1.63% |
+| UAI/USDT:USDT | below_1h_threshold | +3.90% | +3.77% |
+| NIL/USDT:USDT | below_1h_threshold | +2.60% | +2.46% |
+| JUP/USDT:USDT | below_1h_threshold | +2.07% | +1.93% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.80% | +1.67% |
+| SOONNETWORK/USDT:USDT | below_1h_threshold | +1.76% | +1.62% |
 
 ## 7. 次に見るべき不足
 
