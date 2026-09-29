@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-29T14:01:28.726469+00:00
+- generated_at: 2026-09-29T14:06:35.903614+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15769**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-29T14:01:18.104463+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=84219.3
-- Funnel: target 1067 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-29T14:06:25.213075+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.26% price=83949.9
+- Funnel: target 1073 → liquid 163 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 0G/USDT:USDT | +40.11% | $3,833,127.66 |
-| BTW/USDT:USDT | +34.77% | $16,208,900.02 |
-| GRASS/USDT:USDT | +29.09% | $8,744,060.89 |
-| CELO/USDT:USDT | +23.15% | $1,138,611.76 |
-| CRV/USDT:USDT | +21.37% | $20,534,836.82 |
+| 0G/USDT:USDT | +42.09% | $3,895,552.03 |
+| BTW/USDT:USDT | +34.57% | $16,282,357.27 |
+| GRASS/USDT:USDT | +28.84% | $8,843,590.41 |
+| CELO/USDT:USDT | +22.95% | $1,148,228.70 |
+| CRV/USDT:USDT | +21.43% | $20,598,145.86 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXL/USDT:USDT | below_1h_threshold | +2.43% | +2.37% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +2.17% | +2.10% |
-| MUU/USDT:USDT | below_1h_threshold | +0.65% | +0.59% |
-| 0G/USDT:USDT | below_1h_threshold | +0.55% | +0.49% |
-| NIGHT/USDT:USDT | below_1h_threshold | +0.48% | +0.42% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.43% | +2.69% |
+| 0G/USDT:USDT | below_1h_threshold | +2.27% | +2.52% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +2.17% | +2.42% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +2.16% | +2.42% |
+| PHA/USDT:USDT | below_1h_threshold | +1.15% | +1.41% |
 
 ## 7. 次に見るべき不足
 
