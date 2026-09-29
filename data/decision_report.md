@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-29T09:46:22.124360+00:00
+- generated_at: 2026-09-29T09:51:11.302109+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15760**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-29T09:46:10.670301+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=83956.6
-- Funnel: target 1067 → liquid 167 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.4 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-29T09:51:03.553457+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.46% price=84229.9
+- Funnel: target 1067 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GRASS/USDT:USDT | +27.03% | $8,110,905.44 |
-| BTW/USDT:USDT | +26.54% | $16,098,443.06 |
-| CRV/USDT:USDT | +20.85% | $17,596,549.52 |
-| 0G/USDT:USDT | +20.70% | $1,801,263.24 |
-| SYRUP/USDT:USDT | +16.74% | $2,058,653.24 |
+| BTW/USDT:USDT | +31.22% | $16,490,886.53 |
+| GRASS/USDT:USDT | +26.10% | $8,120,480.40 |
+| CRV/USDT:USDT | +20.61% | $17,707,942.24 |
+| 0G/USDT:USDT | +20.09% | $1,809,338.20 |
+| NMR/USDT:USDT | +16.28% | $12,391,677.17 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TRB/USDT:USDT | below_1h_threshold | +2.24% | +2.10% |
-| CVX/USDT:USDT | below_1h_threshold | +2.06% | +1.92% |
-| DOT/USDT:USDT | below_1h_threshold | +1.77% | +1.64% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +1.51% | +1.37% |
-| GALA/USDT:USDT | below_1h_threshold | +1.37% | +1.23% |
+| SYRUP/USDT:USDT | below_1h_threshold | +4.94% | +4.47% |
+| TRB/USDT:USDT | below_1h_threshold | +2.90% | +2.44% |
+| CVX/USDT:USDT | below_1h_threshold | +2.10% | +1.64% |
+| GALA/USDT:USDT | below_1h_threshold | +2.03% | +1.57% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +2.01% | +1.55% |
 
 ## 7. 次に見るべき不足
 
