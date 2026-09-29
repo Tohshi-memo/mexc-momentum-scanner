@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-29T10:46:21.204225+00:00
+- generated_at: 2026-09-29T10:51:30.574360+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15760**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 3921件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 3922件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `見送り` (no_strategy_passed_causal_filters) / causal_score n/a / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-29T10:46:09.361026+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.30% price=83960.3
-- Funnel: target 1067 → liquid 166 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.2 >= 65=1
+- 更新: 2026-09-29T10:51:15.997614+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.26% price=83994.7
+- Funnel: target 1067 → liquid 166 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 66.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +33.40% | $17,230,924.09 |
-| GRASS/USDT:USDT | +24.95% | $8,221,048.55 |
-| 0G/USDT:USDT | +23.17% | $1,900,546.53 |
-| NMR/USDT:USDT | +19.70% | $12,962,517.25 |
-| CRV/USDT:USDT | +19.45% | $18,624,964.51 |
+| BTW/USDT:USDT | +35.73% | $17,510,990.34 |
+| GRASS/USDT:USDT | +25.90% | $8,251,164.94 |
+| 0G/USDT:USDT | +23.17% | $1,905,805.82 |
+| CRV/USDT:USDT | +20.12% | $18,669,214.16 |
+| NMR/USDT:USDT | +19.95% | $13,088,312.96 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +3.35% | +3.65% |
-| NMR/USDT:USDT | below_1h_threshold | +3.10% | +3.40% |
-| 0G/USDT:USDT | below_1h_threshold | +2.39% | +2.69% |
-| SKY/USDT:USDT | below_1h_threshold | +1.34% | +1.64% |
-| JASMY/USDT:USDT | below_1h_threshold | +1.00% | +1.30% |
+| NMR/USDT:USDT | below_1h_threshold | +3.11% | +3.37% |
+| 0G/USDT:USDT | below_1h_threshold | +2.39% | +2.65% |
+| SKY/USDT:USDT | below_1h_threshold | +1.38% | +1.64% |
+| RUNE/USDT:USDT | below_1h_threshold | +1.02% | +1.28% |
+| CRO/USDT:USDT | below_1h_threshold | +1.02% | +1.28% |
 
 ## 7. 次に見るべき不足
 
