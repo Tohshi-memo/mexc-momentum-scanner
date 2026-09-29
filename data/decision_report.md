@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-29T20:06:12.131481+00:00
+- generated_at: 2026-09-29T20:11:25.185589+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15794**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-29T20:06:04.314095+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=83523.3
+- 更新: 2026-09-29T20:11:13.708015+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=83492.5
 - Funnel: target 1073 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SI/USDT:USDT | +70.86% | $2,083,378.02 |
-| GRASS/USDT:USDT | +10.67% | $10,530,639.28 |
-| SOONNETWORK/USDT:USDT | +5.50% | $2,858,265.67 |
-| QNT/USDT:USDT | +4.96% | $328,114,765.17 |
-| NMR/USDT:USDT | +4.51% | $15,582,842.36 |
+| SI/USDT:USDT | +82.61% | $2,170,004.23 |
+| GRASS/USDT:USDT | +8.65% | $10,615,941.91 |
+| QNT/USDT:USDT | +7.07% | $329,223,072.33 |
+| SOONNETWORK/USDT:USDT | +5.06% | $2,874,619.76 |
+| NIL/USDT:USDT | +4.44% | $2,510,517.23 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +1.12% | +1.17% |
-| SAND/USDT:USDT | below_1h_threshold | +0.81% | +0.85% |
-| NIGHT/USDT:USDT | below_1h_threshold | +0.69% | +0.74% |
-| METASTOCK/USDT:USDT | below_1h_threshold | +0.66% | +0.70% |
-| ICP/USDT:USDT | below_1h_threshold | +0.64% | +0.69% |
+| JASMY/USDT:USDT | below_1h_threshold | +1.53% | +1.61% |
+| ICP/USDT:USDT | below_1h_threshold | +1.20% | +1.28% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.12% | +1.20% |
+| SAND/USDT:USDT | below_1h_threshold | +1.04% | +1.12% |
+| BTW/USDT:USDT | below_1h_threshold | +0.91% | +0.99% |
 
 ## 7. 次に見るべき不足
 
