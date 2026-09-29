@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-29T12:26:24.210185+00:00
+- generated_at: 2026-09-29T12:31:33.481324+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15765**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 3925件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 3926件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000076 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-29T12:26:12.559489+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.26% price=84094.1
-- Funnel: target 1067 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-29T12:31:21.956796+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.16% price=84175.1
+- Funnel: target 1067 → liquid 167 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.6 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +36.66% | $16,471,963.99 |
-| 0G/USDT:USDT | +36.34% | $2,444,485.12 |
-| GRASS/USDT:USDT | +26.99% | $8,212,509.91 |
-| CELO/USDT:USDT | +22.40% | $1,020,588.79 |
-| CRV/USDT:USDT | +21.43% | $19,461,017.24 |
+| 0G/USDT:USDT | +36.70% | $2,472,497.48 |
+| BTW/USDT:USDT | +36.10% | $16,563,263.40 |
+| GRASS/USDT:USDT | +27.58% | $8,237,831.65 |
+| BATON/USDT:USDT | +24.81% | $1,000,394.53 |
+| CELO/USDT:USDT | +22.62% | $1,039,436.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| POL/USDT:USDT | below_1h_threshold | +3.32% | +3.58% |
-| 0G/USDT:USDT | below_1h_threshold | +3.29% | +3.54% |
-| BTW/USDT:USDT | below_1h_threshold | +1.93% | +2.19% |
-| QNT/USDT:USDT | below_1h_threshold | +1.86% | +2.11% |
-| CRV/USDT:USDT | below_1h_threshold | +1.71% | +1.96% |
+| 0G/USDT:USDT | below_1h_threshold | +3.75% | +3.91% |
+| POL/USDT:USDT | below_1h_threshold | +3.53% | +3.69% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +2.34% | +2.50% |
+| PHA/USDT:USDT | below_1h_threshold | +1.92% | +2.08% |
+| CRV/USDT:USDT | below_1h_threshold | +1.58% | +1.74% |
 
 ## 7. 次に見るべき不足
 
