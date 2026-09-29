@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-09-29T04:26:22.486630+00:00
+- generated_at: 2026-09-29T04:31:33.734695+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **15754**
+- closed shadow trades: **15755**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=15754, expectancy=+0.01%
+- 全期間 MARKET基準: n=15755, expectancy=+0.00%
 - 直近20件 MARKET基準: n=20, expectancy=+0.19%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -31,11 +31,11 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_4PCT_LONG | 14/20 | 70.0% | +2.09% | **+1.46%** |
-| LIMIT_5PCT_LONG | 11/20 | 55.0% | +2.28% | **+1.25%** |
-| LIMIT_3PCT_LONG | 15/20 | 75.0% | +0.92% | **+0.69%** |
+| LIMIT_4PCT_LONG | 13/20 | 65.0% | +1.63% | **+1.06%** |
+| LIMIT_3PCT_LONG | 14/20 | 70.0% | +1.27% | **+0.89%** |
+| LIMIT_5PCT_LONG | 10/20 | 50.0% | +1.70% | **+0.85%** |
 | LIMIT_BB3S_LONG | 3/3 | 100.0% | +0.49% | **+0.49%** |
-| LIMIT_7PCT_LONG | 7/20 | 35.0% | +1.10% | **+0.38%** |
+| LIMIT_FIB1272_LONG | 11/20 | 55.0% | +0.81% | **+0.45%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,227.24** / 初期 $100.00 (+1127.24%)
-- 確定: 5984件 (Win 1766 / Loss 1925 / Flat 2293) / skip 6331件
+- 確定: 5984件 (Win 1766 / Loss 1925 / Flat 2293) / skip 6332件
 - 成長率目線: 平均log +0.000419 / 幾何平均 +0.042% per trade / maxDD +8.46%
 - 次の候補: `見送り` (no_strategy_passed_safety_filters) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: NMR/USDT:USDT `LIMIT_8PCT_LONG` EXPIRED account +0.00% 残高後 $1,227.24
@@ -55,7 +55,7 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$263.08** / 初期 $100.00 (+163.08%)
-- 確定: 3534件 (Win 974 / Loss 812 / Flat 1748) / skip 5631件
+- 確定: 3534件 (Win 974 / Loss 812 / Flat 1748) / skip 5632件
 - 成長率目線: 平均log +0.000274 / 幾何平均 +0.027% per trade / maxDD +3.96%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: QNT/USDT:USDT `LIMIT_FIB1272` EXPIRED account +0.00% 残高後 $263.08
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-29T04:26:10.981884+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.22% price=83216.8
+- 更新: 2026-09-29T04:31:20.209918+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.16% price=83172.3
 - Funnel: target 1069 → liquid 171 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.2 >= 65=1
+- Strict後reject: 4h RSI 67.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GRASS/USDT:USDT | +27.10% | $5,524,907.63 |
-| NMR/USDT:USDT | +25.58% | $8,944,974.25 |
-| BTW/USDT:USDT | +21.06% | $18,360,643.41 |
-| 0G/USDT:USDT | +18.39% | $1,363,185.04 |
-| CRV/USDT:USDT | +17.84% | $12,787,204.20 |
+| NMR/USDT:USDT | +27.32% | $9,032,030.90 |
+| GRASS/USDT:USDT | +25.35% | $5,662,699.18 |
+| BTW/USDT:USDT | +21.17% | $18,419,633.52 |
+| 0G/USDT:USDT | +19.04% | $1,374,020.74 |
+| CRV/USDT:USDT | +16.90% | $12,854,055.19 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PHA/USDT:USDT | below_1h_threshold | +3.60% | +3.38% |
-| QNT/USDT:USDT | below_1h_threshold | +3.01% | +2.79% |
-| XDP/USDT:USDT | below_1h_threshold | +2.77% | +2.55% |
-| VVV/USDT:USDT | below_1h_threshold | +2.22% | +2.00% |
-| PYTH/USDT:USDT | below_1h_threshold | +2.05% | +1.84% |
+| QNT/USDT:USDT | below_1h_threshold | +3.62% | +3.46% |
+| VVV/USDT:USDT | below_1h_threshold | +2.50% | +2.33% |
+| PHA/USDT:USDT | below_1h_threshold | +2.45% | +2.28% |
+| XDP/USDT:USDT | below_1h_threshold | +2.13% | +1.97% |
+| PYTH/USDT:USDT | below_1h_threshold | +1.96% | +1.80% |
 
 ## 7. 次に見るべき不足
 
