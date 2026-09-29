@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-29T12:51:30.572226+00:00
+- generated_at: 2026-09-29T12:56:37.604353+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15766**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-29T12:51:18.592892+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=84228.2
+- 更新: 2026-09-29T12:56:25.510500+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=84284.1
 - Funnel: target 1067 → liquid 169 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.3 >= 65=1, 4h RSI 83.2 >= 65=1
+- Strict後reject: 4h RSI 73.3 >= 65=1, 4h RSI 83.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 0G/USDT:USDT | +40.76% | $2,809,735.31 |
-| BTW/USDT:USDT | +36.30% | $16,764,067.80 |
-| GRASS/USDT:USDT | +27.76% | $8,332,622.06 |
-| BATON/USDT:USDT | +26.83% | $1,033,202.29 |
-| CELO/USDT:USDT | +22.63% | $1,087,611.55 |
+| 0G/USDT:USDT | +42.50% | $2,928,744.28 |
+| BTW/USDT:USDT | +36.40% | $16,785,764.88 |
+| GRASS/USDT:USDT | +29.13% | $8,381,615.30 |
+| BATON/USDT:USDT | +24.22% | $1,044,618.87 |
+| CELO/USDT:USDT | +23.78% | $1,090,861.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| POL/USDT:USDT | below_1h_threshold | +3.90% | +4.00% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +2.44% | +2.54% |
-| XRP/USDT:USDT | below_1h_threshold | +2.12% | +2.22% |
-| PHA/USDT:USDT | below_1h_threshold | +1.81% | +1.91% |
-| BTW/USDT:USDT | below_1h_threshold | +1.63% | +1.73% |
+| POL/USDT:USDT | below_1h_threshold | +4.59% | +4.62% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +2.98% | +3.01% |
+| PHA/USDT:USDT | below_1h_threshold | +2.46% | +2.50% |
+| XRP/USDT:USDT | below_1h_threshold | +2.04% | +2.07% |
+| GRASS/USDT:USDT | below_1h_threshold | +2.03% | +2.07% |
 
 ## 7. 次に見るべき不足
 
