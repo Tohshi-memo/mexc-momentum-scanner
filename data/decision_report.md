@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-30T18:16:27.911040+00:00
+- generated_at: 2026-09-30T18:22:18.324306+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15861**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-30T18:16:18.960479+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=83956.2
+- 更新: 2026-09-30T18:22:08.995838+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=83911.0
 - Funnel: target 1097 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +5.94% | $14,204,897.18 |
-| STX/USDT:USDT | +5.15% | $1,764,781.02 |
-| MONAD/USDT:USDT | +5.11% | $1,663,220.08 |
-| NIGHT/USDT:USDT | +4.66% | $3,598,551.07 |
-| US/USDT:USDT | +3.61% | $1,048,488.57 |
+| BTW/USDT:USDT | +6.10% | $14,266,229.00 |
+| MONAD/USDT:USDT | +4.93% | $1,680,708.60 |
+| STX/USDT:USDT | +4.86% | $1,804,394.96 |
+| NIGHT/USDT:USDT | +4.52% | $3,634,908.82 |
+| US/USDT:USDT | +3.81% | $1,050,350.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +0.73% | +0.79% |
-| TESLA/USDT:USDT | below_1h_threshold | +0.73% | +0.79% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.71% | +0.77% |
-| ACNSTOCK/USDT:USDT | below_1h_threshold | +0.70% | +0.76% |
-| MOVR/USDT:USDT | below_1h_threshold | +0.70% | +0.76% |
+| MOVR/USDT:USDT | below_1h_threshold | +1.15% | +1.26% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +0.73% | +0.84% |
+| TESLA/USDT:USDT | below_1h_threshold | +0.73% | +0.84% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.71% | +0.83% |
+| BTW/USDT:USDT | below_1h_threshold | +0.69% | +0.80% |
 
 ## 7. 次に見るべき不足
 
