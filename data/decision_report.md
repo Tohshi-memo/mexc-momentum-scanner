@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-30T13:51:29.961762+00:00
+- generated_at: 2026-09-30T13:56:19.020450+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15852**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4012件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4013件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000253 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-30T13:51:16.032531+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.88% price=84510.0
-- Funnel: target 1092 → liquid 177 → pre 50 → checked 50 → surge 1 → strict 0
+- 更新: 2026-09-30T13:56:09.610099+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.86% price=84529.3
+- Funnel: target 1092 → liquid 178 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.5 >= 65=1
+- Strict後reject: 4h RSI 91.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SI/USDT:USDT | +162.27% | $10,349,319.63 |
-| ARK/USDT:USDT | +63.29% | $4,006,421.52 |
-| MOVR/USDT:USDT | +48.44% | $3,160,695.48 |
-| QNT/USDT:USDT | +22.58% | $387,044,498.01 |
-| SOONNETWORK/USDT:USDT | +21.90% | $6,236,708.94 |
+| SI/USDT:USDT | +150.23% | $10,470,621.94 |
+| ARK/USDT:USDT | +70.49% | $4,274,445.62 |
+| MOVR/USDT:USDT | +49.23% | $3,166,020.39 |
+| SOONNETWORK/USDT:USDT | +20.64% | $6,253,061.25 |
+| NIL/USDT:USDT | +19.97% | $3,447,642.89 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ARK/USDT:USDT | below_1h_threshold | +3.25% | +4.13% |
-| RAY/USDT:USDT | below_1h_threshold | +3.06% | +3.94% |
-| ENA/USDT:USDT | below_1h_threshold | +2.83% | +3.70% |
-| WLD/USDT:USDT | below_1h_threshold | +2.35% | +3.23% |
-| ZRO/USDT:USDT | below_1h_threshold | +1.97% | +2.85% |
+| ENA/USDT:USDT | below_1h_threshold | +4.72% | +5.58% |
+| SOONNETWORK/USDT:USDT | below_1h_threshold | +4.08% | +4.94% |
+| RAY/USDT:USDT | below_1h_threshold | +3.25% | +4.11% |
+| ZRO/USDT:USDT | below_1h_threshold | +1.41% | +2.27% |
+| WLD/USDT:USDT | below_1h_threshold | +1.27% | +2.12% |
 
 ## 7. 次に見るべき不足
 
