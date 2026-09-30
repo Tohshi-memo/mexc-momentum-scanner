@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-30T16:56:29.500219+00:00
+- generated_at: 2026-09-30T17:01:25.079102+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15861**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-30T16:56:17.947431+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.25% price=84315.2
-- Funnel: target 1097 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-30T17:01:14.151738+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=84284.0
+- Funnel: target 1097 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MARSCOIN/USDT:USDT | +4.43% | $1,376,910.08 |
-| MOVR/USDT:USDT | +4.19% | $3,822,402.73 |
-| GRASS/USDT:USDT | +4.06% | $8,011,698.42 |
-| BTW/USDT:USDT | +3.80% | $14,786,037.81 |
-| PUMPFUN/USDT:USDT | +3.54% | $46,084,472.94 |
+| GRASS/USDT:USDT | +4.23% | $7,511,637.20 |
+| MARSCOIN/USDT:USDT | +3.91% | $1,296,125.63 |
+| BTW/USDT:USDT | +3.74% | $14,053,018.76 |
+| HYPE/USDT:USDT | +3.08% | $95,289,550.23 |
+| STX/USDT:USDT | +3.02% | $1,022,699.29 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MARSCOIN/USDT:USDT | below_1h_threshold | +4.43% | +4.18% |
-| MOVR/USDT:USDT | below_1h_threshold | +4.19% | +3.94% |
-| GRASS/USDT:USDT | below_1h_threshold | +4.07% | +3.82% |
-| BTW/USDT:USDT | below_1h_threshold | +3.81% | +3.56% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +3.54% | +3.29% |
+| STX/USDT:USDT | below_1h_threshold | +1.32% | +1.36% |
+| BERA/USDT:USDT | below_1h_threshold | +0.38% | +0.42% |
+| PHA/USDT:USDT | below_1h_threshold | +0.35% | +0.39% |
+| NMR/USDT:USDT | below_1h_threshold | +0.34% | +0.39% |
+| NIGHT/USDT:USDT | below_1h_threshold | +0.27% | +0.31% |
 
 ## 7. 次に見るべき不足
 
