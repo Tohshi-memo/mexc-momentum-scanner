@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-30T17:06:32.356298+00:00
+- generated_at: 2026-09-30T17:11:20.635106+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15861**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-30T17:06:20.689894+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=84273.8
+- 更新: 2026-09-30T17:11:12.011775+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=84306.5
 - Funnel: target 1097 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GRASS/USDT:USDT | +4.60% | $7,545,646.73 |
-| MOVR/USDT:USDT | +4.32% | $3,837,328.64 |
-| BTW/USDT:USDT | +4.29% | $14,088,107.07 |
-| PUMPFUN/USDT:USDT | +3.96% | $45,002,471.38 |
-| HYPE/USDT:USDT | +3.60% | $98,158,189.98 |
+| BTW/USDT:USDT | +5.26% | $14,122,712.76 |
+| PUMPFUN/USDT:USDT | +4.82% | $45,492,653.22 |
+| ETHFI/USDT:USDT | +4.81% | $7,015,161.57 |
+| GRASS/USDT:USDT | +4.43% | $7,566,755.68 |
+| HYPE/USDT:USDT | +3.92% | $99,377,800.16 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MOVR/USDT:USDT | below_1h_threshold | +1.68% | +1.74% |
-| ETHFI/USDT:USDT | below_1h_threshold | +1.11% | +1.17% |
-| RUNE/USDT:USDT | below_1h_threshold | +1.06% | +1.11% |
-| STX/USDT:USDT | below_1h_threshold | +1.03% | +1.08% |
-| QNT/USDT:USDT | below_1h_threshold | +0.92% | +0.97% |
+| ETHFI/USDT:USDT | below_1h_threshold | +2.85% | +2.86% |
+| BTW/USDT:USDT | below_1h_threshold | +1.74% | +1.76% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.67% | +1.68% |
+| QNT/USDT:USDT | below_1h_threshold | +1.53% | +1.55% |
+| RUNE/USDT:USDT | below_1h_threshold | +1.37% | +1.38% |
 
 ## 7. 次に見るべき不足
 
