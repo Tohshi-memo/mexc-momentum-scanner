@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-30T13:06:09.666392+00:00
+- generated_at: 2026-09-30T13:11:25.966944+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15850**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-30T13:06:01.384700+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=85232.6
-- Funnel: target 1092 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-30T13:11:14.787723+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.21% price=85440.7
+- Funnel: target 1092 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SI/USDT:USDT | +163.36% | $9,798,034.56 |
-| ARK/USDT:USDT | +60.22% | $3,401,932.19 |
-| MOVR/USDT:USDT | +48.78% | $3,077,952.50 |
-| QNT/USDT:USDT | +22.36% | $370,188,330.74 |
-| NIL/USDT:USDT | +21.14% | $3,218,159.36 |
+| SI/USDT:USDT | +167.20% | $9,852,171.92 |
+| ARK/USDT:USDT | +58.56% | $3,517,257.16 |
+| MOVR/USDT:USDT | +50.99% | $3,087,928.42 |
+| NIL/USDT:USDT | +21.25% | $3,250,197.89 |
+| STONK/USDT:USDT | +21.14% | $1,508,932.91 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +2.37% | +2.40% |
-| ARK/USDT:USDT | below_1h_threshold | +1.64% | +1.67% |
-| WLD/USDT:USDT | below_1h_threshold | +1.03% | +1.06% |
-| ASTER/USDT:USDT | below_1h_threshold | +1.00% | +1.04% |
-| ICP/USDT:USDT | below_1h_threshold | +1.00% | +1.03% |
+| WLD/USDT:USDT | below_1h_threshold | +3.71% | +3.50% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +2.37% | +2.16% |
+| ZEN/USDT:USDT | below_1h_threshold | +1.60% | +1.39% |
+| RAY/USDT:USDT | below_1h_threshold | +1.46% | +1.25% |
+| SUI/USDT:USDT | below_1h_threshold | +1.33% | +1.12% |
 
 ## 7. 次に見るべき不足
 
