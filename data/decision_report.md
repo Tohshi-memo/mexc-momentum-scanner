@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-30T01:46:32.911487+00:00
+- generated_at: 2026-09-30T01:51:33.058886+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15806**
 
@@ -63,38 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 3968件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 3969件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000154 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-30T01:46:19.161232+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=83415.3
-- Funnel: target 1073 → liquid 170 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-30T01:51:16.524985+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=83412.5
+- Funnel: target 1073 → liquid 170 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SI/USDT:USDT | +70.77% | $6,323,259.84 |
-| STONK/USDT:USDT | +27.87% | $1,141,686.43 |
-| QNT/USDT:USDT | +11.12% | $342,592,968.51 |
-| GRASS/USDT:USDT | +9.15% | $13,071,713.28 |
-| BTW/USDT:USDT | +7.62% | $14,828,652.28 |
+| SI/USDT:USDT | +71.78% | $6,335,024.11 |
+| STONK/USDT:USDT | +29.27% | $1,146,413.36 |
+| QNT/USDT:USDT | +13.63% | $343,726,909.30 |
+| GRASS/USDT:USDT | +9.22% | $13,075,402.66 |
+| BTW/USDT:USDT | +7.46% | $14,887,958.95 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PONS/USDT:USDT | below_1h_threshold | +4.76% | +4.76% |
-| COMP/USDT:USDT | below_1h_threshold | +4.03% | +4.03% |
-| 1000BONK/USDT:USDT | below_1h_threshold | +2.72% | +2.72% |
-| TRB/USDT:USDT | below_1h_threshold | +2.43% | +2.43% |
-| QNT/USDT:USDT | below_1h_threshold | +2.18% | +2.18% |
+| QNT/USDT:USDT | below_1h_threshold | +4.66% | +4.67% |
+| COMP/USDT:USDT | below_1h_threshold | +4.15% | +4.15% |
+| 1000BONK/USDT:USDT | below_1h_threshold | +2.78% | +2.78% |
+| PYTH/USDT:USDT | below_1h_threshold | +2.24% | +2.25% |
+| RENDER/USDT:USDT | below_1h_threshold | +2.20% | +2.20% |
 
 ## 7. 次に見るべき不足
 
