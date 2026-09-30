@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-30T06:26:26.908771+00:00
+- generated_at: 2026-09-30T06:31:27.454434+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15815**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-30T06:26:18.884864+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.36% price=83043.9
+- 更新: 2026-09-30T06:31:16.169586+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.32% price=83079.9
 - Funnel: target 1073 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SI/USDT:USDT | +76.80% | $7,029,708.23 |
-| STONK/USDT:USDT | +20.02% | $1,254,723.21 |
-| QNT/USDT:USDT | +17.06% | $357,215,021.39 |
-| PHA/USDT:USDT | +13.03% | $3,856,262.33 |
-| SOONNETWORK/USDT:USDT | +10.35% | $4,803,625.14 |
+| SI/USDT:USDT | +75.32% | $7,038,980.24 |
+| STONK/USDT:USDT | +19.14% | $1,262,192.06 |
+| QNT/USDT:USDT | +17.79% | $357,833,751.49 |
+| PHA/USDT:USDT | +14.13% | $3,875,688.39 |
+| SOONNETWORK/USDT:USDT | +11.31% | $4,815,329.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| QNT/USDT:USDT | below_1h_threshold | +2.83% | +3.20% |
-| AXS/USDT:USDT | below_1h_threshold | +0.81% | +1.17% |
-| AKE/USDT:USDT | below_1h_threshold | +0.73% | +1.10% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.72% | +1.08% |
-| FCXSTOCK/USDT:USDT | below_1h_threshold | +0.54% | +0.90% |
+| QNT/USDT:USDT | below_1h_threshold | +3.50% | +3.83% |
+| PHA/USDT:USDT | below_1h_threshold | +1.03% | +1.35% |
+| AKE/USDT:USDT | below_1h_threshold | +0.77% | +1.09% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.72% | +1.04% |
+| AXS/USDT:USDT | below_1h_threshold | +0.58% | +0.90% |
 
 ## 7. 次に見るべき不足
 
