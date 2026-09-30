@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-30T16:01:29.614046+00:00
+- generated_at: 2026-09-30T16:06:17.522979+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15859**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-30T16:01:16.340255+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=84099.8
+- 更新: 2026-09-30T16:06:09.009612+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.19% price=84260.0
 - Funnel: target 1097 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MOVR/USDT:USDT | +0.97% | $3,604,195.35 |
-| ARK/USDT:USDT | +0.59% | $6,076,332.24 |
-| AKE/USDT:USDT | +0.46% | $7,774,741.82 |
-| BERA/USDT:USDT | +0.46% | $1,318,076.12 |
-| CT/USDT:USDT | +0.27% | $1,173,170.92 |
+| SI/USDT:USDT | +4.90% | $11,482,043.96 |
+| CT/USDT:USDT | +2.87% | $1,237,970.32 |
+| AKE/USDT:USDT | +2.51% | $7,816,598.92 |
+| MOVR/USDT:USDT | +1.87% | $3,653,662.26 |
+| MONAD/USDT:USDT | +1.65% | $1,451,619.03 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MOVR/USDT:USDT | below_1h_threshold | +1.14% | +1.14% |
-| METASTOCK/USDT:USDT | below_1h_threshold | +1.05% | +1.05% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +0.72% | +0.73% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.53% | +0.53% |
-| ARK/USDT:USDT | below_1h_threshold | +0.50% | +0.50% |
+| SI/USDT:USDT | below_1h_threshold | +4.56% | +4.38% |
+| AKE/USDT:USDT | below_1h_threshold | +2.38% | +2.19% |
+| MOVR/USDT:USDT | below_1h_threshold | +1.87% | +1.69% |
+| MONAD/USDT:USDT | below_1h_threshold | +1.66% | +1.47% |
+| STONK/USDT:USDT | below_1h_threshold | +1.38% | +1.19% |
 
 ## 7. 次に見るべき不足
 
