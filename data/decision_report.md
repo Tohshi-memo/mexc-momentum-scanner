@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-30T14:06:27.520301+00:00
+- generated_at: 2026-09-30T14:11:16.149456+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15853**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-30T14:06:15.995888+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=84475.2
-- Funnel: target 1092 → liquid 173 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.6 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-30T14:11:07.060460+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.45% price=84229.1
+- Funnel: target 1092 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SI/USDT:USDT | +171.36% | $10,521,446.58 |
-| ARK/USDT:USDT | +65.60% | $4,514,844.34 |
-| MOVR/USDT:USDT | +50.80% | $3,172,580.83 |
-| SOONNETWORK/USDT:USDT | +22.13% | $6,190,283.80 |
-| NIL/USDT:USDT | +18.93% | $3,516,417.83 |
+| SI/USDT:USDT | +161.34% | $10,584,239.29 |
+| ARK/USDT:USDT | +64.55% | $4,605,623.54 |
+| MOVR/USDT:USDT | +50.43% | $3,182,320.61 |
+| SOONNETWORK/USDT:USDT | +23.37% | $6,215,484.41 |
+| NIL/USDT:USDT | +22.49% | $3,546,320.91 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MOVR/USDT:USDT | below_1h_threshold | +1.89% | +2.05% |
-| ARK/USDT:USDT | below_1h_threshold | +1.59% | +1.74% |
-| ZEC/USDT:USDT | below_1h_threshold | +1.38% | +1.54% |
-| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +1.35% | +1.50% |
-| NIGHT/USDT:USDT | below_1h_threshold | +1.24% | +1.40% |
+| NIL/USDT:USDT | below_1h_threshold | +3.72% | +4.17% |
+| MOVR/USDT:USDT | below_1h_threshold | +1.59% | +2.04% |
+| QNT/USDT:USDT | below_1h_threshold | +1.51% | +1.96% |
+| ARK/USDT:USDT | below_1h_threshold | +1.36% | +1.81% |
+| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +1.35% | +1.79% |
 
 ## 7. 次に見るべき不足
 
