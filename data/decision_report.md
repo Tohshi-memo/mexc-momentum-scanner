@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-30T22:36:27.577609+00:00
+- generated_at: 2026-09-30T22:41:32.990770+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15865**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-30T22:36:18.581244+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=83794.6
+- 更新: 2026-09-30T22:41:22.422951+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=83793.4
 - Funnel: target 1097 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MOVR/USDT:USDT | +22.76% | $6,056,442.10 |
-| STX/USDT:USDT | +9.63% | $2,631,026.82 |
-| MONAD/USDT:USDT | +9.33% | $2,419,847.93 |
-| NIGHT/USDT:USDT | +9.32% | $4,838,144.35 |
-| PUMPFUN/USDT:USDT | +4.48% | $41,127,401.37 |
+| MOVR/USDT:USDT | +23.56% | $6,075,517.54 |
+| MONAD/USDT:USDT | +9.76% | $2,432,402.20 |
+| STX/USDT:USDT | +9.17% | $2,741,403.00 |
+| NIGHT/USDT:USDT | +8.58% | $4,854,625.70 |
+| PUMPFUN/USDT:USDT | +4.47% | $41,170,979.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZRO/USDT:USDT | below_1h_threshold | +3.79% | +3.70% |
-| STX/USDT:USDT | below_1h_threshold | +3.58% | +3.49% |
-| CT/USDT:USDT | below_1h_threshold | +2.56% | +2.47% |
-| NEAR/USDT:USDT | below_1h_threshold | +2.03% | +1.94% |
-| NIGHT/USDT:USDT | below_1h_threshold | +1.84% | +1.75% |
+| STX/USDT:USDT | below_1h_threshold | +3.11% | +3.02% |
+| ZRO/USDT:USDT | below_1h_threshold | +3.00% | +2.91% |
+| CT/USDT:USDT | below_1h_threshold | +2.92% | +2.83% |
+| VIRTUAL/USDT:USDT | below_1h_threshold | +2.11% | +2.02% |
+| NEAR/USDT:USDT | below_1h_threshold | +2.08% | +2.00% |
 
 ## 7. 次に見るべき不足
 
