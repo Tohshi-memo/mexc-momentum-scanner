@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-30T13:41:24.696347+00:00
+- generated_at: 2026-09-30T13:46:23.433582+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15851**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-30T13:41:13.759885+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -1.36% price=84102.7
+- 更新: 2026-09-30T13:46:11.927708+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -1.00% price=84410.1
 - Funnel: target 1092 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SI/USDT:USDT | +164.50% | $10,231,262.29 |
-| ARK/USDT:USDT | +55.61% | $3,813,260.32 |
-| MOVR/USDT:USDT | +48.20% | $3,148,464.34 |
-| NIL/USDT:USDT | +20.36% | $3,379,291.22 |
-| SOONNETWORK/USDT:USDT | +19.86% | $6,188,198.97 |
+| SI/USDT:USDT | +161.64% | $10,299,512.74 |
+| ARK/USDT:USDT | +57.23% | $3,862,265.77 |
+| MOVR/USDT:USDT | +47.64% | $3,154,613.25 |
+| SOONNETWORK/USDT:USDT | +21.31% | $6,217,904.60 |
+| NIL/USDT:USDT | +21.08% | $3,406,543.98 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOONNETWORK/USDT:USDT | below_1h_threshold | +3.43% | +4.79% |
-| CCLSTOCK/USDT:USDT | below_1h_threshold | +1.20% | +2.55% |
-| SNXX/USDT:USDT | below_1h_threshold | +0.91% | +2.27% |
-| OKTASTOCK/USDT:USDT | below_1h_threshold | +0.56% | +1.92% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +0.56% | +1.92% |
+| SOONNETWORK/USDT:USDT | below_1h_threshold | +4.66% | +5.65% |
+| ENA/USDT:USDT | below_1h_threshold | +2.48% | +3.47% |
+| WLD/USDT:USDT | below_1h_threshold | +2.13% | +3.13% |
+| RIVER/USDT:USDT | below_1h_threshold | +1.75% | +2.75% |
+| ZRO/USDT:USDT | below_1h_threshold | +1.50% | +2.50% |
 
 ## 7. 次に見るべき不足
 
