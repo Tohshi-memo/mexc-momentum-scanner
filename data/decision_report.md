@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-30T17:21:32.596666+00:00
+- generated_at: 2026-09-30T17:26:21.159589+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15861**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-30T17:21:21.164415+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.26% price=84095.1
+- 更新: 2026-09-30T17:26:11.687302+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.30% price=84065.3
 - Funnel: target 1097 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ETHFI/USDT:USDT | +5.03% | $7,415,905.26 |
-| US/USDT:USDT | +4.73% | $1,040,672.86 |
-| BTW/USDT:USDT | +4.52% | $14,279,187.31 |
-| STX/USDT:USDT | +3.90% | $1,108,144.72 |
-| MONAD/USDT:USDT | +3.78% | $1,450,116.09 |
+| ETHFI/USDT:USDT | +5.19% | $7,534,267.39 |
+| BTW/USDT:USDT | +4.82% | $14,321,394.41 |
+| STX/USDT:USDT | +4.36% | $1,155,308.73 |
+| US/USDT:USDT | +3.71% | $1,045,854.22 |
+| MONAD/USDT:USDT | +3.60% | $1,461,677.63 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ETHFI/USDT:USDT | below_1h_threshold | +3.05% | +3.32% |
-| US/USDT:USDT | below_1h_threshold | +2.20% | +2.46% |
-| STX/USDT:USDT | below_1h_threshold | +2.09% | +2.36% |
-| RUNE/USDT:USDT | below_1h_threshold | +1.90% | +2.17% |
-| MONAD/USDT:USDT | below_1h_threshold | +1.30% | +1.57% |
+| ETHFI/USDT:USDT | below_1h_threshold | +3.21% | +3.50% |
+| STX/USDT:USDT | below_1h_threshold | +2.63% | +2.93% |
+| RUNE/USDT:USDT | below_1h_threshold | +1.90% | +2.20% |
+| US/USDT:USDT | below_1h_threshold | +1.31% | +1.61% |
+| BTW/USDT:USDT | below_1h_threshold | +1.24% | +1.54% |
 
 ## 7. 次に見るべき不足
 
