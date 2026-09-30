@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-30T23:16:24.586618+00:00
+- generated_at: 2026-09-30T23:21:24.670614+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15866**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-30T23:16:13.326464+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=83653.3
+- 更新: 2026-09-30T23:21:13.708932+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=83687.6
 - Funnel: target 1097 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MOVR/USDT:USDT | +26.71% | $6,440,952.00 |
-| MONAD/USDT:USDT | +10.74% | $2,547,421.45 |
-| STX/USDT:USDT | +8.59% | $3,070,932.95 |
-| NIGHT/USDT:USDT | +7.79% | $4,948,213.16 |
-| PHA/USDT:USDT | +4.78% | $6,329,025.29 |
+| MOVR/USDT:USDT | +25.96% | $6,501,196.51 |
+| MONAD/USDT:USDT | +10.52% | $2,571,916.81 |
+| STX/USDT:USDT | +8.03% | $3,076,546.30 |
+| NIGHT/USDT:USDT | +7.10% | $4,970,697.58 |
+| PHA/USDT:USDT | +4.62% | $6,333,666.81 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MOVR/USDT:USDT | below_1h_threshold | +2.58% | +2.57% |
-| MONAD/USDT:USDT | below_1h_threshold | +1.79% | +1.78% |
-| BTW/USDT:USDT | below_1h_threshold | +1.49% | +1.48% |
-| US/USDT:USDT | below_1h_threshold | +1.46% | +1.46% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.15% | +1.15% |
+| MOVR/USDT:USDT | below_1h_threshold | +2.02% | +1.97% |
+| PI/USDT:USDT | below_1h_threshold | +1.51% | +1.46% |
+| US/USDT:USDT | below_1h_threshold | +1.46% | +1.41% |
+| MONAD/USDT:USDT | below_1h_threshold | +1.46% | +1.41% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.15% | +1.10% |
 
 ## 7. 次に見るべき不足
 
