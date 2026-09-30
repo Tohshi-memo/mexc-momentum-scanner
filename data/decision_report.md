@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-30T11:41:44.902468+00:00
+- generated_at: 2026-09-30T11:47:14.148399+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15840**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-30T11:41:33.279443+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=83900.1
-- Funnel: target 1084 → liquid 171 → pre 50 → checked 50 → surge 4 → strict 1
+- 更新: 2026-09-30T11:46:59.181535+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=83866.3
+- Funnel: target 1085 → liquid 172 → pre 50 → checked 50 → surge 4 → strict 1
 - Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 88.8 >= 65=1, 4h RSI 81.7 >= 65=1, 4h RSI 73.2 >= 65=1
+- Strict後reject: 4h RSI 89.4 >= 65=1, 4h RSI 81.0 >= 65=1, 4h RSI 73.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SI/USDT:USDT | +146.35% | $8,676,529.14 |
-| MOVR/USDT:USDT | +73.38% | $2,802,896.18 |
-| ARK/USDT:USDT | +54.81% | $2,377,781.33 |
-| QNT/USDT:USDT | +28.21% | $361,960,749.35 |
-| NIL/USDT:USDT | +22.13% | $2,665,828.08 |
+| SI/USDT:USDT | +141.26% | $8,746,752.47 |
+| MOVR/USDT:USDT | +66.53% | $2,813,716.79 |
+| ARK/USDT:USDT | +55.09% | $2,447,779.08 |
+| QNT/USDT:USDT | +28.51% | $364,579,722.08 |
+| NIL/USDT:USDT | +23.34% | $2,689,014.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| WLD/USDT:USDT | below_1h_threshold | +3.29% | +3.26% |
-| STONK/USDT:USDT | below_1h_threshold | +3.29% | +3.26% |
-| LDO/USDT:USDT | below_1h_threshold | +2.63% | +2.60% |
-| MOVR/USDT:USDT | below_1h_threshold | +2.54% | +2.51% |
-| NIGHT/USDT:USDT | below_1h_threshold | +2.05% | +2.02% |
+| ZEN/USDT:USDT | below_1h_threshold | +4.18% | +4.19% |
+| STONK/USDT:USDT | below_1h_threshold | +3.50% | +3.51% |
+| WLD/USDT:USDT | below_1h_threshold | +3.43% | +3.44% |
+| NIGHT/USDT:USDT | below_1h_threshold | +2.43% | +2.45% |
+| LDO/USDT:USDT | below_1h_threshold | +2.04% | +2.05% |
 
 ## 7. 次に見るべき不足
 
