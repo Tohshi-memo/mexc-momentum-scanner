@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-30T08:06:25.643077+00:00
+- generated_at: 2026-09-30T08:11:23.713746+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15820**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-30T08:06:12.227144+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=83220.8
-- Funnel: target 1073 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-30T08:11:12.317070+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=83157.5
+- Funnel: target 1078 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SI/USDT:USDT | +108.04% | $7,411,335.16 |
-| MOVR/USDT:USDT | +61.93% | $1,361,743.99 |
-| PHA/USDT:USDT | +18.57% | $4,367,955.11 |
-| STONK/USDT:USDT | +14.53% | $1,328,960.53 |
-| QNT/USDT:USDT | +14.45% | $352,364,210.26 |
+| SI/USDT:USDT | +99.49% | $7,461,408.03 |
+| MOVR/USDT:USDT | +58.81% | $1,398,827.38 |
+| PHA/USDT:USDT | +17.93% | $4,389,879.43 |
+| QNT/USDT:USDT | +14.06% | $353,259,464.63 |
+| STONK/USDT:USDT | +13.95% | $1,330,529.92 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNXX/USDT:USDT | below_1h_threshold | +1.34% | +1.39% |
-| MOVR/USDT:USDT | below_1h_threshold | +1.24% | +1.30% |
-| AKE/USDT:USDT | below_1h_threshold | +0.96% | +1.01% |
-| NIGHT/USDT:USDT | below_1h_threshold | +0.67% | +0.73% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +0.67% | +0.72% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.34% | +1.47% |
+| AKE/USDT:USDT | below_1h_threshold | +1.09% | +1.22% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +0.67% | +0.80% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.59% | +0.71% |
+| CCLSTOCK/USDT:USDT | below_1h_threshold | +0.42% | +0.55% |
 
 ## 7. 次に見るべき不足
 
