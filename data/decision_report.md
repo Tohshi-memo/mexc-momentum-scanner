@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-30T21:16:18.311693+00:00
+- generated_at: 2026-09-30T21:21:21.425450+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15865**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-30T21:16:09.183415+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=83706.4
+- 更新: 2026-09-30T21:21:10.158667+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=83752.8
 - Funnel: target 1097 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MOVR/USDT:USDT | +17.01% | $4,940,071.19 |
-| MONAD/USDT:USDT | +6.27% | $2,122,486.69 |
-| BTW/USDT:USDT | +5.34% | $14,514,376.70 |
-| PHA/USDT:USDT | +4.98% | $6,731,458.74 |
-| STX/USDT:USDT | +4.92% | $2,202,976.01 |
+| MOVR/USDT:USDT | +14.44% | $5,011,890.89 |
+| MONAD/USDT:USDT | +6.77% | $2,201,850.94 |
+| BTW/USDT:USDT | +5.70% | $14,538,761.95 |
+| PHA/USDT:USDT | +5.59% | $6,737,476.50 |
+| STX/USDT:USDT | +5.32% | $2,205,944.84 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MONAD/USDT:USDT | below_1h_threshold | +1.52% | +1.43% |
-| PHA/USDT:USDT | below_1h_threshold | +0.99% | +0.90% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.96% | +0.87% |
-| MOVR/USDT:USDT | below_1h_threshold | +0.94% | +0.86% |
-| HYPE/USDT:USDT | below_1h_threshold | +0.63% | +0.55% |
+| MONAD/USDT:USDT | below_1h_threshold | +1.96% | +1.82% |
+| PHA/USDT:USDT | below_1h_threshold | +1.65% | +1.51% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.96% | +0.82% |
+| NIGHT/USDT:USDT | below_1h_threshold | +0.64% | +0.49% |
+| TWSTSTOCK/USDT:USDT | below_1h_threshold | +0.57% | +0.43% |
 
 ## 7. 次に見るべき不足
 
