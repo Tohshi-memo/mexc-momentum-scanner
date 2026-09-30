@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-30T07:31:28.385906+00:00
+- generated_at: 2026-09-30T07:36:20.784767+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15819**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-30T07:31:14.807365+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.29% price=83246.6
-- Funnel: target 1073 → liquid 169 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.9 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-30T07:36:09.707035+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.40% price=83336.6
+- Funnel: target 1073 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SI/USDT:USDT | +101.97% | $7,271,221.64 |
-| MOVR/USDT:USDT | +54.17% | $1,164,326.37 |
-| PHA/USDT:USDT | +18.72% | $4,113,431.98 |
-| STONK/USDT:USDT | +14.52% | $1,324,612.58 |
-| QNT/USDT:USDT | +13.14% | $361,415,986.74 |
+| SI/USDT:USDT | +99.03% | $7,295,048.71 |
+| MOVR/USDT:USDT | +53.15% | $1,209,819.82 |
+| PHA/USDT:USDT | +15.09% | $4,213,444.87 |
+| STONK/USDT:USDT | +15.03% | $1,327,342.79 |
+| QNT/USDT:USDT | +14.76% | $362,299,043.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIL/USDT:USDT | below_1h_threshold | +3.98% | +3.69% |
-| MOVR/USDT:USDT | below_1h_threshold | +2.98% | +2.69% |
-| NIGHT/USDT:USDT | below_1h_threshold | +2.27% | +1.98% |
-| PHA/USDT:USDT | below_1h_threshold | +2.23% | +1.94% |
-| AKE/USDT:USDT | below_1h_threshold | +2.05% | +1.76% |
+| SI/USDT:USDT | below_1h_threshold | +4.88% | +4.48% |
+| NIL/USDT:USDT | below_1h_threshold | +3.96% | +3.56% |
+| MOVR/USDT:USDT | below_1h_threshold | +2.76% | +2.36% |
+| ICP/USDT:USDT | below_1h_threshold | +2.08% | +1.68% |
+| SOONNETWORK/USDT:USDT | below_1h_threshold | +2.01% | +1.61% |
 
 ## 7. 次に見るべき不足
 
