@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-09-30T02:06:18.336291+00:00
+- generated_at: 2026-09-30T02:11:30.010096+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **15806**
+- closed shadow trades: **15807**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=15806, expectancy=+0.01%
+- 全期間 MARKET基準: n=15807, expectancy=+0.00%
 - 直近20件 MARKET基準: n=20, expectancy=-0.46%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -21,18 +21,18 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_7PCT | 7/20 | 35.0% | +4.57% | **+1.60%** |
-| LIMIT_FIB1272 | 7/20 | 35.0% | +3.55% | **+1.24%** |
-| LIMIT_8PCT | 6/20 | 30.0% | +4.00% | **+1.20%** |
-| LIMIT_ATR | 14/20 | 70.0% | +1.33% | **+0.93%** |
+| LIMIT_FIB1272 | 8/20 | 40.0% | +3.13% | **+1.25%** |
+| LIMIT_7PCT | 6/20 | 30.0% | +4.00% | **+1.20%** |
 | LIMIT_9PCT | 5/20 | 25.0% | +3.20% | **+0.80%** |
+| LIMIT_10PCT | 5/20 | 25.0% | +3.20% | **+0.80%** |
+| LIMIT_8PCT | 5/20 | 25.0% | +3.20% | **+0.80%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | LIMIT_BB3S_LONG | 7/8 | 87.5% | +2.86% | **+2.50%** |
-| LIMIT_2PCT_LONG | 18/20 | 90.0% | +1.64% | **+1.48%** |
+| LIMIT_2PCT_LONG | 18/20 | 90.0% | +0.97% | **+0.88%** |
 | LIMIT_1PCT_LONG | 19/20 | 95.0% | +0.81% | **+0.77%** |
 | LIMIT_3PCT_LONG | 14/20 | 70.0% | +1.10% | **+0.77%** |
 | LIMIT_10PCT_LONG | 5/20 | 25.0% | +2.05% | **+0.51%** |
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,227.24** / 初期 $100.00 (+1127.24%)
-- 確定: 5987件 (Win 1766 / Loss 1925 / Flat 2296) / skip 6380件
+- 確定: 5987件 (Win 1766 / Loss 1925 / Flat 2296) / skip 6381件
 - 成長率目線: 平均log +0.000419 / 幾何平均 +0.042% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_BB3S_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: GRASS/USDT:USDT `LIMIT_BB3S` EXPIRED account +0.00% 残高後 $1,227.24
@@ -55,9 +55,9 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$263.08** / 初期 $100.00 (+163.08%)
-- 確定: 3535件 (Win 974 / Loss 812 / Flat 1749) / skip 5682件
+- 確定: 3535件 (Win 974 / Loss 812 / Flat 1749) / skip 5683件
 - 成長率目線: 平均log +0.000274 / 幾何平均 +0.027% per trade / maxDD +3.96%
-- 次の候補: `LIMIT_6PCT` (selected_by_robust_growth_score) / robust_score +0.0398 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 次の候補: `LIMIT_6PCT` (selected_by_robust_growth_score) / robust_score +0.0443 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: SI/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $263.08
 
 ## 5. Causal Adaptive DryRun ($100)
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-30T02:06:07.155664+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=83505.6
+- 更新: 2026-09-30T02:11:16.694318+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=83450.1
 - Funnel: target 1073 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SI/USDT:USDT | +70.94% | $6,356,567.71 |
-| STONK/USDT:USDT | +28.27% | $1,127,480.83 |
-| QNT/USDT:USDT | +16.15% | $338,880,045.85 |
-| GRASS/USDT:USDT | +8.88% | $13,047,167.78 |
-| BTW/USDT:USDT | +7.40% | $14,717,229.17 |
+| SI/USDT:USDT | +72.80% | $6,366,472.60 |
+| STONK/USDT:USDT | +28.65% | $1,136,468.13 |
+| QNT/USDT:USDT | +19.12% | $342,161,116.80 |
+| GRASS/USDT:USDT | +9.80% | $13,053,748.57 |
+| BTW/USDT:USDT | +7.42% | $14,761,024.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| QNT/USDT:USDT | below_1h_threshold | +2.41% | +2.30% |
-| PONS/USDT:USDT | below_1h_threshold | +1.85% | +1.74% |
-| PENGU/USDT:USDT | below_1h_threshold | +1.07% | +0.96% |
-| COMP/USDT:USDT | below_1h_threshold | +0.86% | +0.75% |
-| GRASS/USDT:USDT | below_1h_threshold | +0.77% | +0.66% |
+| QNT/USDT:USDT | below_1h_threshold | +4.91% | +4.87% |
+| PONS/USDT:USDT | below_1h_threshold | +2.07% | +2.03% |
+| GRASS/USDT:USDT | below_1h_threshold | +1.66% | +1.62% |
+| PENGU/USDT:USDT | below_1h_threshold | +1.46% | +1.42% |
+| TRB/USDT:USDT | below_1h_threshold | +1.30% | +1.26% |
 
 ## 7. 次に見るべき不足
 
