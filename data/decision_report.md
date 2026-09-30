@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-30T10:56:34.581934+00:00
+- generated_at: 2026-09-30T11:01:11.202373+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15831**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-30T10:56:24.340459+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.36% price=83898.4
-- Funnel: target 1081 → liquid 172 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 89.2 >= 65=1, 4h RSI 83.3 >= 65=1, 4h RSI 78.0 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-30T11:01:02.968490+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=83856.3
+- Funnel: target 1081 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SI/USDT:USDT | +110.31% | $8,129,492.62 |
-| MOVR/USDT:USDT | +72.89% | $2,692,760.83 |
-| ARK/USDT:USDT | +27.40% | $1,514,894.64 |
-| PHA/USDT:USDT | +18.90% | $5,939,753.95 |
-| QNT/USDT:USDT | +18.76% | $349,125,527.23 |
+| SI/USDT:USDT | +115.57% | $8,125,633.31 |
+| MOVR/USDT:USDT | +69.41% | $2,699,323.11 |
+| ARK/USDT:USDT | +28.05% | $1,530,755.59 |
+| PHA/USDT:USDT | +19.13% | $5,893,105.95 |
+| QNT/USDT:USDT | +18.79% | $334,149,762.66 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NEAR/USDT:USDT | below_1h_threshold | +4.23% | +3.87% |
-| QNT/USDT:USDT | below_1h_threshold | +4.16% | +3.80% |
-| STONK/USDT:USDT | below_1h_threshold | +4.16% | +3.79% |
-| PENGU/USDT:USDT | below_1h_threshold | +3.39% | +3.02% |
-| AKE/USDT:USDT | below_1h_threshold | +2.45% | +2.09% |
+| OKTASTOCK/USDT:USDT | below_1h_threshold | +1.05% | +1.08% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.70% | +0.73% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.30% | +0.32% |
+| QNT/USDT:USDT | below_1h_threshold | +0.25% | +0.28% |
+| METASTOCK/USDT:USDT | below_1h_threshold | +0.10% | +0.12% |
 
 ## 7. 次に見るべき不足
 
