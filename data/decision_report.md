@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-30T09:26:26.655111+00:00
+- generated_at: 2026-09-30T09:31:28.892407+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15825**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-30T09:26:12.961615+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.40% price=83350.1
+- 更新: 2026-09-30T09:31:15.099060+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.55% price=83480.8
 - Funnel: target 1079 → liquid 171 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MOVR/USDT:USDT | +87.87% | $2,107,119.74 |
-| SI/USDT:USDT | +86.06% | $7,679,952.22 |
-| PHA/USDT:USDT | +23.17% | $4,878,620.01 |
-| AKE/USDT:USDT | +20.62% | $5,061,047.09 |
-| ARK/USDT:USDT | +19.11% | $1,038,414.31 |
+| MOVR/USDT:USDT | +87.66% | $2,136,670.17 |
+| SI/USDT:USDT | +86.94% | $7,687,281.07 |
+| PHA/USDT:USDT | +24.29% | $4,923,619.44 |
+| AKE/USDT:USDT | +22.48% | $5,149,071.72 |
+| ARK/USDT:USDT | +20.85% | $1,050,670.89 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SAGA/USDT:USDT | below_1h_threshold | +2.47% | +2.07% |
-| MOVR/USDT:USDT | below_1h_threshold | +1.57% | +1.18% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.39% | +0.99% |
-| ENA/USDT:USDT | below_1h_threshold | +1.30% | +0.90% |
-| PONS/USDT:USDT | below_1h_threshold | +1.29% | +0.89% |
+| PONS/USDT:USDT | below_1h_threshold | +3.75% | +3.20% |
+| SAGA/USDT:USDT | below_1h_threshold | +2.35% | +1.80% |
+| PHA/USDT:USDT | below_1h_threshold | +1.72% | +1.16% |
+| GRASS/USDT:USDT | below_1h_threshold | +1.40% | +0.85% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.39% | +0.84% |
 
 ## 7. 次に見るべき不足
 
