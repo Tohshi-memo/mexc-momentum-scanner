@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-30T22:11:24.828157+00:00
+- generated_at: 2026-09-30T22:16:27.191178+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15865**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-30T22:11:13.809194+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=83598.2
+- 更新: 2026-09-30T22:16:18.527173+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=83706.2
 - Funnel: target 1097 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MOVR/USDT:USDT | +17.57% | $5,772,618.60 |
-| MONAD/USDT:USDT | +6.56% | $2,387,846.79 |
-| NIGHT/USDT:USDT | +6.25% | $4,734,898.86 |
-| STX/USDT:USDT | +5.53% | $2,299,374.79 |
-| PHA/USDT:USDT | +3.82% | $6,837,868.70 |
+| MOVR/USDT:USDT | +20.09% | $5,832,806.13 |
+| NIGHT/USDT:USDT | +7.92% | $4,749,003.01 |
+| MONAD/USDT:USDT | +7.53% | $2,393,458.06 |
+| STX/USDT:USDT | +7.22% | $2,338,866.54 |
+| PHA/USDT:USDT | +4.53% | $6,848,196.35 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CT/USDT:USDT | below_1h_threshold | +0.84% | +0.98% |
-| US/USDT:USDT | below_1h_threshold | +0.76% | +0.90% |
-| ZRO/USDT:USDT | below_1h_threshold | +0.39% | +0.54% |
-| AERO/USDT:USDT | below_1h_threshold | +0.37% | +0.51% |
-| ACNSTOCK/USDT:USDT | below_1h_threshold | +0.19% | +0.33% |
+| CT/USDT:USDT | below_1h_threshold | +1.67% | +1.69% |
+| US/USDT:USDT | below_1h_threshold | +1.40% | +1.42% |
+| STX/USDT:USDT | below_1h_threshold | +1.29% | +1.31% |
+| ZRO/USDT:USDT | below_1h_threshold | +0.73% | +0.75% |
+| AERO/USDT:USDT | below_1h_threshold | +0.64% | +0.66% |
 
 ## 7. 次に見るべき不足
 
