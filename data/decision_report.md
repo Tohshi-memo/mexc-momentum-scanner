@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-30T20:16:28.817923+00:00
+- generated_at: 2026-09-30T20:21:23.358080+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15863**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-30T20:16:17.516603+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=83612.7
+- 更新: 2026-09-30T20:21:11.938978+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=83624.1
 - Funnel: target 1097 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MONAD/USDT:USDT | +5.91% | $2,113,048.82 |
-| BTW/USDT:USDT | +5.64% | $14,603,225.13 |
-| STX/USDT:USDT | +5.24% | $2,145,937.65 |
-| US/USDT:USDT | +4.11% | $1,063,571.35 |
-| CT/USDT:USDT | +2.87% | $2,208,599.92 |
+| BTW/USDT:USDT | +5.48% | $14,634,532.35 |
+| MONAD/USDT:USDT | +5.47% | $2,121,072.81 |
+| STX/USDT:USDT | +4.48% | $2,165,829.39 |
+| US/USDT:USDT | +3.68% | $1,065,781.33 |
+| TRB/USDT:USDT | +2.97% | $3,295,946.09 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MONAD/USDT:USDT | below_1h_threshold | +1.80% | +1.75% |
-| MOVR/USDT:USDT | below_1h_threshold | +1.56% | +1.50% |
-| CRV/USDT:USDT | below_1h_threshold | +1.29% | +1.23% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +1.21% | +1.16% |
-| JUP/USDT:USDT | below_1h_threshold | +1.05% | +1.00% |
+| CRV/USDT:USDT | below_1h_threshold | +1.52% | +1.45% |
+| MONAD/USDT:USDT | below_1h_threshold | +1.39% | +1.32% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +1.21% | +1.14% |
+| JUP/USDT:USDT | below_1h_threshold | +1.18% | +1.11% |
+| WLD/USDT:USDT | below_1h_threshold | +1.07% | +1.00% |
 
 ## 7. 次に見るべき不足
 
