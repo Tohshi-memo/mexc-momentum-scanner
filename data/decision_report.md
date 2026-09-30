@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-30T17:36:25.809510+00:00
+- generated_at: 2026-09-30T17:41:19.249637+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15861**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-30T17:36:14.472388+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.39% price=83992.2
+- 更新: 2026-09-30T17:41:10.944549+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.41% price=83973.8
 - Funnel: target 1097 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STX/USDT:USDT | +5.35% | $1,397,918.19 |
-| BTW/USDT:USDT | +5.34% | $14,378,681.26 |
-| RUNE/USDT:USDT | +4.13% | $2,360,934.86 |
-| US/USDT:USDT | +3.87% | $1,051,484.99 |
-| PUMPFUN/USDT:USDT | +3.47% | $47,515,949.26 |
+| STX/USDT:USDT | +5.67% | $1,413,744.55 |
+| BTW/USDT:USDT | +5.11% | $14,404,731.19 |
+| US/USDT:USDT | +4.40% | $1,053,769.59 |
+| RUNE/USDT:USDT | +3.82% | $2,412,119.91 |
+| PUMPFUN/USDT:USDT | +3.75% | $47,709,460.79 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STX/USDT:USDT | below_1h_threshold | +3.38% | +3.77% |
-| RUNE/USDT:USDT | below_1h_threshold | +3.18% | +3.57% |
-| BTW/USDT:USDT | below_1h_threshold | +1.73% | +2.12% |
-| US/USDT:USDT | below_1h_threshold | +1.36% | +1.75% |
-| ETHFI/USDT:USDT | below_1h_threshold | +0.80% | +1.18% |
+| STX/USDT:USDT | below_1h_threshold | +3.92% | +4.33% |
+| RUNE/USDT:USDT | below_1h_threshold | +2.87% | +3.28% |
+| US/USDT:USDT | below_1h_threshold | +1.88% | +2.29% |
+| BTW/USDT:USDT | below_1h_threshold | +1.50% | +1.91% |
+| PHA/USDT:USDT | below_1h_threshold | +1.07% | +1.48% |
 
 ## 7. 次に見るべき不足
 
