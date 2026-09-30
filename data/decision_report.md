@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-30T16:36:27.663412+00:00
+- generated_at: 2026-09-30T16:41:29.179206+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15860**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-30T16:36:16.195230+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=84240.5
-- Funnel: target 1097 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-30T16:41:19.518157+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=84242.7
+- Funnel: target 1097 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +3.73% | $14,576,907.60 |
-| STONK/USDT:USDT | +3.29% | $1,596,337.25 |
-| GRASS/USDT:USDT | +2.81% | $7,959,528.95 |
-| NIGHT/USDT:USDT | +2.66% | $3,207,242.25 |
-| BERA/USDT:USDT | +2.15% | $1,368,974.29 |
+| STONK/USDT:USDT | +3.51% | $1,597,971.81 |
+| GRASS/USDT:USDT | +3.17% | $7,963,595.36 |
+| BTW/USDT:USDT | +2.94% | $14,683,278.46 |
+| US/USDT:USDT | +2.65% | $1,047,825.57 |
+| MOVR/USDT:USDT | +2.52% | $3,756,705.39 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +3.64% | +3.47% |
-| STONK/USDT:USDT | below_1h_threshold | +3.34% | +3.17% |
-| GRASS/USDT:USDT | below_1h_threshold | +2.82% | +2.66% |
-| NIGHT/USDT:USDT | below_1h_threshold | +2.52% | +2.36% |
-| BERA/USDT:USDT | below_1h_threshold | +2.19% | +2.03% |
+| STONK/USDT:USDT | below_1h_threshold | +3.52% | +3.35% |
+| GRASS/USDT:USDT | below_1h_threshold | +3.17% | +3.00% |
+| BTW/USDT:USDT | below_1h_threshold | +2.94% | +2.77% |
+| US/USDT:USDT | below_1h_threshold | +2.67% | +2.51% |
+| MOVR/USDT:USDT | below_1h_threshold | +2.65% | +2.49% |
 
 ## 7. 次に見るべき不足
 
