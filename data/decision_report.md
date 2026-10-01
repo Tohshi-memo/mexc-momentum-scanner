@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-01T18:51:47.320885+00:00
+- generated_at: 2026-10-01T18:56:41.814353+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15933**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-01T18:51:30.065617+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.20% price=84698.2
-- Funnel: target 1097 → liquid 172 → pre 50 → checked 50 → surge 4 → strict 2
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 92.8 >= 65=1, 4h RSI 65.2 >= 65=1
+- 更新: 2026-10-01T18:56:28.715856+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.16% price=84732.7
+- Funnel: target 1097 → liquid 172 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 93.0 >= 65=1, 4h RSI 65.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +11.01% | $10,634,862.62 |
-| SI/USDT:USDT | +10.21% | $6,175,874.30 |
-| MOVR/USDT:USDT | +7.91% | $26,418,833.33 |
-| MUU/USDT:USDT | +6.99% | $20,356,553.36 |
-| USELESS/USDT:USDT | +6.85% | $3,540,005.96 |
+| LONGXIA/USDT:USDT | +11.55% | $10,674,355.84 |
+| SI/USDT:USDT | +9.84% | $6,191,897.66 |
+| MOVR/USDT:USDT | +8.52% | $26,462,712.06 |
+| MUU/USDT:USDT | +7.19% | $20,358,288.35 |
+| USELESS/USDT:USDT | +6.41% | $3,546,205.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNXX/USDT:USDT | below_1h_threshold | +3.61% | +3.81% |
-| KORU/USDT:USDT | below_1h_threshold | +3.59% | +3.79% |
-| SOXL/USDT:USDT | below_1h_threshold | +3.39% | +3.58% |
-| LSK/USDT:USDT | below_1h_threshold | +3.15% | +3.35% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +2.88% | +3.08% |
+| SI/USDT:USDT | below_1h_threshold | +5.00% | +5.15% |
+| SNXX/USDT:USDT | below_1h_threshold | +3.61% | +3.77% |
+| KORU/USDT:USDT | below_1h_threshold | +3.59% | +3.75% |
+| SOXL/USDT:USDT | below_1h_threshold | +3.39% | +3.54% |
+| CT/USDT:USDT | below_1h_threshold | +3.22% | +3.37% |
 
 ## 7. 次に見るべき不足
 
