@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-10-01T04:11:29.028879+00:00
+- generated_at: 2026-10-01T04:16:27.798609+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **15869**
+- closed shadow trades: **15870**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=15869, expectancy=+0.00%
+- 全期間 MARKET基準: n=15870, expectancy=+0.00%
 - 直近20件 MARKET基準: n=20, expectancy=-0.33%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -23,9 +23,9 @@
 |---|---:|---:|---:|---:|
 | LIMIT_7PCT | 3/20 | 15.0% | +4.54% | **+0.68%** |
 | LIMIT_8PCT | 2/20 | 10.0% | +5.85% | **+0.59%** |
-| LIMIT_5PCT | 9/20 | 45.0% | +1.19% | **+0.53%** |
+| LIMIT_5PCT | 8/20 | 40.0% | +1.21% | **+0.49%** |
 | LIMIT_BB3S | 2/14 | 14.3% | +2.00% | **+0.29%** |
-| LIMIT_6PCT | 6/20 | 30.0% | +0.91% | **+0.27%** |
+| LIMIT_6PCT | 5/20 | 25.0% | +0.71% | **+0.18%** |
 
 ### シャドウ上位 LONG
 
@@ -46,18 +46,18 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$1,215.00** / 初期 $100.00 (+1115.00%)
-- 確定: 5990件 (Win 1766 / Loss 1927 / Flat 2297) / skip 6440件
-- 成長率目線: 平均log +0.000417 / 幾何平均 +0.042% per trade / maxDD +8.46%
+- 残高: **$1,222.67** / 初期 $100.00 (+1122.67%)
+- 確定: 5991件 (Win 1767 / Loss 1927 / Flat 2297) / skip 6440件
+- 成長率目線: 平均log +0.000418 / 幾何平均 +0.042% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_1PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: MOVR/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $1,215.00
+- 最新: MOVR/USDT:USDT `LIMIT_1PCT_LONG` EXPIRED account +0.63% 残高後 $1,222.67
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$263.08** / 初期 $100.00 (+163.08%)
-- 確定: 3537件 (Win 974 / Loss 812 / Flat 1751) / skip 5743件
+- 確定: 3537件 (Win 974 / Loss 812 / Flat 1751) / skip 5744件
 - 成長率目線: 平均log +0.000273 / 幾何平均 +0.027% per trade / maxDD +3.96%
-- 次の候補: `LIMIT_1PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0979 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 次の候補: `LIMIT_1PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.1158 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: MOVR/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $263.08
 
 ## 5. Causal Adaptive DryRun ($100)
@@ -65,13 +65,13 @@
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
 - 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4030件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000216 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000215 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-01T04:11:17.371636+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=83831.0
+- 更新: 2026-10-01T04:16:14.448473+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=83848.9
 - Funnel: target 1097 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MOVR/USDT:USDT | +40.13% | $9,467,341.29 |
-| MONAD/USDT:USDT | +17.33% | $5,007,324.82 |
-| PLUME/USDT:USDT | +14.82% | $1,046,017.29 |
-| STX/USDT:USDT | +13.33% | $4,068,688.40 |
-| NIGHT/USDT:USDT | +10.94% | $5,973,831.70 |
+| MOVR/USDT:USDT | +40.39% | $9,584,492.27 |
+| MONAD/USDT:USDT | +17.41% | $5,019,850.09 |
+| PLUME/USDT:USDT | +14.11% | $1,059,343.82 |
+| STX/USDT:USDT | +12.81% | $4,076,678.70 |
+| NIGHT/USDT:USDT | +10.64% | $6,022,888.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNXX/USDT:USDT | below_1h_threshold | +2.55% | +2.42% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.84% | +1.71% |
-| PLUME/USDT:USDT | below_1h_threshold | +1.79% | +1.66% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +1.40% | +1.27% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.39% | +1.26% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.55% | +2.40% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.84% | +1.69% |
+| EGLD/USDT:USDT | below_1h_threshold | +1.42% | +1.27% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.39% | +1.23% |
+| PLUME/USDT:USDT | below_1h_threshold | +1.26% | +1.10% |
 
 ## 7. 次に見るべき不足
 
