@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-01T02:36:30.021308+00:00
+- generated_at: 2026-10-01T02:41:30.229063+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15867**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-01T02:36:16.194571+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=83500.9
+- 更新: 2026-10-01T02:41:18.583877+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=83399.6
 - Funnel: target 1097 → liquid 176 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MOVR/USDT:USDT | +31.29% | $8,806,571.77 |
-| MONAD/USDT:USDT | +14.96% | $4,678,082.32 |
-| NIGHT/USDT:USDT | +9.62% | $5,686,093.24 |
-| STX/USDT:USDT | +9.31% | $3,872,234.04 |
-| S/USDT:USDT | +5.74% | $1,105,607.35 |
+| MOVR/USDT:USDT | +33.99% | $8,850,425.74 |
+| MONAD/USDT:USDT | +14.38% | $4,691,339.99 |
+| NIGHT/USDT:USDT | +9.79% | $5,697,323.41 |
+| STX/USDT:USDT | +9.52% | $3,874,360.24 |
+| S/USDT:USDT | +5.79% | $1,105,934.03 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +3.80% | +3.77% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +2.73% | +2.69% |
-| ALGO/USDT:USDT | below_1h_threshold | +1.44% | +1.41% |
-| STRK/USDT:USDT | below_1h_threshold | +1.42% | +1.39% |
-| SPX/USDT:USDT | below_1h_threshold | +1.31% | +1.28% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +4.53% | +4.62% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +2.58% | +2.67% |
+| MOVR/USDT:USDT | below_1h_threshold | +1.62% | +1.71% |
+| ALGO/USDT:USDT | below_1h_threshold | +1.51% | +1.60% |
+| S/USDT:USDT | below_1h_threshold | +1.41% | +1.50% |
 
 ## 7. 次に見るべき不足
 
