@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-01T13:36:26.080325+00:00
+- generated_at: 2026-10-01T13:41:27.938406+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15905**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-01T13:36:17.224056+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=83691.3
-- Funnel: target 1097 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-01T13:41:16.729188+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=83800.0
+- Funnel: target 1097 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +69.33% | $5,916,655.29 |
-| MOVR/USDT:USDT | +62.87% | $19,682,634.71 |
-| CT/USDT:USDT | +29.98% | $6,985,803.19 |
-| ACNSTOCK/USDT:USDT | +21.44% | $2,258,589.35 |
-| MONAD/USDT:USDT | +17.12% | $10,122,817.37 |
+| LONGXIA/USDT:USDT | +68.64% | $6,030,410.83 |
+| MOVR/USDT:USDT | +59.04% | $19,778,945.82 |
+| CT/USDT:USDT | +29.06% | $7,071,462.44 |
+| ACNSTOCK/USDT:USDT | +21.74% | $2,272,268.08 |
+| MONAD/USDT:USDT | +17.62% | $10,135,062.54 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CT/USDT:USDT | below_1h_threshold | +4.22% | +4.24% |
-| TRB/USDT:USDT | below_1h_threshold | +3.45% | +3.47% |
-| SYN/USDT:USDT | below_1h_threshold | +2.97% | +2.99% |
-| BTW/USDT:USDT | below_1h_threshold | +2.66% | +2.68% |
-| BR/USDT:USDT | below_1h_threshold | +1.57% | +1.59% |
+| TRB/USDT:USDT | below_1h_threshold | +3.70% | +3.58% |
+| SYN/USDT:USDT | below_1h_threshold | +3.42% | +3.31% |
+| CT/USDT:USDT | below_1h_threshold | +3.32% | +3.21% |
+| BTW/USDT:USDT | below_1h_threshold | +2.68% | +2.57% |
+| BR/USDT:USDT | below_1h_threshold | +1.75% | +1.64% |
 
 ## 7. 次に見るべき不足
 
