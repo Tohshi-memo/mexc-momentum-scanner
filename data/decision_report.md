@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-10-01T06:01:30.639830+00:00
+- generated_at: 2026-10-01T06:06:22.152606+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **15874**
+- closed shadow trades: **15875**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=15874, expectancy=+0.00%
+- 全期間 MARKET基準: n=15875, expectancy=+0.00%
 - 直近20件 MARKET基準: n=20, expectancy=-1.44%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -46,18 +46,18 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$1,238.16** / 初期 $100.00 (+1138.16%)
-- 確定: 5993件 (Win 1769 / Loss 1927 / Flat 2297) / skip 6442件
-- 成長率目線: 平均log +0.000420 / 幾何平均 +0.042% per trade / maxDD +8.46%
+- 残高: **$1,231.97** / 初期 $100.00 (+1131.97%)
+- 確定: 5994件 (Win 1769 / Loss 1928 / Flat 2297) / skip 6442件
+- 成長率目線: 平均log +0.000419 / 幾何平均 +0.042% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_1PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: MOVR/USDT:USDT `LIMIT_1PCT_LONG` EXPIRED account +0.63% 残高後 $1,238.16
+- 最新: NIGHT/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.50% 残高後 $1,231.97
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$263.08** / 初期 $100.00 (+163.08%)
-- 確定: 3537件 (Win 974 / Loss 812 / Flat 1751) / skip 5748件
+- 確定: 3537件 (Win 974 / Loss 812 / Flat 1751) / skip 5749件
 - 成長率目線: 平均log +0.000273 / 幾何平均 +0.027% per trade / maxDD +3.96%
-- 次の候補: `LIMIT_1PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.1198 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 次の候補: `LIMIT_1PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.1107 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: MOVR/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $263.08
 
 ## 5. Causal Adaptive DryRun ($100)
@@ -65,13 +65,13 @@
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
 - 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4034件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000279 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000224 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-01T06:01:18.777174+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=84248.7
+- 更新: 2026-10-01T06:06:08.860600+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=84292.9
 - Funnel: target 1097 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MOVR/USDT:USDT | +54.24% | $11,950,052.66 |
-| MONAD/USDT:USDT | +20.72% | $5,391,387.45 |
-| STX/USDT:USDT | +16.54% | $4,623,088.21 |
-| NIGHT/USDT:USDT | +11.35% | $6,660,221.80 |
-| PLUME/USDT:USDT | +10.35% | $1,307,133.82 |
+| MOVR/USDT:USDT | +57.93% | $12,099,876.46 |
+| MONAD/USDT:USDT | +21.98% | $5,438,108.17 |
+| STX/USDT:USDT | +15.20% | $4,654,725.39 |
+| PLUME/USDT:USDT | +11.55% | $1,326,420.38 |
+| SOXL/USDT:USDT | +9.90% | $75,791,576.92 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXL/USDT:USDT | below_1h_threshold | +2.65% | +2.66% |
-| SNXX/USDT:USDT | below_1h_threshold | +1.10% | +1.11% |
-| TQQQ/USDT:USDT | below_1h_threshold | +1.08% | +1.10% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.03% | +1.04% |
-| KORU/USDT:USDT | below_1h_threshold | +0.86% | +0.88% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.65% | +2.61% |
+| MOVR/USDT:USDT | below_1h_threshold | +2.12% | +2.08% |
+| PLUME/USDT:USDT | below_1h_threshold | +1.64% | +1.60% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.10% | +1.06% |
+| TQQQ/USDT:USDT | below_1h_threshold | +1.08% | +1.04% |
 
 ## 7. 次に見るべき不足
 
