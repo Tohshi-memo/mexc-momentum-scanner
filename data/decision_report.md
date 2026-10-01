@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-01T13:01:27.364827+00:00
+- generated_at: 2026-10-01T13:06:31.826286+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15903**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-01T13:01:18.430290+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=83650.0
+- 更新: 2026-10-01T13:06:20.410826+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.22% price=83526.8
 - Funnel: target 1097 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +68.08% | $5,182,205.66 |
-| MOVR/USDT:USDT | +67.97% | $19,065,176.13 |
-| NOM/USDT:USDT | +27.92% | $2,779,600.70 |
-| CT/USDT:USDT | +24.92% | $6,668,201.37 |
-| NIGHT/USDT:USDT | +20.79% | $8,539,511.19 |
+| MOVR/USDT:USDT | +67.27% | $19,163,409.08 |
+| LONGXIA/USDT:USDT | +67.26% | $5,234,583.12 |
+| NOM/USDT:USDT | +25.54% | $2,786,277.00 |
+| CT/USDT:USDT | +24.00% | $6,713,548.82 |
+| ACNSTOCK/USDT:USDT | +18.19% | $2,195,128.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NOM/USDT:USDT | below_1h_threshold | +0.43% | +0.49% |
-| STX/USDT:USDT | below_1h_threshold | +0.43% | +0.49% |
-| MOVR/USDT:USDT | below_1h_threshold | +0.40% | +0.46% |
-| CT/USDT:USDT | below_1h_threshold | +0.33% | +0.39% |
-| BR/USDT:USDT | below_1h_threshold | +0.22% | +0.29% |
+| BR/USDT:USDT | below_1h_threshold | +1.12% | +1.33% |
+| BTW/USDT:USDT | below_1h_threshold | +0.71% | +0.93% |
+| SYN/USDT:USDT | below_1h_threshold | +0.39% | +0.61% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.13% | +0.35% |
+| MOVR/USDT:USDT | below_1h_threshold | +0.09% | +0.31% |
 
 ## 7. 次に見るべき不足
 
