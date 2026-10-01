@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-01T08:56:22.987798+00:00
+- generated_at: 2026-10-01T09:01:18.504668+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15882**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-01T08:56:10.775161+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=83480.1
-- Funnel: target 1097 → liquid 176 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.2 >= 65=1, 4h RSI 76.0 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-01T09:01:07.060625+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=83543.1
+- Funnel: target 1097 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MOVR/USDT:USDT | +56.46% | $16,238,972.92 |
-| NOM/USDT:USDT | +30.72% | $1,796,114.53 |
-| JASMY/USDT:USDT | +17.21% | $6,291,581.30 |
-| MONAD/USDT:USDT | +15.89% | $7,841,476.17 |
-| NIGHT/USDT:USDT | +15.44% | $7,594,471.27 |
+| MOVR/USDT:USDT | +56.06% | $15,788,897.92 |
+| NOM/USDT:USDT | +29.18% | $1,815,678.79 |
+| JASMY/USDT:USDT | +17.59% | $6,088,835.45 |
+| MONAD/USDT:USDT | +16.14% | $7,782,805.68 |
+| NIGHT/USDT:USDT | +15.52% | $7,619,001.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CT/USDT:USDT | below_1h_threshold | +2.32% | +2.20% |
-| USOIL/USDT:USDT | below_1h_threshold | +1.72% | +1.60% |
-| UKOIL/USDT:USDT | below_1h_threshold | +1.44% | +1.33% |
-| NIGHT/USDT:USDT | below_1h_threshold | +1.40% | +1.29% |
-| PHA/USDT:USDT | below_1h_threshold | +1.34% | +1.23% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.53% | +0.51% |
+| BTW/USDT:USDT | below_1h_threshold | +0.42% | +0.40% |
+| PHA/USDT:USDT | below_1h_threshold | +0.42% | +0.40% |
+| MONAD/USDT:USDT | below_1h_threshold | +0.34% | +0.32% |
+| FET/USDT:USDT | below_1h_threshold | +0.26% | +0.23% |
 
 ## 7. 次に見るべき不足
 
