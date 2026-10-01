@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-01T09:41:49.024145+00:00
+- generated_at: 2026-10-01T09:46:26.768276+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15885**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-01T09:41:32.522137+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.34% price=83808.0
+- 更新: 2026-10-01T09:46:12.149647+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.35% price=83818.4
 - Funnel: target 1097 → liquid 174 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI n/a=1
@@ -81,21 +81,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MOVR/USDT:USDT | +65.58% | $16,927,834.20 |
-| NOM/USDT:USDT | +30.35% | $2,173,371.67 |
-| NIGHT/USDT:USDT | +20.08% | $8,061,477.03 |
-| JASMY/USDT:USDT | +18.56% | $7,390,118.39 |
-| CT/USDT:USDT | +17.37% | $4,895,851.52 |
+| MOVR/USDT:USDT | +62.20% | $17,056,759.75 |
+| NOM/USDT:USDT | +31.43% | $2,191,661.31 |
+| NIGHT/USDT:USDT | +20.10% | $8,120,521.45 |
+| JASMY/USDT:USDT | +18.91% | $7,473,390.65 |
+| CT/USDT:USDT | +17.52% | $4,947,840.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MOVR/USDT:USDT | below_1h_threshold | +4.80% | +4.46% |
-| AR/USDT:USDT | below_1h_threshold | +3.69% | +3.36% |
-| NIGHT/USDT:USDT | below_1h_threshold | +3.58% | +3.24% |
-| BR/USDT:USDT | below_1h_threshold | +2.56% | +2.22% |
-| BTW/USDT:USDT | below_1h_threshold | +1.25% | +0.91% |
+| AR/USDT:USDT | below_1h_threshold | +4.61% | +4.26% |
+| NIGHT/USDT:USDT | below_1h_threshold | +3.79% | +3.44% |
+| MOVR/USDT:USDT | below_1h_threshold | +3.03% | +2.68% |
+| BR/USDT:USDT | below_1h_threshold | +2.06% | +1.71% |
+| NOM/USDT:USDT | below_1h_threshold | +1.62% | +1.26% |
 
 ## 7. 次に見るべき不足
 
