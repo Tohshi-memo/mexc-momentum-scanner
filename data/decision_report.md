@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-01T18:41:46.475961+00:00
+- generated_at: 2026-10-01T18:46:48.253434+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15933**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-01T18:41:28.032799+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.15% price=84994.3
+- 更新: 2026-10-01T18:46:31.503918+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=84928.9
 - Funnel: target 1097 → liquid 172 → pre 50 → checked 50 → surge 3 → strict 2
 - Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 92.9 >= 65=1
@@ -81,21 +81,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SI/USDT:USDT | +12.53% | $6,148,557.09 |
-| LONGXIA/USDT:USDT | +11.17% | $10,542,430.89 |
-| MOVR/USDT:USDT | +8.17% | $26,274,650.47 |
-| ZRO/USDT:USDT | +6.49% | $5,948,542.06 |
-| USELESS/USDT:USDT | +6.49% | $3,477,843.86 |
+| LONGXIA/USDT:USDT | +10.17% | $10,590,689.03 |
+| SI/USDT:USDT | +9.89% | $6,169,309.59 |
+| MOVR/USDT:USDT | +8.23% | $26,333,387.50 |
+| USELESS/USDT:USDT | +7.24% | $3,500,491.88 |
+| ZRO/USDT:USDT | +7.06% | $6,075,805.67 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LONGXIA/USDT:USDT | below_1h_threshold | +4.71% | +4.56% |
-| SNXX/USDT:USDT | below_1h_threshold | +3.61% | +3.46% |
-| KORU/USDT:USDT | below_1h_threshold | +3.59% | +3.44% |
-| SOXL/USDT:USDT | below_1h_threshold | +3.39% | +3.23% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +2.88% | +2.73% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +4.38% | +4.30% |
+| SNXX/USDT:USDT | below_1h_threshold | +3.61% | +3.54% |
+| KORU/USDT:USDT | below_1h_threshold | +3.59% | +3.52% |
+| LSK/USDT:USDT | below_1h_threshold | +3.41% | +3.34% |
+| SOXL/USDT:USDT | below_1h_threshold | +3.39% | +3.31% |
 
 ## 7. 次に見るべき不足
 
