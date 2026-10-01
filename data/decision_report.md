@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-01T15:31:29.850412+00:00
+- generated_at: 2026-10-01T15:36:43.860693+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15918**
 
@@ -63,38 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4082件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4083件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000435 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-01T15:31:17.999196+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=83964.3
-- Funnel: target 1097 → liquid 173 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-01T15:36:31.765649+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.22% price=83822.4
+- Funnel: target 1097 → liquid 173 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 85.0 >= 65=1, 4h RSI 84.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +79.87% | $8,191,632.74 |
-| MOVR/USDT:USDT | +58.00% | $21,791,746.90 |
-| CAP/USDT:USDT | +32.01% | $1,268,421.96 |
-| ALICE/USDT:USDT | +25.68% | $1,263,636.90 |
-| US/USDT:USDT | +23.43% | $1,347,796.38 |
+| LONGXIA/USDT:USDT | +70.41% | $8,431,729.11 |
+| MOVR/USDT:USDT | +60.85% | $21,904,739.65 |
+| CAP/USDT:USDT | +30.20% | $1,281,598.69 |
+| ALICE/USDT:USDT | +29.94% | $1,335,707.14 |
+| ACNSTOCK/USDT:USDT | +18.26% | $1,976,681.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MOVR/USDT:USDT | below_1h_threshold | +4.78% | +4.83% |
-| SYN/USDT:USDT | below_1h_threshold | +3.45% | +3.50% |
-| TRB/USDT:USDT | below_1h_threshold | +3.06% | +3.12% |
-| ALICE/USDT:USDT | below_1h_threshold | +3.04% | +3.09% |
-| CAP/USDT:USDT | below_1h_threshold | +1.92% | +1.97% |
+| ONE/USDT:USDT | below_1h_threshold | +3.89% | +4.11% |
+| SYN/USDT:USDT | below_1h_threshold | +3.77% | +3.99% |
+| MONAD/USDT:USDT | below_1h_threshold | +1.41% | +1.63% |
+| TRB/USDT:USDT | below_1h_threshold | +1.13% | +1.35% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.08% | +1.30% |
 
 ## 7. 次に見るべき不足
 
