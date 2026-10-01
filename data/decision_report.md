@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-01T14:26:30.950980+00:00
+- generated_at: 2026-10-01T14:31:30.715428+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15907**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4067件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4068件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000341 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-01T14:26:21.781656+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=84013.1
-- Funnel: target 1097 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-01T14:31:17.187771+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.22% price=84094.0
+- Funnel: target 1097 → liquid 174 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=2, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +80.97% | $6,916,886.08 |
-| MOVR/USDT:USDT | +50.78% | $20,879,077.87 |
-| CT/USDT:USDT | +27.54% | $7,092,951.42 |
-| ACNSTOCK/USDT:USDT | +22.08% | $2,297,640.99 |
-| SYN/USDT:USDT | +19.69% | $3,116,024.59 |
+| LONGXIA/USDT:USDT | +74.59% | $7,055,319.53 |
+| MOVR/USDT:USDT | +51.03% | $20,959,068.27 |
+| CAP/USDT:USDT | +27.45% | $1,016,297.04 |
+| CT/USDT:USDT | +26.29% | $7,108,338.49 |
+| ACNSTOCK/USDT:USDT | +22.04% | $2,301,562.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SYN/USDT:USDT | below_1h_threshold | +4.73% | +4.61% |
-| ACNSTOCK/USDT:USDT | below_1h_threshold | +3.79% | +3.67% |
-| AAVE/USDT:USDT | below_1h_threshold | +2.43% | +2.31% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +2.21% | +2.09% |
-| JASMY/USDT:USDT | below_1h_threshold | +2.21% | +2.09% |
+| SYN/USDT:USDT | below_relative_strength | +5.15% | +4.93% |
+| CAP/USDT:USDT | below_relative_strength | +5.12% | +4.90% |
+| ACNSTOCK/USDT:USDT | below_1h_threshold | +3.79% | +3.57% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +2.21% | +2.00% |
+| AAVE/USDT:USDT | below_1h_threshold | +2.10% | +1.88% |
 
 ## 7. 次に見るべき不足
 
