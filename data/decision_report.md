@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-01T01:06:27.884623+00:00
+- generated_at: 2026-10-01T01:11:18.456580+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15867**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-01T01:06:14.462370+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=83492.1
+- 更新: 2026-10-01T01:11:07.054830+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=83543.0
 - Funnel: target 1097 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MOVR/USDT:USDT | +40.67% | $7,666,745.40 |
-| MONAD/USDT:USDT | +16.79% | $3,795,683.82 |
-| STX/USDT:USDT | +11.70% | $3,361,284.74 |
-| NIGHT/USDT:USDT | +8.83% | $5,391,537.49 |
-| BTW/USDT:USDT | +5.37% | $14,253,693.04 |
+| MOVR/USDT:USDT | +37.38% | $7,765,802.46 |
+| MONAD/USDT:USDT | +16.25% | $3,817,236.61 |
+| STX/USDT:USDT | +12.81% | $3,499,035.85 |
+| NIGHT/USDT:USDT | +8.72% | $5,409,248.33 |
+| BTW/USDT:USDT | +5.64% | $14,276,204.66 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MOVR/USDT:USDT | below_1h_threshold | +4.96% | +4.93% |
-| MONAD/USDT:USDT | below_1h_threshold | +1.03% | +0.99% |
-| NMR/USDT:USDT | below_1h_threshold | +0.85% | +0.81% |
-| RUNE/USDT:USDT | below_1h_threshold | +0.64% | +0.60% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.62% | +0.58% |
+| MOVR/USDT:USDT | below_1h_threshold | +2.22% | +2.13% |
+| STX/USDT:USDT | below_1h_threshold | +1.44% | +1.35% |
+| DOT/USDT:USDT | below_1h_threshold | +1.28% | +1.18% |
+| FET/USDT:USDT | below_1h_threshold | +1.21% | +1.11% |
+| NMR/USDT:USDT | below_1h_threshold | +1.20% | +1.11% |
 
 ## 7. 次に見るべき不足
 
