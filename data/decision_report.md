@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-01T14:21:33.237947+00:00
+- generated_at: 2026-10-01T14:26:30.950980+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15907**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-01T14:21:21.818101+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=83924.9
+- 更新: 2026-10-01T14:26:21.781656+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.12% price=84013.1
 - Funnel: target 1097 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +78.80% | $6,816,675.79 |
-| MOVR/USDT:USDT | +55.09% | $20,720,828.93 |
-| CT/USDT:USDT | +26.75% | $7,074,060.04 |
-| ACNSTOCK/USDT:USDT | +21.91% | $2,295,220.32 |
-| SYN/USDT:USDT | +17.96% | $3,030,957.27 |
+| LONGXIA/USDT:USDT | +80.97% | $6,916,886.08 |
+| MOVR/USDT:USDT | +50.78% | $20,879,077.87 |
+| CT/USDT:USDT | +27.54% | $7,092,951.42 |
+| ACNSTOCK/USDT:USDT | +22.08% | $2,297,640.99 |
+| SYN/USDT:USDT | +19.69% | $3,116,024.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ACNSTOCK/USDT:USDT | below_1h_threshold | +3.79% | +3.77% |
-| SYN/USDT:USDT | below_1h_threshold | +3.12% | +3.10% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +2.21% | +2.20% |
-| JASMY/USDT:USDT | below_1h_threshold | +1.79% | +1.77% |
-| TWSTSTOCK/USDT:USDT | below_1h_threshold | +1.47% | +1.46% |
+| SYN/USDT:USDT | below_1h_threshold | +4.73% | +4.61% |
+| ACNSTOCK/USDT:USDT | below_1h_threshold | +3.79% | +3.67% |
+| AAVE/USDT:USDT | below_1h_threshold | +2.43% | +2.31% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +2.21% | +2.09% |
+| JASMY/USDT:USDT | below_1h_threshold | +2.21% | +2.09% |
 
 ## 7. 次に見るべき不足
 
