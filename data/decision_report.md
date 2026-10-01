@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-01T16:26:40.641591+00:00
+- generated_at: 2026-10-01T16:31:40.556934+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15922**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4087件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4088件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000332 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-01T16:26:30.514195+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.23% price=84316.9
+- 更新: 2026-10-01T16:31:28.564419+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.23% price=84318.9
 - Funnel: target 1097 → liquid 170 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 93.0 >= 65=1, 4h RSI 72.1 >= 65=1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 93.3 >= 65=1, 4h RSI 66.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MOVR/USDT:USDT | +9.74% | $23,456,554.86 |
-| NIGHT/USDT:USDT | +5.63% | $10,429,844.14 |
-| NOM/USDT:USDT | +4.19% | $3,015,304.85 |
-| ZRO/USDT:USDT | +4.06% | $4,235,665.02 |
-| US/USDT:USDT | +3.83% | $1,413,135.79 |
+| MOVR/USDT:USDT | +11.50% | $23,620,570.01 |
+| NOM/USDT:USDT | +5.97% | $3,028,433.00 |
+| NIGHT/USDT:USDT | +5.22% | $10,503,261.35 |
+| US/USDT:USDT | +4.43% | $1,432,404.08 |
+| ZRO/USDT:USDT | +4.24% | $4,347,193.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NOM/USDT:USDT | below_1h_threshold | +4.20% | +3.97% |
-| ZRO/USDT:USDT | below_1h_threshold | +4.10% | +3.87% |
-| US/USDT:USDT | below_1h_threshold | +3.65% | +3.43% |
-| SI/USDT:USDT | below_1h_threshold | +2.35% | +2.13% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +2.07% | +1.84% |
+| NIGHT/USDT:USDT | below_relative_strength | +5.20% | +4.97% |
+| US/USDT:USDT | below_1h_threshold | +4.51% | +4.29% |
+| ZRO/USDT:USDT | below_1h_threshold | +4.17% | +3.94% |
+| SI/USDT:USDT | below_1h_threshold | +3.87% | +3.64% |
+| SOONNETWORK/USDT:USDT | below_1h_threshold | +3.64% | +3.41% |
 
 ## 7. 次に見るべき不足
 
