@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-01T20:16:31.964645+00:00
+- generated_at: 2026-10-01T20:21:20.704513+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15943**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-01T20:16:20.275956+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=84749.6
-- Funnel: target 1097 → liquid 174 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 89.2 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-01T20:21:09.419515+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=84773.4
+- Funnel: target 1097 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +96.44% | $1,990,156.62 |
-| MAGMA/USDT:USDT | +23.33% | $1,224,393.60 |
-| LONGXIA/USDT:USDT | +14.24% | $11,300,108.15 |
-| ALICE/USDT:USDT | +14.05% | $2,063,450.78 |
-| VELO/USDT:USDT | +9.78% | $1,103,141.77 |
+| BATON/USDT:USDT | +95.35% | $2,030,892.84 |
+| MAGMA/USDT:USDT | +22.76% | $1,236,092.23 |
+| VELO/USDT:USDT | +11.60% | $1,114,084.11 |
+| LONGXIA/USDT:USDT | +10.48% | $11,353,700.85 |
+| ZRO/USDT:USDT | +9.56% | $7,059,365.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BATON/USDT:USDT | below_1h_threshold | +1.66% | +1.52% |
-| MAGMA/USDT:USDT | below_1h_threshold | +1.29% | +1.14% |
-| MUU/USDT:USDT | below_1h_threshold | +1.25% | +1.11% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +1.22% | +1.07% |
-| GRASS/USDT:USDT | below_1h_threshold | +0.99% | +0.85% |
+| ALICE/USDT:USDT | below_1h_threshold | +3.88% | +3.71% |
+| UAI/USDT:USDT | below_1h_threshold | +1.81% | +1.64% |
+| GRASS/USDT:USDT | below_1h_threshold | +1.48% | +1.31% |
+| BATON/USDT:USDT | below_1h_threshold | +1.34% | +1.17% |
+| MUU/USDT:USDT | below_1h_threshold | +1.25% | +1.08% |
 
 ## 7. 次に見るべき不足
 
