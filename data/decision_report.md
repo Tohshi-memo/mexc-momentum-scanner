@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-01T08:36:25.251230+00:00
+- generated_at: 2026-10-01T08:41:23.383136+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15882**
 
@@ -70,30 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-01T08:36:11.733460+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.28% price=83150.1
-- Funnel: target 1097 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-01T08:41:13.832478+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=83407.2
+- Funnel: target 1097 → liquid 176 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 75.6 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MOVR/USDT:USDT | +62.14% | $15,913,565.77 |
-| NOM/USDT:USDT | +22.49% | $1,606,523.78 |
-| MONAD/USDT:USDT | +15.82% | $7,730,991.76 |
-| JASMY/USDT:USDT | +13.52% | $5,630,100.65 |
-| STX/USDT:USDT | +12.84% | $5,902,029.09 |
+| MOVR/USDT:USDT | +62.21% | $15,985,297.75 |
+| NOM/USDT:USDT | +25.12% | $1,630,654.46 |
+| JASMY/USDT:USDT | +16.96% | $5,787,781.68 |
+| MONAD/USDT:USDT | +15.71% | $7,763,523.79 |
+| STX/USDT:USDT | +14.03% | $5,922,366.92 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JASMY/USDT:USDT | below_1h_threshold | +2.89% | +3.17% |
-| USOIL/USDT:USDT | below_1h_threshold | +1.72% | +2.00% |
-| NOM/USDT:USDT | below_1h_threshold | +1.67% | +1.95% |
-| UKOIL/USDT:USDT | below_1h_threshold | +1.44% | +1.73% |
-| CT/USDT:USDT | below_1h_threshold | +1.07% | +1.36% |
+| NOM/USDT:USDT | below_1h_threshold | +3.92% | +3.90% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.72% | +1.69% |
+| UKOIL/USDT:USDT | below_1h_threshold | +1.44% | +1.42% |
+| S/USDT:USDT | below_1h_threshold | +1.20% | +1.18% |
+| AVAX/USDT:USDT | below_1h_threshold | +0.97% | +0.94% |
 
 ## 7. 次に見るべき不足
 
