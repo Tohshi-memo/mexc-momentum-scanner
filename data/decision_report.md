@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-10-01T21:26:34.102656+00:00
+- generated_at: 2026-10-01T21:31:33.641041+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **15944**
+- closed shadow trades: **15945**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.66% / filled 20/20。**
-- 全期間 MARKET基準: n=15944, expectancy=-0.00%
+- 全期間 MARKET基準: n=15945, expectancy=-0.00%
 - 直近20件 MARKET基準: n=20, expectancy=+0.66%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -47,32 +47,32 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,310.40** / 初期 $100.00 (+1210.40%)
-- 確定: 6052件 (Win 1795 / Loss 1954 / Flat 2303) / skip 6453件
+- 確定: 6053件 (Win 1795 / Loss 1954 / Flat 2304) / skip 6453件
 - 成長率目線: 平均log +0.000425 / 幾何平均 +0.043% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_7PCT` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: SI/USDT:USDT `LIMIT_7PCT` TP_HIT account +1.00% 残高後 $1,310.40
+- 最新: ALICE/USDT:USDT `LIMIT_7PCT` EXPIRED account +0.00% 残高後 $1,310.40
 
 ## 4. Robust Adaptive DryRun ($100)
 
-- 残高: **$279.81** / 初期 $100.00 (+179.81%)
-- 確定: 3597件 (Win 1004 / Loss 838 / Flat 1755) / skip 5758件
-- 成長率目線: 平均log +0.000286 / 幾何平均 +0.029% per trade / maxDD +3.96%
-- 次の候補: `LIMIT_2PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.1118 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: SI/USDT:USDT `LIMIT_2PCT_LONG` TP_HIT account +0.69% 残高後 $279.81
+- 残高: **$278.83** / 初期 $100.00 (+178.83%)
+- 確定: 3598件 (Win 1004 / Loss 839 / Flat 1755) / skip 5758件
+- 成長率目線: 平均log +0.000285 / 幾何平均 +0.029% per trade / maxDD +3.96%
+- 次の候補: `LIMIT_2PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.1031 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 最新: ALICE/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.35% 残高後 $278.83
 
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
 - 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4111件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000347 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000324 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-01T21:26:20.567101+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=84553.0
-- Funnel: target 1097 → liquid 172 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-10-01T21:31:20.403068+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=84520.2
+- Funnel: target 1097 → liquid 173 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +67.47% | $2,451,537.36 |
-| MAGMA/USDT:USDT | +20.13% | $1,404,386.03 |
-| SI/USDT:USDT | +15.81% | $5,079,099.94 |
-| LONGXIA/USDT:USDT | +11.05% | $11,803,186.18 |
-| VELO/USDT:USDT | +9.02% | $1,207,464.48 |
+| BATON/USDT:USDT | +64.48% | $2,491,919.69 |
+| MAGMA/USDT:USDT | +20.54% | $1,407,323.15 |
+| SI/USDT:USDT | +14.89% | $5,092,498.61 |
+| LONGXIA/USDT:USDT | +10.65% | $11,831,784.09 |
+| VELO/USDT:USDT | +9.18% | $1,207,603.70 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MEGA/USDT:USDT | below_1h_threshold | +2.05% | +2.09% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +1.84% | +1.88% |
-| HNT/USDT:USDT | below_1h_threshold | +1.34% | +1.38% |
-| MONAD/USDT:USDT | below_1h_threshold | +0.59% | +0.63% |
-| WLFI/USDT:USDT | below_1h_threshold | +0.40% | +0.44% |
+| MEGA/USDT:USDT | below_1h_threshold | +3.01% | +3.09% |
+| HNT/USDT:USDT | below_1h_threshold | +1.86% | +1.94% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +1.48% | +1.55% |
+| MAGMA/USDT:USDT | below_1h_threshold | +0.46% | +0.54% |
+| LUNC/USDT:USDT | below_1h_threshold | +0.36% | +0.44% |
 
 ## 7. 次に見るべき不足
 
