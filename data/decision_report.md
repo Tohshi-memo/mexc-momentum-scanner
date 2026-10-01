@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-01T17:26:30.972763+00:00
+- generated_at: 2026-10-01T17:31:28.638510+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15928**
 
@@ -70,31 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-01T17:26:13.016526+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.68% price=84734.3
-- Funnel: target 1097 → liquid 171 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-01T17:31:14.727137+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.98% price=84990.0
+- Funnel: target 1097 → liquid 172 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| US/USDT:USDT | +6.61% | $1,522,313.03 |
-| SNXX/USDT:USDT | +5.86% | $5,555,496.31 |
-| WIF/USDT:USDT | +4.40% | $3,131,601.53 |
-| MUU/USDT:USDT | +4.21% | $19,106,353.36 |
-| KORU/USDT:USDT | +4.04% | $26,815,478.15 |
+| SNXX/USDT:USDT | +6.81% | $5,600,055.64 |
+| US/USDT:USDT | +6.63% | $1,531,370.02 |
+| KORU/USDT:USDT | +5.19% | $27,412,834.36 |
+| MUU/USDT:USDT | +5.08% | $19,151,089.08 |
+| MONAD/USDT:USDT | +4.75% | $11,421,358.17 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| WIF/USDT:USDT | below_1h_threshold | +4.79% | +4.11% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +4.02% | +3.35% |
-| MONAD/USDT:USDT | below_1h_threshold | +3.01% | +2.34% |
-| USELESS/USDT:USDT | below_1h_threshold | +3.00% | +2.32% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +2.78% | +2.11% |
+| USELESS/USDT:USDT | below_relative_strength | +5.67% | +4.70% |
+| GRASS/USDT:USDT | below_1h_threshold | +4.88% | +3.90% |
+| MONAD/USDT:USDT | below_1h_threshold | +4.87% | +3.89% |
+| WIF/USDT:USDT | below_1h_threshold | +4.79% | +3.81% |
+| VVV/USDT:USDT | below_1h_threshold | +3.76% | +2.78% |
 
 ## 7. 次に見るべき不足
 
