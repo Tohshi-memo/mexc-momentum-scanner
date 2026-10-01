@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-01T22:11:28.129579+00:00
+- generated_at: 2026-10-01T22:16:26.480856+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15949**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-01T22:11:18.307100+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.27% price=84726.0
+- 更新: 2026-10-01T22:16:15.188931+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.21% price=84675.9
 - Funnel: target 1097 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +75.88% | $2,755,987.97 |
-| MAGMA/USDT:USDT | +18.06% | $1,453,197.82 |
-| UAI/USDT:USDT | +9.78% | $2,011,039.92 |
-| LONGXIA/USDT:USDT | +9.00% | $11,861,086.00 |
-| MUU/USDT:USDT | +7.50% | $14,742,831.63 |
+| BATON/USDT:USDT | +78.86% | $2,766,115.30 |
+| MAGMA/USDT:USDT | +17.10% | $1,455,377.46 |
+| LONGXIA/USDT:USDT | +10.46% | $11,889,445.65 |
+| UAI/USDT:USDT | +10.18% | $2,023,988.26 |
+| MUU/USDT:USDT | +7.30% | $14,743,112.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.63% | +1.36% |
-| AAVE/USDT:USDT | below_1h_threshold | +1.09% | +0.82% |
-| JTO/USDT:USDT | below_1h_threshold | +1.05% | +0.78% |
-| MAGMA/USDT:USDT | below_1h_threshold | +0.96% | +0.69% |
-| WLD/USDT:USDT | below_1h_threshold | +0.91% | +0.64% |
+| BATON/USDT:USDT | below_1h_threshold | +1.79% | +1.58% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.18% | +0.98% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +1.00% | +0.79% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.90% | +0.69% |
+| NOM/USDT:USDT | below_1h_threshold | +0.77% | +0.56% |
 
 ## 7. 次に見るべき不足
 
