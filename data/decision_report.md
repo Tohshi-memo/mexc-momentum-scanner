@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-01T19:56:44.782040+00:00
+- generated_at: 2026-10-01T20:01:27.134506+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15939**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-01T19:56:30.156517+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.26% price=84548.5
-- Funnel: target 1097 → liquid 176 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.4 >= 65=1, 4h RSI 78.1 >= 65=1, 4h RSI 78.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-01T20:01:15.846021+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=84653.0
+- Funnel: target 1097 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +96.27% | $1,818,984.07 |
-| MAGMA/USDT:USDT | +22.08% | $1,156,559.93 |
-| LONGXIA/USDT:USDT | +13.26% | $11,268,645.45 |
-| VELO/USDT:USDT | +12.46% | $1,045,843.99 |
-| ZRO/USDT:USDT | +9.69% | $6,865,009.41 |
+| BATON/USDT:USDT | +89.47% | $1,859,341.07 |
+| MAGMA/USDT:USDT | +21.80% | $1,168,481.38 |
+| LONGXIA/USDT:USDT | +12.81% | $11,156,263.21 |
+| VELO/USDT:USDT | +11.67% | $1,043,425.38 |
+| ZRO/USDT:USDT | +10.08% | $6,628,016.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BATON/USDT:USDT | below_1h_threshold | +4.31% | +4.57% |
-| ZRO/USDT:USDT | below_1h_threshold | +3.29% | +3.54% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +2.22% | +2.47% |
-| GRASS/USDT:USDT | below_1h_threshold | +1.40% | +1.66% |
-| KORU/USDT:USDT | below_1h_threshold | +1.25% | +1.51% |
+| MUU/USDT:USDT | below_1h_threshold | +1.25% | +1.23% |
+| CAP/USDT:USDT | below_1h_threshold | +1.09% | +1.06% |
+| AKAMSTOCK/USDT:USDT | below_1h_threshold | +0.73% | +0.70% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +0.66% | +0.63% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.63% | +0.60% |
 
 ## 7. 次に見るべき不足
 
