@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-01T20:46:23.598475+00:00
+- generated_at: 2026-10-01T20:51:33.087259+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15943**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4108件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4109件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000330 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-01T20:46:14.865949+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=84518.4
+- 更新: 2026-10-01T20:51:21.279208+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=84600.0
 - Funnel: target 1097 → liquid 174 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.9 >= 65=1
+- Strict後reject: 4h RSI 75.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +71.81% | $2,215,991.20 |
-| MAGMA/USDT:USDT | +18.65% | $1,350,651.72 |
-| ALICE/USDT:USDT | +11.61% | $2,235,656.89 |
-| VELO/USDT:USDT | +10.68% | $1,149,235.96 |
-| UAI/USDT:USDT | +8.52% | $1,690,167.73 |
+| BATON/USDT:USDT | +76.32% | $2,277,415.78 |
+| MAGMA/USDT:USDT | +19.24% | $1,362,808.96 |
+| VELO/USDT:USDT | +10.47% | $1,162,980.32 |
+| UAI/USDT:USDT | +10.37% | $1,748,993.74 |
+| LONGXIA/USDT:USDT | +8.97% | $11,809,510.43 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UAI/USDT:USDT | below_1h_threshold | +2.57% | +2.70% |
-| SOONNETWORK/USDT:USDT | below_1h_threshold | +2.08% | +2.21% |
-| MUU/USDT:USDT | below_1h_threshold | +1.25% | +1.38% |
-| AKAMSTOCK/USDT:USDT | below_1h_threshold | +0.73% | +0.86% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +0.66% | +0.79% |
+| ALICE/USDT:USDT | below_1h_threshold | +3.29% | +3.32% |
+| SOONNETWORK/USDT:USDT | below_1h_threshold | +2.27% | +2.30% |
+| AERO/USDT:USDT | below_1h_threshold | +1.54% | +1.57% |
+| MUU/USDT:USDT | below_1h_threshold | +1.25% | +1.29% |
+| GRAM/USDT:USDT | below_1h_threshold | +1.04% | +1.07% |
 
 ## 7. 次に見るべき不足
 
