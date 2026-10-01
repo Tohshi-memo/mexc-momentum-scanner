@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-01T07:31:10.320070+00:00
+- generated_at: 2026-10-01T07:36:21.015444+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15878**
 
@@ -70,30 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-01T07:31:02.125068+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.82% price=83391.4
-- Funnel: target 1097 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-01T07:36:11.837595+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.57% price=83601.5
+- Funnel: target 1097 → liquid 174 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 74.4 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MOVR/USDT:USDT | +71.17% | $14,680,417.88 |
-| MONAD/USDT:USDT | +19.75% | $6,968,864.36 |
-| STX/USDT:USDT | +18.11% | $5,378,670.37 |
-| NIGHT/USDT:USDT | +12.23% | $7,163,991.99 |
-| NOM/USDT:USDT | +10.45% | $1,183,322.07 |
+| MOVR/USDT:USDT | +69.99% | $14,799,825.90 |
+| MONAD/USDT:USDT | +20.51% | $7,075,130.65 |
+| STX/USDT:USDT | +18.52% | $5,429,555.00 |
+| NOM/USDT:USDT | +15.88% | $1,213,615.11 |
+| NIGHT/USDT:USDT | +13.49% | $7,179,895.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NOM/USDT:USDT | below_1h_threshold | +4.18% | +5.00% |
-| USOIL/USDT:USDT | below_1h_threshold | +1.46% | +2.28% |
-| MOVR/USDT:USDT | below_1h_threshold | +1.46% | +2.28% |
-| UKOIL/USDT:USDT | below_1h_threshold | +1.28% | +2.11% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +1.14% | +1.96% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.46% | +2.03% |
+| PHA/USDT:USDT | below_1h_threshold | +1.41% | +1.98% |
+| UKOIL/USDT:USDT | below_1h_threshold | +1.28% | +1.86% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +1.20% | +1.77% |
+| BTW/USDT:USDT | below_1h_threshold | +0.94% | +1.51% |
 
 ## 7. 次に見るべき不足
 
