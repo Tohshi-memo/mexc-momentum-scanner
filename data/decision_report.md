@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-01T13:21:35.734644+00:00
+- generated_at: 2026-10-01T13:26:33.542437+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15904**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4064件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4065件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000305 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-01T13:21:22.007403+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=83577.6
-- Funnel: target 1097 → liquid 171 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-01T13:26:21.757872+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.29% price=83464.3
+- Funnel: target 1097 → liquid 171 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI n/a=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +75.11% | $5,566,943.34 |
-| MOVR/USDT:USDT | +66.12% | $19,399,712.36 |
-| CT/USDT:USDT | +30.11% | $6,855,443.24 |
-| NOM/USDT:USDT | +27.09% | $2,857,612.51 |
-| NIGHT/USDT:USDT | +18.43% | $8,881,449.34 |
+| LONGXIA/USDT:USDT | +74.69% | $5,684,397.84 |
+| MOVR/USDT:USDT | +63.40% | $19,486,820.70 |
+| CT/USDT:USDT | +31.45% | $6,894,357.10 |
+| NOM/USDT:USDT | +23.20% | $2,903,595.11 |
+| ACNSTOCK/USDT:USDT | +17.46% | $2,207,445.68 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CT/USDT:USDT | below_1h_threshold | +4.08% | +4.23% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +3.99% | +4.15% |
-| BTW/USDT:USDT | below_1h_threshold | +3.04% | +3.19% |
-| TRB/USDT:USDT | below_1h_threshold | +1.36% | +1.51% |
-| BR/USDT:USDT | below_1h_threshold | +1.08% | +1.24% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +3.91% | +4.20% |
+| BTW/USDT:USDT | below_1h_threshold | +3.03% | +3.32% |
+| TRB/USDT:USDT | below_1h_threshold | +2.31% | +2.60% |
+| BR/USDT:USDT | below_1h_threshold | +1.08% | +1.37% |
+| SYN/USDT:USDT | below_1h_threshold | +0.95% | +1.24% |
 
 ## 7. 次に見るべき不足
 
