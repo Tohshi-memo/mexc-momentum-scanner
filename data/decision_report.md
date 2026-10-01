@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-01T04:41:20.956167+00:00
+- generated_at: 2026-10-01T04:46:24.391239+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15870**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-01T04:41:09.652772+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=83856.9
+- 更新: 2026-10-01T04:46:12.551334+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.20% price=83890.4
 - Funnel: target 1097 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MOVR/USDT:USDT | +25.32% | $9,934,427.56 |
-| MONAD/USDT:USDT | +16.90% | $5,073,998.01 |
-| STX/USDT:USDT | +13.74% | $4,116,427.89 |
-| PLUME/USDT:USDT | +12.86% | $1,114,647.01 |
-| NIGHT/USDT:USDT | +10.34% | $6,151,462.02 |
+| MOVR/USDT:USDT | +20.79% | $10,084,091.38 |
+| MONAD/USDT:USDT | +15.93% | $5,117,414.93 |
+| STX/USDT:USDT | +13.94% | $4,135,508.88 |
+| PLUME/USDT:USDT | +13.56% | $1,116,209.01 |
+| NIGHT/USDT:USDT | +9.84% | $6,179,030.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNXX/USDT:USDT | below_1h_threshold | +2.55% | +2.39% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.84% | +1.68% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.39% | +1.23% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.18% | +1.02% |
-| ENA/USDT:USDT | below_1h_threshold | +1.14% | +0.98% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.55% | +2.35% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.84% | +1.64% |
+| ENA/USDT:USDT | below_1h_threshold | +1.43% | +1.23% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.39% | +1.19% |
+| AERO/USDT:USDT | below_1h_threshold | +1.20% | +1.00% |
 
 ## 7. 次に見るべき不足
 
