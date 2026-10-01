@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-01T22:01:36.928548+00:00
+- generated_at: 2026-10-01T22:06:25.998380+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15949**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-01T22:01:21.135648+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=84560.0
+- 更新: 2026-10-01T22:06:14.411544+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.27% price=84732.7
 - Funnel: target 1097 → liquid 171 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +77.11% | $2,736,067.96 |
-| MAGMA/USDT:USDT | +16.87% | $1,451,012.73 |
-| UAI/USDT:USDT | +11.39% | $1,976,307.93 |
-| LONGXIA/USDT:USDT | +10.10% | $11,811,093.47 |
-| MUU/USDT:USDT | +7.38% | $14,739,506.61 |
+| BATON/USDT:USDT | +72.29% | $2,742,389.79 |
+| MAGMA/USDT:USDT | +17.68% | $1,451,681.96 |
+| UAI/USDT:USDT | +10.25% | $1,992,177.47 |
+| LONGXIA/USDT:USDT | +9.42% | $11,842,596.06 |
+| MUU/USDT:USDT | +7.64% | $14,739,842.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UKOIL/USDT:USDT | below_1h_threshold | +0.90% | +0.83% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +0.64% | +0.57% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +0.62% | +0.55% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +0.47% | +0.40% |
-| WLD/USDT:USDT | below_1h_threshold | +0.46% | +0.39% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.84% | +1.56% |
+| JTO/USDT:USDT | below_1h_threshold | +1.11% | +0.83% |
+| WLD/USDT:USDT | below_1h_threshold | +1.03% | +0.76% |
+| AAVE/USDT:USDT | below_1h_threshold | +0.94% | +0.66% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.90% | +0.63% |
 
 ## 7. 次に見るべき不足
 
