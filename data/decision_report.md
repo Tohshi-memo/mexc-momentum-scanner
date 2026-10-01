@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-01T08:26:21.735525+00:00
+- generated_at: 2026-10-01T08:31:24.213387+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15881**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-01T08:26:09.704653+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=83406.1
+- 更新: 2026-10-01T08:31:12.512995+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=83329.2
 - Funnel: target 1097 → liquid 175 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.7 >= 65=1
+- Strict後reject: 4h RSI 75.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MOVR/USDT:USDT | +59.39% | $15,744,529.36 |
-| NOM/USDT:USDT | +19.02% | $1,509,496.72 |
-| JASMY/USDT:USDT | +17.14% | $5,225,036.87 |
-| MONAD/USDT:USDT | +16.29% | $7,630,838.52 |
-| STX/USDT:USDT | +13.10% | $5,874,247.82 |
+| MOVR/USDT:USDT | +60.78% | $15,835,235.93 |
+| NOM/USDT:USDT | +23.36% | $1,546,002.63 |
+| JASMY/USDT:USDT | +16.90% | $5,454,972.17 |
+| MONAD/USDT:USDT | +15.78% | $7,706,839.93 |
+| STX/USDT:USDT | +13.13% | $5,895,041.78 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| USOIL/USDT:USDT | below_1h_threshold | +1.72% | +1.69% |
-| UKOIL/USDT:USDT | below_1h_threshold | +1.44% | +1.42% |
-| CT/USDT:USDT | below_1h_threshold | +1.22% | +1.20% |
-| AAVE/USDT:USDT | below_1h_threshold | +0.96% | +0.94% |
-| TAO/USDT:USDT | below_1h_threshold | +0.75% | +0.73% |
+| NOM/USDT:USDT | below_1h_threshold | +2.47% | +2.53% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.72% | +1.78% |
+| UKOIL/USDT:USDT | below_1h_threshold | +1.44% | +1.51% |
+| BTW/USDT:USDT | below_1h_threshold | +0.68% | +0.75% |
+| AVAX/USDT:USDT | below_1h_threshold | +0.51% | +0.58% |
 
 ## 7. 次に見るべき不足
 
