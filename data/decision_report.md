@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-01T19:01:32.741419+00:00
+- generated_at: 2026-10-01T19:06:28.246007+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15933**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-01T19:01:21.393403+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=84787.7
-- Funnel: target 1097 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-01T19:06:17.134359+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=84752.6
+- Funnel: target 1097 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +12.52% | $10,662,011.96 |
-| MOVR/USDT:USDT | +9.24% | $26,386,628.38 |
-| SI/USDT:USDT | +8.83% | $5,519,920.31 |
-| MUU/USDT:USDT | +7.75% | $20,320,453.16 |
-| USELESS/USDT:USDT | +7.01% | $3,389,612.31 |
+| BATON/USDT:USDT | +83.86% | $1,077,462.06 |
+| LONGXIA/USDT:USDT | +12.34% | $10,705,721.42 |
+| MOVR/USDT:USDT | +8.76% | $26,435,434.78 |
+| SI/USDT:USDT | +8.60% | $5,529,521.02 |
+| MUU/USDT:USDT | +7.13% | $20,505,374.39 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KORU/USDT:USDT | below_1h_threshold | +1.25% | +1.23% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.95% | +0.92% |
-| NVIDIA/USDT:USDT | below_1h_threshold | +0.78% | +0.75% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.67% | +0.64% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.66% | +0.63% |
+| NOM/USDT:USDT | below_1h_threshold | +2.55% | +2.57% |
+| KORU/USDT:USDT | below_1h_threshold | +1.25% | +1.27% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.95% | +0.96% |
+| NVIDIA/USDT:USDT | below_1h_threshold | +0.78% | +0.79% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.67% | +0.69% |
 
 ## 7. 次に見るべき不足
 
