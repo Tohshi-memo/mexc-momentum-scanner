@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-01T19:41:46.133435+00:00
+- generated_at: 2026-10-01T19:46:24.075703+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15938**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-01T19:41:33.513675+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=84626.7
-- Funnel: target 1097 → liquid 174 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.1 >= 65=1, 4h RSI 77.5 >= 65=1
+- 更新: 2026-10-01T19:46:14.313821+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.19% price=84606.6
+- Funnel: target 1097 → liquid 176 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 65.2 >= 65=1, 4h RSI 78.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +110.43% | $1,666,048.15 |
-| MAGMA/USDT:USDT | +21.46% | $1,095,464.39 |
-| LONGXIA/USDT:USDT | +12.50% | $11,102,036.75 |
-| ZRO/USDT:USDT | +7.59% | $6,300,531.33 |
-| MUU/USDT:USDT | +7.13% | $20,709,943.92 |
+| BATON/USDT:USDT | +116.08% | $1,713,820.35 |
+| MAGMA/USDT:USDT | +22.50% | $1,132,573.97 |
+| VELO/USDT:USDT | +11.05% | $1,010,604.45 |
+| LONGXIA/USDT:USDT | +10.63% | $11,193,937.08 |
+| ZRO/USDT:USDT | +7.99% | $6,512,578.41 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZRO/USDT:USDT | below_1h_threshold | +1.31% | +1.47% |
-| KORU/USDT:USDT | below_1h_threshold | +1.25% | +1.42% |
-| TRB/USDT:USDT | below_1h_threshold | +1.14% | +1.30% |
-| GRASS/USDT:USDT | below_1h_threshold | +1.09% | +1.25% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.95% | +1.11% |
+| ALICE/USDT:USDT | below_1h_threshold | +4.52% | +4.71% |
+| VELO/USDT:USDT | below_1h_threshold | +4.48% | +4.67% |
+| ZRO/USDT:USDT | below_1h_threshold | +1.68% | +1.87% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.57% | +1.76% |
+| TRB/USDT:USDT | below_1h_threshold | +1.39% | +1.58% |
 
 ## 7. 次に見るべき不足
 
