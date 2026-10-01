@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-01T16:56:44.912623+00:00
+- generated_at: 2026-10-01T17:01:25.557107+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15925**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-01T16:56:28.394866+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=84118.2
-- Funnel: target 1097 → liquid 172 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 93.2 >= 65=1, 4h RSI 65.3 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-01T17:01:14.386130+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=84160.0
+- Funnel: target 1097 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MOVR/USDT:USDT | +10.88% | $24,594,382.80 |
-| US/USDT:USDT | +4.96% | $1,482,180.48 |
-| NOM/USDT:USDT | +3.49% | $3,083,768.36 |
-| NIGHT/USDT:USDT | +2.82% | $10,869,774.37 |
-| SNXX/USDT:USDT | +2.57% | $5,413,840.60 |
+| MOVR/USDT:USDT | +11.85% | $24,484,746.83 |
+| US/USDT:USDT | +5.41% | $1,464,618.29 |
+| NIGHT/USDT:USDT | +2.85% | $10,642,226.71 |
+| SNXX/USDT:USDT | +2.81% | $5,393,966.09 |
+| MUU/USDT:USDT | +2.13% | $18,864,257.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NOM/USDT:USDT | below_1h_threshold | +3.42% | +3.43% |
-| NIGHT/USDT:USDT | below_1h_threshold | +2.83% | +2.84% |
-| ZRO/USDT:USDT | below_1h_threshold | +1.43% | +1.44% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.38% | +1.39% |
-| MUU/USDT:USDT | below_1h_threshold | +1.22% | +1.23% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.63% | +2.64% |
+| MUU/USDT:USDT | below_1h_threshold | +1.99% | +2.00% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.34% | +1.34% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +1.08% | +1.08% |
+| ORCLSTOCK/USDT:USDT | below_1h_threshold | +0.76% | +0.76% |
 
 ## 7. 次に見るべき不足
 
