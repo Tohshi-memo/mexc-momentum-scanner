@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-01T07:26:50.011286+00:00
+- generated_at: 2026-10-01T07:31:10.320070+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15878**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-01T07:26:38.319051+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.93% price=83301.5
+- 更新: 2026-10-01T07:31:02.125068+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.82% price=83391.4
 - Funnel: target 1097 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MOVR/USDT:USDT | +72.79% | $14,532,250.73 |
-| MONAD/USDT:USDT | +19.25% | $6,817,621.07 |
-| STX/USDT:USDT | +17.35% | $5,324,472.68 |
-| NIGHT/USDT:USDT | +13.30% | $7,133,960.83 |
-| NOM/USDT:USDT | +11.07% | $1,170,792.08 |
+| MOVR/USDT:USDT | +71.17% | $14,680,417.88 |
+| MONAD/USDT:USDT | +19.75% | $6,968,864.36 |
+| STX/USDT:USDT | +18.11% | $5,378,670.37 |
+| NIGHT/USDT:USDT | +12.23% | $7,163,991.99 |
+| NOM/USDT:USDT | +10.45% | $1,183,322.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NOM/USDT:USDT | below_1h_threshold | +4.77% | +5.70% |
-| MOVR/USDT:USDT | below_1h_threshold | +2.44% | +3.37% |
-| USOIL/USDT:USDT | below_1h_threshold | +1.46% | +2.39% |
-| UKOIL/USDT:USDT | below_1h_threshold | +1.28% | +2.21% |
-| SNXX/USDT:USDT | below_1h_threshold | +0.74% | +1.67% |
+| NOM/USDT:USDT | below_1h_threshold | +4.18% | +5.00% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.46% | +2.28% |
+| MOVR/USDT:USDT | below_1h_threshold | +1.46% | +2.28% |
+| UKOIL/USDT:USDT | below_1h_threshold | +1.28% | +2.11% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +1.14% | +1.96% |
 
 ## 7. 次に見るべき不足
 
