@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-01T03:46:25.375481+00:00
+- generated_at: 2026-10-01T03:51:18.480291+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15869**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-01T03:46:11.903183+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.26% price=83666.4
+- 更新: 2026-10-01T03:51:07.041755+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.26% price=83660.8
 - Funnel: target 1097 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MOVR/USDT:USDT | +40.57% | $9,361,557.96 |
-| MONAD/USDT:USDT | +16.76% | $4,968,941.65 |
-| PLUME/USDT:USDT | +14.05% | $1,000,230.17 |
-| STX/USDT:USDT | +12.20% | $4,003,472.66 |
-| NIGHT/USDT:USDT | +11.27% | $5,866,770.45 |
+| MOVR/USDT:USDT | +39.55% | $9,386,434.93 |
+| MONAD/USDT:USDT | +17.77% | $5,003,600.59 |
+| PLUME/USDT:USDT | +13.24% | $1,007,522.86 |
+| STX/USDT:USDT | +12.81% | $4,025,274.15 |
+| NIGHT/USDT:USDT | +11.76% | $5,904,022.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KORU/USDT:USDT | below_1h_threshold | +2.70% | +2.43% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +2.46% | +2.19% |
-| ALGO/USDT:USDT | below_1h_threshold | +2.37% | +2.11% |
-| BTW/USDT:USDT | below_1h_threshold | +2.25% | +1.98% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.89% | +1.63% |
+| KORU/USDT:USDT | below_1h_threshold | +2.70% | +2.44% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +2.51% | +2.25% |
+| BTW/USDT:USDT | below_1h_threshold | +2.50% | +2.24% |
+| STX/USDT:USDT | below_1h_threshold | +2.27% | +2.01% |
+| ALGO/USDT:USDT | below_1h_threshold | +2.18% | +1.93% |
 
 ## 7. 次に見るべき不足
 
