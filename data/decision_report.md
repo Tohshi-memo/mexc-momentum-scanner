@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-01T05:31:39.407735+00:00
+- generated_at: 2026-10-01T05:36:22.632939+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15872**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-01T05:31:27.403190+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.20% price=84238.9
-- Funnel: target 1097 → liquid 176 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 93.5 >= 65=1, 4h RSI 90.7 >= 65=1
+- 更新: 2026-10-01T05:36:11.065901+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.21% price=84248.6
+- Funnel: target 1097 → liquid 176 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 93.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MOVR/USDT:USDT | +44.86% | $11,523,262.04 |
-| MONAD/USDT:USDT | +20.18% | $5,285,256.71 |
-| NIGHT/USDT:USDT | +17.61% | $6,466,819.45 |
-| STX/USDT:USDT | +14.88% | $4,451,871.58 |
-| PLUME/USDT:USDT | +11.49% | $1,209,715.62 |
+| MOVR/USDT:USDT | +45.51% | $11,614,713.09 |
+| MONAD/USDT:USDT | +19.93% | $5,293,781.79 |
+| STX/USDT:USDT | +16.30% | $4,503,918.24 |
+| NIGHT/USDT:USDT | +15.33% | $6,537,543.86 |
+| PLUME/USDT:USDT | +11.60% | $1,226,018.95 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JASMY/USDT:USDT | below_1h_threshold | +3.27% | +3.07% |
-| MONAD/USDT:USDT | below_1h_threshold | +2.83% | +2.63% |
-| VIRTUAL/USDT:USDT | below_1h_threshold | +1.43% | +1.24% |
-| SPX/USDT:USDT | below_1h_threshold | +1.31% | +1.11% |
-| FET/USDT:USDT | below_1h_threshold | +1.23% | +1.04% |
+| NIGHT/USDT:USDT | below_1h_threshold | +4.19% | +3.98% |
+| JASMY/USDT:USDT | below_1h_threshold | +3.11% | +2.90% |
+| MONAD/USDT:USDT | below_1h_threshold | +2.46% | +2.25% |
+| STX/USDT:USDT | below_1h_threshold | +2.28% | +2.07% |
+| VIRTUAL/USDT:USDT | below_1h_threshold | +2.06% | +1.86% |
 
 ## 7. 次に見るべき不足
 
