@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-02T18:57:02.900865+00:00
+- generated_at: 2026-10-02T19:01:34.552762+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16016**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-02T18:56:51.251136+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.75% price=84112.8
-- Funnel: target 1099 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-02T19:01:23.093368+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=84238.0
+- Funnel: target 1099 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +11.57% | $18,407,993.66 |
-| SOXS/USDT:USDT | +2.35% | $32,786,259.92 |
-| ENJ/USDT:USDT | +2.34% | $2,212,662.45 |
-| WDCSTOCK/USDT:USDT | +2.23% | $1,115,631.97 |
-| NKESTOCK/USDT:USDT | +1.62% | $5,115,239.55 |
+| LONGXIA/USDT:USDT | +10.24% | $17,969,644.32 |
+| ENJ/USDT:USDT | +3.25% | $2,208,488.38 |
+| SOXS/USDT:USDT | +2.35% | $31,246,202.97 |
+| WDCSTOCK/USDT:USDT | +2.00% | $1,093,593.82 |
+| CT/USDT:USDT | +1.65% | $9,506,674.26 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| WDCSTOCK/USDT:USDT | below_1h_threshold | +2.01% | +2.76% |
-| ENJ/USDT:USDT | below_1h_threshold | +1.42% | +2.17% |
-| NKESTOCK/USDT:USDT | below_1h_threshold | +1.31% | +2.06% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.99% | +1.74% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.56% | +1.31% |
+| ENJ/USDT:USDT | below_1h_threshold | +1.43% | +1.41% |
+| CT/USDT:USDT | below_1h_threshold | +1.39% | +1.37% |
+| AVGOSTOCK/USDT:USDT | below_1h_threshold | +0.63% | +0.61% |
+| NKESTOCK/USDT:USDT | below_1h_threshold | +0.59% | +0.57% |
+| ATH/USDT:USDT | below_1h_threshold | +0.58% | +0.56% |
 
 ## 7. 次に見るべき不足
 
