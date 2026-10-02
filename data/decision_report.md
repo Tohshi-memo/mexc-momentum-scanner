@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-02T10:11:25.853679+00:00
+- generated_at: 2026-10-02T10:16:22.593965+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15989**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4150件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4151件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000079 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-02T10:11:14.457304+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=86325.4
-- Funnel: target 1098 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-02T10:16:08.690484+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=86294.3
+- Funnel: target 1098 → liquid 173 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +82.37% | $4,000,309.34 |
-| SAND/USDT:USDT | +41.07% | $16,990,799.89 |
-| CT/USDT:USDT | +20.57% | $8,505,879.78 |
-| MANA/USDT:USDT | +13.90% | $2,554,753.73 |
-| MAGMA/USDT:USDT | +13.41% | $2,325,910.27 |
+| BATON/USDT:USDT | +82.02% | $4,005,047.36 |
+| SAND/USDT:USDT | +36.46% | $17,741,331.21 |
+| CT/USDT:USDT | +21.03% | $8,563,261.61 |
+| MAGMA/USDT:USDT | +14.74% | $2,365,266.61 |
+| SUPER/USDT:USDT | +13.28% | $1,131,951.11 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SI/USDT:USDT | below_1h_threshold | +3.43% | +3.43% |
-| BATON/USDT:USDT | below_1h_threshold | +2.41% | +2.41% |
-| MUU/USDT:USDT | below_1h_threshold | +0.83% | +0.83% |
-| SAND/USDT:USDT | below_1h_threshold | +0.83% | +0.83% |
-| XPL/USDT:USDT | below_1h_threshold | +0.69% | +0.69% |
+| BATON/USDT:USDT | below_1h_threshold | +2.22% | +2.25% |
+| SUPER/USDT:USDT | below_1h_threshold | +1.08% | +1.11% |
+| MUU/USDT:USDT | below_1h_threshold | +0.83% | +0.87% |
+| VVV/USDT:USDT | below_1h_threshold | +0.63% | +0.67% |
+| XPL/USDT:USDT | below_1h_threshold | +0.56% | +0.59% |
 
 ## 7. 次に見るべき不足
 
