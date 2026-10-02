@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-02T00:56:34.197580+00:00
+- generated_at: 2026-10-02T01:01:37.024063+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15955**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-02T00:56:20.030552+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=84728.5
-- Funnel: target 1097 → liquid 174 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-02T01:01:25.652354+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=84711.1
+- Funnel: target 1097 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +78.29% | $3,302,448.36 |
-| MAGMA/USDT:USDT | +12.01% | $1,537,562.49 |
-| UAI/USDT:USDT | +11.51% | $2,333,291.98 |
-| SI/USDT:USDT | +9.29% | $4,347,711.98 |
-| HNT/USDT:USDT | +8.67% | $1,261,107.52 |
+| BATON/USDT:USDT | +73.69% | $3,290,526.78 |
+| UAI/USDT:USDT | +11.70% | $2,334,641.90 |
+| MAGMA/USDT:USDT | +11.04% | $1,534,396.22 |
+| HNT/USDT:USDT | +8.15% | $1,243,430.04 |
+| MUU/USDT:USDT | +7.97% | $14,731,105.25 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GRASS/USDT:USDT | below_1h_threshold | +4.77% | +4.89% |
-| MOVR/USDT:USDT | below_1h_threshold | +4.67% | +4.79% |
-| ALICE/USDT:USDT | below_1h_threshold | +3.55% | +3.67% |
-| HNT/USDT:USDT | below_1h_threshold | +2.58% | +2.70% |
-| ZRO/USDT:USDT | below_1h_threshold | +2.14% | +2.25% |
+| KORU/USDT:USDT | below_1h_threshold | +1.15% | +1.19% |
+| MEGA/USDT:USDT | below_1h_threshold | +0.97% | +1.01% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.85% | +0.89% |
+| SOXL/USDT:USDT | below_1h_threshold | +0.83% | +0.88% |
+| LSK/USDT:USDT | below_1h_threshold | +0.51% | +0.56% |
 
 ## 7. 次に見るべき不足
 
