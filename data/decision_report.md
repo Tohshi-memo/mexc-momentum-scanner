@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-02T01:46:38.330652+00:00
+- generated_at: 2026-10-02T01:51:12.727733+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15959**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-02T01:46:22.716318+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.25% price=84537.2
+- 更新: 2026-10-02T01:51:04.919198+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=84642.6
 - Funnel: target 1097 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +61.55% | $3,344,125.45 |
-| UAI/USDT:USDT | +9.69% | $2,469,293.06 |
-| MAGMA/USDT:USDT | +8.42% | $1,567,434.85 |
-| HNT/USDT:USDT | +7.19% | $1,308,416.09 |
-| MUU/USDT:USDT | +7.10% | $14,875,882.34 |
+| BATON/USDT:USDT | +63.08% | $3,345,221.74 |
+| UAI/USDT:USDT | +8.55% | $2,484,713.92 |
+| MAGMA/USDT:USDT | +7.86% | $1,568,366.51 |
+| ZRO/USDT:USDT | +7.32% | $10,615,384.07 |
+| MUU/USDT:USDT | +7.22% | $14,878,859.60 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KORU/USDT:USDT | below_1h_threshold | +1.15% | +1.40% |
-| STRK/USDT:USDT | below_1h_threshold | +0.99% | +1.24% |
-| AAVE/USDT:USDT | below_1h_threshold | +0.90% | +1.15% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.85% | +1.10% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.83% | +1.09% |
+| AAVE/USDT:USDT | below_1h_threshold | +1.44% | +1.56% |
+| STRK/USDT:USDT | below_1h_threshold | +1.16% | +1.28% |
+| KORU/USDT:USDT | below_1h_threshold | +1.15% | +1.28% |
+| AKE/USDT:USDT | below_1h_threshold | +0.90% | +1.03% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.85% | +0.97% |
 
 ## 7. 次に見るべき不足
 
