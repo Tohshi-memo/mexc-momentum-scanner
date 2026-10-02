@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-02T15:01:19.810385+00:00
+- generated_at: 2026-10-02T15:06:15.712500+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16009**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-02T15:01:10.782284+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=85679.8
+- 更新: 2026-10-02T15:06:07.719445+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.22% price=85453.8
 - Funnel: target 1098 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +71.59% | $4,249,152.42 |
-| MAGMA/USDT:USDT | +60.71% | $3,099,300.74 |
-| SAND/USDT:USDT | +45.78% | $53,481,585.42 |
-| SI/USDT:USDT | +34.17% | $3,763,849.90 |
-| NIGHT/USDT:USDT | +24.62% | $7,043,328.82 |
+| BATON/USDT:USDT | +70.93% | $4,250,977.53 |
+| MAGMA/USDT:USDT | +58.89% | $3,144,359.33 |
+| SAND/USDT:USDT | +44.23% | $53,905,616.78 |
+| SI/USDT:USDT | +32.99% | $3,774,055.59 |
+| NIGHT/USDT:USDT | +23.74% | $7,092,306.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TESLA/USDT:USDT | below_1h_threshold | +0.94% | +0.89% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.79% | +0.75% |
-| APE/USDT:USDT | below_1h_threshold | +0.59% | +0.54% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.56% | +0.51% |
-| NIGHT/USDT:USDT | below_1h_threshold | +0.53% | +0.48% |
+| TESLA/USDT:USDT | below_1h_threshold | +0.94% | +1.16% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.79% | +1.01% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.56% | +0.78% |
+| SUPER/USDT:USDT | below_1h_threshold | +0.19% | +0.41% |
+| APE/USDT:USDT | below_1h_threshold | +0.12% | +0.34% |
 
 ## 7. 次に見るべき不足
 
