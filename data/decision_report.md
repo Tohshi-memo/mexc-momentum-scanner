@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-02T05:31:27.529776+00:00
+- generated_at: 2026-10-02T05:36:13.277994+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15970**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-02T05:31:15.844106+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.34% price=86329.6
+- 更新: 2026-10-02T05:36:05.133936+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.46% price=86226.0
 - Funnel: target 1097 → liquid 173 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +68.78% | $3,507,653.98 |
-| MAGMA/USDT:USDT | +20.42% | $1,880,544.84 |
-| SUPER/USDT:USDT | +13.79% | $1,133,051.55 |
-| ZRO/USDT:USDT | +12.46% | $11,783,909.44 |
-| USELESS/USDT:USDT | +11.09% | $4,105,387.31 |
+| BATON/USDT:USDT | +70.10% | $3,517,704.43 |
+| MAGMA/USDT:USDT | +21.46% | $1,883,249.63 |
+| SUPER/USDT:USDT | +12.98% | $1,133,426.36 |
+| ZRO/USDT:USDT | +12.45% | $12,037,182.22 |
+| USELESS/USDT:USDT | +11.45% | $4,118,169.73 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CT/USDT:USDT | below_1h_threshold | +2.52% | +2.87% |
-| ZRO/USDT:USDT | below_1h_threshold | +2.21% | +2.56% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +1.62% | +1.96% |
-| KORU/USDT:USDT | below_1h_threshold | +0.94% | +1.29% |
-| MUU/USDT:USDT | below_1h_threshold | +0.76% | +1.10% |
+| CT/USDT:USDT | below_1h_threshold | +2.74% | +3.21% |
+| ZRO/USDT:USDT | below_1h_threshold | +2.29% | +2.75% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +1.62% | +2.08% |
+| KORU/USDT:USDT | below_1h_threshold | +0.94% | +1.41% |
+| MEGA/USDT:USDT | below_1h_threshold | +0.81% | +1.28% |
 
 ## 7. 次に見るべき不足
 
