@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-02T18:36:28.326611+00:00
+- generated_at: 2026-10-02T18:41:31.234721+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16015**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4175件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4176件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000145 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-02T18:36:16.974869+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.38% price=84421.1
-- Funnel: target 1099 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-02T18:41:19.687937+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.69% price=84165.6
+- Funnel: target 1099 → liquid 177 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 79.0 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +5.35% | $18,132,355.20 |
-| ENJ/USDT:USDT | +4.17% | $2,040,593.62 |
-| WDCSTOCK/USDT:USDT | +3.26% | $1,091,234.45 |
-| SOXS/USDT:USDT | +3.11% | $32,064,554.65 |
-| NIGHT/USDT:USDT | +1.87% | $7,555,484.75 |
+| LONGXIA/USDT:USDT | +7.82% | $18,217,815.96 |
+| ENJ/USDT:USDT | +4.66% | $2,100,302.18 |
+| SOXS/USDT:USDT | +3.49% | $32,305,428.53 |
+| WDCSTOCK/USDT:USDT | +2.18% | $1,093,622.73 |
+| NKESTOCK/USDT:USDT | +1.53% | $5,066,263.47 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ENJ/USDT:USDT | below_1h_threshold | +3.23% | +3.61% |
-| WDCSTOCK/USDT:USDT | below_1h_threshold | +2.01% | +2.40% |
-| NKESTOCK/USDT:USDT | below_1h_threshold | +1.31% | +1.70% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.99% | +1.37% |
-| ATH/USDT:USDT | below_1h_threshold | +0.72% | +1.10% |
+| ENJ/USDT:USDT | below_1h_threshold | +3.47% | +4.16% |
+| WDCSTOCK/USDT:USDT | below_1h_threshold | +2.01% | +2.70% |
+| NKESTOCK/USDT:USDT | below_1h_threshold | +1.31% | +2.00% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.99% | +1.67% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.56% | +1.25% |
 
 ## 7. 次に見るべき不足
 
