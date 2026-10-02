@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-02T09:21:16.148271+00:00
+- generated_at: 2026-10-02T09:26:31.606519+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15989**
 
@@ -39,9 +39,9 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$120.51** / 初期 $100.00 (+20.51%)
-- 確定トレード: 227件 (TP 82 / SL 138 / EXP 7)
-- 最新: BATON/USDT:USDT SL_HIT PnL -4.00% 残高後 $120.51
+- 残高: **$120.39** / 初期 $100.00 (+20.39%)
+- 確定トレード: 228件 (TP 82 / SL 139 / EXP 7)
+- 最新: MUU/USDT:USDT SL_HIT PnL -4.00% 残高後 $120.39
 - 最新戦略メタ: tier=S, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4148件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4149件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000079 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-02T09:21:07.849309+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=86188.5
-- Funnel: target 1098 → liquid 171 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-02T09:26:20.140919+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=86124.1
+- Funnel: target 1098 → liquid 171 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 77.7 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +90.70% | $3,927,463.50 |
-| SAND/USDT:USDT | +41.53% | $13,911,577.46 |
-| MAGMA/USDT:USDT | +27.76% | $2,245,807.27 |
-| CT/USDT:USDT | +26.98% | $8,454,407.43 |
-| MANA/USDT:USDT | +15.46% | $2,113,783.94 |
+| BATON/USDT:USDT | +88.73% | $3,935,332.87 |
+| SAND/USDT:USDT | +43.10% | $14,326,164.22 |
+| CT/USDT:USDT | +27.04% | $8,481,689.48 |
+| MAGMA/USDT:USDT | +27.00% | $2,246,929.31 |
+| MANA/USDT:USDT | +17.94% | $2,226,727.05 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MANA/USDT:USDT | below_1h_threshold | +3.32% | +3.34% |
-| SAND/USDT:USDT | below_1h_threshold | +2.76% | +2.78% |
-| MUU/USDT:USDT | below_1h_threshold | +2.28% | +2.30% |
-| NIGHT/USDT:USDT | below_1h_threshold | +2.03% | +2.05% |
-| GALA/USDT:USDT | below_1h_threshold | +1.67% | +1.69% |
+| SAND/USDT:USDT | below_1h_threshold | +3.90% | +4.00% |
+| AXS/USDT:USDT | below_1h_threshold | +3.22% | +3.32% |
+| MUU/USDT:USDT | below_1h_threshold | +2.28% | +2.37% |
+| GALA/USDT:USDT | below_1h_threshold | +2.03% | +2.12% |
+| NIGHT/USDT:USDT | below_1h_threshold | +1.67% | +1.77% |
 
 ## 7. 次に見るべき不足
 
