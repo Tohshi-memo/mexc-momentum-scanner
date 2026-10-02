@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-02T13:36:31.675081+00:00
+- generated_at: 2026-10-02T13:41:27.730880+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15999**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4162件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4163件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000062 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-02T13:36:18.250138+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.21% price=86954.1
-- Funnel: target 1098 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-02T13:41:18.998344+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.33% price=87054.1
+- Funnel: target 1098 → liquid 175 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 78.1 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +81.14% | $4,183,321.63 |
-| SAND/USDT:USDT | +57.08% | $42,916,437.66 |
-| MAGMA/USDT:USDT | +24.49% | $2,594,747.04 |
-| ENJ/USDT:USDT | +23.69% | $1,518,165.34 |
-| NIGHT/USDT:USDT | +23.51% | $7,972,242.99 |
+| BATON/USDT:USDT | +81.49% | $4,194,312.49 |
+| SAND/USDT:USDT | +55.30% | $43,377,252.48 |
+| MAGMA/USDT:USDT | +24.75% | $2,601,052.64 |
+| NIGHT/USDT:USDT | +23.38% | $8,017,223.97 |
+| APE/USDT:USDT | +22.38% | $1,901,217.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BATON/USDT:USDT | below_1h_threshold | +4.29% | +4.08% |
-| SOXL/USDT:USDT | below_1h_threshold | +3.77% | +3.55% |
-| ETHFI/USDT:USDT | below_1h_threshold | +3.51% | +3.30% |
-| KORU/USDT:USDT | below_1h_threshold | +3.31% | +3.10% |
-| MONAD/USDT:USDT | below_1h_threshold | +2.87% | +2.65% |
+| BATON/USDT:USDT | below_1h_threshold | +4.55% | +4.22% |
+| ETHFI/USDT:USDT | below_1h_threshold | +3.93% | +3.60% |
+| SOXL/USDT:USDT | below_1h_threshold | +3.77% | +3.44% |
+| KORU/USDT:USDT | below_1h_threshold | +3.31% | +2.98% |
+| MONAD/USDT:USDT | below_1h_threshold | +3.27% | +2.94% |
 
 ## 7. 次に見るべき不足
 
