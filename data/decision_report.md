@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-02T16:31:35.155142+00:00
+- generated_at: 2026-10-02T16:36:29.661622+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16011**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-02T16:31:23.378403+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=85186.1
+- 更新: 2026-10-02T16:36:20.146953+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.15% price=85172.1
 - Funnel: target 1099 → liquid 173 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +13.07% | $16,959,152.09 |
-| GALA/USDT:USDT | +3.74% | $6,873,988.27 |
-| NIGHT/USDT:USDT | +3.69% | $7,661,643.79 |
-| BR/USDT:USDT | +2.88% | $3,227,853.03 |
-| BATON/USDT:USDT | +2.82% | $4,275,963.35 |
+| LONGXIA/USDT:USDT | +11.99% | $17,191,849.87 |
+| NIGHT/USDT:USDT | +4.12% | $7,734,015.41 |
+| BR/USDT:USDT | +3.40% | $3,267,016.32 |
+| SUPER/USDT:USDT | +3.07% | $1,260,855.10 |
+| SOXS/USDT:USDT | +1.38% | $36,941,844.29 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GALA/USDT:USDT | below_1h_threshold | +3.75% | +3.88% |
-| NIGHT/USDT:USDT | below_1h_threshold | +3.69% | +3.83% |
-| BR/USDT:USDT | below_1h_threshold | +2.92% | +3.05% |
-| BATON/USDT:USDT | below_1h_threshold | +2.23% | +2.36% |
-| SUPER/USDT:USDT | below_1h_threshold | +2.23% | +2.36% |
+| NIGHT/USDT:USDT | below_1h_threshold | +4.13% | +4.27% |
+| BR/USDT:USDT | below_1h_threshold | +3.40% | +3.55% |
+| SUPER/USDT:USDT | below_1h_threshold | +3.07% | +3.22% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.51% | +1.65% |
+| UKOIL/USDT:USDT | below_1h_threshold | +1.26% | +1.41% |
 
 ## 7. 次に見るべき不足
 
