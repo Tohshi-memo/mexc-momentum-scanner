@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-02T06:01:36.465162+00:00
+- generated_at: 2026-10-02T06:06:27.809419+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15972**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-02T06:01:22.862778+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=85965.3
+- 更新: 2026-10-02T06:06:15.840951+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=85999.3
 - Funnel: target 1098 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +59.14% | $3,549,448.84 |
-| MAGMA/USDT:USDT | +22.95% | $1,894,365.23 |
-| SUPER/USDT:USDT | +13.15% | $1,085,941.39 |
-| CT/USDT:USDT | +12.21% | $7,535,916.20 |
-| ZRO/USDT:USDT | +10.58% | $12,406,389.65 |
+| BATON/USDT:USDT | +63.30% | $3,553,735.44 |
+| MAGMA/USDT:USDT | +24.20% | $1,900,290.58 |
+| SUPER/USDT:USDT | +14.81% | $1,087,593.62 |
+| CT/USDT:USDT | +14.39% | $7,602,320.73 |
+| ZRO/USDT:USDT | +11.59% | $12,444,459.79 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UAI/USDT:USDT | below_1h_threshold | +0.99% | +0.99% |
-| ZRO/USDT:USDT | below_1h_threshold | +0.64% | +0.64% |
-| KORU/USDT:USDT | below_1h_threshold | +0.47% | +0.47% |
-| AKE/USDT:USDT | below_1h_threshold | +0.40% | +0.40% |
-| PEPE/USDT:USDT | below_1h_threshold | +0.22% | +0.22% |
+| BATON/USDT:USDT | below_1h_threshold | +1.47% | +1.43% |
+| ZRO/USDT:USDT | below_1h_threshold | +1.25% | +1.21% |
+| CT/USDT:USDT | below_1h_threshold | +1.12% | +1.08% |
+| GALA/USDT:USDT | below_1h_threshold | +1.12% | +1.08% |
+| MAGMA/USDT:USDT | below_1h_threshold | +1.05% | +1.01% |
 
 ## 7. 次に見るべき不足
 
