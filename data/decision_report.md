@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-02T16:16:37.152946+00:00
+- generated_at: 2026-10-02T16:21:31.152654+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16010**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4172件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4173件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000143 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-02T16:16:25.787105+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=85184.0
-- Funnel: target 1099 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-02T16:21:22.199675+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=85265.1
+- Funnel: target 1099 → liquid 172 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +4.55% | $16,562,499.12 |
-| CT/USDT:USDT | +4.42% | $8,994,656.49 |
-| GALA/USDT:USDT | +2.93% | $6,653,836.54 |
-| NIGHT/USDT:USDT | +2.16% | $7,437,360.96 |
-| MEGA/USDT:USDT | +1.75% | $1,385,283.36 |
+| LONGXIA/USDT:USDT | +9.02% | $16,673,236.13 |
+| NIGHT/USDT:USDT | +4.49% | $7,557,401.32 |
+| GALA/USDT:USDT | +3.82% | $6,686,039.86 |
+| PUMPFUN/USDT:USDT | +3.01% | $40,398,931.64 |
+| CT/USDT:USDT | +2.96% | $9,076,359.67 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CT/USDT:USDT | below_1h_threshold | +4.56% | +4.69% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +4.41% | +4.55% |
-| GALA/USDT:USDT | below_1h_threshold | +2.94% | +3.07% |
-| NIGHT/USDT:USDT | below_1h_threshold | +2.40% | +2.53% |
-| MEGA/USDT:USDT | below_1h_threshold | +1.84% | +1.97% |
+| NIGHT/USDT:USDT | below_1h_threshold | +4.39% | +4.42% |
+| GALA/USDT:USDT | below_1h_threshold | +3.82% | +3.86% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +3.04% | +3.08% |
+| CT/USDT:USDT | below_1h_threshold | +2.96% | +3.00% |
+| BR/USDT:USDT | below_1h_threshold | +2.59% | +2.63% |
 
 ## 7. 次に見るべき不足
 
