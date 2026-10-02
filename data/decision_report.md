@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-02T19:41:21.155390+00:00
+- generated_at: 2026-10-02T19:46:20.562097+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16016**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4177件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4178件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000163 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-02T19:41:09.856495+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=84169.0
-- Funnel: target 1099 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-02T19:46:08.869755+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=84155.0
+- Funnel: target 1099 → liquid 179 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 82.9 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +5.08% | $18,388,898.94 |
-| CT/USDT:USDT | +3.19% | $9,762,451.79 |
-| NIGHT/USDT:USDT | +2.39% | $7,674,718.96 |
-| SOXS/USDT:USDT | +2.00% | $31,997,519.78 |
-| NKESTOCK/USDT:USDT | +1.96% | $5,128,944.04 |
+| VELVET/USDT:USDT | +7.99% | $1,004,852.59 |
+| LONGXIA/USDT:USDT | +4.58% | $18,410,811.28 |
+| CT/USDT:USDT | +2.92% | $9,838,785.76 |
+| NIGHT/USDT:USDT | +2.67% | $7,701,002.76 |
+| SOXS/USDT:USDT | +2.17% | $31,999,167.90 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MAGMA/USDT:USDT | below_1h_threshold | +4.53% | +4.59% |
-| CT/USDT:USDT | below_1h_threshold | +2.52% | +2.58% |
-| BTW/USDT:USDT | below_1h_threshold | +1.30% | +1.36% |
-| PHA/USDT:USDT | below_1h_threshold | +1.17% | +1.23% |
-| NIGHT/USDT:USDT | below_1h_threshold | +0.85% | +0.92% |
+| MAGMA/USDT:USDT | below_1h_threshold | +4.79% | +4.87% |
+| CT/USDT:USDT | below_1h_threshold | +2.26% | +2.34% |
+| NIGHT/USDT:USDT | below_1h_threshold | +1.30% | +1.38% |
+| BTW/USDT:USDT | below_1h_threshold | +1.15% | +1.23% |
+| NMR/USDT:USDT | below_1h_threshold | +1.04% | +1.12% |
 
 ## 7. 次に見るべき不足
 
