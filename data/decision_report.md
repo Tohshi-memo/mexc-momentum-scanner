@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-02T00:26:23.759011+00:00
+- generated_at: 2026-10-02T00:31:32.192947+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15953**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4118件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4119件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000325 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-02T00:26:12.286135+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=84808.1
-- Funnel: target 1097 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-02T00:31:20.536396+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.17% price=84683.0
+- Funnel: target 1097 → liquid 172 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 77.3 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +70.67% | $3,235,658.16 |
-| SI/USDT:USDT | +15.46% | $4,301,938.97 |
-| MAGMA/USDT:USDT | +11.26% | $1,521,021.69 |
-| UAI/USDT:USDT | +9.23% | $2,264,353.27 |
-| MUU/USDT:USDT | +8.09% | $14,741,381.13 |
+| BATON/USDT:USDT | +69.75% | $3,252,035.38 |
+| SI/USDT:USDT | +14.06% | $4,307,102.51 |
+| MAGMA/USDT:USDT | +12.08% | $1,528,909.04 |
+| UAI/USDT:USDT | +9.72% | $2,297,594.11 |
+| LSK/USDT:USDT | +7.79% | $1,554,803.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ALICE/USDT:USDT | below_1h_threshold | +4.41% | +4.43% |
-| MEGA/USDT:USDT | below_1h_threshold | +3.43% | +3.46% |
-| SI/USDT:USDT | below_1h_threshold | +3.35% | +3.38% |
-| MOVR/USDT:USDT | below_1h_threshold | +3.29% | +3.32% |
-| CT/USDT:USDT | below_1h_threshold | +2.11% | +2.14% |
+| ALICE/USDT:USDT | below_1h_threshold | +3.88% | +4.06% |
+| MOVR/USDT:USDT | below_1h_threshold | +3.30% | +3.47% |
+| CT/USDT:USDT | below_1h_threshold | +3.11% | +3.28% |
+| SI/USDT:USDT | below_1h_threshold | +2.24% | +2.42% |
+| LSK/USDT:USDT | below_1h_threshold | +1.69% | +1.86% |
 
 ## 7. 次に見るべき不足
 
