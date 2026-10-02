@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-02T13:26:23.714996+00:00
+- generated_at: 2026-10-02T13:31:25.096007+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15998**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-02T13:26:14.203939+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=86682.8
+- 更新: 2026-10-02T13:31:15.124892+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.22% price=86575.1
 - Funnel: target 1098 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +80.35% | $4,176,225.13 |
-| SAND/USDT:USDT | +56.01% | $42,251,080.46 |
-| MAGMA/USDT:USDT | +26.38% | $2,568,879.90 |
-| ENJ/USDT:USDT | +25.16% | $1,469,852.99 |
-| NIGHT/USDT:USDT | +23.92% | $7,854,987.46 |
+| BATON/USDT:USDT | +79.30% | $4,179,596.12 |
+| SAND/USDT:USDT | +56.35% | $42,543,081.33 |
+| ENJ/USDT:USDT | +24.95% | $1,491,357.39 |
+| MAGMA/USDT:USDT | +24.64% | $2,586,718.71 |
+| NIGHT/USDT:USDT | +22.80% | $7,891,760.14 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MAGMA/USDT:USDT | below_1h_threshold | +4.26% | +4.36% |
-| BATON/USDT:USDT | below_1h_threshold | +3.89% | +3.99% |
-| SOXL/USDT:USDT | below_1h_threshold | +3.77% | +3.87% |
-| KORU/USDT:USDT | below_1h_threshold | +3.31% | +3.41% |
-| MUU/USDT:USDT | below_1h_threshold | +2.82% | +2.92% |
+| SOXL/USDT:USDT | below_1h_threshold | +3.77% | +3.99% |
+| KORU/USDT:USDT | below_1h_threshold | +3.31% | +3.53% |
+| BATON/USDT:USDT | below_1h_threshold | +3.28% | +3.51% |
+| MUU/USDT:USDT | below_1h_threshold | +2.82% | +3.04% |
+| MAGMA/USDT:USDT | below_1h_threshold | +2.73% | +2.96% |
 
 ## 7. 次に見るべき不足
 
