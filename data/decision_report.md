@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-02T09:01:22.682999+00:00
+- generated_at: 2026-10-02T09:06:29.344537+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15989**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-02T09:01:11.145989+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=86222.1
+- 更新: 2026-10-02T09:06:17.869132+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=86200.1
 - Funnel: target 1098 → liquid 171 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +92.28% | $3,902,770.86 |
-| SAND/USDT:USDT | +36.91% | $12,404,838.11 |
-| MAGMA/USDT:USDT | +27.03% | $2,223,777.46 |
-| CT/USDT:USDT | +25.53% | $8,312,560.58 |
-| USELESS/USDT:USDT | +12.12% | $4,091,921.80 |
+| BATON/USDT:USDT | +93.16% | $3,909,361.90 |
+| SAND/USDT:USDT | +37.30% | $12,848,936.81 |
+| MAGMA/USDT:USDT | +27.52% | $2,229,415.43 |
+| CT/USDT:USDT | +27.00% | $8,350,697.63 |
+| USELESS/USDT:USDT | +11.80% | $4,095,133.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MUU/USDT:USDT | below_1h_threshold | +2.28% | +2.26% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +1.11% | +1.10% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.10% | +1.08% |
-| KORU/USDT:USDT | below_1h_threshold | +0.95% | +0.93% |
-| SNXX/USDT:USDT | below_1h_threshold | +0.73% | +0.71% |
+| MUU/USDT:USDT | below_1h_threshold | +2.28% | +2.28% |
+| BATON/USDT:USDT | below_1h_threshold | +1.17% | +1.18% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +1.11% | +1.12% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.10% | +1.11% |
+| KORU/USDT:USDT | below_1h_threshold | +0.95% | +0.95% |
 
 ## 7. 次に見るべき不足
 
