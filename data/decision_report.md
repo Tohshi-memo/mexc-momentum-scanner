@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-10-02T06:26:37.091589+00:00
+- generated_at: 2026-10-02T06:31:29.809212+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **15973**
+- closed shadow trades: **15974**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.57% / filled 20/20。**
-- 全期間 MARKET基準: n=15973, expectancy=+0.00%
+- 全期間 MARKET基準: n=15974, expectancy=+0.00%
 - 直近20件 MARKET基準: n=20, expectancy=+0.57%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -22,8 +22,8 @@
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | LIMIT_2PCT | 15/20 | 75.0% | +1.40% | **+1.05%** |
-| LIMIT_FIB1272 | 8/20 | 40.0% | +2.18% | **+0.87%** |
-| LIMIT_ATR | 13/20 | 65.0% | +1.12% | **+0.73%** |
+| LIMIT_FIB1272 | 8/20 | 40.0% | +2.25% | **+0.90%** |
+| LIMIT_ATR | 12/20 | 60.0% | +1.39% | **+0.83%** |
 | LIMIT_3PCT | 12/20 | 60.0% | +1.21% | **+0.73%** |
 | LIMIT_8PCT | 2/20 | 10.0% | +5.85% | **+0.59%** |
 
@@ -46,32 +46,32 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$1,306.86** / 初期 $100.00 (+1206.86%)
-- 確定: 6078件 (Win 1799 / Loss 1957 / Flat 2322) / skip 6456件
+- 残高: **$1,307.36** / 初期 $100.00 (+1207.36%)
+- 確定: 6079件 (Win 1800 / Loss 1957 / Flat 2322) / skip 6456件
 - 成長率目線: 平均log +0.000423 / 幾何平均 +0.042% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_FIB1272` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: BATON/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.50% 残高後 $1,306.86
+- 最新: BATON/USDT:USDT `LIMIT_FIB1272` SL_HIT account +0.04% 残高後 $1,307.36
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$275.42** / 初期 $100.00 (+175.42%)
-- 確定: 3604件 (Win 1005 / Loss 844 / Flat 1755) / skip 5780件
+- 確定: 3604件 (Win 1005 / Loss 844 / Flat 1755) / skip 5781件
 - 成長率目線: 平均log +0.000281 / 幾何平均 +0.028% per trade / maxDD +3.96%
-- 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 次の候補: `LIMIT_FIB1272` (selected_by_robust_growth_score) / robust_score -0.0280 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: MAGMA/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.35% 残高後 $275.42
 
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4132件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4133件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000237 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000238 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-02T06:26:22.967073+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=85969.8
+- 更新: 2026-10-02T06:31:17.213129+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=85963.2
 - Funnel: target 1098 → liquid 172 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +75.49% | $3,586,726.24 |
-| MAGMA/USDT:USDT | +28.51% | $1,945,242.03 |
-| CT/USDT:USDT | +13.10% | $7,745,023.35 |
-| SUPER/USDT:USDT | +12.15% | $1,094,894.88 |
-| WLD/USDT:USDT | +10.73% | $73,347,101.33 |
+| BATON/USDT:USDT | +83.25% | $3,601,323.06 |
+| MAGMA/USDT:USDT | +27.31% | $1,955,995.53 |
+| CT/USDT:USDT | +13.85% | $7,756,502.16 |
+| SUPER/USDT:USDT | +11.84% | $1,099,178.27 |
+| WLD/USDT:USDT | +10.92% | $73,840,850.49 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MAGMA/USDT:USDT | below_1h_threshold | +4.52% | +4.52% |
-| WLD/USDT:USDT | below_1h_threshold | +3.01% | +3.01% |
-| TIA/USDT:USDT | below_1h_threshold | +2.28% | +2.28% |
-| VVV/USDT:USDT | below_1h_threshold | +1.27% | +1.26% |
-| AAVE/USDT:USDT | below_1h_threshold | +1.15% | +1.15% |
+| MAGMA/USDT:USDT | below_1h_threshold | +3.41% | +3.41% |
+| WLD/USDT:USDT | below_1h_threshold | +3.20% | +3.20% |
+| TIA/USDT:USDT | below_1h_threshold | +2.22% | +2.22% |
+| SAND/USDT:USDT | below_1h_threshold | +1.94% | +1.94% |
+| AAVE/USDT:USDT | below_1h_threshold | +1.63% | +1.63% |
 
 ## 7. 次に見るべき不足
 
