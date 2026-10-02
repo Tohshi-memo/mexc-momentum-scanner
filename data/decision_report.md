@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-02T21:06:28.955491+00:00
+- generated_at: 2026-10-02T21:11:25.682359+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16021**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-02T21:06:17.593295+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=84469.0
+- 更新: 2026-10-02T21:11:16.563234+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=84485.4
 - Funnel: target 1099 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +16.69% | $1,890,015.90 |
-| LONGXIA/USDT:USDT | +5.88% | $17,390,316.19 |
-| CT/USDT:USDT | +4.36% | $10,423,709.95 |
-| NMR/USDT:USDT | +4.14% | $2,010,189.12 |
-| SOXS/USDT:USDT | +2.90% | $30,106,284.59 |
+| VELVET/USDT:USDT | +17.12% | $2,020,912.54 |
+| LONGXIA/USDT:USDT | +3.55% | $17,406,400.96 |
+| NMR/USDT:USDT | +2.94% | $2,053,452.54 |
+| SOXS/USDT:USDT | +2.90% | $30,108,425.48 |
+| CT/USDT:USDT | +2.66% | $10,435,754.90 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SAND/USDT:USDT | below_1h_threshold | +1.32% | +1.27% |
-| MAGMA/USDT:USDT | below_1h_threshold | +1.03% | +0.98% |
-| VELVET/USDT:USDT | below_1h_threshold | +0.73% | +0.68% |
-| WDCSTOCK/USDT:USDT | below_1h_threshold | +0.41% | +0.36% |
-| BTW/USDT:USDT | below_1h_threshold | +0.37% | +0.32% |
+| SAND/USDT:USDT | below_1h_threshold | +1.94% | +1.87% |
+| VELVET/USDT:USDT | below_1h_threshold | +1.09% | +1.02% |
+| MAGMA/USDT:USDT | below_1h_threshold | +1.01% | +0.94% |
+| BTW/USDT:USDT | below_1h_threshold | +0.46% | +0.39% |
+| ATH/USDT:USDT | below_1h_threshold | +0.46% | +0.39% |
 
 ## 7. 次に見るべき不足
 
