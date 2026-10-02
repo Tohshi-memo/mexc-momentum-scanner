@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-02T17:21:25.362519+00:00
+- generated_at: 2026-10-02T17:26:34.021877+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16014**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-02T17:21:16.403999+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.30% price=84876.8
+- 更新: 2026-10-02T17:26:22.540047+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.59% price=84625.2
 - Funnel: target 1099 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +16.01% | $17,475,634.42 |
-| NIGHT/USDT:USDT | +3.60% | $7,415,890.34 |
-| SOXS/USDT:USDT | +2.42% | $35,711,354.34 |
-| ENJ/USDT:USDT | +2.34% | $1,842,100.35 |
-| SAND/USDT:USDT | +2.25% | $61,207,655.61 |
+| LONGXIA/USDT:USDT | +15.88% | $17,579,777.17 |
+| NIGHT/USDT:USDT | +3.69% | $7,468,280.44 |
+| SOXS/USDT:USDT | +3.14% | $35,967,888.00 |
+| SAND/USDT:USDT | +2.86% | $61,284,125.55 |
+| MANA/USDT:USDT | +2.44% | $6,632,734.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LONGXIA/USDT:USDT | below_1h_threshold | +3.29% | +3.58% |
-| ENJ/USDT:USDT | below_1h_threshold | +2.25% | +2.55% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.63% | +1.92% |
-| UKOIL/USDT:USDT | below_1h_threshold | +1.17% | +1.47% |
-| NEAR/USDT:USDT | below_1h_threshold | +0.93% | +1.23% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +3.16% | +3.76% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.63% | +2.22% |
+| ENJ/USDT:USDT | below_1h_threshold | +1.37% | +1.96% |
+| UKOIL/USDT:USDT | below_1h_threshold | +1.17% | +1.77% |
+| MANA/USDT:USDT | below_1h_threshold | +1.09% | +1.69% |
 
 ## 7. 次に見るべき不足
 
