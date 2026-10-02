@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-02T14:21:30.779783+00:00
+- generated_at: 2026-10-02T14:26:26.178480+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16002**
 
@@ -70,9 +70,9 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-02T14:21:22.263566+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=86500.0
-- Funnel: target 1098 → liquid 171 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-10-02T14:26:14.533507+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=86365.1
+- Funnel: target 1098 → liquid 172 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +68.78% | $4,224,987.15 |
-| SAND/USDT:USDT | +53.94% | $47,692,983.83 |
-| SI/USDT:USDT | +32.28% | $3,661,278.80 |
-| MAGMA/USDT:USDT | +26.38% | $2,630,149.62 |
-| APE/USDT:USDT | +22.24% | $3,365,223.70 |
+| BATON/USDT:USDT | +68.39% | $4,228,811.86 |
+| SAND/USDT:USDT | +53.69% | $47,927,005.28 |
+| SI/USDT:USDT | +34.28% | $3,684,875.72 |
+| MAGMA/USDT:USDT | +26.60% | $2,640,471.31 |
+| APE/USDT:USDT | +21.15% | $3,401,124.67 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZRO/USDT:USDT | below_1h_threshold | +3.22% | +3.25% |
-| SKY/USDT:USDT | below_1h_threshold | +2.71% | +2.74% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +2.61% | +2.64% |
-| ENJ/USDT:USDT | below_1h_threshold | +1.20% | +1.23% |
-| XPL/USDT:USDT | below_1h_threshold | +1.11% | +1.14% |
+| SKY/USDT:USDT | below_1h_threshold | +3.02% | +3.20% |
+| ZRO/USDT:USDT | below_1h_threshold | +2.90% | +3.08% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +2.61% | +2.80% |
+| STRK/USDT:USDT | below_1h_threshold | +1.22% | +1.40% |
+| XPL/USDT:USDT | below_1h_threshold | +1.09% | +1.28% |
 
 ## 7. 次に見るべき不足
 
