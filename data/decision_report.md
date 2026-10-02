@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-02T07:41:37.320515+00:00
+- generated_at: 2026-10-02T07:46:46.919371+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15981**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4142件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4145件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000221 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-02T07:41:22.694979+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.21% price=85772.5
-- Funnel: target 1098 → liquid 171 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.1 >= 65=1, 4h RSI n/a=1
+- 更新: 2026-10-02T07:46:32.641800+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=85866.5
+- Funnel: target 1098 → liquid 173 → pre 50 → checked 50 → surge 6 → strict 0
+- Surge前reject: below_1h_threshold=44, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 81.2 >= 65=1, 4h RSI 71.6 >= 65=1, 4h RSI n/a=1, 4h RSI 65.5 >= 65=1, 4h RSI 70.2 >= 65=1, 4h RSI 71.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +84.56% | $3,755,092.98 |
-| SAND/USDT:USDT | +28.21% | $5,302,916.03 |
-| CT/USDT:USDT | +26.57% | $7,681,794.06 |
-| MAGMA/USDT:USDT | +25.74% | $2,104,092.13 |
-| UAI/USDT:USDT | +12.81% | $2,969,433.28 |
+| BATON/USDT:USDT | +93.77% | $3,782,037.76 |
+| SAND/USDT:USDT | +29.75% | $5,708,595.07 |
+| MAGMA/USDT:USDT | +24.24% | $2,114,184.04 |
+| CT/USDT:USDT | +22.01% | $7,802,923.69 |
+| UAI/USDT:USDT | +12.50% | $2,980,142.36 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GALA/USDT:USDT | below_1h_threshold | +4.00% | +4.21% |
-| NIGHT/USDT:USDT | below_1h_threshold | +3.71% | +3.92% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +2.12% | +2.33% |
-| MAGMA/USDT:USDT | below_1h_threshold | +1.40% | +1.60% |
-| KORU/USDT:USDT | below_1h_threshold | +0.97% | +1.18% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +2.75% | +2.85% |
+| OP/USDT:USDT | below_1h_threshold | +1.32% | +1.42% |
+| BATON/USDT:USDT | below_1h_threshold | +1.26% | +1.36% |
+| KORU/USDT:USDT | below_1h_threshold | +0.97% | +1.07% |
+| MUU/USDT:USDT | below_1h_threshold | +0.63% | +0.73% |
 
 ## 7. 次に見るべき不足
 
