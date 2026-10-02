@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-02T04:01:21.897646+00:00
+- generated_at: 2026-10-02T04:06:21.114199+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15968**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-02T04:01:10.334940+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=85531.9
+- 更新: 2026-10-02T04:06:11.810936+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=85490.5
 - Funnel: target 1097 → liquid 171 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +58.17% | $3,415,826.91 |
-| US/USDT:USDT | +19.29% | $2,554,882.03 |
-| MAGMA/USDT:USDT | +19.08% | $1,819,688.09 |
-| SUPER/USDT:USDT | +14.95% | $1,109,164.08 |
-| HNT/USDT:USDT | +9.49% | $1,240,050.70 |
+| BATON/USDT:USDT | +63.08% | $3,425,301.89 |
+| MAGMA/USDT:USDT | +19.46% | $1,823,397.24 |
+| US/USDT:USDT | +17.68% | $2,557,735.35 |
+| SUPER/USDT:USDT | +14.48% | $1,111,849.57 |
+| HNT/USDT:USDT | +9.13% | $1,243,263.87 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BATON/USDT:USDT | below_1h_threshold | +1.20% | +1.14% |
-| US/USDT:USDT | below_1h_threshold | +0.85% | +0.78% |
-| FET/USDT:USDT | below_1h_threshold | +0.72% | +0.65% |
-| CT/USDT:USDT | below_1h_threshold | +0.70% | +0.64% |
-| VELO/USDT:USDT | below_1h_threshold | +0.60% | +0.53% |
+| BATON/USDT:USDT | below_1h_threshold | +4.23% | +4.21% |
+| UAI/USDT:USDT | below_1h_threshold | +1.07% | +1.05% |
+| MEGA/USDT:USDT | below_1h_threshold | +0.86% | +0.84% |
+| 1000BONK/USDT:USDT | below_1h_threshold | +0.58% | +0.56% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +0.54% | +0.52% |
 
 ## 7. 次に見るべき不足
 
