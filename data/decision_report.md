@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-02T17:06:22.142523+00:00
+- generated_at: 2026-10-02T17:11:29.326267+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16013**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-02T17:06:12.769134+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=85157.6
-- Funnel: target 1099 → liquid 171 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-02T17:11:17.874437+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=85064.8
+- Funnel: target 1099 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +12.46% | $16,951,833.75 |
-| SAND/USDT:USDT | +3.59% | $60,667,652.49 |
-| NIGHT/USDT:USDT | +2.96% | $7,346,360.53 |
-| GALA/USDT:USDT | +2.35% | $7,333,607.57 |
-| CT/USDT:USDT | +1.83% | $9,333,726.69 |
+| LONGXIA/USDT:USDT | +16.57% | $17,145,950.97 |
+| NIGHT/USDT:USDT | +3.43% | $7,368,692.24 |
+| SAND/USDT:USDT | +3.04% | $60,851,589.24 |
+| SOXS/USDT:USDT | +2.17% | $35,706,799.44 |
+| CT/USDT:USDT | +1.88% | $9,341,009.43 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +1.63% | +1.59% |
-| SAND/USDT:USDT | below_1h_threshold | +1.61% | +1.58% |
-| UKOIL/USDT:USDT | below_1h_threshold | +1.17% | +1.14% |
-| NIL/USDT:USDT | below_1h_threshold | +0.88% | +0.84% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.63% | +0.59% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +3.81% | +3.88% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.63% | +1.70% |
+| UKOIL/USDT:USDT | below_1h_threshold | +1.17% | +1.25% |
+| SAND/USDT:USDT | below_1h_threshold | +1.07% | +1.15% |
+| NIL/USDT:USDT | below_1h_threshold | +0.66% | +0.74% |
 
 ## 7. 次に見るべき不足
 
