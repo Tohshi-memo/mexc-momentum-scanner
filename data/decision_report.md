@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-02T03:36:34.392044+00:00
+- generated_at: 2026-10-02T03:41:31.978844+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15968**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-02T03:36:22.903911+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.30% price=85414.9
-- Funnel: target 1097 → liquid 173 → pre 50 → checked 49 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=1
+- 更新: 2026-10-02T03:41:20.538089+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.28% price=85394.3
+- Funnel: target 1097 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +55.28% | $3,401,172.12 |
-| MAGMA/USDT:USDT | +15.22% | $1,809,773.04 |
-| SUPER/USDT:USDT | +13.60% | $1,107,583.06 |
-| US/USDT:USDT | +11.22% | $2,538,162.97 |
-| USELESS/USDT:USDT | +8.32% | $3,634,171.02 |
+| BATON/USDT:USDT | +55.94% | $3,401,827.15 |
+| MAGMA/USDT:USDT | +16.45% | $1,812,986.37 |
+| US/USDT:USDT | +15.77% | $2,551,367.34 |
+| SUPER/USDT:USDT | +13.28% | $1,126,017.88 |
+| HNT/USDT:USDT | +9.53% | $1,289,078.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SI/USDT:USDT | below_1h_threshold | +2.52% | +2.22% |
-| MAGMA/USDT:USDT | below_1h_threshold | +1.44% | +1.14% |
-| HNT/USDT:USDT | below_1h_threshold | +1.25% | +0.95% |
-| USELESS/USDT:USDT | below_1h_threshold | +1.18% | +0.88% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.80% | +0.50% |
+| US/USDT:USDT | below_1h_threshold | +3.17% | +2.90% |
+| HNT/USDT:USDT | below_1h_threshold | +2.54% | +2.26% |
+| MAGMA/USDT:USDT | below_1h_threshold | +2.52% | +2.24% |
+| SI/USDT:USDT | below_1h_threshold | +2.26% | +1.98% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.80% | +0.52% |
 
 ## 7. 次に見るべき不足
 
