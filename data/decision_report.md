@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-02T16:26:40.955081+00:00
+- generated_at: 2026-10-02T16:31:35.155142+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16011**
 
@@ -70,9 +70,9 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-02T16:26:31.505817+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.22% price=85112.2
-- Funnel: target 1099 → liquid 172 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-10-02T16:31:23.378403+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=85186.1
+- Funnel: target 1099 → liquid 173 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +13.79% | $16,832,775.40 |
-| GALA/USDT:USDT | +4.28% | $6,771,356.24 |
-| BR/USDT:USDT | +3.21% | $3,193,816.44 |
-| NIGHT/USDT:USDT | +2.80% | $7,632,888.50 |
-| ZRO/USDT:USDT | +1.88% | $19,325,967.87 |
+| LONGXIA/USDT:USDT | +13.07% | $16,959,152.09 |
+| GALA/USDT:USDT | +3.74% | $6,873,988.27 |
+| NIGHT/USDT:USDT | +3.69% | $7,661,643.79 |
+| BR/USDT:USDT | +2.88% | $3,227,853.03 |
+| BATON/USDT:USDT | +2.82% | $4,275,963.35 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GALA/USDT:USDT | below_1h_threshold | +4.13% | +4.35% |
-| BR/USDT:USDT | below_1h_threshold | +3.19% | +3.41% |
-| NIGHT/USDT:USDT | below_1h_threshold | +2.81% | +3.03% |
-| ZRO/USDT:USDT | below_1h_threshold | +1.91% | +2.13% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.72% | +1.94% |
+| GALA/USDT:USDT | below_1h_threshold | +3.75% | +3.88% |
+| NIGHT/USDT:USDT | below_1h_threshold | +3.69% | +3.83% |
+| BR/USDT:USDT | below_1h_threshold | +2.92% | +3.05% |
+| BATON/USDT:USDT | below_1h_threshold | +2.23% | +2.36% |
+| SUPER/USDT:USDT | below_1h_threshold | +2.23% | +2.36% |
 
 ## 7. 次に見るべき不足
 
