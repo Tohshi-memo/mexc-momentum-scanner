@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-02T10:56:26.903069+00:00
+- generated_at: 2026-10-02T11:01:27.585702+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15990**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-02T10:56:14.767725+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=86317.2
-- Funnel: target 1098 → liquid 176 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.2 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-02T11:01:16.258510+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=86262.0
+- Funnel: target 1098 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +82.63% | $4,038,738.52 |
-| SAND/USDT:USDT | +48.23% | $20,707,471.26 |
-| CT/USDT:USDT | +25.28% | $9,020,192.31 |
-| MANA/USDT:USDT | +17.75% | $3,042,880.42 |
-| MAGMA/USDT:USDT | +14.21% | $2,444,205.97 |
+| BATON/USDT:USDT | +82.24% | $4,013,293.64 |
+| SAND/USDT:USDT | +47.32% | $21,215,166.10 |
+| CT/USDT:USDT | +24.84% | $7,801,675.98 |
+| MANA/USDT:USDT | +17.17% | $3,081,505.34 |
+| MAGMA/USDT:USDT | +14.28% | $2,443,380.24 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MANA/USDT:USDT | below_1h_threshold | +3.14% | +3.15% |
-| SI/USDT:USDT | below_1h_threshold | +3.10% | +3.11% |
-| APE/USDT:USDT | below_1h_threshold | +2.76% | +2.77% |
-| BATON/USDT:USDT | below_1h_threshold | +2.56% | +2.57% |
-| CT/USDT:USDT | below_1h_threshold | +1.77% | +1.78% |
+| TIA/USDT:USDT | below_1h_threshold | +0.36% | +0.35% |
+| CT/USDT:USDT | below_1h_threshold | +0.35% | +0.34% |
+| MAGMA/USDT:USDT | below_1h_threshold | +0.24% | +0.22% |
+| EIGEN/USDT:USDT | below_1h_threshold | +0.15% | +0.14% |
+| SUPER/USDT:USDT | below_1h_threshold | +0.15% | +0.14% |
 
 ## 7. 次に見るべき不足
 
