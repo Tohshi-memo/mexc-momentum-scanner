@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-02T22:56:23.734492+00:00
+- generated_at: 2026-10-02T23:01:19.774119+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16022**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-02T22:56:12.029803+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=84507.7
-- Funnel: target 1099 → liquid 177 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 90.4 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-02T23:01:09.225728+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=84517.9
+- Funnel: target 1099 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +29.99% | $4,039,836.18 |
-| LONGXIA/USDT:USDT | +6.41% | $17,337,146.96 |
-| SAND/USDT:USDT | +4.02% | $70,020,279.79 |
-| CT/USDT:USDT | +3.70% | $10,597,242.33 |
-| NIL/USDT:USDT | +3.68% | $1,438,788.46 |
+| VELVET/USDT:USDT | +30.37% | $4,175,814.96 |
+| LONGXIA/USDT:USDT | +5.96% | $16,977,813.61 |
+| SAND/USDT:USDT | +3.56% | $70,171,214.25 |
+| MAGMA/USDT:USDT | +3.52% | $3,346,410.06 |
+| NIL/USDT:USDT | +3.36% | $1,419,175.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ONE/USDT:USDT | below_1h_threshold | +2.40% | +2.39% |
-| SAND/USDT:USDT | below_1h_threshold | +1.78% | +1.76% |
-| GALA/USDT:USDT | below_1h_threshold | +1.36% | +1.34% |
-| AERO/USDT:USDT | below_1h_threshold | +1.20% | +1.18% |
-| RIVER/USDT:USDT | below_1h_threshold | +1.18% | +1.16% |
+| CT/USDT:USDT | below_1h_threshold | +1.77% | +1.77% |
+| KORU/USDT:USDT | below_1h_threshold | +0.22% | +0.22% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.11% | +0.11% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.11% | +0.10% |
+| EWY/USDT:USDT | below_1h_threshold | +0.09% | +0.09% |
 
 ## 7. 次に見るべき不足
 
