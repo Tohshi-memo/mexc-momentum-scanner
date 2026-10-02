@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-02T04:41:27.600072+00:00
+- generated_at: 2026-10-02T04:46:19.690721+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15969**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4129件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4130件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000191 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-02T04:41:14.471011+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +1.20% price=86504.8
-- Funnel: target 1097 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-02T04:46:10.196868+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +1.15% price=86460.0
+- Funnel: target 1097 → liquid 172 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +63.48% | $3,454,927.88 |
-| MAGMA/USDT:USDT | +25.21% | $1,854,994.58 |
-| SUPER/USDT:USDT | +17.59% | $1,131,473.19 |
-| USELESS/USDT:USDT | +10.53% | $3,786,757.55 |
-| UAI/USDT:USDT | +9.29% | $2,711,671.57 |
+| BATON/USDT:USDT | +67.33% | $3,465,726.90 |
+| MAGMA/USDT:USDT | +24.31% | $1,858,211.95 |
+| SUPER/USDT:USDT | +16.03% | $1,133,843.38 |
+| USELESS/USDT:USDT | +11.98% | $3,796,448.38 |
+| AAVE/USDT:USDT | +9.26% | $50,820,210.39 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MAGMA/USDT:USDT | below_relative_strength | +5.16% | +3.96% |
-| BATON/USDT:USDT | below_1h_threshold | +4.48% | +3.28% |
-| AAVE/USDT:USDT | below_1h_threshold | +3.65% | +2.45% |
-| PENGU/USDT:USDT | below_1h_threshold | +3.21% | +2.00% |
-| TIA/USDT:USDT | below_1h_threshold | +3.20% | +2.00% |
+| MAGMA/USDT:USDT | below_1h_threshold | +4.42% | +3.27% |
+| AAVE/USDT:USDT | below_1h_threshold | +3.99% | +2.84% |
+| USELESS/USDT:USDT | below_1h_threshold | +3.60% | +2.44% |
+| PENGU/USDT:USDT | below_1h_threshold | +3.33% | +2.18% |
+| TIA/USDT:USDT | below_1h_threshold | +3.25% | +2.09% |
 
 ## 7. 次に見るべき不足
 
