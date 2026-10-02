@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-02T07:21:40.121496+00:00
+- generated_at: 2026-10-02T07:26:33.037572+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15979**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4139件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4140件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000221 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-02T07:21:23.474104+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=85872.8
-- Funnel: target 1098 → liquid 171 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.4 >= 65=1, 4h RSI 73.3 >= 65=1
+- 更新: 2026-10-02T07:26:17.678669+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=85918.8
+- Funnel: target 1098 → liquid 171 → pre 50 → checked 50 → surge 4 → strict 1
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 80.4 >= 65=1, 4h RSI n/a=1, 4h RSI 73.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +80.71% | $3,734,879.06 |
-| MAGMA/USDT:USDT | +30.36% | $2,049,078.94 |
-| SAND/USDT:USDT | +29.25% | $3,924,045.13 |
-| CT/USDT:USDT | +18.72% | $7,329,389.69 |
-| UAI/USDT:USDT | +11.08% | $2,941,968.85 |
+| BATON/USDT:USDT | +82.24% | $3,738,947.57 |
+| MAGMA/USDT:USDT | +30.64% | $2,060,326.76 |
+| SAND/USDT:USDT | +29.05% | $4,241,405.50 |
+| CT/USDT:USDT | +20.57% | $7,362,150.81 |
+| UAI/USDT:USDT | +12.78% | $2,945,266.42 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CT/USDT:USDT | below_1h_threshold | +4.79% | +4.88% |
-| AXS/USDT:USDT | below_1h_threshold | +4.71% | +4.80% |
-| GALA/USDT:USDT | below_1h_threshold | +3.11% | +3.20% |
-| NIGHT/USDT:USDT | below_1h_threshold | +2.53% | +2.63% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.46% | +1.55% |
+| GALA/USDT:USDT | below_1h_threshold | +4.47% | +4.51% |
+| NIGHT/USDT:USDT | below_1h_threshold | +3.44% | +3.47% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +2.14% | +2.18% |
+| KORU/USDT:USDT | below_1h_threshold | +0.97% | +1.01% |
+| OP/USDT:USDT | below_1h_threshold | +0.96% | +1.00% |
 
 ## 7. 次に見るべき不足
 
