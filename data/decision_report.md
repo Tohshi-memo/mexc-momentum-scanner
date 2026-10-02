@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-02T12:46:30.847453+00:00
+- generated_at: 2026-10-02T12:51:30.702660+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15997**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-02T12:46:18.383150+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.20% price=86545.5
-- Funnel: target 1098 → liquid 176 → pre 50 → checked 50 → surge 3 → strict 0
+- 更新: 2026-10-02T12:51:18.170033+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.41% price=86731.3
+- Funnel: target 1098 → liquid 177 → pre 50 → checked 50 → surge 3 → strict 0
 - Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.5 >= 65=1, 4h RSI 73.0 >= 65=1, 4h RSI 79.2 >= 65=1
+- Strict後reject: 4h RSI 81.3 >= 65=1, 4h RSI 73.9 >= 65=1, 4h RSI 79.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +73.95% | $4,143,734.45 |
-| SAND/USDT:USDT | +56.94% | $36,904,665.83 |
-| ENJ/USDT:USDT | +25.94% | $1,227,387.70 |
-| SI/USDT:USDT | +25.10% | $3,671,298.01 |
-| NIGHT/USDT:USDT | +22.05% | $7,723,337.43 |
+| BATON/USDT:USDT | +71.72% | $4,145,325.85 |
+| SAND/USDT:USDT | +54.94% | $37,882,297.05 |
+| SI/USDT:USDT | +26.85% | $3,688,023.02 |
+| ENJ/USDT:USDT | +23.76% | $1,276,686.48 |
+| NIGHT/USDT:USDT | +22.63% | $7,811,458.76 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MAGMA/USDT:USDT | below_1h_threshold | +4.62% | +4.42% |
-| BATON/USDT:USDT | below_1h_threshold | +3.12% | +2.92% |
-| WLD/USDT:USDT | below_1h_threshold | +2.73% | +2.53% |
-| HNT/USDT:USDT | below_1h_threshold | +2.21% | +2.01% |
-| TIA/USDT:USDT | below_1h_threshold | +2.12% | +1.92% |
+| MAGMA/USDT:USDT | below_1h_threshold | +3.91% | +3.50% |
+| WLD/USDT:USDT | below_1h_threshold | +3.80% | +3.39% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +2.93% | +2.52% |
+| LDO/USDT:USDT | below_1h_threshold | +2.89% | +2.48% |
+| TIA/USDT:USDT | below_1h_threshold | +2.58% | +2.17% |
 
 ## 7. 次に見るべき不足
 
