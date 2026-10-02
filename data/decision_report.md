@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-02T12:56:39.959738+00:00
+- generated_at: 2026-10-02T13:01:27.153468+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15998**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-02T12:56:25.904995+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.49% price=86803.3
-- Funnel: target 1098 → liquid 177 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.7 >= 65=1, 4h RSI 71.6 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-02T13:01:15.844546+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=86730.0
+- Funnel: target 1098 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +70.97% | $4,150,465.77 |
-| SAND/USDT:USDT | +54.35% | $38,523,821.88 |
-| ENJ/USDT:USDT | +22.29% | $1,306,405.35 |
-| NIGHT/USDT:USDT | +21.94% | $7,865,678.02 |
-| MAGMA/USDT:USDT | +19.16% | $2,519,592.12 |
+| BATON/USDT:USDT | +73.16% | $4,142,685.78 |
+| SAND/USDT:USDT | +53.69% | $39,018,881.26 |
+| ENJ/USDT:USDT | +24.47% | $1,315,799.51 |
+| NIGHT/USDT:USDT | +23.18% | $7,270,677.25 |
+| MAGMA/USDT:USDT | +22.51% | $2,519,470.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIGHT/USDT:USDT | below_relative_strength | +5.32% | +4.83% |
-| WLD/USDT:USDT | below_1h_threshold | +4.76% | +4.26% |
-| MAGMA/USDT:USDT | below_1h_threshold | +4.27% | +3.77% |
-| LDO/USDT:USDT | below_1h_threshold | +3.28% | +2.79% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +3.26% | +2.76% |
+| SOXL/USDT:USDT | below_1h_threshold | +3.77% | +3.81% |
+| KORU/USDT:USDT | below_1h_threshold | +3.31% | +3.36% |
+| MUU/USDT:USDT | below_1h_threshold | +2.82% | +2.86% |
+| TQQQ/USDT:USDT | below_1h_threshold | +2.23% | +2.27% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.10% | +2.14% |
 
 ## 7. 次に見るべき不足
 
