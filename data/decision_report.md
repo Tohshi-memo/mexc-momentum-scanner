@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-02T01:01:37.024063+00:00
+- generated_at: 2026-10-02T01:06:28.257109+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15955**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-02T01:01:25.652354+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=84711.1
-- Funnel: target 1097 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-02T01:06:16.877679+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=84698.8
+- Funnel: target 1097 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +73.69% | $3,290,526.78 |
-| UAI/USDT:USDT | +11.70% | $2,334,641.90 |
-| MAGMA/USDT:USDT | +11.04% | $1,534,396.22 |
-| HNT/USDT:USDT | +8.15% | $1,243,430.04 |
-| MUU/USDT:USDT | +7.97% | $14,731,105.25 |
+| BATON/USDT:USDT | +73.43% | $3,296,271.98 |
+| UAI/USDT:USDT | +11.94% | $2,349,680.74 |
+| MAGMA/USDT:USDT | +11.67% | $1,534,801.91 |
+| GRASS/USDT:USDT | +8.39% | $2,501,734.94 |
+| HNT/USDT:USDT | +8.34% | $1,249,606.87 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KORU/USDT:USDT | below_1h_threshold | +1.15% | +1.19% |
-| MEGA/USDT:USDT | below_1h_threshold | +0.97% | +1.01% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.85% | +0.89% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.83% | +0.88% |
-| LSK/USDT:USDT | below_1h_threshold | +0.51% | +0.56% |
+| KORU/USDT:USDT | below_1h_threshold | +1.15% | +1.21% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.85% | +0.91% |
+| SOXL/USDT:USDT | below_1h_threshold | +0.83% | +0.89% |
+| VELO/USDT:USDT | below_1h_threshold | +0.76% | +0.82% |
+| MEGA/USDT:USDT | below_1h_threshold | +0.74% | +0.80% |
 
 ## 7. 次に見るべき不足
 
