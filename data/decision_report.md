@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-10-03T02:41:39.605655+00:00
+- generated_at: 2026-10-03T02:46:39.353217+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **16034**
+- closed shadow trades: **16035**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=16034, expectancy=-0.00%
+- 全期間 MARKET基準: n=16035, expectancy=+0.00%
 - 直近20件 MARKET基準: n=20, expectancy=-0.08%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -22,20 +22,20 @@
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | LIMIT_ATR | 14/20 | 70.0% | +2.12% | **+1.49%** |
+| LIMIT_2PCT | 17/20 | 85.0% | +0.76% | **+0.64%** |
 | LIMIT_3PCT | 15/20 | 75.0% | +0.78% | **+0.59%** |
 | LIMIT_BB3S | 4/19 | 21.1% | +2.59% | **+0.55%** |
 | LIMIT_1PCT | 19/20 | 95.0% | +0.53% | **+0.50%** |
-| LIMIT_5PCT | 8/20 | 40.0% | +0.95% | **+0.38%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
+| LIMIT_9PCT_LONG | 5/20 | 25.0% | +4.22% | **+1.05%** |
+| LIMIT_10PCT_LONG | 4/20 | 20.0% | +5.00% | **+1.00%** |
 | LIMIT_8PCT_LONG | 5/20 | 25.0% | +4.00% | **+1.00%** |
+| LIMIT_FIB1272_LONG | 8/20 | 40.0% | +2.30% | **+0.92%** |
 | LIMIT_7PCT_LONG | 6/20 | 30.0% | +2.49% | **+0.75%** |
-| LIMIT_9PCT_LONG | 4/20 | 20.0% | +3.27% | **+0.65%** |
-| LIMIT_1PCT_LONG | 16/20 | 80.0% | +0.76% | **+0.61%** |
-| LIMIT_10PCT_LONG | 3/20 | 15.0% | +4.00% | **+0.60%** |
 
 ## 2. $100 Live Portfolio
 
@@ -46,16 +46,16 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$1,315.28** / 初期 $100.00 (+1215.28%)
-- 確定: 6139件 (Win 1811 / Loss 1968 / Flat 2360) / skip 6456件
-- 成長率目線: 平均log +0.000420 / 幾何平均 +0.042% per trade / maxDD +8.46%
+- 残高: **$1,308.70** / 初期 $100.00 (+1208.70%)
+- 確定: 6140件 (Win 1811 / Loss 1969 / Flat 2360) / skip 6456件
+- 成長率目線: 平均log +0.000419 / 幾何平均 +0.042% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_1PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: MAGMA/USDT:USDT `LIMIT_1PCT_LONG` EXPIRED account +0.63% 残高後 $1,315.28
+- 最新: LONGXIA/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.50% 残高後 $1,308.70
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$274.46** / 初期 $100.00 (+174.46%)
-- 確定: 3606件 (Win 1005 / Loss 845 / Flat 1756) / skip 5839件
+- 確定: 3606件 (Win 1005 / Loss 845 / Flat 1756) / skip 5840件
 - 成長率目線: 平均log +0.000280 / 幾何平均 +0.028% per trade / maxDD +3.96%
 - 次の候補: `LIMIT_1PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0358 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: VELVET/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.35% 残高後 $274.46
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-03T02:41:23.815742+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=84623.1
-- Funnel: target 1099 → liquid 174 → pre 50 → checked 50 → surge 4 → strict 1
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.8 >= 65=1, 4h RSI 74.5 >= 65=1, 4h RSI 78.1 >= 65=1
+- 更新: 2026-10-03T02:46:24.935583+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=84627.5
+- Funnel: target 1099 → liquid 174 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 78.7 >= 65=1, 4h RSI 74.4 >= 65=1, 4h RSI 79.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +43.22% | $17,937,802.53 |
-| VELVET/USDT:USDT | +19.65% | $8,758,578.68 |
-| SAND/USDT:USDT | +11.66% | $84,987,226.46 |
-| ENJ/USDT:USDT | +9.68% | $2,794,576.12 |
-| NIGHT/USDT:USDT | +8.27% | $10,750,482.74 |
+| LONGXIA/USDT:USDT | +38.89% | $18,125,006.39 |
+| VELVET/USDT:USDT | +15.41% | $8,809,335.22 |
+| SAND/USDT:USDT | +11.44% | $85,311,089.30 |
+| ENJ/USDT:USDT | +10.90% | $2,818,696.88 |
+| NIGHT/USDT:USDT | +7.82% | $10,762,126.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MANA/USDT:USDT | below_1h_threshold | +3.68% | +3.66% |
-| QNT/USDT:USDT | below_1h_threshold | +2.46% | +2.43% |
-| VELVET/USDT:USDT | below_1h_threshold | +2.17% | +2.14% |
-| CT/USDT:USDT | below_1h_threshold | +2.16% | +2.13% |
-| GALA/USDT:USDT | below_1h_threshold | +2.10% | +2.07% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +4.23% | +4.19% |
+| MANA/USDT:USDT | below_1h_threshold | +3.52% | +3.49% |
+| QNT/USDT:USDT | below_1h_threshold | +2.98% | +2.94% |
+| GALA/USDT:USDT | below_1h_threshold | +1.72% | +1.68% |
+| SYN/USDT:USDT | below_1h_threshold | +1.68% | +1.65% |
 
 ## 7. 次に見るべき不足
 
