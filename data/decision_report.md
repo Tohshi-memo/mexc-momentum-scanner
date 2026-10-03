@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-03T16:01:43.478935+00:00
+- generated_at: 2026-10-03T16:06:19.328541+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16065**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-03T16:01:29.670964+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=84834.0
+- 更新: 2026-10-03T16:06:10.179209+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=84819.1
 - Funnel: target 1086 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIN/USDT:USDT | +3.72% | $1,627,317.84 |
-| SUPER/USDT:USDT | +0.65% | $2,680,190.04 |
-| LONGXIA/USDT:USDT | +0.64% | $16,007,233.40 |
-| NIL/USDT:USDT | +0.45% | $1,720,615.75 |
-| MOVR/USDT:USDT | +0.35% | $7,387,106.12 |
+| AIN/USDT:USDT | +2.53% | $1,702,944.47 |
+| LONGXIA/USDT:USDT | +2.12% | $16,046,234.41 |
+| SAGA/USDT:USDT | +1.86% | $1,022,163.00 |
+| NIGHT/USDT:USDT | +1.24% | $14,068,523.07 |
+| BR/USDT:USDT | +1.16% | $5,939,330.36 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIN/USDT:USDT | below_1h_threshold | +3.01% | +3.01% |
-| SUPER/USDT:USDT | below_1h_threshold | +0.66% | +0.66% |
-| NIL/USDT:USDT | below_1h_threshold | +0.36% | +0.36% |
-| MOVR/USDT:USDT | below_1h_threshold | +0.36% | +0.36% |
-| SAGA/USDT:USDT | below_1h_threshold | +0.35% | +0.35% |
+| AIN/USDT:USDT | below_1h_threshold | +2.67% | +2.68% |
+| SAGA/USDT:USDT | below_1h_threshold | +2.26% | +2.28% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +2.12% | +2.14% |
+| NIGHT/USDT:USDT | below_1h_threshold | +1.30% | +1.32% |
+| SUPER/USDT:USDT | below_1h_threshold | +1.13% | +1.15% |
 
 ## 7. 次に見るべき不足
 
