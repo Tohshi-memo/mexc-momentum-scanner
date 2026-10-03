@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-03T04:51:21.873706+00:00
+- generated_at: 2026-10-03T04:56:30.383753+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16037**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4200件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4201件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000180 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-03T04:51:11.245099+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=84542.5
-- Funnel: target 1099 → liquid 172 → pre 50 → checked 50 → surge 2 → strict 0
+- 更新: 2026-10-03T04:56:16.641740+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=84540.2
+- Funnel: target 1099 → liquid 172 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.9 >= 65=1, 4h RSI 67.3 >= 65=1
+- Strict後reject: 4h RSI 72.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SAND/USDT:USDT | +28.84% | $101,353,542.41 |
-| LONGXIA/USDT:USDT | +23.09% | $18,689,987.11 |
-| VELVET/USDT:USDT | +22.77% | $9,534,222.47 |
-| NIGHT/USDT:USDT | +8.36% | $11,245,779.91 |
-| ENJ/USDT:USDT | +8.28% | $3,313,489.37 |
+| SAND/USDT:USDT | +28.39% | $101,703,784.18 |
+| LONGXIA/USDT:USDT | +22.32% | $18,715,993.31 |
+| VELVET/USDT:USDT | +22.20% | $9,558,788.30 |
+| MANA/USDT:USDT | +8.27% | $9,436,463.48 |
+| ENJ/USDT:USDT | +8.25% | $3,314,726.41 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SYN/USDT:USDT | below_1h_threshold | +3.34% | +3.47% |
-| MANA/USDT:USDT | below_1h_threshold | +3.18% | +3.32% |
-| NIL/USDT:USDT | below_1h_threshold | +1.95% | +2.08% |
-| SAND/USDT:USDT | below_1h_threshold | +1.76% | +1.89% |
-| STX/USDT:USDT | below_1h_threshold | +0.63% | +0.76% |
+| VELVET/USDT:USDT | below_1h_threshold | +4.60% | +4.74% |
+| MANA/USDT:USDT | below_1h_threshold | +2.98% | +3.11% |
+| NIL/USDT:USDT | below_1h_threshold | +1.96% | +2.10% |
+| SAND/USDT:USDT | below_1h_threshold | +1.58% | +1.71% |
+| INJ/USDT:USDT | below_1h_threshold | +0.48% | +0.62% |
 
 ## 7. 次に見るべき不足
 
