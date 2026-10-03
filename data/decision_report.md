@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-02T23:56:25.321923+00:00
+- generated_at: 2026-10-03T00:01:29.894950+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16023**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-02T23:56:13.377413+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=84482.7
-- Funnel: target 1099 → liquid 176 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 92.0 >= 65=1, 4h RSI 74.2 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-03T00:01:18.304495+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=84486.0
+- Funnel: target 1099 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +40.18% | $5,676,458.23 |
-| SAND/USDT:USDT | +10.90% | $73,660,855.40 |
-| LONGXIA/USDT:USDT | +9.24% | $17,116,505.80 |
-| NIGHT/USDT:USDT | +5.35% | $8,333,216.76 |
-| NIL/USDT:USDT | +4.30% | $1,528,684.66 |
+| VELVET/USDT:USDT | +41.10% | $5,836,976.12 |
+| SAND/USDT:USDT | +9.23% | $75,237,839.80 |
+| LONGXIA/USDT:USDT | +9.02% | $16,664,235.50 |
+| NIGHT/USDT:USDT | +5.46% | $8,197,854.99 |
+| NIL/USDT:USDT | +4.42% | $1,536,501.18 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LONGXIA/USDT:USDT | below_1h_threshold | +3.15% | +3.18% |
-| ENJ/USDT:USDT | below_1h_threshold | +3.03% | +3.07% |
-| GRASS/USDT:USDT | below_1h_threshold | +2.32% | +2.35% |
-| AXS/USDT:USDT | below_1h_threshold | +2.20% | +2.24% |
-| NIGHT/USDT:USDT | below_1h_threshold | +2.07% | +2.11% |
+| VELVET/USDT:USDT | below_1h_threshold | +0.73% | +0.73% |
+| RENDER/USDT:USDT | below_1h_threshold | +0.56% | +0.55% |
+| MAGMA/USDT:USDT | below_1h_threshold | +0.40% | +0.40% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +0.38% | +0.38% |
+| ENJ/USDT:USDT | below_1h_threshold | +0.36% | +0.35% |
 
 ## 7. 次に見るべき不足
 
