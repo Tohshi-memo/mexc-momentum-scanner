@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-03T16:41:25.130335+00:00
+- generated_at: 2026-10-03T16:46:44.206985+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16066**
 
@@ -63,38 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4228件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4229件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000127 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-03T16:41:11.544234+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=84808.3
-- Funnel: target 1086 → liquid 150 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-03T16:46:30.832243+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=84814.9
+- Funnel: target 1086 → liquid 150 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +5.91% | $16,317,728.38 |
-| PUMPFUN/USDT:USDT | +4.33% | $31,649,120.03 |
-| STX/USDT:USDT | +4.17% | $1,031,732.81 |
-| AIN/USDT:USDT | +2.99% | $2,037,016.32 |
-| MOVR/USDT:USDT | +2.65% | $7,448,729.91 |
+| LONGXIA/USDT:USDT | +6.60% | $16,372,849.54 |
+| PUMPFUN/USDT:USDT | +5.49% | $32,650,302.02 |
+| AIN/USDT:USDT | +3.92% | $2,059,236.39 |
+| STX/USDT:USDT | +3.56% | $1,159,694.76 |
+| MONAD/USDT:USDT | +2.99% | $1,879,885.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PUMPFUN/USDT:USDT | below_1h_threshold | +4.49% | +4.52% |
-| STX/USDT:USDT | below_1h_threshold | +4.17% | +4.20% |
-| AIN/USDT:USDT | below_1h_threshold | +3.06% | +3.09% |
-| MONAD/USDT:USDT | below_1h_threshold | +2.59% | +2.62% |
-| MOVR/USDT:USDT | below_1h_threshold | +2.58% | +2.61% |
+| AIN/USDT:USDT | below_1h_threshold | +3.77% | +3.80% |
+| STX/USDT:USDT | below_1h_threshold | +3.62% | +3.64% |
+| MONAD/USDT:USDT | below_1h_threshold | +2.93% | +2.96% |
+| MOVR/USDT:USDT | below_1h_threshold | +2.58% | +2.60% |
+| DYDX/USDT:USDT | below_1h_threshold | +1.89% | +1.91% |
 
 ## 7. 次に見るべき不足
 
