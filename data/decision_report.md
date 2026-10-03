@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-03T13:56:21.843586+00:00
+- generated_at: 2026-10-03T14:01:23.681512+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16060**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-03T13:56:10.277518+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=84835.8
-- Funnel: target 1086 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-03T14:01:12.199633+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=84813.8
+- Funnel: target 1086 → liquid 155 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +35.84% | $17,602,716.28 |
-| SAND/USDT:USDT | +18.94% | $109,696,980.48 |
-| VELVET/USDT:USDT | +15.04% | $14,408,700.16 |
-| SUPER/USDT:USDT | +14.39% | $1,758,858.19 |
-| ONE/USDT:USDT | +14.18% | $6,666,155.43 |
+| LONGXIA/USDT:USDT | +36.03% | $16,395,202.46 |
+| SAND/USDT:USDT | +19.09% | $103,188,710.84 |
+| SUPER/USDT:USDT | +15.17% | $1,767,768.35 |
+| VELVET/USDT:USDT | +14.83% | $14,404,429.48 |
+| ONE/USDT:USDT | +14.22% | $6,619,291.88 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ONE/USDT:USDT | below_1h_threshold | +4.41% | +4.43% |
-| SUPER/USDT:USDT | below_1h_threshold | +2.83% | +2.85% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +2.82% | +2.83% |
-| GRASS/USDT:USDT | below_1h_threshold | +1.84% | +1.85% |
-| VELVET/USDT:USDT | below_1h_threshold | +1.44% | +1.45% |
+| NIGHT/USDT:USDT | below_1h_threshold | +0.43% | +0.44% |
+| SAND/USDT:USDT | below_1h_threshold | +0.33% | +0.34% |
+| NKESTOCK/USDT:USDT | below_1h_threshold | +0.23% | +0.24% |
+| XMR/USDT:USDT | below_1h_threshold | +0.13% | +0.14% |
+| ONE/USDT:USDT | below_1h_threshold | +0.12% | +0.13% |
 
 ## 7. 次に見るべき不足
 
