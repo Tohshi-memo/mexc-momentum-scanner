@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-03T18:56:32.682948+00:00
+- generated_at: 2026-10-03T19:01:28.377646+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16073**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-03T18:56:20.881447+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=84890.5
-- Funnel: target 1086 → liquid 146 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.3 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-03T19:01:16.719830+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=84888.6
+- Funnel: target 1086 → liquid 137 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SPORTFUN/USDT:USDT | +24.52% | $1,155,443.48 |
-| MOVR/USDT:USDT | +12.11% | $7,608,943.66 |
-| PUMPFUN/USDT:USDT | +10.91% | $38,037,680.44 |
-| AIN/USDT:USDT | +9.60% | $2,818,719.36 |
-| VELVET/USDT:USDT | +6.71% | $16,686,963.68 |
+| SPORTFUN/USDT:USDT | +13.13% | $1,188,532.11 |
+| MOVR/USDT:USDT | +12.92% | $7,053,934.88 |
+| PUMPFUN/USDT:USDT | +10.98% | $33,067,109.34 |
+| AIN/USDT:USDT | +8.73% | $2,855,316.96 |
+| VELVET/USDT:USDT | +7.76% | $16,630,759.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MOVR/USDT:USDT | below_1h_threshold | +2.63% | +2.72% |
-| AIN/USDT:USDT | below_1h_threshold | +2.35% | +2.44% |
-| ATH/USDT:USDT | below_1h_threshold | +1.99% | +2.08% |
-| ZAMA/USDT:USDT | below_1h_threshold | +1.33% | +1.42% |
-| USELESS/USDT:USDT | below_1h_threshold | +0.98% | +1.07% |
+| AIN/USDT:USDT | below_1h_threshold | +1.19% | +1.20% |
+| MONAD/USDT:USDT | below_1h_threshold | +0.58% | +0.59% |
+| VELVET/USDT:USDT | below_1h_threshold | +0.56% | +0.57% |
+| ONE/USDT:USDT | below_1h_threshold | +0.33% | +0.35% |
+| KORU/USDT:USDT | below_1h_threshold | +0.27% | +0.28% |
 
 ## 7. 次に見るべき不足
 
