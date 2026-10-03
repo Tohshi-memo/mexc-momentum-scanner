@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-03T21:31:16.801866+00:00
+- generated_at: 2026-10-03T21:37:03.618850+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16074**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-03T21:31:08.651891+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=84665.1
+- 更新: 2026-10-03T21:36:52.212322+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=84660.0
 - Funnel: target 1086 → liquid 136 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +31.39% | $1,066,912.17 |
-| SPORTFUN/USDT:USDT | +12.80% | $1,359,449.43 |
-| PUMPFUN/USDT:USDT | +9.02% | $40,578,958.44 |
-| BTW/USDT:USDT | +8.31% | $9,542,909.40 |
-| MOVR/USDT:USDT | +6.99% | $7,250,437.89 |
+| BATON/USDT:USDT | +33.13% | $1,079,200.66 |
+| SPORTFUN/USDT:USDT | +12.69% | $1,364,684.52 |
+| PUMPFUN/USDT:USDT | +9.80% | $40,808,828.95 |
+| BTW/USDT:USDT | +7.28% | $9,640,567.19 |
+| AKE/USDT:USDT | +6.93% | $3,514,938.35 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +1.95% | +2.00% |
-| BTW/USDT:USDT | below_1h_threshold | +1.84% | +1.89% |
-| NMR/USDT:USDT | below_1h_threshold | +1.21% | +1.26% |
-| MANA/USDT:USDT | below_1h_threshold | +0.97% | +1.01% |
-| GALA/USDT:USDT | below_1h_threshold | +0.87% | +0.92% |
+| BTW/USDT:USDT | below_1h_threshold | +1.20% | +1.25% |
+| GALA/USDT:USDT | below_1h_threshold | +1.15% | +1.20% |
+| VELVET/USDT:USDT | below_1h_threshold | +1.11% | +1.17% |
+| BATON/USDT:USDT | below_1h_threshold | +1.05% | +1.10% |
+| SKY/USDT:USDT | below_1h_threshold | +1.04% | +1.09% |
 
 ## 7. 次に見るべき不足
 
