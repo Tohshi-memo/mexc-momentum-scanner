@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-03T18:16:29.470544+00:00
+- generated_at: 2026-10-03T18:22:09.087713+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16071**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4232件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4233件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000154 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-03T18:16:17.478263+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=84969.0
-- Funnel: target 1086 → liquid 145 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-03T18:21:54.834425+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=84920.1
+- Funnel: target 1086 → liquid 145 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SPORTFUN/USDT:USDT | +21.29% | $1,045,420.17 |
-| MOVR/USDT:USDT | +14.54% | $7,052,751.88 |
-| VELVET/USDT:USDT | +10.08% | $16,227,229.32 |
-| LONGXIA/USDT:USDT | +6.42% | $14,610,258.47 |
-| PUMPFUN/USDT:USDT | +5.02% | $32,830,490.62 |
+| SPORTFUN/USDT:USDT | +23.20% | $1,075,068.51 |
+| MOVR/USDT:USDT | +16.89% | $7,134,992.87 |
+| VELVET/USDT:USDT | +9.38% | $16,311,029.51 |
+| LONGXIA/USDT:USDT | +6.04% | $14,631,344.64 |
+| STRK/USDT:USDT | +5.30% | $4,698,121.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MOVR/USDT:USDT | below_1h_threshold | +4.66% | +4.66% |
-| VELVET/USDT:USDT | below_1h_threshold | +2.52% | +2.52% |
-| ATH/USDT:USDT | below_1h_threshold | +2.31% | +2.31% |
-| AKE/USDT:USDT | below_1h_threshold | +1.30% | +1.30% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +1.07% | +1.07% |
+| ATH/USDT:USDT | below_1h_threshold | +2.16% | +2.21% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.08% | +2.13% |
+| JTO/USDT:USDT | below_1h_threshold | +0.79% | +0.84% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +0.72% | +0.77% |
+| AKE/USDT:USDT | below_1h_threshold | +0.64% | +0.69% |
 
 ## 7. 次に見るべき不足
 
