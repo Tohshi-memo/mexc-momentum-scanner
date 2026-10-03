@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-10-03T06:46:24.097127+00:00
+- generated_at: 2026-10-03T06:51:12.975886+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **16041**
+- closed shadow trades: **16042**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.80% / filled 20/20。**
-- 全期間 MARKET基準: n=16041, expectancy=+0.00%
+- 全期間 MARKET基準: n=16042, expectancy=+0.00%
 - 直近20件 MARKET基準: n=20, expectancy=+0.80%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -21,9 +21,9 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_1PCT | 18/20 | 90.0% | +0.95% | **+0.86%** |
+| LIMIT_1PCT | 18/20 | 90.0% | +1.01% | **+0.91%** |
+| LIMIT_ATR | 10/20 | 50.0% | +1.65% | **+0.82%** |
 | MARKET | 20/20 | 100.0% | +0.80% | **+0.80%** |
-| LIMIT_ATR | 11/20 | 55.0% | +1.45% | **+0.80%** |
 | LIMIT_7PCT | 2/20 | 10.0% | +5.40% | **+0.54%** |
 | LIMIT_6PCT | 2/20 | 10.0% | +4.94% | **+0.49%** |
 
@@ -47,15 +47,15 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,291.26** / 初期 $100.00 (+1191.26%)
-- 確定: 6146件 (Win 1812 / Loss 1972 / Flat 2362) / skip 6456件
+- 確定: 6146件 (Win 1812 / Loss 1972 / Flat 2362) / skip 6457件
 - 成長率目線: 平均log +0.000416 / 幾何平均 +0.042% per trade / maxDD +8.46%
-- 次の候補: `LIMIT_FIB1272_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
+- 次の候補: `LIMIT_5PCT` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: MANA/USDT:USDT `LIMIT_FIB1272_LONG` EXPIRED account -0.46% 残高後 $1,291.26
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$274.46** / 初期 $100.00 (+174.46%)
-- 確定: 3606件 (Win 1005 / Loss 845 / Flat 1756) / skip 5846件
+- 確定: 3606件 (Win 1005 / Loss 845 / Flat 1756) / skip 5847件
 - 成長率目線: 平均log +0.000280 / 幾何平均 +0.028% per trade / maxDD +3.96%
 - 次の候補: `LIMIT_5PCT` (selected_by_robust_growth_score) / robust_score +0.0348 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: VELVET/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.35% 残高後 $274.46
@@ -65,13 +65,13 @@
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
 - 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4204件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000163 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000162 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-03T06:46:12.656350+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=84595.3
+- 更新: 2026-10-03T06:51:03.359627+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=84514.6
 - Funnel: target 1099 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +34.34% | $18,082,266.37 |
-| SAND/USDT:USDT | +25.50% | $112,030,551.49 |
-| NIGHT/USDT:USDT | +9.24% | $12,262,119.56 |
-| VELVET/USDT:USDT | +8.42% | $10,482,540.79 |
-| AKE/USDT:USDT | +7.80% | $2,802,420.29 |
+| LONGXIA/USDT:USDT | +35.61% | $18,149,907.32 |
+| SAND/USDT:USDT | +25.26% | $112,202,110.71 |
+| VELVET/USDT:USDT | +10.27% | $10,518,022.03 |
+| NIGHT/USDT:USDT | +9.63% | $12,296,700.50 |
+| AKE/USDT:USDT | +8.28% | $2,876,264.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IMX/USDT:USDT | below_1h_threshold | +4.73% | +4.74% |
-| AKE/USDT:USDT | below_1h_threshold | +4.50% | +4.51% |
-| SI/USDT:USDT | below_1h_threshold | +3.59% | +3.60% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +3.08% | +3.09% |
-| MAGMA/USDT:USDT | below_1h_threshold | +2.40% | +2.41% |
+| AKE/USDT:USDT | below_1h_threshold | +4.96% | +5.07% |
+| IMX/USDT:USDT | below_1h_threshold | +4.57% | +4.67% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +3.85% | +3.95% |
+| SI/USDT:USDT | below_1h_threshold | +3.48% | +3.58% |
+| MAGMA/USDT:USDT | below_1h_threshold | +2.43% | +2.53% |
 
 ## 7. 次に見るべき不足
 
