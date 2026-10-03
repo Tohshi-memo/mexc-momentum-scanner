@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-03T19:41:21.671375+00:00
+- generated_at: 2026-10-03T19:46:29.272441+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16073**
 
@@ -70,30 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-03T19:41:10.111461+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.18% price=84745.5
-- Funnel: target 1086 → liquid 137 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-03T19:46:17.525135+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.19% price=84736.4
+- Funnel: target 1086 → liquid 137 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.8 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SPORTFUN/USDT:USDT | +16.80% | $1,267,294.55 |
-| MOVR/USDT:USDT | +11.20% | $7,468,327.10 |
-| AIN/USDT:USDT | +9.71% | $3,019,316.95 |
-| PUMPFUN/USDT:USDT | +8.29% | $36,145,325.12 |
-| VELVET/USDT:USDT | +7.14% | $16,946,866.53 |
+| SPORTFUN/USDT:USDT | +16.36% | $1,272,330.87 |
+| MOVR/USDT:USDT | +10.93% | $7,490,068.96 |
+| AIN/USDT:USDT | +10.45% | $3,030,774.33 |
+| PUMPFUN/USDT:USDT | +9.14% | $36,836,481.59 |
+| BTW/USDT:USDT | +7.42% | $8,683,446.96 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ONE/USDT:USDT | below_1h_threshold | +4.30% | +4.48% |
-| BTW/USDT:USDT | below_1h_threshold | +4.23% | +4.41% |
-| AIN/USDT:USDT | below_1h_threshold | +2.12% | +2.30% |
-| SYN/USDT:USDT | below_1h_threshold | +1.75% | +1.94% |
-| CRV/USDT:USDT | below_1h_threshold | +1.38% | +1.56% |
+| ONE/USDT:USDT | below_1h_threshold | +4.33% | +4.52% |
+| AIN/USDT:USDT | below_1h_threshold | +2.74% | +2.94% |
+| SYN/USDT:USDT | below_1h_threshold | +1.75% | +1.95% |
+| CRV/USDT:USDT | below_1h_threshold | +1.43% | +1.62% |
+| VVV/USDT:USDT | below_1h_threshold | +1.06% | +1.25% |
 
 ## 7. 次に見るべき不足
 
