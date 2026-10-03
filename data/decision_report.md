@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-03T18:51:18.357392+00:00
+- generated_at: 2026-10-03T18:56:32.682948+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16073**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4233件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4234件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000184 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-03T18:51:08.778414+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=84898.4
-- Funnel: target 1086 → liquid 146 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-03T18:56:20.881447+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=84890.5
+- Funnel: target 1086 → liquid 146 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.3 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SPORTFUN/USDT:USDT | +24.63% | $1,148,485.82 |
-| MOVR/USDT:USDT | +12.23% | $7,573,536.08 |
-| PUMPFUN/USDT:USDT | +9.68% | $37,107,172.30 |
-| AIN/USDT:USDT | +8.34% | $2,810,357.34 |
-| VELVET/USDT:USDT | +6.12% | $16,664,997.82 |
+| SPORTFUN/USDT:USDT | +24.52% | $1,155,443.48 |
+| MOVR/USDT:USDT | +12.11% | $7,608,943.66 |
+| PUMPFUN/USDT:USDT | +10.91% | $38,037,680.44 |
+| AIN/USDT:USDT | +9.60% | $2,818,719.36 |
+| VELVET/USDT:USDT | +6.71% | $16,686,963.68 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PUMPFUN/USDT:USDT | below_1h_threshold | +4.59% | +4.67% |
-| MOVR/USDT:USDT | below_1h_threshold | +2.74% | +2.82% |
-| ATH/USDT:USDT | below_1h_threshold | +1.47% | +1.55% |
-| AIN/USDT:USDT | below_1h_threshold | +1.19% | +1.28% |
-| ZAMA/USDT:USDT | below_1h_threshold | +0.96% | +1.04% |
+| MOVR/USDT:USDT | below_1h_threshold | +2.63% | +2.72% |
+| AIN/USDT:USDT | below_1h_threshold | +2.35% | +2.44% |
+| ATH/USDT:USDT | below_1h_threshold | +1.99% | +2.08% |
+| ZAMA/USDT:USDT | below_1h_threshold | +1.33% | +1.42% |
+| USELESS/USDT:USDT | below_1h_threshold | +0.98% | +1.07% |
 
 ## 7. 次に見るべき不足
 
