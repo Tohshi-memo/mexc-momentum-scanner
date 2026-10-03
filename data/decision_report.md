@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-03T16:11:25.159471+00:00
+- generated_at: 2026-10-03T16:16:26.527814+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16065**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-03T16:11:15.771846+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=84808.7
+- 更新: 2026-10-03T16:16:15.253659+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=84789.3
 - Funnel: target 1086 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +3.22% | $16,085,307.57 |
-| SAGA/USDT:USDT | +1.90% | $1,057,276.66 |
-| JASMY/USDT:USDT | +1.71% | $2,514,402.93 |
-| ZRO/USDT:USDT | +1.62% | $17,702,431.79 |
-| STRK/USDT:USDT | +1.28% | $2,768,967.89 |
+| LONGXIA/USDT:USDT | +4.58% | $16,131,015.34 |
+| VELVET/USDT:USDT | +4.22% | $15,059,735.77 |
+| STRK/USDT:USDT | +1.87% | $2,825,265.98 |
+| ZRO/USDT:USDT | +1.73% | $17,946,936.28 |
+| EIGEN/USDT:USDT | +1.54% | $2,571,846.09 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LONGXIA/USDT:USDT | below_1h_threshold | +3.20% | +3.23% |
-| SAGA/USDT:USDT | below_1h_threshold | +1.91% | +1.94% |
-| JASMY/USDT:USDT | below_1h_threshold | +1.66% | +1.69% |
-| ZRO/USDT:USDT | below_1h_threshold | +1.61% | +1.64% |
-| STRK/USDT:USDT | below_1h_threshold | +1.14% | +1.17% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +4.46% | +4.51% |
+| VELVET/USDT:USDT | below_1h_threshold | +3.93% | +3.98% |
+| STRK/USDT:USDT | below_1h_threshold | +1.87% | +1.92% |
+| ZRO/USDT:USDT | below_1h_threshold | +1.78% | +1.83% |
+| EIGEN/USDT:USDT | below_1h_threshold | +1.51% | +1.56% |
 
 ## 7. 次に見るべき不足
 
