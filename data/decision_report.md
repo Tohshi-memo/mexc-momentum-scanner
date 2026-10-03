@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-03T22:51:24.037257+00:00
+- generated_at: 2026-10-03T22:56:06.013554+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16079**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-03T22:51:14.365514+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=84755.2
-- Funnel: target 1086 → liquid 136 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 94.0 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-03T22:55:57.525403+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=84730.1
+- Funnel: target 1086 → liquid 136 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +32.41% | $1,128,784.54 |
-| SPORTFUN/USDT:USDT | +14.83% | $1,414,117.00 |
-| AIN/USDT:USDT | +12.01% | $4,036,365.99 |
-| AKE/USDT:USDT | +9.09% | $3,782,111.83 |
-| PUMPFUN/USDT:USDT | +8.92% | $42,967,224.23 |
+| BATON/USDT:USDT | +25.80% | $1,141,929.71 |
+| SPORTFUN/USDT:USDT | +12.42% | $1,420,084.67 |
+| STRK/USDT:USDT | +9.59% | $6,082,186.43 |
+| PUMPFUN/USDT:USDT | +9.23% | $43,312,881.13 |
+| AKE/USDT:USDT | +9.07% | $3,788,713.74 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STRK/USDT:USDT | below_1h_threshold | +2.88% | +2.78% |
-| LTC/USDT:USDT | below_1h_threshold | +1.45% | +1.34% |
-| SPORTFUN/USDT:USDT | below_1h_threshold | +1.25% | +1.15% |
-| AKE/USDT:USDT | below_1h_threshold | +1.10% | +1.00% |
-| TAO/USDT:USDT | below_1h_threshold | +1.09% | +0.99% |
+| STRK/USDT:USDT | below_1h_threshold | +4.23% | +4.16% |
+| LTC/USDT:USDT | below_1h_threshold | +1.26% | +1.19% |
+| AKE/USDT:USDT | below_1h_threshold | +1.12% | +1.05% |
+| SUI/USDT:USDT | below_1h_threshold | +1.08% | +1.01% |
+| TAO/USDT:USDT | below_1h_threshold | +0.99% | +0.91% |
 
 ## 7. 次に見るべき不足
 
