@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-03T20:21:22.691057+00:00
+- generated_at: 2026-10-03T20:26:24.979753+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16073**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-03T20:21:13.128220+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=84854.9
+- 更新: 2026-10-03T20:26:13.996480+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=84841.6
 - Funnel: target 1086 → liquid 134 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SPORTFUN/USDT:USDT | +16.31% | $1,298,259.60 |
-| MOVR/USDT:USDT | +11.00% | $7,209,762.85 |
-| PUMPFUN/USDT:USDT | +9.00% | $37,509,980.73 |
-| AIN/USDT:USDT | +7.11% | $3,113,649.76 |
-| AERO/USDT:USDT | +4.42% | $1,196,677.86 |
+| SPORTFUN/USDT:USDT | +16.25% | $1,300,964.80 |
+| PUMPFUN/USDT:USDT | +9.42% | $37,546,644.40 |
+| MOVR/USDT:USDT | +8.67% | $7,260,506.29 |
+| AIN/USDT:USDT | +7.11% | $3,121,107.00 |
+| AERO/USDT:USDT | +4.52% | $1,198,011.17 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STX/USDT:USDT | below_1h_threshold | +2.49% | +2.42% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.80% | +1.73% |
-| VVV/USDT:USDT | below_1h_threshold | +1.74% | +1.67% |
-| QNT/USDT:USDT | below_1h_threshold | +1.01% | +0.94% |
-| SYN/USDT:USDT | below_1h_threshold | +0.97% | +0.90% |
+| STX/USDT:USDT | below_1h_threshold | +2.42% | +2.36% |
+| NEAR/USDT:USDT | below_1h_threshold | +1.31% | +1.26% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.13% | +1.08% |
+| VVV/USDT:USDT | below_1h_threshold | +1.08% | +1.03% |
+| QNT/USDT:USDT | below_1h_threshold | +1.00% | +0.95% |
 
 ## 7. 次に見るべき不足
 
