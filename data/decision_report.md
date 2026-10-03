@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-03T10:36:17.930951+00:00
+- generated_at: 2026-10-03T10:41:28.803260+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16054**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4214件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4217件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000151 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-03T10:36:06.503381+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=84566.7
-- Funnel: target 1086 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-03T10:41:13.640366+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=84570.2
+- Funnel: target 1086 → liquid 168 → pre 50 → checked 50 → surge 3 → strict 2
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 66.6 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +22.45% | $16,779,720.27 |
-| VELVET/USDT:USDT | +18.34% | $12,689,696.65 |
-| SAND/USDT:USDT | +16.11% | $116,771,216.39 |
-| ONE/USDT:USDT | +12.87% | $3,871,966.81 |
-| SUPER/USDT:USDT | +10.34% | $1,140,560.55 |
+| LONGXIA/USDT:USDT | +24.68% | $16,818,236.58 |
+| VELVET/USDT:USDT | +19.99% | $12,759,766.99 |
+| SAND/USDT:USDT | +16.66% | $117,630,219.54 |
+| ONE/USDT:USDT | +13.01% | $3,884,921.44 |
+| NIGHT/USDT:USDT | +11.04% | $14,777,278.31 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| WLD/USDT:USDT | below_1h_threshold | +4.69% | +4.68% |
-| VELVET/USDT:USDT | below_1h_threshold | +4.62% | +4.60% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +3.55% | +3.53% |
-| AR/USDT:USDT | below_1h_threshold | +1.73% | +1.71% |
-| NIGHT/USDT:USDT | below_1h_threshold | +1.27% | +1.25% |
+| NIGHT/USDT:USDT | below_1h_threshold | +3.55% | +3.53% |
+| AR/USDT:USDT | below_1h_threshold | +1.79% | +1.77% |
+| SI/USDT:USDT | below_1h_threshold | +1.79% | +1.77% |
+| TIA/USDT:USDT | below_1h_threshold | +1.52% | +1.49% |
+| LDO/USDT:USDT | below_1h_threshold | +1.38% | +1.36% |
 
 ## 7. 次に見るべき不足
 
