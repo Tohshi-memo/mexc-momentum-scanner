@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-03T19:26:24.437115+00:00
+- generated_at: 2026-10-03T19:31:20.198223+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16073**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-03T19:26:12.948617+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=84800.0
-- Funnel: target 1086 → liquid 137 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.2 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-03T19:31:08.702177+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=84783.5
+- Funnel: target 1086 → liquid 137 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SPORTFUN/USDT:USDT | +17.84% | $1,243,759.84 |
-| MOVR/USDT:USDT | +11.87% | $7,331,089.26 |
-| AIN/USDT:USDT | +11.18% | $2,959,582.57 |
-| PUMPFUN/USDT:USDT | +9.64% | $35,333,032.31 |
-| VELVET/USDT:USDT | +6.17% | $16,872,680.82 |
+| SPORTFUN/USDT:USDT | +16.14% | $1,251,714.42 |
+| MOVR/USDT:USDT | +10.62% | $7,412,214.63 |
+| AIN/USDT:USDT | +10.29% | $2,993,545.50 |
+| PUMPFUN/USDT:USDT | +9.33% | $35,504,490.86 |
+| VELVET/USDT:USDT | +6.42% | $16,901,412.63 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIN/USDT:USDT | below_1h_threshold | +3.43% | +3.55% |
-| ONE/USDT:USDT | below_1h_threshold | +2.68% | +2.80% |
-| ZAMA/USDT:USDT | below_1h_threshold | +1.88% | +2.00% |
-| JTO/USDT:USDT | below_1h_threshold | +1.18% | +1.30% |
-| SYN/USDT:USDT | below_1h_threshold | +0.82% | +0.94% |
+| ONE/USDT:USDT | below_1h_threshold | +4.47% | +4.61% |
+| BTW/USDT:USDT | below_1h_threshold | +4.00% | +4.14% |
+| AIN/USDT:USDT | below_1h_threshold | +2.66% | +2.80% |
+| ZAMA/USDT:USDT | below_1h_threshold | +1.79% | +1.93% |
+| SYN/USDT:USDT | below_1h_threshold | +1.42% | +1.56% |
 
 ## 7. 次に見るべき不足
 
