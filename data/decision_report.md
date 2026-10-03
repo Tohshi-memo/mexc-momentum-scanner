@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-10-03T05:06:43.038635+00:00
+- generated_at: 2026-10-03T05:11:22.900342+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **16038**
+- closed shadow trades: **16039**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=16038, expectancy=+0.00%
+- 全期間 MARKET基準: n=16039, expectancy=+0.00%
 - 直近20件 MARKET基準: n=20, expectancy=+0.03%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -21,7 +21,7 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_ATR | 13/20 | 65.0% | +1.50% | **+0.98%** |
+| LIMIT_ATR | 13/20 | 65.0% | +1.52% | **+0.99%** |
 | LIMIT_BB3S | 4/19 | 21.1% | +2.59% | **+0.55%** |
 | LIMIT_2PCT | 17/20 | 85.0% | +0.64% | **+0.54%** |
 | LIMIT_7PCT | 2/20 | 10.0% | +5.40% | **+0.54%** |
@@ -31,10 +31,10 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_FIB1272_LONG | 9/20 | 45.0% | +2.78% | **+1.25%** |
 | LIMIT_9PCT_LONG | 6/20 | 30.0% | +3.70% | **+1.11%** |
 | LIMIT_10PCT_LONG | 4/20 | 20.0% | +5.00% | **+1.00%** |
 | LIMIT_8PCT_LONG | 6/20 | 30.0% | +3.33% | **+1.00%** |
+| LIMIT_FIB1272_LONG | 8/20 | 40.0% | +2.34% | **+0.94%** |
 | LIMIT_7PCT_LONG | 7/20 | 35.0% | +1.98% | **+0.69%** |
 
 ## 2. $100 Live Portfolio
@@ -47,17 +47,17 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,303.71** / 初期 $100.00 (+1203.71%)
-- 確定: 6143件 (Win 1812 / Loss 1970 / Flat 2361) / skip 6456件
+- 確定: 6144件 (Win 1812 / Loss 1970 / Flat 2362) / skip 6456件
 - 成長率目線: 平均log +0.000418 / 幾何平均 +0.042% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_FIB1272_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: SAND/USDT:USDT `LIMIT_FIB1272_LONG` EXPIRED account +0.00% 残高後 $1,303.71
+- 最新: MAGMA/USDT:USDT `LIMIT_FIB1272_LONG` EXPIRED account +0.00% 残高後 $1,303.71
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$274.46** / 初期 $100.00 (+174.46%)
-- 確定: 3606件 (Win 1005 / Loss 845 / Flat 1756) / skip 5843件
+- 確定: 3606件 (Win 1005 / Loss 845 / Flat 1756) / skip 5844件
 - 成長率目線: 平均log +0.000280 / 幾何平均 +0.028% per trade / maxDD +3.96%
-- 次の候補: `LIMIT_5PCT` (selected_by_robust_growth_score) / robust_score +0.0350 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 次の候補: `LIMIT_5PCT` (selected_by_robust_growth_score) / robust_score +0.0348 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: VELVET/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.35% 残高後 $274.46
 
 ## 5. Causal Adaptive DryRun ($100)
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-03T05:06:32.237005+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=84532.3
+- 更新: 2026-10-03T05:11:09.463642+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=84526.6
 - Funnel: target 1099 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SAND/USDT:USDT | +32.42% | $102,565,535.31 |
-| LONGXIA/USDT:USDT | +26.42% | $18,083,030.41 |
-| VELVET/USDT:USDT | +20.64% | $9,637,839.32 |
-| MANA/USDT:USDT | +10.18% | $9,568,793.15 |
-| NIGHT/USDT:USDT | +7.77% | $11,216,940.57 |
+| SAND/USDT:USDT | +31.96% | $103,019,074.34 |
+| LONGXIA/USDT:USDT | +25.87% | $18,115,427.13 |
+| VELVET/USDT:USDT | +17.08% | $9,703,315.24 |
+| MANA/USDT:USDT | +12.33% | $9,660,897.04 |
+| ENJ/USDT:USDT | +8.22% | $3,350,027.49 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LONGXIA/USDT:USDT | below_1h_threshold | +2.63% | +2.64% |
-| GALA/USDT:USDT | below_1h_threshold | +2.37% | +2.37% |
-| SAND/USDT:USDT | below_1h_threshold | +2.08% | +2.09% |
-| MAGMA/USDT:USDT | below_1h_threshold | +1.59% | +1.60% |
-| CHZ/USDT:USDT | below_1h_threshold | +1.04% | +1.04% |
+| GALA/USDT:USDT | below_1h_threshold | +3.32% | +3.34% |
+| MANA/USDT:USDT | below_1h_threshold | +3.02% | +3.04% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +1.96% | +1.97% |
+| SAND/USDT:USDT | below_1h_threshold | +1.65% | +1.66% |
+| MAGMA/USDT:USDT | below_1h_threshold | +1.49% | +1.51% |
 
 ## 7. 次に見るべき不足
 
