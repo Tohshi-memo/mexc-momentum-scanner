@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-03T00:46:25.502305+00:00
+- generated_at: 2026-10-03T00:51:23.796264+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16025**
 
@@ -63,38 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4183件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4184件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000161 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-03T00:46:11.651465+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=84584.9
-- Funnel: target 1099 → liquid 176 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-03T00:51:09.518614+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.18% price=84635.4
+- Funnel: target 1099 → liquid 176 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 82.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +17.92% | $7,699,954.49 |
-| NIGHT/USDT:USDT | +8.18% | $8,819,503.93 |
-| SUPER/USDT:USDT | +7.48% | $1,258,951.12 |
-| SAND/USDT:USDT | +4.70% | $78,985,939.61 |
-| CT/USDT:USDT | +3.99% | $10,859,854.22 |
+| VELVET/USDT:USDT | +19.42% | $7,781,096.78 |
+| NIGHT/USDT:USDT | +11.23% | $9,031,339.70 |
+| SUPER/USDT:USDT | +7.52% | $1,264,262.67 |
+| SAND/USDT:USDT | +6.67% | $79,242,252.28 |
+| CT/USDT:USDT | +3.97% | $10,876,729.84 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SUPER/USDT:USDT | below_1h_threshold | +3.96% | +3.83% |
-| PYTH/USDT:USDT | below_1h_threshold | +3.65% | +3.53% |
-| SUI/USDT:USDT | below_1h_threshold | +3.60% | +3.48% |
-| QNT/USDT:USDT | below_1h_threshold | +2.71% | +2.58% |
-| NIGHT/USDT:USDT | below_1h_threshold | +2.50% | +2.38% |
+| SUPER/USDT:USDT | below_1h_threshold | +3.99% | +3.81% |
+| SUI/USDT:USDT | below_1h_threshold | +3.85% | +3.67% |
+| PYTH/USDT:USDT | below_1h_threshold | +3.48% | +3.30% |
+| QNT/USDT:USDT | below_1h_threshold | +3.20% | +3.02% |
+| INJ/USDT:USDT | below_1h_threshold | +2.32% | +2.14% |
 
 ## 7. 次に見るべき不足
 
