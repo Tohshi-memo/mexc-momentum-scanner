@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-03T16:31:29.062455+00:00
+- generated_at: 2026-10-03T16:36:28.936202+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16066**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-03T16:31:18.441166+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=84778.5
+- 更新: 2026-10-03T16:36:17.542479+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=84788.1
 - Funnel: target 1086 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +4.39% | $16,261,011.26 |
-| VELVET/USDT:USDT | +3.70% | $15,355,830.26 |
-| PUMPFUN/USDT:USDT | +3.18% | $30,568,836.98 |
-| AIN/USDT:USDT | +2.86% | $1,913,665.96 |
-| DYDX/USDT:USDT | +1.61% | $1,070,076.31 |
+| LONGXIA/USDT:USDT | +4.17% | $16,282,785.52 |
+| AIN/USDT:USDT | +3.75% | $1,986,465.16 |
+| PUMPFUN/USDT:USDT | +3.36% | $30,904,551.55 |
+| VELVET/USDT:USDT | +2.62% | $15,423,549.50 |
+| DYDX/USDT:USDT | +2.02% | $1,079,343.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LONGXIA/USDT:USDT | below_1h_threshold | +4.35% | +4.42% |
-| VELVET/USDT:USDT | below_1h_threshold | +3.53% | +3.59% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +3.31% | +3.37% |
-| AIN/USDT:USDT | below_1h_threshold | +2.60% | +2.67% |
-| DYDX/USDT:USDT | below_1h_threshold | +1.62% | +1.68% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +4.18% | +4.23% |
+| AIN/USDT:USDT | below_1h_threshold | +3.51% | +3.57% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +3.19% | +3.24% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.56% | +2.62% |
+| DYDX/USDT:USDT | below_1h_threshold | +2.02% | +2.07% |
 
 ## 7. 次に見るべき不足
 
