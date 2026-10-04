@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-04T01:56:34.367801+00:00
+- generated_at: 2026-10-04T02:01:33.544721+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16084**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-04T01:56:22.341824+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=84769.9
-- Funnel: target 1086 → liquid 134 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.9 >= 65=1, 4h RSI 72.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-04T02:01:22.168874+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=84764.9
+- Funnel: target 1086 → liquid 132 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +18.65% | $1,199,325.70 |
-| SPORTFUN/USDT:USDT | +17.13% | $1,502,366.42 |
-| LONGXIA/USDT:USDT | +13.66% | $13,985,762.19 |
-| QNT/USDT:USDT | +10.02% | $251,291,278.70 |
-| MONAD/USDT:USDT | +9.87% | $2,503,415.27 |
+| BATON/USDT:USDT | +19.05% | $1,184,344.90 |
+| SPORTFUN/USDT:USDT | +17.46% | $1,503,168.08 |
+| LONGXIA/USDT:USDT | +14.63% | $12,979,648.12 |
+| QNT/USDT:USDT | +10.89% | $239,566,435.55 |
+| AKE/USDT:USDT | +9.97% | $3,954,995.40 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| QNT/USDT:USDT | below_1h_threshold | +4.25% | +4.23% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +2.76% | +2.74% |
-| ZAMA/USDT:USDT | below_1h_threshold | +1.72% | +1.70% |
-| MONAD/USDT:USDT | below_1h_threshold | +1.13% | +1.12% |
-| 1000BONK/USDT:USDT | below_1h_threshold | +1.10% | +1.08% |
+| AIN/USDT:USDT | below_1h_threshold | +0.89% | +0.89% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +0.78% | +0.78% |
+| AKE/USDT:USDT | below_1h_threshold | +0.44% | +0.44% |
+| QNT/USDT:USDT | below_1h_threshold | +0.42% | +0.42% |
+| SPORTFUN/USDT:USDT | below_1h_threshold | +0.37% | +0.37% |
 
 ## 7. 次に見るべき不足
 
