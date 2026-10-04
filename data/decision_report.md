@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-04T17:21:36.471376+00:00
+- generated_at: 2026-10-04T17:26:29.645328+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16114**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-04T17:21:22.507575+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=85290.0
+- 更新: 2026-10-04T17:26:17.934129+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=85327.5
 - Funnel: target 1076 → liquid 143 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.1 >= 65=1
+- Strict後reject: 4h RSI 81.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +101.51% | $3,201,400.41 |
-| VIRTUAL/USDT:USDT | +4.45% | $6,293,400.38 |
-| CT/USDT:USDT | +3.73% | $3,686,826.44 |
-| STX/USDT:USDT | +3.73% | $1,661,562.41 |
-| PUMPFUN/USDT:USDT | +3.43% | $59,070,375.82 |
+| BATON/USDT:USDT | +97.22% | $3,283,112.31 |
+| VIRTUAL/USDT:USDT | +5.04% | $6,449,226.17 |
+| SYRUP/USDT:USDT | +3.68% | $1,398,981.61 |
+| CT/USDT:USDT | +3.63% | $3,693,640.34 |
+| PUMPFUN/USDT:USDT | +3.41% | $59,446,992.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SYRUP/USDT:USDT | below_1h_threshold | +1.58% | +1.63% |
-| BEAMX/USDT:USDT | below_1h_threshold | +1.14% | +1.19% |
-| CBRSSTOCK/USDT:USDT | below_1h_threshold | +1.07% | +1.12% |
-| JTO/USDT:USDT | below_1h_threshold | +0.92% | +0.97% |
-| ENA/USDT:USDT | below_1h_threshold | +0.72% | +0.76% |
+| JTO/USDT:USDT | below_1h_threshold | +2.31% | +2.31% |
+| SYRUP/USDT:USDT | below_1h_threshold | +2.05% | +2.05% |
+| CHIP/USDT:USDT | below_1h_threshold | +1.97% | +1.97% |
+| BEAMX/USDT:USDT | below_1h_threshold | +1.14% | +1.14% |
+| CBRSSTOCK/USDT:USDT | below_1h_threshold | +1.07% | +1.07% |
 
 ## 7. 次に見るべき不足
 
