@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-04T11:46:30.818998+00:00
+- generated_at: 2026-10-04T11:51:15.884944+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16103**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-04T11:46:20.301757+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=85233.7
+- 更新: 2026-10-04T11:51:08.010855+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=85247.2
 - Funnel: target 1076 → liquid 139 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +56.51% | $1,985,014.71 |
-| AIN/USDT:USDT | +22.87% | $6,086,250.30 |
-| AXS/USDT:USDT | +15.21% | $8,470,402.99 |
-| STRK/USDT:USDT | +12.30% | $13,573,659.20 |
-| AKE/USDT:USDT | +11.75% | $3,821,710.71 |
+| BATON/USDT:USDT | +59.27% | $1,994,874.38 |
+| AIN/USDT:USDT | +22.13% | $6,089,667.28 |
+| AXS/USDT:USDT | +15.07% | $8,526,533.02 |
+| STRK/USDT:USDT | +12.66% | $13,687,947.45 |
+| PHA/USDT:USDT | +11.56% | $1,598,996.39 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SAND/USDT:USDT | below_1h_threshold | +3.56% | +3.54% |
-| AKE/USDT:USDT | below_1h_threshold | +3.34% | +3.33% |
-| STRK/USDT:USDT | below_1h_threshold | +2.70% | +2.68% |
-| AIN/USDT:USDT | below_1h_threshold | +2.62% | +2.61% |
-| NMR/USDT:USDT | below_1h_threshold | +2.25% | +2.24% |
+| SAND/USDT:USDT | below_1h_threshold | +3.21% | +3.18% |
+| AKE/USDT:USDT | below_1h_threshold | +3.01% | +2.98% |
+| STRK/USDT:USDT | below_1h_threshold | +2.99% | +2.96% |
+| NMR/USDT:USDT | below_1h_threshold | +2.46% | +2.43% |
+| AIN/USDT:USDT | below_1h_threshold | +1.88% | +1.85% |
 
 ## 7. 次に見るべき不足
 
