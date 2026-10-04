@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-04T15:01:31.125109+00:00
+- generated_at: 2026-10-04T15:06:22.252915+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16109**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-04T15:01:17.754836+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=85246.2
+- 更新: 2026-10-04T15:06:12.698607+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=85278.1
 - Funnel: target 1076 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +62.25% | $2,275,283.33 |
-| AIN/USDT:USDT | +22.94% | $5,875,712.38 |
-| MUBARAK/USDT:USDT | +19.89% | $1,732,491.18 |
-| STRK/USDT:USDT | +16.89% | $17,462,255.20 |
-| AKT/USDT:USDT | +14.31% | $1,505,246.10 |
+| BATON/USDT:USDT | +64.97% | $2,286,990.56 |
+| AIN/USDT:USDT | +23.39% | $5,880,564.23 |
+| MUBARAK/USDT:USDT | +20.86% | $1,757,091.81 |
+| STRK/USDT:USDT | +17.46% | $17,523,362.92 |
+| AKT/USDT:USDT | +13.83% | $1,544,330.29 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CBRSSTOCK/USDT:USDT | below_1h_threshold | +1.49% | +1.49% |
-| SAND/USDT:USDT | below_1h_threshold | +0.72% | +0.71% |
-| MANA/USDT:USDT | below_1h_threshold | +0.55% | +0.54% |
-| AIN/USDT:USDT | below_1h_threshold | +0.37% | +0.37% |
-| NIL/USDT:USDT | below_1h_threshold | +0.35% | +0.35% |
+| SUI/USDT:USDT | below_1h_threshold | +2.26% | +2.22% |
+| SEI/USDT:USDT | below_1h_threshold | +1.61% | +1.57% |
+| CBRSSTOCK/USDT:USDT | below_1h_threshold | +1.49% | +1.45% |
+| BATON/USDT:USDT | below_1h_threshold | +1.16% | +1.12% |
+| AIN/USDT:USDT | below_1h_threshold | +0.73% | +0.69% |
 
 ## 7. 次に見るべき不足
 
