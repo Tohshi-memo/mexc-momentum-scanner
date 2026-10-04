@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-10-04T18:41:20.015463+00:00
+- generated_at: 2026-10-04T18:46:33.796912+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **16122**
+- closed shadow trades: **16123**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +2.20% / filled 20/20。**
-- 全期間 MARKET基準: n=16122, expectancy=+0.01%
+- 全期間 MARKET基準: n=16123, expectancy=+0.01%
 - 直近20件 MARKET基準: n=20, expectancy=+2.20%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -23,9 +23,9 @@
 |---|---:|---:|---:|---:|
 | LIMIT_1PCT | 19/20 | 95.0% | +2.73% | **+2.60%** |
 | MARKET | 20/20 | 100.0% | +2.20% | **+2.20%** |
-| LIMIT_9PCT | 6/20 | 30.0% | +4.00% | **+1.20%** |
-| LIMIT_10PCT | 6/20 | 30.0% | +4.00% | **+1.20%** |
-| LIMIT_7PCT | 7/20 | 35.0% | +2.11% | **+0.74%** |
+| LIMIT_9PCT | 5/20 | 25.0% | +5.60% | **+1.40%** |
+| LIMIT_10PCT | 5/20 | 25.0% | +5.60% | **+1.40%** |
+| LIMIT_7PCT | 6/20 | 30.0% | +3.13% | **+0.94%** |
 
 ### シャドウ上位 LONG
 
@@ -33,8 +33,8 @@
 |---|---:|---:|---:|---:|
 | LIMIT_9PCT_LONG | 9/20 | 45.0% | +3.03% | **+1.36%** |
 | LIMIT_7PCT_LONG | 12/20 | 60.0% | +1.73% | **+1.04%** |
+| LIMIT_8PCT_LONG | 11/20 | 55.0% | +1.82% | **+1.00%** |
 | LIMIT_6PCT_LONG | 12/20 | 60.0% | +1.31% | **+0.79%** |
-| LIMIT_8PCT_LONG | 10/20 | 50.0% | +1.20% | **+0.60%** |
 | LIMIT_10PCT_LONG | 4/20 | 20.0% | +2.00% | **+0.40%** |
 
 ## 2. $100 Live Portfolio
@@ -47,15 +47,15 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,313.90** / 初期 $100.00 (+1213.90%)
-- 確定: 6181件 (Win 1821 / Loss 1983 / Flat 2377) / skip 6502件
+- 確定: 6182件 (Win 1821 / Loss 1983 / Flat 2378) / skip 6502件
 - 成長率目線: 平均log +0.000417 / 幾何平均 +0.042% per trade / maxDD +8.46%
-- 次の候補: `LIMIT_9PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
+- 次の候補: `LIMIT_7PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: BATON/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $1,313.90
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$274.46** / 初期 $100.00 (+174.46%)
-- 確定: 3609件 (Win 1005 / Loss 845 / Flat 1759) / skip 5924件
+- 確定: 3609件 (Win 1005 / Loss 845 / Flat 1759) / skip 5925件
 - 成長率目線: 平均log +0.000280 / 幾何平均 +0.028% per trade / maxDD +3.96%
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0853 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: BATON/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $274.46
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4280件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4281件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000407 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-04T18:41:11.047629+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=85292.9
-- Funnel: target 1076 → liquid 140 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-04T18:46:20.027092+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=85309.5
+- Funnel: target 1076 → liquid 140 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 82.4 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +100.61% | $4,793,192.27 |
-| BTW/USDT:USDT | +4.48% | $24,565,774.88 |
-| NEAR/USDT:USDT | +4.42% | $99,977,718.85 |
-| LIT/USDT:USDT | +4.26% | $5,566,990.93 |
-| VVV/USDT:USDT | +3.76% | $1,878,984.01 |
+| BATON/USDT:USDT | +114.95% | $4,923,844.19 |
+| BTW/USDT:USDT | +5.11% | $24,635,107.72 |
+| NEAR/USDT:USDT | +4.25% | $100,694,551.89 |
+| CT/USDT:USDT | +4.17% | $3,674,174.90 |
+| VVV/USDT:USDT | +4.02% | $1,892,255.33 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| US/USDT:USDT | below_1h_threshold | +3.75% | +3.73% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +2.65% | +2.63% |
-| FET/USDT:USDT | below_1h_threshold | +1.72% | +1.71% |
-| SPORTFUN/USDT:USDT | below_1h_threshold | +1.53% | +1.51% |
-| CRV/USDT:USDT | below_1h_threshold | +1.47% | +1.45% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +3.10% | +3.07% |
+| US/USDT:USDT | below_1h_threshold | +3.08% | +3.04% |
+| FET/USDT:USDT | below_1h_threshold | +2.21% | +2.18% |
+| SPORTFUN/USDT:USDT | below_1h_threshold | +1.74% | +1.70% |
+| VVV/USDT:USDT | below_1h_threshold | +1.69% | +1.66% |
 
 ## 7. 次に見るべき不足
 
