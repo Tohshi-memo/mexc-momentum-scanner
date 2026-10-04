@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-04T04:41:20.607330+00:00
+- generated_at: 2026-10-04T04:46:25.008446+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16089**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-04T04:41:09.256113+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=84778.1
+- 更新: 2026-10-04T04:46:13.411507+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=84778.0
 - Funnel: target 1086 → liquid 135 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +19.45% | $1,213,899.26 |
-| SPORTFUN/USDT:USDT | +18.99% | $1,658,547.38 |
-| AXS/USDT:USDT | +13.42% | $3,585,718.86 |
-| MONAD/USDT:USDT | +11.13% | $2,728,897.96 |
-| PUMPFUN/USDT:USDT | +10.68% | $44,442,389.18 |
+| BATON/USDT:USDT | +18.43% | $1,215,698.10 |
+| SPORTFUN/USDT:USDT | +18.28% | $1,665,120.78 |
+| AXS/USDT:USDT | +13.91% | $3,612,887.82 |
+| PUMPFUN/USDT:USDT | +10.63% | $44,528,222.95 |
+| MONAD/USDT:USDT | +10.02% | $2,758,129.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MANA/USDT:USDT | below_1h_threshold | +3.44% | +3.46% |
-| AXS/USDT:USDT | below_1h_threshold | +3.44% | +3.46% |
-| AIN/USDT:USDT | below_1h_threshold | +3.41% | +3.43% |
-| SPORTFUN/USDT:USDT | below_1h_threshold | +3.28% | +3.31% |
-| S/USDT:USDT | below_1h_threshold | +2.14% | +2.17% |
+| AXS/USDT:USDT | below_1h_threshold | +3.93% | +3.96% |
+| MANA/USDT:USDT | below_1h_threshold | +3.24% | +3.27% |
+| AIN/USDT:USDT | below_1h_threshold | +3.24% | +3.27% |
+| SPORTFUN/USDT:USDT | below_1h_threshold | +2.76% | +2.78% |
+| IMX/USDT:USDT | below_1h_threshold | +2.03% | +2.05% |
 
 ## 7. 次に見るべき不足
 
