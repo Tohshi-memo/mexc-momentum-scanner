@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-04T20:06:19.680807+00:00
+- generated_at: 2026-10-04T20:11:07.881703+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16127**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-04T20:06:09.150835+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=85367.8
+- 更新: 2026-10-04T20:10:59.777973+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=85360.7
 - Funnel: target 1076 → liquid 137 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +96.79% | $6,282,336.02 |
-| FET/USDT:USDT | +5.04% | $23,485,340.47 |
-| VVV/USDT:USDT | +4.53% | $1,953,319.02 |
-| CHIP/USDT:USDT | +4.40% | $1,759,518.75 |
-| LIT/USDT:USDT | +4.34% | $4,651,981.24 |
+| BATON/USDT:USDT | +93.84% | $6,396,208.67 |
+| HNT/USDT:USDT | +6.52% | $1,488,394.83 |
+| FET/USDT:USDT | +4.64% | $23,939,441.03 |
+| CHIP/USDT:USDT | +4.38% | $1,818,612.91 |
+| VVV/USDT:USDT | +4.31% | $1,955,880.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CHIP/USDT:USDT | below_1h_threshold | +1.12% | +1.14% |
-| WIF/USDT:USDT | below_1h_threshold | +0.32% | +0.34% |
-| FET/USDT:USDT | below_1h_threshold | +0.31% | +0.33% |
-| PONS/USDT:USDT | below_1h_threshold | +0.30% | +0.33% |
-| AKT/USDT:USDT | below_1h_threshold | +0.29% | +0.32% |
+| HNT/USDT:USDT | below_1h_threshold | +4.49% | +4.53% |
+| CHIP/USDT:USDT | below_1h_threshold | +1.10% | +1.13% |
+| WIF/USDT:USDT | below_1h_threshold | +0.68% | +0.71% |
+| LSK/USDT:USDT | below_1h_threshold | +0.54% | +0.57% |
+| BLESS/USDT:USDT | below_1h_threshold | +0.42% | +0.45% |
 
 ## 7. 次に見るべき不足
 
