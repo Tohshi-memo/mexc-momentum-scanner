@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-04T18:06:22.320624+00:00
+- generated_at: 2026-10-04T18:11:23.219786+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16119**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-04T18:06:10.975246+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=85307.6
+- 更新: 2026-10-04T18:11:11.367362+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=85281.1
 - Funnel: target 1076 → liquid 140 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +94.31% | $3,989,246.63 |
-| PHA/USDT:USDT | +8.18% | $1,978,683.67 |
-| MONAD/USDT:USDT | +4.75% | $3,219,945.56 |
-| VIRTUAL/USDT:USDT | +4.50% | $6,796,528.63 |
-| CT/USDT:USDT | +3.86% | $3,555,278.16 |
+| BATON/USDT:USDT | +98.71% | $4,043,881.32 |
+| PHA/USDT:USDT | +7.28% | $2,064,859.56 |
+| MONAD/USDT:USDT | +4.78% | $3,234,575.84 |
+| VIRTUAL/USDT:USDT | +4.16% | $6,942,959.98 |
+| NEAR/USDT:USDT | +3.46% | $96,852,201.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PHA/USDT:USDT | below_1h_threshold | +0.85% | +0.82% |
-| EIGEN/USDT:USDT | below_1h_threshold | +0.73% | +0.70% |
-| SYRUP/USDT:USDT | below_1h_threshold | +0.65% | +0.62% |
-| VIRTUAL/USDT:USDT | below_1h_threshold | +0.62% | +0.59% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.51% | +0.47% |
+| BATON/USDT:USDT | below_1h_threshold | +2.27% | +2.26% |
+| EIGEN/USDT:USDT | below_1h_threshold | +1.19% | +1.19% |
+| SYRUP/USDT:USDT | below_1h_threshold | +0.73% | +0.73% |
+| AXS/USDT:USDT | below_1h_threshold | +0.60% | +0.60% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.51% | +0.50% |
 
 ## 7. 次に見るべき不足
 
