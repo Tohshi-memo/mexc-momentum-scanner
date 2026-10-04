@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-04T15:31:17.516863+00:00
+- generated_at: 2026-10-04T15:36:27.603563+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16109**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4266件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4267件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000234 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-04T15:31:09.686382+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=85273.0
-- Funnel: target 1076 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-04T15:36:13.970353+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=85255.5
+- Funnel: target 1076 → liquid 143 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +63.33% | $2,323,740.96 |
-| AIN/USDT:USDT | +25.49% | $5,917,925.93 |
-| MUBARAK/USDT:USDT | +23.57% | $1,870,693.95 |
-| AKT/USDT:USDT | +16.67% | $1,634,037.29 |
-| STRK/USDT:USDT | +15.29% | $18,457,921.38 |
+| BATON/USDT:USDT | +63.48% | $2,326,445.39 |
+| AIN/USDT:USDT | +25.10% | $5,924,332.97 |
+| BEAMX/USDT:USDT | +24.82% | $1,001,700.77 |
+| MUBARAK/USDT:USDT | +22.38% | $1,906,210.78 |
+| AKT/USDT:USDT | +16.03% | $1,659,762.61 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SUI/USDT:USDT | below_1h_threshold | +3.96% | +3.93% |
-| AIN/USDT:USDT | below_1h_threshold | +2.46% | +2.43% |
-| AKT/USDT:USDT | below_1h_threshold | +2.28% | +2.25% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +2.27% | +2.24% |
-| STX/USDT:USDT | below_1h_threshold | +1.84% | +1.81% |
+| SUI/USDT:USDT | below_1h_threshold | +3.70% | +3.69% |
+| BAT/USDT:USDT | below_1h_threshold | +2.90% | +2.89% |
+| FET/USDT:USDT | below_1h_threshold | +2.88% | +2.86% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +2.44% | +2.42% |
+| AIN/USDT:USDT | below_1h_threshold | +2.18% | +2.17% |
 
 ## 7. 次に見るべき不足
 
