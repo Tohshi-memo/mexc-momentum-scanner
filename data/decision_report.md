@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-04T04:11:15.747081+00:00
+- generated_at: 2026-10-04T04:16:16.916115+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16089**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4246件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4247件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000337 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-04T04:11:04.335298+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=84781.0
-- Funnel: target 1086 → liquid 134 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-04T04:16:05.754869+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=84772.3
+- Funnel: target 1086 → liquid 135 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.6 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +19.41% | $1,207,436.93 |
-| SPORTFUN/USDT:USDT | +15.98% | $1,617,567.76 |
-| AXS/USDT:USDT | +12.69% | $3,056,809.93 |
-| AKE/USDT:USDT | +11.10% | $4,192,000.26 |
-| PUMPFUN/USDT:USDT | +10.60% | $44,156,673.66 |
+| BATON/USDT:USDT | +20.79% | $1,209,079.86 |
+| SPORTFUN/USDT:USDT | +15.81% | $1,617,931.31 |
+| AXS/USDT:USDT | +14.80% | $3,128,973.23 |
+| MONAD/USDT:USDT | +11.10% | $2,654,941.53 |
+| PUMPFUN/USDT:USDT | +11.05% | $44,206,938.89 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIN/USDT:USDT | below_1h_threshold | +2.90% | +2.93% |
-| AXS/USDT:USDT | below_1h_threshold | +2.81% | +2.83% |
-| IMX/USDT:USDT | below_1h_threshold | +1.12% | +1.14% |
-| SPORTFUN/USDT:USDT | below_1h_threshold | +0.76% | +0.78% |
-| STRK/USDT:USDT | below_1h_threshold | +0.63% | +0.65% |
+| AIN/USDT:USDT | below_1h_threshold | +3.07% | +3.10% |
+| MANA/USDT:USDT | below_1h_threshold | +2.82% | +2.85% |
+| STRK/USDT:USDT | below_1h_threshold | +1.24% | +1.28% |
+| IMX/USDT:USDT | below_1h_threshold | +1.23% | +1.26% |
+| BATON/USDT:USDT | below_1h_threshold | +0.79% | +0.82% |
 
 ## 7. 次に見るべき不足
 
