@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-04T17:41:23.199435+00:00
+- generated_at: 2026-10-04T17:46:32.355437+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16117**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-04T17:41:13.375992+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=85295.0
+- 更新: 2026-10-04T17:46:20.521336+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=85397.9
 - Funnel: target 1076 → liquid 143 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.6 >= 65=1
+- Strict後reject: 4h RSI 81.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +106.90% | $3,693,424.77 |
-| VIRTUAL/USDT:USDT | +4.68% | $6,663,259.26 |
-| STX/USDT:USDT | +4.45% | $2,237,490.90 |
-| SYRUP/USDT:USDT | +3.41% | $1,644,314.28 |
-| NEAR/USDT:USDT | +3.05% | $100,340,252.58 |
+| BATON/USDT:USDT | +103.54% | $3,762,948.43 |
+| STX/USDT:USDT | +4.75% | $2,427,507.86 |
+| VIRTUAL/USDT:USDT | +4.59% | $6,734,703.09 |
+| AKT/USDT:USDT | +3.41% | $2,725,162.32 |
+| SYRUP/USDT:USDT | +3.33% | $1,661,983.86 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CHIP/USDT:USDT | below_1h_threshold | +4.10% | +4.14% |
-| JTO/USDT:USDT | below_1h_threshold | +2.69% | +2.72% |
-| RAY/USDT:USDT | below_1h_threshold | +1.87% | +1.91% |
-| ENA/USDT:USDT | below_1h_threshold | +1.83% | +1.87% |
-| SYRUP/USDT:USDT | below_1h_threshold | +1.78% | +1.81% |
+| CHIP/USDT:USDT | below_1h_threshold | +4.47% | +4.39% |
+| JTO/USDT:USDT | below_1h_threshold | +2.51% | +2.43% |
+| RAY/USDT:USDT | below_1h_threshold | +2.26% | +2.18% |
+| AKT/USDT:USDT | below_1h_threshold | +2.07% | +1.99% |
+| ENA/USDT:USDT | below_1h_threshold | +1.78% | +1.70% |
 
 ## 7. 次に見るべき不足
 
