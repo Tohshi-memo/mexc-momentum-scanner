@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-04T10:31:13.852210+00:00
+- generated_at: 2026-10-04T10:36:10.337364+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16103**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-04T10:31:04.468123+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.18% price=85342.5
+- 更新: 2026-10-04T10:36:01.628488+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=85281.9
 - Funnel: target 1076 → liquid 138 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +67.51% | $1,827,792.04 |
-| AIN/USDT:USDT | +19.08% | $6,012,671.51 |
-| AXS/USDT:USDT | +13.14% | $8,051,938.08 |
-| SPORTFUN/USDT:USDT | +13.13% | $1,878,479.46 |
-| AKT/USDT:USDT | +10.62% | $1,116,166.82 |
+| BATON/USDT:USDT | +67.65% | $1,833,373.57 |
+| AIN/USDT:USDT | +19.92% | $6,017,701.76 |
+| AXS/USDT:USDT | +13.98% | $8,088,294.78 |
+| SPORTFUN/USDT:USDT | +12.42% | $1,879,303.84 |
+| PHA/USDT:USDT | +10.40% | $1,601,893.18 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SI/USDT:USDT | below_1h_threshold | +3.83% | +3.65% |
-| AIN/USDT:USDT | below_1h_threshold | +1.33% | +1.15% |
-| RUNE/USDT:USDT | below_1h_threshold | +0.85% | +0.67% |
-| VVV/USDT:USDT | below_1h_threshold | +0.61% | +0.43% |
-| ZEC/USDT:USDT | below_1h_threshold | +0.32% | +0.14% |
+| AIN/USDT:USDT | below_1h_threshold | +2.05% | +1.94% |
+| AXS/USDT:USDT | below_1h_threshold | +0.79% | +0.68% |
+| STRK/USDT:USDT | below_1h_threshold | +0.64% | +0.53% |
+| RUNE/USDT:USDT | below_1h_threshold | +0.44% | +0.34% |
+| NEAR/USDT:USDT | below_1h_threshold | +0.37% | +0.27% |
 
 ## 7. 次に見るべき不足
 
