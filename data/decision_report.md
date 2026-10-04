@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-04T06:56:23.999556+00:00
+- generated_at: 2026-10-04T07:01:14.709585+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16098**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-04T06:56:11.992097+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=85017.0
-- Funnel: target 1086 → liquid 136 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.8 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-04T07:01:05.491910+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=84989.1
+- Funnel: target 1074 → liquid 134 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +23.41% | $1,232,958.22 |
-| SPORTFUN/USDT:USDT | +18.82% | $1,768,371.88 |
-| AXS/USDT:USDT | +18.69% | $5,006,698.71 |
-| ATH/USDT:USDT | +16.69% | $4,053,472.20 |
-| AIN/USDT:USDT | +12.96% | $5,736,071.49 |
+| BATON/USDT:USDT | +23.26% | $1,218,814.36 |
+| AXS/USDT:USDT | +20.40% | $5,074,826.29 |
+| SPORTFUN/USDT:USDT | +18.50% | $1,771,639.09 |
+| ATH/USDT:USDT | +16.68% | $4,085,509.80 |
+| AIN/USDT:USDT | +12.87% | $5,747,710.70 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AXS/USDT:USDT | below_1h_threshold | +4.14% | +3.97% |
-| NIL/USDT:USDT | below_1h_threshold | +3.00% | +2.83% |
-| GALA/USDT:USDT | below_1h_threshold | +2.71% | +2.54% |
-| ATOM/USDT:USDT | below_1h_threshold | +2.39% | +2.23% |
-| APE/USDT:USDT | below_1h_threshold | +1.80% | +1.63% |
+| AIN/USDT:USDT | below_1h_threshold | +0.74% | +0.74% |
+| GALA/USDT:USDT | below_1h_threshold | +0.64% | +0.64% |
+| SPORTFUN/USDT:USDT | below_1h_threshold | +0.56% | +0.56% |
+| MANA/USDT:USDT | below_1h_threshold | +0.43% | +0.43% |
+| ATOM/USDT:USDT | below_1h_threshold | +0.34% | +0.34% |
 
 ## 7. 次に見るべき不足
 
