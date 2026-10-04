@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-04T19:56:22.058816+00:00
+- generated_at: 2026-10-04T20:01:19.575422+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16127**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-04T19:56:10.307828+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=85395.6
-- Funnel: target 1076 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-04T20:01:07.965102+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=85383.0
+- Funnel: target 1076 → liquid 137 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +105.98% | $6,378,911.90 |
-| BTW/USDT:USDT | +6.82% | $25,231,961.70 |
-| FET/USDT:USDT | +4.35% | $23,511,159.98 |
-| VVV/USDT:USDT | +4.35% | $2,043,671.22 |
-| SKY/USDT:USDT | +4.24% | $1,892,203.46 |
+| BATON/USDT:USDT | +105.12% | $6,238,214.30 |
+| BTW/USDT:USDT | +5.79% | $23,392,749.75 |
+| FET/USDT:USDT | +4.88% | $23,203,035.81 |
+| VVV/USDT:USDT | +4.47% | $1,951,151.80 |
+| LIT/USDT:USDT | +4.32% | $4,642,246.17 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FET/USDT:USDT | below_1h_threshold | +2.48% | +2.36% |
-| NIL/USDT:USDT | below_1h_threshold | +2.42% | +2.30% |
-| PONS/USDT:USDT | below_1h_threshold | +2.21% | +2.09% |
-| BTW/USDT:USDT | below_1h_threshold | +1.86% | +1.75% |
-| DOT/USDT:USDT | below_1h_threshold | +1.57% | +1.45% |
+| BATON/USDT:USDT | below_1h_threshold | +1.36% | +1.37% |
+| BTW/USDT:USDT | below_1h_threshold | +0.44% | +0.45% |
+| SKY/USDT:USDT | below_1h_threshold | +0.23% | +0.23% |
+| AAVE/USDT:USDT | below_1h_threshold | +0.21% | +0.22% |
+| BLESS/USDT:USDT | below_1h_threshold | +0.12% | +0.13% |
 
 ## 7. 次に見るべき不足
 
