@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-04T15:56:07.442141+00:00
+- generated_at: 2026-10-04T16:01:07.317904+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16109**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-04T15:55:59.179642+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=85284.5
-- Funnel: target 1076 → liquid 143 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-04T16:00:59.112567+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=85218.1
+- Funnel: target 1076 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +67.33% | $2,367,138.20 |
-| BEAMX/USDT:USDT | +24.82% | $1,014,111.70 |
-| MUBARAK/USDT:USDT | +21.40% | $2,053,972.33 |
-| AIN/USDT:USDT | +20.44% | $5,953,111.08 |
-| STRK/USDT:USDT | +16.44% | $19,207,079.95 |
+| MUBARAK/USDT:USDT | +0.85% | $2,074,459.87 |
+| BATON/USDT:USDT | +0.64% | $2,340,296.74 |
+| SAND/USDT:USDT | +0.33% | $64,749,162.91 |
+| BEAMX/USDT:USDT | +0.30% | $1,013,164.80 |
+| SI/USDT:USDT | +0.29% | $2,140,753.47 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SUI/USDT:USDT | below_1h_threshold | +4.58% | +4.53% |
-| BATON/USDT:USDT | below_1h_threshold | +2.80% | +2.76% |
-| FET/USDT:USDT | below_1h_threshold | +2.79% | +2.75% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +2.61% | +2.57% |
-| STX/USDT:USDT | below_1h_threshold | +1.94% | +1.90% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +1.15% | +1.14% |
+| BATON/USDT:USDT | below_1h_threshold | +0.83% | +0.83% |
+| STRK/USDT:USDT | below_1h_threshold | +0.31% | +0.31% |
+| MONAD/USDT:USDT | below_1h_threshold | +0.27% | +0.27% |
+| AKT/USDT:USDT | below_1h_threshold | +0.27% | +0.27% |
 
 ## 7. 次に見るべき不足
 
