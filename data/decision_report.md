@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-04T22:51:21.353700+00:00
+- generated_at: 2026-10-04T22:56:17.846289+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16139**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-04T22:51:09.719395+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.50% price=86260.1
+- 更新: 2026-10-04T22:56:06.419095+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.65% price=86385.5
 - Funnel: target 1076 → liquid 140 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +158.97% | $9,736,395.53 |
-| HNT/USDT:USDT | +10.21% | $4,678,444.30 |
-| VVV/USDT:USDT | +8.96% | $2,490,424.73 |
-| FLOKI/USDT:USDT | +6.19% | $2,693,629.94 |
-| ADA/USDT:USDT | +6.17% | $31,610,628.99 |
+| BATON/USDT:USDT | +165.51% | $9,819,719.66 |
+| HNT/USDT:USDT | +9.13% | $4,692,009.32 |
+| VVV/USDT:USDT | +8.98% | $2,502,886.25 |
+| FLOKI/USDT:USDT | +6.15% | $2,729,949.93 |
+| ADA/USDT:USDT | +5.97% | $32,371,959.20 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ADA/USDT:USDT | below_1h_threshold | +3.87% | +3.37% |
-| VVV/USDT:USDT | below_1h_threshold | +2.67% | +2.17% |
-| JUP/USDT:USDT | below_1h_threshold | +1.97% | +1.46% |
-| 1000BONK/USDT:USDT | below_1h_threshold | +1.55% | +1.04% |
-| PEPE/USDT:USDT | below_1h_threshold | +1.48% | +0.98% |
+| ADA/USDT:USDT | below_1h_threshold | +3.63% | +2.99% |
+| VVV/USDT:USDT | below_1h_threshold | +2.55% | +1.91% |
+| PEPE/USDT:USDT | below_1h_threshold | +1.75% | +1.10% |
+| PONS/USDT:USDT | below_1h_threshold | +1.65% | +1.01% |
+| JUP/USDT:USDT | below_1h_threshold | +1.63% | +0.98% |
 
 ## 7. 次に見るべき不足
 
