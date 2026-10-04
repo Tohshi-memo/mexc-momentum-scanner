@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-04T03:01:33.743091+00:00
+- generated_at: 2026-10-04T03:06:31.460635+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16089**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-04T03:01:18.206550+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=84764.9
+- 更新: 2026-10-04T03:06:20.124700+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=84765.0
 - Funnel: target 1086 → liquid 132 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +17.35% | $1,190,608.50 |
-| SPORTFUN/USDT:USDT | +15.38% | $1,595,320.48 |
-| MAGMA/USDT:USDT | +13.51% | $1,988,115.39 |
-| AKE/USDT:USDT | +10.27% | $3,977,094.64 |
-| PUMPFUN/USDT:USDT | +9.76% | $43,255,477.49 |
+| BATON/USDT:USDT | +17.71% | $1,191,799.33 |
+| SPORTFUN/USDT:USDT | +15.59% | $1,597,000.36 |
+| AKE/USDT:USDT | +11.07% | $4,011,102.38 |
+| PUMPFUN/USDT:USDT | +9.38% | $43,312,172.43 |
+| MAGMA/USDT:USDT | +9.26% | $2,007,900.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIN/USDT:USDT | below_1h_threshold | +1.56% | +1.56% |
-| MAGMA/USDT:USDT | below_1h_threshold | +0.56% | +0.56% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +0.50% | +0.50% |
-| ZAMA/USDT:USDT | below_1h_threshold | +0.35% | +0.35% |
-| QNT/USDT:USDT | below_1h_threshold | +0.29% | +0.29% |
+| AIN/USDT:USDT | below_1h_threshold | +1.36% | +1.36% |
+| ZAMA/USDT:USDT | below_1h_threshold | +1.35% | +1.35% |
+| ETHFI/USDT:USDT | below_1h_threshold | +1.27% | +1.27% |
+| AKE/USDT:USDT | below_1h_threshold | +0.80% | +0.80% |
+| MOVR/USDT:USDT | below_1h_threshold | +0.61% | +0.61% |
 
 ## 7. 次に見るべき不足
 
