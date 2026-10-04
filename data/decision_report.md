@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-04T23:21:17.245136+00:00
+- generated_at: 2026-10-04T23:26:19.584603+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16139**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-04T23:21:06.000451+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.20% price=86567.9
-- Funnel: target 1076 → liquid 140 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-04T23:26:08.137818+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.23% price=86594.6
+- Funnel: target 1076 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +169.12% | $10,069,657.58 |
-| HNT/USDT:USDT | +12.48% | $4,852,219.56 |
-| VVV/USDT:USDT | +8.33% | $2,528,764.93 |
-| ADA/USDT:USDT | +6.29% | $33,835,257.92 |
-| FLOKI/USDT:USDT | +6.12% | $2,801,009.27 |
+| BATON/USDT:USDT | +164.95% | $10,151,662.68 |
+| HNT/USDT:USDT | +14.75% | $4,903,139.13 |
+| VVV/USDT:USDT | +8.16% | $2,542,461.93 |
+| ADA/USDT:USDT | +6.05% | $33,981,843.19 |
+| FLOKI/USDT:USDT | +5.90% | $2,827,330.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LONGXIA/USDT:USDT | below_1h_threshold | +3.66% | +3.46% |
-| HNT/USDT:USDT | below_1h_threshold | +2.97% | +2.77% |
-| AERO/USDT:USDT | below_1h_threshold | +2.04% | +1.85% |
-| ZAMA/USDT:USDT | below_1h_threshold | +1.25% | +1.05% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +1.11% | +0.91% |
+| HNT/USDT:USDT | below_relative_strength | +5.04% | +4.82% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +4.23% | +4.00% |
+| AERO/USDT:USDT | below_1h_threshold | +1.99% | +1.77% |
+| LSK/USDT:USDT | below_1h_threshold | +1.91% | +1.68% |
+| JTO/USDT:USDT | below_1h_threshold | +1.23% | +1.01% |
 
 ## 7. 次に見るべき不足
 
