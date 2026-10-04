@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-04T16:51:23.542543+00:00
+- generated_at: 2026-10-04T16:56:27.748010+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16110**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4267件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4268件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000292 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-04T16:51:12.089329+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.15% price=85338.1
-- Funnel: target 1076 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-04T16:56:15.744742+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=85329.1
+- Funnel: target 1076 → liquid 142 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 68.7 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PUMPFUN/USDT:USDT | +4.23% | $60,136,411.91 |
-| CT/USDT:USDT | +3.38% | $3,719,658.06 |
-| NEAR/USDT:USDT | +3.21% | $96,602,643.58 |
-| STX/USDT:USDT | +3.10% | $1,887,316.80 |
-| VIRTUAL/USDT:USDT | +2.82% | $4,724,760.34 |
+| BATON/USDT:USDT | +18.58% | $2,460,441.89 |
+| PUMPFUN/USDT:USDT | +3.97% | $60,689,425.81 |
+| STX/USDT:USDT | +3.71% | $1,914,176.16 |
+| CT/USDT:USDT | +3.67% | $3,745,026.91 |
+| VIRTUAL/USDT:USDT | +3.47% | $4,769,488.20 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PUMPFUN/USDT:USDT | below_1h_threshold | +4.32% | +4.17% |
-| CT/USDT:USDT | below_1h_threshold | +3.49% | +3.34% |
-| NEAR/USDT:USDT | below_1h_threshold | +3.22% | +3.07% |
-| STX/USDT:USDT | below_1h_threshold | +3.10% | +2.96% |
-| VIRTUAL/USDT:USDT | below_1h_threshold | +2.83% | +2.68% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +3.98% | +3.84% |
+| STX/USDT:USDT | below_1h_threshold | +3.69% | +3.55% |
+| CT/USDT:USDT | below_1h_threshold | +3.65% | +3.52% |
+| VIRTUAL/USDT:USDT | below_1h_threshold | +3.48% | +3.34% |
+| NEAR/USDT:USDT | below_1h_threshold | +2.95% | +2.81% |
 
 ## 7. 次に見るべき不足
 
