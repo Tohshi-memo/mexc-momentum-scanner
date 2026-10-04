@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-04T16:31:13.683774+00:00
+- generated_at: 2026-10-04T16:36:15.697971+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16110**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-04T16:31:02.295725+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=85214.9
+- 更新: 2026-10-04T16:36:04.107786+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=85255.5
 - Funnel: target 1076 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PUMPFUN/USDT:USDT | +3.43% | $56,950,011.38 |
-| MUBARAK/USDT:USDT | +1.95% | $2,440,669.14 |
-| MONAD/USDT:USDT | +1.58% | $3,410,294.18 |
-| VIRTUAL/USDT:USDT | +1.49% | $4,250,737.02 |
-| HNT/USDT:USDT | +1.44% | $1,290,020.06 |
+| PUMPFUN/USDT:USDT | +4.45% | $58,285,434.26 |
+| MUBARAK/USDT:USDT | +2.45% | $2,463,697.78 |
+| MONAD/USDT:USDT | +1.64% | $3,410,633.38 |
+| BLESS/USDT:USDT | +1.55% | $1,305,848.05 |
+| STX/USDT:USDT | +1.52% | $1,588,825.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PUMPFUN/USDT:USDT | below_1h_threshold | +3.45% | +3.45% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +1.95% | +1.95% |
-| MONAD/USDT:USDT | below_1h_threshold | +1.55% | +1.55% |
-| VIRTUAL/USDT:USDT | below_1h_threshold | +1.49% | +1.49% |
-| HNT/USDT:USDT | below_1h_threshold | +1.45% | +1.45% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +4.39% | +4.34% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +2.53% | +2.48% |
+| MONAD/USDT:USDT | below_1h_threshold | +1.64% | +1.59% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.56% | +1.51% |
+| STX/USDT:USDT | below_1h_threshold | +1.53% | +1.48% |
 
 ## 7. 次に見るべき不足
 
