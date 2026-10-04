@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-04T22:06:29.374391+00:00
+- generated_at: 2026-10-04T22:11:04.772682+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16139**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-04T22:06:15.784017+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.32% price=86099.9
+- 更新: 2026-10-04T22:10:56.921839+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.44% price=86207.1
 - Funnel: target 1076 → liquid 138 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +204.05% | $8,854,199.05 |
-| HNT/USDT:USDT | +14.01% | $4,293,680.53 |
-| VVV/USDT:USDT | +6.90% | $2,270,336.19 |
-| FLOKI/USDT:USDT | +6.74% | $2,548,451.80 |
-| CHIP/USDT:USDT | +4.94% | $2,394,516.47 |
+| BATON/USDT:USDT | +189.31% | $8,961,511.05 |
+| HNT/USDT:USDT | +14.56% | $4,357,818.27 |
+| VVV/USDT:USDT | +6.89% | $2,275,093.95 |
+| FLOKI/USDT:USDT | +6.41% | $2,563,757.50 |
+| SKY/USDT:USDT | +5.05% | $2,013,113.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HNT/USDT:USDT | below_1h_threshold | +2.32% | +2.01% |
-| NEAR/USDT:USDT | below_1h_threshold | +2.04% | +1.72% |
-| USELESS/USDT:USDT | below_1h_threshold | +1.90% | +1.58% |
-| MONAD/USDT:USDT | below_1h_threshold | +1.33% | +1.01% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +1.28% | +0.97% |
+| HNT/USDT:USDT | below_1h_threshold | +2.65% | +2.21% |
+| NEAR/USDT:USDT | below_1h_threshold | +1.67% | +1.23% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.66% | +1.22% |
+| CHIP/USDT:USDT | below_1h_threshold | +1.36% | +0.92% |
+| MONAD/USDT:USDT | below_1h_threshold | +1.27% | +0.83% |
 
 ## 7. 次に見るべき不足
 
