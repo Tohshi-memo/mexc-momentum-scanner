@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-04T16:01:07.317904+00:00
+- generated_at: 2026-10-04T16:06:08.309099+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16109**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-04T16:00:59.112567+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=85218.1
+- 更新: 2026-10-04T16:06:00.152870+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=85136.6
 - Funnel: target 1076 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MUBARAK/USDT:USDT | +0.85% | $2,074,459.87 |
-| BATON/USDT:USDT | +0.64% | $2,340,296.74 |
-| SAND/USDT:USDT | +0.33% | $64,749,162.91 |
-| BEAMX/USDT:USDT | +0.30% | $1,013,164.80 |
-| SI/USDT:USDT | +0.29% | $2,140,753.47 |
+| MUBARAK/USDT:USDT | +2.59% | $2,163,717.70 |
+| BLESS/USDT:USDT | +1.68% | $1,229,188.98 |
+| SI/USDT:USDT | +0.92% | $2,146,162.91 |
+| MONAD/USDT:USDT | +0.88% | $3,378,263.66 |
+| HNT/USDT:USDT | +0.78% | $1,256,038.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MUBARAK/USDT:USDT | below_1h_threshold | +1.15% | +1.14% |
-| BATON/USDT:USDT | below_1h_threshold | +0.83% | +0.83% |
-| STRK/USDT:USDT | below_1h_threshold | +0.31% | +0.31% |
-| MONAD/USDT:USDT | below_1h_threshold | +0.27% | +0.27% |
-| AKT/USDT:USDT | below_1h_threshold | +0.27% | +0.27% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +2.60% | +2.69% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.54% | +1.63% |
+| AERO/USDT:USDT | below_1h_threshold | +0.95% | +1.03% |
+| MONAD/USDT:USDT | below_1h_threshold | +0.88% | +0.97% |
+| SI/USDT:USDT | below_1h_threshold | +0.86% | +0.95% |
 
 ## 7. 次に見るべき不足
 
