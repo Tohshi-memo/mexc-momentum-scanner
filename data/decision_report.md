@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-04T08:16:26.275122+00:00
+- generated_at: 2026-10-04T08:21:28.663052+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16099**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-04T08:16:14.805112+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=85102.8
-- Funnel: target 1076 → liquid 135 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-04T08:21:17.296974+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=85079.4
+- Funnel: target 1076 → liquid 136 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +40.54% | $1,331,139.82 |
-| ATH/USDT:USDT | +17.53% | $4,896,998.67 |
-| AIN/USDT:USDT | +15.58% | $5,859,714.24 |
-| AXS/USDT:USDT | +15.57% | $6,085,954.71 |
-| SPORTFUN/USDT:USDT | +14.77% | $1,794,223.24 |
+| BATON/USDT:USDT | +38.54% | $1,336,460.77 |
+| AXS/USDT:USDT | +14.72% | $6,186,781.21 |
+| AIN/USDT:USDT | +14.70% | $5,864,743.66 |
+| SPORTFUN/USDT:USDT | +14.28% | $1,796,498.73 |
+| ATH/USDT:USDT | +13.76% | $4,980,830.53 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LONGXIA/USDT:USDT | below_1h_threshold | +4.42% | +4.37% |
-| LIT/USDT:USDT | below_1h_threshold | +1.88% | +1.83% |
-| RAY/USDT:USDT | below_1h_threshold | +1.79% | +1.74% |
-| AIN/USDT:USDT | below_1h_threshold | +1.23% | +1.19% |
-| SPORTFUN/USDT:USDT | below_1h_threshold | +1.21% | +1.16% |
+| RUNE/USDT:USDT | below_1h_threshold | +3.59% | +3.57% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +3.47% | +3.45% |
+| RAY/USDT:USDT | below_1h_threshold | +2.28% | +2.26% |
+| VVV/USDT:USDT | below_1h_threshold | +1.90% | +1.88% |
+| S/USDT:USDT | below_1h_threshold | +1.65% | +1.63% |
 
 ## 7. 次に見るべき不足
 
