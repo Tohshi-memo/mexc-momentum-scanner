@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-04T20:36:07.432076+00:00
+- generated_at: 2026-10-04T20:41:14.154932+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16127**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4285件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4286件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000306 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-04T20:35:59.141230+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.20% price=85559.3
-- Funnel: target 1076 → liquid 137 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-04T20:41:04.497816+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.22% price=85574.9
+- Funnel: target 1076 → liquid 137 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 82.2 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +107.69% | $6,621,931.15 |
-| HNT/USDT:USDT | +7.62% | $2,000,880.67 |
-| VVV/USDT:USDT | +7.33% | $2,119,797.34 |
-| SKY/USDT:USDT | +5.11% | $1,960,178.31 |
-| CHIP/USDT:USDT | +4.55% | $2,302,731.98 |
+| BATON/USDT:USDT | +116.23% | $6,729,050.66 |
+| HNT/USDT:USDT | +8.48% | $2,018,657.91 |
+| VVV/USDT:USDT | +7.49% | $2,143,412.26 |
+| SKY/USDT:USDT | +4.30% | $1,969,876.44 |
+| LIT/USDT:USDT | +4.23% | $4,759,308.70 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HNT/USDT:USDT | below_1h_threshold | +3.54% | +3.34% |
-| VVV/USDT:USDT | below_1h_threshold | +2.64% | +2.44% |
-| BATON/USDT:USDT | below_1h_threshold | +2.36% | +2.16% |
-| CHIP/USDT:USDT | below_1h_threshold | +1.26% | +1.06% |
-| LSK/USDT:USDT | below_1h_threshold | +1.22% | +1.02% |
+| HNT/USDT:USDT | below_1h_threshold | +4.37% | +4.15% |
+| VVV/USDT:USDT | below_1h_threshold | +2.80% | +2.58% |
+| LSK/USDT:USDT | below_1h_threshold | +1.17% | +0.96% |
+| GRASS/USDT:USDT | below_1h_threshold | +0.92% | +0.70% |
+| CHIP/USDT:USDT | below_1h_threshold | +0.89% | +0.67% |
 
 ## 7. 次に見るべき不足
 
