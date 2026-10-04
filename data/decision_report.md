@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-04T16:46:25.131307+00:00
+- generated_at: 2026-10-04T16:51:23.542543+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16110**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-04T16:46:12.304207+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=85284.3
+- 更新: 2026-10-04T16:51:12.089329+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=85338.1
 - Funnel: target 1076 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PUMPFUN/USDT:USDT | +4.16% | $59,828,804.05 |
-| STX/USDT:USDT | +2.74% | $1,837,682.12 |
-| VIRTUAL/USDT:USDT | +2.60% | $4,619,460.86 |
-| AKT/USDT:USDT | +2.24% | $2,179,359.31 |
-| CT/USDT:USDT | +2.06% | $3,685,776.26 |
+| PUMPFUN/USDT:USDT | +4.23% | $60,136,411.91 |
+| CT/USDT:USDT | +3.38% | $3,719,658.06 |
+| NEAR/USDT:USDT | +3.21% | $96,602,643.58 |
+| STX/USDT:USDT | +3.10% | $1,887,316.80 |
+| VIRTUAL/USDT:USDT | +2.82% | $4,724,760.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PUMPFUN/USDT:USDT | below_1h_threshold | +4.19% | +4.11% |
-| STX/USDT:USDT | below_1h_threshold | +2.82% | +2.74% |
-| VIRTUAL/USDT:USDT | below_1h_threshold | +2.56% | +2.48% |
-| AKT/USDT:USDT | below_1h_threshold | +2.24% | +2.16% |
-| NEAR/USDT:USDT | below_1h_threshold | +2.16% | +2.07% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +4.32% | +4.17% |
+| CT/USDT:USDT | below_1h_threshold | +3.49% | +3.34% |
+| NEAR/USDT:USDT | below_1h_threshold | +3.22% | +3.07% |
+| STX/USDT:USDT | below_1h_threshold | +3.10% | +2.96% |
+| VIRTUAL/USDT:USDT | below_1h_threshold | +2.83% | +2.68% |
 
 ## 7. 次に見るべき不足
 
