@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-10-04T17:16:31.730502+00:00
+- generated_at: 2026-10-04T17:21:36.471376+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **16113**
+- closed shadow trades: **16114**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +2.17% / filled 20/20。**
-- 全期間 MARKET基準: n=16113, expectancy=+0.01%
+- 全期間 MARKET基準: n=16114, expectancy=+0.01%
 - 直近20件 MARKET基準: n=20, expectancy=+2.17%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -23,8 +23,8 @@
 |---|---:|---:|---:|---:|
 | MARKET | 20/20 | 100.0% | +2.17% | **+2.17%** |
 | LIMIT_1PCT | 18/20 | 90.0% | +1.97% | **+1.77%** |
-| LIMIT_9PCT | 4/20 | 20.0% | +2.00% | **+0.40%** |
 | LIMIT_10PCT | 4/20 | 20.0% | +2.00% | **+0.40%** |
+| LIMIT_9PCT | 4/20 | 20.0% | +2.00% | **+0.40%** |
 | LIMIT_2PCT | 13/20 | 65.0% | +0.54% | **+0.35%** |
 
 ### シャドウ上位 LONG
@@ -47,15 +47,15 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,296.23** / 初期 $100.00 (+1196.23%)
-- 確定: 6172件 (Win 1819 / Loss 1981 / Flat 2372) / skip 6502件
+- 確定: 6173件 (Win 1819 / Loss 1981 / Flat 2373) / skip 6502件
 - 成長率目線: 平均log +0.000415 / 幾何平均 +0.042% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: BATON/USDT:USDT `LIMIT_7PCT_LONG` TP_HIT account +1.00% 残高後 $1,296.23
+- 最新: BATON/USDT:USDT `LIMIT_7PCT_LONG` EXPIRED account +0.00% 残高後 $1,296.23
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$274.46** / 初期 $100.00 (+174.46%)
-- 確定: 3608件 (Win 1005 / Loss 845 / Flat 1758) / skip 5916件
+- 確定: 3608件 (Win 1005 / Loss 845 / Flat 1758) / skip 5917件
 - 成長率目線: 平均log +0.000280 / 幾何平均 +0.028% per trade / maxDD +3.96%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: AIN/USDT:USDT `LIMIT_FIB1272` EXPIRED account +0.00% 残高後 $274.46
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4271件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4272件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000415 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000357 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-04T17:16:17.657562+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=85277.3
-- Funnel: target 1076 → liquid 142 → pre 50 → checked 50 → surge 1 → strict 0
+- 更新: 2026-10-04T17:21:22.507575+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=85290.0
+- Funnel: target 1076 → liquid 143 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.9 >= 65=1
+- Strict後reject: 4h RSI 81.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +82.20% | $3,011,744.35 |
-| VIRTUAL/USDT:USDT | +4.98% | $6,022,715.59 |
-| PUMPFUN/USDT:USDT | +3.66% | $58,715,068.84 |
-| STX/USDT:USDT | +3.51% | $1,578,703.61 |
-| CT/USDT:USDT | +3.48% | $3,575,192.57 |
+| BATON/USDT:USDT | +101.51% | $3,201,400.41 |
+| VIRTUAL/USDT:USDT | +4.45% | $6,293,400.38 |
+| CT/USDT:USDT | +3.73% | $3,686,826.44 |
+| STX/USDT:USDT | +3.73% | $1,661,562.41 |
+| PUMPFUN/USDT:USDT | +3.43% | $59,070,375.82 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAMX/USDT:USDT | below_1h_threshold | +2.29% | +2.35% |
-| SYRUP/USDT:USDT | below_1h_threshold | +1.20% | +1.26% |
-| CBRSSTOCK/USDT:USDT | below_1h_threshold | +1.07% | +1.13% |
-| VIRTUAL/USDT:USDT | below_1h_threshold | +1.00% | +1.06% |
-| ENA/USDT:USDT | below_1h_threshold | +0.72% | +0.78% |
+| SYRUP/USDT:USDT | below_1h_threshold | +1.58% | +1.63% |
+| BEAMX/USDT:USDT | below_1h_threshold | +1.14% | +1.19% |
+| CBRSSTOCK/USDT:USDT | below_1h_threshold | +1.07% | +1.12% |
+| JTO/USDT:USDT | below_1h_threshold | +0.92% | +0.97% |
+| ENA/USDT:USDT | below_1h_threshold | +0.72% | +0.76% |
 
 ## 7. 次に見るべき不足
 
