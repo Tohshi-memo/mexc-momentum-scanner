@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-05T12:06:09.223879+00:00
+- generated_at: 2026-10-05T12:11:23.080393+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16156**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4317件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4318件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000224 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-05T12:06:01.076183+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=86148.6
-- Funnel: target 1074 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-05T12:11:11.205485+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=86054.4
+- Funnel: target 1074 → liquid 153 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 90.6 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +115.74% | $12,290,818.83 |
-| RLC/USDT:USDT | +33.24% | $1,145,935.11 |
-| MOVR/USDT:USDT | +19.36% | $9,108,666.35 |
-| LIT/USDT:USDT | +10.69% | $6,850,502.73 |
-| ENA/USDT:USDT | +10.52% | $49,523,937.64 |
+| BATON/USDT:USDT | +117.09% | $12,316,241.12 |
+| RLC/USDT:USDT | +37.69% | $1,278,920.48 |
+| MOVR/USDT:USDT | +19.37% | $9,196,958.75 |
+| LIT/USDT:USDT | +10.69% | $6,888,246.32 |
+| SKY/USDT:USDT | +9.99% | $1,238,725.63 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RLC/USDT:USDT | below_1h_threshold | +3.40% | +3.42% |
-| BATON/USDT:USDT | below_1h_threshold | +1.72% | +1.74% |
-| PENDLE/USDT:USDT | below_1h_threshold | +1.38% | +1.40% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +0.84% | +0.86% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.56% | +0.58% |
+| PENDLE/USDT:USDT | below_1h_threshold | +2.20% | +2.33% |
+| SKY/USDT:USDT | below_1h_threshold | +1.96% | +2.09% |
+| BATON/USDT:USDT | below_1h_threshold | +1.96% | +2.09% |
+| AIN/USDT:USDT | below_1h_threshold | +1.48% | +1.61% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.56% | +0.69% |
 
 ## 7. 次に見るべき不足
 
