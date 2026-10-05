@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-05T07:41:22.563016+00:00
+- generated_at: 2026-10-05T07:46:11.138473+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16148**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-05T07:41:11.184734+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=86235.0
+- 更新: 2026-10-05T07:46:02.493556+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.21% price=86399.0
 - Funnel: target 1074 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +110.55% | $12,220,096.95 |
-| ORCA/USDT:USDT | +12.30% | $1,302,010.14 |
-| MOVR/USDT:USDT | +10.15% | $3,150,135.70 |
-| ADA/USDT:USDT | +9.89% | $64,413,082.59 |
-| LIT/USDT:USDT | +9.13% | $4,813,117.90 |
+| BATON/USDT:USDT | +107.47% | $12,235,350.59 |
+| ORCA/USDT:USDT | +12.35% | $1,309,856.73 |
+| ADA/USDT:USDT | +10.21% | $64,924,345.12 |
+| MOVR/USDT:USDT | +9.35% | $3,165,744.71 |
+| LIT/USDT:USDT | +9.30% | $4,824,306.60 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MOVR/USDT:USDT | below_1h_threshold | +3.94% | +3.92% |
-| ENA/USDT:USDT | below_1h_threshold | +3.73% | +3.70% |
-| FET/USDT:USDT | below_1h_threshold | +2.47% | +2.45% |
-| GRT/USDT:USDT | below_1h_threshold | +1.89% | +1.87% |
-| ORCA/USDT:USDT | below_1h_threshold | +1.74% | +1.72% |
+| ENA/USDT:USDT | below_relative_strength | +5.04% | +4.82% |
+| FET/USDT:USDT | below_1h_threshold | +3.77% | +3.56% |
+| MOVR/USDT:USDT | below_1h_threshold | +3.28% | +3.07% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +2.39% | +2.18% |
+| GRT/USDT:USDT | below_1h_threshold | +2.09% | +1.88% |
 
 ## 7. 次に見るべき不足
 
