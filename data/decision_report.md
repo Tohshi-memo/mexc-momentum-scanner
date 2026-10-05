@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-05T12:56:30.195389+00:00
+- generated_at: 2026-10-05T13:01:23.885189+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16158**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-05T12:56:15.959671+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.35% price=85863.2
-- Funnel: target 1074 → liquid 154 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 92.6 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-05T13:01:12.468192+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=85925.8
+- Funnel: target 1074 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +101.92% | $12,446,021.79 |
-| RLC/USDT:USDT | +50.89% | $2,348,699.41 |
-| FLUID/USDT:USDT | +25.97% | $1,436,778.29 |
-| MOVR/USDT:USDT | +14.36% | $10,121,997.94 |
-| LIT/USDT:USDT | +10.92% | $7,420,399.57 |
+| BATON/USDT:USDT | +106.04% | $12,331,418.29 |
+| RLC/USDT:USDT | +48.54% | $2,497,334.71 |
+| FLUID/USDT:USDT | +26.95% | $1,459,068.11 |
+| MOVR/USDT:USDT | +12.87% | $10,110,830.49 |
+| LIT/USDT:USDT | +10.77% | $7,271,443.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIN/USDT:USDT | below_1h_threshold | +3.32% | +3.67% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +0.76% | +1.11% |
-| PENDLE/USDT:USDT | below_1h_threshold | +0.60% | +0.95% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.56% | +0.91% |
-| NEAR/USDT:USDT | below_1h_threshold | +0.36% | +0.71% |
+| EIGEN/USDT:USDT | below_1h_threshold | +1.23% | +1.16% |
+| BTW/USDT:USDT | below_1h_threshold | +0.72% | +0.64% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.49% | +0.42% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +0.41% | +0.33% |
+| NICKEL/USDT:USDT | below_1h_threshold | +0.38% | +0.30% |
 
 ## 7. 次に見るべき不足
 
