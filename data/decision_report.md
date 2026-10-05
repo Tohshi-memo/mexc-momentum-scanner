@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-05T13:11:21.972253+00:00
+- generated_at: 2026-10-05T13:16:10.904993+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16158**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-05T13:11:10.505008+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.25% price=86072.7
+- 更新: 2026-10-05T13:16:02.994569+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.22% price=86051.7
 - Funnel: target 1074 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +104.91% | $12,344,800.48 |
-| RLC/USDT:USDT | +51.81% | $2,639,857.03 |
-| FLUID/USDT:USDT | +25.73% | $1,554,674.65 |
-| MOVR/USDT:USDT | +12.81% | $10,254,885.74 |
-| NIL/USDT:USDT | +11.24% | $10,109,740.45 |
+| BATON/USDT:USDT | +100.44% | $12,363,577.37 |
+| RLC/USDT:USDT | +50.51% | $2,729,960.81 |
+| FLUID/USDT:USDT | +24.40% | $1,626,140.65 |
+| MOVR/USDT:USDT | +12.07% | $10,281,028.31 |
+| ADA/USDT:USDT | +10.77% | $84,262,167.54 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIL/USDT:USDT | below_1h_threshold | +3.25% | +3.01% |
-| RLC/USDT:USDT | below_1h_threshold | +1.59% | +1.34% |
-| ORCA/USDT:USDT | below_1h_threshold | +1.31% | +1.06% |
-| ADA/USDT:USDT | below_1h_threshold | +1.03% | +0.78% |
-| AAVE/USDT:USDT | below_1h_threshold | +0.83% | +0.58% |
+| NIL/USDT:USDT | below_1h_threshold | +2.30% | +2.08% |
+| ADA/USDT:USDT | below_1h_threshold | +0.88% | +0.66% |
+| SKY/USDT:USDT | below_1h_threshold | +0.77% | +0.55% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +0.67% | +0.45% |
+| AAVE/USDT:USDT | below_1h_threshold | +0.63% | +0.40% |
 
 ## 7. 次に見るべき不足
 
