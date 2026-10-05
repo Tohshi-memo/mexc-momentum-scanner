@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-05T01:41:25.306952+00:00
+- generated_at: 2026-10-05T01:46:19.934676+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16139**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-05T01:41:13.772898+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=86707.3
+- 更新: 2026-10-05T01:46:08.573855+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=86682.5
 - Funnel: target 1076 → liquid 143 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +129.82% | $10,939,368.97 |
-| HNT/USDT:USDT | +14.20% | $5,379,094.84 |
-| ORCA/USDT:USDT | +12.18% | $1,089,169.90 |
-| VVV/USDT:USDT | +6.76% | $2,651,908.10 |
-| NIL/USDT:USDT | +6.43% | $2,352,029.06 |
+| BATON/USDT:USDT | +129.44% | $10,952,867.63 |
+| HNT/USDT:USDT | +14.54% | $5,388,994.30 |
+| ORCA/USDT:USDT | +11.91% | $1,090,714.71 |
+| VVV/USDT:USDT | +7.03% | $2,657,146.05 |
+| ADA/USDT:USDT | +6.33% | $40,644,268.68 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIL/USDT:USDT | below_1h_threshold | +2.39% | +2.27% |
-| AIN/USDT:USDT | below_1h_threshold | +1.91% | +1.80% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +1.47% | +1.35% |
-| HNT/USDT:USDT | below_1h_threshold | +1.11% | +1.00% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.98% | +0.86% |
+| AIN/USDT:USDT | below_1h_threshold | +2.12% | +2.04% |
+| NIL/USDT:USDT | below_1h_threshold | +1.80% | +1.71% |
+| HNT/USDT:USDT | below_1h_threshold | +1.42% | +1.33% |
+| SOXL/USDT:USDT | below_1h_threshold | +0.98% | +0.89% |
+| PENGU/USDT:USDT | below_1h_threshold | +0.64% | +0.55% |
 
 ## 7. 次に見るべき不足
 
