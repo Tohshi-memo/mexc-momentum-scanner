@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-05T22:46:26.077496+00:00
+- generated_at: 2026-10-05T22:51:31.136946+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16172**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-05T22:46:14.443224+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=85931.0
+- 更新: 2026-10-05T22:51:19.666694+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=85876.7
 - Funnel: target 1074 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RLC/USDT:USDT | +31.84% | $15,136,438.10 |
-| ORCA/USDT:USDT | +18.82% | $1,529,728.99 |
-| RAY/USDT:USDT | +11.75% | $3,618,171.80 |
-| BR/USDT:USDT | +9.30% | $13,472,312.51 |
-| FILECOIN/USDT:USDT | +8.96% | $14,093,321.51 |
+| RLC/USDT:USDT | +31.47% | $15,226,205.56 |
+| ORCA/USDT:USDT | +17.85% | $1,549,801.79 |
+| RAY/USDT:USDT | +11.90% | $3,655,517.14 |
+| BR/USDT:USDT | +9.03% | $13,497,318.24 |
+| FILECOIN/USDT:USDT | +8.78% | $14,375,710.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ORCA/USDT:USDT | below_1h_threshold | +4.37% | +4.34% |
-| RLC/USDT:USDT | below_1h_threshold | +1.68% | +1.65% |
-| RAY/USDT:USDT | below_1h_threshold | +1.39% | +1.36% |
-| ADA/USDT:USDT | below_1h_threshold | +1.19% | +1.16% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.09% | +1.06% |
+| ORCA/USDT:USDT | below_1h_threshold | +3.52% | +3.55% |
+| RAY/USDT:USDT | below_1h_threshold | +1.47% | +1.51% |
+| RLC/USDT:USDT | below_1h_threshold | +1.44% | +1.47% |
+| SAND/USDT:USDT | below_1h_threshold | +1.04% | +1.08% |
+| ZRO/USDT:USDT | below_1h_threshold | +1.02% | +1.05% |
 
 ## 7. 次に見るべき不足
 
