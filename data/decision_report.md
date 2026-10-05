@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-05T14:51:22.318210+00:00
+- generated_at: 2026-10-05T14:56:19.815327+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16162**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-05T14:51:10.784801+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.87% price=85633.6
+- 更新: 2026-10-05T14:56:10.601529+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.93% price=85582.8
 - Funnel: target 1074 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +98.93% | $12,471,931.59 |
-| RLC/USDT:USDT | +52.17% | $3,772,291.86 |
-| FLUID/USDT:USDT | +19.82% | $2,425,266.31 |
-| MOVR/USDT:USDT | +14.88% | $10,925,567.14 |
-| NIL/USDT:USDT | +9.95% | $10,701,499.30 |
+| BATON/USDT:USDT | +97.60% | $12,483,980.88 |
+| RLC/USDT:USDT | +49.76% | $3,820,607.58 |
+| FLUID/USDT:USDT | +20.23% | $2,434,399.15 |
+| MOVR/USDT:USDT | +17.55% | $11,110,014.32 |
+| NIL/USDT:USDT | +9.70% | $10,713,970.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +3.63% | +4.50% |
-| STXSTOCK/USDT:USDT | below_1h_threshold | +2.99% | +3.86% |
-| MOVR/USDT:USDT | below_1h_threshold | +1.68% | +2.55% |
-| MSFTSTOCK/USDT:USDT | below_1h_threshold | +1.34% | +2.20% |
-| S/USDT:USDT | below_1h_threshold | +1.24% | +2.11% |
+| MOVR/USDT:USDT | below_1h_threshold | +4.05% | +4.98% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +3.63% | +4.56% |
+| STXSTOCK/USDT:USDT | below_1h_threshold | +2.99% | +3.92% |
+| CBRSSTOCK/USDT:USDT | below_1h_threshold | +1.84% | +2.77% |
+| MSFTSTOCK/USDT:USDT | below_1h_threshold | +1.34% | +2.26% |
 
 ## 7. 次に見るべき不足
 
