@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-05T06:01:26.248621+00:00
+- generated_at: 2026-10-05T06:06:25.015649+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16147**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-05T06:01:14.739213+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=85761.1
-- Funnel: target 1076 → liquid 148 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-05T06:06:13.608256+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=85794.2
+- Funnel: target 1076 → liquid 150 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +111.85% | $11,838,901.44 |
-| NIL/USDT:USDT | +18.83% | $5,835,312.36 |
-| ORCA/USDT:USDT | +9.76% | $1,252,506.39 |
-| ADA/USDT:USDT | +9.08% | $56,524,258.08 |
-| HNT/USDT:USDT | +7.89% | $6,204,560.36 |
+| BATON/USDT:USDT | +111.38% | $11,855,231.10 |
+| NIL/USDT:USDT | +19.84% | $5,918,345.65 |
+| ADA/USDT:USDT | +9.85% | $57,683,432.21 |
+| ORCA/USDT:USDT | +9.70% | $1,254,178.65 |
+| HNT/USDT:USDT | +7.95% | $6,204,832.47 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JTO/USDT:USDT | below_1h_threshold | +0.61% | +0.58% |
-| HNT/USDT:USDT | below_1h_threshold | +0.37% | +0.34% |
-| FET/USDT:USDT | below_1h_threshold | +0.35% | +0.32% |
-| BATON/USDT:USDT | below_1h_threshold | +0.35% | +0.32% |
-| DOT/USDT:USDT | below_1h_threshold | +0.35% | +0.32% |
+| FLOKI/USDT:USDT | below_1h_threshold | +1.07% | +1.00% |
+| JTO/USDT:USDT | below_1h_threshold | +0.98% | +0.91% |
+| ADA/USDT:USDT | below_1h_threshold | +0.93% | +0.86% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +0.92% | +0.85% |
+| WIF/USDT:USDT | below_1h_threshold | +0.84% | +0.77% |
 
 ## 7. 次に見るべき不足
 
