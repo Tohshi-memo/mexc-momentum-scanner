@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-05T17:51:26.664595+00:00
+- generated_at: 2026-10-05T17:56:31.260527+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16168**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-05T17:51:12.766460+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=85223.8
-- Funnel: target 1074 → liquid 167 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 94.9 >= 65=1
+- 更新: 2026-10-05T17:56:19.538998+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=85328.0
+- Funnel: target 1074 → liquid 167 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 95.2 >= 65=1, 4h RSI 76.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RLC/USDT:USDT | +14.70% | $6,503,370.36 |
-| NIL/USDT:USDT | +8.19% | $14,094,642.49 |
-| BR/USDT:USDT | +7.06% | $9,893,000.96 |
-| US/USDT:USDT | +5.94% | $1,082,533.33 |
-| BATON/USDT:USDT | +5.62% | $12,726,873.52 |
+| RLC/USDT:USDT | +17.51% | $6,706,834.43 |
+| NIL/USDT:USDT | +11.35% | $14,353,236.02 |
+| BATON/USDT:USDT | +8.08% | $12,743,823.92 |
+| BR/USDT:USDT | +6.46% | $9,985,547.35 |
+| US/USDT:USDT | +5.41% | $1,085,156.26 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIL/USDT:USDT | below_1h_threshold | +3.32% | +3.36% |
-| BTW/USDT:USDT | below_1h_threshold | +3.27% | +3.31% |
-| MANA/USDT:USDT | below_1h_threshold | +2.52% | +2.56% |
-| AIN/USDT:USDT | below_1h_threshold | +2.04% | +2.08% |
-| ICP/USDT:USDT | below_1h_threshold | +1.98% | +2.03% |
+| BTW/USDT:USDT | below_1h_threshold | +4.44% | +4.36% |
+| RAY/USDT:USDT | below_1h_threshold | +3.04% | +2.96% |
+| MANA/USDT:USDT | below_1h_threshold | +2.48% | +2.40% |
+| JUP/USDT:USDT | below_1h_threshold | +1.84% | +1.76% |
+| ENA/USDT:USDT | below_1h_threshold | +1.74% | +1.66% |
 
 ## 7. 次に見るべき不足
 
