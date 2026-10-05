@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-05T00:41:13.129563+00:00
+- generated_at: 2026-10-05T00:46:19.838832+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16139**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-05T00:41:04.688640+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=86431.9
+- 更新: 2026-10-05T00:46:08.040058+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=86551.8
 - Funnel: target 1076 → liquid 144 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +146.73% | $10,789,127.00 |
-| ORCA/USDT:USDT | +15.49% | $1,040,835.48 |
-| HNT/USDT:USDT | +11.43% | $5,208,055.37 |
-| VVV/USDT:USDT | +7.96% | $2,626,968.74 |
-| FET/USDT:USDT | +6.71% | $29,144,971.33 |
+| BATON/USDT:USDT | +142.22% | $10,797,518.43 |
+| ORCA/USDT:USDT | +15.27% | $1,051,089.03 |
+| HNT/USDT:USDT | +11.91% | $5,217,987.71 |
+| VVV/USDT:USDT | +8.41% | $2,643,906.39 |
+| FET/USDT:USDT | +7.41% | $29,339,838.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ORCA/USDT:USDT | below_1h_threshold | +4.49% | +4.55% |
-| FET/USDT:USDT | below_1h_threshold | +3.43% | +3.49% |
-| 1000BONK/USDT:USDT | below_1h_threshold | +0.92% | +0.98% |
-| JASMY/USDT:USDT | below_1h_threshold | +0.89% | +0.95% |
-| STRK/USDT:USDT | below_1h_threshold | +0.85% | +0.91% |
+| ORCA/USDT:USDT | below_1h_threshold | +4.34% | +4.26% |
+| FET/USDT:USDT | below_1h_threshold | +4.10% | +4.02% |
+| STRK/USDT:USDT | below_1h_threshold | +1.33% | +1.25% |
+| CHIP/USDT:USDT | below_1h_threshold | +1.29% | +1.21% |
+| ADA/USDT:USDT | below_1h_threshold | +1.08% | +1.00% |
 
 ## 7. 次に見るべき不足
 
