@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-05T10:06:17.404025+00:00
+- generated_at: 2026-10-05T10:11:21.800854+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16153**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-05T10:06:09.471471+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=86000.2
+- 更新: 2026-10-05T10:11:10.205549+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=86031.0
 - Funnel: target 1074 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +105.64% | $12,228,290.99 |
-| MOVR/USDT:USDT | +31.27% | $6,066,457.40 |
-| LIT/USDT:USDT | +10.74% | $5,912,921.38 |
-| ADA/USDT:USDT | +10.41% | $71,659,615.85 |
-| ORCA/USDT:USDT | +9.15% | $1,376,475.70 |
+| BATON/USDT:USDT | +99.29% | $12,244,839.52 |
+| MOVR/USDT:USDT | +29.03% | $6,222,563.93 |
+| LIT/USDT:USDT | +10.55% | $6,038,907.88 |
+| ADA/USDT:USDT | +10.53% | $72,469,974.19 |
+| ORCA/USDT:USDT | +8.99% | $1,376,885.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BATON/USDT:USDT | below_1h_threshold | +1.09% | +1.02% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.07% | +0.99% |
-| ADA/USDT:USDT | below_1h_threshold | +0.48% | +0.40% |
-| APE/USDT:USDT | below_1h_threshold | +0.48% | +0.40% |
-| WIF/USDT:USDT | below_1h_threshold | +0.38% | +0.31% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +1.18% | +1.07% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.07% | +0.96% |
+| APE/USDT:USDT | below_1h_threshold | +0.95% | +0.84% |
+| AIN/USDT:USDT | below_1h_threshold | +0.93% | +0.82% |
+| ADA/USDT:USDT | below_1h_threshold | +0.77% | +0.66% |
 
 ## 7. 次に見るべき不足
 
