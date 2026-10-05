@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-05T17:31:38.737153+00:00
+- generated_at: 2026-10-05T17:36:29.462693+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16168**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-05T17:31:21.984824+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=85309.9
+- 更新: 2026-10-05T17:36:15.340326+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=85263.3
 - Funnel: target 1074 → liquid 166 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 76.3 >= 65=1
@@ -81,21 +81,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIL/USDT:USDT | +10.75% | $13,021,571.50 |
-| BATON/USDT:USDT | +10.72% | $12,646,510.71 |
-| US/USDT:USDT | +4.76% | $1,068,454.81 |
-| RLC/USDT:USDT | +4.36% | $6,117,652.98 |
-| MANA/USDT:USDT | +3.90% | $2,116,297.84 |
+| NIL/USDT:USDT | +10.44% | $13,337,804.01 |
+| BATON/USDT:USDT | +10.06% | $12,663,375.53 |
+| RLC/USDT:USDT | +5.05% | $6,148,309.03 |
+| US/USDT:USDT | +4.90% | $1,070,130.15 |
+| AIN/USDT:USDT | +4.04% | $1,270,513.79 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MANA/USDT:USDT | below_1h_threshold | +2.87% | +2.81% |
-| RLC/USDT:USDT | below_1h_threshold | +2.49% | +2.43% |
-| RAY/USDT:USDT | below_1h_threshold | +1.48% | +1.42% |
-| USELESS/USDT:USDT | below_1h_threshold | +1.05% | +0.99% |
-| GRASS/USDT:USDT | below_1h_threshold | +0.83% | +0.77% |
+| RLC/USDT:USDT | below_1h_threshold | +3.23% | +3.22% |
+| MANA/USDT:USDT | below_1h_threshold | +2.61% | +2.60% |
+| RAY/USDT:USDT | below_1h_threshold | +1.45% | +1.45% |
+| FET/USDT:USDT | below_1h_threshold | +1.21% | +1.21% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +0.99% | +0.98% |
 
 ## 7. 次に見るべき不足
 
