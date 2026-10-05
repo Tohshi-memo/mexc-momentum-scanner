@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-05T15:01:30.169594+00:00
+- generated_at: 2026-10-05T15:06:21.892643+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16163**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-05T15:01:16.671651+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=85539.0
-- Funnel: target 1074 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-05T15:06:10.369865+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=85588.1
+- Funnel: target 1074 → liquid 163 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +97.69% | $12,372,306.86 |
-| RLC/USDT:USDT | +50.84% | $3,848,177.57 |
-| FLUID/USDT:USDT | +20.86% | $2,465,808.41 |
-| MOVR/USDT:USDT | +19.29% | $11,050,906.46 |
-| NIL/USDT:USDT | +11.79% | $10,683,646.54 |
+| BATON/USDT:USDT | +99.76% | $12,382,008.30 |
+| RLC/USDT:USDT | +51.20% | $3,873,922.97 |
+| FLUID/USDT:USDT | +20.17% | $2,516,331.57 |
+| MOVR/USDT:USDT | +16.32% | $11,172,851.79 |
+| NIL/USDT:USDT | +12.31% | $10,722,381.60 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CBRSSTOCK/USDT:USDT | below_1h_threshold | +2.88% | +2.96% |
-| KORU/USDT:USDT | below_1h_threshold | +2.17% | +2.24% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.85% | +1.92% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.43% | +1.50% |
-| MOVR/USDT:USDT | below_1h_threshold | +1.22% | +1.29% |
+| KORU/USDT:USDT | below_1h_threshold | +2.17% | +2.18% |
+| BATON/USDT:USDT | below_1h_threshold | +1.94% | +1.96% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.85% | +1.86% |
+| NIL/USDT:USDT | below_1h_threshold | +1.18% | +1.20% |
+| ICP/USDT:USDT | below_1h_threshold | +1.05% | +1.07% |
 
 ## 7. 次に見るべき不足
 
