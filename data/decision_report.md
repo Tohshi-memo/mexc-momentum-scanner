@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-05T04:06:18.590776+00:00
+- generated_at: 2026-10-05T04:11:05.685866+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16146**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-05T04:06:07.122376+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=86040.0
+- 更新: 2026-10-05T04:10:57.390755+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.15% price=85918.4
 - Funnel: target 1076 → liquid 146 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +158.11% | $11,318,075.39 |
-| NIL/USDT:USDT | +11.91% | $3,916,659.06 |
-| HNT/USDT:USDT | +9.11% | $5,939,438.84 |
-| ORCA/USDT:USDT | +8.54% | $1,195,692.74 |
-| ADA/USDT:USDT | +8.11% | $49,007,558.16 |
+| BATON/USDT:USDT | +164.95% | $11,344,768.26 |
+| NIL/USDT:USDT | +13.50% | $3,990,947.30 |
+| HNT/USDT:USDT | +9.20% | $6,104,499.85 |
+| ORCA/USDT:USDT | +8.76% | $1,197,862.03 |
+| ADA/USDT:USDT | +7.79% | $49,436,384.88 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +1.56% | +1.58% |
-| PENGU/USDT:USDT | below_1h_threshold | +1.13% | +1.14% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.33% | +0.34% |
-| CHIP/USDT:USDT | below_1h_threshold | +0.17% | +0.18% |
-| ZAMA/USDT:USDT | below_1h_threshold | +0.11% | +0.12% |
+| BATON/USDT:USDT | below_1h_threshold | +2.58% | +2.74% |
+| NIL/USDT:USDT | below_1h_threshold | +1.05% | +1.20% |
+| PENGU/USDT:USDT | below_1h_threshold | +0.99% | +1.15% |
+| RIVER/USDT:USDT | below_1h_threshold | +0.74% | +0.89% |
+| CHIP/USDT:USDT | below_1h_threshold | +0.52% | +0.67% |
 
 ## 7. 次に見るべき不足
 
