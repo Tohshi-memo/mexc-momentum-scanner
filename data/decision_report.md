@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-05T08:31:27.923084+00:00
+- generated_at: 2026-10-05T08:36:28.070069+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16149**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-05T08:31:16.865738+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.25% price=86441.5
-- Funnel: target 1074 → liquid 150 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.4 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-05T08:36:16.504937+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=86344.6
+- Funnel: target 1074 → liquid 150 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +135.04% | $12,348,915.73 |
-| MOVR/USDT:USDT | +12.44% | $3,423,478.10 |
-| NIL/USDT:USDT | +12.19% | $8,596,687.03 |
-| LIT/USDT:USDT | +10.41% | $5,147,098.52 |
-| ORCA/USDT:USDT | +10.09% | $1,331,346.41 |
+| BATON/USDT:USDT | +127.35% | $12,371,885.62 |
+| MOVR/USDT:USDT | +14.17% | $3,490,232.10 |
+| NIL/USDT:USDT | +12.29% | $8,640,263.19 |
+| ADA/USDT:USDT | +10.13% | $67,931,370.82 |
+| ORCA/USDT:USDT | +9.26% | $1,343,717.20 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FET/USDT:USDT | below_1h_threshold | +2.91% | +2.65% |
-| MOVR/USDT:USDT | below_1h_threshold | +2.30% | +2.05% |
-| ENA/USDT:USDT | below_1h_threshold | +1.46% | +1.20% |
-| LIT/USDT:USDT | below_1h_threshold | +1.34% | +1.08% |
-| FLOKI/USDT:USDT | below_1h_threshold | +1.05% | +0.79% |
+| BATON/USDT:USDT | below_1h_threshold | +4.95% | +4.80% |
+| MOVR/USDT:USDT | below_1h_threshold | +3.61% | +3.47% |
+| FET/USDT:USDT | below_1h_threshold | +2.07% | +1.92% |
+| PEPE/USDT:USDT | below_1h_threshold | +1.24% | +1.10% |
+| FLOKI/USDT:USDT | below_1h_threshold | +0.91% | +0.77% |
 
 ## 7. 次に見るべき不足
 
