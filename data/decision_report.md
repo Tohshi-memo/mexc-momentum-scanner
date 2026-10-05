@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-05T11:31:13.581163+00:00
+- generated_at: 2026-10-05T11:36:32.217415+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16156**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-05T11:31:05.072317+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=86159.7
+- 更新: 2026-10-05T11:36:20.755035+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=86068.1
 - Funnel: target 1074 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +109.89% | $12,335,488.34 |
-| MOVR/USDT:USDT | +24.50% | $8,662,545.13 |
-| LIT/USDT:USDT | +11.71% | $6,763,264.11 |
-| ENA/USDT:USDT | +10.61% | $49,916,029.80 |
-| ADA/USDT:USDT | +10.37% | $79,082,054.19 |
+| BATON/USDT:USDT | +107.05% | $12,349,813.47 |
+| MOVR/USDT:USDT | +24.68% | $8,743,880.30 |
+| LIT/USDT:USDT | +11.34% | $6,885,035.29 |
+| ADA/USDT:USDT | +10.33% | $79,250,703.56 |
+| ENA/USDT:USDT | +10.21% | $50,332,764.24 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BATON/USDT:USDT | below_1h_threshold | +3.76% | +3.66% |
-| MOVR/USDT:USDT | below_1h_threshold | +3.66% | +3.55% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +3.37% | +3.26% |
-| SKY/USDT:USDT | below_1h_threshold | +2.40% | +2.30% |
-| ENA/USDT:USDT | below_1h_threshold | +2.26% | +2.15% |
+| MOVR/USDT:USDT | below_1h_threshold | +3.80% | +3.81% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +3.80% | +3.80% |
+| SKY/USDT:USDT | below_1h_threshold | +2.52% | +2.52% |
+| BATON/USDT:USDT | below_1h_threshold | +2.39% | +2.39% |
+| KAS/USDT:USDT | below_1h_threshold | +2.17% | +2.17% |
 
 ## 7. 次に見るべき不足
 
