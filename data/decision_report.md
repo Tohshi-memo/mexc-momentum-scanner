@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-05T06:51:17.590193+00:00
+- generated_at: 2026-10-05T06:56:08.065052+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16148**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4306件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4307件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000184 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-05T06:51:05.927699+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.41% price=86083.4
-- Funnel: target 1076 → liquid 150 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-05T06:55:57.350621+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.62% price=86267.4
+- Funnel: target 1076 → liquid 151 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +112.62% | $12,022,368.02 |
-| NIL/USDT:USDT | +21.01% | $6,606,760.80 |
-| ORCA/USDT:USDT | +10.25% | $1,272,004.39 |
-| ADA/USDT:USDT | +9.36% | $62,559,129.38 |
-| HNT/USDT:USDT | +8.27% | $6,249,951.82 |
+| BATON/USDT:USDT | +114.20% | $12,032,918.88 |
+| NIL/USDT:USDT | +20.27% | $6,750,404.58 |
+| ORCA/USDT:USDT | +10.47% | $1,272,335.73 |
+| ADA/USDT:USDT | +9.72% | $62,882,671.64 |
+| HNT/USDT:USDT | +8.61% | $6,251,743.25 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PONS/USDT:USDT | below_1h_threshold | +4.46% | +4.05% |
-| MOVR/USDT:USDT | below_1h_threshold | +4.10% | +3.69% |
-| 1000BONK/USDT:USDT | below_1h_threshold | +2.21% | +1.80% |
-| NIL/USDT:USDT | below_1h_threshold | +1.87% | +1.46% |
-| FLOKI/USDT:USDT | below_1h_threshold | +1.66% | +1.25% |
+| MOVR/USDT:USDT | below_1h_threshold | +4.53% | +3.90% |
+| 1000BONK/USDT:USDT | below_1h_threshold | +2.49% | +1.87% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +2.17% | +1.55% |
+| FLOKI/USDT:USDT | below_1h_threshold | +2.10% | +1.48% |
+| VELO/USDT:USDT | below_1h_threshold | +1.65% | +1.03% |
 
 ## 7. 次に見るべき不足
 
