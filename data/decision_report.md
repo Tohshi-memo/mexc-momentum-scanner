@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-05T18:06:32.376612+00:00
+- generated_at: 2026-10-05T18:11:31.979189+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16169**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-05T18:06:20.258502+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=85314.5
+- 更新: 2026-10-05T18:11:20.146546+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=85360.3
 - Funnel: target 1074 → liquid 166 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 96.0 >= 65=1
@@ -81,21 +81,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RLC/USDT:USDT | +27.59% | $7,476,725.03 |
-| NIL/USDT:USDT | +11.07% | $14,507,665.55 |
-| BR/USDT:USDT | +9.41% | $9,740,285.45 |
-| BATON/USDT:USDT | +8.36% | $11,154,183.97 |
-| AIN/USDT:USDT | +7.28% | $1,262,268.84 |
+| RLC/USDT:USDT | +27.79% | $7,711,695.18 |
+| BR/USDT:USDT | +10.57% | $9,861,700.80 |
+| NIL/USDT:USDT | +10.52% | $14,684,486.06 |
+| RAY/USDT:USDT | +7.28% | $1,823,455.46 |
+| BATON/USDT:USDT | +6.34% | $11,158,994.75 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIN/USDT:USDT | below_1h_threshold | +2.62% | +2.71% |
-| BR/USDT:USDT | below_1h_threshold | +2.51% | +2.59% |
-| ICP/USDT:USDT | below_1h_threshold | +1.87% | +1.95% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +1.83% | +1.91% |
-| RAY/USDT:USDT | below_1h_threshold | +1.41% | +1.50% |
+| BR/USDT:USDT | below_1h_threshold | +3.83% | +3.86% |
+| RAY/USDT:USDT | below_1h_threshold | +2.08% | +2.11% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +1.83% | +1.86% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.52% | +1.55% |
+| VELVET/USDT:USDT | below_1h_threshold | +1.49% | +1.52% |
 
 ## 7. 次に見るべき不足
 
