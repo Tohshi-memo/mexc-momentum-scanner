@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-05T16:11:30.815422+00:00
+- generated_at: 2026-10-05T16:16:25.302167+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16163**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-05T16:11:19.322512+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=85266.2
+- 更新: 2026-10-05T16:16:13.827633+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=85150.5
 - Funnel: target 1074 → liquid 163 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIN/USDT:USDT | +3.26% | $1,219,127.82 |
-| BATON/USDT:USDT | +2.27% | $12,549,919.51 |
-| VELVET/USDT:USDT | +1.88% | $1,031,484.42 |
-| BR/USDT:USDT | +1.59% | $7,922,300.37 |
-| GRASS/USDT:USDT | +1.41% | $1,920,349.73 |
+| AIN/USDT:USDT | +3.12% | $1,227,373.80 |
+| US/USDT:USDT | +2.93% | $1,161,219.87 |
+| VELVET/USDT:USDT | +1.85% | $1,040,256.82 |
+| FLUID/USDT:USDT | +1.51% | $3,122,777.50 |
+| BR/USDT:USDT | +1.48% | $7,993,936.35 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIN/USDT:USDT | below_1h_threshold | +3.20% | +3.14% |
-| BATON/USDT:USDT | below_1h_threshold | +2.28% | +2.23% |
-| VELVET/USDT:USDT | below_1h_threshold | +1.88% | +1.83% |
-| BR/USDT:USDT | below_1h_threshold | +1.54% | +1.49% |
-| GRASS/USDT:USDT | below_1h_threshold | +1.42% | +1.37% |
+| US/USDT:USDT | below_1h_threshold | +3.66% | +3.74% |
+| AIN/USDT:USDT | below_1h_threshold | +3.13% | +3.21% |
+| VELVET/USDT:USDT | below_1h_threshold | +1.85% | +1.94% |
+| FLUID/USDT:USDT | below_1h_threshold | +1.52% | +1.60% |
+| BR/USDT:USDT | below_1h_threshold | +1.48% | +1.57% |
 
 ## 7. 次に見るべき不足
 
