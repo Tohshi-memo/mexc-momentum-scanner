@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-05T19:08:55.004137+00:00
+- generated_at: 2026-10-05T19:11:32.836262+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16171**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-05T19:08:43.526475+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=85515.9
+- 更新: 2026-10-05T19:11:21.309285+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=85582.8
 - Funnel: target 1074 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RLC/USDT:USDT | +27.28% | $9,253,744.99 |
-| BR/USDT:USDT | +9.00% | $10,479,798.04 |
-| RAY/USDT:USDT | +8.84% | $2,201,319.74 |
-| VELVET/USDT:USDT | +7.16% | $1,310,509.71 |
-| ORCA/USDT:USDT | +7.10% | $1,233,095.54 |
+| RLC/USDT:USDT | +27.71% | $9,287,044.12 |
+| BR/USDT:USDT | +11.07% | $10,546,814.22 |
+| RAY/USDT:USDT | +7.95% | $2,235,694.93 |
+| ORCA/USDT:USDT | +7.05% | $1,244,516.38 |
+| VELVET/USDT:USDT | +6.70% | $1,314,390.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RAY/USDT:USDT | below_1h_threshold | +1.42% | +1.53% |
-| ORCA/USDT:USDT | below_1h_threshold | +1.29% | +1.41% |
-| RLC/USDT:USDT | below_1h_threshold | +1.20% | +1.32% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +1.11% | +1.22% |
-| GRASS/USDT:USDT | below_1h_threshold | +1.02% | +1.13% |
+| BR/USDT:USDT | below_1h_threshold | +2.81% | +2.85% |
+| RLC/USDT:USDT | below_1h_threshold | +1.55% | +1.59% |
+| POL/USDT:USDT | below_1h_threshold | +1.34% | +1.37% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +1.11% | +1.14% |
+| GRASS/USDT:USDT | below_1h_threshold | +0.91% | +0.95% |
 
 ## 7. 次に見るべき不足
 
