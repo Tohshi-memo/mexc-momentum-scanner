@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-05T00:01:23.848048+00:00
+- generated_at: 2026-10-05T00:06:15.902421+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16139**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-05T00:01:12.386872+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=86435.9
-- Funnel: target 1076 → liquid 140 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-05T00:06:06.738403+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=86399.0
+- Funnel: target 1076 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +170.23% | $10,423,700.14 |
-| HNT/USDT:USDT | +13.30% | $4,988,222.36 |
-| VVV/USDT:USDT | +8.37% | $2,543,794.73 |
-| SKY/USDT:USDT | +5.52% | $1,909,690.00 |
-| FLOKI/USDT:USDT | +5.46% | $2,951,170.38 |
+| BATON/USDT:USDT | +163.67% | $10,463,239.29 |
+| HNT/USDT:USDT | +10.37% | $5,034,136.47 |
+| VVV/USDT:USDT | +8.27% | $2,553,426.39 |
+| PHA/USDT:USDT | +5.70% | $2,385,936.70 |
+| FLOKI/USDT:USDT | +5.57% | $2,967,332.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIN/USDT:USDT | below_1h_threshold | +1.10% | +1.15% |
-| ADA/USDT:USDT | below_1h_threshold | +0.27% | +0.32% |
-| HNT/USDT:USDT | below_1h_threshold | +0.25% | +0.31% |
-| VVV/USDT:USDT | below_1h_threshold | +0.21% | +0.26% |
-| SYRUP/USDT:USDT | below_1h_threshold | +0.19% | +0.25% |
+| AIN/USDT:USDT | below_1h_threshold | +1.80% | +1.89% |
+| AXS/USDT:USDT | below_1h_threshold | +1.22% | +1.31% |
+| AKT/USDT:USDT | below_1h_threshold | +0.82% | +0.92% |
+| CHIP/USDT:USDT | below_1h_threshold | +0.74% | +0.84% |
+| SYN/USDT:USDT | below_1h_threshold | +0.48% | +0.58% |
 
 ## 7. 次に見るべき不足
 
