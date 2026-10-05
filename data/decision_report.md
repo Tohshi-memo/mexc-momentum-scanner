@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-05T10:46:30.491719+00:00
+- generated_at: 2026-10-05T10:51:28.360106+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16153**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-05T10:46:18.918089+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=86015.8
+- 更新: 2026-10-05T10:51:17.460741+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.16% price=86069.1
 - Funnel: target 1074 → liquid 155 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +95.49% | $12,318,310.82 |
-| MOVR/USDT:USDT | +30.06% | $7,216,255.98 |
-| ADA/USDT:USDT | +10.41% | $75,569,793.68 |
-| NIL/USDT:USDT | +9.63% | $9,582,942.76 |
-| LIT/USDT:USDT | +9.24% | $6,420,156.92 |
+| BATON/USDT:USDT | +99.25% | $12,329,496.49 |
+| MOVR/USDT:USDT | +26.56% | $7,397,035.53 |
+| ADA/USDT:USDT | +11.02% | $76,037,893.31 |
+| LIT/USDT:USDT | +9.45% | $6,460,215.18 |
+| NIL/USDT:USDT | +9.01% | $9,595,728.36 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LSK/USDT:USDT | below_1h_threshold | +2.58% | +2.49% |
-| STRK/USDT:USDT | below_1h_threshold | +1.46% | +1.37% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +1.24% | +1.15% |
-| ENA/USDT:USDT | below_1h_threshold | +1.23% | +1.14% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.07% | +0.98% |
+| LSK/USDT:USDT | below_1h_threshold | +2.55% | +2.40% |
+| ENA/USDT:USDT | below_1h_threshold | +1.40% | +1.24% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +1.35% | +1.19% |
+| AIN/USDT:USDT | below_1h_threshold | +1.29% | +1.14% |
+| ADA/USDT:USDT | below_1h_threshold | +1.18% | +1.02% |
 
 ## 7. 次に見るべき不足
 
