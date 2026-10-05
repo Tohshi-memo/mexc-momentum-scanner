@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-05T06:11:21.142840+00:00
+- generated_at: 2026-10-05T06:16:22.232592+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16147**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-05T06:11:10.504061+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=85814.1
+- 更新: 2026-10-05T06:16:10.771408+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.18% price=85887.3
 - Funnel: target 1076 → liquid 150 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +111.41% | $11,865,898.74 |
-| NIL/USDT:USDT | +19.38% | $6,000,045.52 |
-| ORCA/USDT:USDT | +10.09% | $1,257,206.85 |
-| ADA/USDT:USDT | +9.48% | $58,224,111.38 |
-| HNT/USDT:USDT | +7.89% | $6,205,456.11 |
+| BATON/USDT:USDT | +109.72% | $11,873,628.10 |
+| NIL/USDT:USDT | +18.89% | $6,078,891.45 |
+| ADA/USDT:USDT | +9.85% | $58,659,865.18 |
+| ORCA/USDT:USDT | +9.70% | $1,257,994.93 |
+| HNT/USDT:USDT | +8.19% | $6,215,484.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FLOKI/USDT:USDT | below_1h_threshold | +1.52% | +1.42% |
-| JTO/USDT:USDT | below_1h_threshold | +1.23% | +1.13% |
-| APE/USDT:USDT | below_1h_threshold | +0.95% | +0.86% |
-| PEPE/USDT:USDT | below_1h_threshold | +0.92% | +0.82% |
-| WIF/USDT:USDT | below_1h_threshold | +0.88% | +0.79% |
+| FLOKI/USDT:USDT | below_1h_threshold | +2.34% | +2.17% |
+| JTO/USDT:USDT | below_1h_threshold | +1.35% | +1.17% |
+| PENGU/USDT:USDT | below_1h_threshold | +1.14% | +0.96% |
+| LDO/USDT:USDT | below_1h_threshold | +1.11% | +0.93% |
+| WIF/USDT:USDT | below_1h_threshold | +1.04% | +0.86% |
 
 ## 7. 次に見るべき不足
 
