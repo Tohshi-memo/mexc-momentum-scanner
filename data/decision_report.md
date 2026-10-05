@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-05T16:36:38.280435+00:00
+- generated_at: 2026-10-05T16:41:31.923090+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16163**
 
@@ -63,38 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4323件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4324件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000195 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-05T16:36:24.801102+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=85244.8
-- Funnel: target 1074 → liquid 164 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-05T16:41:15.655969+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=85206.4
+- Funnel: target 1074 → liquid 164 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BR/USDT:USDT | +6.00% | $8,591,184.50 |
-| AIN/USDT:USDT | +4.39% | $1,270,320.50 |
-| VELVET/USDT:USDT | +3.16% | $1,066,276.56 |
-| STX/USDT:USDT | +2.30% | $4,066,442.76 |
-| CT/USDT:USDT | +2.18% | $2,963,207.65 |
+| BR/USDT:USDT | +6.82% | $8,697,538.91 |
+| US/USDT:USDT | +5.74% | $1,196,960.86 |
+| AIN/USDT:USDT | +4.25% | $1,275,984.08 |
+| VELVET/USDT:USDT | +2.67% | $1,069,340.79 |
+| STX/USDT:USDT | +2.65% | $4,101,559.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIN/USDT:USDT | below_1h_threshold | +4.39% | +4.36% |
-| VELVET/USDT:USDT | below_1h_threshold | +3.35% | +3.33% |
-| STX/USDT:USDT | below_1h_threshold | +2.33% | +2.31% |
-| CT/USDT:USDT | below_1h_threshold | +2.21% | +2.19% |
-| RAY/USDT:USDT | below_1h_threshold | +2.19% | +2.16% |
+| AIN/USDT:USDT | below_1h_threshold | +4.25% | +4.27% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.68% | +2.70% |
+| STX/USDT:USDT | below_1h_threshold | +2.63% | +2.65% |
+| NIL/USDT:USDT | below_1h_threshold | +2.25% | +2.27% |
+| RAY/USDT:USDT | below_1h_threshold | +2.09% | +2.11% |
 
 ## 7. 次に見るべき不足
 
