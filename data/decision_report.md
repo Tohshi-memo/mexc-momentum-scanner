@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-06T17:16:28.259380+00:00
+- generated_at: 2026-10-06T17:21:23.881759+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16237**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-06T17:16:14.354504+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=85491.6
+- 更新: 2026-10-06T17:21:12.336980+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=85451.1
 - Funnel: target 1074 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RAY/USDT:USDT | +2.12% | $8,150,868.38 |
-| MOVR/USDT:USDT | +2.04% | $3,375,508.37 |
-| US/USDT:USDT | +1.76% | $1,340,381.15 |
-| RLC/USDT:USDT | +1.73% | $42,177,975.31 |
-| MINA/USDT:USDT | +1.67% | $1,847,918.96 |
+| US/USDT:USDT | +3.10% | $1,344,183.92 |
+| ORCA/USDT:USDT | +2.45% | $4,188,889.06 |
+| MOVR/USDT:USDT | +1.94% | $3,383,152.61 |
+| JUP/USDT:USDT | +1.63% | $7,767,228.56 |
+| RAY/USDT:USDT | +1.45% | $8,219,570.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ORCA/USDT:USDT | below_1h_threshold | +3.56% | +3.61% |
-| RLC/USDT:USDT | below_1h_threshold | +2.04% | +2.10% |
-| MINA/USDT:USDT | below_1h_threshold | +1.35% | +1.40% |
-| MOVR/USDT:USDT | below_1h_threshold | +1.33% | +1.38% |
-| AAOISTOCK/USDT:USDT | below_1h_threshold | +0.90% | +0.95% |
+| ORCA/USDT:USDT | below_1h_threshold | +4.91% | +5.01% |
+| US/USDT:USDT | below_1h_threshold | +1.41% | +1.51% |
+| MOVR/USDT:USDT | below_1h_threshold | +1.18% | +1.28% |
+| AAOISTOCK/USDT:USDT | below_1h_threshold | +0.90% | +1.00% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.82% | +0.92% |
 
 ## 7. 次に見るべき不足
 
