@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-06T18:16:39.580694+00:00
+- generated_at: 2026-10-06T18:21:37.841216+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16241**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4403件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4404件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000205 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-06T18:16:26.055842+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=85720.0
-- Funnel: target 1074 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-06T18:21:23.740834+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=85676.7
+- Funnel: target 1074 → liquid 173 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ORCA/USDT:USDT | +16.67% | $5,867,515.19 |
-| PONS/USDT:USDT | +3.31% | $4,256,007.57 |
-| MOVR/USDT:USDT | +2.73% | $3,217,234.85 |
-| RENDER/USDT:USDT | +2.48% | $9,926,460.51 |
-| OKB/USDT:USDT | +2.23% | $2,255,827.65 |
+| ORCA/USDT:USDT | +11.69% | $6,067,498.11 |
+| EDU/USDT:USDT | +5.81% | $1,007,630.83 |
+| PONS/USDT:USDT | +3.83% | $4,272,713.55 |
+| ARB/USDT:USDT | +2.81% | $33,981,935.31 |
+| ZCAT/USDT:USDT | +2.13% | $1,151,244.86 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BR/USDT:USDT | below_1h_threshold | +4.52% | +4.47% |
-| API3/USDT:USDT | below_1h_threshold | +2.00% | +1.95% |
-| NIGHT/USDT:USDT | below_1h_threshold | +1.60% | +1.54% |
-| APT/USDT:USDT | below_1h_threshold | +1.25% | +1.20% |
-| TIA/USDT:USDT | below_1h_threshold | +1.15% | +1.10% |
+| NIGHT/USDT:USDT | below_1h_threshold | +1.53% | +1.53% |
+| API3/USDT:USDT | below_1h_threshold | +1.52% | +1.51% |
+| ARB/USDT:USDT | below_1h_threshold | +1.50% | +1.49% |
+| APT/USDT:USDT | below_1h_threshold | +1.21% | +1.21% |
+| ETHFI/USDT:USDT | below_1h_threshold | +1.09% | +1.09% |
 
 ## 7. 次に見るべき不足
 
