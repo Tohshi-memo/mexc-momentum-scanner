@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-06T14:31:32.126842+00:00
+- generated_at: 2026-10-06T14:36:29.619000+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16222**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-06T14:31:19.760332+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.32% price=86002.5
+- 更新: 2026-10-06T14:36:17.404263+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.19% price=86109.2
 - Funnel: target 1074 → liquid 171 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.7 >= 65=2
+- Strict後reject: 4h RSI 81.0 >= 65=1, 4h RSI 81.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RLC/USDT:USDT | +58.64% | $41,557,183.67 |
-| BR/USDT:USDT | +44.30% | $56,330,516.17 |
-| US/USDT:USDT | +41.80% | $1,415,340.00 |
-| NMR/USDT:USDT | +39.68% | $10,181,376.78 |
-| ORCA/USDT:USDT | +26.78% | $3,745,659.42 |
+| RLC/USDT:USDT | +61.86% | $41,703,621.63 |
+| BR/USDT:USDT | +44.69% | $56,578,772.41 |
+| US/USDT:USDT | +42.59% | $1,418,908.15 |
+| NMR/USDT:USDT | +37.33% | $10,415,987.63 |
+| ORCA/USDT:USDT | +27.70% | $3,770,466.24 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +4.39% | +4.71% |
-| NMR/USDT:USDT | below_1h_threshold | +3.59% | +3.91% |
-| US/USDT:USDT | below_1h_threshold | +2.51% | +2.82% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +2.48% | +2.79% |
-| TRB/USDT:USDT | below_1h_threshold | +2.13% | +2.45% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +4.39% | +4.59% |
+| US/USDT:USDT | below_1h_threshold | +2.86% | +3.06% |
+| TRB/USDT:USDT | below_1h_threshold | +2.81% | +3.01% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +2.48% | +2.67% |
+| AVGOSTOCK/USDT:USDT | below_1h_threshold | +1.78% | +1.97% |
 
 ## 7. 次に見るべき不足
 
