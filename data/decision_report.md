@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-06T02:51:27.205651+00:00
+- generated_at: 2026-10-06T02:56:17.606283+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16180**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-06T02:51:13.560278+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=85521.2
+- 更新: 2026-10-06T02:56:05.932125+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=85506.3
 - Funnel: target 1074 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RLC/USDT:USDT | +26.14% | $19,860,137.32 |
-| ORCA/USDT:USDT | +19.38% | $2,109,679.57 |
-| CHIP/USDT:USDT | +8.14% | $2,154,675.70 |
-| RAY/USDT:USDT | +7.51% | $5,043,177.40 |
-| BR/USDT:USDT | +6.10% | $16,114,143.67 |
+| RLC/USDT:USDT | +27.55% | $19,999,959.54 |
+| ORCA/USDT:USDT | +19.33% | $2,136,498.09 |
+| CHIP/USDT:USDT | +8.67% | $2,159,781.71 |
+| RAY/USDT:USDT | +7.34% | $5,043,508.89 |
+| LIT/USDT:USDT | +5.59% | $13,187,833.40 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +3.11% | +3.23% |
-| VELVET/USDT:USDT | below_1h_threshold | +1.45% | +1.57% |
-| NIGHT/USDT:USDT | below_1h_threshold | +1.09% | +1.21% |
-| ZRO/USDT:USDT | below_1h_threshold | +1.04% | +1.16% |
-| PYTH/USDT:USDT | below_1h_threshold | +0.61% | +0.74% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +3.11% | +3.25% |
+| QNT/USDT:USDT | below_1h_threshold | +1.36% | +1.50% |
+| VELVET/USDT:USDT | below_1h_threshold | +1.14% | +1.28% |
+| ZRO/USDT:USDT | below_1h_threshold | +1.06% | +1.20% |
+| NIGHT/USDT:USDT | below_1h_threshold | +0.83% | +0.97% |
 
 ## 7. 次に見るべき不足
 
