@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-06T04:16:06.246872+00:00
+- generated_at: 2026-10-06T04:21:19.786842+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16180**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-06T04:15:57.935290+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=85589.5
+- 更新: 2026-10-06T04:21:08.149447+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=85567.8
 - Funnel: target 1074 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RLC/USDT:USDT | +25.87% | $20,749,698.12 |
-| ORCA/USDT:USDT | +21.76% | $2,162,990.46 |
-| CHIP/USDT:USDT | +11.55% | $2,153,540.98 |
-| ZHIPUSTOCK/USDT:USDT | +7.42% | $2,782,446.34 |
-| FILECOIN/USDT:USDT | +7.36% | $15,597,135.75 |
+| RLC/USDT:USDT | +28.22% | $20,821,386.74 |
+| ORCA/USDT:USDT | +21.86% | $2,177,073.17 |
+| CHIP/USDT:USDT | +11.57% | $2,203,181.99 |
+| FILECOIN/USDT:USDT | +7.52% | $15,655,472.51 |
+| ZHIPUSTOCK/USDT:USDT | +7.47% | $2,782,871.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ORCA/USDT:USDT | below_1h_threshold | +2.47% | +2.34% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +2.16% | +2.02% |
-| CHIP/USDT:USDT | below_1h_threshold | +2.09% | +1.96% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +1.37% | +1.24% |
-| VVV/USDT:USDT | below_1h_threshold | +0.86% | +0.73% |
+| ORCA/USDT:USDT | below_1h_threshold | +2.47% | +2.37% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +2.16% | +2.05% |
+| CHIP/USDT:USDT | below_1h_threshold | +1.98% | +1.87% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +1.92% | +1.81% |
+| AAOISTOCK/USDT:USDT | below_1h_threshold | +0.76% | +0.65% |
 
 ## 7. 次に見るべき不足
 
