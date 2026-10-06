@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-06T22:06:25.799009+00:00
+- generated_at: 2026-10-06T22:11:30.791892+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16258**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-06T22:06:14.215205+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=85597.0
+- 更新: 2026-10-06T22:11:19.148109+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=85587.3
 - Funnel: target 1074 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +18.84% | $5,966,735.25 |
-| ORCA/USDT:USDT | +15.92% | $8,062,894.43 |
-| INJ/USDT:USDT | +5.96% | $25,471,536.28 |
-| CHIP/USDT:USDT | +5.29% | $2,448,378.48 |
-| ETHFI/USDT:USDT | +3.00% | $7,226,360.04 |
+| ORCA/USDT:USDT | +16.56% | $8,110,770.63 |
+| LONGXIA/USDT:USDT | +9.48% | $6,128,731.02 |
+| CHIP/USDT:USDT | +5.13% | $2,459,241.28 |
+| INJ/USDT:USDT | +4.99% | $25,743,448.68 |
+| ETHFI/USDT:USDT | +2.81% | $7,228,750.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| INJ/USDT:USDT | below_1h_threshold | +0.96% | +0.93% |
-| RAY/USDT:USDT | below_1h_threshold | +0.84% | +0.81% |
-| NIGHT/USDT:USDT | below_1h_threshold | +0.71% | +0.68% |
-| ETHFI/USDT:USDT | below_1h_threshold | +0.61% | +0.58% |
-| TAO/USDT:USDT | below_1h_threshold | +0.60% | +0.57% |
+| BATON/USDT:USDT | below_1h_threshold | +4.14% | +4.12% |
+| TIA/USDT:USDT | below_1h_threshold | +1.18% | +1.16% |
+| ORCA/USDT:USDT | below_1h_threshold | +0.91% | +0.90% |
+| RAY/USDT:USDT | below_1h_threshold | +0.91% | +0.89% |
+| ZRO/USDT:USDT | below_1h_threshold | +0.87% | +0.85% |
 
 ## 7. 次に見るべき不足
 
