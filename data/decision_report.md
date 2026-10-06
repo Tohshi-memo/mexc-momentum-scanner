@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-10-06T01:36:29.725574+00:00
+- generated_at: 2026-10-06T01:41:39.327194+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **16177**
+- closed shadow trades: **16178**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.27% / filled 20/20。**
-- 全期間 MARKET基準: n=16177, expectancy=+0.00%
+- 全期間 MARKET基準: n=16178, expectancy=+0.00%
 - 直近20件 MARKET基準: n=20, expectancy=+0.27%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -22,16 +22,16 @@
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | LIMIT_1PCT | 19/20 | 95.0% | +0.99% | **+0.94%** |
-| LIMIT_ATR | 13/20 | 65.0% | +1.20% | **+0.78%** |
+| LIMIT_ATR | 13/20 | 65.0% | +1.21% | **+0.78%** |
 | LIMIT_3PCT | 14/20 | 70.0% | +0.75% | **+0.52%** |
-| LIMIT_BB3S | 3/17 | 17.6% | +2.72% | **+0.48%** |
+| LIMIT_BB3S | 3/18 | 16.7% | +2.72% | **+0.45%** |
 | LIMIT_6PCT | 4/20 | 20.0% | +1.89% | **+0.38%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_BB3S_LONG | 3/3 | 100.0% | +5.24% | **+5.24%** |
+| LIMIT_BB3S_LONG | 2/2 | 100.0% | +5.61% | **+5.61%** |
 | LIMIT_5PCT_LONG | 12/20 | 60.0% | +2.86% | **+1.72%** |
 | LIMIT_4PCT_LONG | 12/20 | 60.0% | +1.70% | **+1.02%** |
 | LIMIT_6PCT_LONG | 9/20 | 45.0% | +0.87% | **+0.39%** |
@@ -47,15 +47,15 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,284.21** / 初期 $100.00 (+1184.21%)
-- 確定: 6234件 (Win 1825 / Loss 1992 / Flat 2417) / skip 6504件
+- 確定: 6235件 (Win 1825 / Loss 1992 / Flat 2418) / skip 6504件
 - 成長率目線: 平均log +0.000409 / 幾何平均 +0.041% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_4PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: VELVET/USDT:USDT `LIMIT_3PCT_LONG` SL_HIT account -0.50% 残高後 $1,284.21
+- 最新: FLUID/USDT:USDT `LIMIT_4PCT_LONG` EXPIRED account +0.00% 残高後 $1,284.21
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$274.46** / 初期 $100.00 (+174.46%)
-- 確定: 3611件 (Win 1005 / Loss 845 / Flat 1761) / skip 5977件
+- 確定: 3611件 (Win 1005 / Loss 845 / Flat 1761) / skip 5978件
 - 成長率目線: 平均log +0.000280 / 幾何平均 +0.028% per trade / maxDD +3.96%
 - 次の候補: `LIMIT_6PCT` (selected_by_robust_growth_score) / robust_score +0.0204 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: RLC/USDT:USDT `LIMIT_6PCT` EXPIRED account +0.00% 残高後 $274.46
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4336件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4337件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000114 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-06T01:36:17.393045+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=85726.4
+- 更新: 2026-10-06T01:41:24.965617+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.22% price=85681.0
 - Funnel: target 1074 → liquid 165 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 96.8 >= 65=1, 4h RSI 79.3 >= 65=1
+- Strict後reject: 4h RSI 81.8 >= 65=1, 4h RSI 96.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RLC/USDT:USDT | +42.79% | $18,506,181.46 |
-| ORCA/USDT:USDT | +22.27% | $2,015,055.15 |
-| BR/USDT:USDT | +14.76% | $15,348,398.52 |
-| RAY/USDT:USDT | +8.77% | $4,872,794.13 |
-| CHIP/USDT:USDT | +8.55% | $2,102,361.53 |
+| RLC/USDT:USDT | +38.15% | $18,644,839.66 |
+| ORCA/USDT:USDT | +22.37% | $2,026,660.27 |
+| BR/USDT:USDT | +11.43% | $15,508,413.59 |
+| CHIP/USDT:USDT | +9.14% | $2,119,205.46 |
+| RAY/USDT:USDT | +8.76% | $4,889,070.14 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ORCA/USDT:USDT | below_1h_threshold | +3.70% | +3.87% |
-| ZRO/USDT:USDT | below_1h_threshold | +1.43% | +1.60% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.53% | +0.70% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.41% | +0.58% |
-| PENDLE/USDT:USDT | below_1h_threshold | +0.39% | +0.56% |
+| ORCA/USDT:USDT | below_1h_threshold | +3.79% | +4.01% |
+| ZRO/USDT:USDT | below_1h_threshold | +1.44% | +1.67% |
+| VELVET/USDT:USDT | below_1h_threshold | +0.81% | +1.03% |
+| CHIP/USDT:USDT | below_1h_threshold | +0.75% | +0.98% |
+| LIT/USDT:USDT | below_1h_threshold | +0.70% | +0.92% |
 
 ## 7. 次に見るべき不足
 
