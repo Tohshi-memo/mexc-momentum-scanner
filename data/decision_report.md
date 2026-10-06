@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-06T01:41:39.327194+00:00
+- generated_at: 2026-10-06T01:46:29.389715+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16178**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-06T01:41:24.965617+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.22% price=85681.0
+- 更新: 2026-10-06T01:46:19.181025+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.27% price=85642.3
 - Funnel: target 1074 → liquid 165 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.8 >= 65=1, 4h RSI 96.7 >= 65=1
+- Strict後reject: 4h RSI 79.6 >= 65=1, 4h RSI 96.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RLC/USDT:USDT | +38.15% | $18,644,839.66 |
-| ORCA/USDT:USDT | +22.37% | $2,026,660.27 |
-| BR/USDT:USDT | +11.43% | $15,508,413.59 |
-| CHIP/USDT:USDT | +9.14% | $2,119,205.46 |
-| RAY/USDT:USDT | +8.76% | $4,889,070.14 |
+| RLC/USDT:USDT | +36.91% | $18,695,830.81 |
+| ORCA/USDT:USDT | +21.30% | $2,031,795.26 |
+| BR/USDT:USDT | +13.76% | $15,566,253.78 |
+| CHIP/USDT:USDT | +9.22% | $2,122,329.05 |
+| RAY/USDT:USDT | +8.43% | $4,892,713.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ORCA/USDT:USDT | below_1h_threshold | +3.79% | +4.01% |
-| ZRO/USDT:USDT | below_1h_threshold | +1.44% | +1.67% |
-| VELVET/USDT:USDT | below_1h_threshold | +0.81% | +1.03% |
-| CHIP/USDT:USDT | below_1h_threshold | +0.75% | +0.98% |
-| LIT/USDT:USDT | below_1h_threshold | +0.70% | +0.92% |
+| ORCA/USDT:USDT | below_1h_threshold | +2.67% | +2.94% |
+| ZRO/USDT:USDT | below_1h_threshold | +1.57% | +1.84% |
+| CHIP/USDT:USDT | below_1h_threshold | +1.15% | +1.42% |
+| VELVET/USDT:USDT | below_1h_threshold | +0.66% | +0.92% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.41% | +0.68% |
 
 ## 7. 次に見るべき不足
 
