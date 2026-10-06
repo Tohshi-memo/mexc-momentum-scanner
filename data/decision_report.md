@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-06T06:06:22.508984+00:00
+- generated_at: 2026-10-06T06:11:20.877205+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16183**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-06T06:06:11.658856+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=85330.2
+- 更新: 2026-10-06T06:11:09.495945+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.27% price=85243.9
 - Funnel: target 1074 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RLC/USDT:USDT | +61.98% | $24,515,789.64 |
-| ORCA/USDT:USDT | +23.38% | $2,356,170.34 |
-| CAP/USDT:USDT | +13.36% | $1,024,578.83 |
-| FILECOIN/USDT:USDT | +8.65% | $16,901,199.69 |
-| CHIP/USDT:USDT | +8.02% | $2,505,468.28 |
+| RLC/USDT:USDT | +60.65% | $24,702,514.38 |
+| ORCA/USDT:USDT | +22.98% | $2,366,888.33 |
+| CAP/USDT:USDT | +14.06% | $1,029,449.09 |
+| FILECOIN/USDT:USDT | +8.29% | $17,019,137.41 |
+| CHIP/USDT:USDT | +7.75% | $2,515,671.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RLC/USDT:USDT | below_1h_threshold | +2.34% | +2.52% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.74% | +0.91% |
-| CBRSSTOCK/USDT:USDT | below_1h_threshold | +0.52% | +0.70% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.36% | +0.53% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +0.34% | +0.51% |
+| RLC/USDT:USDT | below_1h_threshold | +1.67% | +1.95% |
+| SOXL/USDT:USDT | below_1h_threshold | +0.74% | +1.01% |
+| CBRSSTOCK/USDT:USDT | below_1h_threshold | +0.52% | +0.80% |
+| NIGHT/USDT:USDT | below_1h_threshold | +0.42% | +0.69% |
+| CAP/USDT:USDT | below_1h_threshold | +0.38% | +0.65% |
 
 ## 7. 次に見るべき不足
 
