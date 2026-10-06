@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-06T09:51:40.450511+00:00
+- generated_at: 2026-10-06T09:56:27.649977+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16195**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-06T09:51:22.069124+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=86008.1
+- 更新: 2026-10-06T09:56:13.969510+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=86059.8
 - Funnel: target 1074 → liquid 168 → pre 50 → checked 50 → surge 2 → strict 2
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BR/USDT:USDT | +63.15% | $28,010,819.67 |
-| RLC/USDT:USDT | +56.62% | $31,856,707.95 |
-| US/USDT:USDT | +30.51% | $1,066,552.57 |
-| ORCA/USDT:USDT | +29.78% | $3,067,682.65 |
-| API3/USDT:USDT | +25.53% | $2,281,837.65 |
+| BR/USDT:USDT | +65.75% | $28,810,003.25 |
+| RLC/USDT:USDT | +57.48% | $31,963,826.13 |
+| US/USDT:USDT | +33.13% | $1,069,974.30 |
+| ORCA/USDT:USDT | +31.35% | $3,084,658.23 |
+| API3/USDT:USDT | +25.70% | $2,296,190.21 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MUBARAK/USDT:USDT | below_1h_threshold | +4.20% | +4.16% |
-| ADA/USDT:USDT | below_1h_threshold | +1.35% | +1.31% |
-| STX/USDT:USDT | below_1h_threshold | +1.19% | +1.15% |
-| PHA/USDT:USDT | below_1h_threshold | +1.01% | +0.97% |
-| PONS/USDT:USDT | below_1h_threshold | +1.00% | +0.95% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +4.42% | +4.32% |
+| ADA/USDT:USDT | below_1h_threshold | +1.57% | +1.47% |
+| ORCA/USDT:USDT | below_1h_threshold | +1.41% | +1.31% |
+| PHA/USDT:USDT | below_1h_threshold | +1.35% | +1.25% |
+| STX/USDT:USDT | below_1h_threshold | +1.06% | +0.96% |
 
 ## 7. 次に見るべき不足
 
