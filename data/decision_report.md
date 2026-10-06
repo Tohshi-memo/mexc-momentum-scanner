@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-06T13:01:33.740531+00:00
+- generated_at: 2026-10-06T13:06:13.128993+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16214**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-06T13:01:19.601469+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=86110.3
+- 更新: 2026-10-06T13:06:05.279574+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=86191.9
 - Funnel: target 1074 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RLC/USDT:USDT | +56.75% | $39,450,478.72 |
-| BR/USDT:USDT | +45.68% | $48,371,068.65 |
-| US/USDT:USDT | +44.43% | $1,360,229.71 |
-| CAP/USDT:USDT | +35.05% | $1,488,961.26 |
-| NMR/USDT:USDT | +33.43% | $7,406,184.79 |
+| RLC/USDT:USDT | +58.97% | $39,693,876.49 |
+| BR/USDT:USDT | +46.96% | $48,731,918.10 |
+| US/USDT:USDT | +46.02% | $1,368,718.01 |
+| CAP/USDT:USDT | +35.25% | $1,533,088.99 |
+| NMR/USDT:USDT | +34.31% | $7,540,027.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CAP/USDT:USDT | below_1h_threshold | +1.21% | +1.30% |
-| BR/USDT:USDT | below_1h_threshold | +0.91% | +1.00% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +0.60% | +0.68% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +0.49% | +0.57% |
-| VELVET/USDT:USDT | below_1h_threshold | +0.44% | +0.52% |
+| BR/USDT:USDT | below_1h_threshold | +1.82% | +1.80% |
+| US/USDT:USDT | below_1h_threshold | +1.45% | +1.43% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +1.41% | +1.40% |
+| CAP/USDT:USDT | below_1h_threshold | +1.31% | +1.30% |
+| TRB/USDT:USDT | below_1h_threshold | +0.66% | +0.64% |
 
 ## 7. 次に見るべき不足
 
