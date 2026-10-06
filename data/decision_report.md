@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-06T15:16:42.301496+00:00
+- generated_at: 2026-10-06T15:21:24.993002+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16223**
 
@@ -63,38 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4386件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4387件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000356 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-06T15:16:25.692797+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=86544.2
-- Funnel: target 1074 → liquid 171 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-06T15:21:13.523127+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=86486.7
+- Funnel: target 1074 → liquid 171 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZCAT/USDT:USDT | +60.37% | $1,052,741.67 |
-| BR/USDT:USDT | +58.58% | $58,291,737.94 |
-| RLC/USDT:USDT | +49.14% | $41,941,941.28 |
-| US/USDT:USDT | +39.44% | $1,419,676.22 |
-| NMR/USDT:USDT | +39.08% | $11,293,292.51 |
+| ZCAT/USDT:USDT | +62.09% | $1,057,909.59 |
+| BR/USDT:USDT | +54.91% | $58,827,082.79 |
+| RLC/USDT:USDT | +50.40% | $42,024,351.40 |
+| US/USDT:USDT | +43.31% | $1,436,007.54 |
+| NMR/USDT:USDT | +40.15% | $11,370,794.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CAP/USDT:USDT | below_1h_threshold | +4.61% | +4.64% |
-| QNT/USDT:USDT | below_1h_threshold | +2.14% | +2.17% |
-| ZRO/USDT:USDT | below_1h_threshold | +2.02% | +2.04% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.75% | +1.78% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +1.75% | +1.78% |
+| US/USDT:USDT | below_1h_threshold | +3.28% | +3.37% |
+| ZRO/USDT:USDT | below_1h_threshold | +2.53% | +2.62% |
+| NMR/USDT:USDT | below_1h_threshold | +1.99% | +2.08% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.75% | +1.85% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +1.75% | +1.85% |
 
 ## 7. 次に見るべき不足
 
