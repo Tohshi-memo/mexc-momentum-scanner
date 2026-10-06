@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-06T15:56:57.833368+00:00
+- generated_at: 2026-10-06T16:01:29.183012+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16227**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-06T15:56:35.732965+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.81% price=85864.2
-- Funnel: target 1074 → liquid 172 → pre 50 → checked 50 → surge 5 → strict 3
-- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.3 >= 65=1, 4h RSI 70.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-06T16:01:20.628893+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=85701.7
+- Funnel: target 1074 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZCAT/USDT:USDT | +59.84% | $1,086,203.91 |
-| BR/USDT:USDT | +57.06% | $62,638,293.14 |
-| RLC/USDT:USDT | +49.63% | $42,745,422.74 |
-| NMR/USDT:USDT | +41.86% | $11,965,921.61 |
-| US/USDT:USDT | +41.22% | $1,501,753.10 |
+| CAP/USDT:USDT | +0.68% | $2,989,899.14 |
+| ONE/USDT:USDT | +0.58% | $1,029,243.65 |
+| RAY/USDT:USDT | +0.44% | $6,252,542.59 |
+| AEON1/USDT:USDT | +0.40% | $1,137,030.35 |
+| MUBARAK/USDT:USDT | +0.38% | $1,226,484.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NMR/USDT:USDT | below_1h_threshold | +3.38% | +4.19% |
-| ZRO/USDT:USDT | below_1h_threshold | +2.15% | +2.96% |
-| US/USDT:USDT | below_1h_threshold | +1.77% | +2.58% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.75% | +2.57% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +1.75% | +2.56% |
+| CAP/USDT:USDT | below_1h_threshold | +0.64% | +0.62% |
+| ONE/USDT:USDT | below_1h_threshold | +0.59% | +0.56% |
+| US/USDT:USDT | below_1h_threshold | +0.58% | +0.55% |
+| TRB/USDT:USDT | below_1h_threshold | +0.56% | +0.53% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +0.47% | +0.45% |
 
 ## 7. 次に見るべき不足
 
