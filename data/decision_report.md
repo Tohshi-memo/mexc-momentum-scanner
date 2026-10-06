@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-06T05:46:12.256482+00:00
+- generated_at: 2026-10-06T05:51:21.035263+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16183**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4342件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4343件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000100 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-06T05:46:03.163381+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=85516.7
+- 更新: 2026-10-06T05:51:08.877538+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=85500.6
 - Funnel: target 1074 → liquid 167 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 97.1 >= 65=1, 4h RSI 81.8 >= 65=1
+- Strict後reject: 4h RSI 97.2 >= 65=1, 4h RSI 70.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RLC/USDT:USDT | +56.66% | $23,939,949.30 |
-| ORCA/USDT:USDT | +25.31% | $2,352,196.79 |
-| CAP/USDT:USDT | +13.36% | $1,036,539.32 |
-| CHIP/USDT:USDT | +9.79% | $2,425,307.97 |
-| FILECOIN/USDT:USDT | +9.26% | $16,688,788.12 |
+| RLC/USDT:USDT | +60.45% | $24,129,138.93 |
+| ORCA/USDT:USDT | +24.40% | $2,369,219.51 |
+| CAP/USDT:USDT | +14.09% | $1,041,591.56 |
+| FILECOIN/USDT:USDT | +9.60% | $16,801,268.41 |
+| CHIP/USDT:USDT | +9.49% | $2,457,300.70 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| S/USDT:USDT | below_1h_threshold | +3.84% | +3.91% |
-| RENDER/USDT:USDT | below_1h_threshold | +1.76% | +1.83% |
-| AVAX/USDT:USDT | below_1h_threshold | +1.05% | +1.13% |
-| AXS/USDT:USDT | below_1h_threshold | +1.03% | +1.11% |
-| TRB/USDT:USDT | below_1h_threshold | +0.95% | +1.02% |
+| ORCA/USDT:USDT | below_1h_threshold | +4.61% | +4.71% |
+| RENDER/USDT:USDT | below_1h_threshold | +2.00% | +2.10% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +1.22% | +1.32% |
+| TRB/USDT:USDT | below_1h_threshold | +1.07% | +1.17% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +0.92% | +1.02% |
 
 ## 7. 次に見るべき不足
 
