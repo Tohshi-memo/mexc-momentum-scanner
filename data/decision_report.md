@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-06T18:01:25.200676+00:00
+- generated_at: 2026-10-06T18:06:34.183616+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16240**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-06T18:01:13.612889+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=85725.3
+- 更新: 2026-10-06T18:06:22.435862+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=85728.8
 - Funnel: target 1074 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ORCA/USDT:USDT | +18.64% | $5,515,548.52 |
-| TRB/USDT:USDT | +3.10% | $5,871,946.01 |
-| PONS/USDT:USDT | +2.99% | $4,171,145.46 |
-| OKB/USDT:USDT | +2.69% | $2,228,144.24 |
-| MOVR/USDT:USDT | +2.33% | $3,191,081.13 |
+| ORCA/USDT:USDT | +18.83% | $5,649,893.35 |
+| PONS/USDT:USDT | +3.24% | $4,222,560.57 |
+| OKB/USDT:USDT | +3.01% | $2,244,191.06 |
+| MOVR/USDT:USDT | +2.46% | $3,195,645.34 |
+| RENDER/USDT:USDT | +2.39% | $9,871,157.76 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ORCA/USDT:USDT | below_1h_threshold | +0.77% | +0.71% |
-| AAOISTOCK/USDT:USDT | below_1h_threshold | +0.72% | +0.66% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.67% | +0.61% |
+| ORCA/USDT:USDT | below_1h_threshold | +0.87% | +0.80% |
+| AAOISTOCK/USDT:USDT | below_1h_threshold | +0.72% | +0.65% |
+| ARB/USDT:USDT | below_1h_threshold | +0.71% | +0.65% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.67% | +0.60% |
 | SNXX/USDT:USDT | below_1h_threshold | +0.65% | +0.59% |
-| MOVR/USDT:USDT | below_1h_threshold | +0.50% | +0.44% |
 
 ## 7. 次に見るべき不足
 
