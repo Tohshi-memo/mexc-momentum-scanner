@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-06T15:36:49.146773+00:00
+- generated_at: 2026-10-06T15:41:44.298685+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16226**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-06T15:36:30.305286+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.36% price=86252.6
+- 更新: 2026-10-06T15:41:25.280865+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.52% price=86112.3
 - Funnel: target 1074 → liquid 172 → pre 50 → checked 50 → surge 4 → strict 3
 - Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.6 >= 65=1
+- Strict後reject: 4h RSI 70.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BR/USDT:USDT | +62.27% | $60,903,275.49 |
-| ZCAT/USDT:USDT | +60.32% | $1,069,282.95 |
-| RLC/USDT:USDT | +50.20% | $42,238,919.89 |
-| US/USDT:USDT | +46.28% | $1,455,887.37 |
-| NMR/USDT:USDT | +41.62% | $11,601,119.85 |
+| BR/USDT:USDT | +62.34% | $61,419,580.68 |
+| ZCAT/USDT:USDT | +58.62% | $1,072,397.19 |
+| RLC/USDT:USDT | +47.99% | $42,330,509.79 |
+| US/USDT:USDT | +46.55% | $1,474,645.90 |
+| NMR/USDT:USDT | +40.03% | $11,701,457.76 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BATON/USDT:USDT | below_1h_threshold | +4.81% | +5.17% |
-| NMR/USDT:USDT | below_1h_threshold | +3.05% | +3.42% |
-| ZRO/USDT:USDT | below_1h_threshold | +2.77% | +3.14% |
-| TRB/USDT:USDT | below_1h_threshold | +2.26% | +2.62% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.75% | +2.12% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.81% | +4.33% |
+| BATON/USDT:USDT | below_1h_threshold | +3.77% | +4.30% |
+| ZRO/USDT:USDT | below_1h_threshold | +2.57% | +3.10% |
+| JUP/USDT:USDT | below_1h_threshold | +1.93% | +2.46% |
+| NMR/USDT:USDT | below_1h_threshold | +1.91% | +2.44% |
 
 ## 7. 次に見るべき不足
 
