@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-06T23:26:21.052284+00:00
+- generated_at: 2026-10-06T23:31:22.491611+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16259**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-06T23:26:08.700871+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=85493.1
+- 更新: 2026-10-06T23:31:08.680306+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=85407.6
 - Funnel: target 1074 → liquid 175 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ORCA/USDT:USDT | +19.54% | $8,796,255.45 |
-| LONGXIA/USDT:USDT | +15.41% | $6,900,254.78 |
-| CHIP/USDT:USDT | +5.33% | $2,498,837.85 |
-| NIGHT/USDT:USDT | +4.01% | $3,749,694.94 |
-| US/USDT:USDT | +3.73% | $1,323,963.45 |
+| LONGXIA/USDT:USDT | +19.22% | $6,950,204.47 |
+| ORCA/USDT:USDT | +18.86% | $8,836,071.90 |
+| CHIP/USDT:USDT | +5.58% | $2,499,447.41 |
+| NIGHT/USDT:USDT | +4.03% | $3,756,634.96 |
+| US/USDT:USDT | +3.35% | $1,329,729.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| QNT/USDT:USDT | below_1h_threshold | +2.01% | +2.01% |
-| ZEC/USDT:USDT | below_1h_threshold | +1.73% | +1.72% |
-| ARB/USDT:USDT | below_1h_threshold | +0.75% | +0.75% |
-| TIA/USDT:USDT | below_1h_threshold | +0.74% | +0.73% |
-| TAO/USDT:USDT | below_1h_threshold | +0.72% | +0.71% |
+| ZEC/USDT:USDT | below_1h_threshold | +1.95% | +2.04% |
+| QNT/USDT:USDT | below_1h_threshold | +1.68% | +1.78% |
+| SAND/USDT:USDT | below_1h_threshold | +0.81% | +0.91% |
+| TIA/USDT:USDT | below_1h_threshold | +0.76% | +0.86% |
+| TAO/USDT:USDT | below_1h_threshold | +0.75% | +0.85% |
 
 ## 7. 次に見るべき不足
 
