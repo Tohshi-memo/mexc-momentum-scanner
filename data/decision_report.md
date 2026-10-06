@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-06T07:26:28.520940+00:00
+- generated_at: 2026-10-06T07:31:23.470642+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16185**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-06T07:26:16.911043+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=85270.1
+- 更新: 2026-10-06T07:31:13.682541+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=85260.0
 - Funnel: target 1074 → liquid 165 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.2 >= 65=1
+- Strict後reject: 4h RSI 81.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RLC/USDT:USDT | +70.29% | $27,650,658.96 |
-| ORCA/USDT:USDT | +26.23% | $2,538,289.22 |
-| API3/USDT:USDT | +23.66% | $1,010,249.40 |
-| CAP/USDT:USDT | +13.53% | $1,060,047.23 |
-| BR/USDT:USDT | +12.23% | $16,916,467.88 |
+| RLC/USDT:USDT | +69.32% | $27,748,736.59 |
+| ORCA/USDT:USDT | +26.23% | $2,547,062.64 |
+| API3/USDT:USDT | +22.68% | $1,036,998.10 |
+| CAP/USDT:USDT | +13.53% | $1,061,709.91 |
+| BR/USDT:USDT | +12.95% | $17,035,674.74 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PHA/USDT:USDT | below_1h_threshold | +3.45% | +3.45% |
-| RLC/USDT:USDT | below_1h_threshold | +3.22% | +3.21% |
-| BR/USDT:USDT | below_1h_threshold | +2.81% | +2.81% |
-| GRAM/USDT:USDT | below_1h_threshold | +1.17% | +1.16% |
-| JUP/USDT:USDT | below_1h_threshold | +0.81% | +0.80% |
+| BR/USDT:USDT | below_1h_threshold | +3.53% | +3.54% |
+| PHA/USDT:USDT | below_1h_threshold | +3.31% | +3.32% |
+| RLC/USDT:USDT | below_1h_threshold | +2.60% | +2.61% |
+| GRAM/USDT:USDT | below_1h_threshold | +1.36% | +1.37% |
+| JUP/USDT:USDT | below_1h_threshold | +0.81% | +0.82% |
 
 ## 7. 次に見るべき不足
 
