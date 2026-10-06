@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-06T10:36:11.599845+00:00
+- generated_at: 2026-10-06T10:41:28.433119+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16196**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-06T10:36:02.877275+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=86029.8
+- 更新: 2026-10-06T10:41:16.867262+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=86026.5
 - Funnel: target 1074 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RLC/USDT:USDT | +67.51% | $33,325,678.93 |
-| BR/USDT:USDT | +51.41% | $35,652,648.47 |
-| US/USDT:USDT | +35.76% | $1,093,124.70 |
-| ORCA/USDT:USDT | +31.25% | $3,152,017.41 |
-| API3/USDT:USDT | +24.71% | $2,387,435.53 |
+| RLC/USDT:USDT | +66.78% | $33,425,966.83 |
+| BR/USDT:USDT | +50.21% | $36,631,996.29 |
+| US/USDT:USDT | +37.61% | $1,112,294.64 |
+| ORCA/USDT:USDT | +28.05% | $3,160,032.60 |
+| API3/USDT:USDT | +25.26% | $2,393,124.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RLC/USDT:USDT | below_relative_strength | +5.03% | +4.93% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +1.93% | +1.83% |
-| VELVET/USDT:USDT | below_1h_threshold | +1.85% | +1.75% |
-| US/USDT:USDT | below_1h_threshold | +1.77% | +1.67% |
-| PYTH/USDT:USDT | below_1h_threshold | +1.53% | +1.44% |
+| RLC/USDT:USDT | below_1h_threshold | +4.68% | +4.59% |
+| US/USDT:USDT | below_1h_threshold | +3.19% | +3.10% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +2.16% | +2.07% |
+| TRB/USDT:USDT | below_1h_threshold | +1.78% | +1.69% |
+| ZEC/USDT:USDT | below_1h_threshold | +1.31% | +1.22% |
 
 ## 7. 次に見るべき不足
 
