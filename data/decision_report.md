@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-06T07:01:23.826068+00:00
+- generated_at: 2026-10-06T07:06:27.503638+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16184**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4344件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4345件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000099 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-06T07:01:12.237236+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=85229.5
-- Funnel: target 1074 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-06T07:06:15.610919+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=85284.7
+- Funnel: target 1074 → liquid 164 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 97.5 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RLC/USDT:USDT | +65.47% | $26,470,283.88 |
-| ORCA/USDT:USDT | +27.65% | $2,441,044.44 |
-| CAP/USDT:USDT | +13.52% | $1,053,304.51 |
-| CHIP/USDT:USDT | +10.77% | $2,574,524.90 |
-| BR/USDT:USDT | +10.20% | $16,411,135.75 |
+| RLC/USDT:USDT | +73.81% | $26,817,736.29 |
+| ORCA/USDT:USDT | +27.85% | $2,466,244.79 |
+| CAP/USDT:USDT | +13.18% | $1,056,584.72 |
+| CHIP/USDT:USDT | +10.04% | $2,581,837.55 |
+| FILECOIN/USDT:USDT | +9.86% | $17,686,896.25 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BR/USDT:USDT | below_1h_threshold | +0.74% | +0.78% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.55% | +0.59% |
-| AAOISTOCK/USDT:USDT | below_1h_threshold | +0.41% | +0.45% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +0.24% | +0.29% |
-| CBRSSTOCK/USDT:USDT | below_1h_threshold | +0.19% | +0.24% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.55% | +0.53% |
+| AAOISTOCK/USDT:USDT | below_1h_threshold | +0.41% | +0.39% |
+| NIGHT/USDT:USDT | below_1h_threshold | +0.34% | +0.32% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +0.24% | +0.22% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +0.23% | +0.21% |
 
 ## 7. 次に見るべき不足
 
