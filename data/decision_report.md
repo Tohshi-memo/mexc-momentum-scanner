@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-06T17:46:31.041562+00:00
+- generated_at: 2026-10-06T17:51:33.251137+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16240**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-06T17:46:19.423648+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=85549.0
+- 更新: 2026-10-06T17:51:21.624825+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=85566.8
 - Funnel: target 1074 → liquid 175 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 90.5 >= 65=1
+- Strict後reject: 4h RSI 90.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ORCA/USDT:USDT | +17.96% | $5,147,060.81 |
-| ZCAT/USDT:USDT | +2.96% | $1,142,318.18 |
-| TRB/USDT:USDT | +2.68% | $5,685,006.78 |
-| US/USDT:USDT | +2.59% | $1,376,810.83 |
-| CHIP/USDT:USDT | +2.16% | $2,673,836.09 |
+| ORCA/USDT:USDT | +17.16% | $5,292,762.64 |
+| ZCAT/USDT:USDT | +2.82% | $1,147,216.30 |
+| TRB/USDT:USDT | +2.47% | $5,818,791.29 |
+| OKB/USDT:USDT | +2.46% | $2,245,632.55 |
+| CHIP/USDT:USDT | +2.45% | $2,688,441.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TRB/USDT:USDT | below_1h_threshold | +2.48% | +2.47% |
-| PONS/USDT:USDT | below_1h_threshold | +2.24% | +2.22% |
-| OKB/USDT:USDT | below_1h_threshold | +1.68% | +1.66% |
-| ETHFI/USDT:USDT | below_1h_threshold | +1.59% | +1.58% |
-| THETA/USDT:USDT | below_1h_threshold | +1.49% | +1.47% |
+| PONS/USDT:USDT | below_1h_threshold | +2.81% | +2.77% |
+| TRB/USDT:USDT | below_1h_threshold | +2.24% | +2.21% |
+| OKB/USDT:USDT | below_1h_threshold | +2.00% | +1.97% |
+| LDO/USDT:USDT | below_1h_threshold | +1.49% | +1.45% |
+| RENDER/USDT:USDT | below_1h_threshold | +1.35% | +1.32% |
 
 ## 7. 次に見るべき不足
 
