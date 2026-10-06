@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-06T22:21:37.306934+00:00
+- generated_at: 2026-10-06T22:26:26.827396+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16258**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-06T22:21:25.810560+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=85579.7
+- 更新: 2026-10-06T22:26:15.577991+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=85495.0
 - Funnel: target 1074 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ORCA/USDT:USDT | +15.01% | $8,390,702.29 |
-| LONGXIA/USDT:USDT | +14.19% | $6,291,644.70 |
-| CHIP/USDT:USDT | +5.06% | $2,480,352.89 |
-| INJ/USDT:USDT | +5.05% | $26,583,752.58 |
-| HNT/USDT:USDT | +2.81% | $1,098,343.57 |
+| ORCA/USDT:USDT | +17.24% | $8,454,360.69 |
+| LONGXIA/USDT:USDT | +16.26% | $6,357,439.58 |
+| CHIP/USDT:USDT | +4.86% | $2,491,117.61 |
+| INJ/USDT:USDT | +4.51% | $27,036,110.47 |
+| HNT/USDT:USDT | +2.83% | $1,110,635.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TAO/USDT:USDT | below_1h_threshold | +0.69% | +0.68% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +0.62% | +0.61% |
-| QNT/USDT:USDT | below_1h_threshold | +0.60% | +0.59% |
-| TIA/USDT:USDT | below_1h_threshold | +0.56% | +0.55% |
-| NIGHT/USDT:USDT | below_1h_threshold | +0.55% | +0.54% |
+| ORCA/USDT:USDT | below_1h_threshold | +1.24% | +1.33% |
+| TAO/USDT:USDT | below_1h_threshold | +0.90% | +0.99% |
+| ZCAT/USDT:USDT | below_1h_threshold | +0.76% | +0.85% |
+| NIGHT/USDT:USDT | below_1h_threshold | +0.63% | +0.72% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +0.62% | +0.71% |
 
 ## 7. 次に見るべき不足
 
