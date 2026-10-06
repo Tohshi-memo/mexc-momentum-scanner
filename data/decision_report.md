@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-06T04:56:20.821153+00:00
+- generated_at: 2026-10-06T05:01:11.215587+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16180**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-06T04:56:09.065134+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=85565.8
-- Funnel: target 1074 → liquid 168 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 96.2 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-06T05:01:02.788858+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=85587.9
+- Funnel: target 1074 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RLC/USDT:USDT | +38.74% | $21,456,159.52 |
-| ORCA/USDT:USDT | +20.09% | $2,229,832.57 |
-| CHIP/USDT:USDT | +10.41% | $2,402,152.38 |
-| FILECOIN/USDT:USDT | +7.73% | $15,901,431.83 |
-| ZHIPUSTOCK/USDT:USDT | +7.47% | $3,107,519.03 |
+| RLC/USDT:USDT | +36.80% | $21,551,324.42 |
+| ORCA/USDT:USDT | +18.72% | $2,219,744.88 |
+| CHIP/USDT:USDT | +10.36% | $2,336,017.33 |
+| ZHIPUSTOCK/USDT:USDT | +8.35% | $3,117,564.88 |
+| FILECOIN/USDT:USDT | +8.12% | $15,774,147.35 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +2.16% | +2.05% |
-| WLFI/USDT:USDT | below_1h_threshold | +1.85% | +1.74% |
-| ADA/USDT:USDT | below_1h_threshold | +1.50% | +1.40% |
-| RENDER/USDT:USDT | below_1h_threshold | +1.38% | +1.28% |
-| AXS/USDT:USDT | below_1h_threshold | +1.32% | +1.21% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +0.92% | +0.92% |
+| CHIP/USDT:USDT | below_1h_threshold | +0.39% | +0.39% |
+| VELVET/USDT:USDT | below_1h_threshold | +0.34% | +0.34% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +0.24% | +0.24% |
+| AAOISTOCK/USDT:USDT | below_1h_threshold | +0.24% | +0.23% |
 
 ## 7. 次に見るべき不足
 
