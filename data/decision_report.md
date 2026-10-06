@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-06T20:46:28.481950+00:00
+- generated_at: 2026-10-06T20:51:31.266692+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16251**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-06T20:46:18.692570+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=85608.2
+- 更新: 2026-10-06T20:51:22.082854+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=85582.0
 - Funnel: target 1074 → liquid 175 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.8 >= 65=1, 4h RSI 89.6 >= 65=1
+- Strict後reject: 4h RSI 68.0 >= 65=1, 4h RSI 90.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +29.19% | $3,675,729.88 |
-| ORCA/USDT:USDT | +12.22% | $7,442,768.04 |
-| EDU/USDT:USDT | +3.92% | $1,241,499.20 |
-| INJ/USDT:USDT | +3.17% | $21,533,944.29 |
-| CHIP/USDT:USDT | +2.89% | $2,541,678.26 |
+| LONGXIA/USDT:USDT | +28.04% | $3,796,330.62 |
+| ORCA/USDT:USDT | +14.60% | $7,498,651.75 |
+| EDU/USDT:USDT | +4.49% | $1,251,333.93 |
+| INJ/USDT:USDT | +3.99% | $21,769,095.36 |
+| US/USDT:USDT | +3.08% | $1,323,298.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| US/USDT:USDT | below_1h_threshold | +3.42% | +3.37% |
-| EDU/USDT:USDT | below_1h_threshold | +3.35% | +3.31% |
-| INJ/USDT:USDT | below_1h_threshold | +2.85% | +2.81% |
-| QNT/USDT:USDT | below_1h_threshold | +2.78% | +2.74% |
-| BR/USDT:USDT | below_1h_threshold | +1.74% | +1.70% |
+| EDU/USDT:USDT | below_1h_threshold | +3.92% | +3.90% |
+| US/USDT:USDT | below_1h_threshold | +3.73% | +3.72% |
+| INJ/USDT:USDT | below_1h_threshold | +3.68% | +3.67% |
+| BR/USDT:USDT | below_1h_threshold | +2.20% | +2.19% |
+| QNT/USDT:USDT | below_1h_threshold | +2.19% | +2.18% |
 
 ## 7. 次に見るべき不足
 
