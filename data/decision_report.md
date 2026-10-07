@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-07T14:36:46.709263+00:00
+- generated_at: 2026-10-07T14:41:23.426490+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16281**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-07T14:36:31.876045+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=83085.6
-- Funnel: target 1073 → liquid 183 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.4 >= 65=1, 4h RSI 69.1 >= 65=1
+- 更新: 2026-10-07T14:41:14.992118+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.17% price=83000.0
+- Funnel: target 1073 → liquid 183 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 76.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PAID/USDT:USDT | +27.54% | $1,055,399.12 |
-| PENGSTOCK/USDT:USDT | +19.88% | $1,513,839.66 |
-| RAY/USDT:USDT | +12.44% | $18,642,179.07 |
-| SAND/USDT:USDT | +10.96% | $23,284,862.80 |
-| ORCA/USDT:USDT | +8.60% | $11,988,618.52 |
+| PAID/USDT:USDT | +27.98% | $1,057,945.70 |
+| PENGSTOCK/USDT:USDT | +21.22% | $1,563,537.83 |
+| RAY/USDT:USDT | +11.96% | $18,927,027.11 |
+| SAND/USDT:USDT | +11.53% | $23,661,489.60 |
+| PROM/USDT:USDT | +7.01% | $1,883,183.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SAND/USDT:USDT | below_1h_threshold | +4.37% | +4.44% |
-| SNXX/USDT:USDT | below_1h_threshold | +4.04% | +4.11% |
-| MUU/USDT:USDT | below_1h_threshold | +2.55% | +2.62% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +2.20% | +2.28% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.92% | +1.99% |
+| SAND/USDT:USDT | below_1h_threshold | +4.89% | +5.06% |
+| ORCA/USDT:USDT | below_1h_threshold | +4.29% | +4.47% |
+| SNXX/USDT:USDT | below_1h_threshold | +4.04% | +4.21% |
+| MUU/USDT:USDT | below_1h_threshold | +2.55% | +2.72% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +2.20% | +2.38% |
 
 ## 7. 次に見るべき不足
 
