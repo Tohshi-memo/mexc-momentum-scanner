@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-07T01:21:29.315049+00:00
+- generated_at: 2026-10-07T01:26:28.517240+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16266**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-07T01:21:17.133053+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.19% price=85337.7
-- Funnel: target 1074 → liquid 174 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.8 >= 65=1, 4h RSI 67.9 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-07T01:26:16.985642+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.25% price=85290.7
+- Funnel: target 1074 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +28.12% | $7,512,337.30 |
-| ORCA/USDT:USDT | +17.05% | $9,648,360.29 |
-| BATON/USDT:USDT | +14.34% | $2,690,560.36 |
-| SAND/USDT:USDT | +5.27% | $12,276,694.96 |
-| MOVR/USDT:USDT | +5.10% | $2,686,887.80 |
+| LONGXIA/USDT:USDT | +25.21% | $7,562,334.93 |
+| ORCA/USDT:USDT | +17.32% | $9,674,560.13 |
+| BATON/USDT:USDT | +12.53% | $2,726,251.62 |
+| SAND/USDT:USDT | +8.65% | $12,511,447.07 |
+| MOVR/USDT:USDT | +5.47% | $2,703,637.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +3.23% | +3.42% |
-| MOVR/USDT:USDT | below_1h_threshold | +2.46% | +2.65% |
-| QNT/USDT:USDT | below_1h_threshold | +1.62% | +1.81% |
-| NICKEL/USDT:USDT | below_1h_threshold | +0.52% | +0.71% |
-| NGAS/USDT:USDT | below_1h_threshold | +0.51% | +0.70% |
+| BATON/USDT:USDT | below_1h_threshold | +4.86% | +5.11% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +3.36% | +3.61% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +3.23% | +3.47% |
+| MOVR/USDT:USDT | below_1h_threshold | +2.80% | +3.05% |
+| SAND/USDT:USDT | below_1h_threshold | +2.60% | +2.84% |
 
 ## 7. 次に見るべき不足
 
