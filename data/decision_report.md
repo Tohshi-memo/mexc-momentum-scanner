@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-07T01:16:33.480502+00:00
+- generated_at: 2026-10-07T01:21:29.315049+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16266**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-07T01:16:19.143210+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=85394.2
-- Funnel: target 1074 → liquid 174 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.8 >= 65=1
+- 更新: 2026-10-07T01:21:17.133053+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.19% price=85337.7
+- Funnel: target 1074 → liquid 174 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 66.8 >= 65=1, 4h RSI 67.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +28.02% | $7,482,794.25 |
-| ORCA/USDT:USDT | +18.52% | $9,592,959.76 |
-| BATON/USDT:USDT | +9.70% | $2,669,642.27 |
-| API3/USDT:USDT | +5.32% | $3,124,684.97 |
-| SAND/USDT:USDT | +4.91% | $12,248,349.03 |
+| LONGXIA/USDT:USDT | +28.12% | $7,512,337.30 |
+| ORCA/USDT:USDT | +17.05% | $9,648,360.29 |
+| BATON/USDT:USDT | +14.34% | $2,690,560.36 |
+| SAND/USDT:USDT | +5.27% | $12,276,694.96 |
+| MOVR/USDT:USDT | +5.10% | $2,686,887.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +3.23% | +3.35% |
-| BATON/USDT:USDT | below_1h_threshold | +3.03% | +3.15% |
-| MOVR/USDT:USDT | below_1h_threshold | +1.87% | +2.00% |
-| QNT/USDT:USDT | below_1h_threshold | +1.63% | +1.75% |
-| NICKEL/USDT:USDT | below_1h_threshold | +0.52% | +0.65% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +3.23% | +3.42% |
+| MOVR/USDT:USDT | below_1h_threshold | +2.46% | +2.65% |
+| QNT/USDT:USDT | below_1h_threshold | +1.62% | +1.81% |
+| NICKEL/USDT:USDT | below_1h_threshold | +0.52% | +0.71% |
+| NGAS/USDT:USDT | below_1h_threshold | +0.51% | +0.70% |
 
 ## 7. 次に見るべき不足
 
