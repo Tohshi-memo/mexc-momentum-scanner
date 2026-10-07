@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-07T21:06:24.405449+00:00
+- generated_at: 2026-10-07T21:11:21.435362+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16294**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-07T21:06:12.758866+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=83339.8
+- 更新: 2026-10-07T21:11:09.916518+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=83328.9
 - Funnel: target 1073 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MET/USDT:USDT | +33.99% | $6,201,844.19 |
-| NEAR/USDT:USDT | +6.85% | $162,742,821.52 |
-| HNT/USDT:USDT | +5.48% | $2,030,146.02 |
-| JTO/USDT:USDT | +5.12% | $3,534,535.81 |
-| JUP/USDT:USDT | +4.99% | $8,756,563.70 |
+| MET/USDT:USDT | +32.51% | $6,455,678.82 |
+| NEAR/USDT:USDT | +6.41% | $164,545,321.82 |
+| HNT/USDT:USDT | +5.62% | $2,037,476.40 |
+| JTO/USDT:USDT | +5.43% | $3,547,209.25 |
+| JUP/USDT:USDT | +5.21% | $8,850,009.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MET/USDT:USDT | below_1h_threshold | +2.35% | +2.41% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.51% | +0.56% |
-| LIT/USDT:USDT | below_1h_threshold | +0.23% | +0.29% |
-| AAVE/USDT:USDT | below_1h_threshold | +0.22% | +0.28% |
-| JUP/USDT:USDT | below_1h_threshold | +0.18% | +0.24% |
+| MET/USDT:USDT | below_1h_threshold | +1.15% | +1.22% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.51% | +0.58% |
+| JUP/USDT:USDT | below_1h_threshold | +0.30% | +0.37% |
+| JTO/USDT:USDT | below_1h_threshold | +0.19% | +0.26% |
+| AAVE/USDT:USDT | below_1h_threshold | +0.19% | +0.26% |
 
 ## 7. 次に見るべき不足
 
