@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-07T02:26:23.408353+00:00
+- generated_at: 2026-10-07T02:31:19.349247+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16269**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-07T02:26:14.784335+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.63% price=83802.3
-- Funnel: target 1074 → liquid 179 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.9 >= 65=1, 4h RSI 69.1 >= 65=1
+- 更新: 2026-10-07T02:31:10.981556+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.65% price=83789.1
+- Funnel: target 1074 → liquid 179 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 69.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +33.01% | $7,936,157.87 |
-| ORCA/USDT:USDT | +10.75% | $10,117,019.30 |
-| SAND/USDT:USDT | +5.42% | $13,699,620.69 |
-| MOVR/USDT:USDT | +5.08% | $2,784,878.60 |
-| SOXS/USDT:USDT | +3.78% | $15,180,496.43 |
+| LONGXIA/USDT:USDT | +34.10% | $7,963,804.15 |
+| ORCA/USDT:USDT | +10.86% | $10,151,485.38 |
+| SAND/USDT:USDT | +6.46% | $13,781,675.04 |
+| MOVR/USDT:USDT | +5.13% | $2,809,046.80 |
+| SOXS/USDT:USDT | +3.67% | $15,202,777.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +0.71% | +1.34% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +0.69% | +1.32% |
-| ZRO/USDT:USDT | below_1h_threshold | +0.55% | +1.18% |
-| VELVET/USDT:USDT | below_1h_threshold | +0.37% | +1.00% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.32% | +0.95% |
+| NMR/USDT:USDT | below_1h_threshold | +2.09% | +2.73% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.26% | +1.91% |
+| ZRO/USDT:USDT | below_1h_threshold | +0.76% | +1.40% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.71% | +1.36% |
+| VELVET/USDT:USDT | below_1h_threshold | +0.47% | +1.11% |
 
 ## 7. 次に見るべき不足
 
