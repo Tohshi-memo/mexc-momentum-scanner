@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-07T15:21:46.543546+00:00
+- generated_at: 2026-10-07T15:26:24.595277+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16282**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-07T15:21:28.338413+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=82965.0
+- 更新: 2026-10-07T15:26:11.210649+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=82977.7
 - Funnel: target 1073 → liquid 183 → pre 50 → checked 50 → surge 2 → strict 2
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PENGSTOCK/USDT:USDT | +20.30% | $1,647,350.05 |
-| PAID/USDT:USDT | +19.30% | $1,077,862.80 |
-| SAND/USDT:USDT | +11.82% | $25,685,550.89 |
-| RAY/USDT:USDT | +10.60% | $20,585,268.13 |
-| PROM/USDT:USDT | +8.00% | $1,852,510.35 |
+| PENGSTOCK/USDT:USDT | +19.96% | $1,658,042.44 |
+| PAID/USDT:USDT | +19.73% | $1,079,080.14 |
+| SAND/USDT:USDT | +11.97% | $25,785,912.42 |
+| RAY/USDT:USDT | +11.44% | $20,669,550.85 |
+| SOXS/USDT:USDT | +7.73% | $25,714,865.55 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MUSTOCK/USDT:USDT | below_1h_threshold | +3.11% | +3.13% |
-| NGAS/USDT:USDT | below_1h_threshold | +2.90% | +2.92% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +2.89% | +2.90% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +2.46% | +2.48% |
-| CT/USDT:USDT | below_1h_threshold | +2.13% | +2.15% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +3.11% | +3.11% |
+| NGAS/USDT:USDT | below_1h_threshold | +2.90% | +2.90% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +2.89% | +2.89% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +2.28% | +2.28% |
+| US/USDT:USDT | below_1h_threshold | +1.97% | +1.97% |
 
 ## 7. 次に見るべき不足
 
