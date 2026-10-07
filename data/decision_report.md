@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-07T02:01:16.101257+00:00
+- generated_at: 2026-10-07T02:06:16.035948+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16267**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-07T02:01:08.007979+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=84310.1
-- Funnel: target 1074 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-07T02:06:07.376547+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.76% price=83689.2
+- Funnel: target 1074 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +27.63% | $7,663,046.56 |
-| ORCA/USDT:USDT | +13.35% | $9,856,478.06 |
-| SAND/USDT:USDT | +6.94% | $12,965,346.18 |
-| MOVR/USDT:USDT | +5.78% | $2,645,490.34 |
-| US/USDT:USDT | +2.93% | $1,364,337.69 |
+| LONGXIA/USDT:USDT | +31.60% | $7,733,629.24 |
+| ORCA/USDT:USDT | +11.77% | $9,969,918.37 |
+| SAND/USDT:USDT | +4.65% | $13,410,183.61 |
+| MOVR/USDT:USDT | +4.52% | $2,703,827.37 |
+| SOXS/USDT:USDT | +3.33% | $14,416,394.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LONGXIA/USDT:USDT | below_1h_threshold | +1.67% | +1.70% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.71% | +0.74% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.32% | +0.35% |
-| ABNBSTOCK/USDT:USDT | below_1h_threshold | +0.15% | +0.18% |
-| US/USDT:USDT | below_1h_threshold | +0.14% | +0.17% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +3.82% | +4.58% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.71% | +1.48% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.32% | +1.09% |
+| ABNBSTOCK/USDT:USDT | below_1h_threshold | +0.15% | +0.91% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.14% | +0.90% |
 
 ## 7. 次に見るべき不足
 
