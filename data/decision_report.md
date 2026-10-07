@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-07T19:41:29.078253+00:00
+- generated_at: 2026-10-07T19:46:30.026763+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16292**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-07T19:41:17.394718+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=83387.7
+- 更新: 2026-10-07T19:46:18.271476+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=83407.5
 - Funnel: target 1073 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MET/USDT:USDT | +30.61% | $4,957,178.22 |
-| NEAR/USDT:USDT | +6.47% | $160,514,634.64 |
-| HNT/USDT:USDT | +4.95% | $1,973,695.96 |
-| UAI/USDT:USDT | +4.79% | $1,066,024.31 |
-| ZRO/USDT:USDT | +4.31% | $10,878,591.13 |
+| MET/USDT:USDT | +29.35% | $5,030,763.05 |
+| NEAR/USDT:USDT | +6.09% | $161,031,474.44 |
+| HNT/USDT:USDT | +5.27% | $1,977,501.04 |
+| UAI/USDT:USDT | +4.83% | $1,068,078.70 |
+| BTW/USDT:USDT | +4.10% | $6,769,660.96 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MET/USDT:USDT | below_1h_threshold | +4.21% | +4.20% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +2.47% | +2.46% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.92% | +1.91% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.77% | +1.76% |
-| JUP/USDT:USDT | below_1h_threshold | +1.65% | +1.64% |
+| MET/USDT:USDT | below_1h_threshold | +3.20% | +3.17% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +2.47% | +2.44% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +2.25% | +2.22% |
+| JUP/USDT:USDT | below_1h_threshold | +1.46% | +1.43% |
+| NEAR/USDT:USDT | below_1h_threshold | +1.39% | +1.35% |
 
 ## 7. 次に見るべき不足
 
