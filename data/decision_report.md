@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-07T00:01:11.591932+00:00
+- generated_at: 2026-10-07T00:06:16.734918+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16263**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-07T00:01:02.479484+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=85500.4
+- 更新: 2026-10-07T00:06:05.263858+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=85449.5
 - Funnel: target 1074 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +22.26% | $7,156,396.09 |
-| ORCA/USDT:USDT | +20.26% | $8,979,835.38 |
-| CHIP/USDT:USDT | +3.91% | $2,475,048.35 |
-| LPT/USDT:USDT | +3.60% | $1,096,569.87 |
-| NIGHT/USDT:USDT | +3.25% | $3,356,578.29 |
+| LONGXIA/USDT:USDT | +20.48% | $7,206,732.67 |
+| ORCA/USDT:USDT | +18.22% | $9,064,902.34 |
+| API3/USDT:USDT | +4.14% | $3,052,303.63 |
+| CHIP/USDT:USDT | +3.73% | $2,535,380.66 |
+| INJ/USDT:USDT | +3.10% | $28,427,932.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LPT/USDT:USDT | below_1h_threshold | +2.76% | +2.78% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +0.67% | +0.69% |
-| ALUMINUM/USDT:USDT | below_1h_threshold | +0.40% | +0.42% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +0.21% | +0.23% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.19% | +0.20% |
+| LPT/USDT:USDT | below_1h_threshold | +2.15% | +2.23% |
+| API3/USDT:USDT | below_1h_threshold | +1.88% | +1.96% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +0.67% | +0.74% |
+| ALUMINUM/USDT:USDT | below_1h_threshold | +0.40% | +0.48% |
+| ZRO/USDT:USDT | below_1h_threshold | +0.32% | +0.39% |
 
 ## 7. 次に見るべき不足
 
