@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-07T18:56:22.415133+00:00
+- generated_at: 2026-10-07T19:01:23.574438+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16292**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-07T18:56:11.131990+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.32% price=83394.7
-- Funnel: target 1073 → liquid 179 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-07T19:01:12.041694+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=83375.4
+- Funnel: target 1073 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MET/USDT:USDT | +23.10% | $4,207,017.94 |
-| ORCA/USDT:USDT | +5.32% | $11,109,439.30 |
-| NEAR/USDT:USDT | +4.72% | $153,345,234.87 |
-| JTO/USDT:USDT | +4.58% | $3,612,809.10 |
-| QNT/USDT:USDT | +3.71% | $182,848,180.95 |
+| MET/USDT:USDT | +24.91% | $4,204,990.55 |
+| ORCA/USDT:USDT | +5.03% | $9,829,017.48 |
+| NEAR/USDT:USDT | +4.66% | $149,683,457.74 |
+| HNT/USDT:USDT | +4.41% | $1,831,966.84 |
+| JTO/USDT:USDT | +4.38% | $3,495,135.26 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JTO/USDT:USDT | below_1h_threshold | +4.92% | +4.60% |
-| MET/USDT:USDT | below_1h_threshold | +2.80% | +2.47% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +2.68% | +2.36% |
-| NEAR/USDT:USDT | below_1h_threshold | +2.49% | +2.16% |
-| EGLD/USDT:USDT | below_1h_threshold | +1.57% | +1.25% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +2.47% | +2.48% |
+| BATON/USDT:USDT | below_1h_threshold | +1.72% | +1.73% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +0.57% | +0.58% |
+| CAP/USDT:USDT | below_1h_threshold | +0.56% | +0.57% |
+| QNT/USDT:USDT | below_1h_threshold | +0.51% | +0.52% |
 
 ## 7. 次に見るべき不足
 
