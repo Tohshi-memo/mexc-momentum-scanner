@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-07T12:11:27.536326+00:00
+- generated_at: 2026-10-07T12:16:23.678073+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16277**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-07T12:11:15.770041+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=83561.6
+- 更新: 2026-10-07T12:16:14.211579+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=83620.1
 - Funnel: target 1074 → liquid 182 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PROM/USDT:USDT | +16.80% | $1,571,622.86 |
-| RAY/USDT:USDT | +9.29% | $8,360,718.00 |
-| SOXS/USDT:USDT | +7.42% | $21,061,340.83 |
-| SAND/USDT:USDT | +6.96% | $20,287,267.10 |
-| STX/USDT:USDT | +5.70% | $4,588,868.71 |
+| PROM/USDT:USDT | +16.39% | $1,600,498.66 |
+| RAY/USDT:USDT | +9.68% | $8,615,833.71 |
+| SOXS/USDT:USDT | +7.56% | $21,067,586.95 |
+| SAND/USDT:USDT | +7.03% | $20,384,113.04 |
+| STX/USDT:USDT | +6.42% | $4,643,304.16 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RAY/USDT:USDT | below_1h_threshold | +2.68% | +2.85% |
-| MET/USDT:USDT | below_1h_threshold | +1.47% | +1.64% |
-| PROM/USDT:USDT | below_1h_threshold | +1.07% | +1.24% |
-| NIGHT/USDT:USDT | below_1h_threshold | +0.99% | +1.16% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.81% | +0.98% |
+| RAY/USDT:USDT | below_1h_threshold | +3.10% | +3.20% |
+| MET/USDT:USDT | below_1h_threshold | +2.07% | +2.17% |
+| NIGHT/USDT:USDT | below_1h_threshold | +1.08% | +1.18% |
+| STX/USDT:USDT | below_1h_threshold | +0.91% | +1.01% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.81% | +0.91% |
 
 ## 7. 次に見るべき不足
 
