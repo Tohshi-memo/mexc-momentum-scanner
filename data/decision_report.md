@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-07T10:36:18.514693+00:00
+- generated_at: 2026-10-07T10:41:29.152766+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16276**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4436件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4437件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000644 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-07T10:36:06.802367+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=83670.0
-- Funnel: target 1074 → liquid 184 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-07T10:41:14.471540+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=83649.5
+- Funnel: target 1074 → liquid 184 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PROM/USDT:USDT | +14.28% | $1,176,777.40 |
-| SAND/USDT:USDT | +9.57% | $19,382,815.57 |
-| MOVR/USDT:USDT | +9.39% | $3,063,360.34 |
-| ORCA/USDT:USDT | +7.66% | $11,604,118.18 |
-| STX/USDT:USDT | +6.68% | $4,264,797.88 |
+| PROM/USDT:USDT | +14.14% | $1,182,279.82 |
+| MOVR/USDT:USDT | +12.72% | $3,183,469.99 |
+| SAND/USDT:USDT | +9.69% | $19,488,795.83 |
+| ORCA/USDT:USDT | +6.67% | $11,623,849.57 |
+| SOXS/USDT:USDT | +5.84% | $19,530,068.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GRIFFAIN/USDT:USDT | below_1h_threshold | +4.76% | +4.87% |
-| MOVR/USDT:USDT | below_1h_threshold | +2.05% | +2.16% |
-| SYN/USDT:USDT | below_1h_threshold | +1.81% | +1.92% |
-| PROM/USDT:USDT | below_1h_threshold | +1.77% | +1.88% |
-| US/USDT:USDT | below_1h_threshold | +1.75% | +1.87% |
+| GRIFFAIN/USDT:USDT | below_1h_threshold | +4.93% | +5.07% |
+| US/USDT:USDT | below_1h_threshold | +1.99% | +2.12% |
+| SYN/USDT:USDT | below_1h_threshold | +1.65% | +1.79% |
+| PROM/USDT:USDT | below_1h_threshold | +1.65% | +1.78% |
+| SAND/USDT:USDT | below_1h_threshold | +1.08% | +1.21% |
 
 ## 7. 次に見るべき不足
 
