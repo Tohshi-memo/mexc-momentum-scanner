@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-07T14:31:11.230420+00:00
+- generated_at: 2026-10-07T14:36:46.709263+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16281**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4439件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4441件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000701 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-07T14:31:02.630333+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=83053.1
-- Funnel: target 1073 → liquid 182 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.3 >= 65=1
+- 更新: 2026-10-07T14:36:31.876045+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=83085.6
+- Funnel: target 1073 → liquid 183 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 75.4 >= 65=1, 4h RSI 69.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PAID/USDT:USDT | +27.98% | $1,053,334.62 |
-| PENGSTOCK/USDT:USDT | +21.65% | $1,445,307.01 |
-| RAY/USDT:USDT | +12.98% | $18,063,418.17 |
-| SAND/USDT:USDT | +9.69% | $22,826,875.79 |
-| PROM/USDT:USDT | +7.66% | $1,874,329.39 |
+| PAID/USDT:USDT | +27.54% | $1,055,399.12 |
+| PENGSTOCK/USDT:USDT | +19.88% | $1,513,839.66 |
+| RAY/USDT:USDT | +12.44% | $18,642,179.07 |
+| SAND/USDT:USDT | +10.96% | $23,284,862.80 |
+| ORCA/USDT:USDT | +8.60% | $11,988,618.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNXX/USDT:USDT | below_1h_threshold | +4.04% | +4.15% |
-| SAND/USDT:USDT | below_1h_threshold | +3.04% | +3.15% |
-| MUU/USDT:USDT | below_1h_threshold | +2.55% | +2.66% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +2.20% | +2.31% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.92% | +2.03% |
+| SAND/USDT:USDT | below_1h_threshold | +4.37% | +4.44% |
+| SNXX/USDT:USDT | below_1h_threshold | +4.04% | +4.11% |
+| MUU/USDT:USDT | below_1h_threshold | +2.55% | +2.62% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +2.20% | +2.28% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.92% | +1.99% |
 
 ## 7. 次に見るべき不足
 
