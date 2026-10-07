@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-07T20:36:29.957099+00:00
+- generated_at: 2026-10-07T20:41:30.213407+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16293**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-07T20:36:18.357120+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=83299.4
+- 更新: 2026-10-07T20:41:18.653243+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=83295.7
 - Funnel: target 1073 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MET/USDT:USDT | +31.13% | $5,935,827.40 |
-| NEAR/USDT:USDT | +7.17% | $166,189,631.62 |
-| HNT/USDT:USDT | +4.69% | $1,984,098.79 |
-| BTW/USDT:USDT | +4.27% | $6,840,558.85 |
-| QNT/USDT:USDT | +4.13% | $175,581,832.78 |
+| MET/USDT:USDT | +30.73% | $5,983,872.96 |
+| NEAR/USDT:USDT | +6.87% | $166,858,366.47 |
+| BTW/USDT:USDT | +4.28% | $6,853,908.84 |
+| QNT/USDT:USDT | +4.25% | $175,982,816.42 |
+| HNT/USDT:USDT | +4.13% | $2,010,070.41 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PROM/USDT:USDT | below_1h_threshold | +2.94% | +3.06% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.69% | +1.81% |
-| 1000BONK/USDT:USDT | below_1h_threshold | +1.51% | +1.63% |
-| OP/USDT:USDT | below_1h_threshold | +1.43% | +1.55% |
-| LIT/USDT:USDT | below_1h_threshold | +1.35% | +1.47% |
+| PROM/USDT:USDT | below_1h_threshold | +1.74% | +1.87% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.69% | +1.82% |
+| NMR/USDT:USDT | below_1h_threshold | +1.43% | +1.55% |
+| OP/USDT:USDT | below_1h_threshold | +1.37% | +1.49% |
+| CRV/USDT:USDT | below_1h_threshold | +1.07% | +1.20% |
 
 ## 7. 次に見るべき不足
 
