@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-07T01:41:28.754300+00:00
+- generated_at: 2026-10-07T01:46:27.179216+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16266**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-07T01:41:17.010293+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.34% price=85209.9
+- 更新: 2026-10-07T01:46:15.692780+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.24% price=85299.7
 - Funnel: target 1074 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +24.30% | $7,653,766.10 |
-| ORCA/USDT:USDT | +14.15% | $9,805,217.25 |
-| SAND/USDT:USDT | +9.06% | $12,785,941.49 |
-| BATON/USDT:USDT | +6.95% | $2,761,974.11 |
-| MOVR/USDT:USDT | +6.10% | $2,741,808.99 |
+| LONGXIA/USDT:USDT | +23.45% | $7,671,098.50 |
+| ORCA/USDT:USDT | +14.83% | $9,839,311.33 |
+| SAND/USDT:USDT | +9.60% | $12,843,962.77 |
+| MOVR/USDT:USDT | +5.87% | $2,744,089.96 |
+| BATON/USDT:USDT | +5.40% | $2,769,854.15 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MOVR/USDT:USDT | below_1h_threshold | +3.41% | +3.75% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +3.23% | +3.57% |
-| SAND/USDT:USDT | below_1h_threshold | +2.99% | +3.33% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +2.88% | +3.22% |
-| QNT/USDT:USDT | below_1h_threshold | +1.30% | +1.64% |
+| SAND/USDT:USDT | below_1h_threshold | +3.43% | +3.67% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +3.23% | +3.46% |
+| MOVR/USDT:USDT | below_1h_threshold | +3.19% | +3.43% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +1.91% | +2.15% |
+| QNT/USDT:USDT | below_1h_threshold | +1.12% | +1.35% |
 
 ## 7. 次に見るべき不足
 
