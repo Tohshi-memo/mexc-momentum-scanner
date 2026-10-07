@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-07T08:41:20.488150+00:00
+- generated_at: 2026-10-07T08:46:27.346471+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16275**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-07T08:41:08.859818+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=84007.1
+- 更新: 2026-10-07T08:46:15.581683+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.20% price=83929.7
 - Funnel: target 1074 → liquid 181 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +12.20% | $9,820,730.34 |
-| SAND/USDT:USDT | +9.54% | $17,971,055.39 |
-| ORCA/USDT:USDT | +9.05% | $11,603,116.64 |
-| PROM/USDT:USDT | +7.98% | $1,000,633.16 |
-| CT/USDT:USDT | +6.45% | $2,053,714.66 |
+| ORCA/USDT:USDT | +10.90% | $11,658,261.77 |
+| LONGXIA/USDT:USDT | +10.13% | $9,841,322.78 |
+| SAND/USDT:USDT | +9.60% | $18,302,859.33 |
+| PROM/USDT:USDT | +8.44% | $1,000,937.33 |
+| CT/USDT:USDT | +6.70% | $2,076,533.25 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZRO/USDT:USDT | below_1h_threshold | +1.15% | +1.26% |
-| RENDER/USDT:USDT | below_1h_threshold | +1.05% | +1.16% |
-| PONS/USDT:USDT | below_1h_threshold | +1.01% | +1.13% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +0.93% | +1.05% |
-| NGAS/USDT:USDT | below_1h_threshold | +0.85% | +0.96% |
+| PONS/USDT:USDT | below_1h_threshold | +0.94% | +1.14% |
+| ORCA/USDT:USDT | below_1h_threshold | +0.93% | +1.13% |
+| NGAS/USDT:USDT | below_1h_threshold | +0.85% | +1.05% |
+| NICKEL/USDT:USDT | below_1h_threshold | +0.84% | +1.04% |
+| ZRO/USDT:USDT | below_1h_threshold | +0.83% | +1.03% |
 
 ## 7. 次に見るべき不足
 
