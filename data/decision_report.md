@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-07T01:06:36.164284+00:00
+- generated_at: 2026-10-07T01:11:34.574111+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16265**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-07T01:06:21.944300+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=85417.4
-- Funnel: target 1074 → liquid 174 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.2 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-07T01:11:26.282235+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=85423.9
+- Funnel: target 1074 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +23.15% | $7,403,723.47 |
-| ORCA/USDT:USDT | +18.56% | $9,525,800.30 |
-| BATON/USDT:USDT | +13.82% | $2,638,463.36 |
-| API3/USDT:USDT | +5.98% | $3,104,586.07 |
-| SAND/USDT:USDT | +5.79% | $11,966,634.86 |
+| LONGXIA/USDT:USDT | +24.87% | $7,441,266.71 |
+| ORCA/USDT:USDT | +18.64% | $9,556,502.48 |
+| BATON/USDT:USDT | +11.25% | $2,658,468.44 |
+| API3/USDT:USDT | +7.42% | $3,110,928.45 |
+| SAND/USDT:USDT | +5.65% | $12,104,376.20 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +3.23% | +3.33% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +1.67% | +1.76% |
-| CT/USDT:USDT | below_1h_threshold | +1.11% | +1.21% |
-| API3/USDT:USDT | below_1h_threshold | +0.86% | +0.96% |
-| QNT/USDT:USDT | below_1h_threshold | +0.82% | +0.91% |
+| BATON/USDT:USDT | below_1h_threshold | +3.83% | +3.92% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +3.35% | +3.44% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +3.23% | +3.32% |
+| API3/USDT:USDT | below_1h_threshold | +2.35% | +2.44% |
+| MOVR/USDT:USDT | below_1h_threshold | +1.49% | +1.58% |
 
 ## 7. 次に見るべき不足
 
