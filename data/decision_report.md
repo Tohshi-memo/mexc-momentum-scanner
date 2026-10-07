@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-07T17:31:16.324594+00:00
+- generated_at: 2026-10-07T17:36:18.380052+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16287**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4450件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4451件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000333 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-07T17:31:06.774398+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.21% price=83167.7
-- Funnel: target 1073 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-07T17:36:07.309329+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.20% price=83174.4
+- Funnel: target 1073 → liquid 182 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MET/USDT:USDT | +14.47% | $1,455,655.74 |
-| ORCA/USDT:USDT | +6.02% | $12,220,393.88 |
-| BATON/USDT:USDT | +5.25% | $2,233,652.15 |
-| HNT/USDT:USDT | +4.31% | $1,740,620.32 |
-| GRIFFAIN/USDT:USDT | +2.92% | $1,311,810.62 |
+| MET/USDT:USDT | +14.08% | $1,523,887.10 |
+| US/USDT:USDT | +7.92% | $1,000,137.66 |
+| ORCA/USDT:USDT | +5.83% | $12,235,081.91 |
+| GRIFFAIN/USDT:USDT | +5.14% | $1,313,267.73 |
+| HNT/USDT:USDT | +4.29% | $1,753,499.16 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MET/USDT:USDT | below_1h_threshold | +4.41% | +4.62% |
-| ORCA/USDT:USDT | below_1h_threshold | +4.22% | +4.43% |
-| BTW/USDT:USDT | below_1h_threshold | +2.52% | +2.73% |
-| CHIP/USDT:USDT | below_1h_threshold | +2.03% | +2.24% |
-| MUU/USDT:USDT | below_1h_threshold | +1.86% | +2.07% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +4.13% | +4.33% |
+| ORCA/USDT:USDT | below_1h_threshold | +4.08% | +4.28% |
+| MET/USDT:USDT | below_1h_threshold | +4.08% | +4.28% |
+| GRIFFAIN/USDT:USDT | below_1h_threshold | +2.68% | +2.88% |
+| BTW/USDT:USDT | below_1h_threshold | +2.60% | +2.81% |
 
 ## 7. 次に見るべき不足
 
