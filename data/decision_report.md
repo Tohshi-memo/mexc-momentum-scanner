@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-07T04:46:28.804877+00:00
+- generated_at: 2026-10-07T04:51:28.722416+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16273**
 
@@ -70,32 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-07T04:46:14.242953+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=84060.0
-- Funnel: target 1074 → liquid 180 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.4 >= 65=1
+- 更新: 2026-10-07T04:51:14.792352+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=84125.0
+- Funnel: target 1074 → liquid 180 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +29.89% | $8,742,306.76 |
-| ORCA/USDT:USDT | +9.62% | $10,673,881.71 |
-| MOVR/USDT:USDT | +6.20% | $2,925,264.01 |
-| STX/USDT:USDT | +4.74% | $2,546,628.88 |
-| SAND/USDT:USDT | +4.69% | $13,955,987.77 |
+| LONGXIA/USDT:USDT | +30.56% | $8,765,250.26 |
+| ORCA/USDT:USDT | +9.58% | $10,700,431.24 |
+| SAND/USDT:USDT | +7.93% | $14,157,821.26 |
+| MOVR/USDT:USDT | +7.67% | $2,954,977.63 |
+| BATON/USDT:USDT | +5.08% | $2,942,790.79 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STX/USDT:USDT | below_1h_threshold | +0.98% | +1.03% |
-| SAND/USDT:USDT | below_1h_threshold | +0.63% | +0.68% |
-| WDCSTOCK/USDT:USDT | below_1h_threshold | +0.40% | +0.45% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +0.35% | +0.41% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +0.30% | +0.36% |
+| NMR/USDT:USDT | below_1h_threshold | +4.35% | +4.32% |
+| SAND/USDT:USDT | below_1h_threshold | +4.13% | +4.11% |
+| STX/USDT:USDT | below_1h_threshold | +1.28% | +1.26% |
+| WDCSTOCK/USDT:USDT | below_1h_threshold | +0.40% | +0.37% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +0.35% | +0.33% |
 
 ## 7. 次に見るべき不足
 
