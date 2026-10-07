@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-07T05:46:30.389165+00:00
+- generated_at: 2026-10-07T05:51:25.126952+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16274**
 
@@ -63,39 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4433件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4434件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000526 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-07T05:46:17.287487+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=84192.0
-- Funnel: target 1074 → liquid 180 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.9 >= 65=1
+- 更新: 2026-10-07T05:51:10.979609+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.23% price=84255.7
+- Funnel: target 1074 → liquid 180 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +20.71% | $9,105,053.80 |
-| SAND/USDT:USDT | +10.32% | $15,529,157.13 |
-| BATON/USDT:USDT | +8.50% | $2,937,862.98 |
-| ORCA/USDT:USDT | +8.03% | $10,855,581.46 |
-| STX/USDT:USDT | +6.28% | $3,034,954.58 |
+| LONGXIA/USDT:USDT | +23.50% | $9,134,202.41 |
+| SAND/USDT:USDT | +10.38% | $15,690,750.52 |
+| ORCA/USDT:USDT | +7.73% | $10,864,050.67 |
+| BATON/USDT:USDT | +7.40% | $2,942,955.80 |
+| STX/USDT:USDT | +6.18% | $3,039,484.51 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CT/USDT:USDT | below_1h_threshold | +4.90% | +4.75% |
-| MANA/USDT:USDT | below_1h_threshold | +3.65% | +3.50% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +2.52% | +2.36% |
-| SAND/USDT:USDT | below_1h_threshold | +1.84% | +1.68% |
-| SKY/USDT:USDT | below_1h_threshold | +1.61% | +1.46% |
+| BATON/USDT:USDT | below_relative_strength | +5.01% | +4.77% |
+| MANA/USDT:USDT | below_1h_threshold | +3.41% | +3.18% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +3.13% | +2.89% |
+| US/USDT:USDT | below_1h_threshold | +2.09% | +1.86% |
+| SAND/USDT:USDT | below_1h_threshold | +1.97% | +1.73% |
 
 ## 7. 次に見るべき不足
 
