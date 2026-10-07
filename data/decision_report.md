@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-07T17:56:37.531816+00:00
+- generated_at: 2026-10-07T18:01:29.528940+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16288**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-07T17:56:23.030800+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.25% price=83135.8
-- Funnel: target 1073 → liquid 182 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-07T18:01:18.000487+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=83170.0
+- Funnel: target 1073 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MET/USDT:USDT | +16.77% | $1,848,795.03 |
-| US/USDT:USDT | +10.17% | $1,056,732.70 |
-| ORCA/USDT:USDT | +5.43% | $12,283,563.12 |
-| GRIFFAIN/USDT:USDT | +4.97% | $1,328,207.94 |
-| QNT/USDT:USDT | +3.34% | $185,851,028.04 |
+| MET/USDT:USDT | +20.57% | $1,798,339.20 |
+| US/USDT:USDT | +11.32% | $1,009,029.80 |
+| ORCA/USDT:USDT | +5.72% | $10,891,738.52 |
+| LONGXIA/USDT:USDT | +3.75% | $11,767,831.24 |
+| QNT/USDT:USDT | +3.36% | $178,879,107.67 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ORCA/USDT:USDT | below_1h_threshold | +3.64% | +3.89% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +3.31% | +3.56% |
-| BTW/USDT:USDT | below_1h_threshold | +2.57% | +2.82% |
-| GRIFFAIN/USDT:USDT | below_1h_threshold | +2.40% | +2.65% |
-| MUU/USDT:USDT | below_1h_threshold | +1.86% | +2.11% |
+| US/USDT:USDT | below_1h_threshold | +1.38% | +1.33% |
+| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +0.82% | +0.77% |
+| MET/USDT:USDT | below_1h_threshold | +0.71% | +0.65% |
+| SI/USDT:USDT | below_1h_threshold | +0.61% | +0.56% |
+| MSFTSTOCK/USDT:USDT | below_1h_threshold | +0.37% | +0.32% |
 
 ## 7. 次に見るべき不足
 
