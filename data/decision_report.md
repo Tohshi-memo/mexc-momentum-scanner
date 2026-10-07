@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-07T18:41:28.873075+00:00
+- generated_at: 2026-10-07T18:47:09.392937+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16292**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4454件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4455件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000347 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-07T18:41:13.018180+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.15% price=83253.3
-- Funnel: target 1073 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-07T18:46:57.042928+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.24% price=83325.4
+- Funnel: target 1073 → liquid 178 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 82.0 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MET/USDT:USDT | +22.86% | $3,836,292.40 |
-| LONGXIA/USDT:USDT | +4.44% | $11,930,863.89 |
-| ORCA/USDT:USDT | +4.37% | $11,080,720.89 |
-| NEAR/USDT:USDT | +3.63% | $150,262,959.34 |
-| QNT/USDT:USDT | +3.26% | $181,970,001.01 |
+| MET/USDT:USDT | +27.26% | $3,972,399.96 |
+| ORCA/USDT:USDT | +4.99% | $11,094,397.92 |
+| LONGXIA/USDT:USDT | +3.87% | $11,937,532.89 |
+| NEAR/USDT:USDT | +3.65% | $150,642,449.01 |
+| GRIFFAIN/USDT:USDT | +3.50% | $1,071,599.31 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JTO/USDT:USDT | below_1h_threshold | +3.08% | +2.93% |
-| MET/USDT:USDT | below_1h_threshold | +2.90% | +2.74% |
-| SI/USDT:USDT | below_1h_threshold | +1.69% | +1.54% |
-| CHIP/USDT:USDT | below_1h_threshold | +1.38% | +1.22% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.32% | +1.17% |
+| JTO/USDT:USDT | below_1h_threshold | +2.65% | +2.42% |
+| NMR/USDT:USDT | below_1h_threshold | +1.38% | +1.14% |
+| NEAR/USDT:USDT | below_1h_threshold | +1.38% | +1.14% |
+| RENDER/USDT:USDT | below_1h_threshold | +1.04% | +0.80% |
+| ATOM/USDT:USDT | below_1h_threshold | +1.01% | +0.77% |
 
 ## 7. 次に見るべき不足
 
