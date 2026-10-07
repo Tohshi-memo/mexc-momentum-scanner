@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-07T19:06:23.076752+00:00
+- generated_at: 2026-10-07T19:11:22.652619+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16292**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-07T19:06:11.578505+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=83387.8
+- 更新: 2026-10-07T19:11:11.143511+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=83357.1
 - Funnel: target 1073 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MET/USDT:USDT | +25.91% | $4,306,532.78 |
-| JTO/USDT:USDT | +5.35% | $3,528,652.96 |
-| NEAR/USDT:USDT | +5.34% | $152,290,908.11 |
-| ORCA/USDT:USDT | +4.37% | $9,833,283.18 |
-| HNT/USDT:USDT | +4.25% | $1,842,387.39 |
+| MET/USDT:USDT | +25.49% | $4,387,932.95 |
+| HNT/USDT:USDT | +6.98% | $1,881,939.30 |
+| JTO/USDT:USDT | +5.51% | $3,577,873.58 |
+| NEAR/USDT:USDT | +5.24% | $153,134,990.27 |
+| ORCA/USDT:USDT | +4.14% | $9,838,396.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +2.47% | +2.46% |
-| SI/USDT:USDT | below_1h_threshold | +1.70% | +1.69% |
-| JTO/USDT:USDT | below_1h_threshold | +0.95% | +0.94% |
-| NEAR/USDT:USDT | below_1h_threshold | +0.74% | +0.73% |
-| NMR/USDT:USDT | below_1h_threshold | +0.64% | +0.63% |
+| HNT/USDT:USDT | below_1h_threshold | +2.85% | +2.88% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +2.47% | +2.50% |
+| BATON/USDT:USDT | below_1h_threshold | +1.54% | +1.57% |
+| SI/USDT:USDT | below_1h_threshold | +1.13% | +1.16% |
+| JTO/USDT:USDT | below_1h_threshold | +1.10% | +1.13% |
 
 ## 7. 次に見るべき不足
 
