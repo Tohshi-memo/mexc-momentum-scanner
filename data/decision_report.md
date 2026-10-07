@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-07T23:21:26.076688+00:00
+- generated_at: 2026-10-07T23:26:30.272958+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16296**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-07T23:21:14.455679+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=83211.2
+- 更新: 2026-10-07T23:26:18.723232+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=83285.0
 - Funnel: target 1073 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MET/USDT:USDT | +36.92% | $8,681,520.60 |
-| JUP/USDT:USDT | +13.18% | $13,979,472.17 |
-| JTO/USDT:USDT | +8.72% | $3,666,101.40 |
-| NEAR/USDT:USDT | +6.53% | $174,957,247.63 |
-| ORCA/USDT:USDT | +6.53% | $7,564,988.01 |
+| MET/USDT:USDT | +37.70% | $8,702,883.77 |
+| JUP/USDT:USDT | +12.90% | $14,112,709.13 |
+| JTO/USDT:USDT | +8.72% | $3,666,891.04 |
+| LDO/USDT:USDT | +6.62% | $5,628,454.30 |
+| ORCA/USDT:USDT | +6.57% | $7,571,350.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SYN/USDT:USDT | below_1h_threshold | +1.50% | +1.49% |
-| NGAS/USDT:USDT | below_1h_threshold | +1.31% | +1.29% |
-| LDO/USDT:USDT | below_1h_threshold | +1.27% | +1.26% |
-| S/USDT:USDT | below_1h_threshold | +1.05% | +1.03% |
-| ZEN/USDT:USDT | below_1h_threshold | +1.01% | +1.00% |
+| SYN/USDT:USDT | below_1h_threshold | +1.60% | +1.50% |
+| LDO/USDT:USDT | below_1h_threshold | +1.42% | +1.32% |
+| NGAS/USDT:USDT | below_1h_threshold | +1.31% | +1.20% |
+| S/USDT:USDT | below_1h_threshold | +1.30% | +1.19% |
+| ZEN/USDT:USDT | below_1h_threshold | +1.18% | +1.08% |
 
 ## 7. 次に見るべき不足
 
