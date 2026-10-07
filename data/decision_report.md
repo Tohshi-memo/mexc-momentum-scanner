@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-07T01:26:28.517240+00:00
+- generated_at: 2026-10-07T01:31:17.691397+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16266**
 
@@ -70,30 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-07T01:26:16.985642+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.25% price=85290.7
-- Funnel: target 1074 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-07T01:31:09.734198+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.34% price=85207.8
+- Funnel: target 1074 → liquid 174 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.7 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +25.21% | $7,562,334.93 |
-| ORCA/USDT:USDT | +17.32% | $9,674,560.13 |
-| BATON/USDT:USDT | +12.53% | $2,726,251.62 |
-| SAND/USDT:USDT | +8.65% | $12,511,447.07 |
-| MOVR/USDT:USDT | +5.47% | $2,703,637.46 |
+| LONGXIA/USDT:USDT | +26.88% | $7,580,385.54 |
+| ORCA/USDT:USDT | +14.56% | $9,718,399.38 |
+| SAND/USDT:USDT | +9.54% | $12,598,641.03 |
+| BATON/USDT:USDT | +8.08% | $2,743,376.11 |
+| MOVR/USDT:USDT | +5.62% | $2,712,252.91 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BATON/USDT:USDT | below_1h_threshold | +4.86% | +5.11% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +3.36% | +3.61% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +3.23% | +3.47% |
-| MOVR/USDT:USDT | below_1h_threshold | +2.80% | +3.05% |
-| SAND/USDT:USDT | below_1h_threshold | +2.60% | +2.84% |
+| SAND/USDT:USDT | below_1h_threshold | +3.43% | +3.77% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +3.23% | +3.57% |
+| MOVR/USDT:USDT | below_1h_threshold | +2.95% | +3.29% |
+| QNT/USDT:USDT | below_1h_threshold | +1.60% | +1.95% |
+| BATON/USDT:USDT | below_1h_threshold | +0.71% | +1.05% |
 
 ## 7. 次に見るべき不足
 
