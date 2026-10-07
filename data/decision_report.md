@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-07T17:46:38.206762+00:00
+- generated_at: 2026-10-07T17:51:51.763300+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16288**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-07T17:46:23.472922+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.30% price=83094.4
+- 更新: 2026-10-07T17:51:37.352659+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.27% price=83117.6
 - Funnel: target 1073 → liquid 182 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.6 >= 65=1
+- Strict後reject: 4h RSI 76.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MET/USDT:USDT | +17.28% | $1,727,328.92 |
-| US/USDT:USDT | +10.41% | $1,035,033.50 |
-| GRIFFAIN/USDT:USDT | +6.08% | $1,324,023.92 |
-| ORCA/USDT:USDT | +5.58% | $12,266,209.22 |
-| QNT/USDT:USDT | +2.42% | $184,612,148.42 |
+| MET/USDT:USDT | +15.14% | $1,805,603.33 |
+| US/USDT:USDT | +9.95% | $1,050,293.88 |
+| ORCA/USDT:USDT | +5.83% | $12,272,446.18 |
+| QNT/USDT:USDT | +3.46% | $185,523,871.00 |
+| GRIFFAIN/USDT:USDT | +3.45% | $1,327,757.51 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ORCA/USDT:USDT | below_1h_threshold | +3.75% | +4.05% |
-| GRIFFAIN/USDT:USDT | below_1h_threshold | +3.48% | +3.78% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +2.56% | +2.86% |
-| BTW/USDT:USDT | below_1h_threshold | +2.48% | +2.78% |
-| MUU/USDT:USDT | below_1h_threshold | +1.86% | +2.16% |
+| ORCA/USDT:USDT | below_1h_threshold | +4.01% | +4.28% |
+| BTW/USDT:USDT | below_1h_threshold | +2.59% | +2.86% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +2.46% | +2.73% |
+| MUU/USDT:USDT | below_1h_threshold | +1.86% | +2.13% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.80% | +2.07% |
 
 ## 7. 次に見るべき不足
 
