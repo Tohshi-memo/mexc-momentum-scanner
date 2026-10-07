@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-07T11:51:23.592412+00:00
+- generated_at: 2026-10-07T11:56:57.353170+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16277**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-07T11:51:12.108462+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.18% price=83560.0
+- 更新: 2026-10-07T11:56:45.721383+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=83634.5
 - Funnel: target 1074 → liquid 184 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PROM/USDT:USDT | +14.14% | $1,525,334.08 |
-| SOXS/USDT:USDT | +7.39% | $20,913,643.53 |
-| GRIFFAIN/USDT:USDT | +6.74% | $1,077,573.77 |
-| SAND/USDT:USDT | +6.52% | $20,415,668.01 |
-| RAY/USDT:USDT | +5.48% | $7,796,694.17 |
+| PROM/USDT:USDT | +15.02% | $1,540,536.38 |
+| SAND/USDT:USDT | +7.47% | $20,685,355.01 |
+| SOXS/USDT:USDT | +7.46% | $20,934,491.53 |
+| GRIFFAIN/USDT:USDT | +6.03% | $1,081,074.39 |
+| STX/USDT:USDT | +5.48% | $4,607,951.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RAY/USDT:USDT | below_1h_threshold | +3.44% | +3.62% |
-| GRIFFAIN/USDT:USDT | below_1h_threshold | +1.91% | +2.08% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.01% | +1.19% |
-| NGAS/USDT:USDT | below_1h_threshold | +0.78% | +0.96% |
-| CT/USDT:USDT | below_1h_threshold | +0.53% | +0.70% |
+| RAY/USDT:USDT | below_1h_threshold | +3.36% | +3.45% |
+| GRIFFAIN/USDT:USDT | below_1h_threshold | +1.23% | +1.32% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.01% | +1.10% |
+| NGAS/USDT:USDT | below_1h_threshold | +0.78% | +0.87% |
+| STX/USDT:USDT | below_1h_threshold | +0.64% | +0.72% |
 
 ## 7. 次に見るべき不足
 
