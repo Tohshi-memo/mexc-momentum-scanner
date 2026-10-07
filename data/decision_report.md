@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-07T09:46:15.771017+00:00
+- generated_at: 2026-10-07T09:51:07.027629+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16275**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-07T09:46:06.083774+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=83771.0
-- Funnel: target 1074 → liquid 183 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-07T09:50:58.966545+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.16% price=83776.0
+- Funnel: target 1074 → liquid 184 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PROM/USDT:USDT | +11.04% | $1,034,870.56 |
-| SAND/USDT:USDT | +9.15% | $18,809,767.56 |
-| LONGXIA/USDT:USDT | +8.28% | $10,026,612.58 |
-| ORCA/USDT:USDT | +7.43% | $11,842,343.72 |
-| STX/USDT:USDT | +6.63% | $4,193,901.87 |
+| PROM/USDT:USDT | +11.42% | $1,038,341.50 |
+| SAND/USDT:USDT | +8.65% | $18,879,167.92 |
+| LONGXIA/USDT:USDT | +8.16% | $10,044,629.06 |
+| MOVR/USDT:USDT | +7.49% | $3,084,339.39 |
+| ORCA/USDT:USDT | +7.05% | $11,856,396.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MOVR/USDT:USDT | below_1h_threshold | +3.08% | +3.24% |
-| PROM/USDT:USDT | below_1h_threshold | +2.33% | +2.49% |
-| US/USDT:USDT | below_1h_threshold | +2.10% | +2.27% |
+| MOVR/USDT:USDT | below_1h_threshold | +4.59% | +4.75% |
+| PROM/USDT:USDT | below_1h_threshold | +2.65% | +2.81% |
+| US/USDT:USDT | below_1h_threshold | +1.91% | +2.07% |
 | SOXS/USDT:USDT | below_1h_threshold | +1.10% | +1.26% |
-| STX/USDT:USDT | below_1h_threshold | +0.88% | +1.05% |
+| AMZNSTOCK/USDT:USDT | below_1h_threshold | +0.57% | +0.73% |
 
 ## 7. 次に見るべき不足
 
