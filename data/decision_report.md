@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-08T04:01:26.188276+00:00
+- generated_at: 2026-10-08T04:06:15.963768+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16309**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-08T04:01:14.624289+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=82729.7
+- 更新: 2026-10-08T04:06:07.637046+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=82636.4
 - Funnel: target 1073 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MET/USDT:USDT | +42.98% | $12,229,055.48 |
-| W/USDT:USDT | +24.09% | $2,204,248.72 |
-| JUP/USDT:USDT | +18.08% | $20,709,548.64 |
-| BSPSTOCK/USDT:USDT | +17.85% | $1,096,460.98 |
-| ACE/USDT:USDT | +14.33% | $1,896,537.08 |
+| MET/USDT:USDT | +43.16% | $12,295,638.97 |
+| W/USDT:USDT | +23.62% | $2,228,935.97 |
+| BSPSTOCK/USDT:USDT | +18.28% | $1,098,996.46 |
+| JUP/USDT:USDT | +17.07% | $20,742,811.72 |
+| ACE/USDT:USDT | +13.73% | $1,913,679.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BATON/USDT:USDT | below_1h_threshold | +0.35% | +0.33% |
-| JUP/USDT:USDT | below_1h_threshold | +0.32% | +0.31% |
-| PONS/USDT:USDT | below_1h_threshold | +0.26% | +0.24% |
-| TIA/USDT:USDT | below_1h_threshold | +0.23% | +0.21% |
-| ORDI/USDT:USDT | below_1h_threshold | +0.20% | +0.19% |
+| PROM/USDT:USDT | below_1h_threshold | +0.94% | +1.03% |
+| SYN/USDT:USDT | below_1h_threshold | +0.40% | +0.50% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.15% | +0.25% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.13% | +0.23% |
+| XPD/USDT:USDT | below_1h_threshold | +0.08% | +0.18% |
 
 ## 7. 次に見るべき不足
 
