@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-08T08:11:31.977235+00:00
+- generated_at: 2026-10-08T08:16:31.988028+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16318**
 
@@ -63,39 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4479件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4480件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000314 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-08T08:11:20.054715+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=82961.6
-- Funnel: target 1077 → liquid 179 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.3 >= 65=1
+- 更新: 2026-10-08T08:16:18.048136+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=82904.0
+- Funnel: target 1077 → liquid 180 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MET/USDT:USDT | +53.60% | $22,686,446.33 |
-| RLC/USDT:USDT | +22.79% | $7,949,394.61 |
-| JUP/USDT:USDT | +19.03% | $33,453,313.98 |
-| JTO/USDT:USDT | +15.56% | $6,936,730.54 |
-| BSPSTOCK/USDT:USDT | +15.23% | $1,321,297.70 |
+| MET/USDT:USDT | +53.93% | $22,820,228.80 |
+| RLC/USDT:USDT | +20.50% | $8,096,572.83 |
+| JUP/USDT:USDT | +19.16% | $33,658,134.45 |
+| JTO/USDT:USDT | +15.18% | $6,979,486.21 |
+| BSPSTOCK/USDT:USDT | +15.08% | $1,325,411.85 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BATON/USDT:USDT | below_1h_threshold | +1.84% | +1.82% |
-| TIA/USDT:USDT | below_1h_threshold | +0.95% | +0.93% |
-| CRV/USDT:USDT | below_1h_threshold | +0.74% | +0.73% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.72% | +0.70% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.70% | +0.69% |
+| TIA/USDT:USDT | below_1h_threshold | +0.88% | +0.94% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.72% | +0.77% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.70% | +0.76% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.70% | +0.75% |
+| XPT/USDT:USDT | below_1h_threshold | +0.69% | +0.75% |
 
 ## 7. 次に見るべき不足
 
