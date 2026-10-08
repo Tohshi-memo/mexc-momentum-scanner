@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-08T19:46:25.962006+00:00
+- generated_at: 2026-10-08T19:51:28.951164+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16369**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-08T19:46:11.993070+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.25% price=81672.9
+- 更新: 2026-10-08T19:51:17.037666+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.28% price=81698.2
 - Funnel: target 1083 → liquid 185 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.4 >= 65=1
+- Strict後reject: 4h RSI 66.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +58.82% | $2,531,632.06 |
-| OGN/USDT:USDT | +26.18% | $9,317,552.82 |
-| RLC/USDT:USDT | +22.76% | $17,571,037.86 |
-| LONGXIA/USDT:USDT | +18.11% | $3,908,229.17 |
-| TIA/USDT:USDT | +15.69% | $36,425,245.36 |
+| BATON/USDT:USDT | +57.52% | $2,598,032.23 |
+| OGN/USDT:USDT | +27.83% | $9,349,316.93 |
+| RLC/USDT:USDT | +22.65% | $17,663,926.88 |
+| LONGXIA/USDT:USDT | +17.88% | $3,960,820.29 |
+| TIA/USDT:USDT | +15.45% | $36,716,097.29 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ETHFI/USDT:USDT | below_1h_threshold | +3.22% | +2.97% |
-| LPT/USDT:USDT | below_1h_threshold | +3.20% | +2.95% |
-| CTSI/USDT:USDT | below_1h_threshold | +3.08% | +2.83% |
-| AKT/USDT:USDT | below_1h_threshold | +2.75% | +2.50% |
-| PYTH/USDT:USDT | below_1h_threshold | +2.20% | +1.95% |
+| ETHFI/USDT:USDT | below_1h_threshold | +4.51% | +4.23% |
+| LPT/USDT:USDT | below_1h_threshold | +2.97% | +2.69% |
+| CTSI/USDT:USDT | below_1h_threshold | +2.70% | +2.41% |
+| AKT/USDT:USDT | below_1h_threshold | +2.41% | +2.13% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +2.41% | +2.12% |
 
 ## 7. 次に見るべき不足
 
