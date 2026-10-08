@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-08T00:01:35.195905+00:00
+- generated_at: 2026-10-08T00:06:17.496583+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16297**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-08T00:01:23.563535+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=83245.4
+- 更新: 2026-10-08T00:06:08.904378+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=83205.2
 - Funnel: target 1073 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MET/USDT:USDT | +33.36% | $9,220,657.08 |
-| JUP/USDT:USDT | +13.12% | $14,674,577.77 |
-| JTO/USDT:USDT | +9.85% | $3,724,778.53 |
-| CRV/USDT:USDT | +7.69% | $2,937,875.50 |
-| LDO/USDT:USDT | +7.25% | $5,702,021.72 |
+| MET/USDT:USDT | +31.67% | $9,360,342.02 |
+| JUP/USDT:USDT | +13.12% | $14,786,943.23 |
+| JTO/USDT:USDT | +9.22% | $3,815,244.20 |
+| CRV/USDT:USDT | +7.86% | $2,956,513.85 |
+| LDO/USDT:USDT | +6.76% | $5,709,475.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MUU/USDT:USDT | below_1h_threshold | +1.14% | +1.18% |
-| ORCA/USDT:USDT | below_1h_threshold | +0.84% | +0.89% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +0.57% | +0.62% |
-| KORU/USDT:USDT | below_1h_threshold | +0.50% | +0.54% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.40% | +0.45% |
+| PROM/USDT:USDT | below_1h_threshold | +1.20% | +1.29% |
+| MUU/USDT:USDT | below_1h_threshold | +1.14% | +1.23% |
+| UAI/USDT:USDT | below_1h_threshold | +1.13% | +1.22% |
+| ORCA/USDT:USDT | below_1h_threshold | +0.84% | +0.93% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +0.57% | +0.66% |
 
 ## 7. 次に見るべき不足
 
