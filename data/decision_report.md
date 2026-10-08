@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-08T10:01:30.131796+00:00
+- generated_at: 2026-10-08T10:06:33.143979+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16323**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4484件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4485件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000257 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-08T10:01:18.529716+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=83067.4
-- Funnel: target 1077 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-08T10:06:18.942124+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=83067.5
+- Funnel: target 1082 → liquid 176 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MET/USDT:USDT | +50.70% | $27,161,914.90 |
-| JUP/USDT:USDT | +19.82% | $37,080,798.45 |
-| ALGO/USDT:USDT | +18.40% | $8,015,779.08 |
-| UAI/USDT:USDT | +17.12% | $2,469,856.37 |
-| JTO/USDT:USDT | +15.71% | $7,139,046.58 |
+| MET/USDT:USDT | +50.28% | $27,425,159.15 |
+| JUP/USDT:USDT | +19.48% | $37,249,567.67 |
+| ALGO/USDT:USDT | +18.49% | $8,168,341.68 |
+| UAI/USDT:USDT | +16.86% | $2,481,847.19 |
+| JTO/USDT:USDT | +15.44% | $7,153,221.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
 | PLTRSTOCK/USDT:USDT | below_1h_threshold | +1.97% | +1.98% |
-| BATON/USDT:USDT | below_1h_threshold | +0.81% | +0.82% |
-| MET/USDT:USDT | below_1h_threshold | +0.44% | +0.46% |
-| ON/USDT:USDT | below_1h_threshold | +0.25% | +0.27% |
-| ETHFI/USDT:USDT | below_1h_threshold | +0.20% | +0.22% |
+| BTW/USDT:USDT | below_1h_threshold | +0.34% | +0.36% |
+| FLUID/USDT:USDT | below_1h_threshold | +0.30% | +0.31% |
+| ONDO/USDT:USDT | below_1h_threshold | +0.27% | +0.28% |
+| MET/USDT:USDT | below_1h_threshold | +0.10% | +0.12% |
 
 ## 7. 次に見るべき不足
 
