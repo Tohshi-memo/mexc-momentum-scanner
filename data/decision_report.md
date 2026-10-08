@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-08T14:56:30.508296+00:00
+- generated_at: 2026-10-08T15:01:31.906589+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16338**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-08T14:56:18.884722+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.60% price=82638.0
-- Funnel: target 1082 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-08T15:01:20.535001+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=82628.4
+- Funnel: target 1082 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| OGN/USDT:USDT | +85.68% | $6,136,932.19 |
-| MET/USDT:USDT | +31.85% | $34,027,430.20 |
-| STRK/USDT:USDT | +24.56% | $9,732,553.17 |
-| UAI/USDT:USDT | +17.33% | $3,480,740.34 |
-| BOME/USDT:USDT | +15.38% | $1,568,171.95 |
+| OGN/USDT:USDT | +88.88% | $6,205,935.47 |
+| MET/USDT:USDT | +31.73% | $34,078,314.90 |
+| STRK/USDT:USDT | +24.58% | $9,773,266.20 |
+| UAI/USDT:USDT | +17.08% | $3,388,716.69 |
+| BOME/USDT:USDT | +13.62% | $1,566,034.84 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LIT/USDT:USDT | below_relative_strength | +5.33% | +4.73% |
-| BOME/USDT:USDT | below_1h_threshold | +4.02% | +3.42% |
-| AERO/USDT:USDT | below_1h_threshold | +3.82% | +3.22% |
-| US/USDT:USDT | below_1h_threshold | +3.48% | +2.88% |
-| STRK/USDT:USDT | below_1h_threshold | +3.08% | +2.48% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +1.60% | +1.64% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.82% | +0.86% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.68% | +0.72% |
+| RLC/USDT:USDT | below_1h_threshold | +0.64% | +0.68% |
+| OGN/USDT:USDT | below_1h_threshold | +0.54% | +0.58% |
 
 ## 7. 次に見るべき不足
 
