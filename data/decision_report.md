@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-08T02:01:21.327690+00:00
+- generated_at: 2026-10-08T02:06:11.918773+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16306**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-08T02:01:12.186057+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=83038.0
+- 更新: 2026-10-08T02:06:03.563680+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=83063.3
 - Funnel: target 1073 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MET/USDT:USDT | +38.76% | $10,641,303.67 |
-| W/USDT:USDT | +19.10% | $1,377,405.39 |
-| BSPSTOCK/USDT:USDT | +16.77% | $1,045,191.03 |
-| JUP/USDT:USDT | +16.57% | $18,718,374.67 |
-| JTO/USDT:USDT | +11.99% | $4,103,052.75 |
+| MET/USDT:USDT | +38.03% | $10,709,734.94 |
+| W/USDT:USDT | +21.33% | $1,411,646.80 |
+| JUP/USDT:USDT | +16.79% | $18,875,794.79 |
+| BSPSTOCK/USDT:USDT | +16.65% | $1,046,121.47 |
+| JTO/USDT:USDT | +13.08% | $4,125,843.76 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.80% | +1.83% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.62% | +1.65% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +1.53% | +1.56% |
-| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +1.26% | +1.29% |
-| LASERTECSTOCK/USDT:USDT | below_1h_threshold | +1.13% | +1.16% |
+| W/USDT:USDT | below_1h_threshold | +2.16% | +2.16% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.80% | +1.80% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.62% | +1.62% |
+| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +1.26% | +1.26% |
+| LASERTECSTOCK/USDT:USDT | below_1h_threshold | +1.13% | +1.13% |
 
 ## 7. 次に見るべき不足
 
