@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-08T01:31:27.088992+00:00
+- generated_at: 2026-10-08T01:36:27.934369+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16305**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-08T01:31:15.552772+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=83216.1
+- 更新: 2026-10-08T01:36:16.363204+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=83331.5
 - Funnel: target 1073 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MET/USDT:USDT | +38.12% | $10,238,830.21 |
-| ACE/USDT:USDT | +19.83% | $1,464,003.88 |
-| W/USDT:USDT | +19.18% | $1,208,192.06 |
-| BSPSTOCK/USDT:USDT | +16.88% | $1,046,234.51 |
-| JUP/USDT:USDT | +16.47% | $18,163,457.05 |
+| MET/USDT:USDT | +39.30% | $10,342,285.23 |
+| ACE/USDT:USDT | +19.83% | $1,564,349.70 |
+| W/USDT:USDT | +19.64% | $1,236,960.90 |
+| JUP/USDT:USDT | +17.10% | $18,317,124.53 |
+| BSPSTOCK/USDT:USDT | +16.77% | $1,046,570.05 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MINA/USDT:USDT | below_1h_threshold | +4.53% | +4.66% |
-| ACE/USDT:USDT | below_1h_threshold | +4.13% | +4.27% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +3.73% | +3.87% |
-| BATON/USDT:USDT | below_1h_threshold | +1.96% | +2.09% |
-| BTW/USDT:USDT | below_1h_threshold | +1.44% | +1.57% |
+| ACE/USDT:USDT | below_1h_threshold | +3.87% | +3.87% |
+| MINA/USDT:USDT | below_1h_threshold | +3.48% | +3.47% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +3.32% | +3.31% |
+| MET/USDT:USDT | below_1h_threshold | +2.24% | +2.23% |
+| ZRO/USDT:USDT | below_1h_threshold | +1.87% | +1.86% |
 
 ## 7. 次に見るべき不足
 
