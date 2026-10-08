@@ -1,21 +1,21 @@
 # Decision Report
 
-- generated_at: 2026-10-08T19:51:28.951164+00:00
+- generated_at: 2026-10-08T19:56:19.760901+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **16369**
+- closed shadow trades: **16370**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=16369, expectancy=+0.01%
-- 直近20件 MARKET基準: n=20, expectancy=-1.00%
+- 全期間 MARKET基準: n=16370, expectancy=+0.01%
+- 直近20件 MARKET基準: n=20, expectancy=-1.22%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
 ### 実行可能ランキング (現executorで正確に測れるもの)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | -1.00% | **-1.00%** |
+| MARKET | 20/20 | 100.0% | -1.22% | **-1.22%** |
 
 ### シャドウ上位 SHORT (まだ実行に直結しない候補を含む)
 
@@ -31,11 +31,11 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_7PCT_LONG | 8/20 | 40.0% | +4.23% | **+1.69%** |
-| LIMIT_5PCT_LONG | 9/20 | 45.0% | +2.76% | **+1.24%** |
-| LIMIT_8PCT_LONG | 6/20 | 30.0% | +4.00% | **+1.20%** |
-| LIMIT_9PCT_LONG | 4/20 | 20.0% | +4.55% | **+0.91%** |
-| LIMIT_FIB1272_LONG | 5/20 | 25.0% | +3.64% | **+0.91%** |
+| LIMIT_7PCT_LONG | 7/20 | 35.0% | +4.99% | **+1.75%** |
+| LIMIT_5PCT_LONG | 9/20 | 45.0% | +2.02% | **+0.91%** |
+| LIMIT_8PCT_LONG | 5/20 | 25.0% | +3.20% | **+0.80%** |
+| MARKET_LONG | 20/20 | 100.0% | +0.80% | **+0.80%** |
+| LIMIT_9PCT_LONG | 3/20 | 15.0% | +3.40% | **+0.51%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,315.82** / 初期 $100.00 (+1215.82%)
-- 確定: 6280件 (Win 1845 / Loss 2012 / Flat 2423) / skip 6650件
+- 確定: 6280件 (Win 1845 / Loss 2012 / Flat 2423) / skip 6651件
 - 成長率目線: 平均log +0.000410 / 幾何平均 +0.041% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_8PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: OGN/USDT:USDT `LIMIT_BB3S` EXPIRED account +0.00% 残高後 $1,315.82
@@ -55,7 +55,7 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$274.04** / 初期 $100.00 (+174.04%)
-- 確定: 3633件 (Win 1010 / Loss 853 / Flat 1770) / skip 6147件
+- 確定: 3633件 (Win 1010 / Loss 853 / Flat 1770) / skip 6148件
 - 成長率目線: 平均log +0.000277 / 幾何平均 +0.028% per trade / maxDD +3.96%
 - 次の候補: `LIMIT_6PCT` (selected_by_robust_growth_score) / robust_score +0.0664 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: PYTH/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $274.04
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-08T19:51:17.037666+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.28% price=81698.2
-- Funnel: target 1083 → liquid 185 → pre 50 → checked 50 → surge 1 → strict 0
+- 更新: 2026-10-08T19:56:10.170704+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.33% price=81737.3
+- Funnel: target 1083 → liquid 187 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.3 >= 65=1
+- Strict後reject: 4h RSI 66.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +57.52% | $2,598,032.23 |
-| OGN/USDT:USDT | +27.83% | $9,349,316.93 |
-| RLC/USDT:USDT | +22.65% | $17,663,926.88 |
-| LONGXIA/USDT:USDT | +17.88% | $3,960,820.29 |
-| TIA/USDT:USDT | +15.45% | $36,716,097.29 |
+| BATON/USDT:USDT | +56.37% | $2,663,318.09 |
+| OGN/USDT:USDT | +26.57% | $9,362,683.31 |
+| RLC/USDT:USDT | +21.93% | $17,717,172.75 |
+| LONGXIA/USDT:USDT | +16.34% | $3,976,295.72 |
+| TIA/USDT:USDT | +15.83% | $36,974,909.96 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ETHFI/USDT:USDT | below_1h_threshold | +4.51% | +4.23% |
-| LPT/USDT:USDT | below_1h_threshold | +2.97% | +2.69% |
-| CTSI/USDT:USDT | below_1h_threshold | +2.70% | +2.41% |
-| AKT/USDT:USDT | below_1h_threshold | +2.41% | +2.13% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +2.41% | +2.12% |
+| ETHFI/USDT:USDT | below_1h_threshold | +4.27% | +3.94% |
+| RIVER/USDT:USDT | below_1h_threshold | +2.96% | +2.63% |
+| GRASS/USDT:USDT | below_1h_threshold | +2.84% | +2.51% |
+| LPT/USDT:USDT | below_1h_threshold | +2.75% | +2.42% |
+| CTSI/USDT:USDT | below_1h_threshold | +2.55% | +2.22% |
 
 ## 7. 次に見るべき不足
 
