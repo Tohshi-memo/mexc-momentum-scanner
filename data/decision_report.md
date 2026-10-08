@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-08T15:31:31.076953+00:00
+- generated_at: 2026-10-08T15:36:30.641293+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16340**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-08T15:31:19.276248+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -1.53% price=81398.5
-- Funnel: target 1083 → liquid 180 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-08T15:36:21.362233+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -1.96% price=81042.1
+- Funnel: target 1083 → liquid 183 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| OGN/USDT:USDT | +82.02% | $6,755,270.41 |
-| MET/USDT:USDT | +31.82% | $35,434,857.23 |
-| STRK/USDT:USDT | +19.73% | $10,894,943.38 |
-| UAI/USDT:USDT | +14.50% | $3,542,021.51 |
-| BTW/USDT:USDT | +11.93% | $7,821,216.56 |
+| OGN/USDT:USDT | +77.53% | $6,873,201.66 |
+| MET/USDT:USDT | +30.28% | $35,508,868.10 |
+| STRK/USDT:USDT | +18.60% | $11,448,011.09 |
+| UAI/USDT:USDT | +12.39% | $3,560,661.36 |
+| BTW/USDT:USDT | +12.31% | $7,870,852.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| US/USDT:USDT | below_1h_threshold | +2.43% | +3.96% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +1.60% | +3.13% |
-| NVIDIA/USDT:USDT | below_1h_threshold | +1.04% | +2.57% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.82% | +2.35% |
-| BTW/USDT:USDT | below_1h_threshold | +0.76% | +2.28% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +1.60% | +3.56% |
+| BTW/USDT:USDT | below_1h_threshold | +1.09% | +3.05% |
+| NVIDIA/USDT:USDT | below_1h_threshold | +1.04% | +3.00% |
+| US/USDT:USDT | below_1h_threshold | +0.96% | +2.92% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.82% | +2.78% |
 
 ## 7. 次に見るべき不足
 
