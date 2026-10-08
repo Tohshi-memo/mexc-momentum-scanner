@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-08T17:01:22.503409+00:00
+- generated_at: 2026-10-08T17:06:14.140704+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16343**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-08T17:01:12.204780+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.20% price=80751.3
+- 更新: 2026-10-08T17:06:06.220473+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.20% price=80751.7
 - Funnel: target 1083 → liquid 185 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,11 +79,11 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RLC/USDT:USDT | +20.99% | $8,648,146.80 |
-| SI/USDT:USDT | +10.85% | $1,199,625.27 |
-| SOXS/USDT:USDT | +5.18% | $32,293,681.53 |
-| LONGXIA/USDT:USDT | +5.03% | $3,678,165.04 |
-| SYN/USDT:USDT | +3.60% | $2,355,264.09 |
+| RLC/USDT:USDT | +19.68% | $9,013,839.28 |
+| SI/USDT:USDT | +10.66% | $1,202,572.74 |
+| SOXS/USDT:USDT | +5.52% | $33,248,161.41 |
+| LONGXIA/USDT:USDT | +4.83% | $3,682,800.10 |
+| ON/USDT:USDT | +4.56% | $1,323,279.96 |
 
 ### Near Miss
 
@@ -91,9 +91,9 @@
 |---|---|---:|---:|
 | SOXS/USDT:USDT | below_1h_threshold | +4.35% | +4.55% |
 | BSPSTOCK/USDT:USDT | below_1h_threshold | +1.14% | +1.34% |
+| ON/USDT:USDT | below_1h_threshold | +1.06% | +1.26% |
 | MRNASTOCK/USDT:USDT | below_1h_threshold | +0.95% | +1.15% |
 | MCDSTOCK/USDT:USDT | below_1h_threshold | +0.94% | +1.15% |
-| NGAS/USDT:USDT | below_1h_threshold | +0.61% | +0.82% |
 
 ## 7. 次に見るべき不足
 
