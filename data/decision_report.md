@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-08T00:16:25.240390+00:00
+- generated_at: 2026-10-08T00:21:22.201596+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16297**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-08T00:16:13.700024+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=83255.0
-- Funnel: target 1073 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-08T00:21:12.942331+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=83315.0
+- Funnel: target 1073 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MET/USDT:USDT | +34.29% | $9,523,586.63 |
-| BSPSTOCK/USDT:USDT | +16.60% | $1,008,970.04 |
-| JUP/USDT:USDT | +13.28% | $15,202,102.33 |
-| CRV/USDT:USDT | +10.49% | $3,240,051.26 |
-| JTO/USDT:USDT | +9.30% | $3,895,693.92 |
+| MET/USDT:USDT | +34.57% | $9,585,671.41 |
+| BSPSTOCK/USDT:USDT | +16.51% | $1,010,472.77 |
+| JUP/USDT:USDT | +14.95% | $15,478,013.95 |
+| CRV/USDT:USDT | +10.49% | $3,313,602.83 |
+| JTO/USDT:USDT | +10.19% | $3,918,334.85 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CRV/USDT:USDT | below_1h_threshold | +2.57% | +2.60% |
-| NMR/USDT:USDT | below_1h_threshold | +2.14% | +2.17% |
-| ORCA/USDT:USDT | below_1h_threshold | +1.72% | +1.75% |
-| BTW/USDT:USDT | below_1h_threshold | +1.24% | +1.27% |
-| MUU/USDT:USDT | below_1h_threshold | +1.14% | +1.17% |
+| CRV/USDT:USDT | below_1h_threshold | +2.49% | +2.45% |
+| NMR/USDT:USDT | below_1h_threshold | +2.32% | +2.28% |
+| ORCA/USDT:USDT | below_1h_threshold | +2.07% | +2.03% |
+| AR/USDT:USDT | below_1h_threshold | +1.56% | +1.52% |
+| ACE/USDT:USDT | below_1h_threshold | +1.45% | +1.41% |
 
 ## 7. 次に見るべき不足
 
