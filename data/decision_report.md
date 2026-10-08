@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-08T16:21:32.870921+00:00
+- generated_at: 2026-10-08T16:26:43.901719+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16340**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4499件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4501件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000318 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-08T16:21:21.008940+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.48% price=81383.3
-- Funnel: target 1083 → liquid 183 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-08T16:26:25.143687+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.37% price=81289.8
+- Funnel: target 1083 → liquid 184 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| OGN/USDT:USDT | +5.04% | $7,476,778.64 |
-| PUMPFUN/USDT:USDT | +3.77% | $51,150,695.29 |
-| RIVER/USDT:USDT | +3.58% | $1,981,814.60 |
-| ZEC/USDT:USDT | +3.41% | $1,946,925,019.06 |
-| STONK/USDT:USDT | +3.33% | $1,035,450.55 |
+| SI/USDT:USDT | +23.19% | $1,008,046.16 |
+| LONGXIA/USDT:USDT | +6.23% | $3,918,835.54 |
+| RLC/USDT:USDT | +4.93% | $7,358,350.02 |
+| ZRO/USDT:USDT | +4.34% | $11,990,830.70 |
+| OGN/USDT:USDT | +4.27% | $7,496,065.14 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| OGN/USDT:USDT | below_1h_threshold | +4.97% | +4.48% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +3.77% | +3.29% |
-| RIVER/USDT:USDT | below_1h_threshold | +3.68% | +3.19% |
-| ZEC/USDT:USDT | below_1h_threshold | +3.39% | +2.91% |
-| STONK/USDT:USDT | below_1h_threshold | +3.34% | +2.85% |
+| RLC/USDT:USDT | below_1h_threshold | +4.94% | +4.57% |
+| ZRO/USDT:USDT | below_1h_threshold | +4.35% | +3.98% |
+| LSK/USDT:USDT | below_1h_threshold | +3.84% | +3.47% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +3.75% | +3.39% |
+| OGN/USDT:USDT | below_1h_threshold | +3.63% | +3.26% |
 
 ## 7. 次に見るべき不足
 
