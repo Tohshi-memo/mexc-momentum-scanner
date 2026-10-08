@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-08T13:16:41.821374+00:00
+- generated_at: 2026-10-08T13:21:25.897885+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16335**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-08T13:16:28.113903+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.22% price=82457.8
-- Funnel: target 1082 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-08T13:21:14.019686+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.35% price=82559.5
+- Funnel: target 1082 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| OGN/USDT:USDT | +88.92% | $3,879,446.74 |
-| MET/USDT:USDT | +38.15% | $32,689,298.94 |
-| STRK/USDT:USDT | +19.87% | $7,110,575.51 |
-| UAI/USDT:USDT | +16.68% | $3,203,516.67 |
-| W/USDT:USDT | +15.49% | $6,243,075.73 |
+| OGN/USDT:USDT | +93.50% | $4,049,683.99 |
+| MET/USDT:USDT | +38.52% | $32,758,371.94 |
+| STRK/USDT:USDT | +18.45% | $7,409,687.37 |
+| UAI/USDT:USDT | +17.26% | $3,216,364.22 |
+| W/USDT:USDT | +15.53% | $6,258,425.05 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STRK/USDT:USDT | below_1h_threshold | +4.23% | +4.01% |
-| RLC/USDT:USDT | below_1h_threshold | +1.16% | +0.93% |
-| BSPSTOCK/USDT:USDT | below_1h_threshold | +1.13% | +0.91% |
-| AKE/USDT:USDT | below_1h_threshold | +0.84% | +0.62% |
-| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +0.83% | +0.61% |
+| STRK/USDT:USDT | below_1h_threshold | +2.84% | +2.50% |
+| AKE/USDT:USDT | below_1h_threshold | +2.20% | +1.85% |
+| ONDO/USDT:USDT | below_1h_threshold | +1.14% | +0.79% |
+| BSPSTOCK/USDT:USDT | below_1h_threshold | +1.13% | +0.78% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.04% | +0.69% |
 
 ## 7. 次に見るべき不足
 
