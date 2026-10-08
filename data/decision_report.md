@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-08T16:46:53.053464+00:00
+- generated_at: 2026-10-08T16:51:45.919796+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16342**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-08T16:46:34.812064+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.38% price=81299.6
-- Funnel: target 1083 → liquid 185 → pre 50 → checked 50 → surge 4 → strict 3
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.7 >= 65=1
+- 更新: 2026-10-08T16:51:29.031119+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=80983.0
+- Funnel: target 1083 → liquid 186 → pre 50 → checked 50 → surge 3 → strict 2
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 65.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RLC/USDT:USDT | +16.38% | $7,985,820.41 |
-| SI/USDT:USDT | +13.20% | $1,173,190.89 |
-| MUBARAK/USDT:USDT | +6.77% | $1,107,277.61 |
-| LONGXIA/USDT:USDT | +6.01% | $3,972,086.42 |
-| ZRO/USDT:USDT | +4.48% | $12,340,396.39 |
+| RLC/USDT:USDT | +17.96% | $8,428,113.64 |
+| SI/USDT:USDT | +9.84% | $1,223,181.63 |
+| MUBARAK/USDT:USDT | +5.33% | $1,128,333.50 |
+| BR/USDT:USDT | +5.13% | $13,774,272.59 |
+| LONGXIA/USDT:USDT | +4.56% | $4,000,660.15 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZRO/USDT:USDT | below_1h_threshold | +4.56% | +4.18% |
-| STONK/USDT:USDT | below_1h_threshold | +4.47% | +4.09% |
-| SYN/USDT:USDT | below_1h_threshold | +4.13% | +3.75% |
-| BR/USDT:USDT | below_1h_threshold | +3.62% | +3.24% |
-| PYTH/USDT:USDT | below_1h_threshold | +3.52% | +3.14% |
+| BR/USDT:USDT | below_1h_threshold | +4.90% | +4.91% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +4.52% | +4.52% |
+| ON/USDT:USDT | below_1h_threshold | +4.47% | +4.48% |
+| SYN/USDT:USDT | below_1h_threshold | +4.24% | +4.25% |
+| TIA/USDT:USDT | below_1h_threshold | +3.60% | +3.60% |
 
 ## 7. 次に見るべき不足
 
