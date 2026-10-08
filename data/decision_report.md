@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-08T23:06:25.762923+00:00
+- generated_at: 2026-10-08T23:11:29.355345+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16380**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4544件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4546件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000137 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-08T23:06:14.159894+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=81848.3
-- Funnel: target 1083 → liquid 183 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-08T23:11:13.988499+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=81821.3
+- Funnel: target 1083 → liquid 183 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.3 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JCT/USDT:USDT | +80.92% | $1,569,697.40 |
-| BATON/USDT:USDT | +65.49% | $4,061,200.50 |
-| SI/USDT:USDT | +31.31% | $1,852,962.98 |
-| OGN/USDT:USDT | +21.62% | $10,071,070.94 |
-| RLC/USDT:USDT | +17.73% | $18,918,046.34 |
+| BATON/USDT:USDT | +81.52% | $4,214,569.82 |
+| JCT/USDT:USDT | +79.60% | $1,604,015.89 |
+| SI/USDT:USDT | +32.56% | $1,869,518.59 |
+| OGN/USDT:USDT | +22.99% | $10,077,839.79 |
+| RLC/USDT:USDT | +18.12% | $18,930,577.21 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LONGXIA/USDT:USDT | below_1h_threshold | +3.89% | +3.90% |
-| AERO/USDT:USDT | below_1h_threshold | +1.19% | +1.20% |
-| BR/USDT:USDT | below_1h_threshold | +0.82% | +0.83% |
-| ONE/USDT:USDT | below_1h_threshold | +0.61% | +0.62% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +0.59% | +0.60% |
+| OGN/USDT:USDT | below_1h_threshold | +1.44% | +1.49% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +1.10% | +1.15% |
+| AERO/USDT:USDT | below_1h_threshold | +1.02% | +1.07% |
+| ATOM/USDT:USDT | below_1h_threshold | +0.91% | +0.96% |
+| UAI/USDT:USDT | below_1h_threshold | +0.79% | +0.84% |
 
 ## 7. 次に見るべき不足
 
