@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-08T07:31:31.242893+00:00
+- generated_at: 2026-10-08T07:36:31.759282+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16316**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4476件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4477件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000306 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-08T07:31:19.642493+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.35% price=83129.0
-- Funnel: target 1077 → liquid 179 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-08T07:36:20.685016+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.26% price=83058.1
+- Funnel: target 1077 → liquid 180 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MET/USDT:USDT | +54.41% | $20,084,370.34 |
-| JUP/USDT:USDT | +22.13% | $31,324,098.04 |
-| JTO/USDT:USDT | +17.02% | $6,814,097.14 |
-| BSPSTOCK/USDT:USDT | +16.17% | $1,305,646.84 |
-| ACE/USDT:USDT | +15.17% | $2,212,709.24 |
+| MET/USDT:USDT | +58.67% | $20,302,664.58 |
+| JUP/USDT:USDT | +21.85% | $31,576,145.55 |
+| JTO/USDT:USDT | +17.24% | $6,856,878.63 |
+| BSPSTOCK/USDT:USDT | +16.08% | $1,305,964.66 |
+| ACE/USDT:USDT | +15.17% | $2,234,605.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ALGO/USDT:USDT | below_relative_strength | +5.20% | +4.85% |
-| BATON/USDT:USDT | below_1h_threshold | +3.73% | +3.38% |
-| PENDLE/USDT:USDT | below_1h_threshold | +2.42% | +2.07% |
-| JTO/USDT:USDT | below_1h_threshold | +2.08% | +1.73% |
-| ATOM/USDT:USDT | below_1h_threshold | +2.00% | +1.65% |
+| BATON/USDT:USDT | below_1h_threshold | +3.87% | +3.61% |
+| MET/USDT:USDT | below_1h_threshold | +3.59% | +3.32% |
+| PENDLE/USDT:USDT | below_1h_threshold | +2.57% | +2.31% |
+| JTO/USDT:USDT | below_1h_threshold | +2.27% | +2.01% |
+| BOME/USDT:USDT | below_1h_threshold | +2.07% | +1.81% |
 
 ## 7. 次に見るべき不足
 
