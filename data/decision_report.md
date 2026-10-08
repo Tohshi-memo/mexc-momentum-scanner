@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-08T18:26:53.253167+00:00
+- generated_at: 2026-10-08T18:31:52.635052+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16354**
 
@@ -63,15 +63,15 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4520件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4521件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000219 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-08T18:26:28.919172+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.80% price=81352.4
+- 更新: 2026-10-08T18:31:31.470278+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.73% price=81296.8
 - Funnel: target 1083 → liquid 186 → pre 50 → checked 50 → surge 4 → strict 4
 - Surge前reject: below_1h_threshold=45, below_relative_strength=1, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RLC/USDT:USDT | +30.15% | $14,752,845.66 |
-| OGN/USDT:USDT | +22.78% | $8,750,965.99 |
-| SI/USDT:USDT | +18.63% | $1,360,204.65 |
-| LONGXIA/USDT:USDT | +16.63% | $3,845,275.51 |
-| TIA/USDT:USDT | +7.03% | $29,654,840.95 |
+| RLC/USDT:USDT | +31.46% | $14,837,276.72 |
+| OGN/USDT:USDT | +23.27% | $8,773,799.41 |
+| SI/USDT:USDT | +19.26% | $1,370,156.13 |
+| LONGXIA/USDT:USDT | +16.80% | $3,870,029.00 |
+| SYN/USDT:USDT | +8.37% | $2,483,101.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SYN/USDT:USDT | below_relative_strength | +5.48% | +4.68% |
-| PYTH/USDT:USDT | below_1h_threshold | +4.71% | +3.91% |
-| APT/USDT:USDT | below_1h_threshold | +3.84% | +3.05% |
-| AKE/USDT:USDT | below_1h_threshold | +3.45% | +2.66% |
-| CHIP/USDT:USDT | below_1h_threshold | +3.37% | +2.58% |
+| TIA/USDT:USDT | below_relative_strength | +5.42% | +4.69% |
+| PYTH/USDT:USDT | below_1h_threshold | +4.84% | +4.12% |
+| MOVR/USDT:USDT | below_1h_threshold | +4.72% | +3.99% |
+| APT/USDT:USDT | below_1h_threshold | +3.69% | +2.96% |
+| AKE/USDT:USDT | below_1h_threshold | +3.33% | +2.61% |
 
 ## 7. 次に見るべき不足
 
