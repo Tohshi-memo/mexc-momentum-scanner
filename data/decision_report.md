@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-08T09:36:26.075812+00:00
+- generated_at: 2026-10-08T09:41:25.940095+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16323**
 
@@ -39,9 +39,9 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$121.12** / 初期 $100.00 (+21.12%)
-- 確定トレード: 234件 (TP 86 / SL 141 / EXP 7)
-- 最新: LONGXIA/USDT:USDT TP_HIT PnL +8.00% 残高後 $121.12
+- 残高: **$121.36** / 初期 $100.00 (+21.36%)
+- 確定トレード: 235件 (TP 87 / SL 141 / EXP 7)
+- 最新: RLC/USDT:USDT TP_HIT PnL +8.00% 残高後 $121.36
 - 最新戦略メタ: tier=S, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-08T09:36:13.985477+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.33% price=83099.3
+- 更新: 2026-10-08T09:41:14.515499+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.31% price=83090.1
 - Funnel: target 1077 → liquid 178 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.2 >= 65=1
+- Strict後reject: 4h RSI 71.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MET/USDT:USDT | +54.60% | $26,040,027.97 |
-| ALGO/USDT:USDT | +23.09% | $6,317,463.48 |
-| JUP/USDT:USDT | +21.72% | $36,453,109.95 |
-| JTO/USDT:USDT | +17.91% | $7,206,808.42 |
-| UAI/USDT:USDT | +16.79% | $2,348,090.68 |
+| MET/USDT:USDT | +52.85% | $26,373,523.59 |
+| JUP/USDT:USDT | +21.22% | $36,689,056.57 |
+| ALGO/USDT:USDT | +19.46% | $7,121,562.26 |
+| JTO/USDT:USDT | +17.16% | $7,230,829.28 |
+| UAI/USDT:USDT | +16.75% | $2,358,011.73 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STRK/USDT:USDT | below_1h_threshold | +4.16% | +3.83% |
-| JUP/USDT:USDT | below_1h_threshold | +2.64% | +2.31% |
-| STX/USDT:USDT | below_1h_threshold | +2.55% | +2.23% |
-| HBAR/USDT:USDT | below_1h_threshold | +2.31% | +1.99% |
-| SEI/USDT:USDT | below_1h_threshold | +2.23% | +1.90% |
+| STRK/USDT:USDT | below_1h_threshold | +4.87% | +4.56% |
+| STX/USDT:USDT | below_1h_threshold | +2.95% | +2.64% |
+| ACE/USDT:USDT | below_1h_threshold | +2.75% | +2.44% |
+| ONDO/USDT:USDT | below_1h_threshold | +2.37% | +2.05% |
+| SEI/USDT:USDT | below_1h_threshold | +2.29% | +1.97% |
 
 ## 7. 次に見るべき不足
 
