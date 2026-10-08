@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-08T10:36:26.267947+00:00
+- generated_at: 2026-10-08T10:41:26.519639+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16325**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-08T10:36:15.556257+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.47% price=82687.2
+- 更新: 2026-10-08T10:41:15.683227+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.53% price=82639.4
 - Funnel: target 1082 → liquid 176 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MET/USDT:USDT | +48.17% | $28,650,757.28 |
-| ALGO/USDT:USDT | +20.07% | $9,445,015.21 |
-| JUP/USDT:USDT | +19.29% | $38,188,663.11 |
-| UAI/USDT:USDT | +18.86% | $2,612,835.70 |
-| JTO/USDT:USDT | +14.21% | $7,292,154.51 |
+| MET/USDT:USDT | +48.38% | $28,798,619.88 |
+| JUP/USDT:USDT | +19.44% | $38,425,703.73 |
+| ALGO/USDT:USDT | +19.38% | $9,676,518.10 |
+| UAI/USDT:USDT | +18.17% | $2,660,837.13 |
+| JTO/USDT:USDT | +14.51% | $7,302,607.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PLTRSTOCK/USDT:USDT | below_1h_threshold | +1.97% | +2.44% |
-| UAI/USDT:USDT | below_1h_threshold | +1.65% | +2.12% |
-| ALGO/USDT:USDT | below_1h_threshold | +1.43% | +1.90% |
-| GALA/USDT:USDT | below_1h_threshold | +0.04% | +0.52% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.04% | +0.51% |
+| PLTRSTOCK/USDT:USDT | below_1h_threshold | +1.97% | +2.50% |
+| UAI/USDT:USDT | below_1h_threshold | +1.09% | +1.62% |
+| ALGO/USDT:USDT | below_1h_threshold | +0.84% | +1.37% |
+| BOME/USDT:USDT | below_1h_threshold | +0.22% | +0.75% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.04% | +0.57% |
 
 ## 7. 次に見るべき不足
 
