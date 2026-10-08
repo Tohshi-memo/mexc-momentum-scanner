@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-08T19:31:39.235567+00:00
+- generated_at: 2026-10-08T19:36:16.537963+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16367**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-08T19:31:27.153043+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.26% price=81678.3
-- Funnel: target 1083 → liquid 185 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.7 >= 65=1, 4h RSI 65.2 >= 65=1
+- 更新: 2026-10-08T19:36:07.817357+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.36% price=81763.9
+- Funnel: target 1083 → liquid 185 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 65.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +54.40% | $2,247,575.20 |
-| OGN/USDT:USDT | +23.37% | $9,240,616.55 |
-| RLC/USDT:USDT | +20.58% | $17,221,083.64 |
-| LONGXIA/USDT:USDT | +19.70% | $3,840,261.68 |
-| TIA/USDT:USDT | +15.58% | $34,850,059.18 |
+| BATON/USDT:USDT | +55.50% | $2,326,409.40 |
+| OGN/USDT:USDT | +27.98% | $9,269,585.03 |
+| RLC/USDT:USDT | +21.89% | $17,335,995.53 |
+| LONGXIA/USDT:USDT | +18.99% | $3,860,917.66 |
+| TIA/USDT:USDT | +17.35% | $35,937,937.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LONGXIA/USDT:USDT | below_1h_threshold | +2.82% | +2.57% |
-| BR/USDT:USDT | below_1h_threshold | +2.11% | +1.85% |
-| AKT/USDT:USDT | below_1h_threshold | +1.68% | +1.42% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +1.66% | +1.40% |
-| PYTH/USDT:USDT | below_1h_threshold | +1.60% | +1.35% |
+| CTSI/USDT:USDT | below_1h_threshold | +3.11% | +2.75% |
+| AKT/USDT:USDT | below_1h_threshold | +2.63% | +2.26% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +2.30% | +1.94% |
+| LPT/USDT:USDT | below_1h_threshold | +2.29% | +1.93% |
+| TIA/USDT:USDT | below_1h_threshold | +2.24% | +1.88% |
 
 ## 7. 次に見るべき不足
 
