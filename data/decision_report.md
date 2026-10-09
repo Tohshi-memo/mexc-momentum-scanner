@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-09T15:56:19.567617+00:00
+- generated_at: 2026-10-09T16:01:25.248496+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16435**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-09T15:56:10.056582+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.24% price=82801.7
-- Funnel: target 1089 → liquid 189 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.2 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-09T16:01:13.491842+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=82776.4
+- Funnel: target 1089 → liquid 181 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| US/USDT:USDT | +112.81% | $9,232,301.86 |
-| JCT/USDT:USDT | +93.12% | $7,559,214.53 |
-| BATON/USDT:USDT | +85.58% | $6,857,882.74 |
-| MAGIC/USDT:USDT | +41.67% | $1,245,113.37 |
-| KAIA/USDT:USDT | +40.85% | $9,255,802.78 |
+| UAI/USDT:USDT | +0.55% | $1,693,954.12 |
+| JCT/USDT:USDT | +0.41% | $7,558,039.50 |
+| SOXS/USDT:USDT | +0.28% | $54,499,599.48 |
+| ASTSSTOCK/USDT:USDT | +0.22% | $1,125,309.47 |
+| LONGXIA/USDT:USDT | +0.18% | $3,958,320.18 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MAGIC/USDT:USDT | below_1h_threshold | +4.84% | +5.08% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +4.29% | +4.53% |
-| BAT/USDT:USDT | below_1h_threshold | +3.69% | +3.93% |
-| SI/USDT:USDT | below_1h_threshold | +3.42% | +3.66% |
-| RIVER/USDT:USDT | below_1h_threshold | +3.23% | +3.47% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +3.45% | +3.53% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.79% | +1.87% |
+| PLTRSTOCK/USDT:USDT | below_1h_threshold | +1.31% | +1.39% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.63% | +0.71% |
+| KAIA/USDT:USDT | below_1h_threshold | +0.48% | +0.56% |
 
 ## 7. 次に見るべき不足
 
