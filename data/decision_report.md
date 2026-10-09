@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-09T04:31:21.723898+00:00
+- generated_at: 2026-10-09T04:36:33.059095+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16401**
 
@@ -70,30 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-09T04:31:10.036539+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=82386.4
-- Funnel: target 1083 → liquid 184 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-09T04:36:18.202877+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=82414.7
+- Funnel: target 1083 → liquid 184 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 81.0 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JCT/USDT:USDT | +68.78% | $3,380,252.73 |
-| BATON/USDT:USDT | +65.64% | $5,888,049.44 |
-| SI/USDT:USDT | +34.48% | $2,189,880.28 |
-| LONGXIA/USDT:USDT | +21.49% | $4,187,524.41 |
-| RLC/USDT:USDT | +21.47% | $21,400,034.02 |
+| JCT/USDT:USDT | +66.37% | $3,405,284.05 |
+| BATON/USDT:USDT | +63.69% | $5,897,804.02 |
+| SI/USDT:USDT | +39.24% | $2,199,630.51 |
+| RLC/USDT:USDT | +23.68% | $21,454,131.44 |
+| LONGXIA/USDT:USDT | +22.28% | $4,188,355.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| OGN/USDT:USDT | below_1h_threshold | +4.05% | +4.05% |
-| PYTH/USDT:USDT | below_1h_threshold | +2.21% | +2.21% |
-| ATOM/USDT:USDT | below_1h_threshold | +2.17% | +2.17% |
-| SI/USDT:USDT | below_1h_threshold | +1.81% | +1.81% |
-| BTW/USDT:USDT | below_1h_threshold | +1.18% | +1.18% |
+| ATOM/USDT:USDT | below_1h_threshold | +2.98% | +2.95% |
+| BTW/USDT:USDT | below_1h_threshold | +1.71% | +1.67% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.47% | +1.43% |
+| PYTH/USDT:USDT | below_1h_threshold | +1.32% | +1.28% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +1.24% | +1.20% |
 
 ## 7. 次に見るべき不足
 
