@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-09T20:31:15.904929+00:00
+- generated_at: 2026-10-09T20:36:25.232310+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16450**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-09T20:31:06.919884+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=82352.9
+- 更新: 2026-10-09T20:36:13.395637+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=82360.9
 - Funnel: target 1089 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MAGIC/USDT:USDT | +27.20% | $6,461,622.38 |
-| RLC/USDT:USDT | +14.21% | $45,465,136.57 |
-| BAT/USDT:USDT | +11.37% | $9,985,856.13 |
-| PIXEL/USDT:USDT | +9.82% | $1,087,188.07 |
-| OGN/USDT:USDT | +8.80% | $4,530,855.74 |
+| MAGIC/USDT:USDT | +27.85% | $6,513,635.93 |
+| RLC/USDT:USDT | +18.25% | $45,808,165.44 |
+| PIXEL/USDT:USDT | +10.57% | $1,100,411.17 |
+| BAT/USDT:USDT | +9.49% | $10,093,466.36 |
+| OGN/USDT:USDT | +8.50% | $4,541,322.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ASTSSTOCK/USDT:USDT | below_1h_threshold | +2.34% | +2.27% |
-| IMX/USDT:USDT | below_1h_threshold | +2.04% | +1.97% |
-| KAIA/USDT:USDT | below_1h_threshold | +1.95% | +1.89% |
-| PIXEL/USDT:USDT | below_1h_threshold | +1.83% | +1.76% |
-| ATOM/USDT:USDT | below_1h_threshold | +1.78% | +1.71% |
+| ASTSSTOCK/USDT:USDT | below_1h_threshold | +2.34% | +2.26% |
+| IMX/USDT:USDT | below_1h_threshold | +2.31% | +2.23% |
+| PIXEL/USDT:USDT | below_1h_threshold | +2.25% | +2.17% |
+| KAIA/USDT:USDT | below_1h_threshold | +2.20% | +2.12% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +1.60% | +1.53% |
 
 ## 7. 次に見るべき不足
 
