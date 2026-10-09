@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-09T19:36:32.649227+00:00
+- generated_at: 2026-10-09T19:41:40.687695+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16446**
 
@@ -70,31 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-09T19:36:18.692202+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=82416.6
-- Funnel: target 1089 → liquid 174 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-09T19:41:27.506801+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=82387.1
+- Funnel: target 1089 → liquid 174 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 81.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MAGIC/USDT:USDT | +25.86% | $5,847,196.70 |
-| BAT/USDT:USDT | +11.19% | $7,709,897.61 |
-| RLC/USDT:USDT | +10.85% | $41,650,928.37 |
-| OGN/USDT:USDT | +8.89% | $4,657,552.02 |
-| CT/USDT:USDT | +5.20% | $2,153,458.51 |
+| MAGIC/USDT:USDT | +26.34% | $5,901,966.31 |
+| BAT/USDT:USDT | +13.72% | $8,013,034.93 |
+| RLC/USDT:USDT | +12.45% | $41,887,857.71 |
+| OGN/USDT:USDT | +8.44% | $4,668,760.10 |
+| ASTSSTOCK/USDT:USDT | +5.03% | $1,537,397.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BAT/USDT:USDT | below_1h_threshold | +3.08% | +3.08% |
-| BR/USDT:USDT | below_1h_threshold | +2.83% | +2.83% |
-| OGN/USDT:USDT | below_1h_threshold | +1.67% | +1.67% |
-| ASTSSTOCK/USDT:USDT | below_1h_threshold | +1.48% | +1.48% |
-| MAGIC/USDT:USDT | below_1h_threshold | +1.25% | +1.25% |
+| BR/USDT:USDT | below_1h_threshold | +2.43% | +2.47% |
+| MAGIC/USDT:USDT | below_1h_threshold | +1.64% | +1.67% |
+| ASTSSTOCK/USDT:USDT | below_1h_threshold | +1.48% | +1.52% |
+| OGN/USDT:USDT | below_1h_threshold | +1.26% | +1.30% |
+| MINA/USDT:USDT | below_1h_threshold | +1.26% | +1.30% |
 
 ## 7. 次に見るべき不足
 
