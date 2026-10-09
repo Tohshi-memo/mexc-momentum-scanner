@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-09T22:21:23.051387+00:00
+- generated_at: 2026-10-09T22:26:21.818210+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16455**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-09T22:21:11.172032+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=82494.1
+- 更新: 2026-10-09T22:26:12.635987+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=82486.1
 - Funnel: target 1089 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MAGIC/USDT:USDT | +27.27% | $8,256,676.04 |
-| RLC/USDT:USDT | +20.71% | $48,270,080.02 |
-| PIXEL/USDT:USDT | +19.63% | $2,524,258.12 |
-| BAT/USDT:USDT | +7.77% | $11,964,459.89 |
-| IMX/USDT:USDT | +7.14% | $1,749,402.73 |
+| MAGIC/USDT:USDT | +27.69% | $8,291,414.65 |
+| RLC/USDT:USDT | +22.68% | $48,502,001.06 |
+| PIXEL/USDT:USDT | +19.50% | $2,569,071.86 |
+| BAT/USDT:USDT | +8.64% | $11,992,065.13 |
+| IMX/USDT:USDT | +7.14% | $1,750,550.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PIXEL/USDT:USDT | below_1h_threshold | +1.53% | +1.54% |
-| PHA/USDT:USDT | below_1h_threshold | +0.88% | +0.89% |
-| FLOKI/USDT:USDT | below_1h_threshold | +0.47% | +0.48% |
-| WLFI/USDT:USDT | below_1h_threshold | +0.42% | +0.43% |
-| OP/USDT:USDT | below_1h_threshold | +0.39% | +0.40% |
+| PHA/USDT:USDT | below_1h_threshold | +1.37% | +1.39% |
+| PIXEL/USDT:USDT | below_1h_threshold | +0.96% | +0.98% |
+| FLOKI/USDT:USDT | below_1h_threshold | +0.40% | +0.42% |
+| KAIA/USDT:USDT | below_1h_threshold | +0.38% | +0.40% |
+| APE/USDT:USDT | below_1h_threshold | +0.33% | +0.35% |
 
 ## 7. 次に見るべき不足
 
