@@ -1,21 +1,21 @@
 # Decision Report
 
-- generated_at: 2026-10-09T21:56:17.631936+00:00
+- generated_at: 2026-10-09T22:01:28.703888+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **16453**
+- closed shadow trades: **16454**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=16453, expectancy=+0.01%
-- 直近20件 MARKET基準: n=20, expectancy=-1.63%
+- 全期間 MARKET基準: n=16454, expectancy=+0.01%
+- 直近20件 MARKET基準: n=20, expectancy=-1.19%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
 ### 実行可能ランキング (現executorで正確に測れるもの)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | -1.63% | **-1.63%** |
+| MARKET | 20/20 | 100.0% | -1.19% | **-1.19%** |
 
 ### シャドウ上位 SHORT (まだ実行に直結しない候補を含む)
 
@@ -31,11 +31,11 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET_LONG | 20/20 | 100.0% | +1.95% | **+1.95%** |
-| LIMIT_1PCT_LONG | 13/20 | 65.0% | +1.54% | **+1.00%** |
+| MARKET_LONG | 20/20 | 100.0% | +1.71% | **+1.71%** |
+| LIMIT_1PCT_LONG | 13/20 | 65.0% | +1.10% | **+0.72%** |
 | LIMIT_10PCT_LONG | 2/20 | 10.0% | +5.11% | **+0.51%** |
 | LIMIT_9PCT_LONG | 3/20 | 15.0% | +3.40% | **+0.51%** |
-| LIMIT_FIB1272_LONG | 4/20 | 20.0% | +1.42% | **+0.28%** |
+| LIMIT_8PCT_LONG | 4/20 | 20.0% | +1.00% | **+0.20%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,15 +47,15 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,309.24** / 初期 $100.00 (+1209.24%)
-- 確定: 6284件 (Win 1845 / Loss 2013 / Flat 2426) / skip 6730件
+- 確定: 6284件 (Win 1845 / Loss 2013 / Flat 2426) / skip 6731件
 - 成長率目線: 平均log +0.000409 / 幾何平均 +0.041% per trade / maxDD +8.46%
-- 次の候補: `LIMIT_1PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
+- 次の候補: `LIMIT_BB3S_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: MRNASTOCK/USDT:USDT `LIMIT_FIB1272_LONG` EXPIRED account +0.00% 残高後 $1,309.24
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$274.04** / 初期 $100.00 (+174.04%)
-- 確定: 3635件 (Win 1010 / Loss 853 / Flat 1772) / skip 6229件
+- 確定: 3635件 (Win 1010 / Loss 853 / Flat 1772) / skip 6230件
 - 成長率目線: 平均log +0.000277 / 幾何平均 +0.028% per trade / maxDD +3.96%
 - 次の候補: `LIMIT_FIB1272` (selected_by_robust_growth_score) / robust_score -0.0553 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: MAGIC/USDT:USDT `LIMIT_FIB1272` EXPIRED account +0.00% 残高後 $274.04
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-09T21:56:08.268674+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=82519.8
-- Funnel: target 1089 → liquid 173 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.6 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-09T22:01:14.589842+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=82500.4
+- Funnel: target 1089 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MAGIC/USDT:USDT | +30.15% | $7,956,552.10 |
-| RLC/USDT:USDT | +26.52% | $47,568,915.02 |
-| PIXEL/USDT:USDT | +18.30% | $2,272,105.98 |
-| BAT/USDT:USDT | +9.26% | $11,623,279.91 |
-| LONGXIA/USDT:USDT | +7.61% | $3,173,518.25 |
+| MAGIC/USDT:USDT | +28.95% | $8,036,187.60 |
+| RLC/USDT:USDT | +25.97% | $47,442,294.82 |
+| PIXEL/USDT:USDT | +15.52% | $2,311,430.77 |
+| BAT/USDT:USDT | +10.06% | $11,731,777.69 |
+| IMX/USDT:USDT | +7.03% | $1,739,627.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PIXEL/USDT:USDT | below_1h_threshold | +4.84% | +4.79% |
-| APE/USDT:USDT | below_1h_threshold | +3.38% | +3.33% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +3.20% | +3.14% |
-| KAIA/USDT:USDT | below_1h_threshold | +2.46% | +2.40% |
-| NEAR/USDT:USDT | below_1h_threshold | +2.26% | +2.21% |
+| RLC/USDT:USDT | below_1h_threshold | +1.21% | +1.21% |
+| BTW/USDT:USDT | below_1h_threshold | +0.26% | +0.26% |
+| KAIA/USDT:USDT | below_1h_threshold | +0.18% | +0.18% |
+| IMX/USDT:USDT | below_1h_threshold | +0.15% | +0.16% |
+| UAI/USDT:USDT | below_1h_threshold | +0.15% | +0.15% |
 
 ## 7. 次に見るべき不足
 
