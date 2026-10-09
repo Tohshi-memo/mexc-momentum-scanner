@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-09T00:46:20.469534+00:00
+- generated_at: 2026-10-09T00:51:15.812927+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16389**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-09T00:46:11.908913+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=81813.7
+- 更新: 2026-10-09T00:51:07.530902+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=81850.1
 - Funnel: target 1083 → liquid 183 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JCT/USDT:USDT | +67.17% | $2,315,418.83 |
-| BATON/USDT:USDT | +64.41% | $5,114,692.12 |
-| SI/USDT:USDT | +32.03% | $2,055,771.75 |
-| LONGXIA/USDT:USDT | +23.75% | $4,180,591.69 |
-| RLC/USDT:USDT | +16.04% | $19,951,768.62 |
+| JCT/USDT:USDT | +69.80% | $2,349,528.92 |
+| BATON/USDT:USDT | +62.24% | $5,130,720.05 |
+| SI/USDT:USDT | +33.28% | $2,058,171.74 |
+| LONGXIA/USDT:USDT | +24.02% | $4,191,213.98 |
+| RLC/USDT:USDT | +17.20% | $19,960,213.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DOT/USDT:USDT | below_1h_threshold | +3.11% | +2.99% |
-| ENA/USDT:USDT | below_1h_threshold | +1.73% | +1.60% |
-| QNT/USDT:USDT | below_1h_threshold | +1.49% | +1.37% |
-| ATOM/USDT:USDT | below_1h_threshold | +1.48% | +1.35% |
-| AKT/USDT:USDT | below_1h_threshold | +1.42% | +1.29% |
+| DOT/USDT:USDT | below_1h_threshold | +3.29% | +3.12% |
+| QNT/USDT:USDT | below_1h_threshold | +2.32% | +2.15% |
+| AKT/USDT:USDT | below_1h_threshold | +2.02% | +1.85% |
+| ATOM/USDT:USDT | below_1h_threshold | +1.82% | +1.65% |
+| CHIP/USDT:USDT | below_1h_threshold | +1.51% | +1.34% |
 
 ## 7. 次に見るべき不足
 
