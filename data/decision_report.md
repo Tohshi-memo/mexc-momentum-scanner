@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-09T17:51:16.376914+00:00
+- generated_at: 2026-10-09T17:56:25.012363+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16442**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-09T17:51:04.535070+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=82674.6
-- Funnel: target 1089 → liquid 181 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 88.8 >= 65=1
+- 更新: 2026-10-09T17:56:13.324717+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=82682.5
+- Funnel: target 1089 → liquid 181 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 88.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MAGIC/USDT:USDT | +22.67% | $3,102,080.64 |
-| BAT/USDT:USDT | +10.57% | $4,999,625.92 |
-| LPT/USDT:USDT | +4.95% | $1,022,135.76 |
-| CT/USDT:USDT | +4.68% | $1,813,735.69 |
-| OGN/USDT:USDT | +4.50% | $5,624,018.64 |
+| MAGIC/USDT:USDT | +21.39% | $3,164,925.84 |
+| BAT/USDT:USDT | +10.55% | $5,108,778.06 |
+| CT/USDT:USDT | +7.15% | $1,848,506.89 |
+| LPT/USDT:USDT | +4.77% | $1,029,129.10 |
+| UAI/USDT:USDT | +3.88% | $2,105,011.40 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BAT/USDT:USDT | below_1h_threshold | +4.86% | +4.90% |
-| APE/USDT:USDT | below_1h_threshold | +2.79% | +2.83% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +2.54% | +2.58% |
-| ZRX/USDT:USDT | below_1h_threshold | +1.78% | +1.82% |
-| VET/USDT:USDT | below_1h_threshold | +1.66% | +1.70% |
+| BAT/USDT:USDT | below_1h_threshold | +4.92% | +4.95% |
+| OGN/USDT:USDT | below_1h_threshold | +4.92% | +4.95% |
+| CT/USDT:USDT | below_1h_threshold | +3.70% | +3.73% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +2.54% | +2.57% |
+| APE/USDT:USDT | below_1h_threshold | +2.16% | +2.19% |
 
 ## 7. 次に見るべき不足
 
