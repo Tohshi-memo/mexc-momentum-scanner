@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-09T16:16:32.687844+00:00
+- generated_at: 2026-10-09T16:21:32.528938+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16436**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-09T16:16:22.861600+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=82930.6
+- 更新: 2026-10-09T16:21:20.838219+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=82840.8
 - Funnel: target 1089 → liquid 181 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.1 >= 65=1
+- Strict後reject: 4h RSI 85.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MAGIC/USDT:USDT | +9.12% | $1,689,501.76 |
-| OP/USDT:USDT | +3.67% | $7,074,901.43 |
-| BAT/USDT:USDT | +3.32% | $2,245,882.96 |
-| ZKSYNC/USDT:USDT | +2.99% | $2,415,672.53 |
-| DOT/USDT:USDT | +1.74% | $25,016,525.52 |
+| MAGIC/USDT:USDT | +9.14% | $1,804,881.88 |
+| OP/USDT:USDT | +3.93% | $7,316,410.13 |
+| ZKSYNC/USDT:USDT | +3.49% | $2,519,614.72 |
+| ASTSSTOCK/USDT:USDT | +2.89% | $1,250,156.18 |
+| BAT/USDT:USDT | +2.72% | $2,328,260.75 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| OP/USDT:USDT | below_1h_threshold | +3.69% | +3.59% |
-| ZKSYNC/USDT:USDT | below_1h_threshold | +3.34% | +3.23% |
-| BAT/USDT:USDT | below_1h_threshold | +3.32% | +3.21% |
-| DOT/USDT:USDT | below_1h_threshold | +1.76% | +1.65% |
-| WLD/USDT:USDT | below_1h_threshold | +1.73% | +1.62% |
+| OP/USDT:USDT | below_1h_threshold | +3.90% | +3.91% |
+| ZKSYNC/USDT:USDT | below_1h_threshold | +3.45% | +3.45% |
+| BAT/USDT:USDT | below_1h_threshold | +2.72% | +2.72% |
+| JUP/USDT:USDT | below_1h_threshold | +1.75% | +1.75% |
+| DOT/USDT:USDT | below_1h_threshold | +1.69% | +1.69% |
 
 ## 7. 次に見るべき不足
 
