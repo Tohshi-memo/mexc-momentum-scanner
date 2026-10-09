@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-09T23:11:25.208745+00:00
+- generated_at: 2026-10-09T23:16:31.140692+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16455**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4615件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4616件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000118 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-09T23:11:13.425430+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=82588.2
-- Funnel: target 1089 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-09T23:16:19.049809+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=82579.9
+- Funnel: target 1089 → liquid 172 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 81.2 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MAGIC/USDT:USDT | +35.41% | $8,595,416.51 |
-| PIXEL/USDT:USDT | +18.11% | $2,766,201.17 |
-| RLC/USDT:USDT | +18.05% | $49,358,252.23 |
-| BAT/USDT:USDT | +12.31% | $12,730,609.56 |
-| KAIA/USDT:USDT | +10.79% | $10,545,997.13 |
+| MAGIC/USDT:USDT | +34.53% | $8,626,372.65 |
+| PIXEL/USDT:USDT | +18.52% | $2,799,341.01 |
+| RLC/USDT:USDT | +17.29% | $49,470,701.23 |
+| KAIA/USDT:USDT | +16.71% | $10,662,539.38 |
+| BAT/USDT:USDT | +10.88% | $12,826,709.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MAGIC/USDT:USDT | below_1h_threshold | +2.92% | +2.93% |
-| KAIA/USDT:USDT | below_1h_threshold | +0.82% | +0.83% |
-| CHIP/USDT:USDT | below_1h_threshold | +0.76% | +0.77% |
-| ZRX/USDT:USDT | below_1h_threshold | +0.73% | +0.74% |
-| OP/USDT:USDT | below_1h_threshold | +0.66% | +0.67% |
+| MAGIC/USDT:USDT | below_1h_threshold | +2.31% | +2.33% |
+| OP/USDT:USDT | below_1h_threshold | +1.05% | +1.07% |
+| NEAR/USDT:USDT | below_1h_threshold | +0.91% | +0.93% |
+| ZRX/USDT:USDT | below_1h_threshold | +0.81% | +0.83% |
+| JASMY/USDT:USDT | below_1h_threshold | +0.69% | +0.71% |
 
 ## 7. 次に見るべき不足
 
