@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-09T16:31:42.026423+00:00
+- generated_at: 2026-10-09T16:36:36.621977+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16437**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-09T16:31:26.475870+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.18% price=82695.4
-- Funnel: target 1089 → liquid 181 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.6 >= 65=1, 4h RSI 71.8 >= 65=1, 4h RSI 76.8 >= 65=1
+- 更新: 2026-10-09T16:36:24.268111+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=82758.7
+- Funnel: target 1089 → liquid 181 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 85.3 >= 65=1, 4h RSI 77.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MAGIC/USDT:USDT | +8.97% | $1,944,643.24 |
-| ZKSYNC/USDT:USDT | +5.95% | $2,594,164.53 |
-| BAT/USDT:USDT | +4.80% | $2,456,843.64 |
-| ASTSSTOCK/USDT:USDT | +3.99% | $1,261,310.62 |
-| OP/USDT:USDT | +3.55% | $7,611,987.42 |
+| MAGIC/USDT:USDT | +8.01% | $2,003,854.22 |
+| BAT/USDT:USDT | +6.44% | $2,634,608.72 |
+| ASTSSTOCK/USDT:USDT | +3.61% | $1,314,760.93 |
+| ZKSYNC/USDT:USDT | +3.00% | $2,688,325.20 |
+| OP/USDT:USDT | +2.66% | $7,851,002.05 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| OP/USDT:USDT | below_1h_threshold | +3.60% | +3.77% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +3.45% | +3.62% |
-| LPT/USDT:USDT | below_1h_threshold | +2.21% | +2.39% |
-| JASMY/USDT:USDT | below_1h_threshold | +1.80% | +1.98% |
-| JUP/USDT:USDT | below_1h_threshold | +1.54% | +1.71% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +3.45% | +3.55% |
+| ZKSYNC/USDT:USDT | below_1h_threshold | +2.86% | +2.96% |
+| OP/USDT:USDT | below_1h_threshold | +2.70% | +2.80% |
+| LPT/USDT:USDT | below_1h_threshold | +2.50% | +2.61% |
+| JUP/USDT:USDT | below_1h_threshold | +2.13% | +2.23% |
 
 ## 7. 次に見るべき不足
 
