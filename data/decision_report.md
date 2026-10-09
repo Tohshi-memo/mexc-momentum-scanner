@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-09T09:36:31.561246+00:00
+- generated_at: 2026-10-09T09:41:21.271330+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16419**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-09T09:36:19.667731+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=82605.2
-- Funnel: target 1084 → liquid 186 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.6 >= 65=1, 4h RSI 81.9 >= 65=1
+- 更新: 2026-10-09T09:41:12.971513+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=82585.6
+- Funnel: target 1084 → liquid 186 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 82.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| US/USDT:USDT | +81.37% | $2,471,057.15 |
-| JCT/USDT:USDT | +73.31% | $4,726,557.85 |
-| BATON/USDT:USDT | +62.97% | $6,345,005.49 |
-| RLC/USDT:USDT | +49.78% | $38,570,690.80 |
-| KAIA/USDT:USDT | +45.12% | $2,588,670.21 |
+| US/USDT:USDT | +80.82% | $2,526,493.46 |
+| JCT/USDT:USDT | +71.05% | $4,740,918.90 |
+| BATON/USDT:USDT | +62.61% | $6,347,988.63 |
+| RLC/USDT:USDT | +46.31% | $38,899,177.64 |
+| KAIA/USDT:USDT | +46.03% | $2,921,707.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RLC/USDT:USDT | below_1h_threshold | +3.01% | +3.07% |
-| ONE/USDT:USDT | below_1h_threshold | +2.22% | +2.28% |
-| IMX/USDT:USDT | below_1h_threshold | +1.85% | +1.91% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +1.31% | +1.37% |
-| NIGHT/USDT:USDT | below_1h_threshold | +0.94% | +1.00% |
+| US/USDT:USDT | below_1h_threshold | +4.75% | +4.84% |
+| ONE/USDT:USDT | below_1h_threshold | +2.36% | +2.44% |
+| IMX/USDT:USDT | below_1h_threshold | +2.12% | +2.20% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +1.42% | +1.50% |
+| RLC/USDT:USDT | below_1h_threshold | +1.12% | +1.20% |
 
 ## 7. 次に見るべき不足
 
