@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-09T14:56:18.456205+00:00
+- generated_at: 2026-10-09T15:01:22.986081+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16433**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-09T14:56:08.328310+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.50% price=82996.4
-- Funnel: target 1089 → liquid 188 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.2 >= 65=1, 4h RSI 68.1 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-09T15:01:13.594165+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=82962.7
+- Funnel: target 1089 → liquid 184 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| US/USDT:USDT | +109.62% | $8,254,869.82 |
-| JCT/USDT:USDT | +90.42% | $7,248,148.31 |
-| BATON/USDT:USDT | +65.29% | $6,605,051.17 |
-| KAIA/USDT:USDT | +45.15% | $8,925,005.65 |
-| RLC/USDT:USDT | +43.85% | $43,640,360.31 |
+| US/USDT:USDT | +105.23% | $8,308,774.32 |
+| JCT/USDT:USDT | +88.30% | $7,261,749.92 |
+| BATON/USDT:USDT | +64.82% | $6,566,509.49 |
+| KAIA/USDT:USDT | +44.79% | $8,961,496.36 |
+| RLC/USDT:USDT | +42.35% | $43,518,426.33 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BAT/USDT:USDT | below_1h_threshold | +4.45% | +3.96% |
-| BATON/USDT:USDT | below_1h_threshold | +4.02% | +3.53% |
-| STRK/USDT:USDT | below_1h_threshold | +3.26% | +2.76% |
-| JUP/USDT:USDT | below_1h_threshold | +2.90% | +2.41% |
-| CRV/USDT:USDT | below_1h_threshold | +2.38% | +1.88% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +4.29% | +4.34% |
+| LITESTOCK/USDT:USDT | below_1h_threshold | +3.25% | +3.30% |
+| KAIA/USDT:USDT | below_1h_threshold | +0.67% | +0.71% |
+| UAI/USDT:USDT | below_1h_threshold | +0.60% | +0.64% |
+| JCT/USDT:USDT | below_1h_threshold | +0.23% | +0.28% |
 
 ## 7. 次に見るべき不足
 
