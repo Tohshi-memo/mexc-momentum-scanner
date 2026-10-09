@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-09T23:06:24.653179+00:00
+- generated_at: 2026-10-09T23:11:25.208745+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16455**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-09T23:06:13.149393+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=82574.1
+- 更新: 2026-10-09T23:11:13.425430+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=82588.2
 - Funnel: target 1089 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MAGIC/USDT:USDT | +34.86% | $8,560,453.67 |
-| RLC/USDT:USDT | +18.03% | $49,300,261.38 |
-| PIXEL/USDT:USDT | +17.79% | $2,745,206.71 |
-| BAT/USDT:USDT | +13.38% | $12,656,577.35 |
-| KAIA/USDT:USDT | +9.54% | $10,539,574.32 |
+| MAGIC/USDT:USDT | +35.41% | $8,595,416.51 |
+| PIXEL/USDT:USDT | +18.11% | $2,766,201.17 |
+| RLC/USDT:USDT | +18.05% | $49,358,252.23 |
+| BAT/USDT:USDT | +12.31% | $12,730,609.56 |
+| KAIA/USDT:USDT | +10.79% | $10,545,997.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MAGIC/USDT:USDT | below_1h_threshold | +2.21% | +2.23% |
-| CHIP/USDT:USDT | below_1h_threshold | +0.89% | +0.92% |
-| DOT/USDT:USDT | below_1h_threshold | +0.53% | +0.56% |
-| PLTRSTOCK/USDT:USDT | below_1h_threshold | +0.44% | +0.47% |
-| OGN/USDT:USDT | below_1h_threshold | +0.32% | +0.34% |
+| MAGIC/USDT:USDT | below_1h_threshold | +2.92% | +2.93% |
+| KAIA/USDT:USDT | below_1h_threshold | +0.82% | +0.83% |
+| CHIP/USDT:USDT | below_1h_threshold | +0.76% | +0.77% |
+| ZRX/USDT:USDT | below_1h_threshold | +0.73% | +0.74% |
+| OP/USDT:USDT | below_1h_threshold | +0.66% | +0.67% |
 
 ## 7. 次に見るべき不足
 
