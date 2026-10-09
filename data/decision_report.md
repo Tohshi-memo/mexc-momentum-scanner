@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-09T20:06:25.889792+00:00
+- generated_at: 2026-10-09T20:11:32.718879+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16450**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-09T20:06:14.061987+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=82311.0
+- 更新: 2026-10-09T20:11:20.289837+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=82316.2
 - Funnel: target 1089 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MAGIC/USDT:USDT | +26.32% | $6,120,514.86 |
-| RLC/USDT:USDT | +18.73% | $43,549,818.93 |
-| BAT/USDT:USDT | +11.99% | $8,831,062.10 |
-| OGN/USDT:USDT | +8.97% | $4,449,574.40 |
-| ASTSSTOCK/USDT:USDT | +6.82% | $1,564,700.39 |
+| MAGIC/USDT:USDT | +24.35% | $6,173,207.64 |
+| RLC/USDT:USDT | +18.91% | $43,803,043.36 |
+| BAT/USDT:USDT | +12.45% | $8,938,496.14 |
+| OGN/USDT:USDT | +9.13% | $4,471,440.83 |
+| ASTSSTOCK/USDT:USDT | +6.74% | $1,568,627.86 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ASTSSTOCK/USDT:USDT | below_1h_threshold | +2.34% | +2.33% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +1.60% | +1.59% |
-| NIGHT/USDT:USDT | below_1h_threshold | +1.06% | +1.04% |
-| PLTRSTOCK/USDT:USDT | below_1h_threshold | +0.95% | +0.93% |
-| KAIA/USDT:USDT | below_1h_threshold | +0.86% | +0.85% |
+| ASTSSTOCK/USDT:USDT | below_1h_threshold | +2.34% | +2.32% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +1.60% | +1.58% |
+| CHIP/USDT:USDT | below_1h_threshold | +1.19% | +1.17% |
+| NIGHT/USDT:USDT | below_1h_threshold | +1.13% | +1.10% |
+| KAIA/USDT:USDT | below_1h_threshold | +1.09% | +1.07% |
 
 ## 7. 次に見るべき不足
 
