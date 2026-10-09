@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-09T17:31:35.533558+00:00
+- generated_at: 2026-10-09T17:36:16.605160+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16442**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-09T17:31:20.964115+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=82619.3
-- Funnel: target 1089 → liquid 179 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.4 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-09T17:36:05.453676+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=82668.9
+- Funnel: target 1089 → liquid 181 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MAGIC/USDT:USDT | +15.31% | $2,711,876.95 |
-| BAT/USDT:USDT | +10.85% | $4,399,830.15 |
-| ZKSYNC/USDT:USDT | +5.09% | $2,720,162.42 |
-| CT/USDT:USDT | +4.25% | $1,807,351.04 |
-| UAI/USDT:USDT | +3.82% | $2,041,082.34 |
+| MAGIC/USDT:USDT | +15.23% | $2,772,320.23 |
+| BAT/USDT:USDT | +9.87% | $4,666,685.79 |
+| LPT/USDT:USDT | +5.53% | $1,009,389.72 |
+| UAI/USDT:USDT | +4.77% | $2,053,686.08 |
+| ZKSYNC/USDT:USDT | +3.76% | $2,729,991.19 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +2.54% | +2.65% |
-| ZKSYNC/USDT:USDT | below_1h_threshold | +2.34% | +2.45% |
-| ASTSSTOCK/USDT:USDT | below_1h_threshold | +1.50% | +1.61% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +1.48% | +1.59% |
-| ZRX/USDT:USDT | below_1h_threshold | +1.18% | +1.29% |
+| RLC/USDT:USDT | below_1h_threshold | +4.79% | +4.84% |
+| BAT/USDT:USDT | below_1h_threshold | +4.21% | +4.26% |
+| STRK/USDT:USDT | below_1h_threshold | +2.88% | +2.92% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +2.54% | +2.59% |
+| ASTSSTOCK/USDT:USDT | below_1h_threshold | +1.50% | +1.55% |
 
 ## 7. 次に見るべき不足
 
