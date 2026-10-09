@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-09T16:56:30.620629+00:00
+- generated_at: 2026-10-09T17:01:29.529835+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16440**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-09T16:56:18.542723+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=82732.5
-- Funnel: target 1089 → liquid 182 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.4 >= 65=1, 4h RSI 77.3 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-09T17:01:19.780314+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=82730.8
+- Funnel: target 1089 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MAGIC/USDT:USDT | +7.84% | $2,187,758.92 |
-| BAT/USDT:USDT | +5.78% | $3,160,714.29 |
-| LPT/USDT:USDT | +3.78% | $1,184,665.15 |
-| UAI/USDT:USDT | +3.27% | $2,075,688.77 |
-| ZKSYNC/USDT:USDT | +2.90% | $2,759,881.78 |
+| MAGIC/USDT:USDT | +13.80% | $2,293,271.41 |
+| BAT/USDT:USDT | +6.44% | $3,201,396.09 |
+| CT/USDT:USDT | +3.13% | $1,669,286.47 |
+| UAI/USDT:USDT | +2.90% | $1,876,000.14 |
+| ZKSYNC/USDT:USDT | +2.88% | $2,638,432.79 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LPT/USDT:USDT | below_1h_threshold | +3.84% | +3.98% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +3.45% | +3.58% |
-| UAI/USDT:USDT | below_1h_threshold | +3.09% | +3.23% |
-| ZKSYNC/USDT:USDT | below_1h_threshold | +2.98% | +3.11% |
-| JUP/USDT:USDT | below_1h_threshold | +2.56% | +2.69% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +2.54% | +2.52% |
+| ASTSSTOCK/USDT:USDT | below_1h_threshold | +1.50% | +1.47% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +1.48% | +1.46% |
+| BAT/USDT:USDT | below_1h_threshold | +0.76% | +0.74% |
+| COINBASE/USDT:USDT | below_1h_threshold | +0.73% | +0.70% |
 
 ## 7. 次に見るべき不足
 
