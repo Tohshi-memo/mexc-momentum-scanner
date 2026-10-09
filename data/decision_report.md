@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-09T17:26:28.187280+00:00
+- generated_at: 2026-10-09T17:31:35.533558+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16442**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4603件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4604件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000089 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-09T17:26:16.705393+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.20% price=82544.5
-- Funnel: target 1089 → liquid 178 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.5 >= 65=1
+- 更新: 2026-10-09T17:31:20.964115+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=82619.3
+- Funnel: target 1089 → liquid 179 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 79.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MAGIC/USDT:USDT | +15.80% | $2,654,245.71 |
-| BAT/USDT:USDT | +11.45% | $4,233,541.59 |
-| UAI/USDT:USDT | +4.22% | $2,025,201.93 |
-| CT/USDT:USDT | +4.02% | $1,765,736.02 |
-| MRNASTOCK/USDT:USDT | +2.76% | $4,040,513.17 |
+| MAGIC/USDT:USDT | +15.31% | $2,711,876.95 |
+| BAT/USDT:USDT | +10.85% | $4,399,830.15 |
+| ZKSYNC/USDT:USDT | +5.09% | $2,720,162.42 |
+| CT/USDT:USDT | +4.25% | $1,807,351.04 |
+| UAI/USDT:USDT | +3.82% | $2,041,082.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +2.54% | +2.74% |
-| ASTSSTOCK/USDT:USDT | below_1h_threshold | +1.50% | +1.70% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +1.48% | +1.68% |
-| MAGIC/USDT:USDT | below_1h_threshold | +1.43% | +1.63% |
-| ZRX/USDT:USDT | below_1h_threshold | +1.10% | +1.30% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +2.54% | +2.65% |
+| ZKSYNC/USDT:USDT | below_1h_threshold | +2.34% | +2.45% |
+| ASTSSTOCK/USDT:USDT | below_1h_threshold | +1.50% | +1.61% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +1.48% | +1.59% |
+| ZRX/USDT:USDT | below_1h_threshold | +1.18% | +1.29% |
 
 ## 7. 次に見るべき不足
 
