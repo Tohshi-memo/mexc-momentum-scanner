@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-10T12:11:32.446533+00:00
+- generated_at: 2026-10-10T12:16:14.725013+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16490**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-10T12:11:21.721265+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=82831.7
-- Funnel: target 1089 → liquid 165 → pre 50 → checked 49 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=1
+- 更新: 2026-10-10T12:16:05.137056+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=82831.8
+- Funnel: target 1089 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LUMIA/USDT:USDT | +36.31% | $3,308,343.94 |
-| ERA/USDT:USDT | +25.50% | $1,051,108.07 |
-| BAT/USDT:USDT | +24.30% | $21,045,667.12 |
-| CAP/USDT:USDT | +20.95% | $2,958,336.69 |
-| MAGIC/USDT:USDT | +18.17% | $24,599,812.16 |
+| LUMIA/USDT:USDT | +37.26% | $3,324,121.02 |
+| ERA/USDT:USDT | +25.91% | $1,056,749.98 |
+| BAT/USDT:USDT | +24.86% | $21,246,820.71 |
+| CAP/USDT:USDT | +21.70% | $2,974,745.25 |
+| MAGIC/USDT:USDT | +16.69% | $24,683,278.23 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BAT/USDT:USDT | below_1h_threshold | +3.43% | +3.43% |
-| CAP/USDT:USDT | below_1h_threshold | +1.74% | +1.74% |
-| AERO/USDT:USDT | below_1h_threshold | +1.71% | +1.72% |
-| WLD/USDT:USDT | below_1h_threshold | +1.19% | +1.19% |
-| INJ/USDT:USDT | below_1h_threshold | +1.19% | +1.19% |
+| BAT/USDT:USDT | below_1h_threshold | +3.69% | +3.70% |
+| CAP/USDT:USDT | below_1h_threshold | +2.38% | +2.38% |
+| AERO/USDT:USDT | below_1h_threshold | +2.22% | +2.23% |
+| INJ/USDT:USDT | below_1h_threshold | +1.52% | +1.53% |
+| LUMIA/USDT:USDT | below_1h_threshold | +1.48% | +1.48% |
 
 ## 7. 次に見るべき不足
 
