@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-10T03:11:13.434254+00:00
+- generated_at: 2026-10-10T03:16:21.495024+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16469**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-10T03:11:05.099928+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=82557.0
+- 更新: 2026-10-10T03:16:09.707499+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=82537.7
 - Funnel: target 1089 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MAGIC/USDT:USDT | +69.40% | $10,964,238.21 |
-| PIXEL/USDT:USDT | +33.20% | $4,064,246.39 |
-| RLC/USDT:USDT | +19.86% | $53,026,785.46 |
-| OP/USDT:USDT | +15.56% | $13,676,740.47 |
-| KAIA/USDT:USDT | +11.83% | $12,555,375.21 |
+| MAGIC/USDT:USDT | +67.83% | $11,020,769.59 |
+| PIXEL/USDT:USDT | +35.97% | $4,093,413.43 |
+| RLC/USDT:USDT | +18.19% | $53,080,696.89 |
+| OP/USDT:USDT | +14.69% | $13,774,254.86 |
+| IMX/USDT:USDT | +11.48% | $1,595,693.51 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FILECOIN/USDT:USDT | below_1h_threshold | +1.74% | +1.78% |
-| VET/USDT:USDT | below_1h_threshold | +0.72% | +0.76% |
-| MINA/USDT:USDT | below_1h_threshold | +0.60% | +0.64% |
-| PIXEL/USDT:USDT | below_1h_threshold | +0.51% | +0.55% |
-| OGN/USDT:USDT | below_1h_threshold | +0.40% | +0.44% |
+| PIXEL/USDT:USDT | below_1h_threshold | +2.60% | +2.67% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +1.68% | +1.74% |
+| MINA/USDT:USDT | below_1h_threshold | +0.83% | +0.90% |
+| VET/USDT:USDT | below_1h_threshold | +0.64% | +0.70% |
+| VVV/USDT:USDT | below_1h_threshold | +0.42% | +0.48% |
 
 ## 7. 次に見るべき不足
 
