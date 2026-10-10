@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-10T09:31:26.978953+00:00
+- generated_at: 2026-10-10T09:36:22.688078+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16487**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-10T09:31:12.452894+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=82867.3
-- Funnel: target 1089 → liquid 168 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.8 >= 65=1
+- 更新: 2026-10-10T09:36:08.454689+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=82870.9
+- Funnel: target 1089 → liquid 168 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 74.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LUMIA/USDT:USDT | +36.08% | $2,730,707.44 |
-| CAP/USDT:USDT | +17.36% | $2,442,177.90 |
-| JCT/USDT:USDT | +17.17% | $5,700,942.40 |
-| MAGIC/USDT:USDT | +17.15% | $21,322,419.40 |
-| BAT/USDT:USDT | +13.29% | $16,548,072.10 |
+| LUMIA/USDT:USDT | +38.79% | $2,752,421.24 |
+| MAGIC/USDT:USDT | +16.15% | $21,425,348.25 |
+| CAP/USDT:USDT | +16.03% | $2,454,566.71 |
+| JCT/USDT:USDT | +15.08% | $5,759,208.12 |
+| BAT/USDT:USDT | +13.04% | $16,667,155.33 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LONGXIA/USDT:USDT | below_1h_threshold | +3.66% | +3.58% |
-| APE/USDT:USDT | below_1h_threshold | +2.17% | +2.10% |
-| MET/USDT:USDT | below_1h_threshold | +1.88% | +1.80% |
-| XAI/USDT:USDT | below_1h_threshold | +1.13% | +1.06% |
-| BAT/USDT:USDT | below_1h_threshold | +1.09% | +1.01% |
+| MET/USDT:USDT | below_1h_threshold | +1.95% | +1.87% |
+| XAI/USDT:USDT | below_1h_threshold | +1.86% | +1.78% |
+| APE/USDT:USDT | below_1h_threshold | +1.38% | +1.30% |
+| BAT/USDT:USDT | below_1h_threshold | +1.19% | +1.11% |
+| PIXEL/USDT:USDT | below_1h_threshold | +0.90% | +0.82% |
 
 ## 7. 次に見るべき不足
 
