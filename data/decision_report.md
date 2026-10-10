@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-10-10T02:31:21.625002+00:00
+- generated_at: 2026-10-10T02:36:33.122448+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **16466**
+- closed shadow trades: **16467**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=16466, expectancy=+0.01%
+- 全期間 MARKET基準: n=16467, expectancy=+0.01%
 - 直近20件 MARKET基準: n=20, expectancy=+0.19%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -21,10 +21,10 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_6PCT | 4/20 | 20.0% | +1.89% | **+0.38%** |
-| LIMIT_FIB1272 | 6/20 | 30.0% | +1.21% | **+0.36%** |
-| LIMIT_5PCT | 6/20 | 30.0% | +0.95% | **+0.29%** |
+| LIMIT_FIB1272 | 5/20 | 25.0% | +1.46% | **+0.36%** |
+| LIMIT_6PCT | 3/20 | 15.0% | +1.89% | **+0.28%** |
 | LIMIT_7PCT | 2/20 | 10.0% | +2.80% | **+0.28%** |
+| LIMIT_5PCT | 5/20 | 25.0% | +0.95% | **+0.24%** |
 | MARKET | 20/20 | 100.0% | +0.19% | **+0.19%** |
 
 ### シャドウ上位 LONG
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,309.24** / 初期 $100.00 (+1209.24%)
-- 確定: 6285件 (Win 1845 / Loss 2013 / Flat 2427) / skip 6742件
+- 確定: 6285件 (Win 1845 / Loss 2013 / Flat 2427) / skip 6743件
 - 成長率目線: 平均log +0.000409 / 幾何平均 +0.041% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_FIB1272_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: RLC/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $1,309.24
@@ -55,7 +55,7 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$274.04** / 初期 $100.00 (+174.04%)
-- 確定: 3635件 (Win 1010 / Loss 853 / Flat 1772) / skip 6242件
+- 確定: 3635件 (Win 1010 / Loss 853 / Flat 1772) / skip 6243件
 - 成長率目線: 平均log +0.000277 / 幾何平均 +0.028% per trade / maxDD +3.96%
 - 次の候補: `LIMIT_5PCT` (selected_by_robust_growth_score) / robust_score +0.0031 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: MAGIC/USDT:USDT `LIMIT_FIB1272` EXPIRED account +0.00% 残高後 $274.04
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4629件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4630件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000092 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000086 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-10T02:31:11.051390+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=82590.0
+- 更新: 2026-10-10T02:36:21.176381+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=82599.9
 - Funnel: target 1089 → liquid 170 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 93.9 >= 65=1, 4h RSI 78.4 >= 65=1
+- Strict後reject: 4h RSI 78.8 >= 65=1, 4h RSI 93.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MAGIC/USDT:USDT | +67.94% | $10,383,834.72 |
-| PIXEL/USDT:USDT | +30.85% | $3,859,307.76 |
-| RLC/USDT:USDT | +17.82% | $53,086,696.06 |
-| KAIA/USDT:USDT | +15.61% | $12,361,704.02 |
-| OP/USDT:USDT | +14.80% | $12,391,018.94 |
+| MAGIC/USDT:USDT | +67.66% | $10,472,435.18 |
+| PIXEL/USDT:USDT | +32.67% | $3,909,616.54 |
+| RLC/USDT:USDT | +20.96% | $53,198,054.95 |
+| OP/USDT:USDT | +15.76% | $12,574,358.94 |
+| KAIA/USDT:USDT | +15.36% | $12,401,949.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JCT/USDT:USDT | below_1h_threshold | +4.47% | +4.54% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +3.34% | +3.41% |
-| GALA/USDT:USDT | below_1h_threshold | +2.69% | +2.76% |
-| XDP/USDT:USDT | below_1h_threshold | +2.16% | +2.24% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +1.26% | +1.33% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +3.21% | +3.27% |
+| XDP/USDT:USDT | below_1h_threshold | +2.97% | +3.03% |
+| GALA/USDT:USDT | below_1h_threshold | +2.48% | +2.54% |
+| JCT/USDT:USDT | below_1h_threshold | +2.12% | +2.18% |
+| ORDI/USDT:USDT | below_1h_threshold | +1.36% | +1.42% |
 
 ## 7. 次に見るべき不足
 
