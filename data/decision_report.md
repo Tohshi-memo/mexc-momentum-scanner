@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-10-10T19:36:13.416284+00:00
+- generated_at: 2026-10-10T19:41:30.678863+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **16511**
+- closed shadow trades: **16512**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=16511, expectancy=+0.02%
+- 全期間 MARKET基準: n=16512, expectancy=+0.01%
 - 直近20件 MARKET基準: n=20, expectancy=-0.88%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -25,7 +25,7 @@
 | LIMIT_4PCT | 10/20 | 50.0% | +0.10% | **+0.05%** |
 | LIMIT_FIB1618 | 2/20 | 10.0% | +0.47% | **+0.05%** |
 | LIMIT_3PCT | 16/20 | 80.0% | -0.13% | **-0.11%** |
-| LIMIT_BB3S | 4/9 | 44.4% | -0.33% | **-0.15%** |
+| LIMIT_BB3S | 4/8 | 50.0% | -0.33% | **-0.16%** |
 
 ### シャドウ上位 LONG
 
@@ -33,9 +33,9 @@
 |---|---:|---:|---:|---:|
 | MARKET_LONG | 20/20 | 100.0% | +1.42% | **+1.42%** |
 | LIMIT_1PCT_LONG | 13/20 | 65.0% | +1.52% | **+0.99%** |
+| LIMIT_BB3S_LONG | 4/12 | 33.3% | +1.31% | **+0.44%** |
 | LIMIT_FIB1272_LONG | 7/20 | 35.0% | +0.83% | **+0.29%** |
 | LIMIT_2PCT_LONG | 9/20 | 45.0% | +0.59% | **+0.27%** |
-| LIMIT_8PCT_LONG | 4/20 | 20.0% | +0.00% | **+0.00%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,298.24** / 初期 $100.00 (+1198.24%)
-- 確定: 6287件 (Win 1845 / Loss 2015 / Flat 2427) / skip 6785件
+- 確定: 6287件 (Win 1845 / Loss 2015 / Flat 2427) / skip 6786件
 - 成長率目線: 平均log +0.000408 / 幾何平均 +0.041% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_FIB1272_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: CFX/USDT:USDT `LIMIT_FIB1272_LONG` EXPIRED account -0.39% 残高後 $1,298.24
@@ -55,7 +55,7 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$274.04** / 初期 $100.00 (+174.04%)
-- 確定: 3636件 (Win 1010 / Loss 853 / Flat 1773) / skip 6286件
+- 確定: 3636件 (Win 1010 / Loss 853 / Flat 1773) / skip 6287件
 - 成長率目線: 平均log +0.000277 / 幾何平均 +0.028% per trade / maxDD +3.96%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: MINA/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $274.04
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-10T19:36:05.198291+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=83045.8
+- 更新: 2026-10-10T19:41:16.593950+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=83050.0
 - Funnel: target 1087 → liquid 148 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CHIP/USDT:USDT | +25.40% | $8,552,525.31 |
-| STRK/USDT:USDT | +8.72% | $48,980,040.11 |
-| TIA/USDT:USDT | +8.28% | $24,278,199.69 |
-| BR/USDT:USDT | +7.41% | $6,129,104.19 |
-| RLC/USDT:USDT | +6.14% | $37,118,792.54 |
+| CHIP/USDT:USDT | +26.78% | $9,142,293.31 |
+| STRK/USDT:USDT | +9.37% | $49,176,224.16 |
+| BR/USDT:USDT | +7.99% | $6,150,863.76 |
+| TIA/USDT:USDT | +7.17% | $24,701,282.32 |
+| S/USDT:USDT | +6.39% | $1,867,093.41 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CHIP/USDT:USDT | below_1h_threshold | +2.82% | +2.75% |
-| TIA/USDT:USDT | below_1h_threshold | +2.00% | +1.93% |
-| ZKSYNC/USDT:USDT | below_1h_threshold | +1.81% | +1.74% |
-| CFX/USDT:USDT | below_1h_threshold | +1.75% | +1.68% |
-| ETHFI/USDT:USDT | below_1h_threshold | +1.27% | +1.20% |
+| CHIP/USDT:USDT | below_1h_threshold | +3.92% | +3.84% |
+| ZKSYNC/USDT:USDT | below_1h_threshold | +2.87% | +2.80% |
+| AERO/USDT:USDT | below_1h_threshold | +2.46% | +2.39% |
+| CFX/USDT:USDT | below_1h_threshold | +2.19% | +2.11% |
+| JASMY/USDT:USDT | below_1h_threshold | +1.10% | +1.03% |
 
 ## 7. 次に見るべき不足
 
