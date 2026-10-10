@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-10T10:31:18.411123+00:00
+- generated_at: 2026-10-10T10:36:12.993428+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16487**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4646件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4647件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000205 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-10T10:31:06.559711+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=82750.3
-- Funnel: target 1089 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-10T10:36:01.648572+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=82781.3
+- Funnel: target 1089 → liquid 166 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LUMIA/USDT:USDT | +38.85% | $3,025,473.14 |
-| MAGIC/USDT:USDT | +21.29% | $22,235,084.74 |
-| JCT/USDT:USDT | +14.02% | $5,768,561.81 |
-| MINA/USDT:USDT | +13.90% | $4,028,902.88 |
-| CAP/USDT:USDT | +13.27% | $2,546,940.82 |
+| LUMIA/USDT:USDT | +36.94% | $3,046,935.41 |
+| MAGIC/USDT:USDT | +25.34% | $22,451,748.94 |
+| CAP/USDT:USDT | +15.58% | $2,593,451.69 |
+| JCT/USDT:USDT | +14.78% | $5,793,779.95 |
+| MINA/USDT:USDT | +13.48% | $4,039,857.03 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MAGIC/USDT:USDT | below_1h_threshold | +3.22% | +3.29% |
-| MINA/USDT:USDT | below_1h_threshold | +1.89% | +1.96% |
-| BTW/USDT:USDT | below_1h_threshold | +1.07% | +1.15% |
-| STX/USDT:USDT | below_1h_threshold | +0.87% | +0.95% |
-| PIXEL/USDT:USDT | below_1h_threshold | +0.74% | +0.82% |
+| MINA/USDT:USDT | below_1h_threshold | +1.51% | +1.55% |
+| JCT/USDT:USDT | below_1h_threshold | +1.24% | +1.28% |
+| STX/USDT:USDT | below_1h_threshold | +1.18% | +1.22% |
+| PIXEL/USDT:USDT | below_1h_threshold | +1.12% | +1.16% |
+| BTW/USDT:USDT | below_1h_threshold | +1.02% | +1.06% |
 
 ## 7. 次に見るべき不足
 
