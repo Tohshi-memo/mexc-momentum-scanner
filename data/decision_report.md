@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-10T07:56:24.531093+00:00
+- generated_at: 2026-10-10T08:01:03.589535+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16480**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-10T07:56:10.636300+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=82732.5
-- Funnel: target 1089 → liquid 174 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.3 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-10T08:00:55.156786+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=82766.1
+- Funnel: target 1089 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LUMIA/USDT:USDT | +60.35% | $1,061,637.06 |
-| CAP/USDT:USDT | +22.87% | $1,997,659.60 |
-| MAGIC/USDT:USDT | +16.91% | $19,288,273.75 |
-| NIGHT/USDT:USDT | +14.42% | $2,279,883.95 |
-| PIXEL/USDT:USDT | +12.43% | $6,001,098.70 |
+| LUMIA/USDT:USDT | +54.83% | $1,201,779.53 |
+| CAP/USDT:USDT | +25.31% | $2,025,845.79 |
+| MAGIC/USDT:USDT | +18.27% | $19,393,763.20 |
+| PIXEL/USDT:USDT | +12.88% | $6,010,618.91 |
+| WLD/USDT:USDT | +12.52% | $83,030,940.67 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIGHT/USDT:USDT | below_1h_threshold | +4.59% | +4.55% |
-| UAI/USDT:USDT | below_1h_threshold | +2.74% | +2.70% |
-| AERO/USDT:USDT | below_1h_threshold | +1.49% | +1.46% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.20% | +1.16% |
-| BTW/USDT:USDT | below_1h_threshold | +0.27% | +0.23% |
+| LUMIA/USDT:USDT | below_1h_threshold | +0.94% | +0.93% |
+| BAT/USDT:USDT | below_1h_threshold | +0.36% | +0.36% |
+| JCT/USDT:USDT | below_1h_threshold | +0.33% | +0.32% |
+| UAI/USDT:USDT | below_1h_threshold | +0.18% | +0.17% |
+| KAIA/USDT:USDT | below_1h_threshold | +0.09% | +0.08% |
 
 ## 7. 次に見るべき不足
 
