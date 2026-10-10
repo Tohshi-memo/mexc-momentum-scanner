@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-10T00:01:19.762094+00:00
+- generated_at: 2026-10-10T00:06:24.015181+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16457**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-10T00:01:08.206500+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=82565.2
+- 更新: 2026-10-10T00:06:13.039495+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=82548.0
 - Funnel: target 1089 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MAGIC/USDT:USDT | +34.58% | $8,810,356.79 |
-| PIXEL/USDT:USDT | +19.73% | $3,032,250.25 |
-| RLC/USDT:USDT | +16.67% | $50,128,428.19 |
-| KAIA/USDT:USDT | +14.82% | $11,060,424.88 |
-| BAT/USDT:USDT | +10.99% | $13,182,410.20 |
+| MAGIC/USDT:USDT | +34.75% | $8,836,305.29 |
+| PIXEL/USDT:USDT | +20.97% | $3,127,914.43 |
+| RLC/USDT:USDT | +17.65% | $50,244,783.35 |
+| KAIA/USDT:USDT | +15.20% | $11,153,311.53 |
+| BAT/USDT:USDT | +11.40% | $13,278,182.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +0.27% | +0.29% |
-| PIXEL/USDT:USDT | below_1h_threshold | +0.25% | +0.27% |
-| WIF/USDT:USDT | below_1h_threshold | +0.23% | +0.25% |
-| STX/USDT:USDT | below_1h_threshold | +0.20% | +0.22% |
-| BTW/USDT:USDT | below_1h_threshold | +0.18% | +0.19% |
+| ZRX/USDT:USDT | below_1h_threshold | +1.11% | +1.15% |
+| KAIA/USDT:USDT | below_1h_threshold | +0.97% | +1.01% |
+| PIXEL/USDT:USDT | below_1h_threshold | +0.92% | +0.95% |
+| PHA/USDT:USDT | below_1h_threshold | +0.46% | +0.50% |
+| BR/USDT:USDT | below_1h_threshold | +0.45% | +0.49% |
 
 ## 7. 次に見るべき不足
 
