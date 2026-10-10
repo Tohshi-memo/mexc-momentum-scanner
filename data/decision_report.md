@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-10T04:51:17.199182+00:00
+- generated_at: 2026-10-10T04:56:29.665027+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16475**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4635件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4636件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000141 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-10T04:51:07.490673+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=82629.1
-- Funnel: target 1089 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-10T04:56:15.086285+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.13% price=82669.9
+- Funnel: target 1089 → liquid 172 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MAGIC/USDT:USDT | +66.50% | $12,702,609.15 |
-| PIXEL/USDT:USDT | +31.64% | $4,838,902.64 |
-| CAP/USDT:USDT | +24.74% | $1,384,654.11 |
-| XAI/USDT:USDT | +18.55% | $1,774,415.03 |
-| RLC/USDT:USDT | +17.11% | $53,050,336.60 |
+| MAGIC/USDT:USDT | +65.99% | $12,759,815.03 |
+| PIXEL/USDT:USDT | +31.74% | $4,861,009.67 |
+| CAP/USDT:USDT | +25.15% | $1,390,231.26 |
+| OP/USDT:USDT | +16.83% | $16,302,684.97 |
+| RLC/USDT:USDT | +16.75% | $53,079,164.00 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MINA/USDT:USDT | below_1h_threshold | +3.80% | +3.71% |
-| PIXEL/USDT:USDT | below_1h_threshold | +3.68% | +3.59% |
-| XAI/USDT:USDT | below_1h_threshold | +2.64% | +2.56% |
-| NEAR/USDT:USDT | below_1h_threshold | +2.63% | +2.54% |
-| CAP/USDT:USDT | below_1h_threshold | +2.38% | +2.29% |
+| NEAR/USDT:USDT | below_1h_threshold | +3.82% | +3.68% |
+| PIXEL/USDT:USDT | below_1h_threshold | +3.76% | +3.62% |
+| WLD/USDT:USDT | below_1h_threshold | +3.15% | +3.02% |
+| CAP/USDT:USDT | below_1h_threshold | +2.78% | +2.65% |
+| OGN/USDT:USDT | below_1h_threshold | +2.60% | +2.46% |
 
 ## 7. 次に見るべき不足
 
