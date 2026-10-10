@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-10T21:01:17.770449+00:00
+- generated_at: 2026-10-10T21:06:22.971322+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16514**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-10T21:01:08.305495+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=83008.1
+- 更新: 2026-10-10T21:06:11.082438+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=83024.0
 - Funnel: target 1087 → liquid 139 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CHIP/USDT:USDT | +32.10% | $15,204,412.08 |
-| SI/USDT:USDT | +14.25% | $1,325,866.81 |
-| BR/USDT:USDT | +13.89% | $6,417,790.56 |
-| TIA/USDT:USDT | +12.80% | $33,270,943.78 |
-| STRK/USDT:USDT | +9.66% | $51,598,058.11 |
+| CHIP/USDT:USDT | +31.73% | $15,552,402.99 |
+| SI/USDT:USDT | +16.24% | $1,338,442.95 |
+| BR/USDT:USDT | +15.63% | $6,589,512.44 |
+| TIA/USDT:USDT | +13.64% | $33,854,190.07 |
+| STRK/USDT:USDT | +9.31% | $51,834,647.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STRK/USDT:USDT | below_1h_threshold | +0.58% | +0.56% |
-| S/USDT:USDT | below_1h_threshold | +0.42% | +0.41% |
-| TIA/USDT:USDT | below_1h_threshold | +0.36% | +0.35% |
-| EIGEN/USDT:USDT | below_1h_threshold | +0.25% | +0.23% |
-| VVV/USDT:USDT | below_1h_threshold | +0.19% | +0.17% |
+| SI/USDT:USDT | below_1h_threshold | +1.95% | +1.91% |
+| BR/USDT:USDT | below_1h_threshold | +1.72% | +1.68% |
+| TIA/USDT:USDT | below_1h_threshold | +1.13% | +1.09% |
+| CFX/USDT:USDT | below_1h_threshold | +1.11% | +1.08% |
+| S/USDT:USDT | below_1h_threshold | +0.81% | +0.77% |
 
 ## 7. 次に見るべき不足
 
