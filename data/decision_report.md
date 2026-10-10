@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-10T05:21:06.864495+00:00
+- generated_at: 2026-10-10T05:26:20.918978+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16476**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-10T05:20:58.401889+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=82645.0
+- 更新: 2026-10-10T05:26:09.120982+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=82653.2
 - Funnel: target 1089 → liquid 171 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MAGIC/USDT:USDT | +69.05% | $13,194,600.94 |
-| PIXEL/USDT:USDT | +31.10% | $4,951,425.55 |
-| CAP/USDT:USDT | +27.69% | $1,411,179.74 |
-| MINA/USDT:USDT | +19.14% | $2,668,624.09 |
-| OP/USDT:USDT | +17.55% | $17,221,524.53 |
+| MAGIC/USDT:USDT | +68.28% | $13,230,656.83 |
+| PIXEL/USDT:USDT | +29.95% | $4,974,110.76 |
+| CAP/USDT:USDT | +27.20% | $1,414,167.63 |
+| MINA/USDT:USDT | +17.93% | $2,743,461.84 |
+| OP/USDT:USDT | +17.43% | $17,546,315.67 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TIA/USDT:USDT | below_1h_threshold | +2.25% | +2.25% |
-| WLD/USDT:USDT | below_1h_threshold | +2.25% | +2.25% |
-| AXS/USDT:USDT | below_1h_threshold | +1.99% | +2.00% |
-| XDP/USDT:USDT | below_1h_threshold | +1.93% | +1.94% |
-| MINA/USDT:USDT | below_1h_threshold | +1.87% | +1.87% |
+| NIGHT/USDT:USDT | below_1h_threshold | +2.56% | +2.55% |
+| FET/USDT:USDT | below_1h_threshold | +2.24% | +2.24% |
+| TIA/USDT:USDT | below_1h_threshold | +2.19% | +2.18% |
+| XDP/USDT:USDT | below_1h_threshold | +2.01% | +2.01% |
+| WLD/USDT:USDT | below_1h_threshold | +1.71% | +1.70% |
 
 ## 7. 次に見るべき不足
 
