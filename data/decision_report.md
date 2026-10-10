@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-10T14:06:13.471659+00:00
+- generated_at: 2026-10-10T14:11:20.653663+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16495**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-10T14:06:04.205510+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=82740.1
+- 更新: 2026-10-10T14:11:08.630743+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=82741.7
 - Funnel: target 1087 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LUMIA/USDT:USDT | +44.37% | $4,085,846.85 |
-| ERA/USDT:USDT | +31.71% | $1,286,937.46 |
-| CAP/USDT:USDT | +25.42% | $3,526,336.58 |
-| MAGIC/USDT:USDT | +15.81% | $26,178,270.15 |
-| NEAR/USDT:USDT | +12.90% | $175,145,145.95 |
+| LUMIA/USDT:USDT | +44.85% | $4,099,532.91 |
+| ERA/USDT:USDT | +33.41% | $1,292,469.96 |
+| CAP/USDT:USDT | +26.65% | $3,558,682.55 |
+| MAGIC/USDT:USDT | +15.20% | $26,219,581.65 |
+| CFX/USDT:USDT | +13.97% | $2,877,344.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ERA/USDT:USDT | below_1h_threshold | +0.87% | +0.93% |
-| ZRX/USDT:USDT | below_1h_threshold | +0.39% | +0.45% |
-| IMX/USDT:USDT | below_1h_threshold | +0.35% | +0.41% |
-| PHA/USDT:USDT | below_1h_threshold | +0.25% | +0.31% |
-| MAGIC/USDT:USDT | below_1h_threshold | +0.24% | +0.30% |
+| ERA/USDT:USDT | below_1h_threshold | +2.17% | +2.23% |
+| CAP/USDT:USDT | below_1h_threshold | +0.94% | +1.00% |
+| ZKSYNC/USDT:USDT | below_1h_threshold | +0.71% | +0.77% |
+| ZRX/USDT:USDT | below_1h_threshold | +0.55% | +0.61% |
+| CFX/USDT:USDT | below_1h_threshold | +0.54% | +0.59% |
 
 ## 7. 次に見るべき不足
 
