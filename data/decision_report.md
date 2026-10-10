@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-10T04:26:26.560956+00:00
+- generated_at: 2026-10-10T04:31:18.666186+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16475**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-10T04:26:14.559136+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=82643.4
-- Funnel: target 1089 → liquid 171 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-10T04:31:09.294738+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=82613.6
+- Funnel: target 1089 → liquid 171 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MAGIC/USDT:USDT | +68.14% | $12,430,240.90 |
-| PIXEL/USDT:USDT | +30.31% | $4,535,177.94 |
-| CAP/USDT:USDT | +28.32% | $1,286,627.70 |
-| RLC/USDT:USDT | +18.38% | $52,907,366.11 |
-| OP/USDT:USDT | +14.84% | $15,882,202.36 |
+| MAGIC/USDT:USDT | +68.81% | $12,492,901.75 |
+| PIXEL/USDT:USDT | +32.69% | $4,606,291.75 |
+| CAP/USDT:USDT | +22.95% | $1,346,004.32 |
+| RLC/USDT:USDT | +18.85% | $52,947,371.25 |
+| XAI/USDT:USDT | +15.65% | $1,618,900.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PIXEL/USDT:USDT | below_1h_threshold | +3.01% | +2.91% |
-| MINA/USDT:USDT | below_1h_threshold | +2.57% | +2.47% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.70% | +1.60% |
-| CT/USDT:USDT | below_1h_threshold | +1.44% | +1.34% |
-| STX/USDT:USDT | below_1h_threshold | +1.35% | +1.25% |
+| PIXEL/USDT:USDT | below_1h_threshold | +4.41% | +4.34% |
+| MINA/USDT:USDT | below_1h_threshold | +2.58% | +2.52% |
+| NEAR/USDT:USDT | below_1h_threshold | +1.62% | +1.55% |
+| MAGIC/USDT:USDT | below_1h_threshold | +1.47% | +1.40% |
+| NIL/USDT:USDT | below_1h_threshold | +1.12% | +1.06% |
 
 ## 7. 次に見るべき不足
 
