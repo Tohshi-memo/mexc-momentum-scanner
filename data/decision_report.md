@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-10T14:41:26.610311+00:00
+- generated_at: 2026-10-10T14:46:23.169610+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16495**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4654件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4656件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000415 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-10T14:41:15.286766+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.25% price=82996.4
-- Funnel: target 1087 → liquid 162 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.4 >= 65=1
+- 更新: 2026-10-10T14:46:12.512237+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.25% price=82992.9
+- Funnel: target 1087 → liquid 163 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 74.9 >= 65=1, 4h RSI 75.7 >= 65=1, 4h RSI 69.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LUMIA/USDT:USDT | +41.82% | $4,225,659.39 |
-| ERA/USDT:USDT | +30.82% | $1,328,478.13 |
-| CAP/USDT:USDT | +24.50% | $3,692,910.87 |
-| CFX/USDT:USDT | +20.76% | $4,302,034.51 |
-| MAGIC/USDT:USDT | +16.90% | $26,469,035.04 |
+| LUMIA/USDT:USDT | +40.47% | $4,244,101.62 |
+| ERA/USDT:USDT | +32.37% | $1,333,342.36 |
+| CAP/USDT:USDT | +24.80% | $3,695,659.92 |
+| CFX/USDT:USDT | +20.54% | $4,527,082.85 |
+| MAGIC/USDT:USDT | +18.88% | $26,600,673.49 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STRK/USDT:USDT | below_relative_strength | +5.19% | +4.94% |
-| ZKSYNC/USDT:USDT | below_1h_threshold | +1.93% | +1.68% |
-| TIA/USDT:USDT | below_1h_threshold | +1.73% | +1.48% |
-| SUI/USDT:USDT | below_1h_threshold | +1.59% | +1.34% |
-| JTO/USDT:USDT | below_1h_threshold | +1.55% | +1.30% |
+| ZKSYNC/USDT:USDT | below_1h_threshold | +3.43% | +3.19% |
+| MAGIC/USDT:USDT | below_1h_threshold | +2.93% | +2.68% |
+| ZRX/USDT:USDT | below_1h_threshold | +2.05% | +1.80% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +2.03% | +1.78% |
+| TIA/USDT:USDT | below_1h_threshold | +1.86% | +1.61% |
 
 ## 7. 次に見るべき不足
 
