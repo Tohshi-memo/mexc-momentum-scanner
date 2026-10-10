@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-10T00:21:24.765838+00:00
+- generated_at: 2026-10-10T00:26:28.728329+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16458**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-10T00:21:12.498458+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=82572.4
-- Funnel: target 1089 → liquid 173 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.1 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-10T00:26:19.888267+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=82535.2
+- Funnel: target 1089 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MAGIC/USDT:USDT | +33.84% | $8,924,538.22 |
-| PIXEL/USDT:USDT | +20.50% | $3,243,065.44 |
-| BAT/USDT:USDT | +18.06% | $13,662,899.29 |
-| KAIA/USDT:USDT | +16.53% | $11,336,596.37 |
-| RLC/USDT:USDT | +15.58% | $50,655,591.68 |
+| MAGIC/USDT:USDT | +34.59% | $8,941,529.44 |
+| PIXEL/USDT:USDT | +25.08% | $3,319,151.73 |
+| KAIA/USDT:USDT | +18.61% | $11,363,206.13 |
+| RLC/USDT:USDT | +16.21% | $50,673,356.51 |
+| BAT/USDT:USDT | +15.81% | $13,787,537.03 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JCT/USDT:USDT | below_1h_threshold | +3.20% | +3.21% |
-| ZRX/USDT:USDT | below_1h_threshold | +1.75% | +1.76% |
-| JTO/USDT:USDT | below_1h_threshold | +1.64% | +1.65% |
-| TMX/USDT:USDT | below_1h_threshold | +1.60% | +1.61% |
-| KAIA/USDT:USDT | below_1h_threshold | +1.56% | +1.57% |
+| PIXEL/USDT:USDT | below_1h_threshold | +4.47% | +4.53% |
+| KAIA/USDT:USDT | below_1h_threshold | +4.18% | +4.23% |
+| BAT/USDT:USDT | below_1h_threshold | +4.16% | +4.21% |
+| OGN/USDT:USDT | below_1h_threshold | +2.92% | +2.98% |
+| ZRX/USDT:USDT | below_1h_threshold | +2.63% | +2.68% |
 
 ## 7. 次に見るべき不足
 
