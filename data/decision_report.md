@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-10-10T10:51:21.814433+00:00
+- generated_at: 2026-10-10T10:56:17.488616+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **16487**
+- closed shadow trades: **16488**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +2.10% / filled 20/20。**
-- 全期間 MARKET基準: n=16487, expectancy=+0.02%
+- 全期間 MARKET基準: n=16488, expectancy=+0.02%
 - 直近20件 MARKET基準: n=20, expectancy=+2.10%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -32,10 +32,10 @@
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | LIMIT_FIB1272_LONG | 11/20 | 55.0% | +1.72% | **+0.95%** |
-| LIMIT_6PCT_LONG | 11/20 | 55.0% | -0.02% | **-0.01%** |
-| LIMIT_10PCT_LONG | 5/20 | 25.0% | -0.27% | **-0.07%** |
-| LIMIT_FIB1618_LONG | 2/20 | 10.0% | -0.92% | **-0.09%** |
-| LIMIT_9PCT_LONG | 6/20 | 30.0% | -0.60% | **-0.18%** |
+| LIMIT_6PCT_LONG | 11/20 | 55.0% | +0.15% | **+0.08%** |
+| LIMIT_FIB1618_LONG | 3/20 | 15.0% | -0.61% | **-0.09%** |
+| LIMIT_7PCT_LONG | 11/20 | 55.0% | -0.19% | **-0.11%** |
+| LIMIT_5PCT_LONG | 11/20 | 55.0% | -0.32% | **-0.17%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,303.26** / 初期 $100.00 (+1203.26%)
-- 確定: 6286件 (Win 1845 / Loss 2014 / Flat 2427) / skip 6762件
+- 確定: 6286件 (Win 1845 / Loss 2014 / Flat 2427) / skip 6763件
 - 成長率目線: 平均log +0.000408 / 幾何平均 +0.041% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_FIB1272_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: LPT/USDT:USDT `LIMIT_FIB1272_LONG` EXPIRED account -0.46% 残高後 $1,303.26
@@ -55,7 +55,7 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$274.04** / 初期 $100.00 (+174.04%)
-- 確定: 3636件 (Win 1010 / Loss 853 / Flat 1773) / skip 6262件
+- 確定: 3636件 (Win 1010 / Loss 853 / Flat 1773) / skip 6263件
 - 成長率目線: 平均log +0.000277 / 幾何平均 +0.028% per trade / maxDD +3.96%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: MINA/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $274.04
@@ -70,31 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-10T10:51:08.192121+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=82787.1
-- Funnel: target 1089 → liquid 166 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-10T10:56:04.184620+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=82812.4
+- Funnel: target 1089 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LUMIA/USDT:USDT | +38.30% | $3,079,900.13 |
-| MAGIC/USDT:USDT | +25.01% | $22,921,908.82 |
-| CAP/USDT:USDT | +17.71% | $2,733,529.68 |
-| JCT/USDT:USDT | +15.81% | $5,857,996.71 |
-| PIXEL/USDT:USDT | +13.88% | $6,438,222.94 |
+| LUMIA/USDT:USDT | +32.08% | $3,131,024.08 |
+| MAGIC/USDT:USDT | +21.89% | $23,155,592.65 |
+| CAP/USDT:USDT | +16.18% | $2,768,315.94 |
+| JCT/USDT:USDT | +15.12% | $5,886,685.21 |
+| MINA/USDT:USDT | +11.97% | $4,103,836.75 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STX/USDT:USDT | below_1h_threshold | +2.44% | +2.47% |
-| CAP/USDT:USDT | below_1h_threshold | +2.34% | +2.37% |
-| PIXEL/USDT:USDT | below_1h_threshold | +2.23% | +2.27% |
-| JCT/USDT:USDT | below_1h_threshold | +2.15% | +2.18% |
-| TIA/USDT:USDT | below_1h_threshold | +0.89% | +0.92% |
+| MAGIC/USDT:USDT | below_1h_threshold | +3.09% | +3.09% |
+| STX/USDT:USDT | below_1h_threshold | +1.98% | +1.98% |
+| JCT/USDT:USDT | below_1h_threshold | +1.54% | +1.55% |
+| PONS/USDT:USDT | below_1h_threshold | +0.99% | +1.00% |
+| CAP/USDT:USDT | below_1h_threshold | +0.85% | +0.85% |
 
 ## 7. 次に見るべき不足
 
