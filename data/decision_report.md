@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-10T11:41:07.791903+00:00
+- generated_at: 2026-10-10T11:46:13.363044+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16488**
 
@@ -70,30 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-10T11:40:59.650597+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=82823.0
-- Funnel: target 1089 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-10T11:46:04.394893+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=82865.2
+- Funnel: target 1089 → liquid 164 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 81.2 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LUMIA/USDT:USDT | +37.41% | $3,256,901.71 |
-| MAGIC/USDT:USDT | +26.76% | $23,768,136.79 |
-| CAP/USDT:USDT | +18.88% | $2,865,122.37 |
-| BAT/USDT:USDT | +15.88% | $19,197,995.15 |
-| JCT/USDT:USDT | +14.29% | $5,936,662.46 |
+| LUMIA/USDT:USDT | +36.86% | $3,265,861.90 |
+| MAGIC/USDT:USDT | +25.67% | $23,827,511.84 |
+| CAP/USDT:USDT | +18.34% | $2,891,825.08 |
+| BAT/USDT:USDT | +17.61% | $19,302,344.20 |
+| JCT/USDT:USDT | +14.51% | $5,953,062.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MET/USDT:USDT | below_1h_threshold | +3.60% | +3.60% |
-| BAT/USDT:USDT | below_1h_threshold | +3.55% | +3.55% |
-| MAGIC/USDT:USDT | below_1h_threshold | +3.01% | +3.01% |
-| LUMIA/USDT:USDT | below_1h_threshold | +2.97% | +2.97% |
-| CAP/USDT:USDT | below_1h_threshold | +2.38% | +2.38% |
+| MET/USDT:USDT | below_1h_threshold | +3.88% | +3.83% |
+| LUMIA/USDT:USDT | below_1h_threshold | +2.57% | +2.51% |
+| MAGIC/USDT:USDT | below_1h_threshold | +2.12% | +2.07% |
+| CAP/USDT:USDT | below_1h_threshold | +1.63% | +1.58% |
+| ONDO/USDT:USDT | below_1h_threshold | +1.34% | +1.29% |
 
 ## 7. 次に見るべき不足
 
