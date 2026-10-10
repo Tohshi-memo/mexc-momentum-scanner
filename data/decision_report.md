@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-10T10:36:12.993428+00:00
+- generated_at: 2026-10-10T10:41:23.795870+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16487**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-10T10:36:01.648572+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=82781.3
+- 更新: 2026-10-10T10:41:09.749958+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=82777.4
 - Funnel: target 1089 → liquid 166 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LUMIA/USDT:USDT | +36.94% | $3,046,935.41 |
-| MAGIC/USDT:USDT | +25.34% | $22,451,748.94 |
-| CAP/USDT:USDT | +15.58% | $2,593,451.69 |
-| JCT/USDT:USDT | +14.78% | $5,793,779.95 |
-| MINA/USDT:USDT | +13.48% | $4,039,857.03 |
+| LUMIA/USDT:USDT | +38.73% | $3,060,028.86 |
+| MAGIC/USDT:USDT | +26.29% | $22,600,997.94 |
+| CAP/USDT:USDT | +19.77% | $2,632,339.55 |
+| MINA/USDT:USDT | +13.42% | $4,055,607.75 |
+| JCT/USDT:USDT | +13.18% | $5,822,373.20 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MINA/USDT:USDT | below_1h_threshold | +1.51% | +1.55% |
-| JCT/USDT:USDT | below_1h_threshold | +1.24% | +1.28% |
-| STX/USDT:USDT | below_1h_threshold | +1.18% | +1.22% |
-| PIXEL/USDT:USDT | below_1h_threshold | +1.12% | +1.16% |
-| BTW/USDT:USDT | below_1h_threshold | +1.02% | +1.06% |
+| CAP/USDT:USDT | below_1h_threshold | +4.77% | +4.82% |
+| PIXEL/USDT:USDT | below_1h_threshold | +1.52% | +1.56% |
+| NIGHT/USDT:USDT | below_1h_threshold | +1.52% | +1.56% |
+| MINA/USDT:USDT | below_1h_threshold | +1.45% | +1.50% |
+| STX/USDT:USDT | below_1h_threshold | +1.33% | +1.38% |
 
 ## 7. 次に見るべき不足
 
