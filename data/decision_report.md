@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-10-11T21:21:14.432190+00:00
+- generated_at: 2026-10-11T21:26:24.195385+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **16579**
+- closed shadow trades: **16580**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=16579, expectancy=+0.01%
+- 全期間 MARKET基準: n=16580, expectancy=+0.01%
 - 直近20件 MARKET基準: n=20, expectancy=-1.80%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -24,16 +24,16 @@
 | LIMIT_FIB1272 | 12/20 | 60.0% | +1.85% | **+1.11%** |
 | LIMIT_7PCT | 3/20 | 15.0% | +4.00% | **+0.60%** |
 | LIMIT_6PCT | 6/20 | 30.0% | +1.92% | **+0.58%** |
-| LIMIT_3PCT | 18/20 | 90.0% | +0.54% | **+0.49%** |
 | LIMIT_9PCT | 2/20 | 10.0% | +2.00% | **+0.20%** |
+| LIMIT_8PCT | 2/20 | 10.0% | +2.00% | **+0.20%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | LIMIT_1PCT_LONG | 17/20 | 85.0% | +3.06% | **+2.60%** |
-| LIMIT_BB3S_LONG | 6/11 | 54.5% | +4.63% | **+2.53%** |
 | MARKET_LONG | 20/20 | 100.0% | +2.31% | **+2.31%** |
+| LIMIT_BB3S_LONG | 7/12 | 58.3% | +3.40% | **+1.98%** |
 | LIMIT_ATR_LONG | 11/20 | 55.0% | +3.34% | **+1.84%** |
 | LIMIT_2PCT_LONG | 12/20 | 60.0% | +2.37% | **+1.42%** |
 
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,298.24** / 初期 $100.00 (+1198.24%)
-- 確定: 6290件 (Win 1845 / Loss 2015 / Flat 2430) / skip 6850件
+- 確定: 6290件 (Win 1845 / Loss 2015 / Flat 2430) / skip 6851件
 - 成長率目線: 平均log +0.000408 / 幾何平均 +0.041% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_BB3S_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: BATON/USDT:USDT `LIMIT_BB3S` EXPIRED account +0.00% 残高後 $1,298.24
@@ -55,45 +55,47 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$272.12** / 初期 $100.00 (+172.12%)
-- 確定: 3638件 (Win 1010 / Loss 855 / Flat 1773) / skip 6352件
+- 確定: 3638件 (Win 1010 / Loss 855 / Flat 1773) / skip 6353件
 - 成長率目線: 平均log +0.000275 / 幾何平均 +0.028% per trade / maxDD +3.96%
-- 次の候補: `LIMIT_2PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0912 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 次の候補: `LIMIT_2PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0704 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: MAGIC/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.35% 残高後 $272.12
 
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4741件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4742件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000304 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000297 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-11T21:21:05.329813+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.32% price=83372.5
-- Funnel: target 1087 → liquid 139 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-11T21:26:09.787672+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.32% price=83365.8
+- Funnel: target 1087 → liquid 140 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 66.7 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CKB/USDT:USDT | +29.83% | $3,105,937.34 |
-| BATON/USDT:USDT | +20.91% | $3,179,216.94 |
-| W/USDT:USDT | +15.44% | $8,567,462.65 |
-| FILECOIN/USDT:USDT | +10.78% | $19,107,405.26 |
-| S/USDT:USDT | +9.78% | $27,453,554.93 |
+| CKB/USDT:USDT | +28.83% | $3,211,823.30 |
+| W/USDT:USDT | +17.53% | $8,671,190.82 |
+| BATON/USDT:USDT | +17.32% | $3,204,515.93 |
+| FILECOIN/USDT:USDT | +10.73% | $19,244,833.60 |
+| S/USDT:USDT | +10.14% | $27,569,737.51 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| W/USDT:USDT | below_1h_threshold | +3.39% | +3.70% |
-| S/USDT:USDT | below_1h_threshold | +1.66% | +1.98% |
-| PLUME/USDT:USDT | below_1h_threshold | +0.51% | +0.82% |
-| SBUXSTOCK/USDT:USDT | below_1h_threshold | +0.28% | +0.60% |
-| MAGIC/USDT:USDT | below_1h_threshold | +0.23% | +0.55% |
+| S/USDT:USDT | below_1h_threshold | +1.90% | +2.22% |
+| PLUME/USDT:USDT | below_1h_threshold | +0.83% | +1.15% |
+| SBUXSTOCK/USDT:USDT | below_1h_threshold | +0.28% | +0.61% |
+| TESLA/USDT:USDT | below_1h_threshold | +0.15% | +0.48% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.15% | +0.47% |
 
 ## 7. 次に見るべき不足
 
