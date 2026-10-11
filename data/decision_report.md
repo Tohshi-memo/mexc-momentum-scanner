@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-11T12:51:17.394954+00:00
+- generated_at: 2026-10-11T12:56:21.775709+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16553**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4713件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4714件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `見送り` (no_strategy_passed_causal_filters) / causal_score n/a / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-11T12:51:06.265765+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=83094.7
-- Funnel: target 1087 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-11T12:56:09.177128+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=83073.7
+- Funnel: target 1087 → liquid 142 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 66.9 >= 65=1, 4h RSI 66.0 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LUMIA/USDT:USDT | +41.06% | $8,225,680.96 |
-| CHIP/USDT:USDT | +30.80% | $45,315,914.46 |
-| MAGIC/USDT:USDT | +24.30% | $16,799,358.06 |
-| STRK/USDT:USDT | +20.89% | $104,364,235.94 |
-| RLC/USDT:USDT | +18.01% | $27,020,599.92 |
+| LUMIA/USDT:USDT | +43.15% | $8,264,722.69 |
+| CHIP/USDT:USDT | +30.68% | $45,403,999.37 |
+| MAGIC/USDT:USDT | +26.77% | $17,047,446.92 |
+| STRK/USDT:USDT | +23.69% | $104,919,025.42 |
+| RLC/USDT:USDT | +19.05% | $27,242,095.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RLC/USDT:USDT | below_1h_threshold | +4.64% | +4.67% |
-| MAGIC/USDT:USDT | below_1h_threshold | +3.30% | +3.33% |
-| CFX/USDT:USDT | below_1h_threshold | +3.14% | +3.18% |
-| S/USDT:USDT | below_1h_threshold | +1.92% | +1.95% |
-| FET/USDT:USDT | below_1h_threshold | +1.73% | +1.76% |
+| CFX/USDT:USDT | below_1h_threshold | +3.59% | +3.65% |
+| S/USDT:USDT | below_1h_threshold | +3.04% | +3.10% |
+| LUMIA/USDT:USDT | below_1h_threshold | +2.49% | +2.55% |
+| STRK/USDT:USDT | below_1h_threshold | +2.22% | +2.28% |
+| GRASS/USDT:USDT | below_1h_threshold | +1.85% | +1.91% |
 
 ## 7. 次に見るべき不足
 
