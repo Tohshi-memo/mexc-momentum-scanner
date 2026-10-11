@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-11T17:21:17.198500+00:00
+- generated_at: 2026-10-11T17:26:20.098303+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16565**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-11T17:21:07.224457+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=83950.3
+- 更新: 2026-10-11T17:26:08.831510+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=83931.5
 - Funnel: target 1087 → liquid 136 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| S/USDT:USDT | +17.46% | $13,532,749.69 |
-| CKB/USDT:USDT | +5.06% | $1,832,328.15 |
-| LUMIA/USDT:USDT | +4.92% | $8,343,587.55 |
-| USELESS/USDT:USDT | +4.26% | $2,510,682.00 |
-| ENA/USDT:USDT | +3.71% | $40,967,011.27 |
+| S/USDT:USDT | +18.26% | $13,984,616.86 |
+| LUMIA/USDT:USDT | +5.20% | $8,353,875.61 |
+| CKB/USDT:USDT | +4.56% | $1,837,581.23 |
+| USELESS/USDT:USDT | +4.46% | $2,562,578.20 |
+| ENA/USDT:USDT | +3.34% | $41,126,473.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LUMIA/USDT:USDT | below_1h_threshold | +4.19% | +4.10% |
-| USELESS/USDT:USDT | below_1h_threshold | +1.81% | +1.72% |
-| S/USDT:USDT | below_1h_threshold | +1.72% | +1.62% |
-| VVV/USDT:USDT | below_1h_threshold | +1.61% | +1.51% |
-| PEPE/USDT:USDT | below_1h_threshold | +1.06% | +0.96% |
+| LUMIA/USDT:USDT | below_1h_threshold | +3.56% | +3.48% |
+| S/USDT:USDT | below_1h_threshold | +2.39% | +2.32% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.96% | +1.89% |
+| MAGIC/USDT:USDT | below_1h_threshold | +1.94% | +1.86% |
+| CFX/USDT:USDT | below_1h_threshold | +1.35% | +1.27% |
 
 ## 7. 次に見るべき不足
 
