@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-11T21:46:22.123832+00:00
+- generated_at: 2026-10-11T21:51:23.255118+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16580**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-11T21:46:12.326569+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.22% price=83456.4
+- 更新: 2026-10-11T21:51:11.279071+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.23% price=83448.0
 - Funnel: target 1087 → liquid 143 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.1 >= 65=1
+- Strict後reject: 4h RSI 67.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CKB/USDT:USDT | +31.14% | $3,421,561.56 |
-| BATON/USDT:USDT | +19.12% | $3,274,792.59 |
-| W/USDT:USDT | +18.28% | $9,012,609.95 |
-| S/USDT:USDT | +12.32% | $28,127,154.65 |
-| FILECOIN/USDT:USDT | +11.61% | $21,566,465.21 |
+| CKB/USDT:USDT | +31.01% | $3,504,965.58 |
+| BATON/USDT:USDT | +20.31% | $3,286,488.12 |
+| W/USDT:USDT | +17.43% | $9,056,974.36 |
+| S/USDT:USDT | +12.03% | $28,208,833.94 |
+| FILECOIN/USDT:USDT | +10.69% | $21,696,056.24 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| S/USDT:USDT | below_1h_threshold | +3.93% | +4.15% |
-| PLUME/USDT:USDT | below_1h_threshold | +1.89% | +2.11% |
-| FLOW/USDT:USDT | below_1h_threshold | +1.33% | +1.55% |
-| EIGEN/USDT:USDT | below_1h_threshold | +0.77% | +0.98% |
-| USELESS/USDT:USDT | below_1h_threshold | +0.64% | +0.85% |
+| S/USDT:USDT | below_1h_threshold | +3.70% | +3.92% |
+| EIGEN/USDT:USDT | below_1h_threshold | +1.61% | +1.83% |
+| PLUME/USDT:USDT | below_1h_threshold | +1.57% | +1.79% |
+| FLOW/USDT:USDT | below_1h_threshold | +1.13% | +1.36% |
+| GRASS/USDT:USDT | below_1h_threshold | +0.93% | +1.15% |
 
 ## 7. 次に見るべき不足
 
