@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-11T02:31:28.549945+00:00
+- generated_at: 2026-10-11T02:36:25.260456+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16528**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-11T02:31:19.090403+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=83006.9
-- Funnel: target 1087 → liquid 138 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.2 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-11T02:36:13.539659+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=83045.2
+- Funnel: target 1087 → liquid 139 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CHIP/USDT:USDT | +32.99% | $30,700,278.93 |
-| STRK/USDT:USDT | +25.14% | $71,162,750.52 |
-| RLC/USDT:USDT | +20.05% | $24,163,163.51 |
-| SI/USDT:USDT | +19.86% | $1,786,023.83 |
-| TIA/USDT:USDT | +19.25% | $71,422,137.31 |
+| CHIP/USDT:USDT | +34.50% | $30,841,526.29 |
+| STRK/USDT:USDT | +25.88% | $71,421,434.22 |
+| SI/USDT:USDT | +20.62% | $1,788,635.59 |
+| TIA/USDT:USDT | +19.53% | $71,902,837.58 |
+| RLC/USDT:USDT | +13.26% | $24,504,742.75 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| OGN/USDT:USDT | below_1h_threshold | +3.78% | +3.76% |
-| ETHFI/USDT:USDT | below_1h_threshold | +1.63% | +1.61% |
-| NIL/USDT:USDT | below_1h_threshold | +0.87% | +0.85% |
-| MINA/USDT:USDT | below_1h_threshold | +0.86% | +0.84% |
-| JASMY/USDT:USDT | below_1h_threshold | +0.80% | +0.78% |
+| US/USDT:USDT | below_1h_threshold | +3.48% | +3.41% |
+| ETHFI/USDT:USDT | below_1h_threshold | +1.85% | +1.79% |
+| NIL/USDT:USDT | below_1h_threshold | +1.07% | +1.00% |
+| JASMY/USDT:USDT | below_1h_threshold | +1.00% | +0.93% |
+| NEO/USDT:USDT | below_1h_threshold | +0.99% | +0.93% |
 
 ## 7. 次に見るべき不足
 
