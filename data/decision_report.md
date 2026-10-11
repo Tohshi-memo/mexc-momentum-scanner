@@ -1,30 +1,30 @@
 # Decision Report
 
-- generated_at: 2026-10-11T09:01:25.617646+00:00
+- generated_at: 2026-10-11T09:06:22.225724+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **16545**
+- closed shadow trades: **16546**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=16545, expectancy=+0.01%
-- 直近20件 MARKET基準: n=20, expectancy=-1.60%
+- 全期間 MARKET基準: n=16546, expectancy=+0.01%
+- 直近20件 MARKET基準: n=20, expectancy=-1.54%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
 ### 実行可能ランキング (現executorで正確に測れるもの)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | -1.60% | **-1.60%** |
+| MARKET | 20/20 | 100.0% | -1.54% | **-1.54%** |
 
 ### シャドウ上位 SHORT (まだ実行に直結しない候補を含む)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_BB3S | 5/14 | 35.7% | +2.52% | **+0.90%** |
-| LIMIT_FIB1618 | 4/20 | 20.0% | +1.76% | **+0.35%** |
-| LIMIT_5PCT | 10/20 | 50.0% | -0.53% | **-0.27%** |
-| LIMIT_6PCT | 5/20 | 25.0% | -1.65% | **-0.41%** |
+| LIMIT_BB3S | 6/14 | 42.9% | +1.73% | **+0.74%** |
+| LIMIT_FIB1618 | 3/20 | 15.0% | +2.02% | **+0.30%** |
+| LIMIT_5PCT | 9/20 | 45.0% | -0.70% | **-0.31%** |
+| LIMIT_6PCT | 4/20 | 20.0% | -2.53% | **-0.51%** |
 | LIMIT_9PCT | 3/20 | 15.0% | -4.00% | **-0.60%** |
 
 ### シャドウ上位 LONG
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,298.24** / 初期 $100.00 (+1198.24%)
-- 確定: 6289件 (Win 1845 / Loss 2015 / Flat 2429) / skip 6817件
+- 確定: 6289件 (Win 1845 / Loss 2015 / Flat 2429) / skip 6818件
 - 成長率目線: 平均log +0.000408 / 幾何平均 +0.041% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_1PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: MAGIC/USDT:USDT `LIMIT_BB3S` EXPIRED account +0.00% 残高後 $1,298.24
@@ -55,7 +55,7 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$273.08** / 初期 $100.00 (+173.08%)
-- 確定: 3637件 (Win 1010 / Loss 854 / Flat 1773) / skip 6319件
+- 確定: 3637件 (Win 1010 / Loss 854 / Flat 1773) / skip 6320件
 - 成長率目線: 平均log +0.000276 / 幾何平均 +0.028% per trade / maxDD +3.96%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: NIL/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.35% 残高後 $273.08
@@ -65,13 +65,13 @@
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
 - 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4708件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000227 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000223 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-11T09:01:13.775628+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=82992.4
+- 更新: 2026-10-11T09:06:09.042235+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=82992.3
 - Funnel: target 1087 → liquid 138 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LUMIA/USDT:USDT | +52.01% | $7,064,659.40 |
-| SI/USDT:USDT | +26.51% | $2,075,141.81 |
-| MAGIC/USDT:USDT | +26.35% | $15,233,933.63 |
-| CHIP/USDT:USDT | +24.72% | $38,354,623.24 |
-| STRK/USDT:USDT | +16.42% | $90,806,081.02 |
+| LUMIA/USDT:USDT | +52.95% | $7,126,933.44 |
+| MAGIC/USDT:USDT | +27.34% | $15,392,298.41 |
+| CHIP/USDT:USDT | +26.02% | $38,415,059.00 |
+| SI/USDT:USDT | +25.43% | $2,080,684.50 |
+| XDP/USDT:USDT | +16.54% | $1,846,611.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BAT/USDT:USDT | below_1h_threshold | +1.70% | +1.72% |
-| STRK/USDT:USDT | below_1h_threshold | +0.37% | +0.38% |
-| MAGIC/USDT:USDT | below_1h_threshold | +0.35% | +0.36% |
-| LUMIA/USDT:USDT | below_1h_threshold | +0.34% | +0.36% |
-| GRASS/USDT:USDT | below_1h_threshold | +0.24% | +0.25% |
+| MAGIC/USDT:USDT | below_1h_threshold | +1.12% | +1.13% |
+| CHIP/USDT:USDT | below_1h_threshold | +1.09% | +1.10% |
+| RLC/USDT:USDT | below_1h_threshold | +1.01% | +1.02% |
+| LUMIA/USDT:USDT | below_1h_threshold | +0.96% | +0.97% |
+| AERO/USDT:USDT | below_1h_threshold | +0.78% | +0.79% |
 
 ## 7. 次に見るべき不足
 
