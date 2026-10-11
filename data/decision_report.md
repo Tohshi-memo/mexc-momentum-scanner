@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-11T10:41:30.028292+00:00
+- generated_at: 2026-10-11T10:46:24.568685+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16551**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-11T10:41:14.771514+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=82933.8
-- Funnel: target 1087 → liquid 138 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.2 >= 65=1
+- 更新: 2026-10-11T10:46:11.846717+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=82938.5
+- Funnel: target 1087 → liquid 139 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 66.3 >= 65=1, 4h RSI 73.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LUMIA/USDT:USDT | +54.42% | $7,451,566.73 |
-| CHIP/USDT:USDT | +31.13% | $41,183,955.94 |
-| MAGIC/USDT:USDT | +22.58% | $16,962,961.51 |
-| SI/USDT:USDT | +21.89% | $2,179,448.37 |
-| BATON/USDT:USDT | +21.33% | $1,825,373.77 |
+| LUMIA/USDT:USDT | +54.36% | $7,463,439.56 |
+| CHIP/USDT:USDT | +31.40% | $41,507,227.60 |
+| MAGIC/USDT:USDT | +22.06% | $17,045,905.73 |
+| SI/USDT:USDT | +21.17% | $2,182,565.27 |
+| RLC/USDT:USDT | +19.76% | $24,429,018.95 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RLC/USDT:USDT | below_1h_threshold | +4.11% | +4.19% |
-| NIGHT/USDT:USDT | below_1h_threshold | +1.22% | +1.30% |
-| LUMIA/USDT:USDT | below_1h_threshold | +1.00% | +1.08% |
-| CAP/USDT:USDT | below_1h_threshold | +0.57% | +0.65% |
-| TRX/USDT:USDT | below_1h_threshold | +0.13% | +0.21% |
+| NIGHT/USDT:USDT | below_1h_threshold | +1.76% | +1.84% |
+| LUMIA/USDT:USDT | below_1h_threshold | +1.04% | +1.12% |
+| STRK/USDT:USDT | below_1h_threshold | +0.77% | +0.84% |
+| CAP/USDT:USDT | below_1h_threshold | +0.47% | +0.55% |
+| JASMY/USDT:USDT | below_1h_threshold | +0.40% | +0.48% |
 
 ## 7. 次に見るべき不足
 
