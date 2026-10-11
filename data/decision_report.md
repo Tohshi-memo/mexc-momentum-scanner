@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-11T14:31:22.906923+00:00
+- generated_at: 2026-10-11T14:36:37.752423+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16555**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4716件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4717件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `見送り` (no_strategy_passed_causal_filters) / causal_score n/a / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-11T14:31:12.692789+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=83057.3
-- Funnel: target 1087 → liquid 139 → pre 50 → checked 50 → surge 2 → strict 0
+- 更新: 2026-10-11T14:36:22.608408+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=83115.5
+- Funnel: target 1087 → liquid 139 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.5 >= 65=1, 4h RSI 75.0 >= 65=1
+- Strict後reject: 4h RSI 69.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CHIP/USDT:USDT | +35.06% | $48,072,968.16 |
-| LUMIA/USDT:USDT | +27.04% | $8,264,879.44 |
-| MAGIC/USDT:USDT | +23.85% | $16,780,915.53 |
-| CKB/USDT:USDT | +21.59% | $1,722,959.31 |
-| STRK/USDT:USDT | +21.16% | $112,940,100.63 |
+| CHIP/USDT:USDT | +33.64% | $48,175,667.89 |
+| LUMIA/USDT:USDT | +27.68% | $8,285,902.00 |
+| MAGIC/USDT:USDT | +23.42% | $16,822,768.55 |
+| CKB/USDT:USDT | +21.66% | $1,744,060.27 |
+| BATON/USDT:USDT | +21.53% | $1,895,607.25 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STRK/USDT:USDT | below_1h_threshold | +3.41% | +3.40% |
-| BATON/USDT:USDT | below_1h_threshold | +3.00% | +2.99% |
-| S/USDT:USDT | below_1h_threshold | +2.90% | +2.89% |
-| TIA/USDT:USDT | below_1h_threshold | +2.35% | +2.34% |
-| ALGO/USDT:USDT | below_1h_threshold | +2.29% | +2.28% |
+| CHIP/USDT:USDT | below_1h_threshold | +4.14% | +4.06% |
+| STRK/USDT:USDT | below_1h_threshold | +3.40% | +3.32% |
+| NEO/USDT:USDT | below_1h_threshold | +2.39% | +2.31% |
+| S/USDT:USDT | below_1h_threshold | +2.28% | +2.20% |
+| ALGO/USDT:USDT | below_1h_threshold | +2.26% | +2.18% |
 
 ## 7. 次に見るべき不足
 
