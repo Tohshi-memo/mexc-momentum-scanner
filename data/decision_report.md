@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-11T19:56:31.863863+00:00
+- generated_at: 2026-10-11T20:01:30.355935+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16575**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-11T19:56:19.337970+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=83640.3
-- Funnel: target 1087 → liquid 140 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.3 >= 65=1, 4h RSI 82.1 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-11T20:01:20.460532+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=83629.0
+- Funnel: target 1087 → liquid 136 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| W/USDT:USDT | +29.46% | $4,608,940.40 |
-| BATON/USDT:USDT | +24.39% | $3,025,582.60 |
-| S/USDT:USDT | +18.31% | $23,680,108.28 |
-| PLUME/USDT:USDT | +7.48% | $1,023,081.98 |
-| CKB/USDT:USDT | +7.31% | $2,034,205.59 |
+| W/USDT:USDT | +30.17% | $4,757,544.71 |
+| BATON/USDT:USDT | +24.56% | $2,987,308.99 |
+| S/USDT:USDT | +17.70% | $23,694,289.55 |
+| CKB/USDT:USDT | +9.81% | $2,039,349.88 |
+| PLUME/USDT:USDT | +8.68% | $1,035,281.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZKSYNC/USDT:USDT | below_1h_threshold | +3.75% | +3.75% |
-| LUMIA/USDT:USDT | below_1h_threshold | +3.65% | +3.65% |
-| GRASS/USDT:USDT | below_1h_threshold | +3.10% | +3.10% |
-| PLUME/USDT:USDT | below_1h_threshold | +2.90% | +2.90% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +2.87% | +2.87% |
+| W/USDT:USDT | below_1h_threshold | +1.01% | +1.01% |
+| ETHFI/USDT:USDT | below_1h_threshold | +0.59% | +0.59% |
+| LUMIA/USDT:USDT | below_1h_threshold | +0.55% | +0.55% |
+| ZKSYNC/USDT:USDT | below_1h_threshold | +0.52% | +0.52% |
+| CKB/USDT:USDT | below_1h_threshold | +0.34% | +0.34% |
 
 ## 7. 次に見るべき不足
 
