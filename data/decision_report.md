@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-11T15:16:15.810947+00:00
+- generated_at: 2026-10-11T15:21:15.084351+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16557**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-11T15:16:07.131104+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=83091.4
-- Funnel: target 1087 → liquid 138 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 88.0 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-11T15:21:06.923943+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=83095.1
+- Funnel: target 1087 → liquid 138 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CHIP/USDT:USDT | +33.55% | $50,328,553.42 |
-| MAGIC/USDT:USDT | +26.59% | $16,828,067.85 |
-| STRK/USDT:USDT | +25.94% | $111,465,243.46 |
-| LUMIA/USDT:USDT | +23.97% | $8,221,336.41 |
-| BATON/USDT:USDT | +22.20% | $1,950,358.41 |
+| CHIP/USDT:USDT | +34.55% | $50,465,381.37 |
+| STRK/USDT:USDT | +24.86% | $111,720,876.72 |
+| MAGIC/USDT:USDT | +24.45% | $16,928,018.70 |
+| S/USDT:USDT | +23.51% | $5,748,171.61 |
+| BATON/USDT:USDT | +21.61% | $1,957,155.33 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BAT/USDT:USDT | below_1h_threshold | +4.16% | +4.16% |
-| ALGO/USDT:USDT | below_1h_threshold | +2.37% | +2.37% |
-| CRV/USDT:USDT | below_1h_threshold | +1.23% | +1.23% |
-| RLC/USDT:USDT | below_1h_threshold | +1.07% | +1.07% |
-| APE/USDT:USDT | below_1h_threshold | +1.02% | +1.02% |
+| BAT/USDT:USDT | below_1h_threshold | +4.73% | +4.72% |
+| STRK/USDT:USDT | below_1h_threshold | +4.25% | +4.25% |
+| S/USDT:USDT | below_1h_threshold | +2.75% | +2.74% |
+| ALGO/USDT:USDT | below_1h_threshold | +2.11% | +2.10% |
+| APT/USDT:USDT | below_1h_threshold | +2.01% | +2.00% |
 
 ## 7. 次に見るべき不足
 
