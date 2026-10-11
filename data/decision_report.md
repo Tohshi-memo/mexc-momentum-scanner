@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-11T15:21:15.084351+00:00
+- generated_at: 2026-10-11T15:26:15.026021+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16557**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-11T15:21:06.923943+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=83095.1
+- 更新: 2026-10-11T15:26:06.468475+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=83113.8
 - Funnel: target 1087 → liquid 138 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CHIP/USDT:USDT | +34.55% | $50,465,381.37 |
-| STRK/USDT:USDT | +24.86% | $111,720,876.72 |
-| MAGIC/USDT:USDT | +24.45% | $16,928,018.70 |
-| S/USDT:USDT | +23.51% | $5,748,171.61 |
-| BATON/USDT:USDT | +21.61% | $1,957,155.33 |
+| CHIP/USDT:USDT | +34.46% | $50,657,898.73 |
+| STRK/USDT:USDT | +25.20% | $111,901,190.78 |
+| MAGIC/USDT:USDT | +24.71% | $16,960,501.98 |
+| S/USDT:USDT | +23.92% | $5,795,444.64 |
+| CFX/USDT:USDT | +20.18% | $26,639,822.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BAT/USDT:USDT | below_1h_threshold | +4.73% | +4.72% |
-| STRK/USDT:USDT | below_1h_threshold | +4.25% | +4.25% |
-| S/USDT:USDT | below_1h_threshold | +2.75% | +2.74% |
-| ALGO/USDT:USDT | below_1h_threshold | +2.11% | +2.10% |
-| APT/USDT:USDT | below_1h_threshold | +2.01% | +2.00% |
+| BAT/USDT:USDT | below_1h_threshold | +4.56% | +4.53% |
+| STRK/USDT:USDT | below_1h_threshold | +4.48% | +4.46% |
+| S/USDT:USDT | below_1h_threshold | +3.38% | +3.35% |
+| ALGO/USDT:USDT | below_1h_threshold | +2.91% | +2.88% |
+| APT/USDT:USDT | below_1h_threshold | +2.88% | +2.85% |
 
 ## 7. 次に見るべき不足
 
