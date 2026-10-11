@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-11T23:06:23.385274+00:00
+- generated_at: 2026-10-11T23:11:18.783502+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16582**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-11T23:06:13.857976+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=83699.0
+- 更新: 2026-10-11T23:11:09.087085+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=83670.6
 - Funnel: target 1087 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CKB/USDT:USDT | +25.51% | $4,397,741.20 |
-| W/USDT:USDT | +24.64% | $10,314,937.02 |
-| BATON/USDT:USDT | +23.30% | $3,142,275.21 |
-| PLUME/USDT:USDT | +14.07% | $1,581,932.85 |
-| S/USDT:USDT | +10.07% | $28,976,433.35 |
+| CKB/USDT:USDT | +25.95% | $4,416,994.73 |
+| W/USDT:USDT | +23.03% | $10,372,757.59 |
+| BATON/USDT:USDT | +22.11% | $3,156,086.70 |
+| PLUME/USDT:USDT | +13.87% | $1,591,584.05 |
+| S/USDT:USDT | +11.05% | $29,026,632.23 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BATON/USDT:USDT | below_1h_threshold | +2.72% | +2.61% |
-| MAGIC/USDT:USDT | below_1h_threshold | +2.36% | +2.24% |
-| GRASS/USDT:USDT | below_1h_threshold | +0.98% | +0.87% |
-| VVV/USDT:USDT | below_1h_threshold | +0.97% | +0.86% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.81% | +0.70% |
+| MAGIC/USDT:USDT | below_1h_threshold | +3.98% | +3.90% |
+| BATON/USDT:USDT | below_1h_threshold | +1.85% | +1.77% |
+| VVV/USDT:USDT | below_1h_threshold | +1.44% | +1.36% |
+| ONDO/USDT:USDT | below_1h_threshold | +1.17% | +1.09% |
+| GRASS/USDT:USDT | below_1h_threshold | +0.92% | +0.84% |
 
 ## 7. 次に見るべき不足
 
