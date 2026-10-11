@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-11T01:51:43.201843+00:00
+- generated_at: 2026-10-11T01:56:46.651311+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16524**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4688件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4689件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000275 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-11T01:51:26.705549+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=82997.7
-- Funnel: target 1087 → liquid 138 → pre 50 → checked 50 → surge 4 → strict 1
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.2 >= 65=1, 4h RSI 72.0 >= 65=1, 4h RSI 75.0 >= 65=1
+- 更新: 2026-10-11T01:56:28.527659+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=82977.8
+- Funnel: target 1087 → liquid 138 → pre 50 → checked 50 → surge 5 → strict 2
+- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 87.5 >= 65=1, 4h RSI 73.4 >= 65=1, 4h RSI 75.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CHIP/USDT:USDT | +35.58% | $29,888,690.55 |
-| STRK/USDT:USDT | +22.49% | $69,708,844.28 |
-| SI/USDT:USDT | +22.29% | $1,763,706.77 |
-| TIA/USDT:USDT | +21.81% | $66,234,106.87 |
-| S/USDT:USDT | +10.90% | $3,035,268.05 |
+| CHIP/USDT:USDT | +35.93% | $29,966,917.50 |
+| STRK/USDT:USDT | +24.76% | $70,132,722.89 |
+| TIA/USDT:USDT | +22.22% | $66,591,789.37 |
+| SI/USDT:USDT | +22.17% | $1,769,180.85 |
+| S/USDT:USDT | +10.95% | $3,061,347.79 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EIGEN/USDT:USDT | below_1h_threshold | +3.81% | +3.70% |
-| ARB/USDT:USDT | below_1h_threshold | +3.07% | +2.96% |
-| OP/USDT:USDT | below_1h_threshold | +2.68% | +2.57% |
-| APT/USDT:USDT | below_1h_threshold | +2.45% | +2.34% |
-| CHIP/USDT:USDT | below_1h_threshold | +2.44% | +2.33% |
+| EIGEN/USDT:USDT | below_1h_threshold | +3.43% | +3.35% |
+| OP/USDT:USDT | below_1h_threshold | +2.85% | +2.76% |
+| CHIP/USDT:USDT | below_1h_threshold | +2.69% | +2.60% |
+| ARB/USDT:USDT | below_1h_threshold | +2.66% | +2.57% |
+| MINA/USDT:USDT | below_1h_threshold | +2.32% | +2.24% |
 
 ## 7. 次に見るべき不足
 
