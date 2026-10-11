@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-11T20:56:34.713308+00:00
+- generated_at: 2026-10-11T21:01:19.870171+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16578**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-11T20:56:17.944787+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=83578.1
-- Funnel: target 1087 → liquid 138 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.6 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-11T21:01:08.202719+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=83611.1
+- Funnel: target 1087 → liquid 137 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CKB/USDT:USDT | +34.95% | $2,431,662.89 |
-| BATON/USDT:USDT | +23.12% | $3,218,306.30 |
-| W/USDT:USDT | +14.24% | $7,607,073.30 |
-| FILECOIN/USDT:USDT | +9.90% | $16,972,844.09 |
-| PLUME/USDT:USDT | +9.08% | $1,242,338.28 |
+| CKB/USDT:USDT | +33.52% | $2,571,128.50 |
+| BATON/USDT:USDT | +23.97% | $3,104,397.12 |
+| FILECOIN/USDT:USDT | +11.77% | $17,501,427.40 |
+| W/USDT:USDT | +11.55% | $7,862,758.52 |
+| PLUME/USDT:USDT | +7.98% | $1,261,089.11 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FILECOIN/USDT:USDT | below_1h_threshold | +3.60% | +3.66% |
-| GRASS/USDT:USDT | below_1h_threshold | +2.12% | +2.18% |
-| ZRO/USDT:USDT | below_1h_threshold | +1.89% | +1.94% |
-| MONAD/USDT:USDT | below_1h_threshold | +1.17% | +1.22% |
-| VVV/USDT:USDT | below_1h_threshold | +0.98% | +1.03% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +0.92% | +0.95% |
+| LUMIA/USDT:USDT | below_1h_threshold | +0.76% | +0.79% |
+| BATON/USDT:USDT | below_1h_threshold | +0.59% | +0.62% |
+| FLOW/USDT:USDT | below_1h_threshold | +0.40% | +0.43% |
+| SBUXSTOCK/USDT:USDT | below_1h_threshold | +0.28% | +0.32% |
 
 ## 7. 次に見るべき不足
 
