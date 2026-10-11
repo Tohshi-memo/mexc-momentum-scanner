@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-10-11T12:56:21.775709+00:00
+- generated_at: 2026-10-11T13:01:22.148525+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **16553**
+- closed shadow trades: **16554**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=16553, expectancy=+0.01%
+- 全期間 MARKET基準: n=16554, expectancy=+0.02%
 - 直近20件 MARKET基準: n=20, expectancy=-0.89%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -21,17 +21,17 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_BB3S | 6/16 | 37.5% | +0.46% | **+0.17%** |
+| LIMIT_BB3S | 7/17 | 41.2% | +1.53% | **+0.63%** |
 | LIMIT_5PCT | 7/20 | 35.0% | +0.24% | **+0.09%** |
 | LIMIT_FIB1272 | 12/20 | 60.0% | -0.06% | **-0.04%** |
 | LIMIT_4PCT | 13/20 | 65.0% | -0.31% | **-0.20%** |
-| LIMIT_ATR | 15/20 | 75.0% | -0.86% | **-0.64%** |
+| LIMIT_2PCT | 16/20 | 80.0% | -0.77% | **-0.62%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_BB3S_LONG | 3/4 | 75.0% | +1.83% | **+1.38%** |
+| LIMIT_BB3S_LONG | 2/3 | 66.7% | +3.40% | **+2.27%** |
 | LIMIT_2PCT_LONG | 14/20 | 70.0% | +1.92% | **+1.34%** |
 | LIMIT_3PCT_LONG | 11/20 | 55.0% | +1.54% | **+0.85%** |
 | LIMIT_1PCT_LONG | 15/20 | 75.0% | +1.02% | **+0.77%** |
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,298.24** / 初期 $100.00 (+1198.24%)
-- 確定: 6289件 (Win 1845 / Loss 2015 / Flat 2429) / skip 6825件
+- 確定: 6289件 (Win 1845 / Loss 2015 / Flat 2429) / skip 6826件
 - 成長率目線: 平均log +0.000408 / 幾何平均 +0.041% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_1PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: MAGIC/USDT:USDT `LIMIT_BB3S` EXPIRED account +0.00% 残高後 $1,298.24
@@ -55,7 +55,7 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$273.08** / 初期 $100.00 (+173.08%)
-- 確定: 3637件 (Win 1010 / Loss 854 / Flat 1773) / skip 6327件
+- 確定: 3637件 (Win 1010 / Loss 854 / Flat 1773) / skip 6328件
 - 成長率目線: 平均log +0.000276 / 幾何平均 +0.028% per trade / maxDD +3.96%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: NIL/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.35% 残高後 $273.08
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-11T12:56:09.177128+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=83073.7
-- Funnel: target 1087 → liquid 142 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.9 >= 65=1, 4h RSI 66.0 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-11T13:01:08.497345+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=83073.0
+- Funnel: target 1087 → liquid 138 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LUMIA/USDT:USDT | +43.15% | $8,264,722.69 |
-| CHIP/USDT:USDT | +30.68% | $45,403,999.37 |
-| MAGIC/USDT:USDT | +26.77% | $17,047,446.92 |
-| STRK/USDT:USDT | +23.69% | $104,919,025.42 |
-| RLC/USDT:USDT | +19.05% | $27,242,095.38 |
+| LUMIA/USDT:USDT | +45.33% | $7,911,539.05 |
+| CHIP/USDT:USDT | +30.30% | $45,425,215.12 |
+| MAGIC/USDT:USDT | +26.93% | $16,147,389.32 |
+| STRK/USDT:USDT | +22.85% | $104,680,200.40 |
+| RLC/USDT:USDT | +18.37% | $26,754,213.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CFX/USDT:USDT | below_1h_threshold | +3.59% | +3.65% |
-| S/USDT:USDT | below_1h_threshold | +3.04% | +3.10% |
-| LUMIA/USDT:USDT | below_1h_threshold | +2.49% | +2.55% |
-| STRK/USDT:USDT | below_1h_threshold | +2.22% | +2.28% |
-| GRASS/USDT:USDT | below_1h_threshold | +1.85% | +1.91% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +0.45% | +0.45% |
+| XDP/USDT:USDT | below_1h_threshold | +0.28% | +0.28% |
+| APE/USDT:USDT | below_1h_threshold | +0.26% | +0.26% |
+| AXS/USDT:USDT | below_1h_threshold | +0.24% | +0.24% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.22% | +0.22% |
 
 ## 7. 次に見るべき不足
 
