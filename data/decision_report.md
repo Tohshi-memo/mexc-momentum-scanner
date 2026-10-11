@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-11T23:41:26.233574+00:00
+- generated_at: 2026-10-11T23:46:14.921533+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16584**
 
@@ -70,9 +70,9 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-11T23:41:11.966494+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=83681.0
-- Funnel: target 1087 → liquid 141 → pre 50 → checked 50 → surge 1 → strict 0
+- 更新: 2026-10-11T23:46:06.562279+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=83630.3
+- Funnel: target 1087 → liquid 143 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 69.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -81,21 +81,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| W/USDT:USDT | +22.24% | $10,650,436.31 |
-| CKB/USDT:USDT | +21.45% | $4,648,051.55 |
-| BATON/USDT:USDT | +20.19% | $3,210,594.88 |
-| PLUME/USDT:USDT | +13.62% | $1,652,982.18 |
-| GRASS/USDT:USDT | +11.03% | $4,547,022.73 |
+| W/USDT:USDT | +22.64% | $10,662,446.90 |
+| CKB/USDT:USDT | +21.07% | $4,672,900.52 |
+| BATON/USDT:USDT | +19.68% | $3,213,568.72 |
+| PLUME/USDT:USDT | +13.18% | $1,667,006.75 |
+| GRASS/USDT:USDT | +10.79% | $4,568,934.92 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GRASS/USDT:USDT | below_1h_threshold | +2.84% | +2.75% |
-| ONDO/USDT:USDT | below_1h_threshold | +2.07% | +1.98% |
-| ZEC/USDT:USDT | below_1h_threshold | +1.70% | +1.61% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +1.06% | +0.96% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.05% | +0.96% |
+| GRASS/USDT:USDT | below_1h_threshold | +2.61% | +2.58% |
+| ONDO/USDT:USDT | below_1h_threshold | +1.76% | +1.72% |
+| ZEC/USDT:USDT | below_1h_threshold | +1.57% | +1.54% |
+| SYN/USDT:USDT | below_1h_threshold | +1.28% | +1.25% |
+| CAKE/USDT:USDT | below_1h_threshold | +1.10% | +1.07% |
 
 ## 7. 次に見るべき不足
 
