@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-11T20:21:32.865050+00:00
+- generated_at: 2026-10-11T20:26:29.472220+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16575**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-11T20:21:21.028420+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=83639.1
-- Funnel: target 1087 → liquid 136 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-11T20:26:17.280488+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=83600.1
+- Funnel: target 1087 → liquid 137 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| W/USDT:USDT | +30.10% | $5,529,398.24 |
-| BATON/USDT:USDT | +24.19% | $3,105,086.09 |
-| S/USDT:USDT | +17.59% | $24,530,138.38 |
-| PLUME/USDT:USDT | +10.88% | $1,124,415.28 |
-| CKB/USDT:USDT | +10.75% | $2,072,294.94 |
+| W/USDT:USDT | +27.50% | $5,857,859.30 |
+| BATON/USDT:USDT | +23.64% | $3,127,103.21 |
+| S/USDT:USDT | +17.33% | $24,673,642.69 |
+| CKB/USDT:USDT | +11.75% | $2,080,342.61 |
+| PLUME/USDT:USDT | +10.43% | $1,146,602.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FLOW/USDT:USDT | below_1h_threshold | +3.39% | +3.37% |
-| RLC/USDT:USDT | below_1h_threshold | +2.53% | +2.51% |
-| PLUME/USDT:USDT | below_1h_threshold | +2.07% | +2.05% |
-| ONDO/USDT:USDT | below_1h_threshold | +1.57% | +1.56% |
-| CKB/USDT:USDT | below_1h_threshold | +1.26% | +1.24% |
+| FLOW/USDT:USDT | below_1h_threshold | +3.48% | +3.51% |
+| RLC/USDT:USDT | below_1h_threshold | +2.64% | +2.67% |
+| CKB/USDT:USDT | below_1h_threshold | +2.29% | +2.32% |
+| PLUME/USDT:USDT | below_1h_threshold | +1.61% | +1.64% |
+| CHIP/USDT:USDT | below_1h_threshold | +1.31% | +1.34% |
 
 ## 7. 次に見るべき不足
 
