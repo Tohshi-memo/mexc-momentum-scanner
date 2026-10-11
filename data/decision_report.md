@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-11T16:51:11.671289+00:00
+- generated_at: 2026-10-11T16:56:20.920776+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16564**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4726件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4727件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000165 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-11T16:51:03.052953+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=83871.9
-- Funnel: target 1087 → liquid 139 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.8 >= 65=1
+- 更新: 2026-10-11T16:56:08.404392+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=83955.9
+- Funnel: target 1087 → liquid 140 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 87.3 >= 65=1, 4h RSI 76.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| S/USDT:USDT | +12.07% | $10,795,865.39 |
-| ENA/USDT:USDT | +4.03% | $40,136,336.37 |
-| RAY/USDT:USDT | +3.08% | $3,526,488.38 |
-| CKB/USDT:USDT | +3.00% | $1,848,078.41 |
-| FARTCOIN/USDT:USDT | +2.78% | $6,792,739.67 |
+| S/USDT:USDT | +14.48% | $11,151,712.65 |
+| CKB/USDT:USDT | +4.62% | $1,853,526.46 |
+| ENA/USDT:USDT | +3.84% | $40,527,311.48 |
+| FARTCOIN/USDT:USDT | +3.49% | $6,903,065.27 |
+| W/USDT:USDT | +3.31% | $1,077,352.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ENA/USDT:USDT | below_1h_threshold | +3.96% | +3.96% |
-| RAY/USDT:USDT | below_1h_threshold | +3.08% | +3.08% |
-| CKB/USDT:USDT | below_1h_threshold | +3.06% | +3.06% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +2.79% | +2.78% |
-| VVV/USDT:USDT | below_1h_threshold | +2.46% | +2.46% |
+| ENA/USDT:USDT | below_1h_threshold | +3.82% | +3.72% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +3.58% | +3.48% |
+| W/USDT:USDT | below_1h_threshold | +3.27% | +3.17% |
+| RAY/USDT:USDT | below_1h_threshold | +3.17% | +3.06% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.71% | +2.61% |
 
 ## 7. 次に見るべき不足
 
