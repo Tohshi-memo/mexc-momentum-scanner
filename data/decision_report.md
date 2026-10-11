@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-11T21:56:20.994732+00:00
+- generated_at: 2026-10-11T22:01:21.066235+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16580**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-11T21:56:09.308902+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.18% price=83489.8
-- Funnel: target 1087 → liquid 143 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.6 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-11T22:01:09.346530+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=83421.1
+- Funnel: target 1087 → liquid 139 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CKB/USDT:USDT | +26.82% | $3,620,110.65 |
-| BATON/USDT:USDT | +18.69% | $3,296,846.52 |
-| W/USDT:USDT | +18.16% | $9,099,023.52 |
-| S/USDT:USDT | +12.18% | $28,279,667.20 |
-| FILECOIN/USDT:USDT | +11.93% | $21,818,069.60 |
+| CKB/USDT:USDT | +29.51% | $3,647,312.11 |
+| W/USDT:USDT | +18.84% | $9,093,134.63 |
+| BATON/USDT:USDT | +16.43% | $3,108,891.15 |
+| S/USDT:USDT | +11.85% | $27,895,733.86 |
+| FILECOIN/USDT:USDT | +11.30% | $22,531,875.75 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| S/USDT:USDT | below_1h_threshold | +3.80% | +3.97% |
-| EIGEN/USDT:USDT | below_1h_threshold | +1.72% | +1.90% |
-| GRASS/USDT:USDT | below_1h_threshold | +1.43% | +1.60% |
-| USELESS/USDT:USDT | below_1h_threshold | +1.26% | +1.43% |
-| ICP/USDT:USDT | below_1h_threshold | +1.08% | +1.26% |
+| CKB/USDT:USDT | below_1h_threshold | +0.48% | +0.56% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.29% | +0.37% |
+| MCDSTOCK/USDT:USDT | below_1h_threshold | +0.25% | +0.33% |
+| LUMIA/USDT:USDT | below_1h_threshold | +0.18% | +0.26% |
+| PLUME/USDT:USDT | below_1h_threshold | +0.14% | +0.21% |
 
 ## 7. 次に見るべき不足
 
