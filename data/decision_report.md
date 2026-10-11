@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-11T23:46:14.921533+00:00
+- generated_at: 2026-10-11T23:51:25.964725+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16584**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4743件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4744件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000269 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-11T23:46:06.562279+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=83630.3
+- 更新: 2026-10-11T23:51:13.894603+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=83685.9
 - Funnel: target 1087 → liquid 143 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.4 >= 65=1
+- Strict後reject: 4h RSI 89.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| W/USDT:USDT | +22.64% | $10,662,446.90 |
-| CKB/USDT:USDT | +21.07% | $4,672,900.52 |
-| BATON/USDT:USDT | +19.68% | $3,213,568.72 |
-| PLUME/USDT:USDT | +13.18% | $1,667,006.75 |
-| GRASS/USDT:USDT | +10.79% | $4,568,934.92 |
+| W/USDT:USDT | +22.99% | $10,692,485.80 |
+| CKB/USDT:USDT | +20.57% | $4,705,789.54 |
+| BATON/USDT:USDT | +18.29% | $3,223,345.72 |
+| PLUME/USDT:USDT | +13.33% | $1,674,223.87 |
+| GRASS/USDT:USDT | +12.89% | $4,648,940.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GRASS/USDT:USDT | below_1h_threshold | +2.61% | +2.58% |
-| ONDO/USDT:USDT | below_1h_threshold | +1.76% | +1.72% |
-| ZEC/USDT:USDT | below_1h_threshold | +1.57% | +1.54% |
-| SYN/USDT:USDT | below_1h_threshold | +1.28% | +1.25% |
-| CAKE/USDT:USDT | below_1h_threshold | +1.10% | +1.07% |
+| GRASS/USDT:USDT | below_1h_threshold | +4.44% | +4.34% |
+| MAGIC/USDT:USDT | below_1h_threshold | +4.36% | +4.26% |
+| ONDO/USDT:USDT | below_1h_threshold | +2.09% | +1.99% |
+| ZEC/USDT:USDT | below_1h_threshold | +1.54% | +1.45% |
+| CAKE/USDT:USDT | below_1h_threshold | +1.24% | +1.14% |
 
 ## 7. 次に見るべき不足
 
