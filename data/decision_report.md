@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-11T10:46:24.568685+00:00
+- generated_at: 2026-10-11T10:51:20.905052+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16551**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-11T10:46:11.846717+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=82938.5
-- Funnel: target 1087 → liquid 139 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.3 >= 65=1, 4h RSI 73.0 >= 65=1
+- 更新: 2026-10-11T10:51:08.964093+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=82946.2
+- Funnel: target 1087 → liquid 139 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 73.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LUMIA/USDT:USDT | +54.36% | $7,463,439.56 |
-| CHIP/USDT:USDT | +31.40% | $41,507,227.60 |
-| MAGIC/USDT:USDT | +22.06% | $17,045,905.73 |
-| SI/USDT:USDT | +21.17% | $2,182,565.27 |
-| RLC/USDT:USDT | +19.76% | $24,429,018.95 |
+| LUMIA/USDT:USDT | +55.65% | $7,516,223.83 |
+| CHIP/USDT:USDT | +31.26% | $41,627,599.33 |
+| SI/USDT:USDT | +21.57% | $2,184,228.99 |
+| MAGIC/USDT:USDT | +21.18% | $17,092,025.75 |
+| STRK/USDT:USDT | +17.56% | $94,037,519.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIGHT/USDT:USDT | below_1h_threshold | +1.76% | +1.84% |
-| LUMIA/USDT:USDT | below_1h_threshold | +1.04% | +1.12% |
-| STRK/USDT:USDT | below_1h_threshold | +0.77% | +0.84% |
-| CAP/USDT:USDT | below_1h_threshold | +0.47% | +0.55% |
-| JASMY/USDT:USDT | below_1h_threshold | +0.40% | +0.48% |
+| RLC/USDT:USDT | below_1h_threshold | +4.51% | +4.58% |
+| LUMIA/USDT:USDT | below_1h_threshold | +2.17% | +2.23% |
+| NIGHT/USDT:USDT | below_1h_threshold | +1.80% | +1.87% |
+| BATON/USDT:USDT | below_1h_threshold | +1.29% | +1.35% |
+| STRK/USDT:USDT | below_1h_threshold | +0.56% | +0.62% |
 
 ## 7. 次に見るべき不足
 
