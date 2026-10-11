@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-11T17:01:20.556398+00:00
+- generated_at: 2026-10-11T17:06:17.466479+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16564**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-11T17:01:08.917315+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=83815.2
+- 更新: 2026-10-11T17:06:05.667365+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=83772.5
 - Funnel: target 1087 → liquid 136 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| S/USDT:USDT | +17.35% | $11,346,891.47 |
-| CKB/USDT:USDT | +5.12% | $1,807,660.31 |
-| ENA/USDT:USDT | +3.91% | $39,861,073.48 |
-| FARTCOIN/USDT:USDT | +2.92% | $6,767,723.15 |
-| RAY/USDT:USDT | +2.08% | $3,533,378.65 |
+| S/USDT:USDT | +16.88% | $11,892,278.68 |
+| USELESS/USDT:USDT | +4.92% | $2,276,206.23 |
+| CKB/USDT:USDT | +4.44% | $1,813,554.92 |
+| LUMIA/USDT:USDT | +3.72% | $8,300,627.82 |
+| ENA/USDT:USDT | +3.33% | $40,319,319.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| S/USDT:USDT | below_1h_threshold | +1.37% | +1.43% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.80% | +0.86% |
-| CHIP/USDT:USDT | below_1h_threshold | +0.55% | +0.61% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.53% | +0.60% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +0.42% | +0.48% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.44% | +2.56% |
+| LUMIA/USDT:USDT | below_1h_threshold | +2.34% | +2.46% |
+| S/USDT:USDT | below_1h_threshold | +1.34% | +1.45% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.80% | +0.91% |
+| BATON/USDT:USDT | below_1h_threshold | +0.66% | +0.77% |
 
 ## 7. 次に見るべき不足
 
