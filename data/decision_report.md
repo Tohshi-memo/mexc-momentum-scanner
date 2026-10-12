@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-12T10:06:11.344736+00:00
+- generated_at: 2026-10-12T10:11:32.022586+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16598**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-12T10:06:03.326403+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=83486.0
-- Funnel: target 1089 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-12T10:11:20.281774+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=83447.0
+- Funnel: target 1089 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| W/USDT:USDT | +67.20% | $31,252,975.11 |
-| RSR/USDT:USDT | +27.84% | $6,775,728.13 |
-| BATON/USDT:USDT | +21.45% | $4,047,937.25 |
-| ZRO/USDT:USDT | +15.97% | $22,836,315.41 |
-| UAI/USDT:USDT | +13.80% | $1,476,030.14 |
+| W/USDT:USDT | +66.56% | $31,651,976.13 |
+| RSR/USDT:USDT | +26.26% | $6,849,983.84 |
+| BATON/USDT:USDT | +20.41% | $4,059,662.25 |
+| ZRO/USDT:USDT | +15.95% | $22,949,358.15 |
+| UAI/USDT:USDT | +14.27% | $1,492,267.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FLOW/USDT:USDT | below_1h_threshold | +0.78% | +0.81% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +0.46% | +0.50% |
-| PYTH/USDT:USDT | below_1h_threshold | +0.43% | +0.47% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.27% | +0.31% |
-| POL/USDT:USDT | below_1h_threshold | +0.25% | +0.29% |
+| RENDER/USDT:USDT | below_1h_threshold | +0.85% | +0.93% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +0.62% | +0.70% |
+| BTW/USDT:USDT | below_1h_threshold | +0.34% | +0.42% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.27% | +0.35% |
+| LAB/USDT:USDT | below_1h_threshold | +0.25% | +0.33% |
 
 ## 7. 次に見るべき不足
 
