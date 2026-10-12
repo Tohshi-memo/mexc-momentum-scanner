@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-10-12T03:06:16.118308+00:00
+- generated_at: 2026-10-12T03:11:20.640507+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **16590**
+- closed shadow trades: **16591**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=16590, expectancy=+0.01%
+- 全期間 MARKET基準: n=16591, expectancy=+0.01%
 - 直近20件 MARKET基準: n=20, expectancy=-0.55%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -31,9 +31,9 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_1PCT_LONG | 15/20 | 75.0% | +1.74% | **+1.30%** |
 | MARKET_LONG | 20/20 | 100.0% | +1.24% | **+1.24%** |
-| LIMIT_2PCT_LONG | 13/20 | 65.0% | +1.70% | **+1.11%** |
+| LIMIT_1PCT_LONG | 14/20 | 70.0% | +1.50% | **+1.05%** |
+| LIMIT_2PCT_LONG | 12/20 | 60.0% | +1.33% | **+0.80%** |
 | LIMIT_ATR_LONG | 10/20 | 50.0% | +0.36% | **+0.18%** |
 | LIMIT_9PCT_LONG | 2/20 | 10.0% | +1.10% | **+0.11%** |
 
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,298.24** / 初期 $100.00 (+1198.24%)
-- 確定: 6290件 (Win 1845 / Loss 2015 / Flat 2430) / skip 6861件
+- 確定: 6290件 (Win 1845 / Loss 2015 / Flat 2430) / skip 6862件
 - 成長率目線: 平均log +0.000408 / 幾何平均 +0.041% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_BB3S_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: BATON/USDT:USDT `LIMIT_BB3S` EXPIRED account +0.00% 残高後 $1,298.24
@@ -55,7 +55,7 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$272.12** / 初期 $100.00 (+172.12%)
-- 確定: 3638件 (Win 1010 / Loss 855 / Flat 1773) / skip 6363件
+- 確定: 3638件 (Win 1010 / Loss 855 / Flat 1773) / skip 6364件
 - 成長率目線: 平均log +0.000275 / 幾何平均 +0.028% per trade / maxDD +3.96%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: MAGIC/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.35% 残高後 $272.12
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-12T03:06:05.525959+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=83688.2
+- 更新: 2026-10-12T03:11:10.732912+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.16% price=83665.0
 - Funnel: target 1087 → liquid 150 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| W/USDT:USDT | +64.30% | $14,871,656.67 |
-| BATON/USDT:USDT | +25.60% | $3,242,867.84 |
-| PLUME/USDT:USDT | +20.31% | $2,124,138.27 |
-| GRASS/USDT:USDT | +16.90% | $7,433,780.31 |
-| DYM/USDT:USDT | +13.04% | $1,088,040.53 |
+| W/USDT:USDT | +64.08% | $15,145,620.36 |
+| BATON/USDT:USDT | +25.78% | $3,248,165.98 |
+| PLUME/USDT:USDT | +17.67% | $2,136,125.91 |
+| GRASS/USDT:USDT | +17.65% | $7,530,936.57 |
+| DYM/USDT:USDT | +13.86% | $1,096,848.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MUBARAK/USDT:USDT | below_1h_threshold | +1.38% | +1.51% |
-| GRASS/USDT:USDT | below_1h_threshold | +1.35% | +1.48% |
-| W/USDT:USDT | below_1h_threshold | +1.28% | +1.41% |
-| PLUME/USDT:USDT | below_1h_threshold | +1.22% | +1.35% |
-| MAGIC/USDT:USDT | below_1h_threshold | +0.83% | +0.95% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +2.83% | +2.99% |
+| GRASS/USDT:USDT | below_1h_threshold | +1.68% | +1.83% |
+| CKB/USDT:USDT | below_1h_threshold | +1.29% | +1.44% |
+| W/USDT:USDT | below_1h_threshold | +1.23% | +1.38% |
+| MAGIC/USDT:USDT | below_1h_threshold | +1.09% | +1.25% |
 
 ## 7. 次に見るべき不足
 
