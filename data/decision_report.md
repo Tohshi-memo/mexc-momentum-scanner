@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-12T21:51:26.087878+00:00
+- generated_at: 2026-10-12T21:56:12.345497+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16619**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-12T21:51:11.812010+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.49% price=82651.1
+- 更新: 2026-10-12T21:56:02.809030+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.55% price=82602.3
 - Funnel: target 1089 → liquid 181 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| OGN/USDT:USDT | +9.07% | $4,085,963.74 |
-| STX/USDT:USDT | +7.44% | $11,376,312.42 |
-| CT/USDT:USDT | +6.11% | $2,053,376.96 |
-| RIVER/USDT:USDT | +4.66% | $2,218,861.93 |
-| BR/USDT:USDT | +4.31% | $5,874,702.26 |
+| OGN/USDT:USDT | +9.16% | $4,100,303.47 |
+| STX/USDT:USDT | +7.79% | $11,438,148.90 |
+| CT/USDT:USDT | +7.51% | $2,075,705.83 |
+| RIVER/USDT:USDT | +5.54% | $2,228,965.74 |
+| BR/USDT:USDT | +4.94% | $5,885,276.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BR/USDT:USDT | below_1h_threshold | +1.01% | +1.50% |
-| SMRSTOCK/USDT:USDT | below_1h_threshold | +0.61% | +1.11% |
-| NICKEL/USDT:USDT | below_1h_threshold | +0.43% | +0.92% |
-| BAT/USDT:USDT | below_1h_threshold | +0.29% | +0.78% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.27% | +0.76% |
+| BR/USDT:USDT | below_1h_threshold | +1.62% | +2.17% |
+| CT/USDT:USDT | below_1h_threshold | +0.96% | +1.51% |
+| SMRSTOCK/USDT:USDT | below_1h_threshold | +0.61% | +1.16% |
+| BAT/USDT:USDT | below_1h_threshold | +0.59% | +1.14% |
+| NICKEL/USDT:USDT | below_1h_threshold | +0.43% | +0.98% |
 
 ## 7. 次に見るべき不足
 
