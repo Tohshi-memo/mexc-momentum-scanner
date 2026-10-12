@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-12T02:56:43.279191+00:00
+- generated_at: 2026-10-12T03:01:15.460382+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16588**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-12T02:56:25.414659+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.25% price=83835.6
-- Funnel: target 1087 → liquid 150 → pre 50 → checked 50 → surge 4 → strict 1
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.1 >= 65=1, 4h RSI 67.9 >= 65=1, 4h RSI 82.6 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-12T03:01:06.683142+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=83742.2
+- Funnel: target 1087 → liquid 150 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| W/USDT:USDT | +60.10% | $14,469,662.71 |
-| BATON/USDT:USDT | +26.89% | $3,285,881.22 |
-| PLUME/USDT:USDT | +18.47% | $2,094,455.65 |
-| GRASS/USDT:USDT | +15.25% | $7,395,928.14 |
-| DYM/USDT:USDT | +14.78% | $1,067,655.72 |
+| W/USDT:USDT | +62.12% | $14,618,225.84 |
+| BATON/USDT:USDT | +27.04% | $3,234,601.19 |
+| PLUME/USDT:USDT | +18.77% | $2,102,109.20 |
+| GRASS/USDT:USDT | +15.47% | $7,366,643.51 |
+| DYM/USDT:USDT | +15.08% | $1,071,541.84 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EIGEN/USDT:USDT | below_1h_threshold | +4.94% | +4.70% |
-| IO/USDT:USDT | below_1h_threshold | +4.71% | +4.47% |
-| S/USDT:USDT | below_1h_threshold | +4.16% | +3.92% |
-| DYM/USDT:USDT | below_1h_threshold | +3.66% | +3.41% |
-| ZKSYNC/USDT:USDT | below_1h_threshold | +3.18% | +2.93% |
+| MAGIC/USDT:USDT | below_1h_threshold | +0.53% | +0.59% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +0.31% | +0.38% |
+| EIGEN/USDT:USDT | below_1h_threshold | +0.25% | +0.31% |
+| BATON/USDT:USDT | below_1h_threshold | +0.11% | +0.18% |
+| TESLA/USDT:USDT | below_1h_threshold | +0.08% | +0.14% |
 
 ## 7. 次に見るべき不足
 
