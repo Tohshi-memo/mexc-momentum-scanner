@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-12T07:21:13.271744+00:00
+- generated_at: 2026-10-12T07:26:29.321724+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16597**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-12T07:21:05.288415+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=84131.9
+- 更新: 2026-10-12T07:26:17.483154+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=84079.6
 - Funnel: target 1088 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| W/USDT:USDT | +67.38% | $24,020,129.82 |
-| RSR/USDT:USDT | +47.04% | $3,955,748.29 |
-| BATON/USDT:USDT | +29.14% | $3,842,863.69 |
-| ZRO/USDT:USDT | +14.20% | $16,635,766.55 |
-| IO/USDT:USDT | +13.47% | $1,405,269.81 |
+| W/USDT:USDT | +71.04% | $24,274,148.06 |
+| RSR/USDT:USDT | +45.46% | $4,059,624.04 |
+| BATON/USDT:USDT | +30.69% | $3,851,396.85 |
+| ZRO/USDT:USDT | +14.50% | $16,768,175.95 |
+| IO/USDT:USDT | +12.53% | $1,412,622.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| W/USDT:USDT | below_1h_threshold | +2.58% | +2.63% |
-| JCT/USDT:USDT | below_1h_threshold | +1.85% | +1.90% |
-| LAB/USDT:USDT | below_1h_threshold | +1.79% | +1.85% |
-| CKB/USDT:USDT | below_1h_threshold | +1.70% | +1.76% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +1.24% | +1.29% |
+| W/USDT:USDT | below_1h_threshold | +4.87% | +4.99% |
+| JCT/USDT:USDT | below_1h_threshold | +1.85% | +1.96% |
+| CKB/USDT:USDT | below_1h_threshold | +1.52% | +1.64% |
+| ZRO/USDT:USDT | below_1h_threshold | +1.41% | +1.52% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +1.34% | +1.46% |
 
 ## 7. 次に見るべき不足
 
