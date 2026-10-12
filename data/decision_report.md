@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-12T22:56:32.126835+00:00
+- generated_at: 2026-10-12T23:01:19.854605+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16621**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-12T22:56:20.033456+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=82428.0
-- Funnel: target 1089 → liquid 180 → pre 50 → checked 49 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=1
+- 更新: 2026-10-12T23:01:08.002096+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=82191.9
+- Funnel: target 1089 → liquid 180 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| OGN/USDT:USDT | +11.30% | $4,205,790.11 |
-| CT/USDT:USDT | +6.26% | $2,192,822.19 |
-| STX/USDT:USDT | +4.79% | $12,251,163.24 |
-| RIVER/USDT:USDT | +4.48% | $2,280,085.80 |
-| RENDER/USDT:USDT | +4.30% | $13,804,419.85 |
+| OGN/USDT:USDT | +10.82% | $4,196,562.00 |
+| CT/USDT:USDT | +5.50% | $2,187,504.91 |
+| STX/USDT:USDT | +3.93% | $12,289,741.24 |
+| RENDER/USDT:USDT | +3.65% | $13,621,682.44 |
+| XAI/USDT:USDT | +3.33% | $1,088,288.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| OGN/USDT:USDT | below_1h_threshold | +1.20% | +1.34% |
-| S/USDT:USDT | below_1h_threshold | +1.06% | +1.20% |
-| RENDER/USDT:USDT | below_1h_threshold | +1.05% | +1.19% |
-| XAI/USDT:USDT | below_1h_threshold | +0.89% | +1.03% |
-| EGLD/USDT:USDT | below_1h_threshold | +0.59% | +0.73% |
+| NGAS/USDT:USDT | below_1h_threshold | +0.32% | +0.24% |
+| OGN/USDT:USDT | below_1h_threshold | +0.27% | +0.19% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.27% | +0.19% |
+| RED/USDT:USDT | below_1h_threshold | +0.26% | +0.18% |
+| BAT/USDT:USDT | below_1h_threshold | +0.25% | +0.17% |
 
 ## 7. 次に見るべき不足
 
