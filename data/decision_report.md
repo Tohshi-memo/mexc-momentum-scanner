@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-12T18:11:20.803944+00:00
+- generated_at: 2026-10-12T18:16:31.461688+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16606**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-12T18:11:10.115125+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=82478.7
+- 更新: 2026-10-12T18:16:21.668166+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=82454.8
 - Funnel: target 1089 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| OGN/USDT:USDT | +11.54% | $2,170,253.39 |
-| STRK/USDT:USDT | +7.84% | $72,583,118.02 |
-| RIVER/USDT:USDT | +3.25% | $1,314,388.42 |
-| BR/USDT:USDT | +3.08% | $5,369,291.49 |
-| BATON/USDT:USDT | +2.94% | $3,997,147.50 |
+| OGN/USDT:USDT | +12.11% | $2,185,073.32 |
+| STRK/USDT:USDT | +8.44% | $72,805,749.59 |
+| RIVER/USDT:USDT | +3.25% | $1,340,399.95 |
+| BR/USDT:USDT | +2.80% | $5,391,497.20 |
+| AKE/USDT:USDT | +2.75% | $2,440,920.68 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BOME/USDT:USDT | below_1h_threshold | +1.20% | +1.19% |
-| ONE/USDT:USDT | below_1h_threshold | +0.92% | +0.90% |
-| LSK/USDT:USDT | below_1h_threshold | +0.65% | +0.64% |
-| RIVER/USDT:USDT | below_1h_threshold | +0.60% | +0.59% |
-| AKE/USDT:USDT | below_1h_threshold | +0.60% | +0.59% |
+| AKE/USDT:USDT | below_1h_threshold | +1.75% | +1.77% |
+| BOME/USDT:USDT | below_1h_threshold | +1.22% | +1.24% |
+| BAT/USDT:USDT | below_1h_threshold | +0.95% | +0.97% |
+| LSK/USDT:USDT | below_1h_threshold | +0.82% | +0.84% |
+| PLUME/USDT:USDT | below_1h_threshold | +0.66% | +0.68% |
 
 ## 7. 次に見るべき不足
 
