@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-12T20:01:24.723673+00:00
+- generated_at: 2026-10-12T20:06:07.744122+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16607**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-12T20:01:15.521165+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=82839.4
+- 更新: 2026-10-12T20:05:59.113770+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.23% price=83019.8
 - Funnel: target 1089 → liquid 179 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| OGN/USDT:USDT | +18.06% | $3,576,409.94 |
-| STX/USDT:USDT | +11.40% | $4,676,788.25 |
-| STRK/USDT:USDT | +5.24% | $72,995,974.84 |
-| XAI/USDT:USDT | +5.19% | $1,078,044.77 |
-| GRASS/USDT:USDT | +4.77% | $11,826,118.61 |
+| OGN/USDT:USDT | +15.14% | $3,625,913.29 |
+| STX/USDT:USDT | +11.83% | $5,003,482.24 |
+| XAI/USDT:USDT | +6.65% | $1,108,168.81 |
+| STRK/USDT:USDT | +5.30% | $73,177,696.04 |
+| GRASS/USDT:USDT | +4.93% | $11,853,185.25 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PLTRSTOCK/USDT:USDT | below_1h_threshold | +1.30% | +1.29% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +0.72% | +0.71% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +0.51% | +0.50% |
-| AAPLSTOCK/USDT:USDT | below_1h_threshold | +0.34% | +0.33% |
-| CT/USDT:USDT | below_1h_threshold | +0.32% | +0.31% |
+| MAGIC/USDT:USDT | below_1h_threshold | +1.37% | +1.14% |
+| PLTRSTOCK/USDT:USDT | below_1h_threshold | +1.30% | +1.07% |
+| RENDER/USDT:USDT | below_1h_threshold | +1.30% | +1.07% |
+| XAI/USDT:USDT | below_1h_threshold | +1.29% | +1.06% |
+| CT/USDT:USDT | below_1h_threshold | +1.07% | +0.84% |
 
 ## 7. 次に見るべき不足
 
