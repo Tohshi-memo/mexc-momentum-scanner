@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-12T16:16:27.885825+00:00
+- generated_at: 2026-10-12T16:21:24.330085+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16604**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4761件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4762件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000265 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-12T16:16:14.867506+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.21% price=82852.7
-- Funnel: target 1089 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-12T16:21:11.784090+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.28% price=82907.9
+- Funnel: target 1089 → liquid 172 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +3.29% | $3,975,876.68 |
-| TRB/USDT:USDT | +1.51% | $1,470,270.93 |
-| CAP/USDT:USDT | +1.38% | $1,765,092.67 |
-| FILECOIN/USDT:USDT | +1.10% | $44,160,036.64 |
-| STX/USDT:USDT | +1.03% | $2,530,753.72 |
+| OGN/USDT:USDT | +10.70% | $1,044,030.33 |
+| BATON/USDT:USDT | +3.20% | $3,983,653.01 |
+| CAP/USDT:USDT | +2.77% | $1,775,533.50 |
+| IO/USDT:USDT | +2.18% | $1,363,547.45 |
+| STRK/USDT:USDT | +2.10% | $73,481,332.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BATON/USDT:USDT | below_1h_threshold | +3.21% | +3.00% |
-| TRB/USDT:USDT | below_1h_threshold | +1.54% | +1.33% |
-| CAP/USDT:USDT | below_1h_threshold | +1.38% | +1.17% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +1.06% | +0.85% |
-| STX/USDT:USDT | below_1h_threshold | +1.03% | +0.83% |
+| BATON/USDT:USDT | below_1h_threshold | +3.20% | +2.93% |
+| CAP/USDT:USDT | below_1h_threshold | +2.74% | +2.47% |
+| IO/USDT:USDT | below_1h_threshold | +2.18% | +1.91% |
+| STRK/USDT:USDT | below_1h_threshold | +2.14% | +1.86% |
+| STX/USDT:USDT | below_1h_threshold | +1.72% | +1.44% |
 
 ## 7. 次に見るべき不足
 
