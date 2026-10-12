@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-12T00:51:21.579853+00:00
+- generated_at: 2026-10-12T00:56:20.602584+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16585**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-12T00:51:10.456508+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.20% price=83887.2
+- 更新: 2026-10-12T00:56:08.766246+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.16% price=83857.5
 - Funnel: target 1087 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| W/USDT:USDT | +24.16% | $11,319,628.56 |
-| CKB/USDT:USDT | +18.07% | $4,887,837.71 |
-| BATON/USDT:USDT | +17.37% | $3,236,685.83 |
-| GRASS/USDT:USDT | +15.61% | $5,381,333.42 |
-| PLUME/USDT:USDT | +13.97% | $1,774,060.67 |
+| W/USDT:USDT | +25.01% | $11,346,155.99 |
+| CKB/USDT:USDT | +17.01% | $4,918,952.34 |
+| BATON/USDT:USDT | +16.21% | $3,241,009.28 |
+| GRASS/USDT:USDT | +15.98% | $5,455,612.71 |
+| PLUME/USDT:USDT | +14.82% | $1,782,086.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GRASS/USDT:USDT | below_1h_threshold | +2.82% | +2.62% |
-| CFX/USDT:USDT | below_1h_threshold | +2.81% | +2.61% |
-| SYN/USDT:USDT | below_1h_threshold | +1.67% | +1.47% |
-| JCT/USDT:USDT | below_1h_threshold | +1.67% | +1.47% |
-| ENA/USDT:USDT | below_1h_threshold | +1.12% | +0.92% |
+| GRASS/USDT:USDT | below_1h_threshold | +3.27% | +3.11% |
+| MAGIC/USDT:USDT | below_1h_threshold | +1.81% | +1.64% |
+| PLUME/USDT:USDT | below_1h_threshold | +1.32% | +1.16% |
+| RAY/USDT:USDT | below_1h_threshold | +1.05% | +0.89% |
+| SYN/USDT:USDT | below_1h_threshold | +0.96% | +0.80% |
 
 ## 7. 次に見るべき不足
 
