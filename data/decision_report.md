@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-12T05:06:16.734896+00:00
+- generated_at: 2026-10-12T05:11:22.226336+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16592**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4752件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4753件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000213 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-12T05:06:04.855882+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=84198.4
-- Funnel: target 1087 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-12T05:11:09.478490+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=84193.7
+- Funnel: target 1087 → liquid 151 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 90.8 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| W/USDT:USDT | +62.32% | $20,265,844.37 |
-| RSR/USDT:USDT | +45.15% | $1,321,456.23 |
-| BATON/USDT:USDT | +24.84% | $3,289,259.31 |
-| PLUME/USDT:USDT | +13.82% | $2,351,332.04 |
-| IO/USDT:USDT | +11.94% | $1,272,993.63 |
+| W/USDT:USDT | +59.00% | $20,339,639.89 |
+| RSR/USDT:USDT | +56.36% | $1,573,082.85 |
+| BATON/USDT:USDT | +24.40% | $3,295,313.18 |
+| GRASS/USDT:USDT | +13.11% | $8,921,542.62 |
+| PLUME/USDT:USDT | +13.03% | $2,358,841.98 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BATON/USDT:USDT | below_1h_threshold | +2.79% | +2.68% |
-| RSR/USDT:USDT | below_1h_threshold | +1.88% | +1.77% |
-| ZKSYNC/USDT:USDT | below_1h_threshold | +1.26% | +1.14% |
-| NIGHT/USDT:USDT | below_1h_threshold | +1.20% | +1.08% |
-| W/USDT:USDT | below_1h_threshold | +1.08% | +0.97% |
+| BATON/USDT:USDT | below_1h_threshold | +2.43% | +2.32% |
+| FLOW/USDT:USDT | below_1h_threshold | +0.82% | +0.71% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.81% | +0.70% |
+| NIGHT/USDT:USDT | below_1h_threshold | +0.77% | +0.66% |
+| LDO/USDT:USDT | below_1h_threshold | +0.62% | +0.51% |
 
 ## 7. 次に見るべき不足
 
