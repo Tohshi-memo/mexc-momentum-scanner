@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-12T13:46:22.119693+00:00
+- generated_at: 2026-10-12T13:51:15.990395+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16603**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4760件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4761件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000269 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-12T13:46:12.713087+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=82688.2
-- Funnel: target 1089 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-12T13:51:07.074512+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=82727.1
+- Funnel: target 1089 → liquid 169 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 90.4 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RSR/USDT:USDT | +48.14% | $11,313,839.12 |
-| W/USDT:USDT | +42.03% | $42,914,687.72 |
-| BATON/USDT:USDT | +15.78% | $4,106,875.82 |
-| ZRO/USDT:USDT | +14.63% | $25,826,914.37 |
-| UAI/USDT:USDT | +10.56% | $2,315,504.23 |
+| RSR/USDT:USDT | +50.63% | $11,516,530.41 |
+| W/USDT:USDT | +41.39% | $43,024,870.89 |
+| BATON/USDT:USDT | +15.24% | $4,111,302.30 |
+| ZRO/USDT:USDT | +14.44% | $25,944,366.22 |
+| PYTH/USDT:USDT | +10.40% | $9,124,540.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RSR/USDT:USDT | below_1h_threshold | +3.80% | +3.84% |
-| S/USDT:USDT | below_1h_threshold | +2.76% | +2.81% |
-| TRB/USDT:USDT | below_1h_threshold | +1.28% | +1.33% |
-| ENA/USDT:USDT | below_1h_threshold | +1.23% | +1.27% |
-| RENDER/USDT:USDT | below_1h_threshold | +1.06% | +1.10% |
+| S/USDT:USDT | below_1h_threshold | +4.16% | +4.16% |
+| CT/USDT:USDT | below_1h_threshold | +1.41% | +1.41% |
+| TRB/USDT:USDT | below_1h_threshold | +1.31% | +1.31% |
+| ENA/USDT:USDT | below_1h_threshold | +1.14% | +1.13% |
+| ONDO/USDT:USDT | below_1h_threshold | +0.74% | +0.73% |
 
 ## 7. 次に見るべき不足
 
