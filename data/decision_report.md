@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-12T20:06:07.744122+00:00
+- generated_at: 2026-10-12T20:11:22.515738+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16607**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-12T20:05:59.113770+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.23% price=83019.8
+- 更新: 2026-10-12T20:11:10.662442+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.24% price=83030.9
 - Funnel: target 1089 → liquid 179 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| OGN/USDT:USDT | +15.14% | $3,625,913.29 |
-| STX/USDT:USDT | +11.83% | $5,003,482.24 |
-| XAI/USDT:USDT | +6.65% | $1,108,168.81 |
-| STRK/USDT:USDT | +5.30% | $73,177,696.04 |
-| GRASS/USDT:USDT | +4.93% | $11,853,185.25 |
+| OGN/USDT:USDT | +16.47% | $3,673,505.98 |
+| STX/USDT:USDT | +11.63% | $5,167,543.71 |
+| XAI/USDT:USDT | +5.15% | $1,139,679.48 |
+| RENDER/USDT:USDT | +5.09% | $10,583,480.96 |
+| STRK/USDT:USDT | +4.66% | $73,263,926.15 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MAGIC/USDT:USDT | below_1h_threshold | +1.37% | +1.14% |
-| PLTRSTOCK/USDT:USDT | below_1h_threshold | +1.30% | +1.07% |
-| RENDER/USDT:USDT | below_1h_threshold | +1.30% | +1.07% |
-| XAI/USDT:USDT | below_1h_threshold | +1.29% | +1.06% |
-| CT/USDT:USDT | below_1h_threshold | +1.07% | +0.84% |
+| RENDER/USDT:USDT | below_1h_threshold | +2.56% | +2.32% |
+| CT/USDT:USDT | below_1h_threshold | +2.26% | +2.02% |
+| PLUME/USDT:USDT | below_1h_threshold | +1.73% | +1.49% |
+| IO/USDT:USDT | below_1h_threshold | +1.38% | +1.13% |
+| PLTRSTOCK/USDT:USDT | below_1h_threshold | +1.30% | +1.06% |
 
 ## 7. 次に見るべき不足
 
