@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-11T23:56:28.517906+00:00
+- generated_at: 2026-10-12T00:01:22.354980+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16584**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-11T23:56:17.840718+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=83723.2
-- Funnel: target 1087 → liquid 144 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.6 >= 65=1, 4h RSI 89.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-12T00:01:10.641182+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=83723.1
+- Funnel: target 1087 → liquid 143 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| W/USDT:USDT | +23.40% | $10,749,681.15 |
-| CKB/USDT:USDT | +20.82% | $4,725,720.06 |
-| BATON/USDT:USDT | +17.31% | $3,235,163.33 |
-| PLUME/USDT:USDT | +13.28% | $1,682,748.12 |
-| GRASS/USDT:USDT | +12.41% | $4,694,791.49 |
+| W/USDT:USDT | +23.65% | $10,769,536.51 |
+| CKB/USDT:USDT | +20.57% | $4,732,714.67 |
+| BATON/USDT:USDT | +18.48% | $3,178,174.97 |
+| PLUME/USDT:USDT | +13.52% | $1,674,584.13 |
+| GRASS/USDT:USDT | +12.44% | $4,665,096.41 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GRASS/USDT:USDT | below_1h_threshold | +4.19% | +4.05% |
-| ONDO/USDT:USDT | below_1h_threshold | +1.85% | +1.71% |
-| ZEC/USDT:USDT | below_1h_threshold | +1.60% | +1.46% |
-| CAKE/USDT:USDT | below_1h_threshold | +1.22% | +1.08% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +1.10% | +0.96% |
+| SOXL/USDT:USDT | below_1h_threshold | +0.69% | +0.69% |
+| ICP/USDT:USDT | below_1h_threshold | +0.55% | +0.55% |
+| NEAR/USDT:USDT | below_1h_threshold | +0.36% | +0.36% |
+| EIGEN/USDT:USDT | below_1h_threshold | +0.30% | +0.30% |
+| MAGIC/USDT:USDT | below_1h_threshold | +0.28% | +0.28% |
 
 ## 7. 次に見るべき不足
 
