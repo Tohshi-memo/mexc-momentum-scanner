@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-12T08:06:28.427980+00:00
+- generated_at: 2026-10-12T08:11:30.597893+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16597**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-12T08:06:17.704377+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.20% price=83790.0
+- 更新: 2026-10-12T08:11:18.496671+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.21% price=83786.7
 - Funnel: target 1088 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| W/USDT:USDT | +65.84% | $26,051,700.21 |
-| RSR/USDT:USDT | +39.91% | $5,722,645.77 |
-| BATON/USDT:USDT | +28.26% | $3,879,954.37 |
-| ZRO/USDT:USDT | +15.78% | $19,036,907.13 |
-| PLUME/USDT:USDT | +11.48% | $2,471,229.40 |
+| W/USDT:USDT | +71.10% | $26,382,833.93 |
+| RSR/USDT:USDT | +41.68% | $5,757,515.80 |
+| BATON/USDT:USDT | +26.70% | $3,901,468.20 |
+| ZRO/USDT:USDT | +16.22% | $19,142,899.00 |
+| PLUME/USDT:USDT | +11.83% | $2,476,714.24 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JCT/USDT:USDT | below_1h_threshold | +1.08% | +1.28% |
-| PYTH/USDT:USDT | below_1h_threshold | +0.73% | +0.93% |
-| KAS/USDT:USDT | below_1h_threshold | +0.56% | +0.77% |
-| LAB/USDT:USDT | below_1h_threshold | +0.23% | +0.44% |
-| S/USDT:USDT | below_1h_threshold | +0.22% | +0.42% |
+| PYTH/USDT:USDT | below_1h_threshold | +1.62% | +1.83% |
+| FLOW/USDT:USDT | below_1h_threshold | +1.21% | +1.42% |
+| JCT/USDT:USDT | below_1h_threshold | +1.18% | +1.39% |
+| S/USDT:USDT | below_1h_threshold | +1.07% | +1.28% |
+| W/USDT:USDT | below_1h_threshold | +0.91% | +1.11% |
 
 ## 7. 次に見るべき不足
 
