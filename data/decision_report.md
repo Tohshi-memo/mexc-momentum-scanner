@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-12T16:21:24.330085+00:00
+- generated_at: 2026-10-12T16:26:40.433353+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16604**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-12T16:21:11.784090+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.28% price=82907.9
+- 更新: 2026-10-12T16:26:28.287706+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.22% price=82861.4
 - Funnel: target 1089 → liquid 172 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| OGN/USDT:USDT | +10.70% | $1,044,030.33 |
-| BATON/USDT:USDT | +3.20% | $3,983,653.01 |
-| CAP/USDT:USDT | +2.77% | $1,775,533.50 |
-| IO/USDT:USDT | +2.18% | $1,363,547.45 |
-| STRK/USDT:USDT | +2.10% | $73,481,332.64 |
+| OGN/USDT:USDT | +9.79% | $1,116,538.38 |
+| BATON/USDT:USDT | +4.31% | $3,988,969.79 |
+| STRK/USDT:USDT | +2.59% | $74,193,959.78 |
+| CAP/USDT:USDT | +2.26% | $1,783,826.16 |
+| IO/USDT:USDT | +2.12% | $1,367,322.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BATON/USDT:USDT | below_1h_threshold | +3.20% | +2.93% |
-| CAP/USDT:USDT | below_1h_threshold | +2.74% | +2.47% |
-| IO/USDT:USDT | below_1h_threshold | +2.18% | +1.91% |
-| STRK/USDT:USDT | below_1h_threshold | +2.14% | +1.86% |
-| STX/USDT:USDT | below_1h_threshold | +1.72% | +1.44% |
+| BATON/USDT:USDT | below_1h_threshold | +4.39% | +4.17% |
+| STRK/USDT:USDT | below_1h_threshold | +2.87% | +2.65% |
+| CAP/USDT:USDT | below_1h_threshold | +2.27% | +2.05% |
+| IO/USDT:USDT | below_1h_threshold | +2.24% | +2.02% |
+| STX/USDT:USDT | below_1h_threshold | +1.72% | +1.50% |
 
 ## 7. 次に見るべき不足
 
