@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-12T15:46:17.357963+00:00
+- generated_at: 2026-10-12T15:51:25.698596+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16603**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-12T15:46:05.676905+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=82679.7
-- Funnel: target 1089 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-12T15:51:13.832239+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.16% price=82673.4
+- Funnel: target 1089 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RSR/USDT:USDT | +43.69% | $13,384,512.70 |
-| W/USDT:USDT | +35.09% | $46,258,057.57 |
-| PYTH/USDT:USDT | +12.59% | $10,316,864.58 |
-| BATON/USDT:USDT | +11.34% | $4,102,707.15 |
-| ZRO/USDT:USDT | +9.79% | $27,881,209.36 |
+| RSR/USDT:USDT | +45.09% | $13,456,691.12 |
+| W/USDT:USDT | +36.06% | $46,337,341.10 |
+| PYTH/USDT:USDT | +13.16% | $10,413,769.21 |
+| BATON/USDT:USDT | +12.20% | $4,107,429.78 |
+| ZRO/USDT:USDT | +9.44% | $27,988,654.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PYTH/USDT:USDT | below_1h_threshold | +2.87% | +2.71% |
-| CKB/USDT:USDT | below_1h_threshold | +2.49% | +2.33% |
-| PLUME/USDT:USDT | below_1h_threshold | +2.06% | +1.90% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.20% | +1.04% |
-| STX/USDT:USDT | below_1h_threshold | +0.66% | +0.50% |
+| PYTH/USDT:USDT | below_1h_threshold | +3.39% | +3.23% |
+| PLUME/USDT:USDT | below_1h_threshold | +1.69% | +1.53% |
+| CKB/USDT:USDT | below_1h_threshold | +1.66% | +1.51% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.20% | +1.05% |
+| INJ/USDT:USDT | below_1h_threshold | +0.80% | +0.64% |
 
 ## 7. 次に見るべき不足
 
