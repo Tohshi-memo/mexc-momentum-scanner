@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-12T12:56:22.292073+00:00
+- generated_at: 2026-10-12T13:01:08.918500+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16602**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-12T12:56:10.170290+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.79% price=82699.2
-- Funnel: target 1089 → liquid 165 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.3 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-12T13:00:59.790523+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=82720.2
+- Funnel: target 1089 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RSR/USDT:USDT | +43.99% | $10,265,490.85 |
-| W/USDT:USDT | +43.68% | $41,131,133.88 |
-| CAP/USDT:USDT | +23.57% | $1,035,031.61 |
-| BATON/USDT:USDT | +17.95% | $4,067,768.06 |
-| PYTH/USDT:USDT | +13.53% | $7,968,402.58 |
+| RSR/USDT:USDT | +41.80% | $10,406,283.44 |
+| W/USDT:USDT | +41.38% | $41,314,525.89 |
+| CAP/USDT:USDT | +28.05% | $1,088,764.01 |
+| BATON/USDT:USDT | +18.92% | $4,039,181.51 |
+| PYTH/USDT:USDT | +13.76% | $8,083,577.58 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| S/USDT:USDT | below_1h_threshold | +2.88% | +3.68% |
-| BTW/USDT:USDT | below_1h_threshold | +1.73% | +2.53% |
-| UAI/USDT:USDT | below_1h_threshold | +1.64% | +2.43% |
-| GRASS/USDT:USDT | below_1h_threshold | +1.63% | +2.42% |
-| PLUME/USDT:USDT | below_1h_threshold | +1.24% | +2.03% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.45% | +0.46% |
+| ALUMINUM/USDT:USDT | below_1h_threshold | +0.42% | +0.42% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.29% | +0.29% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.25% | +0.25% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +0.24% | +0.25% |
 
 ## 7. 次に見るべき不足
 
