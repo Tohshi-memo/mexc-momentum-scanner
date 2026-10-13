@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-13T18:01:30.461873+00:00
+- generated_at: 2026-10-13T18:06:27.099007+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16646**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-13T18:01:18.496023+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=83054.1
+- 更新: 2026-10-13T18:06:15.243800+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=83148.0
 - Funnel: target 1094 → liquid 191 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARCSOL/USDT:USDT | +13.64% | $1,562,403.10 |
-| BAT/USDT:USDT | +5.28% | $26,965,287.36 |
-| BATON/USDT:USDT | +5.06% | $1,425,231.06 |
-| ACE/USDT:USDT | +4.81% | $1,254,129.20 |
-| INJ/USDT:USDT | +4.63% | $35,292,643.03 |
+| ARCSOL/USDT:USDT | +12.99% | $1,579,204.69 |
+| BATON/USDT:USDT | +7.34% | $1,431,507.73 |
+| INJ/USDT:USDT | +4.97% | $35,732,516.33 |
+| ACE/USDT:USDT | +4.74% | $1,288,096.80 |
+| LONGXIA/USDT:USDT | +4.27% | $1,822,729.87 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ORCLSTOCK/USDT:USDT | below_1h_threshold | +0.81% | +0.82% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +0.73% | +0.74% |
-| NGAS/USDT:USDT | below_1h_threshold | +0.56% | +0.57% |
-| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +0.51% | +0.52% |
-| INJ/USDT:USDT | below_1h_threshold | +0.47% | +0.48% |
+| BATON/USDT:USDT | below_1h_threshold | +1.50% | +1.40% |
+| QNT/USDT:USDT | below_1h_threshold | +1.44% | +1.34% |
+| LDO/USDT:USDT | below_1h_threshold | +1.43% | +1.33% |
+| EIGEN/USDT:USDT | below_1h_threshold | +1.10% | +1.00% |
+| JTO/USDT:USDT | below_1h_threshold | +0.97% | +0.87% |
 
 ## 7. 次に見るべき不足
 
