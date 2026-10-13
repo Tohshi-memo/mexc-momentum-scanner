@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-13T17:01:30.218880+00:00
+- generated_at: 2026-10-13T17:06:23.976390+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16644**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-13T17:01:18.333425+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=83285.1
+- 更新: 2026-10-13T17:06:14.458655+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=83249.5
 - Funnel: target 1094 → liquid 189 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARCSOL/USDT:USDT | +11.96% | $1,326,128.83 |
-| BAT/USDT:USDT | +5.53% | $25,237,736.85 |
-| INJ/USDT:USDT | +3.71% | $33,497,489.41 |
-| S/USDT:USDT | +3.61% | $22,162,570.67 |
-| ACE/USDT:USDT | +3.21% | $1,067,073.01 |
+| ARCSOL/USDT:USDT | +15.39% | $1,353,735.92 |
+| BAT/USDT:USDT | +5.80% | $25,520,578.92 |
+| BATON/USDT:USDT | +4.89% | $1,436,908.47 |
+| S/USDT:USDT | +4.14% | $22,243,281.33 |
+| INJ/USDT:USDT | +2.96% | $34,058,012.98 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ORCLSTOCK/USDT:USDT | below_1h_threshold | +2.38% | +2.45% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.98% | +2.06% |
-| IRENSTOCK/USDT:USDT | below_1h_threshold | +1.97% | +2.04% |
-| ASTSSTOCK/USDT:USDT | below_1h_threshold | +1.49% | +1.57% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +1.48% | +1.55% |
+| ARCSOL/USDT:USDT | below_1h_threshold | +2.46% | +2.58% |
+| ORCLSTOCK/USDT:USDT | below_1h_threshold | +2.38% | +2.50% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.98% | +2.10% |
+| IRENSTOCK/USDT:USDT | below_1h_threshold | +1.97% | +2.09% |
+| BATON/USDT:USDT | below_1h_threshold | +1.58% | +1.69% |
 
 ## 7. 次に見るべき不足
 
