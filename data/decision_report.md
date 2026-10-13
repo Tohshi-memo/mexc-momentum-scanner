@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-13T06:06:21.210561+00:00
+- generated_at: 2026-10-13T06:11:34.504608+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16630**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4791件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4792件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000127 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-13T06:06:07.135976+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=83574.6
-- Funnel: target 1089 → liquid 189 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-13T06:11:18.453766+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=83601.6
+- Funnel: target 1089 → liquid 189 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BAT/USDT:USDT | +18.17% | $7,929,354.15 |
-| OGN/USDT:USDT | +15.05% | $5,006,109.99 |
-| LONGXIA/USDT:USDT | +10.29% | $1,388,584.46 |
-| SYN/USDT:USDT | +9.92% | $1,453,039.64 |
-| CT/USDT:USDT | +7.94% | $4,212,422.65 |
+| BAT/USDT:USDT | +18.83% | $8,050,190.32 |
+| OGN/USDT:USDT | +18.33% | $5,074,214.75 |
+| LONGXIA/USDT:USDT | +11.84% | $1,405,112.26 |
+| SYN/USDT:USDT | +9.11% | $1,467,450.55 |
+| STX/USDT:USDT | +7.94% | $15,849,102.93 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| OGN/USDT:USDT | below_1h_threshold | +3.49% | +3.57% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +1.68% | +1.76% |
-| BAT/USDT:USDT | below_1h_threshold | +0.77% | +0.86% |
-| SAFE/USDT:USDT | below_1h_threshold | +0.76% | +0.85% |
-| S/USDT:USDT | below_1h_threshold | +0.43% | +0.51% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +3.10% | +3.16% |
+| BAT/USDT:USDT | below_1h_threshold | +1.32% | +1.37% |
+| SAFE/USDT:USDT | below_1h_threshold | +1.00% | +1.05% |
+| ETHFI/USDT:USDT | below_1h_threshold | +0.49% | +0.54% |
+| NICKEL/USDT:USDT | below_1h_threshold | +0.35% | +0.41% |
 
 ## 7. 次に見るべき不足
 
