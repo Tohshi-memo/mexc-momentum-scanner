@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-13T13:21:12.351422+00:00
+- generated_at: 2026-10-13T13:26:20.550782+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16640**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4799件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4800件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000184 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-13T13:21:02.971785+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=83279.4
-- Funnel: target 1094 → liquid 192 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-13T13:26:08.026762+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=83437.8
+- Funnel: target 1094 → liquid 192 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 77.1 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| S/USDT:USDT | +23.36% | $10,454,777.15 |
-| BAT/USDT:USDT | +18.68% | $18,460,089.34 |
-| BTW/USDT:USDT | +9.80% | $14,568,398.88 |
-| OGN/USDT:USDT | +9.67% | $8,186,343.32 |
-| SYN/USDT:USDT | +9.32% | $2,360,854.29 |
+| S/USDT:USDT | +25.63% | $10,808,712.44 |
+| BAT/USDT:USDT | +17.94% | $18,586,496.91 |
+| BTW/USDT:USDT | +9.83% | $14,635,856.31 |
+| OGN/USDT:USDT | +9.25% | $8,197,584.12 |
+| SYN/USDT:USDT | +8.83% | $2,373,504.86 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| S/USDT:USDT | below_1h_threshold | +4.65% | +4.70% |
-| ZKSYNC/USDT:USDT | below_1h_threshold | +1.70% | +1.76% |
-| BTW/USDT:USDT | below_1h_threshold | +1.70% | +1.75% |
-| NGAS/USDT:USDT | below_1h_threshold | +1.54% | +1.60% |
-| PONS/USDT:USDT | below_1h_threshold | +1.27% | +1.32% |
+| ZKSYNC/USDT:USDT | below_1h_threshold | +2.27% | +2.13% |
+| BTW/USDT:USDT | below_1h_threshold | +1.65% | +1.51% |
+| JTO/USDT:USDT | below_1h_threshold | +1.58% | +1.44% |
+| PONS/USDT:USDT | below_1h_threshold | +1.57% | +1.43% |
+| NGAS/USDT:USDT | below_1h_threshold | +1.54% | +1.41% |
 
 ## 7. 次に見るべき不足
 
