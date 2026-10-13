@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-13T01:46:28.084345+00:00
+- generated_at: 2026-10-13T01:51:22.131487+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16621**
 
@@ -63,38 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4782件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4783件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000165 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-13T01:46:13.752564+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +1.18% price=82354.6
-- Funnel: target 1089 → liquid 188 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=45, below_relative_strength=4, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-13T01:51:10.016930+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +1.12% price=82309.5
+- Funnel: target 1089 → liquid 188 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=2, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 71.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CT/USDT:USDT | +9.98% | $2,791,914.49 |
-| SOXS/USDT:USDT | +6.90% | $43,258,561.15 |
-| STX/USDT:USDT | +5.52% | $14,103,153.57 |
-| BTW/USDT:USDT | +4.05% | $13,654,527.55 |
-| RENDER/USDT:USDT | +3.65% | $16,339,952.54 |
+| CT/USDT:USDT | +11.15% | $2,814,813.32 |
+| SOXS/USDT:USDT | +6.79% | $43,269,807.59 |
+| STX/USDT:USDT | +5.24% | $14,148,378.53 |
+| BTW/USDT:USDT | +4.27% | $13,685,276.66 |
+| SAFE/USDT:USDT | +4.16% | $1,031,152.88 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STRK/USDT:USDT | below_relative_strength | +5.72% | +4.54% |
-| SAFE/USDT:USDT | below_relative_strength | +5.33% | +4.15% |
-| CT/USDT:USDT | below_relative_strength | +5.26% | +4.08% |
-| KAIA/USDT:USDT | below_relative_strength | +5.17% | +3.99% |
-| RED/USDT:USDT | below_1h_threshold | +4.38% | +3.20% |
+| SAFE/USDT:USDT | below_relative_strength | +5.89% | +4.76% |
+| MAGIC/USDT:USDT | below_relative_strength | +5.65% | +4.53% |
+| KAIA/USDT:USDT | below_1h_threshold | +4.85% | +3.73% |
+| BTW/USDT:USDT | below_1h_threshold | +4.32% | +3.19% |
+| RED/USDT:USDT | below_1h_threshold | +4.18% | +3.05% |
 
 ## 7. 次に見るべき不足
 
