@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-13T19:31:30.180541+00:00
+- generated_at: 2026-10-13T19:36:31.657199+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16647**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-13T19:31:18.196833+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.15% price=83236.0
+- 更新: 2026-10-13T19:36:22.134799+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.13% price=83224.7
 - Funnel: target 1094 → liquid 190 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARCSOL/USDT:USDT | +13.47% | $1,877,798.92 |
-| TRUTH/USDT:USDT | +9.11% | $1,015,612.83 |
-| OP/USDT:USDT | +8.61% | $19,955,832.13 |
-| QNT/USDT:USDT | +7.47% | $110,058,977.79 |
-| BATON/USDT:USDT | +7.10% | $1,404,120.49 |
+| ARCSOL/USDT:USDT | +13.30% | $1,897,700.37 |
+| TRUTH/USDT:USDT | +8.93% | $1,035,450.74 |
+| OP/USDT:USDT | +8.04% | $20,227,909.81 |
+| BAT/USDT:USDT | +7.83% | $28,759,044.61 |
+| QNT/USDT:USDT | +7.76% | $110,679,787.33 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| OP/USDT:USDT | below_1h_threshold | +2.93% | +2.79% |
-| TRUTH/USDT:USDT | below_1h_threshold | +2.77% | +2.62% |
-| BAT/USDT:USDT | below_1h_threshold | +2.35% | +2.21% |
-| GRASS/USDT:USDT | below_1h_threshold | +1.97% | +1.82% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +1.88% | +1.73% |
+| BAT/USDT:USDT | below_1h_threshold | +3.76% | +3.62% |
+| TRUTH/USDT:USDT | below_1h_threshold | +2.56% | +2.42% |
+| OP/USDT:USDT | below_1h_threshold | +2.18% | +2.05% |
+| GRASS/USDT:USDT | below_1h_threshold | +1.93% | +1.79% |
+| QNT/USDT:USDT | below_1h_threshold | +1.60% | +1.46% |
 
 ## 7. 次に見るべき不足
 
