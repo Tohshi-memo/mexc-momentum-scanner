@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-13T17:16:14.673699+00:00
+- generated_at: 2026-10-13T17:21:23.040446+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16645**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4807件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4808件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000174 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-13T17:16:05.042195+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=83214.4
-- Funnel: target 1094 → liquid 189 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-13T17:21:08.804879+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.21% price=83168.4
+- Funnel: target 1094 → liquid 189 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARCSOL/USDT:USDT | +12.75% | $1,401,398.88 |
-| BATON/USDT:USDT | +7.45% | $1,456,096.07 |
-| BAT/USDT:USDT | +5.54% | $25,878,842.55 |
-| MAGIC/USDT:USDT | +4.19% | $7,645,177.59 |
-| S/USDT:USDT | +4.05% | $22,379,891.71 |
+| ARCSOL/USDT:USDT | +11.86% | $1,417,864.55 |
+| BATON/USDT:USDT | +9.08% | $1,460,317.69 |
+| BAT/USDT:USDT | +5.15% | $25,937,586.95 |
+| MAGIC/USDT:USDT | +4.36% | $7,678,336.13 |
+| INJ/USDT:USDT | +3.59% | $34,839,707.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BATON/USDT:USDT | below_1h_threshold | +4.08% | +4.24% |
-| ORCLSTOCK/USDT:USDT | below_1h_threshold | +2.38% | +2.54% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.98% | +2.14% |
-| IRENSTOCK/USDT:USDT | below_1h_threshold | +1.97% | +2.13% |
-| ASTSSTOCK/USDT:USDT | below_1h_threshold | +1.49% | +1.65% |
+| ORCLSTOCK/USDT:USDT | below_1h_threshold | +2.38% | +2.59% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.98% | +2.20% |
+| IRENSTOCK/USDT:USDT | below_1h_threshold | +1.97% | +2.18% |
+| ASTSSTOCK/USDT:USDT | below_1h_threshold | +1.49% | +1.71% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +1.48% | +1.69% |
 
 ## 7. 次に見るべき不足
 
