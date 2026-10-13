@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-10-13T19:56:30.568919+00:00
+- generated_at: 2026-10-13T20:01:32.294318+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **16648**
+- closed shadow trades: **16649**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.44% / filled 20/20。**
-- 全期間 MARKET基準: n=16648, expectancy=+0.02%
+- 全期間 MARKET基準: n=16649, expectancy=+0.02%
 - 直近20件 MARKET基準: n=20, expectancy=+0.44%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,285.29** / 初期 $100.00 (+1185.29%)
-- 確定: 6295件 (Win 1845 / Loss 2017 / Flat 2433) / skip 6914件
+- 確定: 6295件 (Win 1845 / Loss 2017 / Flat 2433) / skip 6915件
 - 成長率目線: 平均log +0.000406 / 幾何平均 +0.041% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_BB3S_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: OGN/USDT:USDT `LIMIT_8PCT_LONG` EXPIRED account +0.00% 残高後 $1,285.29
@@ -55,7 +55,7 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$270.76** / 初期 $100.00 (+170.76%)
-- 確定: 3654件 (Win 1015 / Loss 864 / Flat 1775) / skip 6405件
+- 確定: 3654件 (Win 1015 / Loss 864 / Flat 1775) / skip 6406件
 - 成長率目線: 平均log +0.000273 / 幾何平均 +0.027% per trade / maxDD +4.13%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: MAGIC/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.35% 残高後 $270.76
@@ -65,37 +65,35 @@
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
 - 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4810件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000174 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000117 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-13T19:56:18.588862+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=83229.9
-- Funnel: target 1094 → liquid 190 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-13T20:01:18.189892+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=83267.8
+- Funnel: target 1094 → liquid 186 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BAT/USDT:USDT | +14.46% | $30,881,119.16 |
-| ARCSOL/USDT:USDT | +11.96% | $1,924,844.73 |
-| TRUTH/USDT:USDT | +8.76% | $1,137,874.32 |
-| OP/USDT:USDT | +7.57% | $21,149,187.92 |
-| QNT/USDT:USDT | +7.40% | $114,012,837.74 |
+| BAT/USDT:USDT | +13.20% | $31,458,085.13 |
+| ARCSOL/USDT:USDT | +10.01% | $1,934,356.36 |
+| TRUTH/USDT:USDT | +9.03% | $1,141,917.25 |
+| OP/USDT:USDT | +7.61% | $21,082,877.19 |
+| QNT/USDT:USDT | +7.58% | $110,801,692.58 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TRUTH/USDT:USDT | below_1h_threshold | +2.39% | +2.25% |
-| GRASS/USDT:USDT | below_1h_threshold | +1.84% | +1.70% |
-| OP/USDT:USDT | below_1h_threshold | +1.82% | +1.68% |
-| DYDX/USDT:USDT | below_1h_threshold | +1.69% | +1.55% |
-| CKB/USDT:USDT | below_1h_threshold | +1.52% | +1.38% |
+| SNXX/USDT:USDT | below_1h_threshold | +4.74% | +4.72% |
+| MUU/USDT:USDT | below_1h_threshold | +3.51% | +3.49% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +2.56% | +2.55% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.41% | +2.39% |
+| KORU/USDT:USDT | below_1h_threshold | +1.87% | +1.85% |
 
 ## 7. 次に見るべき不足
 
