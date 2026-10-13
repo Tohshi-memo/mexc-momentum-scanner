@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-13T14:06:18.591838+00:00
+- generated_at: 2026-10-13T14:11:23.969646+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16641**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-13T14:06:06.687593+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.29% price=83477.3
+- 更新: 2026-10-13T14:11:14.289999+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.47% price=83622.1
 - Funnel: target 1094 → liquid 190 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| S/USDT:USDT | +23.68% | $13,215,186.82 |
-| BAT/USDT:USDT | +19.99% | $19,277,328.07 |
-| CT/USDT:USDT | +9.49% | $5,797,535.95 |
-| OGN/USDT:USDT | +9.31% | $8,345,135.12 |
-| BTW/USDT:USDT | +9.30% | $14,732,174.34 |
+| S/USDT:USDT | +21.62% | $13,513,015.81 |
+| BAT/USDT:USDT | +19.92% | $19,333,440.97 |
+| BTW/USDT:USDT | +10.53% | $14,917,721.82 |
+| CT/USDT:USDT | +9.91% | $5,803,190.44 |
+| XTZ/USDT:USDT | +9.47% | $1,890,780.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| METASTOCK/USDT:USDT | below_1h_threshold | +4.78% | +4.48% |
-| ORCLSTOCK/USDT:USDT | below_1h_threshold | +2.99% | +2.69% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +1.90% | +1.60% |
-| CT/USDT:USDT | below_1h_threshold | +1.58% | +1.28% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +1.44% | +1.15% |
+| METASTOCK/USDT:USDT | below_1h_threshold | +4.78% | +4.31% |
+| ZKSYNC/USDT:USDT | below_1h_threshold | +3.24% | +2.77% |
+| ORCLSTOCK/USDT:USDT | below_1h_threshold | +2.99% | +2.52% |
+| XTZ/USDT:USDT | below_1h_threshold | +2.39% | +1.92% |
+| UNI/USDT:USDT | below_1h_threshold | +2.24% | +1.77% |
 
 ## 7. 次に見るべき不足
 
