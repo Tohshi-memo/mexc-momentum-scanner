@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-13T15:11:28.103497+00:00
+- generated_at: 2026-10-13T15:16:31.687070+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16641**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-13T15:11:16.176682+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=83537.3
+- 更新: 2026-10-13T15:16:19.091985+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.13% price=83597.1
 - Funnel: target 1094 → liquid 189 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BAT/USDT:USDT | +22.84% | $21,262,427.44 |
-| S/USDT:USDT | +21.71% | $16,509,016.02 |
-| CT/USDT:USDT | +11.06% | $5,962,769.70 |
-| OGN/USDT:USDT | +8.83% | $8,532,795.60 |
-| ZKSYNC/USDT:USDT | +8.61% | $2,904,741.74 |
+| BAT/USDT:USDT | +23.56% | $21,416,505.30 |
+| S/USDT:USDT | +21.76% | $16,597,789.73 |
+| ZKSYNC/USDT:USDT | +10.79% | $2,931,833.17 |
+| CT/USDT:USDT | +10.37% | $5,991,019.35 |
+| OGN/USDT:USDT | +9.70% | $8,542,220.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZKSYNC/USDT:USDT | below_1h_threshold | +1.73% | +1.67% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.05% | +0.99% |
-| PONS/USDT:USDT | below_1h_threshold | +1.04% | +0.98% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +0.97% | +0.91% |
-| AKE/USDT:USDT | below_1h_threshold | +0.83% | +0.77% |
+| ZKSYNC/USDT:USDT | below_1h_threshold | +3.77% | +3.64% |
+| OGN/USDT:USDT | below_1h_threshold | +1.45% | +1.31% |
+| PONS/USDT:USDT | below_1h_threshold | +1.08% | +0.94% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.05% | +0.92% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +0.97% | +0.84% |
 
 ## 7. 次に見るべき不足
 
