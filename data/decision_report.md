@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-13T03:31:19.265205+00:00
+- generated_at: 2026-10-13T03:36:34.961319+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16628**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4788件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4789件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000199 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-13T03:31:07.332214+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=82950.0
-- Funnel: target 1089 → liquid 190 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.7 >= 65=1
+- 更新: 2026-10-13T03:36:18.608801+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.67% price=83446.4
+- Funnel: target 1089 → liquid 191 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 71.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BAT/USDT:USDT | +18.68% | $4,849,998.94 |
-| STX/USDT:USDT | +7.72% | $14,799,705.71 |
-| RENDER/USDT:USDT | +6.27% | $18,287,688.82 |
-| SOXS/USDT:USDT | +5.98% | $45,069,190.56 |
-| SYN/USDT:USDT | +5.78% | $1,095,892.78 |
+| BAT/USDT:USDT | +18.11% | $4,962,795.16 |
+| STX/USDT:USDT | +12.81% | $14,903,049.61 |
+| RENDER/USDT:USDT | +7.16% | $18,452,282.74 |
+| SYN/USDT:USDT | +6.81% | $1,101,583.31 |
+| SOXS/USDT:USDT | +5.95% | $45,456,259.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STX/USDT:USDT | below_1h_threshold | +3.57% | +3.49% |
-| S/USDT:USDT | below_1h_threshold | +2.03% | +1.96% |
-| SYRUP/USDT:USDT | below_1h_threshold | +1.65% | +1.58% |
-| SPX/USDT:USDT | below_1h_threshold | +1.50% | +1.43% |
-| RENDER/USDT:USDT | below_1h_threshold | +1.42% | +1.34% |
+| S/USDT:USDT | below_1h_threshold | +2.66% | +1.99% |
+| SYRUP/USDT:USDT | below_1h_threshold | +2.35% | +1.68% |
+| RED/USDT:USDT | below_1h_threshold | +2.28% | +1.61% |
+| SPX/USDT:USDT | below_1h_threshold | +2.27% | +1.60% |
+| RENDER/USDT:USDT | below_1h_threshold | +2.26% | +1.59% |
 
 ## 7. 次に見るべき不足
 
