@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-13T10:46:19.450716+00:00
+- generated_at: 2026-10-13T10:51:24.863483+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16636**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-13T10:46:07.612700+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.42% price=83243.7
-- Funnel: target 1094 → liquid 193 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-13T10:51:13.117933+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.37% price=83283.5
+- Funnel: target 1094 → liquid 194 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| OGN/USDT:USDT | +22.15% | $7,235,213.60 |
-| BAT/USDT:USDT | +18.00% | $14,959,143.75 |
-| SYN/USDT:USDT | +7.96% | $2,194,298.26 |
-| LONGXIA/USDT:USDT | +6.85% | $1,622,033.57 |
-| BTW/USDT:USDT | +6.77% | $14,510,032.07 |
+| OGN/USDT:USDT | +20.25% | $7,318,475.75 |
+| BAT/USDT:USDT | +15.17% | $15,115,159.55 |
+| SYN/USDT:USDT | +7.52% | $2,199,888.03 |
+| LONGXIA/USDT:USDT | +7.03% | $1,625,268.89 |
+| CT/USDT:USDT | +6.88% | $5,526,864.53 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KAIA/USDT:USDT | below_1h_threshold | +3.11% | +3.53% |
-| UAI/USDT:USDT | below_1h_threshold | +2.35% | +2.77% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +1.16% | +1.58% |
-| BTW/USDT:USDT | below_1h_threshold | +1.10% | +1.52% |
-| S/USDT:USDT | below_1h_threshold | +0.61% | +1.02% |
+| UAI/USDT:USDT | below_1h_threshold | +2.07% | +2.44% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +1.33% | +1.69% |
+| BTW/USDT:USDT | below_1h_threshold | +1.02% | +1.39% |
+| KAIA/USDT:USDT | below_1h_threshold | +0.74% | +1.11% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.50% | +0.87% |
 
 ## 7. 次に見るべき不足
 
