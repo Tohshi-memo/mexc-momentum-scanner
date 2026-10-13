@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-13T02:01:27.206364+00:00
+- generated_at: 2026-10-13T02:06:25.933933+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16622**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-13T02:01:15.855447+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=82418.2
+- 更新: 2026-10-13T02:06:13.962478+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=82455.8
 - Funnel: target 1089 → liquid 187 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CT/USDT:USDT | +11.87% | $2,832,258.46 |
-| MAGIC/USDT:USDT | +8.23% | $9,808,872.04 |
-| SOXS/USDT:USDT | +6.82% | $42,699,821.02 |
-| STX/USDT:USDT | +5.14% | $14,059,107.01 |
-| XAI/USDT:USDT | +3.78% | $1,146,963.98 |
+| CT/USDT:USDT | +12.15% | $2,881,584.39 |
+| MAGIC/USDT:USDT | +10.52% | $9,861,011.03 |
+| SOXS/USDT:USDT | +6.85% | $42,918,883.09 |
+| STX/USDT:USDT | +4.18% | $14,327,199.31 |
+| BAT/USDT:USDT | +4.17% | $3,817,123.93 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LEAD/USDT:USDT | below_1h_threshold | +0.71% | +0.70% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.36% | +0.35% |
-| NICKEL/USDT:USDT | below_1h_threshold | +0.33% | +0.32% |
-| BAT/USDT:USDT | below_1h_threshold | +0.30% | +0.29% |
-| S/USDT:USDT | below_1h_threshold | +0.09% | +0.08% |
+| MAGIC/USDT:USDT | below_1h_threshold | +2.33% | +2.27% |
+| BAT/USDT:USDT | below_1h_threshold | +0.96% | +0.90% |
+| QNT/USDT:USDT | below_1h_threshold | +0.94% | +0.88% |
+| LEAD/USDT:USDT | below_1h_threshold | +0.71% | +0.66% |
+| BR/USDT:USDT | below_1h_threshold | +0.66% | +0.60% |
 
 ## 7. 次に見るべき不足
 
