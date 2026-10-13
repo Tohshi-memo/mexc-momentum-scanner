@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-13T07:01:21.481281+00:00
+- generated_at: 2026-10-13T07:06:17.994077+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16632**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-13T07:01:09.530431+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=83737.2
-- Funnel: target 1089 → liquid 188 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-13T07:06:06.082207+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=83639.0
+- Funnel: target 1089 → liquid 190 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BAT/USDT:USDT | +23.13% | $9,442,925.55 |
-| OGN/USDT:USDT | +13.19% | $5,475,544.17 |
-| CT/USDT:USDT | +12.71% | $4,522,121.91 |
-| LONGXIA/USDT:USDT | +11.60% | $1,449,119.51 |
-| TIA/USDT:USDT | +9.03% | $45,757,224.95 |
+| BAT/USDT:USDT | +22.35% | $9,570,851.91 |
+| OGN/USDT:USDT | +13.52% | $5,529,163.20 |
+| CT/USDT:USDT | +12.67% | $4,567,819.24 |
+| LONGXIA/USDT:USDT | +9.83% | $1,459,819.56 |
+| SYN/USDT:USDT | +8.83% | $1,622,964.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +0.90% | +0.89% |
-| BTW/USDT:USDT | below_1h_threshold | +0.16% | +0.15% |
-| AAPLSTOCK/USDT:USDT | below_1h_threshold | +0.15% | +0.14% |
-| XAI/USDT:USDT | below_1h_threshold | +0.15% | +0.14% |
-| TIA/USDT:USDT | below_1h_threshold | +0.15% | +0.14% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.90% | +1.01% |
+| BTW/USDT:USDT | below_1h_threshold | +0.29% | +0.40% |
+| AAPLSTOCK/USDT:USDT | below_1h_threshold | +0.15% | +0.26% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.12% | +0.23% |
+| COPPER/USDT:USDT | below_1h_threshold | +0.09% | +0.20% |
 
 ## 7. 次に見るべき不足
 
