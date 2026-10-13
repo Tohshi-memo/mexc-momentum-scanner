@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-13T22:16:29.606979+00:00
+- generated_at: 2026-10-13T22:21:14.176650+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16650**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-13T22:16:18.308480+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=83390.3
+- 更新: 2026-10-13T22:21:05.643013+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=83388.2
 - Funnel: target 1094 → liquid 183 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BAT/USDT:USDT | +11.95% | $38,376,668.53 |
-| OP/USDT:USDT | +10.81% | $31,437,872.39 |
-| TRUTH/USDT:USDT | +8.26% | $1,602,368.32 |
-| NIL/USDT:USDT | +6.86% | $2,365,486.52 |
-| BLUR/USDT:USDT | +5.76% | $1,384,694.39 |
+| BAT/USDT:USDT | +12.78% | $38,530,990.77 |
+| OP/USDT:USDT | +10.89% | $31,561,476.43 |
+| TRUTH/USDT:USDT | +9.42% | $1,606,794.44 |
+| NIL/USDT:USDT | +6.65% | $2,392,684.45 |
+| BLUR/USDT:USDT | +6.02% | $1,388,722.47 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIL/USDT:USDT | below_1h_threshold | +1.63% | +1.75% |
-| BLUR/USDT:USDT | below_1h_threshold | +1.07% | +1.18% |
-| VVV/USDT:USDT | below_1h_threshold | +0.89% | +1.01% |
-| LSK/USDT:USDT | below_1h_threshold | +0.79% | +0.91% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.77% | +0.89% |
+| NIL/USDT:USDT | below_1h_threshold | +1.44% | +1.55% |
+| BAT/USDT:USDT | below_1h_threshold | +1.43% | +1.55% |
+| BLUR/USDT:USDT | below_1h_threshold | +1.15% | +1.27% |
+| TRUTH/USDT:USDT | below_1h_threshold | +1.03% | +1.15% |
+| LSK/USDT:USDT | below_1h_threshold | +0.93% | +1.05% |
 
 ## 7. 次に見るべき不足
 
