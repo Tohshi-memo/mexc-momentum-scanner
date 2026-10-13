@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-13T01:36:14.660262+00:00
+- generated_at: 2026-10-13T01:41:24.345615+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16621**
 
@@ -63,38 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4780件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4781件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000165 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-13T01:36:03.340001+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.91% price=82133.0
-- Funnel: target 1089 → liquid 188 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-13T01:41:10.155280+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +1.11% price=82300.0
+- Funnel: target 1089 → liquid 188 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CT/USDT:USDT | +8.69% | $2,757,604.62 |
-| SOXS/USDT:USDT | +6.49% | $43,125,374.99 |
-| STX/USDT:USDT | +6.23% | $14,021,378.42 |
-| RENDER/USDT:USDT | +4.30% | $16,139,179.75 |
-| SAFE/USDT:USDT | +3.42% | $1,021,817.99 |
+| CT/USDT:USDT | +8.21% | $2,768,657.35 |
+| SOXS/USDT:USDT | +6.55% | $43,184,012.76 |
+| STX/USDT:USDT | +5.98% | $14,090,675.68 |
+| BTW/USDT:USDT | +4.44% | $13,623,625.08 |
+| RENDER/USDT:USDT | +4.34% | $16,274,605.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SAFE/USDT:USDT | below_relative_strength | +5.02% | +4.11% |
-| CT/USDT:USDT | below_1h_threshold | +4.07% | +3.16% |
-| RED/USDT:USDT | below_1h_threshold | +4.04% | +3.14% |
-| STX/USDT:USDT | below_1h_threshold | +3.87% | +2.97% |
-| MAGIC/USDT:USDT | below_1h_threshold | +3.81% | +2.90% |
+| MAGIC/USDT:USDT | below_relative_strength | +5.20% | +4.09% |
+| SAFE/USDT:USDT | below_1h_threshold | +4.89% | +3.78% |
+| BTW/USDT:USDT | below_1h_threshold | +4.48% | +3.37% |
+| RED/USDT:USDT | below_1h_threshold | +4.38% | +3.27% |
+| STX/USDT:USDT | below_1h_threshold | +3.63% | +2.51% |
 
 ## 7. 次に見るべき不足
 
