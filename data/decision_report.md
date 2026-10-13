@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-13T21:21:23.886204+00:00
+- generated_at: 2026-10-13T21:26:12.147142+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16650**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-13T21:21:10.931979+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=83331.1
+- 更新: 2026-10-13T21:26:02.761257+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=83267.5
 - Funnel: target 1094 → liquid 184 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TRUTH/USDT:USDT | +14.44% | $1,381,871.53 |
-| OP/USDT:USDT | +11.32% | $27,774,073.95 |
-| BAT/USDT:USDT | +7.90% | $35,812,824.87 |
-| SOXL/USDT:USDT | +5.25% | $101,260,059.72 |
-| NIL/USDT:USDT | +5.11% | $2,457,246.86 |
+| TRUTH/USDT:USDT | +15.75% | $1,396,376.95 |
+| OP/USDT:USDT | +10.80% | $28,034,248.84 |
+| BAT/USDT:USDT | +7.82% | $36,094,586.54 |
+| ARCSOL/USDT:USDT | +5.62% | $2,071,851.26 |
+| SOXL/USDT:USDT | +5.41% | $101,290,083.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TRUTH/USDT:USDT | below_1h_threshold | +1.14% | +1.20% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +0.97% | +1.03% |
-| CKB/USDT:USDT | below_1h_threshold | +0.79% | +0.85% |
-| IRENSTOCK/USDT:USDT | below_1h_threshold | +0.63% | +0.69% |
-| SYN/USDT:USDT | below_1h_threshold | +0.56% | +0.62% |
+| TRUTH/USDT:USDT | below_1h_threshold | +2.31% | +2.44% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +1.92% | +2.05% |
+| CKB/USDT:USDT | below_1h_threshold | +0.68% | +0.81% |
+| IRENSTOCK/USDT:USDT | below_1h_threshold | +0.63% | +0.77% |
+| SOXL/USDT:USDT | below_1h_threshold | +0.54% | +0.67% |
 
 ## 7. 次に見るべき不足
 
