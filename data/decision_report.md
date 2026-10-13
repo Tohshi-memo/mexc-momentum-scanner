@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-13T12:01:16.198564+00:00
+- generated_at: 2026-10-13T12:06:21.165294+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16638**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-13T12:01:06.547583+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=83297.5
+- 更新: 2026-10-13T12:06:07.845917+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=83261.9
 - Funnel: target 1094 → liquid 191 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| OGN/USDT:USDT | +19.26% | $7,630,297.47 |
-| BAT/USDT:USDT | +16.01% | $16,076,101.08 |
-| LONGXIA/USDT:USDT | +8.16% | $1,671,981.51 |
-| SOXS/USDT:USDT | +7.55% | $57,041,217.23 |
-| SYN/USDT:USDT | +7.52% | $2,220,967.46 |
+| OGN/USDT:USDT | +16.77% | $7,703,368.69 |
+| BAT/USDT:USDT | +15.85% | $16,211,946.46 |
+| LONGXIA/USDT:USDT | +7.59% | $1,677,775.50 |
+| SYN/USDT:USDT | +7.25% | $2,225,447.38 |
+| BTW/USDT:USDT | +7.21% | $13,899,888.66 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +1.05% | +1.08% |
-| US30/USDT:USDT | below_1h_threshold | +0.50% | +0.54% |
-| NGAS/USDT:USDT | below_1h_threshold | +0.41% | +0.44% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.40% | +0.44% |
-| STRK/USDT:USDT | below_1h_threshold | +0.35% | +0.39% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.05% | +1.12% |
+| US30/USDT:USDT | below_1h_threshold | +0.50% | +0.58% |
+| NGAS/USDT:USDT | below_1h_threshold | +0.41% | +0.49% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.40% | +0.48% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +0.40% | +0.47% |
 
 ## 7. 次に見るべき不足
 
