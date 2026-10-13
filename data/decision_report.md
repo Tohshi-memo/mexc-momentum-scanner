@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-13T04:41:27.068167+00:00
+- generated_at: 2026-10-13T04:46:41.144129+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16629**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-13T04:41:15.242578+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.18% price=83450.2
+- 更新: 2026-10-13T04:46:31.682248+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=83413.3
 - Funnel: target 1089 → liquid 194 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BAT/USDT:USDT | +16.95% | $6,666,107.66 |
-| LONGXIA/USDT:USDT | +15.26% | $1,102,153.65 |
-| SYN/USDT:USDT | +10.36% | $1,204,621.12 |
-| STX/USDT:USDT | +8.02% | $15,495,709.06 |
-| RENDER/USDT:USDT | +6.67% | $19,217,450.11 |
+| LONGXIA/USDT:USDT | +16.49% | $1,111,999.53 |
+| BAT/USDT:USDT | +13.96% | $6,782,965.31 |
+| SYN/USDT:USDT | +10.58% | $1,227,377.78 |
+| STX/USDT:USDT | +8.68% | $15,513,616.59 |
+| RENDER/USDT:USDT | +6.77% | $19,354,649.36 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CT/USDT:USDT | below_1h_threshold | +4.47% | +4.28% |
-| XAI/USDT:USDT | below_1h_threshold | +2.92% | +2.74% |
-| KAIA/USDT:USDT | below_1h_threshold | +2.59% | +2.41% |
-| BAT/USDT:USDT | below_1h_threshold | +2.03% | +1.85% |
-| BTW/USDT:USDT | below_1h_threshold | +2.02% | +1.83% |
+| CT/USDT:USDT | below_1h_threshold | +3.48% | +3.34% |
+| XAI/USDT:USDT | below_1h_threshold | +3.06% | +2.92% |
+| BTW/USDT:USDT | below_1h_threshold | +2.94% | +2.81% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +1.79% | +1.65% |
+| ETHFI/USDT:USDT | below_1h_threshold | +1.78% | +1.64% |
 
 ## 7. 次に見るべき不足
 
