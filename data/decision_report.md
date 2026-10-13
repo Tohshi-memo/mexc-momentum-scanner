@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-13T01:26:07.678688+00:00
+- generated_at: 2026-10-13T01:31:29.927763+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16621**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-13T01:25:59.287658+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.75% price=82005.6
-- Funnel: target 1089 → liquid 186 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-13T01:31:18.120706+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.78% price=82030.1
+- Funnel: target 1089 → liquid 187 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=2, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CT/USDT:USDT | +8.95% | $2,726,290.19 |
-| SOXS/USDT:USDT | +6.14% | $42,593,092.51 |
-| STX/USDT:USDT | +5.62% | $13,899,390.76 |
-| RENDER/USDT:USDT | +3.65% | $16,039,325.61 |
-| SAFE/USDT:USDT | +3.35% | $1,016,092.36 |
+| CT/USDT:USDT | +8.77% | $2,747,354.93 |
+| SOXS/USDT:USDT | +6.47% | $42,772,614.96 |
+| STX/USDT:USDT | +5.67% | $13,997,433.62 |
+| SAFE/USDT:USDT | +3.71% | $1,020,558.81 |
+| BTW/USDT:USDT | +3.37% | $13,488,036.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SAFE/USDT:USDT | below_relative_strength | +5.05% | +4.30% |
-| KAIA/USDT:USDT | below_1h_threshold | +4.49% | +3.74% |
-| CT/USDT:USDT | below_1h_threshold | +4.33% | +3.58% |
-| S/USDT:USDT | below_1h_threshold | +3.47% | +2.72% |
-| RED/USDT:USDT | below_1h_threshold | +3.44% | +2.69% |
+| SAFE/USDT:USDT | below_relative_strength | +5.50% | +4.72% |
+| KAIA/USDT:USDT | below_relative_strength | +5.17% | +4.38% |
+| CT/USDT:USDT | below_1h_threshold | +4.15% | +3.37% |
+| RED/USDT:USDT | below_1h_threshold | +3.91% | +3.13% |
+| BTW/USDT:USDT | below_1h_threshold | +3.40% | +2.61% |
 
 ## 7. 次に見るべき不足
 
