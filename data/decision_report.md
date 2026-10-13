@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-13T20:56:26.110359+00:00
+- generated_at: 2026-10-13T21:01:16.761442+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16649**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-13T20:56:14.086378+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.15% price=83379.4
-- Funnel: target 1094 → liquid 187 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-13T21:01:07.888360+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=83375.3
+- Funnel: target 1094 → liquid 184 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TRUTH/USDT:USDT | +12.98% | $1,264,091.65 |
-| OP/USDT:USDT | +11.65% | $26,369,650.77 |
-| BAT/USDT:USDT | +10.95% | $34,726,516.14 |
-| ARCSOL/USDT:USDT | +6.03% | $2,035,390.04 |
-| QNT/USDT:USDT | +5.72% | $115,168,072.78 |
+| TRUTH/USDT:USDT | +13.70% | $1,267,672.08 |
+| OP/USDT:USDT | +12.64% | $26,291,458.88 |
+| BAT/USDT:USDT | +9.08% | $34,828,177.84 |
+| QNT/USDT:USDT | +5.64% | $112,888,300.68 |
+| SOXL/USDT:USDT | +5.18% | $101,141,168.23 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNXX/USDT:USDT | below_1h_threshold | +4.74% | +4.58% |
-| OP/USDT:USDT | below_1h_threshold | +3.81% | +3.66% |
-| TRUTH/USDT:USDT | below_1h_threshold | +3.77% | +3.62% |
-| MUU/USDT:USDT | below_1h_threshold | +3.51% | +3.36% |
-| W/USDT:USDT | below_1h_threshold | +3.44% | +3.29% |
+| TRUTH/USDT:USDT | below_1h_threshold | +0.65% | +0.65% |
+| IRENSTOCK/USDT:USDT | below_1h_threshold | +0.63% | +0.64% |
+| W/USDT:USDT | below_1h_threshold | +0.61% | +0.62% |
+| SOXL/USDT:USDT | below_1h_threshold | +0.54% | +0.55% |
+| STX/USDT:USDT | below_1h_threshold | +0.54% | +0.54% |
 
 ## 7. 次に見るべき不足
 
