@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-13T16:41:35.919544+00:00
+- generated_at: 2026-10-13T16:46:18.725784+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16644**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-13T16:41:21.349586+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=83406.2
-- Funnel: target 1094 → liquid 189 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.1 >= 65=1
+- 更新: 2026-10-13T16:46:09.755502+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=83440.9
+- Funnel: target 1094 → liquid 189 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| S/USDT:USDT | +6.49% | $21,776,636.55 |
-| BAT/USDT:USDT | +5.69% | $24,667,038.68 |
-| STX/USDT:USDT | +3.34% | $18,583,725.97 |
-| NIL/USDT:USDT | +3.30% | $2,057,559.69 |
-| ARCSOL/USDT:USDT | +3.29% | $1,239,127.94 |
+| BAT/USDT:USDT | +5.91% | $24,816,688.49 |
+| S/USDT:USDT | +4.94% | $21,923,582.51 |
+| ARCSOL/USDT:USDT | +3.87% | $1,243,659.17 |
+| SOXL/USDT:USDT | +2.80% | $97,306,451.26 |
+| NIL/USDT:USDT | +2.79% | $2,080,509.63 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ARCSOL/USDT:USDT | below_1h_threshold | +3.53% | +3.52% |
-| STX/USDT:USDT | below_1h_threshold | +3.35% | +3.33% |
-| NIL/USDT:USDT | below_1h_threshold | +3.31% | +3.29% |
-| CT/USDT:USDT | below_1h_threshold | +2.70% | +2.68% |
-| RENDER/USDT:USDT | below_1h_threshold | +2.57% | +2.55% |
+| S/USDT:USDT | below_1h_threshold | +4.95% | +4.89% |
+| ARCSOL/USDT:USDT | below_1h_threshold | +3.84% | +3.78% |
+| NIL/USDT:USDT | below_1h_threshold | +2.85% | +2.80% |
+| RENDER/USDT:USDT | below_1h_threshold | +2.77% | +2.71% |
+| CT/USDT:USDT | below_1h_threshold | +2.74% | +2.69% |
 
 ## 7. 次に見るべき不足
 
