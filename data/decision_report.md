@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-13T20:31:36.313957+00:00
+- generated_at: 2026-10-13T20:36:29.598758+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16649**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-13T20:31:26.630619+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=83139.6
+- 更新: 2026-10-13T20:36:17.578474+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=83150.8
 - Funnel: target 1094 → liquid 186 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BAT/USDT:USDT | +14.19% | $32,894,447.20 |
-| TRUTH/USDT:USDT | +10.80% | $1,189,393.21 |
-| OP/USDT:USDT | +8.89% | $23,412,211.75 |
-| QNT/USDT:USDT | +7.15% | $112,839,730.18 |
-| ARCSOL/USDT:USDT | +6.65% | $2,009,790.84 |
+| BAT/USDT:USDT | +12.82% | $33,180,319.47 |
+| TRUTH/USDT:USDT | +10.65% | $1,200,414.31 |
+| OP/USDT:USDT | +9.95% | $23,820,605.50 |
+| ARCSOL/USDT:USDT | +6.51% | $2,015,120.94 |
+| QNT/USDT:USDT | +6.18% | $113,547,644.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNXX/USDT:USDT | below_1h_threshold | +4.74% | +4.87% |
-| MUU/USDT:USDT | below_1h_threshold | +3.51% | +3.65% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +2.56% | +2.70% |
-| S/USDT:USDT | below_1h_threshold | +2.47% | +2.61% |
-| SOXL/USDT:USDT | below_1h_threshold | +2.41% | +2.54% |
+| SNXX/USDT:USDT | below_1h_threshold | +4.74% | +4.86% |
+| MUU/USDT:USDT | below_1h_threshold | +3.51% | +3.63% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +2.56% | +2.69% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.41% | +2.53% |
+| OP/USDT:USDT | below_1h_threshold | +2.21% | +2.33% |
 
 ## 7. 次に見るべき不足
 
