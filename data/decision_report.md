@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-13T18:06:27.099007+00:00
+- generated_at: 2026-10-13T18:11:31.399151+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16646**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-13T18:06:15.243800+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=83148.0
+- 更新: 2026-10-13T18:11:20.574956+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.16% price=83193.6
 - Funnel: target 1094 → liquid 191 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARCSOL/USDT:USDT | +12.99% | $1,579,204.69 |
-| BATON/USDT:USDT | +7.34% | $1,431,507.73 |
-| INJ/USDT:USDT | +4.97% | $35,732,516.33 |
-| ACE/USDT:USDT | +4.74% | $1,288,096.80 |
-| LONGXIA/USDT:USDT | +4.27% | $1,822,729.87 |
+| ARCSOL/USDT:USDT | +14.16% | $1,591,295.45 |
+| INJ/USDT:USDT | +6.12% | $37,459,020.44 |
+| BATON/USDT:USDT | +5.39% | $1,432,968.03 |
+| OP/USDT:USDT | +5.26% | $14,937,569.03 |
+| ACE/USDT:USDT | +4.27% | $1,302,149.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BATON/USDT:USDT | below_1h_threshold | +1.50% | +1.40% |
-| QNT/USDT:USDT | below_1h_threshold | +1.44% | +1.34% |
-| LDO/USDT:USDT | below_1h_threshold | +1.43% | +1.33% |
-| EIGEN/USDT:USDT | below_1h_threshold | +1.10% | +1.00% |
-| JTO/USDT:USDT | below_1h_threshold | +0.97% | +0.87% |
+| QNT/USDT:USDT | below_1h_threshold | +2.17% | +2.02% |
+| BLUR/USDT:USDT | below_1h_threshold | +1.99% | +1.83% |
+| LDO/USDT:USDT | below_1h_threshold | +1.96% | +1.80% |
+| OP/USDT:USDT | below_1h_threshold | +1.96% | +1.80% |
+| INJ/USDT:USDT | below_1h_threshold | +1.90% | +1.74% |
 
 ## 7. 次に見るべき不足
 
