@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-13T09:46:22.639846+00:00
+- generated_at: 2026-10-13T09:51:20.465837+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16635**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-13T09:46:11.016944+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=83535.6
+- 更新: 2026-10-13T09:51:08.659413+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=83582.2
 - Funnel: target 1089 → liquid 194 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| OGN/USDT:USDT | +19.83% | $6,449,144.71 |
-| BAT/USDT:USDT | +16.85% | $13,626,027.03 |
-| SYN/USDT:USDT | +9.00% | $1,931,089.64 |
-| STX/USDT:USDT | +8.02% | $17,316,839.72 |
-| CT/USDT:USDT | +7.85% | $5,321,291.79 |
+| OGN/USDT:USDT | +19.98% | $6,481,499.35 |
+| BAT/USDT:USDT | +16.31% | $13,765,172.77 |
+| SYN/USDT:USDT | +8.83% | $1,937,192.49 |
+| CT/USDT:USDT | +8.42% | $5,327,031.12 |
+| STX/USDT:USDT | +7.67% | $17,329,365.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| OGN/USDT:USDT | below_1h_threshold | +3.83% | +3.86% |
-| STX/USDT:USDT | below_1h_threshold | +1.09% | +1.11% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +0.74% | +0.76% |
-| TIA/USDT:USDT | below_1h_threshold | +0.63% | +0.65% |
-| XTZ/USDT:USDT | below_1h_threshold | +0.51% | +0.53% |
+| OGN/USDT:USDT | below_1h_threshold | +3.91% | +3.88% |
+| BTW/USDT:USDT | below_1h_threshold | +1.75% | +1.72% |
+| SAFE/USDT:USDT | below_1h_threshold | +1.71% | +1.68% |
+| STX/USDT:USDT | below_1h_threshold | +0.64% | +0.60% |
+| TIA/USDT:USDT | below_1h_threshold | +0.45% | +0.41% |
 
 ## 7. 次に見るべき不足
 
