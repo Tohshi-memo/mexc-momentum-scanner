@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-14T10:51:31.724559+00:00
+- generated_at: 2026-10-14T10:56:33.012936+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16676**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-14T10:51:19.509910+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.21% price=83398.4
-- Funnel: target 1080 → liquid 172 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI n/a=1
+- 更新: 2026-10-14T10:56:20.506782+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.21% price=83391.1
+- Funnel: target 1085 → liquid 172 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 84.5 >= 65=1, 4h RSI n/a=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLAUDIA/USDT:USDT | +57.89% | $1,467,531.55 |
-| WAL/USDT:USDT | +37.62% | $2,636,348.58 |
-| TRUTH/USDT:USDT | +35.96% | $3,657,512.71 |
-| BTW/USDT:USDT | +27.41% | $43,385,609.39 |
-| AVA/USDT:USDT | +17.57% | $1,334,478.55 |
+| CLAUDIA/USDT:USDT | +56.47% | $1,495,776.14 |
+| WAL/USDT:USDT | +40.85% | $2,674,819.89 |
+| TRUTH/USDT:USDT | +34.70% | $3,666,767.53 |
+| BTW/USDT:USDT | +29.62% | $43,719,752.97 |
+| AVA/USDT:USDT | +16.39% | $1,338,052.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| WAL/USDT:USDT | below_1h_threshold | +4.16% | +3.95% |
-| TRUTH/USDT:USDT | below_1h_threshold | +2.69% | +2.48% |
-| PYTH/USDT:USDT | below_1h_threshold | +1.44% | +1.23% |
-| S/USDT:USDT | below_1h_threshold | +1.12% | +0.90% |
-| NIL/USDT:USDT | below_1h_threshold | +0.93% | +0.71% |
+| TRUTH/USDT:USDT | below_1h_threshold | +1.74% | +1.53% |
+| VVV/USDT:USDT | below_1h_threshold | +1.30% | +1.09% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.10% | +0.89% |
+| PYTH/USDT:USDT | below_1h_threshold | +1.08% | +0.88% |
+| ZEC/USDT:USDT | below_1h_threshold | +1.02% | +0.82% |
 
 ## 7. 次に見るべき不足
 
