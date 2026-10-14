@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-14T01:56:36.340544+00:00
+- generated_at: 2026-10-14T02:01:25.051912+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16654**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-14T01:56:21.945334+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=83333.2
-- Funnel: target 1094 → liquid 174 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.5 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-14T02:01:13.420617+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=83279.7
+- Funnel: target 1094 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +19.24% | $21,938,713.63 |
-| TRUTH/USDT:USDT | +18.11% | $1,921,306.08 |
-| BAT/USDT:USDT | +13.57% | $42,732,860.69 |
-| OP/USDT:USDT | +11.15% | $39,243,630.16 |
-| NIL/USDT:USDT | +7.24% | $2,347,936.49 |
+| BTW/USDT:USDT | +19.06% | $21,377,610.28 |
+| TRUTH/USDT:USDT | +17.49% | $1,916,087.03 |
+| BAT/USDT:USDT | +13.55% | $42,752,323.64 |
+| OP/USDT:USDT | +11.76% | $39,206,926.37 |
+| NIL/USDT:USDT | +7.64% | $2,332,741.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PONS/USDT:USDT | below_1h_threshold | +4.14% | +4.19% |
-| ARCSOL/USDT:USDT | below_1h_threshold | +2.99% | +3.03% |
-| BAT/USDT:USDT | below_1h_threshold | +2.78% | +2.82% |
-| ZEC/USDT:USDT | below_1h_threshold | +2.15% | +2.20% |
-| RENDER/USDT:USDT | below_1h_threshold | +2.03% | +2.07% |
+| TMX/USDT:USDT | below_1h_threshold | +0.87% | +0.87% |
+| NIL/USDT:USDT | below_1h_threshold | +0.53% | +0.53% |
+| BAT/USDT:USDT | below_1h_threshold | +0.51% | +0.52% |
+| ARCSOL/USDT:USDT | below_1h_threshold | +0.50% | +0.50% |
+| KORU/USDT:USDT | below_1h_threshold | +0.41% | +0.41% |
 
 ## 7. 次に見るべき不足
 
