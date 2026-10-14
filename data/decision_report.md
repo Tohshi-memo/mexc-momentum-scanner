@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-14T07:01:26.519611+00:00
+- generated_at: 2026-10-14T07:06:27.863807+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16667**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-14T07:01:12.319805+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=83371.6
+- 更新: 2026-10-14T07:06:16.140049+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=83527.1
 - Funnel: target 1080 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLAUDIA/USDT:USDT | +56.21% | $1,023,121.70 |
-| BTW/USDT:USDT | +34.72% | $36,432,328.20 |
-| WAL/USDT:USDT | +30.43% | $1,021,061.59 |
-| TRUTH/USDT:USDT | +23.98% | $2,909,616.58 |
-| BAT/USDT:USDT | +9.46% | $43,091,421.98 |
+| CLAUDIA/USDT:USDT | +49.86% | $1,038,378.53 |
+| BTW/USDT:USDT | +36.37% | $36,588,392.03 |
+| WAL/USDT:USDT | +28.22% | $1,046,260.01 |
+| TRUTH/USDT:USDT | +17.05% | $2,950,392.04 |
+| BAT/USDT:USDT | +10.24% | $43,172,296.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TRUTH/USDT:USDT | below_1h_threshold | +1.64% | +1.68% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.78% | +0.81% |
-| BTW/USDT:USDT | below_1h_threshold | +0.64% | +0.68% |
-| WAL/USDT:USDT | below_1h_threshold | +0.55% | +0.58% |
-| ORCLSTOCK/USDT:USDT | below_1h_threshold | +0.36% | +0.40% |
+| BTW/USDT:USDT | below_1h_threshold | +1.80% | +1.65% |
+| QNT/USDT:USDT | below_1h_threshold | +1.19% | +1.04% |
+| PYTH/USDT:USDT | below_1h_threshold | +1.14% | +0.99% |
+| NIL/USDT:USDT | below_1h_threshold | +1.01% | +0.86% |
+| BAT/USDT:USDT | below_1h_threshold | +0.89% | +0.74% |
 
 ## 7. 次に見るべき不足
 
