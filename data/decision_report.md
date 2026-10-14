@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-10-14T16:01:34.052143+00:00
+- generated_at: 2026-10-14T16:06:32.745665+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **16685**
+- closed shadow trades: **16686**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=16685, expectancy=+0.02%
+- 全期間 MARKET基準: n=16686, expectancy=+0.02%
 - 直近20件 MARKET基準: n=20, expectancy=+0.16%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -31,11 +31,11 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_BB3S_LONG | 4/4 | 100.0% | +1.32% | **+1.32%** |
-| LIMIT_7PCT_LONG | 9/20 | 45.0% | +1.73% | **+0.78%** |
-| LIMIT_9PCT_LONG | 4/20 | 20.0% | +3.27% | **+0.65%** |
-| LIMIT_8PCT_LONG | 7/20 | 35.0% | +1.71% | **+0.60%** |
-| LIMIT_6PCT_LONG | 9/20 | 45.0% | +1.14% | **+0.51%** |
+| LIMIT_9PCT_LONG | 5/20 | 25.0% | +2.84% | **+0.71%** |
+| LIMIT_7PCT_LONG | 9/20 | 45.0% | +1.40% | **+0.63%** |
+| LIMIT_6PCT_LONG | 9/20 | 45.0% | +0.93% | **+0.42%** |
+| LIMIT_8PCT_LONG | 7/20 | 35.0% | +1.14% | **+0.40%** |
+| LIMIT_BB3S_LONG | 5/5 | 100.0% | +0.25% | **+0.25%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,15 +47,15 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,278.87** / 初期 $100.00 (+1178.87%)
-- 確定: 6297件 (Win 1845 / Loss 2018 / Flat 2434) / skip 6949件
+- 確定: 6297件 (Win 1845 / Loss 2018 / Flat 2434) / skip 6950件
 - 成長率目線: 平均log +0.000405 / 幾何平均 +0.040% per trade / maxDD +8.46%
-- 次の候補: `LIMIT_BB3S_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
+- 次の候補: `LIMIT_7PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: CLAUDIA/USDT:USDT `LIMIT_FIB1618_LONG` EXPIRED account +0.00% 残高後 $1,278.87
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$270.76** / 初期 $100.00 (+170.76%)
-- 確定: 3654件 (Win 1015 / Loss 864 / Flat 1775) / skip 6442件
+- 確定: 3654件 (Win 1015 / Loss 864 / Flat 1775) / skip 6443件
 - 成長率目線: 平均log +0.000273 / 幾何平均 +0.027% per trade / maxDD +4.13%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: MAGIC/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.35% 残高後 $270.76
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-14T16:01:22.687636+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=81665.0
-- Funnel: target 1085 → liquid 179 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-14T16:06:19.432066+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=81690.6
+- Funnel: target 1085 → liquid 180 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +1.82% | $2,620,017.65 |
-| GRASS/USDT:USDT | +0.96% | $2,548,932.50 |
-| CLAUDIA/USDT:USDT | +0.60% | $1,980,408.61 |
-| PYTH/USDT:USDT | +0.58% | $4,465,259.85 |
-| PUMPFUN/USDT:USDT | +0.50% | $18,400,309.42 |
+| QNT/USDT:USDT | +2.10% | $106,829,810.76 |
+| GRASS/USDT:USDT | +1.84% | $2,574,244.19 |
+| WAL/USDT:USDT | +1.32% | $6,180,706.57 |
+| AVA/USDT:USDT | +1.09% | $1,118,140.50 |
+| ONDO/USDT:USDT | +0.95% | $31,725,263.67 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LONGXIA/USDT:USDT | below_1h_threshold | +1.61% | +1.53% |
-| GRASS/USDT:USDT | below_1h_threshold | +0.96% | +0.88% |
-| CLAUDIA/USDT:USDT | below_1h_threshold | +0.60% | +0.52% |
-| PYTH/USDT:USDT | below_1h_threshold | +0.57% | +0.49% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +0.51% | +0.43% |
+| SOXS/USDT:USDT | below_1h_threshold | +3.27% | +3.16% |
+| QNT/USDT:USDT | below_1h_threshold | +1.99% | +1.88% |
+| GRASS/USDT:USDT | below_1h_threshold | +1.72% | +1.61% |
+| WAL/USDT:USDT | below_1h_threshold | +1.42% | +1.31% |
+| AVA/USDT:USDT | below_1h_threshold | +1.10% | +0.99% |
 
 ## 7. 次に見るべき不足
 
