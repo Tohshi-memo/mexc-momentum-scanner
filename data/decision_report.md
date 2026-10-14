@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-14T17:16:27.859074+00:00
+- generated_at: 2026-10-14T17:21:44.925253+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16695**
 
@@ -70,9 +70,9 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-14T17:16:16.089818+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=81908.0
-- Funnel: target 1085 → liquid 177 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-10-14T17:21:30.350630+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=81920.1
+- Funnel: target 1085 → liquid 179 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARCSOL/USDT:USDT | +18.96% | $1,656,010.62 |
-| WAL/USDT:USDT | +15.58% | $8,173,460.78 |
-| AVA/USDT:USDT | +7.32% | $1,160,190.57 |
-| NIL/USDT:USDT | +6.21% | $3,945,012.42 |
-| BSPSTOCK/USDT:USDT | +5.98% | $2,333,882.16 |
+| WAL/USDT:USDT | +17.06% | $8,311,582.03 |
+| ARCSOL/USDT:USDT | +15.74% | $1,698,513.95 |
+| AVA/USDT:USDT | +8.46% | $1,166,380.46 |
+| NIL/USDT:USDT | +6.85% | $4,028,274.49 |
+| BSPSTOCK/USDT:USDT | +5.59% | $2,338,151.17 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BSPSTOCK/USDT:USDT | below_1h_threshold | +4.02% | +4.09% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +1.62% | +1.69% |
-| NIL/USDT:USDT | below_1h_threshold | +1.44% | +1.51% |
-| 1000RATS/USDT:USDT | below_1h_threshold | +1.16% | +1.24% |
-| WAL/USDT:USDT | below_1h_threshold | +1.06% | +1.13% |
+| BSPSTOCK/USDT:USDT | below_1h_threshold | +4.02% | +4.08% |
+| WAL/USDT:USDT | below_1h_threshold | +2.21% | +2.27% |
+| NIL/USDT:USDT | below_1h_threshold | +2.08% | +2.14% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +1.62% | +1.67% |
+| AVA/USDT:USDT | below_1h_threshold | +1.61% | +1.67% |
 
 ## 7. 次に見るべき不足
 
