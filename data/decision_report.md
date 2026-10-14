@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-14T11:06:24.238983+00:00
+- generated_at: 2026-10-14T11:11:16.680204+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16677**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-14T11:06:13.684882+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=83353.8
+- 更新: 2026-10-14T11:11:07.001695+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=83342.9
 - Funnel: target 1085 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLAUDIA/USDT:USDT | +51.02% | $1,530,331.45 |
-| WAL/USDT:USDT | +36.99% | $2,785,560.43 |
-| TRUTH/USDT:USDT | +34.75% | $3,678,146.29 |
-| BTW/USDT:USDT | +31.62% | $43,454,003.71 |
-| AVA/USDT:USDT | +18.60% | $1,341,472.98 |
+| CLAUDIA/USDT:USDT | +50.55% | $1,550,384.47 |
+| WAL/USDT:USDT | +38.14% | $2,805,642.95 |
+| TRUTH/USDT:USDT | +33.65% | $3,685,802.35 |
+| BTW/USDT:USDT | +30.51% | $43,670,001.23 |
+| AVA/USDT:USDT | +17.43% | $1,343,403.11 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AVA/USDT:USDT | below_1h_threshold | +1.47% | +1.56% |
-| TRUTH/USDT:USDT | below_1h_threshold | +0.54% | +0.63% |
-| BTW/USDT:USDT | below_1h_threshold | +0.37% | +0.47% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.35% | +0.44% |
-| BAT/USDT:USDT | below_1h_threshold | +0.34% | +0.43% |
+| BAT/USDT:USDT | below_1h_threshold | +0.80% | +0.91% |
+| ARCSOL/USDT:USDT | below_1h_threshold | +0.62% | +0.72% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.35% | +0.46% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +0.22% | +0.32% |
+| TRX/USDT:USDT | below_1h_threshold | +0.06% | +0.16% |
 
 ## 7. 次に見るべき不足
 
