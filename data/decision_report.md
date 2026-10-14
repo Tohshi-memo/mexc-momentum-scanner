@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-14T20:16:12.090203+00:00
+- generated_at: 2026-10-14T20:21:33.817298+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16701**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-14T20:16:03.212479+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=81860.4
+- 更新: 2026-10-14T20:21:21.690903+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=81913.0
 - Funnel: target 1085 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZEREBRO/USDT:USDT | +18.67% | $1,203,442.38 |
-| NIL/USDT:USDT | +18.31% | $5,923,065.15 |
-| WAL/USDT:USDT | +16.69% | $11,011,392.47 |
-| ARCSOL/USDT:USDT | +13.57% | $1,808,781.90 |
-| AVA/USDT:USDT | +12.71% | $1,728,885.74 |
+| ZEREBRO/USDT:USDT | +21.45% | $1,237,551.67 |
+| NIL/USDT:USDT | +17.21% | $6,110,062.28 |
+| AVA/USDT:USDT | +16.34% | $1,752,791.48 |
+| WAL/USDT:USDT | +15.48% | $11,033,070.87 |
+| ARCSOL/USDT:USDT | +15.06% | $1,814,689.89 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PYTH/USDT:USDT | below_1h_threshold | +2.26% | +2.19% |
-| ARCSOL/USDT:USDT | below_1h_threshold | +1.60% | +1.52% |
-| 1000RATS/USDT:USDT | below_1h_threshold | +1.31% | +1.23% |
-| BSPSTOCK/USDT:USDT | below_1h_threshold | +1.18% | +1.10% |
-| VVV/USDT:USDT | below_1h_threshold | +1.13% | +1.05% |
+| ARCSOL/USDT:USDT | below_1h_threshold | +2.93% | +2.79% |
+| PYTH/USDT:USDT | below_1h_threshold | +2.69% | +2.55% |
+| STRK/USDT:USDT | below_1h_threshold | +2.60% | +2.46% |
+| VVV/USDT:USDT | below_1h_threshold | +2.49% | +2.35% |
+| W/USDT:USDT | below_1h_threshold | +1.63% | +1.49% |
 
 ## 7. 次に見るべき不足
 
