@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-14T16:11:16.422107+00:00
+- generated_at: 2026-10-14T16:16:35.276913+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16686**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-14T16:11:07.823207+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=81697.2
+- 更新: 2026-10-14T16:16:23.687237+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=81670.5
 - Funnel: target 1085 → liquid 180 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GRASS/USDT:USDT | +2.25% | $2,596,770.94 |
-| NIL/USDT:USDT | +2.12% | $3,894,152.16 |
-| QNT/USDT:USDT | +1.99% | $107,528,158.34 |
-| WAL/USDT:USDT | +1.70% | $6,240,496.27 |
-| STRK/USDT:USDT | +1.41% | $25,400,003.35 |
+| GRASS/USDT:USDT | +4.10% | $2,659,031.61 |
+| CLAUDIA/USDT:USDT | +2.02% | $1,991,468.73 |
+| QNT/USDT:USDT | +1.93% | $108,048,985.56 |
+| AVA/USDT:USDT | +1.86% | $1,120,784.86 |
+| NIL/USDT:USDT | +1.77% | $3,907,388.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GRASS/USDT:USDT | below_1h_threshold | +2.25% | +2.13% |
-| QNT/USDT:USDT | below_1h_threshold | +1.98% | +1.86% |
-| NIL/USDT:USDT | below_1h_threshold | +1.98% | +1.86% |
-| WAL/USDT:USDT | below_1h_threshold | +1.71% | +1.59% |
-| AVA/USDT:USDT | below_1h_threshold | +1.50% | +1.38% |
+| GRASS/USDT:USDT | below_1h_threshold | +4.11% | +4.02% |
+| SOXS/USDT:USDT | below_1h_threshold | +3.27% | +3.18% |
+| CLAUDIA/USDT:USDT | below_1h_threshold | +2.00% | +1.92% |
+| QNT/USDT:USDT | below_1h_threshold | +1.98% | +1.89% |
+| AVA/USDT:USDT | below_1h_threshold | +1.87% | +1.78% |
 
 ## 7. 次に見るべき不足
 
