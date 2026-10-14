@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-14T19:56:47.689972+00:00
+- generated_at: 2026-10-14T20:01:29.355267+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16700**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-14T19:56:30.862206+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=81751.7
-- Funnel: target 1085 → liquid 179 → pre 50 → checked 50 → surge 3 → strict 2
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-14T20:01:17.630314+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=81841.3
+- Funnel: target 1085 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AVA/USDT:USDT | +21.72% | $1,606,714.54 |
-| ZEREBRO/USDT:USDT | +19.41% | $1,062,954.67 |
-| NIL/USDT:USDT | +18.19% | $5,735,714.82 |
-| WAL/USDT:USDT | +15.31% | $10,828,965.37 |
-| ARCSOL/USDT:USDT | +12.79% | $1,890,554.02 |
+| ZEREBRO/USDT:USDT | +20.70% | $1,094,606.39 |
+| AVA/USDT:USDT | +19.82% | $1,626,308.65 |
+| NIL/USDT:USDT | +17.37% | $5,609,951.85 |
+| WAL/USDT:USDT | +15.90% | $10,848,074.98 |
+| ARCSOL/USDT:USDT | +11.49% | $1,791,835.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZEREBRO/USDT:USDT | below_1h_threshold | +4.83% | +4.74% |
-| AKE/USDT:USDT | below_1h_threshold | +1.99% | +1.90% |
-| HYPE/USDT:USDT | below_1h_threshold | +1.40% | +1.32% |
-| VVV/USDT:USDT | below_1h_threshold | +0.93% | +0.84% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +0.85% | +0.76% |
+| TIA/USDT:USDT | below_1h_threshold | +0.80% | +0.75% |
+| CHIP/USDT:USDT | below_1h_threshold | +0.68% | +0.63% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +0.64% | +0.59% |
+| ZRO/USDT:USDT | below_1h_threshold | +0.62% | +0.57% |
+| WAL/USDT:USDT | below_1h_threshold | +0.58% | +0.53% |
 
 ## 7. 次に見るべき不足
 
