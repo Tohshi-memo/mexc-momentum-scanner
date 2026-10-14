@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-14T09:36:32.389436+00:00
+- generated_at: 2026-10-14T09:41:31.116265+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16672**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-14T09:36:20.009087+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.22% price=83220.0
+- 更新: 2026-10-14T09:41:18.722031+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.15% price=83276.6
 - Funnel: target 1080 → liquid 170 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI n/a=1, 4h RSI 82.5 >= 65=1
+- Strict後reject: 4h RSI n/a=1, 4h RSI 82.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLAUDIA/USDT:USDT | +46.29% | $1,294,049.97 |
-| WAL/USDT:USDT | +33.28% | $1,927,307.81 |
-| TRUTH/USDT:USDT | +28.91% | $3,383,914.62 |
-| BTW/USDT:USDT | +28.44% | $41,543,404.87 |
-| AVA/USDT:USDT | +27.32% | $1,226,858.82 |
+| CLAUDIA/USDT:USDT | +47.43% | $1,303,541.94 |
+| WAL/USDT:USDT | +34.72% | $1,968,821.52 |
+| TRUTH/USDT:USDT | +29.89% | $3,390,395.83 |
+| BTW/USDT:USDT | +27.73% | $41,744,956.99 |
+| AVA/USDT:USDT | +26.96% | $1,235,547.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CAKE/USDT:USDT | below_1h_threshold | +1.91% | +2.13% |
-| LSK/USDT:USDT | below_1h_threshold | +1.41% | +1.63% |
-| BAT/USDT:USDT | below_1h_threshold | +1.01% | +1.23% |
-| PONS/USDT:USDT | below_1h_threshold | +0.40% | +0.61% |
-| PENDLE/USDT:USDT | below_1h_threshold | +0.21% | +0.43% |
+| LSK/USDT:USDT | below_1h_threshold | +1.94% | +2.09% |
+| CAKE/USDT:USDT | below_1h_threshold | +1.79% | +1.94% |
+| SYN/USDT:USDT | below_1h_threshold | +0.58% | +0.72% |
+| PONS/USDT:USDT | below_1h_threshold | +0.55% | +0.69% |
+| PENDLE/USDT:USDT | below_1h_threshold | +0.50% | +0.65% |
 
 ## 7. 次に見るべき不足
 
