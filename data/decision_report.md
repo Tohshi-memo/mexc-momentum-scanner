@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-14T19:11:19.262371+00:00
+- generated_at: 2026-10-14T19:16:11.163207+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16700**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-14T19:11:07.496802+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=81650.0
-- Funnel: target 1085 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-14T19:16:02.461226+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=81759.9
+- Funnel: target 1085 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARCSOL/USDT:USDT | +23.44% | $1,720,694.50 |
-| AVA/USDT:USDT | +15.64% | $1,305,628.30 |
-| WAL/USDT:USDT | +14.31% | $10,494,574.50 |
-| NIL/USDT:USDT | +10.05% | $4,630,897.08 |
-| 1000RATS/USDT:USDT | +7.11% | $2,995,244.35 |
+| ARCSOL/USDT:USDT | +22.33% | $1,744,371.22 |
+| AVA/USDT:USDT | +17.33% | $1,336,328.74 |
+| WAL/USDT:USDT | +14.62% | $10,561,512.79 |
+| NIL/USDT:USDT | +10.53% | $4,672,775.93 |
+| 1000RATS/USDT:USDT | +6.91% | $3,013,097.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AVA/USDT:USDT | below_1h_threshold | +2.21% | +2.24% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +0.85% | +0.89% |
-| NIL/USDT:USDT | below_1h_threshold | +0.85% | +0.88% |
-| GPS/USDT:USDT | below_1h_threshold | +0.66% | +0.70% |
-| STX/USDT:USDT | below_1h_threshold | +0.43% | +0.46% |
+| AVA/USDT:USDT | below_1h_threshold | +3.70% | +3.60% |
+| NIL/USDT:USDT | below_1h_threshold | +1.29% | +1.19% |
+| STX/USDT:USDT | below_1h_threshold | +1.07% | +0.97% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +0.85% | +0.75% |
+| TIA/USDT:USDT | below_1h_threshold | +0.83% | +0.73% |
 
 ## 7. 次に見るべき不足
 
