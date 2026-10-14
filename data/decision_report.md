@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-14T16:16:35.276913+00:00
+- generated_at: 2026-10-14T16:21:17.200579+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16686**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-14T16:16:23.687237+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=81670.5
+- 更新: 2026-10-14T16:21:08.657156+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=81633.0
 - Funnel: target 1085 → liquid 180 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GRASS/USDT:USDT | +4.10% | $2,659,031.61 |
-| CLAUDIA/USDT:USDT | +2.02% | $1,991,468.73 |
-| QNT/USDT:USDT | +1.93% | $108,048,985.56 |
-| AVA/USDT:USDT | +1.86% | $1,120,784.86 |
-| NIL/USDT:USDT | +1.77% | $3,907,388.71 |
+| WAL/USDT:USDT | +3.82% | $6,394,756.67 |
+| CLAUDIA/USDT:USDT | +3.31% | $1,994,661.34 |
+| GRASS/USDT:USDT | +2.18% | $2,717,556.28 |
+| NIL/USDT:USDT | +1.88% | $3,914,725.63 |
+| SOXS/USDT:USDT | +1.35% | $55,464,137.20 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GRASS/USDT:USDT | below_1h_threshold | +4.11% | +4.02% |
-| SOXS/USDT:USDT | below_1h_threshold | +3.27% | +3.18% |
-| CLAUDIA/USDT:USDT | below_1h_threshold | +2.00% | +1.92% |
-| QNT/USDT:USDT | below_1h_threshold | +1.98% | +1.89% |
-| AVA/USDT:USDT | below_1h_threshold | +1.87% | +1.78% |
+| WAL/USDT:USDT | below_1h_threshold | +3.82% | +3.78% |
+| CLAUDIA/USDT:USDT | below_1h_threshold | +3.31% | +3.27% |
+| SOXS/USDT:USDT | below_1h_threshold | +3.27% | +3.23% |
+| GRASS/USDT:USDT | below_1h_threshold | +2.19% | +2.15% |
+| NIL/USDT:USDT | below_1h_threshold | +1.82% | +1.78% |
 
 ## 7. 次に見るべき不足
 
