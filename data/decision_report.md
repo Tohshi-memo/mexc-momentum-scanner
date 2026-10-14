@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-14T11:46:06.861221+00:00
+- generated_at: 2026-10-14T11:51:15.482349+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16679**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-14T11:45:58.319073+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=83444.0
+- 更新: 2026-10-14T11:51:05.912827+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=83398.8
 - Funnel: target 1085 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLAUDIA/USDT:USDT | +51.60% | $1,692,633.47 |
-| WAL/USDT:USDT | +38.01% | $3,072,706.87 |
-| BTW/USDT:USDT | +33.39% | $45,557,702.18 |
-| TRUTH/USDT:USDT | +33.27% | $3,746,744.30 |
-| AVA/USDT:USDT | +15.26% | $1,375,438.63 |
+| CLAUDIA/USDT:USDT | +49.27% | $1,698,106.39 |
+| WAL/USDT:USDT | +38.30% | $3,157,963.30 |
+| BTW/USDT:USDT | +33.37% | $45,663,963.21 |
+| TRUTH/USDT:USDT | +32.57% | $3,752,955.92 |
+| AVA/USDT:USDT | +14.09% | $1,379,159.14 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SYN/USDT:USDT | below_1h_threshold | +1.53% | +1.51% |
-| BTW/USDT:USDT | below_1h_threshold | +1.48% | +1.47% |
-| PYTH/USDT:USDT | below_1h_threshold | +1.18% | +1.17% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +0.86% | +0.85% |
-| BAT/USDT:USDT | below_1h_threshold | +0.84% | +0.82% |
+| BTW/USDT:USDT | below_1h_threshold | +1.68% | +1.71% |
+| PYTH/USDT:USDT | below_1h_threshold | +1.37% | +1.40% |
+| SYN/USDT:USDT | below_1h_threshold | +1.32% | +1.35% |
+| BAT/USDT:USDT | below_1h_threshold | +1.30% | +1.34% |
+| PONS/USDT:USDT | below_1h_threshold | +0.78% | +0.82% |
 
 ## 7. 次に見るべき不足
 
