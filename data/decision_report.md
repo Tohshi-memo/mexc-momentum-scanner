@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-14T13:16:27.493606+00:00
+- generated_at: 2026-10-14T13:21:24.365784+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16679**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-14T13:16:15.738602+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.24% price=82499.5
+- 更新: 2026-10-14T13:21:12.466555+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.42% price=82355.7
 - Funnel: target 1085 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLAUDIA/USDT:USDT | +41.03% | $1,843,242.63 |
-| WAL/USDT:USDT | +31.96% | $4,474,932.11 |
-| TRUTH/USDT:USDT | +30.92% | $3,917,143.01 |
-| BTW/USDT:USDT | +24.07% | $54,201,229.27 |
-| AVA/USDT:USDT | +12.37% | $1,432,987.37 |
+| CLAUDIA/USDT:USDT | +36.93% | $1,850,124.87 |
+| WAL/USDT:USDT | +31.75% | $4,522,442.35 |
+| TRUTH/USDT:USDT | +30.86% | $3,932,414.79 |
+| BTW/USDT:USDT | +23.92% | $54,574,235.40 |
+| AVA/USDT:USDT | +12.42% | $1,436,341.00 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CLAUDIA/USDT:USDT | below_1h_threshold | +3.88% | +4.12% |
-| SOXS/USDT:USDT | below_1h_threshold | +3.74% | +3.99% |
-| CT/USDT:USDT | below_1h_threshold | +1.08% | +1.32% |
-| QNT/USDT:USDT | below_1h_threshold | +0.71% | +0.95% |
-| XMR/USDT:USDT | below_1h_threshold | +0.19% | +0.43% |
+| SOXS/USDT:USDT | below_1h_threshold | +3.74% | +4.16% |
+| CLAUDIA/USDT:USDT | below_1h_threshold | +0.72% | +1.14% |
+| QNT/USDT:USDT | below_1h_threshold | +0.38% | +0.80% |
+| XMR/USDT:USDT | below_1h_threshold | +0.19% | +0.61% |
+| AAPLSTOCK/USDT:USDT | below_1h_threshold | +0.07% | +0.49% |
 
 ## 7. 次に見るべき不足
 
