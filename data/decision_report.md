@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-14T15:21:22.925905+00:00
+- generated_at: 2026-10-14T15:26:23.944480+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16681**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4841件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4842件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000130 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-14T15:21:10.929104+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=81928.0
-- Funnel: target 1085 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-14T15:26:09.181758+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=81940.0
+- Funnel: target 1085 → liquid 178 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BSPSTOCK/USDT:USDT | +39.81% | $1,741,159.71 |
-| WAL/USDT:USDT | +32.80% | $5,515,255.33 |
-| TRUTH/USDT:USDT | +30.18% | $4,104,580.66 |
-| AVA/USDT:USDT | +24.57% | $1,250,558.22 |
-| BTW/USDT:USDT | +21.74% | $57,469,505.96 |
+| BSPSTOCK/USDT:USDT | +39.39% | $1,763,567.64 |
+| WAL/USDT:USDT | +32.38% | $5,557,227.43 |
+| TRUTH/USDT:USDT | +30.46% | $4,113,022.86 |
+| AVA/USDT:USDT | +24.61% | $1,255,118.04 |
+| BTW/USDT:USDT | +19.56% | $57,667,696.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BSPSTOCK/USDT:USDT | below_1h_threshold | +3.14% | +3.14% |
-| ARCSOL/USDT:USDT | below_1h_threshold | +2.93% | +2.93% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +2.22% | +2.22% |
-| VVV/USDT:USDT | below_1h_threshold | +1.22% | +1.22% |
-| AKE/USDT:USDT | below_1h_threshold | +0.93% | +0.93% |
+| BSPSTOCK/USDT:USDT | below_1h_threshold | +3.14% | +3.13% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +2.22% | +2.20% |
+| VVV/USDT:USDT | below_1h_threshold | +1.48% | +1.46% |
+| QNT/USDT:USDT | below_1h_threshold | +1.34% | +1.32% |
+| DEEP/USDT:USDT | below_1h_threshold | +0.88% | +0.87% |
 
 ## 7. 次に見るべき不足
 
