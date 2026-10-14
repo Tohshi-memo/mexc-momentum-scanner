@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-14T19:46:35.176489+00:00
+- generated_at: 2026-10-14T19:51:42.244470+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16700**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4861件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4862件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000248 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-14T19:46:19.996086+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=81710.6
-- Funnel: target 1085 → liquid 179 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.3 >= 65=1, 4h RSI 86.1 >= 65=1
+- 更新: 2026-10-14T19:51:24.130793+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=81746.0
+- Funnel: target 1085 → liquid 179 → pre 50 → checked 50 → surge 4 → strict 2
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 71.1 >= 65=1, 4h RSI 86.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AVA/USDT:USDT | +20.92% | $1,528,522.76 |
-| ZEREBRO/USDT:USDT | +19.63% | $1,013,080.61 |
-| WAL/USDT:USDT | +16.48% | $10,761,463.79 |
-| ARCSOL/USDT:USDT | +15.25% | $1,874,204.39 |
-| NIL/USDT:USDT | +14.06% | $5,489,828.24 |
+| AVA/USDT:USDT | +23.52% | $1,579,426.14 |
+| ZEREBRO/USDT:USDT | +20.45% | $1,039,014.61 |
+| NIL/USDT:USDT | +15.58% | $5,553,589.01 |
+| WAL/USDT:USDT | +14.98% | $10,801,126.80 |
+| ARCSOL/USDT:USDT | +14.87% | $1,881,695.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIL/USDT:USDT | below_1h_threshold | +4.56% | +4.52% |
-| AKE/USDT:USDT | below_1h_threshold | +1.56% | +1.53% |
-| WAL/USDT:USDT | below_1h_threshold | +1.29% | +1.25% |
-| HYPE/USDT:USDT | below_1h_threshold | +1.02% | +0.98% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +0.85% | +0.81% |
+| AKE/USDT:USDT | below_1h_threshold | +1.71% | +1.62% |
+| HYPE/USDT:USDT | below_1h_threshold | +1.20% | +1.12% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +0.85% | +0.77% |
+| BLUR/USDT:USDT | below_1h_threshold | +0.79% | +0.71% |
+| VVV/USDT:USDT | below_1h_threshold | +0.76% | +0.68% |
 
 ## 7. 次に見るべき不足
 
