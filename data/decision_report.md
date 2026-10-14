@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-14T14:46:38.468480+00:00
+- generated_at: 2026-10-14T14:51:26.643083+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16680**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-14T14:46:24.010356+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.54% price=81836.6
-- Funnel: target 1085 → liquid 179 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 92.7 >= 65=1
+- 更新: 2026-10-14T14:51:14.560942+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.68% price=81720.9
+- Funnel: target 1085 → liquid 179 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 93.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BSPSTOCK/USDT:USDT | +38.02% | $1,431,349.87 |
-| WAL/USDT:USDT | +35.06% | $5,296,335.21 |
-| TRUTH/USDT:USDT | +29.65% | $4,045,825.08 |
-| BTW/USDT:USDT | +26.64% | $57,807,711.86 |
-| CLAUDIA/USDT:USDT | +23.52% | $1,952,016.46 |
+| BSPSTOCK/USDT:USDT | +39.39% | $1,500,462.98 |
+| WAL/USDT:USDT | +33.57% | $5,324,893.79 |
+| TRUTH/USDT:USDT | +29.75% | $4,050,463.96 |
+| BTW/USDT:USDT | +26.10% | $57,918,076.77 |
+| CLAUDIA/USDT:USDT | +22.86% | $1,954,581.63 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +1.70% | +2.25% |
-| MUU/USDT:USDT | below_1h_threshold | +1.63% | +2.17% |
-| AKE/USDT:USDT | below_1h_threshold | +1.45% | +1.99% |
-| CT/USDT:USDT | below_1h_threshold | +1.10% | +1.64% |
-| SQQQ/USDT:USDT | below_1h_threshold | +0.75% | +1.29% |
+| AVA/USDT:USDT | below_1h_threshold | +4.79% | +5.47% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.70% | +2.39% |
+| MUU/USDT:USDT | below_1h_threshold | +1.63% | +2.31% |
+| CT/USDT:USDT | below_1h_threshold | +1.45% | +2.13% |
+| AKE/USDT:USDT | below_1h_threshold | +1.42% | +2.10% |
 
 ## 7. 次に見るべき不足
 
