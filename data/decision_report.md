@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-14T21:06:20.105916+00:00
+- generated_at: 2026-10-14T21:11:42.782842+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16704**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-14T21:06:06.996700+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=81700.0
+- 更新: 2026-10-14T21:11:30.997027+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.15% price=81612.3
 - Funnel: target 1085 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZEREBRO/USDT:USDT | +24.45% | $1,469,510.99 |
-| NIL/USDT:USDT | +21.11% | $6,766,802.84 |
-| WAL/USDT:USDT | +16.04% | $11,216,718.62 |
-| ARCSOL/USDT:USDT | +13.86% | $1,740,049.77 |
-| 1000RATS/USDT:USDT | +8.07% | $3,123,353.38 |
+| ZEREBRO/USDT:USDT | +24.43% | $1,524,775.29 |
+| NIL/USDT:USDT | +22.86% | $7,073,275.72 |
+| WAL/USDT:USDT | +15.40% | $11,233,195.47 |
+| ARCSOL/USDT:USDT | +12.66% | $1,742,160.35 |
+| 1000RATS/USDT:USDT | +7.94% | $3,131,760.39 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZEREBRO/USDT:USDT | below_1h_threshold | +2.62% | +2.66% |
-| US/USDT:USDT | below_1h_threshold | +1.69% | +1.74% |
-| NIL/USDT:USDT | below_1h_threshold | +1.57% | +1.61% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.75% | +0.80% |
-| DEEP/USDT:USDT | below_1h_threshold | +0.66% | +0.71% |
+| NIL/USDT:USDT | below_1h_threshold | +2.97% | +3.12% |
+| US/USDT:USDT | below_1h_threshold | +2.51% | +2.66% |
+| ZEREBRO/USDT:USDT | below_1h_threshold | +2.46% | +2.61% |
+| BEAT/USDT:USDT | below_1h_threshold | +0.77% | +0.92% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.75% | +0.90% |
 
 ## 7. 次に見るべき不足
 
