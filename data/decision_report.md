@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-14T13:46:24.733314+00:00
+- generated_at: 2026-10-14T13:51:39.975771+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16679**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4836件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4837件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000137 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-14T13:46:16.111492+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.18% price=82848.2
-- Funnel: target 1085 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-14T13:51:27.701749+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.23% price=82891.8
+- Funnel: target 1085 → liquid 177 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| WAL/USDT:USDT | +36.80% | $4,822,639.37 |
-| CLAUDIA/USDT:USDT | +32.62% | $1,878,648.81 |
-| TRUTH/USDT:USDT | +32.05% | $3,981,661.88 |
-| BTW/USDT:USDT | +26.92% | $55,973,093.21 |
-| AVA/USDT:USDT | +15.67% | $1,449,741.01 |
+| WAL/USDT:USDT | +34.96% | $4,851,951.04 |
+| CLAUDIA/USDT:USDT | +30.97% | $1,888,036.32 |
+| TRUTH/USDT:USDT | +29.41% | $3,988,210.57 |
+| BTW/USDT:USDT | +26.06% | $56,167,937.68 |
+| AVA/USDT:USDT | +15.49% | $1,451,618.60 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +3.74% | +3.56% |
-| PONS/USDT:USDT | below_1h_threshold | +3.69% | +3.51% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +2.88% | +2.70% |
-| BTW/USDT:USDT | below_1h_threshold | +2.82% | +2.64% |
-| QNT/USDT:USDT | below_1h_threshold | +2.54% | +2.37% |
+| SOXS/USDT:USDT | below_1h_threshold | +3.74% | +3.51% |
+| QNT/USDT:USDT | below_1h_threshold | +2.17% | +1.93% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +2.15% | +1.92% |
+| CT/USDT:USDT | below_1h_threshold | +2.12% | +1.89% |
+| AKE/USDT:USDT | below_1h_threshold | +2.01% | +1.77% |
 
 ## 7. 次に見るべき不足
 
