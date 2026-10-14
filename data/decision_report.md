@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-14T10:36:24.957141+00:00
+- generated_at: 2026-10-14T10:41:22.613581+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16676**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-14T10:36:13.198525+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=83335.3
-- Funnel: target 1080 → liquid 170 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.5 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-14T10:41:10.656467+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.16% price=83356.1
+- Funnel: target 1080 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| WAL/USDT:USDT | +39.75% | $2,493,268.83 |
-| CLAUDIA/USDT:USDT | +39.35% | $1,420,471.92 |
-| TRUTH/USDT:USDT | +33.31% | $3,601,748.59 |
-| BTW/USDT:USDT | +26.66% | $42,940,086.34 |
-| AVA/USDT:USDT | +18.56% | $1,320,935.18 |
+| CLAUDIA/USDT:USDT | +42.89% | $1,424,981.61 |
+| WAL/USDT:USDT | +38.98% | $2,540,424.10 |
+| TRUTH/USDT:USDT | +35.18% | $3,630,960.29 |
+| BTW/USDT:USDT | +27.37% | $43,117,457.99 |
+| AVA/USDT:USDT | +17.47% | $1,326,553.26 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.42% | +1.28% |
-| TRUTH/USDT:USDT | below_1h_threshold | +0.74% | +0.61% |
-| VVV/USDT:USDT | below_1h_threshold | +0.68% | +0.54% |
-| NEAR/USDT:USDT | below_1h_threshold | +0.68% | +0.54% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.61% | +0.47% |
+| WAL/USDT:USDT | below_relative_strength | +5.12% | +4.95% |
+| TRUTH/USDT:USDT | below_1h_threshold | +1.94% | +1.77% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.28% | +1.12% |
+| VVV/USDT:USDT | below_1h_threshold | +0.83% | +0.67% |
+| PYTH/USDT:USDT | below_1h_threshold | +0.74% | +0.58% |
 
 ## 7. 次に見るべき不足
 
