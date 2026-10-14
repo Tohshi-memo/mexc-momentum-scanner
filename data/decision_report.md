@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-14T15:51:36.734816+00:00
+- generated_at: 2026-10-14T15:56:37.668689+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16685**
 
@@ -70,32 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-14T15:51:22.059264+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.24% price=81729.2
-- Funnel: target 1085 → liquid 180 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.6 >= 65=1
+- 更新: 2026-10-14T15:56:23.533129+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.27% price=81703.4
+- Funnel: target 1085 → liquid 180 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| WAL/USDT:USDT | +41.38% | $5,936,725.76 |
-| BSPSTOCK/USDT:USDT | +35.50% | $1,900,468.45 |
-| TRUTH/USDT:USDT | +28.62% | $4,141,048.40 |
-| AVA/USDT:USDT | +24.29% | $1,270,079.43 |
-| BTW/USDT:USDT | +21.60% | $58,637,119.54 |
+| BSPSTOCK/USDT:USDT | +38.63% | $1,953,105.71 |
+| WAL/USDT:USDT | +37.62% | $6,065,217.32 |
+| TRUTH/USDT:USDT | +27.80% | $4,143,400.69 |
+| AVA/USDT:USDT | +23.93% | $1,271,223.82 |
+| BTW/USDT:USDT | +21.27% | $58,720,845.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BSPSTOCK/USDT:USDT | below_1h_threshold | +3.14% | +3.39% |
-| AKE/USDT:USDT | below_1h_threshold | +2.35% | +2.59% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +2.22% | +2.46% |
-| GPS/USDT:USDT | below_1h_threshold | +1.07% | +1.32% |
-| VVV/USDT:USDT | below_1h_threshold | +0.89% | +1.13% |
+| WAL/USDT:USDT | below_1h_threshold | +3.29% | +3.57% |
+| BSPSTOCK/USDT:USDT | below_1h_threshold | +3.14% | +3.42% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +2.22% | +2.49% |
+| AKE/USDT:USDT | below_1h_threshold | +1.74% | +2.02% |
+| GPS/USDT:USDT | below_1h_threshold | +1.18% | +1.45% |
 
 ## 7. 次に見るべき不足
 
