@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-14T07:26:24.550952+00:00
+- generated_at: 2026-10-14T07:31:23.935254+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16667**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4825件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4826件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000324 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-14T07:26:14.761865+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=83430.4
-- Funnel: target 1080 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-14T07:31:12.345667+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=83440.1
+- Funnel: target 1080 → liquid 167 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLAUDIA/USDT:USDT | +41.31% | $1,091,133.98 |
-| BTW/USDT:USDT | +35.70% | $37,357,880.71 |
-| WAL/USDT:USDT | +28.43% | $1,176,397.89 |
-| TRUTH/USDT:USDT | +13.50% | $3,052,418.24 |
-| NIL/USDT:USDT | +11.95% | $2,416,123.70 |
+| CLAUDIA/USDT:USDT | +42.03% | $1,094,273.04 |
+| BTW/USDT:USDT | +35.87% | $37,467,578.77 |
+| WAL/USDT:USDT | +27.94% | $1,190,678.86 |
+| TRUTH/USDT:USDT | +20.77% | $3,079,898.23 |
+| NIL/USDT:USDT | +13.77% | $2,509,859.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RLC/USDT:USDT | below_1h_threshold | +4.29% | +4.26% |
-| NIL/USDT:USDT | below_1h_threshold | +3.41% | +3.37% |
-| PYTH/USDT:USDT | below_1h_threshold | +1.92% | +1.89% |
-| STX/USDT:USDT | below_1h_threshold | +1.79% | +1.75% |
-| GRASS/USDT:USDT | below_1h_threshold | +1.65% | +1.62% |
+| PYTH/USDT:USDT | below_1h_threshold | +2.75% | +2.70% |
+| MOVR/USDT:USDT | below_1h_threshold | +2.20% | +2.16% |
+| GRASS/USDT:USDT | below_1h_threshold | +2.00% | +1.95% |
+| STX/USDT:USDT | below_1h_threshold | +1.70% | +1.65% |
+| BTW/USDT:USDT | below_1h_threshold | +1.45% | +1.40% |
 
 ## 7. 次に見るべき不足
 
