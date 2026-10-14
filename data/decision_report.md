@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-14T09:56:31.704829+00:00
+- generated_at: 2026-10-14T10:01:26.198079+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16674**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-14T09:56:19.407686+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=83258.6
-- Funnel: target 1080 → liquid 171 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI n/a=1, 4h RSI 82.2 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-14T10:01:14.444577+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=83193.0
+- Funnel: target 1080 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLAUDIA/USDT:USDT | +49.97% | $1,346,483.93 |
-| WAL/USDT:USDT | +32.64% | $2,045,841.31 |
-| TRUTH/USDT:USDT | +31.37% | $3,457,033.78 |
-| BTW/USDT:USDT | +28.99% | $42,507,326.63 |
-| AVA/USDT:USDT | +26.06% | $1,265,098.36 |
+| CLAUDIA/USDT:USDT | +44.31% | $1,351,295.21 |
+| WAL/USDT:USDT | +32.20% | $2,055,331.08 |
+| TRUTH/USDT:USDT | +31.89% | $3,460,600.91 |
+| BTW/USDT:USDT | +29.18% | $41,822,208.31 |
+| AVA/USDT:USDT | +21.95% | $1,268,615.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CAKE/USDT:USDT | below_1h_threshold | +3.45% | +3.62% |
-| LSK/USDT:USDT | below_1h_threshold | +2.81% | +2.98% |
-| PONS/USDT:USDT | below_1h_threshold | +1.70% | +1.87% |
-| TRUTH/USDT:USDT | below_1h_threshold | +1.24% | +1.41% |
-| PENDLE/USDT:USDT | below_1h_threshold | +0.51% | +0.68% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.61% | +0.64% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +0.36% | +0.40% |
+| GPS/USDT:USDT | below_1h_threshold | +0.33% | +0.36% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +0.24% | +0.27% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +0.22% | +0.25% |
 
 ## 7. 次に見るべき不足
 
