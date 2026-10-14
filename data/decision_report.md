@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-14T23:01:09.349470+00:00
+- generated_at: 2026-10-14T23:06:19.484459+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16708**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-14T23:01:00.429353+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=81621.6
-- Funnel: target 1085 → liquid 178 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 90.8 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-14T23:06:07.582552+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=81645.3
+- Funnel: target 1085 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZEREBRO/USDT:USDT | +40.86% | $2,478,409.16 |
-| NIL/USDT:USDT | +20.76% | $9,543,227.77 |
-| ARCSOL/USDT:USDT | +19.80% | $1,695,167.07 |
-| WAL/USDT:USDT | +19.50% | $13,044,973.75 |
-| 1000RATS/USDT:USDT | +14.28% | $2,841,446.01 |
+| ZEREBRO/USDT:USDT | +37.61% | $2,552,604.92 |
+| NIL/USDT:USDT | +18.23% | $9,669,885.91 |
+| ARCSOL/USDT:USDT | +17.17% | $1,700,081.06 |
+| WAL/USDT:USDT | +17.04% | $13,109,618.61 |
+| 1000RATS/USDT:USDT | +13.83% | $2,864,025.75 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +3.05% | +3.05% |
-| SQQQ/USDT:USDT | below_1h_threshold | +1.38% | +1.38% |
-| SI/USDT:USDT | below_1h_threshold | +0.53% | +0.53% |
-| NGAS/USDT:USDT | below_1h_threshold | +0.33% | +0.34% |
-| AERO/USDT:USDT | below_1h_threshold | +0.04% | +0.05% |
+| SOXS/USDT:USDT | below_1h_threshold | +3.05% | +3.02% |
+| ZEREBRO/USDT:USDT | below_1h_threshold | +2.53% | +2.50% |
+| SQQQ/USDT:USDT | below_1h_threshold | +1.38% | +1.35% |
+| BTW/USDT:USDT | below_1h_threshold | +0.59% | +0.56% |
+| ETHFI/USDT:USDT | below_1h_threshold | +0.47% | +0.45% |
 
 ## 7. 次に見るべき不足
 
