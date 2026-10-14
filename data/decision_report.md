@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-14T04:11:33.706549+00:00
+- generated_at: 2026-10-14T04:16:33.867730+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16660**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-14T04:11:21.759007+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=83724.1
+- 更新: 2026-10-14T04:16:21.911033+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=83650.1
 - Funnel: target 1094 → liquid 165 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.1 >= 65=1
+- Strict後reject: 4h RSI 72.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +34.12% | $28,700,920.88 |
-| OP/USDT:USDT | +10.27% | $41,467,381.68 |
-| S/USDT:USDT | +9.80% | $24,118,715.95 |
-| TRUTH/USDT:USDT | +9.46% | $2,399,562.79 |
-| BAT/USDT:USDT | +9.21% | $42,948,850.43 |
+| BTW/USDT:USDT | +33.00% | $28,936,126.98 |
+| TRUTH/USDT:USDT | +11.99% | $2,409,381.14 |
+| OP/USDT:USDT | +10.05% | $41,523,965.31 |
+| S/USDT:USDT | +9.32% | $24,134,864.05 |
+| BAT/USDT:USDT | +8.91% | $43,031,052.96 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BAT/USDT:USDT | below_1h_threshold | +1.36% | +1.28% |
-| S/USDT:USDT | below_1h_threshold | +1.17% | +1.10% |
-| CT/USDT:USDT | below_1h_threshold | +1.05% | +0.97% |
-| BTW/USDT:USDT | below_1h_threshold | +1.04% | +0.97% |
-| INJ/USDT:USDT | below_1h_threshold | +0.63% | +0.56% |
+| CT/USDT:USDT | below_1h_threshold | +1.93% | +1.94% |
+| INJ/USDT:USDT | below_1h_threshold | +1.22% | +1.24% |
+| BAT/USDT:USDT | below_1h_threshold | +1.05% | +1.06% |
+| S/USDT:USDT | below_1h_threshold | +0.75% | +0.77% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +0.40% | +0.42% |
 
 ## 7. 次に見るべき不足
 
