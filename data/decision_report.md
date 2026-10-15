@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-15T09:46:23.221143+00:00
+- generated_at: 2026-10-15T09:51:28.424394+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16733**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4893件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4894件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000158 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-15T09:46:11.316785+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.18% price=81195.2
-- Funnel: target 1085 → liquid 192 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-15T09:51:14.073863+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=81256.5
+- Funnel: target 1085 → liquid 192 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PUFFER/USDT:USDT | +85.10% | $1,350,749.84 |
-| ARCSOL/USDT:USDT | +33.86% | $2,364,072.45 |
-| ZEREBRO/USDT:USDT | +30.27% | $6,174,161.56 |
-| SKDD/USDT:USDT | +16.27% | $1,302,955.72 |
-| NIL/USDT:USDT | +14.15% | $16,321,357.56 |
+| PUFFER/USDT:USDT | +84.66% | $1,361,836.70 |
+| ARCSOL/USDT:USDT | +36.59% | $2,369,425.37 |
+| ZEREBRO/USDT:USDT | +30.65% | $6,204,853.45 |
+| SKDD/USDT:USDT | +16.70% | $1,303,513.54 |
+| NIL/USDT:USDT | +15.30% | $16,390,635.63 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STRK/USDT:USDT | below_1h_threshold | +2.88% | +3.06% |
-| SI/USDT:USDT | below_1h_threshold | +2.69% | +2.88% |
-| LSK/USDT:USDT | below_1h_threshold | +2.17% | +2.36% |
-| USOIL/USDT:USDT | below_1h_threshold | +1.38% | +1.56% |
-| ZEREBRO/USDT:USDT | below_1h_threshold | +1.30% | +1.48% |
+| ARCSOL/USDT:USDT | below_1h_threshold | +2.11% | +2.22% |
+| LSK/USDT:USDT | below_1h_threshold | +2.06% | +2.17% |
+| ZEREBRO/USDT:USDT | below_1h_threshold | +1.78% | +1.88% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.38% | +1.48% |
+| SI/USDT:USDT | below_1h_threshold | +1.27% | +1.38% |
 
 ## 7. 次に見るべき不足
 
