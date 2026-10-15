@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-15T11:01:24.745532+00:00
+- generated_at: 2026-10-15T11:06:28.083423+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16739**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-15T11:01:15.054022+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=81008.7
-- Funnel: target 1085 → liquid 190 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-15T11:06:16.146344+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.15% price=80881.7
+- Funnel: target 1090 → liquid 191 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PUFFER/USDT:USDT | +84.73% | $1,544,183.95 |
-| ARCSOL/USDT:USDT | +33.70% | $2,444,738.16 |
-| ZEREBRO/USDT:USDT | +29.67% | $7,589,564.46 |
-| BLUR/USDT:USDT | +22.13% | $1,247,413.47 |
-| AKE/USDT:USDT | +20.88% | $5,546,853.13 |
+| PUFFER/USDT:USDT | +84.73% | $1,583,313.72 |
+| ARCSOL/USDT:USDT | +35.45% | $2,450,568.25 |
+| ZEREBRO/USDT:USDT | +33.36% | $7,704,765.31 |
+| BLUR/USDT:USDT | +21.93% | $1,278,923.27 |
+| AKE/USDT:USDT | +19.04% | $5,639,425.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +1.71% | +1.70% |
-| SKDD/USDT:USDT | below_1h_threshold | +1.68% | +1.67% |
-| AKE/USDT:USDT | below_1h_threshold | +0.92% | +0.91% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.89% | +0.88% |
-| BSPSTOCK/USDT:USDT | below_1h_threshold | +0.81% | +0.80% |
+| SI/USDT:USDT | below_1h_threshold | +3.26% | +3.40% |
+| ZEREBRO/USDT:USDT | below_1h_threshold | +2.03% | +2.18% |
+| ARCSOL/USDT:USDT | below_1h_threshold | +2.00% | +2.15% |
+| STRK/USDT:USDT | below_1h_threshold | +1.80% | +1.95% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.71% | +1.86% |
 
 ## 7. 次に見るべき不足
 
