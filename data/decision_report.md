@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-15T03:46:29.130818+00:00
+- generated_at: 2026-10-15T03:51:25.469894+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16715**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-15T03:46:16.994566+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.83% price=80820.8
-- Funnel: target 1085 → liquid 187 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.6 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-15T03:51:13.765708+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.83% price=80822.1
+- Funnel: target 1085 → liquid 187 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARCSOL/USDT:USDT | +22.85% | $1,801,204.01 |
-| ZEREBRO/USDT:USDT | +21.17% | $4,807,944.76 |
-| NIL/USDT:USDT | +17.56% | $12,647,338.18 |
-| 1000RATS/USDT:USDT | +13.96% | $3,463,242.50 |
-| WAL/USDT:USDT | +10.27% | $15,532,583.25 |
+| ARCSOL/USDT:USDT | +22.30% | $1,804,384.22 |
+| ZEREBRO/USDT:USDT | +19.15% | $4,820,303.40 |
+| NIL/USDT:USDT | +17.41% | $12,660,424.03 |
+| 1000RATS/USDT:USDT | +14.67% | $3,468,278.48 |
+| WAL/USDT:USDT | +11.64% | $15,578,803.95 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZKSYNC/USDT:USDT | below_1h_threshold | +2.09% | +2.93% |
-| AKE/USDT:USDT | below_1h_threshold | +1.00% | +1.83% |
-| 1000RATS/USDT:USDT | below_1h_threshold | +0.68% | +1.51% |
-| BSPSTOCK/USDT:USDT | below_1h_threshold | +0.39% | +1.23% |
-| ZINC/USDT:USDT | below_1h_threshold | +0.37% | +1.21% |
+| ZEREBRO/USDT:USDT | below_1h_threshold | +3.47% | +4.30% |
+| AKE/USDT:USDT | below_1h_threshold | +1.53% | +2.37% |
+| ZKSYNC/USDT:USDT | below_1h_threshold | +1.22% | +2.06% |
+| 1000RATS/USDT:USDT | below_1h_threshold | +1.19% | +2.02% |
+| GPS/USDT:USDT | below_1h_threshold | +1.09% | +1.92% |
 
 ## 7. 次に見るべき不足
 
