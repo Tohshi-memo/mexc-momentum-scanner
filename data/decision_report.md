@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-15T13:26:31.046628+00:00
+- generated_at: 2026-10-15T13:31:25.233397+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16744**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-15T13:26:16.142461+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.22% price=80348.5
+- 更新: 2026-10-15T13:31:14.019774+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.49% price=80130.4
 - Funnel: target 1090 → liquid 186 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PUFFER/USDT:USDT | +78.16% | $1,996,200.06 |
-| ZEREBRO/USDT:USDT | +35.42% | $8,576,937.06 |
-| ARCSOL/USDT:USDT | +31.85% | $2,639,659.70 |
-| AKE/USDT:USDT | +25.78% | $8,816,260.52 |
-| SKDD/USDT:USDT | +16.34% | $1,605,244.85 |
+| PUFFER/USDT:USDT | +79.48% | $2,005,288.14 |
+| ZEREBRO/USDT:USDT | +35.66% | $8,601,163.36 |
+| ARCSOL/USDT:USDT | +32.11% | $2,648,734.05 |
+| AKE/USDT:USDT | +23.87% | $8,959,872.52 |
+| NIL/USDT:USDT | +16.47% | $17,315,209.24 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| XPL/USDT:USDT | below_1h_threshold | +4.68% | +4.90% |
-| ARCSOL/USDT:USDT | below_1h_threshold | +3.86% | +4.08% |
-| WAL/USDT:USDT | below_1h_threshold | +2.80% | +3.01% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.43% | +1.65% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +0.57% | +0.79% |
+| XPL/USDT:USDT | below_1h_threshold | +4.57% | +5.05% |
+| ARCSOL/USDT:USDT | below_1h_threshold | +4.07% | +4.55% |
+| WAL/USDT:USDT | below_1h_threshold | +2.60% | +3.09% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.43% | +1.92% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +0.57% | +1.06% |
 
 ## 7. 次に見るべき不足
 
