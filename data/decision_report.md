@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-15T10:41:38.756048+00:00
+- generated_at: 2026-10-15T10:46:33.625785+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16738**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-15T10:41:20.920080+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=81099.3
-- Funnel: target 1085 → liquid 192 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.7 >= 65=1, 4h RSI 78.5 >= 65=1
+- 更新: 2026-10-15T10:46:18.929132+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.45% price=80860.5
+- Funnel: target 1085 → liquid 193 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 74.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PUFFER/USDT:USDT | +81.23% | $1,490,660.05 |
-| ZEREBRO/USDT:USDT | +50.94% | $7,182,552.59 |
-| ARCSOL/USDT:USDT | +32.53% | $2,458,466.78 |
-| BLUR/USDT:USDT | +26.58% | $1,159,585.09 |
-| AKE/USDT:USDT | +19.86% | $5,237,964.37 |
+| PUFFER/USDT:USDT | +82.91% | $1,500,838.20 |
+| ZEREBRO/USDT:USDT | +46.01% | $7,291,097.86 |
+| ARCSOL/USDT:USDT | +33.76% | $2,464,807.81 |
+| BLUR/USDT:USDT | +27.66% | $1,170,599.82 |
+| AKE/USDT:USDT | +20.51% | $5,337,015.75 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZKSYNC/USDT:USDT | below_1h_threshold | +3.07% | +3.23% |
-| ANTHROPIC/USDT:USDT | below_1h_threshold | +1.09% | +1.24% |
-| CRV/USDT:USDT | below_1h_threshold | +0.55% | +0.71% |
-| ALUMINUM/USDT:USDT | below_1h_threshold | +0.35% | +0.51% |
-| SKDD/USDT:USDT | below_1h_threshold | +0.34% | +0.49% |
+| ZEREBRO/USDT:USDT | below_1h_threshold | +4.74% | +5.18% |
+| DUSK/USDT:USDT | below_1h_threshold | +3.22% | +3.67% |
+| ZKSYNC/USDT:USDT | below_1h_threshold | +1.93% | +2.38% |
+| ANTHROPIC/USDT:USDT | below_1h_threshold | +1.13% | +1.58% |
+| CRV/USDT:USDT | below_1h_threshold | +0.47% | +0.91% |
 
 ## 7. 次に見るべき不足
 
