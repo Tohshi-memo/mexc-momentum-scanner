@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-15T15:21:47.445593+00:00
+- generated_at: 2026-10-15T15:26:48.352932+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16749**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4917件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4918件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000324 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-15T15:21:31.528965+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.45% price=82215.0
-- Funnel: target 1090 → liquid 184 → pre 50 → checked 50 → surge 4 → strict 1
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.5 >= 65=1, 4h RSI 72.3 >= 65=1, 4h RSI 67.9 >= 65=1
+- 更新: 2026-10-15T15:26:31.529080+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.55% price=82297.0
+- Funnel: target 1090 → liquid 184 → pre 50 → checked 50 → surge 5 → strict 2
+- Surge前reject: below_1h_threshold=43, below_relative_strength=2, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 78.5 >= 65=1, 4h RSI 68.6 >= 65=1, 4h RSI 71.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PUFFER/USDT:USDT | +89.33% | $2,231,143.94 |
-| ZEREBRO/USDT:USDT | +50.23% | $9,168,688.33 |
-| ARCSOL/USDT:USDT | +32.95% | $2,755,740.72 |
-| AKE/USDT:USDT | +22.33% | $12,156,022.66 |
-| SI/USDT:USDT | +22.18% | $2,035,399.67 |
+| PUFFER/USDT:USDT | +85.98% | $2,247,551.36 |
+| ZEREBRO/USDT:USDT | +49.92% | $9,214,784.33 |
+| ARCSOL/USDT:USDT | +33.99% | $2,765,218.12 |
+| PYTH/USDT:USDT | +22.19% | $12,746,907.45 |
+| AKE/USDT:USDT | +22.14% | $12,319,438.95 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ARCSOL/USDT:USDT | below_1h_threshold | +4.28% | +3.82% |
-| BSPSTOCK/USDT:USDT | below_1h_threshold | +4.21% | +3.76% |
-| SI/USDT:USDT | below_1h_threshold | +3.87% | +3.42% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +3.83% | +3.38% |
-| BAT/USDT:USDT | below_1h_threshold | +3.46% | +3.00% |
+| ZRO/USDT:USDT | below_relative_strength | +5.25% | +4.69% |
+| ARCSOL/USDT:USDT | below_relative_strength | +5.04% | +4.49% |
+| BSPSTOCK/USDT:USDT | below_1h_threshold | +4.21% | +3.66% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +3.83% | +3.28% |
+| MAGIC/USDT:USDT | below_1h_threshold | +3.83% | +3.27% |
 
 ## 7. 次に見るべき不足
 
