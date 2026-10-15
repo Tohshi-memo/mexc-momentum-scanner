@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-15T12:26:19.693033+00:00
+- generated_at: 2026-10-15T12:31:31.013938+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16741**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4901件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4902件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000231 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-15T12:26:07.709636+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=81050.0
-- Funnel: target 1090 → liquid 189 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-15T12:31:16.573597+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=80857.2
+- Funnel: target 1090 → liquid 191 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PUFFER/USDT:USDT | +86.19% | $1,832,967.97 |
-| ZEREBRO/USDT:USDT | +34.99% | $8,223,545.52 |
-| ARCSOL/USDT:USDT | +27.69% | $2,557,688.99 |
-| AKE/USDT:USDT | +26.09% | $7,347,079.98 |
-| BLUR/USDT:USDT | +20.75% | $2,156,421.66 |
+| PUFFER/USDT:USDT | +82.11% | $1,846,396.60 |
+| ZEREBRO/USDT:USDT | +37.35% | $8,241,792.74 |
+| AKE/USDT:USDT | +26.76% | $7,585,275.47 |
+| ARCSOL/USDT:USDT | +25.61% | $2,575,486.30 |
+| BLUR/USDT:USDT | +21.54% | $2,171,550.74 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PYTH/USDT:USDT | below_1h_threshold | +1.66% | +1.52% |
-| STRK/USDT:USDT | below_1h_threshold | +1.55% | +1.42% |
-| RLC/USDT:USDT | below_1h_threshold | +1.39% | +1.25% |
-| AKE/USDT:USDT | below_1h_threshold | +0.88% | +0.74% |
-| BLUR/USDT:USDT | below_1h_threshold | +0.41% | +0.28% |
+| STRK/USDT:USDT | below_1h_threshold | +2.57% | +2.67% |
+| RLC/USDT:USDT | below_1h_threshold | +1.89% | +1.99% |
+| NIL/USDT:USDT | below_1h_threshold | +1.56% | +1.66% |
+| AKE/USDT:USDT | below_1h_threshold | +1.50% | +1.60% |
+| BLUR/USDT:USDT | below_1h_threshold | +1.23% | +1.34% |
 
 ## 7. 次に見るべき不足
 
