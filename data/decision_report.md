@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-15T05:31:24.373916+00:00
+- generated_at: 2026-10-15T05:36:32.645063+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16718**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4878件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4879件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000145 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-15T05:31:12.145580+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.62% price=81060.1
-- Funnel: target 1085 → liquid 191 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-15T05:36:18.128152+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.68% price=81009.0
+- Funnel: target 1085 → liquid 191 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARCSOL/USDT:USDT | +27.01% | $1,884,290.67 |
-| ZKSYNC/USDT:USDT | +21.50% | $3,406,118.20 |
-| ZEREBRO/USDT:USDT | +20.95% | $5,077,330.60 |
-| NIL/USDT:USDT | +17.21% | $13,156,187.27 |
-| 1000RATS/USDT:USDT | +15.69% | $3,568,264.27 |
+| ARCSOL/USDT:USDT | +26.68% | $1,891,530.18 |
+| ZKSYNC/USDT:USDT | +20.74% | $3,528,124.85 |
+| ZEREBRO/USDT:USDT | +20.51% | $5,091,111.53 |
+| NIL/USDT:USDT | +17.73% | $13,199,275.17 |
+| 1000RATS/USDT:USDT | +16.39% | $3,574,632.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MAGIC/USDT:USDT | below_1h_threshold | +4.70% | +5.32% |
-| ARCSOL/USDT:USDT | below_1h_threshold | +2.44% | +3.05% |
-| NIL/USDT:USDT | below_1h_threshold | +1.95% | +2.57% |
-| 1000RATS/USDT:USDT | below_1h_threshold | +0.95% | +1.57% |
-| BSPSTOCK/USDT:USDT | below_1h_threshold | +0.69% | +1.31% |
+| NIL/USDT:USDT | below_1h_threshold | +2.44% | +3.12% |
+| ARCSOL/USDT:USDT | below_1h_threshold | +2.23% | +2.91% |
+| 1000RATS/USDT:USDT | below_1h_threshold | +1.51% | +2.19% |
+| BSPSTOCK/USDT:USDT | below_1h_threshold | +0.69% | +1.37% |
+| METASTOCK/USDT:USDT | below_1h_threshold | +0.51% | +1.19% |
 
 ## 7. 次に見るべき不足
 
