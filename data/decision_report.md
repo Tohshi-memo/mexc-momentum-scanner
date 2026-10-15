@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-15T16:26:21.845236+00:00
+- generated_at: 2026-10-15T16:31:27.937681+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16757**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-15T16:26:09.868112+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.19% price=82218.5
+- 更新: 2026-10-15T16:31:15.961631+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.31% price=82120.3
 - Funnel: target 1090 → liquid 185 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLUR/USDT:USDT | +4.32% | $2,714,500.92 |
-| SOXS/USDT:USDT | +2.06% | $108,635,883.19 |
-| SKDD/USDT:USDT | +1.92% | $1,860,571.64 |
-| CRV/USDT:USDT | +1.80% | $9,954,104.55 |
-| QNT/USDT:USDT | +1.66% | $111,094,483.73 |
+| BLUR/USDT:USDT | +4.32% | $2,729,180.46 |
+| SKDD/USDT:USDT | +2.65% | $1,865,887.63 |
+| SOXS/USDT:USDT | +2.49% | $108,862,838.27 |
+| QNT/USDT:USDT | +2.22% | $112,086,290.32 |
+| ARCSOL/USDT:USDT | +2.12% | $2,595,993.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLUR/USDT:USDT | below_1h_threshold | +4.14% | +4.33% |
-| QNT/USDT:USDT | below_1h_threshold | +2.64% | +2.83% |
-| CRWVSTOCK/USDT:USDT | below_1h_threshold | +2.51% | +2.70% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +2.02% | +2.21% |
-| CRV/USDT:USDT | below_1h_threshold | +1.83% | +2.02% |
+| BLUR/USDT:USDT | below_1h_threshold | +4.23% | +4.54% |
+| QNT/USDT:USDT | below_1h_threshold | +2.32% | +2.63% |
+| ARCSOL/USDT:USDT | below_1h_threshold | +2.08% | +2.39% |
+| ZEREBRO/USDT:USDT | below_1h_threshold | +1.53% | +1.84% |
+| CRV/USDT:USDT | below_1h_threshold | +1.44% | +1.75% |
 
 ## 7. 次に見るべき不足
 
