@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-15T20:21:28.729322+00:00
+- generated_at: 2026-10-15T20:26:36.625753+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16771**
 
@@ -70,9 +70,9 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-15T20:21:14.846405+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=82332.7
-- Funnel: target 1090 → liquid 186 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-10-15T20:26:24.004206+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=82343.3
+- Funnel: target 1090 → liquid 187 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +58.67% | $4,281,927.13 |
-| NXPC/USDT:USDT | +18.49% | $1,936,802.53 |
-| SI/USDT:USDT | +14.91% | $2,278,412.74 |
-| BAT/USDT:USDT | +11.42% | $13,644,361.50 |
-| CRWVSTOCK/USDT:USDT | +9.10% | $1,423,756.87 |
+| AGT/USDT:USDT | +48.37% | $4,358,443.27 |
+| NXPC/USDT:USDT | +18.24% | $1,938,542.85 |
+| SI/USDT:USDT | +11.40% | $2,289,440.92 |
+| BAT/USDT:USDT | +10.91% | $13,804,140.68 |
+| CRWVSTOCK/USDT:USDT | +9.46% | $1,424,085.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MUU/USDT:USDT | below_1h_threshold | +4.76% | +4.78% |
-| BAT/USDT:USDT | below_1h_threshold | +3.77% | +3.79% |
-| SOXL/USDT:USDT | below_1h_threshold | +3.57% | +3.60% |
-| IRENSTOCK/USDT:USDT | below_1h_threshold | +2.90% | +2.92% |
-| KORU/USDT:USDT | below_1h_threshold | +2.90% | +2.92% |
+| MUU/USDT:USDT | below_1h_threshold | +4.76% | +4.77% |
+| MVLL/USDT:USDT | below_1h_threshold | +3.76% | +3.77% |
+| SOXL/USDT:USDT | below_1h_threshold | +3.57% | +3.58% |
+| BAT/USDT:USDT | below_1h_threshold | +3.29% | +3.30% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +3.20% | +3.21% |
 
 ## 7. 次に見るべき不足
 
