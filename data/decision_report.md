@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-15T08:36:26.903876+00:00
+- generated_at: 2026-10-15T08:41:30.094041+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16729**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4889件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4890件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000172 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-15T08:36:15.004401+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.28% price=81263.7
-- Funnel: target 1085 → liquid 193 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-15T08:41:12.587851+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.32% price=81234.3
+- Funnel: target 1085 → liquid 193 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PUFFER/USDT:USDT | +75.02% | $1,143,993.08 |
-| ARCSOL/USDT:USDT | +36.55% | $2,266,476.39 |
-| ZEREBRO/USDT:USDT | +22.86% | $5,738,410.36 |
-| NIL/USDT:USDT | +21.59% | $15,267,046.43 |
-| ZKSYNC/USDT:USDT | +18.97% | $5,517,989.70 |
+| PUFFER/USDT:USDT | +74.66% | $1,149,993.90 |
+| ARCSOL/USDT:USDT | +35.48% | $2,280,293.94 |
+| NIL/USDT:USDT | +22.32% | $15,354,997.07 |
+| ZEREBRO/USDT:USDT | +22.28% | $5,757,719.83 |
+| ZKSYNC/USDT:USDT | +18.49% | $5,558,627.29 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STRK/USDT:USDT | below_1h_threshold | +4.70% | +4.98% |
-| ZKSYNC/USDT:USDT | below_1h_threshold | +3.36% | +3.64% |
-| MAGIC/USDT:USDT | below_1h_threshold | +2.92% | +3.20% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +2.51% | +2.79% |
-| BAT/USDT:USDT | below_1h_threshold | +2.40% | +2.68% |
+| ZKSYNC/USDT:USDT | below_1h_threshold | +2.79% | +3.11% |
+| AKE/USDT:USDT | below_1h_threshold | +2.73% | +3.05% |
+| BAT/USDT:USDT | below_1h_threshold | +2.54% | +2.86% |
+| MAGIC/USDT:USDT | below_1h_threshold | +2.18% | +2.50% |
+| VVV/USDT:USDT | below_1h_threshold | +2.16% | +2.48% |
 
 ## 7. 次に見るべき不足
 
