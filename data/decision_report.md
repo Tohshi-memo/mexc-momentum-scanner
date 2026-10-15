@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-15T23:51:19.603231+00:00
+- generated_at: 2026-10-15T23:56:20.090417+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16776**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-15T23:51:07.544960+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.28% price=82185.3
+- 更新: 2026-10-15T23:56:08.293440+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.25% price=82206.2
 - Funnel: target 1090 → liquid 188 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +62.66% | $6,228,942.10 |
-| SI/USDT:USDT | +19.86% | $2,242,505.10 |
-| BAT/USDT:USDT | +12.52% | $17,283,072.97 |
-| CT/USDT:USDT | +11.68% | $1,110,245.30 |
-| RIVER/USDT:USDT | +9.58% | $4,085,204.11 |
+| AGT/USDT:USDT | +62.31% | $6,237,579.21 |
+| SI/USDT:USDT | +21.04% | $2,243,508.47 |
+| BAT/USDT:USDT | +11.44% | $17,351,803.31 |
+| CT/USDT:USDT | +10.20% | $1,118,099.09 |
+| RIVER/USDT:USDT | +9.48% | $4,090,833.42 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LONGXIA/USDT:USDT | below_1h_threshold | +2.82% | +3.09% |
-| AKE/USDT:USDT | below_1h_threshold | +0.88% | +1.16% |
-| STX/USDT:USDT | below_1h_threshold | +0.79% | +1.07% |
-| ETHFI/USDT:USDT | below_1h_threshold | +0.69% | +0.96% |
-| SKDD/USDT:USDT | below_1h_threshold | +0.60% | +0.88% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +3.09% | +3.34% |
+| ZEREBRO/USDT:USDT | below_1h_threshold | +2.90% | +3.15% |
+| ETHFI/USDT:USDT | below_1h_threshold | +0.73% | +0.98% |
+| SKDD/USDT:USDT | below_1h_threshold | +0.60% | +0.85% |
+| STX/USDT:USDT | below_1h_threshold | +0.58% | +0.84% |
 
 ## 7. 次に見るべき不足
 
