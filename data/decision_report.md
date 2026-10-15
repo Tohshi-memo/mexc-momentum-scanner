@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-15T18:01:26.405524+00:00
+- generated_at: 2026-10-15T18:06:23.903826+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16766**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-15T18:01:09.906415+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=82349.9
-- Funnel: target 1090 → liquid 183 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-15T18:06:12.193042+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=82274.7
+- Funnel: target 1090 → liquid 184 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +67.38% | $2,195,373.34 |
-| NXPC/USDT:USDT | +27.01% | $1,535,105.68 |
-| AKE/USDT:USDT | +15.30% | $14,666,766.75 |
-| SI/USDT:USDT | +11.92% | $2,192,554.96 |
-| CRWVSTOCK/USDT:USDT | +5.95% | $1,383,859.26 |
+| AGT/USDT:USDT | +60.68% | $2,348,240.45 |
+| NXPC/USDT:USDT | +26.65% | $1,560,309.31 |
+| AKE/USDT:USDT | +16.75% | $14,748,453.82 |
+| SI/USDT:USDT | +12.96% | $2,200,430.70 |
+| NIL/USDT:USDT | +7.02% | $17,520,150.54 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CRWVSTOCK/USDT:USDT | below_1h_threshold | +3.89% | +3.94% |
-| IRENSTOCK/USDT:USDT | below_1h_threshold | +3.43% | +3.48% |
-| AGT/USDT:USDT | below_1h_threshold | +3.20% | +3.25% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +1.40% | +1.45% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.39% | +1.44% |
+| CRWVSTOCK/USDT:USDT | below_1h_threshold | +3.89% | +4.03% |
+| IRENSTOCK/USDT:USDT | below_1h_threshold | +3.43% | +3.57% |
+| NIL/USDT:USDT | below_1h_threshold | +1.99% | +2.13% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +1.40% | +1.55% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.39% | +1.53% |
 
 ## 7. 次に見るべき不足
 
