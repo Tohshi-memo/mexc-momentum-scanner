@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-15T16:46:33.043442+00:00
+- generated_at: 2026-10-15T16:51:22.690934+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16757**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-15T16:46:20.751924+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.23% price=82186.4
+- 更新: 2026-10-15T16:51:13.090090+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.27% price=82156.4
 - Funnel: target 1090 → liquid 186 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CRV/USDT:USDT | +2.82% | $10,368,034.13 |
-| SKDD/USDT:USDT | +2.58% | $1,867,806.77 |
-| BLUR/USDT:USDT | +2.57% | $2,763,346.99 |
-| QNT/USDT:USDT | +2.20% | $113,308,623.95 |
-| RIVER/USDT:USDT | +1.81% | $3,109,373.73 |
+| SKDD/USDT:USDT | +3.22% | $1,868,127.96 |
+| BLUR/USDT:USDT | +3.12% | $2,767,463.83 |
+| CRV/USDT:USDT | +2.85% | $10,443,527.48 |
+| ZEREBRO/USDT:USDT | +2.80% | $9,632,467.90 |
+| SOXS/USDT:USDT | +2.18% | $109,648,378.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CRV/USDT:USDT | below_1h_threshold | +2.85% | +3.08% |
-| BLUR/USDT:USDT | below_1h_threshold | +2.67% | +2.90% |
-| CRWVSTOCK/USDT:USDT | below_1h_threshold | +2.51% | +2.74% |
-| QNT/USDT:USDT | below_1h_threshold | +2.08% | +2.31% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +2.02% | +2.25% |
+| CRV/USDT:USDT | below_1h_threshold | +2.85% | +3.12% |
+| ZEREBRO/USDT:USDT | below_1h_threshold | +2.73% | +3.00% |
+| BLUR/USDT:USDT | below_1h_threshold | +2.67% | +2.93% |
+| CRWVSTOCK/USDT:USDT | below_1h_threshold | +2.51% | +2.78% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +2.02% | +2.29% |
 
 ## 7. 次に見るべき不足
 
