@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-15T21:01:25.408428+00:00
+- generated_at: 2026-10-15T21:06:18.941241+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16772**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-15T21:01:13.359794+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=82005.1
+- 更新: 2026-10-15T21:06:07.282772+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=82082.1
 - Funnel: target 1090 → liquid 186 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +58.94% | $4,762,068.37 |
-| NXPC/USDT:USDT | +18.65% | $1,988,482.57 |
-| BAT/USDT:USDT | +11.92% | $14,319,751.08 |
-| SI/USDT:USDT | +9.70% | $2,140,997.71 |
-| IRENSTOCK/USDT:USDT | +8.11% | $2,365,164.14 |
+| AGT/USDT:USDT | +59.81% | $4,838,906.46 |
+| NXPC/USDT:USDT | +17.43% | $1,994,869.49 |
+| BAT/USDT:USDT | +11.47% | $14,402,621.55 |
+| SI/USDT:USDT | +9.18% | $2,141,411.54 |
+| FILECOIN/USDT:USDT | +8.59% | $17,674,467.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NXPC/USDT:USDT | below_1h_threshold | +0.99% | +1.09% |
-| RKLBSTOCK/USDT:USDT | below_1h_threshold | +0.61% | +0.71% |
-| AAOISTOCK/USDT:USDT | below_1h_threshold | +0.61% | +0.70% |
-| AGT/USDT:USDT | below_1h_threshold | +0.33% | +0.42% |
-| IRENSTOCK/USDT:USDT | below_1h_threshold | +0.26% | +0.36% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +1.25% | +1.25% |
+| AGT/USDT:USDT | below_1h_threshold | +0.93% | +0.93% |
+| RKLBSTOCK/USDT:USDT | below_1h_threshold | +0.61% | +0.61% |
+| AAOISTOCK/USDT:USDT | below_1h_threshold | +0.61% | +0.61% |
+| SYN/USDT:USDT | below_1h_threshold | +0.47% | +0.46% |
 
 ## 7. 次に見るべき不足
 
