@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-10-15T05:36:32.645063+00:00
+- generated_at: 2026-10-15T05:41:34.139669+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **16718**
+- closed shadow trades: **16719**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +1.68% / filled 20/20。**
-- 全期間 MARKET基準: n=16718, expectancy=+0.02%
+- 全期間 MARKET基準: n=16719, expectancy=+0.02%
 - 直近20件 MARKET基準: n=20, expectancy=+1.68%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -21,20 +21,20 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_1PCT | 20/20 | 100.0% | +1.93% | **+1.93%** |
+| LIMIT_1PCT | 20/20 | 100.0% | +1.99% | **+1.99%** |
 | LIMIT_2PCT | 18/20 | 90.0% | +1.88% | **+1.69%** |
 | MARKET | 20/20 | 100.0% | +1.68% | **+1.68%** |
 | LIMIT_3PCT | 14/20 | 70.0% | +1.16% | **+0.81%** |
-| LIMIT_ATR | 15/20 | 75.0% | +0.93% | **+0.70%** |
+| LIMIT_ATR | 15/20 | 75.0% | +0.81% | **+0.61%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_BB3S_LONG | 3/4 | 75.0% | +6.96% | **+5.22%** |
+| LIMIT_BB3S_LONG | 2/4 | 50.0% | +6.44% | **+3.22%** |
 | LIMIT_9PCT_LONG | 7/20 | 35.0% | +1.61% | **+0.56%** |
+| MARKET_LONG | 20/20 | 100.0% | +0.20% | **+0.20%** |
 | LIMIT_8PCT_LONG | 9/20 | 45.0% | +0.00% | **+0.00%** |
-| MARKET_LONG | 20/20 | 100.0% | -0.20% | **-0.20%** |
 | LIMIT_10PCT_LONG | 3/20 | 15.0% | -1.93% | **-0.29%** |
 
 ## 2. $100 Live Portfolio
@@ -47,15 +47,15 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,299.52** / 初期 $100.00 (+1199.52%)
-- 確定: 6300件 (Win 1847 / Loss 2018 / Flat 2435) / skip 6979件
+- 確定: 6301件 (Win 1847 / Loss 2018 / Flat 2436) / skip 6979件
 - 成長率目線: 平均log +0.000407 / 幾何平均 +0.041% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_BB3S_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: ZKSYNC/USDT:USDT `LIMIT_BB3S_LONG` TP_HIT account +1.00% 残高後 $1,299.52
+- 最新: ZKSYNC/USDT:USDT `LIMIT_BB3S_LONG` EXPIRED account +0.00% 残高後 $1,299.52
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$274.10** / 初期 $100.00 (+174.10%)
-- 確定: 3673件 (Win 1023 / Loss 871 / Flat 1779) / skip 6456件
+- 確定: 3673件 (Win 1023 / Loss 871 / Flat 1779) / skip 6457件
 - 成長率目線: 平均log +0.000275 / 幾何平均 +0.027% per trade / maxDD +4.13%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: 1000RATS/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.35% 残高後 $274.10
@@ -65,13 +65,13 @@
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
 - 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4879件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000145 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000188 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-15T05:36:18.128152+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.68% price=81009.0
+- 更新: 2026-10-15T05:41:17.186064+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.52% price=81135.4
 - Funnel: target 1085 → liquid 191 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARCSOL/USDT:USDT | +26.68% | $1,891,530.18 |
-| ZKSYNC/USDT:USDT | +20.74% | $3,528,124.85 |
-| ZEREBRO/USDT:USDT | +20.51% | $5,091,111.53 |
-| NIL/USDT:USDT | +17.73% | $13,199,275.17 |
-| 1000RATS/USDT:USDT | +16.39% | $3,574,632.71 |
+| ARCSOL/USDT:USDT | +25.97% | $1,897,668.96 |
+| ZEREBRO/USDT:USDT | +21.77% | $5,099,264.62 |
+| ZKSYNC/USDT:USDT | +20.73% | $3,623,316.18 |
+| NIL/USDT:USDT | +19.21% | $13,226,015.10 |
+| 1000RATS/USDT:USDT | +17.29% | $3,579,731.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIL/USDT:USDT | below_1h_threshold | +2.44% | +3.12% |
-| ARCSOL/USDT:USDT | below_1h_threshold | +2.23% | +2.91% |
-| 1000RATS/USDT:USDT | below_1h_threshold | +1.51% | +2.19% |
-| BSPSTOCK/USDT:USDT | below_1h_threshold | +0.69% | +1.37% |
-| METASTOCK/USDT:USDT | below_1h_threshold | +0.51% | +1.19% |
+| NIL/USDT:USDT | below_1h_threshold | +3.85% | +4.37% |
+| 1000RATS/USDT:USDT | below_1h_threshold | +2.35% | +2.87% |
+| RLC/USDT:USDT | below_1h_threshold | +1.86% | +2.38% |
+| ARCSOL/USDT:USDT | below_1h_threshold | +1.81% | +2.33% |
+| W/USDT:USDT | below_1h_threshold | +1.33% | +1.85% |
 
 ## 7. 次に見るべき不足
 
