@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-15T16:16:38.664136+00:00
+- generated_at: 2026-10-15T16:21:29.600451+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16757**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-15T16:16:27.310391+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=82356.6
+- 更新: 2026-10-15T16:21:17.601305+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=82337.9
 - Funnel: target 1090 → liquid 184 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLUR/USDT:USDT | +4.32% | $2,692,940.21 |
-| SI/USDT:USDT | +3.32% | $2,041,154.54 |
-| ARCSOL/USDT:USDT | +2.02% | $2,589,648.68 |
-| FLOW/USDT:USDT | +1.55% | $1,176,110.98 |
-| AKE/USDT:USDT | +1.47% | $13,008,651.89 |
+| SI/USDT:USDT | +4.03% | $2,055,883.41 |
+| BLUR/USDT:USDT | +3.95% | $2,704,504.94 |
+| EIGEN/USDT:USDT | +2.98% | $3,039,285.65 |
+| ZEREBRO/USDT:USDT | +2.34% | $9,499,234.60 |
+| CRV/USDT:USDT | +2.22% | $9,893,773.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLUR/USDT:USDT | below_1h_threshold | +4.14% | +4.16% |
-| SI/USDT:USDT | below_1h_threshold | +3.13% | +3.15% |
-| ARCSOL/USDT:USDT | below_1h_threshold | +2.03% | +2.05% |
-| FLOW/USDT:USDT | below_1h_threshold | +1.56% | +1.58% |
-| XPL/USDT:USDT | below_1h_threshold | +1.53% | +1.56% |
+| SI/USDT:USDT | below_1h_threshold | +3.97% | +4.02% |
+| BLUR/USDT:USDT | below_1h_threshold | +3.86% | +3.91% |
+| EIGEN/USDT:USDT | below_1h_threshold | +3.02% | +3.07% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +2.88% | +2.92% |
+| CRV/USDT:USDT | below_1h_threshold | +2.43% | +2.47% |
 
 ## 7. 次に見るべき不足
 
