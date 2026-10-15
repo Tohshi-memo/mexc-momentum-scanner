@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-15T07:16:19.714954+00:00
+- generated_at: 2026-10-15T07:21:35.948810+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16722**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-15T07:16:08.633292+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=80961.0
+- 更新: 2026-10-15T07:21:23.601085+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=80980.4
 - Funnel: target 1085 → liquid 190 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.7 >= 65=1
+- Strict後reject: 4h RSI 71.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARCSOL/USDT:USDT | +24.67% | $1,970,253.35 |
-| ZEREBRO/USDT:USDT | +24.41% | $5,422,734.14 |
-| NIL/USDT:USDT | +19.23% | $14,236,776.50 |
-| 1000RATS/USDT:USDT | +15.43% | $3,661,306.21 |
-| SKDD/USDT:USDT | +14.84% | $1,060,104.70 |
+| ZEREBRO/USDT:USDT | +25.31% | $5,466,294.85 |
+| ARCSOL/USDT:USDT | +22.40% | $1,979,526.13 |
+| NIL/USDT:USDT | +18.41% | $14,353,093.64 |
+| 1000RATS/USDT:USDT | +16.01% | $3,668,283.77 |
+| SKDD/USDT:USDT | +15.25% | $1,064,721.14 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| OGN/USDT:USDT | below_1h_threshold | +1.90% | +1.77% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +1.13% | +1.00% |
-| RSR/USDT:USDT | below_1h_threshold | +0.92% | +0.79% |
-| XPD/USDT:USDT | below_1h_threshold | +0.89% | +0.76% |
-| WAL/USDT:USDT | below_1h_threshold | +0.85% | +0.72% |
+| WAL/USDT:USDT | below_1h_threshold | +2.15% | +2.00% |
+| BAT/USDT:USDT | below_1h_threshold | +1.13% | +0.98% |
+| RSR/USDT:USDT | below_1h_threshold | +1.12% | +0.97% |
+| RLC/USDT:USDT | below_1h_threshold | +0.91% | +0.75% |
+| SQQQ/USDT:USDT | below_1h_threshold | +0.78% | +0.63% |
 
 ## 7. 次に見るべき不足
 
