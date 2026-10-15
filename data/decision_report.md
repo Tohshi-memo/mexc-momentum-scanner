@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-15T09:01:19.066842+00:00
+- generated_at: 2026-10-15T09:06:20.342561+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16730**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-15T09:01:07.296015+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=81358.5
+- 更新: 2026-10-15T09:06:08.531651+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=81297.4
 - Funnel: target 1085 → liquid 191 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PUFFER/USDT:USDT | +76.70% | $1,208,766.21 |
-| ARCSOL/USDT:USDT | +33.40% | $2,305,165.60 |
-| ZEREBRO/USDT:USDT | +27.66% | $5,903,919.14 |
-| NIL/USDT:USDT | +21.15% | $15,236,081.72 |
-| ZKSYNC/USDT:USDT | +19.09% | $5,650,691.71 |
+| PUFFER/USDT:USDT | +80.72% | $1,233,770.40 |
+| ARCSOL/USDT:USDT | +33.40% | $2,326,050.09 |
+| ZEREBRO/USDT:USDT | +29.02% | $5,927,763.14 |
+| NIL/USDT:USDT | +20.76% | $15,293,447.53 |
+| ZKSYNC/USDT:USDT | +18.19% | $5,736,600.90 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| USOIL/USDT:USDT | below_1h_threshold | +1.38% | +1.36% |
-| STRK/USDT:USDT | below_1h_threshold | +1.18% | +1.16% |
-| SI/USDT:USDT | below_1h_threshold | +1.05% | +1.03% |
-| AKE/USDT:USDT | below_1h_threshold | +0.70% | +0.68% |
-| ZKSYNC/USDT:USDT | below_1h_threshold | +0.61% | +0.59% |
+| SI/USDT:USDT | below_1h_threshold | +4.12% | +4.17% |
+| AKE/USDT:USDT | below_1h_threshold | +1.66% | +1.72% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.38% | +1.43% |
+| WAL/USDT:USDT | below_1h_threshold | +1.17% | +1.22% |
+| TIA/USDT:USDT | below_1h_threshold | +0.58% | +0.63% |
 
 ## 7. 次に見るべき不足
 
