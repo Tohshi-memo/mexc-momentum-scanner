@@ -4,7 +4,7 @@
   "initial_capital": 100.0,
   "balance": 117.6114169450822,
   "started_at": "2026-07-11T08:56:50.346675+00:00",
-  "updated_at": "2026-10-15T23:31:29.116518+00:00",
+  "updated_at": "2026-10-15T23:36:21.247862+00:00",
   "high_watermark": 128.08262302711162,
   "max_drawdown_pct": 8.205992703625467,
   "loss_streak": 0,
@@ -281582,9 +281582,9 @@
     "strategy": "LIMIT_2PCT_LONG",
     "direction": "long",
     "reason": "selected_by_causal_log_growth",
-    "causal_score": 0.00021948211217328345,
-    "robust_score": 0.00021948211217328345,
-    "causal_history_count": 16772,
+    "causal_score": 0.0002155678042447178,
+    "robust_score": 0.0002155678042447178,
+    "causal_history_count": 16773,
     "fast": {
       "strategy": "LIMIT_2PCT_LONG",
       "direction": "long",
@@ -281617,14 +281617,14 @@
       "strategy": "LIMIT_2PCT_LONG",
       "direction": "long",
       "total": 200,
-      "filled": 138,
-      "fill_rate": 0.69,
-      "avg_pnl_pct": 0.33504957035618244,
-      "effective_ev_pct": 0.23118420354576585,
-      "avg_log_return": 0.0001345281146739109,
-      "geometric_return_pct": 0.013453716398648119,
-      "avg_account_return_pct": 0.01362995981434837,
-      "max_drawdown_pct": 2.2404411125539236,
+      "filled": 137,
+      "fill_rate": 0.685,
+      "avg_pnl_pct": 0.29390066955884175,
+      "effective_ev_pct": 0.2013219586478066,
+      "avg_log_return": 0.00012148042157869206,
+      "geometric_return_pct": 0.012148780062393172,
+      "avg_account_return_pct": 0.012323486600062656,
+      "max_drawdown_pct": 2.240441112553928,
       "max_loss_streak": 9
     },
     "long": {
@@ -281657,14 +281657,14 @@
     },
     "alternatives": [
       {
-        "strategy": "MARKET_LONG",
-        "direction": "long",
-        "causal_score": 0.0001230743160737229
-      },
-      {
         "strategy": "LIMIT_7PCT",
         "direction": "short",
         "causal_score": 0.00012199618289915543
+      },
+      {
+        "strategy": "MARKET_LONG",
+        "direction": "long",
+        "causal_score": 9.375644790043422e-05
       }
     ]
   },
