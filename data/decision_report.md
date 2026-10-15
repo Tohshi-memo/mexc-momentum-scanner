@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-15T16:06:27.024255+00:00
+- generated_at: 2026-10-15T16:11:31.563379+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16756**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-15T16:06:15.198057+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=82370.0
+- 更新: 2026-10-15T16:11:20.115167+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=82500.0
 - Funnel: target 1090 → liquid 184 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLUR/USDT:USDT | +1.47% | $2,657,275.94 |
-| MAGIC/USDT:USDT | +1.35% | $4,062,002.38 |
-| OP/USDT:USDT | +1.34% | $21,803,333.82 |
-| TIA/USDT:USDT | +1.27% | $28,065,042.29 |
-| US/USDT:USDT | +1.11% | $2,037,750.85 |
+| BLUR/USDT:USDT | +3.95% | $2,677,305.07 |
+| ARCSOL/USDT:USDT | +2.79% | $2,583,495.74 |
+| SI/USDT:USDT | +2.73% | $2,033,698.37 |
+| ZEREBRO/USDT:USDT | +2.37% | $9,463,187.68 |
+| TIA/USDT:USDT | +2.37% | $28,547,408.41 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CRWVSTOCK/USDT:USDT | below_1h_threshold | +2.51% | +2.52% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +2.02% | +2.03% |
-| BLUR/USDT:USDT | below_1h_threshold | +1.47% | +1.48% |
-| TIA/USDT:USDT | below_1h_threshold | +1.38% | +1.38% |
-| MAGIC/USDT:USDT | below_1h_threshold | +1.36% | +1.36% |
+| BLUR/USDT:USDT | below_1h_threshold | +3.96% | +3.80% |
+| ARCSOL/USDT:USDT | below_1h_threshold | +2.79% | +2.64% |
+| CRWVSTOCK/USDT:USDT | below_1h_threshold | +2.51% | +2.36% |
+| TIA/USDT:USDT | below_1h_threshold | +2.37% | +2.22% |
+| SI/USDT:USDT | below_1h_threshold | +2.35% | +2.19% |
 
 ## 7. 次に見るべき不足
 
