@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-15T14:41:37.682121+00:00
+- generated_at: 2026-10-15T14:46:34.404577+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16745**
 
@@ -63,38 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4906件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4907件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000390 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-15T14:41:25.084589+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +1.51% price=81381.2
-- Funnel: target 1090 → liquid 187 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=45, below_relative_strength=4, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-15T14:46:19.792869+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +1.65% price=81497.8
+- Funnel: target 1090 → liquid 188 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=43, below_relative_strength=6, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PUFFER/USDT:USDT | +83.64% | $2,140,616.81 |
-| ZEREBRO/USDT:USDT | +35.91% | $8,825,248.92 |
-| ARCSOL/USDT:USDT | +28.89% | $2,724,007.46 |
-| SI/USDT:USDT | +18.67% | $2,014,512.33 |
-| NIL/USDT:USDT | +17.29% | $17,543,097.88 |
+| PUFFER/USDT:USDT | +84.19% | $2,149,280.94 |
+| ZEREBRO/USDT:USDT | +35.46% | $8,836,838.47 |
+| ARCSOL/USDT:USDT | +27.95% | $2,729,027.77 |
+| SI/USDT:USDT | +18.20% | $2,020,914.10 |
+| NIL/USDT:USDT | +17.94% | $17,560,492.95 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZRO/USDT:USDT | below_relative_strength | +6.24% | +4.73% |
-| TIA/USDT:USDT | below_relative_strength | +5.28% | +3.77% |
-| RLC/USDT:USDT | below_relative_strength | +5.28% | +3.77% |
-| AVA/USDT:USDT | below_relative_strength | +5.14% | +3.64% |
-| PYTH/USDT:USDT | below_1h_threshold | +4.96% | +3.45% |
+| RLC/USDT:USDT | below_relative_strength | +6.25% | +4.59% |
+| AVA/USDT:USDT | below_relative_strength | +6.17% | +4.52% |
+| SI/USDT:USDT | below_relative_strength | +5.87% | +4.22% |
+| VVV/USDT:USDT | below_relative_strength | +5.77% | +4.11% |
+| TIA/USDT:USDT | below_relative_strength | +5.52% | +3.87% |
 
 ## 7. 次に見るべき不足
 
