@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-15T08:26:20.384828+00:00
+- generated_at: 2026-10-15T08:31:25.695661+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16729**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-15T08:26:10.295696+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.32% price=81229.7
-- Funnel: target 1085 → liquid 193 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.8 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-15T08:31:14.032746+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.28% price=81262.7
+- Funnel: target 1085 → liquid 193 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PUFFER/USDT:USDT | +74.51% | $1,127,451.47 |
-| ARCSOL/USDT:USDT | +34.70% | $2,249,999.86 |
-| ZKSYNC/USDT:USDT | +21.97% | $5,328,072.71 |
-| NIL/USDT:USDT | +20.86% | $15,062,691.02 |
-| ZEREBRO/USDT:USDT | +19.23% | $5,711,057.72 |
+| PUFFER/USDT:USDT | +73.74% | $1,135,584.92 |
+| ARCSOL/USDT:USDT | +35.55% | $2,259,237.23 |
+| NIL/USDT:USDT | +22.50% | $15,158,928.07 |
+| ZEREBRO/USDT:USDT | +20.53% | $5,725,086.34 |
+| 1000RATS/USDT:USDT | +18.96% | $3,929,762.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STRK/USDT:USDT | below_1h_threshold | +3.41% | +3.73% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +2.25% | +2.58% |
-| MAGIC/USDT:USDT | below_1h_threshold | +1.77% | +2.09% |
-| BAT/USDT:USDT | below_1h_threshold | +1.66% | +1.98% |
-| AKE/USDT:USDT | below_1h_threshold | +0.84% | +1.16% |
+| STRK/USDT:USDT | below_1h_threshold | +3.90% | +4.18% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +2.39% | +2.67% |
+| ZKSYNC/USDT:USDT | below_1h_threshold | +2.25% | +2.53% |
+| MAGIC/USDT:USDT | below_1h_threshold | +2.18% | +2.46% |
+| BAT/USDT:USDT | below_1h_threshold | +1.85% | +2.13% |
 
 ## 7. 次に見るべき不足
 
