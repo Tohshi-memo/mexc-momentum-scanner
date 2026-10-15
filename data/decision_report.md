@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-15T21:36:28.195780+00:00
+- generated_at: 2026-10-15T21:41:38.448818+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16772**
 
@@ -70,30 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-15T21:36:16.183964+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.18% price=82229.6
-- Funnel: target 1090 → liquid 187 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-15T21:41:25.712471+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.25% price=82288.0
+- Funnel: target 1090 → liquid 187 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 75.7 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +63.87% | $5,117,614.96 |
-| NXPC/USDT:USDT | +16.06% | $2,038,383.58 |
-| SI/USDT:USDT | +14.65% | $2,189,703.35 |
-| BAT/USDT:USDT | +13.51% | $15,249,166.98 |
-| FILECOIN/USDT:USDT | +9.88% | $18,029,134.63 |
+| AGT/USDT:USDT | +64.85% | $5,141,629.03 |
+| SI/USDT:USDT | +18.56% | $2,195,086.34 |
+| NXPC/USDT:USDT | +15.61% | $2,051,988.20 |
+| BAT/USDT:USDT | +13.09% | $15,305,186.14 |
+| FILECOIN/USDT:USDT | +9.38% | $18,109,873.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +4.73% | +4.55% |
-| SI/USDT:USDT | below_1h_threshold | +4.51% | +4.33% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +3.39% | +3.21% |
-| AGT/USDT:USDT | below_1h_threshold | +3.24% | +3.06% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +2.46% | +2.28% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +3.98% | +3.73% |
+| AGT/USDT:USDT | below_1h_threshold | +3.86% | +3.61% |
+| DOT/USDT:USDT | below_1h_threshold | +2.20% | +1.94% |
+| BTW/USDT:USDT | below_1h_threshold | +2.00% | +1.75% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +1.99% | +1.74% |
 
 ## 7. 次に見るべき不足
 
