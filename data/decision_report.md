@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-15T16:31:27.937681+00:00
+- generated_at: 2026-10-15T16:36:32.664630+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16757**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4924件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4925件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000079 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-15T16:31:15.961631+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.31% price=82120.3
-- Funnel: target 1090 → liquid 185 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-15T16:36:18.048306+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.40% price=82045.4
+- Funnel: target 1090 → liquid 186 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLUR/USDT:USDT | +4.32% | $2,729,180.46 |
-| SKDD/USDT:USDT | +2.65% | $1,865,887.63 |
-| SOXS/USDT:USDT | +2.49% | $108,862,838.27 |
-| QNT/USDT:USDT | +2.22% | $112,086,290.32 |
-| ARCSOL/USDT:USDT | +2.12% | $2,595,993.48 |
+| BLUR/USDT:USDT | +5.33% | $2,743,717.51 |
+| SKDD/USDT:USDT | +2.41% | $1,866,322.67 |
+| SOXS/USDT:USDT | +1.69% | $108,868,251.19 |
+| QNT/USDT:USDT | +1.69% | $112,610,306.67 |
+| CRV/USDT:USDT | +1.55% | $10,151,920.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLUR/USDT:USDT | below_1h_threshold | +4.23% | +4.54% |
-| QNT/USDT:USDT | below_1h_threshold | +2.32% | +2.63% |
-| ARCSOL/USDT:USDT | below_1h_threshold | +2.08% | +2.39% |
-| ZEREBRO/USDT:USDT | below_1h_threshold | +1.53% | +1.84% |
-| CRV/USDT:USDT | below_1h_threshold | +1.44% | +1.75% |
+| CRWVSTOCK/USDT:USDT | below_1h_threshold | +2.51% | +2.91% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +2.02% | +2.42% |
+| QNT/USDT:USDT | below_1h_threshold | +1.73% | +2.13% |
+| CRV/USDT:USDT | below_1h_threshold | +1.55% | +1.95% |
+| FLOW/USDT:USDT | below_1h_threshold | +1.18% | +1.58% |
 
 ## 7. 次に見るべき不足
 
