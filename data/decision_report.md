@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-15T01:21:29.911613+00:00
+- generated_at: 2026-10-15T01:26:21.881465+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16711**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-15T01:21:12.963591+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=81726.0
+- 更新: 2026-10-15T01:26:09.864158+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=81543.5
 - Funnel: target 1085 → liquid 180 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZEREBRO/USDT:USDT | +15.24% | $4,044,582.03 |
-| NIL/USDT:USDT | +14.99% | $11,379,281.45 |
-| ARCSOL/USDT:USDT | +14.02% | $1,721,890.60 |
-| WAL/USDT:USDT | +10.39% | $14,100,027.27 |
-| SOXS/USDT:USDT | +6.76% | $67,973,086.42 |
+| ZEREBRO/USDT:USDT | +16.16% | $4,089,588.98 |
+| NIL/USDT:USDT | +14.99% | $11,419,921.24 |
+| ARCSOL/USDT:USDT | +14.74% | $1,723,781.16 |
+| WAL/USDT:USDT | +10.31% | $14,131,074.44 |
+| SOXS/USDT:USDT | +7.65% | $68,121,795.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| WAL/USDT:USDT | below_1h_threshold | +3.37% | +3.24% |
-| AVA/USDT:USDT | below_1h_threshold | +1.83% | +1.70% |
-| DEEP/USDT:USDT | below_1h_threshold | +1.58% | +1.45% |
-| PYTH/USDT:USDT | below_1h_threshold | +0.96% | +0.84% |
-| ZKSYNC/USDT:USDT | below_1h_threshold | +0.86% | +0.73% |
+| WAL/USDT:USDT | below_1h_threshold | +3.46% | +3.56% |
+| AVA/USDT:USDT | below_1h_threshold | +1.13% | +1.23% |
+| ZEREBRO/USDT:USDT | below_1h_threshold | +1.04% | +1.14% |
+| PYTH/USDT:USDT | below_1h_threshold | +0.74% | +0.84% |
+| DEEP/USDT:USDT | below_1h_threshold | +0.72% | +0.82% |
 
 ## 7. 次に見るべき不足
 
