@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-15T17:36:41.966644+00:00
+- generated_at: 2026-10-15T17:41:37.255495+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16763**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-15T17:36:27.046842+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.37% price=82388.3
+- 更新: 2026-10-15T17:41:26.755564+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.34% price=82361.3
 - Funnel: target 1090 → liquid 187 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.7 >= 65=1
+- Strict後reject: 4h RSI 78.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +51.25% | $1,817,719.69 |
-| NXPC/USDT:USDT | +31.06% | $1,371,334.86 |
-| SI/USDT:USDT | +8.79% | $2,179,171.72 |
-| AKE/USDT:USDT | +8.70% | $13,792,651.47 |
-| CRWVSTOCK/USDT:USDT | +4.94% | $1,517,561.03 |
+| AGT/USDT:USDT | +48.67% | $1,894,881.93 |
+| NXPC/USDT:USDT | +31.57% | $1,414,959.74 |
+| AKE/USDT:USDT | +9.83% | $13,955,350.91 |
+| SI/USDT:USDT | +8.99% | $2,183,981.01 |
+| CRWVSTOCK/USDT:USDT | +5.98% | $1,517,926.63 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZEC/USDT:USDT | below_1h_threshold | +3.18% | +2.81% |
-| NIL/USDT:USDT | below_1h_threshold | +3.12% | +2.75% |
-| SKDD/USDT:USDT | below_1h_threshold | +2.63% | +2.25% |
-| AGT/USDT:USDT | below_1h_threshold | +2.31% | +1.93% |
-| CRWVSTOCK/USDT:USDT | below_1h_threshold | +2.25% | +1.87% |
+| NIL/USDT:USDT | below_1h_threshold | +3.43% | +3.08% |
+| ZEC/USDT:USDT | below_1h_threshold | +2.96% | +2.61% |
+| SKDD/USDT:USDT | below_1h_threshold | +2.63% | +2.29% |
+| CRWVSTOCK/USDT:USDT | below_1h_threshold | +2.25% | +1.90% |
+| RIVER/USDT:USDT | below_1h_threshold | +2.16% | +1.82% |
 
 ## 7. 次に見るべき不足
 
