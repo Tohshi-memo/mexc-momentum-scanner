@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-15T19:41:35.890205+00:00
+- generated_at: 2026-10-15T19:46:32.975466+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16771**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-15T19:41:21.522929+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=82390.3
+- 更新: 2026-10-15T19:46:21.227702+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=82392.3
 - Funnel: target 1090 → liquid 189 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +65.53% | $3,497,071.74 |
-| NXPC/USDT:USDT | +18.49% | $1,869,050.02 |
-| SI/USDT:USDT | +17.06% | $2,288,529.32 |
-| BAT/USDT:USDT | +9.69% | $13,219,260.93 |
-| CRWVSTOCK/USDT:USDT | +7.48% | $1,422,362.08 |
+| AGT/USDT:USDT | +65.43% | $3,512,617.38 |
+| NXPC/USDT:USDT | +18.80% | $1,880,046.02 |
+| SI/USDT:USDT | +17.85% | $2,293,488.20 |
+| BAT/USDT:USDT | +9.32% | $13,306,500.54 |
+| CRWVSTOCK/USDT:USDT | +8.09% | $1,430,839.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RIVER/USDT:USDT | below_1h_threshold | +3.71% | +3.69% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +3.36% | +3.34% |
-| SI/USDT:USDT | below_1h_threshold | +2.90% | +2.88% |
-| USELESS/USDT:USDT | below_1h_threshold | +1.91% | +1.89% |
-| XPL/USDT:USDT | below_1h_threshold | +1.71% | +1.69% |
+| RIVER/USDT:USDT | below_1h_threshold | +4.39% | +4.37% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +4.09% | +4.06% |
+| SI/USDT:USDT | below_1h_threshold | +3.99% | +3.96% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.15% | +2.13% |
+| XPL/USDT:USDT | below_1h_threshold | +1.73% | +1.70% |
 
 ## 7. 次に見るべき不足
 
