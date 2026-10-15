@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-15T12:51:27.390405+00:00
+- generated_at: 2026-10-15T12:56:20.399839+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16743**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-15T12:51:15.415503+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.24% price=80743.2
+- 更新: 2026-10-15T12:56:11.337825+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.31% price=80685.8
 - Funnel: target 1090 → liquid 191 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PUFFER/USDT:USDT | +82.47% | $1,919,174.36 |
-| ZEREBRO/USDT:USDT | +40.53% | $8,357,036.60 |
-| ARCSOL/USDT:USDT | +29.12% | $2,605,260.23 |
-| AKE/USDT:USDT | +26.37% | $7,900,145.45 |
-| BLUR/USDT:USDT | +21.04% | $2,246,711.95 |
+| PUFFER/USDT:USDT | +82.80% | $1,930,791.35 |
+| ZEREBRO/USDT:USDT | +36.22% | $8,441,460.05 |
+| ARCSOL/USDT:USDT | +27.69% | $2,610,653.87 |
+| AKE/USDT:USDT | +27.47% | $7,972,048.94 |
+| BLUR/USDT:USDT | +20.55% | $2,274,694.05 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| 1000RATS/USDT:USDT | below_1h_threshold | +1.62% | +1.86% |
-| NIL/USDT:USDT | below_1h_threshold | +1.56% | +1.80% |
-| SI/USDT:USDT | below_1h_threshold | +1.40% | +1.65% |
-| RLC/USDT:USDT | below_1h_threshold | +1.29% | +1.53% |
-| AKE/USDT:USDT | below_1h_threshold | +1.20% | +1.45% |
+| AKE/USDT:USDT | below_1h_threshold | +2.01% | +2.32% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +1.47% | +1.79% |
+| RLC/USDT:USDT | below_1h_threshold | +1.43% | +1.75% |
+| ANTHROPIC/USDT:USDT | below_1h_threshold | +1.30% | +1.62% |
+| NIL/USDT:USDT | below_1h_threshold | +0.98% | +1.29% |
 
 ## 7. 次に見るべき不足
 
