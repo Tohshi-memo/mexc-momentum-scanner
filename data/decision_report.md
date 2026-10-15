@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-15T14:16:19.762701+00:00
+- generated_at: 2026-10-15T14:21:32.554909+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16744**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-15T14:16:07.544742+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.95% price=80933.2
+- 更新: 2026-10-15T14:21:20.516329+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +1.26% price=81182.5
 - Funnel: target 1090 → liquid 185 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PUFFER/USDT:USDT | +82.32% | $2,099,013.66 |
-| ZEREBRO/USDT:USDT | +37.66% | $8,723,545.28 |
-| ARCSOL/USDT:USDT | +30.45% | $2,700,949.81 |
-| AKE/USDT:USDT | +29.85% | $9,909,200.79 |
-| NIL/USDT:USDT | +15.18% | $17,421,804.82 |
+| PUFFER/USDT:USDT | +84.99% | $2,106,325.56 |
+| ZEREBRO/USDT:USDT | +35.81% | $8,748,804.54 |
+| ARCSOL/USDT:USDT | +31.26% | $2,704,867.17 |
+| AKE/USDT:USDT | +27.69% | $10,074,006.15 |
+| NIL/USDT:USDT | +15.47% | $17,446,538.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PYTH/USDT:USDT | below_1h_threshold | +4.94% | +3.99% |
-| BSPSTOCK/USDT:USDT | below_1h_threshold | +4.89% | +3.94% |
-| RLC/USDT:USDT | below_1h_threshold | +4.34% | +3.39% |
-| VVV/USDT:USDT | below_1h_threshold | +3.95% | +3.00% |
-| AKE/USDT:USDT | below_1h_threshold | +3.67% | +2.72% |
+| RLC/USDT:USDT | below_relative_strength | +5.35% | +4.09% |
+| PYTH/USDT:USDT | below_1h_threshold | +4.95% | +3.69% |
+| VVV/USDT:USDT | below_1h_threshold | +4.93% | +3.67% |
+| BSPSTOCK/USDT:USDT | below_1h_threshold | +4.89% | +3.63% |
+| ZRO/USDT:USDT | below_1h_threshold | +4.70% | +3.44% |
 
 ## 7. 次に見るべき不足
 
