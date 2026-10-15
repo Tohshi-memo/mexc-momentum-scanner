@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-15T03:31:20.985455+00:00
+- generated_at: 2026-10-15T03:36:18.177547+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16715**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-15T03:31:10.049473+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.64% price=80974.5
+- 更新: 2026-10-15T03:36:07.306890+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.73% price=80907.1
 - Funnel: target 1085 → liquid 187 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARCSOL/USDT:USDT | +19.48% | $1,792,119.81 |
-| ZEREBRO/USDT:USDT | +16.72% | $4,779,998.80 |
-| NIL/USDT:USDT | +14.88% | $12,506,141.91 |
-| 1000RATS/USDT:USDT | +12.29% | $3,424,563.06 |
-| WAL/USDT:USDT | +11.68% | $15,448,383.21 |
+| ARCSOL/USDT:USDT | +20.64% | $1,795,203.81 |
+| ZEREBRO/USDT:USDT | +17.98% | $4,785,672.09 |
+| NIL/USDT:USDT | +13.40% | $12,548,833.85 |
+| 1000RATS/USDT:USDT | +12.29% | $3,429,790.39 |
+| WAL/USDT:USDT | +11.46% | $15,475,353.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZEREBRO/USDT:USDT | below_1h_threshold | +1.65% | +2.29% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +0.57% | +1.21% |
-| BSPSTOCK/USDT:USDT | below_1h_threshold | +0.39% | +1.04% |
-| ZINC/USDT:USDT | below_1h_threshold | +0.37% | +1.02% |
-| NICKEL/USDT:USDT | below_1h_threshold | +0.36% | +1.00% |
+| ZEREBRO/USDT:USDT | below_1h_threshold | +2.64% | +3.36% |
+| AKE/USDT:USDT | below_1h_threshold | +0.83% | +1.56% |
+| BSPSTOCK/USDT:USDT | below_1h_threshold | +0.39% | +1.12% |
+| ZINC/USDT:USDT | below_1h_threshold | +0.37% | +1.10% |
+| NICKEL/USDT:USDT | below_1h_threshold | +0.36% | +1.09% |
 
 ## 7. 次に見るべき不足
 
