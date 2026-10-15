@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-15T15:46:50.003389+00:00
+- generated_at: 2026-10-15T15:52:09.192109+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16753**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-15T15:46:26.943819+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.47% price=82229.0
-- Funnel: target 1090 → liquid 184 → pre 50 → checked 50 → surge 7 → strict 4
-- Surge前reject: below_1h_threshold=42, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.5 >= 65=1, 4h RSI 69.5 >= 65=1, 4h RSI 78.6 >= 65=1
+- 更新: 2026-10-15T15:51:44.378286+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.62% price=82355.5
+- Funnel: target 1090 → liquid 184 → pre 50 → checked 50 → surge 8 → strict 5
+- Surge前reject: below_1h_threshold=42, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 78.7 >= 65=1, 4h RSI 69.7 >= 65=1, 4h RSI 67.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PUFFER/USDT:USDT | +85.54% | $2,286,814.28 |
-| ZEREBRO/USDT:USDT | +50.49% | $9,361,747.27 |
-| ARCSOL/USDT:USDT | +33.96% | $2,788,006.22 |
-| AKE/USDT:USDT | +27.69% | $12,599,859.20 |
-| PYTH/USDT:USDT | +23.09% | $13,405,602.38 |
+| PUFFER/USDT:USDT | +88.02% | $2,294,253.94 |
+| ZEREBRO/USDT:USDT | +52.56% | $9,421,682.97 |
+| ARCSOL/USDT:USDT | +33.89% | $2,793,269.77 |
+| PYTH/USDT:USDT | +24.35% | $13,612,978.30 |
+| STRK/USDT:USDT | +20.26% | $38,465,323.20 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STRK/USDT:USDT | below_relative_strength | +5.08% | +4.61% |
-| ARCSOL/USDT:USDT | below_1h_threshold | +4.96% | +4.49% |
-| BSPSTOCK/USDT:USDT | below_1h_threshold | +4.21% | +3.74% |
-| INJ/USDT:USDT | below_1h_threshold | +4.15% | +3.68% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +3.83% | +3.36% |
+| ARCSOL/USDT:USDT | below_1h_threshold | +4.96% | +4.34% |
+| INJ/USDT:USDT | below_1h_threshold | +4.41% | +3.79% |
+| BSPSTOCK/USDT:USDT | below_1h_threshold | +4.21% | +3.58% |
+| ETHFI/USDT:USDT | below_1h_threshold | +4.01% | +3.39% |
+| TIA/USDT:USDT | below_1h_threshold | +3.99% | +3.37% |
 
 ## 7. 次に見るべき不足
 
