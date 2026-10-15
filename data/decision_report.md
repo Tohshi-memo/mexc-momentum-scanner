@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-15T19:01:35.740453+00:00
+- generated_at: 2026-10-15T19:06:36.782499+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16768**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-15T19:01:23.787890+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=82393.8
+- 更新: 2026-10-15T19:06:24.952516+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=82462.6
 - Funnel: target 1090 → liquid 185 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +66.14% | $3,192,980.62 |
-| NXPC/USDT:USDT | +19.10% | $1,796,800.53 |
-| AKE/USDT:USDT | +15.48% | $16,607,724.76 |
-| SI/USDT:USDT | +14.00% | $2,216,525.07 |
-| BAT/USDT:USDT | +9.78% | $11,879,824.68 |
+| AGT/USDT:USDT | +65.33% | $3,255,326.15 |
+| NXPC/USDT:USDT | +22.30% | $1,809,490.97 |
+| AKE/USDT:USDT | +15.00% | $16,668,689.25 |
+| SI/USDT:USDT | +14.65% | $2,219,612.48 |
+| BAT/USDT:USDT | +8.32% | $12,161,641.21 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.40% | +1.37% |
-| RKLBSTOCK/USDT:USDT | below_1h_threshold | +1.23% | +1.21% |
-| S/USDT:USDT | below_1h_threshold | +0.98% | +0.96% |
-| AKE/USDT:USDT | below_1h_threshold | +0.97% | +0.95% |
-| CRWVSTOCK/USDT:USDT | below_1h_threshold | +0.82% | +0.80% |
+| RIVER/USDT:USDT | below_1h_threshold | +2.34% | +2.23% |
+| NXPC/USDT:USDT | below_1h_threshold | +2.07% | +1.96% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +1.48% | +1.37% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.40% | +1.29% |
+| AERO/USDT:USDT | below_1h_threshold | +1.39% | +1.28% |
 
 ## 7. 次に見るべき不足
 
