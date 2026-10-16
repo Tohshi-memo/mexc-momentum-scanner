@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-16T17:21:17.483685+00:00
+- generated_at: 2026-10-16T17:26:15.732413+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16821**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-16T17:21:06.065176+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.63% price=80888.9
-- Funnel: target 1084 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-16T17:26:06.236862+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.73% price=80814.4
+- Funnel: target 1084 → liquid 175 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +5.99% | $14,283,614.67 |
-| LONGXIA/USDT:USDT | +4.29% | $1,271,243.72 |
-| ICNT/USDT:USDT | +2.53% | $2,537,411.66 |
-| SOXS/USDT:USDT | +2.18% | $4,595,134.69 |
-| USOIL/USDT:USDT | +1.70% | $67,159,240.79 |
+| AKE/USDT:USDT | +5.87% | $14,394,863.40 |
+| LONGXIA/USDT:USDT | +4.32% | $1,278,962.97 |
+| ICNT/USDT:USDT | +2.65% | $2,556,224.50 |
+| AGT/USDT:USDT | +2.35% | $11,777,009.33 |
+| SOXS/USDT:USDT | +2.03% | $4,609,842.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DNA/USDT:USDT | below_1h_threshold | +3.14% | +3.77% |
-| USOIL/USDT:USDT | below_1h_threshold | +1.81% | +2.44% |
-| UKOIL/USDT:USDT | below_1h_threshold | +1.67% | +2.30% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +1.41% | +2.05% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +0.51% | +1.15% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.81% | +2.53% |
+| UKOIL/USDT:USDT | below_1h_threshold | +1.67% | +2.39% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +1.45% | +2.18% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +0.51% | +1.24% |
+| MUU/USDT:USDT | below_1h_threshold | +0.43% | +1.16% |
 
 ## 7. 次に見るべき不足
 
