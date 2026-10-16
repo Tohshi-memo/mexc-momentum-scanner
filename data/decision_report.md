@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-16T15:31:26.369536+00:00
+- generated_at: 2026-10-16T15:36:27.352074+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16811**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-16T15:31:12.029310+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.42% price=81600.1
+- 更新: 2026-10-16T15:36:13.985346+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.37% price=81641.4
 - Funnel: target 1084 → liquid 177 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DNA/USDT:USDT | +88.13% | $3,732,488.57 |
-| AGT/USDT:USDT | +77.56% | $11,702,039.40 |
-| SI/USDT:USDT | +34.91% | $2,497,499.62 |
-| ICNT/USDT:USDT | +33.74% | $2,030,698.13 |
-| BR/USDT:USDT | +23.86% | $6,042,059.45 |
+| DNA/USDT:USDT | +87.25% | $3,875,530.71 |
+| AGT/USDT:USDT | +78.98% | $11,776,051.63 |
+| SI/USDT:USDT | +34.78% | $2,503,661.93 |
+| ICNT/USDT:USDT | +32.25% | $2,038,647.15 |
+| BR/USDT:USDT | +23.44% | $6,303,032.54 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ICNT/USDT:USDT | below_1h_threshold | +3.06% | +3.48% |
-| AGT/USDT:USDT | below_1h_threshold | +2.02% | +2.44% |
-| 1000RATS/USDT:USDT | below_1h_threshold | +0.62% | +1.04% |
-| ZINC/USDT:USDT | below_1h_threshold | +0.50% | +0.92% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +0.39% | +0.80% |
+| AGT/USDT:USDT | below_1h_threshold | +2.96% | +3.33% |
+| ICNT/USDT:USDT | below_1h_threshold | +1.98% | +2.35% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +1.21% | +1.58% |
+| STBL/USDT:USDT | below_1h_threshold | +1.14% | +1.51% |
+| BAT/USDT:USDT | below_1h_threshold | +0.54% | +0.91% |
 
 ## 7. 次に見るべき不足
 
