@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-16T03:41:21.388154+00:00
+- generated_at: 2026-10-16T03:46:15.385317+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16782**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-16T03:41:09.555690+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.26% price=81805.1
+- 更新: 2026-10-16T03:46:03.789925+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=81958.7
 - Funnel: target 1090 → liquid 180 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +57.78% | $6,906,307.26 |
-| STBL/USDT:USDT | +25.33% | $1,355,731.39 |
-| SI/USDT:USDT | +12.96% | $2,141,786.84 |
-| INJ/USDT:USDT | +12.76% | $57,758,507.49 |
-| RIVER/USDT:USDT | +12.00% | $4,082,423.50 |
+| AGT/USDT:USDT | +58.71% | $6,914,156.20 |
+| STBL/USDT:USDT | +24.90% | $1,357,865.89 |
+| INJ/USDT:USDT | +14.22% | $58,144,652.91 |
+| RIVER/USDT:USDT | +13.21% | $4,091,841.35 |
+| SIREN/USDT:USDT | +12.80% | $1,133,874.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SI/USDT:USDT | below_1h_threshold | +2.24% | +2.49% |
-| TESLA/USDT:USDT | below_1h_threshold | +1.47% | +1.73% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.40% | +1.66% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +1.07% | +1.32% |
-| MVLL/USDT:USDT | below_1h_threshold | +0.98% | +1.24% |
+| TESLA/USDT:USDT | below_1h_threshold | +1.47% | +1.54% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.40% | +1.47% |
+| SI/USDT:USDT | below_1h_threshold | +1.24% | +1.31% |
+| S/USDT:USDT | below_1h_threshold | +1.20% | +1.27% |
+| MVLL/USDT:USDT | below_1h_threshold | +0.98% | +1.05% |
 
 ## 7. 次に見るべき不足
 
