@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-16T09:01:24.915135+00:00
+- generated_at: 2026-10-16T09:06:10.228928+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16788**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-16T09:01:11.110345+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=82182.8
-- Funnel: target 1078 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-16T09:06:01.705074+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=82181.3
+- Funnel: target 1078 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +72.64% | $8,853,539.27 |
-| CLAUDIA/USDT:USDT | +33.72% | $1,014,255.31 |
-| ICNT/USDT:USDT | +23.65% | $1,289,664.45 |
-| INJ/USDT:USDT | +14.23% | $78,169,125.72 |
-| TIA/USDT:USDT | +13.72% | $41,383,888.31 |
+| AGT/USDT:USDT | +74.50% | $8,883,851.15 |
+| CLAUDIA/USDT:USDT | +33.21% | $1,016,677.06 |
+| ICNT/USDT:USDT | +23.49% | $1,296,587.25 |
+| INJ/USDT:USDT | +14.78% | $78,310,108.08 |
+| SI/USDT:USDT | +13.55% | $1,906,598.20 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CLAUDIA/USDT:USDT | below_1h_threshold | +0.84% | +0.88% |
-| BTW/USDT:USDT | below_1h_threshold | +0.61% | +0.65% |
+| AGT/USDT:USDT | below_1h_threshold | +1.06% | +1.09% |
+| SI/USDT:USDT | below_1h_threshold | +0.75% | +0.79% |
 | TESLA/USDT:USDT | below_1h_threshold | +0.49% | +0.52% |
-| S/USDT:USDT | below_1h_threshold | +0.33% | +0.37% |
-| CT/USDT:USDT | below_1h_threshold | +0.26% | +0.29% |
+| CLAUDIA/USDT:USDT | below_1h_threshold | +0.46% | +0.49% |
+| NXPC/USDT:USDT | below_1h_threshold | +0.44% | +0.47% |
 
 ## 7. 次に見るべき不足
 
