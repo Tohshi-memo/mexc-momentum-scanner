@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-16T09:56:37.382501+00:00
+- generated_at: 2026-10-16T10:01:10.222267+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16796**
 
@@ -70,31 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-16T09:56:13.625778+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.18% price=82062.0
-- Funnel: target 1079 → liquid 177 → pre 50 → checked 50 → surge 2 → strict 2
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-16T10:01:01.251255+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=81956.9
+- Funnel: target 1079 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +68.34% | $9,578,465.28 |
-| CLAUDIA/USDT:USDT | +38.92% | $1,146,676.76 |
-| ICNT/USDT:USDT | +16.87% | $1,457,976.26 |
-| INJ/USDT:USDT | +14.68% | $81,558,197.91 |
-| STBL/USDT:USDT | +14.39% | $1,567,159.41 |
+| AGT/USDT:USDT | +68.93% | $9,631,493.33 |
+| CLAUDIA/USDT:USDT | +38.57% | $1,143,080.35 |
+| ICNT/USDT:USDT | +15.88% | $1,453,967.24 |
+| INJ/USDT:USDT | +15.00% | $81,082,831.68 |
+| SI/USDT:USDT | +13.81% | $1,859,200.05 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KAS/USDT:USDT | below_1h_threshold | +2.36% | +2.54% |
-| RAY/USDT:USDT | below_1h_threshold | +2.22% | +2.39% |
-| AVAX/USDT:USDT | below_1h_threshold | +1.66% | +1.83% |
-| RIVER/USDT:USDT | below_1h_threshold | +1.19% | +1.37% |
-| SYN/USDT:USDT | below_1h_threshold | +1.17% | +1.35% |
+| CLAUDIA/USDT:USDT | below_1h_threshold | +1.60% | +1.64% |
+| CRWVSTOCK/USDT:USDT | below_1h_threshold | +0.80% | +0.83% |
+| 1000RATS/USDT:USDT | below_1h_threshold | +0.35% | +0.39% |
+| TIA/USDT:USDT | below_1h_threshold | +0.32% | +0.36% |
+| TESLA/USDT:USDT | below_1h_threshold | +0.25% | +0.28% |
 
 ## 7. 次に見るべき不足
 
