@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-16T22:01:19.549610+00:00
+- generated_at: 2026-10-16T22:06:11.590853+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16828**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-16T22:01:07.658753+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=81659.9
+- 更新: 2026-10-16T22:06:03.044429+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=81720.2
 - Funnel: target 1084 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +25.02% | $11,562,616.41 |
-| FOLKS/USDT:USDT | +13.83% | $1,040,400.32 |
-| UVXY/USDT:USDT | +10.88% | $2,701,334.18 |
-| ICNT/USDT:USDT | +7.34% | $2,833,681.29 |
-| SIREN/USDT:USDT | +7.13% | $1,139,997.56 |
+| AGT/USDT:USDT | +27.05% | $11,634,462.02 |
+| FOLKS/USDT:USDT | +14.46% | $1,045,521.47 |
+| UVXY/USDT:USDT | +10.94% | $2,701,760.36 |
+| SIREN/USDT:USDT | +7.44% | $1,142,375.99 |
+| PUMPFUN/USDT:USDT | +7.21% | $31,828,899.40 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SIREN/USDT:USDT | below_1h_threshold | +1.55% | +1.53% |
-| AGT/USDT:USDT | below_1h_threshold | +0.95% | +0.94% |
-| BTW/USDT:USDT | below_1h_threshold | +0.73% | +0.71% |
-| UVXY/USDT:USDT | below_1h_threshold | +0.60% | +0.58% |
-| UNI/USDT:USDT | below_1h_threshold | +0.37% | +0.36% |
+| AGT/USDT:USDT | below_1h_threshold | +2.66% | +2.57% |
+| SIREN/USDT:USDT | below_1h_threshold | +1.55% | +1.46% |
+| SYN/USDT:USDT | below_1h_threshold | +1.40% | +1.31% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.05% | +0.97% |
+| WIF/USDT:USDT | below_1h_threshold | +1.05% | +0.96% |
 
 ## 7. 次に見るべき不足
 
