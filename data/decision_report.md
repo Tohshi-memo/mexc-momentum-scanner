@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-16T20:21:27.508417+00:00
+- generated_at: 2026-10-16T20:26:10.800541+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16826**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-16T20:21:15.285026+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=81618.6
+- 更新: 2026-10-16T20:26:02.053225+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=81589.1
 - Funnel: target 1084 → liquid 171 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 92.3 >= 65=1
+- Strict後reject: 4h RSI 92.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +15.25% | $11,267,907.39 |
-| UVXY/USDT:USDT | +9.98% | $2,582,487.90 |
-| SOXS/USDT:USDT | +5.62% | $4,569,024.61 |
-| AKE/USDT:USDT | +3.71% | $10,686,358.23 |
-| BTW/USDT:USDT | +3.06% | $24,990,306.28 |
+| AGT/USDT:USDT | +14.98% | $11,318,826.57 |
+| UVXY/USDT:USDT | +10.04% | $2,583,544.26 |
+| SOXS/USDT:USDT | +5.37% | $4,577,107.59 |
+| BTW/USDT:USDT | +2.68% | $25,032,315.96 |
+| ICNT/USDT:USDT | +2.65% | $2,775,269.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +2.58% | +2.51% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +2.58% | +2.51% |
-| SI/USDT:USDT | below_1h_threshold | +2.09% | +2.02% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.36% | +1.29% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.29% | +1.22% |
+| SI/USDT:USDT | below_1h_threshold | +3.29% | +3.26% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +2.58% | +2.55% |
+| BTW/USDT:USDT | below_1h_threshold | +2.22% | +2.18% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.36% | +1.33% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.29% | +1.26% |
 
 ## 7. 次に見るべき不足
 
