@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-16T02:51:25.918427+00:00
+- generated_at: 2026-10-16T02:56:30.434846+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16780**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-16T02:51:11.668443+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=82020.2
+- 更新: 2026-10-16T02:56:15.577545+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=81994.5
 - Funnel: target 1090 → liquid 188 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +60.14% | $6,791,811.35 |
-| STBL/USDT:USDT | +34.42% | $1,317,801.35 |
-| SIREN/USDT:USDT | +15.20% | $1,073,015.41 |
-| RIVER/USDT:USDT | +14.22% | $4,362,002.21 |
-| INJ/USDT:USDT | +13.39% | $55,815,482.79 |
+| AGT/USDT:USDT | +59.93% | $6,807,952.81 |
+| STBL/USDT:USDT | +34.46% | $1,319,650.22 |
+| SIREN/USDT:USDT | +15.64% | $1,078,870.45 |
+| RIVER/USDT:USDT | +13.42% | $4,372,093.27 |
+| INJ/USDT:USDT | +12.77% | $57,093,197.21 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| INJ/USDT:USDT | below_1h_threshold | +4.30% | +4.34% |
-| AGT/USDT:USDT | below_1h_threshold | +3.80% | +3.84% |
-| RIVER/USDT:USDT | below_1h_threshold | +2.72% | +2.76% |
-| SYN/USDT:USDT | below_1h_threshold | +2.46% | +2.50% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +1.55% | +1.59% |
+| INJ/USDT:USDT | below_1h_threshold | +4.01% | +4.08% |
+| AGT/USDT:USDT | below_1h_threshold | +3.52% | +3.59% |
+| SYN/USDT:USDT | below_1h_threshold | +2.64% | +2.71% |
+| CHIP/USDT:USDT | below_1h_threshold | +2.52% | +2.59% |
+| RIVER/USDT:USDT | below_1h_threshold | +2.18% | +2.25% |
 
 ## 7. 次に見るべき不足
 
