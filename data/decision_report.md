@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-16T13:21:17.779407+00:00
+- generated_at: 2026-10-16T13:26:21.454438+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16806**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-16T13:21:06.637636+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=81966.8
+- 更新: 2026-10-16T13:26:09.079361+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=82013.3
 - Funnel: target 1084 → liquid 177 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +76.50% | $11,025,157.57 |
-| DNA/USDT:USDT | +75.64% | $1,103,089.54 |
-| SI/USDT:USDT | +38.11% | $2,293,001.92 |
-| CLAUDIA/USDT:USDT | +27.10% | $1,178,249.52 |
-| ICNT/USDT:USDT | +26.71% | $1,729,802.55 |
+| DNA/USDT:USDT | +75.52% | $1,191,613.45 |
+| AGT/USDT:USDT | +75.01% | $11,050,067.93 |
+| SI/USDT:USDT | +39.73% | $2,300,361.78 |
+| CLAUDIA/USDT:USDT | +27.34% | $1,180,388.11 |
+| ICNT/USDT:USDT | +25.72% | $1,743,540.47 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ICNT/USDT:USDT | below_1h_threshold | +3.10% | +3.15% |
-| 1000RATS/USDT:USDT | below_1h_threshold | +2.18% | +2.24% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.06% | +1.11% |
-| ARB/USDT:USDT | below_1h_threshold | +0.54% | +0.60% |
-| INJ/USDT:USDT | below_1h_threshold | +0.45% | +0.50% |
+| ICNT/USDT:USDT | below_1h_threshold | +2.29% | +2.29% |
+| TIA/USDT:USDT | below_1h_threshold | +2.10% | +2.10% |
+| 1000RATS/USDT:USDT | below_1h_threshold | +1.44% | +1.43% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.06% | +1.05% |
+| OP/USDT:USDT | below_1h_threshold | +0.89% | +0.89% |
 
 ## 7. 次に見るべき不足
 
