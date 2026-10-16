@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-16T17:11:17.985731+00:00
+- generated_at: 2026-10-16T17:16:09.792953+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16820**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-16T17:11:05.833472+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.27% price=81182.9
+- 更新: 2026-10-16T17:16:01.161044+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.43% price=81058.1
 - Funnel: target 1084 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +5.95% | $14,008,237.70 |
-| SI/USDT:USDT | +4.94% | $2,648,994.63 |
-| ICNT/USDT:USDT | +3.58% | $2,506,167.25 |
-| LONGXIA/USDT:USDT | +3.16% | $1,251,319.91 |
-| SIREN/USDT:USDT | +1.98% | $1,240,082.22 |
+| AKE/USDT:USDT | +5.65% | $14,155,630.47 |
+| SI/USDT:USDT | +4.43% | $2,660,409.56 |
+| LONGXIA/USDT:USDT | +4.40% | $1,255,185.86 |
+| USOIL/USDT:USDT | +1.88% | $66,306,495.62 |
+| UKOIL/USDT:USDT | +1.76% | $20,627,471.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DNA/USDT:USDT | below_1h_threshold | +4.24% | +4.52% |
-| USOIL/USDT:USDT | below_1h_threshold | +1.81% | +2.08% |
-| UKOIL/USDT:USDT | below_1h_threshold | +1.67% | +1.94% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +0.51% | +0.79% |
-| MUU/USDT:USDT | below_1h_threshold | +0.43% | +0.71% |
+| DNA/USDT:USDT | below_1h_threshold | +4.10% | +4.53% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.81% | +2.23% |
+| UKOIL/USDT:USDT | below_1h_threshold | +1.67% | +2.09% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +1.27% | +1.70% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +0.51% | +0.94% |
 
 ## 7. 次に見るべき不足
 
