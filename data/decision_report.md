@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-16T16:11:20.740949+00:00
+- generated_at: 2026-10-16T16:16:24.355327+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16815**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-16T16:11:08.655282+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=81406.1
+- 更新: 2026-10-16T16:16:12.265505+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.35% price=81604.2
 - Funnel: target 1084 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ICNT/USDT:USDT | +3.58% | $2,142,570.93 |
-| SI/USDT:USDT | +1.95% | $2,546,126.63 |
-| BTW/USDT:USDT | +1.83% | $21,843,953.77 |
-| ZEREBRO/USDT:USDT | +1.47% | $3,830,227.22 |
-| XMR/USDT:USDT | +0.86% | $4,459,083.28 |
+| ICNT/USDT:USDT | +4.32% | $2,223,736.58 |
+| BTW/USDT:USDT | +3.97% | $22,050,037.94 |
+| SIREN/USDT:USDT | +2.66% | $1,300,762.57 |
+| SI/USDT:USDT | +2.26% | $2,550,251.96 |
+| ZEREBRO/USDT:USDT | +2.07% | $3,836,685.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ICNT/USDT:USDT | below_1h_threshold | +3.58% | +3.48% |
-| SOXS/USDT:USDT | below_1h_threshold | +2.23% | +2.13% |
-| SI/USDT:USDT | below_1h_threshold | +1.91% | +1.80% |
-| BTW/USDT:USDT | below_1h_threshold | +1.84% | +1.73% |
-| ZEREBRO/USDT:USDT | below_1h_threshold | +1.47% | +1.37% |
+| ICNT/USDT:USDT | below_1h_threshold | +4.32% | +3.97% |
+| BTW/USDT:USDT | below_1h_threshold | +4.25% | +3.90% |
+| SIREN/USDT:USDT | below_1h_threshold | +2.70% | +2.35% |
+| SI/USDT:USDT | below_1h_threshold | +2.27% | +1.92% |
+| ZEREBRO/USDT:USDT | below_1h_threshold | +2.06% | +1.71% |
 
 ## 7. 次に見るべき不足
 
