@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-16T00:26:20.157810+00:00
+- generated_at: 2026-10-16T00:31:20.347183+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16777**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-16T00:26:10.671239+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=82259.0
+- 更新: 2026-10-16T00:31:08.316005+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.23% price=82384.9
 - Funnel: target 1090 → liquid 188 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +57.67% | $6,408,925.47 |
-| SI/USDT:USDT | +16.87% | $2,156,551.94 |
-| CT/USDT:USDT | +10.50% | $1,126,201.45 |
-| RIVER/USDT:USDT | +9.88% | $4,104,381.42 |
-| BAT/USDT:USDT | +9.79% | $17,547,559.78 |
+| AGT/USDT:USDT | +59.01% | $6,413,537.96 |
+| SI/USDT:USDT | +16.48% | $2,159,992.48 |
+| CT/USDT:USDT | +10.81% | $1,133,532.56 |
+| RIVER/USDT:USDT | +10.09% | $4,107,066.92 |
+| BAT/USDT:USDT | +8.91% | $17,583,626.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZRO/USDT:USDT | below_1h_threshold | +4.55% | +4.47% |
-| PUFFER/USDT:USDT | below_1h_threshold | +2.12% | +2.04% |
-| SKDD/USDT:USDT | below_1h_threshold | +1.88% | +1.80% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.84% | +1.76% |
-| ENA/USDT:USDT | below_1h_threshold | +1.22% | +1.15% |
+| ZRO/USDT:USDT | below_1h_threshold | +4.87% | +4.64% |
+| SKDD/USDT:USDT | below_1h_threshold | +1.88% | +1.65% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.84% | +1.61% |
+| ENA/USDT:USDT | below_1h_threshold | +1.24% | +1.01% |
+| S/USDT:USDT | below_1h_threshold | +1.18% | +0.95% |
 
 ## 7. 次に見るべき不足
 
