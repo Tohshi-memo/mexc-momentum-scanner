@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-16T20:26:10.800541+00:00
+- generated_at: 2026-10-16T20:31:10.749933+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16826**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-16T20:26:02.053225+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=81589.1
+- 更新: 2026-10-16T20:31:01.631280+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=81645.0
 - Funnel: target 1084 → liquid 171 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 92.2 >= 65=1
@@ -81,21 +81,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +14.98% | $11,318,826.57 |
-| UVXY/USDT:USDT | +10.04% | $2,583,544.26 |
-| SOXS/USDT:USDT | +5.37% | $4,577,107.59 |
-| BTW/USDT:USDT | +2.68% | $25,032,315.96 |
-| ICNT/USDT:USDT | +2.65% | $2,775,269.34 |
+| AGT/USDT:USDT | +15.16% | $11,358,092.49 |
+| UVXY/USDT:USDT | +10.10% | $2,586,886.53 |
+| SOXS/USDT:USDT | +4.90% | $4,602,502.46 |
+| BTW/USDT:USDT | +3.33% | $25,094,390.68 |
+| AKE/USDT:USDT | +3.05% | $10,803,823.67 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SI/USDT:USDT | below_1h_threshold | +3.29% | +3.26% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +2.58% | +2.55% |
-| BTW/USDT:USDT | below_1h_threshold | +2.22% | +2.18% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.36% | +1.33% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.29% | +1.26% |
+| SI/USDT:USDT | below_1h_threshold | +4.33% | +4.23% |
+| BTW/USDT:USDT | below_1h_threshold | +2.81% | +2.71% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +2.58% | +2.48% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.36% | +1.26% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.29% | +1.19% |
 
 ## 7. 次に見るべき不足
 
