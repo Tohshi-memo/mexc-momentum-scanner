@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-16T18:41:22.373901+00:00
+- generated_at: 2026-10-16T18:46:18.139815+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16823**
 
@@ -70,30 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-16T18:41:11.404719+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.28% price=81414.4
-- Funnel: target 1084 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-16T18:46:06.030071+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.27% price=80963.0
+- Funnel: target 1084 → liquid 174 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 77.1 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| UVXY/USDT:USDT | +12.14% | $2,035,850.93 |
-| LONGXIA/USDT:USDT | +5.82% | $1,371,199.53 |
-| AGT/USDT:USDT | +5.02% | $11,013,007.12 |
-| AKE/USDT:USDT | +3.82% | $13,759,517.31 |
-| SOXS/USDT:USDT | +3.20% | $4,772,000.65 |
+| UVXY/USDT:USDT | +12.85% | $2,066,808.97 |
+| LONGXIA/USDT:USDT | +5.92% | $1,381,338.91 |
+| AGT/USDT:USDT | +4.28% | $11,024,868.80 |
+| SOXS/USDT:USDT | +3.38% | $4,777,217.07 |
+| AKE/USDT:USDT | +2.92% | $13,798,766.93 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UVXY/USDT:USDT | below_relative_strength | +5.06% | +4.78% |
-| ICNT/USDT:USDT | below_1h_threshold | +2.40% | +2.12% |
-| SOXS/USDT:USDT | below_1h_threshold | +2.14% | +1.86% |
-| BTW/USDT:USDT | below_1h_threshold | +2.03% | +1.75% |
-| SI/USDT:USDT | below_1h_threshold | +1.71% | +1.43% |
+| BTW/USDT:USDT | below_1h_threshold | +2.41% | +2.69% |
+| SI/USDT:USDT | below_1h_threshold | +2.18% | +2.46% |
+| ICNT/USDT:USDT | below_1h_threshold | +2.15% | +2.42% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.14% | +2.41% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +1.36% | +1.64% |
 
 ## 7. 次に見るべき不足
 
