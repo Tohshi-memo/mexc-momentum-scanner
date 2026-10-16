@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-16T04:11:30.996045+00:00
+- generated_at: 2026-10-16T04:16:17.920475+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16783**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-16T04:11:21.162472+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=81964.5
+- 更新: 2026-10-16T04:16:08.935194+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.16% price=81962.0
 - Funnel: target 1090 → liquid 180 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 88.6 >= 65=1
@@ -81,21 +81,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +59.39% | $7,004,246.23 |
-| SIREN/USDT:USDT | +23.32% | $1,170,760.77 |
-| STBL/USDT:USDT | +23.20% | $1,376,308.64 |
-| INJ/USDT:USDT | +13.88% | $61,545,665.84 |
-| SI/USDT:USDT | +13.48% | $2,142,958.56 |
+| AGT/USDT:USDT | +58.49% | $7,014,292.64 |
+| STBL/USDT:USDT | +23.67% | $1,378,159.20 |
+| SIREN/USDT:USDT | +22.49% | $1,177,187.02 |
+| INJ/USDT:USDT | +12.73% | $62,055,298.67 |
+| SI/USDT:USDT | +12.70% | $2,143,631.35 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
 | SOXL/USDT:USDT | below_1h_threshold | +2.75% | +2.91% |
-| KORU/USDT:USDT | below_1h_threshold | +2.53% | +2.69% |
+| KORU/USDT:USDT | below_1h_threshold | +2.53% | +2.70% |
 | MVLL/USDT:USDT | below_1h_threshold | +2.33% | +2.49% |
 | INTW/USDT:USDT | below_1h_threshold | +2.23% | +2.39% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +1.94% | +2.09% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +1.94% | +2.10% |
 
 ## 7. 次に見るべき不足
 
