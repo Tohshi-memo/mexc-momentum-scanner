@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-16T22:21:15.056668+00:00
+- generated_at: 2026-10-16T22:26:22.140259+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16828**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-16T22:21:05.998362+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=81766.6
+- 更新: 2026-10-16T22:26:10.226991+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=81742.3
 - Funnel: target 1084 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +23.17% | $11,805,622.07 |
-| FOLKS/USDT:USDT | +14.51% | $1,059,550.12 |
-| UVXY/USDT:USDT | +11.84% | $2,740,397.76 |
-| PUMPFUN/USDT:USDT | +10.42% | $33,009,750.77 |
-| ICNT/USDT:USDT | +9.25% | $2,884,357.12 |
+| AGT/USDT:USDT | +24.67% | $11,872,925.07 |
+| FOLKS/USDT:USDT | +15.15% | $1,063,691.09 |
+| UVXY/USDT:USDT | +11.96% | $2,742,236.83 |
+| PUMPFUN/USDT:USDT | +9.61% | $33,560,654.86 |
+| ICNT/USDT:USDT | +8.64% | $2,888,304.90 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PUMPFUN/USDT:USDT | below_1h_threshold | +3.90% | +3.76% |
-| WLD/USDT:USDT | below_1h_threshold | +1.76% | +1.61% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.68% | +1.54% |
-| PYTH/USDT:USDT | below_1h_threshold | +1.65% | +1.50% |
-| NIL/USDT:USDT | below_1h_threshold | +1.60% | +1.45% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +3.31% | +3.20% |
+| NIL/USDT:USDT | below_1h_threshold | +1.65% | +1.53% |
+| LUNC/USDT:USDT | below_1h_threshold | +1.64% | +1.52% |
+| CHZ/USDT:USDT | below_1h_threshold | +1.61% | +1.49% |
+| NEAR/USDT:USDT | below_1h_threshold | +1.50% | +1.39% |
 
 ## 7. 次に見るべき不足
 
