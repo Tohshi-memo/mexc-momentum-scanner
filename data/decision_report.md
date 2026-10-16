@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-16T03:36:15.779237+00:00
+- generated_at: 2026-10-16T03:41:21.388154+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16782**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-16T03:36:06.223297+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.24% price=81818.5
+- 更新: 2026-10-16T03:41:09.555690+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.26% price=81805.1
 - Funnel: target 1090 → liquid 180 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +60.16% | $6,893,476.58 |
-| STBL/USDT:USDT | +24.66% | $1,349,404.14 |
-| SI/USDT:USDT | +14.07% | $2,135,219.07 |
-| INJ/USDT:USDT | +12.39% | $57,275,820.34 |
-| RIVER/USDT:USDT | +12.00% | $4,071,432.72 |
+| AGT/USDT:USDT | +57.78% | $6,906,307.26 |
+| STBL/USDT:USDT | +25.33% | $1,355,731.39 |
+| SI/USDT:USDT | +12.96% | $2,141,786.84 |
+| INJ/USDT:USDT | +12.76% | $57,758,507.49 |
+| RIVER/USDT:USDT | +12.00% | $4,082,423.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SI/USDT:USDT | below_1h_threshold | +3.30% | +3.54% |
-| TESLA/USDT:USDT | below_1h_threshold | +1.47% | +1.71% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.40% | +1.64% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +1.07% | +1.31% |
-| MVLL/USDT:USDT | below_1h_threshold | +0.98% | +1.22% |
+| SI/USDT:USDT | below_1h_threshold | +2.24% | +2.49% |
+| TESLA/USDT:USDT | below_1h_threshold | +1.47% | +1.73% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.40% | +1.66% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +1.07% | +1.32% |
+| MVLL/USDT:USDT | below_1h_threshold | +0.98% | +1.24% |
 
 ## 7. 次に見るべき不足
 
