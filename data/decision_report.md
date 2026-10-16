@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-16T19:41:26.923012+00:00
+- generated_at: 2026-10-16T19:46:25.761085+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16825**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-16T19:41:12.605567+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.29% price=81350.8
+- 更新: 2026-10-16T19:46:13.837677+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.31% price=81368.9
 - Funnel: target 1084 → liquid 171 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 91.8 >= 65=1
+- Strict後reject: 4h RSI 91.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +13.08% | $11,251,099.62 |
-| UVXY/USDT:USDT | +12.20% | $2,474,546.72 |
-| SOXS/USDT:USDT | +4.38% | $4,812,046.51 |
-| AKE/USDT:USDT | +2.93% | $12,176,824.38 |
-| USOIL/USDT:USDT | +2.21% | $73,871,853.20 |
+| UVXY/USDT:USDT | +12.32% | $2,478,040.68 |
+| AGT/USDT:USDT | +11.83% | $11,335,516.16 |
+| SOXS/USDT:USDT | +5.13% | $4,825,174.41 |
+| AKE/USDT:USDT | +3.92% | $12,207,895.26 |
+| USOIL/USDT:USDT | +2.20% | $73,960,046.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SIREN/USDT:USDT | below_1h_threshold | +2.24% | +1.95% |
-| UVXY/USDT:USDT | below_1h_threshold | +1.87% | +1.58% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.59% | +1.30% |
-| BTW/USDT:USDT | below_1h_threshold | +1.50% | +1.21% |
-| XMR/USDT:USDT | below_1h_threshold | +1.01% | +0.72% |
+| BTW/USDT:USDT | below_1h_threshold | +2.68% | +2.37% |
+| SIREN/USDT:USDT | below_1h_threshold | +2.34% | +2.03% |
+| UVXY/USDT:USDT | below_1h_threshold | +1.87% | +1.56% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.59% | +1.28% |
+| LIT/USDT:USDT | below_1h_threshold | +1.05% | +0.73% |
 
 ## 7. 次に見るべき不足
 
