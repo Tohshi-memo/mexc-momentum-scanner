@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-16T23:51:34.672469+00:00
+- generated_at: 2026-10-16T23:56:31.330732+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16832**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-16T23:51:19.388127+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.20% price=81590.1
-- Funnel: target 1084 → liquid 168 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 95.0 >= 65=1, 4h RSI 67.7 >= 65=1
+- 更新: 2026-10-16T23:56:21.602754+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.21% price=81577.6
+- Funnel: target 1084 → liquid 168 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 95.3 >= 65=1, 4h RSI 68.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +48.60% | $12,683,969.19 |
-| FOLKS/USDT:USDT | +12.70% | $1,156,725.22 |
-| SIREN/USDT:USDT | +12.18% | $1,178,562.15 |
-| UVXY/USDT:USDT | +11.96% | $2,800,266.52 |
-| ICNT/USDT:USDT | +9.81% | $2,966,537.96 |
+| AGT/USDT:USDT | +50.11% | $12,733,185.67 |
+| SIREN/USDT:USDT | +13.45% | $1,181,435.21 |
+| FOLKS/USDT:USDT | +12.60% | $1,158,438.57 |
+| UVXY/USDT:USDT | +11.60% | $2,804,629.72 |
+| ICNT/USDT:USDT | +10.49% | $2,970,677.23 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DOT/USDT:USDT | below_1h_threshold | +1.99% | +2.19% |
-| CT/USDT:USDT | below_1h_threshold | +1.68% | +1.88% |
-| AKE/USDT:USDT | below_1h_threshold | +1.46% | +1.66% |
-| NIGHT/USDT:USDT | below_1h_threshold | +0.89% | +1.09% |
-| CRV/USDT:USDT | below_1h_threshold | +0.86% | +1.05% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +4.91% | +5.12% |
+| DOT/USDT:USDT | below_1h_threshold | +2.23% | +2.45% |
+| BTW/USDT:USDT | below_1h_threshold | +2.05% | +2.26% |
+| CT/USDT:USDT | below_1h_threshold | +1.55% | +1.76% |
+| AKE/USDT:USDT | below_1h_threshold | +1.52% | +1.73% |
 
 ## 7. 次に見るべき不足
 
