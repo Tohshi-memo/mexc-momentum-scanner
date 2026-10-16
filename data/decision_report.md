@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-16T16:16:24.355327+00:00
+- generated_at: 2026-10-16T16:21:29.133391+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16815**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4973件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 4974件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000325 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-16T16:16:12.265505+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.35% price=81604.2
-- Funnel: target 1084 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-16T16:21:14.754526+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.32% price=81580.8
+- Funnel: target 1084 → liquid 173 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ICNT/USDT:USDT | +4.32% | $2,223,736.58 |
-| BTW/USDT:USDT | +3.97% | $22,050,037.94 |
-| SIREN/USDT:USDT | +2.66% | $1,300,762.57 |
-| SI/USDT:USDT | +2.26% | $2,550,251.96 |
-| ZEREBRO/USDT:USDT | +2.07% | $3,836,685.80 |
+| BTW/USDT:USDT | +6.31% | $22,401,718.84 |
+| ICNT/USDT:USDT | +4.81% | $2,249,729.94 |
+| SI/USDT:USDT | +2.57% | $2,555,965.28 |
+| SIREN/USDT:USDT | +2.32% | $1,302,754.53 |
+| CT/USDT:USDT | +2.32% | $1,174,165.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ICNT/USDT:USDT | below_1h_threshold | +4.32% | +3.97% |
-| BTW/USDT:USDT | below_1h_threshold | +4.25% | +3.90% |
-| SIREN/USDT:USDT | below_1h_threshold | +2.70% | +2.35% |
-| SI/USDT:USDT | below_1h_threshold | +2.27% | +1.92% |
-| ZEREBRO/USDT:USDT | below_1h_threshold | +2.06% | +1.71% |
+| ICNT/USDT:USDT | below_1h_threshold | +4.57% | +4.25% |
+| SI/USDT:USDT | below_1h_threshold | +2.58% | +2.26% |
+| CT/USDT:USDT | below_1h_threshold | +2.33% | +2.01% |
+| SIREN/USDT:USDT | below_1h_threshold | +2.32% | +2.00% |
+| NIGHT/USDT:USDT | below_1h_threshold | +2.04% | +1.72% |
 
 ## 7. 次に見るべき不足
 
