@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-10-17T06:56:25.290209+00:00
+- generated_at: 2026-10-17T07:01:19.787573+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **16857**
+- closed shadow trades: **16858**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=16857, expectancy=+0.02%
+- 全期間 MARKET基準: n=16858, expectancy=+0.02%
 - 直近20件 MARKET基準: n=20, expectancy=+0.16%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -32,7 +32,7 @@
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | LIMIT_3PCT_LONG | 14/20 | 70.0% | +1.80% | **+1.26%** |
-| LIMIT_ATR_LONG | 12/20 | 60.0% | +1.37% | **+0.82%** |
+| LIMIT_ATR_LONG | 12/20 | 60.0% | +1.52% | **+0.91%** |
 | LIMIT_1PCT_LONG | 16/20 | 80.0% | +0.78% | **+0.63%** |
 | LIMIT_7PCT_LONG | 6/20 | 30.0% | +1.95% | **+0.58%** |
 | LIMIT_9PCT_LONG | 4/20 | 20.0% | +1.55% | **+0.31%** |
@@ -47,17 +47,17 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,275.35** / 初期 $100.00 (+1175.35%)
-- 確定: 6332件 (Win 1854 / Loss 2030 / Flat 2448) / skip 7086件
+- 確定: 6333件 (Win 1854 / Loss 2030 / Flat 2449) / skip 7086件
 - 成長率目線: 平均log +0.000402 / 幾何平均 +0.040% per trade / maxDD +8.46%
-- 次の候補: `LIMIT_3PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
+- 次の候補: `LIMIT_7PCT` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: CLAUDIA/USDT:USDT `LIMIT_7PCT` EXPIRED account +0.00% 残高後 $1,275.35
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$274.05** / 初期 $100.00 (+174.05%)
-- 確定: 3689件 (Win 1027 / Loss 878 / Flat 1784) / skip 6579件
+- 確定: 3689件 (Win 1027 / Loss 878 / Flat 1784) / skip 6580件
 - 成長率目線: 平均log +0.000273 / 幾何平均 +0.027% per trade / maxDD +4.13%
-- 次の候補: `LIMIT_6PCT` (selected_by_robust_growth_score) / robust_score +0.0626 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 次の候補: `LIMIT_6PCT` (selected_by_robust_growth_score) / robust_score +0.0621 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: AGT/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $274.05
 
 ## 5. Causal Adaptive DryRun ($100)
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-17T06:56:13.079831+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=81567.5
-- Funnel: target 1084 → liquid 162 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.0 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-17T07:01:05.788394+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=81593.4
+- Funnel: target 1084 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +88.57% | $18,082,904.66 |
-| ICNT/USDT:USDT | +30.92% | $5,267,616.21 |
-| SIREN/USDT:USDT | +30.07% | $1,293,342.55 |
-| FOLKS/USDT:USDT | +15.30% | $1,502,227.81 |
-| UVXY/USDT:USDT | +9.62% | $2,970,484.82 |
+| AGT/USDT:USDT | +88.25% | $17,809,054.04 |
+| SIREN/USDT:USDT | +31.10% | $1,217,570.91 |
+| ICNT/USDT:USDT | +29.01% | $5,180,277.06 |
+| FOLKS/USDT:USDT | +15.44% | $1,501,395.23 |
+| UVXY/USDT:USDT | +9.56% | $2,966,738.49 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SIREN/USDT:USDT | below_1h_threshold | +4.66% | +4.63% |
-| W/USDT:USDT | below_1h_threshold | +2.65% | +2.61% |
-| LAB/USDT:USDT | below_1h_threshold | +1.92% | +1.89% |
-| CLAUDIA/USDT:USDT | below_1h_threshold | +1.57% | +1.54% |
-| FOLKS/USDT:USDT | below_1h_threshold | +1.25% | +1.22% |
+| SIREN/USDT:USDT | below_1h_threshold | +0.42% | +0.42% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +0.31% | +0.31% |
+| AGT/USDT:USDT | below_1h_threshold | +0.18% | +0.18% |
+| FOLKS/USDT:USDT | below_1h_threshold | +0.17% | +0.17% |
+| BCH/USDT:USDT | below_1h_threshold | +0.12% | +0.12% |
 
 ## 7. 次に見るべき不足
 
