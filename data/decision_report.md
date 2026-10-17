@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-17T21:01:06.175080+00:00
+- generated_at: 2026-10-17T21:06:14.107331+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16920**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5079件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5080件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000395 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-17T21:00:57.703852+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=81612.7
-- Funnel: target 1084 → liquid 131 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-17T21:06:03.048606+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=81635.7
+- Funnel: target 1084 → liquid 131 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 75.3 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BR/USDT:USDT | +17.66% | $9,833,887.53 |
-| Q/USDT:USDT | +17.14% | $6,351,470.75 |
-| BTW/USDT:USDT | +12.45% | $31,145,748.05 |
-| AGT/USDT:USDT | +11.66% | $19,317,578.40 |
-| AVA/USDT:USDT | +11.48% | $1,628,777.60 |
+| Q/USDT:USDT | +17.90% | $6,362,727.49 |
+| AVA/USDT:USDT | +17.56% | $1,651,527.89 |
+| BR/USDT:USDT | +17.40% | $9,885,029.31 |
+| AGT/USDT:USDT | +12.31% | $19,335,220.86 |
+| BTW/USDT:USDT | +12.13% | $31,241,420.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +0.63% | +0.62% |
-| ICNT/USDT:USDT | below_1h_threshold | +0.37% | +0.37% |
-| RLC/USDT:USDT | below_1h_threshold | +0.25% | +0.25% |
-| AVA/USDT:USDT | below_1h_threshold | +0.21% | +0.21% |
-| A/USDT:USDT | below_1h_threshold | +0.17% | +0.17% |
+| AKE/USDT:USDT | below_1h_threshold | +1.33% | +1.30% |
+| ALT/USDT:USDT | below_1h_threshold | +0.98% | +0.95% |
+| CRV/USDT:USDT | below_1h_threshold | +0.89% | +0.86% |
+| APE/USDT:USDT | below_1h_threshold | +0.86% | +0.83% |
+| A/USDT:USDT | below_1h_threshold | +0.85% | +0.82% |
 
 ## 7. 次に見るべき不足
 
