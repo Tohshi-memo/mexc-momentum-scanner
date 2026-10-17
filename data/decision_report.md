@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-17T15:11:25.568607+00:00
+- generated_at: 2026-10-17T15:16:21.887750+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16882**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-17T15:11:13.111569+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=81514.1
+- 更新: 2026-10-17T15:16:09.737551+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=81548.5
 - Funnel: target 1084 → liquid 153 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 95.4 >= 65=1
+- Strict後reject: 4h RSI 95.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +93.48% | $20,317,766.79 |
-| Q/USDT:USDT | +56.96% | $2,272,291.99 |
-| EPIC/USDT:USDT | +28.62% | $1,657,372.81 |
-| ICNT/USDT:USDT | +22.28% | $9,703,920.78 |
-| SAND/USDT:USDT | +17.49% | $15,957,544.57 |
+| AGT/USDT:USDT | +93.82% | $20,342,323.59 |
+| Q/USDT:USDT | +58.24% | $2,341,542.57 |
+| EPIC/USDT:USDT | +29.04% | $1,659,729.10 |
+| ICNT/USDT:USDT | +23.82% | $9,749,006.57 |
+| SAND/USDT:USDT | +18.23% | $16,364,181.75 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NMR/USDT:USDT | below_1h_threshold | +1.37% | +1.41% |
-| TMX/USDT:USDT | below_1h_threshold | +1.19% | +1.24% |
-| SAND/USDT:USDT | below_1h_threshold | +0.81% | +0.85% |
-| ICNT/USDT:USDT | below_1h_threshold | +0.56% | +0.60% |
-| SIREN/USDT:USDT | below_1h_threshold | +0.47% | +0.52% |
+| TMX/USDT:USDT | below_1h_threshold | +3.82% | +3.82% |
+| ICNT/USDT:USDT | below_1h_threshold | +1.62% | +1.62% |
+| SAND/USDT:USDT | below_1h_threshold | +1.30% | +1.30% |
+| NMR/USDT:USDT | below_1h_threshold | +1.23% | +1.23% |
+| AGT/USDT:USDT | below_1h_threshold | +0.58% | +0.58% |
 
 ## 7. 次に見るべき不足
 
