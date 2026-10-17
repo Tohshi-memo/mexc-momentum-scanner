@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-17T02:31:27.520645+00:00
+- generated_at: 2026-10-17T02:36:26.264921+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16844**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5004件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5005件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000222 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-17T02:31:13.308756+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=81410.5
-- Funnel: target 1084 → liquid 162 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.4 >= 65=1
+- 更新: 2026-10-17T02:36:13.407314+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=81416.9
+- Funnel: target 1084 → liquid 162 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 87.1 >= 65=1, 4h RSI 96.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +77.51% | $15,732,008.85 |
-| ICNT/USDT:USDT | +34.32% | $3,434,991.25 |
-| SIREN/USDT:USDT | +18.40% | $1,149,989.48 |
-| UVXY/USDT:USDT | +12.14% | $2,814,316.77 |
-| FOLKS/USDT:USDT | +10.34% | $1,284,563.50 |
+| AGT/USDT:USDT | +87.50% | $15,770,279.17 |
+| ICNT/USDT:USDT | +31.72% | $3,481,559.27 |
+| SIREN/USDT:USDT | +17.48% | $1,152,744.98 |
+| UVXY/USDT:USDT | +12.14% | $2,816,335.00 |
+| FOLKS/USDT:USDT | +10.49% | $1,285,513.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EIGEN/USDT:USDT | below_1h_threshold | +3.78% | +3.91% |
-| TMX/USDT:USDT | below_1h_threshold | +2.02% | +2.15% |
-| TIA/USDT:USDT | below_1h_threshold | +1.70% | +1.82% |
-| WLD/USDT:USDT | below_1h_threshold | +1.35% | +1.47% |
-| SIREN/USDT:USDT | below_1h_threshold | +1.23% | +1.35% |
+| EIGEN/USDT:USDT | below_1h_threshold | +3.98% | +4.10% |
+| TIA/USDT:USDT | below_1h_threshold | +2.12% | +2.23% |
+| WLD/USDT:USDT | below_1h_threshold | +1.86% | +1.97% |
+| TMX/USDT:USDT | below_1h_threshold | +1.52% | +1.63% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +0.73% | +0.84% |
 
 ## 7. 次に見るべき不足
 
