@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-17T04:41:29.403209+00:00
+- generated_at: 2026-10-17T04:46:24.054650+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16851**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-17T04:41:14.241789+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=81524.8
+- 更新: 2026-10-17T04:46:11.369422+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=81523.0
 - Funnel: target 1084 → liquid 163 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.2 >= 65=1
+- Strict後reject: 4h RSI 70.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +106.69% | $17,144,169.28 |
-| ICNT/USDT:USDT | +32.40% | $3,944,719.17 |
-| FOLKS/USDT:USDT | +18.73% | $1,386,493.96 |
-| SIREN/USDT:USDT | +18.40% | $1,124,346.19 |
-| EIGEN/USDT:USDT | +11.86% | $5,458,540.54 |
+| AGT/USDT:USDT | +103.12% | $17,199,897.08 |
+| ICNT/USDT:USDT | +32.59% | $3,966,679.11 |
+| FOLKS/USDT:USDT | +20.45% | $1,389,089.45 |
+| SIREN/USDT:USDT | +18.67% | $1,129,637.67 |
+| EIGEN/USDT:USDT | +11.62% | $5,475,128.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SIREN/USDT:USDT | below_1h_threshold | +3.55% | +3.57% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +3.17% | +3.19% |
-| DNA/USDT:USDT | below_1h_threshold | +3.13% | +3.15% |
-| TIA/USDT:USDT | below_1h_threshold | +2.93% | +2.94% |
-| ICNT/USDT:USDT | below_1h_threshold | +2.87% | +2.88% |
+| DNA/USDT:USDT | below_1h_threshold | +4.40% | +4.42% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +4.23% | +4.24% |
+| SIREN/USDT:USDT | below_1h_threshold | +3.85% | +3.87% |
+| TIA/USDT:USDT | below_1h_threshold | +3.68% | +3.69% |
+| ICNT/USDT:USDT | below_1h_threshold | +2.78% | +2.79% |
 
 ## 7. 次に見るべき不足
 
