@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-10-17T10:46:17.784445+00:00
+- generated_at: 2026-10-17T10:51:33.324117+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **16866**
+- closed shadow trades: **16867**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +1.48% / filled 20/20。**
-- 全期間 MARKET基準: n=16866, expectancy=+0.02%
+- 全期間 MARKET基準: n=16867, expectancy=+0.02%
 - 直近20件 MARKET基準: n=20, expectancy=+1.48%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -47,15 +47,15 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,278.10** / 初期 $100.00 (+1178.10%)
-- 確定: 6340件 (Win 1855 / Loss 2031 / Flat 2454) / skip 7087件
+- 確定: 6341件 (Win 1855 / Loss 2031 / Flat 2455) / skip 7087件
 - 成長率目線: 平均log +0.000402 / 幾何平均 +0.040% per trade / maxDD +8.46%
-- 次の候補: `LIMIT_7PCT` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: AGT/USDT:USDT `LIMIT_7PCT_LONG` EXPIRED account -0.13% 残高後 $1,278.10
+- 次の候補: `LIMIT_3PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
+- 最新: AGT/USDT:USDT `LIMIT_7PCT_LONG` EXPIRED account +0.00% 残高後 $1,278.10
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$274.05** / 初期 $100.00 (+174.05%)
-- 確定: 3689件 (Win 1027 / Loss 878 / Flat 1784) / skip 6588件
+- 確定: 3689件 (Win 1027 / Loss 878 / Flat 1784) / skip 6589件
 - 成長率目線: 平均log +0.000273 / 幾何平均 +0.027% per trade / maxDD +4.13%
 - 次の候補: `LIMIT_6PCT` (selected_by_robust_growth_score) / robust_score +0.0550 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: AGT/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $274.05
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5028件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5030件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000177 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-17T10:46:05.706603+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=81612.4
-- Funnel: target 1084 → liquid 159 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.0 >= 65=1
+- 更新: 2026-10-17T10:51:15.870259+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=81626.6
+- Funnel: target 1084 → liquid 160 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 73.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +83.76% | $19,032,777.86 |
-| SIREN/USDT:USDT | +27.38% | $2,230,794.27 |
-| EPIC/USDT:USDT | +19.30% | $1,190,369.48 |
-| ICNT/USDT:USDT | +15.24% | $8,073,250.79 |
-| FOLKS/USDT:USDT | +12.21% | $1,649,690.77 |
+| AGT/USDT:USDT | +84.76% | $19,116,548.58 |
+| SIREN/USDT:USDT | +29.83% | $2,247,718.61 |
+| EPIC/USDT:USDT | +20.24% | $1,196,127.91 |
+| ICNT/USDT:USDT | +16.11% | $8,218,260.43 |
+| FOLKS/USDT:USDT | +11.28% | $1,651,922.67 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SIREN/USDT:USDT | below_1h_threshold | +2.81% | +2.76% |
-| EPIC/USDT:USDT | below_1h_threshold | +2.57% | +2.53% |
-| GRASS/USDT:USDT | below_1h_threshold | +2.31% | +2.27% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +2.20% | +2.15% |
-| BTW/USDT:USDT | below_1h_threshold | +2.05% | +2.00% |
+| SIREN/USDT:USDT | below_1h_threshold | +4.93% | +4.87% |
+| EPIC/USDT:USDT | below_1h_threshold | +2.98% | +2.91% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +2.20% | +2.14% |
+| GRASS/USDT:USDT | below_1h_threshold | +2.13% | +2.06% |
+| BTW/USDT:USDT | below_1h_threshold | +1.97% | +1.91% |
 
 ## 7. 次に見るべき不足
 
