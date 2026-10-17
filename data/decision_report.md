@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-17T11:06:20.749855+00:00
+- generated_at: 2026-10-17T11:11:30.871211+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16869**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-17T11:06:08.862241+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=81626.5
+- 更新: 2026-10-17T11:11:18.124612+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=81616.4
 - Funnel: target 1084 → liquid 159 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +89.83% | $18,928,787.45 |
-| EPIC/USDT:USDT | +21.18% | $1,201,892.56 |
-| ICNT/USDT:USDT | +13.64% | $8,358,045.44 |
-| BTW/USDT:USDT | +11.73% | $22,859,124.09 |
-| SIREN/USDT:USDT | +11.33% | $2,402,010.47 |
+| AGT/USDT:USDT | +92.39% | $19,022,006.53 |
+| EPIC/USDT:USDT | +23.66% | $1,206,329.33 |
+| BTW/USDT:USDT | +12.74% | $23,390,867.97 |
+| UVXY/USDT:USDT | +11.12% | $2,968,571.60 |
+| FOLKS/USDT:USDT | +10.39% | $1,655,378.92 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +3.64% | +3.62% |
-| TMX/USDT:USDT | below_1h_threshold | +1.09% | +1.07% |
-| NEAR/USDT:USDT | below_1h_threshold | +0.50% | +0.49% |
-| AGT/USDT:USDT | below_1h_threshold | +0.47% | +0.45% |
-| NIL/USDT:USDT | below_1h_threshold | +0.47% | +0.45% |
+| BTW/USDT:USDT | below_1h_threshold | +4.73% | +4.73% |
+| EPIC/USDT:USDT | below_1h_threshold | +1.79% | +1.79% |
+| AGT/USDT:USDT | below_1h_threshold | +1.74% | +1.74% |
+| TMX/USDT:USDT | below_1h_threshold | +1.45% | +1.44% |
+| MAGIC/USDT:USDT | below_1h_threshold | +1.39% | +1.39% |
 
 ## 7. 次に見るべき不足
 
