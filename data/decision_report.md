@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-17T09:41:15.565698+00:00
+- generated_at: 2026-10-17T09:46:06.298176+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16863**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-17T09:41:03.630335+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=81633.8
+- 更新: 2026-10-17T09:45:58.095949+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=81633.4
 - Funnel: target 1084 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +57.95% | $18,663,481.47 |
-| ICNT/USDT:USDT | +26.04% | $7,253,968.53 |
-| SIREN/USDT:USDT | +22.53% | $2,007,708.91 |
-| EPIC/USDT:USDT | +16.91% | $1,155,776.10 |
-| FOLKS/USDT:USDT | +13.04% | $1,608,767.07 |
+| AGT/USDT:USDT | +59.93% | $18,693,171.94 |
+| ICNT/USDT:USDT | +27.65% | $7,327,820.45 |
+| SIREN/USDT:USDT | +20.58% | $2,026,117.05 |
+| EPIC/USDT:USDT | +15.54% | $1,159,620.45 |
+| FOLKS/USDT:USDT | +13.09% | $1,611,468.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EPIC/USDT:USDT | below_1h_threshold | +3.63% | +3.69% |
-| SAND/USDT:USDT | below_1h_threshold | +1.90% | +1.96% |
-| NIL/USDT:USDT | below_1h_threshold | +1.84% | +1.90% |
-| A/USDT:USDT | below_1h_threshold | +1.40% | +1.46% |
-| UVXY/USDT:USDT | below_1h_threshold | +0.98% | +1.04% |
+| NIL/USDT:USDT | below_1h_threshold | +2.65% | +2.71% |
+| EPIC/USDT:USDT | below_1h_threshold | +2.42% | +2.48% |
+| SAND/USDT:USDT | below_1h_threshold | +1.89% | +1.95% |
+| A/USDT:USDT | below_1h_threshold | +1.22% | +1.28% |
+| W/USDT:USDT | below_1h_threshold | +1.01% | +1.07% |
 
 ## 7. 次に見るべき不足
 
