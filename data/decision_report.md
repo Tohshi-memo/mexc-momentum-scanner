@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-17T19:26:19.599383+00:00
+- generated_at: 2026-10-17T19:31:25.362304+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16917**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-17T19:26:05.606137+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=81505.2
+- 更新: 2026-10-17T19:31:10.827967+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=81481.5
 - Funnel: target 1084 → liquid 139 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ICNT/USDT:USDT | +21.05% | $13,381,124.97 |
-| Q/USDT:USDT | +19.35% | $6,094,257.28 |
-| BTW/USDT:USDT | +16.08% | $29,710,969.84 |
-| BR/USDT:USDT | +14.78% | $6,422,424.60 |
-| AVA/USDT:USDT | +9.02% | $1,566,058.87 |
+| ICNT/USDT:USDT | +21.11% | $13,433,348.56 |
+| Q/USDT:USDT | +19.89% | $6,104,017.15 |
+| BTW/USDT:USDT | +16.29% | $29,817,960.32 |
+| BR/USDT:USDT | +14.72% | $6,509,221.91 |
+| AVA/USDT:USDT | +10.31% | $1,576,627.55 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LSK/USDT:USDT | below_1h_threshold | +2.06% | +2.01% |
-| FET/USDT:USDT | below_1h_threshold | +1.68% | +1.63% |
-| KORU/USDT:USDT | below_1h_threshold | +1.42% | +1.37% |
-| MUU/USDT:USDT | below_1h_threshold | +1.08% | +1.03% |
-| DOT/USDT:USDT | below_1h_threshold | +0.98% | +0.94% |
+| AGT/USDT:USDT | below_1h_threshold | +1.97% | +1.96% |
+| FET/USDT:USDT | below_1h_threshold | +1.62% | +1.60% |
+| LSK/USDT:USDT | below_1h_threshold | +1.53% | +1.51% |
+| KORU/USDT:USDT | below_1h_threshold | +1.42% | +1.40% |
+| MUU/USDT:USDT | below_1h_threshold | +1.08% | +1.06% |
 
 ## 7. 次に見るべき不足
 
