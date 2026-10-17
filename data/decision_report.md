@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-17T21:11:23.884556+00:00
+- generated_at: 2026-10-17T21:16:25.263342+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16921**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-17T21:11:12.297468+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=81591.6
+- 更新: 2026-10-17T21:16:13.149303+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=81622.5
 - Funnel: target 1084 → liquid 131 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 76.1 >= 65=1
@@ -81,21 +81,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AVA/USDT:USDT | +20.01% | $1,712,143.30 |
-| BR/USDT:USDT | +18.29% | $9,968,818.25 |
-| Q/USDT:USDT | +18.07% | $6,370,387.93 |
-| ALT/USDT:USDT | +12.38% | $1,197,205.05 |
-| BTW/USDT:USDT | +12.36% | $31,356,787.72 |
+| AVA/USDT:USDT | +19.81% | $1,740,439.96 |
+| Q/USDT:USDT | +19.09% | $6,380,917.16 |
+| BR/USDT:USDT | +17.41% | $10,054,599.22 |
+| AGT/USDT:USDT | +12.56% | $19,366,423.56 |
+| ALT/USDT:USDT | +11.96% | $1,208,303.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +2.38% | +2.40% |
-| ALT/USDT:USDT | below_1h_threshold | +1.92% | +1.94% |
-| APE/USDT:USDT | below_1h_threshold | +0.79% | +0.82% |
-| A/USDT:USDT | below_1h_threshold | +0.79% | +0.81% |
-| BTW/USDT:USDT | below_1h_threshold | +0.63% | +0.65% |
+| AKE/USDT:USDT | below_1h_threshold | +2.01% | +1.99% |
+| Q/USDT:USDT | below_1h_threshold | +1.37% | +1.35% |
+| ALT/USDT:USDT | below_1h_threshold | +1.32% | +1.30% |
+| APE/USDT:USDT | below_1h_threshold | +1.12% | +1.11% |
+| A/USDT:USDT | below_1h_threshold | +0.60% | +0.59% |
 
 ## 7. 次に見るべき不足
 
