@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-17T21:46:16.780098+00:00
+- generated_at: 2026-10-17T21:51:15.049375+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16922**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-17T21:46:04.878933+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.53% price=81174.1
+- 更新: 2026-10-17T21:51:05.453381+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.66% price=81068.4
 - Funnel: target 1084 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BR/USDT:USDT | +16.35% | $10,345,308.34 |
-| AVA/USDT:USDT | +16.13% | $1,855,989.98 |
-| Q/USDT:USDT | +15.42% | $6,488,847.64 |
-| BTW/USDT:USDT | +12.10% | $32,103,011.33 |
-| AGT/USDT:USDT | +11.67% | $19,496,243.40 |
+| Q/USDT:USDT | +16.20% | $6,501,336.20 |
+| BR/USDT:USDT | +16.06% | $10,358,835.44 |
+| AVA/USDT:USDT | +15.10% | $1,871,070.66 |
+| BTW/USDT:USDT | +12.53% | $32,200,581.40 |
+| AGT/USDT:USDT | +11.80% | $19,510,480.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AVA/USDT:USDT | below_1h_threshold | +4.06% | +4.59% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.55% | +1.08% |
-| BTW/USDT:USDT | below_1h_threshold | +0.41% | +0.94% |
-| AKE/USDT:USDT | below_1h_threshold | +0.07% | +0.60% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +0.05% | +0.58% |
+| AVA/USDT:USDT | below_1h_threshold | +3.14% | +3.81% |
+| BTW/USDT:USDT | below_1h_threshold | +1.00% | +1.66% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.55% | +1.21% |
+| AKE/USDT:USDT | below_1h_threshold | +0.09% | +0.75% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +0.05% | +0.71% |
 
 ## 7. 次に見るべき不足
 
