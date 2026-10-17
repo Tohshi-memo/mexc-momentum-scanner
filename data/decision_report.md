@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-10-17T12:16:17.537601+00:00
+- generated_at: 2026-10-17T12:21:21.030975+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **16875**
+- closed shadow trades: **16876**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +1.81% / filled 20/20。**
-- 全期間 MARKET基準: n=16875, expectancy=+0.02%
+- 全期間 MARKET基準: n=16876, expectancy=+0.02%
 - 直近20件 MARKET基準: n=20, expectancy=+1.81%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -22,10 +22,10 @@
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | MARKET | 20/20 | 100.0% | +1.81% | **+1.81%** |
-| LIMIT_1PCT | 17/20 | 85.0% | +1.20% | **+1.02%** |
-| LIMIT_ATR | 9/20 | 45.0% | +1.89% | **+0.85%** |
-| LIMIT_2PCT | 13/20 | 65.0% | +1.00% | **+0.65%** |
-| LIMIT_7PCT | 3/20 | 15.0% | +2.80% | **+0.42%** |
+| LIMIT_1PCT | 17/20 | 85.0% | +1.26% | **+1.07%** |
+| LIMIT_ATR | 9/20 | 45.0% | +1.72% | **+0.77%** |
+| LIMIT_2PCT | 13/20 | 65.0% | +1.16% | **+0.75%** |
+| LIMIT_3PCT | 10/20 | 50.0% | +1.11% | **+0.56%** |
 
 ### シャドウ上位 LONG
 
@@ -47,17 +47,17 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,265.35** / 初期 $100.00 (+1165.35%)
-- 確定: 6349件 (Win 1855 / Loss 2033 / Flat 2461) / skip 7087件
+- 確定: 6350件 (Win 1855 / Loss 2033 / Flat 2462) / skip 7087件
 - 成長率目線: 平均log +0.000400 / 幾何平均 +0.040% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_3PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: TMX/USDT:USDT `LIMIT_7PCT_LONG` EXPIRED account +0.00% 残高後 $1,265.35
+- 最新: EPIC/USDT:USDT `LIMIT_7PCT_LONG` EXPIRED account +0.00% 残高後 $1,265.35
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$274.05** / 初期 $100.00 (+174.05%)
-- 確定: 3690件 (Win 1027 / Loss 878 / Flat 1785) / skip 6596件
+- 確定: 3690件 (Win 1027 / Loss 878 / Flat 1785) / skip 6597件
 - 成長率目線: 平均log +0.000273 / 幾何平均 +0.027% per trade / maxDD +4.13%
-- 次の候補: `LIMIT_6PCT` (selected_by_robust_growth_score) / robust_score +0.0585 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 次の候補: `LIMIT_6PCT` (selected_by_robust_growth_score) / robust_score +0.0439 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: SIREN/USDT:USDT `LIMIT_6PCT` EXPIRED account +0.00% 残高後 $274.05
 
 ## 5. Causal Adaptive DryRun ($100)
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-17T12:16:07.757463+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=81520.2
-- Funnel: target 1084 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-17T12:21:09.552689+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=81504.4
+- Funnel: target 1084 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +85.33% | $19,595,165.20 |
-| EPIC/USDT:USDT | +29.38% | $1,364,675.13 |
-| TMX/USDT:USDT | +16.02% | $1,188,794.14 |
-| BTW/USDT:USDT | +15.04% | $23,411,176.17 |
-| ICNT/USDT:USDT | +12.34% | $8,998,131.10 |
+| AGT/USDT:USDT | +86.21% | $19,647,980.23 |
+| EPIC/USDT:USDT | +33.36% | $1,394,304.99 |
+| Q/USDT:USDT | +31.81% | $1,011,884.97 |
+| TMX/USDT:USDT | +16.66% | $1,195,043.06 |
+| BTW/USDT:USDT | +14.94% | $23,518,488.16 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TMX/USDT:USDT | below_1h_threshold | +3.08% | +3.10% |
-| BTW/USDT:USDT | below_1h_threshold | +2.99% | +3.02% |
-| MAGIC/USDT:USDT | below_1h_threshold | +1.27% | +1.29% |
-| EIGEN/USDT:USDT | below_1h_threshold | +0.49% | +0.51% |
-| NICKEL/USDT:USDT | below_1h_threshold | +0.42% | +0.45% |
+| TMX/USDT:USDT | below_1h_threshold | +3.76% | +3.80% |
+| Q/USDT:USDT | below_1h_threshold | +3.38% | +3.42% |
+| BTW/USDT:USDT | below_1h_threshold | +2.77% | +2.82% |
+| MAGIC/USDT:USDT | below_1h_threshold | +1.31% | +1.35% |
+| EPIC/USDT:USDT | below_1h_threshold | +1.26% | +1.31% |
 
 ## 7. 次に見るべき不足
 
