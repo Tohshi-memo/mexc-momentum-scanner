@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-17T06:46:26.709065+00:00
+- generated_at: 2026-10-17T06:51:24.123585+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16857**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-17T06:46:14.033111+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=81581.3
-- Funnel: target 1084 → liquid 161 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.2 >= 65=1, 4h RSI 75.9 >= 65=1
+- 更新: 2026-10-17T06:51:14.466754+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=81559.6
+- Funnel: target 1084 → liquid 162 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 86.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +87.19% | $17,983,803.48 |
-| ICNT/USDT:USDT | +32.96% | $5,161,110.63 |
-| SIREN/USDT:USDT | +31.27% | $1,269,787.46 |
-| FOLKS/USDT:USDT | +14.46% | $1,496,652.96 |
-| UVXY/USDT:USDT | +9.68% | $2,969,793.61 |
+| AGT/USDT:USDT | +90.87% | $18,043,933.24 |
+| SIREN/USDT:USDT | +30.41% | $1,280,503.69 |
+| ICNT/USDT:USDT | +29.38% | $5,238,565.88 |
+| FOLKS/USDT:USDT | +15.10% | $1,500,344.34 |
+| UVXY/USDT:USDT | +9.68% | $2,970,129.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| W/USDT:USDT | below_1h_threshold | +3.34% | +3.29% |
-| CLAUDIA/USDT:USDT | below_1h_threshold | +2.45% | +2.41% |
-| NIGHT/USDT:USDT | below_1h_threshold | +2.01% | +1.96% |
-| SAND/USDT:USDT | below_1h_threshold | +1.45% | +1.40% |
-| AERO/USDT:USDT | below_1h_threshold | +0.99% | +0.94% |
+| SIREN/USDT:USDT | below_1h_threshold | +4.86% | +4.83% |
+| W/USDT:USDT | below_1h_threshold | +3.64% | +3.62% |
+| LAB/USDT:USDT | below_1h_threshold | +1.63% | +1.61% |
+| NIGHT/USDT:USDT | below_1h_threshold | +1.28% | +1.26% |
+| SAND/USDT:USDT | below_1h_threshold | +1.11% | +1.09% |
 
 ## 7. 次に見るべき不足
 
