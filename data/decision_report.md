@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-18T14:36:18.465658+00:00
+- generated_at: 2026-10-18T14:41:20.129128+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16958**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-18T14:36:03.860150+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.46% price=81124.6
+- 更新: 2026-10-18T14:41:07.891464+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.48% price=81110.8
 - Funnel: target 1084 → liquid 132 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AVA/USDT:USDT | +22.79% | $3,539,490.70 |
-| XMR/USDT:USDT | +7.21% | $12,998,342.23 |
-| BR/USDT:USDT | +7.02% | $11,771,392.40 |
-| BTW/USDT:USDT | +5.90% | $33,321,961.92 |
-| HBAR/USDT:USDT | +5.00% | $36,805,028.90 |
+| AVA/USDT:USDT | +16.24% | $3,606,097.42 |
+| XMR/USDT:USDT | +7.18% | $13,018,663.13 |
+| CLAUDIA/USDT:USDT | +6.67% | $3,321,167.09 |
+| BR/USDT:USDT | +6.56% | $11,787,398.18 |
+| HBAR/USDT:USDT | +5.20% | $36,950,332.98 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +1.76% | +2.22% |
-| CYS/USDT:USDT | below_1h_threshold | +1.05% | +1.51% |
-| BTW/USDT:USDT | below_1h_threshold | +0.96% | +1.42% |
-| AVA/USDT:USDT | below_1h_threshold | +0.77% | +1.23% |
-| BR/USDT:USDT | below_1h_threshold | +0.59% | +1.05% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.76% | +2.23% |
+| CYS/USDT:USDT | below_1h_threshold | +1.58% | +2.06% |
+| BR/USDT:USDT | below_1h_threshold | +0.10% | +0.57% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.09% | +0.57% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.01% | +0.49% |
 
 ## 7. 次に見るべき不足
 
