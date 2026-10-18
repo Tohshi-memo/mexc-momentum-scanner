@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-18T14:26:24.387491+00:00
+- generated_at: 2026-10-18T14:31:25.292854+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16957**
 
@@ -70,31 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-18T14:26:12.270829+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=81411.0
-- Funnel: target 1084 → liquid 131 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-18T14:31:15.402319+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.45% price=81132.3
+- Funnel: target 1084 → liquid 132 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AVA/USDT:USDT | +22.41% | $3,493,507.26 |
-| CLAUDIA/USDT:USDT | +18.49% | $3,230,838.70 |
-| Q/USDT:USDT | +7.76% | $13,164,850.28 |
-| XMR/USDT:USDT | +7.32% | $12,862,120.54 |
-| BR/USDT:USDT | +7.11% | $11,680,392.10 |
+| AVA/USDT:USDT | +22.38% | $3,518,981.76 |
+| CLAUDIA/USDT:USDT | +12.73% | $3,250,440.58 |
+| XMR/USDT:USDT | +7.11% | $12,904,397.99 |
+| Q/USDT:USDT | +6.68% | $13,176,137.50 |
+| BR/USDT:USDT | +6.09% | $11,730,451.29 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +1.76% | +1.87% |
-| ICNT/USDT:USDT | below_1h_threshold | +1.45% | +1.56% |
-| CYS/USDT:USDT | below_1h_threshold | +1.40% | +1.51% |
-| ALT/USDT:USDT | below_1h_threshold | +1.08% | +1.19% |
-| BR/USDT:USDT | below_1h_threshold | +0.64% | +0.75% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.76% | +2.21% |
+| CLAUDIA/USDT:USDT | below_1h_threshold | +1.44% | +1.89% |
+| CYS/USDT:USDT | below_1h_threshold | +1.14% | +1.59% |
+| AVA/USDT:USDT | below_1h_threshold | +0.50% | +0.96% |
+| ALT/USDT:USDT | below_1h_threshold | +0.40% | +0.85% |
 
 ## 7. 次に見るべき不足
 
