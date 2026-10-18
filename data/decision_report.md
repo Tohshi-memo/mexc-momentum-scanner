@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-18T19:21:25.621430+00:00
+- generated_at: 2026-10-18T19:26:13.372562+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16961**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-18T19:21:11.282259+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=81101.5
+- 更新: 2026-10-18T19:26:01.914195+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.17% price=81018.4
 - Funnel: target 1084 → liquid 131 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZEREBRO/USDT:USDT | +15.74% | $1,116,072.41 |
-| BR/USDT:USDT | +8.64% | $14,142,369.98 |
-| ICNT/USDT:USDT | +7.46% | $9,234,700.40 |
-| APR/USDT:USDT | +7.45% | $1,561,048.67 |
-| DNA/USDT:USDT | +6.37% | $3,124,005.12 |
+| ZEREBRO/USDT:USDT | +16.13% | $1,130,789.68 |
+| BR/USDT:USDT | +7.13% | $14,220,054.26 |
+| ICNT/USDT:USDT | +6.80% | $9,239,674.72 |
+| APR/USDT:USDT | +6.31% | $1,569,339.50 |
+| DNA/USDT:USDT | +5.03% | $3,154,717.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DNA/USDT:USDT | below_1h_threshold | +1.97% | +2.04% |
-| BTW/USDT:USDT | below_1h_threshold | +1.04% | +1.10% |
-| SPX/USDT:USDT | below_1h_threshold | +0.83% | +0.90% |
-| RIVER/USDT:USDT | below_1h_threshold | +0.81% | +0.87% |
-| BR/USDT:USDT | below_1h_threshold | +0.66% | +0.72% |
+| BTW/USDT:USDT | below_1h_threshold | +1.46% | +1.63% |
+| DNA/USDT:USDT | below_1h_threshold | +0.68% | +0.85% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.44% | +0.61% |
+| RIVER/USDT:USDT | below_1h_threshold | +0.40% | +0.57% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +0.20% | +0.36% |
 
 ## 7. 次に見るべき不足
 
