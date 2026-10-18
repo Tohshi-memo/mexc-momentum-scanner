@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-18T20:41:19.142456+00:00
+- generated_at: 2026-10-18T20:46:26.953175+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16963**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-18T20:41:04.625438+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=80809.1
+- 更新: 2026-10-18T20:46:10.234960+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=80836.6
 - Funnel: target 1084 → liquid 136 → pre 50 → checked 50 → surge 2 → strict 2
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARIA/USDT:USDT | +21.78% | $1,127,566.95 |
-| BR/USDT:USDT | +14.11% | $13,772,581.22 |
-| ZEREBRO/USDT:USDT | +11.19% | $1,243,843.07 |
-| ICNT/USDT:USDT | +7.85% | $8,927,188.41 |
-| BTW/USDT:USDT | +4.54% | $25,512,011.98 |
+| ARIA/USDT:USDT | +22.27% | $1,138,826.89 |
+| BR/USDT:USDT | +14.48% | $13,867,236.60 |
+| ZEREBRO/USDT:USDT | +11.77% | $1,246,979.85 |
+| ICNT/USDT:USDT | +7.58% | $8,943,817.41 |
+| BTW/USDT:USDT | +4.44% | $25,594,715.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ARIA/USDT:USDT | below_1h_threshold | +1.64% | +1.68% |
-| KAS/USDT:USDT | below_1h_threshold | +1.34% | +1.38% |
-| XMR/USDT:USDT | below_1h_threshold | +1.06% | +1.10% |
-| ICNT/USDT:USDT | below_1h_threshold | +1.04% | +1.09% |
-| RLC/USDT:USDT | below_1h_threshold | +1.04% | +1.08% |
+| ARIA/USDT:USDT | below_1h_threshold | +1.82% | +1.83% |
+| XMR/USDT:USDT | below_1h_threshold | +0.97% | +0.97% |
+| ICNT/USDT:USDT | below_1h_threshold | +0.89% | +0.90% |
+| KAS/USDT:USDT | below_1h_threshold | +0.79% | +0.80% |
+| APR/USDT:USDT | below_1h_threshold | +0.73% | +0.74% |
 
 ## 7. 次に見るべき不足
 
