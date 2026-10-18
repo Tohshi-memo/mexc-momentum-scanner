@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-18T17:56:12.935841+00:00
+- generated_at: 2026-10-18T18:01:24.121339+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16961**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-18T17:56:03.207023+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=81143.6
-- Funnel: target 1084 → liquid 132 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-18T18:01:11.724409+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=81186.5
+- Funnel: target 1084 → liquid 131 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZEREBRO/USDT:USDT | +8.58% | $1,016,107.47 |
-| ICNT/USDT:USDT | +3.01% | $10,265,543.79 |
-| AVA/USDT:USDT | +2.06% | $3,679,345.26 |
-| GRASS/USDT:USDT | +1.81% | $1,101,885.40 |
-| ETHFI/USDT:USDT | +1.68% | $2,555,097.98 |
+| ICNT/USDT:USDT | +3.34% | $9,585,233.47 |
+| ETHFI/USDT:USDT | +1.84% | $2,401,105.63 |
+| GRASS/USDT:USDT | +1.78% | $1,084,582.35 |
+| AGT/USDT:USDT | +1.39% | $10,549,202.57 |
+| AVA/USDT:USDT | +1.33% | $3,424,626.95 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AVA/USDT:USDT | below_1h_threshold | +3.78% | +3.65% |
-| RIVER/USDT:USDT | below_1h_threshold | +1.73% | +1.60% |
-| AGT/USDT:USDT | below_1h_threshold | +1.14% | +1.01% |
-| SPX/USDT:USDT | below_1h_threshold | +1.07% | +0.94% |
-| ETHFI/USDT:USDT | below_1h_threshold | +0.91% | +0.79% |
+| AGT/USDT:USDT | below_1h_threshold | +0.77% | +0.73% |
+| GRASS/USDT:USDT | below_1h_threshold | +0.63% | +0.59% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.52% | +0.48% |
+| ZRO/USDT:USDT | below_1h_threshold | +0.28% | +0.24% |
+| PEPE/USDT:USDT | below_1h_threshold | +0.28% | +0.23% |
 
 ## 7. 次に見るべき不足
 
