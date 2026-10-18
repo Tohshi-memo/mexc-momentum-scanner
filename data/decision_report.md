@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-18T15:51:16.229256+00:00
+- generated_at: 2026-10-18T15:56:11.175239+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16959**
 
@@ -70,30 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-18T15:51:04.144856+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=81093.8
-- Funnel: target 1084 → liquid 136 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-18T15:56:02.066243+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=81091.3
+- Funnel: target 1084 → liquid 136 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.4 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| Q/USDT:USDT | +16.74% | $13,558,711.86 |
-| BR/USDT:USDT | +12.72% | $12,010,278.46 |
-| XMR/USDT:USDT | +6.76% | $13,310,061.10 |
-| CLAUDIA/USDT:USDT | +6.57% | $3,304,932.78 |
-| SOXS/USDT:USDT | +4.29% | $1,660,758.48 |
+| Q/USDT:USDT | +17.61% | $13,588,860.25 |
+| BR/USDT:USDT | +13.81% | $12,069,247.54 |
+| CLAUDIA/USDT:USDT | +8.86% | $3,307,386.96 |
+| XMR/USDT:USDT | +6.99% | $13,322,680.62 |
+| SOXS/USDT:USDT | +4.21% | $1,664,101.17 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| Q/USDT:USDT | below_1h_threshold | +4.58% | +4.54% |
-| BR/USDT:USDT | below_1h_threshold | +3.84% | +3.80% |
-| US/USDT:USDT | below_1h_threshold | +3.26% | +3.22% |
-| ALT/USDT:USDT | below_1h_threshold | +1.43% | +1.39% |
-| SPX/USDT:USDT | below_1h_threshold | +1.26% | +1.22% |
+| BR/USDT:USDT | below_relative_strength | +5.00% | +4.96% |
+| CLAUDIA/USDT:USDT | below_1h_threshold | +3.21% | +3.17% |
+| US/USDT:USDT | below_1h_threshold | +2.87% | +2.83% |
+| ALT/USDT:USDT | below_1h_threshold | +1.65% | +1.61% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.25% | +0.22% |
 
 ## 7. 次に見るべき不足
 
