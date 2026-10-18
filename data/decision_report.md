@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-18T13:11:20.065042+00:00
+- generated_at: 2026-10-18T13:16:19.786262+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16956**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-18T13:11:07.998870+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=81894.0
+- 更新: 2026-10-18T13:16:07.947270+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=81875.1
 - Funnel: target 1084 → liquid 130 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLAUDIA/USDT:USDT | +23.79% | $3,078,630.06 |
-| AVA/USDT:USDT | +18.79% | $3,285,502.08 |
-| Q/USDT:USDT | +7.69% | $13,207,860.25 |
-| BR/USDT:USDT | +7.21% | $11,585,611.33 |
-| BTW/USDT:USDT | +7.12% | $33,246,244.53 |
+| CLAUDIA/USDT:USDT | +23.31% | $3,087,547.13 |
+| AVA/USDT:USDT | +18.73% | $3,301,618.32 |
+| Q/USDT:USDT | +8.00% | $13,219,644.97 |
+| XMR/USDT:USDT | +7.30% | $11,712,856.45 |
+| AGT/USDT:USDT | +6.99% | $12,224,766.90 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CLAUDIA/USDT:USDT | below_1h_threshold | +3.55% | +3.62% |
-| CYS/USDT:USDT | below_1h_threshold | +0.78% | +0.85% |
-| Q/USDT:USDT | below_1h_threshold | +0.54% | +0.61% |
-| LTC/USDT:USDT | below_1h_threshold | +0.32% | +0.39% |
-| XMR/USDT:USDT | below_1h_threshold | +0.22% | +0.29% |
+| CLAUDIA/USDT:USDT | below_1h_threshold | +3.44% | +3.54% |
+| Q/USDT:USDT | below_1h_threshold | +0.82% | +0.92% |
+| CYS/USDT:USDT | below_1h_threshold | +0.69% | +0.78% |
+| XMR/USDT:USDT | below_1h_threshold | +0.42% | +0.51% |
+| LTC/USDT:USDT | below_1h_threshold | +0.22% | +0.31% |
 
 ## 7. 次に見るべき不足
 
