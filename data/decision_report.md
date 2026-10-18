@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-18T03:56:07.820506+00:00
+- generated_at: 2026-10-18T04:01:11.856791+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16939**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-18T03:55:58.551873+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=81928.0
-- Funnel: target 1084 → liquid 140 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-18T04:01:02.213935+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=81919.5
+- Funnel: target 1084 → liquid 138 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AVA/USDT:USDT | +17.12% | $2,323,718.61 |
-| CLAUDIA/USDT:USDT | +15.78% | $2,318,597.07 |
-| BR/USDT:USDT | +13.60% | $11,061,281.32 |
-| Q/USDT:USDT | +11.00% | $8,813,497.34 |
-| XMR/USDT:USDT | +10.84% | $6,752,279.08 |
+| AVA/USDT:USDT | +20.36% | $2,339,647.13 |
+| CLAUDIA/USDT:USDT | +17.98% | $2,314,894.92 |
+| BR/USDT:USDT | +13.41% | $10,892,339.44 |
+| XMR/USDT:USDT | +10.85% | $6,750,802.74 |
+| CYS/USDT:USDT | +10.02% | $1,090,846.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AVA/USDT:USDT | below_1h_threshold | +3.14% | +2.97% |
-| ETHFI/USDT:USDT | below_1h_threshold | +1.77% | +1.60% |
-| RAY/USDT:USDT | below_1h_threshold | +1.53% | +1.37% |
-| USELESS/USDT:USDT | below_1h_threshold | +1.50% | +1.33% |
-| ZRO/USDT:USDT | below_1h_threshold | +1.50% | +1.33% |
+| AVA/USDT:USDT | below_1h_threshold | +2.41% | +2.41% |
+| CLAUDIA/USDT:USDT | below_1h_threshold | +0.87% | +0.87% |
+| CYS/USDT:USDT | below_1h_threshold | +0.40% | +0.40% |
+| SPX/USDT:USDT | below_1h_threshold | +0.35% | +0.35% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.34% | +0.34% |
 
 ## 7. 次に見るべき不足
 
