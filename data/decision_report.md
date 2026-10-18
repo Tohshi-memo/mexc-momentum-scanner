@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-18T18:36:16.335839+00:00
+- generated_at: 2026-10-18T18:41:12.112569+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16961**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-18T18:36:04.140572+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=81095.4
+- 更新: 2026-10-18T18:41:03.857584+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=81098.6
 - Funnel: target 1084 → liquid 132 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZEREBRO/USDT:USDT | +8.14% | $1,090,120.80 |
-| ICNT/USDT:USDT | +6.24% | $9,825,602.22 |
-| BR/USDT:USDT | +2.64% | $13,275,004.79 |
-| MAGIC/USDT:USDT | +2.01% | $1,676,525.31 |
-| DNA/USDT:USDT | +1.94% | $2,897,861.41 |
+| ZEREBRO/USDT:USDT | +7.93% | $1,095,759.51 |
+| ICNT/USDT:USDT | +6.35% | $9,845,047.70 |
+| BR/USDT:USDT | +3.72% | $13,361,028.31 |
+| AGT/USDT:USDT | +2.27% | $10,684,868.69 |
+| MAGIC/USDT:USDT | +2.09% | $1,679,315.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ICNT/USDT:USDT | below_1h_threshold | +2.47% | +2.54% |
-| BTW/USDT:USDT | below_1h_threshold | +2.13% | +2.20% |
-| BR/USDT:USDT | below_1h_threshold | +2.07% | +2.14% |
-| AGT/USDT:USDT | below_1h_threshold | +1.19% | +1.26% |
-| MAGIC/USDT:USDT | below_1h_threshold | +1.13% | +1.20% |
+| BR/USDT:USDT | below_1h_threshold | +3.34% | +3.41% |
+| ICNT/USDT:USDT | below_1h_threshold | +2.58% | +2.64% |
+| AGT/USDT:USDT | below_1h_threshold | +1.70% | +1.77% |
+| MAGIC/USDT:USDT | below_1h_threshold | +1.26% | +1.32% |
+| BTW/USDT:USDT | below_1h_threshold | +1.12% | +1.18% |
 
 ## 7. 次に見るべき不足
 
