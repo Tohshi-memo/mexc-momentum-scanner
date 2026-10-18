@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-18T09:51:20.818900+00:00
+- generated_at: 2026-10-18T09:56:18.067213+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16949**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-18T09:51:08.469713+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.61% price=82202.1
+- 更新: 2026-10-18T09:56:05.803474+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.61% price=82203.9
 - Funnel: target 1084 → liquid 135 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLAUDIA/USDT:USDT | +22.76% | $2,930,394.38 |
-| Q/USDT:USDT | +16.33% | $11,667,826.93 |
-| AVA/USDT:USDT | +13.67% | $2,731,881.51 |
-| AGT/USDT:USDT | +12.37% | $14,185,039.41 |
-| BR/USDT:USDT | +10.25% | $11,651,759.86 |
+| CLAUDIA/USDT:USDT | +22.69% | $2,932,870.54 |
+| Q/USDT:USDT | +16.46% | $11,686,997.48 |
+| AVA/USDT:USDT | +13.23% | $2,735,926.72 |
+| AGT/USDT:USDT | +10.00% | $14,252,647.63 |
+| BR/USDT:USDT | +9.84% | $11,666,304.19 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| WLD/USDT:USDT | below_1h_threshold | +3.46% | +2.86% |
-| AGT/USDT:USDT | below_1h_threshold | +2.84% | +2.23% |
-| LSK/USDT:USDT | below_1h_threshold | +2.81% | +2.20% |
-| KAS/USDT:USDT | below_1h_threshold | +2.60% | +2.00% |
-| JASMY/USDT:USDT | below_1h_threshold | +2.23% | +1.63% |
+| WLD/USDT:USDT | below_1h_threshold | +3.36% | +2.75% |
+| BTW/USDT:USDT | below_1h_threshold | +2.30% | +1.69% |
+| ENA/USDT:USDT | below_1h_threshold | +2.11% | +1.50% |
+| JASMY/USDT:USDT | below_1h_threshold | +2.10% | +1.49% |
+| SEI/USDT:USDT | below_1h_threshold | +1.93% | +1.32% |
 
 ## 7. 次に見るべき不足
 
