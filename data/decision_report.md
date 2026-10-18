@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-18T07:11:22.800817+00:00
+- generated_at: 2026-10-18T07:16:17.548465+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16947**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-18T07:11:10.859008+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=81728.8
+- 更新: 2026-10-18T07:16:07.802479+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=81678.4
 - Funnel: target 1084 → liquid 135 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLAUDIA/USDT:USDT | +37.28% | $2,656,001.27 |
-| Q/USDT:USDT | +24.76% | $10,226,314.03 |
-| AVA/USDT:USDT | +16.65% | $2,586,989.55 |
-| BR/USDT:USDT | +12.76% | $11,327,381.58 |
-| ICNT/USDT:USDT | +7.34% | $13,500,174.17 |
+| CLAUDIA/USDT:USDT | +37.47% | $2,668,372.16 |
+| Q/USDT:USDT | +24.78% | $10,263,215.79 |
+| AVA/USDT:USDT | +14.20% | $2,596,635.34 |
+| BR/USDT:USDT | +12.27% | $11,336,833.63 |
+| ICNT/USDT:USDT | +7.88% | $13,508,693.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CLAUDIA/USDT:USDT | below_1h_threshold | +2.79% | +2.74% |
-| ICNT/USDT:USDT | below_1h_threshold | +2.31% | +2.26% |
-| AGT/USDT:USDT | below_1h_threshold | +1.38% | +1.33% |
-| AKE/USDT:USDT | below_1h_threshold | +0.88% | +0.83% |
-| ALT/USDT:USDT | below_1h_threshold | +0.59% | +0.54% |
+| CLAUDIA/USDT:USDT | below_1h_threshold | +2.84% | +2.85% |
+| ICNT/USDT:USDT | below_1h_threshold | +2.78% | +2.79% |
+| AGT/USDT:USDT | below_1h_threshold | +1.64% | +1.65% |
+| SAND/USDT:USDT | below_1h_threshold | +0.95% | +0.96% |
+| ALT/USDT:USDT | below_1h_threshold | +0.80% | +0.81% |
 
 ## 7. 次に見るべき不足
 
