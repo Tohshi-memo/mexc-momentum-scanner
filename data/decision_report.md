@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-18T22:01:16.926311+00:00
+- generated_at: 2026-10-18T22:06:38.612739+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16964**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-18T22:01:07.256607+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.27% price=81398.3
-- Funnel: target 1084 → liquid 131 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-18T22:06:26.437961+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.46% price=81552.8
+- Funnel: target 1084 → liquid 132 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BR/USDT:USDT | +24.95% | $13,016,082.97 |
-| ZEREBRO/USDT:USDT | +12.93% | $1,179,020.44 |
-| BTW/USDT:USDT | +9.10% | $23,821,427.05 |
-| ICNT/USDT:USDT | +6.96% | $8,159,901.50 |
-| ARIA/USDT:USDT | +4.23% | $1,280,296.83 |
+| BR/USDT:USDT | +24.26% | $13,179,169.39 |
+| ZEREBRO/USDT:USDT | +11.75% | $1,181,545.89 |
+| BTW/USDT:USDT | +7.43% | $23,979,320.67 |
+| ICNT/USDT:USDT | +7.35% | $8,167,441.87 |
+| KORU/USDT:USDT | +4.11% | $2,768,690.74 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXL/USDT:USDT | below_1h_threshold | +3.61% | +3.34% |
-| KORU/USDT:USDT | below_1h_threshold | +3.34% | +3.08% |
-| SNXX/USDT:USDT | below_1h_threshold | +2.68% | +2.41% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.91% | +1.65% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.88% | +1.61% |
+| SOXL/USDT:USDT | below_1h_threshold | +3.61% | +3.15% |
+| KORU/USDT:USDT | below_1h_threshold | +3.34% | +2.89% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.68% | +2.22% |
+| ENA/USDT:USDT | below_1h_threshold | +2.47% | +2.01% |
+| NEAR/USDT:USDT | below_1h_threshold | +1.94% | +1.48% |
 
 ## 7. 次に見るべき不足
 
