@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-18T18:46:06.697688+00:00
+- generated_at: 2026-10-18T18:51:21.184951+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16961**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5119件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5120件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000379 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-18T18:45:58.418279+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=81112.2
-- Funnel: target 1084 → liquid 132 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-18T18:51:06.769776+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=81150.9
+- Funnel: target 1084 → liquid 132 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZEREBRO/USDT:USDT | +9.23% | $1,101,363.61 |
-| ICNT/USDT:USDT | +6.57% | $9,856,154.23 |
-| BR/USDT:USDT | +4.83% | $13,443,225.60 |
-| MAGIC/USDT:USDT | +2.27% | $1,683,637.85 |
-| ETHFI/USDT:USDT | +2.07% | $2,482,744.88 |
+| ZEREBRO/USDT:USDT | +9.40% | $1,107,553.37 |
+| BR/USDT:USDT | +6.52% | $13,572,307.17 |
+| ICNT/USDT:USDT | +6.52% | $9,866,353.49 |
+| MAGIC/USDT:USDT | +2.75% | $1,684,222.73 |
+| AGT/USDT:USDT | +2.60% | $10,716,387.35 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BR/USDT:USDT | below_1h_threshold | +4.24% | +4.29% |
-| BTW/USDT:USDT | below_1h_threshold | +3.32% | +3.37% |
-| ICNT/USDT:USDT | below_1h_threshold | +2.85% | +2.90% |
-| AGT/USDT:USDT | below_1h_threshold | +1.60% | +1.64% |
-| MAGIC/USDT:USDT | below_1h_threshold | +1.40% | +1.44% |
+| ICNT/USDT:USDT | below_1h_threshold | +2.69% | +2.69% |
+| BTW/USDT:USDT | below_1h_threshold | +2.08% | +2.08% |
+| AGT/USDT:USDT | below_1h_threshold | +2.04% | +2.04% |
+| MAGIC/USDT:USDT | below_1h_threshold | +1.86% | +1.86% |
+| KAS/USDT:USDT | below_1h_threshold | +0.92% | +0.92% |
 
 ## 7. 次に見るべき不足
 
