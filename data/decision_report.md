@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-18T23:11:17.987204+00:00
+- generated_at: 2026-10-18T23:16:21.830926+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16965**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-18T23:11:05.934199+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=81716.1
-- Funnel: target 1084 → liquid 136 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-18T23:16:09.738320+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=81765.2
+- Funnel: target 1084 → liquid 137 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BR/USDT:USDT | +11.59% | $15,111,502.18 |
-| ZEREBRO/USDT:USDT | +11.34% | $1,188,410.32 |
-| BTW/USDT:USDT | +6.79% | $23,728,358.40 |
-| ICNT/USDT:USDT | +6.13% | $7,879,745.73 |
-| DNA/USDT:USDT | +5.26% | $3,534,126.01 |
+| BR/USDT:USDT | +13.33% | $15,208,444.15 |
+| ZEREBRO/USDT:USDT | +11.16% | $1,191,904.52 |
+| BTW/USDT:USDT | +6.67% | $23,775,721.69 |
+| ICNT/USDT:USDT | +6.52% | $7,880,876.43 |
+| SNXX/USDT:USDT | +4.89% | $3,601,387.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNXX/USDT:USDT | below_1h_threshold | +3.52% | +3.53% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +2.98% | +2.99% |
-| SOXL/USDT:USDT | below_1h_threshold | +2.80% | +2.82% |
-| MUU/USDT:USDT | below_1h_threshold | +2.56% | +2.58% |
-| KORU/USDT:USDT | below_1h_threshold | +2.00% | +2.01% |
+| SNXX/USDT:USDT | below_1h_threshold | +3.52% | +3.47% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +2.98% | +2.93% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.80% | +2.76% |
+| MUU/USDT:USDT | below_1h_threshold | +2.56% | +2.52% |
+| BR/USDT:USDT | below_1h_threshold | +2.11% | +2.06% |
 
 ## 7. 次に見るべき不足
 
