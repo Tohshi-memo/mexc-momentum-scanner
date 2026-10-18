@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-18T16:21:17.806312+00:00
+- generated_at: 2026-10-18T16:26:14.461130+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16960**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-18T16:21:06.448561+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=81086.4
+- 更新: 2026-10-18T16:26:02.258307+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=81179.7
 - Funnel: target 1084 → liquid 130 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLAUDIA/USDT:USDT | +1.46% | $3,018,184.07 |
-| ZRO/USDT:USDT | +1.45% | $6,921,663.52 |
-| XMR/USDT:USDT | +1.44% | $13,325,631.69 |
-| AKE/USDT:USDT | +1.21% | $4,454,070.01 |
-| MAGIC/USDT:USDT | +1.21% | $1,735,054.98 |
+| MAGIC/USDT:USDT | +2.00% | $1,749,548.76 |
+| XMR/USDT:USDT | +1.28% | $13,386,445.58 |
+| AGT/USDT:USDT | +1.18% | $11,196,847.11 |
+| BR/USDT:USDT | +1.17% | $12,277,980.72 |
+| AKE/USDT:USDT | +0.81% | $4,457,727.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| XMR/USDT:USDT | below_1h_threshold | +1.42% | +1.48% |
-| ZRO/USDT:USDT | below_1h_threshold | +1.38% | +1.45% |
-| MAGIC/USDT:USDT | below_1h_threshold | +1.22% | +1.28% |
-| AKE/USDT:USDT | below_1h_threshold | +1.21% | +1.27% |
-| AGT/USDT:USDT | below_1h_threshold | +1.06% | +1.12% |
+| MAGIC/USDT:USDT | below_1h_threshold | +2.06% | +2.01% |
+| BR/USDT:USDT | below_1h_threshold | +1.39% | +1.34% |
+| XMR/USDT:USDT | below_1h_threshold | +1.28% | +1.23% |
+| AGT/USDT:USDT | below_1h_threshold | +1.17% | +1.12% |
+| AKE/USDT:USDT | below_1h_threshold | +0.83% | +0.78% |
 
 ## 7. 次に見るべき不足
 
