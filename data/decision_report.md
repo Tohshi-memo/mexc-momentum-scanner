@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-18T19:11:06.121712+00:00
+- generated_at: 2026-10-18T19:16:17.860351+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16961**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-18T19:10:57.819269+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=81140.0
+- 更新: 2026-10-18T19:16:06.104415+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=81119.5
 - Funnel: target 1084 → liquid 131 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZEREBRO/USDT:USDT | +12.39% | $1,087,875.21 |
-| BR/USDT:USDT | +7.88% | $13,974,110.41 |
-| APR/USDT:USDT | +6.53% | $1,545,530.27 |
-| ICNT/USDT:USDT | +6.46% | $9,214,368.85 |
-| DNA/USDT:USDT | +6.37% | $3,019,363.81 |
+| ZEREBRO/USDT:USDT | +14.84% | $1,104,748.78 |
+| BR/USDT:USDT | +8.02% | $14,023,377.52 |
+| ICNT/USDT:USDT | +6.96% | $9,220,983.91 |
+| APR/USDT:USDT | +6.05% | $1,553,807.21 |
+| DNA/USDT:USDT | +6.02% | $3,060,290.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZEREBRO/USDT:USDT | below_1h_threshold | +2.79% | +2.81% |
-| DNA/USDT:USDT | below_1h_threshold | +1.94% | +1.96% |
-| SPX/USDT:USDT | below_1h_threshold | +0.47% | +0.49% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.44% | +0.46% |
-| ALT/USDT:USDT | below_1h_threshold | +0.40% | +0.42% |
+| ZEREBRO/USDT:USDT | below_1h_threshold | +4.64% | +4.69% |
+| DNA/USDT:USDT | below_1h_threshold | +1.56% | +1.60% |
+| SPX/USDT:USDT | below_1h_threshold | +0.53% | +0.57% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.44% | +0.49% |
+| ALT/USDT:USDT | below_1h_threshold | +0.34% | +0.39% |
 
 ## 7. 次に見るべき不足
 
