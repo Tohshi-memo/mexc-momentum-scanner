@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-18T02:21:22.166084+00:00
+- generated_at: 2026-10-18T02:26:24.002107+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16936**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-18T02:21:07.687383+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=81640.1
-- Funnel: target 1084 → liquid 138 → pre 50 → checked 50 → surge 1 → strict 0
+- 更新: 2026-10-18T02:26:11.677063+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=81706.6
+- Funnel: target 1084 → liquid 139 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 98.2 >= 65=1
+- Strict後reject: 4h RSI 98.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| Q/USDT:USDT | +36.55% | $7,884,787.96 |
-| BR/USDT:USDT | +29.84% | $10,510,191.69 |
-| CLAUDIA/USDT:USDT | +26.64% | $2,120,952.18 |
-| CYS/USDT:USDT | +9.23% | $1,062,523.68 |
-| AVA/USDT:USDT | +9.20% | $2,246,033.74 |
+| CLAUDIA/USDT:USDT | +32.46% | $2,137,947.37 |
+| Q/USDT:USDT | +31.34% | $7,927,456.55 |
+| BR/USDT:USDT | +27.46% | $10,589,555.91 |
+| AGT/USDT:USDT | +11.25% | $15,658,141.70 |
+| AVA/USDT:USDT | +10.37% | $2,247,162.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +4.17% | +4.15% |
-| BR/USDT:USDT | below_1h_threshold | +2.52% | +2.50% |
-| SPX/USDT:USDT | below_1h_threshold | +0.67% | +0.65% |
-| SIREN/USDT:USDT | below_1h_threshold | +0.64% | +0.61% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.59% | +0.57% |
+| BTW/USDT:USDT | below_1h_threshold | +2.78% | +2.68% |
+| SPX/USDT:USDT | below_1h_threshold | +0.91% | +0.81% |
+| SIREN/USDT:USDT | below_1h_threshold | +0.91% | +0.80% |
+| RAY/USDT:USDT | below_1h_threshold | +0.75% | +0.64% |
+| UNI/USDT:USDT | below_1h_threshold | +0.66% | +0.56% |
 
 ## 7. 次に見るべき不足
 
