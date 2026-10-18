@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-18T18:01:24.121339+00:00
+- generated_at: 2026-10-18T18:06:19.420905+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16961**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-18T18:01:11.724409+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=81186.5
-- Funnel: target 1084 → liquid 131 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-18T18:06:07.263403+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=81184.1
+- Funnel: target 1084 → liquid 132 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ICNT/USDT:USDT | +3.34% | $9,585,233.47 |
-| ETHFI/USDT:USDT | +1.84% | $2,401,105.63 |
-| GRASS/USDT:USDT | +1.78% | $1,084,582.35 |
-| AGT/USDT:USDT | +1.39% | $10,549,202.57 |
-| AVA/USDT:USDT | +1.33% | $3,424,626.95 |
+| ZEREBRO/USDT:USDT | +12.10% | $1,012,656.53 |
+| ICNT/USDT:USDT | +5.40% | $9,612,529.39 |
+| GRASS/USDT:USDT | +2.04% | $1,095,943.11 |
+| ETHFI/USDT:USDT | +1.91% | $2,431,233.68 |
+| RIVER/USDT:USDT | +1.31% | $2,002,208.97 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AGT/USDT:USDT | below_1h_threshold | +0.77% | +0.73% |
-| GRASS/USDT:USDT | below_1h_threshold | +0.63% | +0.59% |
+| ICNT/USDT:USDT | below_1h_threshold | +1.67% | +1.62% |
+| RIVER/USDT:USDT | below_1h_threshold | +0.70% | +0.66% |
+| ZEREBRO/USDT:USDT | below_1h_threshold | +0.61% | +0.57% |
+| AGT/USDT:USDT | below_1h_threshold | +0.53% | +0.49% |
 | SOXS/USDT:USDT | below_1h_threshold | +0.52% | +0.48% |
-| ZRO/USDT:USDT | below_1h_threshold | +0.28% | +0.24% |
-| PEPE/USDT:USDT | below_1h_threshold | +0.28% | +0.23% |
 
 ## 7. 次に見るべき不足
 
