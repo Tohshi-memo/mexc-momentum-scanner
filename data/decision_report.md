@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-18T17:41:20.102672+00:00
+- generated_at: 2026-10-18T17:46:23.137751+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16961**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-18T17:41:05.806453+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=81116.5
+- 更新: 2026-10-18T17:46:08.886102+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.12% price=81136.0
 - Funnel: target 1084 → liquid 131 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ICNT/USDT:USDT | +2.73% | $10,220,162.22 |
-| GRASS/USDT:USDT | +1.71% | $1,062,957.34 |
-| DNA/USDT:USDT | +1.54% | $2,973,853.53 |
-| AVA/USDT:USDT | +1.53% | $3,667,640.44 |
-| ETHFI/USDT:USDT | +1.48% | $2,498,244.67 |
+| ICNT/USDT:USDT | +4.12% | $10,234,254.61 |
+| GRASS/USDT:USDT | +2.25% | $1,080,249.42 |
+| AVA/USDT:USDT | +1.97% | $3,672,505.91 |
+| DNA/USDT:USDT | +1.78% | $2,980,889.90 |
+| ETHFI/USDT:USDT | +1.71% | $2,507,270.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AVA/USDT:USDT | below_1h_threshold | +3.36% | +3.27% |
-| JASMY/USDT:USDT | below_1h_threshold | +1.84% | +1.74% |
-| RIVER/USDT:USDT | below_1h_threshold | +1.22% | +1.13% |
-| SPX/USDT:USDT | below_1h_threshold | +0.93% | +0.84% |
-| ETHFI/USDT:USDT | below_1h_threshold | +0.70% | +0.60% |
+| AVA/USDT:USDT | below_1h_threshold | +3.72% | +3.60% |
+| JASMY/USDT:USDT | below_1h_threshold | +2.04% | +1.92% |
+| RIVER/USDT:USDT | below_1h_threshold | +1.63% | +1.51% |
+| SPX/USDT:USDT | below_1h_threshold | +1.18% | +1.07% |
+| ETHFI/USDT:USDT | below_1h_threshold | +0.93% | +0.81% |
 
 ## 7. 次に見るべき不足
 
