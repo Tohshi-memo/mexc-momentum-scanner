@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-18T17:36:23.993081+00:00
+- generated_at: 2026-10-18T17:41:20.102672+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16961**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5118件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5119件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000379 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-18T17:36:11.486350+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=81113.7
-- Funnel: target 1084 → liquid 131 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-18T17:41:05.806453+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=81116.5
+- Funnel: target 1084 → liquid 131 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ICNT/USDT:USDT | +3.84% | $10,181,136.62 |
-| GRASS/USDT:USDT | +1.97% | $1,052,603.18 |
-| SPX/USDT:USDT | +1.59% | $3,676,052.03 |
-| DNA/USDT:USDT | +1.34% | $2,960,187.43 |
-| ETHFI/USDT:USDT | +1.31% | $2,485,036.07 |
+| ICNT/USDT:USDT | +2.73% | $10,220,162.22 |
+| GRASS/USDT:USDT | +1.71% | $1,062,957.34 |
+| DNA/USDT:USDT | +1.54% | $2,973,853.53 |
+| AVA/USDT:USDT | +1.53% | $3,667,640.44 |
+| ETHFI/USDT:USDT | +1.48% | $2,498,244.67 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SPX/USDT:USDT | below_1h_threshold | +2.09% | +2.00% |
-| AVA/USDT:USDT | below_1h_threshold | +1.89% | +1.80% |
+| AVA/USDT:USDT | below_1h_threshold | +3.36% | +3.27% |
+| JASMY/USDT:USDT | below_1h_threshold | +1.84% | +1.74% |
 | RIVER/USDT:USDT | below_1h_threshold | +1.22% | +1.13% |
-| EIGEN/USDT:USDT | below_1h_threshold | +1.03% | +0.94% |
-| PEPE/USDT:USDT | below_1h_threshold | +0.74% | +0.65% |
+| SPX/USDT:USDT | below_1h_threshold | +0.93% | +0.84% |
+| ETHFI/USDT:USDT | below_1h_threshold | +0.70% | +0.60% |
 
 ## 7. 次に見るべき不足
 
