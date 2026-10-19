@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-19T15:53:32.298767+00:00
+- generated_at: 2026-10-19T15:56:46.241814+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17016**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-19T15:53:20.035842+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.30% price=82019.8
-- Funnel: target 1090 → liquid 171 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.9 >= 65=1
+- 更新: 2026-10-19T15:56:36.518154+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.37% price=81967.2
+- Funnel: target 1090 → liquid 171 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.9 >= 65=1, 4h RSI 66.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BR/USDT:USDT | +42.09% | $24,821,723.39 |
-| AGT/USDT:USDT | +27.79% | $11,229,537.09 |
-| SNXX/USDT:USDT | +23.65% | $42,576,363.29 |
-| KORU/USDT:USDT | +22.42% | $132,624,931.40 |
-| AVA/USDT:USDT | +21.03% | $1,874,494.56 |
+| BR/USDT:USDT | +43.10% | $25,079,144.43 |
+| AGT/USDT:USDT | +28.63% | $11,250,599.23 |
+| SNXX/USDT:USDT | +22.96% | $42,579,882.95 |
+| KORU/USDT:USDT | +21.84% | $132,909,913.82 |
+| AVA/USDT:USDT | +21.27% | $1,877,179.61 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AVA/USDT:USDT | below_1h_threshold | +4.88% | +5.18% |
-| ZRO/USDT:USDT | below_1h_threshold | +3.86% | +4.17% |
-| CRV/USDT:USDT | below_1h_threshold | +3.31% | +3.61% |
-| IRENSTOCK/USDT:USDT | below_1h_threshold | +2.15% | +2.45% |
-| NIL/USDT:USDT | below_1h_threshold | +2.07% | +2.37% |
+| ZRO/USDT:USDT | below_1h_threshold | +2.99% | +3.36% |
+| NIL/USDT:USDT | below_1h_threshold | +2.32% | +2.69% |
+| CRV/USDT:USDT | below_1h_threshold | +2.22% | +2.59% |
+| IRENSTOCK/USDT:USDT | below_1h_threshold | +2.15% | +2.51% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.99% | +2.36% |
 
 ## 7. 次に見るべき不足
 
