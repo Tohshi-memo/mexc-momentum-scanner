@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-19T17:31:21.471649+00:00
+- generated_at: 2026-10-19T17:36:16.454837+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17019**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5178件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5179件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000118 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-19T17:31:09.055972+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=81924.5
-- Funnel: target 1090 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-19T17:36:04.546432+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=81932.6
+- Funnel: target 1090 → liquid 172 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLAUDIA/USDT:USDT | +6.05% | $1,055,346.69 |
-| PHA/USDT:USDT | +5.91% | $1,135,339.64 |
-| SOXS/USDT:USDT | +4.62% | $3,112,775.82 |
-| AGT/USDT:USDT | +3.61% | $11,176,801.84 |
-| AVA/USDT:USDT | +3.14% | $1,716,551.78 |
+| CLAUDIA/USDT:USDT | +8.55% | $1,060,288.85 |
+| PHA/USDT:USDT | +8.13% | $1,176,607.23 |
+| SOXS/USDT:USDT | +4.80% | $3,122,150.81 |
+| AGT/USDT:USDT | +4.62% | $11,216,548.59 |
+| AVA/USDT:USDT | +3.12% | $1,721,538.18 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +3.80% | +3.83% |
-| CLAUDIA/USDT:USDT | below_1h_threshold | +3.00% | +3.03% |
-| AGT/USDT:USDT | below_1h_threshold | +1.79% | +1.82% |
-| NIL/USDT:USDT | below_1h_threshold | +1.37% | +1.40% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.77% | +0.80% |
+| SOXS/USDT:USDT | below_1h_threshold | +3.80% | +3.82% |
+| AGT/USDT:USDT | below_1h_threshold | +2.44% | +2.46% |
+| NIL/USDT:USDT | below_1h_threshold | +1.27% | +1.29% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.77% | +0.79% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.72% | +0.74% |
 
 ## 7. 次に見るべき不足
 
