@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-19T06:56:27.449263+00:00
+- generated_at: 2026-10-19T07:01:21.898614+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16998**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-19T06:56:13.120000+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=82778.6
-- Funnel: target 1085 → liquid 149 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.9 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-19T07:01:09.832624+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=82825.9
+- Funnel: target 1085 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +40.06% | $8,190,420.37 |
-| ZEREBRO/USDT:USDT | +32.66% | $1,707,600.56 |
-| Q/USDT:USDT | +31.59% | $14,963,046.33 |
-| KORU/USDT:USDT | +19.58% | $63,659,643.13 |
-| UNITREE/USDT:USDT | +16.32% | $1,562,464.58 |
+| AGT/USDT:USDT | +40.74% | $7,971,567.91 |
+| ZEREBRO/USDT:USDT | +30.42% | $1,694,870.67 |
+| Q/USDT:USDT | +24.39% | $14,435,950.18 |
+| KORU/USDT:USDT | +20.07% | $64,698,375.66 |
+| UNITREE/USDT:USDT | +17.53% | $1,570,122.96 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZEREBRO/USDT:USDT | below_relative_strength | +5.04% | +4.97% |
-| BR/USDT:USDT | below_1h_threshold | +3.33% | +3.26% |
-| RAY/USDT:USDT | below_1h_threshold | +1.99% | +1.93% |
-| UNITREE/USDT:USDT | below_1h_threshold | +1.55% | +1.49% |
-| ARB/USDT:USDT | below_1h_threshold | +1.17% | +1.10% |
+| UNITREE/USDT:USDT | below_1h_threshold | +4.34% | +4.33% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.29% | +1.28% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.76% | +0.75% |
+| KORU/USDT:USDT | below_1h_threshold | +0.74% | +0.73% |
+| MUU/USDT:USDT | below_1h_threshold | +0.67% | +0.65% |
 
 ## 7. 次に見るべき不足
 
