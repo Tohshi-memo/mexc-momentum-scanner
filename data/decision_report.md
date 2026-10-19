@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-19T15:56:46.241814+00:00
+- generated_at: 2026-10-19T16:01:32.638395+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17016**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-19T15:56:36.518154+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.37% price=81967.2
-- Funnel: target 1090 → liquid 171 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.9 >= 65=1, 4h RSI 66.8 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-19T16:01:20.129385+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=81914.0
+- Funnel: target 1090 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BR/USDT:USDT | +43.10% | $25,079,144.43 |
-| AGT/USDT:USDT | +28.63% | $11,250,599.23 |
-| SNXX/USDT:USDT | +22.96% | $42,579,882.95 |
-| KORU/USDT:USDT | +21.84% | $132,909,913.82 |
-| AVA/USDT:USDT | +21.27% | $1,877,179.61 |
+| AVA/USDT:USDT | +0.67% | $1,599,279.40 |
+| CLAUDIA/USDT:USDT | +0.65% | $1,069,171.11 |
+| NIL/USDT:USDT | +0.65% | $2,977,646.02 |
+| APR/USDT:USDT | +0.53% | $1,473,133.68 |
+| MORPHO/USDT:USDT | +0.51% | $1,123,968.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZRO/USDT:USDT | below_1h_threshold | +2.99% | +3.36% |
-| NIL/USDT:USDT | below_1h_threshold | +2.32% | +2.69% |
-| CRV/USDT:USDT | below_1h_threshold | +2.22% | +2.59% |
-| IRENSTOCK/USDT:USDT | below_1h_threshold | +2.15% | +2.51% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.99% | +2.36% |
+| AVA/USDT:USDT | below_1h_threshold | +0.72% | +0.72% |
+| NIL/USDT:USDT | below_1h_threshold | +0.65% | +0.65% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.64% | +0.64% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.53% | +0.53% |
+| CLAUDIA/USDT:USDT | below_1h_threshold | +0.53% | +0.53% |
 
 ## 7. 次に見るべき不足
 
