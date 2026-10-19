@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-19T07:36:27.087309+00:00
+- generated_at: 2026-10-19T07:41:27.680870+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17001**
 
@@ -63,16 +63,16 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5160件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5161件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_10PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000113 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-19T07:36:12.190228+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.27% price=83034.5
-- Funnel: target 1085 → liquid 149 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-10-19T07:41:13.534624+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=82810.1
+- Funnel: target 1085 → liquid 151 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZEREBRO/USDT:USDT | +27.85% | $1,769,871.99 |
-| AGT/USDT:USDT | +22.31% | $8,638,521.38 |
-| BR/USDT:USDT | +21.17% | $15,045,313.27 |
-| KORU/USDT:USDT | +19.98% | $65,359,660.07 |
-| UNITREE/USDT:USDT | +17.61% | $1,677,650.43 |
+| ZEREBRO/USDT:USDT | +27.22% | $1,779,712.06 |
+| CT/USDT:USDT | +26.32% | $1,060,141.33 |
+| AGT/USDT:USDT | +25.87% | $8,708,405.73 |
+| KORU/USDT:USDT | +19.98% | $65,386,513.35 |
+| UNITREE/USDT:USDT | +18.21% | $1,692,782.09 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UNITREE/USDT:USDT | below_1h_threshold | +4.34% | +4.07% |
-| LSK/USDT:USDT | below_1h_threshold | +3.54% | +3.27% |
-| JASMY/USDT:USDT | below_1h_threshold | +2.94% | +2.68% |
-| WLD/USDT:USDT | below_1h_threshold | +1.61% | +1.35% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.41% | +1.14% |
+| UNITREE/USDT:USDT | below_1h_threshold | +4.34% | +4.35% |
+| LSK/USDT:USDT | below_1h_threshold | +2.33% | +2.33% |
+| JASMY/USDT:USDT | below_1h_threshold | +2.16% | +2.16% |
+| BR/USDT:USDT | below_1h_threshold | +1.55% | +1.55% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.29% | +1.30% |
 
 ## 7. 次に見るべき不足
 
