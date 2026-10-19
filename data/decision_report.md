@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-19T00:01:16.798209+00:00
+- generated_at: 2026-10-19T00:06:06.159042+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16966**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-19T00:01:07.196274+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=82090.2
+- 更新: 2026-10-19T00:05:57.790161+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=82042.0
 - Funnel: target 1084 → liquid 137 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZEREBRO/USDT:USDT | +11.43% | $1,195,676.39 |
-| ARIA/USDT:USDT | +10.83% | $1,348,839.70 |
-| SNXX/USDT:USDT | +8.74% | $3,602,218.49 |
-| APR/USDT:USDT | +7.85% | $1,768,723.59 |
-| DNA/USDT:USDT | +7.60% | $3,692,864.76 |
+| ZEREBRO/USDT:USDT | +13.02% | $1,199,820.12 |
+| ARIA/USDT:USDT | +11.38% | $1,352,336.53 |
+| SNXX/USDT:USDT | +9.67% | $4,720,826.33 |
+| KORU/USDT:USDT | +8.81% | $16,973,076.67 |
+| SOXL/USDT:USDT | +7.36% | $15,128,716.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TESLA/USDT:USDT | below_1h_threshold | +1.82% | +1.81% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.66% | +0.64% |
-| ICNT/USDT:USDT | below_1h_threshold | +0.53% | +0.52% |
-| MUU/USDT:USDT | below_1h_threshold | +0.41% | +0.39% |
-| JTO/USDT:USDT | below_1h_threshold | +0.32% | +0.30% |
+| TESLA/USDT:USDT | below_1h_threshold | +1.82% | +1.87% |
+| ZEREBRO/USDT:USDT | below_1h_threshold | +1.24% | +1.28% |
+| RAY/USDT:USDT | below_1h_threshold | +1.07% | +1.12% |
+| ARIA/USDT:USDT | below_1h_threshold | +0.82% | +0.87% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.66% | +0.70% |
 
 ## 7. 次に見るべき不足
 
