@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-19T01:01:27.154484+00:00
+- generated_at: 2026-10-19T01:06:18.313236+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16967**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-19T01:01:11.750305+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=82272.7
+- 更新: 2026-10-19T01:06:07.373172+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.13% price=82378.4
 - Funnel: target 1084 → liquid 143 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| APR/USDT:USDT | +11.38% | $1,819,783.89 |
-| ZEREBRO/USDT:USDT | +11.01% | $1,187,624.61 |
-| SNXX/USDT:USDT | +9.55% | $7,604,372.44 |
-| KORU/USDT:USDT | +9.30% | $24,930,005.16 |
-| SOXL/USDT:USDT | +8.56% | $18,693,844.31 |
+| APR/USDT:USDT | +14.28% | $1,823,914.33 |
+| ZEREBRO/USDT:USDT | +12.16% | $1,188,330.37 |
+| SNXX/USDT:USDT | +10.60% | $8,275,706.23 |
+| KORU/USDT:USDT | +9.50% | $25,217,936.48 |
+| SOXL/USDT:USDT | +9.30% | $18,970,650.66 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXL/USDT:USDT | below_1h_threshold | +3.82% | +3.82% |
-| KORU/USDT:USDT | below_1h_threshold | +3.46% | +3.46% |
-| SNXX/USDT:USDT | below_1h_threshold | +3.20% | +3.20% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.95% | +2.95% |
-| MUU/USDT:USDT | below_1h_threshold | +2.20% | +2.20% |
+| SOXL/USDT:USDT | below_1h_threshold | +3.82% | +3.69% |
+| ARIA/USDT:USDT | below_1h_threshold | +3.78% | +3.65% |
+| KORU/USDT:USDT | below_1h_threshold | +3.46% | +3.33% |
+| SNXX/USDT:USDT | below_1h_threshold | +3.20% | +3.07% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.95% | +2.82% |
 
 ## 7. 次に見るべき不足
 
