@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-19T08:56:10.591013+00:00
+- generated_at: 2026-10-19T09:01:13.688981+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17007**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-19T08:56:01.895637+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.21% price=82868.0
-- Funnel: target 1085 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-19T09:01:03.730685+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=82733.2
+- Funnel: target 1085 → liquid 150 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZEREBRO/USDT:USDT | +22.20% | $1,855,567.99 |
-| KORU/USDT:USDT | +21.35% | $69,166,931.49 |
-| UNITREE/USDT:USDT | +17.13% | $1,850,761.66 |
-| CT/USDT:USDT | +14.24% | $2,699,983.14 |
-| SNXX/USDT:USDT | +13.86% | $15,026,805.82 |
+| ZEREBRO/USDT:USDT | +23.46% | $1,847,193.80 |
+| KORU/USDT:USDT | +20.27% | $69,168,221.21 |
+| UNITREE/USDT:USDT | +17.13% | $1,845,144.99 |
+| AGT/USDT:USDT | +13.06% | $9,977,449.93 |
+| SNXX/USDT:USDT | +12.93% | $15,015,032.00 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RAY/USDT:USDT | below_1h_threshold | +1.31% | +1.10% |
-| PENDLE/USDT:USDT | below_1h_threshold | +0.91% | +0.70% |
-| CRV/USDT:USDT | below_1h_threshold | +0.87% | +0.67% |
-| APE/USDT:USDT | below_1h_threshold | +0.84% | +0.63% |
-| RIVER/USDT:USDT | below_1h_threshold | +0.77% | +0.56% |
+| CT/USDT:USDT | below_1h_threshold | +1.80% | +1.87% |
+| ZEREBRO/USDT:USDT | below_1h_threshold | +1.03% | +1.09% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.62% | +0.68% |
+| KORU/USDT:USDT | below_1h_threshold | +0.57% | +0.64% |
+| AVA/USDT:USDT | below_1h_threshold | +0.56% | +0.62% |
 
 ## 7. 次に見るべき不足
 
