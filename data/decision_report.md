@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-19T02:51:11.005097+00:00
+- generated_at: 2026-10-19T02:56:17.661158+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16972**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-19T02:51:01.634740+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.35% price=82700.2
+- 更新: 2026-10-19T02:56:05.735426+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.31% price=82668.8
 - Funnel: target 1084 → liquid 145 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZEREBRO/USDT:USDT | +20.79% | $1,250,494.43 |
-| APR/USDT:USDT | +16.92% | $1,970,783.24 |
-| KORU/USDT:USDT | +15.57% | $38,675,186.70 |
-| VVV/USDT:USDT | +12.91% | $3,381,199.57 |
-| SNXX/USDT:USDT | +12.58% | $10,220,977.44 |
+| ZEREBRO/USDT:USDT | +17.59% | $1,257,789.08 |
+| KORU/USDT:USDT | +15.37% | $39,397,304.28 |
+| APR/USDT:USDT | +14.90% | $1,972,671.26 |
+| SNXX/USDT:USDT | +12.58% | $10,221,297.90 |
+| VVV/USDT:USDT | +12.46% | $3,401,933.51 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZEREBRO/USDT:USDT | below_1h_threshold | +4.11% | +3.76% |
-| KORU/USDT:USDT | below_1h_threshold | +4.07% | +3.73% |
-| UNITREE/USDT:USDT | below_1h_threshold | +3.83% | +3.48% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +3.70% | +3.35% |
-| VVV/USDT:USDT | below_1h_threshold | +3.21% | +2.87% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +4.07% | +3.77% |
+| KORU/USDT:USDT | below_1h_threshold | +4.07% | +3.76% |
+| UNITREE/USDT:USDT | below_1h_threshold | +3.83% | +3.52% |
+| VVV/USDT:USDT | below_1h_threshold | +2.82% | +2.52% |
+| SKINNOVSTOCK/USDT:USDT | below_1h_threshold | +2.28% | +1.97% |
 
 ## 7. 次に見るべき不足
 
