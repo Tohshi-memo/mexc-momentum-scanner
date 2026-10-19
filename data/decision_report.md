@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-19T12:01:14.711111+00:00
+- generated_at: 2026-10-19T12:06:19.131675+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17011**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-19T12:01:06.329443+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=82333.5
+- 更新: 2026-10-19T12:06:07.068796+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=82336.8
 - Funnel: target 1085 → liquid 155 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZEREBRO/USDT:USDT | +22.78% | $1,923,936.62 |
-| KORU/USDT:USDT | +20.66% | $76,750,310.38 |
-| BR/USDT:USDT | +20.34% | $16,604,725.49 |
-| AVA/USDT:USDT | +19.15% | $2,352,391.22 |
-| UNITREE/USDT:USDT | +15.81% | $2,077,239.11 |
+| ZEREBRO/USDT:USDT | +22.33% | $1,928,420.38 |
+| BR/USDT:USDT | +21.12% | $16,662,597.42 |
+| KORU/USDT:USDT | +20.86% | $77,976,859.67 |
+| AVA/USDT:USDT | +17.70% | $2,366,768.74 |
+| UNITREE/USDT:USDT | +15.76% | $2,081,128.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
 | NBISSTOCK/USDT:USDT | below_1h_threshold | +1.84% | +1.82% |
-| SKINNOVSTOCK/USDT:USDT | below_1h_threshold | +0.81% | +0.79% |
-| QNTSTOCK/USDT:USDT | below_1h_threshold | +0.32% | +0.30% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +0.09% | +0.07% |
-| UNITREE/USDT:USDT | below_1h_threshold | +0.08% | +0.06% |
+| Q/USDT:USDT | below_1h_threshold | +1.22% | +1.20% |
+| ARB/USDT:USDT | below_1h_threshold | +1.22% | +1.20% |
+| LSK/USDT:USDT | below_1h_threshold | +0.92% | +0.90% |
+| ATOM/USDT:USDT | below_1h_threshold | +0.87% | +0.85% |
 
 ## 7. 次に見るべき不足
 
