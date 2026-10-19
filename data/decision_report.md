@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-10-19T23:36:28.927076+00:00
+- generated_at: 2026-10-19T23:41:23.666846+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **17030**
+- closed shadow trades: **17031**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=17030, expectancy=+0.02%
+- 全期間 MARKET基準: n=17031, expectancy=+0.02%
 - 直近20件 MARKET基準: n=20, expectancy=-0.75%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -25,7 +25,7 @@
 | LIMIT_BB3S | 2/16 | 12.5% | +0.87% | **+0.11%** |
 | LIMIT_FIB1272 | 8/20 | 40.0% | +0.18% | **+0.07%** |
 | LIMIT_4PCT | 14/20 | 70.0% | +0.02% | **+0.01%** |
-| LIMIT_ATR | 13/20 | 65.0% | -0.94% | **-0.61%** |
+| LIMIT_ATR | 14/20 | 70.0% | -0.30% | **-0.21%** |
 
 ### シャドウ上位 LONG
 
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,281.88** / 初期 $100.00 (+1181.88%)
-- 確定: 6470件 (Win 1878 / Loss 2065 / Flat 2527) / skip 7121件
+- 確定: 6470件 (Win 1878 / Loss 2065 / Flat 2527) / skip 7122件
 - 成長率目線: 平均log +0.000394 / 幾何平均 +0.039% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_BB3S_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: ZRO/USDT:USDT `LIMIT_FIB1272` EXPIRED account +0.41% 残高後 $1,281.88
@@ -55,9 +55,9 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$278.39** / 初期 $100.00 (+178.39%)
-- 確定: 3795件 (Win 1044 / Loss 886 / Flat 1865) / skip 6646件
+- 確定: 3795件 (Win 1044 / Loss 886 / Flat 1865) / skip 6647件
 - 成長率目線: 平均log +0.000270 / 幾何平均 +0.027% per trade / maxDD +4.13%
-- 次の候補: `LIMIT_FIB1272` (selected_by_robust_growth_score) / robust_score -0.0464 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: ZRO/USDT:USDT `LIMIT_FIB1272` EXPIRED account +0.27% 残高後 $278.39
 
 ## 5. Causal Adaptive DryRun ($100)
@@ -65,37 +65,35 @@
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
 - 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5193件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000182 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000175 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-19T23:36:16.845203+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=82045.7
-- Funnel: target 1090 → liquid 167 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.3 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-19T23:41:09.440705+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=82044.3
+- Funnel: target 1090 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PHA/USDT:USDT | +26.50% | $10,924,539.77 |
-| BR/USDT:USDT | +17.38% | $32,220,529.88 |
-| BTW/USDT:USDT | +13.03% | $28,535,286.60 |
-| APR/USDT:USDT | +12.83% | $1,528,214.21 |
-| BAT/USDT:USDT | +7.67% | $6,428,010.35 |
+| PHA/USDT:USDT | +23.19% | $11,072,758.69 |
+| BR/USDT:USDT | +15.22% | $32,400,419.66 |
+| APR/USDT:USDT | +12.72% | $1,534,323.62 |
+| BTW/USDT:USDT | +11.65% | $28,643,140.00 |
+| BAT/USDT:USDT | +7.56% | $6,439,710.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BAT/USDT:USDT | below_1h_threshold | +1.54% | +1.51% |
-| WLD/USDT:USDT | below_1h_threshold | +1.48% | +1.44% |
+| BR/USDT:USDT | below_1h_threshold | +4.27% | +4.24% |
 | ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +1.44% | +1.41% |
-| Q/USDT:USDT | below_1h_threshold | +1.43% | +1.40% |
-| ZRO/USDT:USDT | below_1h_threshold | +1.38% | +1.35% |
+| BAT/USDT:USDT | below_1h_threshold | +1.32% | +1.29% |
+| PENDLE/USDT:USDT | below_1h_threshold | +1.23% | +1.20% |
+| WLD/USDT:USDT | below_1h_threshold | +1.19% | +1.16% |
 
 ## 7. 次に見るべき不足
 
