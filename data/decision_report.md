@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-10-19T15:11:28.408642+00:00
+- generated_at: 2026-10-19T15:16:33.169708+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **17014**
+- closed shadow trades: **17015**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +2.21% / filled 20/20。**
-- 全期間 MARKET基準: n=17014, expectancy=+0.02%
+- 全期間 MARKET基準: n=17015, expectancy=+0.02%
 - 直近20件 MARKET基準: n=20, expectancy=+2.21%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -24,8 +24,8 @@
 | MARKET | 20/20 | 100.0% | +2.21% | **+2.21%** |
 | LIMIT_1PCT | 17/20 | 85.0% | +2.08% | **+1.77%** |
 | LIMIT_2PCT | 14/20 | 70.0% | +1.32% | **+0.92%** |
-| LIMIT_ATR | 10/20 | 50.0% | +0.76% | **+0.38%** |
-| LIMIT_BB3S | 6/16 | 37.5% | +0.74% | **+0.28%** |
+| LIMIT_ATR | 10/20 | 50.0% | +0.68% | **+0.34%** |
+| LIMIT_BB3S | 5/16 | 31.2% | +0.81% | **+0.25%** |
 
 ### シャドウ上位 LONG
 
@@ -46,19 +46,19 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$1,257.25** / 初期 $100.00 (+1157.25%)
-- 確定: 6459件 (Win 1872 / Loss 2063 / Flat 2524) / skip 7116件
+- 残高: **$1,257.48** / 初期 $100.00 (+1157.48%)
+- 確定: 6460件 (Win 1873 / Loss 2063 / Flat 2524) / skip 7116件
 - 成長率目線: 平均log +0.000392 / 幾何平均 +0.039% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_FIB1272` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: AVA/USDT:USDT `LIMIT_FIB1272_LONG` EXPIRED account +0.00% 残高後 $1,257.25
+- 最新: BR/USDT:USDT `LIMIT_FIB1272` SL_HIT account +0.02% 残高後 $1,257.48
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$277.61** / 初期 $100.00 (+177.61%)
-- 確定: 3779件 (Win 1038 / Loss 883 / Flat 1858) / skip 6646件
+- 確定: 3780件 (Win 1038 / Loss 884 / Flat 1858) / skip 6646件
 - 成長率目線: 平均log +0.000270 / 幾何平均 +0.027% per trade / maxDD +4.13%
-- 次の候補: `LIMIT_FIB1272` (selected_by_robust_growth_score) / robust_score -0.0309 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: AVA/USDT:USDT `LIMIT_FIB1272` EXPIRED account +0.00% 残高後 $277.61
+- 次の候補: `LIMIT_FIB1272` (selected_by_robust_growth_score) / robust_score -0.0299 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 最新: BR/USDT:USDT `LIMIT_FIB1272` SL_HIT account -0.00% 残高後 $277.61
 
 ## 5. Causal Adaptive DryRun ($100)
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-19T15:11:16.626949+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=82179.0
+- 更新: 2026-10-19T15:16:19.351531+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=82191.7
 - Funnel: target 1090 → liquid 168 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.6 >= 65=1
+- Strict後reject: 4h RSI 67.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +27.45% | $10,826,006.78 |
-| BR/USDT:USDT | +25.21% | $21,134,782.45 |
-| AVA/USDT:USDT | +23.01% | $1,803,892.38 |
-| SNXX/USDT:USDT | +20.86% | $42,520,565.64 |
-| KORU/USDT:USDT | +20.56% | $121,833,834.64 |
+| AGT/USDT:USDT | +28.61% | $10,898,984.24 |
+| BR/USDT:USDT | +25.26% | $21,267,706.45 |
+| AVA/USDT:USDT | +21.44% | $1,820,436.78 |
+| KORU/USDT:USDT | +21.25% | $124,987,692.08 |
+| SNXX/USDT:USDT | +21.21% | $42,526,717.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BR/USDT:USDT | below_1h_threshold | +3.69% | +3.81% |
-| ZRO/USDT:USDT | below_1h_threshold | +2.44% | +2.55% |
-| IRENSTOCK/USDT:USDT | below_1h_threshold | +2.15% | +2.26% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.99% | +2.10% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +1.90% | +2.01% |
+| ZRO/USDT:USDT | below_1h_threshold | +3.73% | +3.83% |
+| BR/USDT:USDT | below_1h_threshold | +3.72% | +3.81% |
+| IRENSTOCK/USDT:USDT | below_1h_threshold | +2.15% | +2.24% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.99% | +2.08% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +1.90% | +1.99% |
 
 ## 7. 次に見るべき不足
 
