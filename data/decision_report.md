@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-19T03:56:33.393490+00:00
+- generated_at: 2026-10-19T04:01:10.383400+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16976**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-19T03:56:16.880348+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.26% price=82465.0
-- Funnel: target 1084 → liquid 144 → pre 50 → checked 50 → surge 4 → strict 2
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.1 >= 65=1, 4h RSI 80.1 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-19T04:01:01.652681+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=82481.9
+- Funnel: target 1084 → liquid 143 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZEREBRO/USDT:USDT | +27.92% | $1,329,685.93 |
-| Q/USDT:USDT | +23.06% | $9,774,952.74 |
-| KORU/USDT:USDT | +17.43% | $42,830,349.88 |
-| SNXX/USDT:USDT | +12.70% | $11,235,531.03 |
-| UNITREE/USDT:USDT | +11.98% | $1,142,283.72 |
+| ZEREBRO/USDT:USDT | +24.48% | $1,328,967.95 |
+| Q/USDT:USDT | +22.47% | $9,129,113.60 |
+| KORU/USDT:USDT | +17.72% | $42,703,941.05 |
+| SNXX/USDT:USDT | +12.58% | $11,233,277.05 |
+| SOXL/USDT:USDT | +11.31% | $25,531,539.87 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AVA/USDT:USDT | below_1h_threshold | +3.70% | +3.96% |
-| BR/USDT:USDT | below_1h_threshold | +2.77% | +3.04% |
-| KORU/USDT:USDT | below_1h_threshold | +2.35% | +2.61% |
-| UAI/USDT:USDT | below_1h_threshold | +1.54% | +1.80% |
-| SNXX/USDT:USDT | below_1h_threshold | +1.48% | +1.74% |
+| KORU/USDT:USDT | below_1h_threshold | +1.78% | +1.80% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.98% | +1.00% |
+| SKINNOVSTOCK/USDT:USDT | below_1h_threshold | +0.98% | +0.99% |
+| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +0.84% | +0.86% |
+| EWY/USDT:USDT | below_1h_threshold | +0.67% | +0.68% |
 
 ## 7. 次に見るべき不足
 
