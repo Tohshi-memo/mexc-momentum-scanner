@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-19T16:26:22.137059+00:00
+- generated_at: 2026-10-19T16:31:18.069609+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17017**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-19T16:26:10.054928+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=81947.1
+- 更新: 2026-10-19T16:31:08.279144+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=81944.2
 - Funnel: target 1090 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VVV/USDT:USDT | +2.03% | $5,192,121.03 |
-| ZRO/USDT:USDT | +1.55% | $8,378,620.36 |
-| ZEREBRO/USDT:USDT | +1.51% | $1,908,053.26 |
-| SOXS/USDT:USDT | +1.48% | $2,903,149.77 |
-| ARIA/USDT:USDT | +1.38% | $1,346,924.48 |
+| AVA/USDT:USDT | +2.95% | $1,651,295.01 |
+| SOXS/USDT:USDT | +2.45% | $2,906,010.85 |
+| VVV/USDT:USDT | +2.11% | $5,260,759.39 |
+| APR/USDT:USDT | +1.79% | $1,490,908.08 |
+| BR/USDT:USDT | +1.69% | $26,549,469.98 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VVV/USDT:USDT | below_1h_threshold | +2.04% | +2.00% |
-| ZEREBRO/USDT:USDT | below_1h_threshold | +1.51% | +1.48% |
-| BR/USDT:USDT | below_1h_threshold | +1.51% | +1.47% |
-| ZRO/USDT:USDT | below_1h_threshold | +1.46% | +1.42% |
-| ARIA/USDT:USDT | below_1h_threshold | +1.38% | +1.35% |
+| AVA/USDT:USDT | below_1h_threshold | +2.96% | +2.92% |
+| VVV/USDT:USDT | below_1h_threshold | +2.13% | +2.10% |
+| APR/USDT:USDT | below_1h_threshold | +1.94% | +1.91% |
+| INJ/USDT:USDT | below_1h_threshold | +1.64% | +1.60% |
+| BR/USDT:USDT | below_1h_threshold | +1.61% | +1.58% |
 
 ## 7. 次に見るべき不足
 
