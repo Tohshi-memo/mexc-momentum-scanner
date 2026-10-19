@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-19T19:01:34.777989+00:00
+- generated_at: 2026-10-19T19:06:23.973025+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17024**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-19T19:01:20.180619+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=81908.0
+- 更新: 2026-10-19T19:06:12.319919+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=81934.4
 - Funnel: target 1090 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PHA/USDT:USDT | +21.28% | $3,087,257.78 |
-| BTW/USDT:USDT | +15.46% | $25,470,044.37 |
-| APR/USDT:USDT | +12.53% | $1,490,171.04 |
-| BR/USDT:USDT | +8.00% | $29,797,292.82 |
-| S/USDT:USDT | +5.46% | $2,508,891.82 |
+| PHA/USDT:USDT | +21.38% | $3,186,820.15 |
+| BTW/USDT:USDT | +13.36% | $25,764,353.76 |
+| APR/USDT:USDT | +13.06% | $1,497,509.95 |
+| BR/USDT:USDT | +8.00% | $29,982,089.51 |
+| AGT/USDT:USDT | +6.34% | $11,319,170.51 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FASTRETAILSTOCK/USDT:USDT | below_1h_threshold | +1.23% | +1.25% |
-| RLC/USDT:USDT | below_1h_threshold | +0.82% | +0.85% |
-| APR/USDT:USDT | below_1h_threshold | +0.75% | +0.77% |
-| Q/USDT:USDT | below_1h_threshold | +0.62% | +0.65% |
-| UNITREE/USDT:USDT | below_1h_threshold | +0.48% | +0.51% |
+| Q/USDT:USDT | below_1h_threshold | +1.61% | +1.60% |
+| RLC/USDT:USDT | below_1h_threshold | +1.41% | +1.40% |
+| AGT/USDT:USDT | below_1h_threshold | +1.41% | +1.40% |
+| DNA/USDT:USDT | below_1h_threshold | +1.40% | +1.39% |
+| FASTRETAILSTOCK/USDT:USDT | below_1h_threshold | +1.23% | +1.22% |
 
 ## 7. 次に見るべき不足
 
