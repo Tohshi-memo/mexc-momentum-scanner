@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-19T14:06:18.703868+00:00
+- generated_at: 2026-10-19T14:11:24.107600+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17012**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-19T14:06:06.425814+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.34% price=81816.2
-- Funnel: target 1090 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-19T14:11:11.692302+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=82012.2
+- Funnel: target 1090 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +23.96% | $10,568,216.50 |
-| KORU/USDT:USDT | +18.51% | $101,766,279.30 |
-| SNXX/USDT:USDT | +17.94% | $35,584,901.82 |
-| ZEREBRO/USDT:USDT | +17.05% | $1,916,029.99 |
-| AVA/USDT:USDT | +15.23% | $2,049,872.23 |
+| AGT/USDT:USDT | +23.75% | $10,615,359.85 |
+| KORU/USDT:USDT | +19.58% | $104,043,768.22 |
+| SNXX/USDT:USDT | +18.99% | $37,232,544.80 |
+| ZEREBRO/USDT:USDT | +16.73% | $1,918,364.62 |
+| BR/USDT:USDT | +16.50% | $20,125,804.78 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNXX/USDT:USDT | below_1h_threshold | +4.45% | +4.78% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +3.03% | +3.37% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +2.39% | +2.72% |
-| TESLA/USDT:USDT | below_1h_threshold | +1.87% | +2.20% |
-| AVA/USDT:USDT | below_1h_threshold | +1.35% | +1.69% |
+| SNXX/USDT:USDT | below_1h_threshold | +4.45% | +4.55% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +3.03% | +3.13% |
+| BR/USDT:USDT | below_1h_threshold | +2.53% | +2.62% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +2.39% | +2.48% |
+| TESLA/USDT:USDT | below_1h_threshold | +1.87% | +1.96% |
 
 ## 7. 次に見るべき不足
 
