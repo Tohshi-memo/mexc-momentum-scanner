@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-19T11:06:22.301741+00:00
+- generated_at: 2026-10-19T11:11:23.336122+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17010**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-19T11:06:10.254463+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=82269.0
+- 更新: 2026-10-19T11:11:11.077767+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.15% price=82253.4
 - Funnel: target 1085 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KORU/USDT:USDT | +21.25% | $75,134,456.59 |
-| ZEREBRO/USDT:USDT | +21.10% | $1,903,101.98 |
-| AGT/USDT:USDT | +17.90% | $10,024,912.30 |
-| BR/USDT:USDT | +16.76% | $16,446,769.97 |
-| UNITREE/USDT:USDT | +15.84% | $2,013,053.94 |
+| KORU/USDT:USDT | +21.25% | $75,164,133.78 |
+| ZEREBRO/USDT:USDT | +19.38% | $1,911,647.27 |
+| AGT/USDT:USDT | +16.67% | $10,088,779.52 |
+| BR/USDT:USDT | +16.08% | $16,513,935.03 |
+| UNITREE/USDT:USDT | +15.77% | $2,013,900.73 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CT/USDT:USDT | below_1h_threshold | +2.01% | +2.14% |
-| QNTSTOCK/USDT:USDT | below_1h_threshold | +1.78% | +1.91% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.61% | +1.75% |
-| KORU/USDT:USDT | below_1h_threshold | +1.53% | +1.67% |
-| AVA/USDT:USDT | below_1h_threshold | +1.51% | +1.65% |
+| Q/USDT:USDT | below_1h_threshold | +3.15% | +3.30% |
+| CT/USDT:USDT | below_1h_threshold | +2.52% | +2.68% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.61% | +1.76% |
+| KORU/USDT:USDT | below_1h_threshold | +1.53% | +1.69% |
+| MUU/USDT:USDT | below_1h_threshold | +1.44% | +1.59% |
 
 ## 7. 次に見るべき不足
 
