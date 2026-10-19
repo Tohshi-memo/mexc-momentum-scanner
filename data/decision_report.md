@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-19T16:46:26.875220+00:00
+- generated_at: 2026-10-19T16:51:29.117435+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17018**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-19T16:46:14.181207+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=81961.4
+- 更新: 2026-10-19T16:51:18.228990+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=81977.5
 - Funnel: target 1090 → liquid 172 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.0 >= 65=1
+- Strict後reject: 4h RSI 70.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AVA/USDT:USDT | +5.93% | $1,744,951.54 |
-| DOT/USDT:USDT | +2.49% | $20,980,478.25 |
-| SOXS/USDT:USDT | +2.48% | $2,915,706.14 |
-| JBLSTOCK/USDT:USDT | +2.48% | $3,939,150.51 |
-| CRV/USDT:USDT | +2.37% | $5,189,335.79 |
+| AVA/USDT:USDT | +6.63% | $1,761,472.93 |
+| SOXS/USDT:USDT | +3.05% | $2,919,636.93 |
+| BR/USDT:USDT | +2.82% | $27,252,350.56 |
+| NIL/USDT:USDT | +2.76% | $3,217,788.18 |
+| CRV/USDT:USDT | +2.31% | $5,241,734.26 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DOT/USDT:USDT | below_1h_threshold | +2.55% | +2.49% |
-| CRV/USDT:USDT | below_1h_threshold | +2.40% | +2.34% |
-| NIL/USDT:USDT | below_1h_threshold | +2.31% | +2.25% |
-| VVV/USDT:USDT | below_1h_threshold | +1.76% | +1.70% |
-| AGT/USDT:USDT | below_1h_threshold | +1.73% | +1.68% |
+| NIL/USDT:USDT | below_1h_threshold | +2.95% | +2.87% |
+| BR/USDT:USDT | below_1h_threshold | +2.68% | +2.60% |
+| CRV/USDT:USDT | below_1h_threshold | +2.34% | +2.27% |
+| DOT/USDT:USDT | below_1h_threshold | +2.17% | +2.10% |
+| ARIA/USDT:USDT | below_1h_threshold | +2.02% | +1.94% |
 
 ## 7. 次に見るべき不足
 
