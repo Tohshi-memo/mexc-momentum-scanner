@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-19T14:56:30.301585+00:00
+- generated_at: 2026-10-19T15:01:24.585598+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17013**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-19T14:56:15.768670+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.15% price=82211.1
-- Funnel: target 1090 → liquid 172 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.4 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-19T15:01:12.015736+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=82244.3
+- Funnel: target 1090 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +27.36% | $11,088,034.67 |
-| BR/USDT:USDT | +22.95% | $20,897,976.30 |
-| SNXX/USDT:USDT | +21.56% | $41,014,527.28 |
-| KORU/USDT:USDT | +19.68% | $114,382,827.52 |
-| ZEREBRO/USDT:USDT | +17.26% | $1,940,368.86 |
+| AGT/USDT:USDT | +26.21% | $10,737,898.12 |
+| BR/USDT:USDT | +23.12% | $20,812,734.11 |
+| SNXX/USDT:USDT | +20.74% | $41,000,282.23 |
+| KORU/USDT:USDT | +19.39% | $118,122,699.45 |
+| ZEREBRO/USDT:USDT | +17.01% | $1,889,765.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNXX/USDT:USDT | below_1h_threshold | +4.45% | +4.30% |
-| CRV/USDT:USDT | below_1h_threshold | +3.45% | +3.30% |
-| AGT/USDT:USDT | below_1h_threshold | +3.38% | +3.24% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +3.03% | +2.89% |
-| CT/USDT:USDT | below_1h_threshold | +2.71% | +2.57% |
+| NIL/USDT:USDT | below_1h_threshold | +2.19% | +2.23% |
+| IRENSTOCK/USDT:USDT | below_1h_threshold | +2.15% | +2.18% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.99% | +2.02% |
+| BR/USDT:USDT | below_1h_threshold | +1.91% | +1.94% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +1.90% | +1.93% |
 
 ## 7. 次に見るべき不足
 
