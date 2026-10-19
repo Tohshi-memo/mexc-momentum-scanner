@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-19T07:01:21.898614+00:00
+- generated_at: 2026-10-19T07:06:24.316425+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16998**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-19T07:01:09.832624+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=82825.9
+- 更新: 2026-10-19T07:06:12.349780+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=82852.4
 - Funnel: target 1085 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +40.74% | $7,971,567.91 |
-| ZEREBRO/USDT:USDT | +30.42% | $1,694,870.67 |
-| Q/USDT:USDT | +24.39% | $14,435,950.18 |
-| KORU/USDT:USDT | +20.07% | $64,698,375.66 |
-| UNITREE/USDT:USDT | +17.53% | $1,570,122.96 |
+| AGT/USDT:USDT | +36.59% | $8,114,296.91 |
+| ZEREBRO/USDT:USDT | +28.16% | $1,708,165.04 |
+| KORU/USDT:USDT | +19.88% | $64,699,389.31 |
+| UNITREE/USDT:USDT | +17.44% | $1,604,309.96 |
+| BR/USDT:USDT | +14.99% | $14,537,396.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UNITREE/USDT:USDT | below_1h_threshold | +4.34% | +4.33% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.29% | +1.28% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.76% | +0.75% |
-| KORU/USDT:USDT | below_1h_threshold | +0.74% | +0.73% |
-| MUU/USDT:USDT | below_1h_threshold | +0.67% | +0.65% |
+| UNITREE/USDT:USDT | below_1h_threshold | +4.34% | +4.29% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.29% | +1.24% |
+| AVA/USDT:USDT | below_1h_threshold | +1.18% | +1.13% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.76% | +0.71% |
+| KORU/USDT:USDT | below_1h_threshold | +0.74% | +0.70% |
 
 ## 7. 次に見るべき不足
 
