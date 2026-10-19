@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-19T04:06:31.251793+00:00
+- generated_at: 2026-10-19T04:11:29.907448+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16977**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5138件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5140件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000166 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-19T04:06:16.532170+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=82475.4
-- Funnel: target 1084 → liquid 143 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-19T04:11:14.915064+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=82495.9
+- Funnel: target 1084 → liquid 143 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 76.2 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZEREBRO/USDT:USDT | +26.61% | $1,334,782.54 |
-| Q/USDT:USDT | +22.30% | $9,431,009.67 |
-| KORU/USDT:USDT | +17.23% | $44,042,995.57 |
-| SNXX/USDT:USDT | +12.23% | $11,240,642.53 |
-| SOXL/USDT:USDT | +11.43% | $25,561,079.93 |
+| Q/USDT:USDT | +29.17% | $9,614,732.06 |
+| ZEREBRO/USDT:USDT | +26.19% | $1,341,129.32 |
+| KORU/USDT:USDT | +17.14% | $44,061,005.49 |
+| SNXX/USDT:USDT | +12.00% | $12,013,649.00 |
+| SOXL/USDT:USDT | +11.25% | $25,592,967.09 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AVA/USDT:USDT | below_1h_threshold | +1.81% | +1.83% |
-| KORU/USDT:USDT | below_1h_threshold | +1.78% | +1.81% |
-| ZEREBRO/USDT:USDT | below_1h_threshold | +1.55% | +1.58% |
-| SAND/USDT:USDT | below_1h_threshold | +1.02% | +1.05% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.98% | +1.00% |
+| AVA/USDT:USDT | below_1h_threshold | +2.48% | +2.48% |
+| KORU/USDT:USDT | below_1h_threshold | +1.78% | +1.78% |
+| ZEREBRO/USDT:USDT | below_1h_threshold | +1.18% | +1.18% |
+| SAND/USDT:USDT | below_1h_threshold | +1.12% | +1.12% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.98% | +0.98% |
 
 ## 7. 次に見るべき不足
 
