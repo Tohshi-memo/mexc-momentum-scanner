@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-19T02:31:22.595597+00:00
+- generated_at: 2026-10-19T02:36:22.116333+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **16971**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-19T02:31:11.151037+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=82371.1
+- 更新: 2026-10-19T02:36:10.233972+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=82380.7
 - Funnel: target 1084 → liquid 144 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZEREBRO/USDT:USDT | +17.94% | $1,228,663.96 |
-| APR/USDT:USDT | +15.56% | $1,930,363.45 |
-| KORU/USDT:USDT | +13.41% | $38,592,476.41 |
-| VVV/USDT:USDT | +11.07% | $3,185,912.20 |
-| SNXX/USDT:USDT | +10.95% | $9,552,802.14 |
+| ZEREBRO/USDT:USDT | +18.32% | $1,232,228.87 |
+| KORU/USDT:USDT | +14.59% | $38,612,439.21 |
+| APR/USDT:USDT | +14.13% | $1,950,065.75 |
+| VVV/USDT:USDT | +11.65% | $3,213,264.39 |
+| SNXX/USDT:USDT | +11.53% | $9,553,245.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KORU/USDT:USDT | below_1h_threshold | +4.07% | +4.13% |
-| SKINNOVSTOCK/USDT:USDT | below_1h_threshold | +2.28% | +2.33% |
-| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +2.22% | +2.27% |
-| ZEREBRO/USDT:USDT | below_1h_threshold | +1.64% | +1.70% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +1.59% | +1.64% |
+| KORU/USDT:USDT | below_1h_threshold | +4.07% | +4.11% |
+| SKINNOVSTOCK/USDT:USDT | below_1h_threshold | +2.28% | +2.32% |
+| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +2.22% | +2.26% |
+| VVV/USDT:USDT | below_1h_threshold | +2.10% | +2.15% |
+| ZEREBRO/USDT:USDT | below_1h_threshold | +1.91% | +1.95% |
 
 ## 7. 次に見るべき不足
 
