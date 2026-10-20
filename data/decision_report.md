@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-10-20T18:16:21.798614+00:00
+- generated_at: 2026-10-20T18:21:35.181679+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **17075**
+- closed shadow trades: **17076**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +1.40% / filled 20/20。**
-- 全期間 MARKET基準: n=17075, expectancy=+0.02%
+- 全期間 MARKET基準: n=17076, expectancy=+0.02%
 - 直近20件 MARKET基準: n=20, expectancy=+1.40%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -24,8 +24,8 @@
 | MARKET | 20/20 | 100.0% | +1.40% | **+1.40%** |
 | LIMIT_1PCT | 18/20 | 90.0% | +1.01% | **+0.90%** |
 | LIMIT_6PCT | 2/20 | 10.0% | +1.89% | **+0.19%** |
-| LIMIT_BB3S | 4/14 | 28.6% | +0.27% | **+0.08%** |
 | LIMIT_5PCT | 5/20 | 25.0% | -0.04% | **-0.01%** |
+| LIMIT_BB3S | 5/14 | 35.7% | -0.29% | **-0.10%** |
 
 ### シャドウ上位 LONG
 
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,332.81** / 初期 $100.00 (+1232.81%)
-- 確定: 6487件 (Win 1888 / Loss 2071 / Flat 2528) / skip 7149件
+- 確定: 6487件 (Win 1888 / Loss 2071 / Flat 2528) / skip 7150件
 - 成長率目線: 平均log +0.000399 / 幾何平均 +0.040% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_BB3S_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: COMP/USDT:USDT `LIMIT_BB3S_LONG` EXPIRED account +0.65% 残高後 $1,332.81
@@ -55,9 +55,9 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$280.10** / 初期 $100.00 (+180.10%)
-- 確定: 3818件 (Win 1050 / Loss 892 / Flat 1876) / skip 6668件
+- 確定: 3818件 (Win 1050 / Loss 892 / Flat 1876) / skip 6669件
 - 成長率目線: 平均log +0.000270 / 幾何平均 +0.027% per trade / maxDD +4.13%
-- 次の候補: `LIMIT_5PCT` (selected_by_robust_growth_score) / robust_score +0.0047 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 次の候補: `LIMIT_5PCT` (selected_by_robust_growth_score) / robust_score +0.0049 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: BR/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.35% 残高後 $280.10
 
 ## 5. Causal Adaptive DryRun ($100)
@@ -65,13 +65,13 @@
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
 - 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5239件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000329 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000328 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-20T18:16:09.289645+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=82655.4
+- 更新: 2026-10-20T18:21:20.592035+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.22% price=82596.4
 - Funnel: target 1084 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DOOD/USDT:USDT | +12.60% | $1,339,125.10 |
-| ICNT/USDT:USDT | +11.83% | $1,342,603.11 |
-| APR/USDT:USDT | +11.68% | $1,829,244.24 |
-| RAY/USDT:USDT | +5.25% | $2,020,271.83 |
-| DNA/USDT:USDT | +5.14% | $1,696,179.24 |
+| ICNT/USDT:USDT | +13.72% | $1,409,870.50 |
+| DOOD/USDT:USDT | +13.67% | $1,349,380.54 |
+| APR/USDT:USDT | +11.78% | $1,844,217.78 |
+| DNA/USDT:USDT | +5.92% | $1,699,532.30 |
+| COMP/USDT:USDT | +5.35% | $2,384,003.39 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DNA/USDT:USDT | below_1h_threshold | +1.63% | +1.78% |
-| PENGU/USDT:USDT | below_1h_threshold | +1.42% | +1.57% |
-| APR/USDT:USDT | below_1h_threshold | +1.41% | +1.57% |
-| LDO/USDT:USDT | below_1h_threshold | +1.32% | +1.47% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +1.16% | +1.31% |
+| DNA/USDT:USDT | below_1h_threshold | +2.55% | +2.78% |
+| ICNT/USDT:USDT | below_1h_threshold | +1.86% | +2.08% |
+| APR/USDT:USDT | below_1h_threshold | +1.70% | +1.92% |
+| PENGU/USDT:USDT | below_1h_threshold | +1.40% | +1.62% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +1.16% | +1.39% |
 
 ## 7. 次に見るべき不足
 
