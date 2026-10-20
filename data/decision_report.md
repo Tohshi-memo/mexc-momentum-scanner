@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-20T16:21:17.663659+00:00
+- generated_at: 2026-10-20T16:26:34.372723+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17071**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5233件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5234件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000332 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-20T16:21:07.919915+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.26% price=82369.5
-- Funnel: target 1084 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-20T16:26:18.662262+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.22% price=82403.6
+- Funnel: target 1084 → liquid 161 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BR/USDT:USDT | +4.37% | $49,217,662.45 |
-| APR/USDT:USDT | +3.66% | $1,635,749.00 |
-| SOXS/USDT:USDT | +1.73% | $3,626,194.72 |
-| NIL/USDT:USDT | +1.31% | $3,294,124.24 |
-| ICNT/USDT:USDT | +1.18% | $1,226,077.15 |
+| APR/USDT:USDT | +6.46% | $1,658,787.22 |
+| BR/USDT:USDT | +4.16% | $49,446,738.78 |
+| NIL/USDT:USDT | +1.44% | $3,308,453.25 |
+| ZKSYNC/USDT:USDT | +1.37% | $4,682,476.16 |
+| AKE/USDT:USDT | +1.28% | $6,696,916.76 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BR/USDT:USDT | below_1h_threshold | +4.34% | +4.60% |
-| APR/USDT:USDT | below_1h_threshold | +3.67% | +3.93% |
-| USOIL/USDT:USDT | below_1h_threshold | +1.62% | +1.88% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +1.62% | +1.88% |
-| UKOIL/USDT:USDT | below_1h_threshold | +1.34% | +1.60% |
+| BR/USDT:USDT | below_1h_threshold | +4.21% | +4.43% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.62% | +1.84% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +1.62% | +1.84% |
+| NIL/USDT:USDT | below_1h_threshold | +1.40% | +1.61% |
+| ZKSYNC/USDT:USDT | below_1h_threshold | +1.38% | +1.59% |
 
 ## 7. 次に見るべき不足
 
