@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-20T09:36:20.444330+00:00
+- generated_at: 2026-10-20T09:41:22.233306+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17050**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-20T09:36:08.144472+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=81386.1
-- Funnel: target 1078 → liquid 163 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.9 >= 65=1
+- 更新: 2026-10-20T09:41:12.841443+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.16% price=81371.7
+- Funnel: target 1078 → liquid 163 → pre 50 → checked 49 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=1
+- Strict後reject: 4h RSI 87.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JCT/USDT:USDT | +75.62% | $4,869,150.26 |
-| ALT/USDT:USDT | +18.12% | $1,676,433.01 |
-| PHA/USDT:USDT | +16.49% | $18,877,469.78 |
-| BR/USDT:USDT | +11.41% | $46,597,037.25 |
-| BAT/USDT:USDT | +10.35% | $7,260,158.29 |
+| JCT/USDT:USDT | +75.62% | $5,056,146.25 |
+| ALT/USDT:USDT | +17.75% | $1,690,157.72 |
+| PHA/USDT:USDT | +16.43% | $18,893,790.29 |
+| SOXS/USDT:USDT | +10.90% | $4,132,382.80 |
+| BAT/USDT:USDT | +10.35% | $7,280,639.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TIA/USDT:USDT | below_1h_threshold | +2.76% | +2.89% |
-| Q/USDT:USDT | below_1h_threshold | +2.04% | +2.18% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.91% | +1.05% |
-| LIT/USDT:USDT | below_1h_threshold | +0.80% | +0.94% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.46% | +0.60% |
+| TIA/USDT:USDT | below_1h_threshold | +2.06% | +2.21% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.91% | +1.07% |
+| LIT/USDT:USDT | below_1h_threshold | +0.70% | +0.85% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.46% | +0.61% |
+| XMR/USDT:USDT | below_1h_threshold | +0.27% | +0.43% |
 
 ## 7. 次に見るべき不足
 
