@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-20T15:21:42.153960+00:00
+- generated_at: 2026-10-20T15:26:35.433274+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17066**
 
@@ -63,38 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5229件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5230件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000298 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-20T15:21:27.131343+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -1.06% price=82364.3
-- Funnel: target 1084 → liquid 162 → pre 50 → checked 49 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=1
+- 更新: 2026-10-20T15:26:20.612979+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.90% price=82493.4
+- Funnel: target 1084 → liquid 162 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JCT/USDT:USDT | +129.12% | $22,965,322.12 |
-| APR/USDT:USDT | +25.10% | $1,543,237.69 |
-| ALT/USDT:USDT | +18.93% | $2,645,369.49 |
-| BAT/USDT:USDT | +17.12% | $9,652,208.00 |
-| PHA/USDT:USDT | +14.18% | $20,663,172.70 |
+| JCT/USDT:USDT | +132.44% | $23,234,871.38 |
+| APR/USDT:USDT | +20.76% | $1,562,664.07 |
+| ALT/USDT:USDT | +19.77% | $2,654,198.89 |
+| BAT/USDT:USDT | +17.40% | $9,695,898.39 |
+| BR/USDT:USDT | +15.29% | $50,868,473.14 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BR/USDT:USDT | below_1h_threshold | +4.24% | +5.30% |
-| JCT/USDT:USDT | below_1h_threshold | +3.38% | +4.44% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +3.01% | +4.07% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +2.85% | +3.90% |
-| XMR/USDT:USDT | below_1h_threshold | +0.59% | +1.65% |
+| JCT/USDT:USDT | below_1h_threshold | +4.72% | +5.62% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +3.01% | +3.91% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +2.85% | +3.75% |
+| XMR/USDT:USDT | below_1h_threshold | +0.71% | +1.61% |
+| BTW/USDT:USDT | below_1h_threshold | +0.70% | +1.60% |
 
 ## 7. 次に見るべき不足
 
