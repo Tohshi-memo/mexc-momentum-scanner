@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-20T20:36:29.047850+00:00
+- generated_at: 2026-10-20T20:41:13.928647+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17078**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-20T20:36:16.764326+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.18% price=82708.4
+- 更新: 2026-10-20T20:41:04.386768+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.20% price=82729.8
 - Funnel: target 1084 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ICNT/USDT:USDT | +22.36% | $2,746,865.26 |
-| DOOD/USDT:USDT | +7.42% | $1,535,625.67 |
-| COMP/USDT:USDT | +7.19% | $2,841,991.53 |
-| RAY/USDT:USDT | +6.25% | $2,175,433.17 |
-| APR/USDT:USDT | +5.65% | $1,896,911.40 |
+| ICNT/USDT:USDT | +19.28% | $2,778,950.28 |
+| COMP/USDT:USDT | +7.32% | $2,851,575.81 |
+| DOOD/USDT:USDT | +6.67% | $1,537,445.76 |
+| RAY/USDT:USDT | +6.04% | $2,181,424.88 |
+| APR/USDT:USDT | +5.47% | $1,898,091.77 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ICNT/USDT:USDT | below_1h_threshold | +4.08% | +3.90% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.86% | +1.68% |
-| APT/USDT:USDT | below_1h_threshold | +1.82% | +1.65% |
-| WLD/USDT:USDT | below_1h_threshold | +1.82% | +1.64% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.44% | +1.26% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.86% | +1.65% |
+| WLD/USDT:USDT | below_1h_threshold | +1.75% | +1.55% |
+| NEAR/USDT:USDT | below_1h_threshold | +1.67% | +1.46% |
+| APT/USDT:USDT | below_1h_threshold | +1.64% | +1.44% |
+| ZEC/USDT:USDT | below_1h_threshold | +1.45% | +1.25% |
 
 ## 7. 次に見るべき不足
 
