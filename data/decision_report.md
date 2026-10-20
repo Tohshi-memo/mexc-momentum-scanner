@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-20T15:36:46.034095+00:00
+- generated_at: 2026-10-20T15:41:32.733458+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17069**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-20T15:36:28.252124+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.98% price=82427.1
-- Funnel: target 1084 → liquid 165 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 93.1 >= 65=1, 4h RSI 67.1 >= 65=1
+- 更新: 2026-10-20T15:41:19.899675+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.79% price=82585.4
+- Funnel: target 1084 → liquid 165 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 92.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JCT/USDT:USDT | +143.68% | $23,809,412.53 |
-| APR/USDT:USDT | +20.60% | $1,584,200.55 |
-| ALT/USDT:USDT | +18.87% | $2,675,363.01 |
-| BAT/USDT:USDT | +17.69% | $9,868,893.03 |
-| PHA/USDT:USDT | +14.99% | $20,726,779.27 |
+| JCT/USDT:USDT | +136.02% | $24,160,266.58 |
+| APR/USDT:USDT | +22.70% | $1,591,090.40 |
+| ALT/USDT:USDT | +19.24% | $2,683,387.02 |
+| BAT/USDT:USDT | +18.66% | $9,953,372.31 |
+| PHA/USDT:USDT | +14.62% | $20,742,397.90 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +3.01% | +3.99% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +2.85% | +3.83% |
-| UNITREE/USDT:USDT | below_1h_threshold | +0.36% | +1.34% |
-| XMR/USDT:USDT | below_1h_threshold | +0.25% | +1.23% |
-| SPX/USDT:USDT | below_1h_threshold | -0.30% | +0.68% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +2.85% | +3.64% |
+| BR/USDT:USDT | below_1h_threshold | +1.74% | +2.53% |
+| SPX/USDT:USDT | below_1h_threshold | +0.76% | +1.55% |
+| UNITREE/USDT:USDT | below_1h_threshold | +0.36% | +1.15% |
+| BTW/USDT:USDT | below_1h_threshold | +0.05% | +0.84% |
 
 ## 7. 次に見るべき不足
 
