@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-20T00:46:21.260727+00:00
+- generated_at: 2026-10-20T00:51:19.609469+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17034**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-20T00:46:08.646112+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.36% price=81607.7
+- 更新: 2026-10-20T00:51:07.206067+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.37% price=81600.1
 - Funnel: target 1089 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PHA/USDT:USDT | +18.76% | $12,302,958.11 |
-| BTW/USDT:USDT | +13.11% | $29,659,441.32 |
-| APR/USDT:USDT | +9.60% | $1,509,058.12 |
-| SOXS/USDT:USDT | +9.56% | $3,522,076.77 |
-| WLD/USDT:USDT | +5.94% | $192,629,370.89 |
+| PHA/USDT:USDT | +18.44% | $12,397,697.11 |
+| BTW/USDT:USDT | +12.84% | $29,703,932.08 |
+| SOXS/USDT:USDT | +9.56% | $3,525,729.23 |
+| APR/USDT:USDT | +9.37% | $1,510,075.72 |
+| WLD/USDT:USDT | +6.00% | $193,853,986.49 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AGT/USDT:USDT | below_1h_threshold | +2.24% | +2.60% |
-| BTW/USDT:USDT | below_1h_threshold | +1.27% | +1.63% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.96% | +1.32% |
-| ARB/USDT:USDT | below_1h_threshold | +0.77% | +1.13% |
-| WLD/USDT:USDT | below_1h_threshold | +0.64% | +1.00% |
+| DNA/USDT:USDT | below_1h_threshold | +1.16% | +1.53% |
+| BTW/USDT:USDT | below_1h_threshold | +1.06% | +1.43% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.96% | +1.33% |
+| WLD/USDT:USDT | below_1h_threshold | +0.66% | +1.03% |
+| ARB/USDT:USDT | below_1h_threshold | +0.64% | +1.01% |
 
 ## 7. 次に見るべき不足
 
