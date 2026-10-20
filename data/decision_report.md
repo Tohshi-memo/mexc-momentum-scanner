@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-20T18:41:30.815304+00:00
+- generated_at: 2026-10-20T18:46:20.640147+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17077**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-20T18:41:18.787338+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.28% price=82549.3
+- 更新: 2026-10-20T18:46:08.367729+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.36% price=82481.8
 - Funnel: target 1084 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ICNT/USDT:USDT | +14.73% | $1,530,243.25 |
-| APR/USDT:USDT | +11.75% | $1,918,207.89 |
-| DOOD/USDT:USDT | +11.15% | $1,389,001.15 |
-| COMP/USDT:USDT | +5.07% | $2,474,119.18 |
-| PENGU/USDT:USDT | +4.54% | $5,318,189.03 |
+| ICNT/USDT:USDT | +15.02% | $1,567,074.41 |
+| DOOD/USDT:USDT | +13.86% | $1,393,662.98 |
+| APR/USDT:USDT | +11.28% | $1,923,935.23 |
+| COMP/USDT:USDT | +5.27% | $2,490,441.75 |
+| PENGU/USDT:USDT | +4.38% | $5,418,384.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ICNT/USDT:USDT | below_1h_threshold | +2.92% | +3.20% |
-| PYTH/USDT:USDT | below_1h_threshold | +2.13% | +2.41% |
-| APR/USDT:USDT | below_1h_threshold | +1.81% | +2.09% |
-| STRK/USDT:USDT | below_1h_threshold | +1.67% | +1.95% |
-| PENGU/USDT:USDT | below_1h_threshold | +1.47% | +1.75% |
+| ICNT/USDT:USDT | below_1h_threshold | +3.08% | +3.44% |
+| PENGU/USDT:USDT | below_1h_threshold | +1.30% | +1.66% |
+| WLFI/USDT:USDT | below_1h_threshold | +1.29% | +1.65% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +1.16% | +1.52% |
+| APR/USDT:USDT | below_1h_threshold | +1.13% | +1.49% |
 
 ## 7. 次に見るべき不足
 
