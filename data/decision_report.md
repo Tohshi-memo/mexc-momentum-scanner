@@ -1,28 +1,28 @@
 # Decision Report
 
-- generated_at: 2026-10-20T23:01:23.671364+00:00
+- generated_at: 2026-10-20T23:06:28.249095+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **17080**
+- closed shadow trades: **17081**
 
 ## 1. 今日の判断
 
-- 結論: **MARKET SHORTは実行候補。直近EV +1.99% / filled 20/20。**
-- 全期間 MARKET基準: n=17080, expectancy=+0.02%
-- 直近20件 MARKET基準: n=20, expectancy=+1.99%
+- 結論: **MARKET SHORTは実行候補。直近EV +1.65% / filled 20/20。**
+- 全期間 MARKET基準: n=17081, expectancy=+0.02%
+- 直近20件 MARKET基準: n=20, expectancy=+1.65%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
 ### 実行可能ランキング (現executorで正確に測れるもの)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | +1.99% | **+1.99%** |
+| MARKET | 20/20 | 100.0% | +1.65% | **+1.65%** |
 
 ### シャドウ上位 SHORT (まだ実行に直結しない候補を含む)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | +1.99% | **+1.99%** |
-| LIMIT_1PCT | 19/20 | 95.0% | +2.09% | **+1.98%** |
+| MARKET | 20/20 | 100.0% | +1.65% | **+1.65%** |
+| LIMIT_1PCT | 18/20 | 90.0% | +1.76% | **+1.58%** |
 | LIMIT_ATR | 14/20 | 70.0% | +1.01% | **+0.71%** |
 | LIMIT_3PCT | 12/20 | 60.0% | +1.09% | **+0.65%** |
 | LIMIT_BB3S | 5/13 | 38.5% | +1.46% | **+0.56%** |
@@ -35,7 +35,7 @@
 | LIMIT_10PCT_LONG | 2/20 | 10.0% | +5.11% | **+0.51%** |
 | LIMIT_9PCT_LONG | 2/20 | 10.0% | +4.55% | **+0.45%** |
 | LIMIT_FIB1618_LONG | 2/20 | 10.0% | +0.76% | **+0.08%** |
-| LIMIT_8PCT_LONG | 8/20 | 40.0% | -0.50% | **-0.20%** |
+| LIMIT_8PCT_LONG | 7/20 | 35.0% | -0.57% | **-0.20%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,344.00** / 初期 $100.00 (+1244.00%)
-- 確定: 6488件 (Win 1889 / Loss 2071 / Flat 2528) / skip 7153件
+- 確定: 6488件 (Win 1889 / Loss 2071 / Flat 2528) / skip 7154件
 - 成長率目線: 平均log +0.000400 / 幾何平均 +0.040% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_BB3S_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: AERO/USDT:USDT `LIMIT_BB3S_LONG` EXPIRED account +0.84% 残高後 $1,344.00
@@ -55,7 +55,7 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$280.10** / 初期 $100.00 (+180.10%)
-- 確定: 3818件 (Win 1050 / Loss 892 / Flat 1876) / skip 6673件
+- 確定: 3818件 (Win 1050 / Loss 892 / Flat 1876) / skip 6674件
 - 成長率目線: 平均log +0.000270 / 幾何平均 +0.027% per trade / maxDD +4.13%
 - 次の候補: `LIMIT_5PCT` (selected_by_robust_growth_score) / robust_score +0.0021 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: BR/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.35% 残高後 $280.10
@@ -65,13 +65,13 @@
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
 - 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5243件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000312 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000280 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-20T23:01:11.553735+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=83042.3
+- 更新: 2026-10-20T23:06:13.778588+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=82998.1
 - Funnel: target 1084 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ICNT/USDT:USDT | +22.72% | $3,337,323.56 |
-| DOOD/USDT:USDT | +18.20% | $1,636,677.20 |
-| SMCISTOCK/USDT:USDT | +15.82% | $1,139,372.28 |
-| IOST/USDT:USDT | +13.85% | $1,150,778.82 |
-| SPCXSTOCK/USDT:USDT | +8.81% | $75,023,948.59 |
+| ICNT/USDT:USDT | +22.24% | $3,343,892.32 |
+| DOOD/USDT:USDT | +17.32% | $1,640,276.25 |
+| SMCISTOCK/USDT:USDT | +16.75% | $1,151,901.88 |
+| IOST/USDT:USDT | +13.55% | $1,156,311.68 |
+| SPCXSTOCK/USDT:USDT | +8.64% | $76,466,562.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +2.99% | +3.01% |
-| SNXX/USDT:USDT | below_1h_threshold | +1.14% | +1.17% |
-| IRENSTOCK/USDT:USDT | below_1h_threshold | +0.94% | +0.96% |
-| SMCISTOCK/USDT:USDT | below_1h_threshold | +0.89% | +0.91% |
-| AAOISTOCK/USDT:USDT | below_1h_threshold | +0.76% | +0.78% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +2.99% | +3.06% |
+| GTC/USDT:USDT | below_1h_threshold | +1.25% | +1.33% |
+| A/USDT:USDT | below_1h_threshold | +1.25% | +1.33% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.14% | +1.22% |
+| IRENSTOCK/USDT:USDT | below_1h_threshold | +0.94% | +1.01% |
 
 ## 7. 次に見るべき不足
 
