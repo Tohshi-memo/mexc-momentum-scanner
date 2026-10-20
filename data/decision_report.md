@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-20T10:01:12.962407+00:00
+- generated_at: 2026-10-20T10:06:16.414406+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17054**
 
@@ -39,9 +39,9 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$121.48** / 初期 $100.00 (+21.48%)
-- 確定トレード: 246件 (TP 91 / SL 148 / EXP 7)
-- 最新: ZEREBRO/USDT:USDT SL_HIT PnL -4.00% 残高後 $121.48
+- 残高: **$121.36** / 初期 $100.00 (+21.36%)
+- 確定トレード: 247件 (TP 91 / SL 149 / EXP 7)
+- 最新: BAT/USDT:USDT SL_HIT PnL -3.97% 残高後 $121.36
 - 最新戦略メタ: tier=S, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-20T10:01:03.053195+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=81471.0
+- 更新: 2026-10-20T10:06:04.286713+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=81504.6
 - Funnel: target 1078 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JCT/USDT:USDT | +82.88% | $6,295,737.43 |
-| ALT/USDT:USDT | +19.00% | $1,719,907.95 |
-| PHA/USDT:USDT | +17.52% | $18,946,663.87 |
-| A/USDT:USDT | +11.69% | $23,217,507.54 |
-| BAT/USDT:USDT | +11.60% | $7,311,971.30 |
+| JCT/USDT:USDT | +82.42% | $6,696,388.38 |
+| ALT/USDT:USDT | +20.35% | $1,741,115.32 |
+| PHA/USDT:USDT | +17.89% | $19,009,117.09 |
+| BAT/USDT:USDT | +12.57% | $7,445,266.11 |
+| A/USDT:USDT | +11.86% | $23,217,922.47 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TIA/USDT:USDT | below_1h_threshold | +0.68% | +0.65% |
-| ALT/USDT:USDT | below_1h_threshold | +0.43% | +0.40% |
-| S/USDT:USDT | below_1h_threshold | +0.41% | +0.38% |
-| MSFTSTOCK/USDT:USDT | below_1h_threshold | +0.24% | +0.21% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.21% | +0.18% |
+| ALT/USDT:USDT | below_1h_threshold | +1.56% | +1.50% |
+| S/USDT:USDT | below_1h_threshold | +0.88% | +0.82% |
+| BAT/USDT:USDT | below_1h_threshold | +0.83% | +0.76% |
+| W/USDT:USDT | below_1h_threshold | +0.69% | +0.62% |
+| PHA/USDT:USDT | below_1h_threshold | +0.47% | +0.40% |
 
 ## 7. 次に見るべき不足
 
