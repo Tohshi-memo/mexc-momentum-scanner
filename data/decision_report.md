@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-20T19:41:25.352204+00:00
+- generated_at: 2026-10-20T19:46:36.969027+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17078**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-20T19:41:12.714798+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=82519.2
+- 更新: 2026-10-20T19:46:17.273734+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=82588.4
 - Funnel: target 1084 → liquid 162 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ICNT/USDT:USDT | +24.31% | $2,020,369.09 |
-| COMP/USDT:USDT | +8.54% | $2,669,338.85 |
-| DOOD/USDT:USDT | +7.88% | $1,497,646.00 |
-| APR/USDT:USDT | +7.77% | $1,903,165.44 |
-| PENGU/USDT:USDT | +5.67% | $5,803,334.91 |
+| ICNT/USDT:USDT | +22.60% | $2,112,964.34 |
+| COMP/USDT:USDT | +8.79% | $2,679,217.17 |
+| APR/USDT:USDT | +7.70% | $1,905,973.13 |
+| DOOD/USDT:USDT | +7.14% | $1,500,934.74 |
+| PENGU/USDT:USDT | +6.60% | $5,851,984.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| Q/USDT:USDT | below_1h_threshold | +2.28% | +2.26% |
-| BR/USDT:USDT | below_1h_threshold | +1.78% | +1.76% |
-| RAY/USDT:USDT | below_1h_threshold | +1.53% | +1.51% |
-| LIT/USDT:USDT | below_1h_threshold | +1.24% | +1.22% |
-| COMP/USDT:USDT | below_1h_threshold | +1.07% | +1.05% |
+| Q/USDT:USDT | below_1h_threshold | +2.58% | +2.47% |
+| BR/USDT:USDT | below_1h_threshold | +2.27% | +2.16% |
+| RAY/USDT:USDT | below_1h_threshold | +2.14% | +2.03% |
+| LIT/USDT:USDT | below_1h_threshold | +1.80% | +1.70% |
+| COMP/USDT:USDT | below_1h_threshold | +1.29% | +1.19% |
 
 ## 7. 次に見るべき不足
 
