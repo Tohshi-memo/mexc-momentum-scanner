@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-20T20:06:33.864255+00:00
+- generated_at: 2026-10-20T20:11:24.530041+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17078**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-20T20:06:21.336833+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=82594.6
+- 更新: 2026-10-20T20:11:12.288988+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=82629.5
 - Funnel: target 1084 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ICNT/USDT:USDT | +21.00% | $2,349,377.40 |
-| COMP/USDT:USDT | +8.17% | $2,786,017.01 |
-| DOOD/USDT:USDT | +6.90% | $1,515,359.95 |
-| RAY/USDT:USDT | +5.75% | $2,114,663.76 |
-| APR/USDT:USDT | +5.71% | $1,878,219.30 |
+| ICNT/USDT:USDT | +20.05% | $2,407,458.50 |
+| COMP/USDT:USDT | +7.60% | $2,788,270.13 |
+| DOOD/USDT:USDT | +6.76% | $1,516,349.43 |
+| APR/USDT:USDT | +6.27% | $1,882,283.57 |
+| BR/USDT:USDT | +5.86% | $44,273,731.16 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ICNT/USDT:USDT | below_1h_threshold | +3.07% | +3.03% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.86% | +1.82% |
-| AKE/USDT:USDT | below_1h_threshold | +1.15% | +1.11% |
-| PYTH/USDT:USDT | below_1h_threshold | +0.95% | +0.91% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.89% | +0.85% |
+| ICNT/USDT:USDT | below_1h_threshold | +2.11% | +2.03% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.86% | +1.77% |
+| PYTH/USDT:USDT | below_1h_threshold | +1.16% | +1.07% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.89% | +0.80% |
+| STX/USDT:USDT | below_1h_threshold | +0.75% | +0.67% |
 
 ## 7. 次に見るべき不足
 
