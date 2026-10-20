@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-20T00:56:19.067439+00:00
+- generated_at: 2026-10-20T01:01:17.537429+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17034**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-20T00:56:06.903591+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.36% price=81610.0
-- Funnel: target 1089 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-20T01:01:08.340144+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=81666.6
+- Funnel: target 1089 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PHA/USDT:USDT | +16.27% | $12,540,068.31 |
-| BTW/USDT:USDT | +13.23% | $29,723,327.90 |
-| SOXS/USDT:USDT | +9.51% | $3,529,435.24 |
-| APR/USDT:USDT | +9.44% | $1,511,693.95 |
-| WLD/USDT:USDT | +5.39% | $195,363,525.05 |
+| PHA/USDT:USDT | +17.79% | $12,579,004.22 |
+| BTW/USDT:USDT | +13.69% | $28,877,417.12 |
+| SOXS/USDT:USDT | +9.63% | $3,419,471.75 |
+| APR/USDT:USDT | +7.46% | $1,458,944.64 |
+| GRASS/USDT:USDT | +5.52% | $1,430,333.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DNA/USDT:USDT | below_1h_threshold | +1.72% | +2.08% |
-| BTW/USDT:USDT | below_1h_threshold | +1.38% | +1.74% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.96% | +1.31% |
-| ICNT/USDT:USDT | below_1h_threshold | +0.57% | +0.93% |
-| LIT/USDT:USDT | below_1h_threshold | +0.46% | +0.82% |
+| SOXS/USDT:USDT | below_1h_threshold | +3.40% | +3.44% |
+| FASTRETAILSTOCK/USDT:USDT | below_1h_threshold | +1.97% | +2.01% |
+| ENPHSTOCK/USDT:USDT | below_1h_threshold | +1.29% | +1.33% |
+| SQQQ/USDT:USDT | below_1h_threshold | +1.04% | +1.08% |
+| PHA/USDT:USDT | below_1h_threshold | +0.89% | +0.93% |
 
 ## 7. 次に見るべき不足
 
