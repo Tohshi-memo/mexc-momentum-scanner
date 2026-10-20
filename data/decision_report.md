@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-20T10:21:11.107650+00:00
+- generated_at: 2026-10-20T10:26:24.125400+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17055**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5213件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5214件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000274 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-20T10:21:01.985397+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.19% price=81605.6
+- 更新: 2026-10-20T10:26:11.089340+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=81509.5
 - Funnel: target 1078 → liquid 161 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.0 >= 65=1
+- Strict後reject: 4h RSI 78.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JCT/USDT:USDT | +84.72% | $7,829,916.85 |
-| ALT/USDT:USDT | +23.69% | $1,777,221.62 |
-| PHA/USDT:USDT | +16.85% | $19,104,132.32 |
-| BR/USDT:USDT | +16.55% | $47,972,441.95 |
-| BAT/USDT:USDT | +12.72% | $7,616,272.87 |
+| JCT/USDT:USDT | +85.18% | $8,057,556.71 |
+| ALT/USDT:USDT | +25.11% | $1,799,503.37 |
+| PHA/USDT:USDT | +17.57% | $19,125,132.57 |
+| BR/USDT:USDT | +15.21% | $48,101,700.20 |
+| BAT/USDT:USDT | +11.67% | $7,646,759.60 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ALT/USDT:USDT | below_1h_threshold | +4.38% | +4.19% |
-| BAT/USDT:USDT | below_1h_threshold | +0.96% | +0.77% |
-| CHIP/USDT:USDT | below_1h_threshold | +0.87% | +0.67% |
-| AKE/USDT:USDT | below_1h_threshold | +0.71% | +0.52% |
-| ZEC/USDT:USDT | below_1h_threshold | +0.50% | +0.31% |
+| BR/USDT:USDT | below_1h_threshold | +4.69% | +4.62% |
+| CHIP/USDT:USDT | below_1h_threshold | +0.55% | +0.47% |
+| JCT/USDT:USDT | below_1h_threshold | +0.44% | +0.37% |
+| APR/USDT:USDT | below_1h_threshold | +0.32% | +0.25% |
+| MSFTSTOCK/USDT:USDT | below_1h_threshold | +0.24% | +0.17% |
 
 ## 7. 次に見るべき不足
 
