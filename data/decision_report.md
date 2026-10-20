@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-20T16:11:24.537801+00:00
+- generated_at: 2026-10-20T16:16:21.366872+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17071**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-20T16:11:12.344167+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=82460.9
+- 更新: 2026-10-20T16:16:11.597516+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=82538.0
 - Funnel: target 1084 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| APR/USDT:USDT | +3.20% | $1,621,704.41 |
-| TIA/USDT:USDT | +1.49% | $40,695,661.16 |
-| Q/USDT:USDT | +1.46% | $6,967,266.35 |
-| CHIP/USDT:USDT | +1.41% | $1,537,972.32 |
-| AGT/USDT:USDT | +1.40% | $7,863,436.99 |
+| BR/USDT:USDT | +2.33% | $49,036,277.54 |
+| APR/USDT:USDT | +2.23% | $1,630,146.43 |
+| CHIP/USDT:USDT | +1.55% | $1,557,643.17 |
+| TIA/USDT:USDT | +1.25% | $42,128,004.67 |
+| ICNT/USDT:USDT | +1.24% | $1,223,503.09 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| APR/USDT:USDT | below_1h_threshold | +3.20% | +3.35% |
-| USOIL/USDT:USDT | below_1h_threshold | +1.62% | +1.77% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +1.62% | +1.77% |
-| TIA/USDT:USDT | below_1h_threshold | +1.49% | +1.64% |
-| CHIP/USDT:USDT | below_1h_threshold | +1.42% | +1.56% |
+| BR/USDT:USDT | below_1h_threshold | +2.33% | +2.39% |
+| APR/USDT:USDT | below_1h_threshold | +2.24% | +2.29% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.62% | +1.68% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +1.62% | +1.68% |
+| CHIP/USDT:USDT | below_1h_threshold | +1.55% | +1.60% |
 
 ## 7. 次に見るべき不足
 
