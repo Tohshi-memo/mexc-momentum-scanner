@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-20T11:51:31.179476+00:00
+- generated_at: 2026-10-20T11:56:18.985297+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17059**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-20T11:51:16.212379+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=81453.5
+- 更新: 2026-10-20T11:56:07.204013+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=81471.3
 - Funnel: target 1078 → liquid 160 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JCT/USDT:USDT | +104.90% | $12,337,241.66 |
-| ALT/USDT:USDT | +21.40% | $2,245,709.85 |
-| APR/USDT:USDT | +16.80% | $1,026,947.24 |
-| PHA/USDT:USDT | +15.82% | $19,738,106.25 |
-| SOXS/USDT:USDT | +12.32% | $3,946,333.26 |
+| JCT/USDT:USDT | +104.54% | $12,664,502.10 |
+| ALT/USDT:USDT | +21.70% | $2,258,106.58 |
+| APR/USDT:USDT | +16.83% | $1,030,014.58 |
+| PHA/USDT:USDT | +16.02% | $19,744,383.08 |
+| SOXS/USDT:USDT | +12.02% | $3,950,615.63 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JCT/USDT:USDT | below_1h_threshold | +2.56% | +2.64% |
-| JUP/USDT:USDT | below_1h_threshold | +2.42% | +2.50% |
-| APR/USDT:USDT | below_1h_threshold | +2.20% | +2.28% |
-| JTO/USDT:USDT | below_1h_threshold | +1.25% | +1.33% |
-| TIA/USDT:USDT | below_1h_threshold | +0.83% | +0.91% |
+| JCT/USDT:USDT | below_1h_threshold | +3.77% | +3.83% |
+| APR/USDT:USDT | below_1h_threshold | +2.13% | +2.19% |
+| JUP/USDT:USDT | below_1h_threshold | +2.05% | +2.11% |
+| TIA/USDT:USDT | below_1h_threshold | +1.45% | +1.51% |
+| JTO/USDT:USDT | below_1h_threshold | +1.21% | +1.27% |
 
 ## 7. 次に見るべき不足
 
