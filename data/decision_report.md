@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-20T01:06:24.510328+00:00
+- generated_at: 2026-10-20T01:11:25.455609+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17034**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-20T01:06:12.389064+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.18% price=81554.4
+- 更新: 2026-10-20T01:11:13.057199+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.46% price=81322.5
 - Funnel: target 1089 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PHA/USDT:USDT | +18.05% | $12,637,160.35 |
-| BTW/USDT:USDT | +13.49% | $28,940,039.33 |
-| SOXS/USDT:USDT | +9.83% | $3,425,242.68 |
-| APR/USDT:USDT | +8.15% | $1,465,006.73 |
-| BAT/USDT:USDT | +5.71% | $6,345,364.12 |
+| PHA/USDT:USDT | +16.27% | $12,669,414.46 |
+| BTW/USDT:USDT | +13.16% | $28,982,629.89 |
+| SOXS/USDT:USDT | +10.22% | $3,430,842.66 |
+| APR/USDT:USDT | +9.02% | $1,466,343.08 |
+| BAT/USDT:USDT | +5.31% | $6,385,719.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +3.40% | +3.58% |
-| FASTRETAILSTOCK/USDT:USDT | below_1h_threshold | +1.97% | +2.14% |
-| SQQQ/USDT:USDT | below_1h_threshold | +1.04% | +1.22% |
-| PHA/USDT:USDT | below_1h_threshold | +0.59% | +0.77% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.34% | +0.51% |
+| SOXS/USDT:USDT | below_1h_threshold | +3.40% | +3.86% |
+| FASTRETAILSTOCK/USDT:USDT | below_1h_threshold | +1.97% | +2.43% |
+| ENPHSTOCK/USDT:USDT | below_1h_threshold | +1.29% | +1.75% |
+| SQQQ/USDT:USDT | below_1h_threshold | +1.04% | +1.50% |
+| BR/USDT:USDT | below_1h_threshold | +0.98% | +1.44% |
 
 ## 7. 次に見るべき不足
 
