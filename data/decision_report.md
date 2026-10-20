@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-20T04:51:19.372259+00:00
+- generated_at: 2026-10-20T04:56:12.624863+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17040**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-20T04:51:07.143482+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=82034.3
+- 更新: 2026-10-20T04:56:03.376765+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=82078.2
 - Funnel: target 1090 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PHA/USDT:USDT | +20.26% | $15,074,125.01 |
-| LONGXIA/USDT:USDT | +18.29% | $1,490,268.63 |
-| A/USDT:USDT | +10.94% | $23,153,286.00 |
-| APR/USDT:USDT | +9.90% | $1,301,046.29 |
-| SOXS/USDT:USDT | +9.81% | $4,014,925.78 |
+| PHA/USDT:USDT | +21.52% | $15,144,996.14 |
+| LONGXIA/USDT:USDT | +19.71% | $1,525,198.07 |
+| A/USDT:USDT | +11.16% | $23,154,879.00 |
+| APR/USDT:USDT | +9.90% | $1,303,815.00 |
+| SOXS/USDT:USDT | +9.20% | $4,021,716.53 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| APR/USDT:USDT | below_1h_threshold | +2.12% | +2.20% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +1.61% | +1.69% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.22% | +1.30% |
-| LIT/USDT:USDT | below_1h_threshold | +1.18% | +1.26% |
-| SQQQ/USDT:USDT | below_1h_threshold | +0.51% | +0.59% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +2.84% | +2.86% |
+| APR/USDT:USDT | below_1h_threshold | +2.12% | +2.15% |
+| LIT/USDT:USDT | below_1h_threshold | +1.41% | +1.44% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.22% | +1.24% |
+| JUP/USDT:USDT | below_1h_threshold | +0.54% | +0.57% |
 
 ## 7. 次に見るべき不足
 
