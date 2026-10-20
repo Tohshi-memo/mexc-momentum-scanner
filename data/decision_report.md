@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-20T16:06:28.110092+00:00
+- generated_at: 2026-10-20T16:11:24.537801+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17071**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-20T16:06:15.604571+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=82598.0
-- Funnel: target 1084 → liquid 159 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-20T16:11:12.344167+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.15% price=82460.9
+- Funnel: target 1084 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| APR/USDT:USDT | +2.98% | $1,614,318.04 |
-| Q/USDT:USDT | +1.35% | $6,938,680.70 |
-| AGT/USDT:USDT | +1.09% | $7,847,544.57 |
-| CHIP/USDT:USDT | +1.01% | $1,535,831.24 |
-| TIA/USDT:USDT | +0.97% | $40,473,498.75 |
+| APR/USDT:USDT | +3.20% | $1,621,704.41 |
+| TIA/USDT:USDT | +1.49% | $40,695,661.16 |
+| Q/USDT:USDT | +1.46% | $6,967,266.35 |
+| CHIP/USDT:USDT | +1.41% | $1,537,972.32 |
+| AGT/USDT:USDT | +1.40% | $7,863,436.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| APR/USDT:USDT | below_1h_threshold | +2.98% | +2.96% |
-| Q/USDT:USDT | below_1h_threshold | +1.34% | +1.32% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.13% | +1.11% |
-| AGT/USDT:USDT | below_1h_threshold | +1.10% | +1.08% |
-| CHIP/USDT:USDT | below_1h_threshold | +1.01% | +0.99% |
+| APR/USDT:USDT | below_1h_threshold | +3.20% | +3.35% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.62% | +1.77% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +1.62% | +1.77% |
+| TIA/USDT:USDT | below_1h_threshold | +1.49% | +1.64% |
+| CHIP/USDT:USDT | below_1h_threshold | +1.42% | +1.56% |
 
 ## 7. 次に見るべき不足
 
