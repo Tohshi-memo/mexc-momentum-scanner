@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-20T13:46:23.977416+00:00
+- generated_at: 2026-10-20T13:51:15.922419+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17065**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5223件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5224件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000346 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-20T13:46:11.898155+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.19% price=81731.2
-- Funnel: target 1084 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-20T13:51:06.336991+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.38% price=81888.9
+- Funnel: target 1084 → liquid 162 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 92.5 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JCT/USDT:USDT | +126.98% | $19,136,848.36 |
-| ALT/USDT:USDT | +23.51% | $2,439,544.29 |
-| APR/USDT:USDT | +17.56% | $1,387,768.70 |
-| PHA/USDT:USDT | +14.40% | $20,094,357.65 |
-| SOXS/USDT:USDT | +13.18% | $3,996,567.94 |
+| JCT/USDT:USDT | +130.91% | $19,485,653.39 |
+| ALT/USDT:USDT | +24.79% | $2,444,997.20 |
+| APR/USDT:USDT | +17.75% | $1,392,732.18 |
+| PHA/USDT:USDT | +14.76% | $20,106,733.80 |
+| SOXS/USDT:USDT | +12.22% | $4,019,336.09 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JCT/USDT:USDT | below_relative_strength | +5.17% | +4.98% |
-| GRASS/USDT:USDT | below_1h_threshold | +2.55% | +2.36% |
-| USELESS/USDT:USDT | below_1h_threshold | +2.55% | +2.36% |
-| AERO/USDT:USDT | below_1h_threshold | +1.82% | +1.63% |
-| BR/USDT:USDT | below_1h_threshold | +1.32% | +1.13% |
+| USELESS/USDT:USDT | below_1h_threshold | +3.50% | +3.11% |
+| GRASS/USDT:USDT | below_1h_threshold | +2.27% | +1.88% |
+| CHIP/USDT:USDT | below_1h_threshold | +1.89% | +1.51% |
+| INJ/USDT:USDT | below_1h_threshold | +1.80% | +1.42% |
+| AERO/USDT:USDT | below_1h_threshold | +1.63% | +1.25% |
 
 ## 7. 次に見るべき不足
 
