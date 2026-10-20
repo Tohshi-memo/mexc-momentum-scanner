@@ -4,7 +4,7 @@
   "initial_capital": 100.0,
   "balance": 1281.876585451181,
   "started_at": "2026-05-06T08:22:19.867267+00:00",
-  "updated_at": "2026-10-20T00:36:10.613398+00:00",
+  "updated_at": "2026-10-20T00:41:12.579381+00:00",
   "high_watermark": 1362.974121021774,
   "max_drawdown_pct": 8.457719753190009,
   "loss_streak": 0,
@@ -310737,6 +310737,54 @@
         "max_drawdown_pct": 20.14657014912593,
         "max_loss_streak": 13
       }
+    },
+    {
+      "key": "AVA/USDT:USDT|2026-10-19T16:36:13.212545+00:00",
+      "symbol": "AVA/USDT:USDT",
+      "detected_at": "2026-10-19T16:36:13.212545+00:00",
+      "closed_at": "2026-10-20T00:40:38.039316+00:00",
+      "strategy": "LIMIT_FIB1272",
+      "direction": "short",
+      "outcome": "EXPIRED",
+      "filled": false,
+      "pnl_pct": 0.0,
+      "sl_pct": 4.000000000000009,
+      "risk_pct": 0.5,
+      "account_return_pct": 0.0,
+      "log_return": 0.0,
+      "pnl_usdt": 0.0,
+      "balance_before": 1281.876585451181,
+      "balance_after": 1281.876585451181,
+      "drawdown_after_pct": 5.9500422142862845,
+      "selector_reason": "selected_by_recent_avg_log_return",
+      "selector_recent": {
+        "strategy": "LIMIT_FIB1272",
+        "direction": "short",
+        "total": 50,
+        "filled": 15,
+        "fill_rate": 0.3,
+        "avg_pnl_pct": 1.4482410725989974,
+        "effective_ev_pct": 0.4344723217796992,
+        "avg_log_return": 0.0005750713645572193,
+        "geometric_return_pct": 0.057523674979553796,
+        "avg_account_return_pct": 0.05784327514409317,
+        "max_drawdown_pct": 0.5729023723502034,
+        "max_loss_streak": 2
+      },
+      "selector_all": {
+        "strategy": "LIMIT_FIB1272",
+        "direction": "short",
+        "total": 16968,
+        "filled": 5443,
+        "fill_rate": 0.32078029231494576,
+        "avg_pnl_pct": 0.36910565030235737,
+        "effective_ev_pct": 0.11840181839908834,
+        "avg_log_return": 0.00014687543598795928,
+        "geometric_return_pct": 0.014688622271297191,
+        "avg_account_return_pct": 0.01497082239418687,
+        "max_drawdown_pct": 20.14657014912593,
+        "max_loss_streak": 13
+      }
     }
   ],
   "skipped": [
@@ -377480,6 +377528,7 @@
     "AVA/USDT:USDT|2026-10-19T04:46:22.043971+00:00",
     "AVA/USDT:USDT|2026-10-19T11:36:13.318282+00:00",
     "AVA/USDT:USDT|2026-10-19T15:11:16.944548+00:00",
+    "AVA/USDT:USDT|2026-10-19T16:36:13.212545+00:00",
     "AVAAI/USDT:USDT|2026-07-18T16:41:16.520233+00:00",
     "AVAAI/USDT:USDT|2026-08-13T10:26:19.215594+00:00",
     "AVAAI/USDT:USDT|2026-08-13T12:21:17.333692+00:00",
@@ -389763,7 +389812,7 @@
     "strategy": "LIMIT_BB3S_LONG",
     "direction": "long",
     "reason": "selected_by_recent_avg_log_return",
-    "history_count": 17031,
+    "history_count": 17032,
     "recent_count": 50,
     "recent": {
       "strategy": "LIMIT_BB3S_LONG",
@@ -389814,14 +389863,14 @@
         "all": {
           "strategy": "LIMIT_10PCT_LONG",
           "direction": "long",
-          "total": 16833,
+          "total": 16834,
           "filled": 1572,
-          "fill_rate": 0.09338798788094814,
+          "fill_rate": 0.09338244029939409,
           "avg_pnl_pct": 2.259174917576685,
-          "effective_ev_pct": 0.21097979982359347,
-          "avg_log_return": 0.0002624378420184332,
-          "geometric_return_pct": 0.02624722818416192,
-          "avg_account_return_pct": 0.0264294795713904,
+          "effective_ev_pct": 0.21096726686649336,
+          "avg_log_return": 0.0002624222522689964,
+          "geometric_return_pct": 0.026245668800051192,
+          "avg_account_return_pct": 0.026427909565475496,
           "max_drawdown_pct": 4.145517281366913,
           "max_loss_streak": 8
         }
@@ -389829,12 +389878,12 @@
     ]
   },
   "summary": {
-    "trade_count": 6470,
+    "trade_count": 6471,
     "wins": 1878,
     "losses": 2065,
-    "flat": 2527,
-    "avg_log_return": 0.00039426741571247433,
-    "geometric_return_pct": 0.03943451493255701,
+    "flat": 2528,
+    "avg_log_return": 0.00039420648735275985,
+    "geometric_return_pct": 0.0394284196940875,
     "return_pct": 1181.876585451181
   },
   "config": {
