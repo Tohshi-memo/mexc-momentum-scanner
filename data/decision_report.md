@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-20T17:11:31.951254+00:00
+- generated_at: 2026-10-20T17:16:33.510605+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17073**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-20T17:11:19.554014+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=82776.6
+- 更新: 2026-10-20T17:16:20.985859+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=82772.4
 - Funnel: target 1084 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DOOD/USDT:USDT | +19.98% | $1,106,091.76 |
-| COMP/USDT:USDT | +17.25% | $1,424,964.51 |
-| BR/USDT:USDT | +4.66% | $47,921,851.66 |
-| APR/USDT:USDT | +4.10% | $1,738,279.39 |
-| APT/USDT:USDT | +3.03% | $9,262,969.37 |
+| DOOD/USDT:USDT | +20.12% | $1,124,965.49 |
+| COMP/USDT:USDT | +16.93% | $1,510,851.59 |
+| BR/USDT:USDT | +3.92% | $48,008,912.17 |
+| APR/USDT:USDT | +3.91% | $1,741,978.15 |
+| RAY/USDT:USDT | +3.53% | $1,755,759.33 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| COMP/USDT:USDT | below_1h_threshold | +4.56% | +4.52% |
-| DOOD/USDT:USDT | below_1h_threshold | +4.34% | +4.30% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +2.32% | +2.28% |
-| SOXS/USDT:USDT | below_1h_threshold | +2.15% | +2.11% |
-| Q/USDT:USDT | below_1h_threshold | +1.20% | +1.16% |
+| COMP/USDT:USDT | below_1h_threshold | +4.41% | +4.38% |
+| DOOD/USDT:USDT | below_1h_threshold | +4.34% | +4.31% |
+| JCT/USDT:USDT | below_1h_threshold | +2.53% | +2.50% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +2.32% | +2.29% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.15% | +2.12% |
 
 ## 7. 次に見るべき不足
 
