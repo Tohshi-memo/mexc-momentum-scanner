@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-20T01:21:10.978236+00:00
+- generated_at: 2026-10-20T01:26:26.072672+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17034**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5193件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5194件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000245 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-20T01:21:02.546902+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.40% price=81376.8
-- Funnel: target 1089 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-20T01:26:11.418459+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.31% price=81444.8
+- Funnel: target 1089 → liquid 164 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PHA/USDT:USDT | +15.94% | $12,760,099.95 |
-| BTW/USDT:USDT | +13.53% | $29,057,830.91 |
-| SOXS/USDT:USDT | +10.15% | $3,447,790.36 |
-| APR/USDT:USDT | +9.06% | $1,470,951.13 |
-| BR/USDT:USDT | +6.22% | $34,250,971.30 |
+| PHA/USDT:USDT | +17.20% | $12,823,141.49 |
+| BTW/USDT:USDT | +12.94% | $29,088,583.43 |
+| APR/USDT:USDT | +10.70% | $1,472,672.69 |
+| SOXS/USDT:USDT | +10.22% | $3,450,159.67 |
+| BR/USDT:USDT | +6.50% | $34,334,855.89 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +3.40% | +3.79% |
-| BR/USDT:USDT | below_1h_threshold | +2.17% | +2.57% |
-| FASTRETAILSTOCK/USDT:USDT | below_1h_threshold | +1.97% | +2.36% |
-| ENPHSTOCK/USDT:USDT | below_1h_threshold | +1.29% | +1.69% |
-| SQQQ/USDT:USDT | below_1h_threshold | +1.04% | +1.44% |
+| SOXS/USDT:USDT | below_1h_threshold | +3.40% | +3.71% |
+| BR/USDT:USDT | below_1h_threshold | +2.60% | +2.91% |
+| APR/USDT:USDT | below_1h_threshold | +2.14% | +2.46% |
+| FASTRETAILSTOCK/USDT:USDT | below_1h_threshold | +1.97% | +2.28% |
+| ENPHSTOCK/USDT:USDT | below_1h_threshold | +1.29% | +1.61% |
 
 ## 7. 次に見るべき不足
 
