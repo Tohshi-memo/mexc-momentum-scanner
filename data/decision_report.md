@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-10-20T13:36:16.904894+00:00
+- generated_at: 2026-10-20T13:41:17.677048+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **17064**
+- closed shadow trades: **17065**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=17064, expectancy=+0.02%
+- 全期間 MARKET基準: n=17065, expectancy=+0.02%
 - 直近20件 MARKET基準: n=20, expectancy=-0.57%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -46,32 +46,32 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$1,337.54** / 初期 $100.00 (+1237.54%)
-- 確定: 6484件 (Win 1887 / Loss 2069 / Flat 2528) / skip 7141件
-- 成長率目線: 平均log +0.000400 / 幾何平均 +0.040% per trade / maxDD +8.46%
+- 残高: **$1,330.85** / 初期 $100.00 (+1230.85%)
+- 確定: 6485件 (Win 1887 / Loss 2070 / Flat 2528) / skip 7141件
+- 成長率目線: 平均log +0.000399 / 幾何平均 +0.040% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_BB3S_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: APR/USDT:USDT `LIMIT_BB3S_LONG` SL_HIT account -0.50% 残高後 $1,337.54
+- 最新: APR/USDT:USDT `LIMIT_BB3S_LONG` SL_HIT account -0.50% 残高後 $1,330.85
 
 ## 4. Robust Adaptive DryRun ($100)
 
-- 残高: **$284.05** / 初期 $100.00 (+184.05%)
-- 確定: 3812件 (Win 1050 / Loss 888 / Flat 1874) / skip 6663件
-- 成長率目線: 平均log +0.000274 / 幾何平均 +0.027% per trade / maxDD +4.13%
-- 次の候補: `LIMIT_2PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0877 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: APR/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.35% 残高後 $284.05
+- 残高: **$283.06** / 初期 $100.00 (+183.06%)
+- 確定: 3813件 (Win 1050 / Loss 889 / Flat 1874) / skip 6663件
+- 成長率目線: 平均log +0.000273 / 幾何平均 +0.027% per trade / maxDD +4.13%
+- 次の候補: `LIMIT_2PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0806 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 最新: APR/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.35% 残高後 $283.06
 
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
 - 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5223件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000369 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000346 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-20T13:36:07.603546+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.25% price=81374.2
+- 更新: 2026-10-20T13:41:07.303689+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=81612.8
 - Funnel: target 1084 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JCT/USDT:USDT | +114.30% | $18,523,660.61 |
-| ALT/USDT:USDT | +23.53% | $2,413,094.63 |
-| APR/USDT:USDT | +19.31% | $1,362,722.84 |
-| PHA/USDT:USDT | +14.68% | $20,053,711.53 |
-| SOXS/USDT:USDT | +12.20% | $3,955,335.84 |
+| JCT/USDT:USDT | +126.11% | $18,823,950.98 |
+| ALT/USDT:USDT | +23.68% | $2,431,324.57 |
+| APR/USDT:USDT | +16.57% | $1,382,350.01 |
+| PHA/USDT:USDT | +15.09% | $20,071,820.51 |
+| SOXS/USDT:USDT | +12.93% | $3,975,934.81 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| Q/USDT:USDT | below_1h_threshold | +1.12% | +1.37% |
-| BR/USDT:USDT | below_1h_threshold | +0.89% | +1.14% |
-| RLC/USDT:USDT | below_1h_threshold | +0.89% | +1.14% |
-| CHIP/USDT:USDT | below_1h_threshold | +0.32% | +0.57% |
-| USELESS/USDT:USDT | below_1h_threshold | +0.31% | +0.56% |
+| JCT/USDT:USDT | below_1h_threshold | +4.88% | +4.84% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.95% | +1.90% |
+| GRASS/USDT:USDT | below_1h_threshold | +1.57% | +1.53% |
+| CHIP/USDT:USDT | below_1h_threshold | +1.27% | +1.22% |
+| RLC/USDT:USDT | below_1h_threshold | +1.15% | +1.10% |
 
 ## 7. 次に見るべき不足
 
