@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-20T03:31:24.415125+00:00
+- generated_at: 2026-10-20T03:36:16.951527+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17037**
 
@@ -70,32 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-20T03:31:09.539049+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=81830.1
-- Funnel: target 1089 → liquid 163 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.2 >= 65=1
+- 更新: 2026-10-20T03:36:05.280031+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.25% price=81964.5
+- Funnel: target 1089 → liquid 163 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PHA/USDT:USDT | +24.59% | $13,945,942.85 |
-| A/USDT:USDT | +11.58% | $23,125,274.53 |
-| LONGXIA/USDT:USDT | +10.92% | $1,312,620.29 |
-| UNITREE/USDT:USDT | +9.59% | $2,564,355.96 |
-| BTW/USDT:USDT | +8.50% | $29,183,295.86 |
+| PHA/USDT:USDT | +22.84% | $14,099,953.20 |
+| LONGXIA/USDT:USDT | +12.14% | $1,323,869.38 |
+| A/USDT:USDT | +11.33% | $23,127,771.85 |
+| UNITREE/USDT:USDT | +9.54% | $2,567,156.93 |
+| BTW/USDT:USDT | +9.32% | $29,221,811.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UNITREE/USDT:USDT | below_1h_threshold | +4.80% | +4.72% |
-| BAT/USDT:USDT | below_1h_threshold | +0.85% | +0.77% |
-| APE/USDT:USDT | below_1h_threshold | +0.68% | +0.60% |
-| AGT/USDT:USDT | below_1h_threshold | +0.65% | +0.57% |
-| XMR/USDT:USDT | below_1h_threshold | +0.42% | +0.34% |
+| UNITREE/USDT:USDT | below_1h_threshold | +4.80% | +4.56% |
+| PHA/USDT:USDT | below_1h_threshold | +4.17% | +3.93% |
+| AGT/USDT:USDT | below_1h_threshold | +1.16% | +0.91% |
+| APE/USDT:USDT | below_1h_threshold | +1.03% | +0.78% |
+| JTO/USDT:USDT | below_1h_threshold | +1.02% | +0.77% |
 
 ## 7. 次に見るべき不足
 
