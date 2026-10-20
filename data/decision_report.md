@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-20T20:56:23.270272+00:00
+- generated_at: 2026-10-20T21:01:23.412373+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17078**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-20T20:56:11.190323+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.23% price=82755.0
-- Funnel: target 1084 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-20T21:01:13.134443+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=82809.2
+- Funnel: target 1084 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ICNT/USDT:USDT | +16.80% | $2,902,539.73 |
-| COMP/USDT:USDT | +7.73% | $2,858,747.99 |
-| DOOD/USDT:USDT | +7.60% | $1,544,433.70 |
-| LIT/USDT:USDT | +6.16% | $4,980,256.02 |
-| PUMPFUN/USDT:USDT | +6.11% | $26,825,960.94 |
+| ICNT/USDT:USDT | +16.80% | $2,899,783.22 |
+| COMP/USDT:USDT | +8.05% | $2,843,066.50 |
+| DOOD/USDT:USDT | +6.58% | $1,544,857.51 |
+| PUMPFUN/USDT:USDT | +6.58% | $26,847,075.85 |
+| LIT/USDT:USDT | +6.02% | $4,977,131.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIL/USDT:USDT | below_1h_threshold | +3.30% | +3.07% |
-| LIT/USDT:USDT | below_1h_threshold | +2.88% | +2.65% |
-| ZEC/USDT:USDT | below_1h_threshold | +2.70% | +2.46% |
-| ENA/USDT:USDT | below_1h_threshold | +2.16% | +1.92% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +2.16% | +1.92% |
+| KORU/USDT:USDT | below_1h_threshold | +4.50% | +4.50% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +4.10% | +4.10% |
+| CRWVSTOCK/USDT:USDT | below_1h_threshold | +3.59% | +3.59% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.33% | +3.33% |
+| IRENSTOCK/USDT:USDT | below_1h_threshold | +3.00% | +3.00% |
 
 ## 7. 次に見るべき不足
 
