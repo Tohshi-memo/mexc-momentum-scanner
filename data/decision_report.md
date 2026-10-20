@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-20T10:46:30.902548+00:00
+- generated_at: 2026-10-20T10:51:24.797142+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17055**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5216件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5217件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000274 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-20T10:46:15.115643+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=81479.5
-- Funnel: target 1078 → liquid 161 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.9 >= 65=1, 4h RSI 90.1 >= 65=1
+- 更新: 2026-10-20T10:51:09.543591+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=81514.3
+- Funnel: target 1078 → liquid 161 → pre 50 → checked 50 → surge 4 → strict 2
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 90.3 >= 65=1, 4h RSI 79.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JCT/USDT:USDT | +98.67% | $9,474,118.06 |
-| ALT/USDT:USDT | +27.35% | $1,927,304.59 |
-| PHA/USDT:USDT | +19.33% | $19,309,419.40 |
-| BR/USDT:USDT | +14.36% | $48,721,348.13 |
-| A/USDT:USDT | +11.70% | $23,231,759.29 |
+| JCT/USDT:USDT | +99.84% | $9,728,280.01 |
+| ALT/USDT:USDT | +28.19% | $1,945,029.89 |
+| PHA/USDT:USDT | +20.22% | $19,377,690.52 |
+| APR/USDT:USDT | +13.52% | $1,057,397.12 |
+| BR/USDT:USDT | +11.77% | $49,036,485.05 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BR/USDT:USDT | below_1h_threshold | +3.81% | +3.77% |
-| APR/USDT:USDT | below_1h_threshold | +3.58% | +3.54% |
-| PHA/USDT:USDT | below_1h_threshold | +1.70% | +1.66% |
-| TIA/USDT:USDT | below_1h_threshold | +0.53% | +0.50% |
-| CHIP/USDT:USDT | below_1h_threshold | +0.50% | +0.46% |
+| PHA/USDT:USDT | below_1h_threshold | +2.45% | +2.37% |
+| BR/USDT:USDT | below_1h_threshold | +1.80% | +1.73% |
+| TIA/USDT:USDT | below_1h_threshold | +0.85% | +0.77% |
+| ZEC/USDT:USDT | below_1h_threshold | +0.64% | +0.57% |
+| APT/USDT:USDT | below_1h_threshold | +0.38% | +0.30% |
 
 ## 7. 次に見るべき不足
 
