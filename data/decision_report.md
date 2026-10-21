@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-21T06:56:38.680735+00:00
+- generated_at: 2026-10-21T07:01:21.932193+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17101**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-21T06:56:21.104530+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.18% price=82782.2
-- Funnel: target 1084 → liquid 168 → pre 50 → checked 50 → surge 3 → strict 2
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.1 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-21T07:01:09.787559+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=82747.0
+- Funnel: target 1084 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IOST/USDT:USDT | +39.42% | $3,572,017.11 |
-| DOOD/USDT:USDT | +32.86% | $2,886,997.60 |
-| ICNT/USDT:USDT | +25.20% | $5,123,917.12 |
-| BIRB/USDT:USDT | +24.95% | $1,108,450.89 |
-| CVX/USDT:USDT | +19.55% | $1,515,659.93 |
+| IOST/USDT:USDT | +40.03% | $3,614,217.26 |
+| DOOD/USDT:USDT | +30.11% | $2,904,289.34 |
+| BIRB/USDT:USDT | +26.47% | $1,108,017.34 |
+| ICNT/USDT:USDT | +26.15% | $5,096,668.02 |
+| CVX/USDT:USDT | +19.60% | $1,495,270.90 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NEAR/USDT:USDT | below_1h_threshold | +2.03% | +1.86% |
-| QNT/USDT:USDT | below_1h_threshold | +1.85% | +1.67% |
-| STRK/USDT:USDT | below_1h_threshold | +1.72% | +1.55% |
-| IOST/USDT:USDT | below_1h_threshold | +1.55% | +1.37% |
-| ZRO/USDT:USDT | below_1h_threshold | +1.55% | +1.37% |
+| JCT/USDT:USDT | below_1h_threshold | +1.70% | +1.71% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.55% | +0.56% |
+| QNT/USDT:USDT | below_1h_threshold | +0.40% | +0.41% |
+| PENGU/USDT:USDT | below_1h_threshold | +0.40% | +0.40% |
+| BIRB/USDT:USDT | below_1h_threshold | +0.39% | +0.39% |
 
 ## 7. 次に見るべき不足
 
