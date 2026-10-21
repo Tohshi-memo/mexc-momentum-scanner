@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-21T08:11:19.823931+00:00
+- generated_at: 2026-10-21T08:16:13.575880+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17108**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-21T08:11:07.814438+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=83110.7
-- Funnel: target 1084 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-21T08:16:04.663165+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=83113.0
+- Funnel: target 1084 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DOOD/USDT:USDT | +34.73% | $3,171,379.35 |
-| IOST/USDT:USDT | +31.89% | $4,007,152.59 |
-| ICNT/USDT:USDT | +23.19% | $5,287,319.96 |
-| BIRB/USDT:USDT | +20.26% | $1,420,628.95 |
-| CVX/USDT:USDT | +18.73% | $1,587,878.67 |
+| IOST/USDT:USDT | +33.99% | $4,040,514.10 |
+| DOOD/USDT:USDT | +33.42% | $3,202,045.53 |
+| ICNT/USDT:USDT | +23.13% | $5,293,084.06 |
+| BIRB/USDT:USDT | +19.26% | $1,426,399.38 |
+| CVX/USDT:USDT | +18.59% | $1,590,123.76 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ICNT/USDT:USDT | below_1h_threshold | +1.86% | +1.87% |
+| BTW/USDT:USDT | below_1h_threshold | +2.60% | +2.61% |
+| ICNT/USDT:USDT | below_1h_threshold | +1.81% | +1.82% |
 | SNXX/USDT:USDT | below_1h_threshold | +1.51% | +1.52% |
 | KORU/USDT:USDT | below_1h_threshold | +1.42% | +1.42% |
-| BTW/USDT:USDT | below_1h_threshold | +1.35% | +1.36% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.08% | +1.09% |
+| ZKSYNC/USDT:USDT | below_1h_threshold | +1.21% | +1.22% |
 
 ## 7. 次に見るべき不足
 
