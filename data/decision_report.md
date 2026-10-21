@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-21T00:06:12.137995+00:00
+- generated_at: 2026-10-21T00:11:18.437707+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17082**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5243件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5244件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000222 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-21T00:06:02.619226+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=82960.0
-- Funnel: target 1084 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-21T00:11:07.658216+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=82959.0
+- Funnel: target 1084 → liquid 166 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ICNT/USDT:USDT | +22.66% | $3,671,304.37 |
-| SMCISTOCK/USDT:USDT | +16.32% | $1,245,373.23 |
-| DOOD/USDT:USDT | +14.51% | $1,702,635.81 |
-| IOST/USDT:USDT | +11.80% | $1,274,713.88 |
-| BTW/USDT:USDT | +9.33% | $26,626,454.67 |
+| ICNT/USDT:USDT | +22.07% | $3,682,153.48 |
+| SMCISTOCK/USDT:USDT | +16.94% | $1,261,682.43 |
+| DOOD/USDT:USDT | +16.10% | $1,707,061.20 |
+| IOST/USDT:USDT | +12.51% | $1,281,340.77 |
+| PUMPFUN/USDT:USDT | +8.75% | $23,992,300.09 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ALGO/USDT:USDT | below_1h_threshold | +0.96% | +0.99% |
+| DOOD/USDT:USDT | below_1h_threshold | +1.39% | +1.42% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +0.90% | +0.94% |
+| BCH/USDT:USDT | below_1h_threshold | +0.81% | +0.84% |
 | SMCISTOCK/USDT:USDT | below_1h_threshold | +0.67% | +0.70% |
-| ICNT/USDT:USDT | below_1h_threshold | +0.63% | +0.66% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.49% | +0.52% |
-| WLD/USDT:USDT | below_1h_threshold | +0.43% | +0.46% |
+| W/USDT:USDT | below_1h_threshold | +0.61% | +0.64% |
 
 ## 7. 次に見るべき不足
 
