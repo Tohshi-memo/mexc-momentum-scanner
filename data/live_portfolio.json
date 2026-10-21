@@ -1,6 +1,6 @@
 {
   "initial_capital": 100.0,
-  "balance": 121.598587750434,
+  "balance": 121.47698916268357,
   "started_at": "2026-06-13T15:13:45.269640+00:00",
   "trades": [
     {
@@ -5058,6 +5058,28 @@
       "pnl_usdt": 0.2427117519968737,
       "balance_before": 121.35587599843713,
       "balance_after": 121.598587750434,
+      "strategy_tier": "S",
+      "strategy_direction": "short",
+      "strategy_entry_style": "MARKET",
+      "strategy_boosters": [
+        "daily_RED",
+        "1h_green=3",
+        "fundamental_HIGH"
+      ],
+      "strategy_score": 0.0
+    },
+    {
+      "symbol": "ICNT/USDT:USDT",
+      "detected_at": "2026-10-20T19:36:13.444246+00:00",
+      "closed_at": "2026-10-21T03:25:37.926666+00:00",
+      "outcome": "SL_HIT",
+      "pnl_pct": -4.000000000000001,
+      "sl_pct": 4.000000000000001,
+      "risk_pct": 0.1,
+      "notional_usdt": 3.03996469376085,
+      "pnl_usdt": -0.12159858775043401,
+      "balance_before": 121.598587750434,
+      "balance_after": 121.47698916268357,
       "strategy_tier": "S",
       "strategy_direction": "short",
       "strategy_entry_style": "MARKET",
