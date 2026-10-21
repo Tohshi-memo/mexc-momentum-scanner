@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-21T01:46:24.218883+00:00
+- generated_at: 2026-10-21T01:51:26.121271+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17085**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5246件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5247件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000225 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-21T01:46:12.164420+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=82980.0
-- Funnel: target 1084 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-21T01:51:15.827263+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.21% price=83168.0
+- Funnel: target 1084 → liquid 168 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 94.9 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DOOD/USDT:USDT | +25.81% | $1,912,488.35 |
-| ICNT/USDT:USDT | +19.11% | $3,827,323.98 |
-| SMCISTOCK/USDT:USDT | +17.25% | $1,313,953.73 |
-| INJ/USDT:USDT | +9.24% | $52,891,409.25 |
-| SPCXSTOCK/USDT:USDT | +8.66% | $89,067,433.52 |
+| DOOD/USDT:USDT | +36.36% | $1,961,310.22 |
+| ICNT/USDT:USDT | +20.00% | $3,839,655.20 |
+| SMCISTOCK/USDT:USDT | +17.25% | $1,319,246.99 |
+| IOST/USDT:USDT | +11.11% | $1,411,718.04 |
+| SPCXSTOCK/USDT:USDT | +9.02% | $89,232,604.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| INJ/USDT:USDT | below_1h_threshold | +4.55% | +4.56% |
-| ARB/USDT:USDT | below_1h_threshold | +3.67% | +3.68% |
-| CT/USDT:USDT | below_1h_threshold | +3.09% | +3.10% |
-| DOOD/USDT:USDT | below_1h_threshold | +2.82% | +2.84% |
-| AKE/USDT:USDT | below_1h_threshold | +2.80% | +2.82% |
+| IOST/USDT:USDT | below_relative_strength | +5.00% | +4.79% |
+| ARB/USDT:USDT | below_1h_threshold | +4.42% | +4.20% |
+| INJ/USDT:USDT | below_1h_threshold | +3.71% | +3.50% |
+| AKE/USDT:USDT | below_1h_threshold | +2.64% | +2.43% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +2.38% | +2.16% |
 
 ## 7. 次に見るべき不足
 
