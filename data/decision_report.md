@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-21T01:56:45.206883+00:00
+- generated_at: 2026-10-21T02:01:21.473772+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17086**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-21T01:56:26.531849+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=83010.0
-- Funnel: target 1084 → liquid 168 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 95.4 >= 65=1, 4h RSI 87.6 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-21T02:01:09.105505+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=82964.8
+- Funnel: target 1084 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DOOD/USDT:USDT | +46.82% | $2,019,510.66 |
-| ICNT/USDT:USDT | +19.94% | $3,842,185.07 |
-| SMCISTOCK/USDT:USDT | +17.19% | $1,321,468.79 |
-| IOST/USDT:USDT | +15.50% | $1,421,586.59 |
-| SPCXSTOCK/USDT:USDT | +9.21% | $89,340,603.69 |
+| DOOD/USDT:USDT | +40.61% | $2,042,953.75 |
+| ICNT/USDT:USDT | +18.34% | $3,828,709.37 |
+| SMCISTOCK/USDT:USDT | +17.03% | $1,314,352.22 |
+| IOST/USDT:USDT | +13.32% | $1,428,473.96 |
+| BTW/USDT:USDT | +10.41% | $27,043,477.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| INJ/USDT:USDT | below_1h_threshold | +4.11% | +4.09% |
-| ARB/USDT:USDT | below_1h_threshold | +3.59% | +3.57% |
-| AKE/USDT:USDT | below_1h_threshold | +3.24% | +3.22% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +2.38% | +2.35% |
-| JCT/USDT:USDT | below_1h_threshold | +1.91% | +1.89% |
+| KORU/USDT:USDT | below_1h_threshold | +4.61% | +4.61% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.66% | +2.66% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +2.31% | +2.31% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.59% | +1.59% |
+| EWY/USDT:USDT | below_1h_threshold | +1.56% | +1.56% |
 
 ## 7. 次に見るべき不足
 
