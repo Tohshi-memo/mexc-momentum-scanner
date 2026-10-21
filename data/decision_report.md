@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-21T04:36:21.807848+00:00
+- generated_at: 2026-10-21T04:41:20.315371+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17094**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-21T04:36:09.424055+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=82804.8
+- 更新: 2026-10-21T04:41:07.739484+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=82744.0
 - Funnel: target 1084 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DOOD/USDT:USDT | +30.81% | $2,392,793.73 |
-| ICNT/USDT:USDT | +28.22% | $4,363,094.95 |
-| SMCISTOCK/USDT:USDT | +17.81% | $1,342,830.48 |
-| BTW/USDT:USDT | +12.24% | $27,110,744.70 |
-| AKE/USDT:USDT | +10.96% | $7,236,900.47 |
+| DOOD/USDT:USDT | +31.04% | $2,409,328.42 |
+| ICNT/USDT:USDT | +27.69% | $4,380,202.46 |
+| SMCISTOCK/USDT:USDT | +17.78% | $1,346,289.91 |
+| BTW/USDT:USDT | +12.63% | $27,130,263.01 |
+| AKE/USDT:USDT | +11.50% | $7,248,199.81 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +1.35% | +1.22% |
-| ICNT/USDT:USDT | below_1h_threshold | +1.26% | +1.13% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +1.24% | +1.11% |
-| PYTH/USDT:USDT | below_1h_threshold | +0.98% | +0.85% |
-| ENA/USDT:USDT | below_1h_threshold | +0.91% | +0.78% |
+| BTW/USDT:USDT | below_1h_threshold | +1.74% | +1.68% |
+| PYTH/USDT:USDT | below_1h_threshold | +1.71% | +1.66% |
+| W/USDT:USDT | below_1h_threshold | +0.86% | +0.80% |
+| ICNT/USDT:USDT | below_1h_threshold | +0.84% | +0.79% |
+| DNA/USDT:USDT | below_1h_threshold | +0.71% | +0.65% |
 
 ## 7. 次に見るべき不足
 
