@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-21T00:46:27.179010+00:00
+- generated_at: 2026-10-21T00:51:23.749164+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17082**
 
@@ -63,15 +63,15 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5244件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5245件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000222 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-21T00:46:14.684214+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.15% price=83113.0
+- 更新: 2026-10-21T00:51:11.327170+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=83108.5
 - Funnel: target 1084 → liquid 168 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ICNT/USDT:USDT | +21.59% | $3,737,689.58 |
-| SMCISTOCK/USDT:USDT | +17.13% | $1,280,402.78 |
-| DOOD/USDT:USDT | +13.39% | $1,770,437.14 |
-| BTW/USDT:USDT | +12.18% | $27,341,856.86 |
-| SPCXSTOCK/USDT:USDT | +9.27% | $87,568,208.91 |
+| ICNT/USDT:USDT | +20.88% | $3,747,850.18 |
+| SMCISTOCK/USDT:USDT | +17.03% | $1,280,870.16 |
+| DOOD/USDT:USDT | +14.14% | $1,772,680.63 |
+| BTW/USDT:USDT | +10.16% | $27,408,350.54 |
+| SPCXSTOCK/USDT:USDT | +9.15% | $87,837,289.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| USELESS/USDT:USDT | below_1h_threshold | +3.27% | +3.12% |
-| VVV/USDT:USDT | below_1h_threshold | +2.78% | +2.63% |
-| UNI/USDT:USDT | below_1h_threshold | +2.59% | +2.44% |
-| PONS/USDT:USDT | below_1h_threshold | +2.31% | +2.15% |
-| BTW/USDT:USDT | below_1h_threshold | +1.87% | +1.72% |
+| USELESS/USDT:USDT | below_1h_threshold | +3.13% | +2.98% |
+| UNI/USDT:USDT | below_1h_threshold | +2.92% | +2.77% |
+| ZEC/USDT:USDT | below_1h_threshold | +2.91% | +2.76% |
+| PONS/USDT:USDT | below_1h_threshold | +2.67% | +2.52% |
+| VVV/USDT:USDT | below_1h_threshold | +2.63% | +2.48% |
 
 ## 7. 次に見るべき不足
 
