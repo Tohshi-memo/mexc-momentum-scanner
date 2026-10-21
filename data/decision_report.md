@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-21T07:36:30.182297+00:00
+- generated_at: 2026-10-21T07:41:29.741604+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17106**
 
@@ -63,17 +63,17 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5267件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5268件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000128 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-21T07:36:12.385291+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.51% price=83170.0
-- Funnel: target 1084 → liquid 167 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-21T07:41:14.298574+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.30% price=83000.0
+- Funnel: target 1084 → liquid 167 → pre 50 → checked 50 → surge 3 → strict 2
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 95.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -81,21 +81,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DOOD/USDT:USDT | +41.08% | $3,057,139.36 |
-| IOST/USDT:USDT | +38.14% | $3,817,955.80 |
-| BIRB/USDT:USDT | +26.35% | $1,146,739.11 |
-| ICNT/USDT:USDT | +21.71% | $5,268,805.87 |
-| CVX/USDT:USDT | +19.19% | $1,534,604.48 |
+| DOOD/USDT:USDT | +41.40% | $3,083,552.82 |
+| IOST/USDT:USDT | +39.31% | $3,839,106.32 |
+| BIRB/USDT:USDT | +26.49% | $1,150,741.20 |
+| ICNT/USDT:USDT | +20.17% | $5,277,337.68 |
+| CVX/USDT:USDT | +18.91% | $1,538,093.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BATON/USDT:USDT | below_relative_strength | +5.24% | +4.74% |
-| AKE/USDT:USDT | below_1h_threshold | +4.01% | +3.51% |
-| NEAR/USDT:USDT | below_1h_threshold | +2.94% | +2.43% |
-| W/USDT:USDT | below_1h_threshold | +2.46% | +1.95% |
-| STX/USDT:USDT | below_1h_threshold | +2.26% | +1.75% |
+| AKE/USDT:USDT | below_1h_threshold | +4.85% | +4.55% |
+| NEAR/USDT:USDT | below_1h_threshold | +2.64% | +2.34% |
+| RIVER/USDT:USDT | below_1h_threshold | +2.33% | +2.03% |
+| STX/USDT:USDT | below_1h_threshold | +2.18% | +1.88% |
+| W/USDT:USDT | below_1h_threshold | +2.17% | +1.87% |
 
 ## 7. 次に見るべき不足
 
