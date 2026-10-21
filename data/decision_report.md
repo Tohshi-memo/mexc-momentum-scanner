@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-21T00:31:39.142280+00:00
+- generated_at: 2026-10-21T00:36:28.042116+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17082**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-21T00:31:24.028150+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.18% price=83135.7
+- 更新: 2026-10-21T00:36:16.215553+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.23% price=83176.6
 - Funnel: target 1084 → liquid 166 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ICNT/USDT:USDT | +23.01% | $3,712,631.53 |
-| SMCISTOCK/USDT:USDT | +17.10% | $1,271,732.66 |
-| DOOD/USDT:USDT | +13.91% | $1,744,653.78 |
-| PUMPFUN/USDT:USDT | +8.62% | $24,531,294.37 |
-| LIT/USDT:USDT | +8.48% | $6,400,799.45 |
+| ICNT/USDT:USDT | +23.13% | $3,720,115.68 |
+| SMCISTOCK/USDT:USDT | +16.88% | $1,272,207.76 |
+| DOOD/USDT:USDT | +10.03% | $1,757,418.32 |
+| SPCXSTOCK/USDT:USDT | +9.04% | $85,147,020.20 |
+| LIT/USDT:USDT | +8.90% | $6,416,721.31 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VVV/USDT:USDT | below_1h_threshold | +1.92% | +1.74% |
-| INJ/USDT:USDT | below_1h_threshold | +1.85% | +1.66% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.56% | +1.38% |
-| UNI/USDT:USDT | below_1h_threshold | +1.47% | +1.28% |
-| ZEC/USDT:USDT | below_1h_threshold | +1.45% | +1.27% |
+| UNI/USDT:USDT | below_1h_threshold | +2.24% | +2.01% |
+| INJ/USDT:USDT | below_1h_threshold | +1.89% | +1.66% |
+| NEAR/USDT:USDT | below_1h_threshold | +1.70% | +1.47% |
+| ZEC/USDT:USDT | below_1h_threshold | +1.56% | +1.33% |
+| JCT/USDT:USDT | below_1h_threshold | +1.54% | +1.31% |
 
 ## 7. 次に見るべき不足
 
