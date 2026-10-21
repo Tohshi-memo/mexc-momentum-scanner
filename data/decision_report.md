@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-21T05:01:27.657134+00:00
+- generated_at: 2026-10-21T05:06:21.427536+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17094**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-21T05:01:15.233435+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=82783.2
+- 更新: 2026-10-21T05:06:08.808497+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.12% price=82879.3
 - Funnel: target 1084 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DOOD/USDT:USDT | +35.66% | $2,474,712.88 |
-| ICNT/USDT:USDT | +28.69% | $4,392,879.76 |
-| CVX/USDT:USDT | +18.77% | $1,046,658.21 |
-| SMCISTOCK/USDT:USDT | +17.87% | $1,346,458.68 |
-| IOST/USDT:USDT | +12.89% | $2,060,198.84 |
+| DOOD/USDT:USDT | +35.34% | $2,511,919.19 |
+| ICNT/USDT:USDT | +27.75% | $4,406,126.29 |
+| CVX/USDT:USDT | +19.23% | $1,049,175.29 |
+| SMCISTOCK/USDT:USDT | +17.75% | $1,346,967.31 |
+| IOST/USDT:USDT | +14.49% | $2,067,158.47 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DOOD/USDT:USDT | below_1h_threshold | +1.25% | +1.25% |
-| GRASS/USDT:USDT | below_1h_threshold | +0.36% | +0.35% |
-| COMP/USDT:USDT | below_1h_threshold | +0.31% | +0.30% |
-| NEAR/USDT:USDT | below_1h_threshold | +0.30% | +0.29% |
-| ZRO/USDT:USDT | below_1h_threshold | +0.29% | +0.28% |
+| DOOD/USDT:USDT | below_1h_threshold | +1.01% | +0.89% |
+| COMP/USDT:USDT | below_1h_threshold | +0.89% | +0.77% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +0.87% | +0.75% |
+| BTW/USDT:USDT | below_1h_threshold | +0.77% | +0.64% |
+| IOST/USDT:USDT | below_1h_threshold | +0.73% | +0.60% |
 
 ## 7. 次に見るべき不足
 
