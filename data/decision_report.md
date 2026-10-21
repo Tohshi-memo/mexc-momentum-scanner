@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-21T03:56:17.657259+00:00
+- generated_at: 2026-10-21T04:01:14.290680+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17093**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-21T03:56:07.175109+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=82711.7
-- Funnel: target 1083 → liquid 166 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 91.0 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-21T04:01:04.971858+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=82717.8
+- Funnel: target 1083 → liquid 163 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DOOD/USDT:USDT | +30.53% | $2,294,254.18 |
-| IOST/USDT:USDT | +29.07% | $1,826,380.20 |
-| ICNT/USDT:USDT | +27.33% | $4,180,296.23 |
-| SMCISTOCK/USDT:USDT | +17.90% | $1,337,610.75 |
-| AKE/USDT:USDT | +10.94% | $7,117,209.43 |
+| DOOD/USDT:USDT | +31.46% | $2,297,169.95 |
+| IOST/USDT:USDT | +27.47% | $1,836,250.65 |
+| ICNT/USDT:USDT | +25.44% | $4,144,257.77 |
+| SMCISTOCK/USDT:USDT | +17.81% | $1,333,565.39 |
+| AKE/USDT:USDT | +11.36% | $7,091,508.51 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +3.39% | +3.46% |
-| ICNT/USDT:USDT | below_1h_threshold | +2.52% | +2.59% |
-| DOOD/USDT:USDT | below_1h_threshold | +1.97% | +2.04% |
-| COMP/USDT:USDT | below_1h_threshold | +1.59% | +1.66% |
-| ZKSYNC/USDT:USDT | below_1h_threshold | +1.33% | +1.41% |
+| BTW/USDT:USDT | below_1h_threshold | +0.44% | +0.42% |
+| AKE/USDT:USDT | below_1h_threshold | +0.32% | +0.30% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +0.23% | +0.21% |
+| DNA/USDT:USDT | below_1h_threshold | +0.08% | +0.06% |
+| COMP/USDT:USDT | below_1h_threshold | +0.08% | +0.05% |
 
 ## 7. 次に見るべき不足
 
