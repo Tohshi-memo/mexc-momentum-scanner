@@ -1,31 +1,31 @@
 # Decision Report
 
-- generated_at: 2026-10-22T16:46:31.272961+00:00
+- generated_at: 2026-10-22T16:51:36.404698+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **17160**
+- closed shadow trades: **17161**
 
 ## 1. 今日の判断
 
-- 結論: **MARKET SHORTは実行候補。直近EV +1.17% / filled 20/20。**
-- 全期間 MARKET基準: n=17160, expectancy=+0.02%
-- 直近20件 MARKET基準: n=20, expectancy=+1.17%
+- 結論: **MARKET SHORTは実行候補。直近EV +1.22% / filled 20/20。**
+- 全期間 MARKET基準: n=17161, expectancy=+0.02%
+- 直近20件 MARKET基準: n=20, expectancy=+1.22%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
 ### 実行可能ランキング (現executorで正確に測れるもの)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | +1.17% | **+1.17%** |
+| MARKET | 20/20 | 100.0% | +1.22% | **+1.22%** |
 
 ### シャドウ上位 SHORT (まだ実行に直結しない候補を含む)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_BB3S | 8/19 | 42.1% | +3.51% | **+1.48%** |
-| LIMIT_1PCT | 18/20 | 90.0% | +1.42% | **+1.28%** |
-| LIMIT_2PCT | 15/20 | 75.0% | +1.62% | **+1.21%** |
-| MARKET | 20/20 | 100.0% | +1.17% | **+1.17%** |
-| LIMIT_3PCT | 13/20 | 65.0% | +1.32% | **+0.86%** |
+| MARKET | 20/20 | 100.0% | +1.22% | **+1.22%** |
+| LIMIT_BB3S | 7/19 | 36.8% | +2.87% | **+1.06%** |
+| LIMIT_1PCT | 18/20 | 90.0% | +0.86% | **+0.78%** |
+| LIMIT_2PCT | 15/20 | 75.0% | +1.01% | **+0.76%** |
+| LIMIT_8PCT | 3/20 | 15.0% | +3.70% | **+0.56%** |
 
 ### シャドウ上位 LONG
 
@@ -33,9 +33,9 @@
 |---|---:|---:|---:|---:|
 | LIMIT_10PCT_LONG | 3/20 | 15.0% | +4.15% | **+0.62%** |
 | LIMIT_9PCT_LONG | 7/20 | 35.0% | +1.36% | **+0.47%** |
-| LIMIT_5PCT_LONG | 11/20 | 55.0% | +0.44% | **+0.24%** |
 | LIMIT_8PCT_LONG | 8/20 | 40.0% | +0.50% | **+0.20%** |
-| LIMIT_7PCT_LONG | 9/20 | 45.0% | +0.29% | **+0.13%** |
+| MARKET_LONG | 20/20 | 100.0% | +0.02% | **+0.02%** |
+| LIMIT_FIB1272_LONG | 9/20 | 45.0% | +0.02% | **+0.01%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,342.04** / 初期 $100.00 (+1242.04%)
-- 確定: 6529件 (Win 1897 / Loss 2083 / Flat 2549) / skip 7192件
+- 確定: 6529件 (Win 1897 / Loss 2083 / Flat 2549) / skip 7193件
 - 成長率目線: 平均log +0.000398 / 幾何平均 +0.040% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_BB3S` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: JCT/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.50% 残高後 $1,342.04
@@ -55,7 +55,7 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$277.63** / 初期 $100.00 (+177.63%)
-- 確定: 3849件 (Win 1055 / Loss 899 / Flat 1895) / skip 6722件
+- 確定: 3849件 (Win 1055 / Loss 899 / Flat 1895) / skip 6723件
 - 成長率目線: 平均log +0.000265 / 幾何平均 +0.027% per trade / maxDD +4.13%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: Q/USDT:USDT `LIMIT_6PCT` EXPIRED account +0.00% 残高後 $277.63
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-22T16:46:16.950925+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.33% price=81380.0
+- 更新: 2026-10-22T16:51:22.464593+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.74% price=81047.0
 - Funnel: target 1096 → liquid 178 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DNA/USDT:USDT | +14.62% | $1,814,220.14 |
-| BILL/USDT:USDT | +4.69% | $1,376,564.50 |
-| ALT/USDT:USDT | +3.41% | $9,638,116.96 |
-| BAT/USDT:USDT | +3.01% | $4,958,478.00 |
-| MASK/USDT:USDT | +2.65% | $1,193,382.27 |
+| DNA/USDT:USDT | +15.84% | $1,869,877.91 |
+| BILL/USDT:USDT | +3.12% | $1,400,109.67 |
+| SOXS/USDT:USDT | +2.81% | $18,991,845.57 |
+| ALT/USDT:USDT | +2.52% | $9,665,386.97 |
+| MASK/USDT:USDT | +2.49% | $1,206,007.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BILL/USDT:USDT | below_1h_threshold | +4.54% | +4.87% |
-| ALT/USDT:USDT | below_1h_threshold | +3.40% | +3.73% |
-| BAT/USDT:USDT | below_1h_threshold | +3.00% | +3.33% |
-| MASK/USDT:USDT | below_1h_threshold | +2.66% | +2.99% |
-| DYM/USDT:USDT | below_1h_threshold | +0.81% | +1.14% |
+| BILL/USDT:USDT | below_1h_threshold | +3.13% | +3.87% |
+| ALT/USDT:USDT | below_1h_threshold | +2.56% | +3.30% |
+| MASK/USDT:USDT | below_1h_threshold | +2.50% | +3.23% |
+| BAT/USDT:USDT | below_1h_threshold | +1.97% | +2.71% |
+| IBMSTOCK/USDT:USDT | below_1h_threshold | +0.79% | +1.53% |
 
 ## 7. 次に見るべき不足
 
