@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-22T00:56:55.322139+00:00
+- generated_at: 2026-10-22T01:01:09.451161+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17111**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-22T00:56:33.373698+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.21% price=84226.3
-- Funnel: target 1089 → liquid 177 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.9 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-22T01:00:59.959279+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=84139.7
+- Funnel: target 1089 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BULLA/USDT:USDT | +46.11% | $4,223,212.69 |
-| ALT/USDT:USDT | +34.93% | $7,492,419.50 |
-| PTB/USDT:USDT | +30.24% | $1,022,704.65 |
-| BTW/USDT:USDT | +11.63% | $32,161,434.16 |
-| LIT/USDT:USDT | +11.27% | $16,758,552.41 |
+| BULLA/USDT:USDT | +40.03% | $4,329,905.08 |
+| ALT/USDT:USDT | +33.43% | $7,478,660.43 |
+| PTB/USDT:USDT | +30.22% | $1,019,385.17 |
+| BTW/USDT:USDT | +12.19% | $31,164,885.11 |
+| LIT/USDT:USDT | +10.82% | $16,599,540.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BULLA/USDT:USDT | below_1h_threshold | +2.97% | +2.76% |
-| LIT/USDT:USDT | below_1h_threshold | +2.68% | +2.47% |
-| CHIP/USDT:USDT | below_1h_threshold | +2.03% | +1.82% |
-| KAS/USDT:USDT | below_1h_threshold | +1.71% | +1.50% |
-| GRASS/USDT:USDT | below_1h_threshold | +1.60% | +1.39% |
+| BULLA/USDT:USDT | below_1h_threshold | +1.41% | +1.43% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.85% | +0.88% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +0.70% | +0.72% |
+| TSMSTOCK/USDT:USDT | below_1h_threshold | +0.38% | +0.40% |
+| NVIDIA/USDT:USDT | below_1h_threshold | +0.37% | +0.40% |
 
 ## 7. 次に見るべき不足
 
