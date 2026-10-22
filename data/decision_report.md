@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-22T02:06:21.970811+00:00
+- generated_at: 2026-10-22T02:11:25.746367+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17114**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-22T02:06:09.565503+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=83282.9
+- 更新: 2026-10-22T02:11:12.774994+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=83351.5
 - Funnel: target 1089 → liquid 179 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ALT/USDT:USDT | +31.11% | $7,617,036.04 |
-| PTB/USDT:USDT | +19.70% | $1,041,609.61 |
-| IRYS/USDT:USDT | +16.56% | $3,006,491.46 |
-| BULLA/USDT:USDT | +16.09% | $5,140,092.23 |
-| BTW/USDT:USDT | +14.69% | $30,747,161.81 |
+| ALT/USDT:USDT | +30.47% | $7,648,143.90 |
+| PTB/USDT:USDT | +18.71% | $1,043,889.52 |
+| IRYS/USDT:USDT | +18.57% | $3,026,101.05 |
+| BULLA/USDT:USDT | +16.25% | $5,146,760.94 |
+| BTW/USDT:USDT | +15.41% | $30,835,079.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +1.43% | +1.52% |
-| BTW/USDT:USDT | below_1h_threshold | +1.11% | +1.20% |
-| LEAD/USDT:USDT | below_1h_threshold | +0.67% | +0.76% |
-| ICNT/USDT:USDT | below_1h_threshold | +0.57% | +0.67% |
-| UMCSTOCK/USDT:USDT | below_1h_threshold | +0.40% | +0.50% |
+| BTW/USDT:USDT | below_1h_threshold | +1.75% | +1.76% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.43% | +1.44% |
+| GRASS/USDT:USDT | below_1h_threshold | +0.85% | +0.86% |
+| CHIP/USDT:USDT | below_1h_threshold | +0.73% | +0.74% |
+| LEAD/USDT:USDT | below_1h_threshold | +0.67% | +0.68% |
 
 ## 7. 次に見るべき不足
 
