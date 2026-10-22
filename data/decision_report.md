@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-22T18:01:27.727527+00:00
+- generated_at: 2026-10-22T18:06:16.971507+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17164**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5325件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5326件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000151 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-22T18:01:16.535616+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=81183.9
-- Funnel: target 1096 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-22T18:06:07.995228+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.15% price=81060.0
+- Funnel: target 1096 → liquid 178 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 79.7 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTR/USDT:USDT | +40.40% | $1,504,881.99 |
-| DNA/USDT:USDT | +14.56% | $2,227,532.49 |
-| ALT/USDT:USDT | +7.89% | $5,446,071.08 |
-| BILL/USDT:USDT | +5.32% | $1,426,029.27 |
-| BAT/USDT:USDT | +3.90% | $4,857,343.09 |
+| BTR/USDT:USDT | +41.93% | $1,593,425.29 |
+| DNA/USDT:USDT | +16.25% | $2,256,086.80 |
+| ALT/USDT:USDT | +7.91% | $5,458,186.07 |
+| BILL/USDT:USDT | +4.38% | $1,428,507.66 |
+| BAT/USDT:USDT | +3.70% | $4,878,679.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTR/USDT:USDT | below_1h_threshold | +1.38% | +1.38% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.74% | +0.74% |
-| SQQQ/USDT:USDT | below_1h_threshold | +0.74% | +0.73% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.62% | +0.62% |
-| DNA/USDT:USDT | below_1h_threshold | +0.56% | +0.56% |
+| BTR/USDT:USDT | below_1h_threshold | +3.28% | +3.43% |
+| DNA/USDT:USDT | below_1h_threshold | +2.04% | +2.19% |
+| DOOD/USDT:USDT | below_1h_threshold | +0.86% | +1.01% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.74% | +0.89% |
+| SQQQ/USDT:USDT | below_1h_threshold | +0.74% | +0.89% |
 
 ## 7. 次に見るべき不足
 
