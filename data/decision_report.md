@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-22T14:21:48.428645+00:00
+- generated_at: 2026-10-22T14:26:59.206081+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17150**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5311件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5313件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000148 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-22T14:21:27.869376+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=81651.3
-- Funnel: target 1096 → liquid 180 → pre 50 → checked 50 → surge 3 → strict 2
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.7 >= 65=1
+- 更新: 2026-10-22T14:26:37.375685+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=81742.6
+- Funnel: target 1096 → liquid 180 → pre 50 → checked 50 → surge 5 → strict 3
+- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 71.4 >= 65=1, 4h RSI 71.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PTB/USDT:USDT | +37.60% | $2,974,871.57 |
-| AGT/USDT:USDT | +25.92% | $5,175,397.00 |
-| MAGMA/USDT:USDT | +24.90% | $6,854,809.24 |
-| BTW/USDT:USDT | +17.09% | $33,522,279.04 |
-| BILL/USDT:USDT | +14.73% | $1,271,315.33 |
+| PTB/USDT:USDT | +42.86% | $2,990,835.03 |
+| MAGMA/USDT:USDT | +27.49% | $6,929,193.21 |
+| AGT/USDT:USDT | +26.99% | $5,216,468.06 |
+| AKE/USDT:USDT | +16.63% | $9,532,297.48 |
+| IRYS/USDT:USDT | +16.29% | $5,156,688.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TESLA/USDT:USDT | below_1h_threshold | +3.71% | +3.73% |
-| IRYS/USDT:USDT | below_1h_threshold | +2.77% | +2.80% |
-| PHA/USDT:USDT | below_1h_threshold | +2.55% | +2.58% |
-| PTB/USDT:USDT | below_1h_threshold | +2.17% | +2.19% |
-| BULLA/USDT:USDT | below_1h_threshold | +1.52% | +1.55% |
+| TESLA/USDT:USDT | below_1h_threshold | +3.71% | +3.62% |
+| PHA/USDT:USDT | below_1h_threshold | +2.77% | +2.68% |
+| AGT/USDT:USDT | below_1h_threshold | +1.42% | +1.33% |
+| NFLXSTOCK/USDT:USDT | below_1h_threshold | +1.35% | +1.26% |
+| BULLA/USDT:USDT | below_1h_threshold | +1.33% | +1.24% |
 
 ## 7. 次に見るべき不足
 
