@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-22T04:41:06.052910+00:00
+- generated_at: 2026-10-22T04:46:16.367349+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17115**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-22T04:40:57.315598+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.21% price=82712.5
+- 更新: 2026-10-22T04:46:04.187575+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=82784.4
 - Funnel: target 1090 → liquid 185 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PTB/USDT:USDT | +27.10% | $1,077,122.12 |
-| ALT/USDT:USDT | +24.02% | $8,253,842.47 |
-| BTW/USDT:USDT | +16.74% | $31,785,049.22 |
-| IRYS/USDT:USDT | +12.20% | $4,116,152.39 |
-| PHA/USDT:USDT | +10.92% | $3,830,332.65 |
+| PTB/USDT:USDT | +27.86% | $1,080,186.76 |
+| ALT/USDT:USDT | +25.46% | $8,275,808.18 |
+| BTW/USDT:USDT | +14.73% | $31,923,593.85 |
+| IRYS/USDT:USDT | +12.26% | $4,134,693.19 |
+| PHA/USDT:USDT | +11.72% | $3,966,667.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +3.79% | +4.00% |
-| VVV/USDT:USDT | below_1h_threshold | +1.53% | +1.74% |
-| ALT/USDT:USDT | below_1h_threshold | +1.37% | +1.58% |
-| BULLA/USDT:USDT | below_1h_threshold | +1.34% | +1.56% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.16% | +1.37% |
+| ALT/USDT:USDT | below_1h_threshold | +2.55% | +2.67% |
+| BTW/USDT:USDT | below_1h_threshold | +1.85% | +1.98% |
+| VVV/USDT:USDT | below_1h_threshold | +1.47% | +1.60% |
+| BULLA/USDT:USDT | below_1h_threshold | +1.38% | +1.50% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.16% | +1.29% |
 
 ## 7. 次に見るべき不足
 
