@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-22T11:01:18.521359+00:00
+- generated_at: 2026-10-22T11:06:26.437279+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17142**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5302件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5303件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000168 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-22T11:01:06.602986+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=81977.5
-- Funnel: target 1090 → liquid 187 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-22T11:06:11.533282+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=81930.1
+- Funnel: target 1090 → liquid 187 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MAGMA/USDT:USDT | +46.14% | $4,442,749.52 |
-| PTB/USDT:USDT | +42.84% | $2,171,752.93 |
-| BTW/USDT:USDT | +21.64% | $33,373,691.13 |
-| AGT/USDT:USDT | +18.76% | $4,920,309.71 |
-| BILL/USDT:USDT | +14.38% | $1,137,262.98 |
+| PTB/USDT:USDT | +53.38% | $2,220,297.57 |
+| MAGMA/USDT:USDT | +45.25% | $4,524,930.65 |
+| BTW/USDT:USDT | +21.75% | $33,543,571.78 |
+| AGT/USDT:USDT | +18.48% | $4,938,321.21 |
+| BILL/USDT:USDT | +14.38% | $1,139,290.66 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IRYS/USDT:USDT | below_1h_threshold | +0.61% | +0.63% |
-| Q/USDT:USDT | below_1h_threshold | +0.47% | +0.49% |
-| AXIS/USDT:USDT | below_1h_threshold | +0.43% | +0.45% |
-| NVIDIA/USDT:USDT | below_1h_threshold | +0.39% | +0.40% |
-| PHA/USDT:USDT | below_1h_threshold | +0.33% | +0.35% |
+| AXIS/USDT:USDT | below_1h_threshold | +1.90% | +1.97% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.95% | +1.02% |
+| AKE/USDT:USDT | below_1h_threshold | +0.51% | +0.58% |
+| BTW/USDT:USDT | below_1h_threshold | +0.47% | +0.55% |
+| NVIDIA/USDT:USDT | below_1h_threshold | +0.39% | +0.46% |
 
 ## 7. 次に見るべき不足
 
