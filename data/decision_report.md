@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-22T18:26:25.494057+00:00
+- generated_at: 2026-10-22T18:31:33.467499+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17164**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5327件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5328件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000151 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-22T18:26:12.066400+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=81170.7
-- Funnel: target 1096 → liquid 179 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.1 >= 65=1, 4h RSI 71.4 >= 65=1
+- 更新: 2026-10-22T18:31:20.301434+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=81145.0
+- Funnel: target 1096 → liquid 180 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 71.4 >= 65=1, 4h RSI 74.7 >= 65=1, 4h RSI 79.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTR/USDT:USDT | +39.19% | $2,279,820.70 |
-| DNA/USDT:USDT | +15.32% | $2,396,400.74 |
-| ALT/USDT:USDT | +5.28% | $5,535,470.15 |
-| BAT/USDT:USDT | +3.30% | $5,040,658.95 |
-| DOOD/USDT:USDT | +2.82% | $1,139,736.98 |
+| BTR/USDT:USDT | +40.63% | $2,372,766.68 |
+| DNA/USDT:USDT | +15.08% | $2,400,770.34 |
+| BMT/USDT:USDT | +7.84% | $1,015,609.77 |
+| ALT/USDT:USDT | +5.02% | $5,546,517.08 |
+| BILL/USDT:USDT | +3.12% | $1,466,226.60 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| WLD/USDT:USDT | below_1h_threshold | +2.24% | +2.25% |
-| BTR/USDT:USDT | below_1h_threshold | +1.35% | +1.36% |
-| DOOD/USDT:USDT | below_1h_threshold | +1.23% | +1.24% |
-| DNA/USDT:USDT | below_1h_threshold | +1.22% | +1.23% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.74% | +0.75% |
+| WLD/USDT:USDT | below_1h_threshold | +2.58% | +2.63% |
+| BTR/USDT:USDT | below_1h_threshold | +2.21% | +2.25% |
+| PHA/USDT:USDT | below_1h_threshold | +1.52% | +1.57% |
+| DOOD/USDT:USDT | below_1h_threshold | +1.37% | +1.41% |
+| DNA/USDT:USDT | below_1h_threshold | +1.02% | +1.06% |
 
 ## 7. 次に見るべき不足
 
