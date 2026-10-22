@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-22T14:06:30.453330+00:00
+- generated_at: 2026-10-22T14:11:28.580695+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17149**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-22T14:06:15.405183+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=81670.9
+- 更新: 2026-10-22T14:11:16.553448+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=81616.2
 - Funnel: target 1096 → liquid 179 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PTB/USDT:USDT | +36.23% | $2,937,086.75 |
-| AGT/USDT:USDT | +24.05% | $5,054,997.73 |
-| BTW/USDT:USDT | +17.51% | $33,279,249.74 |
-| MAGMA/USDT:USDT | +17.36% | $6,255,492.02 |
-| BILL/USDT:USDT | +15.07% | $1,265,713.24 |
+| PTB/USDT:USDT | +36.17% | $2,943,554.90 |
+| AGT/USDT:USDT | +24.65% | $5,088,049.38 |
+| BTW/USDT:USDT | +17.51% | $33,349,073.92 |
+| BILL/USDT:USDT | +14.21% | $1,267,082.89 |
+| SOXS/USDT:USDT | +13.17% | $14,374,551.73 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TESLA/USDT:USDT | below_1h_threshold | +3.71% | +3.71% |
-| JCT/USDT:USDT | below_1h_threshold | +3.51% | +3.51% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +3.01% | +3.02% |
-| BTW/USDT:USDT | below_1h_threshold | +1.45% | +1.45% |
-| NFLXSTOCK/USDT:USDT | below_1h_threshold | +1.35% | +1.35% |
+| JCT/USDT:USDT | below_1h_threshold | +3.76% | +3.82% |
+| TESLA/USDT:USDT | below_1h_threshold | +3.71% | +3.78% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +3.01% | +3.08% |
+| BTW/USDT:USDT | below_1h_threshold | +1.51% | +1.58% |
+| ORCLSTOCK/USDT:USDT | below_1h_threshold | +1.49% | +1.56% |
 
 ## 7. 次に見るべき不足
 
