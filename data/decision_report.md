@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-22T17:31:37.249615+00:00
+- generated_at: 2026-10-22T17:36:37.358056+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17161**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-22T17:31:24.928421+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=81313.9
-- Funnel: target 1096 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-22T17:36:24.843352+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=81261.0
+- Funnel: target 1096 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DNA/USDT:USDT | +12.47% | $2,082,659.29 |
-| ALT/USDT:USDT | +7.60% | $7,645,852.10 |
-| BILL/USDT:USDT | +4.53% | $1,465,977.53 |
-| DOOD/USDT:USDT | +3.32% | $1,391,827.67 |
-| EDGE/USDT:USDT | +1.97% | $1,239,327.41 |
+| DNA/USDT:USDT | +11.83% | $2,122,933.74 |
+| ALT/USDT:USDT | +7.51% | $7,669,185.63 |
+| BILL/USDT:USDT | +4.85% | $1,466,785.47 |
+| IRYS/USDT:USDT | +2.76% | $4,532,032.29 |
+| EDGE/USDT:USDT | +2.57% | $1,242,717.53 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ALT/USDT:USDT | below_1h_threshold | +2.87% | +2.78% |
-| DOOD/USDT:USDT | below_1h_threshold | +1.82% | +1.73% |
-| KAS/USDT:USDT | below_1h_threshold | +1.57% | +1.48% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.49% | +1.40% |
-| PHA/USDT:USDT | below_1h_threshold | +1.35% | +1.26% |
+| ALT/USDT:USDT | below_1h_threshold | +2.75% | +2.72% |
+| PHA/USDT:USDT | below_1h_threshold | +2.08% | +2.06% |
+| PENDLE/USDT:USDT | below_1h_threshold | +1.89% | +1.87% |
+| EDGE/USDT:USDT | below_1h_threshold | +1.72% | +1.70% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.49% | +1.47% |
 
 ## 7. 次に見るべき不足
 
