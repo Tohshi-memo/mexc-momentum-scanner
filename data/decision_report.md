@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-22T05:21:22.896940+00:00
+- generated_at: 2026-10-22T05:26:18.087204+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17115**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-22T05:21:09.922665+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=82835.0
+- 更新: 2026-10-22T05:26:06.020835+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=82869.1
 - Funnel: target 1090 → liquid 186 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PTB/USDT:USDT | +31.15% | $1,090,293.28 |
-| ALT/USDT:USDT | +24.27% | $8,351,877.88 |
-| BTW/USDT:USDT | +15.08% | $31,695,873.43 |
-| PHA/USDT:USDT | +13.18% | $4,156,384.27 |
-| AGT/USDT:USDT | +10.39% | $5,604,576.53 |
+| PTB/USDT:USDT | +30.52% | $1,092,733.43 |
+| ALT/USDT:USDT | +23.40% | $8,361,526.47 |
+| BTW/USDT:USDT | +14.88% | $31,738,671.08 |
+| PHA/USDT:USDT | +12.83% | $4,167,663.92 |
+| AGT/USDT:USDT | +9.97% | $5,617,532.86 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AGT/USDT:USDT | below_1h_threshold | +1.44% | +1.49% |
-| XMR/USDT:USDT | below_1h_threshold | +1.39% | +1.44% |
-| PTB/USDT:USDT | below_1h_threshold | +0.53% | +0.58% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +0.49% | +0.54% |
-| METASTOCK/USDT:USDT | below_1h_threshold | +0.47% | +0.53% |
+| XMR/USDT:USDT | below_1h_threshold | +2.11% | +2.13% |
+| DNA/USDT:USDT | below_1h_threshold | +1.66% | +1.67% |
+| JCT/USDT:USDT | below_1h_threshold | +1.03% | +1.04% |
+| AGT/USDT:USDT | below_1h_threshold | +1.02% | +1.03% |
+| ICNT/USDT:USDT | below_1h_threshold | +0.90% | +0.91% |
 
 ## 7. 次に見るべき不足
 
