@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-22T22:31:08.847091+00:00
+- generated_at: 2026-10-22T22:36:12.394761+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17173**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-22T22:30:59.909327+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=81318.0
+- 更新: 2026-10-22T22:36:03.758974+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=81348.1
 - Funnel: target 1096 → liquid 180 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTR/USDT:USDT | +47.14% | $7,139,725.55 |
-| DNA/USDT:USDT | +19.38% | $3,328,473.74 |
-| DASH/USDT:USDT | +4.37% | $14,404,075.41 |
-| SOXS/USDT:USDT | +3.53% | $25,603,798.57 |
-| EDGE/USDT:USDT | +3.47% | $1,098,889.27 |
+| BTR/USDT:USDT | +48.11% | $7,174,865.56 |
+| DNA/USDT:USDT | +17.70% | $3,369,656.39 |
+| DASH/USDT:USDT | +5.03% | $14,473,151.30 |
+| SOXS/USDT:USDT | +3.91% | $25,654,852.91 |
+| EDGE/USDT:USDT | +3.17% | $1,099,346.36 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTR/USDT:USDT | below_1h_threshold | +1.29% | +1.45% |
-| EDGE/USDT:USDT | below_1h_threshold | +0.62% | +0.78% |
-| NVIDIA/USDT:USDT | below_1h_threshold | +0.28% | +0.44% |
-| CHIP/USDT:USDT | below_1h_threshold | +0.27% | +0.43% |
-| AVGOSTOCK/USDT:USDT | below_1h_threshold | +0.26% | +0.42% |
+| BTR/USDT:USDT | below_1h_threshold | +1.98% | +2.10% |
+| EDGE/USDT:USDT | below_1h_threshold | +0.29% | +0.42% |
+| NVIDIA/USDT:USDT | below_1h_threshold | +0.28% | +0.40% |
+| AVGOSTOCK/USDT:USDT | below_1h_threshold | +0.26% | +0.39% |
+| YAGEOSTOCK/USDT:USDT | below_1h_threshold | +0.26% | +0.38% |
 
 ## 7. 次に見るべき不足
 
