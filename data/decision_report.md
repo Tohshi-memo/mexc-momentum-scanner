@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-22T19:26:30.128774+00:00
+- generated_at: 2026-10-22T19:31:32.509930+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17166**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-22T19:26:17.645114+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=81436.8
+- 更新: 2026-10-22T19:31:19.892986+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.20% price=81507.9
 - Funnel: target 1096 → liquid 178 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.7 >= 65=1
+- Strict後reject: 4h RSI 87.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTR/USDT:USDT | +49.80% | $3,830,962.83 |
-| DNA/USDT:USDT | +15.61% | $2,556,725.49 |
-| WLD/USDT:USDT | +6.14% | $108,500,252.32 |
-| EDGE/USDT:USDT | +4.71% | $1,161,557.72 |
-| ALT/USDT:USDT | +4.60% | $5,131,508.19 |
+| BTR/USDT:USDT | +54.20% | $4,126,032.23 |
+| DNA/USDT:USDT | +15.55% | $2,559,407.48 |
+| WLD/USDT:USDT | +4.69% | $109,301,890.34 |
+| ALT/USDT:USDT | +4.65% | $5,133,853.90 |
+| EDGE/USDT:USDT | +3.91% | $1,164,953.67 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BR/USDT:USDT | below_1h_threshold | +3.44% | +3.32% |
-| EDGE/USDT:USDT | below_1h_threshold | +2.99% | +2.88% |
-| MAGMA/USDT:USDT | below_1h_threshold | +2.01% | +1.89% |
-| CHIP/USDT:USDT | below_1h_threshold | +1.73% | +1.61% |
-| STRK/USDT:USDT | below_1h_threshold | +1.71% | +1.60% |
+| BR/USDT:USDT | below_1h_threshold | +4.56% | +4.36% |
+| EDGE/USDT:USDT | below_1h_threshold | +2.14% | +1.94% |
+| MAGMA/USDT:USDT | below_1h_threshold | +1.83% | +1.63% |
+| CHIP/USDT:USDT | below_1h_threshold | +1.59% | +1.39% |
+| VVV/USDT:USDT | below_1h_threshold | +1.54% | +1.34% |
 
 ## 7. 次に見るべき不足
 
