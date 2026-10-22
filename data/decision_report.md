@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-22T14:31:46.117649+00:00
+- generated_at: 2026-10-22T14:36:40.029331+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17152**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-22T14:31:26.015009+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=81643.4
-- Funnel: target 1096 → liquid 180 → pre 50 → checked 50 → surge 4 → strict 2
+- 更新: 2026-10-22T14:36:22.372785+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=81592.3
+- Funnel: target 1096 → liquid 181 → pre 50 → checked 50 → surge 4 → strict 2
 - Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.5 >= 65=1, 4h RSI 71.2 >= 65=1
+- Strict後reject: 4h RSI 70.6 >= 65=1, 4h RSI 71.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MAGMA/USDT:USDT | +33.06% | $7,038,540.94 |
-| PTB/USDT:USDT | +31.59% | $3,020,216.60 |
-| AGT/USDT:USDT | +25.43% | $5,238,002.85 |
-| AKE/USDT:USDT | +16.61% | $9,675,070.94 |
-| SOXS/USDT:USDT | +16.26% | $14,885,767.54 |
+| PTB/USDT:USDT | +34.21% | $3,036,837.94 |
+| MAGMA/USDT:USDT | +33.67% | $7,128,212.40 |
+| AGT/USDT:USDT | +25.63% | $5,251,191.38 |
+| SOXS/USDT:USDT | +16.21% | $14,991,358.78 |
+| BTW/USDT:USDT | +15.18% | $33,632,299.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TESLA/USDT:USDT | below_1h_threshold | +3.71% | +3.74% |
-| PHA/USDT:USDT | below_1h_threshold | +3.01% | +3.05% |
-| ORCLSTOCK/USDT:USDT | below_1h_threshold | +1.49% | +1.53% |
-| Q/USDT:USDT | below_1h_threshold | +1.43% | +1.47% |
-| NFLXSTOCK/USDT:USDT | below_1h_threshold | +1.35% | +1.38% |
+| TESLA/USDT:USDT | below_1h_threshold | +3.71% | +3.80% |
+| PHA/USDT:USDT | below_1h_threshold | +3.26% | +3.35% |
+| Q/USDT:USDT | below_1h_threshold | +1.96% | +2.06% |
+| ORCLSTOCK/USDT:USDT | below_1h_threshold | +1.49% | +1.59% |
+| NFLXSTOCK/USDT:USDT | below_1h_threshold | +1.35% | +1.44% |
 
 ## 7. 次に見るべき不足
 
