@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-22T16:06:19.766291+00:00
+- generated_at: 2026-10-22T16:11:19.799321+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17157**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-22T16:06:09.286401+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=81618.5
+- 更新: 2026-10-22T16:11:10.980610+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=81686.7
 - Funnel: target 1096 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ALT/USDT:USDT | +2.34% | $9,457,869.99 |
-| BR/USDT:USDT | +1.27% | $12,671,457.80 |
-| IRYS/USDT:USDT | +0.84% | $4,498,444.82 |
-| DOOD/USDT:USDT | +0.69% | $2,245,047.43 |
-| DNA/USDT:USDT | +0.63% | $1,040,289.72 |
+| ALT/USDT:USDT | +2.69% | $9,485,501.89 |
+| IRYS/USDT:USDT | +2.10% | $4,512,118.91 |
+| DNA/USDT:USDT | +1.97% | $1,044,319.12 |
+| DOOD/USDT:USDT | +1.94% | $2,249,330.21 |
+| IOST/USDT:USDT | +1.87% | $7,414,277.19 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ALT/USDT:USDT | below_1h_threshold | +2.76% | +2.79% |
-| BR/USDT:USDT | below_1h_threshold | +1.20% | +1.23% |
-| DOOD/USDT:USDT | below_1h_threshold | +1.02% | +1.05% |
-| IRYS/USDT:USDT | below_1h_threshold | +0.89% | +0.93% |
-| DNA/USDT:USDT | below_1h_threshold | +0.58% | +0.62% |
+| ALT/USDT:USDT | below_1h_threshold | +2.55% | +2.51% |
+| DOOD/USDT:USDT | below_1h_threshold | +2.17% | +2.13% |
+| IRYS/USDT:USDT | below_1h_threshold | +2.11% | +2.06% |
+| IOST/USDT:USDT | below_1h_threshold | +1.88% | +1.83% |
+| DNA/USDT:USDT | below_1h_threshold | +1.74% | +1.69% |
 
 ## 7. 次に見るべき不足
 
