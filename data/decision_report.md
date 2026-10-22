@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-22T05:41:20.507064+00:00
+- generated_at: 2026-10-22T05:46:12.865209+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17115**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-22T05:41:10.331319+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=82790.7
+- 更新: 2026-10-22T05:46:03.233133+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.16% price=82747.6
 - Funnel: target 1090 → liquid 186 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PTB/USDT:USDT | +34.61% | $1,110,619.51 |
-| ALT/USDT:USDT | +23.05% | $8,391,609.94 |
-| BTW/USDT:USDT | +18.02% | $32,069,188.95 |
-| IRYS/USDT:USDT | +13.42% | $4,340,803.28 |
-| PHA/USDT:USDT | +12.20% | $4,289,811.41 |
+| PTB/USDT:USDT | +35.12% | $1,113,664.83 |
+| ALT/USDT:USDT | +23.69% | $8,413,213.92 |
+| BTW/USDT:USDT | +16.24% | $32,173,309.45 |
+| PHA/USDT:USDT | +11.74% | $4,334,294.78 |
+| IRYS/USDT:USDT | +11.09% | $4,377,118.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JCT/USDT:USDT | below_1h_threshold | +3.87% | +3.98% |
-| PTB/USDT:USDT | below_1h_threshold | +3.18% | +3.29% |
-| BTW/USDT:USDT | below_1h_threshold | +2.85% | +2.96% |
-| IRYS/USDT:USDT | below_1h_threshold | +2.30% | +2.41% |
-| XMR/USDT:USDT | below_1h_threshold | +2.29% | +2.40% |
+| PTB/USDT:USDT | below_1h_threshold | +3.57% | +3.73% |
+| JCT/USDT:USDT | below_1h_threshold | +3.53% | +3.69% |
+| XMR/USDT:USDT | below_1h_threshold | +3.26% | +3.41% |
+| AGT/USDT:USDT | below_1h_threshold | +1.49% | +1.64% |
+| ICNT/USDT:USDT | below_1h_threshold | +1.42% | +1.58% |
 
 ## 7. 次に見るべき不足
 
