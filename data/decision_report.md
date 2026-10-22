@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-22T18:56:27.526758+00:00
+- generated_at: 2026-10-22T19:01:19.774830+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17164**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-22T18:56:17.153669+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.22% price=81357.3
-- Funnel: target 1096 → liquid 181 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-22T19:01:10.992278+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=81364.1
+- Funnel: target 1096 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTR/USDT:USDT | +39.75% | $3,045,134.83 |
-| DNA/USDT:USDT | +13.75% | $2,499,710.72 |
-| ALT/USDT:USDT | +5.12% | $5,571,144.63 |
-| BMT/USDT:USDT | +4.29% | $1,079,939.93 |
-| BAT/USDT:USDT | +4.00% | $5,163,114.43 |
+| BTR/USDT:USDT | +39.17% | $3,145,604.06 |
+| DNA/USDT:USDT | +13.98% | $2,480,908.55 |
+| ALT/USDT:USDT | +5.19% | $5,092,159.76 |
+| WLD/USDT:USDT | +4.64% | $103,105,880.18 |
+| BAT/USDT:USDT | +3.61% | $5,098,353.60 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| WLD/USDT:USDT | below_1h_threshold | +4.96% | +4.74% |
-| BMT/USDT:USDT | below_1h_threshold | +2.80% | +2.58% |
-| PHA/USDT:USDT | below_1h_threshold | +2.76% | +2.54% |
-| LIT/USDT:USDT | below_1h_threshold | +2.20% | +1.98% |
-| USELESS/USDT:USDT | below_1h_threshold | +2.02% | +1.80% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.10% | +1.07% |
+| SQQQ/USDT:USDT | below_1h_threshold | +0.71% | +0.68% |
+| IBMSTOCK/USDT:USDT | below_1h_threshold | +0.53% | +0.51% |
+| WINBONDSTOCK/USDT:USDT | below_1h_threshold | +0.42% | +0.40% |
+| VVV/USDT:USDT | below_1h_threshold | +0.25% | +0.22% |
 
 ## 7. 次に見るべき不足
 
