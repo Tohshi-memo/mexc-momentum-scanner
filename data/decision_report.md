@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-22T02:51:16.595483+00:00
+- generated_at: 2026-10-22T02:56:19.323926+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17114**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-22T02:51:06.908836+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.59% price=82867.8
+- 更新: 2026-10-22T02:56:08.930210+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.64% price=82826.8
 - Funnel: target 1089 → liquid 184 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.8 >= 65=1
+- Strict後reject: 4h RSI 67.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ALT/USDT:USDT | +24.32% | $7,895,021.53 |
-| IRYS/USDT:USDT | +24.20% | $3,295,241.90 |
-| PTB/USDT:USDT | +23.83% | $1,053,395.45 |
-| BULLA/USDT:USDT | +16.30% | $5,331,338.12 |
-| BTW/USDT:USDT | +12.55% | $31,285,482.11 |
+| ALT/USDT:USDT | +24.43% | $7,915,509.23 |
+| IRYS/USDT:USDT | +23.19% | $3,333,045.63 |
+| PTB/USDT:USDT | +22.74% | $1,054,279.04 |
+| BULLA/USDT:USDT | +16.92% | $5,356,798.81 |
+| BTW/USDT:USDT | +13.13% | $31,322,761.40 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IRYS/USDT:USDT | below_1h_threshold | +3.59% | +4.18% |
-| PTB/USDT:USDT | below_1h_threshold | +3.12% | +3.72% |
-| UNITREE/USDT:USDT | below_1h_threshold | +2.65% | +3.25% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.43% | +2.02% |
-| ICNT/USDT:USDT | below_1h_threshold | +1.15% | +1.74% |
+| IRYS/USDT:USDT | below_1h_threshold | +2.74% | +3.39% |
+| UNITREE/USDT:USDT | below_1h_threshold | +2.65% | +3.30% |
+| PTB/USDT:USDT | below_1h_threshold | +2.15% | +2.79% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.43% | +2.07% |
+| BIRB/USDT:USDT | below_1h_threshold | +1.12% | +1.76% |
 
 ## 7. 次に見るべき不足
 
