@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-22T01:31:26.728038+00:00
+- generated_at: 2026-10-22T01:36:24.653152+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17112**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-22T01:31:13.882019+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=84257.6
+- 更新: 2026-10-22T01:36:14.795482+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.23% price=83964.0
 - Funnel: target 1089 → liquid 176 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.3 >= 65=1
+- Strict後reject: 4h RSI 76.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ALT/USDT:USDT | +34.28% | $7,556,974.18 |
-| PTB/USDT:USDT | +27.54% | $1,026,085.08 |
-| BULLA/USDT:USDT | +14.56% | $4,908,752.21 |
-| IRYS/USDT:USDT | +13.32% | $2,828,764.52 |
-| LIT/USDT:USDT | +12.35% | $17,478,988.37 |
+| ALT/USDT:USDT | +34.14% | $7,569,395.73 |
+| PTB/USDT:USDT | +27.30% | $1,027,237.00 |
+| IRYS/USDT:USDT | +14.91% | $2,849,786.18 |
+| BULLA/USDT:USDT | +13.03% | $4,979,931.67 |
+| LIT/USDT:USDT | +12.03% | $17,544,782.49 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BAT/USDT:USDT | below_1h_threshold | +1.72% | +1.60% |
-| QNT/USDT:USDT | below_1h_threshold | +1.56% | +1.45% |
-| VVV/USDT:USDT | below_1h_threshold | +1.20% | +1.09% |
-| LIT/USDT:USDT | below_1h_threshold | +1.18% | +1.06% |
-| JUP/USDT:USDT | below_1h_threshold | +1.09% | +0.98% |
+| BAT/USDT:USDT | below_1h_threshold | +1.36% | +1.59% |
+| QNT/USDT:USDT | below_1h_threshold | +1.16% | +1.39% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +0.70% | +0.93% |
+| LIT/USDT:USDT | below_1h_threshold | +0.63% | +0.86% |
+| APT/USDT:USDT | below_1h_threshold | +0.60% | +0.84% |
 
 ## 7. 次に見るべき不足
 
