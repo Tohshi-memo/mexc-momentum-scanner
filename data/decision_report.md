@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-22T09:21:41.005666+00:00
+- generated_at: 2026-10-22T09:26:31.162654+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17135**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-22T09:21:22.271905+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=81854.3
+- 更新: 2026-10-22T09:26:14.189512+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=81727.4
 - Funnel: target 1090 → liquid 188 → pre 50 → checked 50 → surge 2 → strict 2
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PTB/USDT:USDT | +58.76% | $1,585,767.98 |
-| MAGMA/USDT:USDT | +43.33% | $3,732,847.35 |
-| AGT/USDT:USDT | +22.86% | $5,160,721.77 |
-| SOXS/USDT:USDT | +12.17% | $11,920,603.47 |
-| BILL/USDT:USDT | +11.78% | $1,063,479.30 |
+| PTB/USDT:USDT | +62.45% | $1,633,604.84 |
+| MAGMA/USDT:USDT | +44.19% | $3,789,290.37 |
+| AGT/USDT:USDT | +22.97% | $5,213,487.04 |
+| SOXS/USDT:USDT | +12.38% | $11,982,586.89 |
+| BILL/USDT:USDT | +12.30% | $1,069,426.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AGT/USDT:USDT | below_1h_threshold | +2.93% | +2.88% |
-| PARTI/USDT:USDT | below_1h_threshold | +2.52% | +2.47% |
-| MAGMA/USDT:USDT | below_1h_threshold | +2.11% | +2.06% |
-| VVV/USDT:USDT | below_1h_threshold | +2.03% | +1.98% |
-| RIVER/USDT:USDT | below_1h_threshold | +1.31% | +1.26% |
+| Q/USDT:USDT | below_1h_threshold | +4.10% | +4.20% |
+| AGT/USDT:USDT | below_1h_threshold | +3.02% | +3.13% |
+| MAGMA/USDT:USDT | below_1h_threshold | +2.64% | +2.75% |
+| RIVER/USDT:USDT | below_1h_threshold | +2.19% | +2.29% |
+| BILL/USDT:USDT | below_1h_threshold | +1.89% | +1.99% |
 
 ## 7. 次に見るべき不足
 
