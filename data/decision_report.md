@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-22T20:26:34.351717+00:00
+- generated_at: 2026-10-22T20:31:23.801812+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17168**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-22T20:26:21.823254+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=81325.0
+- 更新: 2026-10-22T20:31:11.652126+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=81312.3
 - Funnel: target 1096 → liquid 180 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTR/USDT:USDT | +48.66% | $5,898,571.88 |
-| DNA/USDT:USDT | +13.58% | $2,553,064.62 |
-| ALT/USDT:USDT | +6.15% | $5,106,361.13 |
-| BMT/USDT:USDT | +4.10% | $1,155,190.98 |
-| EDGE/USDT:USDT | +3.84% | $1,147,496.96 |
+| BTR/USDT:USDT | +48.13% | $5,973,422.57 |
+| DNA/USDT:USDT | +13.40% | $2,554,067.33 |
+| ALT/USDT:USDT | +5.14% | $5,121,250.20 |
+| SOXS/USDT:USDT | +3.91% | $24,648,654.52 |
+| EDGE/USDT:USDT | +3.47% | $1,150,149.91 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTR/USDT:USDT | below_1h_threshold | +3.04% | +3.20% |
-| BMT/USDT:USDT | below_1h_threshold | +2.69% | +2.86% |
-| ALT/USDT:USDT | below_1h_threshold | +2.24% | +2.40% |
-| CVX/USDT:USDT | below_1h_threshold | +0.90% | +1.07% |
-| IBMSTOCK/USDT:USDT | below_1h_threshold | +0.88% | +1.05% |
+| BTR/USDT:USDT | below_1h_threshold | +2.76% | +2.95% |
+| BMT/USDT:USDT | below_1h_threshold | +1.92% | +2.10% |
+| ALT/USDT:USDT | below_1h_threshold | +1.26% | +1.44% |
+| IBMSTOCK/USDT:USDT | below_1h_threshold | +0.88% | +1.06% |
+| CVX/USDT:USDT | below_1h_threshold | +0.78% | +0.96% |
 
 ## 7. 次に見るべき不足
 
