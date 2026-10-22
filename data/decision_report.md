@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-22T21:46:23.866876+00:00
+- generated_at: 2026-10-22T21:51:16.922043+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17173**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-22T21:46:11.131593+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.21% price=81415.5
+- 更新: 2026-10-22T21:51:05.706990+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.25% price=81442.7
 - Funnel: target 1096 → liquid 180 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTR/USDT:USDT | +44.84% | $6,825,752.22 |
-| DNA/USDT:USDT | +22.80% | $2,890,282.97 |
-| BEAT/USDT:USDT | +4.43% | $2,369,166.37 |
-| SOXS/USDT:USDT | +4.39% | $25,102,323.22 |
-| AGT/USDT:USDT | +4.33% | $4,713,551.87 |
+| BTR/USDT:USDT | +45.28% | $6,844,895.71 |
+| DNA/USDT:USDT | +21.76% | $3,014,877.74 |
+| AGT/USDT:USDT | +4.71% | $4,728,550.20 |
+| SOXS/USDT:USDT | +4.51% | $25,244,695.00 |
+| BEAT/USDT:USDT | +4.47% | $2,392,677.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +3.20% | +2.99% |
-| AGT/USDT:USDT | below_1h_threshold | +2.78% | +2.56% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +2.36% | +2.15% |
-| BTR/USDT:USDT | below_1h_threshold | +1.64% | +1.43% |
-| SPX/USDT:USDT | below_1h_threshold | +1.43% | +1.21% |
+| AGT/USDT:USDT | below_1h_threshold | +3.24% | +2.99% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.14% | +2.90% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +2.19% | +1.94% |
+| BTR/USDT:USDT | below_1h_threshold | +1.97% | +1.72% |
+| SPX/USDT:USDT | below_1h_threshold | +1.45% | +1.21% |
 
 ## 7. 次に見るべき不足
 
