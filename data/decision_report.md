@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-22T01:46:26.505518+00:00
+- generated_at: 2026-10-22T01:51:15.194812+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17112**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-22T01:46:14.180805+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.56% price=83689.9
+- 更新: 2026-10-22T01:51:05.651431+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.61% price=83648.2
 - Funnel: target 1089 → liquid 180 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.3 >= 65=1
+- Strict後reject: 4h RSI 76.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ALT/USDT:USDT | +33.71% | $7,593,660.47 |
-| PTB/USDT:USDT | +19.15% | $1,039,975.30 |
-| IRYS/USDT:USDT | +14.11% | $2,896,640.87 |
-| BULLA/USDT:USDT | +13.68% | $5,048,918.12 |
-| BTW/USDT:USDT | +12.35% | $31,361,402.73 |
+| ALT/USDT:USDT | +33.66% | $7,603,094.64 |
+| PTB/USDT:USDT | +19.28% | $1,041,876.54 |
+| IRYS/USDT:USDT | +15.18% | $2,915,199.25 |
+| BTW/USDT:USDT | +12.83% | $31,388,090.76 |
+| BULLA/USDT:USDT | +12.51% | $5,062,311.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BAT/USDT:USDT | below_1h_threshold | +0.80% | +1.36% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +0.70% | +1.26% |
-| ICNT/USDT:USDT | below_1h_threshold | +0.42% | +0.98% |
-| NVIDIA/USDT:USDT | below_1h_threshold | +0.37% | +0.93% |
-| METASTOCK/USDT:USDT | below_1h_threshold | +0.31% | +0.86% |
+| BAT/USDT:USDT | below_1h_threshold | +1.46% | +2.06% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +0.70% | +1.31% |
+| BTW/USDT:USDT | below_1h_threshold | +0.66% | +1.26% |
+| PHA/USDT:USDT | below_1h_threshold | +0.55% | +1.16% |
+| NVIDIA/USDT:USDT | below_1h_threshold | +0.37% | +0.98% |
 
 ## 7. 次に見るべき不足
 
