@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-22T02:41:06.714745+00:00
+- generated_at: 2026-10-22T02:46:24.249661+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17114**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-22T02:40:57.737188+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.53% price=82920.9
-- Funnel: target 1089 → liquid 183 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-22T02:46:11.644092+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.57% price=82885.0
+- Funnel: target 1089 → liquid 184 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ALT/USDT:USDT | +25.88% | $7,847,044.79 |
-| PTB/USDT:USDT | +21.47% | $1,051,883.82 |
-| IRYS/USDT:USDT | +19.10% | $3,168,632.10 |
-| BULLA/USDT:USDT | +17.35% | $5,289,958.98 |
-| BTW/USDT:USDT | +12.94% | $31,195,944.97 |
+| ALT/USDT:USDT | +25.16% | $7,859,000.90 |
+| PTB/USDT:USDT | +21.90% | $1,052,505.92 |
+| IRYS/USDT:USDT | +21.44% | $3,263,345.21 |
+| BULLA/USDT:USDT | +15.62% | $5,315,828.63 |
+| BTW/USDT:USDT | +13.30% | $31,222,799.19 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UNITREE/USDT:USDT | below_1h_threshold | +2.65% | +3.18% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.43% | +1.96% |
-| PTB/USDT:USDT | below_1h_threshold | +1.16% | +1.69% |
-| BULLA/USDT:USDT | below_1h_threshold | +1.02% | +1.55% |
-| ICNT/USDT:USDT | below_1h_threshold | +0.84% | +1.36% |
+| UNITREE/USDT:USDT | below_1h_threshold | +2.65% | +3.23% |
+| PTB/USDT:USDT | below_1h_threshold | +1.52% | +2.09% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.43% | +2.00% |
+| IRYS/USDT:USDT | below_1h_threshold | +1.24% | +1.81% |
+| GRASS/USDT:USDT | below_1h_threshold | +0.85% | +1.42% |
 
 ## 7. 次に見るべき不足
 
