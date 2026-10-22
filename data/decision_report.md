@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-22T20:51:32.620158+00:00
+- generated_at: 2026-10-22T20:56:25.112475+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17169**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-22T20:51:20.297000+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.36% price=81167.5
+- 更新: 2026-10-22T20:56:12.723882+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.33% price=81189.7
 - Funnel: target 1096 → liquid 180 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTR/USDT:USDT | +45.75% | $6,308,248.47 |
-| DNA/USDT:USDT | +14.50% | $2,607,008.34 |
-| SOXS/USDT:USDT | +5.47% | $25,064,512.27 |
-| ALT/USDT:USDT | +4.15% | $5,152,486.47 |
-| SQQQ/USDT:USDT | +2.56% | $1,609,262.52 |
+| BTR/USDT:USDT | +45.75% | $6,358,087.59 |
+| DNA/USDT:USDT | +13.81% | $2,612,107.83 |
+| SOXS/USDT:USDT | +4.68% | $25,147,817.98 |
+| ALT/USDT:USDT | +4.30% | $5,159,487.67 |
+| SQQQ/USDT:USDT | +2.43% | $1,609,661.41 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTR/USDT:USDT | below_1h_threshold | +1.27% | +1.63% |
-| IBMSTOCK/USDT:USDT | below_1h_threshold | +0.88% | +1.24% |
-| COINBASE/USDT:USDT | below_1h_threshold | +0.70% | +1.06% |
-| VLOSTOCK/USDT:USDT | below_1h_threshold | +0.58% | +0.94% |
-| AAPLSTOCK/USDT:USDT | below_1h_threshold | +0.45% | +0.81% |
+| BTR/USDT:USDT | below_1h_threshold | +1.12% | +1.46% |
+| IBMSTOCK/USDT:USDT | below_1h_threshold | +0.88% | +1.22% |
+| DASH/USDT:USDT | below_1h_threshold | +0.67% | +1.00% |
+| ALT/USDT:USDT | below_1h_threshold | +0.65% | +0.99% |
+| VLOSTOCK/USDT:USDT | below_1h_threshold | +0.58% | +0.92% |
 
 ## 7. 次に見るべき不足
 
