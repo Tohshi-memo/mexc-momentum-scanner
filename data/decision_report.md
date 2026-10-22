@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-22T16:36:27.138736+00:00
+- generated_at: 2026-10-22T16:41:34.563695+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17160**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-22T16:36:09.983464+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.22% price=81465.9
+- 更新: 2026-10-22T16:41:19.426950+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.20% price=81482.9
 - Funnel: target 1096 → liquid 178 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DNA/USDT:USDT | +16.19% | $1,400,438.66 |
-| MASK/USDT:USDT | +4.49% | $1,156,311.46 |
-| ALT/USDT:USDT | +3.77% | $9,596,772.40 |
-| BAT/USDT:USDT | +3.02% | $4,835,233.14 |
-| BILL/USDT:USDT | +2.50% | $1,355,715.50 |
+| DNA/USDT:USDT | +17.41% | $1,536,997.14 |
+| BAT/USDT:USDT | +4.58% | $4,923,238.86 |
+| ALT/USDT:USDT | +4.03% | $9,628,982.26 |
+| BILL/USDT:USDT | +3.28% | $1,361,070.38 |
+| MASK/USDT:USDT | +2.31% | $1,185,511.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MASK/USDT:USDT | below_1h_threshold | +4.49% | +4.72% |
-| ALT/USDT:USDT | below_1h_threshold | +3.73% | +3.96% |
-| BAT/USDT:USDT | below_1h_threshold | +3.04% | +3.27% |
-| BILL/USDT:USDT | below_1h_threshold | +2.35% | +2.57% |
-| CHIP/USDT:USDT | below_1h_threshold | +1.25% | +1.47% |
+| BAT/USDT:USDT | below_1h_threshold | +4.49% | +4.69% |
+| ALT/USDT:USDT | below_1h_threshold | +4.04% | +4.24% |
+| BILL/USDT:USDT | below_1h_threshold | +3.29% | +3.49% |
+| MASK/USDT:USDT | below_1h_threshold | +2.32% | +2.52% |
+| DYM/USDT:USDT | below_1h_threshold | +1.35% | +1.55% |
 
 ## 7. 次に見るべき不足
 
