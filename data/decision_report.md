@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-23T17:06:24.480204+00:00
+- generated_at: 2026-10-23T17:11:13.220574+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17261**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-23T17:06:09.700045+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=81728.9
-- Funnel: target 1088 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-23T17:11:04.132389+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=81702.6
+- Funnel: target 1088 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IRYS/USDT:USDT | +99.96% | $52,399,448.89 |
-| KIMCHI/USDT:USDT | +8.23% | $1,795,517.13 |
-| AKE/USDT:USDT | +3.16% | $15,162,377.47 |
-| SOXS/USDT:USDT | +2.51% | $36,190,784.97 |
-| ENA/USDT:USDT | +2.02% | $54,255,873.72 |
+| IRYS/USDT:USDT | +108.10% | $53,124,049.31 |
+| KIMCHI/USDT:USDT | +12.95% | $1,804,154.99 |
+| AKE/USDT:USDT | +3.33% | $15,184,752.83 |
+| SOXS/USDT:USDT | +3.12% | $36,200,110.22 |
+| DOS/USDT:USDT | +2.41% | $1,062,630.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +2.70% | +2.64% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +1.08% | +1.02% |
-| SQQQ/USDT:USDT | below_1h_threshold | +0.87% | +0.81% |
-| UNITREE/USDT:USDT | below_1h_threshold | +0.77% | +0.71% |
-| ENA/USDT:USDT | below_1h_threshold | +0.53% | +0.48% |
+| KIMCHI/USDT:USDT | below_1h_threshold | +4.59% | +4.56% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.70% | +2.67% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +1.08% | +1.06% |
+| DOS/USDT:USDT | below_1h_threshold | +0.89% | +0.87% |
+| SQQQ/USDT:USDT | below_1h_threshold | +0.87% | +0.85% |
 
 ## 7. 次に見るべき不足
 
