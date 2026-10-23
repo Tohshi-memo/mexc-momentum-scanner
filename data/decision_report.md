@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-23T11:56:21.374427+00:00
+- generated_at: 2026-10-23T12:01:21.173932+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17215**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-23T11:56:09.182328+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=81675.0
-- Funnel: target 1083 → liquid 171 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-23T12:01:08.731583+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=81655.6
+- Funnel: target 1083 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IRYS/USDT:USDT | +92.70% | $14,346,488.47 |
-| BTR/USDT:USDT | +42.04% | $15,154,625.35 |
-| BIRB/USDT:USDT | +32.95% | $1,134,150.91 |
-| UNITREE/USDT:USDT | +21.75% | $4,626,286.33 |
-| DNA/USDT:USDT | +21.59% | $5,094,144.50 |
+| IRYS/USDT:USDT | +89.37% | $14,459,221.81 |
+| BTR/USDT:USDT | +41.74% | $15,157,922.72 |
+| BIRB/USDT:USDT | +31.46% | $1,387,636.61 |
+| UNITREE/USDT:USDT | +21.68% | $4,653,466.78 |
+| DNA/USDT:USDT | +21.12% | $5,075,460.47 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| USELESS/USDT:USDT | below_1h_threshold | +4.52% | +4.50% |
-| 1000BONK/USDT:USDT | below_1h_threshold | +3.13% | +3.11% |
-| AGT/USDT:USDT | below_1h_threshold | +3.02% | +2.99% |
-| BIRB/USDT:USDT | below_1h_threshold | +2.93% | +2.91% |
-| PEPE/USDT:USDT | below_1h_threshold | +2.44% | +2.42% |
+| ZINC/USDT:USDT | below_1h_threshold | +0.35% | +0.40% |
+| PHA/USDT:USDT | below_1h_threshold | +0.34% | +0.39% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.33% | +0.38% |
+| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +0.31% | +0.36% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.30% | +0.35% |
 
 ## 7. 次に見るべき不足
 
