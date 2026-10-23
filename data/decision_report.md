@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-23T23:26:18.310114+00:00
+- generated_at: 2026-10-23T23:31:19.849535+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17294**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-23T23:26:06.299369+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.22% price=80966.2
+- 更新: 2026-10-23T23:31:07.590483+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.12% price=80889.2
 - Funnel: target 1088 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +40.75% | $10,082,688.58 |
-| IRYS/USDT:USDT | +22.16% | $94,440,219.72 |
-| AKE/USDT:USDT | +11.93% | $18,738,719.13 |
-| AXIS/USDT:USDT | +5.05% | $1,154,553.04 |
-| SOXS/USDT:USDT | +4.21% | $32,116,831.32 |
+| AGT/USDT:USDT | +37.01% | $10,138,252.64 |
+| IRYS/USDT:USDT | +21.38% | $94,496,927.40 |
+| AKE/USDT:USDT | +11.95% | $18,747,779.07 |
+| AXIS/USDT:USDT | +6.50% | $1,158,247.97 |
+| SOXS/USDT:USDT | +4.42% | $32,121,338.09 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZKSYNC/USDT:USDT | below_1h_threshold | +1.79% | +1.57% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.40% | +1.18% |
-| AXIS/USDT:USDT | below_1h_threshold | +1.25% | +1.03% |
-| WLFI/USDT:USDT | below_1h_threshold | +1.05% | +0.83% |
-| AVAX/USDT:USDT | below_1h_threshold | +0.94% | +0.72% |
+| AXIS/USDT:USDT | below_1h_threshold | +2.75% | +2.62% |
+| ZKSYNC/USDT:USDT | below_1h_threshold | +1.50% | +1.37% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.40% | +1.27% |
+| BTW/USDT:USDT | below_1h_threshold | +1.03% | +0.91% |
+| WLFI/USDT:USDT | below_1h_threshold | +0.77% | +0.65% |
 
 ## 7. 次に見るべき不足
 
