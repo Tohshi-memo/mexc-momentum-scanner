@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-23T08:26:13.724806+00:00
+- generated_at: 2026-10-23T08:31:23.086448+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17204**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-23T08:26:02.716712+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.29% price=81781.3
-- Funnel: target 1083 → liquid 173 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-23T08:31:10.709290+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.27% price=81765.6
+- Funnel: target 1083 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IRYS/USDT:USDT | +52.59% | $4,886,574.70 |
-| BTR/USDT:USDT | +43.52% | $14,328,246.28 |
-| DNA/USDT:USDT | +26.46% | $4,602,326.04 |
-| UNITREE/USDT:USDT | +21.21% | $3,753,469.63 |
-| ZHIPUSTOCK/USDT:USDT | +11.71% | $1,949,346.02 |
+| IRYS/USDT:USDT | +54.04% | $4,944,717.67 |
+| BTR/USDT:USDT | +41.72% | $14,336,699.21 |
+| DNA/USDT:USDT | +28.38% | $4,618,519.61 |
+| UNITREE/USDT:USDT | +21.36% | $3,769,993.00 |
+| ZHIPUSTOCK/USDT:USDT | +11.73% | $1,949,718.86 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PEPE/USDT:USDT | below_1h_threshold | +2.13% | +1.84% |
-| IRYS/USDT:USDT | below_1h_threshold | +1.98% | +1.69% |
-| BTR/USDT:USDT | below_1h_threshold | +1.91% | +1.62% |
-| AKE/USDT:USDT | below_1h_threshold | +1.67% | +1.38% |
-| UNITREE/USDT:USDT | below_1h_threshold | +1.20% | +0.90% |
+| IRYS/USDT:USDT | below_1h_threshold | +3.20% | +2.93% |
+| AKE/USDT:USDT | below_1h_threshold | +2.74% | +2.47% |
+| PEPE/USDT:USDT | below_1h_threshold | +2.07% | +1.80% |
+| UNITREE/USDT:USDT | below_1h_threshold | +1.20% | +0.92% |
+| BTR/USDT:USDT | below_1h_threshold | +0.71% | +0.44% |
 
 ## 7. 次に見るべき不足
 
