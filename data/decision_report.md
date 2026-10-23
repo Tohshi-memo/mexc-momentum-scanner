@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-23T02:26:28.428454+00:00
+- generated_at: 2026-10-23T02:31:27.235572+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17181**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-23T02:26:13.438028+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.26% price=81523.9
+- 更新: 2026-10-23T02:31:14.327898+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.45% price=81677.6
 - Funnel: target 1096 → liquid 178 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.8 >= 65=1
+- Strict後reject: 4h RSI 76.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTR/USDT:USDT | +39.73% | $11,184,904.53 |
-| IRYS/USDT:USDT | +26.81% | $4,024,105.34 |
-| AGT/USDT:USDT | +15.47% | $5,066,465.38 |
-| DASH/USDT:USDT | +10.28% | $18,116,207.76 |
-| DNA/USDT:USDT | +9.05% | $4,178,084.89 |
+| BTR/USDT:USDT | +43.62% | $11,596,602.67 |
+| IRYS/USDT:USDT | +26.76% | $4,063,524.83 |
+| AGT/USDT:USDT | +15.96% | $5,086,282.83 |
+| DNA/USDT:USDT | +10.50% | $4,188,263.94 |
+| DASH/USDT:USDT | +10.00% | $18,289,869.91 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +4.20% | +3.94% |
-| BTW/USDT:USDT | below_1h_threshold | +2.46% | +2.20% |
-| BULLA/USDT:USDT | below_1h_threshold | +2.06% | +1.80% |
-| AKE/USDT:USDT | below_1h_threshold | +1.71% | +1.45% |
-| AGT/USDT:USDT | below_1h_threshold | +1.51% | +1.25% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +4.20% | +3.75% |
+| BTW/USDT:USDT | below_1h_threshold | +3.38% | +2.93% |
+| BULLA/USDT:USDT | below_1h_threshold | +2.87% | +2.42% |
+| INJ/USDT:USDT | below_1h_threshold | +2.40% | +1.95% |
+| AKE/USDT:USDT | below_1h_threshold | +2.31% | +1.86% |
 
 ## 7. 次に見るべき不足
 
