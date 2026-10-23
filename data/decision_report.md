@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-23T09:31:15.553459+00:00
+- generated_at: 2026-10-23T09:36:31.481732+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17206**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-23T09:31:05.356621+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=81645.4
+- 更新: 2026-10-23T09:36:19.067482+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.16% price=81596.3
 - Funnel: target 1083 → liquid 172 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.2 >= 65=1
+- Strict後reject: 4h RSI 84.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IRYS/USDT:USDT | +67.00% | $6,626,932.39 |
-| BTR/USDT:USDT | +42.44% | $14,576,598.24 |
-| UNITREE/USDT:USDT | +21.32% | $4,012,827.24 |
-| DNA/USDT:USDT | +20.54% | $4,764,574.31 |
-| EDGE/USDT:USDT | +15.58% | $1,172,060.56 |
+| IRYS/USDT:USDT | +66.77% | $6,718,413.03 |
+| BTR/USDT:USDT | +41.56% | $14,585,997.65 |
+| DNA/USDT:USDT | +23.67% | $4,781,122.02 |
+| UNITREE/USDT:USDT | +21.42% | $4,020,481.64 |
+| EDGE/USDT:USDT | +15.74% | $1,179,093.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AAOISTOCK/USDT:USDT | below_1h_threshold | +1.15% | +1.25% |
-| IRENSTOCK/USDT:USDT | below_1h_threshold | +1.12% | +1.22% |
-| SNXX/USDT:USDT | below_1h_threshold | +1.12% | +1.21% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +0.82% | +0.92% |
-| COHRSTOCK/USDT:USDT | below_1h_threshold | +0.73% | +0.82% |
+| AAOISTOCK/USDT:USDT | below_1h_threshold | +1.15% | +1.31% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.12% | +1.27% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +0.82% | +0.98% |
+| AGT/USDT:USDT | below_1h_threshold | +0.78% | +0.94% |
+| COHRSTOCK/USDT:USDT | below_1h_threshold | +0.73% | +0.88% |
 
 ## 7. 次に見るべき不足
 
