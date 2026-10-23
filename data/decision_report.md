@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-23T05:06:29.141456+00:00
+- generated_at: 2026-10-23T05:11:26.939113+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17189**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5352件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5353件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000289 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-23T05:06:16.370792+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=81647.0
-- Funnel: target 1096 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-23T05:11:11.724355+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.31% price=81814.6
+- Funnel: target 1096 → liquid 175 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTR/USDT:USDT | +41.56% | $13,270,776.76 |
-| IRYS/USDT:USDT | +23.06% | $3,594,787.49 |
-| AGT/USDT:USDT | +14.16% | $6,289,311.71 |
-| DNA/USDT:USDT | +13.75% | $4,243,968.33 |
-| AKE/USDT:USDT | +13.18% | $12,142,465.75 |
+| BTR/USDT:USDT | +41.07% | $13,286,887.98 |
+| IRYS/USDT:USDT | +24.94% | $3,600,019.56 |
+| AGT/USDT:USDT | +17.34% | $6,324,882.06 |
+| AKE/USDT:USDT | +16.98% | $12,285,436.82 |
+| DNA/USDT:USDT | +14.10% | $4,248,927.23 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| USELESS/USDT:USDT | below_1h_threshold | +1.01% | +0.91% |
-| AGT/USDT:USDT | below_1h_threshold | +0.82% | +0.72% |
-| W/USDT:USDT | below_1h_threshold | +0.73% | +0.63% |
-| CHIP/USDT:USDT | below_1h_threshold | +0.69% | +0.59% |
-| GRASS/USDT:USDT | below_1h_threshold | +0.56% | +0.46% |
+| AGT/USDT:USDT | below_1h_threshold | +3.72% | +3.41% |
+| BMT/USDT:USDT | below_1h_threshold | +2.70% | +2.39% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.68% | +2.37% |
+| PEPE/USDT:USDT | below_1h_threshold | +1.78% | +1.47% |
+| IRYS/USDT:USDT | below_1h_threshold | +1.75% | +1.44% |
 
 ## 7. 次に見るべき不足
 
