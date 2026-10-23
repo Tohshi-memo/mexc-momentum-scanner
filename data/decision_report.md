@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-23T18:11:25.288100+00:00
+- generated_at: 2026-10-23T18:16:13.684892+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17264**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-23T18:11:16.490125+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=81486.9
+- 更新: 2026-10-23T18:16:04.927528+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=81605.0
 - Funnel: target 1088 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IRYS/USDT:USDT | +93.37% | $60,606,189.44 |
-| KIMCHI/USDT:USDT | +11.85% | $1,817,379.03 |
-| AGT/USDT:USDT | +6.62% | $6,239,716.73 |
-| AKE/USDT:USDT | +6.02% | $15,551,285.01 |
-| DOS/USDT:USDT | +3.95% | $1,225,926.93 |
+| IRYS/USDT:USDT | +94.74% | $60,974,776.07 |
+| KIMCHI/USDT:USDT | +12.84% | $1,817,904.13 |
+| AGT/USDT:USDT | +6.60% | $6,266,465.39 |
+| AKE/USDT:USDT | +6.18% | $15,687,877.67 |
+| AERO/USDT:USDT | +3.25% | $2,032,782.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AGT/USDT:USDT | below_1h_threshold | +4.71% | +4.86% |
-| IRYS/USDT:USDT | below_1h_threshold | +2.38% | +2.54% |
-| KIMCHI/USDT:USDT | below_1h_threshold | +2.11% | +2.27% |
-| ZKSYNC/USDT:USDT | below_1h_threshold | +1.13% | +1.28% |
-| UNITREE/USDT:USDT | below_1h_threshold | +1.01% | +1.16% |
+| AGT/USDT:USDT | below_1h_threshold | +4.57% | +4.58% |
+| KIMCHI/USDT:USDT | below_1h_threshold | +3.22% | +3.23% |
+| IRYS/USDT:USDT | below_1h_threshold | +1.96% | +1.97% |
+| ZKSYNC/USDT:USDT | below_1h_threshold | +1.34% | +1.35% |
+| GRASS/USDT:USDT | below_1h_threshold | +1.23% | +1.24% |
 
 ## 7. 次に見るべき不足
 
