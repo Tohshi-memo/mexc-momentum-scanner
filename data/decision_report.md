@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-23T09:01:19.130319+00:00
+- generated_at: 2026-10-23T09:06:19.823616+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17205**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-23T09:01:06.963137+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=81673.9
+- 更新: 2026-10-23T09:06:07.689195+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=81771.8
 - Funnel: target 1083 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IRYS/USDT:USDT | +59.85% | $5,480,461.53 |
-| BTR/USDT:USDT | +42.13% | $14,452,598.67 |
-| DNA/USDT:USDT | +24.37% | $4,621,019.76 |
-| UNITREE/USDT:USDT | +21.30% | $3,862,458.19 |
-| EDGE/USDT:USDT | +16.41% | $1,066,523.66 |
+| IRYS/USDT:USDT | +59.80% | $5,683,149.14 |
+| BTR/USDT:USDT | +42.27% | $14,507,398.40 |
+| DNA/USDT:USDT | +22.46% | $4,629,334.47 |
+| UNITREE/USDT:USDT | +21.65% | $3,885,043.68 |
+| EDGE/USDT:USDT | +16.98% | $1,072,077.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MVLL/USDT:USDT | below_1h_threshold | +1.34% | +1.40% |
-| IRYS/USDT:USDT | below_1h_threshold | +1.33% | +1.40% |
-| AAOISTOCK/USDT:USDT | below_1h_threshold | +1.15% | +1.21% |
-| IRENSTOCK/USDT:USDT | below_1h_threshold | +1.12% | +1.18% |
-| SNXX/USDT:USDT | below_1h_threshold | +1.12% | +1.18% |
+| IRYS/USDT:USDT | below_1h_threshold | +1.45% | +1.40% |
+| MVLL/USDT:USDT | below_1h_threshold | +1.34% | +1.28% |
+| AAOISTOCK/USDT:USDT | below_1h_threshold | +1.15% | +1.09% |
+| IRENSTOCK/USDT:USDT | below_1h_threshold | +1.12% | +1.06% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.12% | +1.06% |
 
 ## 7. 次に見るべき不足
 
