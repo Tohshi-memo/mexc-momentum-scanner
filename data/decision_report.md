@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-23T11:41:14.887014+00:00
+- generated_at: 2026-10-23T11:46:17.052435+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17215**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-23T11:41:05.468549+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=81596.7
+- 更新: 2026-10-23T11:46:07.030728+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=81643.3
 - Funnel: target 1083 → liquid 171 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IRYS/USDT:USDT | +88.62% | $13,803,908.18 |
-| BTR/USDT:USDT | +41.63% | $15,098,365.89 |
-| BIRB/USDT:USDT | +32.55% | $1,103,083.31 |
-| UNITREE/USDT:USDT | +22.12% | $4,599,857.01 |
-| DNA/USDT:USDT | +20.13% | $5,076,418.13 |
+| IRYS/USDT:USDT | +86.33% | $13,958,746.50 |
+| BTR/USDT:USDT | +40.10% | $15,123,305.08 |
+| BIRB/USDT:USDT | +33.57% | $1,111,845.94 |
+| UNITREE/USDT:USDT | +21.91% | $4,609,541.79 |
+| DNA/USDT:USDT | +20.66% | $5,078,141.18 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| 1000BONK/USDT:USDT | below_1h_threshold | +3.82% | +3.89% |
-| USELESS/USDT:USDT | below_1h_threshold | +2.88% | +2.96% |
-| PEPE/USDT:USDT | below_1h_threshold | +2.25% | +2.32% |
-| BIRB/USDT:USDT | below_1h_threshold | +2.19% | +2.26% |
-| AGT/USDT:USDT | below_1h_threshold | +2.00% | +2.07% |
+| USELESS/USDT:USDT | below_1h_threshold | +3.72% | +3.74% |
+| 1000BONK/USDT:USDT | below_1h_threshold | +3.32% | +3.33% |
+| PEPE/USDT:USDT | below_1h_threshold | +3.13% | +3.15% |
+| BIRB/USDT:USDT | below_1h_threshold | +2.89% | +2.90% |
+| AGT/USDT:USDT | below_1h_threshold | +1.92% | +1.93% |
 
 ## 7. 次に見るべき不足
 
