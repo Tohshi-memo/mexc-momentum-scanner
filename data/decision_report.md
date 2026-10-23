@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-23T08:36:24.550800+00:00
+- generated_at: 2026-10-23T08:41:16.489999+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17204**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-23T08:36:12.116687+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.35% price=81831.6
-- Funnel: target 1083 → liquid 174 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.0 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-23T08:41:06.608992+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.39% price=81864.8
+- Funnel: target 1083 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IRYS/USDT:USDT | +58.07% | $5,162,321.60 |
-| BTR/USDT:USDT | +40.07% | $14,374,248.54 |
-| DNA/USDT:USDT | +27.62% | $4,648,614.82 |
-| UNITREE/USDT:USDT | +21.26% | $3,809,000.13 |
-| EDGE/USDT:USDT | +16.81% | $1,010,245.77 |
+| IRYS/USDT:USDT | +57.13% | $5,281,688.66 |
+| BTR/USDT:USDT | +41.90% | $14,404,197.20 |
+| DNA/USDT:USDT | +27.74% | $4,663,422.61 |
+| UNITREE/USDT:USDT | +21.23% | $3,815,181.37 |
+| EDGE/USDT:USDT | +17.11% | $1,016,794.60 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PEPE/USDT:USDT | below_1h_threshold | +3.73% | +3.38% |
-| AKE/USDT:USDT | below_1h_threshold | +3.16% | +2.81% |
-| EDGE/USDT:USDT | below_1h_threshold | +2.11% | +1.75% |
-| UNITREE/USDT:USDT | below_1h_threshold | +1.20% | +0.84% |
-| USELESS/USDT:USDT | below_1h_threshold | +0.85% | +0.50% |
+| IRYS/USDT:USDT | below_relative_strength | +5.37% | +4.97% |
+| PEPE/USDT:USDT | below_1h_threshold | +4.45% | +4.06% |
+| AKE/USDT:USDT | below_1h_threshold | +2.80% | +2.41% |
+| EDGE/USDT:USDT | below_1h_threshold | +2.52% | +2.12% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.21% | +0.82% |
 
 ## 7. 次に見るべき不足
 
