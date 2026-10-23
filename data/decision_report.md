@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-23T04:56:16.920257+00:00
+- generated_at: 2026-10-23T05:01:17.325718+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17189**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-23T04:56:05.380017+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.29% price=81630.2
-- Funnel: target 1096 → liquid 178 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.9 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-23T05:01:07.383841+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=81617.3
+- Funnel: target 1096 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTR/USDT:USDT | +39.98% | $13,229,409.27 |
-| IRYS/USDT:USDT | +24.70% | $3,862,895.85 |
-| AKE/USDT:USDT | +14.56% | $12,419,411.49 |
-| AGT/USDT:USDT | +14.28% | $6,304,132.69 |
-| DNA/USDT:USDT | +13.81% | $4,255,160.37 |
+| BTR/USDT:USDT | +39.93% | $13,235,758.91 |
+| IRYS/USDT:USDT | +21.61% | $3,575,379.88 |
+| AKE/USDT:USDT | +15.68% | $11,975,353.60 |
+| AGT/USDT:USDT | +14.47% | $6,256,965.09 |
+| DNA/USDT:USDT | +14.10% | $4,241,047.76 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTR/USDT:USDT | below_1h_threshold | +2.67% | +2.95% |
-| BR/USDT:USDT | below_1h_threshold | +2.38% | +2.67% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +2.12% | +2.40% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +1.85% | +2.13% |
-| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +1.83% | +2.12% |
+| AGT/USDT:USDT | below_1h_threshold | +2.19% | +2.12% |
+| AKE/USDT:USDT | below_1h_threshold | +0.50% | +0.43% |
+| DOT/USDT:USDT | below_1h_threshold | +0.48% | +0.41% |
+| BMT/USDT:USDT | below_1h_threshold | +0.45% | +0.38% |
+| SQQQ/USDT:USDT | below_1h_threshold | +0.38% | +0.31% |
 
 ## 7. 次に見るべき不足
 
