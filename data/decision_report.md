@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-23T16:06:35.773847+00:00
+- generated_at: 2026-10-23T16:11:31.794408+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17243**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5402件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5405件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000583 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-23T16:06:21.075781+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=81670.0
-- Funnel: target 1088 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-23T16:11:17.858743+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=81625.0
+- Funnel: target 1088 → liquid 168 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 76.7 >= 65=1, 4h RSI 93.1 >= 65=1, 4h RSI n/a=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KIMCHI/USDT:USDT | +4.28% | $1,779,542.59 |
-| JCT/USDT:USDT | +3.79% | $4,612,660.01 |
-| BTR/USDT:USDT | +3.54% | $16,114,639.73 |
-| IRYS/USDT:USDT | +2.34% | $36,748,451.93 |
-| MAGMA/USDT:USDT | +1.72% | $3,450,525.52 |
+| IRYS/USDT:USDT | +5.99% | $37,087,321.18 |
+| JCT/USDT:USDT | +5.74% | $4,772,094.95 |
+| KIMCHI/USDT:USDT | +5.15% | $1,784,768.76 |
+| BTR/USDT:USDT | +3.80% | $16,162,932.21 |
+| MAGMA/USDT:USDT | +2.61% | $3,466,730.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KIMCHI/USDT:USDT | below_1h_threshold | +4.28% | +4.26% |
-| JCT/USDT:USDT | below_1h_threshold | +3.93% | +3.90% |
-| BTR/USDT:USDT | below_1h_threshold | +3.54% | +3.52% |
-| IRYS/USDT:USDT | below_1h_threshold | +2.77% | +2.75% |
-| AGT/USDT:USDT | below_1h_threshold | +1.84% | +1.82% |
+| BTR/USDT:USDT | below_1h_threshold | +3.81% | +3.84% |
+| MAGMA/USDT:USDT | below_1h_threshold | +2.86% | +2.89% |
+| BIRB/USDT:USDT | below_1h_threshold | +2.51% | +2.55% |
+| DNA/USDT:USDT | below_1h_threshold | +2.19% | +2.22% |
+| BMT/USDT:USDT | below_1h_threshold | +1.50% | +1.53% |
 
 ## 7. 次に見るべき不足
 
