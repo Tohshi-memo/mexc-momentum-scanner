@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-23T14:01:18.247945+00:00
+- generated_at: 2026-10-23T14:06:23.952405+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17219**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-23T14:01:08.503259+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=81934.3
+- 更新: 2026-10-23T14:06:11.515491+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.15% price=81851.0
 - Funnel: target 1088 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IRYS/USDT:USDT | +101.73% | $22,012,642.22 |
-| BTR/USDT:USDT | +45.19% | $15,504,748.46 |
-| BIRB/USDT:USDT | +37.88% | $1,772,727.02 |
-| AGT/USDT:USDT | +23.41% | $5,706,847.69 |
-| UNITREE/USDT:USDT | +22.47% | $5,315,565.32 |
+| IRYS/USDT:USDT | +103.50% | $22,197,028.40 |
+| BTR/USDT:USDT | +44.08% | $15,515,248.53 |
+| BIRB/USDT:USDT | +37.85% | $1,790,234.73 |
+| AGT/USDT:USDT | +23.38% | $5,748,863.94 |
+| UNITREE/USDT:USDT | +22.69% | $5,327,837.31 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MUU/USDT:USDT | below_1h_threshold | +4.26% | +4.31% |
-| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +1.32% | +1.36% |
-| USOIL/USDT:USDT | below_1h_threshold | +1.13% | +1.17% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.92% | +0.96% |
-| DRAM/USDT:USDT | below_1h_threshold | +0.89% | +0.94% |
+| MUU/USDT:USDT | below_1h_threshold | +4.26% | +4.41% |
+| IRYS/USDT:USDT | below_1h_threshold | +1.61% | +1.76% |
+| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +1.32% | +1.46% |
+| COHRSTOCK/USDT:USDT | below_1h_threshold | +1.29% | +1.44% |
+| PHA/USDT:USDT | below_1h_threshold | +1.25% | +1.40% |
 
 ## 7. 次に見るべき不足
 
