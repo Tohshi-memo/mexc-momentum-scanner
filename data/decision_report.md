@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-23T02:51:28.244166+00:00
+- generated_at: 2026-10-23T02:56:34.126234+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17183**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-23T02:51:15.214119+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.72% price=81898.6
-- Funnel: target 1096 → liquid 178 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.0 >= 65=1, 4h RSI 72.4 >= 65=1
+- 更新: 2026-10-23T02:56:21.178291+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.78% price=81943.8
+- Funnel: target 1096 → liquid 179 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 76.5 >= 65=1, 4h RSI 72.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTR/USDT:USDT | +39.70% | $12,039,579.33 |
-| IRYS/USDT:USDT | +26.11% | $4,200,458.00 |
-| AGT/USDT:USDT | +15.06% | $5,154,226.41 |
-| DNA/USDT:USDT | +11.72% | $4,216,784.66 |
-| DASH/USDT:USDT | +9.04% | $19,170,260.18 |
+| BTR/USDT:USDT | +39.19% | $12,111,093.57 |
+| IRYS/USDT:USDT | +27.74% | $4,240,264.26 |
+| AGT/USDT:USDT | +16.44% | $5,160,465.57 |
+| DNA/USDT:USDT | +12.01% | $4,217,850.55 |
+| AKE/USDT:USDT | +10.21% | $11,126,215.89 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +4.20% | +3.48% |
-| BTW/USDT:USDT | below_1h_threshold | +2.89% | +2.17% |
-| BULLA/USDT:USDT | below_1h_threshold | +2.57% | +1.85% |
-| W/USDT:USDT | below_1h_threshold | +2.22% | +1.50% |
-| PEPE/USDT:USDT | below_1h_threshold | +1.88% | +1.16% |
+| AKE/USDT:USDT | below_relative_strength | +5.50% | +4.72% |
+| BTW/USDT:USDT | below_1h_threshold | +4.21% | +3.43% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +4.20% | +3.42% |
+| AGT/USDT:USDT | below_1h_threshold | +2.61% | +1.83% |
+| BULLA/USDT:USDT | below_1h_threshold | +2.34% | +1.56% |
 
 ## 7. 次に見るべき不足
 
