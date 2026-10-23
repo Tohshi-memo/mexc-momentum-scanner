@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-23T04:36:27.943080+00:00
+- generated_at: 2026-10-23T04:41:26.991115+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17188**
 
@@ -63,15 +63,15 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5349件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5350件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000289 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-23T04:36:13.432698+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.26% price=81649.8
+- 更新: 2026-10-23T04:41:12.098790+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.24% price=81671.1
 - Funnel: target 1096 → liquid 177 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTR/USDT:USDT | +37.92% | $13,073,561.29 |
-| IRYS/USDT:USDT | +20.96% | $3,787,722.80 |
-| AGT/USDT:USDT | +20.64% | $6,136,101.92 |
-| DNA/USDT:USDT | +13.98% | $4,249,814.27 |
-| GTC/USDT:USDT | +10.27% | $1,151,916.59 |
+| BTR/USDT:USDT | +39.70% | $13,118,303.74 |
+| IRYS/USDT:USDT | +22.13% | $3,803,246.86 |
+| AGT/USDT:USDT | +18.63% | $6,183,979.03 |
+| DNA/USDT:USDT | +13.52% | $4,250,357.35 |
+| AKE/USDT:USDT | +10.75% | $12,081,959.53 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +3.87% | +4.13% |
-| IRYS/USDT:USDT | below_1h_threshold | +2.38% | +2.64% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +2.12% | +2.38% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +1.85% | +2.11% |
-| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +1.83% | +2.10% |
+| IRYS/USDT:USDT | below_1h_threshold | +3.77% | +4.01% |
+| BR/USDT:USDT | below_1h_threshold | +3.21% | +3.45% |
+| BTR/USDT:USDT | below_1h_threshold | +2.46% | +2.70% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +2.12% | +2.35% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +1.85% | +2.08% |
 
 ## 7. 次に見るべき不足
 
