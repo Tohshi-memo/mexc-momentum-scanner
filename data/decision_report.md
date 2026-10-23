@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-23T10:26:28.927604+00:00
+- generated_at: 2026-10-23T10:31:24.016555+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17208**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-23T10:26:19.083503+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=81739.6
-- Funnel: target 1083 → liquid 173 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.4 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-23T10:31:11.818234+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=81675.3
+- Funnel: target 1083 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IRYS/USDT:USDT | +76.69% | $8,565,625.09 |
-| BTR/USDT:USDT | +40.51% | $14,781,094.16 |
-| DNA/USDT:USDT | +24.49% | $4,902,308.35 |
-| UNITREE/USDT:USDT | +22.00% | $4,317,321.38 |
-| EDGE/USDT:USDT | +14.34% | $1,278,806.55 |
+| IRYS/USDT:USDT | +73.88% | $8,709,129.15 |
+| BTR/USDT:USDT | +40.86% | $14,814,667.99 |
+| DNA/USDT:USDT | +23.85% | $4,925,362.41 |
+| UNITREE/USDT:USDT | +21.97% | $4,329,817.42 |
+| EDGE/USDT:USDT | +13.30% | $1,283,289.96 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +2.94% | +2.81% |
-| DNA/USDT:USDT | below_1h_threshold | +2.05% | +1.91% |
-| PHA/USDT:USDT | below_1h_threshold | +1.07% | +0.93% |
-| SQQQ/USDT:USDT | below_1h_threshold | +1.02% | +0.88% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.93% | +0.79% |
+| AKE/USDT:USDT | below_1h_threshold | +4.18% | +4.13% |
+| IRYS/USDT:USDT | below_1h_threshold | +4.15% | +4.09% |
+| DNA/USDT:USDT | below_1h_threshold | +1.52% | +1.47% |
+| PEPE/USDT:USDT | below_1h_threshold | +1.13% | +1.08% |
+| PHA/USDT:USDT | below_1h_threshold | +1.13% | +1.07% |
 
 ## 7. 次に見るべき不足
 
