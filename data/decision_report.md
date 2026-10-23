@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-23T01:46:43.455203+00:00
+- generated_at: 2026-10-23T01:51:27.268584+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17178**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-23T01:46:25.910368+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=81525.2
-- Funnel: target 1096 → liquid 180 → pre 50 → checked 50 → surge 2 → strict 0
+- 更新: 2026-10-23T01:51:14.226661+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=81516.2
+- Funnel: target 1096 → liquid 181 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.3 >= 65=1, 4h RSI 89.3 >= 65=1
+- Strict後reject: 4h RSI 70.3 >= 65=1, 4h RSI 89.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTR/USDT:USDT | +62.05% | $10,363,256.51 |
-| AGT/USDT:USDT | +13.90% | $5,018,217.17 |
-| DNA/USDT:USDT | +13.81% | $4,055,602.17 |
-| DASH/USDT:USDT | +10.75% | $17,579,945.81 |
-| IRYS/USDT:USDT | +9.17% | $3,988,693.31 |
+| BTR/USDT:USDT | +62.90% | $10,445,851.11 |
+| DNA/USDT:USDT | +13.98% | $4,063,538.04 |
+| AGT/USDT:USDT | +13.75% | $5,029,954.60 |
+| GTC/USDT:USDT | +13.62% | $1,007,741.36 |
+| DASH/USDT:USDT | +9.82% | $17,810,760.93 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DOT/USDT:USDT | below_1h_threshold | +4.01% | +3.89% |
-| AKE/USDT:USDT | below_1h_threshold | +3.73% | +3.61% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.29% | +3.17% |
-| COHRSTOCK/USDT:USDT | below_1h_threshold | +2.62% | +2.51% |
-| DASH/USDT:USDT | below_1h_threshold | +2.52% | +2.41% |
+| AKE/USDT:USDT | below_1h_threshold | +3.17% | +3.07% |
+| DOT/USDT:USDT | below_1h_threshold | +3.13% | +3.02% |
+| ATOM/USDT:USDT | below_1h_threshold | +2.67% | +2.56% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +2.49% | +2.39% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +1.92% | +1.81% |
 
 ## 7. 次に見るべき不足
 
