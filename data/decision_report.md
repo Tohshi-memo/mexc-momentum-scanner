@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-23T18:16:13.684892+00:00
+- generated_at: 2026-10-23T18:21:24.162665+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17264**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5422件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5423件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000569 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-23T18:16:04.927528+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=81605.0
-- Funnel: target 1088 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-23T18:21:11.428506+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=81572.4
+- Funnel: target 1088 → liquid 165 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 97.0 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IRYS/USDT:USDT | +94.74% | $60,974,776.07 |
-| KIMCHI/USDT:USDT | +12.84% | $1,817,904.13 |
-| AGT/USDT:USDT | +6.60% | $6,266,465.39 |
-| AKE/USDT:USDT | +6.18% | $15,687,877.67 |
-| AERO/USDT:USDT | +3.25% | $2,032,782.27 |
+| IRYS/USDT:USDT | +113.69% | $61,433,713.25 |
+| KIMCHI/USDT:USDT | +12.29% | $1,818,561.91 |
+| AGT/USDT:USDT | +6.83% | $6,275,938.14 |
+| AKE/USDT:USDT | +6.26% | $15,731,079.23 |
+| AERO/USDT:USDT | +3.19% | $2,039,023.67 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AGT/USDT:USDT | below_1h_threshold | +4.57% | +4.58% |
-| KIMCHI/USDT:USDT | below_1h_threshold | +3.22% | +3.23% |
-| IRYS/USDT:USDT | below_1h_threshold | +1.96% | +1.97% |
-| ZKSYNC/USDT:USDT | below_1h_threshold | +1.34% | +1.35% |
-| GRASS/USDT:USDT | below_1h_threshold | +1.23% | +1.24% |
+| AGT/USDT:USDT | below_1h_threshold | +4.80% | +4.85% |
+| KIMCHI/USDT:USDT | below_1h_threshold | +3.02% | +3.07% |
+| S/USDT:USDT | below_1h_threshold | +1.70% | +1.75% |
+| ETHFI/USDT:USDT | below_1h_threshold | +1.32% | +1.37% |
+| ZKSYNC/USDT:USDT | below_1h_threshold | +1.07% | +1.12% |
 
 ## 7. 次に見るべき不足
 
