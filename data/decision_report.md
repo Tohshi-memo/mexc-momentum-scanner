@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-23T03:46:31.206868+00:00
+- generated_at: 2026-10-23T03:51:28.704816+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17186**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-23T03:46:16.561388+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=81920.0
+- 更新: 2026-10-23T03:51:14.810259+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=81921.3
 - Funnel: target 1096 → liquid 179 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTR/USDT:USDT | +40.98% | $12,594,258.05 |
-| AGT/USDT:USDT | +28.98% | $5,484,588.20 |
-| IRYS/USDT:USDT | +19.65% | $4,194,923.42 |
-| DNA/USDT:USDT | +12.53% | $4,220,745.50 |
-| GTC/USDT:USDT | +10.44% | $1,077,610.31 |
+| BTR/USDT:USDT | +40.98% | $12,641,835.45 |
+| AGT/USDT:USDT | +28.08% | $5,530,027.51 |
+| IRYS/USDT:USDT | +18.95% | $4,204,533.66 |
+| DNA/USDT:USDT | +12.76% | $4,221,355.14 |
+| GTC/USDT:USDT | +12.38% | $1,080,365.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GTC/USDT:USDT | below_1h_threshold | +3.06% | +3.08% |
-| DOT/USDT:USDT | below_1h_threshold | +1.92% | +1.95% |
-| DNA/USDT:USDT | below_1h_threshold | +1.47% | +1.49% |
-| INJ/USDT:USDT | below_1h_threshold | +1.32% | +1.34% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.21% | +1.24% |
+| GTC/USDT:USDT | below_1h_threshold | +4.81% | +4.84% |
+| DOT/USDT:USDT | below_1h_threshold | +2.04% | +2.07% |
+| DNA/USDT:USDT | below_1h_threshold | +1.52% | +1.54% |
+| INJ/USDT:USDT | below_1h_threshold | +1.28% | +1.30% |
+| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +1.19% | +1.21% |
 
 ## 7. 次に見るべき不足
 
