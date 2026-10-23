@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-23T04:51:23.558921+00:00
+- generated_at: 2026-10-23T04:56:16.920257+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17189**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-23T04:51:10.702273+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.28% price=81633.0
+- 更新: 2026-10-23T04:56:05.380017+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.29% price=81630.2
 - Funnel: target 1096 → liquid 178 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.0 >= 65=1
+- Strict後reject: 4h RSI 75.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTR/USDT:USDT | +41.67% | $13,201,868.54 |
-| IRYS/USDT:USDT | +24.23% | $3,844,234.29 |
-| AGT/USDT:USDT | +15.80% | $6,258,025.17 |
-| DNA/USDT:USDT | +13.75% | $4,254,153.37 |
-| AKE/USDT:USDT | +13.67% | $12,320,296.21 |
+| BTR/USDT:USDT | +39.98% | $13,229,409.27 |
+| IRYS/USDT:USDT | +24.70% | $3,862,895.85 |
+| AKE/USDT:USDT | +14.56% | $12,419,411.49 |
+| AGT/USDT:USDT | +14.28% | $6,304,132.69 |
+| DNA/USDT:USDT | +13.81% | $4,255,160.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTR/USDT:USDT | below_1h_threshold | +3.96% | +4.24% |
-| BR/USDT:USDT | below_1h_threshold | +3.47% | +3.75% |
+| BTR/USDT:USDT | below_1h_threshold | +2.67% | +2.95% |
+| BR/USDT:USDT | below_1h_threshold | +2.38% | +2.67% |
 | SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +2.12% | +2.40% |
 | SKHYSTOCK/USDT:USDT | below_1h_threshold | +1.85% | +2.13% |
-| USELESS/USDT:USDT | below_1h_threshold | +1.79% | +2.07% |
+| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +1.83% | +2.12% |
 
 ## 7. 次に見るべき不足
 
