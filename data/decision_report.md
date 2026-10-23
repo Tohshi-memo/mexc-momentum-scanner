@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-23T06:46:26.057471+00:00
+- generated_at: 2026-10-23T06:51:24.319115+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17196**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-23T06:46:13.664089+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=81845.6
+- 更新: 2026-10-23T06:51:14.453757+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=81900.0
 - Funnel: target 1096 → liquid 175 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.1 >= 65=1
+- Strict後reject: 4h RSI 86.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTR/USDT:USDT | +43.36% | $13,796,851.35 |
-| IRYS/USDT:USDT | +28.21% | $3,840,698.00 |
-| UNITREE/USDT:USDT | +20.35% | $2,055,480.97 |
-| DNA/USDT:USDT | +17.99% | $4,271,924.01 |
-| ZHIPUSTOCK/USDT:USDT | +10.85% | $1,897,509.20 |
+| BTR/USDT:USDT | +43.15% | $13,808,084.64 |
+| IRYS/USDT:USDT | +30.46% | $3,862,369.40 |
+| UNITREE/USDT:USDT | +20.58% | $2,140,146.07 |
+| DNA/USDT:USDT | +19.15% | $4,279,088.43 |
+| ZHIPUSTOCK/USDT:USDT | +10.27% | $1,919,553.75 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +2.38% | +2.34% |
-| NIL/USDT:USDT | below_1h_threshold | +1.97% | +1.93% |
-| USELESS/USDT:USDT | below_1h_threshold | +1.71% | +1.67% |
-| VVV/USDT:USDT | below_1h_threshold | +1.50% | +1.46% |
-| COHRSTOCK/USDT:USDT | below_1h_threshold | +1.33% | +1.29% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +2.38% | +2.28% |
+| NIL/USDT:USDT | below_1h_threshold | +2.26% | +2.16% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.09% | +1.98% |
+| DNA/USDT:USDT | below_1h_threshold | +1.93% | +1.83% |
+| VVV/USDT:USDT | below_1h_threshold | +1.36% | +1.25% |
 
 ## 7. 次に見るべき不足
 
