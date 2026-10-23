@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-23T08:46:16.133712+00:00
+- generated_at: 2026-10-23T08:51:28.737171+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17204**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5367件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5368件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000167 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-23T08:46:06.835799+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.33% price=81811.1
-- Funnel: target 1083 → liquid 174 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.1 >= 65=1
+- 更新: 2026-10-23T08:51:16.060024+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.33% price=81812.6
+- Funnel: target 1083 → liquid 175 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 75.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IRYS/USDT:USDT | +59.05% | $5,383,084.30 |
-| BTR/USDT:USDT | +42.57% | $14,426,075.61 |
-| DNA/USDT:USDT | +27.16% | $4,668,317.57 |
-| UNITREE/USDT:USDT | +21.64% | $3,847,508.51 |
-| EDGE/USDT:USDT | +16.75% | $1,023,700.90 |
+| IRYS/USDT:USDT | +56.62% | $5,509,327.70 |
+| BTR/USDT:USDT | +41.12% | $14,444,955.75 |
+| DNA/USDT:USDT | +26.11% | $4,679,446.11 |
+| UNITREE/USDT:USDT | +21.45% | $3,854,063.17 |
+| EDGE/USDT:USDT | +16.14% | $1,046,488.29 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PEPE/USDT:USDT | below_1h_threshold | +4.81% | +4.49% |
-| AKE/USDT:USDT | below_1h_threshold | +3.83% | +3.51% |
-| EDGE/USDT:USDT | below_1h_threshold | +2.19% | +1.87% |
-| AGT/USDT:USDT | below_1h_threshold | +1.62% | +1.29% |
-| PENGU/USDT:USDT | below_1h_threshold | +1.49% | +1.16% |
+| IRYS/USDT:USDT | below_relative_strength | +5.02% | +4.69% |
+| AKE/USDT:USDT | below_1h_threshold | +3.86% | +3.54% |
+| PENGU/USDT:USDT | below_1h_threshold | +2.13% | +1.80% |
+| 1000BONK/USDT:USDT | below_1h_threshold | +1.85% | +1.52% |
+| EDGE/USDT:USDT | below_1h_threshold | +1.76% | +1.43% |
 
 ## 7. 次に見るべき不足
 
