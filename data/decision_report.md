@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-23T13:51:29.879029+00:00
+- generated_at: 2026-10-23T13:56:27.172370+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17219**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-23T13:51:14.750005+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.22% price=81890.0
-- Funnel: target 1088 → liquid 174 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 88.1 >= 65=1, 4h RSI 74.9 >= 65=1
+- 更新: 2026-10-23T13:56:14.295686+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=81848.7
+- Funnel: target 1088 → liquid 174 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 75.8 >= 65=1, 4h RSI 87.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IRYS/USDT:USDT | +104.91% | $21,730,851.95 |
-| BTR/USDT:USDT | +43.96% | $15,493,187.98 |
-| BIRB/USDT:USDT | +34.88% | $1,739,076.90 |
-| AGT/USDT:USDT | +22.94% | $5,940,378.19 |
-| UNITREE/USDT:USDT | +22.46% | $5,262,518.77 |
+| IRYS/USDT:USDT | +101.31% | $21,963,242.62 |
+| BTR/USDT:USDT | +45.14% | $15,503,669.59 |
+| BIRB/USDT:USDT | +36.94% | $1,757,318.16 |
+| AGT/USDT:USDT | +23.14% | $5,956,791.38 |
+| UNITREE/USDT:USDT | +22.42% | $5,294,797.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JASMY/USDT:USDT | below_1h_threshold | +4.00% | +3.78% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.76% | +1.54% |
-| GRASS/USDT:USDT | below_1h_threshold | +1.55% | +1.34% |
-| VVV/USDT:USDT | below_1h_threshold | +1.38% | +1.16% |
-| ENA/USDT:USDT | below_1h_threshold | +1.32% | +1.10% |
+| BR/USDT:USDT | below_1h_threshold | +4.86% | +4.69% |
+| JASMY/USDT:USDT | below_1h_threshold | +3.97% | +3.81% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.76% | +1.59% |
+| GRASS/USDT:USDT | below_1h_threshold | +1.75% | +1.58% |
+| DASH/USDT:USDT | below_1h_threshold | +1.32% | +1.15% |
 
 ## 7. 次に見るべき不足
 
