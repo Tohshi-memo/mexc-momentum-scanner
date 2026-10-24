@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-24T04:41:23.716157+00:00
+- generated_at: 2026-10-24T04:46:11.996627+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17336**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5494件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5495件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000398 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-24T04:41:11.321125+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=80855.7
-- Funnel: target 1088 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-24T04:46:01.772119+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=80850.1
+- Funnel: target 1088 → liquid 165 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.5 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BIRB/USDT:USDT | +81.82% | $8,190,459.57 |
-| BMT/USDT:USDT | +63.51% | $1,534,007.55 |
-| IRYS/USDT:USDT | +49.07% | $101,578,597.73 |
-| AXIS/USDT:USDT | +22.31% | $2,451,774.57 |
-| AKE/USDT:USDT | +12.85% | $18,844,794.29 |
+| BIRB/USDT:USDT | +80.04% | $8,227,683.69 |
+| BMT/USDT:USDT | +66.55% | $1,542,413.10 |
+| IRYS/USDT:USDT | +50.51% | $101,680,498.78 |
+| AXIS/USDT:USDT | +23.26% | $2,458,497.49 |
+| AKE/USDT:USDT | +13.08% | $18,862,775.41 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AGT/USDT:USDT | below_1h_threshold | +4.68% | +4.79% |
-| IRYS/USDT:USDT | below_1h_threshold | +4.22% | +4.33% |
-| AKE/USDT:USDT | below_1h_threshold | +2.30% | +2.41% |
-| ETHFI/USDT:USDT | below_1h_threshold | +0.94% | +1.05% |
-| BTW/USDT:USDT | below_1h_threshold | +0.63% | +0.74% |
+| AGT/USDT:USDT | below_1h_threshold | +4.49% | +4.60% |
+| AKE/USDT:USDT | below_1h_threshold | +2.04% | +2.16% |
+| ETHFI/USDT:USDT | below_1h_threshold | +1.07% | +1.18% |
+| BTW/USDT:USDT | below_1h_threshold | +0.63% | +0.75% |
+| QNT/USDT:USDT | below_1h_threshold | +0.36% | +0.48% |
 
 ## 7. 次に見るべき不足
 
