@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-24T01:16:27.892205+00:00
+- generated_at: 2026-10-24T01:21:18.672728+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17315**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5475件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5476件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT` (selected_by_causal_log_growth) / causal_score +0.000201 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-24T01:16:15.534013+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.24% price=80780.0
+- 更新: 2026-10-24T01:21:06.435592+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.21% price=80758.2
 - Funnel: target 1088 → liquid 166 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.5 >= 65=1
+- Strict後reject: 4h RSI 71.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BIRB/USDT:USDT | +93.38% | $5,845,877.74 |
-| AXIS/USDT:USDT | +28.55% | $1,938,132.27 |
-| IRYS/USDT:USDT | +25.05% | $96,842,818.87 |
-| AGT/USDT:USDT | +18.68% | $10,842,405.20 |
-| SOXS/USDT:USDT | +3.81% | $30,107,670.07 |
+| BIRB/USDT:USDT | +88.03% | $5,909,071.05 |
+| IRYS/USDT:USDT | +41.70% | $96,953,518.77 |
+| AXIS/USDT:USDT | +24.06% | $1,986,102.78 |
+| AGT/USDT:USDT | +14.89% | $10,878,186.23 |
+| ARK/USDT:USDT | +4.52% | $1,997,945.36 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ARK/USDT:USDT | below_1h_threshold | +3.95% | +3.71% |
-| NIL/USDT:USDT | below_1h_threshold | +2.21% | +1.97% |
-| IRYS/USDT:USDT | below_1h_threshold | +1.74% | +1.50% |
-| QNT/USDT:USDT | below_1h_threshold | +1.09% | +0.85% |
-| S/USDT:USDT | below_1h_threshold | +0.69% | +0.45% |
+| ARK/USDT:USDT | below_1h_threshold | +4.82% | +4.61% |
+| BIRB/USDT:USDT | below_1h_threshold | +2.89% | +2.68% |
+| EDGE/USDT:USDT | below_1h_threshold | +0.93% | +0.72% |
+| QNT/USDT:USDT | below_1h_threshold | +0.92% | +0.70% |
+| S/USDT:USDT | below_1h_threshold | +0.77% | +0.56% |
 
 ## 7. 次に見るべき不足
 
