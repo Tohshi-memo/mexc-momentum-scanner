@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-24T23:06:13.108917+00:00
+- generated_at: 2026-10-24T23:11:18.865827+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17387**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-24T23:06:03.194331+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=80581.4
+- 更新: 2026-10-24T23:11:06.860531+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=80599.4
 - Funnel: target 1079 → liquid 130 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LIGHT/USDT:USDT | +15.35% | $1,006,989.59 |
-| AGT/USDT:USDT | +10.56% | $6,813,731.92 |
-| USELESS/USDT:USDT | +10.34% | $2,452,139.87 |
-| APR/USDT:USDT | +10.11% | $1,853,027.73 |
-| DNA/USDT:USDT | +8.82% | $1,704,094.50 |
+| LIGHT/USDT:USDT | +15.84% | $1,020,306.41 |
+| USELESS/USDT:USDT | +9.97% | $2,483,389.31 |
+| AGT/USDT:USDT | +9.89% | $6,824,470.71 |
+| AXIS/USDT:USDT | +9.03% | $4,400,028.59 |
+| DNA/USDT:USDT | +8.87% | $1,709,614.53 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AGT/USDT:USDT | below_1h_threshold | +0.94% | +0.93% |
-| LIGHT/USDT:USDT | below_1h_threshold | +0.56% | +0.54% |
-| USELESS/USDT:USDT | below_1h_threshold | +0.55% | +0.54% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.30% | +0.29% |
-| AKE/USDT:USDT | below_1h_threshold | +0.26% | +0.25% |
+| LIGHT/USDT:USDT | below_1h_threshold | +1.24% | +1.21% |
+| AGT/USDT:USDT | below_1h_threshold | +0.51% | +0.47% |
+| AKE/USDT:USDT | below_1h_threshold | +0.40% | +0.37% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.30% | +0.26% |
+| SNXX/USDT:USDT | below_1h_threshold | +0.25% | +0.21% |
 
 ## 7. 次に見るべき不足
 
