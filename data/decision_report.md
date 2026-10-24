@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-24T22:51:26.995432+00:00
+- generated_at: 2026-10-24T22:56:27.465390+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17387**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-24T22:51:14.546466+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.22% price=80559.8
+- 更新: 2026-10-24T22:56:15.105081+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.21% price=80551.3
 - Funnel: target 1079 → liquid 133 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| APR/USDT:USDT | +15.64% | $1,706,289.66 |
-| LIGHT/USDT:USDT | +13.10% | $1,000,363.02 |
-| AGT/USDT:USDT | +9.71% | $7,446,558.11 |
-| USELESS/USDT:USDT | +8.83% | $2,762,304.79 |
-| AXIS/USDT:USDT | +8.35% | $4,381,121.58 |
+| LIGHT/USDT:USDT | +14.11% | $1,002,888.66 |
+| APR/USDT:USDT | +13.81% | $1,746,519.45 |
+| USELESS/USDT:USDT | +9.78% | $2,785,564.12 |
+| AGT/USDT:USDT | +9.66% | $7,451,758.88 |
+| NIL/USDT:USDT | +8.89% | $3,354,929.67 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIL/USDT:USDT | below_1h_threshold | +3.56% | +3.34% |
-| LIGHT/USDT:USDT | below_1h_threshold | +2.83% | +2.61% |
-| AXIS/USDT:USDT | below_1h_threshold | +2.25% | +2.03% |
-| ENA/USDT:USDT | below_1h_threshold | +2.16% | +1.94% |
-| AGT/USDT:USDT | below_1h_threshold | +2.13% | +1.91% |
+| NIL/USDT:USDT | below_1h_threshold | +4.97% | +4.76% |
+| LIGHT/USDT:USDT | below_1h_threshold | +3.75% | +3.54% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.55% | +2.34% |
+| ENA/USDT:USDT | below_1h_threshold | +2.50% | +2.29% |
+| AGT/USDT:USDT | below_1h_threshold | +2.32% | +2.11% |
 
 ## 7. 次に見るべき不足
 
