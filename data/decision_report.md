@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-24T09:11:23.612917+00:00
+- generated_at: 2026-10-24T09:16:21.220770+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17348**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5505件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5506件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000246 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-24T09:11:11.059542+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=80562.0
-- Funnel: target 1079 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-24T09:16:08.715491+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=80610.3
+- Funnel: target 1079 → liquid 155 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 97.1 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BIRB/USDT:USDT | +79.16% | $12,050,295.46 |
-| BMT/USDT:USDT | +69.03% | $2,071,923.19 |
-| IRYS/USDT:USDT | +21.63% | $102,951,931.03 |
-| AGT/USDT:USDT | +11.70% | $9,935,884.44 |
-| AXIS/USDT:USDT | +9.20% | $3,387,966.53 |
+| ORDER/USDT:USDT | +124.19% | $1,073,942.65 |
+| BIRB/USDT:USDT | +67.39% | $12,155,657.18 |
+| BMT/USDT:USDT | +63.98% | $2,081,517.89 |
+| IN/USDT:USDT | +21.89% | $1,010,468.16 |
+| IRYS/USDT:USDT | +19.54% | $103,129,647.85 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AGT/USDT:USDT | below_1h_threshold | +1.54% | +1.68% |
-| NICKEL/USDT:USDT | below_1h_threshold | +0.43% | +0.57% |
-| ALUMINUM/USDT:USDT | below_1h_threshold | +0.35% | +0.49% |
-| LUNC/USDT:USDT | below_1h_threshold | +0.29% | +0.43% |
-| WLFI/USDT:USDT | below_1h_threshold | +0.19% | +0.33% |
+| AGT/USDT:USDT | below_1h_threshold | +2.88% | +2.96% |
+| LUNC/USDT:USDT | below_1h_threshold | +0.66% | +0.74% |
+| NIL/USDT:USDT | below_1h_threshold | +0.56% | +0.64% |
+| NICKEL/USDT:USDT | below_1h_threshold | +0.43% | +0.51% |
+| ALUMINUM/USDT:USDT | below_1h_threshold | +0.35% | +0.43% |
 
 ## 7. 次に見るべき不足
 
