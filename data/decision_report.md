@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-24T12:11:22.747569+00:00
+- generated_at: 2026-10-24T12:16:21.811292+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17363**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-24T12:11:10.411616+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=80568.4
-- Funnel: target 1079 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-24T12:16:09.456218+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=80584.2
+- Funnel: target 1079 → liquid 150 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ORDER/USDT:USDT | +101.22% | $6,617,740.58 |
-| BMT/USDT:USDT | +53.12% | $2,247,995.87 |
-| BIRB/USDT:USDT | +29.60% | $12,964,664.12 |
-| AGT/USDT:USDT | +8.66% | $10,494,320.08 |
-| IN/USDT:USDT | +5.24% | $1,187,010.20 |
+| ORDER/USDT:USDT | +98.41% | $6,681,975.88 |
+| BMT/USDT:USDT | +51.75% | $2,252,486.25 |
+| BIRB/USDT:USDT | +30.62% | $13,006,269.81 |
+| AGT/USDT:USDT | +9.11% | $10,510,136.62 |
+| IN/USDT:USDT | +5.21% | $1,187,342.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BMT/USDT:USDT | below_1h_threshold | +4.68% | +4.67% |
-| IRYS/USDT:USDT | below_1h_threshold | +2.99% | +2.98% |
-| BIRB/USDT:USDT | below_1h_threshold | +1.06% | +1.06% |
-| NGAS/USDT:USDT | below_1h_threshold | +0.30% | +0.29% |
-| WINBONDSTOCK/USDT:USDT | below_1h_threshold | +0.21% | +0.20% |
+| IRYS/USDT:USDT | below_1h_threshold | +3.95% | +3.93% |
+| BMT/USDT:USDT | below_1h_threshold | +3.74% | +3.72% |
+| BIRB/USDT:USDT | below_1h_threshold | +1.10% | +1.07% |
+| NIL/USDT:USDT | below_1h_threshold | +0.38% | +0.36% |
+| TIA/USDT:USDT | below_1h_threshold | +0.38% | +0.35% |
 
 ## 7. 次に見るべき不足
 
