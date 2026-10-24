@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-24T19:21:14.298968+00:00
+- generated_at: 2026-10-24T19:26:20.442567+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17385**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-24T19:21:04.388392+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=80475.7
+- 更新: 2026-10-24T19:26:08.005314+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=80492.2
 - Funnel: target 1079 → liquid 137 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +6.49% | $11,601,806.40 |
-| USELESS/USDT:USDT | +5.79% | $2,869,352.65 |
-| CHIP/USDT:USDT | +4.43% | $1,314,698.19 |
-| BMT/USDT:USDT | +4.40% | $2,794,374.11 |
-| ZRO/USDT:USDT | +4.20% | $5,029,552.46 |
+| AKE/USDT:USDT | +6.49% | $11,636,232.89 |
+| USELESS/USDT:USDT | +6.23% | $2,880,200.29 |
+| CHIP/USDT:USDT | +4.67% | $1,315,071.33 |
+| BMT/USDT:USDT | +4.43% | $2,800,655.31 |
+| ZRO/USDT:USDT | +3.87% | $5,035,784.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BMT/USDT:USDT | below_1h_threshold | +3.92% | +3.96% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.93% | +1.96% |
-| MUU/USDT:USDT | below_1h_threshold | +1.88% | +1.91% |
-| SNXX/USDT:USDT | below_1h_threshold | +1.51% | +1.54% |
-| AKE/USDT:USDT | below_1h_threshold | +1.23% | +1.27% |
+| BMT/USDT:USDT | below_1h_threshold | +4.09% | +4.10% |
+| MUU/USDT:USDT | below_1h_threshold | +1.88% | +1.89% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.54% | +1.56% |
+| AKE/USDT:USDT | below_1h_threshold | +1.23% | +1.24% |
+| DASH/USDT:USDT | below_1h_threshold | +0.95% | +0.96% |
 
 ## 7. 次に見るべき不足
 
