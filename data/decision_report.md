@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-24T23:46:12.221812+00:00
+- generated_at: 2026-10-24T23:51:13.035326+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17388**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-24T23:46:02.147087+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.32% price=80830.6
+- 更新: 2026-10-24T23:51:02.981574+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.39% price=80887.1
 - Funnel: target 1079 → liquid 130 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LIGHT/USDT:USDT | +17.19% | $1,057,673.95 |
-| AGT/USDT:USDT | +13.96% | $6,971,586.90 |
-| USELESS/USDT:USDT | +11.68% | $2,733,410.26 |
-| CHIP/USDT:USDT | +9.81% | $1,424,567.48 |
-| GRASS/USDT:USDT | +8.86% | $1,750,451.13 |
+| LIGHT/USDT:USDT | +17.07% | $1,062,228.28 |
+| AGT/USDT:USDT | +13.64% | $6,981,178.35 |
+| USELESS/USDT:USDT | +12.88% | $2,753,438.74 |
+| CHIP/USDT:USDT | +9.43% | $1,425,271.05 |
+| GRASS/USDT:USDT | +9.20% | $1,753,586.92 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AGT/USDT:USDT | below_1h_threshold | +4.17% | +3.85% |
-| 1000BONK/USDT:USDT | below_1h_threshold | +3.00% | +2.67% |
-| LIGHT/USDT:USDT | below_1h_threshold | +2.15% | +1.83% |
-| GRASS/USDT:USDT | below_1h_threshold | +2.10% | +1.78% |
-| USELESS/USDT:USDT | below_1h_threshold | +1.81% | +1.48% |
+| AGT/USDT:USDT | below_1h_threshold | +4.00% | +3.61% |
+| 1000BONK/USDT:USDT | below_1h_threshold | +3.22% | +2.83% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.80% | +2.40% |
+| GRASS/USDT:USDT | below_1h_threshold | +2.42% | +2.03% |
+| LIGHT/USDT:USDT | below_1h_threshold | +2.09% | +1.70% |
 
 ## 7. 次に見るべき不足
 
