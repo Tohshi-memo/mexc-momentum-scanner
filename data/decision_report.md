@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-24T03:01:09.539126+00:00
+- generated_at: 2026-10-24T03:06:16.938390+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17326**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-24T03:01:00.057711+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=80961.4
+- 更新: 2026-10-24T03:06:07.026702+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=80989.1
 - Funnel: target 1088 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BIRB/USDT:USDT | +56.65% | $6,689,783.71 |
-| IRYS/USDT:USDT | +54.11% | $100,372,165.15 |
-| AXIS/USDT:USDT | +23.87% | $2,220,624.70 |
-| AKE/USDT:USDT | +2.74% | $19,105,226.36 |
-| SOXS/USDT:USDT | +2.67% | $29,127,449.55 |
+| BIRB/USDT:USDT | +55.09% | $6,707,972.57 |
+| IRYS/USDT:USDT | +39.78% | $100,528,861.66 |
+| AXIS/USDT:USDT | +23.99% | $2,253,284.87 |
+| AKE/USDT:USDT | +3.08% | $19,110,443.95 |
+| SOXS/USDT:USDT | +2.67% | $29,133,133.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BIRB/USDT:USDT | below_1h_threshold | +1.10% | +1.10% |
-| AXIS/USDT:USDT | below_1h_threshold | +0.62% | +0.62% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.36% | +0.36% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +0.33% | +0.33% |
-| ALUMINUM/USDT:USDT | below_1h_threshold | +0.33% | +0.33% |
+| NIL/USDT:USDT | below_1h_threshold | +1.53% | +1.50% |
+| AGT/USDT:USDT | below_1h_threshold | +1.16% | +1.12% |
+| AKE/USDT:USDT | below_1h_threshold | +0.64% | +0.61% |
+| ETHFI/USDT:USDT | below_1h_threshold | +0.40% | +0.37% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.36% | +0.33% |
 
 ## 7. 次に見るべき不足
 
