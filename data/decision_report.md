@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-24T15:41:14.805638+00:00
+- generated_at: 2026-10-24T15:46:18.670469+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17379**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-24T15:41:02.459491+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.92% price=79429.9
-- Funnel: target 1079 → liquid 143 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-24T15:46:08.672654+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.88% price=79467.9
+- Funnel: target 1079 → liquid 144 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ORDER/USDT:USDT | +106.89% | $10,373,225.12 |
-| BMT/USDT:USDT | +56.03% | $2,648,745.43 |
-| JCT/USDT:USDT | +19.99% | $11,260,691.45 |
-| SOXS/USDT:USDT | +4.70% | $10,944,013.29 |
-| BIRB/USDT:USDT | +3.51% | $13,058,238.59 |
+| ORDER/USDT:USDT | +107.50% | $10,426,067.84 |
+| BMT/USDT:USDT | +56.03% | $2,654,457.16 |
+| JCT/USDT:USDT | +21.43% | $11,321,493.01 |
+| SOXS/USDT:USDT | +4.74% | $10,948,272.55 |
+| BTW/USDT:USDT | +2.17% | $18,162,968.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DNA/USDT:USDT | below_1h_threshold | +2.06% | +2.98% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.05% | +1.97% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.30% | +1.23% |
-| UNITREE/USDT:USDT | below_1h_threshold | +0.23% | +1.15% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.14% | +1.07% |
+| DNA/USDT:USDT | below_1h_threshold | +2.98% | +3.86% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.05% | +1.92% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.30% | +1.18% |
+| UNITREE/USDT:USDT | below_1h_threshold | +0.23% | +1.11% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.14% | +1.02% |
 
 ## 7. 次に見るべき不足
 
