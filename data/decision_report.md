@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-24T04:21:22.980256+00:00
+- generated_at: 2026-10-24T04:26:25.560549+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17335**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5493件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5494件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000398 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-24T04:21:09.624316+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=80848.1
-- Funnel: target 1088 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-24T04:26:11.120746+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=80842.0
+- Funnel: target 1088 → liquid 165 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BIRB/USDT:USDT | +83.37% | $7,964,131.39 |
-| BMT/USDT:USDT | +64.75% | $1,475,633.97 |
-| IRYS/USDT:USDT | +40.30% | $101,306,376.78 |
-| AXIS/USDT:USDT | +22.39% | $2,428,945.91 |
-| AKE/USDT:USDT | +11.75% | $18,665,204.06 |
+| BIRB/USDT:USDT | +78.96% | $8,026,878.69 |
+| BMT/USDT:USDT | +60.09% | $1,488,441.02 |
+| IRYS/USDT:USDT | +43.12% | $101,332,884.18 |
+| AXIS/USDT:USDT | +23.07% | $2,430,483.05 |
+| AKE/USDT:USDT | +11.89% | $18,688,531.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AGT/USDT:USDT | below_1h_threshold | +4.82% | +4.94% |
-| AKE/USDT:USDT | below_1h_threshold | +0.91% | +1.02% |
-| NICKEL/USDT:USDT | below_1h_threshold | +0.43% | +0.55% |
-| BTW/USDT:USDT | below_1h_threshold | +0.39% | +0.51% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +0.27% | +0.39% |
+| AKE/USDT:USDT | below_1h_threshold | +0.97% | +1.10% |
+| IRYS/USDT:USDT | below_1h_threshold | +0.96% | +1.08% |
+| BTW/USDT:USDT | below_1h_threshold | +0.68% | +0.81% |
+| NICKEL/USDT:USDT | below_1h_threshold | +0.43% | +0.56% |
+| ETHFI/USDT:USDT | below_1h_threshold | +0.39% | +0.51% |
 
 ## 7. 次に見るべき不足
 
