@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-24T14:01:15.058761+00:00
+- generated_at: 2026-10-24T14:06:22.580428+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17368**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-24T14:01:05.113632+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=80666.2
+- 更新: 2026-10-24T14:06:09.751910+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=80714.0
 - Funnel: target 1079 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ORDER/USDT:USDT | +108.33% | $8,781,825.07 |
-| BMT/USDT:USDT | +58.38% | $2,398,178.53 |
-| BIRB/USDT:USDT | +24.52% | $12,848,178.97 |
-| IN/USDT:USDT | +8.77% | $1,198,365.85 |
-| BTW/USDT:USDT | +4.84% | $18,133,155.29 |
+| ORDER/USDT:USDT | +111.04% | $8,830,822.45 |
+| BMT/USDT:USDT | +57.18% | $2,407,730.13 |
+| BIRB/USDT:USDT | +25.16% | $12,859,450.90 |
+| IN/USDT:USDT | +9.88% | $1,204,174.83 |
+| NIL/USDT:USDT | +4.30% | $2,438,447.47 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IN/USDT:USDT | below_1h_threshold | +1.53% | +1.53% |
-| AXIS/USDT:USDT | below_1h_threshold | +0.82% | +0.82% |
-| AGT/USDT:USDT | below_1h_threshold | +0.68% | +0.67% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.46% | +0.46% |
-| BMT/USDT:USDT | below_1h_threshold | +0.41% | +0.40% |
+| AGT/USDT:USDT | below_1h_threshold | +3.49% | +3.43% |
+| IN/USDT:USDT | below_1h_threshold | +1.95% | +1.88% |
+| ORDER/USDT:USDT | below_1h_threshold | +1.26% | +1.20% |
+| BIRB/USDT:USDT | below_1h_threshold | +1.07% | +1.01% |
+| AXIS/USDT:USDT | below_1h_threshold | +0.89% | +0.83% |
 
 ## 7. 次に見るべき不足
 
