@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-24T00:06:31.283442+00:00
+- generated_at: 2026-10-24T00:11:33.237628+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17298**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5457件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5460件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_8PCT` (selected_by_causal_log_growth) / causal_score +0.000336 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-24T00:06:16.669273+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=81094.7
-- Funnel: target 1088 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-24T00:11:17.236560+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.17% price=81025.7
+- Funnel: target 1088 → liquid 167 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.3 >= 65=1, 4h RSI 71.3 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AXIS/USDT:USDT | +28.66% | $1,449,120.16 |
-| AGT/USDT:USDT | +26.25% | $10,583,822.08 |
-| IRYS/USDT:USDT | +25.57% | $95,063,620.52 |
-| AKE/USDT:USDT | +11.02% | $18,707,390.79 |
-| SOXS/USDT:USDT | +3.40% | $31,584,890.53 |
+| IRYS/USDT:USDT | +42.27% | $95,365,871.34 |
+| AGT/USDT:USDT | +30.10% | $10,643,313.78 |
+| AXIS/USDT:USDT | +21.78% | $1,538,854.33 |
+| AKE/USDT:USDT | +6.71% | $18,790,450.51 |
+| BIRB/USDT:USDT | +5.74% | $3,993,159.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AGT/USDT:USDT | below_1h_threshold | +4.71% | +4.79% |
-| AXIS/USDT:USDT | below_1h_threshold | +3.97% | +4.05% |
-| IRYS/USDT:USDT | below_1h_threshold | +3.73% | +3.81% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +0.88% | +0.96% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +0.74% | +0.82% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +0.88% | +1.05% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +0.74% | +0.90% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.71% | +0.87% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.56% | +0.72% |
+| S/USDT:USDT | below_1h_threshold | +0.53% | +0.70% |
 
 ## 7. 次に見るべき不足
 
