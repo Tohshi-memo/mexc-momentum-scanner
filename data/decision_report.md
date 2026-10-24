@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-24T19:06:19.497210+00:00
+- generated_at: 2026-10-24T19:11:16.656973+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17385**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-24T19:06:07.307348+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=80503.9
+- 更新: 2026-10-24T19:11:06.933348+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=80489.3
 - Funnel: target 1079 → liquid 136 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +5.53% | $11,540,070.05 |
-| USELESS/USDT:USDT | +5.16% | $2,852,983.53 |
-| CHIP/USDT:USDT | +4.60% | $1,304,121.84 |
-| LIT/USDT:USDT | +4.12% | $5,254,455.67 |
-| ZRO/USDT:USDT | +4.09% | $5,011,085.14 |
+| AKE/USDT:USDT | +5.85% | $11,545,603.81 |
+| USELESS/USDT:USDT | +5.11% | $2,860,110.73 |
+| CHIP/USDT:USDT | +4.36% | $1,304,546.43 |
+| ZRO/USDT:USDT | +4.30% | $5,022,062.10 |
+| PEPE/USDT:USDT | +3.91% | $104,751,384.26 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXL/USDT:USDT | below_1h_threshold | +1.93% | +1.93% |
-| MUU/USDT:USDT | below_1h_threshold | +1.88% | +1.88% |
-| SNXX/USDT:USDT | below_1h_threshold | +1.51% | +1.51% |
-| JCT/USDT:USDT | below_1h_threshold | +0.75% | +0.75% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.65% | +0.65% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.93% | +1.94% |
+| MUU/USDT:USDT | below_1h_threshold | +1.88% | +1.90% |
+| BMT/USDT:USDT | below_1h_threshold | +1.29% | +1.31% |
+| JCT/USDT:USDT | below_1h_threshold | +0.87% | +0.89% |
+| AXIS/USDT:USDT | below_1h_threshold | +0.67% | +0.69% |
 
 ## 7. 次に見るべき不足
 
