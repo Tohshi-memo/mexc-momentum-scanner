@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-24T09:06:22.379702+00:00
+- generated_at: 2026-10-24T09:11:23.612917+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17348**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-24T09:06:09.732566+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=80621.6
+- 更新: 2026-10-24T09:11:11.059542+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=80562.0
 - Funnel: target 1079 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BIRB/USDT:USDT | +82.03% | $11,968,688.98 |
-| BMT/USDT:USDT | +72.02% | $2,060,455.85 |
-| IRYS/USDT:USDT | +25.75% | $102,861,478.56 |
-| AGT/USDT:USDT | +10.94% | $9,925,911.46 |
-| AXIS/USDT:USDT | +9.92% | $3,373,619.93 |
+| BIRB/USDT:USDT | +79.16% | $12,050,295.46 |
+| BMT/USDT:USDT | +69.03% | $2,071,923.19 |
+| IRYS/USDT:USDT | +21.63% | $102,951,931.03 |
+| AGT/USDT:USDT | +11.70% | $9,935,884.44 |
+| AXIS/USDT:USDT | +9.20% | $3,387,966.53 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AGT/USDT:USDT | below_1h_threshold | +1.02% | +1.09% |
-| NICKEL/USDT:USDT | below_1h_threshold | +0.43% | +0.50% |
-| BMT/USDT:USDT | below_1h_threshold | +0.40% | +0.47% |
-| ALUMINUM/USDT:USDT | below_1h_threshold | +0.35% | +0.42% |
-| TIA/USDT:USDT | below_1h_threshold | +0.30% | +0.36% |
+| AGT/USDT:USDT | below_1h_threshold | +1.54% | +1.68% |
+| NICKEL/USDT:USDT | below_1h_threshold | +0.43% | +0.57% |
+| ALUMINUM/USDT:USDT | below_1h_threshold | +0.35% | +0.49% |
+| LUNC/USDT:USDT | below_1h_threshold | +0.29% | +0.43% |
+| WLFI/USDT:USDT | below_1h_threshold | +0.19% | +0.33% |
 
 ## 7. 次に見るべき不足
 
