@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-24T18:16:21.185542+00:00
+- generated_at: 2026-10-24T18:21:15.530137+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17385**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-24T18:16:06.501186+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.15% price=80362.4
+- 更新: 2026-10-24T18:21:05.553022+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=80319.3
 - Funnel: target 1079 → liquid 138 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IRYS/USDT:USDT | +7.77% | $64,983,031.83 |
-| DNA/USDT:USDT | +7.48% | $2,139,117.22 |
-| AKE/USDT:USDT | +6.64% | $13,028,570.01 |
-| AXIS/USDT:USDT | +4.80% | $4,072,821.78 |
-| AGT/USDT:USDT | +3.66% | $10,283,521.33 |
+| AKE/USDT:USDT | +5.51% | $13,034,678.37 |
+| DNA/USDT:USDT | +5.33% | $2,144,543.21 |
+| IRYS/USDT:USDT | +4.77% | $65,125,932.93 |
+| AXIS/USDT:USDT | +4.65% | $4,080,680.62 |
+| ZRO/USDT:USDT | +3.77% | $5,241,348.90 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AXIS/USDT:USDT | below_1h_threshold | +2.48% | +2.32% |
-| GRASS/USDT:USDT | below_1h_threshold | +1.35% | +1.20% |
-| PEPE/USDT:USDT | below_1h_threshold | +1.09% | +0.94% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +1.06% | +0.91% |
-| NIL/USDT:USDT | below_1h_threshold | +0.94% | +0.79% |
+| GRASS/USDT:USDT | below_1h_threshold | +3.45% | +3.35% |
+| AXIS/USDT:USDT | below_1h_threshold | +2.33% | +2.23% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.58% | +1.48% |
+| PEPE/USDT:USDT | below_1h_threshold | +1.35% | +1.25% |
+| XPL/USDT:USDT | below_1h_threshold | +0.95% | +0.85% |
 
 ## 7. 次に見るべき不足
 
