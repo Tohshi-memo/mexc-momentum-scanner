@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-24T02:11:08.758663+00:00
+- generated_at: 2026-10-24T02:16:22.151981+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17324**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-24T02:11:00.177513+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=80946.5
+- 更新: 2026-10-24T02:16:09.674958+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=80883.0
 - Funnel: target 1088 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BIRB/USDT:USDT | +70.83% | $6,411,761.77 |
-| IRYS/USDT:USDT | +56.05% | $99,530,091.33 |
-| AXIS/USDT:USDT | +24.25% | $2,091,238.77 |
-| AGT/USDT:USDT | +15.12% | $10,825,179.69 |
-| SOXS/USDT:USDT | +2.95% | $29,298,922.95 |
+| BIRB/USDT:USDT | +67.66% | $6,464,856.61 |
+| IRYS/USDT:USDT | +55.21% | $99,625,162.41 |
+| AXIS/USDT:USDT | +24.75% | $2,125,664.92 |
+| AGT/USDT:USDT | +12.04% | $10,856,206.74 |
+| SOXS/USDT:USDT | +2.97% | $29,302,060.21 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZKSYNC/USDT:USDT | below_1h_threshold | +1.06% | +1.00% |
-| BTW/USDT:USDT | below_1h_threshold | +0.56% | +0.50% |
-| LUNC/USDT:USDT | below_1h_threshold | +0.51% | +0.45% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +0.48% | +0.42% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.40% | +0.34% |
+| ZKSYNC/USDT:USDT | below_1h_threshold | +0.77% | +0.79% |
+| BTW/USDT:USDT | below_1h_threshold | +0.67% | +0.69% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +0.48% | +0.50% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.43% | +0.45% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.40% | +0.42% |
 
 ## 7. 次に見るべき不足
 
