@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-24T18:51:27.860112+00:00
+- generated_at: 2026-10-24T18:56:18.214274+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17385**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-24T18:51:15.456862+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.15% price=80362.0
+- 更新: 2026-10-24T18:56:05.595941+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.22% price=80413.5
 - Funnel: target 1079 → liquid 138 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DNA/USDT:USDT | +6.15% | $2,162,856.26 |
-| USELESS/USDT:USDT | +4.57% | $2,895,652.73 |
-| AKE/USDT:USDT | +4.49% | $13,118,137.75 |
-| CHIP/USDT:USDT | +4.36% | $1,316,993.90 |
-| ZRO/USDT:USDT | +4.30% | $5,422,027.40 |
+| AKE/USDT:USDT | +5.89% | $13,127,613.45 |
+| DNA/USDT:USDT | +5.64% | $2,163,853.96 |
+| USELESS/USDT:USDT | +4.70% | $2,908,956.79 |
+| CHIP/USDT:USDT | +4.41% | $1,317,885.91 |
+| ZRO/USDT:USDT | +4.36% | $5,487,259.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JCT/USDT:USDT | below_1h_threshold | +4.90% | +4.75% |
-| GRASS/USDT:USDT | below_1h_threshold | +3.48% | +3.33% |
-| USELESS/USDT:USDT | below_1h_threshold | +2.81% | +2.66% |
-| CHIP/USDT:USDT | below_1h_threshold | +2.58% | +2.43% |
-| DASH/USDT:USDT | below_1h_threshold | +2.42% | +2.27% |
+| JCT/USDT:USDT | below_1h_threshold | +4.17% | +3.95% |
+| GRASS/USDT:USDT | below_1h_threshold | +3.58% | +3.36% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.95% | +2.73% |
+| ZEC/USDT:USDT | below_1h_threshold | +2.49% | +2.27% |
+| CHIP/USDT:USDT | below_1h_threshold | +2.44% | +2.22% |
 
 ## 7. 次に見るべき不足
 
