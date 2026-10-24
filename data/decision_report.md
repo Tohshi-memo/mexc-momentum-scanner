@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-24T21:46:26.619928+00:00
+- generated_at: 2026-10-24T21:51:23.301874+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17386**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-24T21:46:14.379316+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.24% price=80300.0
+- 更新: 2026-10-24T21:51:10.826191+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=80343.3
 - Funnel: target 1079 → liquid 131 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DNA/USDT:USDT | +8.61% | $1,931,102.26 |
-| BMT/USDT:USDT | +7.43% | $2,868,148.13 |
-| RIVER/USDT:USDT | +7.40% | $1,300,772.03 |
-| USELESS/USDT:USDT | +7.34% | $2,906,196.57 |
-| AGT/USDT:USDT | +6.78% | $8,931,689.87 |
+| DNA/USDT:USDT | +9.07% | $1,935,781.71 |
+| USELESS/USDT:USDT | +7.56% | $2,921,037.08 |
+| RIVER/USDT:USDT | +7.40% | $1,311,312.56 |
+| AGT/USDT:USDT | +6.73% | $8,939,301.55 |
+| CHIP/USDT:USDT | +6.34% | $1,398,121.81 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DNA/USDT:USDT | below_1h_threshold | +3.67% | +3.91% |
-| AGT/USDT:USDT | below_1h_threshold | +3.67% | +3.90% |
-| JCT/USDT:USDT | below_1h_threshold | +2.30% | +2.53% |
-| BMT/USDT:USDT | below_1h_threshold | +1.80% | +2.04% |
-| RIVER/USDT:USDT | below_1h_threshold | +1.44% | +1.67% |
+| DNA/USDT:USDT | below_1h_threshold | +4.11% | +4.29% |
+| AGT/USDT:USDT | below_1h_threshold | +3.63% | +3.81% |
+| JCT/USDT:USDT | below_1h_threshold | +2.73% | +2.91% |
+| RIVER/USDT:USDT | below_1h_threshold | +1.44% | +1.62% |
+| NIL/USDT:USDT | below_1h_threshold | +0.73% | +0.91% |
 
 ## 7. 次に見るべき不足
 
