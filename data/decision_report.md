@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-24T20:36:16.895346+00:00
+- generated_at: 2026-10-24T20:41:04.267830+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17386**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-24T20:36:04.427032+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=80549.3
+- 更新: 2026-10-24T20:40:55.761487+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.18% price=80597.3
 - Funnel: target 1079 → liquid 132 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| USELESS/USDT:USDT | +7.54% | $2,893,691.60 |
-| AKE/USDT:USDT | +6.79% | $10,589,426.72 |
-| CHIP/USDT:USDT | +5.57% | $1,313,040.71 |
-| ZEC/USDT:USDT | +5.17% | $1,305,197,216.90 |
-| BMT/USDT:USDT | +5.01% | $2,841,950.03 |
+| USELESS/USDT:USDT | +8.08% | $2,901,071.65 |
+| AKE/USDT:USDT | +7.42% | $10,606,133.58 |
+| CHIP/USDT:USDT | +5.93% | $1,315,959.08 |
+| ZEC/USDT:USDT | +5.33% | $1,308,416,683.26 |
+| PEPE/USDT:USDT | +5.03% | $105,318,059.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| USELESS/USDT:USDT | below_1h_threshold | +2.23% | +2.12% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +1.83% | +1.71% |
-| CHIP/USDT:USDT | below_1h_threshold | +1.74% | +1.62% |
-| DNA/USDT:USDT | below_1h_threshold | +1.47% | +1.35% |
-| JTO/USDT:USDT | below_1h_threshold | +1.40% | +1.28% |
+| DNA/USDT:USDT | below_1h_threshold | +2.88% | +2.70% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.75% | +2.57% |
+| CHIP/USDT:USDT | below_1h_threshold | +1.83% | +1.66% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +1.59% | +1.42% |
+| ZEC/USDT:USDT | below_1h_threshold | +1.39% | +1.21% |
 
 ## 7. 次に見るべき不足
 
