@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-25T21:46:21.102471+00:00
+- generated_at: 2026-10-25T21:51:23.818963+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17439**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-25T21:46:11.041328+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.21% price=80289.9
+- 更新: 2026-10-25T21:51:11.532260+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.21% price=80286.5
 - Funnel: target 1070 → liquid 119 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KIMCHI/USDT:USDT | +73.23% | $1,691,165.86 |
-| PYTH/USDT:USDT | +4.22% | $2,309,728.91 |
-| AGT/USDT:USDT | +3.99% | $3,458,520.39 |
-| APR/USDT:USDT | +3.92% | $13,239,174.09 |
-| AKE/USDT:USDT | +3.48% | $4,507,732.97 |
+| KIMCHI/USDT:USDT | +74.00% | $1,725,530.77 |
+| PYTH/USDT:USDT | +4.20% | $2,322,620.48 |
+| AGT/USDT:USDT | +3.48% | $3,463,146.20 |
+| APR/USDT:USDT | +3.36% | $13,258,318.21 |
+| BR/USDT:USDT | +3.23% | $3,224,037.63 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BR/USDT:USDT | below_1h_threshold | +2.75% | +2.96% |
-| AKE/USDT:USDT | below_1h_threshold | +1.44% | +1.65% |
-| CAP/USDT:USDT | below_1h_threshold | +0.91% | +1.12% |
-| PYTH/USDT:USDT | below_1h_threshold | +0.66% | +0.87% |
-| NIL/USDT:USDT | below_1h_threshold | +0.17% | +0.38% |
+| BR/USDT:USDT | below_1h_threshold | +2.37% | +2.58% |
+| CAP/USDT:USDT | below_1h_threshold | +1.17% | +1.38% |
+| AKE/USDT:USDT | below_1h_threshold | +1.14% | +1.36% |
+| PYTH/USDT:USDT | below_1h_threshold | +0.65% | +0.86% |
+| NIL/USDT:USDT | below_1h_threshold | +0.30% | +0.51% |
 
 ## 7. 次に見るべき不足
 
