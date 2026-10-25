@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-25T16:36:27.872575+00:00
+- generated_at: 2026-10-25T16:41:24.893104+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17432**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-25T16:36:13.949221+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=80567.9
+- 更新: 2026-10-25T16:41:12.691501+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=80524.9
 - Funnel: target 1070 → liquid 117 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| Q/USDT:USDT | +8.75% | $2,127,463.96 |
-| ORDER/USDT:USDT | +3.12% | $4,168,941.08 |
-| BIRB/USDT:USDT | +2.89% | $1,814,327.35 |
-| IRYS/USDT:USDT | +2.15% | $23,653,502.35 |
-| VVV/USDT:USDT | +2.07% | $1,617,894.82 |
+| Q/USDT:USDT | +9.11% | $2,165,728.50 |
+| BIRB/USDT:USDT | +1.97% | $1,820,477.83 |
+| VVV/USDT:USDT | +1.37% | $1,623,947.63 |
+| TAG/USDT:USDT | +1.04% | $2,181,977.79 |
+| MAGMA/USDT:USDT | +0.75% | $1,135,571.35 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BIRB/USDT:USDT | below_1h_threshold | +2.90% | +2.94% |
-| ORDER/USDT:USDT | below_1h_threshold | +2.83% | +2.87% |
-| VVV/USDT:USDT | below_1h_threshold | +2.07% | +2.12% |
-| TAG/USDT:USDT | below_1h_threshold | +1.84% | +1.89% |
-| IRYS/USDT:USDT | below_1h_threshold | +1.35% | +1.40% |
+| BIRB/USDT:USDT | below_1h_threshold | +1.97% | +2.07% |
+| VVV/USDT:USDT | below_1h_threshold | +1.37% | +1.47% |
+| TAG/USDT:USDT | below_1h_threshold | +1.04% | +1.14% |
+| ORDER/USDT:USDT | below_1h_threshold | +0.79% | +0.88% |
+| MAGMA/USDT:USDT | below_1h_threshold | +0.67% | +0.77% |
 
 ## 7. 次に見るべき不足
 
