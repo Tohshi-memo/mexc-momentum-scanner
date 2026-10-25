@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-25T13:46:23.720397+00:00
+- generated_at: 2026-10-25T13:51:20.106057+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17430**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5588件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5589件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000601 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-25T13:46:11.256757+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=80378.3
-- Funnel: target 1070 → liquid 131 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-25T13:51:05.338616+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=80340.5
+- Funnel: target 1070 → liquid 131 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| APR/USDT:USDT | +70.89% | $9,791,912.87 |
-| CAP/USDT:USDT | +28.61% | $2,042,187.26 |
-| T/USDT:USDT | +23.62% | $7,880,848.81 |
-| SKYAI/USDT:USDT | +16.48% | $1,289,490.19 |
-| TAG/USDT:USDT | +15.90% | $2,129,507.39 |
+| APR/USDT:USDT | +69.57% | $9,869,233.29 |
+| CAP/USDT:USDT | +29.23% | $2,055,413.94 |
+| T/USDT:USDT | +22.67% | $7,888,451.46 |
+| TAG/USDT:USDT | +17.62% | $2,138,423.22 |
+| SKYAI/USDT:USDT | +15.23% | $1,291,698.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TAG/USDT:USDT | below_1h_threshold | +3.03% | +3.08% |
-| APR/USDT:USDT | below_1h_threshold | +2.77% | +2.82% |
-| AXIS/USDT:USDT | below_1h_threshold | +2.50% | +2.55% |
-| CT/USDT:USDT | below_1h_threshold | +2.44% | +2.49% |
-| T/USDT:USDT | below_1h_threshold | +1.92% | +1.97% |
+| TAG/USDT:USDT | below_1h_threshold | +4.69% | +4.79% |
+| CAP/USDT:USDT | below_1h_threshold | +2.34% | +2.44% |
+| APR/USDT:USDT | below_1h_threshold | +2.13% | +2.23% |
+| CT/USDT:USDT | below_1h_threshold | +2.09% | +2.19% |
+| T/USDT:USDT | below_1h_threshold | +1.24% | +1.34% |
 
 ## 7. 次に見るべき不足
 
