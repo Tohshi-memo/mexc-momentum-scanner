@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-25T18:06:20.611820+00:00
+- generated_at: 2026-10-25T18:11:16.331084+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17434**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-25T18:06:09.986666+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=80777.9
+- 更新: 2026-10-25T18:11:06.754488+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=80676.3
 - Funnel: target 1070 → liquid 114 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| QNT/USDT:USDT | +5.28% | $45,076,466.88 |
-| AKE/USDT:USDT | +5.16% | $4,216,227.43 |
-| CHIP/USDT:USDT | +3.56% | $2,082,624.81 |
-| INJ/USDT:USDT | +3.37% | $13,197,930.34 |
-| BIRB/USDT:USDT | +3.23% | $1,680,665.46 |
+| QNT/USDT:USDT | +5.39% | $45,618,644.90 |
+| AKE/USDT:USDT | +4.43% | $4,246,635.67 |
+| INJ/USDT:USDT | +3.15% | $13,260,737.48 |
+| PYTH/USDT:USDT | +2.82% | $1,969,237.23 |
+| BIRB/USDT:USDT | +2.79% | $1,682,683.93 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +2.92% | +2.90% |
-| CAP/USDT:USDT | below_1h_threshold | +0.87% | +0.86% |
-| CHIP/USDT:USDT | below_1h_threshold | +0.86% | +0.84% |
-| BIRB/USDT:USDT | below_1h_threshold | +0.76% | +0.74% |
-| PYTH/USDT:USDT | below_1h_threshold | +0.52% | +0.50% |
+| AKE/USDT:USDT | below_1h_threshold | +2.18% | +2.29% |
+| SNXX/USDT:USDT | below_1h_threshold | +0.48% | +0.59% |
+| PYTH/USDT:USDT | below_1h_threshold | +0.44% | +0.54% |
+| SOXL/USDT:USDT | below_1h_threshold | +0.39% | +0.49% |
+| MUU/USDT:USDT | below_1h_threshold | +0.36% | +0.47% |
 
 ## 7. 次に見るべき不足
 
