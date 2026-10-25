@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-25T00:21:17.160078+00:00
+- generated_at: 2026-10-25T00:26:21.416371+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17389**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-25T00:21:07.234208+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=80738.6
+- 更新: 2026-10-25T00:26:08.985856+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=80776.5
 - Funnel: target 1079 → liquid 128 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +15.41% | $6,254,545.27 |
-| LIGHT/USDT:USDT | +13.97% | $1,104,305.90 |
-| USELESS/USDT:USDT | +13.91% | $2,901,468.87 |
-| CHIP/USDT:USDT | +10.10% | $1,457,984.19 |
-| GRASS/USDT:USDT | +9.10% | $1,699,410.52 |
+| AGT/USDT:USDT | +15.50% | $6,267,771.81 |
+| LIGHT/USDT:USDT | +14.11% | $1,114,438.09 |
+| USELESS/USDT:USDT | +13.50% | $2,911,030.29 |
+| CHIP/USDT:USDT | +10.10% | $1,459,874.50 |
+| GRASS/USDT:USDT | +8.99% | $1,705,401.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +1.79% | +1.93% |
-| DNA/USDT:USDT | below_1h_threshold | +0.82% | +0.95% |
-| NIL/USDT:USDT | below_1h_threshold | +0.64% | +0.78% |
-| LIT/USDT:USDT | below_1h_threshold | +0.61% | +0.75% |
-| AGT/USDT:USDT | below_1h_threshold | +0.59% | +0.72% |
+| AKE/USDT:USDT | below_1h_threshold | +1.33% | +1.41% |
+| SPX/USDT:USDT | below_1h_threshold | +0.54% | +0.62% |
+| DNA/USDT:USDT | below_1h_threshold | +0.53% | +0.62% |
+| AGT/USDT:USDT | below_1h_threshold | +0.49% | +0.58% |
+| SNXX/USDT:USDT | below_1h_threshold | +0.49% | +0.58% |
 
 ## 7. 次に見るべき不足
 
