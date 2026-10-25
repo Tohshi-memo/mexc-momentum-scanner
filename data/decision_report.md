@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-25T17:41:27.007253+00:00
+- generated_at: 2026-10-25T17:46:07.338528+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17434**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-25T17:41:16.713150+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=80720.4
+- 更新: 2026-10-25T17:45:58.068659+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=80778.3
 - Funnel: target 1070 → liquid 116 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| APR/USDT:USDT | +4.42% | $12,341,256.14 |
-| VVV/USDT:USDT | +2.77% | $1,766,716.00 |
-| ETHFI/USDT:USDT | +2.46% | $2,358,338.89 |
-| NEAR/USDT:USDT | +2.24% | $126,609,015.78 |
-| AKE/USDT:USDT | +2.07% | $4,211,081.61 |
+| APR/USDT:USDT | +4.35% | $12,381,763.14 |
+| VVV/USDT:USDT | +3.13% | $1,776,639.62 |
+| AKE/USDT:USDT | +3.11% | $4,246,911.53 |
+| NEAR/USDT:USDT | +2.70% | $126,804,282.85 |
+| ETHFI/USDT:USDT | +2.65% | $2,369,347.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +2.74% | +2.81% |
-| QNT/USDT:USDT | below_1h_threshold | +1.68% | +1.75% |
-| ZEC/USDT:USDT | below_1h_threshold | +1.15% | +1.22% |
-| PYTH/USDT:USDT | below_1h_threshold | +1.10% | +1.17% |
-| ETHFI/USDT:USDT | below_1h_threshold | +0.94% | +1.01% |
+| AKE/USDT:USDT | below_1h_threshold | +3.78% | +3.78% |
+| QNT/USDT:USDT | below_1h_threshold | +2.38% | +2.37% |
+| T/USDT:USDT | below_1h_threshold | +1.75% | +1.75% |
+| INJ/USDT:USDT | below_1h_threshold | +1.52% | +1.51% |
+| ZEC/USDT:USDT | below_1h_threshold | +1.48% | +1.48% |
 
 ## 7. 次に見るべき不足
 
