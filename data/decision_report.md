@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-25T22:21:34.649548+00:00
+- generated_at: 2026-10-25T22:26:33.366592+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17441**
 
@@ -70,9 +70,9 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-25T22:21:17.331971+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.29% price=80470.9
-- Funnel: target 1070 → liquid 120 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-10-25T22:26:20.975060+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.28% price=80456.5
+- Funnel: target 1070 → liquid 121 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KIMCHI/USDT:USDT | +68.92% | $1,870,520.30 |
-| BR/USDT:USDT | +14.06% | $3,492,785.35 |
-| PYTH/USDT:USDT | +4.88% | $2,407,943.98 |
-| APR/USDT:USDT | +4.33% | $12,979,032.67 |
-| ENA/USDT:USDT | +3.11% | $73,734,228.07 |
+| KIMCHI/USDT:USDT | +63.53% | $1,895,717.68 |
+| BR/USDT:USDT | +17.04% | $3,691,707.73 |
+| PYTH/USDT:USDT | +5.23% | $2,417,163.23 |
+| ENA/USDT:USDT | +3.03% | $73,904,640.82 |
+| INJ/USDT:USDT | +2.88% | $19,845,973.67 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GRASS/USDT:USDT | below_1h_threshold | +2.44% | +2.15% |
-| ENA/USDT:USDT | below_1h_threshold | +1.71% | +1.42% |
-| QNT/USDT:USDT | below_1h_threshold | +1.49% | +1.20% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.48% | +1.19% |
-| ONDO/USDT:USDT | below_1h_threshold | +1.36% | +1.07% |
+| GRASS/USDT:USDT | below_1h_threshold | +2.47% | +2.20% |
+| ENA/USDT:USDT | below_1h_threshold | +1.59% | +1.31% |
+| NIL/USDT:USDT | below_1h_threshold | +1.37% | +1.10% |
+| NEAR/USDT:USDT | below_1h_threshold | +1.37% | +1.10% |
+| SPX/USDT:USDT | below_1h_threshold | +1.31% | +1.04% |
 
 ## 7. 次に見るべき不足
 
