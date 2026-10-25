@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-25T18:26:19.088533+00:00
+- generated_at: 2026-10-25T18:31:24.102116+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17434**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5594件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5595件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000482 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-25T18:26:06.467588+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=80662.5
-- Funnel: target 1070 → liquid 116 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-25T18:31:09.510007+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.16% price=80633.1
+- Funnel: target 1070 → liquid 117 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BIRB/USDT:USDT | +4.70% | $1,689,918.29 |
-| INJ/USDT:USDT | +3.89% | $13,620,058.52 |
-| QNT/USDT:USDT | +3.34% | $47,262,553.14 |
-| ETHFI/USDT:USDT | +2.80% | $2,415,092.41 |
-| VVV/USDT:USDT | +2.70% | $1,806,377.92 |
+| BIRB/USDT:USDT | +3.49% | $1,693,979.53 |
+| INJ/USDT:USDT | +3.34% | $13,757,589.10 |
+| APR/USDT:USDT | +3.14% | $12,645,661.68 |
+| VVV/USDT:USDT | +2.90% | $1,806,961.78 |
+| QNT/USDT:USDT | +2.75% | $48,070,376.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BIRB/USDT:USDT | below_1h_threshold | +2.20% | +2.32% |
-| ORDER/USDT:USDT | below_1h_threshold | +1.13% | +1.26% |
-| AXIS/USDT:USDT | below_1h_threshold | +0.81% | +0.93% |
-| SNXX/USDT:USDT | below_1h_threshold | +0.48% | +0.60% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.39% | +0.51% |
+| BIRB/USDT:USDT | below_1h_threshold | +1.02% | +1.18% |
+| ORDER/USDT:USDT | below_1h_threshold | +0.78% | +0.94% |
+| SNXX/USDT:USDT | below_1h_threshold | +0.48% | +0.64% |
+| SOXL/USDT:USDT | below_1h_threshold | +0.39% | +0.55% |
+| MUU/USDT:USDT | below_1h_threshold | +0.36% | +0.52% |
 
 ## 7. 次に見るべき不足
 
