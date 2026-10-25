@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-10-25T20:51:34.705767+00:00
+- generated_at: 2026-10-25T20:56:33.365857+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **17435**
+- closed shadow trades: **17436**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=17435, expectancy=+0.01%
+- 全期間 MARKET基準: n=17436, expectancy=+0.01%
 - 直近20件 MARKET基準: n=20, expectancy=+0.20%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -21,11 +21,11 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_5PCT | 9/20 | 45.0% | +1.74% | **+0.78%** |
-| LIMIT_6PCT | 4/20 | 20.0% | +1.89% | **+0.38%** |
-| LIMIT_ATR | 5/20 | 25.0% | +1.01% | **+0.25%** |
+| LIMIT_5PCT | 9/20 | 45.0% | +1.19% | **+0.53%** |
 | MARKET | 20/20 | 100.0% | +0.20% | **+0.20%** |
-| LIMIT_FIB1272 | 2/20 | 10.0% | +0.60% | **+0.06%** |
+| LIMIT_6PCT | 4/20 | 20.0% | +0.42% | **+0.08%** |
+| LIMIT_1PCT | 19/20 | 95.0% | +0.06% | **+0.06%** |
+| LIMIT_ATR | 5/20 | 25.0% | -0.12% | **-0.03%** |
 
 ### シャドウ上位 LONG
 
@@ -35,7 +35,7 @@
 | LIMIT_7PCT_LONG | 7/20 | 35.0% | +4.99% | **+1.75%** |
 | LIMIT_8PCT_LONG | 7/20 | 35.0% | +4.57% | **+1.60%** |
 | LIMIT_2PCT_LONG | 16/20 | 80.0% | +1.93% | **+1.54%** |
-| LIMIT_9PCT_LONG | 4/20 | 20.0% | +6.27% | **+1.25%** |
+| MARKET_LONG | 20/20 | 100.0% | +1.40% | **+1.40%** |
 
 ## 2. $100 Live Portfolio
 
@@ -46,32 +46,32 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$1,571.38** / 初期 $100.00 (+1471.38%)
-- 確定: 6688件 (Win 1947 / Loss 2132 / Flat 2609) / skip 7308件
-- 成長率目線: 平均log +0.000412 / 幾何平均 +0.041% per trade / maxDD +8.46%
+- 残高: **$1,587.10** / 初期 $100.00 (+1487.10%)
+- 確定: 6689件 (Win 1948 / Loss 2132 / Flat 2609) / skip 7308件
+- 成長率目線: 平均log +0.000413 / 幾何平均 +0.041% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: KIMCHI/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.77% 残高後 $1,571.38
+- 最新: KIMCHI/USDT:USDT `LIMIT_2PCT_LONG` TP_HIT account +1.00% 残高後 $1,587.10
 
 ## 4. Robust Adaptive DryRun ($100)
 
-- 残高: **$318.73** / 初期 $100.00 (+218.73%)
-- 確定: 3978件 (Win 1105 / Loss 936 / Flat 1937) / skip 6868件
-- 成長率目線: 平均log +0.000291 / 幾何平均 +0.029% per trade / maxDD +4.13%
-- 次の候補: `LIMIT_2PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.1833 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: KIMCHI/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.52% 残高後 $318.73
+- 残高: **$320.92** / 初期 $100.00 (+220.92%)
+- 確定: 3979件 (Win 1106 / Loss 936 / Flat 1937) / skip 6868件
+- 成長率目線: 平均log +0.000293 / 幾何平均 +0.029% per trade / maxDD +4.13%
+- 次の候補: `LIMIT_2PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.1897 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 最新: KIMCHI/USDT:USDT `LIMIT_2PCT_LONG` TP_HIT account +0.69% 残高後 $320.92
 
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5597件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5598件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000537 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000554 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-25T20:51:17.314415+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=80420.3
+- 更新: 2026-10-25T20:56:16.655532+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=80433.6
 - Funnel: target 1070 → liquid 119 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KIMCHI/USDT:USDT | +64.61% | $1,104,302.63 |
-| APR/USDT:USDT | +7.18% | $13,116,670.23 |
-| AGT/USDT:USDT | +4.05% | $3,569,674.26 |
-| PYTH/USDT:USDT | +3.55% | $2,169,627.62 |
-| VVV/USDT:USDT | +3.10% | $1,963,807.56 |
+| KIMCHI/USDT:USDT | +82.15% | $1,164,247.68 |
+| APR/USDT:USDT | +6.10% | $13,121,470.24 |
+| AGT/USDT:USDT | +4.41% | $3,574,469.42 |
+| VVV/USDT:USDT | +3.29% | $1,980,498.33 |
+| PYTH/USDT:USDT | +3.17% | $2,205,140.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BR/USDT:USDT | below_1h_threshold | +2.77% | +2.90% |
-| AGT/USDT:USDT | below_1h_threshold | +1.83% | +1.97% |
-| NIL/USDT:USDT | below_1h_threshold | +1.61% | +1.75% |
-| APR/USDT:USDT | below_1h_threshold | +1.44% | +1.58% |
-| SPX/USDT:USDT | below_1h_threshold | +1.01% | +1.15% |
+| BR/USDT:USDT | below_1h_threshold | +2.84% | +2.96% |
+| AGT/USDT:USDT | below_1h_threshold | +2.19% | +2.31% |
+| NIL/USDT:USDT | below_1h_threshold | +1.70% | +1.82% |
+| SPX/USDT:USDT | below_1h_threshold | +1.04% | +1.16% |
+| CAP/USDT:USDT | below_1h_threshold | +0.87% | +0.99% |
 
 ## 7. 次に見るべき不足
 
