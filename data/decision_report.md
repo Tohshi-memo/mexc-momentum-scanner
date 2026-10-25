@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-25T16:26:14.254928+00:00
+- generated_at: 2026-10-25T16:31:25.839826+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17431**
 
@@ -70,9 +70,9 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-25T16:26:02.440474+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=80518.5
-- Funnel: target 1070 → liquid 116 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-10-25T16:31:11.302800+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=80594.5
+- Funnel: target 1070 → liquid 117 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| Q/USDT:USDT | +5.09% | $2,026,538.35 |
-| BIRB/USDT:USDT | +2.87% | $1,806,154.15 |
-| CAP/USDT:USDT | +2.17% | $3,670,509.90 |
-| ORDER/USDT:USDT | +1.10% | $4,162,452.64 |
-| T/USDT:USDT | +0.94% | $8,311,111.68 |
+| Q/USDT:USDT | +7.10% | $2,051,269.39 |
+| ORDER/USDT:USDT | +3.40% | $4,165,288.19 |
+| BIRB/USDT:USDT | +2.52% | $1,808,683.35 |
+| IRYS/USDT:USDT | +0.75% | $23,593,418.16 |
+| VVV/USDT:USDT | +0.53% | $1,550,178.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BIRB/USDT:USDT | below_1h_threshold | +2.87% | +2.98% |
-| CAP/USDT:USDT | below_1h_threshold | +2.09% | +2.20% |
-| ORDER/USDT:USDT | below_1h_threshold | +1.11% | +1.21% |
-| T/USDT:USDT | below_1h_threshold | +0.95% | +1.05% |
-| SNXX/USDT:USDT | below_1h_threshold | +0.48% | +0.59% |
+| ORDER/USDT:USDT | below_1h_threshold | +3.40% | +3.41% |
+| BIRB/USDT:USDT | below_1h_threshold | +2.33% | +2.34% |
+| T/USDT:USDT | below_1h_threshold | +0.71% | +0.72% |
+| IRYS/USDT:USDT | below_1h_threshold | +0.68% | +0.69% |
+| VVV/USDT:USDT | below_1h_threshold | +0.62% | +0.63% |
 
 ## 7. 次に見るべき不足
 
