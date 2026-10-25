@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-25T13:01:15.433913+00:00
+- generated_at: 2026-10-25T13:06:16.605854+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17429**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-25T13:01:05.406418+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=80430.1
-- Funnel: target 1070 → liquid 128 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-25T13:06:06.644352+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=80353.0
+- Funnel: target 1070 → liquid 129 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| APR/USDT:USDT | +67.78% | $9,372,417.21 |
-| CAP/USDT:USDT | +26.35% | $1,814,839.48 |
-| T/USDT:USDT | +19.72% | $7,736,398.47 |
-| SKYAI/USDT:USDT | +17.96% | $1,253,612.82 |
-| USELESS/USDT:USDT | +15.75% | $5,013,183.99 |
+| APR/USDT:USDT | +67.23% | $9,423,468.25 |
+| CAP/USDT:USDT | +27.16% | $1,830,585.83 |
+| T/USDT:USDT | +22.20% | $7,749,266.57 |
+| SKYAI/USDT:USDT | +17.48% | $1,257,515.24 |
+| USELESS/USDT:USDT | +14.69% | $5,023,003.76 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| APR/USDT:USDT | below_1h_threshold | +1.03% | +1.02% |
-| SKYAI/USDT:USDT | below_1h_threshold | +0.90% | +0.89% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.50% | +0.49% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.31% | +0.30% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.31% | +0.29% |
+| CAP/USDT:USDT | below_1h_threshold | +0.77% | +0.86% |
+| APR/USDT:USDT | below_1h_threshold | +0.77% | +0.86% |
+| TAG/USDT:USDT | below_1h_threshold | +0.59% | +0.67% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.50% | +0.58% |
+| SOXL/USDT:USDT | below_1h_threshold | +0.31% | +0.39% |
 
 ## 7. 次に見るべき不足
 
