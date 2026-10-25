@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-25T10:01:30.623510+00:00
+- generated_at: 2026-10-25T10:06:14.656679+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17419**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-25T10:01:15.951792+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=80300.4
+- 更新: 2026-10-25T10:06:04.719535+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=80321.7
 - Funnel: target 1071 → liquid 126 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| APR/USDT:USDT | +45.79% | $6,428,945.11 |
-| T/USDT:USDT | +39.83% | $6,414,973.18 |
-| TAG/USDT:USDT | +33.62% | $1,597,630.86 |
-| USELESS/USDT:USDT | +17.29% | $4,734,027.44 |
-| JCT/USDT:USDT | +11.66% | $13,785,017.35 |
+| APR/USDT:USDT | +46.30% | $6,474,322.12 |
+| T/USDT:USDT | +40.81% | $6,447,928.57 |
+| TAG/USDT:USDT | +30.69% | $1,606,805.57 |
+| USELESS/USDT:USDT | +16.87% | $4,738,913.25 |
+| JCT/USDT:USDT | +13.20% | $13,879,854.33 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| APR/USDT:USDT | below_1h_threshold | +1.63% | +1.62% |
-| JCT/USDT:USDT | below_1h_threshold | +1.37% | +1.36% |
-| MUU/USDT:USDT | below_1h_threshold | +0.45% | +0.44% |
-| KORU/USDT:USDT | below_1h_threshold | +0.28% | +0.28% |
-| SNXX/USDT:USDT | below_1h_threshold | +0.25% | +0.24% |
+| JCT/USDT:USDT | below_1h_threshold | +2.93% | +2.90% |
+| APR/USDT:USDT | below_1h_threshold | +2.26% | +2.22% |
+| DNA/USDT:USDT | below_1h_threshold | +1.11% | +1.08% |
+| NIL/USDT:USDT | below_1h_threshold | +1.03% | +1.00% |
+| SPX/USDT:USDT | below_1h_threshold | +0.86% | +0.82% |
 
 ## 7. 次に見るべき不足
 
