@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-25T21:06:18.259072+00:00
+- generated_at: 2026-10-25T21:11:26.248270+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17437**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-25T21:06:07.679072+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=80451.7
+- 更新: 2026-10-25T21:11:13.920096+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=80474.3
 - Funnel: target 1070 → liquid 117 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KIMCHI/USDT:USDT | +86.30% | $1,265,821.96 |
-| APR/USDT:USDT | +4.74% | $13,113,696.44 |
-| AGT/USDT:USDT | +4.05% | $3,437,459.00 |
-| PYTH/USDT:USDT | +4.05% | $2,189,579.94 |
-| VVV/USDT:USDT | +2.94% | $1,917,148.00 |
+| KIMCHI/USDT:USDT | +83.07% | $1,327,044.16 |
+| APR/USDT:USDT | +4.72% | $13,136,303.62 |
+| BR/USDT:USDT | +4.41% | $2,684,020.77 |
+| AGT/USDT:USDT | +4.22% | $3,440,008.13 |
+| PYTH/USDT:USDT | +3.83% | $2,192,286.79 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KIMCHI/USDT:USDT | below_1h_threshold | +4.42% | +4.42% |
-| BR/USDT:USDT | below_1h_threshold | +1.90% | +1.90% |
-| PYTH/USDT:USDT | below_1h_threshold | +0.54% | +0.54% |
-| AKE/USDT:USDT | below_1h_threshold | +0.42% | +0.43% |
-| NIL/USDT:USDT | below_1h_threshold | +0.41% | +0.42% |
+| BR/USDT:USDT | below_1h_threshold | +3.57% | +3.54% |
+| KIMCHI/USDT:USDT | below_1h_threshold | +0.95% | +0.93% |
+| AKE/USDT:USDT | below_1h_threshold | +0.44% | +0.42% |
+| NIL/USDT:USDT | below_1h_threshold | +0.44% | +0.41% |
+| PYTH/USDT:USDT | below_1h_threshold | +0.27% | +0.25% |
 
 ## 7. 次に見るべき不足
 
