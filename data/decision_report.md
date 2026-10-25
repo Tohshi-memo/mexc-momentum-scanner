@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-25T20:16:20.677231+00:00
+- generated_at: 2026-10-25T20:21:10.066009+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17434**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-25T20:16:10.583548+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=80583.5
+- 更新: 2026-10-25T20:21:01.658805+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=80561.1
 - Funnel: target 1070 → liquid 116 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| APR/USDT:USDT | +6.12% | $13,033,092.24 |
-| PYTH/USDT:USDT | +4.63% | $2,093,957.61 |
-| INJ/USDT:USDT | +4.60% | $15,999,154.30 |
-| QNT/USDT:USDT | +4.09% | $50,870,800.19 |
-| VVV/USDT:USDT | +3.69% | $1,908,669.75 |
+| APR/USDT:USDT | +5.85% | $13,061,241.99 |
+| PYTH/USDT:USDT | +4.79% | $2,099,556.71 |
+| INJ/USDT:USDT | +4.41% | $16,155,227.92 |
+| QNT/USDT:USDT | +3.93% | $50,993,405.26 |
+| VVV/USDT:USDT | +3.56% | $1,916,945.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CAP/USDT:USDT | below_1h_threshold | +1.91% | +1.85% |
-| NIL/USDT:USDT | below_1h_threshold | +0.85% | +0.79% |
-| ETHFI/USDT:USDT | below_1h_threshold | +0.68% | +0.62% |
-| BIRB/USDT:USDT | below_1h_threshold | +0.56% | +0.49% |
-| AGT/USDT:USDT | below_1h_threshold | +0.50% | +0.43% |
+| CAP/USDT:USDT | below_1h_threshold | +2.37% | +2.33% |
+| NIL/USDT:USDT | below_1h_threshold | +1.89% | +1.85% |
+| BIRB/USDT:USDT | below_1h_threshold | +1.30% | +1.26% |
+| AGT/USDT:USDT | below_1h_threshold | +0.82% | +0.78% |
+| ETHFI/USDT:USDT | below_1h_threshold | +0.67% | +0.63% |
 
 ## 7. 次に見るべき不足
 
