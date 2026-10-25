@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-25T22:36:24.756475+00:00
+- generated_at: 2026-10-25T22:41:21.775869+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17442**
 
@@ -63,38 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5602件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5603件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000463 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-25T22:36:10.306925+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.37% price=80533.7
-- Funnel: target 1070 → liquid 123 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-25T22:41:07.194345+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.34% price=80506.1
+- Funnel: target 1070 → liquid 124 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KIMCHI/USDT:USDT | +49.53% | $1,975,942.20 |
-| BR/USDT:USDT | +12.49% | $4,318,023.13 |
-| PYTH/USDT:USDT | +5.19% | $2,427,339.44 |
-| ENA/USDT:USDT | +3.32% | $74,357,448.07 |
-| INJ/USDT:USDT | +3.25% | $19,939,614.88 |
+| KIMCHI/USDT:USDT | +47.69% | $2,004,973.55 |
+| BR/USDT:USDT | +15.94% | $4,593,988.25 |
+| AXIS/USDT:USDT | +6.32% | $2,123,185.37 |
+| PYTH/USDT:USDT | +5.16% | $2,434,446.17 |
+| ENA/USDT:USDT | +3.17% | $74,610,588.05 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GRASS/USDT:USDT | below_1h_threshold | +3.80% | +3.43% |
-| AXIS/USDT:USDT | below_1h_threshold | +2.55% | +2.18% |
-| NEAR/USDT:USDT | below_1h_threshold | +2.39% | +2.02% |
-| ENA/USDT:USDT | below_1h_threshold | +1.87% | +1.50% |
-| ZEC/USDT:USDT | below_1h_threshold | +1.49% | +1.12% |
+| GRASS/USDT:USDT | below_1h_threshold | +3.88% | +3.55% |
+| NEAR/USDT:USDT | below_1h_threshold | +2.03% | +1.70% |
+| NIL/USDT:USDT | below_1h_threshold | +1.74% | +1.41% |
+| ENA/USDT:USDT | below_1h_threshold | +1.69% | +1.36% |
+| BIRB/USDT:USDT | below_1h_threshold | +1.54% | +1.20% |
 
 ## 7. 次に見るべき不足
 
