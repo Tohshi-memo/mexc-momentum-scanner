@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-25T21:11:26.248270+00:00
+- generated_at: 2026-10-25T21:16:33.842947+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17437**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5598件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5600件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000489 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-25T21:11:13.920096+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=80474.3
-- Funnel: target 1070 → liquid 117 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-25T21:16:18.925672+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=80423.3
+- Funnel: target 1070 → liquid 117 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KIMCHI/USDT:USDT | +83.07% | $1,327,044.16 |
-| APR/USDT:USDT | +4.72% | $13,136,303.62 |
-| BR/USDT:USDT | +4.41% | $2,684,020.77 |
-| AGT/USDT:USDT | +4.22% | $3,440,008.13 |
-| PYTH/USDT:USDT | +3.83% | $2,192,286.79 |
+| KIMCHI/USDT:USDT | +87.69% | $1,421,907.60 |
+| BR/USDT:USDT | +9.07% | $2,797,326.98 |
+| APR/USDT:USDT | +4.16% | $13,149,434.43 |
+| PYTH/USDT:USDT | +4.05% | $2,200,689.50 |
+| AGT/USDT:USDT | +3.71% | $3,442,259.67 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BR/USDT:USDT | below_1h_threshold | +3.57% | +3.54% |
-| KIMCHI/USDT:USDT | below_1h_threshold | +0.95% | +0.93% |
-| AKE/USDT:USDT | below_1h_threshold | +0.44% | +0.42% |
-| NIL/USDT:USDT | below_1h_threshold | +0.44% | +0.41% |
-| PYTH/USDT:USDT | below_1h_threshold | +0.27% | +0.25% |
+| AKE/USDT:USDT | below_1h_threshold | +1.19% | +1.23% |
+| CAP/USDT:USDT | below_1h_threshold | +1.00% | +1.04% |
+| PYTH/USDT:USDT | below_1h_threshold | +0.55% | +0.59% |
+| NIL/USDT:USDT | below_1h_threshold | +0.18% | +0.22% |
+| SOXL/USDT:USDT | below_1h_threshold | +0.13% | +0.17% |
 
 ## 7. 次に見るべき不足
 
