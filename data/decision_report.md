@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-25T17:51:22.675942+00:00
+- generated_at: 2026-10-25T17:56:15.013040+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17434**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-25T17:51:10.403756+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=80778.2
-- Funnel: target 1070 → liquid 116 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-25T17:56:05.199241+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=80804.0
+- Funnel: target 1070 → liquid 117 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| APR/USDT:USDT | +4.79% | $12,426,332.52 |
-| QNT/USDT:USDT | +3.64% | $43,523,964.80 |
-| VVV/USDT:USDT | +2.96% | $1,799,251.29 |
-| T/USDT:USDT | +2.89% | $8,400,073.90 |
-| INJ/USDT:USDT | +2.50% | $13,096,659.32 |
+| QNT/USDT:USDT | +4.88% | $44,796,099.77 |
+| APR/USDT:USDT | +3.63% | $12,468,107.70 |
+| INJ/USDT:USDT | +3.08% | $13,203,128.40 |
+| VVV/USDT:USDT | +2.87% | $1,806,384.38 |
+| NEAR/USDT:USDT | +2.46% | $127,625,061.47 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| QNT/USDT:USDT | below_1h_threshold | +3.39% | +3.39% |
-| AKE/USDT:USDT | below_1h_threshold | +2.80% | +2.80% |
-| T/USDT:USDT | below_1h_threshold | +2.04% | +2.04% |
-| INJ/USDT:USDT | below_1h_threshold | +1.45% | +1.45% |
-| ZEC/USDT:USDT | below_1h_threshold | +1.43% | +1.43% |
+| QNT/USDT:USDT | below_1h_threshold | +4.54% | +4.50% |
+| AKE/USDT:USDT | below_1h_threshold | +2.94% | +2.90% |
+| INJ/USDT:USDT | below_1h_threshold | +1.99% | +1.96% |
+| PYTH/USDT:USDT | below_1h_threshold | +1.41% | +1.38% |
+| ZEC/USDT:USDT | below_1h_threshold | +1.23% | +1.20% |
 
 ## 7. 次に見るべき不足
 
