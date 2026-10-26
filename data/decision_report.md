@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-26T21:41:23.955031+00:00
+- generated_at: 2026-10-26T21:46:32.595195+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17523**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-26T21:41:12.937132+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.32% price=80097.4
+- 更新: 2026-10-26T21:46:16.934510+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.32% price=80099.4
 - Funnel: target 1078 → liquid 158 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| Q/USDT:USDT | +143.27% | $14,858,347.37 |
-| KIMCHI/USDT:USDT | +6.67% | $4,362,422.54 |
-| AGT/USDT:USDT | +4.18% | $1,712,332.26 |
-| DNA/USDT:USDT | +4.14% | $1,190,073.87 |
-| DODO/USDT:USDT | +3.92% | $1,440,542.24 |
+| Q/USDT:USDT | +143.36% | $14,941,686.25 |
+| KIMCHI/USDT:USDT | +5.28% | $4,378,233.90 |
+| DNA/USDT:USDT | +4.04% | $1,190,595.78 |
+| APR/USDT:USDT | +3.76% | $3,317,575.61 |
+| DODO/USDT:USDT | +3.71% | $1,440,884.31 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +4.64% | +4.32% |
-| BAT/USDT:USDT | below_1h_threshold | +1.50% | +1.18% |
-| INJ/USDT:USDT | below_1h_threshold | +1.19% | +0.87% |
+| APR/USDT:USDT | below_1h_threshold | +1.40% | +1.08% |
+| BAT/USDT:USDT | below_1h_threshold | +1.15% | +0.83% |
 | SOXL/USDT:USDT | below_1h_threshold | +0.96% | +0.64% |
-| APR/USDT:USDT | below_1h_threshold | +0.94% | +0.62% |
+| TIA/USDT:USDT | below_1h_threshold | +0.77% | +0.45% |
+| AAOISTOCK/USDT:USDT | below_1h_threshold | +0.76% | +0.44% |
 
 ## 7. 次に見るべき不足
 
