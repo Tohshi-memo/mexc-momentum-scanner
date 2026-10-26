@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-26T16:11:48.339270+00:00
+- generated_at: 2026-10-26T16:16:29.618722+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17490**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-26T16:11:35.612512+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=80345.5
-- Funnel: target 1077 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-26T16:16:16.965266+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.23% price=80213.7
+- Funnel: target 1078 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DOOD/USDT:USDT | +1.85% | $3,640,894.22 |
-| AKE/USDT:USDT | +1.16% | $3,619,091.28 |
-| CHIP/USDT:USDT | +0.99% | $3,974,773.97 |
-| AAOISTOCK/USDT:USDT | +0.76% | $1,283,331.54 |
-| SNXX/USDT:USDT | +0.70% | $37,176,342.38 |
+| DOOD/USDT:USDT | +4.76% | $3,652,017.69 |
+| AKE/USDT:USDT | +0.84% | $3,631,263.38 |
+| CLAUDIA/USDT:USDT | +0.61% | $1,168,314.98 |
+| CAP/USDT:USDT | +0.60% | $6,471,608.23 |
+| NGAS/USDT:USDT | +0.46% | $17,116,273.00 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IRENSTOCK/USDT:USDT | below_1h_threshold | +2.09% | +2.15% |
-| DOOD/USDT:USDT | below_1h_threshold | +1.85% | +1.92% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.36% | +1.43% |
-| AAOISTOCK/USDT:USDT | below_1h_threshold | +1.23% | +1.30% |
-| AKE/USDT:USDT | below_1h_threshold | +1.17% | +1.24% |
+| DOOD/USDT:USDT | below_1h_threshold | +4.66% | +4.89% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.36% | +1.59% |
+| AAOISTOCK/USDT:USDT | below_1h_threshold | +1.23% | +1.46% |
+| AKE/USDT:USDT | below_1h_threshold | +0.84% | +1.07% |
+| CLAUDIA/USDT:USDT | below_1h_threshold | +0.71% | +0.94% |
 
 ## 7. 次に見るべき不足
 
