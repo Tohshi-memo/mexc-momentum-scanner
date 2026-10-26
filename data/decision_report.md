@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-26T13:41:17.434795+00:00
+- generated_at: 2026-10-26T13:46:27.602479+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17484**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-26T13:41:07.136832+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.65% price=79781.0
+- 更新: 2026-10-26T13:46:14.837396+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.54% price=79870.0
 - Funnel: target 1073 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DOOD/USDT:USDT | +60.26% | $3,247,817.70 |
-| BULLA/USDT:USDT | +58.72% | $4,239,121.62 |
-| KIMCHI/USDT:USDT | +50.76% | $4,429,235.43 |
-| QNT/USDT:USDT | +15.76% | $102,021,510.74 |
-| BR/USDT:USDT | +9.23% | $10,078,192.05 |
+| DOOD/USDT:USDT | +59.70% | $3,262,889.76 |
+| BULLA/USDT:USDT | +57.81% | $4,277,093.22 |
+| KIMCHI/USDT:USDT | +48.46% | $4,435,458.63 |
+| QNT/USDT:USDT | +14.81% | $102,753,998.76 |
+| BR/USDT:USDT | +9.30% | $10,099,516.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AXIS/USDT:USDT | below_1h_threshold | +2.26% | +2.91% |
-| DOOD/USDT:USDT | below_1h_threshold | +2.21% | +2.85% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.06% | +1.71% |
-| BULLA/USDT:USDT | below_1h_threshold | +0.87% | +1.52% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.81% | +1.46% |
+| AXIS/USDT:USDT | below_1h_threshold | +2.34% | +2.88% |
+| DOOD/USDT:USDT | below_1h_threshold | +1.53% | +2.07% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.03% | +1.57% |
+| SOXL/USDT:USDT | below_1h_threshold | +0.81% | +1.34% |
+| BEAT/USDT:USDT | below_1h_threshold | +0.78% | +1.32% |
 
 ## 7. 次に見るべき不足
 
