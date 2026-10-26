@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-26T03:16:16.828717+00:00
+- generated_at: 2026-10-26T03:21:25.404418+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17457**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-26T03:16:06.798415+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.20% price=79693.0
+- 更新: 2026-10-26T03:21:12.969473+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.16% price=79666.1
 - Funnel: target 1070 → liquid 140 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.9 >= 65=1
+- Strict後reject: 4h RSI 85.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KIMCHI/USDT:USDT | +42.46% | $2,671,930.69 |
-| DODO/USDT:USDT | +15.75% | $1,083,455.52 |
-| CLAUDIA/USDT:USDT | +13.09% | $1,093,235.13 |
-| BR/USDT:USDT | +9.82% | $7,451,308.65 |
-| CAP/USDT:USDT | +7.83% | $5,534,226.51 |
+| KIMCHI/USDT:USDT | +42.61% | $2,674,367.85 |
+| DODO/USDT:USDT | +16.58% | $1,087,320.77 |
+| BR/USDT:USDT | +9.92% | $7,459,624.30 |
+| CLAUDIA/USDT:USDT | +9.75% | $1,095,734.85 |
+| CAP/USDT:USDT | +8.27% | $5,546,712.39 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AXIS/USDT:USDT | below_1h_threshold | +2.46% | +2.26% |
-| SOXS/USDT:USDT | below_1h_threshold | +2.18% | +1.98% |
-| BTW/USDT:USDT | below_1h_threshold | +0.78% | +0.59% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +0.62% | +0.42% |
-| SILVER/USDT:USDT | below_1h_threshold | +0.52% | +0.32% |
+| AXIS/USDT:USDT | below_1h_threshold | +2.76% | +2.60% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.18% | +2.02% |
+| QNT/USDT:USDT | below_1h_threshold | +0.64% | +0.48% |
+| WIF/USDT:USDT | below_1h_threshold | +0.51% | +0.35% |
+| SILVER/USDT:USDT | below_1h_threshold | +0.50% | +0.34% |
 
 ## 7. 次に見るべき不足
 
