@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-26T06:21:19.985266+00:00
+- generated_at: 2026-10-26T06:26:21.530415+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17465**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-26T06:21:08.728414+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=80107.2
+- 更新: 2026-10-26T06:26:09.185622+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.29% price=80004.6
 - Funnel: target 1070 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KIMCHI/USDT:USDT | +45.84% | $3,017,255.88 |
-| BR/USDT:USDT | +11.67% | $8,663,302.41 |
-| DODO/USDT:USDT | +10.67% | $1,192,781.74 |
-| NIL/USDT:USDT | +6.62% | $3,429,473.26 |
-| CLAUDIA/USDT:USDT | +5.94% | $1,120,328.78 |
+| KIMCHI/USDT:USDT | +47.38% | $3,021,372.32 |
+| BR/USDT:USDT | +11.10% | $8,699,642.09 |
+| DODO/USDT:USDT | +10.67% | $1,194,183.51 |
+| NIL/USDT:USDT | +5.88% | $3,440,994.50 |
+| CLAUDIA/USDT:USDT | +5.60% | $1,120,760.92 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UNITREE/USDT:USDT | below_1h_threshold | +3.93% | +4.09% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.69% | +0.85% |
-| BR/USDT:USDT | below_1h_threshold | +0.35% | +0.51% |
-| TESLA/USDT:USDT | below_1h_threshold | +0.32% | +0.48% |
-| NIL/USDT:USDT | below_1h_threshold | +0.27% | +0.43% |
+| UNITREE/USDT:USDT | below_1h_threshold | +3.93% | +4.21% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.69% | +0.98% |
+| TESLA/USDT:USDT | below_1h_threshold | +0.32% | +0.60% |
+| TSMSTOCK/USDT:USDT | below_1h_threshold | +0.07% | +0.36% |
+| ZINC/USDT:USDT | below_1h_threshold | +0.06% | +0.35% |
 
 ## 7. 次に見るべき不足
 
