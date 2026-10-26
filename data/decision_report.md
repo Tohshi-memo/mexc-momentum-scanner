@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-26T03:21:25.404418+00:00
+- generated_at: 2026-10-26T03:26:11.082967+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17457**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-26T03:21:12.969473+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=79666.1
-- Funnel: target 1070 → liquid 140 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.6 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-26T03:26:02.262017+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.27% price=79750.0
+- Funnel: target 1070 → liquid 140 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KIMCHI/USDT:USDT | +42.61% | $2,674,367.85 |
-| DODO/USDT:USDT | +16.58% | $1,087,320.77 |
-| BR/USDT:USDT | +9.92% | $7,459,624.30 |
-| CLAUDIA/USDT:USDT | +9.75% | $1,095,734.85 |
-| CAP/USDT:USDT | +8.27% | $5,546,712.39 |
+| KIMCHI/USDT:USDT | +46.30% | $2,684,769.90 |
+| DODO/USDT:USDT | +13.65% | $1,092,355.94 |
+| BR/USDT:USDT | +9.92% | $7,478,315.56 |
+| CLAUDIA/USDT:USDT | +8.91% | $1,097,243.88 |
+| CAP/USDT:USDT | +6.18% | $5,555,167.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AXIS/USDT:USDT | below_1h_threshold | +2.76% | +2.60% |
-| SOXS/USDT:USDT | below_1h_threshold | +2.18% | +2.02% |
-| QNT/USDT:USDT | below_1h_threshold | +0.64% | +0.48% |
-| WIF/USDT:USDT | below_1h_threshold | +0.51% | +0.35% |
-| SILVER/USDT:USDT | below_1h_threshold | +0.50% | +0.34% |
+| DODO/USDT:USDT | below_1h_threshold | +3.63% | +3.36% |
+| AXIS/USDT:USDT | below_1h_threshold | +3.21% | +2.94% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.18% | +1.91% |
+| QNT/USDT:USDT | below_1h_threshold | +0.98% | +0.71% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +0.76% | +0.49% |
 
 ## 7. 次に見るべき不足
 
