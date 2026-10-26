@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-26T17:01:29.633958+00:00
+- generated_at: 2026-10-26T17:06:19.882178+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17495**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-26T17:01:16.520274+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=80267.8
+- 更新: 2026-10-26T17:06:11.658470+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.27% price=80417.2
 - Funnel: target 1078 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CHIP/USDT:USDT | +3.26% | $4,266,131.79 |
-| Q/USDT:USDT | +2.87% | $1,567,102.75 |
-| BULLA/USDT:USDT | +2.74% | $7,221,537.76 |
-| JCT/USDT:USDT | +2.22% | $9,555,071.38 |
-| APR/USDT:USDT | +2.08% | $4,377,257.35 |
+| BULLA/USDT:USDT | +4.18% | $7,429,117.26 |
+| CHIP/USDT:USDT | +3.03% | $4,325,799.91 |
+| DODO/USDT:USDT | +2.24% | $1,470,855.62 |
+| KORU/USDT:USDT | +1.64% | $118,755,560.41 |
+| TIA/USDT:USDT | +1.54% | $15,991,705.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| APR/USDT:USDT | below_1h_threshold | +2.02% | +1.93% |
-| AAOISTOCK/USDT:USDT | below_1h_threshold | +0.81% | +0.73% |
-| PONS/USDT:USDT | below_1h_threshold | +0.77% | +0.68% |
-| JCT/USDT:USDT | below_1h_threshold | +0.74% | +0.66% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +0.74% | +0.65% |
+| TIA/USDT:USDT | below_1h_threshold | +1.59% | +1.32% |
+| APR/USDT:USDT | below_1h_threshold | +1.58% | +1.31% |
+| BULLA/USDT:USDT | below_1h_threshold | +1.51% | +1.24% |
+| ETHFI/USDT:USDT | below_1h_threshold | +1.28% | +1.01% |
+| DODO/USDT:USDT | below_1h_threshold | +1.06% | +0.79% |
 
 ## 7. 次に見るべき不足
 
