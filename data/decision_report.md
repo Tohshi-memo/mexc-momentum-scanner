@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-26T00:01:26.771867+00:00
+- generated_at: 2026-10-26T00:06:25.215859+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17443**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-26T00:01:14.427895+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=80128.8
-- Funnel: target 1070 → liquid 126 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-26T00:06:12.651534+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=80016.2
+- Funnel: target 1070 → liquid 127 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KIMCHI/USDT:USDT | +38.46% | $2,265,425.85 |
-| BR/USDT:USDT | +16.42% | $5,983,161.39 |
-| AXIS/USDT:USDT | +10.00% | $2,041,437.95 |
-| PYTH/USDT:USDT | +4.56% | $2,490,346.34 |
-| CAP/USDT:USDT | +3.87% | $4,997,595.10 |
+| KIMCHI/USDT:USDT | +37.07% | $2,282,067.77 |
+| BR/USDT:USDT | +16.40% | $6,060,168.52 |
+| AXIS/USDT:USDT | +6.94% | $2,100,904.16 |
+| PYTH/USDT:USDT | +4.55% | $2,528,258.52 |
+| INJ/USDT:USDT | +2.46% | $21,125,384.09 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AXIS/USDT:USDT | below_1h_threshold | +4.41% | +4.39% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.72% | +1.70% |
-| AKE/USDT:USDT | below_1h_threshold | +0.29% | +0.27% |
-| ETHFI/USDT:USDT | below_1h_threshold | +0.27% | +0.25% |
-| INJ/USDT:USDT | below_1h_threshold | +0.25% | +0.24% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.72% | +1.84% |
+| AXIS/USDT:USDT | below_1h_threshold | +0.87% | +0.99% |
+| INJ/USDT:USDT | below_1h_threshold | +0.38% | +0.50% |
+| QNT/USDT:USDT | below_1h_threshold | +0.25% | +0.37% |
+| STRK/USDT:USDT | below_1h_threshold | +0.20% | +0.32% |
 
 ## 7. 次に見るべき不足
 
