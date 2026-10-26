@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-26T14:51:34.014255+00:00
+- generated_at: 2026-10-26T14:56:42.073646+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17485**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5648件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5649件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_8PCT` (selected_by_causal_log_growth) / causal_score +0.000293 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-26T14:51:16.221273+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.70% price=80225.1
-- Funnel: target 1077 → liquid 159 → pre 50 → checked 50 → surge 3 → strict 2
-- Surge前reject: below_1h_threshold=46, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.2 >= 65=1
+- 更新: 2026-10-26T14:56:23.116258+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.70% price=80224.1
+- Funnel: target 1077 → liquid 159 → pre 50 → checked 50 → surge 4 → strict 2
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.0 >= 65=1, 4h RSI 69.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BULLA/USDT:USDT | +63.23% | $5,243,252.72 |
-| DOOD/USDT:USDT | +57.65% | $3,433,323.32 |
-| KIMCHI/USDT:USDT | +41.07% | $4,571,611.33 |
-| BR/USDT:USDT | +19.72% | $10,920,713.14 |
-| CHIP/USDT:USDT | +17.30% | $3,504,053.38 |
+| BULLA/USDT:USDT | +64.85% | $5,354,919.51 |
+| DOOD/USDT:USDT | +57.02% | $3,437,690.98 |
+| KIMCHI/USDT:USDT | +37.38% | $4,587,160.99 |
+| CHIP/USDT:USDT | +18.43% | $3,556,749.27 |
+| BR/USDT:USDT | +18.20% | $11,041,949.92 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_relative_strength | +5.53% | +4.83% |
-| RLS/USDT:USDT | below_1h_threshold | +4.79% | +4.09% |
-| ERA/USDT:USDT | below_1h_threshold | +4.30% | +3.60% |
-| BULLA/USDT:USDT | below_1h_threshold | +3.35% | +2.65% |
-| INJ/USDT:USDT | below_1h_threshold | +3.33% | +2.63% |
+| RLS/USDT:USDT | below_1h_threshold | +4.99% | +4.29% |
+| BULLA/USDT:USDT | below_1h_threshold | +4.36% | +3.67% |
+| ERA/USDT:USDT | below_1h_threshold | +3.17% | +2.47% |
+| TESLA/USDT:USDT | below_1h_threshold | +3.04% | +2.34% |
+| INJ/USDT:USDT | below_1h_threshold | +2.86% | +2.16% |
 
 ## 7. 次に見るべき不足
 
