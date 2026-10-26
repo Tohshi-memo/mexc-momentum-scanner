@@ -1,30 +1,30 @@
 # Decision Report
 
-- generated_at: 2026-10-26T19:56:24.857590+00:00
+- generated_at: 2026-10-26T20:01:30.549031+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **17515**
+- closed shadow trades: **17516**
 
 ## 1. 今日の判断
 
-- 結論: **MARKET SHORTは実行候補。直近EV +1.35% / filled 20/20。**
-- 全期間 MARKET基準: n=17515, expectancy=+0.01%
-- 直近20件 MARKET基準: n=20, expectancy=+1.35%
+- 結論: **MARKET SHORTは実行候補。直近EV +1.25% / filled 20/20。**
+- 全期間 MARKET基準: n=17516, expectancy=+0.01%
+- 直近20件 MARKET基準: n=20, expectancy=+1.25%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
 ### 実行可能ランキング (現executorで正確に測れるもの)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | +1.35% | **+1.35%** |
+| MARKET | 20/20 | 100.0% | +1.25% | **+1.25%** |
 
 ### シャドウ上位 SHORT (まだ実行に直結しない候補を含む)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | +1.35% | **+1.35%** |
+| MARKET | 20/20 | 100.0% | +1.25% | **+1.25%** |
 | LIMIT_9PCT | 4/20 | 20.0% | +5.00% | **+1.00%** |
 | LIMIT_10PCT | 4/20 | 20.0% | +5.00% | **+1.00%** |
-| LIMIT_1PCT | 17/20 | 85.0% | +1.06% | **+0.90%** |
+| LIMIT_1PCT | 17/20 | 85.0% | +0.94% | **+0.80%** |
 | LIMIT_7PCT | 7/20 | 35.0% | +2.11% | **+0.74%** |
 
 ### シャドウ上位 LONG
@@ -32,10 +32,10 @@
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | LIMIT_9PCT_LONG | 6/20 | 30.0% | +1.70% | **+0.51%** |
-| LIMIT_8PCT_LONG | 9/20 | 45.0% | +0.89% | **+0.40%** |
-| LIMIT_7PCT_LONG | 11/20 | 55.0% | +0.71% | **+0.39%** |
-| LIMIT_ATR_LONG | 15/20 | 75.0% | +0.09% | **+0.06%** |
-| LIMIT_2PCT_LONG | 17/20 | 85.0% | +0.05% | **+0.04%** |
+| LIMIT_7PCT_LONG | 10/20 | 50.0% | +0.89% | **+0.44%** |
+| LIMIT_8PCT_LONG | 8/20 | 40.0% | +1.00% | **+0.40%** |
+| LIMIT_ATR_LONG | 15/20 | 75.0% | +0.15% | **+0.11%** |
+| LIMIT_2PCT_LONG | 17/20 | 85.0% | +0.10% | **+0.09%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,534.60** / 初期 $100.00 (+1434.60%)
-- 確定: 6720件 (Win 1956 / Loss 2151 / Flat 2613) / skip 7356件
+- 確定: 6720件 (Win 1956 / Loss 2151 / Flat 2613) / skip 7357件
 - 成長率目線: 平均log +0.000406 / 幾何平均 +0.041% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_8PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: DOOD/USDT:USDT `LIMIT_8PCT` EXPIRED account +0.00% 残高後 $1,534.60
@@ -55,10 +55,10 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$319.14** / 初期 $100.00 (+219.14%)
-- 確定: 4045件 (Win 1114 / Loss 951 / Flat 1980) / skip 6881件
+- 確定: 4046件 (Win 1114 / Loss 951 / Flat 1981) / skip 6881件
 - 成長率目線: 平均log +0.000287 / 幾何平均 +0.029% per trade / maxDD +4.13%
-- 次の候補: `LIMIT_6PCT` (selected_by_robust_growth_score) / robust_score +0.0382 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: Q/USDT:USDT `LIMIT_6PCT` EXPIRED account +0.00% 残高後 $319.14
+- 次の候補: `LIMIT_6PCT` (selected_by_robust_growth_score) / robust_score +0.0381 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 最新: NBISSTOCK/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $319.14
 
 ## 5. Causal Adaptive DryRun ($100)
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-26T19:56:12.342027+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=79993.2
+- 更新: 2026-10-26T20:01:15.591616+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=79945.2
 - Funnel: target 1078 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| Q/USDT:USDT | +89.36% | $8,978,547.62 |
-| BULLA/USDT:USDT | +5.08% | $9,211,046.65 |
-| DNA/USDT:USDT | +5.03% | $1,090,852.66 |
-| AGT/USDT:USDT | +2.94% | $1,715,915.71 |
-| DODO/USDT:USDT | +2.37% | $1,490,376.45 |
+| Q/USDT:USDT | +85.55% | $9,025,179.04 |
+| BULLA/USDT:USDT | +5.23% | $9,237,050.87 |
+| DNA/USDT:USDT | +5.14% | $1,065,993.47 |
+| AGT/USDT:USDT | +2.68% | $1,638,801.48 |
+| DODO/USDT:USDT | +2.67% | $1,462,242.49 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DODO/USDT:USDT | below_1h_threshold | +1.63% | +1.59% |
-| DASH/USDT:USDT | below_1h_threshold | +1.31% | +1.27% |
-| AGT/USDT:USDT | below_1h_threshold | +1.31% | +1.27% |
-| BAT/USDT:USDT | below_1h_threshold | +1.27% | +1.23% |
-| INJ/USDT:USDT | below_1h_threshold | +1.12% | +1.08% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.89% | +1.94% |
+| EWZ/USDT:USDT | below_1h_threshold | +1.03% | +1.09% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +0.99% | +1.04% |
+| NGAS/USDT:USDT | below_1h_threshold | +0.63% | +0.68% |
+| BULLA/USDT:USDT | below_1h_threshold | +0.50% | +0.55% |
 
 ## 7. 次に見るべき不足
 
