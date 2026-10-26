@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-26T05:36:10.169705+00:00
+- generated_at: 2026-10-26T05:41:09.428669+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17464**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-26T05:36:01.057940+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=80155.7
+- 更新: 2026-10-26T05:41:00.304695+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=80143.9
 - Funnel: target 1070 → liquid 144 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KIMCHI/USDT:USDT | +45.23% | $2,942,075.81 |
-| RLS/USDT:USDT | +16.55% | $1,048,932.42 |
-| BR/USDT:USDT | +11.24% | $8,440,748.03 |
-| DODO/USDT:USDT | +10.89% | $1,179,484.39 |
-| CLAUDIA/USDT:USDT | +7.15% | $1,115,913.83 |
+| KIMCHI/USDT:USDT | +42.00% | $2,948,960.70 |
+| RLS/USDT:USDT | +17.85% | $1,049,369.95 |
+| BR/USDT:USDT | +11.44% | $8,461,365.67 |
+| DODO/USDT:USDT | +10.24% | $1,179,943.61 |
+| CLAUDIA/USDT:USDT | +8.40% | $1,117,385.33 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIL/USDT:USDT | below_1h_threshold | +2.31% | +2.25% |
-| CHIP/USDT:USDT | below_1h_threshold | +2.00% | +1.93% |
-| AKE/USDT:USDT | below_1h_threshold | +1.64% | +1.57% |
-| QNT/USDT:USDT | below_1h_threshold | +1.63% | +1.56% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.33% | +1.26% |
+| NIL/USDT:USDT | below_1h_threshold | +3.18% | +3.12% |
+| CLAUDIA/USDT:USDT | below_1h_threshold | +2.02% | +1.97% |
+| QNT/USDT:USDT | below_1h_threshold | +1.88% | +1.83% |
+| CHIP/USDT:USDT | below_1h_threshold | +1.56% | +1.51% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.33% | +1.28% |
 
 ## 7. 次に見るべき不足
 
