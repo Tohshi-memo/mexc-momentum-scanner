@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-26T09:21:28.411089+00:00
+- generated_at: 2026-10-26T09:26:27.180876+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17468**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5626件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5627件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000198 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-26T09:21:13.437979+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.27% price=80421.9
-- Funnel: target 1073 → liquid 148 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.1 >= 65=1
+- 更新: 2026-10-26T09:26:13.708277+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.30% price=80442.5
+- Funnel: target 1073 → liquid 149 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 74.7 >= 65=1, 4h RSI 74.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DOOD/USDT:USDT | +83.20% | $1,633,439.70 |
-| KIMCHI/USDT:USDT | +29.69% | $3,322,895.69 |
-| BR/USDT:USDT | +9.39% | $9,440,947.82 |
-| DODO/USDT:USDT | +8.31% | $1,392,942.69 |
-| QNT/USDT:USDT | +8.00% | $63,832,900.29 |
+| DOOD/USDT:USDT | +81.22% | $1,696,015.09 |
+| BULLA/USDT:USDT | +36.66% | $1,014,007.57 |
+| KIMCHI/USDT:USDT | +30.00% | $3,336,169.88 |
+| BR/USDT:USDT | +9.05% | $9,465,795.81 |
+| QNT/USDT:USDT | +8.93% | $64,385,647.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNXX/USDT:USDT | below_1h_threshold | +1.98% | +1.71% |
-| QNT/USDT:USDT | below_1h_threshold | +1.81% | +1.54% |
-| NIL/USDT:USDT | below_1h_threshold | +1.40% | +1.12% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.05% | +0.78% |
-| TESLA/USDT:USDT | below_1h_threshold | +0.92% | +0.65% |
+| QNT/USDT:USDT | below_1h_threshold | +2.70% | +2.40% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.98% | +1.68% |
+| SPX/USDT:USDT | below_1h_threshold | +1.42% | +1.12% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.12% | +0.82% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.05% | +0.75% |
 
 ## 7. 次に見るべき不足
 
