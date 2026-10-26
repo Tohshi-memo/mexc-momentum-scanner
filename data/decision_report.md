@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-26T16:16:29.618722+00:00
+- generated_at: 2026-10-26T16:21:24.897242+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17490**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-26T16:16:16.965266+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.23% price=80213.7
+- 更新: 2026-10-26T16:21:12.149915+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.22% price=80224.9
 - Funnel: target 1078 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DOOD/USDT:USDT | +4.76% | $3,652,017.69 |
-| AKE/USDT:USDT | +0.84% | $3,631,263.38 |
-| CLAUDIA/USDT:USDT | +0.61% | $1,168,314.98 |
-| CAP/USDT:USDT | +0.60% | $6,471,608.23 |
-| NGAS/USDT:USDT | +0.46% | $17,116,273.00 |
+| DOOD/USDT:USDT | +4.81% | $3,672,427.40 |
+| BULLA/USDT:USDT | +1.33% | $6,766,170.08 |
+| CAP/USDT:USDT | +1.16% | $6,487,381.39 |
+| AXIS/USDT:USDT | +0.57% | $1,510,646.80 |
+| JCT/USDT:USDT | +0.54% | $9,651,783.67 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DOOD/USDT:USDT | below_1h_threshold | +4.66% | +4.89% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.36% | +1.59% |
-| AAOISTOCK/USDT:USDT | below_1h_threshold | +1.23% | +1.46% |
-| AKE/USDT:USDT | below_1h_threshold | +0.84% | +1.07% |
-| CLAUDIA/USDT:USDT | below_1h_threshold | +0.71% | +0.94% |
+| DOOD/USDT:USDT | below_1h_threshold | +4.61% | +4.83% |
+| BULLA/USDT:USDT | below_1h_threshold | +1.50% | +1.71% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.36% | +1.58% |
+| CAP/USDT:USDT | below_1h_threshold | +1.34% | +1.56% |
+| AAOISTOCK/USDT:USDT | below_1h_threshold | +1.23% | +1.45% |
 
 ## 7. 次に見るべき不足
 
