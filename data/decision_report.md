@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-26T08:06:22.740714+00:00
+- generated_at: 2026-10-26T08:11:15.368240+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17466**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-26T08:06:10.158299+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.23% price=79818.8
+- 更新: 2026-10-26T08:11:05.575888+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.35% price=79724.1
 - Funnel: target 1070 → liquid 146 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KIMCHI/USDT:USDT | +33.53% | $3,201,482.23 |
-| BR/USDT:USDT | +11.42% | $9,141,175.33 |
-| DODO/USDT:USDT | +8.92% | $1,242,951.44 |
-| NIL/USDT:USDT | +5.45% | $4,054,903.55 |
-| PHA/USDT:USDT | +3.76% | $1,003,995.43 |
+| KIMCHI/USDT:USDT | +35.69% | $3,233,813.67 |
+| BR/USDT:USDT | +11.14% | $9,155,807.58 |
+| DODO/USDT:USDT | +9.10% | $1,243,818.72 |
+| CLAUDIA/USDT:USDT | +5.94% | $1,126,657.73 |
+| NIL/USDT:USDT | +5.73% | $4,072,903.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +1.25% | +1.47% |
-| ZINC/USDT:USDT | below_1h_threshold | +0.84% | +1.07% |
-| CLAUDIA/USDT:USDT | below_1h_threshold | +0.81% | +1.04% |
-| LEAD/USDT:USDT | below_1h_threshold | +0.49% | +0.72% |
-| NICKEL/USDT:USDT | below_1h_threshold | +0.45% | +0.68% |
+| CLAUDIA/USDT:USDT | below_1h_threshold | +4.46% | +4.81% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +1.25% | +1.59% |
+| ZINC/USDT:USDT | below_1h_threshold | +0.84% | +1.18% |
+| KIMCHI/USDT:USDT | below_1h_threshold | +0.81% | +1.16% |
+| LEAD/USDT:USDT | below_1h_threshold | +0.49% | +0.84% |
 
 ## 7. 次に見るべき不足
 
