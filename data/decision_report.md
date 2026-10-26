@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-26T01:06:21.826566+00:00
+- generated_at: 2026-10-26T01:11:20.653691+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17446**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-26T01:06:09.326365+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=80081.2
-- Funnel: target 1070 → liquid 130 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-26T01:11:08.217820+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=80040.6
+- Funnel: target 1070 → liquid 131 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KIMCHI/USDT:USDT | +43.23% | $2,415,830.16 |
-| BR/USDT:USDT | +12.15% | $6,842,538.56 |
-| AXIS/USDT:USDT | +10.39% | $2,028,394.94 |
-| PYTH/USDT:USDT | +3.91% | $2,510,804.16 |
-| CAP/USDT:USDT | +3.60% | $5,171,127.33 |
+| KIMCHI/USDT:USDT | +45.23% | $2,428,180.86 |
+| BR/USDT:USDT | +12.53% | $6,881,968.51 |
+| AXIS/USDT:USDT | +8.89% | $2,045,234.43 |
+| PYTH/USDT:USDT | +4.38% | $2,519,234.34 |
+| CAP/USDT:USDT | +3.76% | $5,177,976.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +2.15% | +2.22% |
-| AXIS/USDT:USDT | below_1h_threshold | +1.70% | +1.76% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.45% | +1.52% |
-| CAP/USDT:USDT | below_1h_threshold | +0.90% | +0.96% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.84% | +0.91% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.15% | +2.27% |
+| KIMCHI/USDT:USDT | below_1h_threshold | +1.61% | +1.73% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.45% | +1.57% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.84% | +0.96% |
+| CAP/USDT:USDT | below_1h_threshold | +0.76% | +0.88% |
 
 ## 7. 次に見るべき不足
 
