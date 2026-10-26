@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-26T13:56:21.455389+00:00
+- generated_at: 2026-10-26T14:01:21.215237+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17484**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5642件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5643件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_8PCT` (selected_by_causal_log_growth) / causal_score +0.000293 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-26T13:56:08.896331+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.87% price=79603.1
-- Funnel: target 1077 → liquid 155 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-26T14:01:09.965216+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=79750.0
+- Funnel: target 1077 → liquid 155 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BULLA/USDT:USDT | +59.61% | $4,524,419.09 |
-| DOOD/USDT:USDT | +57.09% | $3,303,182.42 |
-| KIMCHI/USDT:USDT | +40.00% | $4,505,588.89 |
-| QNT/USDT:USDT | +12.60% | $105,648,781.23 |
-| BR/USDT:USDT | +10.37% | $10,139,917.54 |
+| BULLA/USDT:USDT | +58.08% | $4,539,108.80 |
+| DOOD/USDT:USDT | +56.31% | $3,330,874.29 |
+| KIMCHI/USDT:USDT | +43.38% | $4,466,640.02 |
+| QNT/USDT:USDT | +13.34% | $104,508,268.48 |
+| BR/USDT:USDT | +10.71% | $10,013,634.92 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BULLA/USDT:USDT | below_1h_threshold | +1.32% | +2.19% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.03% | +1.90% |
-| BEAT/USDT:USDT | below_1h_threshold | +0.91% | +1.78% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.81% | +1.68% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +0.80% | +1.67% |
+| TESLA/USDT:USDT | below_1h_threshold | +3.04% | +2.94% |
+| DOOD/USDT:USDT | below_1h_threshold | +1.60% | +1.49% |
+| NVIDIA/USDT:USDT | below_1h_threshold | +0.78% | +0.68% |
+| BR/USDT:USDT | below_1h_threshold | +0.49% | +0.39% |
+| QNT/USDT:USDT | below_1h_threshold | +0.44% | +0.34% |
 
 ## 7. 次に見るべき不足
 
