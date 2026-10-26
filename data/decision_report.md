@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-26T08:41:24.904487+00:00
+- generated_at: 2026-10-26T08:46:46.918758+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17467**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-26T08:41:09.748669+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.34% price=80272.6
+- 更新: 2026-10-26T08:46:36.911151+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.33% price=80264.3
 - Funnel: target 1071 → liquid 148 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.5 >= 65=1
+- Strict後reject: 4h RSI 71.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DOOD/USDT:USDT | +68.31% | $1,082,195.14 |
-| KIMCHI/USDT:USDT | +35.07% | $3,263,358.16 |
-| DODO/USDT:USDT | +11.24% | $1,312,995.80 |
-| BR/USDT:USDT | +9.94% | $9,321,403.00 |
-| NIL/USDT:USDT | +5.54% | $4,173,553.52 |
+| DOOD/USDT:USDT | +69.16% | $1,169,833.41 |
+| KIMCHI/USDT:USDT | +36.92% | $3,274,315.07 |
+| DODO/USDT:USDT | +12.29% | $1,334,265.59 |
+| BR/USDT:USDT | +10.69% | $9,349,627.29 |
+| QNT/USDT:USDT | +5.31% | $62,911,799.75 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ENA/USDT:USDT | below_1h_threshold | +2.92% | +2.58% |
-| AKE/USDT:USDT | below_1h_threshold | +2.70% | +2.36% |
-| TIA/USDT:USDT | below_1h_threshold | +2.58% | +2.24% |
-| ZEC/USDT:USDT | below_1h_threshold | +2.27% | +1.93% |
-| SPX/USDT:USDT | below_1h_threshold | +2.26% | +1.92% |
+| ENA/USDT:USDT | below_1h_threshold | +3.42% | +3.09% |
+| SPX/USDT:USDT | below_1h_threshold | +2.81% | +2.48% |
+| KIMCHI/USDT:USDT | below_1h_threshold | +2.77% | +2.44% |
+| AKE/USDT:USDT | below_1h_threshold | +2.73% | +2.41% |
+| VVV/USDT:USDT | below_1h_threshold | +2.65% | +2.33% |
 
 ## 7. 次に見るべき不足
 
