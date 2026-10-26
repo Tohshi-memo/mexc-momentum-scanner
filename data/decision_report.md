@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-26T11:56:24.326846+00:00
+- generated_at: 2026-10-26T12:01:22.382942+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17481**
 
@@ -63,16 +63,16 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5640件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5641件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_8PCT` (selected_by_causal_log_growth) / causal_score +0.000291 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-26T11:56:09.893485+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.20% price=80499.1
-- Funnel: target 1073 → liquid 151 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-10-26T12:01:07.656633+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=80362.2
+- Funnel: target 1073 → liquid 147 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DOOD/USDT:USDT | +64.43% | $2,690,260.60 |
-| KIMCHI/USDT:USDT | +57.69% | $4,169,028.89 |
-| BULLA/USDT:USDT | +54.43% | $3,177,078.08 |
-| QNT/USDT:USDT | +15.81% | $86,837,564.08 |
-| CLAUDIA/USDT:USDT | +8.40% | $1,153,326.27 |
+| DOOD/USDT:USDT | +63.37% | $2,716,876.16 |
+| KIMCHI/USDT:USDT | +63.07% | $4,169,088.43 |
+| BULLA/USDT:USDT | +55.73% | $3,202,788.10 |
+| QNT/USDT:USDT | +15.33% | $85,852,409.50 |
+| CLAUDIA/USDT:USDT | +8.20% | $1,135,561.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| QNT/USDT:USDT | below_1h_threshold | +4.09% | +3.89% |
-| CHIP/USDT:USDT | below_1h_threshold | +2.53% | +2.33% |
-| BR/USDT:USDT | below_1h_threshold | +2.25% | +2.06% |
-| AGT/USDT:USDT | below_1h_threshold | +2.23% | +2.03% |
-| BULLA/USDT:USDT | below_1h_threshold | +1.93% | +1.73% |
+| SOXL/USDT:USDT | below_1h_threshold | +3.86% | +3.88% |
+| MUU/USDT:USDT | below_1h_threshold | +2.66% | +2.69% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.06% | +2.08% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.55% | +1.57% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +1.32% | +1.35% |
 
 ## 7. 次に見るべき不足
 
