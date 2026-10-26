@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-26T03:01:26.922099+00:00
+- generated_at: 2026-10-26T03:06:22.299664+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17456**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-26T03:01:14.002649+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=79548.7
+- 更新: 2026-10-26T03:06:09.729248+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.27% price=79750.9
 - Funnel: target 1070 → liquid 139 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KIMCHI/USDT:USDT | +45.38% | $2,652,636.80 |
-| CLAUDIA/USDT:USDT | +16.77% | $1,086,126.00 |
-| DODO/USDT:USDT | +10.19% | $1,042,317.33 |
-| BR/USDT:USDT | +8.78% | $7,346,553.72 |
-| CAP/USDT:USDT | +7.45% | $5,512,294.39 |
+| KIMCHI/USDT:USDT | +43.53% | $2,656,538.54 |
+| CLAUDIA/USDT:USDT | +16.63% | $1,087,805.90 |
+| BR/USDT:USDT | +10.35% | $7,395,237.24 |
+| DODO/USDT:USDT | +10.06% | $1,060,361.47 |
+| CAP/USDT:USDT | +8.04% | $5,521,835.63 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +2.18% | +2.17% |
-| DODO/USDT:USDT | below_1h_threshold | +0.92% | +0.90% |
-| CLAUDIA/USDT:USDT | below_1h_threshold | +0.90% | +0.89% |
-| UNITREE/USDT:USDT | below_1h_threshold | +0.40% | +0.38% |
-| NIL/USDT:USDT | below_1h_threshold | +0.18% | +0.16% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.18% | +1.91% |
+| AXIS/USDT:USDT | below_1h_threshold | +2.04% | +1.77% |
+| ENA/USDT:USDT | below_1h_threshold | +1.46% | +1.19% |
+| ATOM/USDT:USDT | below_1h_threshold | +1.30% | +1.03% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +1.24% | +0.97% |
 
 ## 7. 次に見るべき不足
 
