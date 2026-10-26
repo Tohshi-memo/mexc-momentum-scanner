@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-26T10:21:25.750072+00:00
+- generated_at: 2026-10-26T10:26:33.461203+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17470**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5628件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5630件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000171 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-26T10:21:12.968410+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=80388.1
-- Funnel: target 1073 → liquid 148 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.6 >= 65=1
+- 更新: 2026-10-26T10:26:19.521329+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=80400.0
+- Funnel: target 1073 → liquid 148 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 77.7 >= 65=1, 4h RSI 72.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DOOD/USDT:USDT | +66.54% | $2,225,026.76 |
-| BULLA/USDT:USDT | +49.58% | $1,527,806.01 |
-| KIMCHI/USDT:USDT | +32.00% | $3,386,016.78 |
-| QNT/USDT:USDT | +12.70% | $71,624,064.24 |
-| DODO/USDT:USDT | +9.62% | $1,403,309.78 |
+| DOOD/USDT:USDT | +73.53% | $2,260,256.34 |
+| BULLA/USDT:USDT | +50.86% | $1,645,477.22 |
+| KIMCHI/USDT:USDT | +31.69% | $3,388,392.76 |
+| QNT/USDT:USDT | +11.07% | $72,389,024.90 |
+| CLAUDIA/USDT:USDT | +9.39% | $1,135,658.16 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CLAUDIA/USDT:USDT | below_1h_threshold | +4.11% | +4.26% |
-| DOOD/USDT:USDT | below_1h_threshold | +1.59% | +1.74% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.13% | +1.28% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +1.04% | +1.19% |
-| QNT/USDT:USDT | below_1h_threshold | +0.87% | +1.01% |
+| NIL/USDT:USDT | below_1h_threshold | +1.31% | +1.44% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.13% | +1.26% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +1.04% | +1.17% |
+| PHA/USDT:USDT | below_1h_threshold | +0.77% | +0.90% |
+| BEAT/USDT:USDT | below_1h_threshold | +0.53% | +0.66% |
 
 ## 7. 次に見るべき不足
 
