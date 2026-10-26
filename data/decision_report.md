@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-26T07:01:12.736503+00:00
+- generated_at: 2026-10-26T07:06:10.413111+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17466**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-26T07:01:03.428349+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=80129.0
+- 更新: 2026-10-26T07:06:01.395624+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=80135.5
 - Funnel: target 1070 → liquid 140 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KIMCHI/USDT:USDT | +41.53% | $3,058,395.86 |
-| BR/USDT:USDT | +10.58% | $8,743,523.39 |
-| DODO/USDT:USDT | +9.27% | $1,206,160.25 |
-| NIL/USDT:USDT | +5.49% | $3,589,573.36 |
-| UNITREE/USDT:USDT | +4.69% | $6,659,985.38 |
+| KIMCHI/USDT:USDT | +41.07% | $3,061,655.59 |
+| BR/USDT:USDT | +12.37% | $8,789,404.76 |
+| DODO/USDT:USDT | +8.92% | $1,210,855.97 |
+| NIL/USDT:USDT | +6.35% | $3,601,859.80 |
+| UNITREE/USDT:USDT | +4.94% | $6,681,422.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +1.39% | +1.35% |
-| DODO/USDT:USDT | below_1h_threshold | +0.56% | +0.52% |
-| ZEC/USDT:USDT | below_1h_threshold | +0.50% | +0.46% |
-| STX/USDT:USDT | below_1h_threshold | +0.43% | +0.39% |
-| VVV/USDT:USDT | below_1h_threshold | +0.42% | +0.38% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.39% | +1.34% |
+| BR/USDT:USDT | below_1h_threshold | +1.29% | +1.24% |
+| NIL/USDT:USDT | below_1h_threshold | +0.80% | +0.75% |
+| ZINC/USDT:USDT | below_1h_threshold | +0.25% | +0.19% |
+| ALUMINUM/USDT:USDT | below_1h_threshold | +0.23% | +0.18% |
 
 ## 7. 次に見るべき不足
 
