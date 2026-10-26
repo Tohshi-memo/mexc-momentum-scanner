@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-26T15:26:31.483948+00:00
+- generated_at: 2026-10-26T15:31:56.119095+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17487**
 
@@ -63,39 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5653件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5655件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_8PCT` (selected_by_causal_log_growth) / causal_score +0.000217 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-26T15:26:17.567099+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.35% price=80667.2
-- Funnel: target 1077 → liquid 157 → pre 50 → checked 50 → surge 3 → strict 2
-- Surge前reject: below_1h_threshold=46, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.6 >= 65=1
+- 更新: 2026-10-26T15:31:31.241924+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=80524.1
+- Funnel: target 1077 → liquid 159 → pre 50 → checked 50 → surge 5 → strict 5
+- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BULLA/USDT:USDT | +65.54% | $5,820,712.86 |
-| DOOD/USDT:USDT | +46.43% | $3,496,134.46 |
-| KIMCHI/USDT:USDT | +42.15% | $4,549,822.52 |
-| BEAT/USDT:USDT | +21.12% | $1,848,589.85 |
-| BR/USDT:USDT | +17.40% | $11,549,554.78 |
+| BULLA/USDT:USDT | +66.31% | $5,891,219.56 |
+| KIMCHI/USDT:USDT | +55.53% | $4,593,188.05 |
+| DOOD/USDT:USDT | +49.11% | $3,509,738.84 |
+| BR/USDT:USDT | +17.67% | $11,614,093.49 |
+| BEAT/USDT:USDT | +17.63% | $2,044,235.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXL/USDT:USDT | below_relative_strength | +5.20% | +4.85% |
-| AAOISTOCK/USDT:USDT | below_1h_threshold | +4.63% | +4.28% |
-| KORU/USDT:USDT | below_1h_threshold | +4.60% | +4.25% |
-| KIMCHI/USDT:USDT | below_1h_threshold | +3.90% | +3.55% |
-| TQQQ/USDT:USDT | below_1h_threshold | +3.16% | +2.81% |
+| AAOISTOCK/USDT:USDT | below_1h_threshold | +4.63% | +4.45% |
+| KORU/USDT:USDT | below_1h_threshold | +4.60% | +4.43% |
+| TQQQ/USDT:USDT | below_1h_threshold | +3.16% | +2.99% |
+| MUU/USDT:USDT | below_1h_threshold | +2.74% | +2.56% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +2.49% | +2.32% |
 
 ## 7. 次に見るべき不足
 
