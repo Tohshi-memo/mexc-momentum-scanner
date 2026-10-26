@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-26T01:01:14.597350+00:00
+- generated_at: 2026-10-26T01:06:21.826566+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17446**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-26T01:01:03.585998+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=80148.7
+- 更新: 2026-10-26T01:06:09.326365+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=80081.2
 - Funnel: target 1070 → liquid 130 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KIMCHI/USDT:USDT | +43.07% | $2,409,356.95 |
-| BR/USDT:USDT | +11.92% | $6,811,635.20 |
-| AXIS/USDT:USDT | +8.20% | $2,023,180.65 |
-| PYTH/USDT:USDT | +4.61% | $2,503,299.57 |
-| AKE/USDT:USDT | +3.62% | $4,357,660.14 |
+| KIMCHI/USDT:USDT | +43.23% | $2,415,830.16 |
+| BR/USDT:USDT | +12.15% | $6,842,538.56 |
+| AXIS/USDT:USDT | +10.39% | $2,028,394.94 |
+| PYTH/USDT:USDT | +3.91% | $2,510,804.16 |
+| CAP/USDT:USDT | +3.60% | $5,171,127.33 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +2.15% | +2.14% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.45% | +1.44% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.84% | +0.82% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +0.34% | +0.33% |
-| LDO/USDT:USDT | below_1h_threshold | +0.25% | +0.23% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.15% | +2.22% |
+| AXIS/USDT:USDT | below_1h_threshold | +1.70% | +1.76% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.45% | +1.52% |
+| CAP/USDT:USDT | below_1h_threshold | +0.90% | +0.96% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.84% | +0.91% |
 
 ## 7. 次に見るべき不足
 
