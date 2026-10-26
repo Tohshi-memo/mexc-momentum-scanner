@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-26T04:51:18.326618+00:00
+- generated_at: 2026-10-26T04:56:18.563403+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17462**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5622件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5623件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000243 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-26T04:51:08.251682+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.50% price=79960.1
-- Funnel: target 1070 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-26T04:56:06.519889+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.58% price=80029.1
+- Funnel: target 1070 → liquid 142 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 79.1 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KIMCHI/USDT:USDT | +53.07% | $2,847,302.85 |
-| RLS/USDT:USDT | +17.10% | $1,031,145.83 |
-| BR/USDT:USDT | +12.51% | $8,185,901.53 |
-| DODO/USDT:USDT | +10.37% | $1,165,230.26 |
-| CAP/USDT:USDT | +5.88% | $5,996,067.96 |
+| KIMCHI/USDT:USDT | +54.92% | $2,853,471.52 |
+| RLS/USDT:USDT | +19.38% | $1,033,112.87 |
+| DODO/USDT:USDT | +10.94% | $1,166,538.93 |
+| BR/USDT:USDT | +10.58% | $8,270,687.38 |
+| CLAUDIA/USDT:USDT | +6.36% | $1,109,569.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RLS/USDT:USDT | below_1h_threshold | +4.09% | +3.59% |
-| CAP/USDT:USDT | below_1h_threshold | +3.53% | +3.03% |
-| CHIP/USDT:USDT | below_1h_threshold | +3.12% | +2.62% |
-| UNITREE/USDT:USDT | below_1h_threshold | +3.06% | +2.56% |
-| NIL/USDT:USDT | below_1h_threshold | +1.84% | +1.34% |
+| CHIP/USDT:USDT | below_1h_threshold | +3.73% | +3.15% |
+| CAP/USDT:USDT | below_1h_threshold | +3.16% | +2.58% |
+| UNITREE/USDT:USDT | below_1h_threshold | +3.06% | +2.47% |
+| NIL/USDT:USDT | below_1h_threshold | +2.40% | +1.81% |
+| PEPE/USDT:USDT | below_1h_threshold | +2.07% | +1.49% |
 
 ## 7. 次に見るべき不足
 
