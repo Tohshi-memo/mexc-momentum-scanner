@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-26T15:36:52.514151+00:00
+- generated_at: 2026-10-26T15:41:42.796446+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17488**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-26T15:36:28.222609+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.40% price=80708.5
+- 更新: 2026-10-26T15:41:23.334797+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.40% price=80706.9
 - Funnel: target 1077 → liquid 159 → pre 50 → checked 50 → surge 5 → strict 4
 - Surge前reject: below_1h_threshold=44, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.4 >= 65=1
+- Strict後reject: 4h RSI 78.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BULLA/USDT:USDT | +65.50% | $5,976,673.06 |
-| KIMCHI/USDT:USDT | +55.23% | $4,625,605.52 |
-| DOOD/USDT:USDT | +50.52% | $3,521,492.02 |
-| BEAT/USDT:USDT | +23.84% | $2,258,564.84 |
-| BR/USDT:USDT | +19.18% | $11,646,254.08 |
+| BULLA/USDT:USDT | +65.26% | $6,048,855.03 |
+| KIMCHI/USDT:USDT | +52.92% | $4,648,333.16 |
+| DOOD/USDT:USDT | +48.41% | $3,526,419.59 |
+| BEAT/USDT:USDT | +24.15% | $2,431,072.35 |
+| BR/USDT:USDT | +20.56% | $11,782,951.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXL/USDT:USDT | below_relative_strength | +5.20% | +4.79% |
+| SOXL/USDT:USDT | below_relative_strength | +5.20% | +4.80% |
 | AAOISTOCK/USDT:USDT | below_1h_threshold | +4.63% | +4.23% |
 | KORU/USDT:USDT | below_1h_threshold | +4.60% | +4.20% |
 | TQQQ/USDT:USDT | below_1h_threshold | +3.16% | +2.76% |
-| MUU/USDT:USDT | below_1h_threshold | +2.74% | +2.33% |
+| MUU/USDT:USDT | below_1h_threshold | +2.74% | +2.34% |
 
 ## 7. 次に見るべき不足
 
