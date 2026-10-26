@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-10-26T13:34:58.232311+00:00
+- generated_at: 2026-10-26T13:37:03.806155+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **17483**
+- closed shadow trades: **17484**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.38% / filled 20/20。**
-- 全期間 MARKET基準: n=17483, expectancy=+0.01%
+- 全期間 MARKET基準: n=17484, expectancy=+0.01%
 - 直近20件 MARKET基準: n=20, expectancy=+0.38%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -32,8 +32,8 @@
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | LIMIT_10PCT_LONG | 5/20 | 25.0% | +5.69% | **+1.42%** |
-| LIMIT_9PCT_LONG | 6/20 | 30.0% | +3.70% | **+1.11%** |
-| LIMIT_FIB1272_LONG | 8/20 | 40.0% | +2.29% | **+0.91%** |
+| LIMIT_FIB1272_LONG | 7/20 | 35.0% | +3.18% | **+1.11%** |
+| LIMIT_9PCT_LONG | 5/20 | 25.0% | +4.22% | **+1.05%** |
 | LIMIT_8PCT_LONG | 6/20 | 30.0% | +1.33% | **+0.40%** |
 | LIMIT_4PCT_LONG | 11/20 | 55.0% | +0.65% | **+0.36%** |
 
@@ -47,18 +47,18 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,534.60** / 初期 $100.00 (+1434.60%)
-- 確定: 6719件 (Win 1956 / Loss 2151 / Flat 2612) / skip 7325件
+- 確定: 6720件 (Win 1956 / Loss 2151 / Flat 2613) / skip 7325件
 - 成長率目線: 平均log +0.000406 / 幾何平均 +0.041% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_10PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: BR/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.50% 残高後 $1,534.60
+- 最新: DOOD/USDT:USDT `LIMIT_8PCT` EXPIRED account +0.00% 残高後 $1,534.60
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$319.14** / 初期 $100.00 (+219.14%)
-- 確定: 4026件 (Win 1114 / Loss 951 / Flat 1961) / skip 6868件
+- 確定: 4027件 (Win 1114 / Loss 951 / Flat 1962) / skip 6868件
 - 成長率目線: 平均log +0.000288 / 幾何平均 +0.029% per trade / maxDD +4.13%
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0559 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: RLS/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $319.14
+- 最新: DOOD/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $319.14
 
 ## 5. Causal Adaptive DryRun ($100)
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-26T13:34:45.390028+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.77% price=79686.0
-- Funnel: target 1073 → liquid 150 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-26T13:36:48.651125+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.98% price=79514.4
+- Funnel: target 1073 → liquid 152 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DOOD/USDT:USDT | +60.55% | $3,221,666.79 |
-| BULLA/USDT:USDT | +54.66% | $4,142,801.37 |
-| KIMCHI/USDT:USDT | +51.38% | $4,419,651.35 |
-| QNT/USDT:USDT | +14.87% | $100,927,687.71 |
-| BR/USDT:USDT | +10.32% | $10,070,156.31 |
+| DOOD/USDT:USDT | +58.43% | $3,236,740.30 |
+| BULLA/USDT:USDT | +55.56% | $4,160,588.78 |
+| KIMCHI/USDT:USDT | +50.46% | $4,423,207.01 |
+| QNT/USDT:USDT | +14.99% | $101,307,524.05 |
+| BR/USDT:USDT | +9.55% | $10,074,995.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DOOD/USDT:USDT | below_1h_threshold | +2.39% | +3.15% |
-| AXIS/USDT:USDT | below_1h_threshold | +2.30% | +3.07% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.03% | +1.80% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.81% | +1.57% |
-| SNXX/USDT:USDT | below_1h_threshold | +0.71% | +1.48% |
+| AXIS/USDT:USDT | below_1h_threshold | +1.27% | +2.25% |
+| DOOD/USDT:USDT | below_1h_threshold | +1.04% | +2.02% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.03% | +2.01% |
+| SOXL/USDT:USDT | below_1h_threshold | +0.81% | +1.79% |
+| SNXX/USDT:USDT | below_1h_threshold | +0.71% | +1.69% |
 
 ## 7. 次に見るべき不足
 
