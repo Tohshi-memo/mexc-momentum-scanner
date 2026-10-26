@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-26T20:16:18.003339+00:00
+- generated_at: 2026-10-26T20:21:22.541234+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17516**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-26T20:16:09.567438+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=79911.4
+- 更新: 2026-10-26T20:21:10.101844+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=79877.3
 - Funnel: target 1078 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| Q/USDT:USDT | +81.57% | $9,359,203.95 |
-| DNA/USDT:USDT | +4.98% | $1,140,228.99 |
-| BULLA/USDT:USDT | +4.56% | $9,353,679.69 |
-| AGT/USDT:USDT | +3.43% | $1,643,724.91 |
-| AXIS/USDT:USDT | +2.49% | $1,472,755.18 |
+| Q/USDT:USDT | +86.46% | $9,614,638.08 |
+| BULLA/USDT:USDT | +4.82% | $9,369,063.72 |
+| DNA/USDT:USDT | +4.56% | $1,141,451.63 |
+| AGT/USDT:USDT | +2.91% | $1,646,652.93 |
+| AXIS/USDT:USDT | +2.88% | $1,475,303.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BAT/USDT:USDT | below_1h_threshold | +2.17% | +2.26% |
-| AXIS/USDT:USDT | below_1h_threshold | +1.21% | +1.31% |
-| EWZ/USDT:USDT | below_1h_threshold | +1.03% | +1.13% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +0.99% | +1.09% |
-| AGT/USDT:USDT | below_1h_threshold | +0.87% | +0.97% |
+| AXIS/USDT:USDT | below_1h_threshold | +1.59% | +1.73% |
+| EWZ/USDT:USDT | below_1h_threshold | +1.03% | +1.17% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +0.99% | +1.13% |
+| STRK/USDT:USDT | below_1h_threshold | +0.91% | +1.05% |
+| BAT/USDT:USDT | below_1h_threshold | +0.64% | +0.78% |
 
 ## 7. 次に見るべき不足
 
