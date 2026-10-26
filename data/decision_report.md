@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-26T12:21:14.832252+00:00
+- generated_at: 2026-10-26T12:26:15.781933+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17481**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-26T12:21:04.627735+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=80260.0
+- 更新: 2026-10-26T12:26:05.701432+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=80357.1
 - Funnel: target 1073 → liquid 150 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DOOD/USDT:USDT | +57.23% | $2,891,442.23 |
-| KIMCHI/USDT:USDT | +56.46% | $4,228,720.85 |
-| BULLA/USDT:USDT | +51.72% | $3,440,709.17 |
-| QNT/USDT:USDT | +17.00% | $89,308,841.53 |
-| BR/USDT:USDT | +9.53% | $9,846,916.18 |
+| KIMCHI/USDT:USDT | +61.23% | $4,235,998.21 |
+| DOOD/USDT:USDT | +57.30% | $2,928,046.77 |
+| BULLA/USDT:USDT | +55.34% | $3,499,315.99 |
+| QNT/USDT:USDT | +17.64% | $90,968,943.16 |
+| CHIP/USDT:USDT | +9.86% | $2,194,251.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXL/USDT:USDT | below_1h_threshold | +3.86% | +4.01% |
-| MUU/USDT:USDT | below_1h_threshold | +2.66% | +2.82% |
-| SNXX/USDT:USDT | below_1h_threshold | +2.06% | +2.21% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.55% | +1.70% |
-| QNT/USDT:USDT | below_1h_threshold | +1.46% | +1.61% |
+| SOXL/USDT:USDT | below_1h_threshold | +3.86% | +3.89% |
+| CHIP/USDT:USDT | below_1h_threshold | +2.71% | +2.74% |
+| MUU/USDT:USDT | below_1h_threshold | +2.66% | +2.69% |
+| QNT/USDT:USDT | below_1h_threshold | +2.09% | +2.12% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.06% | +2.09% |
 
 ## 7. 次に見るべき不足
 
