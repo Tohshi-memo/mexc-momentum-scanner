@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-10-26T01:41:33.491566+00:00
+- generated_at: 2026-10-26T01:46:28.597635+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **17451**
+- closed shadow trades: **17452**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +1.06% / filled 20/20。**
-- 全期間 MARKET基準: n=17451, expectancy=+0.01%
+- 全期間 MARKET基準: n=17452, expectancy=+0.01%
 - 直近20件 MARKET基準: n=20, expectancy=+1.06%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -46,33 +46,33 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$1,538.19** / 初期 $100.00 (+1438.19%)
-- 確定: 6704件 (Win 1951 / Loss 2142 / Flat 2611) / skip 7308件
-- 成長率目線: 平均log +0.000408 / 幾何平均 +0.041% per trade / maxDD +8.46%
+- 残高: **$1,549.97** / 初期 $100.00 (+1449.97%)
+- 確定: 6705件 (Win 1952 / Loss 2142 / Flat 2611) / skip 7308件
+- 成長率目線: 平均log +0.000409 / 幾何平均 +0.041% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: CLAUDIA/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $1,538.19
+- 最新: CLAUDIA/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.77% 残高後 $1,549.97
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$313.85** / 初期 $100.00 (+213.85%)
-- 確定: 3994件 (Win 1109 / Loss 946 / Flat 1939) / skip 6868件
+- 確定: 3995件 (Win 1109 / Loss 946 / Flat 1940) / skip 6868件
 - 成長率目線: 平均log +0.000286 / 幾何平均 +0.029% per trade / maxDD +4.13%
 - 次の候補: `LIMIT_6PCT` (selected_by_robust_growth_score) / robust_score +0.0494 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: CLAUDIA/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $313.85
+- 最新: CLAUDIA/USDT:USDT `LIMIT_6PCT` EXPIRED account +0.00% 残高後 $313.85
 
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5610件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5611件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000257 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000293 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-26T01:41:13.903097+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.62% price=79637.7
-- Funnel: target 1070 → liquid 136 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-10-26T01:46:15.279804+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.83% price=79472.0
+- Funnel: target 1070 → liquid 137 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KIMCHI/USDT:USDT | +40.00% | $2,520,864.11 |
-| CLAUDIA/USDT:USDT | +17.11% | $1,010,050.71 |
-| BR/USDT:USDT | +12.49% | $7,066,885.93 |
-| AXIS/USDT:USDT | +8.66% | $2,117,055.96 |
-| CAP/USDT:USDT | +5.22% | $5,264,681.57 |
+| KIMCHI/USDT:USDT | +37.38% | $2,555,799.75 |
+| CLAUDIA/USDT:USDT | +18.67% | $1,019,671.95 |
+| BR/USDT:USDT | +12.35% | $7,080,997.75 |
+| AXIS/USDT:USDT | +7.93% | $2,129,016.31 |
+| CAP/USDT:USDT | +5.58% | $5,270,584.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CAP/USDT:USDT | below_1h_threshold | +2.36% | +2.98% |
-| SOXS/USDT:USDT | below_1h_threshold | +2.15% | +2.77% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.45% | +2.08% |
-| NIL/USDT:USDT | below_1h_threshold | +1.05% | +1.67% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.84% | +1.46% |
+| CAP/USDT:USDT | below_1h_threshold | +2.71% | +3.53% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.15% | +2.98% |
+| NIL/USDT:USDT | below_1h_threshold | +1.66% | +2.48% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.45% | +2.28% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.84% | +1.67% |
 
 ## 7. 次に見るべき不足
 
