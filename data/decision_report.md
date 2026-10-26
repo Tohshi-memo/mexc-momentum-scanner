@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-26T19:06:23.468363+00:00
+- generated_at: 2026-10-26T19:11:23.152605+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17514**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-26T19:06:15.145153+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=80026.6
+- 更新: 2026-10-26T19:11:10.504552+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=80020.0
 - Funnel: target 1078 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| Q/USDT:USDT | +85.37% | $6,850,030.17 |
-| DNA/USDT:USDT | +7.45% | $1,029,874.92 |
-| CHIP/USDT:USDT | +6.60% | $5,717,677.99 |
-| BULLA/USDT:USDT | +4.88% | $8,620,533.59 |
-| AAOISTOCK/USDT:USDT | +3.74% | $1,474,220.77 |
+| Q/USDT:USDT | +87.23% | $7,010,470.92 |
+| DNA/USDT:USDT | +6.24% | $1,055,540.50 |
+| CHIP/USDT:USDT | +5.73% | $5,788,467.42 |
+| APR/USDT:USDT | +4.13% | $3,564,793.97 |
+| AAOISTOCK/USDT:USDT | +3.40% | $1,475,789.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DNA/USDT:USDT | below_1h_threshold | +1.75% | +1.67% |
-| DASH/USDT:USDT | below_1h_threshold | +0.55% | +0.47% |
-| BULLA/USDT:USDT | below_1h_threshold | +0.46% | +0.38% |
-| NICKEL/USDT:USDT | below_1h_threshold | +0.43% | +0.34% |
-| INJ/USDT:USDT | below_1h_threshold | +0.35% | +0.27% |
+| DNA/USDT:USDT | below_1h_threshold | +1.35% | +1.28% |
+| AERO/USDT:USDT | below_1h_threshold | +1.08% | +1.00% |
+| APR/USDT:USDT | below_1h_threshold | +0.96% | +0.89% |
+| DASH/USDT:USDT | below_1h_threshold | +0.93% | +0.86% |
+| NIL/USDT:USDT | below_1h_threshold | +0.89% | +0.82% |
 
 ## 7. 次に見るべき不足
 
