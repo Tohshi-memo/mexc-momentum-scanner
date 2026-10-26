@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-26T09:51:16.971169+00:00
+- generated_at: 2026-10-26T09:56:18.612254+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17469**
 
@@ -70,30 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-26T09:51:04.458074+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.39% price=80518.0
-- Funnel: target 1073 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-26T09:56:06.072616+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.37% price=80498.8
+- Funnel: target 1073 → liquid 151 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 74.2 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DOOD/USDT:USDT | +57.16% | $2,015,710.64 |
-| BULLA/USDT:USDT | +35.93% | $1,142,144.35 |
-| KIMCHI/USDT:USDT | +31.38% | $3,377,702.48 |
-| QNT/USDT:USDT | +10.91% | $68,680,597.32 |
-| DODO/USDT:USDT | +9.58% | $1,421,308.57 |
+| DOOD/USDT:USDT | +59.77% | $2,048,207.83 |
+| BULLA/USDT:USDT | +38.44% | $1,173,772.79 |
+| KIMCHI/USDT:USDT | +30.30% | $3,380,180.76 |
+| QNT/USDT:USDT | +11.47% | $69,258,305.90 |
+| DODO/USDT:USDT | +9.58% | $1,424,108.93 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BULLA/USDT:USDT | below_relative_strength | +5.37% | +4.97% |
-| QNT/USDT:USDT | below_1h_threshold | +4.50% | +4.11% |
-| CHIP/USDT:USDT | below_1h_threshold | +2.74% | +2.34% |
-| SNXX/USDT:USDT | below_1h_threshold | +1.98% | +1.59% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.96% | +1.57% |
+| QNT/USDT:USDT | below_relative_strength | +5.00% | +4.64% |
+| CHIP/USDT:USDT | below_1h_threshold | +3.49% | +3.12% |
+| NIL/USDT:USDT | below_1h_threshold | +2.66% | +2.29% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.98% | +1.61% |
+| AXIS/USDT:USDT | below_1h_threshold | +1.37% | +1.00% |
 
 ## 7. 次に見るべき不足
 
