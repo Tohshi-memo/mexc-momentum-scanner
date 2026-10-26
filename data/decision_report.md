@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-26T07:41:23.137563+00:00
+- generated_at: 2026-10-26T07:46:19.181078+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17466**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-26T07:41:10.765511+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=80000.0
+- 更新: 2026-10-26T07:46:10.460334+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=80088.9
 - Funnel: target 1070 → liquid 145 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KIMCHI/USDT:USDT | +43.84% | $3,123,388.98 |
-| BR/USDT:USDT | +11.30% | $9,080,770.76 |
-| DODO/USDT:USDT | +8.31% | $1,232,109.36 |
-| NIL/USDT:USDT | +8.01% | $3,962,561.75 |
-| UNITREE/USDT:USDT | +4.64% | $6,724,938.09 |
+| KIMCHI/USDT:USDT | +40.61% | $3,129,439.22 |
+| BR/USDT:USDT | +11.51% | $9,097,387.76 |
+| DODO/USDT:USDT | +8.92% | $1,233,560.39 |
+| NIL/USDT:USDT | +6.85% | $4,051,119.30 |
+| UNITREE/USDT:USDT | +4.67% | $6,730,326.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIL/USDT:USDT | below_1h_threshold | +2.48% | +2.59% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +1.55% | +1.67% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.39% | +1.51% |
-| KIMCHI/USDT:USDT | below_1h_threshold | +1.08% | +1.20% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.44% | +0.56% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +1.55% | +1.56% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.39% | +1.40% |
+| NIL/USDT:USDT | below_1h_threshold | +1.27% | +1.28% |
+| CLAUDIA/USDT:USDT | below_1h_threshold | +1.17% | +1.18% |
+| ATOM/USDT:USDT | below_1h_threshold | +0.80% | +0.81% |
 
 ## 7. 次に見るべき不足
 
