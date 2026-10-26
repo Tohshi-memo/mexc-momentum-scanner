@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-26T09:31:30.555872+00:00
+- generated_at: 2026-10-26T09:36:29.889826+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17468**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-26T09:31:17.560636+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.35% price=80485.1
+- 更新: 2026-10-26T09:36:16.786226+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.39% price=80512.8
 - Funnel: target 1073 → liquid 149 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.0 >= 65=2
+- Strict後reject: 4h RSI 74.4 >= 65=1, 4h RSI 73.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DOOD/USDT:USDT | +75.58% | $1,765,155.94 |
-| BULLA/USDT:USDT | +36.88% | $1,044,568.75 |
-| KIMCHI/USDT:USDT | +32.15% | $3,341,547.42 |
-| QNT/USDT:USDT | +10.27% | $65,936,427.47 |
-| BR/USDT:USDT | +9.62% | $9,479,741.49 |
+| DOOD/USDT:USDT | +78.19% | $1,817,105.97 |
+| BULLA/USDT:USDT | +36.44% | $1,069,171.56 |
+| KIMCHI/USDT:USDT | +34.30% | $3,349,044.43 |
+| QNT/USDT:USDT | +9.83% | $66,651,360.36 |
+| BR/USDT:USDT | +9.01% | $9,496,224.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| QNT/USDT:USDT | below_1h_threshold | +3.94% | +3.59% |
-| SNXX/USDT:USDT | below_1h_threshold | +1.98% | +1.63% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.76% | +1.41% |
-| SPX/USDT:USDT | below_1h_threshold | +1.74% | +1.39% |
-| CHIP/USDT:USDT | below_1h_threshold | +1.30% | +0.95% |
+| CHIP/USDT:USDT | below_1h_threshold | +3.55% | +3.17% |
+| QNT/USDT:USDT | below_1h_threshold | +3.30% | +2.91% |
+| CLAUDIA/USDT:USDT | below_1h_threshold | +2.95% | +2.56% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.98% | +1.59% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.77% | +1.39% |
 
 ## 7. 次に見るべき不足
 
