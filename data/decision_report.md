@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-26T16:26:27.315974+00:00
+- generated_at: 2026-10-26T16:31:30.903512+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17490**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5657件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5658件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_8PCT` (selected_by_causal_log_growth) / causal_score +0.000210 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-26T16:26:14.813701+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.30% price=80162.5
-- Funnel: target 1078 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-26T16:31:16.247500+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.64% price=79888.0
+- Funnel: target 1078 → liquid 159 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DOOD/USDT:USDT | +4.16% | $3,712,803.11 |
-| BULLA/USDT:USDT | +1.46% | $6,853,854.18 |
-| BEAT/USDT:USDT | +0.94% | $3,452,419.08 |
-| CAP/USDT:USDT | +0.87% | $6,502,113.74 |
-| CHIP/USDT:USDT | +0.87% | $4,063,665.31 |
+| DOOD/USDT:USDT | +5.31% | $3,726,190.55 |
+| AKE/USDT:USDT | +1.41% | $3,691,071.77 |
+| BULLA/USDT:USDT | +1.14% | $6,904,545.98 |
+| CAP/USDT:USDT | +1.01% | $6,504,980.16 |
+| CHIP/USDT:USDT | +0.64% | $4,081,798.88 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DOOD/USDT:USDT | below_1h_threshold | +4.31% | +4.61% |
-| UKOIL/USDT:USDT | below_1h_threshold | +1.62% | +1.92% |
-| BULLA/USDT:USDT | below_1h_threshold | +1.47% | +1.76% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.36% | +1.66% |
-| AAOISTOCK/USDT:USDT | below_1h_threshold | +1.23% | +1.52% |
+| UKOIL/USDT:USDT | below_1h_threshold | +1.62% | +2.26% |
+| AKE/USDT:USDT | below_1h_threshold | +1.43% | +2.07% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.36% | +2.00% |
+| AAOISTOCK/USDT:USDT | below_1h_threshold | +1.23% | +1.87% |
+| BULLA/USDT:USDT | below_1h_threshold | +1.11% | +1.74% |
 
 ## 7. 次に見るべき不足
 
