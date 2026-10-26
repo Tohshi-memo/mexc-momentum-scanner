@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-26T19:16:27.054226+00:00
+- generated_at: 2026-10-26T19:21:22.547768+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17514**
 
@@ -63,38 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5679件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5680件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000194 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-26T19:16:12.261566+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=80066.1
-- Funnel: target 1078 → liquid 157 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-10-26T19:21:12.191297+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=80074.9
+- Funnel: target 1078 → liquid 157 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 65.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| Q/USDT:USDT | +86.66% | $7,386,337.40 |
-| DNA/USDT:USDT | +6.61% | $1,056,472.40 |
-| CHIP/USDT:USDT | +6.46% | $5,797,279.80 |
-| BAT/USDT:USDT | +4.81% | $1,868,411.80 |
-| AAOISTOCK/USDT:USDT | +3.62% | $1,476,546.03 |
+| Q/USDT:USDT | +101.00% | $7,774,957.01 |
+| DNA/USDT:USDT | +7.13% | $1,057,774.12 |
+| CHIP/USDT:USDT | +6.52% | $5,800,491.44 |
+| BULLA/USDT:USDT | +4.31% | $8,945,915.96 |
+| AAOISTOCK/USDT:USDT | +3.69% | $1,476,897.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DNA/USDT:USDT | below_1h_threshold | +1.70% | +1.57% |
-| DASH/USDT:USDT | below_1h_threshold | +1.26% | +1.13% |
-| AERO/USDT:USDT | below_1h_threshold | +1.17% | +1.03% |
-| NIL/USDT:USDT | below_1h_threshold | +1.15% | +1.02% |
-| NIGHT/USDT:USDT | below_1h_threshold | +1.04% | +0.91% |
+| BAT/USDT:USDT | below_1h_threshold | +3.79% | +3.65% |
+| DNA/USDT:USDT | below_1h_threshold | +2.20% | +2.06% |
+| NIL/USDT:USDT | below_1h_threshold | +1.25% | +1.10% |
+| DASH/USDT:USDT | below_1h_threshold | +1.20% | +1.06% |
+| ENA/USDT:USDT | below_1h_threshold | +1.17% | +1.03% |
 
 ## 7. 次に見るべき不足
 
