@@ -4,7 +4,7 @@
   "initial_capital": 100.0,
   "balance": 117.6114169450822,
   "started_at": "2026-07-11T08:56:50.346675+00:00",
-  "updated_at": "2026-10-26T06:01:09.489137+00:00",
+  "updated_at": "2026-10-26T06:06:17.233565+00:00",
   "high_watermark": 128.08262302711162,
   "max_drawdown_pct": 8.205992703625467,
   "loss_streak": 0,
@@ -283934,20 +283934,20 @@
     "reason": "selected_by_causal_log_growth",
     "causal_score": 0.00018526165665523202,
     "robust_score": 0.00018526165665523202,
-    "causal_history_count": 17462,
+    "causal_history_count": 17463,
     "fast": {
       "strategy": "LIMIT_2PCT_LONG",
       "direction": "long",
       "total": 50,
       "filled": 43,
       "fill_rate": 0.86,
-      "avg_pnl_pct": 0.23675820657454322,
-      "effective_ev_pct": 0.20361205765410717,
+      "avg_pnl_pct": 0.23675820657454325,
+      "effective_ev_pct": 0.2036120576541072,
       "avg_log_return": 0.00011721597712096039,
       "geometric_return_pct": 0.011722284718196363,
-      "avg_account_return_pct": 0.011943968771097192,
-      "max_drawdown_pct": 1.104262439204666,
-      "max_loss_streak": 4
+      "avg_account_return_pct": 0.011943968771097182,
+      "max_drawdown_pct": 1.1042624392046987,
+      "max_loss_streak": 5
     },
     "recent": {
       "strategy": "LIMIT_2PCT_LONG",
@@ -283955,13 +283955,13 @@
       "total": 50,
       "filled": 43,
       "fill_rate": 0.86,
-      "avg_pnl_pct": 0.23675820657454322,
-      "effective_ev_pct": 0.20361205765410717,
+      "avg_pnl_pct": 0.23675820657454325,
+      "effective_ev_pct": 0.2036120576541072,
       "avg_log_return": 0.00011721597712096039,
       "geometric_return_pct": 0.011722284718196363,
-      "avg_account_return_pct": 0.011943968771097192,
-      "max_drawdown_pct": 1.104262439204666,
-      "max_loss_streak": 4
+      "avg_account_return_pct": 0.011943968771097182,
+      "max_drawdown_pct": 1.1042624392046987,
+      "max_loss_streak": 5
     },
     "mid": {
       "strategy": "LIMIT_2PCT_LONG",
@@ -283973,8 +283973,8 @@
       "effective_ev_pct": 0.6771370168206324,
       "avg_log_return": 0.0003230620182245394,
       "geometric_return_pct": 0.032311420837838334,
-      "avg_account_return_pct": 0.032549354798085114,
-      "max_drawdown_pct": 1.7983779427435675,
+      "avg_account_return_pct": 0.03254935479808512,
+      "max_drawdown_pct": 1.798377942743596,
       "max_loss_streak": 5
     },
     "long": {
@@ -283983,12 +283983,12 @@
       "total": 1000,
       "filled": 732,
       "fill_rate": 0.732,
-      "avg_pnl_pct": 0.39820130022436984,
-      "effective_ev_pct": 0.29148335176423873,
-      "avg_log_return": 0.00015916175847561318,
+      "avg_pnl_pct": 0.3982013002243697,
+      "effective_ev_pct": 0.2914833517642386,
+      "avg_log_return": 0.0001591617584756132,
       "geometric_return_pct": 0.015917442538038173,
       "avg_account_return_pct": 0.01611226036709363,
-      "max_drawdown_pct": 3.0234787858899814,
+      "max_drawdown_pct": 3.023478785889946,
       "max_loss_streak": 10
     },
     "all": {
@@ -283997,12 +283997,12 @@
       "total": 1000,
       "filled": 732,
       "fill_rate": 0.732,
-      "avg_pnl_pct": 0.39820130022436984,
-      "effective_ev_pct": 0.29148335176423873,
-      "avg_log_return": 0.00015916175847561318,
+      "avg_pnl_pct": 0.3982013002243697,
+      "effective_ev_pct": 0.2914833517642386,
+      "avg_log_return": 0.0001591617584756132,
       "geometric_return_pct": 0.015917442538038173,
       "avg_account_return_pct": 0.01611226036709363,
-      "max_drawdown_pct": 3.0234787858899814,
+      "max_drawdown_pct": 3.023478785889946,
       "max_loss_streak": 10
     },
     "alternatives": [
@@ -284017,9 +284017,14 @@
         "causal_score": 0.0001430104110850531
       },
       {
+        "strategy": "LIMIT_10PCT_LONG",
+        "direction": "long",
+        "causal_score": 0.00012200171916602469
+      },
+      {
         "strategy": "LIMIT_9PCT_LONG",
         "direction": "long",
-        "causal_score": 8.202698256858733e-05
+        "causal_score": 0.00010436995350442836
       }
     ]
   },
