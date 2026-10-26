@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-26T08:56:11.454358+00:00
+- generated_at: 2026-10-26T09:01:18.404782+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17467**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-26T08:56:02.382304+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.34% price=80275.2
-- Funnel: target 1073 → liquid 148 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-26T09:01:08.594936+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=80188.2
+- Funnel: target 1073 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DOOD/USDT:USDT | +62.52% | $1,306,616.85 |
-| KIMCHI/USDT:USDT | +35.53% | $3,283,215.18 |
-| DODO/USDT:USDT | +12.91% | $1,350,135.17 |
-| BR/USDT:USDT | +9.16% | $9,399,020.82 |
-| QNT/USDT:USDT | +5.53% | $63,271,928.98 |
+| DOOD/USDT:USDT | +66.54% | $1,354,792.67 |
+| KIMCHI/USDT:USDT | +36.76% | $3,266,248.54 |
+| DODO/USDT:USDT | +14.00% | $1,356,384.07 |
+| BR/USDT:USDT | +8.50% | $9,355,148.90 |
+| QNT/USDT:USDT | +5.90% | $62,327,174.61 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SPX/USDT:USDT | below_1h_threshold | +3.33% | +2.99% |
-| DODO/USDT:USDT | below_1h_threshold | +3.08% | +2.74% |
-| VVV/USDT:USDT | below_1h_threshold | +2.75% | +2.41% |
-| PYTH/USDT:USDT | below_1h_threshold | +2.68% | +2.34% |
-| PONS/USDT:USDT | below_1h_threshold | +2.56% | +2.22% |
+| TESLA/USDT:USDT | below_1h_threshold | +0.92% | +0.94% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +0.83% | +0.85% |
+| KIMCHI/USDT:USDT | below_1h_threshold | +0.57% | +0.59% |
+| DOOD/USDT:USDT | below_1h_threshold | +0.38% | +0.40% |
+| LEAD/USDT:USDT | below_1h_threshold | +0.35% | +0.37% |
 
 ## 7. 次に見るべき不足
 
