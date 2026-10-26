@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-26T14:16:20.285949+00:00
+- generated_at: 2026-10-26T14:21:24.176572+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17484**
 
@@ -70,9 +70,9 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-26T14:16:08.021112+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.34% price=79935.3
-- Funnel: target 1077 → liquid 155 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-10-26T14:21:09.133375+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.66% price=80194.2
+- Funnel: target 1077 → liquid 156 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BULLA/USDT:USDT | +58.61% | $4,708,307.29 |
-| DOOD/USDT:USDT | +56.66% | $3,371,640.12 |
-| KIMCHI/USDT:USDT | +42.15% | $4,496,247.72 |
-| QNT/USDT:USDT | +14.64% | $107,301,798.26 |
-| BR/USDT:USDT | +13.40% | $10,162,334.13 |
+| DOOD/USDT:USDT | +57.23% | $3,377,946.77 |
+| BULLA/USDT:USDT | +56.91% | $4,751,535.72 |
+| KIMCHI/USDT:USDT | +45.53% | $4,508,858.78 |
+| QNT/USDT:USDT | +15.99% | $108,131,415.36 |
+| BR/USDT:USDT | +13.24% | $10,210,546.51 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RLS/USDT:USDT | below_1h_threshold | +3.71% | +3.38% |
-| TESLA/USDT:USDT | below_1h_threshold | +3.04% | +2.71% |
-| BR/USDT:USDT | below_1h_threshold | +2.49% | +2.15% |
-| CHIP/USDT:USDT | below_1h_threshold | +1.64% | +1.30% |
-| QNT/USDT:USDT | below_1h_threshold | +1.62% | +1.28% |
+| RLS/USDT:USDT | below_1h_threshold | +4.87% | +4.21% |
+| TESLA/USDT:USDT | below_1h_threshold | +3.04% | +2.38% |
+| QNT/USDT:USDT | below_1h_threshold | +2.81% | +2.15% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.57% | +1.91% |
+| BR/USDT:USDT | below_1h_threshold | +2.43% | +1.77% |
 
 ## 7. 次に見るべき不足
 
