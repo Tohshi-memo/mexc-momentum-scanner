@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-26T03:36:24.820964+00:00
+- generated_at: 2026-10-26T03:41:28.589269+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17457**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-26T03:36:12.449430+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=79601.6
-- Funnel: target 1070 → liquid 140 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-26T03:41:15.836793+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.21% price=79701.2
+- Funnel: target 1070 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KIMCHI/USDT:USDT | +44.30% | $2,692,658.33 |
-| DODO/USDT:USDT | +13.82% | $1,107,611.81 |
-| BR/USDT:USDT | +11.35% | $7,616,329.80 |
-| CLAUDIA/USDT:USDT | +8.06% | $1,099,488.44 |
-| AXIS/USDT:USDT | +5.71% | $2,055,311.57 |
+| KIMCHI/USDT:USDT | +46.76% | $2,694,648.66 |
+| DODO/USDT:USDT | +12.86% | $1,112,068.68 |
+| BR/USDT:USDT | +11.85% | $7,667,763.96 |
+| RLS/USDT:USDT | +8.21% | $1,001,472.02 |
+| CLAUDIA/USDT:USDT | +5.74% | $1,100,033.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AXIS/USDT:USDT | below_1h_threshold | +4.08% | +4.00% |
-| DODO/USDT:USDT | below_1h_threshold | +3.67% | +3.59% |
-| SOXS/USDT:USDT | below_1h_threshold | +2.18% | +2.10% |
-| BR/USDT:USDT | below_1h_threshold | +1.64% | +1.56% |
-| SILVER/USDT:USDT | below_1h_threshold | +0.55% | +0.47% |
+| AXIS/USDT:USDT | below_1h_threshold | +3.93% | +3.72% |
+| DODO/USDT:USDT | below_1h_threshold | +2.87% | +2.67% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.18% | +1.97% |
+| BR/USDT:USDT | below_1h_threshold | +2.10% | +1.89% |
+| QNT/USDT:USDT | below_1h_threshold | +1.16% | +0.95% |
 
 ## 7. 次に見るべき不足
 
