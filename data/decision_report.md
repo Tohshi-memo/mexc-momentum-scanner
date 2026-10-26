@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-26T11:36:30.719599+00:00
+- generated_at: 2026-10-26T11:41:22.561590+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17480**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-26T11:36:15.096238+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=80307.4
+- 更新: 2026-10-26T11:41:10.030162+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=80387.4
 - Funnel: target 1073 → liquid 151 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.1 >= 65=1
+- Strict後reject: 4h RSI 77.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KIMCHI/USDT:USDT | +57.53% | $4,076,815.93 |
-| DOOD/USDT:USDT | +56.03% | $2,595,488.30 |
-| BULLA/USDT:USDT | +49.62% | $2,826,610.32 |
-| QNT/USDT:USDT | +17.69% | $81,694,354.85 |
-| CLAUDIA/USDT:USDT | +9.53% | $1,148,465.08 |
+| KIMCHI/USDT:USDT | +64.15% | $4,124,912.71 |
+| DOOD/USDT:USDT | +56.17% | $2,610,734.85 |
+| BULLA/USDT:USDT | +49.90% | $2,844,631.13 |
+| QNT/USDT:USDT | +18.21% | $82,861,810.17 |
+| CLAUDIA/USDT:USDT | +9.50% | $1,151,042.95 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +1.91% | +1.95% |
-| JTO/USDT:USDT | below_1h_threshold | +1.43% | +1.47% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.27% | +1.31% |
-| BR/USDT:USDT | below_1h_threshold | +1.09% | +1.13% |
-| CRV/USDT:USDT | below_1h_threshold | +0.75% | +0.79% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.82% | +1.76% |
+| BR/USDT:USDT | below_1h_threshold | +1.33% | +1.27% |
+| INJ/USDT:USDT | below_1h_threshold | +1.29% | +1.23% |
+| DASH/USDT:USDT | below_1h_threshold | +1.15% | +1.09% |
+| RENDER/USDT:USDT | below_1h_threshold | +1.11% | +1.05% |
 
 ## 7. 次に見るべき不足
 
