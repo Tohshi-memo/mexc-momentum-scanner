@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-26T17:56:42.537124+00:00
+- generated_at: 2026-10-26T18:01:41.700679+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17504**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-26T17:56:24.912844+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=80332.4
-- Funnel: target 1078 → liquid 159 → pre 50 → checked 50 → surge 3 → strict 2
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.4 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-26T18:01:28.092020+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=80331.2
+- Funnel: target 1078 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CHIP/USDT:USDT | +8.85% | $5,164,798.67 |
-| Q/USDT:USDT | +7.15% | $3,259,788.01 |
-| BULLA/USDT:USDT | +4.81% | $7,978,562.02 |
-| ORDER/USDT:USDT | +4.25% | $1,164,862.31 |
-| APR/USDT:USDT | +3.94% | $4,476,169.40 |
+| CHIP/USDT:USDT | +7.84% | $5,140,098.08 |
+| Q/USDT:USDT | +7.13% | $3,233,975.44 |
+| APR/USDT:USDT | +4.59% | $3,778,765.06 |
+| ORDER/USDT:USDT | +4.02% | $1,101,690.46 |
+| SNXX/USDT:USDT | +3.78% | $40,514,166.09 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| Q/USDT:USDT | below_1h_threshold | +4.05% | +3.89% |
-| APR/USDT:USDT | below_1h_threshold | +3.98% | +3.81% |
-| ETHFI/USDT:USDT | below_1h_threshold | +2.90% | +2.74% |
-| NIGHT/USDT:USDT | below_1h_threshold | +2.62% | +2.45% |
-| NIL/USDT:USDT | below_1h_threshold | +2.45% | +2.28% |
+| SNXX/USDT:USDT | below_1h_threshold | +3.17% | +3.14% |
+| AAOISTOCK/USDT:USDT | below_1h_threshold | +2.73% | +2.69% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.84% | +1.80% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.79% | +1.76% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.66% | +1.62% |
 
 ## 7. 次に見るべき不足
 
