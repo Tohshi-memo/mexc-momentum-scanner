@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-26T02:11:20.677720+00:00
+- generated_at: 2026-10-26T02:16:17.637294+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17454**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-26T02:11:07.179559+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=79791.8
+- 更新: 2026-10-26T02:16:05.958752+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=79791.2
 - Funnel: target 1070 → liquid 138 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KIMCHI/USDT:USDT | +35.84% | $2,573,034.51 |
-| CLAUDIA/USDT:USDT | +20.76% | $1,038,086.91 |
-| BR/USDT:USDT | +9.78% | $7,147,066.58 |
-| AXIS/USDT:USDT | +7.24% | $2,067,892.73 |
-| DODO/USDT:USDT | +6.47% | $1,013,295.83 |
+| KIMCHI/USDT:USDT | +36.76% | $2,578,119.77 |
+| CLAUDIA/USDT:USDT | +21.75% | $1,047,550.94 |
+| BR/USDT:USDT | +10.55% | $7,178,313.38 |
+| AXIS/USDT:USDT | +9.04% | $2,075,114.82 |
+| DODO/USDT:USDT | +5.95% | $1,019,831.67 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UNITREE/USDT:USDT | below_1h_threshold | +1.11% | +1.01% |
-| AXIS/USDT:USDT | below_1h_threshold | +0.58% | +0.48% |
+| AXIS/USDT:USDT | below_1h_threshold | +1.87% | +1.77% |
+| QNT/USDT:USDT | below_1h_threshold | +0.82% | +0.72% |
+| INJ/USDT:USDT | below_1h_threshold | +0.33% | +0.24% |
 | RENDER/USDT:USDT | below_1h_threshold | +0.29% | +0.20% |
 | WINBONDSTOCK/USDT:USDT | below_1h_threshold | +0.27% | +0.18% |
-| QNT/USDT:USDT | below_1h_threshold | +0.27% | +0.17% |
 
 ## 7. 次に見るべき不足
 
