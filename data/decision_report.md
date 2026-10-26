@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-26T18:06:22.943011+00:00
+- generated_at: 2026-10-26T18:11:23.537738+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17504**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-26T18:06:10.204906+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=80348.4
+- 更新: 2026-10-26T18:11:10.939100+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=80271.8
 - Funnel: target 1078 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CHIP/USDT:USDT | +7.75% | $5,197,920.01 |
-| BTW/USDT:USDT | +6.69% | $19,311,063.20 |
-| Q/USDT:USDT | +3.81% | $3,305,746.60 |
-| BULLA/USDT:USDT | +3.70% | $8,019,470.62 |
-| APR/USDT:USDT | +3.54% | $3,789,659.31 |
+| CHIP/USDT:USDT | +7.40% | $5,263,237.41 |
+| Q/USDT:USDT | +6.60% | $3,374,826.71 |
+| BTW/USDT:USDT | +5.00% | $19,423,235.92 |
+| BULLA/USDT:USDT | +4.67% | $8,042,881.54 |
+| APR/USDT:USDT | +4.25% | $3,793,261.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +3.21% | +3.15% |
-| SNXX/USDT:USDT | below_1h_threshold | +3.17% | +3.11% |
-| KIMCHI/USDT:USDT | below_1h_threshold | +3.05% | +2.99% |
-| AAOISTOCK/USDT:USDT | below_1h_threshold | +2.73% | +2.67% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.84% | +1.78% |
+| SNXX/USDT:USDT | below_1h_threshold | +3.17% | +3.21% |
+| AAOISTOCK/USDT:USDT | below_1h_threshold | +2.73% | +2.76% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.84% | +1.88% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.79% | +1.83% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.66% | +1.70% |
 
 ## 7. 次に見るべき不足
 
