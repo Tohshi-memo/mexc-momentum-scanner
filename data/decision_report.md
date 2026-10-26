@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-26T23:06:36.301027+00:00
+- generated_at: 2026-10-26T23:11:18.984775+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17533**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-26T23:06:19.183363+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.33% price=79712.0
+- 更新: 2026-10-26T23:11:06.216268+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.17% price=79839.3
 - Funnel: target 1078 → liquid 155 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| Q/USDT:USDT | +248.28% | $20,627,614.38 |
-| DODO/USDT:USDT | +5.30% | $1,068,039.10 |
-| AGT/USDT:USDT | +5.30% | $1,699,294.80 |
-| DNA/USDT:USDT | +4.98% | $1,204,750.41 |
-| BAT/USDT:USDT | +3.67% | $2,236,575.24 |
+| Q/USDT:USDT | +246.07% | $20,966,562.62 |
+| DODO/USDT:USDT | +5.86% | $1,068,727.91 |
+| AGT/USDT:USDT | +5.34% | $1,699,718.67 |
+| DNA/USDT:USDT | +4.51% | $1,205,145.15 |
+| BAT/USDT:USDT | +3.44% | $2,239,209.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| Q/USDT:USDT | below_1h_threshold | +3.45% | +3.78% |
-| LEAD/USDT:USDT | below_1h_threshold | +0.31% | +0.64% |
-| CAP/USDT:USDT | below_1h_threshold | +0.16% | +0.49% |
-| DODO/USDT:USDT | below_1h_threshold | +0.12% | +0.46% |
-| JCT/USDT:USDT | below_1h_threshold | +0.06% | +0.39% |
+| Q/USDT:USDT | below_1h_threshold | +3.41% | +3.59% |
+| DODO/USDT:USDT | below_1h_threshold | +0.62% | +0.79% |
+| CAP/USDT:USDT | below_1h_threshold | +0.58% | +0.76% |
+| JCT/USDT:USDT | below_1h_threshold | +0.46% | +0.63% |
+| LEAD/USDT:USDT | below_1h_threshold | +0.31% | +0.48% |
 
 ## 7. 次に見るべき不足
 
