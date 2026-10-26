@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-26T20:46:18.674396+00:00
+- generated_at: 2026-10-26T20:51:22.429917+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17520**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-26T20:46:08.275878+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.24% price=79794.4
+- 更新: 2026-10-26T20:51:11.615084+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.22% price=79811.4
 - Funnel: target 1078 → liquid 158 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.5 >= 65=1
+- Strict後reject: 4h RSI 70.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| Q/USDT:USDT | +135.73% | $11,868,951.81 |
-| DNA/USDT:USDT | +5.56% | $1,175,928.77 |
-| AGT/USDT:USDT | +4.86% | $1,672,719.39 |
-| DOOD/USDT:USDT | +3.75% | $3,959,656.70 |
-| DODO/USDT:USDT | +3.32% | $1,474,490.57 |
+| Q/USDT:USDT | +140.74% | $12,173,935.15 |
+| AGT/USDT:USDT | +5.56% | $1,683,250.96 |
+| DNA/USDT:USDT | +4.98% | $1,176,846.74 |
+| DOOD/USDT:USDT | +3.65% | $3,970,902.61 |
+| BULLA/USDT:USDT | +3.45% | $9,569,887.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DOOD/USDT:USDT | below_1h_threshold | +3.19% | +3.43% |
-| AGT/USDT:USDT | below_1h_threshold | +2.17% | +2.41% |
-| AXIS/USDT:USDT | below_1h_threshold | +1.90% | +2.14% |
-| EWZ/USDT:USDT | below_1h_threshold | +1.03% | +1.28% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +0.99% | +1.23% |
+| AGT/USDT:USDT | below_1h_threshold | +2.92% | +3.14% |
+| DOOD/USDT:USDT | below_1h_threshold | +2.89% | +3.11% |
+| AXIS/USDT:USDT | below_1h_threshold | +1.97% | +2.19% |
+| APR/USDT:USDT | below_1h_threshold | +1.54% | +1.76% |
+| EWZ/USDT:USDT | below_1h_threshold | +1.03% | +1.25% |
 
 ## 7. 次に見るべき不足
 
