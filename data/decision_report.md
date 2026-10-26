@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-10-26T11:06:22.408038+00:00
+- generated_at: 2026-10-26T11:12:40.439641+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **17477**
+- closed shadow trades: **17478**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +1.84% / filled 20/20。**
-- 全期間 MARKET基準: n=17477, expectancy=+0.01%
+- 全期間 MARKET基準: n=17478, expectancy=+0.01%
 - 直近20件 MARKET基準: n=20, expectancy=+1.84%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -31,10 +31,10 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_10PCT_LONG | 6/20 | 30.0% | +5.11% | **+1.53%** |
-| LIMIT_9PCT_LONG | 7/20 | 35.0% | +1.61% | **+0.56%** |
+| LIMIT_10PCT_LONG | 7/20 | 35.0% | +5.52% | **+1.93%** |
+| LIMIT_9PCT_LONG | 8/20 | 40.0% | +2.41% | **+0.96%** |
+| LIMIT_FIB1272_LONG | 9/20 | 45.0% | +1.36% | **+0.61%** |
 | LIMIT_4PCT_LONG | 14/20 | 70.0% | +0.51% | **+0.36%** |
-| LIMIT_FIB1618_LONG | 2/20 | 10.0% | +2.00% | **+0.20%** |
 | LIMIT_BB3S_LONG | 5/6 | 83.3% | +0.05% | **+0.04%** |
 
 ## 2. $100 Live Portfolio
@@ -47,54 +47,53 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,534.60** / 初期 $100.00 (+1434.60%)
-- 確定: 6719件 (Win 1956 / Loss 2151 / Flat 2612) / skip 7319件
+- 確定: 6719件 (Win 1956 / Loss 2151 / Flat 2612) / skip 7320件
 - 成長率目線: 平均log +0.000406 / 幾何平均 +0.041% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_10PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: BR/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.50% 残高後 $1,534.60
 
 ## 4. Robust Adaptive DryRun ($100)
 
-- 残高: **$316.96** / 初期 $100.00 (+216.96%)
-- 確定: 4020件 (Win 1113 / Loss 951 / Flat 1956) / skip 6868件
-- 成長率目線: 平均log +0.000287 / 幾何平均 +0.029% per trade / maxDD +4.13%
-- 次の候補: `LIMIT_9PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0370 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: KIMCHI/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $316.96
+- 残高: **$319.14** / 初期 $100.00 (+219.14%)
+- 確定: 4021件 (Win 1114 / Loss 951 / Flat 1956) / skip 6868件
+- 成長率目線: 平均log +0.000289 / 幾何平均 +0.029% per trade / maxDD +4.13%
+- 次の候補: `LIMIT_9PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0538 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 最新: KIMCHI/USDT:USDT `LIMIT_9PCT_LONG` TP_HIT account +0.69% 残高後 $319.14
 
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
 - 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5637件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `LIMIT_8PCT` (selected_by_causal_log_growth) / causal_score +0.000265 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `LIMIT_8PCT` (selected_by_causal_log_growth) / causal_score +0.000262 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-26T11:06:07.395716+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=80299.3
-- Funnel: target 1073 → liquid 147 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-26T11:12:25.401260+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=80228.7
+- Funnel: target 1073 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KIMCHI/USDT:USDT | +81.69% | $3,728,428.64 |
-| DOOD/USDT:USDT | +63.93% | $2,508,185.35 |
-| BULLA/USDT:USDT | +38.28% | $2,531,851.42 |
-| QNT/USDT:USDT | +13.79% | $75,351,675.88 |
-| CLAUDIA/USDT:USDT | +12.02% | $1,135,709.90 |
+| KIMCHI/USDT:USDT | +64.61% | $3,850,986.72 |
+| DOOD/USDT:USDT | +60.62% | $2,524,417.86 |
+| BULLA/USDT:USDT | +43.18% | $2,659,319.81 |
+| CLAUDIA/USDT:USDT | +12.89% | $1,138,221.30 |
+| QNT/USDT:USDT | +12.39% | $76,523,392.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| QNT/USDT:USDT | below_1h_threshold | +2.24% | +2.29% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.91% | +1.96% |
-| DOOD/USDT:USDT | below_1h_threshold | +1.75% | +1.80% |
-| CLAUDIA/USDT:USDT | below_1h_threshold | +1.54% | +1.59% |
-| BEAT/USDT:USDT | below_1h_threshold | +0.57% | +0.62% |
+| CLAUDIA/USDT:USDT | below_1h_threshold | +2.33% | +2.47% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.91% | +2.05% |
+| BEAT/USDT:USDT | below_1h_threshold | +0.98% | +1.11% |
+| QNT/USDT:USDT | below_1h_threshold | +0.87% | +1.01% |
+| BR/USDT:USDT | below_1h_threshold | +0.58% | +0.72% |
 
 ## 7. 次に見るべき不足
 
