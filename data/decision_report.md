@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-26T17:26:42.720840+00:00
+- generated_at: 2026-10-26T17:31:29.456388+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17498**
 
@@ -63,38 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5665件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5666件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_10PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000200 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-26T17:26:25.018486+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.22% price=80377.2
-- Funnel: target 1078 → liquid 158 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-26T17:31:14.233052+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=80261.2
+- Funnel: target 1078 → liquid 158 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| Q/USDT:USDT | +43.20% | $2,035,372.54 |
-| CHIP/USDT:USDT | +4.02% | $4,471,950.41 |
-| APR/USDT:USDT | +3.29% | $4,430,432.96 |
-| BULLA/USDT:USDT | +2.78% | $7,694,422.65 |
-| KORU/USDT:USDT | +2.56% | $118,862,097.81 |
+| Q/USDT:USDT | +46.14% | $2,140,245.94 |
+| CHIP/USDT:USDT | +4.93% | $4,590,490.01 |
+| APR/USDT:USDT | +3.94% | $4,433,558.89 |
+| BULLA/USDT:USDT | +3.58% | $7,730,935.93 |
+| BTW/USDT:USDT | +2.77% | $18,283,923.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| APR/USDT:USDT | below_1h_threshold | +3.23% | +3.01% |
-| ETHFI/USDT:USDT | below_1h_threshold | +2.41% | +2.19% |
-| VVV/USDT:USDT | below_1h_threshold | +1.98% | +1.75% |
-| NIL/USDT:USDT | below_1h_threshold | +1.64% | +1.42% |
-| ENA/USDT:USDT | below_1h_threshold | +1.52% | +1.30% |
+| APR/USDT:USDT | below_1h_threshold | +3.88% | +3.81% |
+| ETHFI/USDT:USDT | below_1h_threshold | +2.08% | +2.01% |
+| CHIP/USDT:USDT | below_1h_threshold | +1.75% | +1.68% |
+| ORDER/USDT:USDT | below_1h_threshold | +1.38% | +1.31% |
+| VVV/USDT:USDT | below_1h_threshold | +1.35% | +1.27% |
 
 ## 7. 次に見るべき不足
 
