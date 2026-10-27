@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-27T20:01:22.653773+00:00
+- generated_at: 2026-10-27T20:06:33.432224+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17639**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-27T20:01:10.809365+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=80784.8
+- 更新: 2026-10-27T20:06:20.624072+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=80743.7
 - Funnel: target 1083 → liquid 155 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +28.26% | $1,327,652.75 |
-| APR/USDT:USDT | +14.56% | $4,124,425.17 |
-| BULLA/USDT:USDT | +14.38% | $10,628,217.18 |
-| LAB/USDT:USDT | +10.04% | $1,710,641.88 |
-| AKE/USDT:USDT | +7.06% | $5,238,842.24 |
+| EVAA/USDT:USDT | +26.37% | $1,384,222.09 |
+| APR/USDT:USDT | +15.71% | $4,144,249.61 |
+| BULLA/USDT:USDT | +11.37% | $10,641,017.87 |
+| LAB/USDT:USDT | +9.55% | $1,745,100.88 |
+| AKE/USDT:USDT | +6.71% | $5,243,181.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NGAS/USDT:USDT | below_1h_threshold | +1.96% | +1.95% |
-| IRENSTOCK/USDT:USDT | below_1h_threshold | +1.44% | +1.43% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +1.25% | +1.24% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +1.09% | +1.08% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +0.88% | +0.87% |
+| NGAS/USDT:USDT | below_1h_threshold | +1.96% | +2.01% |
+| IRENSTOCK/USDT:USDT | below_1h_threshold | +1.44% | +1.48% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +1.25% | +1.29% |
+| HAEDAL/USDT:USDT | below_1h_threshold | +1.25% | +1.29% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +1.09% | +1.13% |
 
 ## 7. 次に見るべき不足
 
