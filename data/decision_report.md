@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-27T15:06:11.799542+00:00
+- generated_at: 2026-10-27T15:11:25.484029+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17607**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-27T15:06:03.270476+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=80346.1
-- Funnel: target 1083 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-27T15:11:12.848304+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=80250.0
+- Funnel: target 1083 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIN/USDT:USDT | +220.29% | $10,714,029.44 |
-| BTW/USDT:USDT | +30.23% | $20,304,648.29 |
-| TAG/USDT:USDT | +22.20% | $2,944,521.81 |
-| SYN/USDT:USDT | +10.98% | $5,568,423.60 |
-| HUMA/USDT:USDT | +10.37% | $1,113,761.54 |
+| AIN/USDT:USDT | +228.28% | $10,959,725.73 |
+| BTW/USDT:USDT | +28.89% | $20,410,737.62 |
+| TAG/USDT:USDT | +21.98% | $2,946,868.38 |
+| APR/USDT:USDT | +15.59% | $1,616,219.06 |
+| HUMA/USDT:USDT | +10.88% | $1,114,504.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KORU/USDT:USDT | below_1h_threshold | +2.10% | +2.08% |
-| AAOISTOCK/USDT:USDT | below_1h_threshold | +2.05% | +2.03% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.75% | +1.73% |
-| MUU/USDT:USDT | below_1h_threshold | +1.63% | +1.61% |
-| BESTOCK/USDT:USDT | below_1h_threshold | +1.58% | +1.56% |
+| APR/USDT:USDT | below_1h_threshold | +3.46% | +3.56% |
+| AIN/USDT:USDT | below_1h_threshold | +3.10% | +3.20% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +2.53% | +2.63% |
+| KORU/USDT:USDT | below_1h_threshold | +2.10% | +2.20% |
+| AAOISTOCK/USDT:USDT | below_1h_threshold | +2.05% | +2.15% |
 
 ## 7. 次に見るべき不足
 
