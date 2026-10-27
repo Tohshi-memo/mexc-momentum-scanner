@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-27T14:21:36.479739+00:00
+- generated_at: 2026-10-27T14:26:22.990031+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17603**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-27T14:21:21.623750+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=79995.9
-- Funnel: target 1083 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-27T14:26:10.263152+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=80056.1
+- Funnel: target 1083 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIN/USDT:USDT | +148.93% | $9,726,323.54 |
-| BTW/USDT:USDT | +23.72% | $21,785,775.27 |
-| Q/USDT:USDT | +21.23% | $56,382,320.16 |
-| TAG/USDT:USDT | +20.63% | $2,919,830.58 |
-| APR/USDT:USDT | +11.74% | $1,720,534.86 |
+| AIN/USDT:USDT | +178.50% | $9,888,899.50 |
+| BTW/USDT:USDT | +25.30% | $21,821,983.64 |
+| TAG/USDT:USDT | +21.94% | $2,924,924.25 |
+| Q/USDT:USDT | +21.06% | $56,446,125.04 |
+| APR/USDT:USDT | +13.64% | $1,729,730.03 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +4.56% | +4.58% |
-| IRENSTOCK/USDT:USDT | below_1h_threshold | +4.40% | +4.43% |
-| Q/USDT:USDT | below_1h_threshold | +3.80% | +3.82% |
-| BESTOCK/USDT:USDT | below_1h_threshold | +3.66% | +3.68% |
-| BEAT/USDT:USDT | below_1h_threshold | +3.46% | +3.48% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +4.56% | +4.51% |
+| IRENSTOCK/USDT:USDT | below_1h_threshold | +4.40% | +4.35% |
+| BEAT/USDT:USDT | below_1h_threshold | +4.02% | +3.97% |
+| BESTOCK/USDT:USDT | below_1h_threshold | +3.66% | +3.60% |
+| Q/USDT:USDT | below_1h_threshold | +3.17% | +3.11% |
 
 ## 7. 次に見るべき不足
 
