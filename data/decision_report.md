@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-27T22:51:26.538436+00:00
+- generated_at: 2026-10-27T22:56:29.763645+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17644**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5806件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5807件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000411 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-27T22:51:13.973385+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=80790.2
-- Funnel: target 1083 → liquid 159 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-27T22:56:14.488432+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=80857.9
+- Funnel: target 1083 → liquid 159 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +31.81% | $2,642,514.57 |
-| APR/USDT:USDT | +16.22% | $4,665,817.23 |
-| BTW/USDT:USDT | +12.85% | $14,763,824.75 |
-| BULLA/USDT:USDT | +9.65% | $9,988,807.82 |
-| HAEDAL/USDT:USDT | +7.19% | $1,098,223.94 |
+| EVAA/USDT:USDT | +32.87% | $2,657,590.40 |
+| APR/USDT:USDT | +16.32% | $4,676,675.36 |
+| BULLA/USDT:USDT | +13.34% | $10,022,816.52 |
+| BTW/USDT:USDT | +13.08% | $14,811,778.56 |
+| HAEDAL/USDT:USDT | +10.46% | $1,101,197.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BULLA/USDT:USDT | below_1h_threshold | +2.01% | +2.12% |
-| DOOD/USDT:USDT | below_1h_threshold | +1.89% | +2.00% |
-| IRYS/USDT:USDT | below_1h_threshold | +1.16% | +1.27% |
-| PONS/USDT:USDT | below_1h_threshold | +0.58% | +0.69% |
-| VVV/USDT:USDT | below_1h_threshold | +0.52% | +0.63% |
+| DOOD/USDT:USDT | below_1h_threshold | +3.45% | +3.47% |
+| PONS/USDT:USDT | below_1h_threshold | +2.72% | +2.74% |
+| HAEDAL/USDT:USDT | below_1h_threshold | +1.86% | +1.88% |
+| IRYS/USDT:USDT | below_1h_threshold | +1.41% | +1.43% |
+| PEPE/USDT:USDT | below_1h_threshold | +0.82% | +0.84% |
 
 ## 7. 次に見るべき不足
 
