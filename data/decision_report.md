@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-27T13:31:33.400857+00:00
+- generated_at: 2026-10-27T13:36:21.916779+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17600**
 
@@ -39,9 +39,9 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$121.62** / 初期 $100.00 (+21.62%)
-- 確定トレード: 252件 (TP 93 / SL 151 / EXP 8)
-- 最新: Q/USDT:USDT SL_HIT PnL -4.00% 残高後 $121.62
+- 残高: **$121.86** / 初期 $100.00 (+21.86%)
+- 確定トレード: 253件 (TP 94 / SL 151 / EXP 8)
+- 最新: MRNASTOCK/USDT:USDT TP_HIT PnL +6.21% 残高後 $121.86
 - 最新戦略メタ: tier=S, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-27T13:31:18.473400+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.38% price=80030.0
-- Funnel: target 1082 → liquid 157 → pre 50 → checked 50 → surge 1 → strict 0
+- 更新: 2026-10-27T13:36:12.525993+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.16% price=80209.5
+- Funnel: target 1083 → liquid 159 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 96.3 >= 65=1
+- Strict後reject: 4h RSI 96.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIN/USDT:USDT | +195.76% | $9,056,870.94 |
-| BTW/USDT:USDT | +22.00% | $21,872,606.49 |
-| TAG/USDT:USDT | +21.74% | $2,810,377.68 |
-| Q/USDT:USDT | +20.75% | $55,749,265.11 |
-| BEAT/USDT:USDT | +16.31% | $10,355,590.68 |
+| AIN/USDT:USDT | +193.90% | $9,144,456.27 |
+| TAG/USDT:USDT | +25.10% | $2,852,316.26 |
+| BTW/USDT:USDT | +22.33% | $21,898,307.67 |
+| Q/USDT:USDT | +17.12% | $55,874,244.92 |
+| BEAT/USDT:USDT | +15.78% | $10,446,761.54 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| Q/USDT:USDT | below_1h_threshold | +3.77% | +4.15% |
-| JCT/USDT:USDT | below_1h_threshold | +3.12% | +3.50% |
-| DNA/USDT:USDT | below_1h_threshold | +3.03% | +3.42% |
-| APR/USDT:USDT | below_1h_threshold | +2.56% | +2.94% |
-| BR/USDT:USDT | below_1h_threshold | +1.70% | +2.08% |
+| APR/USDT:USDT | below_1h_threshold | +3.67% | +3.83% |
+| JCT/USDT:USDT | below_1h_threshold | +3.24% | +3.40% |
+| ARIA/USDT:USDT | below_1h_threshold | +2.93% | +3.09% |
+| DNA/USDT:USDT | below_1h_threshold | +2.64% | +2.79% |
+| BR/USDT:USDT | below_1h_threshold | +2.26% | +2.42% |
 
 ## 7. 次に見るべき不足
 
