@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-27T15:01:38.861567+00:00
+- generated_at: 2026-10-27T15:06:11.799542+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17607**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-27T15:01:23.221915+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.15% price=80449.4
+- 更新: 2026-10-27T15:06:03.270476+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=80346.1
 - Funnel: target 1083 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIN/USDT:USDT | +216.37% | $10,634,746.55 |
-| BTW/USDT:USDT | +29.71% | $20,160,364.73 |
-| TAG/USDT:USDT | +22.93% | $2,942,633.45 |
-| Q/USDT:USDT | +11.40% | $57,367,660.18 |
-| APR/USDT:USDT | +11.15% | $1,603,545.20 |
+| AIN/USDT:USDT | +220.29% | $10,714,029.44 |
+| BTW/USDT:USDT | +30.23% | $20,304,648.29 |
+| TAG/USDT:USDT | +22.20% | $2,944,521.81 |
+| SYN/USDT:USDT | +10.98% | $5,568,423.60 |
+| HUMA/USDT:USDT | +10.37% | $1,113,761.54 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KORU/USDT:USDT | below_1h_threshold | +2.10% | +1.95% |
-| AAOISTOCK/USDT:USDT | below_1h_threshold | +2.05% | +1.90% |
-| MUU/USDT:USDT | below_1h_threshold | +1.63% | +1.48% |
-| BESTOCK/USDT:USDT | below_1h_threshold | +1.58% | +1.43% |
-| TQQQ/USDT:USDT | below_1h_threshold | +1.25% | +1.10% |
+| KORU/USDT:USDT | below_1h_threshold | +2.10% | +2.08% |
+| AAOISTOCK/USDT:USDT | below_1h_threshold | +2.05% | +2.03% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.75% | +1.73% |
+| MUU/USDT:USDT | below_1h_threshold | +1.63% | +1.61% |
+| BESTOCK/USDT:USDT | below_1h_threshold | +1.58% | +1.56% |
 
 ## 7. 次に見るべき不足
 
