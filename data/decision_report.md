@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-27T21:26:30.816668+00:00
+- generated_at: 2026-10-27T21:31:29.656992+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17642**
 
@@ -63,38 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5803件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5804件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000430 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-27T21:26:15.627013+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=80623.8
-- Funnel: target 1083 → liquid 157 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-27T21:31:16.743119+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=80715.2
+- Funnel: target 1083 → liquid 158 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 94.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +35.30% | $2,055,440.95 |
-| APR/USDT:USDT | +17.95% | $4,442,553.60 |
-| BTW/USDT:USDT | +12.37% | $13,572,195.90 |
-| BULLA/USDT:USDT | +9.14% | $10,450,376.64 |
-| LAB/USDT:USDT | +8.36% | $2,054,158.29 |
+| EVAA/USDT:USDT | +36.72% | $2,101,704.49 |
+| APR/USDT:USDT | +17.74% | $4,468,091.09 |
+| BTW/USDT:USDT | +14.04% | $13,779,198.61 |
+| BULLA/USDT:USDT | +9.80% | $10,455,008.13 |
+| HAEDAL/USDT:USDT | +8.20% | $1,085,737.47 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EVAA/USDT:USDT | below_1h_threshold | +4.30% | +4.46% |
-| APR/USDT:USDT | below_1h_threshold | +3.48% | +3.64% |
-| IRYS/USDT:USDT | below_1h_threshold | +2.94% | +3.10% |
-| HAEDAL/USDT:USDT | below_1h_threshold | +2.84% | +3.00% |
-| DOOD/USDT:USDT | below_1h_threshold | +2.34% | +2.50% |
+| HAEDAL/USDT:USDT | below_1h_threshold | +4.01% | +4.06% |
+| APR/USDT:USDT | below_1h_threshold | +3.29% | +3.34% |
+| IRYS/USDT:USDT | below_1h_threshold | +2.82% | +2.87% |
+| DOOD/USDT:USDT | below_1h_threshold | +2.64% | +2.68% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.30% | +2.35% |
 
 ## 7. 次に見るべき不足
 
