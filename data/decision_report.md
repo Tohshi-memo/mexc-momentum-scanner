@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-27T17:01:21.557990+00:00
+- generated_at: 2026-10-27T17:06:22.348656+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17632**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-27T17:01:11.310620+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=80591.9
+- 更新: 2026-10-27T17:06:11.720974+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=80579.0
 - Funnel: target 1083 → liquid 156 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.3 >= 65=1
+- Strict後reject: 4h RSI 67.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +11.08% | $4,803,276.41 |
-| CBRSSTOCK/USDT:USDT | +6.33% | $1,827,907.04 |
-| APR/USDT:USDT | +5.53% | $3,447,903.53 |
-| PEPE/USDT:USDT | +3.72% | $60,828,260.39 |
-| LAB/USDT:USDT | +3.06% | $1,014,750.80 |
+| APR/USDT:USDT | +8.61% | $3,495,435.14 |
+| AKE/USDT:USDT | +8.48% | $4,841,331.97 |
+| CBRSSTOCK/USDT:USDT | +6.12% | $1,855,676.67 |
+| LAB/USDT:USDT | +3.50% | $1,017,373.32 |
+| GRASS/USDT:USDT | +2.91% | $1,361,149.43 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +1.85% | +1.89% |
-| BR/USDT:USDT | below_1h_threshold | +0.89% | +0.92% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.87% | +0.91% |
-| APR/USDT:USDT | below_1h_threshold | +0.85% | +0.88% |
-| IRENSTOCK/USDT:USDT | below_1h_threshold | +0.77% | +0.81% |
+| APR/USDT:USDT | below_1h_threshold | +3.27% | +3.33% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +1.85% | +1.90% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.25% | +1.30% |
+| DOOD/USDT:USDT | below_1h_threshold | +1.18% | +1.23% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.87% | +0.93% |
 
 ## 7. 次に見るべき不足
 
