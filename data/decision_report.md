@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-27T18:11:31.518761+00:00
+- generated_at: 2026-10-27T18:16:35.737923+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17636**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5797件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5798件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000385 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-27T18:11:18.866385+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=80498.2
-- Funnel: target 1083 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-27T18:16:22.692458+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=80595.7
+- Funnel: target 1083 → liquid 157 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 68.3 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BULLA/USDT:USDT | +11.67% | $11,432,428.94 |
-| CBRSSTOCK/USDT:USDT | +6.78% | $1,993,406.35 |
-| APR/USDT:USDT | +6.37% | $3,717,627.66 |
-| HAEDAL/USDT:USDT | +5.64% | $1,045,129.19 |
-| LAB/USDT:USDT | +5.02% | $1,125,478.33 |
+| BULLA/USDT:USDT | +11.71% | $11,465,484.69 |
+| APR/USDT:USDT | +9.00% | $3,735,554.96 |
+| AKE/USDT:USDT | +7.98% | $5,092,808.74 |
+| CBRSSTOCK/USDT:USDT | +7.08% | $1,998,970.48 |
+| HAEDAL/USDT:USDT | +6.83% | $1,048,424.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| APR/USDT:USDT | below_1h_threshold | +4.34% | +4.31% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +1.46% | +1.44% |
-| NIL/USDT:USDT | below_1h_threshold | +1.40% | +1.37% |
-| BAT/USDT:USDT | below_1h_threshold | +0.85% | +0.83% |
-| HAEDAL/USDT:USDT | below_1h_threshold | +0.65% | +0.62% |
+| BTW/USDT:USDT | below_1h_threshold | +4.83% | +4.68% |
+| HAEDAL/USDT:USDT | below_1h_threshold | +1.85% | +1.70% |
+| NIL/USDT:USDT | below_1h_threshold | +1.77% | +1.62% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +1.46% | +1.32% |
+| BAT/USDT:USDT | below_1h_threshold | +1.11% | +0.96% |
 
 ## 7. 次に見るべき不足
 
