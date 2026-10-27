@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-27T02:26:20.689901+00:00
+- generated_at: 2026-10-27T02:31:18.706329+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17553**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-27T02:26:08.933914+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=80048.5
+- 更新: 2026-10-27T02:31:09.517458+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=79946.1
 - Funnel: target 1078 → liquid 155 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.3 >= 65=1, 4h RSI 74.4 >= 65=1
+- Strict後reject: 4h RSI 82.0 >= 65=1, 4h RSI 75.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| Q/USDT:USDT | +269.30% | $29,031,146.35 |
-| DOOD/USDT:USDT | +33.23% | $4,932,848.53 |
-| SYN/USDT:USDT | +20.26% | $1,775,167.53 |
-| US/USDT:USDT | +18.08% | $1,328,332.37 |
-| IRYS/USDT:USDT | +14.32% | $9,123,174.62 |
+| Q/USDT:USDT | +277.50% | $29,215,007.05 |
+| DOOD/USDT:USDT | +29.27% | $4,962,134.63 |
+| SYN/USDT:USDT | +19.63% | $1,807,862.32 |
+| US/USDT:USDT | +16.80% | $1,329,870.53 |
+| JCT/USDT:USDT | +15.26% | $8,849,333.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ARIA/USDT:USDT | below_1h_threshold | +3.46% | +3.45% |
-| SYN/USDT:USDT | below_1h_threshold | +2.80% | +2.79% |
-| KORU/USDT:USDT | below_1h_threshold | +1.83% | +1.82% |
-| BAT/USDT:USDT | below_1h_threshold | +1.13% | +1.12% |
-| BTW/USDT:USDT | below_1h_threshold | +1.06% | +1.05% |
+| JCT/USDT:USDT | below_1h_threshold | +4.12% | +4.24% |
+| ARIA/USDT:USDT | below_1h_threshold | +4.09% | +4.21% |
+| APR/USDT:USDT | below_1h_threshold | +3.04% | +3.16% |
+| BTW/USDT:USDT | below_1h_threshold | +2.27% | +2.39% |
+| SYN/USDT:USDT | below_1h_threshold | +2.05% | +2.17% |
 
 ## 7. 次に見るべき不足
 
