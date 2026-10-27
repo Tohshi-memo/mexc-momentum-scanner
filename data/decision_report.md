@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-27T17:51:28.313414+00:00
+- generated_at: 2026-10-27T17:56:26.749067+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17636**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5796件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5797件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000385 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-27T17:51:16.011900+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=80612.3
-- Funnel: target 1083 → liquid 157 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.1 >= 65=1
+- 更新: 2026-10-27T17:56:13.012599+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=80527.2
+- Funnel: target 1083 → liquid 158 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 68.7 >= 65=1, 4h RSI 93.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +12.40% | $5,047,904.07 |
-| CBRSSTOCK/USDT:USDT | +6.60% | $1,985,313.49 |
-| LAB/USDT:USDT | +6.54% | $1,110,082.57 |
-| HAEDAL/USDT:USDT | +4.49% | $1,030,399.29 |
-| MRNASTOCK/USDT:USDT | +2.23% | $3,410,924.67 |
+| AKE/USDT:USDT | +10.25% | $5,070,703.42 |
+| CBRSSTOCK/USDT:USDT | +7.13% | $1,993,126.92 |
+| LAB/USDT:USDT | +6.44% | $1,132,559.12 |
+| HAEDAL/USDT:USDT | +5.93% | $1,034,262.19 |
+| PONS/USDT:USDT | +2.78% | $1,270,482.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HAEDAL/USDT:USDT | below_1h_threshold | +4.16% | +4.17% |
-| LAB/USDT:USDT | below_1h_threshold | +3.45% | +3.46% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +1.85% | +1.86% |
-| DOOD/USDT:USDT | below_1h_threshold | +1.57% | +1.58% |
-| NIGHT/USDT:USDT | below_1h_threshold | +1.30% | +1.31% |
+| BULLA/USDT:USDT | below_1h_threshold | +3.75% | +3.86% |
+| LAB/USDT:USDT | below_1h_threshold | +3.26% | +3.38% |
+| DOOD/USDT:USDT | below_1h_threshold | +2.36% | +2.47% |
+| PONS/USDT:USDT | below_1h_threshold | +1.86% | +1.97% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +1.85% | +1.97% |
 
 ## 7. 次に見るべき不足
 
