@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-27T22:36:12.289995+00:00
+- generated_at: 2026-10-27T22:41:20.126205+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17644**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-27T22:36:02.271725+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=80867.0
+- 更新: 2026-10-27T22:41:09.754557+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=80824.3
 - Funnel: target 1083 → liquid 159 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +32.15% | $2,533,738.38 |
-| APR/USDT:USDT | +17.01% | $4,627,166.22 |
-| BTW/USDT:USDT | +16.04% | $14,482,938.24 |
-| HAEDAL/USDT:USDT | +7.55% | $1,093,334.55 |
-| LAB/USDT:USDT | +6.56% | $2,137,020.03 |
+| EVAA/USDT:USDT | +32.78% | $2,584,749.83 |
+| APR/USDT:USDT | +17.35% | $4,637,434.15 |
+| BTW/USDT:USDT | +16.11% | $14,518,404.35 |
+| GRASS/USDT:USDT | +7.02% | $1,896,759.06 |
+| LAB/USDT:USDT | +6.84% | $2,138,911.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DOOD/USDT:USDT | below_1h_threshold | +2.57% | +2.58% |
-| JCT/USDT:USDT | below_1h_threshold | +0.83% | +0.84% |
-| US/USDT:USDT | below_1h_threshold | +0.43% | +0.44% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.41% | +0.42% |
-| NEAR/USDT:USDT | below_1h_threshold | +0.41% | +0.42% |
+| DOOD/USDT:USDT | below_1h_threshold | +2.14% | +2.20% |
+| IRYS/USDT:USDT | below_1h_threshold | +0.80% | +0.87% |
+| GRASS/USDT:USDT | below_1h_threshold | +0.67% | +0.73% |
+| VVV/USDT:USDT | below_1h_threshold | +0.64% | +0.70% |
+| NEAR/USDT:USDT | below_1h_threshold | +0.51% | +0.58% |
 
 ## 7. 次に見るべき不足
 
