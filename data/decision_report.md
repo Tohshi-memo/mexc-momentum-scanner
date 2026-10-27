@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-27T10:51:12.628521+00:00
+- generated_at: 2026-10-27T10:56:23.298410+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17591**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-27T10:51:03.690333+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.32% price=79998.9
-- Funnel: target 1078 → liquid 157 → pre 50 → checked 50 → surge 1 → strict 0
+- 更新: 2026-10-27T10:56:10.522545+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.27% price=79958.0
+- Funnel: target 1078 → liquid 158 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.5 >= 65=1
+- Strict後reject: 4h RSI 86.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIN/USDT:USDT | +188.99% | $6,107,729.20 |
-| TAG/USDT:USDT | +36.19% | $2,037,348.35 |
-| SYN/USDT:USDT | +17.73% | $4,562,422.15 |
-| BTW/USDT:USDT | +13.63% | $22,393,285.35 |
-| ARIA/USDT:USDT | +10.45% | $1,130,742.79 |
+| AIN/USDT:USDT | +196.22% | $6,175,377.85 |
+| TAG/USDT:USDT | +35.07% | $2,074,016.71 |
+| SYN/USDT:USDT | +18.49% | $4,618,687.66 |
+| BTW/USDT:USDT | +14.25% | $22,440,789.17 |
+| Q/USDT:USDT | +13.33% | $52,221,052.75 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXL/USDT:USDT | below_1h_threshold | +1.38% | +1.06% |
-| ETHFI/USDT:USDT | below_1h_threshold | +1.22% | +0.90% |
-| MUU/USDT:USDT | below_1h_threshold | +1.18% | +0.87% |
-| VVV/USDT:USDT | below_1h_threshold | +0.88% | +0.57% |
-| SNXX/USDT:USDT | below_1h_threshold | +0.82% | +0.50% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.38% | +1.11% |
+| ETHFI/USDT:USDT | below_1h_threshold | +1.31% | +1.05% |
+| AIN/USDT:USDT | below_1h_threshold | +1.31% | +1.05% |
+| MUU/USDT:USDT | below_1h_threshold | +1.18% | +0.92% |
+| CT/USDT:USDT | below_1h_threshold | +1.13% | +0.86% |
 
 ## 7. 次に見るべき不足
 
