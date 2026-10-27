@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-27T00:21:34.334121+00:00
+- generated_at: 2026-10-27T00:26:18.990338+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17538**
 
@@ -70,9 +70,9 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-27T00:21:17.214107+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=80212.8
-- Funnel: target 1078 → liquid 155 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-10-27T00:26:06.464353+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=80250.0
+- Funnel: target 1078 → liquid 156 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| Q/USDT:USDT | +237.71% | $23,605,439.77 |
-| IRYS/USDT:USDT | +19.14% | $9,361,607.74 |
-| US/USDT:USDT | +17.33% | $1,195,713.93 |
-| SYN/USDT:USDT | +16.28% | $1,137,085.08 |
-| AGT/USDT:USDT | +11.11% | $1,729,892.81 |
+| Q/USDT:USDT | +243.29% | $23,695,423.10 |
+| US/USDT:USDT | +20.46% | $1,198,440.54 |
+| SYN/USDT:USDT | +16.66% | $1,152,575.76 |
+| IRYS/USDT:USDT | +14.61% | $9,449,492.21 |
+| AGT/USDT:USDT | +8.64% | $1,741,922.43 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ORDER/USDT:USDT | below_1h_threshold | +4.55% | +4.43% |
-| AGT/USDT:USDT | below_1h_threshold | +4.41% | +4.29% |
-| DNA/USDT:USDT | below_1h_threshold | +3.06% | +2.94% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +2.56% | +2.44% |
-| SYN/USDT:USDT | below_1h_threshold | +2.56% | +2.44% |
+| ORDER/USDT:USDT | below_1h_threshold | +3.66% | +3.49% |
+| SYN/USDT:USDT | below_1h_threshold | +2.84% | +2.67% |
+| DNA/USDT:USDT | below_1h_threshold | +2.81% | +2.64% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +2.56% | +2.40% |
+| KIMCHI/USDT:USDT | below_1h_threshold | +2.54% | +2.37% |
 
 ## 7. 次に見るべき不足
 
