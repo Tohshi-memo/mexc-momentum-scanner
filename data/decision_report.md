@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-27T05:41:26.415754+00:00
+- generated_at: 2026-10-27T05:46:09.543051+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17570**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-27T05:41:13.875458+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.15% price=79839.3
-- Funnel: target 1078 → liquid 157 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 97.3 >= 65=1, 4h RSI 66.1 >= 65=1
+- 更新: 2026-10-27T05:46:01.239153+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.21% price=79890.8
+- Funnel: target 1078 → liquid 157 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 97.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| Q/USDT:USDT | +245.29% | $34,672,295.90 |
-| AIN/USDT:USDT | +126.13% | $2,131,790.54 |
-| SYN/USDT:USDT | +23.29% | $2,792,200.75 |
-| ARIA/USDT:USDT | +22.39% | $1,089,801.81 |
-| TAG/USDT:USDT | +21.17% | $1,169,135.37 |
+| Q/USDT:USDT | +245.16% | $34,718,894.17 |
+| AIN/USDT:USDT | +116.79% | $2,180,475.00 |
+| SYN/USDT:USDT | +23.86% | $2,801,430.03 |
+| ARIA/USDT:USDT | +21.48% | $1,095,379.61 |
+| TAG/USDT:USDT | +21.07% | $1,178,985.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DOOD/USDT:USDT | below_1h_threshold | +4.92% | +4.78% |
-| BTW/USDT:USDT | below_1h_threshold | +2.25% | +2.10% |
-| CHIP/USDT:USDT | below_1h_threshold | +1.58% | +1.44% |
-| APR/USDT:USDT | below_1h_threshold | +1.21% | +1.07% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.82% | +0.67% |
+| ARIA/USDT:USDT | below_relative_strength | +5.18% | +4.97% |
+| BTW/USDT:USDT | below_1h_threshold | +4.21% | +4.00% |
+| DOOD/USDT:USDT | below_1h_threshold | +2.83% | +2.62% |
+| CHIP/USDT:USDT | below_1h_threshold | +1.92% | +1.70% |
+| APR/USDT:USDT | below_1h_threshold | +1.42% | +1.21% |
 
 ## 7. 次に見るべき不足
 
