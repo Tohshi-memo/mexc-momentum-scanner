@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-28T01:26:42.482101+00:00
+- generated_at: 2026-10-28T01:31:27.574374+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17661**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-28T01:26:21.527204+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=80809.7
-- Funnel: target 1083 → liquid 160 → pre 50 → checked 50 → surge 4 → strict 2
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.2 >= 65=1, 4h RSI 77.3 >= 65=1
+- 更新: 2026-10-28T01:31:13.664549+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=80750.1
+- Funnel: target 1083 → liquid 160 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.7 >= 65=1, 4h RSI 76.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SI/USDT:USDT | +35.51% | $1,111,770.47 |
-| EVAA/USDT:USDT | +29.59% | $4,340,031.49 |
-| BULLA/USDT:USDT | +27.76% | $10,337,424.88 |
-| JCT/USDT:USDT | +14.35% | $4,168,974.30 |
-| BTW/USDT:USDT | +13.18% | $15,324,948.79 |
+| SI/USDT:USDT | +35.82% | $1,113,734.37 |
+| EVAA/USDT:USDT | +28.28% | $4,354,843.98 |
+| BULLA/USDT:USDT | +26.65% | $10,345,618.59 |
+| JCT/USDT:USDT | +13.54% | $4,217,255.71 |
+| BTW/USDT:USDT | +12.98% | $15,345,490.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DOOD/USDT:USDT | below_1h_threshold | +4.34% | +4.22% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.74% | +2.62% |
-| SNXX/USDT:USDT | below_1h_threshold | +2.52% | +2.41% |
-| EVAA/USDT:USDT | below_1h_threshold | +2.26% | +2.14% |
-| PEPE/USDT:USDT | below_1h_threshold | +2.19% | +2.08% |
+| DOOD/USDT:USDT | below_1h_threshold | +3.78% | +3.74% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.74% | +2.69% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.52% | +2.48% |
+| PEPE/USDT:USDT | below_1h_threshold | +2.42% | +2.37% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.99% | +1.94% |
 
 ## 7. 次に見るべき不足
 
