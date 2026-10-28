@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-28T12:46:36.622195+00:00
+- generated_at: 2026-10-28T12:51:37.911278+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17717**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5876件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5877件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000245 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-28T12:46:18.227907+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.67% price=80760.3
-- Funnel: target 1083 → liquid 164 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.1 >= 65=1
+- 更新: 2026-10-28T12:51:21.196449+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.70% price=80736.2
+- Funnel: target 1083 → liquid 164 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 77.6 >= 65=1, 4h RSI 75.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +78.35% | $14,491,842.99 |
-| SI/USDT:USDT | +54.75% | $1,912,460.52 |
-| BLESS/USDT:USDT | +45.27% | $15,166,638.16 |
-| INIT/USDT:USDT | +39.54% | $1,408,630.47 |
-| XAN/USDT:USDT | +34.64% | $1,695,480.77 |
+| EVAA/USDT:USDT | +71.74% | $14,631,269.32 |
+| SI/USDT:USDT | +55.78% | $1,916,296.32 |
+| BLESS/USDT:USDT | +50.20% | $15,398,563.75 |
+| INIT/USDT:USDT | +39.46% | $1,426,935.47 |
+| XAN/USDT:USDT | +34.81% | $1,699,719.35 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HAEDAL/USDT:USDT | below_1h_threshold | +3.27% | +3.94% |
-| BULLA/USDT:USDT | below_1h_threshold | +1.59% | +2.26% |
-| BTW/USDT:USDT | below_1h_threshold | +0.67% | +1.35% |
-| UNITREE/USDT:USDT | below_1h_threshold | +0.53% | +1.20% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.35% | +1.03% |
+| BTW/USDT:USDT | below_1h_threshold | +0.57% | +1.27% |
+| UNITREE/USDT:USDT | below_1h_threshold | +0.53% | +1.23% |
+| BULLA/USDT:USDT | below_1h_threshold | +0.51% | +1.21% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.35% | +1.05% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.18% | +0.88% |
 
 ## 7. 次に見るべき不足
 
