@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-28T22:31:34.440802+00:00
+- generated_at: 2026-10-28T22:36:44.136510+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17738**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5900件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5901件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000191 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-28T22:31:20.549336+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=81245.5
-- Funnel: target 1083 → liquid 168 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.0 >= 65=1, 4h RSI 72.2 >= 65=1, 4h RSI 79.7 >= 65=1
+- 更新: 2026-10-28T22:36:29.430992+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=81320.5
+- Funnel: target 1083 → liquid 168 → pre 50 → checked 50 → surge 4 → strict 0
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 85.2 >= 65=1, 4h RSI 72.1 >= 65=1, 4h RSI 78.3 >= 65=1, 4h RSI 72.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| XPIN/USDT:USDT | +21.41% | $2,285,503.01 |
-| LITESTOCK/USDT:USDT | +12.96% | $1,033,936.06 |
-| AKE/USDT:USDT | +12.44% | $7,065,249.51 |
-| INIT/USDT:USDT | +11.16% | $1,956,683.64 |
-| Q/USDT:USDT | +10.14% | $29,549,924.01 |
+| XPIN/USDT:USDT | +16.95% | $2,314,447.06 |
+| LITESTOCK/USDT:USDT | +13.26% | $1,038,063.39 |
+| AKE/USDT:USDT | +12.11% | $7,073,321.19 |
+| INIT/USDT:USDT | +10.71% | $1,958,076.35 |
+| Q/USDT:USDT | +10.58% | $29,603,381.78 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| XAN/USDT:USDT | below_1h_threshold | +4.88% | +4.98% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +4.68% | +4.78% |
-| BULLA/USDT:USDT | below_1h_threshold | +4.20% | +4.29% |
-| INIT/USDT:USDT | below_1h_threshold | +1.47% | +1.57% |
-| MSFTSTOCK/USDT:USDT | below_1h_threshold | +1.28% | +1.38% |
+| BULLA/USDT:USDT | below_1h_threshold | +3.50% | +3.50% |
+| MSFTSTOCK/USDT:USDT | below_1h_threshold | +1.28% | +1.29% |
+| KAS/USDT:USDT | below_1h_threshold | +1.14% | +1.15% |
+| PONS/USDT:USDT | below_1h_threshold | +1.14% | +1.14% |
+| INIT/USDT:USDT | below_1h_threshold | +1.13% | +1.13% |
 
 ## 7. 次に見るべき不足
 
