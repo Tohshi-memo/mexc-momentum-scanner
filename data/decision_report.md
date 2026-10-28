@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-28T22:11:34.277051+00:00
+- generated_at: 2026-10-28T22:16:39.022163+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17738**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5899件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5900件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000191 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-28T22:11:20.566881+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=81260.0
-- Funnel: target 1083 → liquid 167 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.3 >= 65=1, 4h RSI 80.5 >= 65=1
+- 更新: 2026-10-28T22:16:24.976067+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=81225.3
+- Funnel: target 1083 → liquid 168 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 85.6 >= 65=1, 4h RSI 73.8 >= 65=1, 4h RSI 80.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| XPIN/USDT:USDT | +21.22% | $2,258,743.66 |
-| AKE/USDT:USDT | +12.07% | $7,009,042.65 |
-| INIT/USDT:USDT | +11.04% | $1,946,883.27 |
-| PUMPFUN/USDT:USDT | +8.20% | $14,336,174.28 |
-| Q/USDT:USDT | +7.96% | $29,210,017.12 |
+| XPIN/USDT:USDT | +21.04% | $2,264,986.39 |
+| LITESTOCK/USDT:USDT | +13.78% | $1,014,915.35 |
+| AKE/USDT:USDT | +12.30% | $7,019,056.79 |
+| INIT/USDT:USDT | +11.55% | $1,950,313.05 |
+| Q/USDT:USDT | +9.44% | $29,288,143.21 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +4.68% | +4.76% |
-| XAN/USDT:USDT | below_1h_threshold | +1.71% | +1.79% |
-| INIT/USDT:USDT | below_1h_threshold | +1.36% | +1.44% |
-| MSFTSTOCK/USDT:USDT | below_1h_threshold | +1.28% | +1.36% |
-| ORCLSTOCK/USDT:USDT | below_1h_threshold | +0.61% | +0.69% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +4.68% | +4.80% |
+| XAN/USDT:USDT | below_1h_threshold | +2.10% | +2.22% |
+| INIT/USDT:USDT | below_1h_threshold | +1.83% | +1.95% |
+| MSFTSTOCK/USDT:USDT | below_1h_threshold | +1.28% | +1.41% |
+| ORCLSTOCK/USDT:USDT | below_1h_threshold | +0.61% | +0.73% |
 
 ## 7. 次に見るべき不足
 
