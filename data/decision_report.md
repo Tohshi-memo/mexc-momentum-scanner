@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-28T23:16:19.798028+00:00
+- generated_at: 2026-10-28T23:21:15.458071+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17739**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-28T23:16:09.694113+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=81295.7
-- Funnel: target 1083 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-28T23:21:07.263684+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=81300.3
+- Funnel: target 1083 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| INIT/USDT:USDT | +16.56% | $1,960,058.02 |
-| XPIN/USDT:USDT | +16.08% | $2,421,125.51 |
-| LITESTOCK/USDT:USDT | +12.66% | $1,103,271.55 |
-| AKE/USDT:USDT | +11.67% | $7,103,106.00 |
-| Q/USDT:USDT | +10.63% | $29,824,213.30 |
+| INIT/USDT:USDT | +15.89% | $1,965,203.08 |
+| XPIN/USDT:USDT | +14.49% | $2,432,460.94 |
+| LITESTOCK/USDT:USDT | +12.45% | $1,103,820.25 |
+| AKE/USDT:USDT | +11.76% | $7,104,702.65 |
+| Q/USDT:USDT | +11.01% | $29,841,622.14 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| INIT/USDT:USDT | below_1h_threshold | +4.95% | +4.87% |
-| APR/USDT:USDT | below_1h_threshold | +1.56% | +1.49% |
-| QNT/USDT:USDT | below_1h_threshold | +0.80% | +0.72% |
-| SKDD/USDT:USDT | below_1h_threshold | +0.58% | +0.51% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +0.49% | +0.41% |
+| INIT/USDT:USDT | below_1h_threshold | +4.22% | +4.14% |
+| APR/USDT:USDT | below_1h_threshold | +1.64% | +1.56% |
+| SKDD/USDT:USDT | below_1h_threshold | +0.58% | +0.50% |
+| ETHFI/USDT:USDT | below_1h_threshold | +0.50% | +0.42% |
+| AKE/USDT:USDT | below_1h_threshold | +0.40% | +0.32% |
 
 ## 7. 次に見るべき不足
 
