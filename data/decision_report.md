@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-28T21:31:24.191414+00:00
+- generated_at: 2026-10-28T21:36:32.073773+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17738**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-28T21:31:11.891063+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.18% price=81144.8
+- 更新: 2026-10-28T21:36:16.747893+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=81180.6
 - Funnel: target 1083 → liquid 167 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| XPIN/USDT:USDT | +22.03% | $2,161,939.67 |
-| AKE/USDT:USDT | +14.04% | $6,996,566.23 |
-| Q/USDT:USDT | +12.06% | $28,259,091.69 |
-| INIT/USDT:USDT | +9.72% | $1,956,032.04 |
-| PUMPFUN/USDT:USDT | +8.08% | $13,889,162.38 |
+| XPIN/USDT:USDT | +22.61% | $2,187,219.12 |
+| AKE/USDT:USDT | +14.47% | $7,023,495.78 |
+| Q/USDT:USDT | +13.74% | $28,348,219.74 |
+| INIT/USDT:USDT | +9.73% | $1,960,486.01 |
+| PUMPFUN/USDT:USDT | +7.86% | $14,023,306.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +4.38% | +4.57% |
-| MSFTSTOCK/USDT:USDT | below_1h_threshold | +2.68% | +2.86% |
-| PYTH/USDT:USDT | below_1h_threshold | +1.22% | +1.40% |
-| JASMY/USDT:USDT | below_1h_threshold | +0.70% | +0.88% |
-| APR/USDT:USDT | below_1h_threshold | +0.65% | +0.83% |
+| SOXS/USDT:USDT | below_1h_threshold | +4.38% | +4.52% |
+| MSFTSTOCK/USDT:USDT | below_1h_threshold | +2.68% | +2.82% |
+| AGT/USDT:USDT | below_1h_threshold | +1.12% | +1.26% |
+| APR/USDT:USDT | below_1h_threshold | +0.84% | +0.98% |
+| PYTH/USDT:USDT | below_1h_threshold | +0.83% | +0.96% |
 
 ## 7. 次に見るべき不足
 
