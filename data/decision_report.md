@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-28T01:51:27.085971+00:00
+- generated_at: 2026-10-28T01:56:45.249641+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17663**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5827件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5828件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000253 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-28T01:51:14.769822+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.20% price=80871.9
-- Funnel: target 1083 → liquid 160 → pre 50 → checked 50 → surge 4 → strict 1
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.9 >= 65=1, 4h RSI 69.7 >= 65=1, 4h RSI 77.7 >= 65=1
+- 更新: 2026-10-28T01:56:27.785730+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.25% price=80912.6
+- Funnel: target 1083 → liquid 160 → pre 50 → checked 50 → surge 5 → strict 1
+- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 75.5 >= 65=1, 4h RSI 67.7 >= 65=1, 4h RSI 69.8 >= 65=1, 4h RSI 78.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SI/USDT:USDT | +29.98% | $1,150,924.76 |
-| BULLA/USDT:USDT | +27.96% | $10,373,081.28 |
-| EVAA/USDT:USDT | +24.03% | $4,461,738.19 |
-| PONS/USDT:USDT | +13.66% | $1,791,028.99 |
-| JCT/USDT:USDT | +12.72% | $4,468,134.01 |
+| EVAA/USDT:USDT | +31.52% | $4,533,290.17 |
+| SI/USDT:USDT | +31.42% | $1,154,403.53 |
+| APR/USDT:USDT | +30.52% | $5,253,846.70 |
+| BULLA/USDT:USDT | +29.34% | $10,375,046.32 |
+| PONS/USDT:USDT | +14.50% | $1,824,018.00 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DOOD/USDT:USDT | below_1h_threshold | +3.09% | +2.89% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.74% | +2.54% |
-| SNXX/USDT:USDT | below_1h_threshold | +2.52% | +2.33% |
-| PONS/USDT:USDT | below_1h_threshold | +2.44% | +2.24% |
-| USELESS/USDT:USDT | below_1h_threshold | +2.17% | +1.98% |
+| EVAA/USDT:USDT | below_1h_threshold | +3.68% | +3.43% |
+| PONS/USDT:USDT | below_1h_threshold | +3.08% | +2.84% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.74% | +2.49% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.52% | +2.28% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.43% | +2.18% |
 
 ## 7. 次に見るべき不足
 
