@@ -4,7 +4,7 @@
   "initial_capital": 100.0,
   "balance": 117.6114169450822,
   "started_at": "2026-07-11T08:56:50.346675+00:00",
-  "updated_at": "2026-10-28T02:11:18.517637+00:00",
+  "updated_at": "2026-10-28T02:16:27.235591+00:00",
   "high_watermark": 128.08262302711162,
   "max_drawdown_pct": 8.205992703625467,
   "loss_streak": 0,
@@ -285583,7 +285583,7 @@
     "reason": "selected_by_causal_log_growth",
     "causal_score": 0.00029620565165663893,
     "robust_score": 0.00029620565165663893,
-    "causal_history_count": 17664,
+    "causal_history_count": 17665,
     "fast": {
       "strategy": "LIMIT_7PCT",
       "direction": "short",
@@ -285656,14 +285656,14 @@
     },
     "alternatives": [
       {
+        "strategy": "LIMIT_9PCT_LONG",
+        "direction": "long",
+        "causal_score": 0.0001122299484646188
+      },
+      {
         "strategy": "LIMIT_5PCT",
         "direction": "short",
         "causal_score": 0.00011180074372803802
-      },
-      {
-        "strategy": "LIMIT_9PCT_LONG",
-        "direction": "long",
-        "causal_score": 0.00010143768966995813
       }
     ]
   },
