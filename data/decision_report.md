@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-28T22:46:33.254922+00:00
+- generated_at: 2026-10-28T22:51:37.546290+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17739**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-28T22:46:19.318192+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=81298.3
-- Funnel: target 1083 → liquid 168 → pre 50 → checked 50 → surge 5 → strict 1
-- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.2 >= 65=1, 4h RSI 72.0 >= 65=1, 4h RSI 72.3 >= 65=1, 4h RSI 78.2 >= 65=1
+- 更新: 2026-10-28T22:51:24.579333+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=81235.6
+- Funnel: target 1083 → liquid 168 → pre 50 → checked 50 → surge 4 → strict 0
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 85.2 >= 65=1, 4h RSI 72.0 >= 65=1, 4h RSI 72.1 >= 65=1, 4h RSI 78.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| XPIN/USDT:USDT | +17.92% | $2,376,563.06 |
-| LITESTOCK/USDT:USDT | +13.33% | $1,048,783.27 |
-| AKE/USDT:USDT | +11.81% | $7,107,514.53 |
-| Q/USDT:USDT | +10.69% | $29,746,619.09 |
-| INIT/USDT:USDT | +10.43% | $1,961,106.52 |
+| XPIN/USDT:USDT | +17.35% | $2,387,640.55 |
+| LITESTOCK/USDT:USDT | +13.30% | $1,050,889.31 |
+| AKE/USDT:USDT | +11.52% | $7,116,309.83 |
+| INIT/USDT:USDT | +11.16% | $1,963,827.44 |
+| Q/USDT:USDT | +10.59% | $29,809,196.43 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KAS/USDT:USDT | below_1h_threshold | +1.60% | +1.63% |
-| MSFTSTOCK/USDT:USDT | below_1h_threshold | +1.28% | +1.32% |
-| INIT/USDT:USDT | below_1h_threshold | +0.81% | +0.84% |
-| ZEC/USDT:USDT | below_1h_threshold | +0.79% | +0.82% |
-| ORCLSTOCK/USDT:USDT | below_1h_threshold | +0.61% | +0.64% |
+| BULLA/USDT:USDT | below_1h_threshold | +4.68% | +4.79% |
+| INIT/USDT:USDT | below_1h_threshold | +1.41% | +1.52% |
+| MSFTSTOCK/USDT:USDT | below_1h_threshold | +1.28% | +1.39% |
+| KAS/USDT:USDT | below_1h_threshold | +1.28% | +1.39% |
+| ZEC/USDT:USDT | below_1h_threshold | +0.71% | +0.82% |
 
 ## 7. 次に見るべき不足
 
