@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-28T01:16:45.980625+00:00
+- generated_at: 2026-10-28T01:21:31.252281+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17660**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5822件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5823件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000254 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-28T01:16:29.151186+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=80694.0
-- Funnel: target 1083 → liquid 159 → pre 50 → checked 50 → surge 3 → strict 1
+- 更新: 2026-10-28T01:21:15.462385+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=80709.2
+- Funnel: target 1083 → liquid 160 → pre 50 → checked 50 → surge 3 → strict 1
 - Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.0 >= 65=1, 4h RSI 76.5 >= 65=1
+- Strict後reject: 4h RSI 67.2 >= 65=1, 4h RSI 76.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SI/USDT:USDT | +38.58% | $1,096,665.97 |
-| EVAA/USDT:USDT | +29.65% | $4,284,211.33 |
-| BULLA/USDT:USDT | +28.00% | $10,302,647.84 |
-| JCT/USDT:USDT | +14.87% | $4,047,959.08 |
-| BTW/USDT:USDT | +13.33% | $15,248,889.12 |
+| SI/USDT:USDT | +35.61% | $1,107,984.90 |
+| EVAA/USDT:USDT | +31.07% | $4,314,446.74 |
+| BULLA/USDT:USDT | +27.42% | $10,322,186.30 |
+| JCT/USDT:USDT | +14.97% | $4,137,908.58 |
+| BTW/USDT:USDT | +13.43% | $15,295,609.55 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SI/USDT:USDT | below_1h_threshold | +3.83% | +3.85% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.74% | +2.76% |
-| SNXX/USDT:USDT | below_1h_threshold | +2.52% | +2.55% |
-| EVAA/USDT:USDT | below_1h_threshold | +2.01% | +2.04% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.99% | +2.01% |
+| EVAA/USDT:USDT | below_1h_threshold | +3.05% | +3.05% |
+| DOOD/USDT:USDT | below_1h_threshold | +2.95% | +2.96% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.74% | +2.74% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.52% | +2.53% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.99% | +1.99% |
 
 ## 7. 次に見るべき不足
 
