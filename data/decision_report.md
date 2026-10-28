@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-28T03:01:16.704591+00:00
+- generated_at: 2026-10-28T03:06:21.007443+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17670**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-28T03:01:08.028092+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=80867.7
+- 更新: 2026-10-28T03:06:08.273124+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=80895.6
 - Funnel: target 1083 → liquid 159 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SI/USDT:USDT | +37.66% | $1,203,076.57 |
-| EVAA/USDT:USDT | +34.44% | $4,713,763.21 |
-| BULLA/USDT:USDT | +29.00% | $10,360,689.37 |
-| PONS/USDT:USDT | +14.98% | $2,094,735.32 |
-| BTW/USDT:USDT | +13.74% | $15,100,794.16 |
+| SI/USDT:USDT | +38.58% | $1,207,282.40 |
+| EVAA/USDT:USDT | +38.15% | $4,734,779.54 |
+| BULLA/USDT:USDT | +28.62% | $10,364,384.88 |
+| PONS/USDT:USDT | +14.90% | $2,105,247.55 |
+| BTW/USDT:USDT | +14.21% | $15,240,554.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UNITREE/USDT:USDT | below_1h_threshold | +3.57% | +3.63% |
-| BTW/USDT:USDT | below_1h_threshold | +2.65% | +2.71% |
-| EVAA/USDT:USDT | below_1h_threshold | +1.56% | +1.62% |
-| SNXX/USDT:USDT | below_1h_threshold | +1.05% | +1.12% |
-| HAEDAL/USDT:USDT | below_1h_threshold | +0.67% | +0.73% |
+| EVAA/USDT:USDT | below_1h_threshold | +4.59% | +4.62% |
+| UNITREE/USDT:USDT | below_1h_threshold | +3.57% | +3.59% |
+| BANK/USDT:USDT | below_1h_threshold | +1.24% | +1.27% |
+| BTW/USDT:USDT | below_1h_threshold | +1.18% | +1.21% |
+| HAEDAL/USDT:USDT | below_1h_threshold | +1.17% | +1.20% |
 
 ## 7. 次に見るべき不足
 
