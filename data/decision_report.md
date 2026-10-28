@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-28T01:31:27.574374+00:00
+- generated_at: 2026-10-28T01:36:27.705320+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17661**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-28T01:31:13.664549+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=80750.1
-- Funnel: target 1083 → liquid 160 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.7 >= 65=1, 4h RSI 76.8 >= 65=1
+- 更新: 2026-10-28T01:36:12.971742+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=80756.9
+- Funnel: target 1083 → liquid 160 → pre 50 → checked 50 → surge 4 → strict 2
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 69.7 >= 65=1, 4h RSI 77.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SI/USDT:USDT | +35.82% | $1,113,734.37 |
-| EVAA/USDT:USDT | +28.28% | $4,354,843.98 |
-| BULLA/USDT:USDT | +26.65% | $10,345,618.59 |
-| JCT/USDT:USDT | +13.54% | $4,217,255.71 |
-| BTW/USDT:USDT | +12.98% | $15,345,490.52 |
+| SI/USDT:USDT | +36.54% | $1,120,929.22 |
+| BULLA/USDT:USDT | +28.11% | $10,354,846.54 |
+| EVAA/USDT:USDT | +18.84% | $4,400,201.36 |
+| JCT/USDT:USDT | +18.59% | $4,296,055.35 |
+| PONS/USDT:USDT | +12.90% | $1,738,965.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DOOD/USDT:USDT | below_1h_threshold | +3.78% | +3.74% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.74% | +2.69% |
-| SNXX/USDT:USDT | below_1h_threshold | +2.52% | +2.48% |
-| PEPE/USDT:USDT | below_1h_threshold | +2.42% | +2.37% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.99% | +1.94% |
+| PEPE/USDT:USDT | below_1h_threshold | +3.36% | +3.31% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.74% | +2.68% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.52% | +2.47% |
+| DOOD/USDT:USDT | below_1h_threshold | +2.35% | +2.30% |
+| SI/USDT:USDT | below_1h_threshold | +1.99% | +1.94% |
 
 ## 7. 次に見るべき不足
 
