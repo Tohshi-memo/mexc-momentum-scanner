@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-28T15:21:34.314059+00:00
+- generated_at: 2026-10-28T15:26:46.951110+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17725**
 
@@ -63,38 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5885件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5886件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000243 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-28T15:21:19.256553+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.19% price=80721.6
-- Funnel: target 1083 → liquid 157 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-28T15:26:30.558798+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=80694.5
+- Funnel: target 1083 → liquid 157 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 89.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +109.50% | $18,842,267.68 |
-| SI/USDT:USDT | +44.21% | $2,068,116.37 |
-| XAN/USDT:USDT | +40.47% | $1,842,513.84 |
-| BLESS/USDT:USDT | +32.20% | $19,897,842.71 |
-| INIT/USDT:USDT | +28.27% | $1,928,321.50 |
+| EVAA/USDT:USDT | +110.69% | $19,034,123.50 |
+| SI/USDT:USDT | +44.83% | $2,069,026.94 |
+| XAN/USDT:USDT | +39.89% | $1,846,481.78 |
+| BLESS/USDT:USDT | +31.85% | $19,936,470.36 |
+| INIT/USDT:USDT | +23.69% | $1,953,396.23 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EVAA/USDT:USDT | below_relative_strength | +5.16% | +4.97% |
-| XAN/USDT:USDT | below_1h_threshold | +3.83% | +3.65% |
-| PONS/USDT:USDT | below_1h_threshold | +2.59% | +2.41% |
-| XPL/USDT:USDT | below_1h_threshold | +1.42% | +1.23% |
-| ON/USDT:USDT | below_1h_threshold | +1.19% | +1.01% |
+| XAN/USDT:USDT | below_1h_threshold | +3.34% | +3.19% |
+| PONS/USDT:USDT | below_1h_threshold | +3.19% | +3.04% |
+| LAB/USDT:USDT | below_1h_threshold | +2.11% | +1.96% |
+| XPL/USDT:USDT | below_1h_threshold | +1.80% | +1.65% |
+| ZRO/USDT:USDT | below_1h_threshold | +1.19% | +1.03% |
 
 ## 7. 次に見るべき不足
 
