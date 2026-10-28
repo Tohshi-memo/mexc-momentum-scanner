@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-10-28T08:51:20.896826+00:00
+- generated_at: 2026-10-28T08:56:29.013019+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **17706**
+- closed shadow trades: **17707**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=17706, expectancy=+0.01%
+- 全期間 MARKET基準: n=17707, expectancy=+0.01%
 - 直近20件 MARKET基準: n=20, expectancy=-0.03%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -32,10 +32,10 @@
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | MARKET_LONG | 20/20 | 100.0% | +1.00% | **+1.00%** |
-| LIMIT_FIB1272_LONG | 8/20 | 40.0% | +1.77% | **+0.71%** |
+| LIMIT_FIB1272_LONG | 7/20 | 35.0% | +2.59% | **+0.91%** |
 | LIMIT_1PCT_LONG | 17/20 | 85.0% | +0.78% | **+0.66%** |
 | LIMIT_2PCT_LONG | 15/20 | 75.0% | +0.42% | **+0.32%** |
-| LIMIT_FIB1618_LONG | 2/20 | 10.0% | +2.80% | **+0.28%** |
+| LIMIT_6PCT_LONG | 8/20 | 40.0% | +0.55% | **+0.22%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,532.91** / 初期 $100.00 (+1432.91%)
-- 確定: 6761件 (Win 1968 / Loss 2170 / Flat 2623) / skip 7506件
+- 確定: 6761件 (Win 1968 / Loss 2170 / Flat 2623) / skip 7507件
 - 成長率目線: 平均log +0.000404 / 幾何平均 +0.040% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_7PCT` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: BEAT/USDT:USDT `LIMIT_8PCT_LONG` EXPIRED account +0.00% 残高後 $1,532.91
@@ -55,23 +55,23 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$357.61** / 初期 $100.00 (+257.61%)
-- 確定: 4229件 (Win 1150 / Loss 968 / Flat 2111) / skip 6888件
+- 確定: 4230件 (Win 1150 / Loss 968 / Flat 2112) / skip 6888件
 - 成長率目線: 平均log +0.000301 / 幾何平均 +0.030% per trade / maxDD +4.13%
 - 次の候補: `LIMIT_6PCT` (selected_by_robust_growth_score) / robust_score +0.0878 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: BLESS/USDT:USDT `LIMIT_6PCT` EXPIRED account +0.00% 残高後 $357.61
+- 最新: XAN/USDT:USDT `LIMIT_6PCT` EXPIRED account +0.00% 残高後 $357.61
 
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
 - 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5869件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000290 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000292 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-28T08:51:10.350231+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.54% price=81483.2
+- 更新: 2026-10-28T08:56:16.217756+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.52% price=81473.7
 - Funnel: target 1083 → liquid 162 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 78.9 >= 65=1
@@ -81,21 +81,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +86.33% | $10,522,507.18 |
-| XAN/USDT:USDT | +50.15% | $1,284,757.94 |
-| SI/USDT:USDT | +45.85% | $1,689,132.40 |
-| BLESS/USDT:USDT | +42.26% | $3,896,285.69 |
-| BTW/USDT:USDT | +15.80% | $16,396,308.67 |
+| EVAA/USDT:USDT | +88.89% | $10,560,426.22 |
+| XAN/USDT:USDT | +50.10% | $1,299,560.91 |
+| SI/USDT:USDT | +44.62% | $1,691,714.95 |
+| BLESS/USDT:USDT | +41.87% | $3,975,636.51 |
+| BEAT/USDT:USDT | +15.75% | $14,283,891.00 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_relative_strength | +5.39% | +4.85% |
-| PEPE/USDT:USDT | below_1h_threshold | +2.00% | +1.46% |
-| KORU/USDT:USDT | below_1h_threshold | +0.76% | +0.23% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +0.64% | +0.11% |
-| BCH/USDT:USDT | below_1h_threshold | +0.52% | -0.02% |
+| BLESS/USDT:USDT | below_relative_strength | +5.02% | +4.49% |
+| PEPE/USDT:USDT | below_1h_threshold | +2.14% | +1.62% |
+| KORU/USDT:USDT | below_1h_threshold | +0.76% | +0.24% |
+| HYPE/USDT:USDT | below_1h_threshold | +0.70% | +0.18% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +0.63% | +0.11% |
 
 ## 7. 次に見るべき不足
 
