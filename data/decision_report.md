@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-28T23:41:26.807537+00:00
+- generated_at: 2026-10-28T23:46:14.843215+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17739**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-28T23:41:14.245860+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=81282.5
+- 更新: 2026-10-28T23:46:06.031725+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=81274.5
 - Funnel: target 1083 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| INIT/USDT:USDT | +14.40% | $1,983,573.78 |
-| XPIN/USDT:USDT | +14.31% | $2,466,937.22 |
-| AKE/USDT:USDT | +11.77% | $7,171,986.65 |
-| LITESTOCK/USDT:USDT | +10.88% | $1,134,523.92 |
-| BULLA/USDT:USDT | +10.60% | $3,621,979.23 |
+| INIT/USDT:USDT | +14.51% | $1,986,773.96 |
+| XPIN/USDT:USDT | +13.23% | $2,473,770.94 |
+| AKE/USDT:USDT | +11.38% | $7,185,398.23 |
+| BULLA/USDT:USDT | +11.09% | $3,628,018.73 |
+| LITESTOCK/USDT:USDT | +10.87% | $1,135,755.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| INIT/USDT:USDT | below_1h_threshold | +3.01% | +2.95% |
-| APR/USDT:USDT | below_1h_threshold | +2.77% | +2.71% |
-| IRYS/USDT:USDT | below_1h_threshold | +2.56% | +2.50% |
-| BLESS/USDT:USDT | below_1h_threshold | +2.10% | +2.04% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.50% | +1.44% |
+| INIT/USDT:USDT | below_1h_threshold | +3.10% | +3.06% |
+| IRYS/USDT:USDT | below_1h_threshold | +2.56% | +2.51% |
+| APR/USDT:USDT | below_1h_threshold | +1.78% | +1.73% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.50% | +1.45% |
+| SPX/USDT:USDT | below_1h_threshold | +1.05% | +1.00% |
 
 ## 7. 次に見るべき不足
 
