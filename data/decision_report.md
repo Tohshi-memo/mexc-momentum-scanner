@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-28T13:06:19.887725+00:00
+- generated_at: 2026-10-28T13:11:21.744036+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17718**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-28T13:06:07.577390+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=80719.7
+- 更新: 2026-10-28T13:11:09.198332+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=80685.0
 - Funnel: target 1083 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +72.57% | $14,838,435.32 |
-| SI/USDT:USDT | +53.32% | $1,918,472.00 |
-| BLESS/USDT:USDT | +49.71% | $16,105,551.53 |
-| INIT/USDT:USDT | +46.06% | $1,537,499.74 |
-| XAN/USDT:USDT | +34.83% | $1,704,865.74 |
+| EVAA/USDT:USDT | +69.54% | $14,961,610.59 |
+| BLESS/USDT:USDT | +50.26% | $16,423,979.36 |
+| SI/USDT:USDT | +48.00% | $1,929,243.98 |
+| INIT/USDT:USDT | +46.81% | $1,554,673.79 |
+| XAN/USDT:USDT | +34.88% | $1,709,803.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HAEDAL/USDT:USDT | below_1h_threshold | +1.16% | +1.14% |
-| LAB/USDT:USDT | below_1h_threshold | +1.14% | +1.13% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +0.52% | +0.50% |
-| XPL/USDT:USDT | below_1h_threshold | +0.52% | +0.50% |
-| USELESS/USDT:USDT | below_1h_threshold | +0.50% | +0.49% |
+| BULLA/USDT:USDT | below_1h_threshold | +3.36% | +3.38% |
+| LAB/USDT:USDT | below_1h_threshold | +1.36% | +1.39% |
+| JCT/USDT:USDT | below_1h_threshold | +1.30% | +1.33% |
+| HAEDAL/USDT:USDT | below_1h_threshold | +0.92% | +0.95% |
+| APR/USDT:USDT | below_1h_threshold | +0.77% | +0.80% |
 
 ## 7. 次に見るべき不足
 
