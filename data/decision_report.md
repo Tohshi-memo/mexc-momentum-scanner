@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-28T07:56:32.666124+00:00
+- generated_at: 2026-10-28T08:01:21.539664+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17703**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-28T07:56:18.351137+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.20% price=81003.2
-- Funnel: target 1083 → liquid 163 → pre 50 → checked 50 → surge 4 → strict 0
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 90.2 >= 65=1, 4h RSI 88.2 >= 65=1, 4h RSI 87.3 >= 65=1, 4h RSI 75.1 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-28T08:01:08.583942+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=81093.9
+- Funnel: target 1083 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +91.32% | $9,624,567.50 |
-| XAN/USDT:USDT | +58.84% | $1,140,503.09 |
-| SI/USDT:USDT | +50.87% | $1,649,820.14 |
-| BLESS/USDT:USDT | +35.40% | $2,779,945.60 |
-| BTW/USDT:USDT | +18.17% | $16,257,269.32 |
+| EVAA/USDT:USDT | +93.34% | $9,673,261.12 |
+| XAN/USDT:USDT | +58.07% | $1,154,425.48 |
+| SI/USDT:USDT | +49.43% | $1,655,309.95 |
+| BLESS/USDT:USDT | +35.53% | $2,887,247.35 |
+| BEAT/USDT:USDT | +17.40% | $13,571,334.51 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BULLA/USDT:USDT | below_1h_threshold | +4.54% | +4.33% |
-| BEAT/USDT:USDT | below_1h_threshold | +4.48% | +4.27% |
-| JCT/USDT:USDT | below_1h_threshold | +3.42% | +3.22% |
-| HUMA/USDT:USDT | below_1h_threshold | +2.37% | +2.17% |
-| PEPE/USDT:USDT | below_1h_threshold | +2.07% | +1.87% |
+| SI/USDT:USDT | below_1h_threshold | +1.11% | +1.05% |
+| EVAA/USDT:USDT | below_1h_threshold | +0.88% | +0.83% |
+| KORU/USDT:USDT | below_1h_threshold | +0.76% | +0.71% |
+| JCT/USDT:USDT | below_1h_threshold | +0.76% | +0.70% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +0.63% | +0.58% |
 
 ## 7. 次に見るべき不足
 
