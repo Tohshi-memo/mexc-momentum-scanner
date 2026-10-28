@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-28T18:01:23.099625+00:00
+- generated_at: 2026-10-28T18:06:27.290089+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17735**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-28T18:01:10.359588+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=80867.3
+- 更新: 2026-10-28T18:06:14.306932+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=80902.6
 - Funnel: target 1083 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +10.22% | $5,507,389.63 |
-| INIT/USDT:USDT | +9.72% | $2,219,033.35 |
-| Q/USDT:USDT | +6.31% | $22,903,276.76 |
-| BEAT/USDT:USDT | +2.97% | $11,012,470.86 |
-| AGT/USDT:USDT | +2.28% | $2,344,452.04 |
+| AKE/USDT:USDT | +13.29% | $5,580,161.90 |
+| INIT/USDT:USDT | +8.48% | $2,226,018.04 |
+| Q/USDT:USDT | +4.64% | $23,175,266.89 |
+| BEAT/USDT:USDT | +4.27% | $11,053,650.12 |
+| USELESS/USDT:USDT | +2.68% | $1,846,541.36 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| INIT/USDT:USDT | below_1h_threshold | +0.62% | +0.57% |
-| DOS/USDT:USDT | below_1h_threshold | +0.61% | +0.56% |
-| ALUMINUM/USDT:USDT | below_1h_threshold | +0.53% | +0.48% |
-| XAN/USDT:USDT | below_1h_threshold | +0.46% | +0.41% |
-| BAT/USDT:USDT | below_1h_threshold | +0.29% | +0.24% |
+| AKE/USDT:USDT | below_1h_threshold | +3.00% | +2.90% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.45% | +2.36% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.53% | +1.44% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.52% | +1.43% |
+| ENA/USDT:USDT | below_1h_threshold | +1.45% | +1.36% |
 
 ## 7. 次に見るべき不足
 
