@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-28T20:01:26.187751+00:00
+- generated_at: 2026-10-28T20:06:29.759508+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17735**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-28T20:01:13.395896+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=81641.8
-- Funnel: target 1083 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-28T20:06:16.940528+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=81530.2
+- Funnel: target 1083 → liquid 163 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +16.04% | $6,257,637.45 |
-| ORCLSTOCK/USDT:USDT | +10.97% | $4,547,976.63 |
-| USELESS/USDT:USDT | +10.20% | $2,073,325.58 |
-| INIT/USDT:USDT | +9.03% | $1,947,229.08 |
-| PUMPFUN/USDT:USDT | +8.22% | $11,873,392.93 |
+| AKE/USDT:USDT | +16.31% | $6,328,675.77 |
+| ORCLSTOCK/USDT:USDT | +10.13% | $4,579,550.34 |
+| USELESS/USDT:USDT | +9.87% | $2,128,503.56 |
+| PUMPFUN/USDT:USDT | +8.96% | $12,614,447.60 |
+| Q/USDT:USDT | +8.84% | $26,393,456.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +3.11% | +3.00% |
-| IRENSTOCK/USDT:USDT | below_1h_threshold | +1.94% | +1.82% |
-| CRWVSTOCK/USDT:USDT | below_1h_threshold | +1.25% | +1.13% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.23% | +1.11% |
-| AAOISTOCK/USDT:USDT | below_1h_threshold | +0.99% | +0.87% |
+| PEPE/USDT:USDT | below_1h_threshold | +4.47% | +4.48% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +3.11% | +3.13% |
+| AGT/USDT:USDT | below_1h_threshold | +3.03% | +3.05% |
+| BULLA/USDT:USDT | below_1h_threshold | +2.71% | +2.73% |
+| IRENSTOCK/USDT:USDT | below_1h_threshold | +1.94% | +1.96% |
 
 ## 7. 次に見るべき不足
 
