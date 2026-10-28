@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-28T21:16:50.654711+00:00
+- generated_at: 2026-10-28T21:21:21.757798+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17738**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-28T21:16:38.654708+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=81336.2
+- 更新: 2026-10-28T21:21:08.842891+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=81368.4
 - Funnel: target 1083 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| XPIN/USDT:USDT | +22.58% | $2,092,880.62 |
-| Q/USDT:USDT | +15.52% | $27,669,316.55 |
-| AKE/USDT:USDT | +13.70% | $6,865,995.87 |
-| INIT/USDT:USDT | +8.94% | $1,944,329.22 |
-| PUMPFUN/USDT:USDT | +8.41% | $13,413,652.16 |
+| XPIN/USDT:USDT | +23.55% | $2,111,934.26 |
+| AKE/USDT:USDT | +14.43% | $6,909,107.19 |
+| Q/USDT:USDT | +12.60% | $27,865,906.59 |
+| INIT/USDT:USDT | +9.15% | $1,950,258.13 |
+| USELESS/USDT:USDT | +9.07% | $2,249,995.00 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKDD/USDT:USDT | below_relative_strength | +5.02% | +4.97% |
-| SOXS/USDT:USDT | below_1h_threshold | +4.38% | +4.33% |
-| MSFTSTOCK/USDT:USDT | below_1h_threshold | +2.68% | +2.63% |
-| PEPE/USDT:USDT | below_1h_threshold | +1.69% | +1.64% |
-| UNI/USDT:USDT | below_1h_threshold | +1.26% | +1.20% |
+| SKDD/USDT:USDT | below_relative_strength | +5.02% | +4.93% |
+| MSFTSTOCK/USDT:USDT | below_1h_threshold | +2.68% | +2.59% |
+| PYTH/USDT:USDT | below_1h_threshold | +2.24% | +2.15% |
+| TIA/USDT:USDT | below_1h_threshold | +1.48% | +1.39% |
+| PEPE/USDT:USDT | below_1h_threshold | +1.32% | +1.23% |
 
 ## 7. 次に見るべき不足
 
