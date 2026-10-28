@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-28T10:36:19.971035+00:00
+- generated_at: 2026-10-28T10:41:09.474401+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17712**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-28T10:36:08.745494+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=81502.4
-- Funnel: target 1083 → liquid 161 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.7 >= 65=1, 4h RSI 90.9 >= 65=1
+- 更新: 2026-10-28T10:41:00.969162+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=81472.7
+- Funnel: target 1083 → liquid 161 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 69.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +92.11% | $11,828,511.47 |
-| SI/USDT:USDT | +66.83% | $1,781,062.10 |
-| BLESS/USDT:USDT | +53.71% | $6,450,082.40 |
-| XAN/USDT:USDT | +44.68% | $1,487,819.00 |
-| HAEDAL/USDT:USDT | +20.93% | $1,413,718.77 |
+| EVAA/USDT:USDT | +93.88% | $11,895,380.96 |
+| SI/USDT:USDT | +67.24% | $1,793,458.78 |
+| BLESS/USDT:USDT | +51.32% | $6,632,249.28 |
+| XAN/USDT:USDT | +44.24% | $1,493,981.11 |
+| PONS/USDT:USDT | +16.13% | $3,952,130.36 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HAEDAL/USDT:USDT | below_1h_threshold | +4.19% | +4.21% |
-| EVAA/USDT:USDT | below_1h_threshold | +2.18% | +2.19% |
-| LAB/USDT:USDT | below_1h_threshold | +0.80% | +0.82% |
-| IRENSTOCK/USDT:USDT | below_1h_threshold | +0.64% | +0.66% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.38% | +0.39% |
+| BLESS/USDT:USDT | below_1h_threshold | +4.63% | +4.68% |
+| EVAA/USDT:USDT | below_1h_threshold | +2.93% | +2.98% |
+| IRENSTOCK/USDT:USDT | below_1h_threshold | +0.64% | +0.70% |
+| STRK/USDT:USDT | below_1h_threshold | +0.53% | +0.58% |
+| BTW/USDT:USDT | below_1h_threshold | +0.43% | +0.48% |
 
 ## 7. 次に見るべき不足
 
