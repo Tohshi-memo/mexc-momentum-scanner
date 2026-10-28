@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-28T12:26:23.865159+00:00
+- generated_at: 2026-10-28T12:31:10.369487+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17715**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-28T12:26:11.983340+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.44% price=80950.0
+- 更新: 2026-10-28T12:31:01.386481+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.55% price=80860.9
 - Funnel: target 1083 → liquid 163 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +76.12% | $13,936,411.75 |
-| SI/USDT:USDT | +57.11% | $1,873,911.75 |
-| BLESS/USDT:USDT | +37.55% | $13,842,798.86 |
-| XAN/USDT:USDT | +35.72% | $1,681,634.72 |
-| INIT/USDT:USDT | +31.56% | $1,330,135.11 |
+| EVAA/USDT:USDT | +76.41% | $14,021,071.54 |
+| SI/USDT:USDT | +56.29% | $1,879,468.08 |
+| BLESS/USDT:USDT | +36.73% | $14,309,633.63 |
+| XAN/USDT:USDT | +35.40% | $1,683,697.22 |
+| INIT/USDT:USDT | +34.17% | $1,343,791.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HAEDAL/USDT:USDT | below_1h_threshold | +2.58% | +3.01% |
-| BULLA/USDT:USDT | below_1h_threshold | +1.17% | +1.60% |
-| UNITREE/USDT:USDT | below_1h_threshold | +0.53% | +0.97% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.35% | +0.79% |
-| BTW/USDT:USDT | below_1h_threshold | +0.20% | +0.64% |
+| HAEDAL/USDT:USDT | below_1h_threshold | +1.88% | +2.43% |
+| INIT/USDT:USDT | below_1h_threshold | +1.05% | +1.60% |
+| BTW/USDT:USDT | below_1h_threshold | +0.57% | +1.12% |
+| UNITREE/USDT:USDT | below_1h_threshold | +0.53% | +1.08% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.35% | +0.90% |
 
 ## 7. 次に見るべき不足
 
