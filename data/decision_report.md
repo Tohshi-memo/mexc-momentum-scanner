@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-28T20:46:47.620334+00:00
+- generated_at: 2026-10-28T20:51:30.976951+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17736**
 
@@ -70,31 +70,29 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-28T20:46:31.672447+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.59% price=81060.0
-- Funnel: target 1083 → liquid 166 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 89.1 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-28T20:51:21.545427+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.59% price=81060.3
+- Funnel: target 1083 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| XPIN/USDT:USDT | +36.83% | $1,691,414.92 |
-| AKE/USDT:USDT | +18.55% | $6,632,365.37 |
-| Q/USDT:USDT | +15.43% | $27,252,348.07 |
-| INIT/USDT:USDT | +10.85% | $1,975,341.90 |
-| BEAT/USDT:USDT | +7.84% | $11,217,367.27 |
+| XPIN/USDT:USDT | +31.44% | $1,762,897.12 |
+| AKE/USDT:USDT | +17.74% | $6,669,355.66 |
+| Q/USDT:USDT | +13.40% | $27,511,600.23 |
+| INIT/USDT:USDT | +10.55% | $1,979,167.07 |
+| BEAT/USDT:USDT | +7.51% | $11,232,236.40 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AGT/USDT:USDT | below_1h_threshold | +3.40% | +4.00% |
-| SI/USDT:USDT | below_1h_threshold | +3.13% | +3.73% |
+| Q/USDT:USDT | below_1h_threshold | +4.57% | +5.16% |
 | MSTRSTOCK/USDT:USDT | below_1h_threshold | +3.11% | +3.71% |
-| AKE/USDT:USDT | below_1h_threshold | +2.08% | +2.68% |
+| AGT/USDT:USDT | below_1h_threshold | +2.86% | +3.45% |
+| XPIN/USDT:USDT | below_1h_threshold | +2.12% | +2.71% |
 | IRENSTOCK/USDT:USDT | below_1h_threshold | +1.94% | +2.53% |
 
 ## 7. 次に見るべき不足
