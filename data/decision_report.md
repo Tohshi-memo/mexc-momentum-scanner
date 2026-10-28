@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-28T20:16:37.317840+00:00
+- generated_at: 2026-10-28T20:21:27.575147+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17735**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-28T20:16:23.861141+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.37% price=81243.3
+- 更新: 2026-10-28T20:21:14.747002+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.46% price=81172.5
 - Funnel: target 1083 → liquid 164 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 89.0 >= 65=1
+- Strict後reject: 4h RSI 90.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| XPIN/USDT:USDT | +37.72% | $1,205,915.88 |
-| AKE/USDT:USDT | +17.67% | $6,415,297.57 |
-| Q/USDT:USDT | +9.90% | $26,569,647.69 |
-| ORCLSTOCK/USDT:USDT | +8.82% | $4,640,676.46 |
-| USELESS/USDT:USDT | +8.30% | $2,185,166.75 |
+| XPIN/USDT:USDT | +41.37% | $1,302,127.77 |
+| AKE/USDT:USDT | +16.93% | $6,439,930.95 |
+| Q/USDT:USDT | +10.75% | $26,714,951.43 |
+| INIT/USDT:USDT | +8.80% | $1,956,430.42 |
+| USELESS/USDT:USDT | +7.96% | $2,210,048.97 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +3.11% | +3.48% |
-| PEPE/USDT:USDT | below_1h_threshold | +2.16% | +2.53% |
-| BULLA/USDT:USDT | below_1h_threshold | +2.02% | +2.39% |
-| IRENSTOCK/USDT:USDT | below_1h_threshold | +1.94% | +2.31% |
-| AGT/USDT:USDT | below_1h_threshold | +1.81% | +2.18% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +3.11% | +3.57% |
+| AGT/USDT:USDT | below_1h_threshold | +2.79% | +3.25% |
+| PEPE/USDT:USDT | below_1h_threshold | +2.42% | +2.88% |
+| BULLA/USDT:USDT | below_1h_threshold | +2.34% | +2.79% |
+| Q/USDT:USDT | below_1h_threshold | +2.01% | +2.47% |
 
 ## 7. 次に見るべき不足
 
