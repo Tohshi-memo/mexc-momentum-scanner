@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-28T09:36:26.687007+00:00
+- generated_at: 2026-10-28T09:41:29.374867+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17709**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-28T09:36:11.585283+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=81372.0
-- Funnel: target 1083 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-28T09:41:16.680651+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=81417.5
+- Funnel: target 1083 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +86.61% | $11,120,309.63 |
-| SI/USDT:USDT | +46.46% | $1,711,640.24 |
-| XAN/USDT:USDT | +45.57% | $1,381,099.02 |
-| BLESS/USDT:USDT | +43.22% | $4,744,923.04 |
-| APR/USDT:USDT | +18.77% | $7,078,701.75 |
+| EVAA/USDT:USDT | +87.80% | $11,159,491.42 |
+| SI/USDT:USDT | +49.12% | $1,713,945.39 |
+| XAN/USDT:USDT | +48.69% | $1,386,213.94 |
+| BLESS/USDT:USDT | +43.64% | $4,797,305.38 |
+| PONS/USDT:USDT | +17.37% | $3,886,188.36 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| APR/USDT:USDT | below_1h_threshold | +2.43% | +2.52% |
-| HUMA/USDT:USDT | below_1h_threshold | +2.27% | +2.37% |
-| PONS/USDT:USDT | below_1h_threshold | +2.16% | +2.26% |
-| BLESS/USDT:USDT | below_1h_threshold | +1.73% | +1.83% |
-| STRK/USDT:USDT | below_1h_threshold | +0.79% | +0.89% |
+| PONS/USDT:USDT | below_1h_threshold | +2.65% | +2.69% |
+| HUMA/USDT:USDT | below_1h_threshold | +2.49% | +2.53% |
+| BLESS/USDT:USDT | below_1h_threshold | +2.04% | +2.08% |
+| SI/USDT:USDT | below_1h_threshold | +1.53% | +1.57% |
+| DOT/USDT:USDT | below_1h_threshold | +0.77% | +0.81% |
 
 ## 7. 次に見るべき不足
 
