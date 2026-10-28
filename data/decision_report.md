@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-28T14:01:32.960519+00:00
+- generated_at: 2026-10-28T14:06:19.403758+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17720**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-28T14:01:18.027352+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=80645.8
+- 更新: 2026-10-28T14:06:10.350362+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=80833.6
 - Funnel: target 1083 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +84.85% | $16,193,555.20 |
-| SI/USDT:USDT | +41.76% | $1,995,668.41 |
-| INIT/USDT:USDT | +35.59% | $1,747,227.02 |
-| XAN/USDT:USDT | +33.89% | $1,742,507.81 |
-| BLESS/USDT:USDT | +27.87% | $18,336,663.35 |
+| EVAA/USDT:USDT | +87.41% | $16,345,489.25 |
+| SI/USDT:USDT | +42.78% | $1,997,646.46 |
+| INIT/USDT:USDT | +36.29% | $1,761,572.44 |
+| XAN/USDT:USDT | +34.45% | $1,748,317.02 |
+| BLESS/USDT:USDT | +28.72% | $18,553,924.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +4.98% | +5.07% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +3.91% | +4.00% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +3.56% | +3.64% |
-| MUU/USDT:USDT | below_1h_threshold | +3.33% | +3.42% |
-| SNXX/USDT:USDT | below_1h_threshold | +2.17% | +2.25% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +4.98% | +4.84% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +3.91% | +3.77% |
+| EVAA/USDT:USDT | below_1h_threshold | +3.60% | +3.45% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +3.56% | +3.41% |
+| MUU/USDT:USDT | below_1h_threshold | +3.33% | +3.18% |
 
 ## 7. 次に見るべき不足
 
