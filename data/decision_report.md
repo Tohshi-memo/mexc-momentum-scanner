@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-28T02:41:28.523641+00:00
+- generated_at: 2026-10-28T02:46:25.725630+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17670**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-28T02:41:13.216452+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=80890.4
+- 更新: 2026-10-28T02:46:12.666003+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=80913.8
 - Funnel: target 1083 → liquid 160 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 94.1 >= 65=1
+- Strict後reject: 4h RSI 94.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SI/USDT:USDT | +32.54% | $1,190,950.97 |
-| EVAA/USDT:USDT | +28.29% | $4,656,977.87 |
-| BULLA/USDT:USDT | +27.60% | $10,393,885.64 |
-| APR/USDT:USDT | +15.16% | $6,048,557.05 |
-| PONS/USDT:USDT | +14.18% | $2,025,174.83 |
+| SI/USDT:USDT | +36.13% | $1,192,709.98 |
+| EVAA/USDT:USDT | +28.95% | $4,663,163.81 |
+| BULLA/USDT:USDT | +26.91% | $10,395,485.93 |
+| PONS/USDT:USDT | +14.70% | $2,036,353.28 |
+| BTW/USDT:USDT | +11.92% | $15,461,797.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LAB/USDT:USDT | below_1h_threshold | +3.92% | +3.95% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +2.58% | +2.61% |
-| UNITREE/USDT:USDT | below_1h_threshold | +2.48% | +2.51% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +2.39% | +2.42% |
-| KORU/USDT:USDT | below_1h_threshold | +2.20% | +2.23% |
+| LAB/USDT:USDT | below_1h_threshold | +4.21% | +4.21% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +2.58% | +2.58% |
+| UNITREE/USDT:USDT | below_1h_threshold | +2.48% | +2.48% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +2.39% | +2.39% |
+| SI/USDT:USDT | below_1h_threshold | +2.23% | +2.23% |
 
 ## 7. 次に見るべき不足
 
