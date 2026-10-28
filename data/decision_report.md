@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-28T19:51:27.847147+00:00
+- generated_at: 2026-10-28T19:56:22.759261+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17735**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-28T19:51:19.109192+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.50% price=81383.2
+- 更新: 2026-10-28T19:56:11.939739+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.59% price=81456.5
 - Funnel: target 1083 → liquid 163 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.6 >= 65=1
+- Strict後reject: 4h RSI 87.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +14.58% | $6,379,063.71 |
-| Q/USDT:USDT | +10.63% | $26,357,791.80 |
-| ORCLSTOCK/USDT:USDT | +10.47% | $4,509,424.76 |
-| BEAT/USDT:USDT | +8.72% | $11,385,114.04 |
-| INIT/USDT:USDT | +8.48% | $2,077,797.07 |
+| AKE/USDT:USDT | +16.93% | $6,409,418.88 |
+| ORCLSTOCK/USDT:USDT | +10.96% | $4,528,547.97 |
+| INIT/USDT:USDT | +8.81% | $2,079,286.00 |
+| BEAT/USDT:USDT | +8.38% | $11,393,214.55 |
+| Q/USDT:USDT | +7.80% | $26,516,228.35 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +4.64% | +4.14% |
-| CRWVSTOCK/USDT:USDT | below_1h_threshold | +4.05% | +3.55% |
-| APR/USDT:USDT | below_1h_threshold | +4.04% | +3.54% |
-| IRENSTOCK/USDT:USDT | below_1h_threshold | +3.28% | +2.78% |
-| USELESS/USDT:USDT | below_1h_threshold | +2.99% | +2.49% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +4.64% | +4.05% |
+| CRWVSTOCK/USDT:USDT | below_1h_threshold | +4.05% | +3.46% |
+| APR/USDT:USDT | below_1h_threshold | +3.91% | +3.32% |
+| USELESS/USDT:USDT | below_1h_threshold | +3.72% | +3.13% |
+| IRENSTOCK/USDT:USDT | below_1h_threshold | +3.28% | +2.69% |
 
 ## 7. 次に見るべき不足
 
