@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-29T05:36:23.549366+00:00
+- generated_at: 2026-10-29T05:41:20.490860+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17762**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-29T05:36:10.310352+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=80306.1
-- Funnel: target 1083 → liquid 171 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.9 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-29T05:41:07.626439+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=80291.9
+- Funnel: target 1083 → liquid 171 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IDOL/USDT:USDT | +59.98% | $2,824,167.28 |
-| BULLA/USDT:USDT | +23.90% | $2,570,105.48 |
-| XPIN/USDT:USDT | +10.19% | $2,733,527.17 |
-| INIT/USDT:USDT | +9.28% | $2,248,949.46 |
-| BEAT/USDT:USDT | +8.24% | $9,485,143.96 |
+| IDOL/USDT:USDT | +55.04% | $2,846,849.95 |
+| BULLA/USDT:USDT | +25.95% | $2,578,078.37 |
+| INIT/USDT:USDT | +10.25% | $2,251,690.09 |
+| XPIN/USDT:USDT | +9.49% | $2,738,408.49 |
+| ORCLSTOCK/USDT:USDT | +8.22% | $5,091,399.42 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| XPIN/USDT:USDT | below_1h_threshold | +4.32% | +4.22% |
-| EDGE/USDT:USDT | below_1h_threshold | +1.79% | +1.69% |
-| SPX/USDT:USDT | below_1h_threshold | +1.75% | +1.64% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.65% | +1.55% |
-| COHRSTOCK/USDT:USDT | below_1h_threshold | +1.61% | +1.51% |
+| APR/USDT:USDT | below_1h_threshold | +4.66% | +4.57% |
+| XPIN/USDT:USDT | below_1h_threshold | +3.66% | +3.57% |
+| EDGE/USDT:USDT | below_1h_threshold | +2.56% | +2.47% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.65% | +1.56% |
+| SPX/USDT:USDT | below_1h_threshold | +1.62% | +1.54% |
 
 ## 7. 次に見るべき不足
 
