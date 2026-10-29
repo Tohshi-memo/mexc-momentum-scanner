@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-29T13:21:39.730744+00:00
+- generated_at: 2026-10-29T13:26:14.724920+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17775**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-29T13:21:22.127328+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=80130.5
+- 更新: 2026-10-29T13:26:03.757713+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=80146.7
 - Funnel: target 1085 → liquid 174 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IDOL/USDT:USDT | +64.02% | $4,326,245.63 |
-| BEAT/USDT:USDT | +19.54% | $14,228,129.91 |
-| ON/USDT:USDT | +17.79% | $1,073,285.58 |
-| APR/USDT:USDT | +15.29% | $3,356,296.05 |
-| HYPE/USDT:USDT | +14.89% | $104,808,793.41 |
+| IDOL/USDT:USDT | +62.56% | $4,343,268.04 |
+| BEAT/USDT:USDT | +20.77% | $14,327,689.48 |
+| ON/USDT:USDT | +17.49% | $1,079,980.84 |
+| APR/USDT:USDT | +16.59% | $3,364,788.79 |
+| HYPE/USDT:USDT | +15.02% | $108,302,599.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IDOL/USDT:USDT | below_1h_threshold | +3.86% | +3.73% |
-| APR/USDT:USDT | below_1h_threshold | +2.86% | +2.73% |
-| HYPE/USDT:USDT | below_1h_threshold | +2.39% | +2.26% |
-| LITESTOCK/USDT:USDT | below_1h_threshold | +1.35% | +1.22% |
-| ON/USDT:USDT | below_1h_threshold | +1.34% | +1.21% |
+| APR/USDT:USDT | below_1h_threshold | +3.99% | +3.84% |
+| IDOL/USDT:USDT | below_1h_threshold | +2.66% | +2.51% |
+| HYPE/USDT:USDT | below_1h_threshold | +2.47% | +2.32% |
+| UAI/USDT:USDT | below_1h_threshold | +2.04% | +1.89% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.71% | +1.56% |
 
 ## 7. 次に見るべき不足
 
