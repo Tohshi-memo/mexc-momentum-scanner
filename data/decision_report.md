@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-29T18:36:23.934106+00:00
+- generated_at: 2026-10-29T18:41:25.968785+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17799**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-29T18:36:14.282270+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.30% price=80618.8
-- Funnel: target 1086 → liquid 179 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.3 >= 65=1, 4h RSI 83.3 >= 65=1
+- 更新: 2026-10-29T18:41:15.274332+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.32% price=80599.8
+- Funnel: target 1086 → liquid 179 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 84.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PARTI/USDT:USDT | +72.41% | $2,413,197.81 |
-| AIN/USDT:USDT | +9.23% | $3,432,233.64 |
-| BLESS/USDT:USDT | +7.22% | $11,231,112.67 |
-| SOXS/USDT:USDT | +5.25% | $78,844,233.43 |
-| BULLA/USDT:USDT | +4.29% | $1,569,720.21 |
+| PARTI/USDT:USDT | +79.02% | $2,504,801.27 |
+| BLESS/USDT:USDT | +11.43% | $11,384,723.45 |
+| BULLA/USDT:USDT | +5.57% | $1,572,095.77 |
+| AIN/USDT:USDT | +5.49% | $3,548,952.74 |
+| SOXS/USDT:USDT | +5.49% | $79,041,509.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +2.10% | +2.39% |
-| SQQQ/USDT:USDT | below_1h_threshold | +1.27% | +1.57% |
-| INIT/USDT:USDT | below_1h_threshold | +1.18% | +1.48% |
-| BR/USDT:USDT | below_1h_threshold | +0.79% | +1.08% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.58% | +0.88% |
+| AIN/USDT:USDT | below_1h_threshold | +2.38% | +2.70% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.10% | +2.42% |
+| INIT/USDT:USDT | below_1h_threshold | +1.80% | +2.11% |
+| SQQQ/USDT:USDT | below_1h_threshold | +1.27% | +1.59% |
+| BR/USDT:USDT | below_1h_threshold | +0.98% | +1.30% |
 
 ## 7. 次に見るべき不足
 
