@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-29T02:26:22.423548+00:00
+- generated_at: 2026-10-29T02:31:20.520650+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17749**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-29T02:26:09.444272+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=80009.2
+- 更新: 2026-10-29T02:31:08.118338+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=79874.0
 - Funnel: target 1083 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IDOL/USDT:USDT | +63.94% | $2,002,600.29 |
-| INIT/USDT:USDT | +13.02% | $2,117,067.60 |
-| APR/USDT:USDT | +8.34% | $3,417,362.87 |
-| AKE/USDT:USDT | +7.60% | $6,857,877.17 |
-| ORCLSTOCK/USDT:USDT | +7.42% | $5,136,936.84 |
+| IDOL/USDT:USDT | +61.98% | $2,016,538.24 |
+| INIT/USDT:USDT | +12.18% | $2,122,435.80 |
+| APR/USDT:USDT | +8.58% | $3,426,052.39 |
+| AKE/USDT:USDT | +7.75% | $6,862,974.52 |
+| Q/USDT:USDT | +7.70% | $30,906,721.89 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CAP/USDT:USDT | below_1h_threshold | +3.08% | +3.03% |
-| SKDD/USDT:USDT | below_1h_threshold | +3.01% | +2.96% |
-| UNITREE/USDT:USDT | below_1h_threshold | +2.90% | +2.86% |
-| APR/USDT:USDT | below_1h_threshold | +2.75% | +2.71% |
-| SOXS/USDT:USDT | below_1h_threshold | +2.58% | +2.53% |
+| SKDD/USDT:USDT | below_1h_threshold | +3.01% | +3.13% |
+| APR/USDT:USDT | below_1h_threshold | +2.99% | +3.11% |
+| UNITREE/USDT:USDT | below_1h_threshold | +2.90% | +3.03% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.58% | +2.70% |
+| BTW/USDT:USDT | below_1h_threshold | +1.72% | +1.84% |
 
 ## 7. 次に見るべき不足
 
