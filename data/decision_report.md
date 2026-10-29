@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-29T01:31:28.481569+00:00
+- generated_at: 2026-10-29T01:36:21.979203+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17744**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-29T01:31:15.578762+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.35% price=80777.0
+- 更新: 2026-10-29T01:36:09.116582+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.49% price=80663.9
 - Funnel: target 1083 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IDOL/USDT:USDT | +82.43% | $1,657,820.99 |
-| INIT/USDT:USDT | +12.46% | $2,074,245.31 |
-| XPIN/USDT:USDT | +10.91% | $2,592,894.42 |
-| AKE/USDT:USDT | +8.53% | $7,171,505.63 |
-| ORCLSTOCK/USDT:USDT | +7.80% | $5,060,065.60 |
+| IDOL/USDT:USDT | +80.59% | $1,690,254.15 |
+| INIT/USDT:USDT | +13.87% | $2,078,533.77 |
+| XPIN/USDT:USDT | +9.82% | $2,603,202.00 |
+| AKE/USDT:USDT | +7.98% | $7,179,567.08 |
+| ORCLSTOCK/USDT:USDT | +7.63% | $5,062,091.17 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IDOL/USDT:USDT | below_1h_threshold | +1.51% | +1.86% |
-| SILVER/USDT:USDT | below_1h_threshold | +1.36% | +1.72% |
-| PEPE/USDT:USDT | below_1h_threshold | +1.18% | +1.54% |
-| IRENSTOCK/USDT:USDT | below_1h_threshold | +1.01% | +1.36% |
-| BULLA/USDT:USDT | below_1h_threshold | +0.98% | +1.34% |
+| BULLA/USDT:USDT | below_1h_threshold | +1.18% | +1.68% |
+| SILVER/USDT:USDT | below_1h_threshold | +1.07% | +1.56% |
+| IRENSTOCK/USDT:USDT | below_1h_threshold | +1.01% | +1.50% |
+| AIN/USDT:USDT | below_1h_threshold | +0.95% | +1.44% |
+| IDOL/USDT:USDT | below_1h_threshold | +0.80% | +1.29% |
 
 ## 7. 次に見るべき不足
 
