@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-29T05:26:22.608636+00:00
+- generated_at: 2026-10-29T05:31:08.954107+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17762**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-29T05:26:12.092176+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=80358.4
+- 更新: 2026-10-29T05:31:00.744749+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=80354.1
 - Funnel: target 1083 → liquid 171 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.3 >= 65=1
+- Strict後reject: 4h RSI 69.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IDOL/USDT:USDT | +61.85% | $2,797,849.12 |
-| BULLA/USDT:USDT | +26.78% | $2,536,736.56 |
-| BEAT/USDT:USDT | +8.67% | $9,449,049.87 |
-| ORCLSTOCK/USDT:USDT | +8.15% | $5,090,361.32 |
-| XPIN/USDT:USDT | +8.11% | $2,718,319.80 |
+| IDOL/USDT:USDT | +59.51% | $2,810,445.02 |
+| BULLA/USDT:USDT | +24.57% | $2,551,472.62 |
+| XPIN/USDT:USDT | +10.26% | $2,726,017.00 |
+| INIT/USDT:USDT | +10.01% | $2,240,856.44 |
+| ORCLSTOCK/USDT:USDT | +8.18% | $5,090,731.40 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| XPIN/USDT:USDT | below_1h_threshold | +2.35% | +2.18% |
-| IDOL/USDT:USDT | below_1h_threshold | +1.89% | +1.72% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.65% | +1.48% |
-| COHRSTOCK/USDT:USDT | below_1h_threshold | +1.61% | +1.44% |
-| ETHFI/USDT:USDT | below_1h_threshold | +1.55% | +1.38% |
+| XPIN/USDT:USDT | below_1h_threshold | +4.54% | +4.37% |
+| EDGE/USDT:USDT | below_1h_threshold | +1.70% | +1.54% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.65% | +1.49% |
+| 1000BONK/USDT:USDT | below_1h_threshold | +1.63% | +1.46% |
+| COHRSTOCK/USDT:USDT | below_1h_threshold | +1.61% | +1.45% |
 
 ## 7. 次に見るべき不足
 
