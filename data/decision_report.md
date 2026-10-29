@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-29T21:41:24.067891+00:00
+- generated_at: 2026-10-29T21:46:39.315287+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17813**
 
@@ -63,38 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5972件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5974件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000390 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-29T21:41:09.254440+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.79% price=79444.1
-- Funnel: target 1086 → liquid 185 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-29T21:46:23.048594+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.43% price=79159.5
+- Funnel: target 1086 → liquid 185 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.6 >= 65=1, 4h RSI 89.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PARTI/USDT:USDT | +66.49% | $5,255,901.41 |
-| SOXS/USDT:USDT | +15.61% | $73,478,995.29 |
-| Q/USDT:USDT | +11.95% | $24,898,353.75 |
-| BLESS/USDT:USDT | +10.55% | $14,134,820.67 |
-| BULLA/USDT:USDT | +5.95% | $1,653,352.77 |
+| PARTI/USDT:USDT | +63.37% | $5,272,168.06 |
+| Q/USDT:USDT | +17.88% | $25,064,425.70 |
+| SOXS/USDT:USDT | +15.24% | $73,495,936.90 |
+| BLESS/USDT:USDT | +10.70% | $14,174,026.44 |
+| BULLA/USDT:USDT | +6.06% | $1,657,117.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TRX/USDT:USDT | below_1h_threshold | +3.97% | +3.17% |
-| BULLA/USDT:USDT | below_1h_threshold | +2.70% | +1.91% |
-| AGT/USDT:USDT | below_1h_threshold | +2.19% | +1.40% |
-| INIT/USDT:USDT | below_1h_threshold | +2.06% | +1.26% |
-| PARTI/USDT:USDT | below_1h_threshold | +1.77% | +0.97% |
+| BULLA/USDT:USDT | below_1h_threshold | +2.89% | +2.46% |
+| AGT/USDT:USDT | below_1h_threshold | +1.88% | +1.45% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.42% | +0.99% |
+| INIT/USDT:USDT | below_1h_threshold | +1.33% | +0.90% |
+| BR/USDT:USDT | below_1h_threshold | +1.31% | +0.88% |
 
 ## 7. 次に見るべき不足
 
