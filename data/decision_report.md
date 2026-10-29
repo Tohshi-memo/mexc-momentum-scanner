@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-29T10:06:14.711290+00:00
+- generated_at: 2026-10-29T10:11:07.328196+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17768**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-29T10:06:03.113873+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=80153.3
+- 更新: 2026-10-29T10:10:58.607505+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=80140.1
 - Funnel: target 1084 → liquid 171 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IDOL/USDT:USDT | +59.42% | $3,621,164.11 |
-| BEAT/USDT:USDT | +16.17% | $8,054,073.05 |
-| INIT/USDT:USDT | +13.98% | $2,456,065.76 |
-| BULLA/USDT:USDT | +13.41% | $2,001,737.78 |
-| UAI/USDT:USDT | +9.85% | $1,620,016.76 |
+| IDOL/USDT:USDT | +56.45% | $3,644,836.17 |
+| BEAT/USDT:USDT | +16.10% | $8,117,599.73 |
+| INIT/USDT:USDT | +14.19% | $2,465,812.51 |
+| BULLA/USDT:USDT | +12.73% | $2,003,491.92 |
+| UAI/USDT:USDT | +9.10% | $1,628,833.66 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| INIT/USDT:USDT | below_1h_threshold | +1.75% | +1.78% |
-| UAI/USDT:USDT | below_1h_threshold | +1.34% | +1.37% |
-| PLTRSTOCK/USDT:USDT | below_1h_threshold | +0.58% | +0.60% |
-| ZINC/USDT:USDT | below_1h_threshold | +0.50% | +0.53% |
-| XPIN/USDT:USDT | below_1h_threshold | +0.48% | +0.51% |
+| INIT/USDT:USDT | below_1h_threshold | +1.94% | +1.98% |
+| UAI/USDT:USDT | below_1h_threshold | +0.77% | +0.81% |
+| PLTRSTOCK/USDT:USDT | below_1h_threshold | +0.58% | +0.62% |
+| LAB/USDT:USDT | below_1h_threshold | +0.57% | +0.62% |
+| ZINC/USDT:USDT | below_1h_threshold | +0.50% | +0.54% |
 
 ## 7. 次に見るべき不足
 
