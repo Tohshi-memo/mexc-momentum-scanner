@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-29T06:46:16.320007+00:00
+- generated_at: 2026-10-29T06:51:21.691686+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17764**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-29T06:46:07.930887+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.29% price=79974.1
+- 更新: 2026-10-29T06:51:08.845607+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.38% price=79903.6
 - Funnel: target 1083 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IDOL/USDT:USDT | +50.39% | $3,048,288.83 |
-| BULLA/USDT:USDT | +17.26% | $2,509,409.98 |
-| UAI/USDT:USDT | +11.30% | $1,127,072.70 |
-| INIT/USDT:USDT | +10.26% | $2,306,874.68 |
-| XPIN/USDT:USDT | +9.46% | $2,782,427.13 |
+| IDOL/USDT:USDT | +51.44% | $3,056,202.33 |
+| BULLA/USDT:USDT | +16.81% | $2,513,905.75 |
+| UAI/USDT:USDT | +11.06% | $1,144,764.42 |
+| INIT/USDT:USDT | +9.36% | $2,313,578.43 |
+| XPIN/USDT:USDT | +8.73% | $2,786,710.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UAI/USDT:USDT | below_1h_threshold | +3.12% | +3.41% |
-| BLUR/USDT:USDT | below_1h_threshold | +1.39% | +1.68% |
-| UNITREE/USDT:USDT | below_1h_threshold | +0.93% | +1.22% |
-| XPIN/USDT:USDT | below_1h_threshold | +0.53% | +0.83% |
-| BEAT/USDT:USDT | below_1h_threshold | +0.41% | +0.70% |
+| UAI/USDT:USDT | below_1h_threshold | +2.66% | +3.04% |
+| BLUR/USDT:USDT | below_1h_threshold | +1.22% | +1.60% |
+| UNITREE/USDT:USDT | below_1h_threshold | +0.93% | +1.31% |
+| PLTRSTOCK/USDT:USDT | below_1h_threshold | +0.24% | +0.62% |
+| TESLA/USDT:USDT | below_1h_threshold | +0.24% | +0.62% |
 
 ## 7. 次に見るべき不足
 
