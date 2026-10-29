@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-29T20:21:28.606185+00:00
+- generated_at: 2026-10-29T20:26:13.444681+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17806**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-29T20:21:15.648767+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.53% price=80385.6
+- 更新: 2026-10-29T20:26:05.047835+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.63% price=80298.7
 - Funnel: target 1086 → liquid 179 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PARTI/USDT:USDT | +64.24% | $4,712,768.36 |
-| BLESS/USDT:USDT | +17.39% | $13,006,938.33 |
-| SOXS/USDT:USDT | +12.20% | $75,509,129.43 |
-| BULLA/USDT:USDT | +8.53% | $1,606,368.99 |
-| AIN/USDT:USDT | +3.18% | $3,652,323.44 |
+| PARTI/USDT:USDT | +64.41% | $4,744,315.06 |
+| BLESS/USDT:USDT | +17.75% | $13,154,283.72 |
+| SOXS/USDT:USDT | +12.37% | $76,118,819.39 |
+| BULLA/USDT:USDT | +8.98% | $1,606,890.38 |
+| USOIL/USDT:USDT | +2.16% | $116,931,592.31 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +2.48% | +3.00% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +2.30% | +2.82% |
-| BLESS/USDT:USDT | below_1h_threshold | +2.00% | +2.52% |
-| FTNTSTOCK/USDT:USDT | below_1h_threshold | +1.66% | +2.18% |
-| PLTRSTOCK/USDT:USDT | below_1h_threshold | +1.28% | +1.81% |
+| AKE/USDT:USDT | below_1h_threshold | +2.86% | +3.50% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +2.30% | +2.93% |
+| BLESS/USDT:USDT | below_1h_threshold | +2.14% | +2.77% |
+| FTNTSTOCK/USDT:USDT | below_1h_threshold | +1.66% | +2.29% |
+| PLTRSTOCK/USDT:USDT | below_1h_threshold | +1.28% | +1.92% |
 
 ## 7. 次に見るべき不足
 
