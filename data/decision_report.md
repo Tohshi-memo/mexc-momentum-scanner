@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-29T04:51:24.162828+00:00
+- generated_at: 2026-10-29T04:56:27.661657+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17760**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-29T04:51:09.088575+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.37% price=80120.9
+- 更新: 2026-10-29T04:56:12.473661+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.53% price=80250.0
 - Funnel: target 1083 → liquid 172 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IDOL/USDT:USDT | +54.75% | $2,681,725.67 |
-| BULLA/USDT:USDT | +24.11% | $2,949,528.76 |
-| INIT/USDT:USDT | +13.25% | $2,221,934.21 |
-| BEAT/USDT:USDT | +8.52% | $9,525,966.34 |
-| ORCLSTOCK/USDT:USDT | +7.81% | $5,088,106.88 |
+| IDOL/USDT:USDT | +59.84% | $2,695,285.88 |
+| BULLA/USDT:USDT | +27.36% | $2,957,913.51 |
+| INIT/USDT:USDT | +12.38% | $2,225,189.40 |
+| ORCLSTOCK/USDT:USDT | +7.81% | $5,088,437.62 |
+| BEAT/USDT:USDT | +7.43% | $9,564,011.76 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| INIT/USDT:USDT | below_1h_threshold | +4.89% | +4.52% |
-| Q/USDT:USDT | below_1h_threshold | +4.57% | +4.20% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.69% | +1.32% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.64% | +1.27% |
-| ENA/USDT:USDT | below_1h_threshold | +1.38% | +1.01% |
+| INIT/USDT:USDT | below_1h_threshold | +4.08% | +3.55% |
+| PEPE/USDT:USDT | below_1h_threshold | +1.93% | +1.39% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.83% | +1.30% |
+| Q/USDT:USDT | below_1h_threshold | +1.77% | +1.24% |
+| ENA/USDT:USDT | below_1h_threshold | +1.73% | +1.20% |
 
 ## 7. 次に見るべき不足
 
