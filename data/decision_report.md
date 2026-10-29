@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-29T06:16:19.074133+00:00
+- generated_at: 2026-10-29T06:21:05.170076+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17764**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-29T06:16:05.952293+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=80121.9
+- 更新: 2026-10-29T06:20:57.296460+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.17% price=80068.3
 - Funnel: target 1083 → liquid 171 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IDOL/USDT:USDT | +49.65% | $2,955,545.04 |
-| BULLA/USDT:USDT | +26.37% | $2,420,372.82 |
-| INIT/USDT:USDT | +10.44% | $2,282,392.60 |
-| UAI/USDT:USDT | +9.52% | $1,021,225.21 |
-| ORCLSTOCK/USDT:USDT | +8.03% | $5,110,400.18 |
+| IDOL/USDT:USDT | +51.17% | $2,978,483.17 |
+| BULLA/USDT:USDT | +23.95% | $2,433,880.07 |
+| UAI/USDT:USDT | +10.02% | $1,043,994.26 |
+| INIT/USDT:USDT | +9.66% | $2,284,481.48 |
+| ORCLSTOCK/USDT:USDT | +8.01% | $5,110,725.92 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLUR/USDT:USDT | below_1h_threshold | +3.16% | +3.27% |
-| UAI/USDT:USDT | below_1h_threshold | +1.46% | +1.57% |
-| UNITREE/USDT:USDT | below_1h_threshold | +0.93% | +1.04% |
-| BAT/USDT:USDT | below_1h_threshold | +0.75% | +0.86% |
-| PLTRSTOCK/USDT:USDT | below_1h_threshold | +0.24% | +0.35% |
+| BLUR/USDT:USDT | below_1h_threshold | +2.31% | +2.48% |
+| UAI/USDT:USDT | below_1h_threshold | +1.93% | +2.10% |
+| UNITREE/USDT:USDT | below_1h_threshold | +0.93% | +1.10% |
+| BAT/USDT:USDT | below_1h_threshold | +0.49% | +0.66% |
+| PLTRSTOCK/USDT:USDT | below_1h_threshold | +0.24% | +0.41% |
 
 ## 7. 次に見るべき不足
 
