@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-29T15:31:28.058257+00:00
+- generated_at: 2026-10-29T15:36:33.686495+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17781**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5943件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5944件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000219 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-29T15:31:15.015863+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.35% price=81437.9
-- Funnel: target 1086 → liquid 173 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.1 >= 65=1, 4h RSI 83.2 >= 65=1
+- 更新: 2026-10-29T15:36:19.566132+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.70% price=81722.0
+- Funnel: target 1086 → liquid 173 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.8 >= 65=1, 4h RSI 84.8 >= 65=1, 4h RSI 67.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IDOL/USDT:USDT | +76.13% | $4,964,446.30 |
-| BEAT/USDT:USDT | +36.53% | $20,355,701.23 |
-| LSK/USDT:USDT | +24.88% | $2,060,871.01 |
-| APR/USDT:USDT | +17.53% | $3,426,492.13 |
-| INIT/USDT:USDT | +17.48% | $1,912,520.24 |
+| IDOL/USDT:USDT | +76.65% | $4,979,684.73 |
+| BEAT/USDT:USDT | +39.65% | $20,694,329.23 |
+| LSK/USDT:USDT | +28.09% | $2,172,908.47 |
+| INIT/USDT:USDT | +19.38% | $1,925,330.83 |
+| APR/USDT:USDT | +17.33% | $3,440,549.66 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| INIT/USDT:USDT | below_1h_threshold | +4.66% | +4.31% |
-| VVV/USDT:USDT | below_1h_threshold | +2.94% | +2.59% |
-| HYPE/USDT:USDT | below_1h_threshold | +2.61% | +2.26% |
-| LIT/USDT:USDT | below_1h_threshold | +2.61% | +2.25% |
-| USELESS/USDT:USDT | below_1h_threshold | +2.60% | +2.25% |
+| LIT/USDT:USDT | below_1h_threshold | +4.62% | +3.91% |
+| USELESS/USDT:USDT | below_1h_threshold | +4.53% | +3.83% |
+| VVV/USDT:USDT | below_1h_threshold | +3.86% | +3.16% |
+| ZEC/USDT:USDT | below_1h_threshold | +3.51% | +2.80% |
+| HYPE/USDT:USDT | below_1h_threshold | +2.81% | +2.10% |
 
 ## 7. 次に見るべき不足
 
