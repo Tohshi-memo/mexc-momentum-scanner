@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-29T15:46:28.003344+00:00
+- generated_at: 2026-10-29T15:51:42.139737+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17781**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5944件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5946件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000219 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-29T15:46:16.731349+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.68% price=81700.0
-- Funnel: target 1086 → liquid 173 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=46, below_relative_strength=2, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.4 >= 65=1, 4h RSI 68.8 >= 65=1
+- 更新: 2026-10-29T15:51:25.576302+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.62% price=81649.2
+- Funnel: target 1086 → liquid 173 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=46, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 83.5 >= 65=1, 4h RSI 74.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IDOL/USDT:USDT | +73.12% | $5,014,125.57 |
-| BEAT/USDT:USDT | +34.02% | $21,323,704.54 |
-| LSK/USDT:USDT | +28.04% | $2,289,065.58 |
-| APR/USDT:USDT | +18.60% | $3,472,603.81 |
-| HYPE/USDT:USDT | +17.48% | $156,186,240.67 |
+| IDOL/USDT:USDT | +76.55% | $5,033,847.25 |
+| BEAT/USDT:USDT | +28.46% | $21,908,762.91 |
+| LSK/USDT:USDT | +26.82% | $2,394,558.46 |
+| APR/USDT:USDT | +21.36% | $3,489,299.59 |
+| HYPE/USDT:USDT | +17.78% | $157,964,343.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| USELESS/USDT:USDT | below_relative_strength | +5.24% | +4.56% |
-| PEPE/USDT:USDT | below_relative_strength | +5.20% | +4.52% |
-| VVV/USDT:USDT | below_1h_threshold | +4.42% | +3.74% |
-| LIT/USDT:USDT | below_1h_threshold | +3.74% | +3.07% |
-| HYPE/USDT:USDT | below_1h_threshold | +3.23% | +2.55% |
+| APR/USDT:USDT | below_relative_strength | +5.49% | +4.87% |
+| VVV/USDT:USDT | below_1h_threshold | +4.82% | +4.21% |
+| LIT/USDT:USDT | below_1h_threshold | +4.64% | +4.02% |
+| HYPE/USDT:USDT | below_1h_threshold | +3.35% | +2.73% |
+| ZEC/USDT:USDT | below_1h_threshold | +3.02% | +2.41% |
 
 ## 7. 次に見るべき不足
 
