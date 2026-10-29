@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-28T23:56:30.989205+00:00
+- generated_at: 2026-10-29T00:01:26.315992+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17739**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-28T23:56:18.041230+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=81292.8
-- Funnel: target 1083 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-29T00:01:13.463541+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=81331.4
+- Funnel: target 1083 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IDOL/USDT:USDT | +59.75% | $1,054,855.82 |
-| XPIN/USDT:USDT | +15.06% | $2,484,748.39 |
-| INIT/USDT:USDT | +14.73% | $2,000,626.85 |
-| AKE/USDT:USDT | +11.69% | $7,206,635.50 |
-| BULLA/USDT:USDT | +10.94% | $3,635,472.45 |
+| IDOL/USDT:USDT | +71.20% | $1,098,471.93 |
+| INIT/USDT:USDT | +15.08% | $1,983,016.05 |
+| XPIN/USDT:USDT | +14.89% | $2,485,858.29 |
+| BULLA/USDT:USDT | +13.15% | $3,383,066.84 |
+| AKE/USDT:USDT | +12.26% | $7,179,014.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| INIT/USDT:USDT | below_1h_threshold | +3.31% | +3.24% |
-| APR/USDT:USDT | below_1h_threshold | +1.82% | +1.75% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.50% | +1.43% |
-| SPX/USDT:USDT | below_1h_threshold | +1.13% | +1.06% |
-| SQQQ/USDT:USDT | below_1h_threshold | +1.05% | +0.98% |
+| IDOL/USDT:USDT | below_1h_threshold | +2.67% | +2.64% |
+| BULLA/USDT:USDT | below_1h_threshold | +1.76% | +1.73% |
+| PEPE/USDT:USDT | below_1h_threshold | +1.09% | +1.06% |
+| SKDD/USDT:USDT | below_1h_threshold | +0.83% | +0.80% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.67% | +0.64% |
 
 ## 7. 次に見るべき不足
 
