@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-10-29T06:01:18.758495+00:00
+- generated_at: 2026-10-29T06:06:20.396702+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **17763**
+- closed shadow trades: **17764**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +2.68% / filled 20/20。**
-- 全期間 MARKET基準: n=17763, expectancy=+0.02%
+- 全期間 MARKET基準: n=17764, expectancy=+0.02%
 - 直近20件 MARKET基準: n=20, expectancy=+2.68%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -31,11 +31,11 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_BB3S_LONG | 2/2 | 100.0% | +0.44% | **+0.44%** |
-| LIMIT_9PCT_LONG | 4/20 | 20.0% | -0.18% | **-0.04%** |
+| LIMIT_9PCT_LONG | 5/20 | 25.0% | +0.08% | **+0.02%** |
 | LIMIT_10PCT_LONG | 2/20 | 10.0% | -0.89% | **-0.09%** |
 | LIMIT_8PCT_LONG | 8/20 | 40.0% | -0.50% | **-0.20%** |
-| LIMIT_FIB1618_LONG | 10/20 | 50.0% | -0.91% | **-0.45%** |
+| LIMIT_FIB1618_LONG | 9/20 | 45.0% | -1.04% | **-0.47%** |
+| LIMIT_2PCT_LONG | 17/20 | 85.0% | -0.68% | **-0.58%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,531.31** / 初期 $100.00 (+1431.31%)
-- 確定: 6802件 (Win 1975 / Loss 2179 / Flat 2648) / skip 7522件
+- 確定: 6802件 (Win 1975 / Loss 2179 / Flat 2648) / skip 7523件
 - 成長率目線: 平均log +0.000401 / 幾何平均 +0.040% per trade / maxDD +8.46%
 - 次の候補: `MARKET` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: IDOL/USDT:USDT `MARKET` SL_HIT account -0.50% 残高後 $1,531.31
@@ -55,23 +55,23 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$362.59** / 初期 $100.00 (+262.59%)
-- 確定: 4284件 (Win 1159 / Loss 972 / Flat 2153) / skip 6890件
+- 確定: 4285件 (Win 1159 / Loss 972 / Flat 2154) / skip 6890件
 - 成長率目線: 平均log +0.000301 / 幾何平均 +0.030% per trade / maxDD +4.13%
 - 次の候補: `LIMIT_FIB1272` (selected_by_robust_growth_score) / robust_score +0.0103 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: Q/USDT:USDT `LIMIT_FIB1272` TP_HIT account +0.69% 残高後 $362.59
+- 最新: BULLA/USDT:USDT `LIMIT_FIB1272` EXPIRED account +0.00% 残高後 $362.59
 
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
 - 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5923件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000341 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000406 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-29T06:01:08.543927+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=80196.2
+- 更新: 2026-10-29T06:06:08.362846+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=80248.2
 - Funnel: target 1083 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IDOL/USDT:USDT | +54.98% | $2,892,827.09 |
-| BULLA/USDT:USDT | +26.84% | $2,363,337.32 |
-| INIT/USDT:USDT | +10.60% | $2,265,253.62 |
-| XPIN/USDT:USDT | +8.61% | $2,754,986.06 |
-| ORCLSTOCK/USDT:USDT | +8.01% | $5,092,958.45 |
+| IDOL/USDT:USDT | +55.61% | $2,903,378.31 |
+| BULLA/USDT:USDT | +16.95% | $2,391,458.87 |
+| INIT/USDT:USDT | +9.19% | $2,272,296.69 |
+| XPIN/USDT:USDT | +8.52% | $2,756,445.35 |
+| ORCLSTOCK/USDT:USDT | +8.11% | $5,109,547.17 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLUR/USDT:USDT | below_1h_threshold | +1.36% | +1.38% |
-| UNITREE/USDT:USDT | below_1h_threshold | +0.93% | +0.94% |
-| PEPE/USDT:USDT | below_1h_threshold | +0.26% | +0.28% |
-| PLTRSTOCK/USDT:USDT | below_1h_threshold | +0.24% | +0.26% |
-| TESLA/USDT:USDT | below_1h_threshold | +0.24% | +0.25% |
+| BLUR/USDT:USDT | below_1h_threshold | +3.09% | +3.04% |
+| CAP/USDT:USDT | below_1h_threshold | +2.63% | +2.58% |
+| UNITREE/USDT:USDT | below_1h_threshold | +0.93% | +0.88% |
+| APR/USDT:USDT | below_1h_threshold | +0.74% | +0.69% |
+| BAT/USDT:USDT | below_1h_threshold | +0.47% | +0.42% |
 
 ## 7. 次に見るべき不足
 
