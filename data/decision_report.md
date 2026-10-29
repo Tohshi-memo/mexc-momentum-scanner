@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-29T18:46:31.727478+00:00
+- generated_at: 2026-10-29T18:51:31.355316+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17800**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-29T18:46:16.118114+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.23% price=80675.2
+- 更新: 2026-10-29T18:51:18.957566+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.17% price=80722.0
 - Funnel: target 1086 → liquid 179 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PARTI/USDT:USDT | +77.00% | $2,650,737.84 |
-| BLESS/USDT:USDT | +14.29% | $11,495,811.08 |
-| SOXS/USDT:USDT | +4.86% | $79,044,123.00 |
-| BULLA/USDT:USDT | +4.25% | $1,577,260.98 |
-| AIN/USDT:USDT | +3.56% | $3,594,142.69 |
+| PARTI/USDT:USDT | +60.39% | $2,838,828.55 |
+| BLESS/USDT:USDT | +17.26% | $11,687,898.71 |
+| BULLA/USDT:USDT | +5.13% | $1,579,440.01 |
+| SOXS/USDT:USDT | +4.86% | $79,054,605.60 |
+| AIN/USDT:USDT | +3.50% | $3,607,413.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PARTI/USDT:USDT | below_1h_threshold | +3.42% | +3.65% |
-| SOXS/USDT:USDT | below_1h_threshold | +2.10% | +2.32% |
-| BLESS/USDT:USDT | below_1h_threshold | +1.63% | +1.86% |
-| INIT/USDT:USDT | below_1h_threshold | +1.36% | +1.59% |
-| SQQQ/USDT:USDT | below_1h_threshold | +1.27% | +1.50% |
+| BLESS/USDT:USDT | below_1h_threshold | +3.88% | +4.05% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.10% | +2.27% |
+| SQQQ/USDT:USDT | below_1h_threshold | +1.27% | +1.44% |
+| INIT/USDT:USDT | below_1h_threshold | +1.20% | +1.37% |
+| BR/USDT:USDT | below_1h_threshold | +1.04% | +1.21% |
 
 ## 7. 次に見るべき不足
 
