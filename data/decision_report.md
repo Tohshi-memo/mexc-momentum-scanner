@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-29T13:36:25.693996+00:00
+- generated_at: 2026-10-29T13:41:29.497150+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17775**
 
@@ -70,9 +70,9 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-29T13:36:12.554612+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=80076.3
-- Funnel: target 1085 → liquid 174 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-10-29T13:41:14.538977+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=79971.2
+- Funnel: target 1085 → liquid 176 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IDOL/USDT:USDT | +64.16% | $4,365,691.37 |
-| BEAT/USDT:USDT | +20.68% | $14,701,525.90 |
-| ON/USDT:USDT | +17.91% | $1,087,857.24 |
-| UAI/USDT:USDT | +15.01% | $2,183,688.73 |
-| APR/USDT:USDT | +14.39% | $3,401,853.62 |
+| IDOL/USDT:USDT | +64.50% | $4,375,815.64 |
+| BEAT/USDT:USDT | +20.97% | $14,953,897.36 |
+| ON/USDT:USDT | +17.49% | $1,091,056.20 |
+| UAI/USDT:USDT | +15.17% | $2,219,461.56 |
+| HYPE/USDT:USDT | +13.70% | $116,104,674.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IDOL/USDT:USDT | below_1h_threshold | +3.93% | +3.87% |
-| UAI/USDT:USDT | below_1h_threshold | +2.71% | +2.65% |
-| APR/USDT:USDT | below_1h_threshold | +2.06% | +2.00% |
-| ON/USDT:USDT | below_1h_threshold | +1.44% | +1.38% |
-| LITESTOCK/USDT:USDT | below_1h_threshold | +1.35% | +1.29% |
+| IDOL/USDT:USDT | below_1h_threshold | +4.07% | +4.14% |
+| UAI/USDT:USDT | below_1h_threshold | +3.12% | +3.19% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.68% | +1.75% |
+| APR/USDT:USDT | below_1h_threshold | +1.50% | +1.56% |
+| LITESTOCK/USDT:USDT | below_1h_threshold | +1.35% | +1.42% |
 
 ## 7. 次に見るべき不足
 
