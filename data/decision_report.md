@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-29T11:01:28.384945+00:00
+- generated_at: 2026-10-29T11:06:23.260073+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17769**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-29T11:01:15.640708+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=80258.8
+- 更新: 2026-10-29T11:06:10.426630+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=80172.3
 - Funnel: target 1084 → liquid 171 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IDOL/USDT:USDT | +55.33% | $3,827,860.14 |
-| BEAT/USDT:USDT | +22.96% | $9,752,118.11 |
-| INIT/USDT:USDT | +18.98% | $2,468,823.67 |
-| APR/USDT:USDT | +12.46% | $2,291,679.48 |
-| BULLA/USDT:USDT | +11.77% | $1,763,416.31 |
+| IDOL/USDT:USDT | +55.09% | $3,845,761.94 |
+| BEAT/USDT:USDT | +24.31% | $10,039,108.55 |
+| INIT/USDT:USDT | +19.22% | $2,489,900.68 |
+| APR/USDT:USDT | +11.71% | $2,322,095.23 |
+| BULLA/USDT:USDT | +11.15% | $1,766,377.88 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| COHRSTOCK/USDT:USDT | below_1h_threshold | +2.87% | +2.87% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +1.52% | +1.53% |
-| LITESTOCK/USDT:USDT | below_1h_threshold | +0.88% | +0.88% |
-| ORCLSTOCK/USDT:USDT | below_1h_threshold | +0.86% | +0.86% |
-| IDOL/USDT:USDT | below_1h_threshold | +0.58% | +0.58% |
+| COHRSTOCK/USDT:USDT | below_1h_threshold | +2.87% | +2.98% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +1.52% | +1.63% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.19% | +1.30% |
+| HYPE/USDT:USDT | below_1h_threshold | +0.90% | +1.01% |
+| LITESTOCK/USDT:USDT | below_1h_threshold | +0.88% | +0.99% |
 
 ## 7. 次に見るべき不足
 
