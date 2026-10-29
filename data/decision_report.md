@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-29T21:11:25.029206+00:00
+- generated_at: 2026-10-29T21:16:27.655133+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17813**
 
@@ -70,9 +70,9 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-29T21:11:12.111648+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.30% price=79057.3
-- Funnel: target 1086 → liquid 184 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-10-29T21:16:14.670469+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.54% price=79244.5
+- Funnel: target 1086 → liquid 185 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PARTI/USDT:USDT | +65.07% | $5,110,347.91 |
-| Q/USDT:USDT | +19.63% | $23,806,169.90 |
-| SOXS/USDT:USDT | +14.63% | $72,015,892.53 |
-| BLESS/USDT:USDT | +10.56% | $13,720,384.11 |
-| XMR/USDT:USDT | +5.30% | $10,500,054.10 |
+| PARTI/USDT:USDT | +63.92% | $5,133,487.78 |
+| Q/USDT:USDT | +20.22% | $23,907,540.38 |
+| SOXS/USDT:USDT | +15.34% | $72,145,052.68 |
+| BLESS/USDT:USDT | +12.30% | $13,789,492.17 |
+| XMR/USDT:USDT | +5.51% | $10,789,639.81 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TRX/USDT:USDT | below_1h_threshold | +2.33% | +2.03% |
-| INIT/USDT:USDT | below_1h_threshold | +2.26% | +1.96% |
-| EVAA/USDT:USDT | below_1h_threshold | +2.07% | +1.77% |
-| XMR/USDT:USDT | below_1h_threshold | +2.04% | +1.73% |
-| JCT/USDT:USDT | below_1h_threshold | +2.02% | +1.71% |
+| TRX/USDT:USDT | below_1h_threshold | +3.77% | +3.23% |
+| AGT/USDT:USDT | below_1h_threshold | +2.96% | +2.42% |
+| BLESS/USDT:USDT | below_1h_threshold | +2.90% | +2.36% |
+| INIT/USDT:USDT | below_1h_threshold | +2.82% | +2.28% |
+| Q/USDT:USDT | below_1h_threshold | +2.55% | +2.01% |
 
 ## 7. 次に見るべき不足
 
