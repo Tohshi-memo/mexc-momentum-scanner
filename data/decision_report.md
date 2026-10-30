@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-30T21:16:20.334068+00:00
+- generated_at: 2026-10-30T21:21:13.131495+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17867**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-30T21:16:08.134008+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.26% price=76688.7
+- 更新: 2026-10-30T21:21:04.809507+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.20% price=76739.2
 - Funnel: target 1090 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOPH/USDT:USDT | +18.86% | $1,126,799.83 |
-| IDOL/USDT:USDT | +7.27% | $12,089,242.47 |
-| OP/USDT:USDT | +6.82% | $10,630,592.17 |
-| EIGEN/USDT:USDT | +4.78% | $3,540,280.87 |
-| PENDLE/USDT:USDT | +4.06% | $2,130,474.07 |
+| SOPH/USDT:USDT | +18.81% | $1,130,030.01 |
+| OP/USDT:USDT | +7.15% | $10,697,575.60 |
+| IDOL/USDT:USDT | +7.03% | $12,131,523.51 |
+| EIGEN/USDT:USDT | +5.34% | $3,543,476.77 |
+| PENDLE/USDT:USDT | +4.07% | $2,138,274.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IDOL/USDT:USDT | below_1h_threshold | +3.81% | +4.08% |
-| PYTH/USDT:USDT | below_1h_threshold | +1.08% | +1.34% |
-| WIF/USDT:USDT | below_1h_threshold | +0.80% | +1.06% |
-| SOPH/USDT:USDT | below_1h_threshold | +0.68% | +0.95% |
-| PENDLE/USDT:USDT | below_1h_threshold | +0.68% | +0.94% |
+| IDOL/USDT:USDT | below_1h_threshold | +3.56% | +3.76% |
+| PYTH/USDT:USDT | below_1h_threshold | +1.63% | +1.83% |
+| WIF/USDT:USDT | below_1h_threshold | +1.20% | +1.40% |
+| SPX/USDT:USDT | below_1h_threshold | +1.19% | +1.39% |
+| CC/USDT:USDT | below_1h_threshold | +1.06% | +1.26% |
 
 ## 7. 次に見るべき不足
 
