@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-30T13:51:25.959824+00:00
+- generated_at: 2026-10-30T13:56:35.322785+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17849**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-30T13:51:12.721367+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.82% price=76799.7
+- 更新: 2026-10-30T13:56:21.558493+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.86% price=76768.1
 - Funnel: target 1090 → liquid 197 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 89.0 >= 65=1, 4h RSI 79.6 >= 65=1
+- Strict後reject: 4h RSI 89.0 >= 65=1, 4h RSI 79.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BEAMX/USDT:USDT | +51.87% | $1,271,793.57 |
-| PARTI/USDT:USDT | +50.66% | $9,848,798.95 |
-| MAGMA/USDT:USDT | +30.26% | $1,541,792.56 |
-| SOXS/USDT:USDT | +23.69% | $67,627,155.41 |
-| IDOL/USDT:USDT | +21.60% | $3,244,523.40 |
+| PARTI/USDT:USDT | +51.99% | $9,856,240.07 |
+| BEAMX/USDT:USDT | +51.26% | $1,302,338.04 |
+| MAGMA/USDT:USDT | +31.09% | $1,555,117.46 |
+| SOXS/USDT:USDT | +23.66% | $67,890,527.92 |
+| IDOL/USDT:USDT | +20.79% | $3,288,023.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +3.57% | +4.39% |
-| LSK/USDT:USDT | below_1h_threshold | +2.25% | +3.07% |
-| BR/USDT:USDT | below_1h_threshold | +1.67% | +2.49% |
-| NIL/USDT:USDT | below_1h_threshold | +1.51% | +2.33% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +0.92% | +1.74% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.38% | +4.24% |
+| BR/USDT:USDT | below_1h_threshold | +1.69% | +2.55% |
+| LSK/USDT:USDT | below_1h_threshold | +1.62% | +2.48% |
+| NIL/USDT:USDT | below_1h_threshold | +1.37% | +2.23% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +0.92% | +1.78% |
 
 ## 7. 次に見るべき不足
 
