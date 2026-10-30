@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-30T02:01:24.593204+00:00
+- generated_at: 2026-10-30T02:06:23.730849+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17820**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-30T02:01:11.796882+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=76754.9
+- 更新: 2026-10-30T02:06:10.943987+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.36% price=76500.3
 - Funnel: target 1086 → liquid 190 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PARTI/USDT:USDT | +62.96% | $6,791,001.03 |
-| Q/USDT:USDT | +22.88% | $23,292,324.57 |
-| SOXS/USDT:USDT | +20.72% | $69,875,637.48 |
-| BLESS/USDT:USDT | +10.03% | $14,076,013.69 |
-| TRX/USDT:USDT | +7.19% | $11,524,358.72 |
+| PARTI/USDT:USDT | +62.96% | $6,802,623.89 |
+| Q/USDT:USDT | +22.31% | $23,327,602.35 |
+| SOXS/USDT:USDT | +20.96% | $69,987,774.15 |
+| BLESS/USDT:USDT | +9.26% | $14,134,479.93 |
+| TRX/USDT:USDT | +8.05% | $11,629,193.16 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UKOIL/USDT:USDT | below_1h_threshold | +2.07% | +2.10% |
-| USOIL/USDT:USDT | below_1h_threshold | +1.82% | +1.86% |
-| UNITREE/USDT:USDT | below_1h_threshold | +1.58% | +1.61% |
-| AIN/USDT:USDT | below_1h_threshold | +0.62% | +0.65% |
-| NICKEL/USDT:USDT | below_1h_threshold | +0.59% | +0.63% |
+| UKOIL/USDT:USDT | below_1h_threshold | +2.07% | +2.43% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.82% | +2.19% |
+| UNITREE/USDT:USDT | below_1h_threshold | +1.58% | +1.94% |
+| AIN/USDT:USDT | below_1h_threshold | +1.30% | +1.66% |
+| NICKEL/USDT:USDT | below_1h_threshold | +0.59% | +0.96% |
 
 ## 7. 次に見るべき不足
 
