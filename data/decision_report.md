@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-30T23:01:16.947909+00:00
+- generated_at: 2026-10-30T23:06:23.903987+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17868**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-30T23:01:07.608048+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=76898.6
+- 更新: 2026-10-30T23:06:10.873863+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.22% price=77083.1
 - Funnel: target 1090 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOPH/USDT:USDT | +27.63% | $1,266,730.93 |
-| IDOL/USDT:USDT | +16.75% | $12,886,995.63 |
-| OP/USDT:USDT | +7.41% | $11,166,495.19 |
-| PYTH/USDT:USDT | +6.15% | $3,302,990.72 |
-| AIN/USDT:USDT | +5.74% | $4,314,420.99 |
+| SOPH/USDT:USDT | +29.60% | $1,270,934.70 |
+| IDOL/USDT:USDT | +19.00% | $12,934,595.75 |
+| OP/USDT:USDT | +7.24% | $11,448,361.27 |
+| AIN/USDT:USDT | +6.85% | $4,321,084.63 |
+| PYTH/USDT:USDT | +6.51% | $3,313,225.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AAOISTOCK/USDT:USDT | below_1h_threshold | +0.39% | +0.42% |
-| CVX/USDT:USDT | below_1h_threshold | +0.15% | +0.17% |
-| SOPH/USDT:USDT | below_1h_threshold | +0.09% | +0.11% |
-| AIN/USDT:USDT | below_1h_threshold | +0.07% | +0.10% |
-| COINBASE/USDT:USDT | below_1h_threshold | +0.06% | +0.08% |
+| IDOL/USDT:USDT | below_1h_threshold | +2.12% | +1.90% |
+| SOPH/USDT:USDT | below_1h_threshold | +1.86% | +1.64% |
+| PARTI/USDT:USDT | below_1h_threshold | +1.29% | +1.07% |
+| AIN/USDT:USDT | below_1h_threshold | +1.10% | +0.89% |
+| IMX/USDT:USDT | below_1h_threshold | +0.73% | +0.51% |
 
 ## 7. 次に見るべき不足
 
