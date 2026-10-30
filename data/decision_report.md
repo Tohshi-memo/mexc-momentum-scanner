@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-30T05:26:18.922754+00:00
+- generated_at: 2026-10-30T05:31:21.663019+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17830**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-30T05:26:06.620832+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.43% price=78575.3
-- Funnel: target 1086 → liquid 196 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.3 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-30T05:31:08.581561+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.51% price=78638.4
+- Funnel: target 1086 → liquid 196 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PARTI/USDT:USDT | +59.87% | $7,518,293.81 |
-| Q/USDT:USDT | +46.13% | $25,299,263.92 |
-| SOXS/USDT:USDT | +18.21% | $69,133,590.69 |
-| RUNE/USDT:USDT | +14.23% | $1,631,034.43 |
-| BLESS/USDT:USDT | +11.69% | $14,305,627.13 |
+| PARTI/USDT:USDT | +59.01% | $7,537,797.80 |
+| Q/USDT:USDT | +41.65% | $25,500,983.52 |
+| SOXS/USDT:USDT | +18.11% | $69,196,952.11 |
+| RUNE/USDT:USDT | +13.60% | $1,671,395.89 |
+| BLESS/USDT:USDT | +13.33% | $14,362,505.95 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIN/USDT:USDT | below_1h_threshold | +3.46% | +3.03% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +2.61% | +2.18% |
-| BLESS/USDT:USDT | below_1h_threshold | +2.23% | +1.79% |
-| INIT/USDT:USDT | below_1h_threshold | +2.06% | +1.62% |
-| PARTI/USDT:USDT | below_1h_threshold | +1.79% | +1.35% |
+| IDOL/USDT:USDT | below_1h_threshold | +4.85% | +4.34% |
+| AIN/USDT:USDT | below_1h_threshold | +3.42% | +2.91% |
+| BLESS/USDT:USDT | below_1h_threshold | +2.45% | +1.94% |
+| UAI/USDT:USDT | below_1h_threshold | +2.35% | +1.84% |
+| INIT/USDT:USDT | below_1h_threshold | +2.15% | +1.63% |
 
 ## 7. 次に見るべき不足
 
