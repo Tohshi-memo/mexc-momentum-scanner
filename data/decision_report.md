@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-30T12:56:09.629921+00:00
+- generated_at: 2026-10-30T13:01:13.496889+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17848**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-30T12:56:01.068930+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=77322.2
-- Funnel: target 1085 → liquid 195 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-30T13:01:04.849418+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=77389.5
+- Funnel: target 1085 → liquid 194 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PARTI/USDT:USDT | +50.37% | $9,681,287.09 |
-| MAGMA/USDT:USDT | +27.12% | $1,473,164.52 |
-| Q/USDT:USDT | +24.49% | $26,332,501.32 |
-| SOXS/USDT:USDT | +23.32% | $67,497,671.08 |
-| AIN/USDT:USDT | +19.09% | $4,120,237.24 |
+| PARTI/USDT:USDT | +51.79% | $9,704,579.11 |
+| MAGMA/USDT:USDT | +29.50% | $1,470,001.40 |
+| Q/USDT:USDT | +24.47% | $25,504,353.88 |
+| SOXS/USDT:USDT | +23.12% | $65,249,915.56 |
+| AIN/USDT:USDT | +19.94% | $4,025,502.60 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_1h_threshold | +4.98% | +5.01% |
-| IDOL/USDT:USDT | below_1h_threshold | +4.53% | +4.56% |
-| LSK/USDT:USDT | below_1h_threshold | +2.93% | +2.96% |
-| XPL/USDT:USDT | below_1h_threshold | +2.49% | +2.52% |
-| AIN/USDT:USDT | below_1h_threshold | +1.79% | +1.82% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +0.92% | +0.97% |
+| AAPLSTOCK/USDT:USDT | below_1h_threshold | +0.84% | +0.90% |
+| NVIDIA/USDT:USDT | below_1h_threshold | +0.82% | +0.88% |
+| IDOL/USDT:USDT | below_1h_threshold | +0.62% | +0.67% |
+| MSFTSTOCK/USDT:USDT | below_1h_threshold | +0.52% | +0.58% |
 
 ## 7. 次に見るべき不足
 
