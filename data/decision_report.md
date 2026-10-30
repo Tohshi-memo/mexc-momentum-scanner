@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-30T08:16:15.672828+00:00
+- generated_at: 2026-10-30T08:21:29.211875+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17834**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-30T08:16:05.740607+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=78185.8
+- 更新: 2026-10-30T08:21:18.057559+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=78054.2
 - Funnel: target 1085 → liquid 193 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| Q/USDT:USDT | +58.39% | $24,687,868.09 |
-| PARTI/USDT:USDT | +44.88% | $8,259,501.63 |
-| SOXS/USDT:USDT | +20.15% | $69,165,893.30 |
-| AIN/USDT:USDT | +18.34% | $3,890,618.36 |
-| EVAA/USDT:USDT | +11.59% | $6,766,640.72 |
+| Q/USDT:USDT | +59.30% | $24,832,902.79 |
+| PARTI/USDT:USDT | +41.88% | $8,277,854.60 |
+| SOXS/USDT:USDT | +20.45% | $69,169,223.40 |
+| AIN/USDT:USDT | +17.15% | $3,900,915.65 |
+| EVAA/USDT:USDT | +12.16% | $6,791,814.36 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JASMY/USDT:USDT | below_1h_threshold | +3.05% | +3.00% |
-| NIL/USDT:USDT | below_1h_threshold | +2.11% | +2.07% |
-| Q/USDT:USDT | below_1h_threshold | +2.01% | +1.96% |
-| QNT/USDT:USDT | below_1h_threshold | +1.51% | +1.46% |
-| PREDICT/USDT:USDT | below_1h_threshold | +1.45% | +1.40% |
+| JASMY/USDT:USDT | below_1h_threshold | +2.89% | +3.01% |
+| Q/USDT:USDT | below_1h_threshold | +2.78% | +2.90% |
+| XMR/USDT:USDT | below_1h_threshold | +1.88% | +2.00% |
+| PREDICT/USDT:USDT | below_1h_threshold | +1.69% | +1.81% |
+| IDOL/USDT:USDT | below_1h_threshold | +1.57% | +1.69% |
 
 ## 7. 次に見るべき不足
 
