@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-10-30T05:01:23.219279+00:00
+- generated_at: 2026-10-30T05:06:26.568749+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **17826**
+- closed shadow trades: **17827**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=17826, expectancy=+0.02%
+- 全期間 MARKET基準: n=17827, expectancy=+0.02%
 - 直近20件 MARKET基準: n=20, expectancy=-0.76%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -47,31 +47,31 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,523.56** / 初期 $100.00 (+1423.56%)
-- 確定: 6805件 (Win 1975 / Loss 2181 / Flat 2649) / skip 7582件
+- 確定: 6805件 (Win 1975 / Loss 2181 / Flat 2649) / skip 7583件
 - 成長率目線: 平均log +0.000400 / 幾何平均 +0.040% per trade / maxDD +8.46%
-- 次の候補: `LIMIT_9PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
+- 次の候補: `MARKET` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: EVAA/USDT:USDT `MARKET` SL_HIT account -0.50% 残高後 $1,523.56
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$364.03** / 初期 $100.00 (+264.03%)
-- 確定: 4343件 (Win 1169 / Loss 980 / Flat 2194) / skip 6894件
-- 成長率目線: 平均log +0.000298 / 幾何平均 +0.030% per trade / maxDD +4.13%
-- 次の候補: `LIMIT_5PCT` (selected_by_robust_growth_score) / robust_score +0.0038 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: Q/USDT:USDT `LIMIT_5PCT` SL_HIT account +0.07% 残高後 $364.03
+- 確定: 4344件 (Win 1169 / Loss 980 / Flat 2195) / skip 6894件
+- 成長率目線: 平均log +0.000297 / 幾何平均 +0.030% per trade / maxDD +4.13%
+- 次の候補: `LIMIT_5PCT` (selected_by_robust_growth_score) / robust_score +0.0036 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 最新: EVAA/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $364.03
 
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
 - 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 5986件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000268 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000333 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-30T05:01:10.430992+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=78219.1
+- 更新: 2026-10-30T05:06:11.244751+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.26% price=78443.3
 - Funnel: target 1086 → liquid 194 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PARTI/USDT:USDT | +55.97% | $7,394,801.93 |
-| Q/USDT:USDT | +44.57% | $24,248,900.83 |
-| SOXS/USDT:USDT | +17.84% | $68,990,275.55 |
-| RUNE/USDT:USDT | +12.57% | $1,337,971.63 |
-| BLESS/USDT:USDT | +10.15% | $14,185,803.95 |
+| PARTI/USDT:USDT | +60.83% | $7,417,485.85 |
+| Q/USDT:USDT | +43.16% | $24,414,580.15 |
+| SOXS/USDT:USDT | +17.97% | $68,995,991.58 |
+| RUNE/USDT:USDT | +12.55% | $1,372,902.42 |
+| BLESS/USDT:USDT | +12.10% | $14,209,460.54 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PREDICT/USDT:USDT | below_1h_threshold | +0.41% | +0.44% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +0.41% | +0.43% |
-| PLTRSTOCK/USDT:USDT | below_1h_threshold | +0.34% | +0.36% |
-| NVIDIA/USDT:USDT | below_1h_threshold | +0.27% | +0.29% |
-| UNITREE/USDT:USDT | below_1h_threshold | +0.25% | +0.27% |
+| PARTI/USDT:USDT | below_1h_threshold | +2.58% | +2.31% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.34% | +1.08% |
+| PREDICT/USDT:USDT | below_1h_threshold | +0.97% | +0.71% |
+| HYPE/USDT:USDT | below_1h_threshold | +0.76% | +0.50% |
+| INIT/USDT:USDT | below_1h_threshold | +0.72% | +0.45% |
 
 ## 7. 次に見るべき不足
 
