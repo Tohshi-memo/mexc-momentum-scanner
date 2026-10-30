@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-29T23:56:14.706543+00:00
+- generated_at: 2026-10-30T00:01:31.031695+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17818**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-29T23:56:06.393751+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -1.27% price=77971.2
-- Funnel: target 1086 → liquid 183 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-30T00:01:17.942920+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=77898.9
+- Funnel: target 1086 → liquid 182 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PARTI/USDT:USDT | +76.54% | $6,095,677.61 |
-| Q/USDT:USDT | +27.83% | $24,499,128.46 |
-| SOXS/USDT:USDT | +16.37% | $73,892,736.01 |
-| BLESS/USDT:USDT | +10.52% | $14,527,171.87 |
-| BULLA/USDT:USDT | +7.35% | $1,611,420.95 |
+| PARTI/USDT:USDT | +73.31% | $6,145,422.81 |
+| Q/USDT:USDT | +27.93% | $24,069,003.99 |
+| SOXS/USDT:USDT | +16.13% | $72,976,497.18 |
+| BLESS/USDT:USDT | +10.93% | $14,220,036.29 |
+| BULLA/USDT:USDT | +6.86% | $1,581,546.15 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JCT/USDT:USDT | below_1h_threshold | +3.64% | +4.92% |
-| BULLA/USDT:USDT | below_1h_threshold | +2.45% | +3.72% |
-| PARTI/USDT:USDT | below_1h_threshold | +1.94% | +3.21% |
-| AIN/USDT:USDT | below_1h_threshold | +1.77% | +3.04% |
-| EVAA/USDT:USDT | below_1h_threshold | +1.33% | +2.60% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +1.73% | +1.82% |
+| BLESS/USDT:USDT | below_1h_threshold | +0.83% | +0.92% |
+| NVIDIA/USDT:USDT | below_1h_threshold | +0.68% | +0.77% |
+| AVGOSTOCK/USDT:USDT | below_1h_threshold | +0.45% | +0.54% |
+| TESLA/USDT:USDT | below_1h_threshold | +0.42% | +0.50% |
 
 ## 7. 次に見るべき不足
 
