@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-30T15:41:26.658662+00:00
+- generated_at: 2026-10-30T15:46:31.891042+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17852**
 
@@ -70,31 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-30T15:41:11.549692+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.43% price=77550.0
-- Funnel: target 1090 → liquid 192 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-30T15:46:16.490653+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.24% price=77403.4
+- Funnel: target 1090 → liquid 192 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 79.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BEAMX/USDT:USDT | +43.01% | $1,851,050.89 |
-| PARTI/USDT:USDT | +39.19% | $10,106,059.98 |
-| MAGMA/USDT:USDT | +30.86% | $1,689,677.42 |
-| SOXS/USDT:USDT | +28.16% | $62,390,841.95 |
-| Q/USDT:USDT | +26.29% | $25,850,132.58 |
+| BEAMX/USDT:USDT | +41.44% | $1,858,673.22 |
+| PARTI/USDT:USDT | +40.12% | $10,129,965.20 |
+| MAGMA/USDT:USDT | +30.43% | $1,691,887.54 |
+| SOXS/USDT:USDT | +27.94% | $62,458,116.06 |
+| Q/USDT:USDT | +21.60% | $26,002,869.67 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IDOL/USDT:USDT | below_1h_threshold | +4.60% | +4.17% |
-| FLOKI/USDT:USDT | below_1h_threshold | +3.29% | +2.85% |
-| XLM/USDT:USDT | below_1h_threshold | +2.61% | +2.18% |
-| SOXS/USDT:USDT | below_1h_threshold | +2.53% | +2.10% |
-| Q/USDT:USDT | below_1h_threshold | +2.50% | +2.06% |
+| FLOKI/USDT:USDT | below_1h_threshold | +2.99% | +2.74% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.53% | +2.29% |
+| AIN/USDT:USDT | below_1h_threshold | +2.49% | +2.24% |
+| XLM/USDT:USDT | below_1h_threshold | +2.10% | +1.86% |
+| POL/USDT:USDT | below_1h_threshold | +2.00% | +1.76% |
 
 ## 7. 次に見るべき不足
 
