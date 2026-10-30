@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-30T22:36:17.528542+00:00
+- generated_at: 2026-10-30T22:41:14.394046+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17868**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6029件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6030件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000235 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-30T22:36:06.285026+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.32% price=76915.7
-- Funnel: target 1090 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-30T22:41:05.465980+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.36% price=76943.6
+- Funnel: target 1090 → liquid 177 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 86.6 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOPH/USDT:USDT | +29.94% | $1,238,488.91 |
-| IDOL/USDT:USDT | +13.55% | $12,684,986.93 |
-| OP/USDT:USDT | +8.21% | $11,314,111.24 |
-| AIN/USDT:USDT | +6.50% | $4,395,034.98 |
-| PYTH/USDT:USDT | +6.27% | $3,404,081.94 |
+| SOPH/USDT:USDT | +27.58% | $1,253,822.22 |
+| IDOL/USDT:USDT | +16.97% | $12,739,657.40 |
+| OP/USDT:USDT | +8.74% | $11,448,519.34 |
+| PYTH/USDT:USDT | +6.78% | $3,445,533.00 |
+| AIN/USDT:USDT | +6.73% | $4,403,260.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOPH/USDT:USDT | below_1h_threshold | +3.30% | +2.98% |
-| BLESS/USDT:USDT | below_1h_threshold | +2.76% | +2.44% |
-| IDOL/USDT:USDT | below_1h_threshold | +2.59% | +2.27% |
-| ETHFI/USDT:USDT | below_1h_threshold | +1.86% | +1.54% |
-| JTO/USDT:USDT | below_1h_threshold | +1.77% | +1.45% |
+| ETHFI/USDT:USDT | below_1h_threshold | +2.16% | +1.81% |
+| JTO/USDT:USDT | below_1h_threshold | +2.07% | +1.71% |
+| OP/USDT:USDT | below_1h_threshold | +1.67% | +1.31% |
+| PYTH/USDT:USDT | below_1h_threshold | +1.66% | +1.30% |
+| TIA/USDT:USDT | below_1h_threshold | +1.64% | +1.29% |
 
 ## 7. 次に見るべき不足
 
