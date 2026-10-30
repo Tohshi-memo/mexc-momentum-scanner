@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-30T07:46:15.546956+00:00
+- generated_at: 2026-10-30T07:51:31.606817+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17834**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-30T07:46:04.682683+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.60% price=78145.0
+- 更新: 2026-10-30T07:51:23.425685+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.57% price=78173.1
 - Funnel: target 1086 → liquid 196 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| Q/USDT:USDT | +55.01% | $26,074,917.77 |
-| PARTI/USDT:USDT | +44.74% | $8,066,328.52 |
-| SOXS/USDT:USDT | +18.95% | $69,607,333.37 |
-| AIN/USDT:USDT | +18.04% | $3,894,636.94 |
-| EVAA/USDT:USDT | +10.95% | $7,181,550.61 |
+| Q/USDT:USDT | +56.96% | $26,198,570.53 |
+| PARTI/USDT:USDT | +47.71% | $8,124,774.14 |
+| SOXS/USDT:USDT | +19.24% | $69,661,767.17 |
+| AIN/USDT:USDT | +18.89% | $3,926,012.11 |
+| EVAA/USDT:USDT | +10.87% | $7,219,619.87 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| Q/USDT:USDT | below_1h_threshold | +3.67% | +4.27% |
-| IRYS/USDT:USDT | below_1h_threshold | +2.68% | +3.29% |
-| AIN/USDT:USDT | below_1h_threshold | +2.43% | +3.04% |
-| IDOL/USDT:USDT | below_1h_threshold | +2.32% | +2.92% |
-| NIL/USDT:USDT | below_1h_threshold | +1.80% | +2.40% |
+| Q/USDT:USDT | below_1h_threshold | +4.56% | +5.12% |
+| AIN/USDT:USDT | below_1h_threshold | +3.06% | +3.62% |
+| IDOL/USDT:USDT | below_1h_threshold | +2.59% | +3.16% |
+| NIL/USDT:USDT | below_1h_threshold | +1.88% | +2.45% |
+| IRYS/USDT:USDT | below_1h_threshold | +1.76% | +2.33% |
 
 ## 7. 次に見るべき不足
 
