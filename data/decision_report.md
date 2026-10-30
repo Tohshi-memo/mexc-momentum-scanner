@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-30T17:16:28.273736+00:00
+- generated_at: 2026-10-30T17:21:25.507923+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17859**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-30T17:16:13.249183+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=77228.7
+- 更新: 2026-10-30T17:21:12.707301+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=77181.3
 - Funnel: target 1090 → liquid 190 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IDOL/USDT:USDT | +32.30% | $5,218,577.18 |
-| BEAMX/USDT:USDT | +3.54% | $2,049,879.91 |
-| SOXS/USDT:USDT | +3.13% | $50,554,266.12 |
-| EDGE/USDT:USDT | +2.33% | $1,564,661.73 |
-| GRASS/USDT:USDT | +1.88% | $1,610,539.33 |
+| IDOL/USDT:USDT | +32.49% | $5,405,409.22 |
+| SOXS/USDT:USDT | +3.08% | $50,591,147.77 |
+| BIRB/USDT:USDT | +2.40% | $1,656,810.71 |
+| PEPE/USDT:USDT | +2.27% | $229,444,839.19 |
+| GRASS/USDT:USDT | +2.15% | $1,616,039.16 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IDOL/USDT:USDT | below_1h_threshold | +4.27% | +4.39% |
-| SOXS/USDT:USDT | below_1h_threshold | +2.18% | +2.29% |
-| BEAMX/USDT:USDT | below_1h_threshold | +1.73% | +1.84% |
-| RSR/USDT:USDT | below_1h_threshold | +1.15% | +1.27% |
-| PEPE/USDT:USDT | below_1h_threshold | +1.11% | +1.22% |
+| IDOL/USDT:USDT | below_1h_threshold | +3.90% | +4.07% |
+| PARTI/USDT:USDT | below_1h_threshold | +3.52% | +3.70% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.18% | +2.35% |
+| PEPE/USDT:USDT | below_1h_threshold | +1.71% | +1.89% |
+| RSR/USDT:USDT | below_1h_threshold | +1.22% | +1.40% |
 
 ## 7. 次に見るべき不足
 
