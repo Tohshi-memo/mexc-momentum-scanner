@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-30T14:06:20.728050+00:00
+- generated_at: 2026-10-30T14:11:18.770019+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17850**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-30T14:06:08.011559+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.23% price=76964.6
+- 更新: 2026-10-30T14:11:06.471791+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.28% price=76930.0
 - Funnel: target 1090 → liquid 193 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BEAMX/USDT:USDT | +52.92% | $1,351,435.13 |
-| PARTI/USDT:USDT | +50.23% | $9,807,057.34 |
-| MAGMA/USDT:USDT | +30.93% | $1,557,332.66 |
-| SOXS/USDT:USDT | +23.20% | $65,982,098.93 |
-| Q/USDT:USDT | +21.11% | $25,639,993.33 |
+| BEAMX/USDT:USDT | +51.47% | $1,394,647.99 |
+| PARTI/USDT:USDT | +50.57% | $9,810,849.08 |
+| MAGMA/USDT:USDT | +32.00% | $1,560,738.32 |
+| SOXS/USDT:USDT | +24.23% | $66,090,819.92 |
+| IDOL/USDT:USDT | +21.86% | $3,137,251.05 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| METASTOCK/USDT:USDT | below_1h_threshold | +1.29% | +1.53% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.59% | +0.82% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +0.57% | +0.80% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.53% | +0.76% |
-| Q/USDT:USDT | below_1h_threshold | +0.39% | +0.62% |
+| METASTOCK/USDT:USDT | below_1h_threshold | +1.29% | +1.57% |
+| EVAA/USDT:USDT | below_1h_threshold | +1.05% | +1.33% |
+| Q/USDT:USDT | below_1h_threshold | +0.60% | +0.88% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.59% | +0.87% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +0.57% | +0.85% |
 
 ## 7. 次に見るべき不足
 
