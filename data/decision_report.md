@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-30T17:36:12.756155+00:00
+- generated_at: 2026-10-30T17:41:17.237873+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17859**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-30T17:36:02.252433+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.20% price=77167.4
+- 更新: 2026-10-30T17:41:06.938311+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=77257.8
 - Funnel: target 1090 → liquid 191 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IDOL/USDT:USDT | +32.58% | $5,818,179.52 |
-| SOXS/USDT:USDT | +3.23% | $51,013,607.50 |
-| PEPE/USDT:USDT | +2.15% | $231,364,526.15 |
-| AIN/USDT:USDT | +2.00% | $4,079,823.68 |
-| EIGEN/USDT:USDT | +1.89% | $4,378,303.10 |
+| IDOL/USDT:USDT | +31.23% | $5,980,895.77 |
+| SOXS/USDT:USDT | +3.04% | $51,273,968.08 |
+| AIN/USDT:USDT | +2.30% | $4,089,503.19 |
+| EDGE/USDT:USDT | +2.24% | $1,589,816.78 |
+| EIGEN/USDT:USDT | +2.17% | $4,381,316.09 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IDOL/USDT:USDT | below_1h_threshold | +3.92% | +4.12% |
-| PARTI/USDT:USDT | below_1h_threshold | +2.98% | +3.18% |
-| SOXS/USDT:USDT | below_1h_threshold | +2.18% | +2.37% |
-| LSK/USDT:USDT | below_1h_threshold | +1.70% | +1.90% |
-| ANTHROPIC/USDT:USDT | below_1h_threshold | +1.61% | +1.81% |
+| IDOL/USDT:USDT | below_1h_threshold | +2.98% | +3.06% |
+| PARTI/USDT:USDT | below_1h_threshold | +2.81% | +2.89% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.18% | +2.25% |
+| AIN/USDT:USDT | below_1h_threshold | +1.85% | +1.93% |
+| LSK/USDT:USDT | below_1h_threshold | +1.77% | +1.85% |
 
 ## 7. 次に見るべき不足
 
