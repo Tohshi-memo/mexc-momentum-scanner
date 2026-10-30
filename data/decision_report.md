@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-30T19:11:24.849699+00:00
+- generated_at: 2026-10-30T19:16:19.987848+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17863**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-30T19:11:11.783874+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=76669.6
+- 更新: 2026-10-30T19:16:06.801046+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.21% price=76457.2
 - Funnel: target 1090 → liquid 191 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PARTI/USDT:USDT | +5.59% | $7,809,315.55 |
-| BTW/USDT:USDT | +5.06% | $10,283,862.59 |
-| AIN/USDT:USDT | +5.02% | $4,168,958.46 |
-| OP/USDT:USDT | +3.98% | $9,489,744.81 |
-| SOXS/USDT:USDT | +3.40% | $50,423,169.12 |
+| BTW/USDT:USDT | +6.90% | $10,348,163.98 |
+| AIN/USDT:USDT | +6.74% | $4,191,471.13 |
+| SOXS/USDT:USDT | +3.81% | $50,545,051.69 |
+| PARTI/USDT:USDT | +3.80% | $7,818,560.84 |
+| OP/USDT:USDT | +3.37% | $9,512,180.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +2.15% | +2.08% |
-| PYTH/USDT:USDT | below_1h_threshold | +0.65% | +0.58% |
-| SQQQ/USDT:USDT | below_1h_threshold | +0.64% | +0.57% |
-| XPL/USDT:USDT | below_1h_threshold | +0.63% | +0.56% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.59% | +0.53% |
+| BTW/USDT:USDT | below_1h_threshold | +3.76% | +3.96% |
+| DELTAELECSTOCK/USDT:USDT | below_1h_threshold | +0.87% | +1.07% |
+| SQQQ/USDT:USDT | below_1h_threshold | +0.64% | +0.84% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.59% | +0.80% |
+| NICKEL/USDT:USDT | below_1h_threshold | +0.56% | +0.77% |
 
 ## 7. 次に見るべき不足
 
