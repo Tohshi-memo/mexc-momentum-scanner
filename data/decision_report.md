@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-10-30T06:26:27.645720+00:00
+- generated_at: 2026-10-30T06:31:29.896743+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **17832**
+- closed shadow trades: **17833**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=17832, expectancy=+0.02%
+- 全期間 MARKET基準: n=17833, expectancy=+0.02%
 - 直近20件 MARKET基準: n=20, expectancy=-1.20%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -22,8 +22,8 @@
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | LIMIT_10PCT | 2/20 | 10.0% | +8.00% | **+0.80%** |
+| LIMIT_7PCT | 4/20 | 20.0% | +2.40% | **+0.48%** |
 | LIMIT_FIB1618 | 2/20 | 10.0% | +3.44% | **+0.34%** |
-| LIMIT_7PCT | 3/20 | 15.0% | +2.27% | **+0.34%** |
 | LIMIT_9PCT | 2/20 | 10.0% | +2.00% | **+0.20%** |
 | LIMIT_8PCT | 2/20 | 10.0% | +2.00% | **+0.20%** |
 
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,523.56** / 初期 $100.00 (+1423.56%)
-- 確定: 6805件 (Win 1975 / Loss 2181 / Flat 2649) / skip 7588件
+- 確定: 6805件 (Win 1975 / Loss 2181 / Flat 2649) / skip 7589件
 - 成長率目線: 平均log +0.000400 / 幾何平均 +0.040% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: EVAA/USDT:USDT `MARKET` SL_HIT account -0.50% 残高後 $1,523.56
@@ -55,10 +55,10 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$363.01** / 初期 $100.00 (+263.01%)
-- 確定: 4348件 (Win 1170 / Loss 981 / Flat 2197) / skip 6895件
-- 成長率目線: 平均log +0.000297 / 幾何平均 +0.030% per trade / maxDD +4.13%
-- 次の候補: `LIMIT_9PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0940 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: EVAA/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $363.01
+- 確定: 4349件 (Win 1170 / Loss 981 / Flat 2198) / skip 6895件
+- 成長率目線: 平均log +0.000296 / 幾何平均 +0.030% per trade / maxDD +4.13%
+- 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 最新: IDOL/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $363.01
 
 ## 5. Causal Adaptive DryRun ($100)
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-30T06:26:14.433248+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=78538.2
-- Funnel: target 1086 → liquid 195 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.9 >= 65=1, 4h RSI 74.4 >= 65=1
+- 更新: 2026-10-30T06:31:14.539024+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=78655.4
+- Funnel: target 1086 → liquid 195 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 74.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PARTI/USDT:USDT | +60.31% | $7,686,797.64 |
-| Q/USDT:USDT | +48.63% | $25,962,558.23 |
-| SOXS/USDT:USDT | +18.83% | $68,903,766.53 |
-| AIN/USDT:USDT | +13.68% | $3,737,656.32 |
-| EVAA/USDT:USDT | +12.70% | $8,150,647.51 |
+| PARTI/USDT:USDT | +58.31% | $7,702,507.16 |
+| Q/USDT:USDT | +48.99% | $26,004,055.29 |
+| SOXS/USDT:USDT | +17.48% | $69,240,370.36 |
+| AIN/USDT:USDT | +17.10% | $3,767,252.51 |
+| EVAA/USDT:USDT | +11.94% | $8,174,646.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EVAA/USDT:USDT | below_1h_threshold | +4.15% | +4.13% |
-| Q/USDT:USDT | below_1h_threshold | +3.35% | +3.33% |
-| UAI/USDT:USDT | below_1h_threshold | +1.94% | +1.92% |
-| AGT/USDT:USDT | below_1h_threshold | +1.81% | +1.80% |
-| BLUR/USDT:USDT | below_1h_threshold | +1.46% | +1.45% |
+| IDOL/USDT:USDT | below_1h_threshold | +3.95% | +3.78% |
+| Q/USDT:USDT | below_1h_threshold | +3.80% | +3.63% |
+| EVAA/USDT:USDT | below_1h_threshold | +2.73% | +2.56% |
+| BLUR/USDT:USDT | below_1h_threshold | +2.53% | +2.36% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +2.42% | +2.25% |
 
 ## 7. 次に見るべき不足
 
