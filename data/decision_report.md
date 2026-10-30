@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-30T14:51:50.566630+00:00
+- generated_at: 2026-10-30T14:56:23.442158+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17851**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-30T14:51:37.789234+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=77097.3
-- Funnel: target 1090 → liquid 196 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-30T14:56:10.707678+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=77254.8
+- Funnel: target 1090 → liquid 197 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BEAMX/USDT:USDT | +46.72% | $1,640,849.41 |
-| PARTI/USDT:USDT | +42.74% | $9,953,572.98 |
-| MAGMA/USDT:USDT | +31.64% | $1,624,947.15 |
-| SOXS/USDT:USDT | +24.69% | $67,100,329.52 |
-| Q/USDT:USDT | +22.41% | $25,988,044.34 |
+| BEAMX/USDT:USDT | +47.47% | $1,660,190.16 |
+| PARTI/USDT:USDT | +44.48% | $9,969,509.50 |
+| MAGMA/USDT:USDT | +29.79% | $1,640,095.74 |
+| SOXS/USDT:USDT | +24.89% | $67,469,904.97 |
+| Q/USDT:USDT | +22.62% | $26,006,740.36 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIL/USDT:USDT | below_1h_threshold | +3.32% | +3.38% |
-| XMR/USDT:USDT | below_1h_threshold | +1.87% | +1.93% |
-| Q/USDT:USDT | below_1h_threshold | +1.62% | +1.68% |
-| METASTOCK/USDT:USDT | below_1h_threshold | +1.29% | +1.35% |
-| HYPE/USDT:USDT | below_1h_threshold | +1.00% | +1.06% |
+| NIL/USDT:USDT | below_1h_threshold | +2.49% | +2.35% |
+| XMR/USDT:USDT | below_1h_threshold | +2.36% | +2.21% |
+| Q/USDT:USDT | below_1h_threshold | +1.81% | +1.67% |
+| METASTOCK/USDT:USDT | below_1h_threshold | +1.29% | +1.15% |
+| HYPE/USDT:USDT | below_1h_threshold | +1.13% | +0.99% |
 
 ## 7. 次に見るべき不足
 
