@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-30T09:56:27.144756+00:00
+- generated_at: 2026-10-30T10:01:17.031565+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17843**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-30T09:56:15.087143+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.50% price=77597.8
-- Funnel: target 1085 → liquid 197 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.1 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-30T10:01:06.845024+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=77635.4
+- Funnel: target 1085 → liquid 194 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PARTI/USDT:USDT | +53.37% | $9,103,169.86 |
-| MAGMA/USDT:USDT | +27.31% | $1,270,471.17 |
-| EVAA/USDT:USDT | +27.12% | $7,313,263.77 |
-| SOXS/USDT:USDT | +21.21% | $69,706,356.25 |
-| Q/USDT:USDT | +19.96% | $26,417,597.27 |
+| PARTI/USDT:USDT | +52.51% | $9,116,223.31 |
+| MAGMA/USDT:USDT | +28.43% | $1,231,551.67 |
+| EVAA/USDT:USDT | +23.77% | $6,838,739.45 |
+| SOXS/USDT:USDT | +21.01% | $68,477,344.84 |
+| AIN/USDT:USDT | +18.26% | $3,891,303.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_1h_threshold | +2.76% | +3.26% |
-| AIN/USDT:USDT | below_1h_threshold | +2.10% | +2.61% |
-| MAGMA/USDT:USDT | below_1h_threshold | +1.86% | +2.37% |
-| QNT/USDT:USDT | below_1h_threshold | +1.29% | +1.80% |
-| NOWSTOCK/USDT:USDT | below_1h_threshold | +1.28% | +1.78% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.07% | +1.10% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.07% | +1.09% |
+| SQQQ/USDT:USDT | below_1h_threshold | +0.97% | +1.00% |
+| PARTI/USDT:USDT | below_1h_threshold | +0.76% | +0.79% |
+| JCT/USDT:USDT | below_1h_threshold | +0.65% | +0.68% |
 
 ## 7. 次に見るべき不足
 
