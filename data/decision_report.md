@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-30T13:31:07.575668+00:00
+- generated_at: 2026-10-30T13:36:14.973119+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17848**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-30T13:30:59.519411+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.40% price=77126.4
+- 更新: 2026-10-30T13:36:04.333106+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.40% price=77127.6
 - Funnel: target 1090 → liquid 196 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PARTI/USDT:USDT | +53.81% | $9,767,055.86 |
-| BEAMX/USDT:USDT | +40.01% | $1,083,566.88 |
-| MAGMA/USDT:USDT | +29.66% | $1,498,832.19 |
-| SOXS/USDT:USDT | +22.88% | $65,507,962.56 |
-| Q/USDT:USDT | +20.46% | $25,752,997.93 |
+| PARTI/USDT:USDT | +52.48% | $9,776,905.95 |
+| BEAMX/USDT:USDT | +42.52% | $1,107,631.26 |
+| MAGMA/USDT:USDT | +30.38% | $1,508,304.79 |
+| SOXS/USDT:USDT | +23.98% | $66,751,134.04 |
+| Q/USDT:USDT | +20.46% | $25,809,295.54 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LSK/USDT:USDT | below_1h_threshold | +3.18% | +3.57% |
-| BEAMX/USDT:USDT | below_1h_threshold | +2.41% | +2.81% |
-| PARTI/USDT:USDT | below_1h_threshold | +1.51% | +1.90% |
-| NIL/USDT:USDT | below_1h_threshold | +1.22% | +1.61% |
-| XPD/USDT:USDT | below_1h_threshold | +1.10% | +1.50% |
+| BEAMX/USDT:USDT | below_1h_threshold | +4.56% | +4.96% |
+| LSK/USDT:USDT | below_1h_threshold | +2.97% | +3.36% |
+| NIL/USDT:USDT | below_1h_threshold | +1.86% | +2.26% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.55% | +1.94% |
+| IDOL/USDT:USDT | below_1h_threshold | +1.17% | +1.56% |
 
 ## 7. 次に見るべき不足
 
