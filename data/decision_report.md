@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-30T17:01:21.778135+00:00
+- generated_at: 2026-10-30T17:06:18.717490+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17858**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-30T17:01:11.356416+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=77426.5
+- 更新: 2026-10-30T17:06:07.052401+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=77403.0
 - Funnel: target 1090 → liquid 190 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IDOL/USDT:USDT | +28.11% | $4,673,793.86 |
-| BIRB/USDT:USDT | +3.09% | $1,561,049.73 |
-| EDGE/USDT:USDT | +2.53% | $1,522,558.23 |
-| SOXS/USDT:USDT | +2.27% | $50,470,426.69 |
-| RUNE/USDT:USDT | +1.93% | $2,919,167.02 |
+| IDOL/USDT:USDT | +28.32% | $4,852,923.17 |
+| BIRB/USDT:USDT | +6.06% | $1,596,991.31 |
+| SOXS/USDT:USDT | +2.46% | $50,484,371.83 |
+| EDGE/USDT:USDT | +2.21% | $1,535,414.34 |
+| RUNE/USDT:USDT | +1.87% | $2,922,280.81 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +2.18% | +2.04% |
-| ZRO/USDT:USDT | below_1h_threshold | +0.79% | +0.65% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.69% | +0.55% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +0.57% | +0.43% |
-| CAKE/USDT:USDT | below_1h_threshold | +0.51% | +0.37% |
+| BIRB/USDT:USDT | below_1h_threshold | +3.37% | +3.26% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.18% | +2.07% |
+| IRYS/USDT:USDT | below_1h_threshold | +1.33% | +1.22% |
+| ZRO/USDT:USDT | below_1h_threshold | +0.97% | +0.86% |
+| EIGEN/USDT:USDT | below_1h_threshold | +0.88% | +0.77% |
 
 ## 7. 次に見るべき不足
 
