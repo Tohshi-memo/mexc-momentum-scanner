@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-30T03:01:28.413035+00:00
+- generated_at: 2026-10-30T03:06:25.623888+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17821**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-30T03:01:13.296573+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=77355.2
-- Funnel: target 1086 → liquid 190 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-30T03:06:12.813536+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=77443.9
+- Funnel: target 1086 → liquid 191 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PARTI/USDT:USDT | +65.33% | $6,937,339.22 |
-| Q/USDT:USDT | +31.52% | $23,423,654.48 |
-| SOXS/USDT:USDT | +19.98% | $69,192,460.23 |
-| BLESS/USDT:USDT | +9.95% | $14,062,929.13 |
-| SQQQ/USDT:USDT | +7.77% | $1,024,053.12 |
+| PARTI/USDT:USDT | +63.72% | $6,958,845.06 |
+| Q/USDT:USDT | +31.47% | $23,484,989.50 |
+| SOXS/USDT:USDT | +20.15% | $69,225,522.75 |
+| BLESS/USDT:USDT | +8.99% | $14,072,676.45 |
+| SQQQ/USDT:USDT | +7.85% | $1,024,401.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UNITREE/USDT:USDT | below_1h_threshold | +1.66% | +1.69% |
-| BR/USDT:USDT | below_1h_threshold | +1.36% | +1.40% |
-| RUNE/USDT:USDT | below_1h_threshold | +0.96% | +1.00% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +0.92% | +0.96% |
-| EVAA/USDT:USDT | below_1h_threshold | +0.63% | +0.67% |
+| UNITREE/USDT:USDT | below_1h_threshold | +1.66% | +1.58% |
+| BR/USDT:USDT | below_1h_threshold | +1.47% | +1.39% |
+| BULLA/USDT:USDT | below_1h_threshold | +1.35% | +1.28% |
+| UAI/USDT:USDT | below_1h_threshold | +0.93% | +0.85% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +0.92% | +0.85% |
 
 ## 7. 次に見るべき不足
 
