@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-30T20:26:27.006648+00:00
+- generated_at: 2026-10-30T20:31:23.475705+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17865**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-30T20:26:11.263229+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=76878.7
+- 更新: 2026-10-30T20:31:09.683771+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=76936.6
 - Funnel: target 1090 → liquid 190 → pre 50 → checked 50 → surge 2 → strict 2
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOPH/USDT:USDT | +25.56% | $1,051,193.10 |
-| OP/USDT:USDT | +6.00% | $11,088,968.91 |
-| AXTISTOCK/USDT:USDT | +4.36% | $5,249,328.42 |
-| EIGEN/USDT:USDT | +3.61% | $4,213,220.36 |
-| XPL/USDT:USDT | +3.12% | $9,083,840.93 |
+| SOPH/USDT:USDT | +24.87% | $1,054,597.59 |
+| OP/USDT:USDT | +6.24% | $11,153,177.49 |
+| AXTISTOCK/USDT:USDT | +4.10% | $5,249,962.42 |
+| EIGEN/USDT:USDT | +3.56% | $4,214,842.83 |
+| PARTI/USDT:USDT | +3.19% | $6,666,969.19 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MUU/USDT:USDT | below_1h_threshold | +4.37% | +4.40% |
-| AAOISTOCK/USDT:USDT | below_1h_threshold | +4.32% | +4.35% |
-| COINBASE/USDT:USDT | below_1h_threshold | +3.54% | +3.57% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +2.37% | +2.40% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +1.98% | +2.02% |
+| MUU/USDT:USDT | below_1h_threshold | +4.37% | +4.32% |
+| AAOISTOCK/USDT:USDT | below_1h_threshold | +4.32% | +4.28% |
+| COINBASE/USDT:USDT | below_1h_threshold | +3.54% | +3.50% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +2.37% | +2.32% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +1.98% | +1.94% |
 
 ## 7. 次に見るべき不足
 
