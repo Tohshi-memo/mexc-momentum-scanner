@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-30T08:57:29.948906+00:00
+- generated_at: 2026-10-30T09:01:27.283562+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17838**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-30T08:57:12.456411+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.19% price=78001.3
-- Funnel: target 1085 → liquid 196 → pre 50 → checked 50 → surge 4 → strict 0
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.7 >= 65=1, 4h RSI 68.6 >= 65=1, 4h RSI 67.4 >= 65=1, 4h RSI 65.5 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-30T09:01:14.497698+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=77933.7
+- Funnel: target 1085 → liquid 193 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PARTI/USDT:USDT | +56.61% | $8,663,320.48 |
-| ON/USDT:USDT | +31.12% | $1,199,052.30 |
-| Q/USDT:USDT | +25.54% | $27,168,750.67 |
-| MAGMA/USDT:USDT | +24.14% | $1,168,478.49 |
-| SOXS/USDT:USDT | +19.59% | $69,681,334.60 |
+| PARTI/USDT:USDT | +55.48% | $8,709,544.69 |
+| ON/USDT:USDT | +27.75% | $1,202,324.46 |
+| Q/USDT:USDT | +25.90% | $25,160,744.40 |
+| MAGMA/USDT:USDT | +25.50% | $1,160,641.80 |
+| SOXS/USDT:USDT | +19.59% | $67,190,914.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLUR/USDT:USDT | below_1h_threshold | +4.82% | +5.01% |
-| INIT/USDT:USDT | below_1h_threshold | +3.60% | +3.79% |
-| JASMY/USDT:USDT | below_1h_threshold | +3.53% | +3.72% |
-| XMR/USDT:USDT | below_1h_threshold | +2.19% | +2.37% |
-| NIL/USDT:USDT | below_1h_threshold | +1.61% | +1.80% |
+| NOWSTOCK/USDT:USDT | below_1h_threshold | +1.28% | +1.35% |
+| PLTRSTOCK/USDT:USDT | below_1h_threshold | +0.95% | +1.02% |
+| INIT/USDT:USDT | below_1h_threshold | +0.77% | +0.85% |
+| MSFTSTOCK/USDT:USDT | below_1h_threshold | +0.72% | +0.79% |
+| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +0.66% | +0.73% |
 
 ## 7. 次に見るべき不足
 
