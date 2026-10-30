@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-10-30T23:26:21.951277+00:00
+- generated_at: 2026-10-30T23:31:24.361034+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **17868**
+- closed shadow trades: **17869**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.31% / filled 20/20。**
-- 全期間 MARKET基準: n=17868, expectancy=+0.02%
+- 全期間 MARKET基準: n=17869, expectancy=+0.02%
 - 直近20件 MARKET基準: n=20, expectancy=+0.31%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -23,8 +23,8 @@
 |---|---:|---:|---:|---:|
 | LIMIT_7PCT | 6/20 | 30.0% | +5.13% | **+1.54%** |
 | LIMIT_5PCT | 7/20 | 35.0% | +1.85% | **+0.65%** |
+| LIMIT_ATR | 12/20 | 60.0% | +1.04% | **+0.62%** |
 | LIMIT_6PCT | 6/20 | 30.0% | +1.96% | **+0.59%** |
-| LIMIT_ATR | 13/20 | 65.0% | +0.81% | **+0.53%** |
 | LIMIT_9PCT | 3/20 | 15.0% | +2.86% | **+0.43%** |
 
 ### シャドウ上位 LONG
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,515.94** / 初期 $100.00 (+1415.94%)
-- 確定: 6807件 (Win 1975 / Loss 2182 / Flat 2650) / skip 7622件
+- 確定: 6807件 (Win 1975 / Loss 2182 / Flat 2650) / skip 7623件
 - 成長率目線: 平均log +0.000399 / 幾何平均 +0.040% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_3PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: AIN/USDT:USDT `LIMIT_3PCT_LONG` SL_HIT account -0.50% 残高後 $1,515.94
@@ -55,7 +55,7 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$363.50** / 初期 $100.00 (+263.50%)
-- 確定: 4368件 (Win 1173 / Loss 983 / Flat 2212) / skip 6911件
+- 確定: 4369件 (Win 1173 / Loss 983 / Flat 2213) / skip 6911件
 - 成長率目線: 平均log +0.000295 / 幾何平均 +0.030% per trade / maxDD +4.13%
 - 次の候補: `LIMIT_6PCT` (selected_by_robust_growth_score) / robust_score +0.0311 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: IDOL/USDT:USDT `LIMIT_6PCT` EXPIRED account +0.00% 残高後 $363.50
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-30T23:26:11.523862+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.31% price=77155.8
-- Funnel: target 1090 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-30T23:31:11.834496+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.28% price=77135.4
+- Funnel: target 1090 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOPH/USDT:USDT | +27.69% | $1,284,331.00 |
-| IDOL/USDT:USDT | +21.32% | $13,112,502.56 |
-| OP/USDT:USDT | +9.74% | $11,870,102.87 |
-| AIN/USDT:USDT | +7.16% | $4,352,415.74 |
-| PYTH/USDT:USDT | +7.04% | $3,492,824.20 |
+| SOPH/USDT:USDT | +27.00% | $1,287,604.30 |
+| IDOL/USDT:USDT | +20.11% | $13,171,234.49 |
+| OP/USDT:USDT | +9.96% | $12,060,839.00 |
+| AIN/USDT:USDT | +7.37% | $4,354,423.71 |
+| PYTH/USDT:USDT | +6.59% | $3,510,116.60 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IDOL/USDT:USDT | below_1h_threshold | +4.32% | +4.00% |
-| UNI/USDT:USDT | below_1h_threshold | +2.15% | +1.84% |
-| OP/USDT:USDT | below_1h_threshold | +2.01% | +1.70% |
-| PARTI/USDT:USDT | below_1h_threshold | +1.61% | +1.30% |
-| AIN/USDT:USDT | below_1h_threshold | +1.41% | +1.10% |
+| IDOL/USDT:USDT | below_1h_threshold | +3.17% | +2.88% |
+| OP/USDT:USDT | below_1h_threshold | +2.23% | +1.95% |
+| UNI/USDT:USDT | below_1h_threshold | +2.16% | +1.88% |
+| PARTI/USDT:USDT | below_1h_threshold | +1.73% | +1.45% |
+| AIN/USDT:USDT | below_1h_threshold | +1.65% | +1.37% |
 
 ## 7. 次に見るべき不足
 
