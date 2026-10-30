@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-10-30T04:06:22.288429+00:00
+- generated_at: 2026-10-30T04:11:28.934029+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **17822**
+- closed shadow trades: **17823**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +1.04% / filled 20/20。**
-- 全期間 MARKET基準: n=17822, expectancy=+0.02%
+- 全期間 MARKET基準: n=17823, expectancy=+0.02%
 - 直近20件 MARKET基準: n=20, expectancy=+1.04%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -24,7 +24,7 @@
 | MARKET | 20/20 | 100.0% | +1.04% | **+1.04%** |
 | LIMIT_BB3S | 2/16 | 12.5% | +2.63% | **+0.33%** |
 | LIMIT_5PCT | 4/20 | 20.0% | +0.04% | **+0.01%** |
-| LIMIT_ATR | 11/20 | 55.0% | -0.09% | **-0.05%** |
+| LIMIT_ATR | 11/20 | 55.0% | -0.08% | **-0.04%** |
 | LIMIT_4PCT | 10/20 | 50.0% | -0.17% | **-0.08%** |
 
 ### シャドウ上位 LONG
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,523.56** / 初期 $100.00 (+1423.56%)
-- 確定: 6805件 (Win 1975 / Loss 2181 / Flat 2649) / skip 7578件
+- 確定: 6805件 (Win 1975 / Loss 2181 / Flat 2649) / skip 7579件
 - 成長率目線: 平均log +0.000400 / 幾何平均 +0.040% per trade / maxDD +8.46%
 - 次の候補: `MARKET` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: EVAA/USDT:USDT `MARKET` SL_HIT account -0.50% 残高後 $1,523.56
@@ -55,10 +55,10 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$363.52** / 初期 $100.00 (+263.52%)
-- 確定: 4339件 (Win 1167 / Loss 980 / Flat 2192) / skip 6894件
+- 確定: 4340件 (Win 1167 / Loss 980 / Flat 2193) / skip 6894件
 - 成長率目線: 平均log +0.000297 / 幾何平均 +0.030% per trade / maxDD +4.13%
-- 次の候補: `LIMIT_5PCT` (selected_by_robust_growth_score) / robust_score -0.0019 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: EVAA/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $363.52
+- 次の候補: `LIMIT_5PCT` (selected_by_robust_growth_score) / robust_score -0.0009 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 最新: PREDICT/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $363.52
 
 ## 5. Causal Adaptive DryRun ($100)
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-30T04:06:09.267605+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.32% price=77950.6
+- 更新: 2026-10-30T04:11:13.660512+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.25% price=78005.2
 - Funnel: target 1086 → liquid 193 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PARTI/USDT:USDT | +65.02% | $7,171,478.20 |
-| Q/USDT:USDT | +30.35% | $23,674,598.87 |
-| SOXS/USDT:USDT | +19.39% | $69,172,318.85 |
-| BLESS/USDT:USDT | +12.48% | $14,065,183.61 |
-| RUNE/USDT:USDT | +7.96% | $1,200,197.69 |
+| PARTI/USDT:USDT | +66.86% | $7,185,394.74 |
+| Q/USDT:USDT | +31.39% | $23,740,764.91 |
+| SOXS/USDT:USDT | +19.07% | $69,176,348.44 |
+| BLESS/USDT:USDT | +8.89% | $14,134,705.88 |
+| BULLA/USDT:USDT | +8.49% | $1,479,913.89 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PREDICT/USDT:USDT | below_1h_threshold | +1.02% | +1.34% |
-| Q/USDT:USDT | below_1h_threshold | +0.89% | +1.20% |
-| UAI/USDT:USDT | below_1h_threshold | +0.45% | +0.77% |
-| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +0.42% | +0.74% |
-| INIT/USDT:USDT | below_1h_threshold | +0.25% | +0.57% |
+| PREDICT/USDT:USDT | below_1h_threshold | +1.77% | +2.01% |
+| Q/USDT:USDT | below_1h_threshold | +1.69% | +1.94% |
+| BULLA/USDT:USDT | below_1h_threshold | +0.75% | +1.00% |
+| PARTI/USDT:USDT | below_1h_threshold | +0.43% | +0.68% |
+| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +0.42% | +0.67% |
 
 ## 7. 次に見るべき不足
 
