@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-30T06:56:36.390263+00:00
+- generated_at: 2026-10-30T07:01:22.673056+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17833**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-30T06:56:19.839619+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=78517.4
-- Funnel: target 1086 → liquid 196 → pre 50 → checked 50 → surge 4 → strict 1
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.6 >= 65=1, 4h RSI 66.0 >= 65=1, 4h RSI 75.0 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-30T07:01:11.827943+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=78592.8
+- Funnel: target 1086 → liquid 195 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PARTI/USDT:USDT | +55.19% | $7,754,710.48 |
-| Q/USDT:USDT | +51.28% | $26,432,349.24 |
-| SOXS/USDT:USDT | +17.99% | $71,189,388.75 |
-| AIN/USDT:USDT | +16.59% | $3,881,909.90 |
-| EVAA/USDT:USDT | +15.24% | $8,342,720.61 |
+| PARTI/USDT:USDT | +51.81% | $7,806,143.19 |
+| Q/USDT:USDT | +49.54% | $25,161,538.06 |
+| SOXS/USDT:USDT | +18.51% | $69,370,081.02 |
+| AIN/USDT:USDT | +15.68% | $3,737,397.70 |
+| EVAA/USDT:USDT | +13.50% | $6,984,812.20 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UAI/USDT:USDT | below_1h_threshold | +3.54% | +3.54% |
-| AGT/USDT:USDT | below_1h_threshold | +2.29% | +2.29% |
-| QNT/USDT:USDT | below_1h_threshold | +1.56% | +1.57% |
-| ANTHROPIC/USDT:USDT | below_1h_threshold | +1.27% | +1.28% |
-| BLUR/USDT:USDT | below_1h_threshold | +1.25% | +1.26% |
+| IDOL/USDT:USDT | below_1h_threshold | +0.44% | +0.48% |
+| BLESS/USDT:USDT | below_1h_threshold | +0.44% | +0.47% |
+| AIN/USDT:USDT | below_1h_threshold | +0.38% | +0.42% |
+| PI/USDT:USDT | below_1h_threshold | +0.37% | +0.40% |
+| NOWSTOCK/USDT:USDT | below_1h_threshold | +0.26% | +0.30% |
 
 ## 7. 次に見るべき不足
 
