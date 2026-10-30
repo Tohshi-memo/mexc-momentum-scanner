@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-30T15:51:32.871049+00:00
+- generated_at: 2026-10-30T15:56:23.598744+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17852**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-30T15:51:18.290186+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.41% price=77528.7
+- 更新: 2026-10-30T15:56:10.080798+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.40% price=77523.1
 - Funnel: target 1090 → liquid 193 → pre 50 → checked 50 → surge 3 → strict 1
 - Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.1 >= 65=1, 4h RSI 79.5 >= 65=1
+- Strict後reject: 4h RSI 69.2 >= 65=1, 4h RSI 79.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PARTI/USDT:USDT | +42.37% | $10,155,919.01 |
-| BIRB/USDT:USDT | +41.93% | $1,055,579.59 |
-| BEAMX/USDT:USDT | +41.85% | $1,877,801.59 |
-| MAGMA/USDT:USDT | +30.82% | $1,694,472.77 |
-| SOXS/USDT:USDT | +27.79% | $62,732,652.44 |
+| BEAMX/USDT:USDT | +41.41% | $1,885,647.84 |
+| PARTI/USDT:USDT | +41.27% | $10,178,470.53 |
+| BIRB/USDT:USDT | +39.74% | $1,100,730.49 |
+| MAGMA/USDT:USDT | +30.43% | $1,697,943.90 |
+| SOXS/USDT:USDT | +27.69% | $62,893,958.05 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FLOKI/USDT:USDT | below_1h_threshold | +3.67% | +3.26% |
+| FLOKI/USDT:USDT | below_1h_threshold | +3.63% | +3.23% |
+| XLM/USDT:USDT | below_1h_threshold | +3.16% | +2.76% |
 | SOXS/USDT:USDT | below_1h_threshold | +2.53% | +2.13% |
-| XLM/USDT:USDT | below_1h_threshold | +2.47% | +2.07% |
-| AIN/USDT:USDT | below_1h_threshold | +2.33% | +1.92% |
-| POL/USDT:USDT | below_1h_threshold | +2.13% | +1.72% |
+| AIN/USDT:USDT | below_1h_threshold | +2.36% | +1.96% |
+| ZRO/USDT:USDT | below_1h_threshold | +1.88% | +1.48% |
 
 ## 7. 次に見るべき不足
 
