@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-30T16:16:27.924403+00:00
+- generated_at: 2026-10-30T16:21:24.715194+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17854**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-30T16:16:16.924872+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=77558.7
+- 更新: 2026-10-30T16:21:11.711023+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=77595.0
 - Funnel: target 1090 → liquid 190 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.4 >= 65=1
+- Strict後reject: 4h RSI 83.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IDOL/USDT:USDT | +7.26% | $3,667,555.67 |
-| EDGE/USDT:USDT | +2.88% | $1,217,808.90 |
-| GRASS/USDT:USDT | +2.52% | $1,655,442.70 |
-| SOXS/USDT:USDT | +1.50% | $54,952,233.13 |
-| BIRB/USDT:USDT | +1.40% | $1,311,691.22 |
+| IDOL/USDT:USDT | +5.92% | $3,744,743.92 |
+| EDGE/USDT:USDT | +3.94% | $1,229,943.49 |
+| GRASS/USDT:USDT | +1.98% | $1,658,757.93 |
+| RUNE/USDT:USDT | +1.87% | $2,881,080.67 |
+| BIRB/USDT:USDT | +1.68% | $1,355,954.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EDGE/USDT:USDT | below_1h_threshold | +2.88% | +2.91% |
-| GRASS/USDT:USDT | below_1h_threshold | +2.51% | +2.54% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.82% | +1.85% |
-| BIRB/USDT:USDT | below_1h_threshold | +1.48% | +1.50% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.20% | +1.23% |
+| EDGE/USDT:USDT | below_1h_threshold | +3.95% | +3.93% |
+| GRASS/USDT:USDT | below_1h_threshold | +2.09% | +2.07% |
+| RUNE/USDT:USDT | below_1h_threshold | +1.97% | +1.95% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.82% | +1.80% |
+| BIRB/USDT:USDT | below_1h_threshold | +1.68% | +1.66% |
 
 ## 7. 次に見るべき不足
 
