@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-10-30T19:51:20.621668+00:00
+- generated_at: 2026-10-30T19:56:20.237563+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **17864**
+- closed shadow trades: **17865**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.91% / filled 20/20。**
-- 全期間 MARKET基準: n=17864, expectancy=+0.02%
+- 全期間 MARKET基準: n=17865, expectancy=+0.02%
 - 直近20件 MARKET基準: n=20, expectancy=+0.91%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -22,7 +22,7 @@
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | LIMIT_7PCT | 6/20 | 30.0% | +5.13% | **+1.54%** |
-| LIMIT_1PCT | 20/20 | 100.0% | +1.49% | **+1.49%** |
+| LIMIT_1PCT | 19/20 | 95.0% | +1.15% | **+1.09%** |
 | LIMIT_ATR | 14/20 | 70.0% | +1.48% | **+1.03%** |
 | MARKET | 20/20 | 100.0% | +0.91% | **+0.91%** |
 | LIMIT_2PCT | 16/20 | 80.0% | +0.93% | **+0.74%** |
@@ -33,8 +33,8 @@
 |---|---:|---:|---:|---:|
 | LIMIT_3PCT_LONG | 19/20 | 95.0% | +2.27% | **+2.15%** |
 | LIMIT_4PCT_LONG | 17/20 | 85.0% | +1.92% | **+1.63%** |
+| LIMIT_6PCT_LONG | 12/20 | 60.0% | +2.34% | **+1.40%** |
 | LIMIT_5PCT_LONG | 15/20 | 75.0% | +1.77% | **+1.33%** |
-| LIMIT_6PCT_LONG | 12/20 | 60.0% | +2.18% | **+1.31%** |
 | LIMIT_ATR_LONG | 17/20 | 85.0% | +0.95% | **+0.81%** |
 
 ## 2. $100 Live Portfolio
@@ -46,19 +46,19 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$1,523.56** / 初期 $100.00 (+1423.56%)
-- 確定: 6806件 (Win 1975 / Loss 2181 / Flat 2650) / skip 7619件
-- 成長率目線: 平均log +0.000400 / 幾何平均 +0.040% per trade / maxDD +8.46%
+- 残高: **$1,515.94** / 初期 $100.00 (+1415.94%)
+- 確定: 6807件 (Win 1975 / Loss 2182 / Flat 2650) / skip 7619件
+- 成長率目線: 平均log +0.000399 / 幾何平均 +0.040% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_3PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: EVAA/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $1,523.56
+- 最新: AIN/USDT:USDT `LIMIT_3PCT_LONG` SL_HIT account -0.50% 残高後 $1,515.94
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$363.50** / 初期 $100.00 (+263.50%)
-- 確定: 4364件 (Win 1173 / Loss 983 / Flat 2208) / skip 6911件
+- 確定: 4365件 (Win 1173 / Loss 983 / Flat 2209) / skip 6911件
 - 成長率目線: 平均log +0.000296 / 幾何平均 +0.030% per trade / maxDD +4.13%
 - 次の候補: `LIMIT_6PCT` (selected_by_robust_growth_score) / robust_score +0.0311 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: IDOL/USDT:USDT `LIMIT_6PCT` EXPIRED account +0.00% 残高後 $363.50
+- 最新: AIN/USDT:USDT `LIMIT_6PCT` EXPIRED account +0.00% 残高後 $363.50
 
 ## 5. Causal Adaptive DryRun ($100)
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-30T19:51:08.863618+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.42% price=76934.5
+- 更新: 2026-10-30T19:56:08.035044+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.40% price=76919.9
 - Funnel: target 1090 → liquid 191 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +7.29% | $10,652,036.61 |
-| OP/USDT:USDT | +5.61% | $10,075,475.00 |
-| EIGEN/USDT:USDT | +4.95% | $4,113,014.70 |
-| AIN/USDT:USDT | +4.64% | $4,316,375.27 |
-| IDOL/USDT:USDT | +3.36% | $11,564,573.30 |
+| OP/USDT:USDT | +6.57% | $10,344,950.46 |
+| BTW/USDT:USDT | +5.17% | $10,711,346.71 |
+| EIGEN/USDT:USDT | +5.11% | $4,126,825.83 |
+| LSK/USDT:USDT | +4.11% | $3,814,670.69 |
+| IDOL/USDT:USDT | +3.96% | $11,619,833.20 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +4.18% | +3.76% |
-| IRYS/USDT:USDT | below_1h_threshold | +3.46% | +3.05% |
-| EIGEN/USDT:USDT | below_1h_threshold | +2.89% | +2.48% |
-| TIA/USDT:USDT | below_1h_threshold | +2.55% | +2.13% |
-| PENDLE/USDT:USDT | below_1h_threshold | +2.35% | +1.94% |
+| LSK/USDT:USDT | below_1h_threshold | +3.50% | +3.11% |
+| XPL/USDT:USDT | below_1h_threshold | +3.28% | +2.89% |
+| EIGEN/USDT:USDT | below_1h_threshold | +3.06% | +2.66% |
+| TIA/USDT:USDT | below_1h_threshold | +2.84% | +2.44% |
+| IRYS/USDT:USDT | below_1h_threshold | +2.70% | +2.30% |
 
 ## 7. 次に見るべき不足
 
