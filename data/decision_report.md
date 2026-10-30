@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-30T16:56:37.816138+00:00
+- generated_at: 2026-10-30T17:01:21.778135+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17858**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-30T16:56:22.250612+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.46% price=77225.7
-- Funnel: target 1090 → liquid 192 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 88.0 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-30T17:01:11.356416+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=77426.5
+- Funnel: target 1090 → liquid 190 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IDOL/USDT:USDT | +30.33% | $4,757,931.35 |
-| EDGE/USDT:USDT | +2.53% | $1,527,783.26 |
-| SOXS/USDT:USDT | +2.52% | $55,670,854.64 |
-| BIRB/USDT:USDT | +1.84% | $1,556,332.26 |
-| LONGXIA/USDT:USDT | +1.82% | $1,496,900.22 |
+| IDOL/USDT:USDT | +28.11% | $4,673,793.86 |
+| BIRB/USDT:USDT | +3.09% | $1,561,049.73 |
+| EDGE/USDT:USDT | +2.53% | $1,522,558.23 |
+| SOXS/USDT:USDT | +2.27% | $50,470,426.69 |
+| RUNE/USDT:USDT | +1.93% | $2,919,167.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EDGE/USDT:USDT | below_1h_threshold | +2.53% | +2.99% |
-| BIRB/USDT:USDT | below_1h_threshold | +1.84% | +2.30% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +1.83% | +2.28% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.82% | +2.28% |
-| RUNE/USDT:USDT | below_1h_threshold | +1.53% | +1.98% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.18% | +2.04% |
+| ZRO/USDT:USDT | below_1h_threshold | +0.79% | +0.65% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.69% | +0.55% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +0.57% | +0.43% |
+| CAKE/USDT:USDT | below_1h_threshold | +0.51% | +0.37% |
 
 ## 7. 次に見るべき不足
 
