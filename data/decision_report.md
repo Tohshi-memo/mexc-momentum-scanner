@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-30T15:16:15.718373+00:00
+- generated_at: 2026-10-30T15:21:21.873218+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17852**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6011件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6013件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000184 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-30T15:16:06.192204+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.73% price=77776.9
-- Funnel: target 1090 → liquid 192 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=2, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-30T15:21:10.541523+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.93% price=77936.7
+- Funnel: target 1090 → liquid 192 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 79.3 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PARTI/USDT:USDT | +44.82% | $9,983,286.93 |
-| BEAMX/USDT:USDT | +38.26% | $1,763,620.69 |
-| MAGMA/USDT:USDT | +31.43% | $1,650,217.37 |
-| SOXS/USDT:USDT | +26.73% | $61,781,094.94 |
-| Q/USDT:USDT | +23.84% | $25,485,097.08 |
+| PARTI/USDT:USDT | +43.12% | $9,993,730.18 |
+| BEAMX/USDT:USDT | +38.50% | $1,779,980.59 |
+| MAGMA/USDT:USDT | +31.63% | $1,656,926.41 |
+| SOXS/USDT:USDT | +26.98% | $61,832,841.64 |
+| Q/USDT:USDT | +25.25% | $25,533,802.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IDOL/USDT:USDT | below_relative_strength | +5.44% | +4.72% |
-| IRYS/USDT:USDT | below_relative_strength | +5.14% | +4.41% |
-| BCH/USDT:USDT | below_1h_threshold | +2.73% | +2.01% |
-| SOXS/USDT:USDT | below_1h_threshold | +2.53% | +1.81% |
-| ZRO/USDT:USDT | below_1h_threshold | +2.52% | +1.80% |
+| FLOKI/USDT:USDT | below_1h_threshold | +3.07% | +2.14% |
+| BCH/USDT:USDT | below_1h_threshold | +2.88% | +1.94% |
+| ZRO/USDT:USDT | below_1h_threshold | +2.85% | +1.92% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.53% | +1.60% |
+| Q/USDT:USDT | below_1h_threshold | +2.18% | +1.24% |
 
 ## 7. 次に見るべき不足
 
