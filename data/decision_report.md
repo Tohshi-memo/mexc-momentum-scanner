@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-30T16:21:24.715194+00:00
+- generated_at: 2026-10-30T16:26:27.509041+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17854**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6015件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6016件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000174 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-30T16:21:11.711023+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=77595.0
+- 更新: 2026-10-30T16:26:14.676763+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=77510.8
 - Funnel: target 1090 → liquid 190 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.9 >= 65=1
+- Strict後reject: 4h RSI 66.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IDOL/USDT:USDT | +5.92% | $3,744,743.92 |
-| EDGE/USDT:USDT | +3.94% | $1,229,943.49 |
-| GRASS/USDT:USDT | +1.98% | $1,658,757.93 |
-| RUNE/USDT:USDT | +1.87% | $2,881,080.67 |
-| BIRB/USDT:USDT | +1.68% | $1,355,954.59 |
+| EDGE/USDT:USDT | +5.15% | $1,285,638.93 |
+| IDOL/USDT:USDT | +3.68% | $3,801,246.59 |
+| BIRB/USDT:USDT | +2.37% | $1,411,276.47 |
+| RUNE/USDT:USDT | +1.54% | $2,913,978.14 |
+| SOXS/USDT:USDT | +1.34% | $55,029,346.90 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EDGE/USDT:USDT | below_1h_threshold | +3.95% | +3.93% |
-| GRASS/USDT:USDT | below_1h_threshold | +2.09% | +2.07% |
-| RUNE/USDT:USDT | below_1h_threshold | +1.97% | +1.95% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.82% | +1.80% |
-| BIRB/USDT:USDT | below_1h_threshold | +1.68% | +1.66% |
+| IDOL/USDT:USDT | below_1h_threshold | +3.68% | +3.77% |
+| RUNE/USDT:USDT | below_1h_threshold | +2.09% | +2.18% |
+| LSK/USDT:USDT | below_1h_threshold | +2.08% | +2.17% |
+| BIRB/USDT:USDT | below_1h_threshold | +1.99% | +2.08% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.82% | +1.91% |
 
 ## 7. 次に見るべき不足
 
