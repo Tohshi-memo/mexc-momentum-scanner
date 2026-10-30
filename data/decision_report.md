@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-30T17:31:26.351452+00:00
+- generated_at: 2026-10-30T17:36:12.756155+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17859**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-30T17:31:13.195634+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=77269.6
-- Funnel: target 1090 → liquid 191 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 88.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-30T17:36:02.252433+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.20% price=77167.4
+- Funnel: target 1090 → liquid 191 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IDOL/USDT:USDT | +35.06% | $5,727,623.11 |
-| SOXS/USDT:USDT | +2.83% | $50,919,179.83 |
-| PEPE/USDT:USDT | +2.15% | $230,811,234.98 |
-| EDGE/USDT:USDT | +2.10% | $1,575,006.00 |
-| AIN/USDT:USDT | +2.03% | $4,073,233.97 |
+| IDOL/USDT:USDT | +32.58% | $5,818,179.52 |
+| SOXS/USDT:USDT | +3.23% | $51,013,607.50 |
+| PEPE/USDT:USDT | +2.15% | $231,364,526.15 |
+| AIN/USDT:USDT | +2.00% | $4,079,823.68 |
+| EIGEN/USDT:USDT | +1.89% | $4,378,303.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PARTI/USDT:USDT | below_1h_threshold | +3.52% | +3.59% |
-| SOXS/USDT:USDT | below_1h_threshold | +2.18% | +2.24% |
-| ANTHROPIC/USDT:USDT | below_1h_threshold | +1.75% | +1.82% |
-| PEPE/USDT:USDT | below_1h_threshold | +1.63% | +1.70% |
-| AIN/USDT:USDT | below_1h_threshold | +1.58% | +1.64% |
+| IDOL/USDT:USDT | below_1h_threshold | +3.92% | +4.12% |
+| PARTI/USDT:USDT | below_1h_threshold | +2.98% | +3.18% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.18% | +2.37% |
+| LSK/USDT:USDT | below_1h_threshold | +1.70% | +1.90% |
+| ANTHROPIC/USDT:USDT | below_1h_threshold | +1.61% | +1.81% |
 
 ## 7. 次に見るべき不足
 
