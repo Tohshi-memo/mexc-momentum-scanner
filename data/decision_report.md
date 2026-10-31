@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-31T09:16:19.765409+00:00
+- generated_at: 2026-10-31T09:21:18.513960+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17897**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-31T09:16:06.969027+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=77390.0
+- 更新: 2026-10-31T09:21:05.702614+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.12% price=77411.0
 - Funnel: target 1090 → liquid 152 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIN/USDT:USDT | +60.93% | $13,776,426.78 |
-| B/USDT:USDT | +17.28% | $1,027,831.76 |
-| LSK/USDT:USDT | +8.99% | $6,881,895.13 |
-| BEAMX/USDT:USDT | +8.31% | $2,422,396.74 |
-| MAGMA/USDT:USDT | +6.37% | $1,458,602.24 |
+| AIN/USDT:USDT | +63.48% | $13,897,811.60 |
+| B/USDT:USDT | +16.25% | $1,039,274.07 |
+| LSK/USDT:USDT | +10.55% | $6,904,050.78 |
+| BEAMX/USDT:USDT | +7.35% | $2,432,701.45 |
+| PENDLE/USDT:USDT | +5.99% | $1,494,790.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAMX/USDT:USDT | below_1h_threshold | +3.05% | +2.96% |
-| BLESS/USDT:USDT | below_1h_threshold | +1.50% | +1.41% |
-| AIN/USDT:USDT | below_1h_threshold | +1.11% | +1.02% |
-| SYRUP/USDT:USDT | below_1h_threshold | +0.97% | +0.88% |
-| BR/USDT:USDT | below_1h_threshold | +0.87% | +0.78% |
+| AIN/USDT:USDT | below_1h_threshold | +2.83% | +2.72% |
+| BEAMX/USDT:USDT | below_1h_threshold | +2.14% | +2.02% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.68% | +1.57% |
+| QNT/USDT:USDT | below_1h_threshold | +1.42% | +1.31% |
+| LSK/USDT:USDT | below_1h_threshold | +1.30% | +1.18% |
 
 ## 7. 次に見るべき不足
 
