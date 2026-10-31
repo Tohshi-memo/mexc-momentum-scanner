@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-31T22:21:24.007959+00:00
+- generated_at: 2026-10-31T22:26:24.488404+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17913**
 
@@ -70,7 +70,7 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-31T22:21:10.965689+00:00 / 保存件数 288/288
+- 更新: 2026-10-31T22:26:11.469095+00:00 / 保存件数 288/288
 - BTC: STAGNANT 1h -0.07% price=77573.8
 - Funnel: target 1089 → liquid 120 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +8.25% | $3,949,279.43 |
-| LIT/USDT:USDT | +7.34% | $8,871,030.87 |
-| MAGMA/USDT:USDT | +4.06% | $1,077,124.39 |
-| MORPHO/USDT:USDT | +2.93% | $2,654,106.85 |
-| LINK/USDT:USDT | +2.02% | $140,689,027.64 |
+| EVAA/USDT:USDT | +8.39% | $3,963,671.24 |
+| LIT/USDT:USDT | +7.52% | $8,913,471.66 |
+| MAGMA/USDT:USDT | +3.71% | $1,083,745.98 |
+| MORPHO/USDT:USDT | +3.20% | $2,655,756.04 |
+| ZRO/USDT:USDT | +1.98% | $8,306,678.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MAGMA/USDT:USDT | below_1h_threshold | +0.93% | +1.00% |
-| EVAA/USDT:USDT | below_1h_threshold | +0.88% | +0.95% |
-| FLUID/USDT:USDT | below_1h_threshold | +0.78% | +0.85% |
-| VVV/USDT:USDT | below_1h_threshold | +0.53% | +0.60% |
-| ETH/USDT:USDT | below_1h_threshold | +0.23% | +0.30% |
+| FLUID/USDT:USDT | below_1h_threshold | +1.06% | +1.13% |
+| EVAA/USDT:USDT | below_1h_threshold | +1.03% | +1.10% |
+| AIN/USDT:USDT | below_1h_threshold | +0.70% | +0.77% |
+| MAGMA/USDT:USDT | below_1h_threshold | +0.60% | +0.67% |
+| VVV/USDT:USDT | below_1h_threshold | +0.55% | +0.62% |
 
 ## 7. 次に見るべき不足
 
