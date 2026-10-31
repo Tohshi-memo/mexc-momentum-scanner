@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-31T17:01:23.730649+00:00
+- generated_at: 2026-10-31T17:06:20.872537+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17907**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-31T17:01:10.939285+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=77557.6
+- 更新: 2026-10-31T17:06:10.127131+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=77536.6
 - Funnel: target 1089 → liquid 137 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| B/USDT:USDT | +5.18% | $1,636,626.40 |
-| IDOL/USDT:USDT | +4.93% | $14,179,491.90 |
-| BEAT/USDT:USDT | +3.30% | $6,344,816.40 |
-| COW/USDT:USDT | +2.76% | $1,033,100.94 |
-| UAI/USDT:USDT | +2.18% | $1,441,343.73 |
+| B/USDT:USDT | +3.55% | $1,701,287.75 |
+| IDOL/USDT:USDT | +3.47% | $14,263,151.15 |
+| BLESS/USDT:USDT | +3.06% | $9,233,893.15 |
+| BEAT/USDT:USDT | +2.19% | $6,388,235.42 |
+| COW/USDT:USDT | +2.17% | $1,052,375.82 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +0.49% | +0.52% |
-| MAGMA/USDT:USDT | below_1h_threshold | +0.49% | +0.52% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +0.26% | +0.29% |
-| IRYS/USDT:USDT | below_1h_threshold | +0.26% | +0.29% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.25% | +0.28% |
+| BLESS/USDT:USDT | below_1h_threshold | +3.65% | +3.71% |
+| MAGMA/USDT:USDT | below_1h_threshold | +1.05% | +1.11% |
+| IRYS/USDT:USDT | below_1h_threshold | +1.04% | +1.09% |
+| PYTH/USDT:USDT | below_1h_threshold | +0.46% | +0.51% |
+| AIN/USDT:USDT | below_1h_threshold | +0.43% | +0.48% |
 
 ## 7. 次に見るべき不足
 
