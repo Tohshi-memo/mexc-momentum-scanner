@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-31T13:21:24.111353+00:00
+- generated_at: 2026-10-31T13:26:29.784965+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17899**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-31T13:21:11.148156+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=77479.2
-- Funnel: target 1089 → liquid 149 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.3 >= 65=1
+- 更新: 2026-10-31T13:26:15.866446+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=77487.5
+- Funnel: target 1089 → liquid 149 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 69.7 >= 65=1, 4h RSI 78.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LSK/USDT:USDT | +37.69% | $12,728,686.17 |
-| AIN/USDT:USDT | +33.71% | $20,365,839.00 |
-| STX/USDT:USDT | +13.99% | $2,553,723.63 |
-| RUNE/USDT:USDT | +12.52% | $1,340,316.18 |
-| B/USDT:USDT | +11.69% | $1,558,188.58 |
+| LSK/USDT:USDT | +38.93% | $12,886,481.17 |
+| AIN/USDT:USDT | +33.62% | $20,480,814.72 |
+| STX/USDT:USDT | +12.94% | $2,593,547.60 |
+| B/USDT:USDT | +11.52% | $1,559,586.74 |
+| RUNE/USDT:USDT | +11.34% | $1,350,952.61 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LSK/USDT:USDT | below_1h_threshold | +4.21% | +4.25% |
-| RUNE/USDT:USDT | below_1h_threshold | +3.40% | +3.44% |
-| JCT/USDT:USDT | below_1h_threshold | +2.82% | +2.86% |
-| IRYS/USDT:USDT | below_1h_threshold | +0.69% | +0.73% |
-| ANTHROPIC/USDT:USDT | below_1h_threshold | +0.69% | +0.73% |
+| RUNE/USDT:USDT | below_1h_threshold | +2.55% | +2.58% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.39% | +1.42% |
+| ANTHROPIC/USDT:USDT | below_1h_threshold | +0.78% | +0.81% |
+| BEAMX/USDT:USDT | below_1h_threshold | +0.44% | +0.47% |
+| BR/USDT:USDT | below_1h_threshold | +0.43% | +0.46% |
 
 ## 7. 次に見るべき不足
 
