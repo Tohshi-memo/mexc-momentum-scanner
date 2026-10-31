@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-31T18:11:23.068456+00:00
+- generated_at: 2026-10-31T18:16:25.513299+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17907**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6072件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6073件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000272 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-31T18:11:09.990745+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=77666.1
-- Funnel: target 1089 → liquid 133 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-31T18:16:10.294926+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=77693.8
+- Funnel: target 1089 → liquid 133 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +5.53% | $12,396,558.73 |
-| IDOL/USDT:USDT | +4.78% | $12,139,664.68 |
-| MORPHO/USDT:USDT | +3.61% | $1,281,118.90 |
-| Q/USDT:USDT | +3.39% | $10,787,543.52 |
-| BEAT/USDT:USDT | +3.38% | $6,505,845.89 |
+| AKE/USDT:USDT | +9.16% | $12,685,373.85 |
+| IDOL/USDT:USDT | +4.10% | $12,152,577.46 |
+| Q/USDT:USDT | +3.46% | $10,805,475.18 |
+| BEAT/USDT:USDT | +3.39% | $6,606,095.55 |
+| MORPHO/USDT:USDT | +3.36% | $1,338,977.97 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +2.47% | +2.46% |
-| UAI/USDT:USDT | below_1h_threshold | +1.26% | +1.26% |
-| Q/USDT:USDT | below_1h_threshold | +1.22% | +1.22% |
-| IDOL/USDT:USDT | below_1h_threshold | +0.94% | +0.94% |
-| LIT/USDT:USDT | below_1h_threshold | +0.91% | +0.91% |
+| LIT/USDT:USDT | below_1h_threshold | +1.45% | +1.41% |
+| Q/USDT:USDT | below_1h_threshold | +1.25% | +1.21% |
+| QNT/USDT:USDT | below_1h_threshold | +1.19% | +1.16% |
+| UAI/USDT:USDT | below_1h_threshold | +1.16% | +1.12% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +0.92% | +0.88% |
 
 ## 7. 次に見るべき不足
 
