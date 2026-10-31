@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-31T16:21:25.300350+00:00
+- generated_at: 2026-10-31T16:26:19.361625+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17907**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-31T16:21:12.305909+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=77587.7
+- 更新: 2026-10-31T16:26:06.549324+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=77591.0
 - Funnel: target 1089 → liquid 139 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LSK/USDT:USDT | +2.80% | $21,081,080.57 |
-| MAGMA/USDT:USDT | +2.68% | $1,137,171.15 |
-| PUMPFUN/USDT:USDT | +1.41% | $8,557,567.48 |
-| PYTH/USDT:USDT | +1.39% | $4,026,192.91 |
-| UAI/USDT:USDT | +1.28% | $1,323,928.22 |
+| MAGMA/USDT:USDT | +3.27% | $1,145,595.27 |
+| LSK/USDT:USDT | +1.93% | $21,257,780.41 |
+| EDGE/USDT:USDT | +1.93% | $1,008,477.00 |
+| PYTH/USDT:USDT | +1.51% | $4,049,777.91 |
+| PUMPFUN/USDT:USDT | +1.43% | $8,572,423.42 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LSK/USDT:USDT | below_1h_threshold | +3.05% | +3.02% |
-| MAGMA/USDT:USDT | below_1h_threshold | +2.78% | +2.74% |
-| PYTH/USDT:USDT | below_1h_threshold | +1.40% | +1.36% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.39% | +1.35% |
-| UAI/USDT:USDT | below_1h_threshold | +1.29% | +1.25% |
+| MAGMA/USDT:USDT | below_1h_threshold | +3.32% | +3.28% |
+| LSK/USDT:USDT | below_1h_threshold | +2.24% | +2.20% |
+| EDGE/USDT:USDT | below_1h_threshold | +1.94% | +1.90% |
+| PYTH/USDT:USDT | below_1h_threshold | +1.52% | +1.48% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.43% | +1.39% |
 
 ## 7. 次に見るべき不足
 
