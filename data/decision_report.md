@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-31T08:11:21.834484+00:00
+- generated_at: 2026-10-31T08:16:10.194216+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17896**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-31T08:11:08.854027+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=77328.8
+- 更新: 2026-10-31T08:16:01.332666+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=77397.9
 - Funnel: target 1090 → liquid 150 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIN/USDT:USDT | +56.80% | $13,145,957.03 |
-| IDOL/USDT:USDT | +11.64% | $15,232,956.08 |
-| MAGMA/USDT:USDT | +9.25% | $1,641,790.61 |
-| BEAMX/USDT:USDT | +6.75% | $2,459,863.42 |
-| PYTH/USDT:USDT | +5.95% | $3,615,712.38 |
+| AIN/USDT:USDT | +57.55% | $13,181,061.84 |
+| MAGMA/USDT:USDT | +10.24% | $1,647,146.78 |
+| IDOL/USDT:USDT | +9.67% | $15,240,981.75 |
+| BEAMX/USDT:USDT | +6.33% | $2,467,256.24 |
+| PYTH/USDT:USDT | +5.95% | $3,619,470.19 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_1h_threshold | +1.27% | +1.26% |
-| BEAMX/USDT:USDT | below_1h_threshold | +1.13% | +1.11% |
-| AIN/USDT:USDT | below_1h_threshold | +0.89% | +0.87% |
-| RUNE/USDT:USDT | below_1h_threshold | +0.88% | +0.86% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.33% | +0.31% |
+| AIN/USDT:USDT | below_1h_threshold | +1.56% | +1.46% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.24% | +1.14% |
+| BEAMX/USDT:USDT | below_1h_threshold | +0.97% | +0.86% |
+| RUNE/USDT:USDT | below_1h_threshold | +0.68% | +0.58% |
+| BR/USDT:USDT | below_1h_threshold | +0.52% | +0.42% |
 
 ## 7. 次に見るべき不足
 
