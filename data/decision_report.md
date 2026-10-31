@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-31T11:36:30.958006+00:00
+- generated_at: 2026-10-31T11:41:33.440518+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17899**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-31T11:36:15.560712+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=77420.9
-- Funnel: target 1090 → liquid 151 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.2 >= 65=1
+- 更新: 2026-10-31T11:41:20.461539+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=77454.1
+- Funnel: target 1090 → liquid 151 → pre 50 → checked 49 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=1
+- Strict後reject: 4h RSI 78.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LSK/USDT:USDT | +42.75% | $8,544,094.40 |
-| AIN/USDT:USDT | +39.83% | $17,136,655.34 |
-| B/USDT:USDT | +14.01% | $1,379,722.56 |
-| STX/USDT:USDT | +10.62% | $1,237,582.68 |
-| MAGMA/USDT:USDT | +10.25% | $1,386,829.82 |
+| LSK/USDT:USDT | +39.80% | $8,716,840.40 |
+| AIN/USDT:USDT | +38.70% | $17,301,995.54 |
+| B/USDT:USDT | +13.92% | $1,388,114.21 |
+| MAGMA/USDT:USDT | +11.10% | $1,390,479.48 |
+| STX/USDT:USDT | +10.48% | $1,240,868.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_1h_threshold | +1.98% | +1.92% |
-| LAB/USDT:USDT | below_1h_threshold | +1.31% | +1.26% |
-| STX/USDT:USDT | below_1h_threshold | +1.26% | +1.20% |
-| PENDLE/USDT:USDT | below_1h_threshold | +1.13% | +1.08% |
-| VVV/USDT:USDT | below_1h_threshold | +0.79% | +0.73% |
+| BLESS/USDT:USDT | below_1h_threshold | +4.30% | +4.20% |
+| PENDLE/USDT:USDT | below_1h_threshold | +1.92% | +1.82% |
+| LAB/USDT:USDT | below_1h_threshold | +1.63% | +1.53% |
+| STX/USDT:USDT | below_1h_threshold | +1.09% | +0.99% |
+| SYRUP/USDT:USDT | below_1h_threshold | +0.90% | +0.80% |
 
 ## 7. 次に見るべき不足
 
