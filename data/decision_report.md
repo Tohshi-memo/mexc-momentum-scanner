@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-31T12:06:10.020651+00:00
+- generated_at: 2026-10-31T12:11:22.510140+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17899**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-31T12:06:01.203556+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=77537.2
+- 更新: 2026-10-31T12:11:09.494424+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=77567.8
 - Funnel: target 1089 → liquid 148 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LSK/USDT:USDT | +33.34% | $10,451,158.17 |
-| AIN/USDT:USDT | +30.76% | $17,881,583.94 |
-| B/USDT:USDT | +13.58% | $1,434,273.21 |
-| MAGMA/USDT:USDT | +11.59% | $1,324,893.63 |
-| BLESS/USDT:USDT | +10.18% | $13,126,428.73 |
+| LSK/USDT:USDT | +35.15% | $10,689,100.86 |
+| AIN/USDT:USDT | +31.72% | $17,983,511.86 |
+| B/USDT:USDT | +13.75% | $1,444,884.43 |
+| BLESS/USDT:USDT | +11.62% | $13,209,194.05 |
+| MAGMA/USDT:USDT | +10.62% | $1,328,319.70 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_1h_threshold | +2.40% | +2.45% |
-| MAGMA/USDT:USDT | below_1h_threshold | +0.90% | +0.95% |
-| LSK/USDT:USDT | below_1h_threshold | +0.86% | +0.91% |
-| LAB/USDT:USDT | below_1h_threshold | +0.51% | +0.57% |
-| SYRUP/USDT:USDT | below_1h_threshold | +0.44% | +0.50% |
+| BLESS/USDT:USDT | below_1h_threshold | +3.39% | +3.40% |
+| LSK/USDT:USDT | below_1h_threshold | +2.85% | +2.86% |
+| BR/USDT:USDT | below_1h_threshold | +0.95% | +0.96% |
+| LAB/USDT:USDT | below_1h_threshold | +0.72% | +0.73% |
+| SYRUP/USDT:USDT | below_1h_threshold | +0.63% | +0.65% |
 
 ## 7. 次に見るべき不足
 
