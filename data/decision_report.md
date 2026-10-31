@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-31T06:16:25.881686+00:00
+- generated_at: 2026-10-31T06:21:17.260066+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17894**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-31T06:16:13.005151+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=77277.3
+- 更新: 2026-10-31T06:21:08.670306+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=77241.2
 - Funnel: target 1090 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIN/USDT:USDT | +54.56% | $12,342,255.55 |
-| IDOL/USDT:USDT | +19.98% | $14,999,207.36 |
-| LSK/USDT:USDT | +7.64% | $5,183,795.65 |
-| PENDLE/USDT:USDT | +6.79% | $1,443,196.86 |
-| OP/USDT:USDT | +6.26% | $18,358,146.82 |
+| AIN/USDT:USDT | +57.06% | $12,433,515.99 |
+| IDOL/USDT:USDT | +17.87% | $15,017,597.02 |
+| PENDLE/USDT:USDT | +6.81% | $1,444,608.38 |
+| LSK/USDT:USDT | +6.67% | $5,191,871.13 |
+| OP/USDT:USDT | +6.45% | $18,442,665.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MAGMA/USDT:USDT | below_1h_threshold | +2.11% | +2.06% |
-| ENA/USDT:USDT | below_1h_threshold | +2.09% | +2.03% |
-| IDOL/USDT:USDT | below_1h_threshold | +1.81% | +1.75% |
-| BR/USDT:USDT | below_1h_threshold | +1.43% | +1.37% |
-| TIA/USDT:USDT | below_1h_threshold | +1.32% | +1.26% |
+| MAGMA/USDT:USDT | below_1h_threshold | +2.95% | +2.94% |
+| BR/USDT:USDT | below_1h_threshold | +2.07% | +2.06% |
+| ENA/USDT:USDT | below_1h_threshold | +2.00% | +1.99% |
+| TIA/USDT:USDT | below_1h_threshold | +1.30% | +1.29% |
+| EIGEN/USDT:USDT | below_1h_threshold | +1.19% | +1.18% |
 
 ## 7. 次に見るべき不足
 
