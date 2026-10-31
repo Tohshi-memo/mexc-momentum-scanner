@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-31T07:41:21.189554+00:00
+- generated_at: 2026-10-31T07:46:16.212293+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17896**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-31T07:41:09.131058+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=77315.2
-- Funnel: target 1090 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-31T07:46:03.186461+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=77292.8
+- Funnel: target 1090 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIN/USDT:USDT | +55.31% | $12,896,744.41 |
-| IDOL/USDT:USDT | +11.05% | $15,240,630.14 |
-| MAGMA/USDT:USDT | +8.46% | $1,689,801.58 |
-| PYTH/USDT:USDT | +6.17% | $3,687,456.11 |
-| PENDLE/USDT:USDT | +5.93% | $1,511,199.63 |
+| AIN/USDT:USDT | +57.32% | $12,955,751.80 |
+| IDOL/USDT:USDT | +12.22% | $15,254,602.25 |
+| MAGMA/USDT:USDT | +9.18% | $1,692,186.43 |
+| PYTH/USDT:USDT | +6.25% | $3,688,748.69 |
+| PENDLE/USDT:USDT | +5.94% | $1,513,195.86 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAMX/USDT:USDT | below_1h_threshold | +2.45% | +2.49% |
-| BR/USDT:USDT | below_1h_threshold | +1.33% | +1.38% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.35% | +0.39% |
-| MUU/USDT:USDT | below_1h_threshold | +0.24% | +0.29% |
-| ASTER/USDT:USDT | below_1h_threshold | +0.22% | +0.26% |
+| BEAMX/USDT:USDT | below_1h_threshold | +2.96% | +3.04% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.35% | +0.42% |
+| TIA/USDT:USDT | below_1h_threshold | +0.29% | +0.37% |
+| ASTER/USDT:USDT | below_1h_threshold | +0.29% | +0.37% |
+| MUU/USDT:USDT | below_1h_threshold | +0.24% | +0.32% |
 
 ## 7. 次に見るべき不足
 
