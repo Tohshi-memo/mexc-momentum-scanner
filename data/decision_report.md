@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-31T16:26:19.361625+00:00
+- generated_at: 2026-10-31T16:31:14.708318+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17907**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6068件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6069件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000272 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-31T16:26:06.549324+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=77591.0
-- Funnel: target 1089 → liquid 139 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-31T16:31:06.137237+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=77562.7
+- Funnel: target 1089 → liquid 140 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 76.5 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MAGMA/USDT:USDT | +3.27% | $1,145,595.27 |
-| LSK/USDT:USDT | +1.93% | $21,257,780.41 |
-| EDGE/USDT:USDT | +1.93% | $1,008,477.00 |
-| PYTH/USDT:USDT | +1.51% | $4,049,777.91 |
-| PUMPFUN/USDT:USDT | +1.43% | $8,572,423.42 |
+| MAGMA/USDT:USDT | +4.61% | $1,159,224.41 |
+| PYTH/USDT:USDT | +1.73% | $4,071,027.36 |
+| EDGE/USDT:USDT | +1.59% | $1,008,848.47 |
+| USELESS/USDT:USDT | +1.33% | $1,684,726.44 |
+| PUMPFUN/USDT:USDT | +1.31% | $8,584,281.86 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MAGMA/USDT:USDT | below_1h_threshold | +3.32% | +3.28% |
-| LSK/USDT:USDT | below_1h_threshold | +2.24% | +2.20% |
-| EDGE/USDT:USDT | below_1h_threshold | +1.94% | +1.90% |
-| PYTH/USDT:USDT | below_1h_threshold | +1.52% | +1.48% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.43% | +1.39% |
+| PYTH/USDT:USDT | below_1h_threshold | +1.73% | +1.73% |
+| EDGE/USDT:USDT | below_1h_threshold | +1.59% | +1.59% |
+| BIRB/USDT:USDT | below_1h_threshold | +1.37% | +1.36% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.34% | +1.33% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.32% | +1.31% |
 
 ## 7. 次に見るべき不足
 
