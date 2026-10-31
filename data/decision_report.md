@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-31T02:56:31.326696+00:00
+- generated_at: 2026-10-31T03:01:23.198006+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17880**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-31T02:56:14.979845+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=77407.7
-- Funnel: target 1090 → liquid 163 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 88.8 >= 65=1, 4h RSI 87.9 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-31T03:01:10.158575+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=77400.7
+- Funnel: target 1090 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIN/USDT:USDT | +48.79% | $7,182,121.27 |
-| IDOL/USDT:USDT | +25.75% | $14,509,577.19 |
-| SOPH/USDT:USDT | +20.08% | $1,396,886.32 |
-| LSK/USDT:USDT | +10.17% | $4,882,055.39 |
-| OP/USDT:USDT | +9.04% | $16,378,981.64 |
+| AIN/USDT:USDT | +48.57% | $7,240,162.07 |
+| IDOL/USDT:USDT | +24.22% | $14,446,208.49 |
+| SOPH/USDT:USDT | +20.48% | $1,386,331.20 |
+| LSK/USDT:USDT | +10.37% | $4,837,222.56 |
+| OP/USDT:USDT | +9.00% | $16,183,316.33 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JCT/USDT:USDT | below_1h_threshold | +2.51% | +2.44% |
-| XPL/USDT:USDT | below_1h_threshold | +1.00% | +0.94% |
-| ENA/USDT:USDT | below_1h_threshold | +0.90% | +0.84% |
-| PYTH/USDT:USDT | below_1h_threshold | +0.81% | +0.75% |
-| MUU/USDT:USDT | below_1h_threshold | +0.65% | +0.59% |
+| BTW/USDT:USDT | below_1h_threshold | +0.91% | +0.91% |
+| BLUR/USDT:USDT | below_1h_threshold | +0.30% | +0.30% |
+| AAVE/USDT:USDT | below_1h_threshold | +0.18% | +0.18% |
+| RAY/USDT:USDT | below_1h_threshold | +0.15% | +0.15% |
+| COINBASE/USDT:USDT | below_1h_threshold | +0.10% | +0.10% |
 
 ## 7. 次に見るべき不足
 
