@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-31T10:41:20.484397+00:00
+- generated_at: 2026-10-31T10:46:08.431454+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17897**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6055件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6056件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000264 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-31T10:41:07.576181+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=77462.1
-- Funnel: target 1090 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-31T10:45:59.361322+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=77455.5
+- Funnel: target 1090 → liquid 153 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 71.6 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIN/USDT:USDT | +63.38% | $15,149,444.93 |
-| LSK/USDT:USDT | +17.99% | $7,305,747.83 |
-| B/USDT:USDT | +15.47% | $1,355,554.60 |
-| STX/USDT:USDT | +9.84% | $1,070,867.82 |
-| MAGMA/USDT:USDT | +9.63% | $1,423,280.95 |
+| AIN/USDT:USDT | +57.37% | $15,326,516.39 |
+| LSK/USDT:USDT | +18.39% | $7,336,352.49 |
+| B/USDT:USDT | +15.64% | $1,372,879.32 |
+| STX/USDT:USDT | +9.49% | $1,071,195.22 |
+| MAGMA/USDT:USDT | +9.38% | $1,427,517.20 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LSK/USDT:USDT | below_1h_threshold | +4.69% | +4.65% |
-| BEAMX/USDT:USDT | below_1h_threshold | +3.38% | +3.35% |
-| B/USDT:USDT | below_1h_threshold | +2.13% | +2.09% |
-| STX/USDT:USDT | below_1h_threshold | +1.79% | +1.76% |
-| MAGMA/USDT:USDT | below_1h_threshold | +1.06% | +1.02% |
+| BEAMX/USDT:USDT | below_1h_threshold | +3.06% | +3.04% |
+| B/USDT:USDT | below_1h_threshold | +2.28% | +2.25% |
+| STX/USDT:USDT | below_1h_threshold | +1.53% | +1.50% |
+| RUNE/USDT:USDT | below_1h_threshold | +1.07% | +1.04% |
+| VVV/USDT:USDT | below_1h_threshold | +0.86% | +0.83% |
 
 ## 7. 次に見るべき不足
 
