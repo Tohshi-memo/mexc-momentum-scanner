@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-31T00:16:28.372875+00:00
+- generated_at: 2026-10-31T00:21:18.141447+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17870**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6032件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6033件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000235 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-31T00:16:13.693875+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=77330.0
-- Funnel: target 1090 → liquid 173 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.4 >= 65=1
+- 更新: 2026-10-31T00:21:06.605000+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=77324.7
+- Funnel: target 1090 → liquid 173 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 75.6 >= 65=1, 4h RSI 80.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOPH/USDT:USDT | +25.56% | $1,314,049.25 |
-| LSK/USDT:USDT | +16.81% | $3,742,074.61 |
-| IDOL/USDT:USDT | +16.41% | $13,588,928.70 |
-| OP/USDT:USDT | +11.20% | $14,539,584.44 |
-| PENDLE/USDT:USDT | +6.94% | $1,790,569.38 |
+| SOPH/USDT:USDT | +27.40% | $1,318,776.48 |
+| LSK/USDT:USDT | +18.61% | $3,848,483.21 |
+| IDOL/USDT:USDT | +16.51% | $13,641,725.87 |
+| AIN/USDT:USDT | +11.49% | $4,336,602.46 |
+| OP/USDT:USDT | +11.05% | $14,637,516.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| COINBASE/USDT:USDT | below_1h_threshold | +1.01% | +0.99% |
-| LINK/USDT:USDT | below_1h_threshold | +0.85% | +0.83% |
-| PENDLE/USDT:USDT | below_1h_threshold | +0.81% | +0.79% |
-| AAVE/USDT:USDT | below_1h_threshold | +0.74% | +0.72% |
-| AIN/USDT:USDT | below_1h_threshold | +0.69% | +0.67% |
+| SOPH/USDT:USDT | below_1h_threshold | +1.84% | +1.82% |
+| PYTH/USDT:USDT | below_1h_threshold | +1.05% | +1.04% |
+| LINK/USDT:USDT | below_1h_threshold | +1.02% | +1.01% |
+| COINBASE/USDT:USDT | below_1h_threshold | +1.01% | +1.00% |
+| CAKE/USDT:USDT | below_1h_threshold | +0.80% | +0.79% |
 
 ## 7. 次に見るべき不足
 
