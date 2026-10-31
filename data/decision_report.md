@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-31T18:01:23.268480+00:00
+- generated_at: 2026-10-31T18:06:22.232252+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17907**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-31T18:01:10.122064+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=77646.8
+- 更新: 2026-10-31T18:06:09.344960+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=77655.0
 - Funnel: target 1089 → liquid 133 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IDOL/USDT:USDT | +4.56% | $12,084,911.52 |
-| BEAT/USDT:USDT | +3.86% | $6,438,892.14 |
-| MORPHO/USDT:USDT | +3.40% | $1,176,866.72 |
-| MAGMA/USDT:USDT | +2.61% | $1,135,149.07 |
-| AKE/USDT:USDT | +2.54% | $12,254,279.23 |
+| IDOL/USDT:USDT | +4.19% | $12,109,912.50 |
+| MORPHO/USDT:USDT | +3.57% | $1,250,801.92 |
+| BEAT/USDT:USDT | +3.14% | $6,475,910.08 |
+| MAGMA/USDT:USDT | +2.68% | $1,135,819.53 |
+| STX/USDT:USDT | +2.53% | $3,368,647.79 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IDOL/USDT:USDT | below_1h_threshold | +0.73% | +0.75% |
-| EVAA/USDT:USDT | below_1h_threshold | +0.22% | +0.24% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.18% | +0.20% |
-| EIGEN/USDT:USDT | below_1h_threshold | +0.16% | +0.18% |
-| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +0.13% | +0.16% |
+| UAI/USDT:USDT | below_1h_threshold | +2.13% | +2.14% |
+| IDOL/USDT:USDT | below_1h_threshold | +0.37% | +0.39% |
+| STX/USDT:USDT | below_1h_threshold | +0.37% | +0.38% |
+| OP/USDT:USDT | below_1h_threshold | +0.30% | +0.31% |
+| OPENAI/USDT:USDT | below_1h_threshold | +0.23% | +0.24% |
 
 ## 7. 次に見るべき不足
 
