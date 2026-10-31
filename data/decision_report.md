@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-31T15:41:20.886475+00:00
+- generated_at: 2026-10-31T15:46:11.704037+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17906**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-31T15:41:08.447453+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.20% price=77537.6
+- 更新: 2026-10-31T15:46:03.391912+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.20% price=77541.2
 - Funnel: target 1089 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LSK/USDT:USDT | +42.96% | $20,139,125.60 |
-| AIN/USDT:USDT | +33.03% | $22,766,152.93 |
-| UAI/USDT:USDT | +18.03% | $1,273,309.28 |
-| RUNE/USDT:USDT | +13.18% | $1,951,991.87 |
-| STX/USDT:USDT | +11.67% | $3,030,262.15 |
+| LSK/USDT:USDT | +43.98% | $20,205,773.86 |
+| AIN/USDT:USDT | +35.65% | $22,834,684.91 |
+| UAI/USDT:USDT | +18.52% | $1,289,259.91 |
+| RUNE/USDT:USDT | +13.65% | $2,041,967.67 |
+| STX/USDT:USDT | +11.88% | $3,030,843.85 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZRO/USDT:USDT | below_1h_threshold | +3.20% | +3.00% |
-| MAGMA/USDT:USDT | below_1h_threshold | +3.07% | +2.87% |
-| INJ/USDT:USDT | below_1h_threshold | +2.86% | +2.66% |
-| LIT/USDT:USDT | below_1h_threshold | +2.61% | +2.41% |
-| VVV/USDT:USDT | below_1h_threshold | +2.46% | +2.26% |
+| INJ/USDT:USDT | below_1h_threshold | +3.49% | +3.28% |
+| MAGMA/USDT:USDT | below_1h_threshold | +3.08% | +2.87% |
+| VVV/USDT:USDT | below_1h_threshold | +2.94% | +2.74% |
+| ZRO/USDT:USDT | below_1h_threshold | +2.88% | +2.68% |
+| TIA/USDT:USDT | below_1h_threshold | +2.51% | +2.31% |
 
 ## 7. 次に見るべき不足
 
