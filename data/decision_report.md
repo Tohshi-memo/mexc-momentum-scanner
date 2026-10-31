@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-31T10:36:17.877423+00:00
+- generated_at: 2026-10-31T10:41:20.484397+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17897**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-31T10:36:04.944872+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=77485.1
+- 更新: 2026-10-31T10:41:07.576181+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=77462.1
 - Funnel: target 1090 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIN/USDT:USDT | +61.10% | $15,081,132.61 |
-| B/USDT:USDT | +15.39% | $1,344,073.24 |
-| LSK/USDT:USDT | +15.16% | $7,202,614.01 |
-| MAGMA/USDT:USDT | +9.03% | $1,417,321.40 |
-| STX/USDT:USDT | +8.82% | $1,058,223.25 |
+| AIN/USDT:USDT | +63.38% | $15,149,444.93 |
+| LSK/USDT:USDT | +17.99% | $7,305,747.83 |
+| B/USDT:USDT | +15.47% | $1,355,554.60 |
+| STX/USDT:USDT | +9.84% | $1,070,867.82 |
+| MAGMA/USDT:USDT | +9.63% | $1,423,280.95 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAMX/USDT:USDT | below_1h_threshold | +3.52% | +3.46% |
-| LSK/USDT:USDT | below_1h_threshold | +2.44% | +2.38% |
-| B/USDT:USDT | below_1h_threshold | +1.98% | +1.91% |
-| STX/USDT:USDT | below_1h_threshold | +0.91% | +0.85% |
-| NICKEL/USDT:USDT | below_1h_threshold | +0.82% | +0.76% |
+| LSK/USDT:USDT | below_1h_threshold | +4.69% | +4.65% |
+| BEAMX/USDT:USDT | below_1h_threshold | +3.38% | +3.35% |
+| B/USDT:USDT | below_1h_threshold | +2.13% | +2.09% |
+| STX/USDT:USDT | below_1h_threshold | +1.79% | +1.76% |
+| MAGMA/USDT:USDT | below_1h_threshold | +1.06% | +1.02% |
 
 ## 7. 次に見るべき不足
 
