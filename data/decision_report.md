@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-31T17:26:14.945409+00:00
+- generated_at: 2026-10-31T17:31:24.801688+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17907**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6071件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6072件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000272 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-31T17:26:04.448515+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=77594.5
-- Funnel: target 1089 → liquid 137 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-10-31T17:31:09.779546+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=77533.8
+- Funnel: target 1089 → liquid 137 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| B/USDT:USDT | +2.78% | $1,767,114.23 |
-| MAGMA/USDT:USDT | +2.16% | $1,177,754.60 |
-| LIT/USDT:USDT | +1.68% | $3,709,842.35 |
-| BIRB/USDT:USDT | +1.66% | $1,369,224.43 |
-| BEAT/USDT:USDT | +1.66% | $6,480,015.26 |
+| Q/USDT:USDT | +2.83% | $10,764,885.52 |
+| B/USDT:USDT | +2.47% | $1,771,208.35 |
+| BEAT/USDT:USDT | +2.28% | $6,489,848.45 |
+| MAGMA/USDT:USDT | +2.02% | $1,180,237.23 |
+| BIRB/USDT:USDT | +1.63% | $1,370,597.58 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| Q/USDT:USDT | below_1h_threshold | +3.54% | +3.52% |
-| MAGMA/USDT:USDT | below_1h_threshold | +1.63% | +1.61% |
-| BLESS/USDT:USDT | below_1h_threshold | +1.49% | +1.47% |
-| BIRB/USDT:USDT | below_1h_threshold | +0.62% | +0.60% |
-| ASTER/USDT:USDT | below_1h_threshold | +0.58% | +0.56% |
+| MAGMA/USDT:USDT | below_1h_threshold | +1.46% | +1.52% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.13% | +1.19% |
+| BIRB/USDT:USDT | below_1h_threshold | +0.59% | +0.65% |
+| OPENAI/USDT:USDT | below_1h_threshold | +0.58% | +0.64% |
+| ASTER/USDT:USDT | below_1h_threshold | +0.33% | +0.38% |
 
 ## 7. 次に見るべき不足
 
