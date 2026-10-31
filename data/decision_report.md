@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-31T01:56:10.702626+00:00
+- generated_at: 2026-10-31T02:01:13.224699+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17875**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-31T01:56:02.062096+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.20% price=77365.0
-- Funnel: target 1090 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-31T02:01:03.939409+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=77336.7
+- Funnel: target 1090 → liquid 163 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIN/USDT:USDT | +25.96% | $5,664,511.65 |
-| SOPH/USDT:USDT | +21.86% | $1,368,811.30 |
-| IDOL/USDT:USDT | +16.84% | $14,236,338.79 |
-| OP/USDT:USDT | +12.37% | $15,571,717.42 |
-| LSK/USDT:USDT | +8.84% | $4,874,460.12 |
+| AIN/USDT:USDT | +30.05% | $5,697,373.90 |
+| SOPH/USDT:USDT | +20.83% | $1,362,295.06 |
+| IDOL/USDT:USDT | +18.15% | $14,226,946.72 |
+| OP/USDT:USDT | +11.40% | $15,413,857.40 |
+| LSK/USDT:USDT | +9.99% | $4,758,157.42 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIN/USDT:USDT | below_1h_threshold | +3.86% | +4.06% |
-| IRYS/USDT:USDT | below_1h_threshold | +1.83% | +2.03% |
-| OP/USDT:USDT | below_1h_threshold | +1.19% | +1.39% |
-| MUU/USDT:USDT | below_1h_threshold | +1.15% | +1.35% |
-| RUNE/USDT:USDT | below_1h_threshold | +0.99% | +1.19% |
+| MUU/USDT:USDT | below_1h_threshold | +0.65% | +0.68% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +0.45% | +0.48% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.16% | +0.19% |
+| CC/USDT:USDT | below_1h_threshold | +0.11% | +0.14% |
+| XPL/USDT:USDT | below_1h_threshold | +0.11% | +0.14% |
 
 ## 7. 次に見るべき不足
 
