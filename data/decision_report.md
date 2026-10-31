@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-31T20:21:18.433194+00:00
+- generated_at: 2026-10-31T20:26:28.041895+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17911**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-31T20:21:07.964774+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=77589.9
+- 更新: 2026-10-31T20:26:15.024098+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=77554.9
 - Funnel: target 1089 → liquid 124 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +11.10% | $3,176,940.49 |
-| LIT/USDT:USDT | +6.25% | $5,925,158.71 |
-| MORPHO/USDT:USDT | +3.40% | $2,171,164.22 |
-| STX/USDT:USDT | +2.82% | $4,656,881.21 |
-| LINK/USDT:USDT | +2.79% | $136,936,581.66 |
+| EVAA/USDT:USDT | +11.17% | $3,225,050.11 |
+| LIT/USDT:USDT | +6.75% | $6,121,045.92 |
+| BIRB/USDT:USDT | +3.28% | $1,030,279.75 |
+| MORPHO/USDT:USDT | +2.97% | $2,176,240.60 |
+| LINK/USDT:USDT | +2.71% | $137,867,355.68 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| USELESS/USDT:USDT | below_1h_threshold | +1.11% | +1.04% |
-| LIT/USDT:USDT | below_1h_threshold | +0.88% | +0.81% |
-| BIRB/USDT:USDT | below_1h_threshold | +0.85% | +0.78% |
-| PONS/USDT:USDT | below_1h_threshold | +0.75% | +0.68% |
-| MAGMA/USDT:USDT | below_1h_threshold | +0.61% | +0.55% |
+| BIRB/USDT:USDT | below_1h_threshold | +2.13% | +2.11% |
+| LIT/USDT:USDT | below_1h_threshold | +1.43% | +1.41% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.19% | +1.17% |
+| PONS/USDT:USDT | below_1h_threshold | +0.75% | +0.73% |
+| MAGMA/USDT:USDT | below_1h_threshold | +0.70% | +0.68% |
 
 ## 7. 次に見るべき不足
 
