@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-31T16:01:21.862332+00:00
+- generated_at: 2026-10-31T16:06:07.927146+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17907**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-31T16:01:10.003435+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=77537.5
-- Funnel: target 1089 → liquid 138 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-10-31T16:05:59.054874+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=77581.4
+- Funnel: target 1089 → liquid 139 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LSK/USDT:USDT | +1.18% | $20,311,775.81 |
-| IRYS/USDT:USDT | +0.39% | $1,153,255.88 |
-| BEAT/USDT:USDT | +0.38% | $6,202,089.15 |
-| BIRB/USDT:USDT | +0.35% | $1,796,976.05 |
-| BTW/USDT:USDT | +0.26% | $7,664,698.68 |
+| MAGMA/USDT:USDT | +2.36% | $1,100,209.38 |
+| USELESS/USDT:USDT | +1.69% | $1,648,823.57 |
+| IRYS/USDT:USDT | +1.43% | $1,162,683.51 |
+| PUMPFUN/USDT:USDT | +1.41% | $7,955,120.55 |
+| BIRB/USDT:USDT | +0.91% | $1,799,212.88 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LSK/USDT:USDT | below_1h_threshold | +1.24% | +1.27% |
-| PARTI/USDT:USDT | below_1h_threshold | +0.47% | +0.50% |
-| IRYS/USDT:USDT | below_1h_threshold | +0.39% | +0.42% |
-| BIRB/USDT:USDT | below_1h_threshold | +0.39% | +0.42% |
-| BEAT/USDT:USDT | below_1h_threshold | +0.30% | +0.33% |
+| MAGMA/USDT:USDT | below_1h_threshold | +2.37% | +2.35% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.69% | +1.66% |
+| IRYS/USDT:USDT | below_1h_threshold | +1.44% | +1.41% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.43% | +1.41% |
+| BIRB/USDT:USDT | below_1h_threshold | +1.15% | +1.12% |
 
 ## 7. 次に見るべき不足
 
