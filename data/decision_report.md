@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-31T13:56:29.728944+00:00
+- generated_at: 2026-10-31T14:01:20.241230+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17903**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-31T13:56:14.195246+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=77487.6
-- Funnel: target 1089 → liquid 151 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-10-31T14:01:09.767796+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=77471.8
+- Funnel: target 1089 → liquid 143 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LSK/USDT:USDT | +47.66% | $15,473,791.48 |
-| AIN/USDT:USDT | +23.37% | $21,328,709.65 |
-| UAI/USDT:USDT | +17.54% | $1,082,361.80 |
-| B/USDT:USDT | +11.95% | $1,579,768.20 |
-| STX/USDT:USDT | +11.60% | $2,804,380.29 |
+| LSK/USDT:USDT | +44.68% | $15,689,475.83 |
+| AIN/USDT:USDT | +29.03% | $21,324,387.94 |
+| UAI/USDT:USDT | +16.94% | $1,074,030.17 |
+| B/USDT:USDT | +12.29% | $1,567,079.11 |
+| STX/USDT:USDT | +11.00% | $2,797,303.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIN/USDT:USDT | below_1h_threshold | +4.99% | +5.02% |
-| UAI/USDT:USDT | below_1h_threshold | +4.77% | +4.79% |
-| BLESS/USDT:USDT | below_1h_threshold | +3.11% | +3.14% |
-| IRYS/USDT:USDT | below_1h_threshold | +2.19% | +2.22% |
-| BR/USDT:USDT | below_1h_threshold | +1.61% | +1.63% |
+| BLESS/USDT:USDT | below_1h_threshold | +0.54% | +0.55% |
+| AIN/USDT:USDT | below_1h_threshold | +0.35% | +0.36% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.35% | +0.35% |
+| LSK/USDT:USDT | below_1h_threshold | +0.23% | +0.24% |
+| STX/USDT:USDT | below_1h_threshold | +0.19% | +0.20% |
 
 ## 7. 次に見るべき不足
 
