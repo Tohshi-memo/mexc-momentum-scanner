@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-10-31T00:06:40.920715+00:00
+- generated_at: 2026-10-31T00:11:26.148841+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17869**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-10-31T00:06:27.341930+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=77258.1
+- 更新: 2026-10-31T00:11:15.261830+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=77255.2
 - Funnel: target 1090 → liquid 173 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.4 >= 65=1
+- Strict後reject: 4h RSI 72.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOPH/USDT:USDT | +25.10% | $1,309,545.23 |
-| IDOL/USDT:USDT | +18.34% | $13,522,872.96 |
-| OP/USDT:USDT | +11.79% | $14,119,026.91 |
-| LSK/USDT:USDT | +10.23% | $3,545,991.44 |
-| PYTH/USDT:USDT | +7.05% | $3,525,176.54 |
+| SOPH/USDT:USDT | +26.02% | $1,312,805.36 |
+| IDOL/USDT:USDT | +16.88% | $13,559,664.65 |
+| LSK/USDT:USDT | +13.62% | $3,619,777.23 |
+| OP/USDT:USDT | +10.29% | $14,295,971.03 |
+| PYTH/USDT:USDT | +6.76% | $3,525,810.93 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
 | COINBASE/USDT:USDT | below_1h_threshold | +1.01% | +1.09% |
-| PENDLE/USDT:USDT | below_1h_threshold | +0.81% | +0.88% |
-| OP/USDT:USDT | below_1h_threshold | +0.80% | +0.87% |
-| Q/USDT:USDT | below_1h_threshold | +0.79% | +0.86% |
-| PYTH/USDT:USDT | below_1h_threshold | +0.63% | +0.70% |
+| RENDER/USDT:USDT | below_1h_threshold | +0.63% | +0.70% |
+| PENDLE/USDT:USDT | below_1h_threshold | +0.55% | +0.62% |
+| AAVE/USDT:USDT | below_1h_threshold | +0.54% | +0.62% |
+| Q/USDT:USDT | below_1h_threshold | +0.53% | +0.60% |
 
 ## 7. 次に見るべき不足
 
