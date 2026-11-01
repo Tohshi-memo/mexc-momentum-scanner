@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-01T07:01:08.606568+00:00
+- generated_at: 2026-11-01T07:06:25.483391+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17938**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6100件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6101件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000447 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-01T07:01:00.570206+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=77952.4
-- Funnel: target 1089 → liquid 114 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-01T07:06:12.185666+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=77938.8
+- Funnel: target 1089 → liquid 115 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 79.7 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +21.98% | $1,941,280.68 |
-| JCT/USDT:USDT | +17.06% | $1,490,279.50 |
-| AIN/USDT:USDT | +15.48% | $19,660,370.00 |
-| POWR/USDT:USDT | +11.34% | $2,592,187.60 |
-| ZAMA/USDT:USDT | +11.27% | $1,279,225.02 |
+| ESPORTS/USDT:USDT | +25.40% | $1,958,576.33 |
+| BEAMX/USDT:USDT | +22.13% | $1,071,259.81 |
+| AIN/USDT:USDT | +16.67% | $19,729,791.02 |
+| EVAA/USDT:USDT | +14.60% | $5,282,846.13 |
+| JCT/USDT:USDT | +13.86% | $1,499,588.73 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNXX/USDT:USDT | below_1h_threshold | +0.58% | +0.60% |
-| KORU/USDT:USDT | below_1h_threshold | +0.56% | +0.59% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.51% | +0.54% |
-| PGSTOCK/USDT:USDT | below_1h_threshold | +0.48% | +0.51% |
-| AIN/USDT:USDT | below_1h_threshold | +0.42% | +0.45% |
+| EVAA/USDT:USDT | below_1h_threshold | +4.55% | +4.60% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +3.03% | +3.07% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.30% | +2.35% |
+| AIN/USDT:USDT | below_1h_threshold | +1.47% | +1.52% |
+| SNXX/USDT:USDT | below_1h_threshold | +0.58% | +0.62% |
 
 ## 7. 次に見るべき不足
 
