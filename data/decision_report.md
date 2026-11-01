@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-01T03:56:38.430171+00:00
+- generated_at: 2026-11-01T04:01:15.833711+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17930**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-01T03:56:21.106904+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=77785.3
-- Funnel: target 1089 → liquid 119 → pre 50 → checked 50 → surge 5 → strict 1
-- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.9 >= 65=1, 4h RSI 76.9 >= 65=1, 4h RSI 85.8 >= 65=1, 4h RSI 79.0 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-01T04:01:05.297924+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=77753.1
+- Funnel: target 1089 → liquid 115 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +32.75% | $1,472,690.67 |
-| POWR/USDT:USDT | +18.52% | $1,836,760.94 |
-| IDOL/USDT:USDT | +18.00% | $5,145,943.98 |
-| AIN/USDT:USDT | +17.94% | $23,489,684.50 |
-| LIT/USDT:USDT | +8.40% | $16,786,819.47 |
+| ESPORTS/USDT:USDT | +32.72% | $1,495,467.66 |
+| POWR/USDT:USDT | +16.28% | $2,134,887.15 |
+| AIN/USDT:USDT | +15.19% | $22,010,621.08 |
+| IDOL/USDT:USDT | +14.94% | $4,918,297.54 |
+| MAGMA/USDT:USDT | +9.08% | $1,484,654.84 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EVAA/USDT:USDT | below_1h_threshold | +4.96% | +4.84% |
-| UAI/USDT:USDT | below_1h_threshold | +4.69% | +4.56% |
-| PONS/USDT:USDT | below_1h_threshold | +2.89% | +2.77% |
-| ZRO/USDT:USDT | below_1h_threshold | +2.22% | +2.09% |
-| AVAX/USDT:USDT | below_1h_threshold | +1.72% | +1.60% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +0.77% | +0.77% |
+| EVAA/USDT:USDT | below_1h_threshold | +0.65% | +0.65% |
+| SNXX/USDT:USDT | below_1h_threshold | +0.59% | +0.59% |
+| IDOL/USDT:USDT | below_1h_threshold | +0.40% | +0.40% |
+| SOXL/USDT:USDT | below_1h_threshold | +0.39% | +0.39% |
 
 ## 7. 次に見るべき不足
 
