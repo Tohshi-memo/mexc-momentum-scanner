@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-01T18:01:14.559101+00:00
+- generated_at: 2026-11-01T18:06:21.220031+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17988**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-01T18:01:04.638369+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=77948.7
-- Funnel: target 1088 → liquid 116 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-11-01T18:06:08.276272+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=77946.0
+- Funnel: target 1088 → liquid 117 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +25.46% | $7,819,177.39 |
-| IDOL/USDT:USDT | +15.43% | $8,787,715.28 |
-| BEAMX/USDT:USDT | +7.20% | $2,618,132.76 |
-| AIN/USDT:USDT | +6.93% | $13,776,746.79 |
-| RT/USDT:USDT | +3.67% | $1,461,065.05 |
+| ESPORTS/USDT:USDT | +28.46% | $7,869,140.66 |
+| IDOL/USDT:USDT | +15.90% | $8,827,102.44 |
+| BEAMX/USDT:USDT | +8.66% | $2,636,076.09 |
+| RT/USDT:USDT | +4.30% | $1,463,362.76 |
+| AIN/USDT:USDT | +4.15% | $13,920,488.18 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIN/USDT:USDT | below_1h_threshold | +1.28% | +1.28% |
-| BEAMX/USDT:USDT | below_1h_threshold | +0.62% | +0.62% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.31% | +0.31% |
-| MAGMA/USDT:USDT | below_1h_threshold | +0.24% | +0.24% |
-| WLFI/USDT:USDT | below_1h_threshold | +0.04% | +0.04% |
+| BEAMX/USDT:USDT | below_1h_threshold | +1.42% | +1.43% |
+| NIULAI/USDT:USDT | below_1h_threshold | +1.39% | +1.39% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +0.90% | +0.90% |
+| MAGMA/USDT:USDT | below_1h_threshold | +0.67% | +0.67% |
+| RT/USDT:USDT | below_1h_threshold | +0.39% | +0.40% |
 
 ## 7. 次に見るべき不足
 
