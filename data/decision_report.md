@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-01T01:26:19.562912+00:00
+- generated_at: 2026-11-01T01:31:17.744827+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17919**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-01T01:26:06.591764+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=77673.6
+- 更新: 2026-11-01T01:31:09.806589+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=77635.0
 - Funnel: target 1089 → liquid 117 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GANG/USDT:USDT | +20.75% | $1,098,638.34 |
-| LIT/USDT:USDT | +7.95% | $14,884,275.19 |
-| AIOT/USDT:USDT | +7.52% | $1,039,726.57 |
-| IDOL/USDT:USDT | +5.69% | $5,442,510.69 |
-| MAGMA/USDT:USDT | +4.59% | $1,377,200.99 |
+| GANG/USDT:USDT | +22.52% | $1,101,509.91 |
+| LIT/USDT:USDT | +7.86% | $15,135,679.41 |
+| AIOT/USDT:USDT | +6.94% | $1,043,239.13 |
+| MAGMA/USDT:USDT | +5.08% | $1,381,111.46 |
+| IDOL/USDT:USDT | +4.45% | $5,453,630.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PONS/USDT:USDT | below_1h_threshold | +1.63% | +1.59% |
-| ZRO/USDT:USDT | below_1h_threshold | +1.50% | +1.46% |
-| BEAMX/USDT:USDT | below_1h_threshold | +1.01% | +0.97% |
-| USELESS/USDT:USDT | below_1h_threshold | +0.82% | +0.78% |
-| LIT/USDT:USDT | below_1h_threshold | +0.79% | +0.75% |
+| PONS/USDT:USDT | below_1h_threshold | +1.07% | +1.08% |
+| ZRO/USDT:USDT | below_1h_threshold | +1.00% | +1.01% |
+| LIT/USDT:USDT | below_1h_threshold | +0.71% | +0.72% |
+| EVAA/USDT:USDT | below_1h_threshold | +0.68% | +0.69% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +0.55% | +0.56% |
 
 ## 7. 次に見るべき不足
 
