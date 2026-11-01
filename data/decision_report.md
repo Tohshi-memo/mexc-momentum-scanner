@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-01T00:41:24.009329+00:00
+- generated_at: 2026-11-01T00:46:26.498473+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17916**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6076件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6077件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000376 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-01T00:41:10.722892+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=77592.5
-- Funnel: target 1089 → liquid 120 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-01T00:46:11.426510+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=77588.2
+- Funnel: target 1089 → liquid 120 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GANG/USDT:USDT | +21.18% | $1,057,286.56 |
-| MAGMA/USDT:USDT | +9.10% | $1,257,472.36 |
-| LIT/USDT:USDT | +6.73% | $14,403,524.22 |
-| IDOL/USDT:USDT | +4.48% | $5,836,428.64 |
-| BEAT/USDT:USDT | +3.00% | $7,007,243.76 |
+| GANG/USDT:USDT | +26.16% | $1,070,146.15 |
+| MAGMA/USDT:USDT | +8.44% | $1,271,868.92 |
+| LIT/USDT:USDT | +7.09% | $14,455,969.21 |
+| IDOL/USDT:USDT | +4.17% | $5,840,477.12 |
+| BEAT/USDT:USDT | +3.55% | $7,038,583.14 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GANG/USDT:USDT | below_1h_threshold | +4.83% | +4.74% |
-| MAGMA/USDT:USDT | below_1h_threshold | +3.99% | +3.90% |
-| IDOL/USDT:USDT | below_1h_threshold | +3.62% | +3.53% |
-| NIL/USDT:USDT | below_1h_threshold | +1.32% | +1.23% |
-| PEPE/USDT:USDT | below_1h_threshold | +1.28% | +1.19% |
+| IDOL/USDT:USDT | below_1h_threshold | +3.52% | +3.44% |
+| MAGMA/USDT:USDT | below_1h_threshold | +2.90% | +2.82% |
+| PEPE/USDT:USDT | below_1h_threshold | +1.46% | +1.37% |
+| VVV/USDT:USDT | below_1h_threshold | +1.08% | +0.99% |
+| XMR/USDT:USDT | below_1h_threshold | +0.91% | +0.83% |
 
 ## 7. 次に見るべき不足
 
