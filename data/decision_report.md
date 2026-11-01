@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-01T09:31:23.611331+00:00
+- generated_at: 2026-11-01T09:36:28.725019+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17952**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6113件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6114件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000359 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-01T09:31:10.382758+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.33% price=77955.7
-- Funnel: target 1089 → liquid 119 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.6 >= 65=1
+- 更新: 2026-11-01T09:36:12.623607+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.37% price=77929.9
+- Funnel: target 1089 → liquid 119 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +48.87% | $2,571,753.24 |
-| GANG/USDT:USDT | +18.88% | $1,061,285.29 |
-| G/USDT:USDT | +18.20% | $1,173,894.74 |
-| POWR/USDT:USDT | +16.40% | $3,384,027.24 |
-| AIN/USDT:USDT | +15.59% | $19,323,134.91 |
+| ESPORTS/USDT:USDT | +48.44% | $2,586,528.33 |
+| GANG/USDT:USDT | +21.18% | $1,062,896.61 |
+| G/USDT:USDT | +18.44% | $1,180,391.19 |
+| POWR/USDT:USDT | +18.14% | $3,402,614.21 |
+| AIN/USDT:USDT | +15.68% | $19,368,665.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +1.80% | +2.13% |
-| AIOT/USDT:USDT | below_1h_threshold | +1.71% | +2.05% |
-| LIT/USDT:USDT | below_1h_threshold | +1.67% | +2.00% |
-| GANG/USDT:USDT | below_1h_threshold | +1.40% | +1.74% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.38% | +1.71% |
+| GANG/USDT:USDT | below_1h_threshold | +2.69% | +3.05% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.67% | +2.03% |
+| LIT/USDT:USDT | below_1h_threshold | +1.63% | +2.00% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +1.49% | +1.86% |
+| AIOT/USDT:USDT | below_1h_threshold | +1.30% | +1.67% |
 
 ## 7. 次に見るべき不足
 
