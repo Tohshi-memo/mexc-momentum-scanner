@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-01T08:26:16.760742+00:00
+- generated_at: 2026-11-01T08:31:28.804774+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17945**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6108件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6109件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000268 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-01T08:26:06.845153+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=77957.0
-- Funnel: target 1089 → liquid 117 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-01T08:31:13.939965+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=78005.7
+- Funnel: target 1089 → liquid 117 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +44.53% | $2,332,245.15 |
-| JCT/USDT:USDT | +20.41% | $2,122,640.08 |
-| AIN/USDT:USDT | +16.31% | $19,428,086.46 |
-| BEAMX/USDT:USDT | +13.47% | $1,644,605.76 |
-| EVAA/USDT:USDT | +10.88% | $7,574,031.78 |
+| ESPORTS/USDT:USDT | +45.28% | $2,360,615.97 |
+| JCT/USDT:USDT | +18.38% | $2,150,841.19 |
+| AIN/USDT:USDT | +16.43% | $19,467,819.45 |
+| BEAMX/USDT:USDT | +13.53% | $1,667,823.81 |
+| POWR/USDT:USDT | +12.10% | $3,049,784.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GANG/USDT:USDT | below_1h_threshold | +4.37% | +4.33% |
-| AIN/USDT:USDT | below_1h_threshold | +2.65% | +2.61% |
-| BEAT/USDT:USDT | below_1h_threshold | +0.88% | +0.84% |
-| JCT/USDT:USDT | below_1h_threshold | +0.73% | +0.70% |
-| USELESS/USDT:USDT | below_1h_threshold | +0.49% | +0.45% |
+| AIN/USDT:USDT | below_1h_threshold | +2.76% | +2.66% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.69% | +1.59% |
+| POWR/USDT:USDT | below_1h_threshold | +1.24% | +1.14% |
+| MORPHO/USDT:USDT | below_1h_threshold | +0.62% | +0.52% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +0.47% | +0.37% |
 
 ## 7. 次に見るべき不足
 
