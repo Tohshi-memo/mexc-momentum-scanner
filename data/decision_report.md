@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-01T04:36:23.803080+00:00
+- generated_at: 2026-11-01T04:41:30.653220+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17934**
 
@@ -63,38 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6096件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6097件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000451 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-01T04:36:11.213940+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=77784.1
-- Funnel: target 1089 → liquid 117 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-01T04:41:13.445171+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=77783.8
+- Funnel: target 1089 → liquid 117 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +27.34% | $1,697,156.63 |
-| AIN/USDT:USDT | +20.26% | $22,455,727.87 |
-| GANG/USDT:USDT | +15.96% | $1,094,290.61 |
-| POWR/USDT:USDT | +15.51% | $2,261,986.99 |
-| ZAMA/USDT:USDT | +10.24% | $1,055,753.04 |
+| ESPORTS/USDT:USDT | +26.58% | $1,703,139.95 |
+| AIN/USDT:USDT | +20.50% | $22,523,178.38 |
+| POWR/USDT:USDT | +15.73% | $2,272,389.71 |
+| GANG/USDT:USDT | +14.16% | $1,096,290.67 |
+| ZAMA/USDT:USDT | +11.67% | $1,068,139.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIN/USDT:USDT | below_1h_threshold | +4.14% | +4.10% |
-| EVAA/USDT:USDT | below_1h_threshold | +3.60% | +3.56% |
-| ZAMA/USDT:USDT | below_1h_threshold | +3.46% | +3.42% |
-| USELESS/USDT:USDT | below_1h_threshold | +1.65% | +1.61% |
-| NIL/USDT:USDT | below_1h_threshold | +1.23% | +1.19% |
+| ZAMA/USDT:USDT | below_1h_threshold | +4.59% | +4.55% |
+| AIN/USDT:USDT | below_1h_threshold | +4.35% | +4.31% |
+| EVAA/USDT:USDT | below_1h_threshold | +3.42% | +3.38% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.82% | +1.78% |
+| AVAX/USDT:USDT | below_1h_threshold | +0.83% | +0.79% |
 
 ## 7. 次に見るべき不足
 
