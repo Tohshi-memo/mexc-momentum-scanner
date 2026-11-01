@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-01T09:36:28.725019+00:00
+- generated_at: 2026-11-01T09:41:25.695447+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17952**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-01T09:36:12.623607+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.37% price=77929.9
+- 更新: 2026-11-01T09:41:09.810795+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.27% price=78003.8
 - Funnel: target 1089 → liquid 119 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.1 >= 65=1
+- Strict後reject: 4h RSI 71.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +48.44% | $2,586,528.33 |
-| GANG/USDT:USDT | +21.18% | $1,062,896.61 |
-| G/USDT:USDT | +18.44% | $1,180,391.19 |
-| POWR/USDT:USDT | +18.14% | $3,402,614.21 |
-| AIN/USDT:USDT | +15.68% | $19,368,665.72 |
+| ESPORTS/USDT:USDT | +47.57% | $2,605,166.90 |
+| G/USDT:USDT | +17.31% | $1,194,694.35 |
+| POWR/USDT:USDT | +17.04% | $3,419,049.57 |
+| GANG/USDT:USDT | +16.64% | $1,066,241.70 |
+| AIN/USDT:USDT | +15.80% | $19,397,549.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GANG/USDT:USDT | below_1h_threshold | +2.69% | +3.05% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.67% | +2.03% |
-| LIT/USDT:USDT | below_1h_threshold | +1.63% | +2.00% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +1.49% | +1.86% |
-| AIOT/USDT:USDT | below_1h_threshold | +1.30% | +1.67% |
+| LIT/USDT:USDT | below_1h_threshold | +1.80% | +2.08% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.73% | +2.01% |
+| AIOT/USDT:USDT | below_1h_threshold | +1.50% | +1.78% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.15% | +1.43% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +0.80% | +1.07% |
 
 ## 7. 次に見るべき不足
 
