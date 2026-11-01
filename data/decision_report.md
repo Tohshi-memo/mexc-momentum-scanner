@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-01T16:01:14.415114+00:00
+- generated_at: 2026-11-01T16:06:15.420730+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17976**
 
@@ -70,30 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-01T16:01:04.983277+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=77976.6
-- Funnel: target 1088 → liquid 117 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-01T16:06:06.182241+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=77991.9
+- Funnel: target 1088 → liquid 117 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 79.9 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +1.12% | $5,892,998.48 |
-| IDOL/USDT:USDT | +0.75% | $7,975,734.31 |
-| RT/USDT:USDT | +0.70% | $1,298,162.85 |
-| G/USDT:USDT | +0.27% | $1,727,474.91 |
-| LIT/USDT:USDT | +0.24% | $29,649,362.38 |
+| RT/USDT:USDT | +5.15% | $1,304,310.99 |
+| IDOL/USDT:USDT | +3.44% | $8,070,337.24 |
+| ESPORTS/USDT:USDT | +1.52% | $5,944,098.67 |
+| BEAMX/USDT:USDT | +1.01% | $2,417,908.74 |
+| BLESS/USDT:USDT | +0.99% | $5,986,407.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +1.19% | +1.16% |
-| IDOL/USDT:USDT | below_1h_threshold | +0.76% | +0.72% |
-| RT/USDT:USDT | below_1h_threshold | +0.70% | +0.67% |
-| BEAMX/USDT:USDT | below_1h_threshold | +0.37% | +0.33% |
-| LIT/USDT:USDT | below_1h_threshold | +0.29% | +0.26% |
+| IDOL/USDT:USDT | below_1h_threshold | +3.45% | +3.39% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +1.68% | +1.63% |
+| BEAMX/USDT:USDT | below_1h_threshold | +1.03% | +0.98% |
+| JCT/USDT:USDT | below_1h_threshold | +0.98% | +0.93% |
+| BLESS/USDT:USDT | below_1h_threshold | +0.84% | +0.78% |
 
 ## 7. 次に見るべき不足
 
