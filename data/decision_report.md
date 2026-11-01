@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-11-01T10:51:23.759874+00:00
+- generated_at: 2026-11-01T10:56:25.728753+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **17956**
+- closed shadow trades: **17957**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=17956, expectancy=+0.02%
+- 全期間 MARKET基準: n=17957, expectancy=+0.02%
 - 直近20件 MARKET基準: n=20, expectancy=-0.99%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -35,7 +35,7 @@
 | LIMIT_1PCT_LONG | 15/20 | 75.0% | +3.02% | **+2.26%** |
 | LIMIT_10PCT_LONG | 2/20 | 10.0% | +5.11% | **+0.51%** |
 | LIMIT_9PCT_LONG | 3/20 | 15.0% | +3.40% | **+0.51%** |
-| LIMIT_2PCT_LONG | 7/20 | 35.0% | -0.84% | **-0.29%** |
+| LIMIT_FIB1272_LONG | 5/20 | 25.0% | -1.12% | **-0.28%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,485.74** / 初期 $100.00 (+1385.74%)
-- 確定: 6822件 (Win 1976 / Loss 2188 / Flat 2658) / skip 7695件
+- 確定: 6822件 (Win 1976 / Loss 2188 / Flat 2658) / skip 7696件
 - 成長率目線: 平均log +0.000396 / 幾何平均 +0.040% per trade / maxDD +8.46%
 - 次の候補: `MARKET_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: ESPORTS/USDT:USDT `LIMIT_BB3S` EXPIRED account +0.00% 残高後 $1,485.74
@@ -55,7 +55,7 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$370.19** / 初期 $100.00 (+270.19%)
-- 確定: 4419件 (Win 1185 / Loss 983 / Flat 2251) / skip 6948件
+- 確定: 4419件 (Win 1185 / Loss 983 / Flat 2251) / skip 6949件
 - 成長率目線: 平均log +0.000296 / 幾何平均 +0.030% per trade / maxDD +4.13%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: ESPORTS/USDT:USDT `LIMIT_6PCT` EXPIRED account +0.00% 残高後 $370.19
@@ -65,37 +65,37 @@
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
 - 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6119件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000156 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000221 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-01T10:51:10.907541+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=77990.1
+- 更新: 2026-11-01T10:56:10.417026+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.15% price=77964.2
 - Funnel: target 1089 → liquid 121 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.0 >= 65=1
+- Strict後reject: 4h RSI 67.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +47.62% | $3,059,853.20 |
-| IDOL/USDT:USDT | +35.18% | $5,232,522.57 |
-| POWR/USDT:USDT | +19.51% | $3,645,260.48 |
-| NIULAI/USDT:USDT | +19.20% | $1,028,115.37 |
-| G/USDT:USDT | +18.29% | $1,317,907.94 |
+| ESPORTS/USDT:USDT | +46.87% | $3,096,668.88 |
+| IDOL/USDT:USDT | +30.62% | $5,396,452.99 |
+| POWR/USDT:USDT | +19.96% | $3,675,629.87 |
+| NIULAI/USDT:USDT | +19.39% | $1,039,137.22 |
+| G/USDT:USDT | +18.92% | $1,323,968.79 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +4.59% | +4.71% |
-| POWR/USDT:USDT | below_1h_threshold | +2.87% | +2.99% |
-| G/USDT:USDT | below_1h_threshold | +0.92% | +1.04% |
-| BEAMX/USDT:USDT | below_1h_threshold | +0.87% | +0.99% |
-| AIN/USDT:USDT | below_1h_threshold | +0.87% | +0.99% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +4.04% | +4.19% |
+| POWR/USDT:USDT | below_1h_threshold | +2.84% | +2.99% |
+| G/USDT:USDT | below_1h_threshold | +1.66% | +1.81% |
+| APR/USDT:USDT | below_1h_threshold | +1.38% | +1.53% |
+| BEAMX/USDT:USDT | below_1h_threshold | +1.08% | +1.23% |
 
 ## 7. 次に見るべき不足
 
