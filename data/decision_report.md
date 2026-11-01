@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-01T11:26:11.994915+00:00
+- generated_at: 2026-11-01T11:31:10.275188+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17957**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-01T11:26:03.138968+00:00 / 保存件数 288/288
+- 更新: 2026-11-01T11:31:00.476600+00:00 / 保存件数 288/288
 - BTC: STAGNANT 1h -0.04% price=77970.2
-- Funnel: target 1089 → liquid 117 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.1 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- Funnel: target 1089 → liquid 117 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +47.12% | $3,160,772.47 |
-| IDOL/USDT:USDT | +29.41% | $5,791,990.89 |
-| G/USDT:USDT | +20.68% | $1,355,966.01 |
-| NIULAI/USDT:USDT | +19.87% | $1,129,869.04 |
-| POWR/USDT:USDT | +18.48% | $3,734,284.23 |
+| ESPORTS/USDT:USDT | +46.54% | $3,171,240.10 |
+| IDOL/USDT:USDT | +29.10% | $5,863,913.87 |
+| G/USDT:USDT | +20.77% | $1,362,240.65 |
+| NIULAI/USDT:USDT | +19.17% | $1,142,674.40 |
+| POWR/USDT:USDT | +17.97% | $3,738,237.77 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| G/USDT:USDT | below_1h_threshold | +2.23% | +2.26% |
-| IDOL/USDT:USDT | below_1h_threshold | +1.12% | +1.16% |
+| APR/USDT:USDT | below_1h_threshold | +3.01% | +3.04% |
+| G/USDT:USDT | below_1h_threshold | +2.33% | +2.36% |
+| IDOL/USDT:USDT | below_1h_threshold | +0.98% | +1.01% |
 | LIT/USDT:USDT | below_1h_threshold | +0.97% | +1.01% |
-| ZRO/USDT:USDT | below_1h_threshold | +0.62% | +0.65% |
-| PYTH/USDT:USDT | below_1h_threshold | +0.57% | +0.61% |
+| ZRO/USDT:USDT | below_1h_threshold | +0.68% | +0.72% |
 
 ## 7. 次に見るべき不足
 
