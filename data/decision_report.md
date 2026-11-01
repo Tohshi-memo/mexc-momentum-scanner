@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-01T04:51:46.814711+00:00
+- generated_at: 2026-11-01T04:56:37.672112+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17935**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-01T04:51:23.027626+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=77791.1
+- 更新: 2026-11-01T04:56:18.203655+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=77794.7
 - Funnel: target 1089 → liquid 117 → pre 50 → checked 50 → surge 3 → strict 3
 - Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +30.94% | $1,722,824.62 |
-| GANG/USDT:USDT | +17.90% | $1,100,983.54 |
-| POWR/USDT:USDT | +15.87% | $2,287,646.31 |
-| AIN/USDT:USDT | +15.15% | $22,740,936.91 |
-| ZAMA/USDT:USDT | +13.62% | $1,099,012.93 |
+| ESPORTS/USDT:USDT | +31.49% | $1,731,156.81 |
+| POWR/USDT:USDT | +15.65% | $2,300,022.42 |
+| AIN/USDT:USDT | +15.04% | $22,809,274.86 |
+| GANG/USDT:USDT | +13.94% | $1,104,851.04 |
+| ZAMA/USDT:USDT | +12.63% | $1,104,070.43 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EVAA/USDT:USDT | below_1h_threshold | +2.57% | +2.52% |
-| USELESS/USDT:USDT | below_1h_threshold | +2.07% | +2.02% |
-| AVAX/USDT:USDT | below_1h_threshold | +1.38% | +1.33% |
-| ONDO/USDT:USDT | below_1h_threshold | +1.07% | +1.03% |
-| HYPE/USDT:USDT | below_1h_threshold | +0.68% | +0.63% |
+| EVAA/USDT:USDT | below_1h_threshold | +3.18% | +3.12% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.30% | +2.24% |
+| AVAX/USDT:USDT | below_1h_threshold | +1.50% | +1.45% |
+| ONDO/USDT:USDT | below_1h_threshold | +1.10% | +1.05% |
+| AAVE/USDT:USDT | below_1h_threshold | +1.01% | +0.95% |
 
 ## 7. 次に見るべき不足
 
