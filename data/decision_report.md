@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-01T00:06:21.961405+00:00
+- generated_at: 2026-11-01T00:11:19.920768+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17914**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-01T00:06:09.193985+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=77473.1
+- 更新: 2026-11-01T00:11:06.793518+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=77486.4
 - Funnel: target 1089 → liquid 119 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GANG/USDT:USDT | +18.19% | $1,034,510.81 |
-| EVAA/USDT:USDT | +8.97% | $4,345,292.49 |
-| LIT/USDT:USDT | +7.24% | $13,372,867.88 |
-| MAGMA/USDT:USDT | +4.06% | $1,132,120.39 |
-| MORPHO/USDT:USDT | +3.55% | $2,821,178.34 |
+| GANG/USDT:USDT | +20.25% | $1,040,599.22 |
+| EVAA/USDT:USDT | +11.48% | $4,382,426.87 |
+| LIT/USDT:USDT | +6.99% | $13,491,301.29 |
+| MAGMA/USDT:USDT | +4.76% | $1,135,535.50 |
+| MORPHO/USDT:USDT | +4.08% | $2,824,227.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GANG/USDT:USDT | below_1h_threshold | +1.50% | +1.56% |
-| IDOL/USDT:USDT | below_1h_threshold | +1.16% | +1.23% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +0.91% | +0.98% |
-| PGSTOCK/USDT:USDT | below_1h_threshold | +0.58% | +0.64% |
-| MORPHO/USDT:USDT | below_1h_threshold | +0.51% | +0.58% |
+| GANG/USDT:USDT | below_1h_threshold | +4.02% | +4.07% |
+| VVV/USDT:USDT | below_1h_threshold | +1.58% | +1.62% |
+| EVAA/USDT:USDT | below_1h_threshold | +1.15% | +1.20% |
+| MORPHO/USDT:USDT | below_1h_threshold | +1.06% | +1.10% |
+| IDOL/USDT:USDT | below_1h_threshold | +0.64% | +0.68% |
 
 ## 7. 次に見るべき不足
 
