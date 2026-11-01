@@ -4,7 +4,7 @@
   "initial_capital": 100.0,
   "balance": 370.18835567105396,
   "started_at": "2026-06-13T15:13:55.800093+00:00",
-  "updated_at": "2026-11-01T04:11:14.343108+00:00",
+  "updated_at": "2026-11-01T04:16:32.600548+00:00",
   "high_watermark": 370.18835567105396,
   "max_drawdown_pct": 4.134479322340469,
   "loss_streak": 0,
@@ -143,7 +143,8 @@
     "2026-10-28": 10.37679496948681,
     "2026-10-29": 2.0140924639427062,
     "2026-10-30": -0.013034919179180537,
-    "2026-10-31": 6.684658659252801
+    "2026-10-31": 6.684658659252801,
+    "2026-11-01": 0.0
   },
   "trades": [
     {
@@ -287315,6 +287316,71 @@
         "max_drawdown_pct": 4.315792464642165,
         "max_loss_streak": 7
       }
+    },
+    {
+      "key": "ESPORTS/USDT:USDT|2026-11-01T04:11:08.299759+00:00",
+      "symbol": "ESPORTS/USDT:USDT",
+      "detected_at": "2026-11-01T04:11:08.299759+00:00",
+      "closed_at": "2026-11-01T04:15:52.271815+00:00",
+      "strategy": "LIMIT_6PCT",
+      "direction": "short",
+      "outcome": "EXPIRED",
+      "filled": false,
+      "raw_pnl_pct": 0.0,
+      "cost_pct": 0.15,
+      "pnl_pct": 0.0,
+      "sl_pct": 4.000000000000001,
+      "risk_pct": 0.35,
+      "account_return_pct": 0.0,
+      "log_return": 0.0,
+      "pnl_usdt": 0.0,
+      "balance_before": 370.18835567105396,
+      "balance_after": 370.18835567105396,
+      "drawdown_after_pct": 0.0,
+      "selector_reason": "selected_by_robust_growth_score",
+      "selector_score": 0.03961767343269368,
+      "selector_recent": {
+        "strategy": "LIMIT_6PCT",
+        "direction": "short",
+        "total": 50,
+        "filled": 13,
+        "fill_rate": 0.26,
+        "avg_pnl_pct": 1.2839622641509456,
+        "effective_ev_pct": 0.33383018867924585,
+        "avg_log_return": 0.00029432677280141404,
+        "geometric_return_pct": 0.029437009117572188,
+        "avg_account_return_pct": 0.02947264150943394,
+        "max_drawdown_pct": 0.35000000000000464,
+        "max_loss_streak": 1
+      },
+      "selector_mid": {
+        "strategy": "LIMIT_6PCT",
+        "direction": "short",
+        "total": 200,
+        "filled": 42,
+        "fill_rate": 0.21,
+        "avg_pnl_pct": 1.3378706199460924,
+        "effective_ev_pct": 0.2809528301886794,
+        "avg_log_return": 0.00024956414934967566,
+        "geometric_return_pct": 0.02495952930727796,
+        "avg_account_return_pct": 0.02504274764150942,
+        "max_drawdown_pct": 0.9424248597449407,
+        "max_loss_streak": 1
+      },
+      "selector_all": {
+        "strategy": "LIMIT_6PCT",
+        "direction": "short",
+        "total": 17807,
+        "filled": 3960,
+        "fill_rate": 0.22238445555118774,
+        "avg_pnl_pct": 1.2161439713957531,
+        "effective_ev_pct": 0.2704515149507038,
+        "avg_log_return": 0.00024276749805170143,
+        "geometric_return_pct": 0.024279696846551957,
+        "avg_account_return_pct": 0.024395965544350594,
+        "max_drawdown_pct": 4.315792464642165,
+        "max_loss_streak": 7
+      }
     }
   ],
   "skipped": [
@@ -390701,6 +390767,7 @@
     "ESPORTS/USDT:USDT|2026-11-01T03:26:08.320399+00:00",
     "ESPORTS/USDT:USDT|2026-11-01T03:41:20.732543+00:00",
     "ESPORTS/USDT:USDT|2026-11-01T03:51:27.802536+00:00",
+    "ESPORTS/USDT:USDT|2026-11-01T04:11:08.299759+00:00",
     "ETC/USDT:USDT|2026-09-24T14:31:26.168773+00:00",
     "ETHFI/USDT:USDT|2026-06-25T14:52:27.752880+00:00",
     "ETHFI/USDT:USDT|2026-08-14T19:56:37.086038+00:00",
@@ -397560,8 +397627,8 @@
     "strategy": "LIMIT_6PCT",
     "direction": "short",
     "reason": "selected_by_robust_growth_score",
-    "robust_score": 0.039617673432693845,
-    "history_count": 17929,
+    "robust_score": 0.03961726435850599,
+    "history_count": 17930,
     "recent_count": 50,
     "mid_count": 200,
     "recent": {
@@ -397595,26 +397662,26 @@
     "all": {
       "strategy": "LIMIT_6PCT",
       "direction": "short",
-      "total": 17807,
+      "total": 17808,
       "filled": 3960,
-      "fill_rate": 0.22238445555118774,
+      "fill_rate": 0.2223719676549865,
       "avg_pnl_pct": 1.2161439713957531,
-      "effective_ev_pct": 0.2704515149507038,
-      "avg_log_return": 0.00024276749805170143,
-      "geometric_return_pct": 0.024279696846551957,
-      "avg_account_return_pct": 0.024395965544350594,
+      "effective_ev_pct": 0.2704363278710233,
+      "avg_log_return": 0.0002427538655551801,
+      "geometric_return_pct": 0.024278333265925767,
+      "avg_account_return_pct": 0.024394595600193792,
       "max_drawdown_pct": 4.315792464642133,
       "max_loss_streak": 9
     },
     "alternatives": []
   },
   "summary": {
-    "trade_count": 4418,
+    "trade_count": 4419,
     "wins": 1185,
     "losses": 983,
-    "flat": 2250,
-    "avg_log_return": 0.00029625209585774795,
-    "geometric_return_pct": 0.029629598284364178,
+    "flat": 2251,
+    "avg_log_return": 0.00029618505532915377,
+    "geometric_return_pct": 0.029622892245351196,
     "return_pct": 270.18835567105396
   },
   "config": {
