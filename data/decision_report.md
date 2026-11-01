@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-01T07:21:25.455565+00:00
+- generated_at: 2026-11-01T07:26:48.883402+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17938**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6103件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6104件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000447 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-01T07:21:14.236327+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.20% price=77816.5
-- Funnel: target 1089 → liquid 115 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.5 >= 65=1, 4h RSI 77.9 >= 65=1
+- 更新: 2026-11-01T07:26:31.011798+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=77829.9
+- Funnel: target 1089 → liquid 115 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.1 >= 65=1, 4h RSI 77.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +29.91% | $1,988,867.91 |
-| EVAA/USDT:USDT | +26.96% | $5,904,935.83 |
-| BEAMX/USDT:USDT | +21.37% | $1,229,780.12 |
-| JCT/USDT:USDT | +17.94% | $1,582,483.78 |
-| AIN/USDT:USDT | +17.71% | $19,829,138.26 |
+| ESPORTS/USDT:USDT | +30.28% | $1,993,324.54 |
+| EVAA/USDT:USDT | +29.12% | $6,081,354.96 |
+| BEAMX/USDT:USDT | +21.17% | $1,251,952.01 |
+| JCT/USDT:USDT | +18.15% | $1,611,965.43 |
+| AIN/USDT:USDT | +17.98% | $19,884,325.86 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAMX/USDT:USDT | below_1h_threshold | +4.39% | +4.60% |
-| BEAT/USDT:USDT | below_1h_threshold | +3.49% | +3.69% |
-| AIN/USDT:USDT | below_1h_threshold | +2.36% | +2.56% |
-| JCT/USDT:USDT | below_1h_threshold | +1.10% | +1.30% |
-| AIOT/USDT:USDT | below_1h_threshold | +0.98% | +1.18% |
+| BEAMX/USDT:USDT | below_1h_threshold | +4.22% | +4.41% |
+| AIN/USDT:USDT | below_1h_threshold | +2.58% | +2.77% |
+| JCT/USDT:USDT | below_1h_threshold | +1.02% | +1.20% |
+| AIOT/USDT:USDT | below_1h_threshold | +1.01% | +1.20% |
+| STX/USDT:USDT | below_1h_threshold | +0.74% | +0.92% |
 
 ## 7. 次に見るべき不足
 
