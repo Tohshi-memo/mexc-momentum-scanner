@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-01T21:51:08.679840+00:00
+- generated_at: 2026-11-01T21:56:23.484353+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17996**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-01T21:51:00.894434+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=77936.0
+- 更新: 2026-11-01T21:56:10.400528+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=77881.0
 - Funnel: target 1088 → liquid 121 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IDOL/USDT:USDT | +22.96% | $10,629,327.21 |
-| BEAMX/USDT:USDT | +21.71% | $3,427,759.06 |
-| LYN/USDT:USDT | +21.70% | $1,224,648.46 |
-| ESPORTS/USDT:USDT | +10.54% | $9,567,210.50 |
-| Q/USDT:USDT | +5.69% | $5,303,629.60 |
+| IDOL/USDT:USDT | +22.59% | $10,698,941.64 |
+| BEAMX/USDT:USDT | +20.37% | $3,468,111.40 |
+| LYN/USDT:USDT | +19.74% | $1,242,752.65 |
+| Q/USDT:USDT | +5.90% | $5,344,004.20 |
+| ESPORTS/USDT:USDT | +4.29% | $9,688,360.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +4.36% | +4.28% |
-| GRASS/USDT:USDT | below_1h_threshold | +2.90% | +2.81% |
-| USELESS/USDT:USDT | below_1h_threshold | +2.36% | +2.28% |
-| ZEC/USDT:USDT | below_1h_threshold | +1.56% | +1.48% |
-| BEAMX/USDT:USDT | below_1h_threshold | +1.52% | +1.44% |
+| AKE/USDT:USDT | below_1h_threshold | +3.81% | +3.80% |
+| GRASS/USDT:USDT | below_1h_threshold | +2.98% | +2.97% |
+| ZEC/USDT:USDT | below_1h_threshold | +1.42% | +1.41% |
+| QNT/USDT:USDT | below_1h_threshold | +0.89% | +0.88% |
+| HYPE/USDT:USDT | below_1h_threshold | +0.75% | +0.74% |
 
 ## 7. 次に見るべき不足
 
