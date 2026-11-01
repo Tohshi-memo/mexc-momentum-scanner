@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-01T10:56:25.728753+00:00
+- generated_at: 2026-11-01T11:01:26.321446+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17957**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-01T10:56:10.417026+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=77964.2
-- Funnel: target 1089 → liquid 121 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-01T11:01:13.301812+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=77998.9
+- Funnel: target 1089 → liquid 115 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +46.87% | $3,096,668.88 |
-| IDOL/USDT:USDT | +30.62% | $5,396,452.99 |
-| POWR/USDT:USDT | +19.96% | $3,675,629.87 |
-| NIULAI/USDT:USDT | +19.39% | $1,039,137.22 |
-| G/USDT:USDT | +18.92% | $1,323,968.79 |
+| ESPORTS/USDT:USDT | +46.25% | $3,050,627.42 |
+| IDOL/USDT:USDT | +28.02% | $5,236,727.87 |
+| NIULAI/USDT:USDT | +20.04% | $1,042,159.62 |
+| POWR/USDT:USDT | +18.94% | $3,672,729.33 |
+| G/USDT:USDT | +18.32% | $1,320,672.26 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +4.04% | +4.19% |
-| POWR/USDT:USDT | below_1h_threshold | +2.84% | +2.99% |
-| G/USDT:USDT | below_1h_threshold | +1.66% | +1.81% |
-| APR/USDT:USDT | below_1h_threshold | +1.38% | +1.53% |
-| BEAMX/USDT:USDT | below_1h_threshold | +1.08% | +1.23% |
+| IDOL/USDT:USDT | below_1h_threshold | +0.29% | +0.29% |
+| PGSTOCK/USDT:USDT | below_1h_threshold | +0.26% | +0.26% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +0.25% | +0.25% |
+| G/USDT:USDT | below_1h_threshold | +0.23% | +0.23% |
+| VVV/USDT:USDT | below_1h_threshold | +0.20% | +0.20% |
 
 ## 7. 次に見るべき不足
 
