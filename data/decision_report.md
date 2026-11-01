@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-01T12:06:11.560523+00:00
+- generated_at: 2026-11-01T12:11:11.831658+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17961**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-01T12:06:02.904670+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=77951.3
-- Funnel: target 1089 → liquid 116 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-11-01T12:11:02.015753+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=77942.2
+- Funnel: target 1089 → liquid 118 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +47.27% | $3,235,488.98 |
-| APR/USDT:USDT | +23.01% | $1,855,732.55 |
-| IDOL/USDT:USDT | +22.06% | $6,303,972.57 |
-| AIN/USDT:USDT | +20.63% | $16,218,408.68 |
-| G/USDT:USDT | +16.44% | $1,489,013.44 |
+| ESPORTS/USDT:USDT | +45.97% | $3,248,284.53 |
+| IDOL/USDT:USDT | +24.02% | $6,359,521.22 |
+| APR/USDT:USDT | +23.97% | $1,968,044.79 |
+| AIN/USDT:USDT | +17.57% | $16,315,080.69 |
+| NIULAI/USDT:USDT | +16.66% | $1,244,674.26 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| APR/USDT:USDT | below_1h_threshold | +4.37% | +4.33% |
-| IDOL/USDT:USDT | below_1h_threshold | +2.29% | +2.25% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +0.91% | +0.87% |
-| MAGMA/USDT:USDT | below_1h_threshold | +0.89% | +0.85% |
-| BEAT/USDT:USDT | below_1h_threshold | +0.79% | +0.75% |
+| APR/USDT:USDT | below_1h_threshold | +4.93% | +4.90% |
+| IDOL/USDT:USDT | below_1h_threshold | +3.99% | +3.96% |
+| MAGMA/USDT:USDT | below_1h_threshold | +0.68% | +0.65% |
+| PYTH/USDT:USDT | below_1h_threshold | +0.45% | +0.42% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.42% | +0.39% |
 
 ## 7. 次に見るべき不足
 
