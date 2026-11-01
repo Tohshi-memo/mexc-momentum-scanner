@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-11-01T08:36:15.210237+00:00
+- generated_at: 2026-11-01T08:41:27.524254+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **17946**
+- closed shadow trades: **17947**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=17946, expectancy=+0.02%
+- 全期間 MARKET基準: n=17947, expectancy=+0.02%
 - 直近20件 MARKET基準: n=20, expectancy=+0.20%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,485.74** / 初期 $100.00 (+1385.74%)
-- 確定: 6822件 (Win 1976 / Loss 2188 / Flat 2658) / skip 7685件
+- 確定: 6822件 (Win 1976 / Loss 2188 / Flat 2658) / skip 7686件
 - 成長率目線: 平均log +0.000396 / 幾何平均 +0.040% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_BB3S` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: ESPORTS/USDT:USDT `LIMIT_BB3S` EXPIRED account +0.00% 残高後 $1,485.74
@@ -55,7 +55,7 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$370.19** / 初期 $100.00 (+270.19%)
-- 確定: 4419件 (Win 1185 / Loss 983 / Flat 2251) / skip 6938件
+- 確定: 4419件 (Win 1185 / Loss 983 / Flat 2251) / skip 6939件
 - 成長率目線: 平均log +0.000296 / 幾何平均 +0.030% per trade / maxDD +4.13%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: ESPORTS/USDT:USDT `LIMIT_6PCT` EXPIRED account +0.00% 残高後 $370.19
@@ -63,16 +63,16 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6109件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6110件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000326 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000318 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-01T08:36:03.464577+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.27% price=78141.8
-- Funnel: target 1089 → liquid 117 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-11-01T08:41:11.719446+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.21% price=78088.0
+- Funnel: target 1089 → liquid 118 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +45.85% | $2,386,324.38 |
-| AIN/USDT:USDT | +17.37% | $19,524,532.89 |
-| JCT/USDT:USDT | +14.48% | $2,200,429.06 |
-| EVAA/USDT:USDT | +12.51% | $7,668,580.32 |
-| POWR/USDT:USDT | +12.12% | $3,054,966.57 |
+| ESPORTS/USDT:USDT | +44.94% | $2,408,594.88 |
+| AIN/USDT:USDT | +17.02% | $19,574,463.76 |
+| EVAA/USDT:USDT | +12.70% | $7,708,373.68 |
+| POWR/USDT:USDT | +12.30% | $3,067,709.05 |
+| JCT/USDT:USDT | +12.18% | $2,264,841.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIN/USDT:USDT | below_1h_threshold | +3.59% | +3.32% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.55% | +1.27% |
-| POWR/USDT:USDT | below_1h_threshold | +1.27% | +0.99% |
-| USELESS/USDT:USDT | below_1h_threshold | +1.22% | +0.95% |
-| MORPHO/USDT:USDT | below_1h_threshold | +0.90% | +0.63% |
+| AIN/USDT:USDT | below_1h_threshold | +3.28% | +3.08% |
+| PONS/USDT:USDT | below_1h_threshold | +2.42% | +2.22% |
+| POWR/USDT:USDT | below_1h_threshold | +1.44% | +1.24% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.29% | +1.08% |
+| BEAT/USDT:USDT | below_1h_threshold | +0.73% | +0.53% |
 
 ## 7. 次に見るべき不足
 
