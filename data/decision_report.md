@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-01T09:51:27.454264+00:00
+- generated_at: 2026-11-01T09:56:24.595450+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17952**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-01T09:51:14.296264+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.19% price=78065.0
-- Funnel: target 1089 → liquid 120 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.2 >= 65=1
+- 更新: 2026-11-01T09:56:11.480559+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.20% price=78062.3
+- Funnel: target 1089 → liquid 120 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +47.65% | $2,639,622.26 |
-| POWR/USDT:USDT | +18.27% | $3,458,218.31 |
-| GANG/USDT:USDT | +18.12% | $1,074,512.08 |
-| G/USDT:USDT | +17.28% | $1,215,898.20 |
-| AIN/USDT:USDT | +16.36% | $19,474,551.98 |
+| ESPORTS/USDT:USDT | +46.25% | $2,649,458.87 |
+| GANG/USDT:USDT | +22.09% | $1,079,097.16 |
+| POWR/USDT:USDT | +18.13% | $3,475,210.51 |
+| AIN/USDT:USDT | +17.38% | $19,543,113.43 |
+| IDOL/USDT:USDT | +17.01% | $4,352,363.61 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IDOL/USDT:USDT | below_1h_threshold | +4.33% | +4.53% |
-| LIT/USDT:USDT | below_1h_threshold | +2.90% | +3.09% |
-| AIOT/USDT:USDT | below_1h_threshold | +1.92% | +2.12% |
-| MAGMA/USDT:USDT | below_1h_threshold | +1.47% | +1.66% |
-| DASH/USDT:USDT | below_1h_threshold | +1.19% | +1.39% |
+| GANG/USDT:USDT | below_1h_threshold | +3.45% | +3.65% |
+| LIT/USDT:USDT | below_1h_threshold | +2.63% | +2.83% |
+| DASH/USDT:USDT | below_1h_threshold | +1.25% | +1.45% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.15% | +1.35% |
+| MAGMA/USDT:USDT | below_1h_threshold | +1.13% | +1.33% |
 
 ## 7. 次に見るべき不足
 
