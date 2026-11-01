@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-01T12:56:34.614353+00:00
+- generated_at: 2026-11-01T13:01:19.677849+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17965**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-01T12:56:18.369354+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=77855.5
-- Funnel: target 1089 → liquid 122 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.7 >= 65=1, 4h RSI 84.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-01T13:01:08.498334+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=77873.1
+- Funnel: target 1088 → liquid 115 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +58.21% | $3,519,034.29 |
-| APR/USDT:USDT | +31.75% | $3,068,651.58 |
-| IDOL/USDT:USDT | +21.80% | $6,833,866.81 |
-| NIULAI/USDT:USDT | +18.90% | $1,303,391.56 |
-| AIN/USDT:USDT | +17.26% | $17,012,346.83 |
+| ESPORTS/USDT:USDT | +61.24% | $3,507,683.11 |
+| APR/USDT:USDT | +30.38% | $3,087,904.89 |
+| IDOL/USDT:USDT | +23.33% | $6,794,093.66 |
+| AIN/USDT:USDT | +17.50% | $15,056,574.56 |
+| NIULAI/USDT:USDT | +17.17% | $1,298,117.88 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IDOL/USDT:USDT | below_1h_threshold | +2.28% | +2.37% |
-| ZRO/USDT:USDT | below_1h_threshold | +0.65% | +0.73% |
-| JASMY/USDT:USDT | below_1h_threshold | +0.50% | +0.59% |
-| UNI/USDT:USDT | below_1h_threshold | +0.44% | +0.53% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.42% | +0.50% |
+| IDOL/USDT:USDT | below_1h_threshold | +0.67% | +0.65% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +0.65% | +0.63% |
+| BEAT/USDT:USDT | below_1h_threshold | +0.39% | +0.36% |
+| POWR/USDT:USDT | below_1h_threshold | +0.25% | +0.23% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +0.23% | +0.21% |
 
 ## 7. 次に見るべき不足
 
