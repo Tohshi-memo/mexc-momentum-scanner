@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-01T04:16:38.273163+00:00
+- generated_at: 2026-11-01T04:21:11.755923+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17932**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-01T04:16:22.755539+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=77727.9
-- Funnel: target 1089 → liquid 116 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-11-01T04:21:03.398594+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=77759.8
+- Funnel: target 1089 → liquid 117 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +27.08% | $1,634,358.51 |
-| POWR/USDT:USDT | +18.00% | $2,185,059.75 |
-| AIN/USDT:USDT | +17.66% | $22,224,555.81 |
-| IDOL/USDT:USDT | +15.86% | $4,962,266.15 |
-| GANG/USDT:USDT | +10.66% | $1,086,864.09 |
+| ESPORTS/USDT:USDT | +28.20% | $1,661,597.19 |
+| POWR/USDT:USDT | +17.93% | $2,189,953.94 |
+| AIN/USDT:USDT | +17.74% | $22,269,124.41 |
+| IDOL/USDT:USDT | +11.48% | $4,983,570.40 |
+| GANG/USDT:USDT | +11.17% | $1,087,975.58 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GANG/USDT:USDT | below_1h_threshold | +2.09% | +2.12% |
-| AIN/USDT:USDT | below_1h_threshold | +1.75% | +1.78% |
-| IDOL/USDT:USDT | below_1h_threshold | +1.20% | +1.23% |
-| XPL/USDT:USDT | below_1h_threshold | +1.08% | +1.11% |
-| NIL/USDT:USDT | below_1h_threshold | +1.04% | +1.08% |
+| EVAA/USDT:USDT | below_1h_threshold | +3.48% | +3.47% |
+| GANG/USDT:USDT | below_1h_threshold | +2.55% | +2.55% |
+| AIN/USDT:USDT | below_1h_threshold | +1.94% | +1.93% |
+| NIL/USDT:USDT | below_1h_threshold | +1.25% | +1.24% |
+| XPL/USDT:USDT | below_1h_threshold | +1.18% | +1.17% |
 
 ## 7. 次に見るべき不足
 
