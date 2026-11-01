@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-01T19:56:26.944589+00:00
+- generated_at: 2026-11-01T20:01:17.490844+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **17993**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-01T19:56:11.196363+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=77735.6
-- Funnel: target 1088 → liquid 120 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 92.4 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-01T20:01:07.142562+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=77790.4
+- Funnel: target 1088 → liquid 120 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +32.78% | $8,720,473.94 |
-| LYN/USDT:USDT | +23.25% | $1,051,418.20 |
-| IDOL/USDT:USDT | +19.20% | $9,836,256.95 |
-| BEAMX/USDT:USDT | +12.33% | $2,882,067.80 |
-| Q/USDT:USDT | +9.52% | $4,076,330.87 |
+| ESPORTS/USDT:USDT | +35.95% | $8,651,370.75 |
+| LYN/USDT:USDT | +22.65% | $1,049,729.01 |
+| IDOL/USDT:USDT | +18.30% | $9,754,562.10 |
+| BEAMX/USDT:USDT | +12.85% | $2,888,155.28 |
+| Q/USDT:USDT | +9.86% | $3,918,942.42 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| G/USDT:USDT | below_1h_threshold | +2.30% | +2.45% |
-| IDOL/USDT:USDT | below_1h_threshold | +2.01% | +2.16% |
-| BEAMX/USDT:USDT | below_1h_threshold | +1.66% | +1.81% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.86% | +1.01% |
-| PONS/USDT:USDT | below_1h_threshold | +0.72% | +0.87% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +1.14% | +1.12% |
+| LYN/USDT:USDT | below_1h_threshold | +1.05% | +1.03% |
+| IDOL/USDT:USDT | below_1h_threshold | +0.90% | +0.88% |
+| NIULAI/USDT:USDT | below_1h_threshold | +0.39% | +0.37% |
+| POWR/USDT:USDT | below_1h_threshold | +0.28% | +0.25% |
 
 ## 7. 次に見るべき不足
 
