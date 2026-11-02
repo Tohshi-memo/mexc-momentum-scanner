@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-02T22:21:24.783202+00:00
+- generated_at: 2026-11-02T22:26:17.021539+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18038**
 
@@ -39,9 +39,9 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$121.62** / 初期 $100.00 (+21.62%)
-- 確定トレード: 258件 (TP 95 / SL 155 / EXP 8)
-- 最新: JCT/USDT:USDT SL_HIT PnL -4.00% 残高後 $121.62
+- 残高: **$121.86** / 初期 $100.00 (+21.86%)
+- 確定トレード: 259件 (TP 96 / SL 155 / EXP 8)
+- 最新: BTW/USDT:USDT TP_HIT PnL +8.00% 残高後 $121.86
 - 最新戦略メタ: tier=S, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-02T22:21:09.396366+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.20% price=76984.7
+- 更新: 2026-11-02T22:26:03.743687+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.20% price=76984.0
 - Funnel: target 1093 → liquid 162 → pre 50 → checked 50 → surge 2 → strict 2
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IDOL/USDT:USDT | +29.38% | $17,279,492.84 |
-| AGT/USDT:USDT | +12.41% | $2,549,738.61 |
-| EVAA/USDT:USDT | +11.11% | $5,917,155.08 |
-| SOXS/USDT:USDT | +10.27% | $23,476,275.14 |
-| JCT/USDT:USDT | +6.74% | $2,105,182.61 |
+| IDOL/USDT:USDT | +30.32% | $17,383,531.36 |
+| AGT/USDT:USDT | +12.35% | $2,572,302.27 |
+| EVAA/USDT:USDT | +11.26% | $5,968,009.67 |
+| SOXS/USDT:USDT | +10.56% | $23,548,393.49 |
+| AKE/USDT:USDT | +6.99% | $13,475,494.15 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| Q/USDT:USDT | below_1h_threshold | +1.40% | +1.20% |
-| AIN/USDT:USDT | below_1h_threshold | +1.28% | +1.08% |
-| BLESS/USDT:USDT | below_1h_threshold | +0.59% | +0.39% |
-| STX/USDT:USDT | below_1h_threshold | +0.52% | +0.32% |
+| Q/USDT:USDT | below_1h_threshold | +2.64% | +2.45% |
+| AKE/USDT:USDT | below_1h_threshold | +1.62% | +1.42% |
+| AIN/USDT:USDT | below_1h_threshold | +1.41% | +1.22% |
 | SOPH/USDT:USDT | below_1h_threshold | +0.47% | +0.27% |
+| ALUMINUM/USDT:USDT | below_1h_threshold | +0.41% | +0.21% |
 
 ## 7. 次に見るべき不足
 
