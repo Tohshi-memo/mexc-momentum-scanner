@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-02T01:56:09.967281+00:00
+- generated_at: 2026-11-02T02:01:23.628742+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18004**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-02T01:56:01.283648+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.41% price=78425.0
-- Funnel: target 1088 → liquid 139 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.2 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-02T02:01:10.685293+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=78383.5
+- Funnel: target 1088 → liquid 137 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IDOL/USDT:USDT | +28.59% | $13,134,148.57 |
-| LYN/USDT:USDT | +26.57% | $1,478,045.10 |
-| BEAMX/USDT:USDT | +17.15% | $4,419,427.17 |
-| RT/USDT:USDT | +8.53% | $1,548,462.42 |
-| ESPORTS/USDT:USDT | +6.79% | $10,397,635.54 |
+| LYN/USDT:USDT | +31.71% | $1,490,414.43 |
+| IDOL/USDT:USDT | +30.16% | $13,029,474.02 |
+| BEAMX/USDT:USDT | +17.32% | $4,398,845.96 |
+| Q/USDT:USDT | +7.16% | $5,340,995.79 |
+| ESPORTS/USDT:USDT | +6.15% | $10,375,741.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_1h_threshold | +4.76% | +4.35% |
-| LYN/USDT:USDT | below_1h_threshold | +4.75% | +4.34% |
-| Q/USDT:USDT | below_1h_threshold | +2.97% | +2.56% |
-| KORU/USDT:USDT | below_1h_threshold | +2.77% | +2.36% |
-| ZEC/USDT:USDT | below_1h_threshold | +2.02% | +1.60% |
+| LYN/USDT:USDT | below_1h_threshold | +2.76% | +2.73% |
+| KORU/USDT:USDT | below_1h_threshold | +2.06% | +2.04% |
+| EWY/USDT:USDT | below_1h_threshold | +0.57% | +0.55% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.47% | +0.45% |
+| BEAMX/USDT:USDT | below_1h_threshold | +0.44% | +0.42% |
 
 ## 7. 次に見るべき不足
 
