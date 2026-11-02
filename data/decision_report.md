@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-02T08:41:26.574866+00:00
+- generated_at: 2026-11-02T08:46:11.717508+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18017**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-02T08:41:13.701986+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.29% price=78312.8
+- 更新: 2026-11-02T08:46:03.065101+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.25% price=78276.2
 - Funnel: target 1088 → liquid 140 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IDOL/USDT:USDT | +32.26% | $15,855,366.33 |
-| LYN/USDT:USDT | +29.41% | $2,757,709.49 |
-| EVAA/USDT:USDT | +16.54% | $5,659,758.23 |
-| KORU/USDT:USDT | +9.70% | $36,148,762.42 |
-| SAMSUNGSTOCK/USDT:USDT | +3.88% | $22,623,176.19 |
+| IDOL/USDT:USDT | +32.41% | $15,895,417.08 |
+| LYN/USDT:USDT | +28.39% | $2,766,062.21 |
+| EVAA/USDT:USDT | +16.20% | $5,675,122.58 |
+| KORU/USDT:USDT | +9.79% | $36,152,465.83 |
+| SAMSUNGSTOCK/USDT:USDT | +3.89% | $22,680,849.60 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PEPE/USDT:USDT | below_1h_threshold | +1.67% | +1.38% |
-| ETH/USDT:USDT | below_1h_threshold | +0.83% | +0.54% |
-| DOT/USDT:USDT | below_1h_threshold | +0.77% | +0.47% |
-| ANTHROPIC/USDT:USDT | below_1h_threshold | +0.49% | +0.20% |
-| XRP/USDT:USDT | below_1h_threshold | +0.46% | +0.17% |
+| PEPE/USDT:USDT | below_1h_threshold | +1.47% | +1.22% |
+| DOT/USDT:USDT | below_1h_threshold | +0.62% | +0.37% |
+| ETH/USDT:USDT | below_1h_threshold | +0.60% | +0.35% |
+| ANTHROPIC/USDT:USDT | below_1h_threshold | +0.46% | +0.21% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.40% | +0.16% |
 
 ## 7. 次に見るべき不足
 
