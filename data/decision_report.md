@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-02T01:31:11.664070+00:00
+- generated_at: 2026-11-02T01:36:30.755520+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18002**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6160件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6161件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000294 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-02T01:31:02.363392+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.43% price=78436.8
-- Funnel: target 1088 → liquid 136 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-02T01:36:17.282318+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.45% price=78453.1
+- Funnel: target 1088 → liquid 137 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 76.3 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IDOL/USDT:USDT | +28.34% | $12,869,794.25 |
-| LYN/USDT:USDT | +24.13% | $1,448,753.97 |
-| BEAMX/USDT:USDT | +18.07% | $4,355,203.05 |
-| ESPORTS/USDT:USDT | +9.49% | $10,343,699.52 |
-| KORU/USDT:USDT | +7.36% | $3,515,604.07 |
+| IDOL/USDT:USDT | +30.60% | $12,929,562.54 |
+| LYN/USDT:USDT | +24.34% | $1,453,270.63 |
+| BEAMX/USDT:USDT | +19.86% | $4,367,910.81 |
+| ESPORTS/USDT:USDT | +6.91% | $10,359,992.29 |
+| KORU/USDT:USDT | +6.90% | $3,523,810.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KORU/USDT:USDT | below_1h_threshold | +2.77% | +2.34% |
-| LYN/USDT:USDT | below_1h_threshold | +2.68% | +2.26% |
-| USELESS/USDT:USDT | below_1h_threshold | +1.94% | +1.51% |
-| ZEC/USDT:USDT | below_1h_threshold | +1.88% | +1.46% |
-| PONS/USDT:USDT | below_1h_threshold | +1.81% | +1.39% |
+| BLESS/USDT:USDT | below_1h_threshold | +4.35% | +3.90% |
+| LYN/USDT:USDT | below_1h_threshold | +2.85% | +2.40% |
+| IDOL/USDT:USDT | below_1h_threshold | +2.83% | +2.38% |
+| KORU/USDT:USDT | below_1h_threshold | +2.77% | +2.32% |
+| BEAMX/USDT:USDT | below_1h_threshold | +1.99% | +1.55% |
 
 ## 7. 次に見るべき不足
 
