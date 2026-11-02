@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-02T09:11:22.288919+00:00
+- generated_at: 2026-11-02T09:17:03.640517+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18017**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-02T09:11:09.257845+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=78267.8
+- 更新: 2026-11-02T09:16:50.702568+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=78245.5
 - Funnel: target 1088 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IDOL/USDT:USDT | +33.93% | $16,093,894.55 |
-| LYN/USDT:USDT | +23.39% | $2,834,790.45 |
-| EVAA/USDT:USDT | +17.38% | $5,054,428.66 |
-| KORU/USDT:USDT | +10.72% | $40,311,419.63 |
-| NIULAI/USDT:USDT | +4.28% | $1,037,407.43 |
+| IDOL/USDT:USDT | +34.44% | $16,122,304.96 |
+| LYN/USDT:USDT | +24.94% | $2,849,297.27 |
+| EVAA/USDT:USDT | +17.72% | $5,085,993.75 |
+| KORU/USDT:USDT | +11.10% | $40,339,604.26 |
+| SAMSUNGSTOCK/USDT:USDT | +4.46% | $22,770,496.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EVAA/USDT:USDT | below_1h_threshold | +1.17% | +1.09% |
-| NIULAI/USDT:USDT | below_1h_threshold | +0.77% | +0.69% |
-| IDOL/USDT:USDT | below_1h_threshold | +0.74% | +0.66% |
-| BEAMX/USDT:USDT | below_1h_threshold | +0.67% | +0.59% |
-| LYN/USDT:USDT | below_1h_threshold | +0.55% | +0.47% |
+| LYN/USDT:USDT | below_1h_threshold | +1.82% | +1.77% |
+| EVAA/USDT:USDT | below_1h_threshold | +1.46% | +1.42% |
+| IDOL/USDT:USDT | below_1h_threshold | +1.10% | +1.06% |
+| UNI/USDT:USDT | below_1h_threshold | +0.81% | +0.76% |
+| BEAMX/USDT:USDT | below_1h_threshold | +0.52% | +0.47% |
 
 ## 7. 次に見るべき不足
 
