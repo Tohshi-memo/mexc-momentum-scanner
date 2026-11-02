@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-02T19:31:23.652207+00:00
+- generated_at: 2026-11-02T19:36:33.654118+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18031**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6189件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6190件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000210 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-02T19:31:10.556419+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=76981.0
-- Funnel: target 1093 → liquid 163 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-02T19:36:15.834451+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.16% price=76877.1
+- Funnel: target 1093 → liquid 163 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOXS/USDT:USDT | +9.56% | $18,330,082.53 |
-| ARIA/USDT:USDT | +6.95% | $4,858,129.43 |
-| JCT/USDT:USDT | +4.70% | $2,159,356.55 |
-| SQQQ/USDT:USDT | +4.16% | $1,234,594.83 |
-| LYN/USDT:USDT | +2.40% | $2,890,131.36 |
+| AGT/USDT:USDT | +10.89% | $1,189,232.22 |
+| SOXS/USDT:USDT | +9.81% | $18,387,177.97 |
+| JCT/USDT:USDT | +4.37% | $2,159,928.60 |
+| SQQQ/USDT:USDT | +4.36% | $1,236,193.10 |
+| ARIA/USDT:USDT | +4.27% | $4,876,455.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +3.01% | +3.03% |
-| HOT/USDT:USDT | below_1h_threshold | +1.74% | +1.76% |
-| MAGMA/USDT:USDT | below_1h_threshold | +1.39% | +1.41% |
-| SQQQ/USDT:USDT | below_1h_threshold | +1.25% | +1.27% |
-| EVAA/USDT:USDT | below_1h_threshold | +0.86% | +0.88% |
+| SOXS/USDT:USDT | below_1h_threshold | +3.01% | +3.17% |
+| HOT/USDT:USDT | below_1h_threshold | +2.73% | +2.89% |
+| MAGMA/USDT:USDT | below_1h_threshold | +1.74% | +1.90% |
+| SQQQ/USDT:USDT | below_1h_threshold | +1.25% | +1.40% |
+| PGSTOCK/USDT:USDT | below_1h_threshold | +0.80% | +0.95% |
 
 ## 7. 次に見るべき不足
 
