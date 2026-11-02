@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-02T08:26:26.387475+00:00
+- generated_at: 2026-11-02T08:31:15.501575+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18017**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-02T08:26:13.468014+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=78097.9
+- 更新: 2026-11-02T08:31:06.770856+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=78134.9
 - Funnel: target 1088 → liquid 140 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IDOL/USDT:USDT | +31.39% | $15,775,113.62 |
-| LYN/USDT:USDT | +28.46% | $2,693,433.27 |
-| EVAA/USDT:USDT | +16.61% | $5,580,487.05 |
-| KORU/USDT:USDT | +8.86% | $34,373,444.74 |
-| BEAMX/USDT:USDT | +5.73% | $4,303,725.20 |
+| IDOL/USDT:USDT | +31.81% | $15,792,457.28 |
+| LYN/USDT:USDT | +30.49% | $2,718,040.56 |
+| EVAA/USDT:USDT | +17.06% | $5,619,848.27 |
+| KORU/USDT:USDT | +9.23% | $35,881,635.72 |
+| BEAMX/USDT:USDT | +4.68% | $4,306,765.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ANTHROPIC/USDT:USDT | below_1h_threshold | +0.64% | +0.62% |
-| PEPE/USDT:USDT | below_1h_threshold | +0.55% | +0.53% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.40% | +0.38% |
-| XMR/USDT:USDT | below_1h_threshold | +0.22% | +0.20% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.19% | +0.17% |
+| PEPE/USDT:USDT | below_1h_threshold | +0.67% | +0.60% |
+| ANTHROPIC/USDT:USDT | below_1h_threshold | +0.42% | +0.35% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.40% | +0.34% |
+| ETH/USDT:USDT | below_1h_threshold | +0.31% | +0.24% |
+| XMR/USDT:USDT | below_1h_threshold | +0.22% | +0.15% |
 
 ## 7. 次に見るべき不足
 
