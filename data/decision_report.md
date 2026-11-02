@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-02T16:56:22.759009+00:00
+- generated_at: 2026-11-02T17:01:15.579905+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18030**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-02T16:56:09.501424+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=77440.4
-- Funnel: target 1093 → liquid 158 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.1 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-02T17:01:03.898363+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=77498.7
+- Funnel: target 1093 → liquid 155 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARIA/USDT:USDT | +5.58% | $4,383,312.54 |
-| JCT/USDT:USDT | +4.77% | $2,296,174.54 |
-| SOPH/USDT:USDT | +3.71% | $1,104,391.25 |
-| SOXS/USDT:USDT | +2.92% | $15,413,623.63 |
-| AKE/USDT:USDT | +2.38% | $12,745,287.65 |
+| ARIA/USDT:USDT | +5.39% | $4,392,247.99 |
+| JCT/USDT:USDT | +5.37% | $2,239,360.17 |
+| SOPH/USDT:USDT | +4.25% | $1,082,352.01 |
+| LYN/USDT:USDT | +2.75% | $3,172,717.29 |
+| MRNASTOCK/USDT:USDT | +2.30% | $1,303,827.54 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JCT/USDT:USDT | below_1h_threshold | +4.77% | +4.82% |
-| SOPH/USDT:USDT | below_1h_threshold | +3.72% | +3.77% |
-| AKE/USDT:USDT | below_1h_threshold | +2.31% | +2.36% |
-| BLESS/USDT:USDT | below_1h_threshold | +2.09% | +2.14% |
-| EVAA/USDT:USDT | below_1h_threshold | +1.89% | +1.94% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.26% | +2.22% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +2.11% | +2.07% |
+| ARIA/USDT:USDT | below_1h_threshold | +1.03% | +0.98% |
+| SNXX/USDT:USDT | below_1h_threshold | +0.78% | +0.73% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +0.63% | +0.58% |
 
 ## 7. 次に見るべき不足
 
