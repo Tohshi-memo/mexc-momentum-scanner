@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-02T10:01:15.801312+00:00
+- generated_at: 2026-11-02T10:06:23.557114+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18019**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-02T10:01:05.314927+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=78010.1
-- Funnel: target 1088 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-11-02T10:06:10.482558+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=77953.1
+- Funnel: target 1088 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARIA/USDT:USDT | +35.50% | $1,482,596.38 |
-| IDOL/USDT:USDT | +34.61% | $16,274,650.10 |
-| LYN/USDT:USDT | +24.88% | $2,918,388.63 |
-| EVAA/USDT:USDT | +16.39% | $4,515,003.80 |
-| SOPH/USDT:USDT | +11.15% | $1,004,746.22 |
+| ARIA/USDT:USDT | +40.61% | $1,523,469.91 |
+| IDOL/USDT:USDT | +34.39% | $16,340,412.50 |
+| LYN/USDT:USDT | +25.49% | $2,923,282.28 |
+| EVAA/USDT:USDT | +13.19% | $4,574,796.54 |
+| SOPH/USDT:USDT | +12.50% | $1,008,228.85 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KORU/USDT:USDT | below_1h_threshold | +1.45% | +1.49% |
-| NGAS/USDT:USDT | below_1h_threshold | +0.76% | +0.80% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.58% | +0.62% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.54% | +0.58% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.50% | +0.54% |
+| ARIA/USDT:USDT | below_1h_threshold | +2.65% | +2.76% |
+| KORU/USDT:USDT | below_1h_threshold | +1.45% | +1.56% |
+| BEAMX/USDT:USDT | below_1h_threshold | +1.35% | +1.46% |
+| LYN/USDT:USDT | below_1h_threshold | +0.98% | +1.09% |
+| SOPH/USDT:USDT | below_1h_threshold | +0.83% | +0.94% |
 
 ## 7. 次に見るべき不足
 
