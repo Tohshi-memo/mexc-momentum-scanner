@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-02T03:21:24.217510+00:00
+- generated_at: 2026-11-02T03:26:19.378029+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18005**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-02T03:21:11.009858+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=78504.7
-- Funnel: target 1088 → liquid 140 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-11-02T03:26:06.424031+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.38% price=78719.4
+- Funnel: target 1088 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LYN/USDT:USDT | +23.86% | $1,640,719.00 |
-| IDOL/USDT:USDT | +21.34% | $13,642,747.34 |
-| BEAMX/USDT:USDT | +13.49% | $4,563,789.90 |
-| ESPORTS/USDT:USDT | +9.00% | $10,512,195.45 |
-| KORU/USDT:USDT | +8.86% | $12,154,769.56 |
+| IDOL/USDT:USDT | +22.49% | $13,732,780.87 |
+| LYN/USDT:USDT | +21.29% | $1,645,631.21 |
+| BEAMX/USDT:USDT | +13.39% | $4,565,661.84 |
+| KORU/USDT:USDT | +9.60% | $15,296,667.73 |
+| ESPORTS/USDT:USDT | +8.74% | $10,523,279.21 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +4.62% | +4.52% |
-| SNXX/USDT:USDT | below_1h_threshold | +1.99% | +1.89% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.79% | +1.69% |
-| KORU/USDT:USDT | below_1h_threshold | +1.23% | +1.13% |
-| LYN/USDT:USDT | below_1h_threshold | +1.21% | +1.11% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +4.38% | +4.00% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.99% | +1.62% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.79% | +1.42% |
+| NIULAI/USDT:USDT | below_1h_threshold | +1.58% | +1.20% |
+| SPX/USDT:USDT | below_1h_threshold | +1.55% | +1.18% |
 
 ## 7. 次に見るべき不足
 
