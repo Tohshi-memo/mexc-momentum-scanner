@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-02T05:21:15.552715+00:00
+- generated_at: 2026-11-02T05:26:18.031072+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18009**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-02T05:21:06.929493+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=78253.0
+- 更新: 2026-11-02T05:26:08.997457+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=78320.5
 - Funnel: target 1088 → liquid 139 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.2 >= 65=1
+- Strict後reject: 4h RSI 65.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LYN/USDT:USDT | +34.48% | $1,862,119.92 |
-| IDOL/USDT:USDT | +24.52% | $14,433,724.13 |
-| RT/USDT:USDT | +19.03% | $1,605,880.76 |
-| KORU/USDT:USDT | +11.00% | $27,481,542.25 |
-| BEAMX/USDT:USDT | +10.36% | $4,714,170.72 |
+| LYN/USDT:USDT | +34.82% | $1,877,899.02 |
+| IDOL/USDT:USDT | +24.27% | $14,471,012.77 |
+| RT/USDT:USDT | +20.77% | $1,607,310.46 |
+| KORU/USDT:USDT | +11.10% | $27,582,077.07 |
+| EVAA/USDT:USDT | +9.76% | $6,627,255.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IDOL/USDT:USDT | below_1h_threshold | +3.66% | +3.82% |
-| AIN/USDT:USDT | below_1h_threshold | +3.21% | +3.37% |
-| RT/USDT:USDT | below_1h_threshold | +1.71% | +1.87% |
-| KORU/USDT:USDT | below_1h_threshold | +1.02% | +1.18% |
-| LYN/USDT:USDT | below_1h_threshold | +0.86% | +1.02% |
+| IDOL/USDT:USDT | below_1h_threshold | +3.75% | +3.82% |
+| AIN/USDT:USDT | below_1h_threshold | +3.26% | +3.34% |
+| RT/USDT:USDT | below_1h_threshold | +3.10% | +3.18% |
+| EVAA/USDT:USDT | below_1h_threshold | +3.04% | +3.12% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.76% | +1.84% |
 
 ## 7. 次に見るべき不足
 
