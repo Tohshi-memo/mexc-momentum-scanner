@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-02T16:31:31.488957+00:00
+- generated_at: 2026-11-02T16:36:30.525523+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18029**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-02T16:31:20.885652+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.18% price=77337.4
+- 更新: 2026-11-02T16:36:18.098815+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=77556.5
 - Funnel: target 1093 → liquid 157 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.3 >= 65=1
+- Strict後reject: 4h RSI 77.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARIA/USDT:USDT | +7.13% | $4,269,229.36 |
-| ESPORTS/USDT:USDT | +3.02% | $6,940,400.68 |
-| SOPH/USDT:USDT | +2.83% | $1,093,747.40 |
-| IDOL/USDT:USDT | +2.37% | $18,210,996.66 |
-| SOXS/USDT:USDT | +2.36% | $15,034,937.60 |
+| ARIA/USDT:USDT | +6.09% | $4,305,540.72 |
+| JCT/USDT:USDT | +3.28% | $2,167,388.25 |
+| ESPORTS/USDT:USDT | +3.02% | $6,947,986.21 |
+| SOPH/USDT:USDT | +2.77% | $1,094,610.00 |
+| LYN/USDT:USDT | +1.90% | $3,389,465.23 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +2.84% | +3.02% |
-| SOPH/USDT:USDT | below_1h_threshold | +2.84% | +3.02% |
-| IDOL/USDT:USDT | below_1h_threshold | +2.31% | +2.49% |
-| JCT/USDT:USDT | below_1h_threshold | +2.29% | +2.48% |
-| AIN/USDT:USDT | below_1h_threshold | +1.89% | +2.07% |
+| JCT/USDT:USDT | below_1h_threshold | +3.36% | +3.26% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +2.98% | +2.88% |
+| SOPH/USDT:USDT | below_1h_threshold | +2.77% | +2.67% |
+| LYN/USDT:USDT | below_1h_threshold | +1.90% | +1.80% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.41% | +1.31% |
 
 ## 7. 次に見るべき不足
 
