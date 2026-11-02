@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-02T04:16:31.217741+00:00
+- generated_at: 2026-11-02T04:21:30.995804+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18006**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-02T04:16:15.599339+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=78670.8
+- 更新: 2026-11-02T04:21:15.370448+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=78647.2
 - Funnel: target 1088 → liquid 139 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.8 >= 65=1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 81.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LYN/USDT:USDT | +22.92% | $1,669,698.85 |
-| BEAMX/USDT:USDT | +17.77% | $4,623,919.34 |
-| RT/USDT:USDT | +16.21% | $1,577,433.08 |
-| IDOL/USDT:USDT | +15.59% | $14,188,249.07 |
-| KORU/USDT:USDT | +10.35% | $23,389,868.94 |
+| LYN/USDT:USDT | +21.70% | $1,672,145.90 |
+| IDOL/USDT:USDT | +19.47% | $14,233,199.54 |
+| RT/USDT:USDT | +17.86% | $1,579,474.75 |
+| BEAMX/USDT:USDT | +16.14% | $4,630,765.67 |
+| KORU/USDT:USDT | +10.91% | $23,396,917.47 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RT/USDT:USDT | below_1h_threshold | +3.95% | +3.86% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +3.19% | +3.09% |
-| KORU/USDT:USDT | below_1h_threshold | +2.52% | +2.42% |
-| DELTAELECSTOCK/USDT:USDT | below_1h_threshold | +2.35% | +2.25% |
-| SNXX/USDT:USDT | below_1h_threshold | +2.10% | +2.00% |
+| IDOL/USDT:USDT | below_relative_strength | +5.04% | +4.98% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +4.80% | +4.73% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +3.19% | +3.12% |
+| KORU/USDT:USDT | below_1h_threshold | +2.52% | +2.45% |
+| DELTAELECSTOCK/USDT:USDT | below_1h_threshold | +2.35% | +2.28% |
 
 ## 7. 次に見るべき不足
 
