@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-02T06:46:26.639742+00:00
+- generated_at: 2026-11-02T06:51:28.108976+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18013**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-02T06:46:16.002524+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.24% price=78149.9
+- 更新: 2026-11-02T06:51:15.524331+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.23% price=78158.1
 - Funnel: target 1088 → liquid 141 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.9 >= 65=1
+- Strict後reject: 4h RSI 85.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LYN/USDT:USDT | +48.07% | $2,128,928.79 |
-| IDOL/USDT:USDT | +26.78% | $14,933,549.04 |
-| EVAA/USDT:USDT | +16.16% | $7,187,054.86 |
-| KORU/USDT:USDT | +9.98% | $30,985,853.49 |
-| BEAMX/USDT:USDT | +7.71% | $4,819,190.05 |
+| LYN/USDT:USDT | +48.47% | $2,157,575.25 |
+| IDOL/USDT:USDT | +29.35% | $15,001,342.50 |
+| EVAA/USDT:USDT | +15.53% | $7,221,951.83 |
+| KORU/USDT:USDT | +9.88% | $30,990,187.64 |
+| RT/USDT:USDT | +8.22% | $1,644,944.36 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_1h_threshold | +1.60% | +1.84% |
-| DELTAELECSTOCK/USDT:USDT | below_1h_threshold | +1.21% | +1.45% |
-| KORU/USDT:USDT | below_1h_threshold | +0.59% | +0.83% |
-| NGAS/USDT:USDT | below_1h_threshold | +0.52% | +0.76% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +0.36% | +0.60% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.95% | +2.18% |
+| DELTAELECSTOCK/USDT:USDT | below_1h_threshold | +1.21% | +1.44% |
+| IDOL/USDT:USDT | below_1h_threshold | +0.97% | +1.20% |
+| KORU/USDT:USDT | below_1h_threshold | +0.59% | +0.82% |
+| NGAS/USDT:USDT | below_1h_threshold | +0.52% | +0.75% |
 
 ## 7. 次に見るべき不足
 
