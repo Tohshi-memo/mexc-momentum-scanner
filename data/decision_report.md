@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-02T04:36:41.574956+00:00
+- generated_at: 2026-11-02T04:41:28.277498+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18006**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-02T04:36:21.826440+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=78500.1
-- Funnel: target 1088 → liquid 139 → pre 50 → checked 50 → surge 5 → strict 2
-- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.1 >= 65=1, 4h RSI 81.8 >= 65=1, 4h RSI 65.1 >= 65=1
+- 更新: 2026-11-02T04:41:13.284970+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.15% price=78472.5
+- Funnel: target 1088 → liquid 139 → pre 50 → checked 50 → surge 4 → strict 2
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 81.5 >= 65=1, 4h RSI 79.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LYN/USDT:USDT | +32.58% | $1,705,866.64 |
-| RT/USDT:USDT | +19.49% | $1,592,694.38 |
-| IDOL/USDT:USDT | +19.19% | $14,342,206.34 |
-| BEAMX/USDT:USDT | +15.60% | $4,652,151.11 |
-| KORU/USDT:USDT | +11.10% | $24,517,711.93 |
+| LYN/USDT:USDT | +29.81% | $1,721,007.01 |
+| RT/USDT:USDT | +20.88% | $1,595,330.24 |
+| IDOL/USDT:USDT | +20.32% | $14,360,588.81 |
+| BEAMX/USDT:USDT | +15.34% | $4,658,377.51 |
+| KORU/USDT:USDT | +11.47% | $24,536,112.54 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EVAA/USDT:USDT | below_1h_threshold | +3.73% | +3.85% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +3.19% | +3.30% |
-| KORU/USDT:USDT | below_1h_threshold | +2.52% | +2.64% |
-| DELTAELECSTOCK/USDT:USDT | below_1h_threshold | +2.35% | +2.47% |
-| SNXX/USDT:USDT | below_1h_threshold | +2.10% | +2.21% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +4.16% | +4.32% |
+| EVAA/USDT:USDT | below_1h_threshold | +3.46% | +3.61% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +3.19% | +3.34% |
+| KORU/USDT:USDT | below_1h_threshold | +2.52% | +2.67% |
+| DELTAELECSTOCK/USDT:USDT | below_1h_threshold | +2.35% | +2.50% |
 
 ## 7. 次に見るべき不足
 
