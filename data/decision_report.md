@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-02T13:26:22.727209+00:00
+- generated_at: 2026-11-02T13:31:16.664598+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18026**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-02T13:26:09.269610+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.18% price=77640.5
+- 更新: 2026-11-02T13:31:05.637784+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=77636.8
 - Funnel: target 1088 → liquid 146 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARIA/USDT:USDT | +47.35% | $3,000,424.05 |
-| LYN/USDT:USDT | +35.15% | $3,158,187.53 |
-| EVAA/USDT:USDT | +14.50% | $5,012,695.97 |
-| KORU/USDT:USDT | +8.95% | $48,384,719.93 |
-| SOPH/USDT:USDT | +8.59% | $1,069,803.26 |
+| ARIA/USDT:USDT | +48.62% | $3,019,821.88 |
+| LYN/USDT:USDT | +34.88% | $3,162,858.41 |
+| EVAA/USDT:USDT | +15.32% | $5,044,972.25 |
+| SOPH/USDT:USDT | +9.38% | $1,071,004.25 |
+| KORU/USDT:USDT | +8.95% | $48,395,910.85 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAMX/USDT:USDT | below_1h_threshold | +1.37% | +1.55% |
-| NGAS/USDT:USDT | below_1h_threshold | +0.88% | +1.06% |
-| LYN/USDT:USDT | below_1h_threshold | +0.76% | +0.93% |
+| ARIA/USDT:USDT | below_1h_threshold | +1.04% | +1.23% |
+| NGAS/USDT:USDT | below_1h_threshold | +0.88% | +1.07% |
 | PLTRSTOCK/USDT:USDT | below_1h_threshold | +0.65% | +0.83% |
-| SPX/USDT:USDT | below_1h_threshold | +0.56% | +0.74% |
+| LYN/USDT:USDT | below_1h_threshold | +0.55% | +0.74% |
+| SPX/USDT:USDT | below_1h_threshold | +0.50% | +0.69% |
 
 ## 7. 次に見るべき不足
 
