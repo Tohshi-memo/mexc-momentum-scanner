@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-02T10:51:32.241189+00:00
+- generated_at: 2026-11-02T10:56:25.935396+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18022**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-02T10:51:16.097465+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=78007.3
-- Funnel: target 1088 → liquid 144 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.7 >= 65=1
+- 更新: 2026-11-02T10:56:12.368336+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=77957.7
+- Funnel: target 1088 → liquid 144 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 80.2 >= 65=1, 4h RSI 70.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARIA/USDT:USDT | +57.55% | $2,041,183.53 |
-| IDOL/USDT:USDT | +34.01% | $17,127,553.20 |
-| LYN/USDT:USDT | +30.02% | $3,014,120.52 |
-| SOPH/USDT:USDT | +15.13% | $1,029,366.53 |
-| EVAA/USDT:USDT | +11.77% | $4,802,750.84 |
+| ARIA/USDT:USDT | +55.12% | $2,099,369.12 |
+| IDOL/USDT:USDT | +33.79% | $17,173,055.87 |
+| LYN/USDT:USDT | +30.62% | $3,017,569.26 |
+| EVAA/USDT:USDT | +17.08% | $4,862,224.38 |
+| SOPH/USDT:USDT | +15.35% | $1,031,559.68 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LYN/USDT:USDT | below_1h_threshold | +4.62% | +4.67% |
-| SOPH/USDT:USDT | below_1h_threshold | +3.18% | +3.23% |
-| BEAMX/USDT:USDT | below_1h_threshold | +2.92% | +2.96% |
-| KORU/USDT:USDT | below_1h_threshold | +1.45% | +1.49% |
-| QNT/USDT:USDT | below_1h_threshold | +1.30% | +1.34% |
+| BEAMX/USDT:USDT | below_1h_threshold | +4.00% | +4.10% |
+| SOPH/USDT:USDT | below_1h_threshold | +3.38% | +3.48% |
+| KORU/USDT:USDT | below_1h_threshold | +1.45% | +1.55% |
+| QNT/USDT:USDT | below_1h_threshold | +1.08% | +1.19% |
+| NGAS/USDT:USDT | below_1h_threshold | +0.76% | +0.86% |
 
 ## 7. 次に見るべき不足
 
