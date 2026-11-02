@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-02T02:46:19.475611+00:00
+- generated_at: 2026-11-02T02:51:19.106804+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18005**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-02T02:46:06.335616+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=78410.6
-- Funnel: target 1088 → liquid 139 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-11-02T02:51:06.112382+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.13% price=78468.6
+- Funnel: target 1088 → liquid 140 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IDOL/USDT:USDT | +30.42% | $13,340,004.93 |
-| LYN/USDT:USDT | +16.49% | $1,620,660.99 |
-| BEAMX/USDT:USDT | +13.39% | $4,515,357.41 |
-| KORU/USDT:USDT | +6.99% | $9,030,434.68 |
-| AIN/USDT:USDT | +6.33% | $14,709,138.63 |
+| IDOL/USDT:USDT | +30.74% | $13,388,224.90 |
+| LYN/USDT:USDT | +23.59% | $1,624,317.49 |
+| BEAMX/USDT:USDT | +13.11% | $4,530,500.21 |
+| RT/USDT:USDT | +8.02% | $1,556,818.99 |
+| KORU/USDT:USDT | +6.80% | $10,839,654.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KORU/USDT:USDT | below_1h_threshold | +2.06% | +2.01% |
-| STX/USDT:USDT | below_1h_threshold | +1.89% | +1.83% |
-| AIN/USDT:USDT | below_1h_threshold | +1.30% | +1.24% |
-| ON/USDT:USDT | below_1h_threshold | +1.30% | +1.24% |
-| IDOL/USDT:USDT | below_1h_threshold | +0.88% | +0.82% |
+| STX/USDT:USDT | below_1h_threshold | +2.19% | +2.06% |
+| KORU/USDT:USDT | below_1h_threshold | +2.06% | +1.93% |
+| ON/USDT:USDT | below_1h_threshold | +1.46% | +1.33% |
+| IDOL/USDT:USDT | below_1h_threshold | +1.13% | +1.00% |
+| AIN/USDT:USDT | below_1h_threshold | +1.01% | +0.88% |
 
 ## 7. 次に見るべき不足
 
