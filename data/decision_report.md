@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-02T00:51:14.824831+00:00
+- generated_at: 2026-11-02T00:56:24.336945+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18000**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-02T00:51:06.493831+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.21% price=78146.1
+- 更新: 2026-11-02T00:56:11.487227+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.31% price=78074.2
 - Funnel: target 1088 → liquid 134 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IDOL/USDT:USDT | +26.43% | $12,259,279.17 |
-| LYN/USDT:USDT | +23.79% | $1,424,190.99 |
-| BEAMX/USDT:USDT | +17.19% | $4,309,705.60 |
-| ESPORTS/USDT:USDT | +14.36% | $10,287,462.50 |
-| AIN/USDT:USDT | +5.89% | $15,190,245.36 |
+| IDOL/USDT:USDT | +25.94% | $12,339,731.48 |
+| LYN/USDT:USDT | +22.71% | $1,426,790.87 |
+| BEAMX/USDT:USDT | +17.04% | $4,319,762.33 |
+| ESPORTS/USDT:USDT | +14.05% | $10,295,116.49 |
+| AIN/USDT:USDT | +6.38% | $15,203,394.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LYN/USDT:USDT | below_1h_threshold | +3.62% | +3.83% |
-| SNXX/USDT:USDT | below_1h_threshold | +1.88% | +2.09% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +1.73% | +1.95% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +1.64% | +1.86% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.53% | +1.75% |
+| LYN/USDT:USDT | below_1h_threshold | +2.60% | +2.91% |
+| LSK/USDT:USDT | below_1h_threshold | +2.17% | +2.47% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.88% | +2.18% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +1.76% | +2.06% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.53% | +1.84% |
 
 ## 7. 次に見るべき不足
 
