@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-03T21:16:53.255667+00:00
+- generated_at: 2026-11-03T21:21:50.265381+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18096**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-03T21:16:39.869170+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=77869.9
+- 更新: 2026-11-03T21:21:41.979201+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=77867.3
 - Funnel: target 1084 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LYN/USDT:USDT | +17.82% | $1,484,634.19 |
-| BEAT/USDT:USDT | +8.78% | $9,735,115.81 |
-| SMCISTOCK/USDT:USDT | +3.89% | $1,068,054.56 |
-| IDOL/USDT:USDT | +3.86% | $13,775,778.58 |
-| JCT/USDT:USDT | +3.70% | $3,324,867.33 |
+| LYN/USDT:USDT | +18.30% | $1,488,685.15 |
+| BEAT/USDT:USDT | +9.59% | $9,930,973.41 |
+| AMDSTOCK/USDT:USDT | +4.71% | $11,399,927.42 |
+| IDOL/USDT:USDT | +4.67% | $13,797,475.21 |
+| MVLL/USDT:USDT | +4.19% | $2,090,249.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MVLL/USDT:USDT | below_1h_threshold | +1.95% | +1.90% |
-| AAOISTOCK/USDT:USDT | below_1h_threshold | +1.50% | +1.46% |
-| KORU/USDT:USDT | below_1h_threshold | +1.47% | +1.42% |
-| SPX/USDT:USDT | below_1h_threshold | +1.47% | +1.42% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.46% | +1.42% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.55% | +2.50% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.14% | +2.10% |
+| MUU/USDT:USDT | below_1h_threshold | +1.95% | +1.91% |
+| MVLL/USDT:USDT | below_1h_threshold | +1.95% | +1.91% |
+| ENA/USDT:USDT | below_1h_threshold | +1.72% | +1.68% |
 
 ## 7. 次に見るべき不足
 
