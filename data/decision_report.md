@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-03T21:46:49.442627+00:00
+- generated_at: 2026-11-03T21:52:38.079912+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18096**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-03T21:46:36.276817+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.23% price=78015.1
+- 更新: 2026-11-03T21:52:25.260881+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=77865.4
 - Funnel: target 1084 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LYN/USDT:USDT | +16.67% | $1,511,320.66 |
-| BEAT/USDT:USDT | +9.13% | $10,346,515.92 |
-| SMCISTOCK/USDT:USDT | +7.25% | $1,159,013.67 |
-| AMDSTOCK/USDT:USDT | +6.94% | $12,758,927.19 |
-| Q/USDT:USDT | +6.21% | $8,443,097.68 |
+| LYN/USDT:USDT | +14.94% | $1,521,841.41 |
+| BEAT/USDT:USDT | +9.32% | $10,379,422.66 |
+| SMCISTOCK/USDT:USDT | +6.69% | $1,170,795.80 |
+| IDOL/USDT:USDT | +5.92% | $13,888,224.68 |
+| Q/USDT:USDT | +5.75% | $8,452,019.20 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| Q/USDT:USDT | below_1h_threshold | +3.46% | +3.22% |
-| ENA/USDT:USDT | below_1h_threshold | +2.68% | +2.44% |
-| SNXX/USDT:USDT | below_1h_threshold | +2.55% | +2.31% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +2.37% | +2.14% |
-| PONS/USDT:USDT | below_1h_threshold | +2.22% | +1.99% |
+| Q/USDT:USDT | below_1h_threshold | +3.01% | +2.97% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.55% | +2.51% |
+| ENA/USDT:USDT | below_1h_threshold | +2.38% | +2.33% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +2.05% | +2.01% |
+| MUU/USDT:USDT | below_1h_threshold | +1.95% | +1.91% |
 
 ## 7. 次に見るべき不足
 
