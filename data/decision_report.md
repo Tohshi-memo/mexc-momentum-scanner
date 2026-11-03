@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-03T18:11:46.744634+00:00
+- generated_at: 2026-11-03T18:16:52.091929+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18094**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-03T18:11:33.693455+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.21% price=77786.5
+- 更新: 2026-11-03T18:16:38.966489+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=77677.2
 - Funnel: target 1084 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LYN/USDT:USDT | +10.06% | $1,219,932.01 |
-| Q/USDT:USDT | +6.21% | $7,824,078.62 |
-| ARIA/USDT:USDT | +3.85% | $2,481,438.52 |
-| MVLL/USDT:USDT | +3.44% | $2,369,925.12 |
-| PYTH/USDT:USDT | +2.70% | $1,931,777.41 |
+| LYN/USDT:USDT | +13.79% | $1,231,408.15 |
+| Q/USDT:USDT | +6.07% | $7,840,965.61 |
+| ARIA/USDT:USDT | +3.61% | $2,484,951.14 |
+| MVLL/USDT:USDT | +3.14% | $2,371,821.77 |
+| IDOL/USDT:USDT | +2.34% | $13,682,942.24 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MVLL/USDT:USDT | below_1h_threshold | +3.83% | +3.62% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.98% | +1.77% |
-| PONS/USDT:USDT | below_1h_threshold | +1.55% | +1.34% |
-| BEAMX/USDT:USDT | below_1h_threshold | +1.44% | +1.24% |
-| USELESS/USDT:USDT | below_1h_threshold | +1.44% | +1.23% |
+| LYN/USDT:USDT | below_1h_threshold | +4.87% | +4.80% |
+| MVLL/USDT:USDT | below_1h_threshold | +3.83% | +3.76% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.98% | +1.91% |
+| PONS/USDT:USDT | below_1h_threshold | +1.75% | +1.68% |
+| LIT/USDT:USDT | below_1h_threshold | +1.46% | +1.39% |
 
 ## 7. 次に見るべき不足
 
