@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-03T22:36:54.195440+00:00
+- generated_at: 2026-11-03T22:41:46.538428+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18096**
 
@@ -63,38 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6258件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6259件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000171 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-03T22:36:37.732649+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=77755.1
-- Funnel: target 1084 → liquid 157 → pre 50 → checked 50 → surge 3 → strict 3
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-03T22:41:26.682624+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.16% price=77748.0
+- Funnel: target 1084 → liquid 157 → pre 50 → checked 50 → surge 4 → strict 3
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 76.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LYN/USDT:USDT | +15.88% | $1,523,179.71 |
-| SMCISTOCK/USDT:USDT | +6.94% | $1,222,116.23 |
-| BEAT/USDT:USDT | +6.52% | $10,613,300.05 |
-| IDOL/USDT:USDT | +5.24% | $12,989,269.59 |
-| AMDSTOCK/USDT:USDT | +4.93% | $13,989,683.02 |
+| LYN/USDT:USDT | +16.30% | $1,524,685.70 |
+| SMCISTOCK/USDT:USDT | +6.63% | $1,228,429.19 |
+| BEAT/USDT:USDT | +6.54% | $10,633,172.76 |
+| IDOL/USDT:USDT | +5.36% | $12,994,407.75 |
+| AMDSTOCK/USDT:USDT | +4.20% | $14,051,177.98 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KORU/USDT:USDT | below_1h_threshold | +3.98% | +4.13% |
-| AAOISTOCK/USDT:USDT | below_1h_threshold | +3.93% | +4.08% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.29% | +3.44% |
-| MUU/USDT:USDT | below_1h_threshold | +3.16% | +3.31% |
-| SNXX/USDT:USDT | below_1h_threshold | +2.64% | +2.79% |
+| KORU/USDT:USDT | below_1h_threshold | +3.98% | +4.14% |
+| AAOISTOCK/USDT:USDT | below_1h_threshold | +3.93% | +4.09% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.29% | +3.45% |
+| MUU/USDT:USDT | below_1h_threshold | +3.16% | +3.32% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.64% | +2.80% |
 
 ## 7. 次に見るべき不足
 
