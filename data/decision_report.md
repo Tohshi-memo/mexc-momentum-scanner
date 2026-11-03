@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-03T15:16:40.091315+00:00
+- generated_at: 2026-11-03T15:21:19.509887+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18090**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-03T15:16:26.496938+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=77387.0
+- 更新: 2026-11-03T15:21:10.867874+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=77376.4
 - Funnel: target 1084 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +68.69% | $11,292,075.96 |
-| IDOL/USDT:USDT | +54.46% | $13,890,565.00 |
-| ICNT/USDT:USDT | +43.97% | $4,338,814.23 |
-| HOT/USDT:USDT | +24.68% | $10,222,185.58 |
-| EVAA/USDT:USDT | +12.07% | $5,782,725.36 |
+| AGT/USDT:USDT | +70.97% | $11,376,808.29 |
+| IDOL/USDT:USDT | +52.17% | $13,968,085.26 |
+| ICNT/USDT:USDT | +44.44% | $4,393,904.71 |
+| HOT/USDT:USDT | +22.44% | $10,256,844.60 |
+| EVAA/USDT:USDT | +11.88% | $5,805,556.41 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IRENSTOCK/USDT:USDT | below_1h_threshold | +4.57% | +4.54% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +4.33% | +4.30% |
-| ORCLSTOCK/USDT:USDT | below_1h_threshold | +3.34% | +3.31% |
-| IDOL/USDT:USDT | below_1h_threshold | +3.20% | +3.17% |
-| SOXS/USDT:USDT | below_1h_threshold | +2.48% | +2.46% |
+| IRENSTOCK/USDT:USDT | below_1h_threshold | +4.57% | +4.56% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +4.33% | +4.32% |
+| ORCLSTOCK/USDT:USDT | below_1h_threshold | +3.34% | +3.32% |
+| BR/USDT:USDT | below_1h_threshold | +2.81% | +2.79% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.48% | +2.47% |
 
 ## 7. 次に見るべき不足
 
