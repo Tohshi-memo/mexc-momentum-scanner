@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-03T02:01:28.446091+00:00
+- generated_at: 2026-11-03T02:06:25.888178+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18046**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-03T02:01:13.367499+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=77071.9
+- 更新: 2026-11-03T02:06:13.130260+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=77101.2
 - Funnel: target 1093 → liquid 159 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IDOL/USDT:USDT | +35.10% | $17,179,156.29 |
-| AGT/USDT:USDT | +17.30% | $3,063,789.91 |
-| EVAA/USDT:USDT | +11.89% | $7,023,580.20 |
-| JCT/USDT:USDT | +11.02% | $2,394,461.05 |
-| Q/USDT:USDT | +8.75% | $6,432,826.86 |
+| IDOL/USDT:USDT | +36.89% | $17,201,277.99 |
+| AGT/USDT:USDT | +17.89% | $3,075,529.39 |
+| EVAA/USDT:USDT | +12.81% | $7,035,912.22 |
+| JCT/USDT:USDT | +11.72% | $2,397,246.58 |
+| Q/USDT:USDT | +9.52% | $6,443,806.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +2.47% | +2.51% |
-| TSMSTOCK/USDT:USDT | below_1h_threshold | +1.20% | +1.23% |
-| EVAA/USDT:USDT | below_1h_threshold | +0.45% | +0.49% |
-| AIN/USDT:USDT | below_1h_threshold | +0.29% | +0.32% |
-| Q/USDT:USDT | below_1h_threshold | +0.25% | +0.28% |
+| IDOL/USDT:USDT | below_1h_threshold | +1.82% | +1.81% |
+| TSMSTOCK/USDT:USDT | below_1h_threshold | +1.20% | +1.19% |
+| AGT/USDT:USDT | below_1h_threshold | +0.96% | +0.95% |
+| UNITREE/USDT:USDT | below_1h_threshold | +0.87% | +0.87% |
+| EVAA/USDT:USDT | below_1h_threshold | +0.83% | +0.82% |
 
 ## 7. 次に見るべき不足
 
