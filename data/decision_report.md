@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-03T09:46:28.883512+00:00
+- generated_at: 2026-11-03T09:51:25.764763+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18068**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-03T09:46:13.600056+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.50% price=76994.7
+- 更新: 2026-11-03T09:51:12.726989+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.42% price=76932.8
 - Funnel: target 1079 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IDOL/USDT:USDT | +32.35% | $16,750,547.06 |
-| UAI/USDT:USDT | +25.09% | $7,502,710.73 |
-| ICNT/USDT:USDT | +18.08% | $1,669,084.66 |
-| AGT/USDT:USDT | +17.80% | $6,582,501.88 |
-| JCT/USDT:USDT | +14.61% | $2,740,851.47 |
+| IDOL/USDT:USDT | +32.86% | $16,765,812.68 |
+| UAI/USDT:USDT | +25.09% | $7,531,482.38 |
+| ICNT/USDT:USDT | +18.32% | $1,674,650.79 |
+| AGT/USDT:USDT | +17.76% | $6,598,539.53 |
+| JCT/USDT:USDT | +15.86% | $2,749,744.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IRYS/USDT:USDT | below_1h_threshold | +4.30% | +3.80% |
-| ARIA/USDT:USDT | below_1h_threshold | +4.15% | +3.65% |
-| ICNT/USDT:USDT | below_1h_threshold | +3.57% | +3.07% |
-| UAI/USDT:USDT | below_1h_threshold | +3.56% | +3.06% |
-| STX/USDT:USDT | below_1h_threshold | +2.72% | +2.22% |
+| IRYS/USDT:USDT | below_1h_threshold | +3.84% | +3.42% |
+| UAI/USDT:USDT | below_1h_threshold | +3.69% | +3.26% |
+| ICNT/USDT:USDT | below_1h_threshold | +3.52% | +3.09% |
+| Q/USDT:USDT | below_1h_threshold | +2.79% | +2.37% |
+| STX/USDT:USDT | below_1h_threshold | +2.45% | +2.02% |
 
 ## 7. 次に見るべき不足
 
