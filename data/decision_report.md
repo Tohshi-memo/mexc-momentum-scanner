@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-03T20:17:45.735301+00:00
+- generated_at: 2026-11-03T20:22:01.419732+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18096**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-03T20:17:33.343179+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=77641.4
+- 更新: 2026-11-03T20:21:48.397320+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.13% price=77691.4
 - Funnel: target 1084 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LYN/USDT:USDT | +16.67% | $1,437,238.70 |
-| BEAT/USDT:USDT | +6.25% | $8,953,747.56 |
-| ARIA/USDT:USDT | +5.69% | $2,329,861.70 |
-| SOXS/USDT:USDT | +5.05% | $28,892,062.17 |
-| AIN/USDT:USDT | +4.36% | $3,418,755.76 |
+| LYN/USDT:USDT | +17.09% | $1,442,616.17 |
+| BEAT/USDT:USDT | +7.74% | $9,028,783.82 |
+| ARIA/USDT:USDT | +5.70% | $2,333,572.85 |
+| AIN/USDT:USDT | +4.25% | $3,427,746.09 |
+| SOXS/USDT:USDT | +4.24% | $29,015,172.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +2.44% | +2.37% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.82% | +1.75% |
-| SQQQ/USDT:USDT | below_1h_threshold | +1.39% | +1.32% |
-| DNA/USDT:USDT | below_1h_threshold | +1.19% | +1.12% |
-| UAI/USDT:USDT | below_1h_threshold | +1.11% | +1.04% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.17% | +3.04% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.44% | +2.30% |
+| SQQQ/USDT:USDT | below_1h_threshold | +1.39% | +1.26% |
+| UAI/USDT:USDT | below_1h_threshold | +1.31% | +1.17% |
+| LYN/USDT:USDT | below_1h_threshold | +1.27% | +1.14% |
 
 ## 7. 次に見るべき不足
 
