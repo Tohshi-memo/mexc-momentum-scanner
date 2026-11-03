@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-03T17:56:22.254516+00:00
+- generated_at: 2026-11-03T18:01:54.681186+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18094**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-03T17:56:11.744585+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=77667.5
-- Funnel: target 1084 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-11-03T18:01:46.015558+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=77621.2
+- Funnel: target 1084 → liquid 159 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LYN/USDT:USDT | +14.26% | $1,246,780.51 |
-| Q/USDT:USDT | +7.02% | $7,891,363.71 |
-| ARIA/USDT:USDT | +3.64% | $2,714,914.60 |
-| SOXS/USDT:USDT | +2.82% | $30,700,137.88 |
-| IDOL/USDT:USDT | +2.70% | $13,904,308.01 |
+| LYN/USDT:USDT | +9.33% | $1,204,289.46 |
+| Q/USDT:USDT | +7.09% | $7,738,549.72 |
+| ARIA/USDT:USDT | +3.29% | $2,467,902.08 |
+| IDOL/USDT:USDT | +2.72% | $13,613,222.95 |
+| SOXS/USDT:USDT | +2.63% | $29,694,643.86 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RUNE/USDT:USDT | below_1h_threshold | +2.76% | +2.82% |
-| APR/USDT:USDT | below_1h_threshold | +2.48% | +2.54% |
-| ARIA/USDT:USDT | below_1h_threshold | +2.11% | +2.17% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.43% | +1.49% |
-| LSK/USDT:USDT | below_1h_threshold | +1.40% | +1.46% |
+| MVLL/USDT:USDT | below_1h_threshold | +3.83% | +3.83% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.98% | +1.98% |
+| LITESTOCK/USDT:USDT | below_1h_threshold | +1.38% | +1.39% |
+| ORCLSTOCK/USDT:USDT | below_1h_threshold | +1.33% | +1.33% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.99% | +1.00% |
 
 ## 7. 次に見るべき不足
 
