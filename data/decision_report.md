@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-03T12:46:39.441177+00:00
+- generated_at: 2026-11-03T12:51:28.306338+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18080**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-03T12:46:22.068861+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.42% price=77410.1
-- Funnel: target 1084 → liquid 167 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.9 >= 65=1
+- 更新: 2026-11-03T12:51:16.101700+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.43% price=77421.1
+- Funnel: target 1084 → liquid 167 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.4 >= 65=1, 4h RSI 78.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +74.96% | $7,955,908.36 |
-| IDOL/USDT:USDT | +39.04% | $14,984,556.75 |
-| ICNT/USDT:USDT | +35.99% | $3,150,763.28 |
-| HOT/USDT:USDT | +31.66% | $8,943,776.96 |
-| UAI/USDT:USDT | +21.47% | $8,194,904.30 |
+| AGT/USDT:USDT | +76.68% | $8,100,828.90 |
+| IDOL/USDT:USDT | +41.82% | $15,147,008.63 |
+| ICNT/USDT:USDT | +35.34% | $3,180,616.69 |
+| HOT/USDT:USDT | +32.92% | $8,989,243.70 |
+| UAI/USDT:USDT | +18.99% | $8,306,323.53 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HOT/USDT:USDT | below_1h_threshold | +4.91% | +4.49% |
-| ZRO/USDT:USDT | below_1h_threshold | +2.99% | +2.57% |
-| IDOL/USDT:USDT | below_1h_threshold | +2.77% | +2.35% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +2.40% | +1.98% |
-| IRYS/USDT:USDT | below_1h_threshold | +2.26% | +1.84% |
+| IDOL/USDT:USDT | below_1h_threshold | +4.39% | +3.95% |
+| IRYS/USDT:USDT | below_1h_threshold | +4.24% | +3.81% |
+| ZRO/USDT:USDT | below_1h_threshold | +3.40% | +2.97% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +2.86% | +2.43% |
+| XRP/USDT:USDT | below_1h_threshold | +2.19% | +1.75% |
 
 ## 7. 次に見るべき不足
 
