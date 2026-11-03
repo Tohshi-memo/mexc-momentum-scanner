@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-03T18:31:50.184718+00:00
+- generated_at: 2026-11-03T18:37:01.408651+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18094**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-03T18:31:37.156536+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=77675.3
+- 更新: 2026-11-03T18:36:48.114775+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.30% price=77855.6
 - Funnel: target 1084 → liquid 160 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.6 >= 65=1
+- Strict後reject: 4h RSI 68.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LYN/USDT:USDT | +17.51% | $1,265,186.74 |
-| Q/USDT:USDT | +6.85% | $7,940,463.24 |
-| ARIA/USDT:USDT | +3.95% | $2,501,504.47 |
-| SOXS/USDT:USDT | +2.82% | $29,776,384.19 |
-| UAI/USDT:USDT | +2.35% | $9,486,483.51 |
+| LYN/USDT:USDT | +17.88% | $1,291,461.77 |
+| Q/USDT:USDT | +7.06% | $7,957,466.85 |
+| ARIA/USDT:USDT | +3.79% | $2,505,877.95 |
+| PYTH/USDT:USDT | +2.61% | $2,050,164.67 |
+| JCT/USDT:USDT | +2.48% | $3,471,942.03 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MVLL/USDT:USDT | below_1h_threshold | +3.83% | +3.76% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.98% | +1.92% |
-| LITESTOCK/USDT:USDT | below_1h_threshold | +1.38% | +1.32% |
-| ORCLSTOCK/USDT:USDT | below_1h_threshold | +1.33% | +1.26% |
-| PONS/USDT:USDT | below_1h_threshold | +1.30% | +1.23% |
+| MVLL/USDT:USDT | below_1h_threshold | +3.83% | +3.53% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.41% | +2.11% |
+| PONS/USDT:USDT | below_1h_threshold | +2.40% | +2.10% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +2.03% | +1.74% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.98% | +1.68% |
 
 ## 7. 次に見るべき不足
 
