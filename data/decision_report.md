@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-03T15:46:27.074907+00:00
+- generated_at: 2026-11-03T15:51:23.531834+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18092**
 
@@ -70,30 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-03T15:46:13.977017+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.29% price=77591.1
-- Funnel: target 1084 → liquid 163 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-03T15:51:10.513174+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.31% price=77606.5
+- Funnel: target 1084 → liquid 164 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +80.31% | $11,774,722.03 |
-| IDOL/USDT:USDT | +47.15% | $14,173,222.24 |
-| ICNT/USDT:USDT | +38.59% | $4,747,334.62 |
-| HOT/USDT:USDT | +26.20% | $10,361,304.08 |
-| EVAA/USDT:USDT | +13.26% | $5,903,113.18 |
+| AGT/USDT:USDT | +78.59% | $11,867,538.04 |
+| IDOL/USDT:USDT | +46.80% | $14,207,905.53 |
+| ICNT/USDT:USDT | +35.87% | $4,787,514.21 |
+| HOT/USDT:USDT | +26.01% | $10,374,253.28 |
+| RUNE/USDT:USDT | +14.31% | $4,685,666.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AGT/USDT:USDT | below_1h_threshold | +4.84% | +4.55% |
-| IRENSTOCK/USDT:USDT | below_1h_threshold | +4.57% | +4.28% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +4.33% | +4.04% |
-| BR/USDT:USDT | below_1h_threshold | +3.73% | +3.43% |
-| ORCLSTOCK/USDT:USDT | below_1h_threshold | +3.34% | +3.05% |
+| IRENSTOCK/USDT:USDT | below_1h_threshold | +4.57% | +4.26% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +4.33% | +4.02% |
+| RUNE/USDT:USDT | below_1h_threshold | +4.33% | +4.01% |
+| AGT/USDT:USDT | below_1h_threshold | +3.82% | +3.51% |
+| ORCLSTOCK/USDT:USDT | below_1h_threshold | +3.34% | +3.03% |
 
 ## 7. 次に見るべき不足
 
