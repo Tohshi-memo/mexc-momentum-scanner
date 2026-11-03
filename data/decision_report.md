@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-03T23:31:25.101523+00:00
+- generated_at: 2026-11-03T23:36:27.532436+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18096**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-03T23:31:12.809092+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=77899.9
+- 更新: 2026-11-03T23:36:14.485749+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=77877.7
 - Funnel: target 1084 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LYN/USDT:USDT | +16.15% | $1,525,455.71 |
-| SMCISTOCK/USDT:USDT | +9.64% | $1,317,103.24 |
-| BEAT/USDT:USDT | +5.88% | $10,952,155.96 |
-| IDOL/USDT:USDT | +5.66% | $11,591,856.96 |
-| AMDSTOCK/USDT:USDT | +5.21% | $14,230,529.92 |
+| LYN/USDT:USDT | +15.41% | $1,527,663.54 |
+| SMCISTOCK/USDT:USDT | +9.30% | $1,333,385.75 |
+| BEAT/USDT:USDT | +6.36% | $10,989,236.60 |
+| IDOL/USDT:USDT | +5.27% | $11,596,137.05 |
+| AMDSTOCK/USDT:USDT | +5.16% | $14,383,920.92 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JTO/USDT:USDT | below_1h_threshold | +1.37% | +1.32% |
-| SPX/USDT:USDT | below_1h_threshold | +1.19% | +1.14% |
-| 1000BONK/USDT:USDT | below_1h_threshold | +1.15% | +1.10% |
-| PENGU/USDT:USDT | below_1h_threshold | +1.00% | +0.94% |
-| WLD/USDT:USDT | below_1h_threshold | +0.80% | +0.74% |
+| 1000BONK/USDT:USDT | below_1h_threshold | +1.53% | +1.51% |
+| AIN/USDT:USDT | below_1h_threshold | +1.49% | +1.47% |
+| JTO/USDT:USDT | below_1h_threshold | +1.29% | +1.26% |
+| PENGU/USDT:USDT | below_1h_threshold | +0.95% | +0.93% |
+| SPX/USDT:USDT | below_1h_threshold | +0.92% | +0.90% |
 
 ## 7. 次に見るべき不足
 
