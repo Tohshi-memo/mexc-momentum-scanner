@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-11-03T08:11:09.468374+00:00
+- generated_at: 2026-11-03T08:16:12.973351+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **18066**
+- closed shadow trades: **18067**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.65% / filled 20/20。**
-- 全期間 MARKET基準: n=18066, expectancy=+0.02%
+- 全期間 MARKET基準: n=18067, expectancy=+0.02%
 - 直近20件 MARKET基準: n=20, expectancy=+0.65%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -35,7 +35,7 @@
 | MARKET_LONG | 20/20 | 100.0% | +1.00% | **+1.00%** |
 | LIMIT_9PCT_LONG | 6/20 | 30.0% | +2.55% | **+0.76%** |
 | LIMIT_10PCT_LONG | 4/20 | 20.0% | +3.56% | **+0.71%** |
-| LIMIT_FIB1618_LONG | 4/20 | 20.0% | +0.28% | **+0.06%** |
+| LIMIT_FIB1618_LONG | 3/20 | 15.0% | +1.07% | **+0.16%** |
 
 ## 2. $100 Live Portfolio
 
@@ -46,17 +46,17 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$1,505.91** / 初期 $100.00 (+1405.91%)
-- 確定: 6918件 (Win 2000 / Loss 2218 / Flat 2700) / skip 7709件
+- 残高: **$1,507.98** / 初期 $100.00 (+1407.98%)
+- 確定: 6919件 (Win 2001 / Loss 2218 / Flat 2700) / skip 7709件
 - 成長率目線: 平均log +0.000392 / 幾何平均 +0.039% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: AGT/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $1,505.91
+- 最新: AGT/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.14% 残高後 $1,507.98
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$380.36** / 初期 $100.00 (+280.36%)
-- 確定: 4490件 (Win 1204 / Loss 1001 / Flat 2285) / skip 6987件
-- 成長率目線: 平均log +0.000298 / 幾何平均 +0.030% per trade / maxDD +4.13%
+- 確定: 4491件 (Win 1204 / Loss 1001 / Flat 2286) / skip 6987件
+- 成長率目線: 平均log +0.000297 / 幾何平均 +0.030% per trade / maxDD +4.13%
 - 次の候補: `LIMIT_6PCT` (selected_by_robust_growth_score) / robust_score +0.0339 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: AGT/USDT:USDT `LIMIT_6PCT` EXPIRED account +0.00% 残高後 $380.36
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-03T08:11:00.286685+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=76698.0
+- 更新: 2026-11-03T08:16:03.133060+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=76784.6
 - Funnel: target 1079 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IDOL/USDT:USDT | +38.97% | $16,213,380.91 |
-| JCT/USDT:USDT | +15.79% | $2,778,264.49 |
-| UAI/USDT:USDT | +15.52% | $6,966,697.70 |
-| ICNT/USDT:USDT | +14.83% | $1,518,220.91 |
-| AGT/USDT:USDT | +11.69% | $6,164,373.32 |
+| IDOL/USDT:USDT | +37.73% | $16,272,938.49 |
+| UAI/USDT:USDT | +18.16% | $7,000,408.67 |
+| JCT/USDT:USDT | +16.05% | $2,784,465.93 |
+| ICNT/USDT:USDT | +14.83% | $1,526,787.75 |
+| EVAA/USDT:USDT | +12.12% | $7,045,816.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIN/USDT:USDT | below_1h_threshold | +4.05% | +4.18% |
-| HOT/USDT:USDT | below_1h_threshold | +2.89% | +3.02% |
-| ICNT/USDT:USDT | below_1h_threshold | +1.67% | +1.81% |
-| JCT/USDT:USDT | below_1h_threshold | +1.61% | +1.74% |
-| IRYS/USDT:USDT | below_1h_threshold | +1.29% | +1.42% |
+| UAI/USDT:USDT | below_1h_threshold | +3.09% | +3.11% |
+| HOT/USDT:USDT | below_1h_threshold | +2.72% | +2.74% |
+| JCT/USDT:USDT | below_1h_threshold | +1.83% | +1.85% |
+| ICNT/USDT:USDT | below_1h_threshold | +1.67% | +1.69% |
+| RUNE/USDT:USDT | below_1h_threshold | +1.42% | +1.44% |
 
 ## 7. 次に見るべき不足
 
