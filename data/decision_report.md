@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-03T18:01:54.681186+00:00
+- generated_at: 2026-11-03T18:06:35.969437+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18094**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-03T18:01:46.015558+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=77621.2
-- Funnel: target 1084 → liquid 159 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-11-03T18:06:25.424769+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.12% price=77719.9
+- Funnel: target 1084 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LYN/USDT:USDT | +9.33% | $1,204,289.46 |
-| Q/USDT:USDT | +7.09% | $7,738,549.72 |
-| ARIA/USDT:USDT | +3.29% | $2,467,902.08 |
-| IDOL/USDT:USDT | +2.72% | $13,613,222.95 |
-| SOXS/USDT:USDT | +2.63% | $29,694,643.86 |
+| LYN/USDT:USDT | +8.28% | $1,210,858.83 |
+| Q/USDT:USDT | +6.24% | $7,790,359.88 |
+| ARIA/USDT:USDT | +3.27% | $2,478,796.41 |
+| MVLL/USDT:USDT | +3.14% | $2,366,781.32 |
+| PYTH/USDT:USDT | +2.58% | $1,883,107.93 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MVLL/USDT:USDT | below_1h_threshold | +3.83% | +3.83% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.98% | +1.98% |
-| LITESTOCK/USDT:USDT | below_1h_threshold | +1.38% | +1.39% |
-| ORCLSTOCK/USDT:USDT | below_1h_threshold | +1.33% | +1.33% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.99% | +1.00% |
+| MVLL/USDT:USDT | below_1h_threshold | +3.83% | +3.71% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.98% | +1.86% |
+| PONS/USDT:USDT | below_1h_threshold | +1.55% | +1.43% |
+| LITESTOCK/USDT:USDT | below_1h_threshold | +1.38% | +1.26% |
+| ORCLSTOCK/USDT:USDT | below_1h_threshold | +1.33% | +1.20% |
 
 ## 7. 次に見るべき不足
 
