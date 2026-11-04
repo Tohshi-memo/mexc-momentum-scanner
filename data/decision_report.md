@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-04T16:01:24.997600+00:00
+- generated_at: 2026-11-04T16:06:31.231888+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18127**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6290件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6291件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000099 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-04T16:01:11.530876+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.22% price=80452.2
-- Funnel: target 1078 → liquid 183 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-04T16:06:17.581403+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=80316.0
+- Funnel: target 1078 → liquid 183 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| USELESS/USDT:USDT | +1.17% | $3,919,541.10 |
-| SOXL/USDT:USDT | +1.11% | $624,419,931.91 |
-| KORU/USDT:USDT | +1.04% | $251,785,246.40 |
-| CRCLSTOCK/USDT:USDT | +0.80% | $34,568,206.12 |
-| CSOPSKHYNIX2L/USDT:USDT | +0.80% | $1,128,458.11 |
+| SOXS/USDT:USDT | +2.07% | $42,237,184.31 |
+| SQQQ/USDT:USDT | +1.20% | $2,514,395.95 |
+| POL/USDT:USDT | +1.09% | $1,845,018.70 |
+| WLFI/USDT:USDT | +0.98% | $5,483,120.46 |
+| ARIA/USDT:USDT | +0.96% | $1,176,393.79 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +2.17% | +1.95% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.71% | +1.48% |
-| USELESS/USDT:USDT | below_1h_threshold | +1.18% | +0.95% |
-| ARIA/USDT:USDT | below_1h_threshold | +0.96% | +0.74% |
-| ARB/USDT:USDT | below_1h_threshold | +0.80% | +0.58% |
+| SQQQ/USDT:USDT | below_1h_threshold | +2.05% | +1.99% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.71% | +1.65% |
+| COINBASE/USDT:USDT | below_1h_threshold | +1.66% | +1.61% |
+| NGAS/USDT:USDT | below_1h_threshold | +1.42% | +1.36% |
+| ARIA/USDT:USDT | below_1h_threshold | +1.36% | +1.31% |
 
 ## 7. 次に見るべき不足
 
