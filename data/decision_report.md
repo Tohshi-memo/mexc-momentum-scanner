@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-04T18:06:29.774215+00:00
+- generated_at: 2026-11-04T18:11:23.553978+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18128**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-04T18:06:16.755775+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.32% price=80644.9
+- 更新: 2026-11-04T18:11:12.807470+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.18% price=80530.7
 - Funnel: target 1078 → liquid 186 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLANKER/USDT:USDT | +7.46% | $8,846,192.55 |
-| INTW/USDT:USDT | +5.99% | $2,014,191.28 |
-| LYN/USDT:USDT | +5.72% | $1,242,710.21 |
-| SOXL/USDT:USDT | +4.53% | $734,825,687.75 |
-| AIN/USDT:USDT | +3.99% | $1,880,668.33 |
+| CLANKER/USDT:USDT | +8.32% | $8,972,776.16 |
+| BMT/USDT:USDT | +4.97% | $1,796,886.44 |
+| INTW/USDT:USDT | +4.58% | $2,016,406.87 |
+| LYN/USDT:USDT | +4.52% | $1,245,222.25 |
+| ARIA/USDT:USDT | +4.10% | $1,471,027.75 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LIT/USDT:USDT | below_1h_threshold | +3.28% | +2.96% |
-| INTW/USDT:USDT | below_1h_threshold | +3.24% | +2.92% |
-| AAOISTOCK/USDT:USDT | below_1h_threshold | +2.39% | +2.07% |
-| CLANKER/USDT:USDT | below_1h_threshold | +1.68% | +1.36% |
-| TESLA/USDT:USDT | below_1h_threshold | +1.55% | +1.23% |
+| INTW/USDT:USDT | below_1h_threshold | +3.24% | +3.06% |
+| BMT/USDT:USDT | below_1h_threshold | +3.22% | +3.04% |
+| LIT/USDT:USDT | below_1h_threshold | +2.45% | +2.27% |
+| AAOISTOCK/USDT:USDT | below_1h_threshold | +2.39% | +2.21% |
+| CLANKER/USDT:USDT | below_1h_threshold | +2.08% | +1.90% |
 
 ## 7. 次に見るべき不足
 
