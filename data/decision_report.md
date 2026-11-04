@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-04T06:56:45.897070+00:00
+- generated_at: 2026-11-04T07:01:11.134469+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18110**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-04T06:56:27.607612+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.37% price=78008.0
-- Funnel: target 1085 → liquid 177 → pre 50 → checked 50 → surge 4 → strict 2
-- Surge前reject: below_1h_threshold=44, below_relative_strength=2, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.2 >= 65=1, 4h RSI 81.0 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-04T07:01:03.170727+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=77976.1
+- Funnel: target 1073 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLANKER/USDT:USDT | +34.47% | $2,712,519.47 |
-| BMT/USDT:USDT | +23.51% | $1,534,211.55 |
-| USELESS/USDT:USDT | +11.19% | $2,543,781.69 |
-| LSK/USDT:USDT | +9.53% | $2,298,539.60 |
-| IDOL/USDT:USDT | +9.28% | $9,982,710.40 |
+| CLANKER/USDT:USDT | +30.78% | $2,749,979.96 |
+| BMT/USDT:USDT | +23.51% | $1,515,224.66 |
+| USELESS/USDT:USDT | +11.12% | $2,545,540.26 |
+| IDOL/USDT:USDT | +9.79% | $9,659,019.59 |
+| LSK/USDT:USDT | +9.31% | $2,232,765.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EVAA/USDT:USDT | below_relative_strength | +5.10% | +4.73% |
-| USELESS/USDT:USDT | below_relative_strength | +5.01% | +4.65% |
-| MVLL/USDT:USDT | below_1h_threshold | +4.95% | +4.58% |
-| GRASS/USDT:USDT | below_1h_threshold | +4.55% | +4.18% |
-| VVV/USDT:USDT | below_1h_threshold | +3.01% | +2.64% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +2.32% | +2.31% |
+| MVLL/USDT:USDT | below_1h_threshold | +1.94% | +1.94% |
+| STX/USDT:USDT | below_1h_threshold | +1.23% | +1.23% |
+| IDOL/USDT:USDT | below_1h_threshold | +0.97% | +0.96% |
+| SMCISTOCK/USDT:USDT | below_1h_threshold | +0.84% | +0.83% |
 
 ## 7. 次に見るべき不足
 
