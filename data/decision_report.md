@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-11-04T22:41:25.631369+00:00
+- generated_at: 2026-11-04T22:46:20.524678+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **18140**
+- closed shadow trades: **18141**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=18140, expectancy=+0.02%
+- 全期間 MARKET基準: n=18141, expectancy=+0.02%
 - 直近20件 MARKET基準: n=20, expectancy=-0.11%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -31,11 +31,11 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_BB3S_LONG | 4/4 | 100.0% | +1.60% | **+1.60%** |
 | LIMIT_FIB1272_LONG | 8/20 | 40.0% | +2.64% | **+1.06%** |
-| LIMIT_6PCT_LONG | 10/20 | 50.0% | +1.74% | **+0.87%** |
+| LIMIT_6PCT_LONG | 10/20 | 50.0% | +1.92% | **+0.96%** |
 | LIMIT_1PCT_LONG | 20/20 | 100.0% | +0.83% | **+0.83%** |
 | LIMIT_4PCT_LONG | 11/20 | 55.0% | +1.45% | **+0.80%** |
+| LIMIT_ATR_LONG | 16/20 | 80.0% | +0.92% | **+0.74%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,15 +47,15 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,527.27** / 初期 $100.00 (+1427.27%)
-- 確定: 6959件 (Win 2014 / Loss 2233 / Flat 2712) / skip 7742件
+- 確定: 6960件 (Win 2014 / Loss 2233 / Flat 2713) / skip 7742件
 - 成長率目線: 平均log +0.000392 / 幾何平均 +0.039% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_8PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: CLANKER/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.50% 残高後 $1,527.27
+- 最新: ELSA/USDT:USDT `LIMIT_8PCT_LONG` EXPIRED account +0.00% 残高後 $1,527.27
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$377.57** / 初期 $100.00 (+277.57%)
-- 確定: 4550件 (Win 1222 / Loss 1025 / Flat 2303) / skip 7001件
+- 確定: 4550件 (Win 1222 / Loss 1025 / Flat 2303) / skip 7002件
 - 成長率目線: 平均log +0.000292 / 幾何平均 +0.029% per trade / maxDD +4.25%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: CLANKER/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.35% 残高後 $377.57
@@ -65,13 +65,13 @@
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
 - 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6305件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000159 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000168 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-04T22:41:12.378544+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.83% price=80865.4
+- 更新: 2026-11-04T22:46:09.787735+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.83% price=80866.8
 - Funnel: target 1078 → liquid 187 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ELSA/USDT:USDT | +32.35% | $1,400,619.23 |
-| FLUID/USDT:USDT | +12.89% | $2,916,351.44 |
-| CLANKER/USDT:USDT | +9.34% | $18,284,734.71 |
-| BAT/USDT:USDT | +6.64% | $1,620,752.21 |
-| AXTISTOCK/USDT:USDT | +5.78% | $2,247,803.04 |
+| ELSA/USDT:USDT | +31.59% | $1,447,967.80 |
+| FLUID/USDT:USDT | +12.27% | $2,970,873.58 |
+| CLANKER/USDT:USDT | +9.67% | $18,368,498.58 |
+| BAT/USDT:USDT | +6.45% | $1,631,985.44 |
+| AXTISTOCK/USDT:USDT | +5.22% | $2,248,097.16 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BAT/USDT:USDT | below_1h_threshold | +4.66% | +3.83% |
+| BAT/USDT:USDT | below_1h_threshold | +4.47% | +3.64% |
 | AAOISTOCK/USDT:USDT | below_1h_threshold | +2.64% | +1.81% |
-| RENDER/USDT:USDT | below_1h_threshold | +2.46% | +1.63% |
-| IRENSTOCK/USDT:USDT | below_1h_threshold | +2.16% | +1.33% |
-| UNI/USDT:USDT | below_1h_threshold | +2.12% | +1.29% |
+| RENDER/USDT:USDT | below_1h_threshold | +2.58% | +1.75% |
+| KAS/USDT:USDT | below_1h_threshold | +2.32% | +1.48% |
+| IRENSTOCK/USDT:USDT | below_1h_threshold | +2.16% | +1.32% |
 
 ## 7. 次に見るべき不足
 
