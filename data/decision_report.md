@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-04T08:16:25.167108+00:00
+- generated_at: 2026-11-04T08:21:19.085969+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18112**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-04T08:16:09.558053+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.44% price=78461.2
+- 更新: 2026-11-04T08:21:08.663860+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.35% price=78387.0
 - Funnel: target 1073 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLANKER/USDT:USDT | +30.78% | $3,286,916.52 |
-| BMT/USDT:USDT | +17.30% | $1,611,386.78 |
-| LSK/USDT:USDT | +14.75% | $2,967,056.33 |
-| IDOL/USDT:USDT | +13.50% | $9,621,119.83 |
-| AXIS/USDT:USDT | +10.69% | $1,402,414.27 |
+| CLANKER/USDT:USDT | +27.34% | $3,315,185.37 |
+| BMT/USDT:USDT | +17.69% | $1,620,408.35 |
+| LSK/USDT:USDT | +14.38% | $3,031,611.95 |
+| IDOL/USDT:USDT | +11.69% | $9,660,904.54 |
+| FLUID/USDT:USDT | +11.33% | $1,145,594.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LSK/USDT:USDT | below_1h_threshold | +2.77% | +2.33% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +2.29% | +1.85% |
-| PEPE/USDT:USDT | below_1h_threshold | +1.98% | +1.54% |
-| 1000BONK/USDT:USDT | below_1h_threshold | +1.85% | +1.41% |
-| PENGU/USDT:USDT | below_1h_threshold | +1.69% | +1.25% |
+| PEPE/USDT:USDT | below_1h_threshold | +3.28% | +2.94% |
+| LSK/USDT:USDT | below_1h_threshold | +2.33% | +1.98% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +2.29% | +1.94% |
+| PENGU/USDT:USDT | below_1h_threshold | +1.93% | +1.58% |
+| FLUID/USDT:USDT | below_1h_threshold | +1.90% | +1.55% |
 
 ## 7. 次に見るべき不足
 
