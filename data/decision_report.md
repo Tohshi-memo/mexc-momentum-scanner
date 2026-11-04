@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-04T14:06:38.139449+00:00
+- generated_at: 2026-11-04T14:11:28.626913+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18122**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-04T14:06:27.188994+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=78295.7
+- 更新: 2026-11-04T14:11:18.073659+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=78283.0
 - Funnel: target 1078 → liquid 180 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLANKER/USDT:USDT | +36.28% | $4,817,687.54 |
-| JCT/USDT:USDT | +34.37% | $4,895,387.47 |
-| BMT/USDT:USDT | +13.57% | $1,770,942.87 |
-| LSK/USDT:USDT | +12.38% | $4,986,155.23 |
-| IDOL/USDT:USDT | +11.72% | $7,664,515.64 |
+| CLANKER/USDT:USDT | +35.33% | $4,853,263.05 |
+| JCT/USDT:USDT | +32.74% | $4,950,876.09 |
+| BMT/USDT:USDT | +13.34% | $1,774,767.35 |
+| LSK/USDT:USDT | +12.10% | $5,008,189.34 |
+| IDOL/USDT:USDT | +11.91% | $7,671,898.19 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JCT/USDT:USDT | below_1h_threshold | +3.43% | +3.48% |
-| MSFTSTOCK/USDT:USDT | below_1h_threshold | +1.42% | +1.47% |
-| NICKEL/USDT:USDT | below_1h_threshold | +1.15% | +1.20% |
-| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +0.89% | +0.94% |
-| LSK/USDT:USDT | below_1h_threshold | +0.86% | +0.92% |
+| JCT/USDT:USDT | below_1h_threshold | +2.17% | +2.24% |
+| MSFTSTOCK/USDT:USDT | below_1h_threshold | +1.42% | +1.49% |
+| NICKEL/USDT:USDT | below_1h_threshold | +1.15% | +1.22% |
+| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +0.89% | +0.96% |
+| LSK/USDT:USDT | below_1h_threshold | +0.74% | +0.81% |
 
 ## 7. 次に見るべき不足
 
