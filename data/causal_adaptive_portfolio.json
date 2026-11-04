@@ -4,7 +4,7 @@
   "initial_capital": 100.0,
   "balance": 117.6114169450822,
   "started_at": "2026-07-11T08:56:50.346675+00:00",
-  "updated_at": "2026-11-04T02:21:35.268900+00:00",
+  "updated_at": "2026-11-04T02:26:44.036510+00:00",
   "high_watermark": 128.08262302711162,
   "max_drawdown_pct": 8.205992703625467,
   "loss_streak": 0,
@@ -283731,7 +283731,7 @@
     "reason": "selected_by_causal_log_growth",
     "causal_score": 0.000129292609272255,
     "robust_score": 0.000129292609272255,
-    "causal_history_count": 18099,
+    "causal_history_count": 18100,
     "fast": {
       "strategy": "LIMIT_9PCT_LONG",
       "direction": "long",
@@ -283806,12 +283806,17 @@
       {
         "strategy": "LIMIT_7PCT",
         "direction": "short",
-        "causal_score": 0.00011299469066010042
+        "causal_score": 0.00011286850400455163
+      },
+      {
+        "strategy": "MARKET",
+        "direction": "short",
+        "causal_score": 7.563283736792772e-05
       },
       {
         "strategy": "MARKET_LONG",
         "direction": "long",
-        "causal_score": 0.00011052776322900197
+        "causal_score": 6.681962124596328e-05
       }
     ]
   },
