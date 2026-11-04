@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-04T02:41:33.444403+00:00
+- generated_at: 2026-11-04T02:46:30.418213+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18102**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-04T02:41:18.542101+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.48% price=76646.0
+- 更新: 2026-11-04T02:46:15.585323+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.53% price=76608.0
 - Funnel: target 1084 → liquid 168 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLANKER/USDT:USDT | +33.79% | $1,369,261.81 |
-| BMT/USDT:USDT | +17.61% | $1,179,449.09 |
-| SOXS/USDT:USDT | +12.57% | $30,843,667.95 |
-| AXIS/USDT:USDT | +8.50% | $1,259,382.70 |
-| SQQQ/USDT:USDT | +7.18% | $1,219,319.69 |
+| CLANKER/USDT:USDT | +35.85% | $1,378,928.72 |
+| BMT/USDT:USDT | +16.62% | $1,186,747.08 |
+| SOXS/USDT:USDT | +12.45% | $30,867,001.27 |
+| AXIS/USDT:USDT | +8.50% | $1,265,393.04 |
+| IDOL/USDT:USDT | +7.85% | $10,065,738.41 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SQQQ/USDT:USDT | below_1h_threshold | +2.97% | +3.45% |
-| LYN/USDT:USDT | below_1h_threshold | +2.02% | +2.50% |
-| LSK/USDT:USDT | below_1h_threshold | +1.32% | +1.80% |
-| AERO/USDT:USDT | below_1h_threshold | +1.19% | +1.67% |
-| BMT/USDT:USDT | below_1h_threshold | +1.09% | +1.57% |
+| LSK/USDT:USDT | below_1h_threshold | +3.23% | +3.75% |
+| SQQQ/USDT:USDT | below_1h_threshold | +2.97% | +3.50% |
+| LYN/USDT:USDT | below_1h_threshold | +1.54% | +2.07% |
+| Q/USDT:USDT | below_1h_threshold | +1.32% | +1.85% |
+| IDOL/USDT:USDT | below_1h_threshold | +0.89% | +1.42% |
 
 ## 7. 次に見るべき不足
 
