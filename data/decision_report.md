@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-04T13:51:22.725320+00:00
+- generated_at: 2026-11-04T13:56:29.324013+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18121**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-04T13:51:11.258609+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=78356.2
+- 更新: 2026-11-04T13:56:13.628823+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.12% price=78362.7
 - Funnel: target 1078 → liquid 182 → pre 50 → checked 50 → surge 2 → strict 2
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JCT/USDT:USDT | +34.51% | $4,572,459.25 |
-| CLANKER/USDT:USDT | +31.12% | $4,648,343.50 |
-| BMT/USDT:USDT | +13.53% | $1,875,176.02 |
-| IDOL/USDT:USDT | +12.98% | $8,731,663.66 |
-| LSK/USDT:USDT | +12.96% | $4,991,733.23 |
+| JCT/USDT:USDT | +35.42% | $4,699,306.90 |
+| CLANKER/USDT:USDT | +34.90% | $4,701,353.62 |
+| BMT/USDT:USDT | +14.41% | $1,880,353.57 |
+| IDOL/USDT:USDT | +12.82% | $8,752,005.39 |
+| LSK/USDT:USDT | +11.61% | $5,020,371.15 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| Q/USDT:USDT | below_1h_threshold | +3.30% | +3.19% |
-| BTW/USDT:USDT | below_1h_threshold | +2.95% | +2.85% |
-| ALGO/USDT:USDT | below_1h_threshold | +2.65% | +2.54% |
-| FLUID/USDT:USDT | below_1h_threshold | +2.50% | +2.39% |
-| CLANKER/USDT:USDT | below_1h_threshold | +1.53% | +1.42% |
+| CLANKER/USDT:USDT | below_1h_threshold | +4.26% | +4.15% |
+| BTW/USDT:USDT | below_1h_threshold | +4.16% | +4.05% |
+| Q/USDT:USDT | below_1h_threshold | +3.51% | +3.39% |
+| ALGO/USDT:USDT | below_1h_threshold | +2.60% | +2.49% |
+| FLUID/USDT:USDT | below_1h_threshold | +2.27% | +2.15% |
 
 ## 7. 次に見るべき不足
 
