@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-04T01:41:25.173597+00:00
+- generated_at: 2026-11-04T01:46:31.317338+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18100**
 
@@ -70,32 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-04T01:41:13.057485+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.43% price=76890.1
-- Funnel: target 1084 → liquid 165 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.3 >= 65=1
+- 更新: 2026-11-04T01:46:15.534985+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.48% price=76853.1
+- Funnel: target 1084 → liquid 168 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLANKER/USDT:USDT | +30.18% | $1,198,423.26 |
-| BMT/USDT:USDT | +19.04% | $1,017,404.24 |
-| SOXS/USDT:USDT | +12.82% | $31,381,690.55 |
-| AXIS/USDT:USDT | +7.98% | $1,132,721.86 |
-| SQQQ/USDT:USDT | +7.11% | $1,200,714.15 |
+| CLANKER/USDT:USDT | +33.87% | $1,204,654.52 |
+| BMT/USDT:USDT | +15.91% | $1,034,290.14 |
+| SOXS/USDT:USDT | +11.91% | $31,474,280.00 |
+| AXIS/USDT:USDT | +7.90% | $1,158,532.45 |
+| SQQQ/USDT:USDT | +6.59% | $1,201,287.03 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +3.91% | +4.34% |
-| SQQQ/USDT:USDT | below_1h_threshold | +1.80% | +2.24% |
-| XPD/USDT:USDT | below_1h_threshold | +0.94% | +1.38% |
-| XPT/USDT:USDT | below_1h_threshold | +0.81% | +1.25% |
-| XAU/USDT:USDT | below_1h_threshold | +0.78% | +1.21% |
+| BMT/USDT:USDT | below_1h_threshold | +4.42% | +4.91% |
+| SOXS/USDT:USDT | below_1h_threshold | +3.91% | +4.39% |
+| SQQQ/USDT:USDT | below_1h_threshold | +1.80% | +2.29% |
+| LSK/USDT:USDT | below_1h_threshold | +0.99% | +1.48% |
+| CLANKER/USDT:USDT | below_1h_threshold | +0.78% | +1.26% |
 
 ## 7. 次に見るべき不足
 
