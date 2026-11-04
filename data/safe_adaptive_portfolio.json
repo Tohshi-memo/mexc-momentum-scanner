@@ -2,9 +2,9 @@
   "mode": "safe_adaptive_dry_run",
   "enabled": true,
   "initial_capital": 100.0,
-  "balance": 1531.8076226327644,
+  "balance": 1542.662399493353,
   "started_at": "2026-05-06T08:22:19.867267+00:00",
-  "updated_at": "2026-11-04T20:51:23.716366+00:00",
+  "updated_at": "2026-11-04T20:56:33.346206+00:00",
   "high_watermark": 1587.0964868721987,
   "max_drawdown_pct": 8.457719753190009,
   "loss_streak": 0,
@@ -191,7 +191,7 @@
     "2026-11-01": 37.078027201108846,
     "2026-11-02": 10.018562197732644,
     "2026-11-03": -32.39332869166063,
-    "2026-11-04": 31.365044559037187
+    "2026-11-04": 42.21982141962576
   },
   "trades": [
     {
@@ -334081,6 +334081,54 @@
         "max_drawdown_pct": 22.335465237456607,
         "max_loss_streak": 19
       }
+    },
+    {
+      "key": "MRNASTOCK/USDT:USDT|2026-11-04T15:01:19.166692+00:00",
+      "symbol": "MRNASTOCK/USDT:USDT",
+      "detected_at": "2026-11-04T15:01:19.166692+00:00",
+      "closed_at": "2026-11-04T20:55:55.638625+00:00",
+      "strategy": "LIMIT_1PCT_LONG",
+      "direction": "long",
+      "outcome": "EXPIRED",
+      "filled": true,
+      "pnl_pct": 3.5160691175450434,
+      "sl_pct": 2.480908426369585,
+      "risk_pct": 0.5,
+      "account_return_pct": 0.7086253325944504,
+      "log_return": 0.007061263818048993,
+      "pnl_usdt": 10.85477686058857,
+      "balance_before": 1531.8076226327644,
+      "balance_after": 1542.662399493353,
+      "drawdown_after_pct": 2.7997092644578356,
+      "selector_reason": "selected_by_recent_avg_log_return",
+      "selector_recent": {
+        "strategy": "LIMIT_1PCT_LONG",
+        "direction": "long",
+        "total": 50,
+        "filled": 44,
+        "fill_rate": 0.88,
+        "avg_pnl_pct": 0.699690318146303,
+        "effective_ev_pct": 0.6157274799687467,
+        "avg_log_return": 0.0007767058186772169,
+        "geometric_return_pct": 0.07770075327508952,
+        "avg_account_return_pct": 0.07930959128468845,
+        "max_drawdown_pct": 3.4372716374657575,
+        "max_loss_streak": 4
+      },
+      "selector_all": {
+        "strategy": "LIMIT_1PCT_LONG",
+        "direction": "long",
+        "total": 17931,
+        "filled": 15250,
+        "fill_rate": 0.8504824047738553,
+        "avg_pnl_pct": 0.4647139993493159,
+        "effective_ev_pct": 0.395231079698682,
+        "avg_log_return": 0.0004751389961199438,
+        "geometric_return_pct": 0.047525189253261324,
+        "avg_account_return_pct": 0.04911962125653059,
+        "max_drawdown_pct": 22.335465237456607,
+        "max_loss_streak": 19
+      }
     }
   ],
   "skipped": [
@@ -416215,6 +416263,7 @@
     "MRNASTOCK/USDT:USDT|2026-10-09T14:01:16.953062+00:00",
     "MRNASTOCK/USDT:USDT|2026-10-09T14:51:18.933501+00:00",
     "MRNASTOCK/USDT:USDT|2026-10-26T14:01:10.266300+00:00",
+    "MRNASTOCK/USDT:USDT|2026-11-04T15:01:19.166692+00:00",
     "MRVLSTOCK/USDT:USDT|2026-05-13T13:43:10.687126+00:00",
     "MRVLSTOCK/USDT:USDT|2026-05-13T13:58:00.300329+00:00",
     "MRVLSTOCK/USDT:USDT|2026-05-27T20:19:54.628263+00:00",
@@ -421873,7 +421922,7 @@
     "strategy": "LIMIT_8PCT_LONG",
     "direction": "long",
     "reason": "selected_by_recent_avg_log_return",
-    "history_count": 18135,
+    "history_count": 18136,
     "recent_count": 50,
     "recent": {
       "strategy": "LIMIT_8PCT_LONG",
@@ -421892,27 +421941,27 @@
     "all": {
       "strategy": "LIMIT_8PCT_LONG",
       "direction": "long",
-      "total": 17937,
+      "total": 17938,
       "filled": 5500,
-      "fill_rate": 0.3066287562022635,
+      "fill_rate": 0.3066116623926859,
       "avg_pnl_pct": 0.48674195387400954,
-      "effective_ev_pct": 0.14924907990784705,
-      "avg_log_return": 0.00018459160463579936,
-      "geometric_return_pct": 0.018460864271441224,
-      "avg_account_return_pct": 0.01873062361060668,
+      "effective_ev_pct": 0.1492407596335741,
+      "avg_log_return": 0.00018458131410147916,
+      "geometric_return_pct": 0.018459835028039606,
+      "avg_account_return_pct": 0.018729579423762518,
       "max_drawdown_pct": 20.01191910161745,
       "max_loss_streak": 14
     },
     "alternatives": []
   },
   "summary": {
-    "trade_count": 6956,
-    "wins": 2013,
+    "trade_count": 6957,
+    "wins": 2014,
     "losses": 2231,
     "flat": 2712,
-    "avg_log_return": 0.00039232800226184864,
-    "geometric_return_pct": 0.039240497295822685,
-    "return_pct": 1431.8076226327644
+    "avg_log_return": 0.00039328659588205666,
+    "geometric_return_pct": 0.039336394319477996,
+    "return_pct": 1442.662399493353
   },
   "config": {
     "enabled": true,
