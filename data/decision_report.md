@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-04T02:11:29.699225+00:00
+- generated_at: 2026-11-04T02:16:28.351209+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18100**
 
@@ -70,32 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-04T02:11:13.565902+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=76981.0
-- Funnel: target 1084 → liquid 167 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.1 >= 65=1
+- 更新: 2026-11-04T02:16:13.163246+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=76922.9
+- Funnel: target 1084 → liquid 167 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLANKER/USDT:USDT | +42.64% | $1,276,039.08 |
-| BMT/USDT:USDT | +16.54% | $1,102,831.77 |
-| SOXS/USDT:USDT | +9.87% | $30,503,041.09 |
-| AXIS/USDT:USDT | +8.20% | $1,214,060.86 |
-| IDOL/USDT:USDT | +6.53% | $9,997,634.71 |
+| CLANKER/USDT:USDT | +40.41% | $1,294,747.80 |
+| BMT/USDT:USDT | +17.93% | $1,114,103.00 |
+| SOXS/USDT:USDT | +10.53% | $30,530,984.48 |
+| AXIS/USDT:USDT | +7.83% | $1,221,807.80 |
+| SQQQ/USDT:USDT | +6.09% | $1,205,539.90 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SQQQ/USDT:USDT | below_1h_threshold | +2.97% | +3.01% |
-| AERO/USDT:USDT | below_1h_threshold | +1.37% | +1.41% |
-| LYN/USDT:USDT | below_1h_threshold | +1.06% | +1.10% |
-| LEAD/USDT:USDT | below_1h_threshold | +0.66% | +0.70% |
-| XMR/USDT:USDT | below_1h_threshold | +0.56% | +0.60% |
+| CLANKER/USDT:USDT | below_1h_threshold | +3.74% | +3.86% |
+| SQQQ/USDT:USDT | below_1h_threshold | +2.97% | +3.09% |
+| AERO/USDT:USDT | below_1h_threshold | +1.45% | +1.57% |
+| BMT/USDT:USDT | below_1h_threshold | +1.40% | +1.51% |
+| LYN/USDT:USDT | below_1h_threshold | +1.17% | +1.29% |
 
 ## 7. 次に見るべき不足
 
