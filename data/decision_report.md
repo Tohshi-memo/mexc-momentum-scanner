@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-04T12:16:11.623329+00:00
+- generated_at: 2026-11-04T12:21:15.428876+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18119**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6279件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6280件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000124 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-04T12:16:03.598227+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.55% price=78023.5
-- Funnel: target 1073 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-04T12:21:04.062008+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.25% price=78254.4
+- Funnel: target 1073 → liquid 177 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLANKER/USDT:USDT | +28.37% | $4,426,503.09 |
-| JCT/USDT:USDT | +21.68% | $3,372,813.55 |
-| BMT/USDT:USDT | +20.34% | $1,830,107.48 |
-| LSK/USDT:USDT | +13.63% | $4,599,482.78 |
-| IDOL/USDT:USDT | +13.08% | $8,829,776.70 |
+| CLANKER/USDT:USDT | +29.14% | $4,443,018.41 |
+| JCT/USDT:USDT | +25.77% | $3,472,691.16 |
+| BMT/USDT:USDT | +20.30% | $1,835,292.76 |
+| IDOL/USDT:USDT | +13.35% | $8,863,435.10 |
+| LSK/USDT:USDT | +12.39% | $4,635,674.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +3.11% | +3.66% |
-| BMT/USDT:USDT | below_1h_threshold | +1.54% | +2.08% |
-| JCT/USDT:USDT | below_1h_threshold | +1.50% | +2.05% |
-| AXIS/USDT:USDT | below_1h_threshold | +1.23% | +1.78% |
-| MSFTSTOCK/USDT:USDT | below_1h_threshold | +1.03% | +1.58% |
+| SOXS/USDT:USDT | below_1h_threshold | +3.11% | +3.36% |
+| BMT/USDT:USDT | below_1h_threshold | +1.50% | +1.76% |
+| AXIS/USDT:USDT | below_1h_threshold | +1.23% | +1.49% |
+| MSFTSTOCK/USDT:USDT | below_1h_threshold | +1.03% | +1.29% |
+| EVAA/USDT:USDT | below_1h_threshold | +1.02% | +1.27% |
 
 ## 7. 次に見るべき不足
 
