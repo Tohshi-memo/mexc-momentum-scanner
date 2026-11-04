@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-04T06:51:40.669196+00:00
+- generated_at: 2026-11-04T06:56:45.897070+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18110**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6273件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6274件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000139 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-04T06:51:24.079249+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.34% price=77984.2
-- Funnel: target 1085 → liquid 177 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.9 >= 65=1, 4h RSI 66.5 >= 65=1
+- 更新: 2026-11-04T06:56:27.607612+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.37% price=78008.0
+- Funnel: target 1085 → liquid 177 → pre 50 → checked 50 → surge 4 → strict 2
+- Surge前reject: below_1h_threshold=44, below_relative_strength=2, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 65.2 >= 65=1, 4h RSI 81.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLANKER/USDT:USDT | +35.59% | $2,657,683.51 |
-| BMT/USDT:USDT | +23.07% | $1,526,108.45 |
-| USELESS/USDT:USDT | +10.91% | $2,499,851.16 |
-| LSK/USDT:USDT | +10.01% | $2,288,314.25 |
-| EVAA/USDT:USDT | +8.09% | $3,859,821.53 |
+| CLANKER/USDT:USDT | +34.47% | $2,712,519.47 |
+| BMT/USDT:USDT | +23.51% | $1,534,211.55 |
+| USELESS/USDT:USDT | +11.19% | $2,543,781.69 |
+| LSK/USDT:USDT | +9.53% | $2,298,539.60 |
+| IDOL/USDT:USDT | +9.28% | $9,982,710.40 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MVLL/USDT:USDT | below_1h_threshold | +4.95% | +4.61% |
-| BMT/USDT:USDT | below_1h_threshold | +4.77% | +4.43% |
-| USELESS/USDT:USDT | below_1h_threshold | +4.75% | +4.41% |
-| GRASS/USDT:USDT | below_1h_threshold | +3.34% | +3.00% |
-| DNA/USDT:USDT | below_1h_threshold | +3.15% | +2.81% |
+| EVAA/USDT:USDT | below_relative_strength | +5.10% | +4.73% |
+| USELESS/USDT:USDT | below_relative_strength | +5.01% | +4.65% |
+| MVLL/USDT:USDT | below_1h_threshold | +4.95% | +4.58% |
+| GRASS/USDT:USDT | below_1h_threshold | +4.55% | +4.18% |
+| VVV/USDT:USDT | below_1h_threshold | +3.01% | +2.64% |
 
 ## 7. 次に見るべき不足
 
