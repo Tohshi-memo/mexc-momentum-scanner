@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-04T23:26:49.363706+00:00
+- generated_at: 2026-11-04T23:31:37.315794+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18142**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-04T23:26:33.982162+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.24% price=80485.4
+- 更新: 2026-11-04T23:31:24.433500+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.26% price=80469.7
 - Funnel: target 1078 → liquid 188 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ELSA/USDT:USDT | +28.86% | $1,708,027.98 |
-| APPSTOCK/USDT:USDT | +21.41% | $1,109,365.36 |
-| FLUID/USDT:USDT | +12.22% | $3,245,332.71 |
-| AXTISTOCK/USDT:USDT | +5.84% | $2,243,864.99 |
-| BAT/USDT:USDT | +5.47% | $1,754,862.77 |
+| ELSA/USDT:USDT | +29.32% | $1,729,097.21 |
+| APPSTOCK/USDT:USDT | +22.30% | $1,125,774.76 |
+| FLUID/USDT:USDT | +11.73% | $3,250,495.65 |
+| AXTISTOCK/USDT:USDT | +5.80% | $2,244,196.75 |
+| BAT/USDT:USDT | +5.31% | $1,770,397.90 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| APPSTOCK/USDT:USDT | below_1h_threshold | +3.19% | +3.44% |
-| ICNT/USDT:USDT | below_1h_threshold | +1.30% | +1.54% |
-| QNT/USDT:USDT | below_1h_threshold | +1.01% | +1.25% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +0.60% | +0.85% |
-| COINBASE/USDT:USDT | below_1h_threshold | +0.58% | +0.82% |
+| APPSTOCK/USDT:USDT | below_1h_threshold | +3.19% | +3.46% |
+| ICNT/USDT:USDT | below_1h_threshold | +0.88% | +1.14% |
+| JCT/USDT:USDT | below_1h_threshold | +0.61% | +0.87% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +0.60% | +0.87% |
+| COINBASE/USDT:USDT | below_1h_threshold | +0.58% | +0.84% |
 
 ## 7. 次に見るべき不足
 
