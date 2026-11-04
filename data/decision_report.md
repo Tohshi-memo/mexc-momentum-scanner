@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-04T19:26:34.935826+00:00
+- generated_at: 2026-11-04T19:31:24.654650+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18134**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-04T19:26:25.381532+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=80182.3
+- 更新: 2026-11-04T19:31:16.221626+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=80270.2
 - Funnel: target 1078 → liquid 185 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.5 >= 65=1
+- Strict後reject: 4h RSI 68.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLANKER/USDT:USDT | +24.12% | $12,199,093.44 |
-| AIN/USDT:USDT | +17.02% | $2,386,106.20 |
-| FLUID/USDT:USDT | +7.82% | $1,981,976.79 |
-| LYN/USDT:USDT | +6.27% | $1,077,287.36 |
-| CRCLSTOCK/USDT:USDT | +3.37% | $36,852,656.47 |
+| CLANKER/USDT:USDT | +23.10% | $12,365,489.08 |
+| AIN/USDT:USDT | +16.91% | $2,405,935.24 |
+| FLUID/USDT:USDT | +7.73% | $1,986,977.65 |
+| LYN/USDT:USDT | +6.27% | $1,078,618.84 |
+| CRCLSTOCK/USDT:USDT | +3.77% | $36,930,181.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FLUID/USDT:USDT | below_1h_threshold | +1.38% | +1.54% |
-| LYN/USDT:USDT | below_1h_threshold | +1.21% | +1.37% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +0.72% | +0.88% |
-| INJ/USDT:USDT | below_1h_threshold | +0.70% | +0.87% |
-| BIRB/USDT:USDT | below_1h_threshold | +0.59% | +0.75% |
+| AXIS/USDT:USDT | below_1h_threshold | +1.74% | +1.79% |
+| FLUID/USDT:USDT | below_1h_threshold | +1.34% | +1.39% |
+| LYN/USDT:USDT | below_1h_threshold | +1.26% | +1.32% |
+| INJ/USDT:USDT | below_1h_threshold | +0.83% | +0.88% |
+| PONS/USDT:USDT | below_1h_threshold | +0.80% | +0.86% |
 
 ## 7. 次に見るべき不足
 
