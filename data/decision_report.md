@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-04T13:46:29.068384+00:00
+- generated_at: 2026-11-04T13:51:22.725320+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18121**
 
@@ -63,38 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6282件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6283件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000099 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-04T13:46:15.558174+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.15% price=78386.3
-- Funnel: target 1078 → liquid 182 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-04T13:51:11.258609+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=78356.2
+- Funnel: target 1078 → liquid 182 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JCT/USDT:USDT | +29.77% | $4,425,315.81 |
-| CLANKER/USDT:USDT | +29.57% | $4,629,324.98 |
-| IDOL/USDT:USDT | +14.24% | $8,692,246.07 |
-| BMT/USDT:USDT | +12.94% | $1,868,229.11 |
-| LSK/USDT:USDT | +12.49% | $4,976,174.71 |
+| JCT/USDT:USDT | +34.51% | $4,572,459.25 |
+| CLANKER/USDT:USDT | +31.12% | $4,648,343.50 |
+| BMT/USDT:USDT | +13.53% | $1,875,176.02 |
+| IDOL/USDT:USDT | +12.98% | $8,731,663.66 |
+| LSK/USDT:USDT | +12.96% | $4,991,733.23 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JCT/USDT:USDT | below_1h_threshold | +4.05% | +3.90% |
-| ALGO/USDT:USDT | below_1h_threshold | +2.71% | +2.56% |
-| Q/USDT:USDT | below_1h_threshold | +2.71% | +2.56% |
-| FLUID/USDT:USDT | below_1h_threshold | +2.50% | +2.36% |
-| BTW/USDT:USDT | below_1h_threshold | +2.04% | +1.89% |
+| Q/USDT:USDT | below_1h_threshold | +3.30% | +3.19% |
+| BTW/USDT:USDT | below_1h_threshold | +2.95% | +2.85% |
+| ALGO/USDT:USDT | below_1h_threshold | +2.65% | +2.54% |
+| FLUID/USDT:USDT | below_1h_threshold | +2.50% | +2.39% |
+| CLANKER/USDT:USDT | below_1h_threshold | +1.53% | +1.42% |
 
 ## 7. 次に見るべき不足
 
