@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-04T15:16:47.329882+00:00
+- generated_at: 2026-11-04T15:21:46.923875+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18126**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6287件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6288件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000099 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-04T15:16:34.222995+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +1.95% price=80864.5
-- Funnel: target 1078 → liquid 183 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.6 >= 65=1
+- 更新: 2026-11-04T15:21:32.980948+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +1.76% price=80711.8
+- Funnel: target 1078 → liquid 184 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=46, below_relative_strength=2, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 84.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLANKER/USDT:USDT | +59.75% | $6,137,752.64 |
-| JCT/USDT:USDT | +21.46% | $5,717,365.56 |
-| IDOL/USDT:USDT | +18.17% | $7,261,112.65 |
-| USELESS/USDT:USDT | +15.96% | $3,837,471.04 |
-| LSK/USDT:USDT | +14.86% | $5,120,720.63 |
+| CLANKER/USDT:USDT | +60.10% | $6,252,350.69 |
+| JCT/USDT:USDT | +23.79% | $5,749,180.24 |
+| IDOL/USDT:USDT | +22.80% | $7,337,232.95 |
+| USELESS/USDT:USDT | +14.28% | $3,870,044.23 |
+| LSK/USDT:USDT | +13.88% | $5,143,339.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MRNASTOCK/USDT:USDT | below_relative_strength | +5.70% | +3.75% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +4.84% | +2.89% |
-| PONS/USDT:USDT | below_1h_threshold | +4.29% | +2.34% |
-| IDOL/USDT:USDT | below_1h_threshold | +3.77% | +1.82% |
-| AAPLSTOCK/USDT:USDT | below_1h_threshold | +3.57% | +1.63% |
+| FARTCOIN/USDT:USDT | below_relative_strength | +5.77% | +4.01% |
+| MRNASTOCK/USDT:USDT | below_relative_strength | +5.70% | +3.95% |
+| PEPE/USDT:USDT | below_1h_threshold | +4.43% | +2.67% |
+| AAPLSTOCK/USDT:USDT | below_1h_threshold | +3.57% | +1.82% |
+| RAY/USDT:USDT | below_1h_threshold | +3.12% | +1.37% |
 
 ## 7. 次に見るべき不足
 
