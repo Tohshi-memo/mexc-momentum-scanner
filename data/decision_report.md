@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-04T21:36:37.996948+00:00
+- generated_at: 2026-11-04T21:41:23.096050+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18139**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-04T21:36:19.811447+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=80143.9
+- 更新: 2026-11-04T21:41:12.089652+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=80178.9
 - Funnel: target 1078 → liquid 186 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.4 >= 65=1
+- Strict後reject: 4h RSI 77.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLANKER/USDT:USDT | +36.05% | $16,016,869.88 |
-| FLUID/USDT:USDT | +9.07% | $2,625,455.45 |
-| AXTISTOCK/USDT:USDT | +6.75% | $2,302,571.30 |
-| MVLL/USDT:USDT | +5.98% | $2,466,693.91 |
-| DGAI/USDT:USDT | +5.26% | $1,169,096.57 |
+| CLANKER/USDT:USDT | +33.53% | $16,114,386.65 |
+| FLUID/USDT:USDT | +9.60% | $2,638,597.67 |
+| AXTISTOCK/USDT:USDT | +6.35% | $2,302,983.03 |
+| MVLL/USDT:USDT | +6.07% | $2,472,063.32 |
+| DGAI/USDT:USDT | +5.42% | $1,170,490.03 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +3.52% | +3.46% |
-| LITESTOCK/USDT:USDT | below_1h_threshold | +3.14% | +3.09% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +2.74% | +2.68% |
-| SOXL/USDT:USDT | below_1h_threshold | +2.50% | +2.44% |
-| BAT/USDT:USDT | below_1h_threshold | +2.13% | +2.08% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +3.52% | +3.42% |
+| LITESTOCK/USDT:USDT | below_1h_threshold | +3.14% | +3.04% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +2.74% | +2.64% |
+| BAT/USDT:USDT | below_1h_threshold | +2.52% | +2.42% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.50% | +2.40% |
 
 ## 7. 次に見るべき不足
 
