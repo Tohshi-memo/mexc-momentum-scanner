@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-04T15:26:35.480718+00:00
+- generated_at: 2026-11-04T15:31:24.824147+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18126**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6288件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6289件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000099 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-04T15:26:23.667172+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +1.36% price=80394.4
+- 更新: 2026-11-04T15:31:15.786128+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +1.64% price=80621.2
 - Funnel: target 1078 → liquid 185 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=47, below_relative_strength=2, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.2 >= 65=1
+- Strict後reject: 4h RSI 68.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLANKER/USDT:USDT | +57.60% | $6,380,940.59 |
-| JCT/USDT:USDT | +25.39% | $5,784,642.42 |
-| IDOL/USDT:USDT | +20.08% | $7,431,837.45 |
-| FLUID/USDT:USDT | +13.30% | $1,651,953.98 |
-| LSK/USDT:USDT | +13.11% | $5,180,160.94 |
+| CLANKER/USDT:USDT | +54.25% | $6,481,886.62 |
+| JCT/USDT:USDT | +27.26% | $5,821,163.80 |
+| IDOL/USDT:USDT | +21.00% | $7,480,099.92 |
+| FLUID/USDT:USDT | +13.55% | $1,655,343.48 |
+| LSK/USDT:USDT | +13.31% | $5,210,238.85 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IDOL/USDT:USDT | below_relative_strength | +5.85% | +4.50% |
-| MRNASTOCK/USDT:USDT | below_relative_strength | +5.70% | +4.35% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +4.64% | +3.28% |
-| JCT/USDT:USDT | below_1h_threshold | +4.16% | +2.80% |
-| AAPLSTOCK/USDT:USDT | below_1h_threshold | +3.57% | +2.22% |
+| IDOL/USDT:USDT | below_relative_strength | +6.43% | +4.79% |
+| JCT/USDT:USDT | below_relative_strength | +5.91% | +4.27% |
+| CLANKER/USDT:USDT | below_1h_threshold | +4.36% | +2.72% |
+| PEPE/USDT:USDT | below_1h_threshold | +4.08% | +2.44% |
+| AAPLSTOCK/USDT:USDT | below_1h_threshold | +3.57% | +1.93% |
 
 ## 7. 次に見るべき不足
 
