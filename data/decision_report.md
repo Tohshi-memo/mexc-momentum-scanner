@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-04T04:01:15.182043+00:00
+- generated_at: 2026-11-04T04:06:19.310600+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18106**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-04T04:01:04.475384+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=76450.0
+- 更新: 2026-11-04T04:06:07.147668+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.20% price=76622.9
 - Funnel: target 1084 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLANKER/USDT:USDT | +35.42% | $1,635,256.97 |
-| BMT/USDT:USDT | +14.60% | $1,382,611.90 |
-| SOXS/USDT:USDT | +13.51% | $30,215,388.73 |
-| IDOL/USDT:USDT | +8.95% | $9,556,722.39 |
-| SQQQ/USDT:USDT | +7.42% | $1,242,911.58 |
+| CLANKER/USDT:USDT | +35.25% | $1,643,846.06 |
+| BMT/USDT:USDT | +15.28% | $1,390,797.91 |
+| SOXS/USDT:USDT | +13.19% | $30,273,723.69 |
+| LSK/USDT:USDT | +8.98% | $1,644,901.45 |
+| IDOL/USDT:USDT | +8.88% | $9,576,533.74 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| USOIL/USDT:USDT | below_1h_threshold | +0.52% | +0.55% |
-| MSFTSTOCK/USDT:USDT | below_1h_threshold | +0.42% | +0.45% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.41% | +0.43% |
-| UNITREE/USDT:USDT | below_1h_threshold | +0.37% | +0.39% |
-| ARIA/USDT:USDT | below_1h_threshold | +0.30% | +0.33% |
+| LSK/USDT:USDT | below_1h_threshold | +4.05% | +3.85% |
+| ZEC/USDT:USDT | below_1h_threshold | +1.96% | +1.76% |
+| PEPE/USDT:USDT | below_1h_threshold | +1.25% | +1.05% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.22% | +1.01% |
+| ENA/USDT:USDT | below_1h_threshold | +1.21% | +1.00% |
 
 ## 7. 次に見るべき不足
 
