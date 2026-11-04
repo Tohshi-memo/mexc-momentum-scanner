@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-04T00:06:24.289178+00:00
+- generated_at: 2026-11-04T00:11:21.120663+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18096**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-04T00:06:11.116253+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=77505.4
-- Funnel: target 1084 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-11-04T00:11:08.220740+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=77500.0
+- Funnel: target 1084 → liquid 159 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LYN/USDT:USDT | +15.83% | $1,518,906.38 |
-| SMCISTOCK/USDT:USDT | +8.10% | $1,435,885.00 |
-| BEAT/USDT:USDT | +6.21% | $11,245,150.20 |
-| ARIA/USDT:USDT | +5.27% | $2,142,476.82 |
-| IDOL/USDT:USDT | +5.12% | $10,945,557.76 |
+| LYN/USDT:USDT | +14.57% | $1,521,467.72 |
+| SMCISTOCK/USDT:USDT | +8.01% | $1,436,180.89 |
+| BEAT/USDT:USDT | +6.08% | $11,268,510.34 |
+| IDOL/USDT:USDT | +5.07% | $10,954,792.05 |
+| AMDSTOCK/USDT:USDT | +4.85% | $14,797,182.98 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIL/USDT:USDT | below_1h_threshold | +2.72% | +2.63% |
-| SOXS/USDT:USDT | below_1h_threshold | +2.07% | +1.99% |
-| ARIA/USDT:USDT | below_1h_threshold | +1.54% | +1.46% |
+| NIL/USDT:USDT | below_1h_threshold | +2.34% | +2.26% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.07% | +2.00% |
+| DNA/USDT:USDT | below_1h_threshold | +1.74% | +1.67% |
 | SMCISTOCK/USDT:USDT | below_1h_threshold | +1.48% | +1.40% |
-| SQQQ/USDT:USDT | below_1h_threshold | +1.11% | +1.03% |
+| SQQQ/USDT:USDT | below_1h_threshold | +1.11% | +1.04% |
 
 ## 7. 次に見るべき不足
 
