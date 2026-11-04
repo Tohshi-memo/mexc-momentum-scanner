@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-04T17:31:47.609314+00:00
+- generated_at: 2026-11-04T17:36:42.019344+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18128**
 
@@ -70,32 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-04T17:31:29.413256+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=80377.1
-- Funnel: target 1078 → liquid 187 → pre 50 → checked 50 → surge 3 → strict 2
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.0 >= 65=1
+- 更新: 2026-11-04T17:36:27.182618+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.28% price=80263.6
+- Funnel: target 1078 → liquid 188 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| INTW/USDT:USDT | +8.64% | $1,931,510.92 |
-| LYN/USDT:USDT | +7.47% | $1,494,158.76 |
-| CLANKER/USDT:USDT | +7.46% | $8,501,707.06 |
-| STX/USDT:USDT | +5.23% | $3,470,438.61 |
-| SOXL/USDT:USDT | +4.82% | $729,593,913.25 |
+| INTW/USDT:USDT | +7.58% | $1,966,179.53 |
+| LYN/USDT:USDT | +6.51% | $1,501,710.03 |
+| CLANKER/USDT:USDT | +6.23% | $8,578,693.74 |
+| STX/USDT:USDT | +5.88% | $3,486,947.27 |
+| SOXL/USDT:USDT | +5.05% | $734,109,186.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +4.14% | +4.29% |
-| MVLL/USDT:USDT | below_1h_threshold | +3.75% | +3.90% |
-| CSOPSKHYNIX2L/USDT:USDT | below_1h_threshold | +3.57% | +3.71% |
-| INTW/USDT:USDT | below_1h_threshold | +3.53% | +3.67% |
-| KORU/USDT:USDT | below_1h_threshold | +3.03% | +3.17% |
+| CLANKER/USDT:USDT | below_1h_threshold | +4.82% | +5.11% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +4.14% | +4.43% |
+| LYN/USDT:USDT | below_1h_threshold | +4.14% | +4.42% |
+| MVLL/USDT:USDT | below_1h_threshold | +3.75% | +4.04% |
+| CSOPSKHYNIX2L/USDT:USDT | below_1h_threshold | +3.57% | +3.85% |
 
 ## 7. 次に見るべき不足
 
