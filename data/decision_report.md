@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-04T18:01:18.877388+00:00
+- generated_at: 2026-11-04T18:06:29.774215+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18128**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-04T18:01:08.449851+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=80489.9
+- 更新: 2026-11-04T18:06:16.755775+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.32% price=80644.9
 - Funnel: target 1078 → liquid 186 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| INTW/USDT:USDT | +6.52% | $2,006,030.00 |
-| CLANKER/USDT:USDT | +5.85% | $8,771,089.66 |
-| LYN/USDT:USDT | +5.66% | $1,239,519.63 |
-| SOXL/USDT:USDT | +5.01% | $732,925,180.66 |
-| AIN/USDT:USDT | +4.07% | $1,875,387.71 |
+| CLANKER/USDT:USDT | +7.46% | $8,846,192.55 |
+| INTW/USDT:USDT | +5.99% | $2,014,191.28 |
+| LYN/USDT:USDT | +5.72% | $1,242,710.21 |
+| SOXL/USDT:USDT | +4.53% | $734,825,687.75 |
+| AIN/USDT:USDT | +3.99% | $1,880,668.33 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| INTW/USDT:USDT | below_1h_threshold | +3.24% | +3.11% |
-| AAOISTOCK/USDT:USDT | below_1h_threshold | +2.39% | +2.26% |
-| TESLA/USDT:USDT | below_1h_threshold | +1.55% | +1.42% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.51% | +1.38% |
-| NGAS/USDT:USDT | below_1h_threshold | +1.32% | +1.19% |
+| LIT/USDT:USDT | below_1h_threshold | +3.28% | +2.96% |
+| INTW/USDT:USDT | below_1h_threshold | +3.24% | +2.92% |
+| AAOISTOCK/USDT:USDT | below_1h_threshold | +2.39% | +2.07% |
+| CLANKER/USDT:USDT | below_1h_threshold | +1.68% | +1.36% |
+| TESLA/USDT:USDT | below_1h_threshold | +1.55% | +1.23% |
 
 ## 7. 次に見るべき不足
 
