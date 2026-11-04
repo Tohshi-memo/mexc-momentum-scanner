@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-04T19:36:27.788382+00:00
+- generated_at: 2026-11-04T19:41:48.499549+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18134**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-04T19:36:16.237498+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=80179.6
-- Funnel: target 1078 → liquid 185 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-04T19:41:35.502998+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.24% price=80120.5
+- Funnel: target 1078 → liquid 185 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLANKER/USDT:USDT | +25.04% | $12,532,125.87 |
-| AIN/USDT:USDT | +17.69% | $2,439,937.52 |
-| FLUID/USDT:USDT | +6.84% | $2,007,435.46 |
-| LYN/USDT:USDT | +5.97% | $1,081,626.99 |
-| CRCLSTOCK/USDT:USDT | +3.64% | $36,931,010.56 |
+| CLANKER/USDT:USDT | +23.05% | $12,680,594.82 |
+| AIN/USDT:USDT | +13.19% | $2,524,801.14 |
+| FLUID/USDT:USDT | +6.89% | $2,020,097.72 |
+| LYN/USDT:USDT | +5.79% | $1,082,116.33 |
+| CRCLSTOCK/USDT:USDT | +3.49% | $36,931,396.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AXIS/USDT:USDT | below_1h_threshold | +2.16% | +2.32% |
-| LYN/USDT:USDT | below_1h_threshold | +1.03% | +1.20% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +0.72% | +0.89% |
-| INJ/USDT:USDT | below_1h_threshold | +0.65% | +0.82% |
-| ARIA/USDT:USDT | below_1h_threshold | +0.54% | +0.71% |
+| AIN/USDT:USDT | below_1h_threshold | +3.13% | +3.37% |
+| AXIS/USDT:USDT | below_1h_threshold | +2.37% | +2.61% |
+| HOT/USDT:USDT | below_1h_threshold | +1.94% | +2.18% |
+| LYN/USDT:USDT | below_1h_threshold | +0.80% | +1.05% |
+| ARIA/USDT:USDT | below_1h_threshold | +0.76% | +1.00% |
 
 ## 7. 次に見るべき不足
 
