@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-04T20:21:23.527071+00:00
+- generated_at: 2026-11-04T20:26:21.032403+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18136**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6300件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6301件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000037 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-04T20:21:10.530621+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.24% price=80145.8
-- Funnel: target 1078 → liquid 185 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-04T20:26:11.946037+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.27% price=80173.9
+- Funnel: target 1078 → liquid 185 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 91.6 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLANKER/USDT:USDT | +26.16% | $13,496,100.65 |
-| AIN/USDT:USDT | +10.03% | $2,530,289.61 |
-| FLUID/USDT:USDT | +8.62% | $2,205,811.30 |
-| DGAI/USDT:USDT | +8.54% | $1,084,515.48 |
-| AXTISTOCK/USDT:USDT | +3.36% | $2,236,955.02 |
+| CLANKER/USDT:USDT | +33.31% | $13,751,125.50 |
+| FLUID/USDT:USDT | +9.69% | $2,222,021.41 |
+| AIN/USDT:USDT | +8.95% | $2,536,741.84 |
+| DGAI/USDT:USDT | +7.69% | $1,093,442.55 |
+| CRCLSTOCK/USDT:USDT | +3.07% | $37,892,399.67 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CLANKER/USDT:USDT | below_1h_threshold | +2.40% | +2.17% |
-| FLUID/USDT:USDT | below_1h_threshold | +1.33% | +1.09% |
-| DASH/USDT:USDT | below_1h_threshold | +0.97% | +0.73% |
-| RAY/USDT:USDT | below_1h_threshold | +0.82% | +0.59% |
-| IRENSTOCK/USDT:USDT | below_1h_threshold | +0.74% | +0.50% |
+| FLUID/USDT:USDT | below_1h_threshold | +2.28% | +2.01% |
+| DASH/USDT:USDT | below_1h_threshold | +1.26% | +0.99% |
+| LSK/USDT:USDT | below_1h_threshold | +1.18% | +0.91% |
+| ICP/USDT:USDT | below_1h_threshold | +1.16% | +0.89% |
+| BR/USDT:USDT | below_1h_threshold | +1.10% | +0.83% |
 
 ## 7. 次に見るべき不足
 
