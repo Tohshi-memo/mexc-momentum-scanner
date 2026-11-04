@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-04T20:01:34.946294+00:00
+- generated_at: 2026-11-04T20:06:12.290825+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18135**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-04T20:01:22.099190+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=79985.8
+- 更新: 2026-11-04T20:06:03.636543+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=79963.6
 - Funnel: target 1078 → liquid 185 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLANKER/USDT:USDT | +23.37% | $12,984,001.07 |
-| DGAI/USDT:USDT | +13.18% | $1,002,924.22 |
-| AIN/USDT:USDT | +9.47% | $2,464,287.15 |
-| FLUID/USDT:USDT | +6.80% | $2,091,151.78 |
-| INTW/USDT:USDT | +3.17% | $2,133,670.45 |
+| CLANKER/USDT:USDT | +25.68% | $13,244,424.40 |
+| DGAI/USDT:USDT | +13.37% | $1,010,246.31 |
+| AIN/USDT:USDT | +9.26% | $2,480,850.68 |
+| FLUID/USDT:USDT | +6.58% | $2,138,977.74 |
+| CRCLSTOCK/USDT:USDT | +3.01% | $36,687,421.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IRENSTOCK/USDT:USDT | below_1h_threshold | +0.74% | +0.70% |
-| MSFTSTOCK/USDT:USDT | below_1h_threshold | +0.48% | +0.45% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +0.41% | +0.38% |
-| LITESTOCK/USDT:USDT | below_1h_threshold | +0.38% | +0.35% |
-| WINBONDSTOCK/USDT:USDT | below_1h_threshold | +0.31% | +0.27% |
+| CLANKER/USDT:USDT | below_1h_threshold | +2.14% | +2.13% |
+| IRENSTOCK/USDT:USDT | below_1h_threshold | +0.74% | +0.73% |
+| NFLXSTOCK/USDT:USDT | below_1h_threshold | +0.68% | +0.67% |
+| ARIA/USDT:USDT | below_1h_threshold | +0.64% | +0.64% |
+| LSK/USDT:USDT | below_1h_threshold | +0.55% | +0.54% |
 
 ## 7. 次に見るべき不足
 
