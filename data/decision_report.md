@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-04T07:46:21.629459+00:00
+- generated_at: 2026-11-04T07:51:28.729559+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18111**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-04T07:46:11.056237+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.23% price=78149.2
+- 更新: 2026-11-04T07:51:15.863339+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.23% price=78153.2
 - Funnel: target 1073 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLANKER/USDT:USDT | +33.96% | $3,023,149.11 |
-| BMT/USDT:USDT | +21.33% | $1,573,545.93 |
-| USELESS/USDT:USDT | +12.38% | $2,862,622.24 |
-| IDOL/USDT:USDT | +11.20% | $9,825,833.52 |
-| LSK/USDT:USDT | +10.72% | $2,324,271.75 |
+| CLANKER/USDT:USDT | +31.21% | $3,056,521.61 |
+| BMT/USDT:USDT | +17.65% | $1,585,402.00 |
+| IDOL/USDT:USDT | +13.78% | $9,947,056.28 |
+| USELESS/USDT:USDT | +11.57% | $2,929,655.60 |
+| DNA/USDT:USDT | +11.11% | $1,870,692.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DNA/USDT:USDT | below_1h_threshold | +4.35% | +4.12% |
-| VVV/USDT:USDT | below_1h_threshold | +4.30% | +4.07% |
-| WLD/USDT:USDT | below_1h_threshold | +2.38% | +2.15% |
-| RAY/USDT:USDT | below_1h_threshold | +2.35% | +2.12% |
-| EVAA/USDT:USDT | below_1h_threshold | +2.33% | +2.10% |
+| DNA/USDT:USDT | below_relative_strength | +5.20% | +4.97% |
+| IDOL/USDT:USDT | below_1h_threshold | +4.57% | +4.33% |
+| VVV/USDT:USDT | below_1h_threshold | +3.91% | +3.68% |
+| WLD/USDT:USDT | below_1h_threshold | +3.21% | +2.98% |
+| EVAA/USDT:USDT | below_1h_threshold | +2.48% | +2.24% |
 
 ## 7. 次に見るべき不足
 
