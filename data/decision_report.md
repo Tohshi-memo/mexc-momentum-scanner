@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-04T13:06:22.259067+00:00
+- generated_at: 2026-11-04T13:11:43.663166+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18121**
 
@@ -70,9 +70,9 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-04T13:06:13.014896+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=78348.4
-- Funnel: target 1078 → liquid 179 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-11-04T13:11:34.590702+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.13% price=78375.9
+- Funnel: target 1078 → liquid 180 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLANKER/USDT:USDT | +29.23% | $4,560,894.61 |
-| JCT/USDT:USDT | +25.27% | $4,119,556.52 |
-| BMT/USDT:USDT | +16.31% | $1,810,199.32 |
-| IDOL/USDT:USDT | +12.42% | $8,393,417.78 |
-| EVAA/USDT:USDT | +10.74% | $4,517,818.14 |
+| CLANKER/USDT:USDT | +28.46% | $4,568,752.19 |
+| JCT/USDT:USDT | +24.38% | $4,156,898.07 |
+| BMT/USDT:USDT | +14.56% | $1,821,161.19 |
+| EVAA/USDT:USDT | +11.63% | $4,564,814.20 |
+| IDOL/USDT:USDT | +10.93% | $8,479,397.68 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +2.24% | +2.15% |
-| Q/USDT:USDT | below_1h_threshold | +1.70% | +1.60% |
-| NFLXSTOCK/USDT:USDT | below_1h_threshold | +0.86% | +0.76% |
-| AIN/USDT:USDT | below_1h_threshold | +0.72% | +0.62% |
-| AXIS/USDT:USDT | below_1h_threshold | +0.69% | +0.59% |
+| Q/USDT:USDT | below_1h_threshold | +1.70% | +1.57% |
+| BTW/USDT:USDT | below_1h_threshold | +1.39% | +1.26% |
+| BIRB/USDT:USDT | below_1h_threshold | +1.29% | +1.16% |
+| AXIS/USDT:USDT | below_1h_threshold | +0.90% | +0.77% |
+| NFLXSTOCK/USDT:USDT | below_1h_threshold | +0.86% | +0.72% |
 
 ## 7. 次に見るべき不足
 
