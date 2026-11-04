@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-11-04T23:21:32.016838+00:00
+- generated_at: 2026-11-04T23:26:49.363706+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **18141**
+- closed shadow trades: **18142**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=18141, expectancy=+0.02%
+- 全期間 MARKET基準: n=18142, expectancy=+0.02%
 - 直近20件 MARKET基準: n=20, expectancy=-0.11%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -31,11 +31,11 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_FIB1272_LONG | 8/20 | 40.0% | +2.64% | **+1.06%** |
+| LIMIT_4PCT_LONG | 12/20 | 60.0% | +2.00% | **+1.20%** |
+| LIMIT_5PCT_LONG | 11/20 | 55.0% | +1.76% | **+0.97%** |
 | LIMIT_6PCT_LONG | 10/20 | 50.0% | +1.92% | **+0.96%** |
-| LIMIT_1PCT_LONG | 20/20 | 100.0% | +0.83% | **+0.83%** |
-| LIMIT_4PCT_LONG | 11/20 | 55.0% | +1.45% | **+0.80%** |
-| LIMIT_ATR_LONG | 16/20 | 80.0% | +0.92% | **+0.74%** |
+| LIMIT_ATR_LONG | 16/20 | 80.0% | +0.99% | **+0.80%** |
+| LIMIT_FIB1272_LONG | 7/20 | 35.0% | +2.17% | **+0.76%** |
 
 ## 2. $100 Live Portfolio
 
@@ -46,32 +46,32 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$1,527.27** / 初期 $100.00 (+1427.27%)
-- 確定: 6960件 (Win 2014 / Loss 2233 / Flat 2713) / skip 7742件
-- 成長率目線: 平均log +0.000392 / 幾何平均 +0.039% per trade / maxDD +8.46%
+- 残高: **$1,519.64** / 初期 $100.00 (+1419.64%)
+- 確定: 6961件 (Win 2014 / Loss 2234 / Flat 2713) / skip 7742件
+- 成長率目線: 平均log +0.000391 / 幾何平均 +0.039% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_8PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: ELSA/USDT:USDT `LIMIT_8PCT_LONG` EXPIRED account +0.00% 残高後 $1,527.27
+- 最新: LYN/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.50% 残高後 $1,519.64
 
 ## 4. Robust Adaptive DryRun ($100)
 
-- 残高: **$377.57** / 初期 $100.00 (+277.57%)
-- 確定: 4550件 (Win 1222 / Loss 1025 / Flat 2303) / skip 7002件
-- 成長率目線: 平均log +0.000292 / 幾何平均 +0.029% per trade / maxDD +4.25%
+- 残高: **$376.25** / 初期 $100.00 (+276.25%)
+- 確定: 4551件 (Win 1222 / Loss 1026 / Flat 2303) / skip 7002件
+- 成長率目線: 平均log +0.000291 / 幾何平均 +0.029% per trade / maxDD +4.25%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: CLANKER/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.35% 残高後 $377.57
+- 最新: LYN/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.35% 残高後 $376.25
 
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
 - 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6305件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000168 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000102 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-04T23:21:18.951974+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.29% price=80446.1
+- 更新: 2026-11-04T23:26:33.982162+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.24% price=80485.4
 - Funnel: target 1078 → liquid 188 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ELSA/USDT:USDT | +34.95% | $1,663,098.68 |
-| APPSTOCK/USDT:USDT | +21.47% | $1,103,267.00 |
-| FLUID/USDT:USDT | +12.00% | $3,231,236.05 |
-| AXTISTOCK/USDT:USDT | +5.53% | $2,243,509.33 |
-| BAT/USDT:USDT | +5.39% | $1,751,098.18 |
+| ELSA/USDT:USDT | +28.86% | $1,708,027.98 |
+| APPSTOCK/USDT:USDT | +21.41% | $1,109,365.36 |
+| FLUID/USDT:USDT | +12.22% | $3,245,332.71 |
+| AXTISTOCK/USDT:USDT | +5.84% | $2,243,864.99 |
+| BAT/USDT:USDT | +5.47% | $1,754,862.77 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ELSA/USDT:USDT | below_1h_threshold | +3.50% | +3.79% |
-| APPSTOCK/USDT:USDT | below_1h_threshold | +3.19% | +3.49% |
-| ICNT/USDT:USDT | below_1h_threshold | +1.02% | +1.31% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +0.60% | +0.90% |
-| COINBASE/USDT:USDT | below_1h_threshold | +0.58% | +0.87% |
+| APPSTOCK/USDT:USDT | below_1h_threshold | +3.19% | +3.44% |
+| ICNT/USDT:USDT | below_1h_threshold | +1.30% | +1.54% |
+| QNT/USDT:USDT | below_1h_threshold | +1.01% | +1.25% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +0.60% | +0.85% |
+| COINBASE/USDT:USDT | below_1h_threshold | +0.58% | +0.82% |
 
 ## 7. 次に見るべき不足
 
