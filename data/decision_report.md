@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-04T15:21:46.923875+00:00
+- generated_at: 2026-11-04T15:26:35.480718+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18126**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-04T15:21:32.980948+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +1.76% price=80711.8
-- Funnel: target 1078 → liquid 184 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=46, below_relative_strength=2, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.9 >= 65=1
+- 更新: 2026-11-04T15:26:23.667172+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +1.36% price=80394.4
+- Funnel: target 1078 → liquid 185 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=2, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 84.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLANKER/USDT:USDT | +60.10% | $6,252,350.69 |
-| JCT/USDT:USDT | +23.79% | $5,749,180.24 |
-| IDOL/USDT:USDT | +22.80% | $7,337,232.95 |
-| USELESS/USDT:USDT | +14.28% | $3,870,044.23 |
-| LSK/USDT:USDT | +13.88% | $5,143,339.10 |
+| CLANKER/USDT:USDT | +57.60% | $6,380,940.59 |
+| JCT/USDT:USDT | +25.39% | $5,784,642.42 |
+| IDOL/USDT:USDT | +20.08% | $7,431,837.45 |
+| FLUID/USDT:USDT | +13.30% | $1,651,953.98 |
+| LSK/USDT:USDT | +13.11% | $5,180,160.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FARTCOIN/USDT:USDT | below_relative_strength | +5.77% | +4.01% |
-| MRNASTOCK/USDT:USDT | below_relative_strength | +5.70% | +3.95% |
-| PEPE/USDT:USDT | below_1h_threshold | +4.43% | +2.67% |
-| AAPLSTOCK/USDT:USDT | below_1h_threshold | +3.57% | +1.82% |
-| RAY/USDT:USDT | below_1h_threshold | +3.12% | +1.37% |
+| IDOL/USDT:USDT | below_relative_strength | +5.85% | +4.50% |
+| MRNASTOCK/USDT:USDT | below_relative_strength | +5.70% | +4.35% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +4.64% | +3.28% |
+| JCT/USDT:USDT | below_1h_threshold | +4.16% | +2.80% |
+| AAPLSTOCK/USDT:USDT | below_1h_threshold | +3.57% | +2.22% |
 
 ## 7. 次に見るべき不足
 
