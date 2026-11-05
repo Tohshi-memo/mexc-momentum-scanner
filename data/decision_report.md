@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-05T13:26:36.933446+00:00
+- generated_at: 2026-11-05T13:31:05.611856+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18179**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-05T13:26:23.485848+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=79681.3
+- 更新: 2026-11-05T13:30:57.109848+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=79618.0
 - Funnel: target 1084 → liquid 182 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIO/USDT:USDT | +34.15% | $1,276,914.45 |
-| APPSTOCK/USDT:USDT | +22.21% | $2,009,501.71 |
-| FLUID/USDT:USDT | +19.60% | $7,537,733.53 |
-| UAI/USDT:USDT | +17.31% | $7,407,808.08 |
-| ARIA/USDT:USDT | +15.52% | $1,907,843.25 |
+| AIO/USDT:USDT | +33.41% | $1,281,786.11 |
+| APPSTOCK/USDT:USDT | +21.45% | $2,014,109.23 |
+| FLUID/USDT:USDT | +19.56% | $7,609,796.69 |
+| ARIA/USDT:USDT | +17.78% | $1,993,456.31 |
+| UAI/USDT:USDT | +17.76% | $7,416,286.15 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +3.86% | +3.83% |
-| CAP/USDT:USDT | below_1h_threshold | +3.74% | +3.72% |
-| APPSTOCK/USDT:USDT | below_1h_threshold | +2.17% | +2.15% |
-| BEAMX/USDT:USDT | below_1h_threshold | +1.53% | +1.50% |
-| SQQQ/USDT:USDT | below_1h_threshold | +1.21% | +1.18% |
+| CAP/USDT:USDT | below_1h_threshold | +4.05% | +4.11% |
+| SOXS/USDT:USDT | below_1h_threshold | +3.86% | +3.91% |
+| ARIA/USDT:USDT | below_1h_threshold | +3.56% | +3.61% |
+| APPSTOCK/USDT:USDT | below_1h_threshold | +2.17% | +2.23% |
+| LIT/USDT:USDT | below_1h_threshold | +2.08% | +2.13% |
 
 ## 7. 次に見るべき不足
 
