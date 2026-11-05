@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-05T18:31:29.649170+00:00
+- generated_at: 2026-11-05T18:36:43.490496+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18197**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6366件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6367件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000367 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-05T18:31:16.547018+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.31% price=76154.5
-- Funnel: target 1084 → liquid 189 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.2 >= 65=1
+- 更新: 2026-11-05T18:36:27.698734+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=76035.8
+- Funnel: target 1084 → liquid 189 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLESS/USDT:USDT | +14.16% | $3,613,497.33 |
-| BTW/USDT:USDT | +8.73% | $4,670,758.22 |
-| UVXY/USDT:USDT | +7.58% | $1,106,491.43 |
-| LYN/USDT:USDT | +5.36% | $1,641,228.08 |
-| CBRSSTOCK/USDT:USDT | +5.31% | $2,630,351.32 |
+| BLESS/USDT:USDT | +13.93% | $3,656,593.55 |
+| UVXY/USDT:USDT | +8.16% | $1,125,895.40 |
+| BTW/USDT:USDT | +8.02% | $4,694,464.55 |
+| LYN/USDT:USDT | +5.11% | $1,645,287.26 |
+| CBRSSTOCK/USDT:USDT | +4.48% | $2,631,758.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CLANKER/USDT:USDT | below_1h_threshold | +3.63% | +3.32% |
-| LIT/USDT:USDT | below_1h_threshold | +2.28% | +1.97% |
-| PYTH/USDT:USDT | below_1h_threshold | +1.89% | +1.58% |
-| SAND/USDT:USDT | below_1h_threshold | +1.70% | +1.39% |
-| LDO/USDT:USDT | below_1h_threshold | +1.54% | +1.23% |
+| CLANKER/USDT:USDT | below_1h_threshold | +2.83% | +2.68% |
+| PYTH/USDT:USDT | below_1h_threshold | +2.00% | +1.85% |
+| STX/USDT:USDT | below_1h_threshold | +1.71% | +1.55% |
+| SAND/USDT:USDT | below_1h_threshold | +1.60% | +1.45% |
+| JASMY/USDT:USDT | below_1h_threshold | +1.48% | +1.33% |
 
 ## 7. 次に見るべき不足
 
