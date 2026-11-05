@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-05T19:06:28.886108+00:00
+- generated_at: 2026-11-05T19:11:32.483986+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18199**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-05T19:06:16.083810+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=75940.0
+- 更新: 2026-11-05T19:11:19.475677+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=75983.9
 - Funnel: target 1084 → liquid 186 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLESS/USDT:USDT | +14.24% | $3,761,445.32 |
-| UVXY/USDT:USDT | +8.35% | $1,203,883.97 |
-| CLANKER/USDT:USDT | +8.28% | $14,263,752.88 |
-| BTW/USDT:USDT | +7.20% | $4,755,817.23 |
-| LYN/USDT:USDT | +5.75% | $1,640,370.37 |
+| BLESS/USDT:USDT | +13.47% | $3,814,248.18 |
+| BTW/USDT:USDT | +7.25% | $4,791,194.42 |
+| UVXY/USDT:USDT | +7.00% | $1,219,585.21 |
+| CLANKER/USDT:USDT | +6.60% | $14,304,045.85 |
+| LYN/USDT:USDT | +5.89% | $1,642,260.20 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXL/USDT:USDT | below_1h_threshold | +2.50% | +2.67% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.52% | +1.69% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +1.01% | +1.18% |
-| CRWVSTOCK/USDT:USDT | below_1h_threshold | +0.71% | +0.87% |
-| STX/USDT:USDT | below_1h_threshold | +0.67% | +0.84% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.50% | +2.61% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.52% | +1.63% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +1.01% | +1.12% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +0.79% | +0.90% |
+| STX/USDT:USDT | below_1h_threshold | +0.76% | +0.86% |
 
 ## 7. 次に見るべき不足
 
