@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-05T04:06:25.762812+00:00
+- generated_at: 2026-11-05T04:11:30.557609+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18154**
 
@@ -70,29 +70,29 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-05T04:06:12.619073+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=80422.0
-- Funnel: target 1078 → liquid 181 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-11-05T04:11:18.488540+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=80415.8
+- Funnel: target 1078 → liquid 182 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ELSA/USDT:USDT | +34.82% | $2,704,592.84 |
-| APPSTOCK/USDT:USDT | +20.52% | $1,342,911.56 |
-| UAI/USDT:USDT | +18.45% | $5,082,248.02 |
-| FLUID/USDT:USDT | +17.96% | $4,213,586.84 |
-| AIN/USDT:USDT | +17.53% | $2,809,486.81 |
+| ELSA/USDT:USDT | +36.91% | $2,772,090.18 |
+| APPSTOCK/USDT:USDT | +20.40% | $1,343,308.22 |
+| UAI/USDT:USDT | +17.88% | $5,120,219.97 |
+| AIN/USDT:USDT | +17.52% | $2,814,325.52 |
+| FLUID/USDT:USDT | +16.00% | $4,235,034.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UAI/USDT:USDT | below_1h_threshold | +2.26% | +2.37% |
-| ELSA/USDT:USDT | below_1h_threshold | +1.32% | +1.44% |
+| ELSA/USDT:USDT | below_1h_threshold | +2.48% | +2.60% |
+| JCT/USDT:USDT | below_1h_threshold | +1.58% | +1.70% |
+| UAI/USDT:USDT | below_1h_threshold | +1.57% | +1.69% |
 | SOXS/USDT:USDT | below_1h_threshold | +1.26% | +1.38% |
-| JCT/USDT:USDT | below_1h_threshold | +0.97% | +1.09% |
 | SQQQ/USDT:USDT | below_1h_threshold | +0.92% | +1.04% |
 
 ## 7. 次に見るべき不足
