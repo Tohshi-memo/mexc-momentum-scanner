@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-05T10:26:13.450248+00:00
+- generated_at: 2026-11-05T10:31:32.782438+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18175**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6333件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6334件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000322 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-05T10:26:04.515738+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=80503.5
-- Funnel: target 1077 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-05T10:31:17.006577+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=80504.5
+- Funnel: target 1077 → liquid 178 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ELSA/USDT:USDT | +26.72% | $6,714,549.76 |
-| FLUID/USDT:USDT | +20.23% | $6,235,711.07 |
-| APPSTOCK/USDT:USDT | +15.25% | $1,685,847.79 |
-| UAI/USDT:USDT | +14.92% | $7,014,150.11 |
-| LYN/USDT:USDT | +14.47% | $1,082,527.52 |
+| ELSA/USDT:USDT | +25.84% | $6,735,221.89 |
+| FLUID/USDT:USDT | +20.72% | $6,256,729.19 |
+| LYN/USDT:USDT | +20.02% | $1,104,597.64 |
+| APPSTOCK/USDT:USDT | +16.40% | $1,706,604.69 |
+| UAI/USDT:USDT | +14.92% | $7,018,466.60 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LYN/USDT:USDT | below_1h_threshold | +3.21% | +3.13% |
-| CAP/USDT:USDT | below_1h_threshold | +2.18% | +2.10% |
 | INTW/USDT:USDT | below_1h_threshold | +1.78% | +1.70% |
-| ELSA/USDT:USDT | below_1h_threshold | +1.69% | +1.62% |
+| AIN/USDT:USDT | below_1h_threshold | +1.71% | +1.63% |
+| ICNT/USDT:USDT | below_1h_threshold | +1.64% | +1.56% |
 | INJ/USDT:USDT | below_1h_threshold | +1.51% | +1.43% |
+| FLUID/USDT:USDT | below_1h_threshold | +1.27% | +1.19% |
 
 ## 7. 次に見るべき不足
 
