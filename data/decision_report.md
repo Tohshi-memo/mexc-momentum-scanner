@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-05T05:56:36.948347+00:00
+- generated_at: 2026-11-05T06:01:37.385715+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18162**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-05T05:56:23.152962+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=80400.0
-- Funnel: target 1078 → liquid 185 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.7 >= 65=1, 4h RSI 87.2 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-05T06:01:24.193792+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=80408.2
+- Funnel: target 1078 → liquid 180 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ELSA/USDT:USDT | +33.77% | $3,592,934.33 |
-| LYN/USDT:USDT | +31.90% | $1,014,941.11 |
-| JCT/USDT:USDT | +28.33% | $8,000,870.22 |
-| APPSTOCK/USDT:USDT | +20.37% | $1,433,168.87 |
-| FLUID/USDT:USDT | +19.34% | $4,654,678.04 |
+| ELSA/USDT:USDT | +30.41% | $3,653,811.54 |
+| JCT/USDT:USDT | +28.99% | $8,009,284.46 |
+| APPSTOCK/USDT:USDT | +20.29% | $1,432,419.36 |
+| AIN/USDT:USDT | +18.16% | $3,057,904.80 |
+| FLUID/USDT:USDT | +17.51% | $4,522,960.75 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UAI/USDT:USDT | below_1h_threshold | +1.09% | +1.20% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.97% | +1.09% |
-| BEAT/USDT:USDT | below_1h_threshold | +0.90% | +1.02% |
-| AIN/USDT:USDT | below_1h_threshold | +0.78% | +0.89% |
-| APPSTOCK/USDT:USDT | below_1h_threshold | +0.75% | +0.86% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.68% | +1.63% |
+| UAI/USDT:USDT | below_1h_threshold | +1.28% | +1.23% |
+| UNITREE/USDT:USDT | below_1h_threshold | +0.94% | +0.89% |
+| SQQQ/USDT:USDT | below_1h_threshold | +0.84% | +0.79% |
+| JCT/USDT:USDT | below_1h_threshold | +0.60% | +0.55% |
 
 ## 7. 次に見るべき不足
 
