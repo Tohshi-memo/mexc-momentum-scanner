@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-05T09:01:18.914679+00:00
+- generated_at: 2026-11-05T09:06:20.180969+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18173**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-05T09:01:08.257131+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=80490.8
+- 更新: 2026-11-05T09:06:07.090271+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.15% price=80377.5
 - Funnel: target 1077 → liquid 179 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ELSA/USDT:USDT | +53.21% | $5,224,022.53 |
-| APPSTOCK/USDT:USDT | +20.69% | $1,568,756.72 |
-| UAI/USDT:USDT | +19.47% | $6,740,328.53 |
-| FLUID/USDT:USDT | +18.31% | $5,804,616.43 |
-| JCT/USDT:USDT | +17.02% | $11,480,470.28 |
+| ELSA/USDT:USDT | +47.54% | $5,458,628.26 |
+| APPSTOCK/USDT:USDT | +21.00% | $1,570,812.93 |
+| UAI/USDT:USDT | +18.45% | $6,779,793.89 |
+| FLUID/USDT:USDT | +17.78% | $5,829,650.68 |
+| JCT/USDT:USDT | +17.19% | $11,533,708.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CAP/USDT:USDT | below_1h_threshold | +0.94% | +0.95% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +0.73% | +0.73% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +0.62% | +0.63% |
-| JCT/USDT:USDT | below_1h_threshold | +0.44% | +0.44% |
-| FLUID/USDT:USDT | below_1h_threshold | +0.30% | +0.31% |
+| CAP/USDT:USDT | below_1h_threshold | +2.28% | +2.42% |
+| ALUMINUM/USDT:USDT | below_1h_threshold | +0.63% | +0.78% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +0.62% | +0.77% |
+| ZINC/USDT:USDT | below_1h_threshold | +0.36% | +0.51% |
+| MSFTSTOCK/USDT:USDT | below_1h_threshold | +0.25% | +0.40% |
 
 ## 7. 次に見るべき不足
 
