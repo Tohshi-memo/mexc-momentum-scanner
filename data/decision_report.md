@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-05T23:31:27.572052+00:00
+- generated_at: 2026-11-05T23:36:30.372465+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18212**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-05T23:31:16.810421+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.20% price=75832.8
+- 更新: 2026-11-05T23:36:17.047390+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.36% price=75954.6
 - Funnel: target 1084 → liquid 188 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLANKER/USDT:USDT | +15.50% | $7,236,172.54 |
-| UVXY/USDT:USDT | +15.21% | $2,824,608.98 |
-| BLESS/USDT:USDT | +13.53% | $5,277,759.60 |
-| BTW/USDT:USDT | +10.14% | $5,961,024.05 |
-| IRENSTOCK/USDT:USDT | +8.49% | $2,852,509.52 |
+| UVXY/USDT:USDT | +16.07% | $2,834,954.00 |
+| CLANKER/USDT:USDT | +15.25% | $7,263,196.14 |
+| BLESS/USDT:USDT | +13.53% | $5,282,335.03 |
+| BTW/USDT:USDT | +9.48% | $6,012,859.35 |
+| IRENSTOCK/USDT:USDT | +8.03% | $2,859,635.11 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IRENSTOCK/USDT:USDT | below_1h_threshold | +2.18% | +1.98% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.93% | +1.74% |
-| LYN/USDT:USDT | below_1h_threshold | +1.48% | +1.29% |
-| JCT/USDT:USDT | below_1h_threshold | +0.80% | +0.60% |
-| LIT/USDT:USDT | below_1h_threshold | +0.76% | +0.57% |
+| IRENSTOCK/USDT:USDT | below_1h_threshold | +2.18% | +1.82% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.93% | +1.58% |
+| LIT/USDT:USDT | below_1h_threshold | +1.49% | +1.13% |
+| LYN/USDT:USDT | below_1h_threshold | +1.25% | +0.89% |
+| CC/USDT:USDT | below_1h_threshold | +1.24% | +0.88% |
 
 ## 7. 次に見るべき不足
 
