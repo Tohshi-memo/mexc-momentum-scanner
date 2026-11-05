@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-05T19:56:45.373176+00:00
+- generated_at: 2026-11-05T20:01:32.379177+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18200**
 
@@ -63,39 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6370件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6371件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000416 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-05T19:56:32.288884+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.33% price=76314.3
-- Funnel: target 1084 → liquid 189 → pre 50 → checked 50 → surge 1 → strict 0
+- 更新: 2026-11-05T20:01:17.198193+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=76295.1
+- Funnel: target 1084 → liquid 188 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLESS/USDT:USDT | +16.58% | $4,451,545.79 |
-| BTW/USDT:USDT | +10.47% | $5,009,654.16 |
-| CLANKER/USDT:USDT | +8.53% | $14,424,567.75 |
-| IRENSTOCK/USDT:USDT | +7.80% | $1,991,527.08 |
-| SOXL/USDT:USDT | +7.06% | $1,841,253,740.01 |
+| BLESS/USDT:USDT | +14.99% | $4,402,548.35 |
+| BTW/USDT:USDT | +10.55% | $4,897,014.48 |
+| CLANKER/USDT:USDT | +8.28% | $12,582,912.67 |
+| IRENSTOCK/USDT:USDT | +7.97% | $1,981,566.85 |
+| SOXL/USDT:USDT | +7.31% | $1,846,720,968.40 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| USELESS/USDT:USDT | below_1h_threshold | +3.64% | +3.32% |
-| VVV/USDT:USDT | below_1h_threshold | +3.61% | +3.28% |
-| LIT/USDT:USDT | below_1h_threshold | +3.53% | +3.21% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +2.79% | +2.46% |
-| SOXL/USDT:USDT | below_1h_threshold | +2.50% | +2.18% |
+| MVLL/USDT:USDT | below_1h_threshold | +4.85% | +4.92% |
+| SNXX/USDT:USDT | below_1h_threshold | +4.09% | +4.16% |
+| IRENSTOCK/USDT:USDT | below_1h_threshold | +3.74% | +3.80% |
+| CRWVSTOCK/USDT:USDT | below_1h_threshold | +3.62% | +3.69% |
+| SOXL/USDT:USDT | below_1h_threshold | +3.58% | +3.64% |
 
 ## 7. 次に見るべき不足
 
