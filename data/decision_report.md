@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-11-05T03:11:30.573167+00:00
+- generated_at: 2026-11-05T03:16:28.825165+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **18152**
+- closed shadow trades: **18153**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.50% / filled 20/20。**
-- 全期間 MARKET基準: n=18152, expectancy=+0.02%
+- 全期間 MARKET基準: n=18153, expectancy=+0.02%
 - 直近20件 MARKET基準: n=20, expectancy=+0.50%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -31,11 +31,11 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_BB3S_LONG | 4/4 | 100.0% | +1.60% | **+1.60%** |
-| LIMIT_ATR_LONG | 15/20 | 75.0% | +1.05% | **+0.79%** |
-| LIMIT_3PCT_LONG | 13/20 | 65.0% | +0.92% | **+0.60%** |
-| LIMIT_4PCT_LONG | 12/20 | 60.0% | +0.74% | **+0.45%** |
-| LIMIT_5PCT_LONG | 11/20 | 55.0% | +0.74% | **+0.41%** |
+| LIMIT_ATR_LONG | 14/20 | 70.0% | +0.63% | **+0.44%** |
+| LIMIT_2PCT_LONG | 14/20 | 70.0% | +0.49% | **+0.34%** |
+| LIMIT_3PCT_LONG | 12/20 | 60.0% | +0.39% | **+0.24%** |
+| MARKET_LONG | 20/20 | 100.0% | +0.13% | **+0.13%** |
+| LIMIT_4PCT_LONG | 11/20 | 55.0% | +0.08% | **+0.05%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,17 +47,17 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,516.00** / 初期 $100.00 (+1416.00%)
-- 確定: 6971件 (Win 2017 / Loss 2238 / Flat 2716) / skip 7742件
+- 確定: 6972件 (Win 2017 / Loss 2238 / Flat 2717) / skip 7742件
 - 成長率目線: 平均log +0.000390 / 幾何平均 +0.039% per trade / maxDD +8.46%
-- 次の候補: `LIMIT_4PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: UAI/USDT:USDT `LIMIT_4PCT_LONG` TP_HIT account +1.00% 残高後 $1,516.00
+- 次の候補: `LIMIT_1PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
+- 最新: AIN/USDT:USDT `LIMIT_4PCT_LONG` EXPIRED account +0.00% 残高後 $1,516.00
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$373.32** / 初期 $100.00 (+273.32%)
-- 確定: 4556件 (Win 1223 / Loss 1029 / Flat 2304) / skip 7007件
+- 確定: 4556件 (Win 1223 / Loss 1029 / Flat 2304) / skip 7008件
 - 成長率目線: 平均log +0.000289 / 幾何平均 +0.029% per trade / maxDD +4.25%
-- 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 次の候補: `LIMIT_1PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0082 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: MRNASTOCK/USDT:USDT `LIMIT_1PCT_LONG` EXPIRED account +0.00% 残高後 $373.32
 
 ## 5. Causal Adaptive DryRun ($100)
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-05T03:11:17.532991+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=80509.7
+- 更新: 2026-11-05T03:16:16.298728+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=80614.0
 - Funnel: target 1078 → liquid 187 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| UAI/USDT:USDT | +20.50% | $4,518,463.86 |
-| APPSTOCK/USDT:USDT | +19.97% | $1,323,475.55 |
-| FLUID/USDT:USDT | +19.11% | $4,047,391.29 |
-| ELSA/USDT:USDT | +18.68% | $2,404,525.06 |
-| AIN/USDT:USDT | +16.54% | $2,613,192.23 |
+| ELSA/USDT:USDT | +20.34% | $2,414,895.81 |
+| APPSTOCK/USDT:USDT | +19.99% | $1,328,806.11 |
+| FLUID/USDT:USDT | +18.31% | $4,052,247.54 |
+| AIN/USDT:USDT | +17.15% | $2,644,068.04 |
+| UAI/USDT:USDT | +11.16% | $4,701,127.97 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIN/USDT:USDT | below_1h_threshold | +4.21% | +4.26% |
-| UNITREE/USDT:USDT | below_1h_threshold | +2.59% | +2.64% |
-| FLUID/USDT:USDT | below_1h_threshold | +1.48% | +1.52% |
-| JCT/USDT:USDT | below_1h_threshold | +1.29% | +1.33% |
-| NICKEL/USDT:USDT | below_1h_threshold | +1.13% | +1.17% |
+| AIN/USDT:USDT | below_1h_threshold | +4.77% | +4.69% |
+| UNITREE/USDT:USDT | below_1h_threshold | +2.59% | +2.51% |
+| STX/USDT:USDT | below_1h_threshold | +2.50% | +2.41% |
+| ICNT/USDT:USDT | below_1h_threshold | +1.37% | +1.28% |
+| NICKEL/USDT:USDT | below_1h_threshold | +1.13% | +1.04% |
 
 ## 7. 次に見るべき不足
 
