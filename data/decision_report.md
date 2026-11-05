@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-05T10:06:22.935502+00:00
+- generated_at: 2026-11-05T10:11:22.544892+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18175**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-05T10:06:10.042499+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=80406.2
+- 更新: 2026-11-05T10:11:09.152562+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=80388.5
 - Funnel: target 1077 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ELSA/USDT:USDT | +28.13% | $6,564,144.89 |
-| FLUID/USDT:USDT | +19.65% | $6,022,064.55 |
-| APPSTOCK/USDT:USDT | +16.97% | $1,665,738.03 |
-| UAI/USDT:USDT | +14.23% | $6,916,212.49 |
-| LYN/USDT:USDT | +11.03% | $1,074,882.03 |
+| ELSA/USDT:USDT | +27.02% | $6,600,679.37 |
+| FLUID/USDT:USDT | +20.18% | $6,106,581.25 |
+| APPSTOCK/USDT:USDT | +17.25% | $1,668,607.88 |
+| UAI/USDT:USDT | +15.03% | $6,946,810.08 |
+| LYN/USDT:USDT | +10.55% | $1,075,543.96 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ELSA/USDT:USDT | below_1h_threshold | +2.59% | +2.64% |
-| ARIA/USDT:USDT | below_1h_threshold | +1.47% | +1.51% |
-| POL/USDT:USDT | below_1h_threshold | +1.29% | +1.34% |
-| ICNT/USDT:USDT | below_1h_threshold | +1.09% | +1.14% |
-| AAOISTOCK/USDT:USDT | below_1h_threshold | +0.95% | +1.00% |
+| AIN/USDT:USDT | below_1h_threshold | +4.31% | +4.38% |
+| INTW/USDT:USDT | below_1h_threshold | +1.78% | +1.85% |
+| ICNT/USDT:USDT | below_1h_threshold | +1.50% | +1.57% |
+| ARIA/USDT:USDT | below_1h_threshold | +1.27% | +1.34% |
+| ELSA/USDT:USDT | below_1h_threshold | +1.16% | +1.23% |
 
 ## 7. 次に見るべき不足
 
