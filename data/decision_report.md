@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-05T21:26:36.738033+00:00
+- generated_at: 2026-11-05T21:31:27.434778+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18209**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-05T21:26:20.286302+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.53% price=75803.3
-- Funnel: target 1084 → liquid 189 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.7 >= 65=1, 4h RSI 76.4 >= 65=1
+- 更新: 2026-11-05T21:31:14.507963+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.28% price=75991.9
+- Funnel: target 1084 → liquid 189 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 74.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| UVXY/USDT:USDT | +15.74% | $2,173,462.58 |
-| BLESS/USDT:USDT | +14.46% | $5,003,687.53 |
-| BTW/USDT:USDT | +12.17% | $5,421,890.83 |
-| CLANKER/USDT:USDT | +11.51% | $10,583,809.11 |
-| IRENSTOCK/USDT:USDT | +9.75% | $2,668,033.31 |
+| BLESS/USDT:USDT | +15.03% | $5,029,261.24 |
+| UVXY/USDT:USDT | +14.43% | $2,183,777.11 |
+| IRENSTOCK/USDT:USDT | +13.71% | $2,702,910.88 |
+| CLANKER/USDT:USDT | +12.14% | $10,612,317.36 |
+| BTW/USDT:USDT | +12.09% | $5,450,888.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SQQQ/USDT:USDT | below_1h_threshold | +3.47% | +3.99% |
-| CLANKER/USDT:USDT | below_1h_threshold | +2.75% | +3.28% |
-| UAI/USDT:USDT | below_1h_threshold | +2.26% | +2.79% |
-| BLESS/USDT:USDT | below_1h_threshold | +1.22% | +1.75% |
-| BTW/USDT:USDT | below_1h_threshold | +0.81% | +1.34% |
+| UAI/USDT:USDT | below_1h_threshold | +3.91% | +4.19% |
+| SQQQ/USDT:USDT | below_1h_threshold | +3.47% | +3.75% |
+| CLANKER/USDT:USDT | below_1h_threshold | +3.33% | +3.61% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.65% | +1.93% |
+| ETHFI/USDT:USDT | below_1h_threshold | +1.34% | +1.62% |
 
 ## 7. 次に見るべき不足
 
