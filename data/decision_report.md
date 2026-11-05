@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-05T00:51:26.450127+00:00
+- generated_at: 2026-11-05T00:56:31.238109+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18146**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-05T00:51:11.256948+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.33% price=80730.2
+- 更新: 2026-11-05T00:56:16.138462+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.20% price=80623.7
 - Funnel: target 1078 → liquid 188 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ELSA/USDT:USDT | +31.29% | $2,091,450.07 |
-| APPSTOCK/USDT:USDT | +22.56% | $1,236,314.06 |
-| FLUID/USDT:USDT | +15.69% | $3,847,331.41 |
-| ICNT/USDT:USDT | +6.71% | $1,167,122.98 |
-| STX/USDT:USDT | +5.44% | $3,950,821.42 |
+| ELSA/USDT:USDT | +33.51% | $2,109,052.22 |
+| APPSTOCK/USDT:USDT | +22.77% | $1,241,808.87 |
+| FLUID/USDT:USDT | +15.60% | $3,859,178.06 |
+| ICNT/USDT:USDT | +6.85% | $1,175,232.55 |
+| LSK/USDT:USDT | +5.32% | $6,972,653.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FLUID/USDT:USDT | below_1h_threshold | +3.87% | +3.54% |
-| SYRUP/USDT:USDT | below_1h_threshold | +2.27% | +1.94% |
-| ICNT/USDT:USDT | below_1h_threshold | +2.05% | +1.72% |
-| PONS/USDT:USDT | below_1h_threshold | +1.89% | +1.56% |
-| SQQQ/USDT:USDT | below_1h_threshold | +1.33% | +1.01% |
+| FLUID/USDT:USDT | below_1h_threshold | +3.87% | +3.68% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.66% | +2.47% |
+| ICNT/USDT:USDT | below_1h_threshold | +2.14% | +1.94% |
+| SYRUP/USDT:USDT | below_1h_threshold | +2.01% | +1.82% |
+| SQQQ/USDT:USDT | below_1h_threshold | +1.33% | +1.14% |
 
 ## 7. 次に見るべき不足
 
