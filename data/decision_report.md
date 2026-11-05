@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-05T18:26:25.301307+00:00
+- generated_at: 2026-11-05T18:31:29.649170+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18197**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-05T18:26:16.633130+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.20% price=76074.4
+- 更新: 2026-11-05T18:31:16.547018+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.31% price=76154.5
 - Funnel: target 1084 → liquid 189 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.0 >= 65=1
+- Strict後reject: 4h RSI 70.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLESS/USDT:USDT | +13.57% | $3,541,713.11 |
-| BTW/USDT:USDT | +7.88% | $4,618,739.57 |
-| UVXY/USDT:USDT | +7.77% | $1,095,613.06 |
-| CBRSSTOCK/USDT:USDT | +5.01% | $2,628,416.66 |
-| LYN/USDT:USDT | +4.33% | $1,638,440.90 |
+| BLESS/USDT:USDT | +14.16% | $3,613,497.33 |
+| BTW/USDT:USDT | +8.73% | $4,670,758.22 |
+| UVXY/USDT:USDT | +7.58% | $1,106,491.43 |
+| LYN/USDT:USDT | +5.36% | $1,641,228.08 |
+| CBRSSTOCK/USDT:USDT | +5.31% | $2,630,351.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LIT/USDT:USDT | below_1h_threshold | +2.21% | +2.00% |
-| ELSA/USDT:USDT | below_1h_threshold | +1.69% | +1.48% |
-| JCT/USDT:USDT | below_1h_threshold | +1.58% | +1.38% |
-| PYTH/USDT:USDT | below_1h_threshold | +1.43% | +1.23% |
-| SAND/USDT:USDT | below_1h_threshold | +1.08% | +0.87% |
+| CLANKER/USDT:USDT | below_1h_threshold | +3.63% | +3.32% |
+| LIT/USDT:USDT | below_1h_threshold | +2.28% | +1.97% |
+| PYTH/USDT:USDT | below_1h_threshold | +1.89% | +1.58% |
+| SAND/USDT:USDT | below_1h_threshold | +1.70% | +1.39% |
+| LDO/USDT:USDT | below_1h_threshold | +1.54% | +1.23% |
 
 ## 7. 次に見るべき不足
 
