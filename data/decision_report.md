@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-05T00:16:25.198335+00:00
+- generated_at: 2026-11-05T00:21:22.631666+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18145**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-05T00:16:11.998984+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.26% price=80672.6
+- 更新: 2026-11-05T00:21:11.598747+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.26% price=80673.6
 - Funnel: target 1078 → liquid 187 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ELSA/USDT:USDT | +40.40% | $1,931,883.87 |
-| APPSTOCK/USDT:USDT | +22.91% | $1,211,486.35 |
-| FLUID/USDT:USDT | +12.58% | $3,397,188.09 |
-| STX/USDT:USDT | +4.71% | $3,935,600.19 |
-| MRNASTOCK/USDT:USDT | +4.51% | $4,379,346.08 |
+| ELSA/USDT:USDT | +36.88% | $1,949,564.75 |
+| APPSTOCK/USDT:USDT | +22.71% | $1,215,230.41 |
+| FLUID/USDT:USDT | +13.38% | $3,428,192.15 |
+| STX/USDT:USDT | +5.38% | $3,938,138.42 |
+| DGAI/USDT:USDT | +5.06% | $1,232,311.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ELSA/USDT:USDT | below_1h_threshold | +4.30% | +4.05% |
+| LSK/USDT:USDT | below_1h_threshold | +2.56% | +2.30% |
+| FLUID/USDT:USDT | below_1h_threshold | +1.76% | +1.50% |
 | SQQQ/USDT:USDT | below_1h_threshold | +1.33% | +1.08% |
-| FLUID/USDT:USDT | below_1h_threshold | +1.12% | +0.86% |
-| BEAT/USDT:USDT | below_1h_threshold | +0.84% | +0.58% |
-| AIN/USDT:USDT | below_1h_threshold | +0.53% | +0.27% |
+| ELSA/USDT:USDT | below_1h_threshold | +1.23% | +0.98% |
+| RUNE/USDT:USDT | below_1h_threshold | +0.94% | +0.68% |
 
 ## 7. 次に見るべき不足
 
