@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-05T14:06:32.540076+00:00
+- generated_at: 2026-11-05T14:11:31.824681+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18180**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-05T14:06:16.814565+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=79606.8
+- 更新: 2026-11-05T14:11:16.835587+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=79601.1
 - Funnel: target 1084 → liquid 182 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIO/USDT:USDT | +30.63% | $1,325,169.96 |
-| APPSTOCK/USDT:USDT | +23.94% | $2,159,794.92 |
-| LYN/USDT:USDT | +23.82% | $1,168,137.62 |
-| ARIA/USDT:USDT | +18.89% | $2,261,250.43 |
-| FLUID/USDT:USDT | +17.42% | $7,902,552.32 |
+| AIO/USDT:USDT | +31.12% | $1,330,388.75 |
+| LYN/USDT:USDT | +27.26% | $1,196,463.50 |
+| APPSTOCK/USDT:USDT | +24.30% | $2,169,737.45 |
+| ARIA/USDT:USDT | +19.18% | $2,282,687.95 |
+| FLUID/USDT:USDT | +17.56% | $7,944,723.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| APPSTOCK/USDT:USDT | below_1h_threshold | +2.04% | +2.09% |
+| APPSTOCK/USDT:USDT | below_1h_threshold | +2.04% | +2.10% |
+| LIT/USDT:USDT | below_1h_threshold | +0.70% | +0.75% |
 | SOXS/USDT:USDT | below_1h_threshold | +0.66% | +0.71% |
-| LIT/USDT:USDT | below_1h_threshold | +0.55% | +0.60% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +0.51% | +0.56% |
-| CAP/USDT:USDT | below_1h_threshold | +0.45% | +0.49% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +0.51% | +0.57% |
+| LEAD/USDT:USDT | below_1h_threshold | +0.44% | +0.50% |
 
 ## 7. 次に見るべき不足
 
