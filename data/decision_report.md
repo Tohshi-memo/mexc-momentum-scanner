@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-05T07:06:19.068178+00:00
+- generated_at: 2026-11-05T07:11:27.699137+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18165**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-05T07:06:09.264211+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=80698.0
-- Funnel: target 1077 → liquid 180 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.1 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-05T07:11:14.525911+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=80674.7
+- Funnel: target 1077 → liquid 180 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ELSA/USDT:USDT | +29.11% | $3,961,284.17 |
-| APPSTOCK/USDT:USDT | +20.40% | $1,507,636.59 |
-| JCT/USDT:USDT | +19.20% | $9,500,549.67 |
-| UAI/USDT:USDT | +18.45% | $5,739,935.35 |
-| AIN/USDT:USDT | +17.71% | $3,197,801.49 |
+| ELSA/USDT:USDT | +28.68% | $3,969,983.97 |
+| UAI/USDT:USDT | +24.48% | $5,887,969.58 |
+| APPSTOCK/USDT:USDT | +20.67% | $1,509,347.50 |
+| FLUID/USDT:USDT | +17.83% | $5,136,331.64 |
+| AIN/USDT:USDT | +17.79% | $3,204,207.09 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AAOISTOCK/USDT:USDT | below_1h_threshold | +1.72% | +1.63% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +1.26% | +1.16% |
-| UNITREE/USDT:USDT | below_1h_threshold | +0.97% | +0.88% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +0.73% | +0.64% |
-| QNT/USDT:USDT | below_1h_threshold | +0.73% | +0.64% |
+| CAP/USDT:USDT | below_1h_threshold | +4.65% | +4.59% |
+| UAI/USDT:USDT | below_1h_threshold | +2.82% | +2.75% |
+| AAOISTOCK/USDT:USDT | below_1h_threshold | +1.72% | +1.66% |
+| ARIA/USDT:USDT | below_1h_threshold | +1.70% | +1.63% |
+| BEAMX/USDT:USDT | below_1h_threshold | +1.29% | +1.22% |
 
 ## 7. 次に見るべき不足
 
