@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-05T08:56:39.271769+00:00
+- generated_at: 2026-11-05T09:01:18.914679+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18173**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-05T08:56:23.536534+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=80489.9
-- Funnel: target 1077 → liquid 181 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.5 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-05T09:01:08.257131+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=80490.8
+- Funnel: target 1077 → liquid 179 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ELSA/USDT:USDT | +48.52% | $5,109,726.55 |
-| APPSTOCK/USDT:USDT | +20.81% | $1,571,818.55 |
-| UAI/USDT:USDT | +19.02% | $6,981,259.37 |
-| FLUID/USDT:USDT | +17.65% | $5,874,218.88 |
-| JCT/USDT:USDT | +15.92% | $11,510,465.02 |
+| ELSA/USDT:USDT | +53.21% | $5,224,022.53 |
+| APPSTOCK/USDT:USDT | +20.69% | $1,568,756.72 |
+| UAI/USDT:USDT | +19.47% | $6,740,328.53 |
+| FLUID/USDT:USDT | +18.31% | $5,804,616.43 |
+| JCT/USDT:USDT | +17.02% | $11,480,470.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EDGE/USDT:USDT | below_1h_threshold | +3.24% | +3.09% |
-| FLUID/USDT:USDT | below_1h_threshold | +3.12% | +2.96% |
-| AERO/USDT:USDT | below_1h_threshold | +3.01% | +2.85% |
-| UAI/USDT:USDT | below_1h_threshold | +2.96% | +2.80% |
-| LYN/USDT:USDT | below_1h_threshold | +2.92% | +2.76% |
+| CAP/USDT:USDT | below_1h_threshold | +0.94% | +0.95% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +0.73% | +0.73% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +0.62% | +0.63% |
+| JCT/USDT:USDT | below_1h_threshold | +0.44% | +0.44% |
+| FLUID/USDT:USDT | below_1h_threshold | +0.30% | +0.31% |
 
 ## 7. 次に見るべき不足
 
