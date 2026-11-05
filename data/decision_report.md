@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-05T18:51:58.767352+00:00
+- generated_at: 2026-11-05T18:56:44.529722+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18199**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-05T18:51:36.188056+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.18% price=76055.6
-- Funnel: target 1084 → liquid 189 → pre 50 → checked 50 → surge 3 → strict 2
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.5 >= 65=1
+- 更新: 2026-11-05T18:56:24.411286+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.31% price=76158.5
+- Funnel: target 1084 → liquid 189 → pre 50 → checked 50 → surge 4 → strict 3
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 69.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLESS/USDT:USDT | +16.12% | $3,792,662.29 |
-| UVXY/USDT:USDT | +8.45% | $1,173,577.86 |
-| BTW/USDT:USDT | +7.76% | $4,793,943.72 |
-| CLANKER/USDT:USDT | +7.47% | $16,601,974.63 |
-| LYN/USDT:USDT | +6.04% | $1,657,219.70 |
+| BLESS/USDT:USDT | +15.84% | $3,882,417.95 |
+| CLANKER/USDT:USDT | +9.09% | $16,632,080.92 |
+| BTW/USDT:USDT | +8.10% | $4,817,590.06 |
+| UVXY/USDT:USDT | +6.76% | $1,191,669.15 |
+| LYN/USDT:USDT | +6.04% | $1,658,734.24 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PYTH/USDT:USDT | below_1h_threshold | +2.36% | +2.18% |
-| LDO/USDT:USDT | below_1h_threshold | +2.23% | +2.05% |
-| SAND/USDT:USDT | below_1h_threshold | +2.15% | +1.98% |
-| BLESS/USDT:USDT | below_1h_threshold | +2.14% | +1.96% |
-| WIF/USDT:USDT | below_1h_threshold | +2.06% | +1.88% |
+| PYTH/USDT:USDT | below_1h_threshold | +2.51% | +2.19% |
+| SAND/USDT:USDT | below_1h_threshold | +2.47% | +2.15% |
+| LDO/USDT:USDT | below_1h_threshold | +2.38% | +2.07% |
+| JTO/USDT:USDT | below_1h_threshold | +2.20% | +1.89% |
+| ZKSYNC/USDT:USDT | below_1h_threshold | +2.16% | +1.84% |
 
 ## 7. 次に見るべき不足
 
