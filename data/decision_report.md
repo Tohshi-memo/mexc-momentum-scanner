@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-05T13:41:15.276627+00:00
+- generated_at: 2026-11-05T13:46:22.226848+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18180**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-05T13:41:04.958820+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=79729.7
-- Funnel: target 1084 → liquid 183 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.5 >= 65=1
+- 更新: 2026-11-05T13:46:09.088767+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=79792.3
+- Funnel: target 1084 → liquid 184 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 83.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIO/USDT:USDT | +31.74% | $1,314,302.83 |
-| APPSTOCK/USDT:USDT | +22.55% | $2,038,344.16 |
-| ARIA/USDT:USDT | +18.78% | $2,169,802.40 |
-| FLUID/USDT:USDT | +18.71% | $7,727,339.76 |
-| UAI/USDT:USDT | +17.42% | $7,441,619.87 |
+| AIO/USDT:USDT | +32.82% | $1,324,093.15 |
+| APPSTOCK/USDT:USDT | +22.96% | $2,056,612.53 |
+| ARIA/USDT:USDT | +19.44% | $2,185,102.40 |
+| FLUID/USDT:USDT | +17.96% | $7,762,570.77 |
+| UAI/USDT:USDT | +15.71% | $7,476,305.11 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ARIA/USDT:USDT | below_1h_threshold | +4.15% | +4.06% |
-| SOXS/USDT:USDT | below_1h_threshold | +3.86% | +3.77% |
-| LIT/USDT:USDT | below_1h_threshold | +3.15% | +3.06% |
-| BEAMX/USDT:USDT | below_1h_threshold | +2.87% | +2.79% |
-| APPSTOCK/USDT:USDT | below_1h_threshold | +2.17% | +2.09% |
+| ARIA/USDT:USDT | below_relative_strength | +5.00% | +4.84% |
+| SOXS/USDT:USDT | below_1h_threshold | +3.86% | +3.69% |
+| LIT/USDT:USDT | below_1h_threshold | +3.56% | +3.40% |
+| BEAMX/USDT:USDT | below_1h_threshold | +2.74% | +2.57% |
+| APPSTOCK/USDT:USDT | below_1h_threshold | +2.17% | +2.01% |
 
 ## 7. 次に見るべき不足
 
