@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-05T03:46:32.505819+00:00
+- generated_at: 2026-11-05T03:51:30.689644+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18153**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-05T03:46:19.296193+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=80651.9
-- Funnel: target 1078 → liquid 189 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.5 >= 65=1
+- 更新: 2026-11-05T03:51:17.400771+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=80569.4
+- Funnel: target 1078 → liquid 189 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 79.8 >= 65=1, 4h RSI 65.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ELSA/USDT:USDT | +29.89% | $2,536,097.56 |
-| UAI/USDT:USDT | +21.07% | $5,042,109.95 |
-| FLUID/USDT:USDT | +20.89% | $4,158,077.97 |
-| APPSTOCK/USDT:USDT | +20.68% | $1,343,780.78 |
-| AIN/USDT:USDT | +16.74% | $2,783,695.42 |
+| ELSA/USDT:USDT | +30.59% | $2,558,737.78 |
+| APPSTOCK/USDT:USDT | +20.78% | $1,344,243.85 |
+| FLUID/USDT:USDT | +20.18% | $4,191,338.49 |
+| AIN/USDT:USDT | +17.49% | $2,816,809.34 |
+| UAI/USDT:USDT | +13.89% | $5,091,943.79 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIN/USDT:USDT | below_1h_threshold | +4.02% | +3.88% |
-| FLUID/USDT:USDT | below_1h_threshold | +3.07% | +2.93% |
-| UNITREE/USDT:USDT | below_1h_threshold | +2.59% | +2.46% |
-| UAI/USDT:USDT | below_1h_threshold | +1.63% | +1.49% |
-| UNI/USDT:USDT | below_1h_threshold | +1.57% | +1.43% |
+| UNITREE/USDT:USDT | below_1h_threshold | +2.59% | +2.56% |
+| FLUID/USDT:USDT | below_1h_threshold | +1.89% | +1.86% |
+| ICNT/USDT:USDT | below_1h_threshold | +1.59% | +1.56% |
+| STX/USDT:USDT | below_1h_threshold | +1.59% | +1.56% |
+| CC/USDT:USDT | below_1h_threshold | +1.51% | +1.48% |
 
 ## 7. 次に見るべき不足
 
