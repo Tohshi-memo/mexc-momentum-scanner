@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-05T17:17:04.374306+00:00
+- generated_at: 2026-11-05T17:22:02.198419+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18193**
 
@@ -70,31 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-05T17:16:37.873099+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.39% price=76063.1
-- Funnel: target 1084 → liquid 189 → pre 50 → checked 50 → surge 6 → strict 6
-- Surge前reject: below_1h_threshold=44, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-05T17:21:36.357400+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.46% price=76009.0
+- Funnel: target 1084 → liquid 189 → pre 50 → checked 50 → surge 5 → strict 5
+- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +15.34% | $15,510,386.48 |
-| BLESS/USDT:USDT | +12.12% | $2,942,250.87 |
-| SNXX/USDT:USDT | +8.13% | $48,599,718.63 |
-| MUU/USDT:USDT | +7.55% | $34,273,708.03 |
-| BTW/USDT:USDT | +7.11% | $4,267,167.76 |
+| AKE/USDT:USDT | +15.62% | $15,660,423.52 |
+| BLESS/USDT:USDT | +13.39% | $3,008,481.77 |
+| SNXX/USDT:USDT | +9.33% | $48,809,312.49 |
+| MUU/USDT:USDT | +8.76% | $34,511,513.95 |
+| LYN/USDT:USDT | +8.13% | $1,542,464.66 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CBRSSTOCK/USDT:USDT | below_1h_threshold | +4.65% | +5.04% |
-| RKLBSTOCK/USDT:USDT | below_1h_threshold | +4.13% | +4.52% |
-| CRWVSTOCK/USDT:USDT | below_1h_threshold | +3.94% | +4.33% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +3.64% | +4.03% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +3.57% | +3.96% |
+| CBRSSTOCK/USDT:USDT | below_1h_threshold | +4.65% | +5.11% |
+| LYN/USDT:USDT | below_1h_threshold | +4.52% | +4.98% |
+| RKLBSTOCK/USDT:USDT | below_1h_threshold | +4.13% | +4.59% |
+| CRWVSTOCK/USDT:USDT | below_1h_threshold | +3.94% | +4.40% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +3.64% | +4.10% |
 
 ## 7. 次に見るべき不足
 
