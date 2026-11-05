@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-05T18:56:44.529722+00:00
+- generated_at: 2026-11-05T19:01:19.488388+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18199**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-05T18:56:24.411286+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.31% price=76158.5
-- Funnel: target 1084 → liquid 189 → pre 50 → checked 50 → surge 4 → strict 3
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.5 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-05T19:01:08.785425+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=76066.4
+- Funnel: target 1084 → liquid 186 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLESS/USDT:USDT | +15.84% | $3,882,417.95 |
-| CLANKER/USDT:USDT | +9.09% | $16,632,080.92 |
-| BTW/USDT:USDT | +8.10% | $4,817,590.06 |
-| UVXY/USDT:USDT | +6.76% | $1,191,669.15 |
-| LYN/USDT:USDT | +6.04% | $1,658,734.24 |
+| BLESS/USDT:USDT | +15.07% | $3,643,510.20 |
+| CLANKER/USDT:USDT | +8.65% | $14,241,241.24 |
+| BTW/USDT:USDT | +7.92% | $4,732,662.93 |
+| UVXY/USDT:USDT | +6.90% | $1,198,125.13 |
+| LYN/USDT:USDT | +5.55% | $1,637,068.00 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PYTH/USDT:USDT | below_1h_threshold | +2.51% | +2.19% |
-| SAND/USDT:USDT | below_1h_threshold | +2.47% | +2.15% |
-| LDO/USDT:USDT | below_1h_threshold | +2.38% | +2.07% |
-| JTO/USDT:USDT | below_1h_threshold | +2.20% | +1.89% |
-| ZKSYNC/USDT:USDT | below_1h_threshold | +2.16% | +1.84% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.50% | +2.50% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.09% | +2.09% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.52% | +1.52% |
+| CRWVSTOCK/USDT:USDT | below_1h_threshold | +0.71% | +0.71% |
+| STX/USDT:USDT | below_1h_threshold | +0.52% | +0.52% |
 
 ## 7. 次に見るべき不足
 
