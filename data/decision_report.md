@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-11-06T10:41:23.983418+00:00
+- generated_at: 2026-11-06T10:46:18.864378+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **18271**
+- closed shadow trades: **18272**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=18271, expectancy=+0.03%
+- 全期間 MARKET基準: n=18272, expectancy=+0.03%
 - 直近20件 MARKET基準: n=20, expectancy=-1.57%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -34,8 +34,8 @@
 | LIMIT_BB3S_LONG | 2/3 | 66.7% | +4.79% | **+3.19%** |
 | LIMIT_1PCT_LONG | 20/20 | 100.0% | +1.55% | **+1.55%** |
 | LIMIT_3PCT_LONG | 11/20 | 55.0% | +2.33% | **+1.28%** |
-| LIMIT_8PCT_LONG | 4/20 | 20.0% | +6.00% | **+1.20%** |
 | LIMIT_2PCT_LONG | 13/20 | 65.0% | +1.69% | **+1.10%** |
+| LIMIT_ATR_LONG | 9/20 | 45.0% | +2.28% | **+1.03%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,477.20** / 初期 $100.00 (+1377.20%)
-- 確定: 7035件 (Win 2022 / Loss 2247 / Flat 2766) / skip 7797件
+- 確定: 7035件 (Win 2022 / Loss 2247 / Flat 2766) / skip 7798件
 - 成長率目線: 平均log +0.000383 / 幾何平均 +0.038% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_1PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: AKE/USDT:USDT `MARKET_LONG` SL_HIT account -0.50% 残高後 $1,477.20
@@ -55,23 +55,23 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$376.73** / 初期 $100.00 (+276.73%)
-- 確定: 4641件 (Win 1246 / Loss 1034 / Flat 2361) / skip 7041件
+- 確定: 4642件 (Win 1246 / Loss 1034 / Flat 2362) / skip 7041件
 - 成長率目線: 平均log +0.000286 / 幾何平均 +0.029% per trade / maxDD +4.29%
 - 次の候補: `LIMIT_6PCT` (selected_by_robust_growth_score) / robust_score +0.1405 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: CYBER/USDT:USDT `LIMIT_6PCT` EXPIRED account +0.00% 残高後 $376.73
+- 最新: BIRB/USDT:USDT `LIMIT_6PCT` EXPIRED account +0.00% 残高後 $376.73
 
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
 - 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6431件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000351 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000330 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-06T10:41:10.862170+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=76215.1
+- 更新: 2026-11-06T10:46:07.171593+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=76202.2
 - Funnel: target 1089 → liquid 191 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +90.54% | $35,221,620.95 |
-| UAI/USDT:USDT | +84.89% | $11,108,086.59 |
-| CYBER/USDT:USDT | +50.42% | $4,283,537.86 |
-| ICNT/USDT:USDT | +28.15% | $1,701,701.20 |
-| ONE/USDT:USDT | +25.61% | $1,043,592.23 |
+| AKE/USDT:USDT | +89.14% | $35,464,530.84 |
+| UAI/USDT:USDT | +82.34% | $11,133,698.90 |
+| CYBER/USDT:USDT | +49.74% | $4,311,638.10 |
+| ICNT/USDT:USDT | +26.77% | $1,737,351.43 |
+| ONE/USDT:USDT | +26.12% | $1,092,987.14 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MUU/USDT:USDT | below_1h_threshold | +3.80% | +3.72% |
-| IRENSTOCK/USDT:USDT | below_1h_threshold | +3.43% | +3.35% |
-| SOXL/USDT:USDT | below_1h_threshold | +3.18% | +3.09% |
-| ONE/USDT:USDT | below_1h_threshold | +3.02% | +2.94% |
-| SNXX/USDT:USDT | below_1h_threshold | +2.86% | +2.77% |
+| MUU/USDT:USDT | below_1h_threshold | +3.80% | +3.73% |
+| IRENSTOCK/USDT:USDT | below_1h_threshold | +3.43% | +3.37% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.37% | +3.30% |
+| SOXL/USDT:USDT | below_1h_threshold | +3.18% | +3.11% |
+| CLANKER/USDT:USDT | below_1h_threshold | +3.06% | +2.99% |
 
 ## 7. 次に見るべき不足
 
