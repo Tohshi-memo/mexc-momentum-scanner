@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-06T19:11:35.598352+00:00
+- generated_at: 2026-11-06T19:16:26.120527+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18327**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-06T19:11:22.416732+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=75782.3
+- 更新: 2026-11-06T19:16:12.721279+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=75740.6
 - Funnel: target 1089 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IDOL/USDT:USDT | +15.62% | $3,594,731.76 |
-| AIN/USDT:USDT | +7.78% | $4,830,674.54 |
-| JCT/USDT:USDT | +6.95% | $5,335,101.97 |
-| BTW/USDT:USDT | +5.89% | $7,919,067.54 |
-| CLSKSTOCK/USDT:USDT | +4.51% | $1,397,144.52 |
+| IDOL/USDT:USDT | +17.48% | $3,642,581.16 |
+| JCT/USDT:USDT | +9.32% | $5,339,566.23 |
+| AIN/USDT:USDT | +8.45% | $4,850,320.67 |
+| ONE/USDT:USDT | +6.27% | $6,245,007.74 |
+| BTW/USDT:USDT | +5.79% | $7,937,710.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| INTW/USDT:USDT | below_1h_threshold | +3.77% | +3.74% |
-| CBRSSTOCK/USDT:USDT | below_1h_threshold | +3.28% | +3.26% |
-| SOXL/USDT:USDT | below_1h_threshold | +3.13% | +3.11% |
-| CRWVSTOCK/USDT:USDT | below_1h_threshold | +2.97% | +2.95% |
-| CSOPSKHYNIX2L/USDT:USDT | below_1h_threshold | +2.83% | +2.81% |
+| INTW/USDT:USDT | below_1h_threshold | +3.77% | +3.80% |
+| ONE/USDT:USDT | below_1h_threshold | +3.52% | +3.55% |
+| CBRSSTOCK/USDT:USDT | below_1h_threshold | +3.28% | +3.32% |
+| IDOL/USDT:USDT | below_1h_threshold | +3.23% | +3.27% |
+| SOXL/USDT:USDT | below_1h_threshold | +3.13% | +3.17% |
 
 ## 7. 次に見るべき不足
 
