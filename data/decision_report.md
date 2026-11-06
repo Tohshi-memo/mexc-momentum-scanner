@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-06T22:11:31.388856+00:00
+- generated_at: 2026-11-06T22:16:27.697285+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18329**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-06T22:11:18.322263+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=76024.3
+- 更新: 2026-11-06T22:16:14.807863+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=75969.3
 - Funnel: target 1089 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IDOL/USDT:USDT | +12.17% | $4,488,290.55 |
-| ONE/USDT:USDT | +9.25% | $7,465,943.37 |
-| BTW/USDT:USDT | +7.78% | $7,683,247.96 |
-| JCT/USDT:USDT | +7.05% | $5,171,246.13 |
-| AIN/USDT:USDT | +6.32% | $4,811,922.90 |
+| IDOL/USDT:USDT | +11.09% | $4,502,853.11 |
+| ONE/USDT:USDT | +9.94% | $7,523,939.02 |
+| BTW/USDT:USDT | +7.99% | $7,711,872.29 |
+| JCT/USDT:USDT | +7.18% | $5,177,474.22 |
+| UVXY/USDT:USDT | +6.16% | $2,940,985.41 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| INTW/USDT:USDT | below_1h_threshold | +1.48% | +1.31% |
-| NGAS/USDT:USDT | below_1h_threshold | +1.25% | +1.08% |
-| CSOPSKHYNIX2L/USDT:USDT | below_1h_threshold | +1.20% | +1.03% |
-| IRENSTOCK/USDT:USDT | below_1h_threshold | +1.20% | +1.03% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.04% | +0.87% |
+| INTW/USDT:USDT | below_1h_threshold | +1.48% | +1.38% |
+| BIRB/USDT:USDT | below_1h_threshold | +1.32% | +1.22% |
+| NGAS/USDT:USDT | below_1h_threshold | +1.25% | +1.15% |
+| CSOPSKHYNIX2L/USDT:USDT | below_1h_threshold | +1.20% | +1.10% |
+| IRENSTOCK/USDT:USDT | below_1h_threshold | +1.20% | +1.10% |
 
 ## 7. 次に見るべき不足
 
