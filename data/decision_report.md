@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-06T04:11:24.431920+00:00
+- generated_at: 2026-11-06T04:16:24.323140+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18243**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-06T04:11:11.272687+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.28% price=75667.3
+- 更新: 2026-11-06T04:16:11.459769+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.28% price=75669.7
 - Funnel: target 1084 → liquid 187 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| UAI/USDT:USDT | +56.02% | $8,254,323.95 |
-| CYBER/USDT:USDT | +51.24% | $2,446,279.21 |
-| AKE/USDT:USDT | +24.61% | $20,492,406.17 |
-| IRENSTOCK/USDT:USDT | +17.39% | $3,128,993.79 |
-| BLESS/USDT:USDT | +14.64% | $5,417,592.81 |
+| UAI/USDT:USDT | +56.93% | $8,284,580.81 |
+| CYBER/USDT:USDT | +54.06% | $2,472,131.88 |
+| AKE/USDT:USDT | +26.97% | $20,603,511.69 |
+| IRENSTOCK/USDT:USDT | +17.96% | $3,129,672.34 |
+| BLESS/USDT:USDT | +14.34% | $5,422,765.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UAI/USDT:USDT | below_1h_threshold | +2.20% | +2.48% |
-| LYN/USDT:USDT | below_1h_threshold | +1.89% | +2.17% |
-| BLESS/USDT:USDT | below_1h_threshold | +0.84% | +1.12% |
-| UVXY/USDT:USDT | below_1h_threshold | +0.71% | +1.00% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.48% | +0.76% |
+| UAI/USDT:USDT | below_1h_threshold | +2.60% | +2.88% |
+| LYN/USDT:USDT | below_1h_threshold | +2.27% | +2.55% |
+| CYBER/USDT:USDT | below_1h_threshold | +0.76% | +1.03% |
+| UVXY/USDT:USDT | below_1h_threshold | +0.71% | +0.99% |
+| PEPE/USDT:USDT | below_1h_threshold | +0.61% | +0.88% |
 
 ## 7. 次に見るべき不足
 
