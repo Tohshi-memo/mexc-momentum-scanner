@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-06T02:51:36.072819+00:00
+- generated_at: 2026-11-06T02:56:27.208593+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18224**
 
@@ -70,32 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-06T02:51:15.713825+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.20% price=76251.1
-- Funnel: target 1084 → liquid 186 → pre 50 → checked 50 → surge 3 → strict 2
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.4 >= 65=1
+- 更新: 2026-11-06T02:56:11.356033+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=76177.5
+- Funnel: target 1084 → liquid 186 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CYBER/USDT:USDT | +45.46% | $1,946,753.65 |
-| IRENSTOCK/USDT:USDT | +18.71% | $3,134,915.91 |
-| BLESS/USDT:USDT | +14.54% | $5,406,018.41 |
-| CRWVSTOCK/USDT:USDT | +10.21% | $3,168,492.49 |
-| ETHFI/USDT:USDT | +10.19% | $5,680,017.45 |
+| CYBER/USDT:USDT | +41.69% | $1,979,964.38 |
+| IRENSTOCK/USDT:USDT | +18.08% | $3,135,724.15 |
+| BLESS/USDT:USDT | +14.37% | $5,411,949.11 |
+| ETHFI/USDT:USDT | +10.17% | $5,761,617.84 |
+| CRWVSTOCK/USDT:USDT | +9.90% | $3,174,006.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +4.24% | +4.04% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +3.96% | +3.76% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +3.25% | +3.05% |
-| SOXL/USDT:USDT | below_1h_threshold | +3.14% | +2.94% |
-| MVLL/USDT:USDT | below_1h_threshold | +2.96% | +2.76% |
+| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +4.24% | +4.14% |
+| CYBER/USDT:USDT | below_1h_threshold | +4.14% | +4.03% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.30% | +3.19% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +3.25% | +3.15% |
+| SOXL/USDT:USDT | below_1h_threshold | +3.14% | +3.03% |
 
 ## 7. 次に見るべき不足
 
