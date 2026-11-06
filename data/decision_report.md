@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-06T00:51:21.352937+00:00
+- generated_at: 2026-11-06T00:56:21.368660+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18219**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-06T00:51:09.428596+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.21% price=76209.9
+- 更新: 2026-11-06T00:56:10.853767+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.31% price=76288.4
 - Funnel: target 1084 → liquid 190 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CYBER/USDT:USDT | +35.61% | $1,336,334.26 |
-| IRENSTOCK/USDT:USDT | +14.12% | $3,028,724.58 |
-| BLESS/USDT:USDT | +13.49% | $5,386,868.28 |
-| UVXY/USDT:USDT | +11.54% | $3,037,982.07 |
-| BTW/USDT:USDT | +10.13% | $6,301,282.65 |
+| CYBER/USDT:USDT | +39.46% | $1,372,715.73 |
+| IRENSTOCK/USDT:USDT | +14.81% | $3,032,593.11 |
+| BLESS/USDT:USDT | +14.10% | $5,395,734.05 |
+| BTW/USDT:USDT | +10.99% | $6,340,356.20 |
+| UVXY/USDT:USDT | +10.67% | $3,039,167.43 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ARB/USDT:USDT | below_1h_threshold | +3.52% | +3.31% |
-| ETHFI/USDT:USDT | below_1h_threshold | +3.19% | +2.98% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +2.93% | +2.72% |
-| ZEC/USDT:USDT | below_1h_threshold | +2.88% | +2.67% |
-| STRK/USDT:USDT | below_1h_threshold | +2.77% | +2.56% |
+| ARB/USDT:USDT | below_1h_threshold | +4.15% | +3.84% |
+| ETHFI/USDT:USDT | below_1h_threshold | +3.40% | +3.08% |
+| BTW/USDT:USDT | below_1h_threshold | +3.12% | +2.80% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +3.12% | +2.80% |
+| ZEC/USDT:USDT | below_1h_threshold | +3.08% | +2.77% |
 
 ## 7. 次に見るべき不足
 
