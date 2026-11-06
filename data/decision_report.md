@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-06T10:16:02.800079+00:00
+- generated_at: 2026-11-06T10:21:20.203676+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18270**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-06T10:15:54.827216+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=76136.5
+- 更新: 2026-11-06T10:21:07.230860+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=76161.5
 - Funnel: target 1089 → liquid 190 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +87.94% | $34,816,450.26 |
-| UAI/USDT:USDT | +81.83% | $10,847,469.25 |
-| CYBER/USDT:USDT | +52.14% | $4,218,958.89 |
-| BIRB/USDT:USDT | +32.90% | $1,148,072.68 |
-| ICNT/USDT:USDT | +27.65% | $1,638,503.48 |
+| AKE/USDT:USDT | +92.51% | $34,995,414.53 |
+| UAI/USDT:USDT | +82.04% | $10,894,168.73 |
+| CYBER/USDT:USDT | +51.92% | $4,240,135.10 |
+| BIRB/USDT:USDT | +31.91% | $1,178,033.82 |
+| ICNT/USDT:USDT | +28.52% | $1,647,640.55 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BIRB/USDT:USDT | below_1h_threshold | +4.17% | +4.19% |
-| MUU/USDT:USDT | below_1h_threshold | +3.80% | +3.82% |
-| IRENSTOCK/USDT:USDT | below_1h_threshold | +3.43% | +3.45% |
-| CLANKER/USDT:USDT | below_1h_threshold | +3.37% | +3.39% |
-| SOXL/USDT:USDT | below_1h_threshold | +3.18% | +3.20% |
+| MUU/USDT:USDT | below_1h_threshold | +3.80% | +3.79% |
+| BIRB/USDT:USDT | below_1h_threshold | +3.44% | +3.42% |
+| IRENSTOCK/USDT:USDT | below_1h_threshold | +3.43% | +3.42% |
+| SOXL/USDT:USDT | below_1h_threshold | +3.18% | +3.16% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.86% | +2.84% |
 
 ## 7. 次に見るべき不足
 
