@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-06T20:51:16.144402+00:00
+- generated_at: 2026-11-06T20:56:17.741719+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18328**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-06T20:51:03.720151+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=75851.2
+- 更新: 2026-11-06T20:56:07.041230+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=75810.3
 - Funnel: target 1089 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IDOL/USDT:USDT | +10.64% | $4,219,181.21 |
-| BTW/USDT:USDT | +10.17% | $8,057,180.59 |
-| ARIA/USDT:USDT | +5.84% | $1,649,304.62 |
-| UVXY/USDT:USDT | +5.33% | $3,639,140.19 |
-| JCT/USDT:USDT | +5.30% | $5,343,183.51 |
+| IDOL/USDT:USDT | +10.82% | $4,226,575.42 |
+| BTW/USDT:USDT | +10.15% | $8,087,225.98 |
+| ARIA/USDT:USDT | +6.37% | $1,650,737.98 |
+| JCT/USDT:USDT | +5.86% | $5,348,860.00 |
+| UVXY/USDT:USDT | +5.75% | $3,646,682.49 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ARIA/USDT:USDT | below_1h_threshold | +3.19% | +3.20% |
-| BTW/USDT:USDT | below_1h_threshold | +2.65% | +2.67% |
-| UVXY/USDT:USDT | below_1h_threshold | +2.00% | +2.02% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +1.64% | +1.66% |
-| MVLL/USDT:USDT | below_1h_threshold | +1.43% | +1.44% |
+| ARIA/USDT:USDT | below_1h_threshold | +3.71% | +3.78% |
+| BTW/USDT:USDT | below_1h_threshold | +2.64% | +2.71% |
+| UVXY/USDT:USDT | below_1h_threshold | +2.00% | +2.08% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +1.64% | +1.71% |
+| MVLL/USDT:USDT | below_1h_threshold | +1.43% | +1.50% |
 
 ## 7. 次に見るべき不足
 
