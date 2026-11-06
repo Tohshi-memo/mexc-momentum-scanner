@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-11-06T01:56:45.134807+00:00
+- generated_at: 2026-11-06T02:01:28.448964+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **18219**
+- closed shadow trades: **18220**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +1.15% / filled 20/20。**
-- 全期間 MARKET基準: n=18219, expectancy=+0.03%
+- 全期間 MARKET基準: n=18220, expectancy=+0.03%
 - 直近20件 MARKET基準: n=20, expectancy=+1.15%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -24,8 +24,8 @@
 | LIMIT_1PCT | 18/20 | 90.0% | +1.67% | **+1.50%** |
 | LIMIT_2PCT | 16/20 | 80.0% | +1.84% | **+1.47%** |
 | MARKET | 20/20 | 100.0% | +1.15% | **+1.15%** |
-| LIMIT_ATR | 13/20 | 65.0% | +0.88% | **+0.57%** |
-| LIMIT_3PCT | 12/20 | 60.0% | +0.60% | **+0.36%** |
+| LIMIT_ATR | 12/20 | 60.0% | +1.12% | **+0.67%** |
+| LIMIT_FIB1272 | 7/20 | 35.0% | +1.14% | **+0.40%** |
 
 ### シャドウ上位 LONG
 
@@ -47,15 +47,15 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,507.12** / 初期 $100.00 (+1407.12%)
-- 確定: 7022件 (Win 2022 / Loss 2243 / Flat 2757) / skip 7758件
+- 確定: 7023件 (Win 2022 / Loss 2243 / Flat 2758) / skip 7758件
 - 成長率目線: 平均log +0.000386 / 幾何平均 +0.039% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: SOXS/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $1,507.12
+- 最新: JCT/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $1,507.12
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$375.26** / 初期 $100.00 (+275.26%)
-- 確定: 4611件 (Win 1235 / Loss 1030 / Flat 2346) / skip 7019件
+- 確定: 4611件 (Win 1235 / Loss 1030 / Flat 2346) / skip 7020件
 - 成長率目線: 平均log +0.000287 / 幾何平均 +0.029% per trade / maxDD +4.25%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: CLANKER/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $375.26
@@ -65,36 +65,35 @@
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
 - 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6381件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000336 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000279 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-06T01:56:25.020581+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=76171.2
-- Funnel: target 1084 → liquid 190 → pre 50 → checked 50 → surge 4 → strict 4
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-06T02:01:14.185900+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=76139.9
+- Funnel: target 1084 → liquid 186 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CYBER/USDT:USDT | +37.84% | $1,697,608.93 |
-| IRENSTOCK/USDT:USDT | +17.50% | $3,122,854.56 |
-| BLESS/USDT:USDT | +13.97% | $5,413,269.63 |
-| CLANKER/USDT:USDT | +11.95% | $6,103,463.55 |
-| BTW/USDT:USDT | +11.64% | $6,477,426.34 |
+| CYBER/USDT:USDT | +36.77% | $1,707,992.09 |
+| IRENSTOCK/USDT:USDT | +16.87% | $3,114,597.91 |
+| BLESS/USDT:USDT | +13.92% | $5,348,685.83 |
+| JCT/USDT:USDT | +13.52% | $12,140,929.71 |
+| CLANKER/USDT:USDT | +13.38% | $5,765,022.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +4.40% | +4.57% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +4.34% | +4.51% |
-| CRWVSTOCK/USDT:USDT | below_1h_threshold | +3.89% | +4.06% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +3.64% | +3.81% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +3.55% | +3.71% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +3.25% | +3.20% |
+| IRENSTOCK/USDT:USDT | below_1h_threshold | +2.20% | +2.15% |
+| CLANKER/USDT:USDT | below_1h_threshold | +2.06% | +2.01% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.87% | +1.81% |
+| TSMSTOCK/USDT:USDT | below_1h_threshold | +1.76% | +1.71% |
 
 ## 7. 次に見るべき不足
 
