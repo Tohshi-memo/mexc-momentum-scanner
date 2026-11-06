@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-06T12:51:35.956871+00:00
+- generated_at: 2026-11-06T12:56:25.760293+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18282**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-06T12:51:15.447114+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=76023.6
-- Funnel: target 1089 → liquid 190 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.7 >= 65=1
+- 更新: 2026-11-06T12:56:12.050083+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=76007.3
+- Funnel: target 1089 → liquid 191 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 66.8 >= 65=1, 4h RSI 78.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| UAI/USDT:USDT | +114.79% | $14,006,558.51 |
-| AKE/USDT:USDT | +92.55% | $38,906,979.69 |
-| CYBER/USDT:USDT | +61.42% | $5,535,212.93 |
-| ONE/USDT:USDT | +41.42% | $2,635,494.31 |
-| JCT/USDT:USDT | +32.69% | $6,935,571.21 |
+| UAI/USDT:USDT | +113.97% | $14,161,733.45 |
+| AKE/USDT:USDT | +97.28% | $39,023,237.69 |
+| CYBER/USDT:USDT | +65.32% | $5,582,186.32 |
+| ONE/USDT:USDT | +42.98% | $2,679,895.83 |
+| JCT/USDT:USDT | +34.58% | $6,968,642.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MVLL/USDT:USDT | below_1h_threshold | +4.82% | +4.94% |
-| SNXX/USDT:USDT | below_1h_threshold | +4.71% | +4.83% |
-| ONE/USDT:USDT | below_1h_threshold | +3.78% | +3.90% |
-| INTW/USDT:USDT | below_1h_threshold | +3.35% | +3.47% |
-| IRENSTOCK/USDT:USDT | below_1h_threshold | +3.20% | +3.32% |
+| MVLL/USDT:USDT | below_1h_threshold | +4.82% | +4.96% |
+| SNXX/USDT:USDT | below_1h_threshold | +4.71% | +4.85% |
+| JCT/USDT:USDT | below_1h_threshold | +3.70% | +3.84% |
+| IRENSTOCK/USDT:USDT | below_1h_threshold | +3.20% | +3.34% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.01% | +3.15% |
 
 ## 7. 次に見るべき不足
 
