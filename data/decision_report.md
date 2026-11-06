@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-06T13:41:24.892163+00:00
+- generated_at: 2026-11-06T13:46:19.264378+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18284**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-06T13:41:11.656349+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.38% price=75713.1
+- 更新: 2026-11-06T13:46:08.394058+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.20% price=75849.9
 - Funnel: target 1089 → liquid 189 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| UAI/USDT:USDT | +95.00% | $15,707,149.58 |
-| AKE/USDT:USDT | +89.22% | $39,673,728.06 |
-| CYBER/USDT:USDT | +59.33% | $5,779,658.58 |
-| ONE/USDT:USDT | +43.07% | $3,253,252.52 |
-| ICNT/USDT:USDT | +27.37% | $2,034,445.00 |
+| AKE/USDT:USDT | +90.42% | $39,733,947.54 |
+| UAI/USDT:USDT | +89.08% | $15,992,157.36 |
+| CYBER/USDT:USDT | +60.01% | $5,803,378.42 |
+| ONE/USDT:USDT | +42.34% | $3,328,747.33 |
+| ICNT/USDT:USDT | +28.70% | $2,053,883.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +4.89% | +5.28% |
-| ONE/USDT:USDT | below_1h_threshold | +1.88% | +2.27% |
-| CRWVSTOCK/USDT:USDT | below_1h_threshold | +1.78% | +2.16% |
-| UVXY/USDT:USDT | below_1h_threshold | +1.55% | +1.93% |
-| RAY/USDT:USDT | below_1h_threshold | +0.61% | +0.99% |
+| BTW/USDT:USDT | below_1h_threshold | +4.22% | +4.42% |
+| CRWVSTOCK/USDT:USDT | below_1h_threshold | +1.78% | +1.98% |
+| UVXY/USDT:USDT | below_1h_threshold | +1.55% | +1.75% |
+| ONE/USDT:USDT | below_1h_threshold | +1.14% | +1.34% |
+| DASH/USDT:USDT | below_1h_threshold | +1.06% | +1.27% |
 
 ## 7. 次に見るべき不足
 
