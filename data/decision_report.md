@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-06T02:41:29.442166+00:00
+- generated_at: 2026-11-06T02:46:33.856756+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18223**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-06T02:41:14.521811+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=76055.5
+- 更新: 2026-11-06T02:46:18.554371+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=76135.5
 - Funnel: target 1084 → liquid 186 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CYBER/USDT:USDT | +42.97% | $1,887,710.41 |
-| IRENSTOCK/USDT:USDT | +17.27% | $3,133,633.65 |
-| BLESS/USDT:USDT | +14.04% | $5,399,261.33 |
-| CLANKER/USDT:USDT | +9.71% | $5,827,531.21 |
-| CRWVSTOCK/USDT:USDT | +9.39% | $3,163,200.54 |
+| CYBER/USDT:USDT | +42.85% | $1,907,884.26 |
+| IRENSTOCK/USDT:USDT | +17.39% | $3,134,409.87 |
+| BLESS/USDT:USDT | +14.10% | $5,403,285.29 |
+| CRWVSTOCK/USDT:USDT | +9.49% | $3,168,128.75 |
+| CLANKER/USDT:USDT | +9.46% | $5,832,361.03 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CYBER/USDT:USDT | below_1h_threshold | +4.76% | +4.82% |
-| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +4.24% | +4.30% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +3.25% | +3.31% |
-| SOXL/USDT:USDT | below_1h_threshold | +3.14% | +3.19% |
-| DRAM/USDT:USDT | below_1h_threshold | +2.50% | +2.56% |
+| CYBER/USDT:USDT | below_1h_threshold | +4.67% | +4.62% |
+| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +4.24% | +4.19% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +3.25% | +3.20% |
+| SOXL/USDT:USDT | below_1h_threshold | +3.14% | +3.09% |
+| DRAM/USDT:USDT | below_1h_threshold | +2.50% | +2.46% |
 
 ## 7. 次に見るべき不足
 
