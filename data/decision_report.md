@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-06T15:36:31.463294+00:00
+- generated_at: 2026-11-06T15:41:33.923276+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18302**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-06T15:36:15.978630+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.23% price=75338.2
-- Funnel: target 1089 → liquid 186 → pre 50 → checked 50 → surge 4 → strict 3
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.1 >= 65=1
+- 更新: 2026-11-06T15:41:17.662047+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.16% price=75630.7
+- Funnel: target 1089 → liquid 186 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.1 >= 65=1, 4h RSI 85.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +95.69% | $48,144,356.51 |
-| UAI/USDT:USDT | +90.81% | $20,208,266.73 |
-| CYBER/USDT:USDT | +54.53% | $6,728,482.59 |
-| ONE/USDT:USDT | +48.49% | $4,914,777.12 |
-| ICNT/USDT:USDT | +36.28% | $2,434,884.01 |
+| UAI/USDT:USDT | +91.93% | $20,263,012.35 |
+| AKE/USDT:USDT | +85.85% | $48,482,920.31 |
+| CYBER/USDT:USDT | +56.29% | $6,767,646.53 |
+| ONE/USDT:USDT | +50.66% | $4,953,549.28 |
+| ICNT/USDT:USDT | +35.92% | $2,454,533.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ICNT/USDT:USDT | below_1h_threshold | +4.36% | +4.59% |
-| INTW/USDT:USDT | below_1h_threshold | +4.27% | +4.50% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +4.03% | +4.26% |
-| CBRSSTOCK/USDT:USDT | below_1h_threshold | +2.13% | +2.36% |
-| IRENSTOCK/USDT:USDT | below_1h_threshold | +1.99% | +2.22% |
+| INTW/USDT:USDT | below_1h_threshold | +4.27% | +4.11% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +4.03% | +3.87% |
+| ICNT/USDT:USDT | below_1h_threshold | +3.93% | +3.78% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.69% | +2.53% |
+| CBRSSTOCK/USDT:USDT | below_1h_threshold | +2.13% | +1.98% |
 
 ## 7. 次に見るべき不足
 
