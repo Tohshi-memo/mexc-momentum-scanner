@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-06T01:36:38.173512+00:00
+- generated_at: 2026-11-06T01:41:30.504308+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18219**
 
@@ -70,31 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-06T01:36:18.646633+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=76200.2
-- Funnel: target 1084 → liquid 188 → pre 50 → checked 50 → surge 3 → strict 3
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-06T01:41:14.812048+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.22% price=76135.7
+- Funnel: target 1084 → liquid 189 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CYBER/USDT:USDT | +34.54% | $1,601,262.08 |
-| IRENSTOCK/USDT:USDT | +16.81% | $3,115,679.09 |
-| BLESS/USDT:USDT | +13.62% | $5,391,539.07 |
-| UVXY/USDT:USDT | +11.97% | $3,116,575.21 |
-| CLANKER/USDT:USDT | +11.58% | $6,054,087.66 |
+| CYBER/USDT:USDT | +33.73% | $1,619,935.18 |
+| IRENSTOCK/USDT:USDT | +16.59% | $3,118,105.98 |
+| BLESS/USDT:USDT | +13.26% | $5,395,361.28 |
+| UVXY/USDT:USDT | +12.84% | $3,123,070.39 |
+| CLANKER/USDT:USDT | +12.20% | $6,058,866.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +4.40% | +4.53% |
-| CRWVSTOCK/USDT:USDT | below_1h_threshold | +3.89% | +4.03% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +3.64% | +3.77% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +3.55% | +3.68% |
-| RKLBSTOCK/USDT:USDT | below_1h_threshold | +3.25% | +3.38% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +4.40% | +4.61% |
+| CRWVSTOCK/USDT:USDT | below_1h_threshold | +3.89% | +4.11% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +3.64% | +3.86% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +3.55% | +3.76% |
+| RKLBSTOCK/USDT:USDT | below_1h_threshold | +3.25% | +3.46% |
 
 ## 7. 次に見るべき不足
 
