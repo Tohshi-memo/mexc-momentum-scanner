@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-06T09:46:24.683889+00:00
+- generated_at: 2026-11-06T09:51:27.524261+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18268**
 
@@ -70,31 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-06T09:46:11.938225+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.56% price=76070.0
+- 更新: 2026-11-06T09:51:12.487464+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.54% price=76050.0
 - Funnel: target 1084 → liquid 188 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=2, invalid_ohlcv=0, errors=0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +95.73% | $35,319,972.81 |
-| UAI/USDT:USDT | +84.89% | $10,951,175.54 |
-| CYBER/USDT:USDT | +54.23% | $4,105,105.05 |
-| ICNT/USDT:USDT | +30.08% | $1,550,046.53 |
-| BIRB/USDT:USDT | +25.87% | $1,024,675.71 |
+| AKE/USDT:USDT | +94.84% | $35,440,686.50 |
+| UAI/USDT:USDT | +86.42% | $10,978,725.49 |
+| CYBER/USDT:USDT | +52.99% | $4,146,583.08 |
+| ICNT/USDT:USDT | +27.23% | $1,613,221.10 |
+| BIRB/USDT:USDT | +25.30% | $1,041,968.92 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BIRB/USDT:USDT | below_relative_strength | +5.54% | +4.97% |
-| ICNT/USDT:USDT | below_relative_strength | +5.27% | +4.71% |
-| Q/USDT:USDT | below_1h_threshold | +4.17% | +3.60% |
-| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +4.07% | +3.51% |
-| B/USDT:USDT | below_1h_threshold | +3.24% | +2.67% |
+| BIRB/USDT:USDT | below_1h_threshold | +4.92% | +4.38% |
+| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +4.07% | +3.53% |
+| Q/USDT:USDT | below_1h_threshold | +3.88% | +3.34% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.76% | +3.22% |
+| B/USDT:USDT | below_1h_threshold | +3.74% | +3.20% |
 
 ## 7. 次に見るべき不足
 
