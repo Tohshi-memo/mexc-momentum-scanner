@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-06T12:56:25.760293+00:00
+- generated_at: 2026-11-06T13:01:24.163156+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18282**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-06T12:56:12.050083+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=76007.3
-- Funnel: target 1089 → liquid 191 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.8 >= 65=1, 4h RSI 78.3 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-06T13:01:11.094220+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=75981.2
+- Funnel: target 1089 → liquid 187 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| UAI/USDT:USDT | +113.97% | $14,161,733.45 |
-| AKE/USDT:USDT | +97.28% | $39,023,237.69 |
-| CYBER/USDT:USDT | +65.32% | $5,582,186.32 |
-| ONE/USDT:USDT | +42.98% | $2,679,895.83 |
-| JCT/USDT:USDT | +34.58% | $6,968,642.80 |
+| UAI/USDT:USDT | +114.38% | $13,936,896.50 |
+| AKE/USDT:USDT | +94.84% | $38,642,333.33 |
+| CYBER/USDT:USDT | +61.55% | $5,624,611.72 |
+| ONE/USDT:USDT | +39.54% | $2,772,307.73 |
+| JCT/USDT:USDT | +33.13% | $6,484,746.05 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MVLL/USDT:USDT | below_1h_threshold | +4.82% | +4.96% |
-| SNXX/USDT:USDT | below_1h_threshold | +4.71% | +4.85% |
-| JCT/USDT:USDT | below_1h_threshold | +3.70% | +3.84% |
-| IRENSTOCK/USDT:USDT | below_1h_threshold | +3.20% | +3.34% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.01% | +3.15% |
+| CRWVSTOCK/USDT:USDT | below_1h_threshold | +1.78% | +1.81% |
+| UVXY/USDT:USDT | below_1h_threshold | +1.55% | +1.58% |
+| UAI/USDT:USDT | below_1h_threshold | +0.91% | +0.94% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.21% | +0.24% |
+| BIRB/USDT:USDT | below_1h_threshold | +0.20% | +0.23% |
 
 ## 7. 次に見るべき不足
 
