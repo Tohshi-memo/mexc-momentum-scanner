@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-06T07:26:28.341222+00:00
+- generated_at: 2026-11-06T07:31:29.641246+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18262**
 
@@ -70,32 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-06T07:26:16.400833+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.39% price=75375.4
-- Funnel: target 1084 → liquid 188 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.0 >= 65=1
+- 更新: 2026-11-06T07:31:16.509209+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.51% price=75283.9
+- Funnel: target 1084 → liquid 188 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +95.93% | $30,187,919.86 |
-| UAI/USDT:USDT | +84.69% | $10,963,507.51 |
-| CYBER/USDT:USDT | +63.82% | $3,455,173.69 |
-| LYN/USDT:USDT | +20.90% | $1,476,613.78 |
-| JCT/USDT:USDT | +20.14% | $9,575,740.05 |
+| AKE/USDT:USDT | +90.31% | $30,326,230.82 |
+| UAI/USDT:USDT | +85.20% | $11,015,691.04 |
+| CYBER/USDT:USDT | +57.61% | $3,528,286.55 |
+| LYN/USDT:USDT | +20.90% | $1,481,370.89 |
+| JCT/USDT:USDT | +20.37% | $9,588,795.61 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ICNT/USDT:USDT | below_1h_threshold | +2.36% | +2.75% |
-| SNXX/USDT:USDT | below_1h_threshold | +1.77% | +2.16% |
-| CC/USDT:USDT | below_1h_threshold | +1.74% | +2.13% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.68% | +2.06% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.25% | +1.64% |
+| ICNT/USDT:USDT | below_1h_threshold | +2.73% | +3.24% |
+| CYBER/USDT:USDT | below_1h_threshold | +1.97% | +2.48% |
+| CC/USDT:USDT | below_1h_threshold | +1.95% | +2.46% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.77% | +2.28% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.76% | +2.27% |
 
 ## 7. 次に見るべき不足
 
