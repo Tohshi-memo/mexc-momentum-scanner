@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-06T20:21:25.214561+00:00
+- generated_at: 2026-11-06T20:26:20.423156+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18327**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-06T20:21:11.852820+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=75774.0
+- 更新: 2026-11-06T20:26:09.641440+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=75776.0
 - Funnel: target 1089 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IDOL/USDT:USDT | +8.65% | $4,052,492.50 |
-| BTW/USDT:USDT | +7.44% | $7,870,095.94 |
-| JCT/USDT:USDT | +6.16% | $5,325,989.69 |
-| AIN/USDT:USDT | +6.11% | $4,878,238.69 |
-| CLSKSTOCK/USDT:USDT | +4.77% | $1,190,993.61 |
+| IDOL/USDT:USDT | +9.00% | $4,082,307.23 |
+| BTW/USDT:USDT | +8.08% | $7,905,394.11 |
+| AIN/USDT:USDT | +7.08% | $4,881,549.07 |
+| JCT/USDT:USDT | +5.73% | $5,327,817.10 |
+| CLSKSTOCK/USDT:USDT | +5.04% | $1,191,346.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +3.66% | +3.78% |
+| ARIA/USDT:USDT | below_1h_threshold | +3.43% | +3.55% |
 | UVXY/USDT:USDT | below_1h_threshold | +2.00% | +2.12% |
-| ARIA/USDT:USDT | below_1h_threshold | +1.79% | +1.91% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +1.64% | +1.76% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.50% | +1.62% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +1.64% | +1.75% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.50% | +1.61% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +1.50% | +1.61% |
 
 ## 7. 次に見るべき不足
 
