@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-06T09:31:17.649243+00:00
+- generated_at: 2026-11-06T09:36:16.358295+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18268**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-06T09:31:05.595550+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.73% price=76194.4
+- 更新: 2026-11-06T09:36:05.089382+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.70% price=76170.6
 - Funnel: target 1084 → liquid 187 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.9 >= 65=1
+- Strict後reject: 4h RSI 78.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +96.97% | $34,696,179.20 |
-| UAI/USDT:USDT | +85.51% | $10,756,344.35 |
-| CYBER/USDT:USDT | +54.06% | $4,056,218.34 |
-| ICNT/USDT:USDT | +32.06% | $1,396,385.42 |
-| IRENSTOCK/USDT:USDT | +23.42% | $3,336,310.88 |
+| AKE/USDT:USDT | +94.88% | $34,952,624.24 |
+| UAI/USDT:USDT | +83.97% | $10,808,068.78 |
+| CYBER/USDT:USDT | +55.47% | $4,075,723.50 |
+| ICNT/USDT:USDT | +32.56% | $1,455,859.87 |
+| IRENSTOCK/USDT:USDT | +23.01% | $3,365,743.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +4.07% | +3.34% |
-| B/USDT:USDT | below_1h_threshold | +3.24% | +2.51% |
-| PEPE/USDT:USDT | below_1h_threshold | +2.86% | +2.13% |
-| ZEC/USDT:USDT | below_1h_threshold | +2.67% | +1.94% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.35% | +1.62% |
+| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +4.07% | +3.38% |
+| B/USDT:USDT | below_1h_threshold | +3.49% | +2.79% |
+| LAB/USDT:USDT | below_1h_threshold | +2.96% | +2.26% |
+| ZEC/USDT:USDT | below_1h_threshold | +2.84% | +2.15% |
+| Q/USDT:USDT | below_1h_threshold | +2.66% | +1.96% |
 
 ## 7. 次に見るべき不足
 
