@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-07T05:46:30.648384+00:00
+- generated_at: 2026-11-07T05:51:27.498606+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18359**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-07T05:46:12.473516+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=75968.2
+- 更新: 2026-11-07T05:51:11.858704+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.16% price=75986.4
 - Funnel: target 1089 → liquid 153 → pre 50 → checked 50 → surge 2 → strict 2
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +47.80% | $64,023,176.85 |
-| AIN/USDT:USDT | +44.22% | $7,311,963.51 |
-| ONE/USDT:USDT | +22.18% | $15,757,310.07 |
-| LYN/USDT:USDT | +20.42% | $1,870,804.50 |
-| CLSKSTOCK/USDT:USDT | +6.59% | $1,059,954.78 |
+| AIN/USDT:USDT | +51.41% | $7,584,530.60 |
+| AKE/USDT:USDT | +48.04% | $64,489,981.16 |
+| ONE/USDT:USDT | +21.52% | $15,781,673.41 |
+| LYN/USDT:USDT | +20.22% | $1,881,954.34 |
+| CLSKSTOCK/USDT:USDT | +6.76% | $1,060,412.97 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| QNT/USDT:USDT | below_1h_threshold | +1.61% | +1.47% |
-| FLUID/USDT:USDT | below_1h_threshold | +1.40% | +1.27% |
-| LSK/USDT:USDT | below_1h_threshold | +1.22% | +1.08% |
-| STRK/USDT:USDT | below_1h_threshold | +1.04% | +0.90% |
-| LIT/USDT:USDT | below_1h_threshold | +0.96% | +0.83% |
+| QNT/USDT:USDT | below_1h_threshold | +1.78% | +1.62% |
+| STRK/USDT:USDT | below_1h_threshold | +1.64% | +1.48% |
+| FLUID/USDT:USDT | below_1h_threshold | +1.62% | +1.46% |
+| LIT/USDT:USDT | below_1h_threshold | +1.62% | +1.45% |
+| Q/USDT:USDT | below_1h_threshold | +1.52% | +1.36% |
 
 ## 7. 次に見るべき不足
 
