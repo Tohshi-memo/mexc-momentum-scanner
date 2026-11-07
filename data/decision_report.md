@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-07T06:56:17.553631+00:00
+- generated_at: 2026-11-07T07:01:23.596726+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18361**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-07T06:56:06.815927+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=76011.2
-- Funnel: target 1089 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-11-07T07:01:11.192020+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=76011.2
+- Funnel: target 1089 → liquid 150 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +57.55% | $64,509,393.51 |
-| AIN/USDT:USDT | +45.19% | $8,145,296.06 |
-| LYN/USDT:USDT | +19.90% | $1,971,552.13 |
-| ONE/USDT:USDT | +16.12% | $16,282,504.17 |
-| ARIA/USDT:USDT | +13.76% | $1,044,098.19 |
+| AKE/USDT:USDT | +57.39% | $60,410,156.33 |
+| AIN/USDT:USDT | +42.74% | $7,952,117.54 |
+| LYN/USDT:USDT | +19.53% | $1,824,913.05 |
+| ONE/USDT:USDT | +17.27% | $16,292,181.83 |
+| PIEVERSE/USDT:USDT | +9.04% | $1,041,842.81 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +3.83% | +3.81% |
-| ARIA/USDT:USDT | below_1h_threshold | +2.09% | +2.06% |
-| JCT/USDT:USDT | below_1h_threshold | +1.08% | +1.05% |
-| QNT/USDT:USDT | below_1h_threshold | +1.06% | +1.03% |
-| LIT/USDT:USDT | below_1h_threshold | +1.00% | +0.98% |
+| ONE/USDT:USDT | below_1h_threshold | +0.68% | +0.68% |
+| BTW/USDT:USDT | below_1h_threshold | +0.44% | +0.45% |
+| AGT/USDT:USDT | below_1h_threshold | +0.32% | +0.32% |
+| NICKEL/USDT:USDT | below_1h_threshold | +0.32% | +0.32% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.32% | +0.32% |
 
 ## 7. 次に見るべき不足
 
