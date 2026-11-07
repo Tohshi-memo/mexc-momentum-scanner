@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-11-07T21:46:24.273937+00:00
+- generated_at: 2026-11-07T21:51:35.673045+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **18398**
+- closed shadow trades: **18399**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=18398, expectancy=+0.02%
+- 全期間 MARKET基準: n=18399, expectancy=+0.02%
 - 直近20件 MARKET基準: n=20, expectancy=-1.00%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -23,7 +23,7 @@
 |---|---:|---:|---:|---:|
 | LIMIT_6PCT | 13/20 | 65.0% | +1.05% | **+0.68%** |
 | LIMIT_10PCT | 6/20 | 30.0% | +2.00% | **+0.60%** |
-| LIMIT_5PCT | 14/20 | 70.0% | +0.34% | **+0.24%** |
+| LIMIT_5PCT | 13/20 | 65.0% | +0.29% | **+0.19%** |
 | LIMIT_FIB1272 | 6/20 | 30.0% | +0.26% | **+0.08%** |
 | LIMIT_9PCT | 6/20 | 30.0% | -0.00% | **-0.00%** |
 
@@ -31,9 +31,9 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
+| LIMIT_4PCT_LONG | 14/20 | 70.0% | +3.71% | **+2.60%** |
 | LIMIT_5PCT_LONG | 12/20 | 60.0% | +4.07% | **+2.44%** |
-| LIMIT_4PCT_LONG | 13/20 | 65.0% | +3.38% | **+2.20%** |
-| LIMIT_3PCT_LONG | 15/20 | 75.0% | +2.40% | **+1.80%** |
+| LIMIT_3PCT_LONG | 15/20 | 75.0% | +2.35% | **+1.76%** |
 | LIMIT_2PCT_LONG | 15/20 | 75.0% | +1.47% | **+1.11%** |
 | LIMIT_ATR_LONG | 12/20 | 60.0% | +1.00% | **+0.60%** |
 
@@ -46,16 +46,16 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$1,537.01** / 初期 $100.00 (+1437.01%)
-- 確定: 7094件 (Win 2040 / Loss 2265 / Flat 2789) / skip 7865件
-- 成長率目線: 平均log +0.000385 / 幾何平均 +0.039% per trade / maxDD +8.46%
+- 残高: **$1,548.78** / 初期 $100.00 (+1448.78%)
+- 確定: 7095件 (Win 2041 / Loss 2265 / Flat 2789) / skip 7865件
+- 成長率目線: 平均log +0.000386 / 幾何平均 +0.039% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: CLAUDIA/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.50% 残高後 $1,537.01
+- 最新: CLAUDIA/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.77% 残高後 $1,548.78
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$389.21** / 初期 $100.00 (+289.21%)
-- 確定: 4754件 (Win 1277 / Loss 1047 / Flat 2430) / skip 7055件
+- 確定: 4754件 (Win 1277 / Loss 1047 / Flat 2430) / skip 7056件
 - 成長率目線: 平均log +0.000286 / 幾何平均 +0.029% per trade / maxDD +4.29%
 - 次の候補: `LIMIT_6PCT` (selected_by_robust_growth_score) / robust_score +0.0979 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: IDOL/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.35% 残高後 $389.21
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6558件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6559件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000452 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000450 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-07T21:46:11.516810+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=75663.3
+- 更新: 2026-11-07T21:51:19.169357+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=75672.0
 - Funnel: target 1089 → liquid 118 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.4 >= 65=1
+- Strict後reject: 4h RSI 81.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLAUDIA/USDT:USDT | +200.04% | $4,065,816.06 |
-| ONE/USDT:USDT | +13.48% | $29,680,924.36 |
-| BTW/USDT:USDT | +8.36% | $6,292,098.10 |
-| ESPORTS/USDT:USDT | +6.35% | $1,251,552.73 |
-| USELESS/USDT:USDT | +3.52% | $1,811,894.08 |
+| CLAUDIA/USDT:USDT | +200.00% | $4,167,583.75 |
+| ONE/USDT:USDT | +12.28% | $29,760,087.75 |
+| BTW/USDT:USDT | +8.60% | $6,307,884.85 |
+| ESPORTS/USDT:USDT | +6.53% | $1,257,394.33 |
+| USELESS/USDT:USDT | +3.66% | $1,814,992.00 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LYN/USDT:USDT | below_1h_threshold | +1.50% | +1.49% |
-| BTW/USDT:USDT | below_1h_threshold | +0.76% | +0.76% |
-| USELESS/USDT:USDT | below_1h_threshold | +0.66% | +0.65% |
-| LIT/USDT:USDT | below_1h_threshold | +0.38% | +0.37% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.36% | +0.35% |
+| LYN/USDT:USDT | below_1h_threshold | +1.22% | +1.20% |
+| BTW/USDT:USDT | below_1h_threshold | +0.98% | +0.96% |
+| USELESS/USDT:USDT | below_1h_threshold | +0.85% | +0.83% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.36% | +0.34% |
+| LIT/USDT:USDT | below_1h_threshold | +0.30% | +0.28% |
 
 ## 7. 次に見るべき不足
 
