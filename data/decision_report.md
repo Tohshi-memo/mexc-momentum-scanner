@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-07T05:01:28.363703+00:00
+- generated_at: 2026-11-07T05:06:13.831084+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18358**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-07T05:01:13.073907+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=75870.1
+- 更新: 2026-11-07T05:06:03.114869+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=75886.7
 - Funnel: target 1089 → liquid 152 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIN/USDT:USDT | +47.17% | $6,447,772.10 |
-| AKE/USDT:USDT | +27.19% | $61,781,028.48 |
-| ONE/USDT:USDT | +24.05% | $15,179,706.65 |
-| LYN/USDT:USDT | +21.23% | $1,813,620.06 |
-| IDOL/USDT:USDT | +11.53% | $4,780,258.09 |
+| AIN/USDT:USDT | +47.49% | $6,515,577.75 |
+| AKE/USDT:USDT | +28.63% | $61,875,472.59 |
+| ONE/USDT:USDT | +21.71% | $15,235,290.46 |
+| LYN/USDT:USDT | +21.63% | $1,819,058.74 |
+| IDOL/USDT:USDT | +10.69% | $4,786,492.39 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MUU/USDT:USDT | below_1h_threshold | +0.65% | +0.64% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.40% | +0.40% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +0.39% | +0.38% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.37% | +0.37% |
-| CLSKSTOCK/USDT:USDT | below_1h_threshold | +0.34% | +0.33% |
+| AKE/USDT:USDT | below_1h_threshold | +1.13% | +1.10% |
+| FLUID/USDT:USDT | below_1h_threshold | +0.79% | +0.76% |
+| MUU/USDT:USDT | below_1h_threshold | +0.65% | +0.62% |
+| LYN/USDT:USDT | below_1h_threshold | +0.47% | +0.44% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.40% | +0.37% |
 
 ## 7. 次に見るべき不足
 
