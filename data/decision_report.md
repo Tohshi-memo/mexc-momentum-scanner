@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-07T20:56:24.330475+00:00
+- generated_at: 2026-11-07T21:01:22.629934+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18395**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-07T20:56:11.265713+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.24% price=75589.0
-- Funnel: target 1089 → liquid 123 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-11-07T21:01:09.311065+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=75657.6
+- Funnel: target 1089 → liquid 115 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLAUDIA/USDT:USDT | +120.72% | $2,799,582.22 |
-| ONE/USDT:USDT | +15.63% | $28,983,173.43 |
-| BTW/USDT:USDT | +7.83% | $6,402,319.37 |
-| ESPORTS/USDT:USDT | +6.68% | $1,245,712.62 |
-| USELESS/USDT:USDT | +2.68% | $1,838,980.30 |
+| CLAUDIA/USDT:USDT | +117.71% | $2,821,741.50 |
+| ONE/USDT:USDT | +15.89% | $28,695,155.04 |
+| BTW/USDT:USDT | +7.75% | $6,098,651.84 |
+| ESPORTS/USDT:USDT | +6.94% | $1,224,725.21 |
+| USELESS/USDT:USDT | +2.79% | $1,727,850.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PIEVERSE/USDT:USDT | below_1h_threshold | +1.37% | +1.61% |
-| IDOL/USDT:USDT | below_1h_threshold | +1.12% | +1.36% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.28% | +0.52% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +0.14% | +0.38% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.09% | +0.33% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.36% | +0.36% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.27% | +0.27% |
+| BTW/USDT:USDT | below_1h_threshold | +0.14% | +0.14% |
+| DASH/USDT:USDT | below_1h_threshold | +0.13% | +0.13% |
+| LTC/USDT:USDT | below_1h_threshold | +0.08% | +0.08% |
 
 ## 7. 次に見るべき不足
 
