@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-11-07T08:16:22.943812+00:00
+- generated_at: 2026-11-07T08:21:14.729661+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **18361**
+- closed shadow trades: **18362**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=18361, expectancy=+0.02%
+- 全期間 MARKET基準: n=18362, expectancy=+0.02%
 - 直近20件 MARKET基準: n=20, expectancy=-0.89%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -46,32 +46,32 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$1,476.75** / 初期 $100.00 (+1376.75%)
-- 確定: 7057件 (Win 2029 / Loss 2253 / Flat 2775) / skip 7865件
-- 成長率目線: 平均log +0.000382 / 幾何平均 +0.038% per trade / maxDD +8.46%
+- 残高: **$1,469.37** / 初期 $100.00 (+1369.37%)
+- 確定: 7058件 (Win 2029 / Loss 2254 / Flat 2775) / skip 7865件
+- 成長率目線: 平均log +0.000381 / 幾何平均 +0.038% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_1PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: LYN/USDT:USDT `LIMIT_3PCT_LONG` SL_HIT account -0.50% 残高後 $1,476.75
+- 最新: ARIA/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.50% 残高後 $1,469.37
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$391.01** / 初期 $100.00 (+291.01%)
-- 確定: 4727件 (Win 1272 / Loss 1042 / Flat 2413) / skip 7045件
+- 確定: 4728件 (Win 1272 / Loss 1042 / Flat 2414) / skip 7045件
 - 成長率目線: 平均log +0.000288 / 幾何平均 +0.029% per trade / maxDD +4.29%
-- 次の候補: `LIMIT_6PCT` (selected_by_robust_growth_score) / robust_score +0.0698 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: LYN/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.35% 残高後 $391.01
+- 次の候補: `LIMIT_6PCT` (selected_by_robust_growth_score) / robust_score +0.0693 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 最新: ARIA/USDT:USDT `LIMIT_6PCT` EXPIRED account +0.00% 残高後 $391.01
 
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
 - 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6522件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000264 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000199 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-07T08:16:09.798931+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=76076.1
+- 更新: 2026-11-07T08:21:05.099545+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=76106.1
 - Funnel: target 1089 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +54.74% | $61,230,792.06 |
-| AIN/USDT:USDT | +43.35% | $8,183,167.38 |
-| ONE/USDT:USDT | +23.10% | $17,013,758.72 |
-| ARIA/USDT:USDT | +11.43% | $1,229,022.81 |
-| LYN/USDT:USDT | +10.69% | $1,830,836.24 |
+| AKE/USDT:USDT | +56.14% | $61,424,541.34 |
+| AIN/USDT:USDT | +45.58% | $8,210,401.43 |
+| ONE/USDT:USDT | +21.52% | $17,099,659.37 |
+| LYN/USDT:USDT | +10.61% | $1,832,860.66 |
+| ARIA/USDT:USDT | +7.36% | $1,260,367.87 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LYN/USDT:USDT | below_1h_threshold | +0.62% | +0.59% |
-| UNI/USDT:USDT | below_1h_threshold | +0.46% | +0.43% |
-| MUU/USDT:USDT | below_1h_threshold | +0.44% | +0.41% |
-| MVLL/USDT:USDT | below_1h_threshold | +0.35% | +0.32% |
-| UVXY/USDT:USDT | below_1h_threshold | +0.31% | +0.28% |
+| AIN/USDT:USDT | below_1h_threshold | +1.62% | +1.55% |
+| UNI/USDT:USDT | below_1h_threshold | +0.51% | +0.44% |
+| LYN/USDT:USDT | below_1h_threshold | +0.48% | +0.41% |
+| MUU/USDT:USDT | below_1h_threshold | +0.44% | +0.37% |
+| MVLL/USDT:USDT | below_1h_threshold | +0.35% | +0.28% |
 
 ## 7. 次に見るべき不足
 
