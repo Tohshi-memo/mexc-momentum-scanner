@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-07T16:06:17.341999+00:00
+- generated_at: 2026-11-07T16:11:18.903419+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18378**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-07T16:06:04.242357+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=75729.8
-- Funnel: target 1089 → liquid 132 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-11-07T16:11:05.692726+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=75726.2
+- Funnel: target 1089 → liquid 133 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IDOL/USDT:USDT | +2.92% | $8,092,676.98 |
-| CLANKER/USDT:USDT | +1.05% | $1,202,407.15 |
-| ONE/USDT:USDT | +1.04% | $22,435,869.95 |
-| BTW/USDT:USDT | +0.67% | $5,538,048.89 |
-| ARIA/USDT:USDT | +0.67% | $1,475,714.63 |
+| IDOL/USDT:USDT | +4.44% | $8,369,817.67 |
+| ARIA/USDT:USDT | +1.93% | $1,490,069.18 |
+| ONE/USDT:USDT | +1.64% | $22,571,316.82 |
+| CAP/USDT:USDT | +1.48% | $1,000,235.94 |
+| CLANKER/USDT:USDT | +1.32% | $1,211,630.43 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IDOL/USDT:USDT | below_1h_threshold | +2.98% | +2.97% |
-| CLANKER/USDT:USDT | below_1h_threshold | +1.06% | +1.05% |
-| ONE/USDT:USDT | below_1h_threshold | +0.92% | +0.92% |
-| ARIA/USDT:USDT | below_1h_threshold | +0.80% | +0.79% |
-| BTW/USDT:USDT | below_1h_threshold | +0.68% | +0.67% |
+| IDOL/USDT:USDT | below_1h_threshold | +4.22% | +4.22% |
+| ONE/USDT:USDT | below_1h_threshold | +1.94% | +1.94% |
+| ARIA/USDT:USDT | below_1h_threshold | +1.86% | +1.86% |
+| CAP/USDT:USDT | below_1h_threshold | +1.80% | +1.80% |
+| CLANKER/USDT:USDT | below_1h_threshold | +1.32% | +1.32% |
 
 ## 7. 次に見るべき不足
 
