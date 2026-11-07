@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-07T00:21:23.349630+00:00
+- generated_at: 2026-11-07T00:26:14.615069+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18334**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-07T00:21:10.546815+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.15% price=75924.7
+- 更新: 2026-11-07T00:26:05.288134+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.16% price=75935.2
 - Funnel: target 1089 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ONE/USDT:USDT | +12.36% | $11,127,276.59 |
-| IDOL/USDT:USDT | +8.50% | $4,755,301.61 |
-| JCT/USDT:USDT | +7.54% | $5,202,786.33 |
-| RKLBSTOCK/USDT:USDT | +6.87% | $1,040,110.78 |
-| BTW/USDT:USDT | +6.84% | $7,394,387.82 |
+| ONE/USDT:USDT | +17.07% | $11,280,787.02 |
+| IDOL/USDT:USDT | +8.23% | $4,759,744.09 |
+| BTW/USDT:USDT | +7.28% | $7,404,558.33 |
+| RKLBSTOCK/USDT:USDT | +6.61% | $1,040,420.48 |
+| JCT/USDT:USDT | +6.42% | $5,211,580.54 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BIRB/USDT:USDT | below_1h_threshold | +3.53% | +3.38% |
-| JCT/USDT:USDT | below_1h_threshold | +0.99% | +0.84% |
-| RKLBSTOCK/USDT:USDT | below_1h_threshold | +0.92% | +0.77% |
-| ALGO/USDT:USDT | below_1h_threshold | +0.90% | +0.75% |
-| FLUID/USDT:USDT | below_1h_threshold | +0.64% | +0.49% |
+| BIRB/USDT:USDT | below_1h_threshold | +2.36% | +2.20% |
+| ALGO/USDT:USDT | below_1h_threshold | +0.99% | +0.83% |
+| RKLBSTOCK/USDT:USDT | below_1h_threshold | +0.92% | +0.76% |
+| ONE/USDT:USDT | below_1h_threshold | +0.92% | +0.75% |
+| XPL/USDT:USDT | below_1h_threshold | +0.66% | +0.50% |
 
 ## 7. 次に見るべき不足
 
