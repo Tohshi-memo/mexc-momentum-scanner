@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-11-07T16:36:43.290249+00:00
+- generated_at: 2026-11-07T16:41:41.597157+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **18380**
+- closed shadow trades: **18381**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=18380, expectancy=+0.02%
+- 全期間 MARKET基準: n=18381, expectancy=+0.02%
 - 直近20件 MARKET基準: n=20, expectancy=-1.60%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -46,56 +46,56 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$1,514.64** / 初期 $100.00 (+1414.64%)
-- 確定: 7076件 (Win 2035 / Loss 2258 / Flat 2783) / skip 7865件
-- 成長率目線: 平均log +0.000384 / 幾何平均 +0.038% per trade / maxDD +8.46%
+- 残高: **$1,507.07** / 初期 $100.00 (+1407.07%)
+- 確定: 7077件 (Win 2035 / Loss 2259 / Flat 2783) / skip 7865件
+- 成長率目線: 平均log +0.000383 / 幾何平均 +0.038% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: IDOL/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.50% 残高後 $1,514.64
+- 最新: JCT/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.50% 残高後 $1,507.07
 
 ## 4. Robust Adaptive DryRun ($100)
 
-- 残高: **$394.71** / 初期 $100.00 (+294.71%)
-- 確定: 4746件 (Win 1277 / Loss 1043 / Flat 2426) / skip 7045件
-- 成長率目線: 平均log +0.000289 / 幾何平均 +0.029% per trade / maxDD +4.29%
-- 次の候補: `LIMIT_2PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.1014 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: IDOL/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.35% 残高後 $394.71
+- 残高: **$393.33** / 初期 $100.00 (+293.33%)
+- 確定: 4747件 (Win 1277 / Loss 1044 / Flat 2426) / skip 7045件
+- 成長率目線: 平均log +0.000288 / 幾何平均 +0.029% per trade / maxDD +4.29%
+- 次の候補: `LIMIT_2PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0954 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 最新: JCT/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.35% 残高後 $393.33
 
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
 - 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6541件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000431 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000382 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-07T16:36:22.517591+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=75732.0
-- Funnel: target 1089 → liquid 134 → pre 50 → checked 50 → surge 3 → strict 1
+- 更新: 2026-11-07T16:41:22.747772+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=75734.0
+- Funnel: target 1089 → liquid 135 → pre 50 → checked 50 → surge 3 → strict 1
 - Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.8 >= 65=1, 4h RSI 88.0 >= 65=1
+- Strict後reject: 4h RSI 78.4 >= 65=1, 4h RSI 90.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IDOL/USDT:USDT | +13.76% | $9,669,689.93 |
-| ESPORTS/USDT:USDT | +5.86% | $1,151,437.02 |
-| ONE/USDT:USDT | +5.60% | $23,433,215.13 |
-| AIN/USDT:USDT | +2.45% | $10,326,349.88 |
-| BTW/USDT:USDT | +2.13% | $5,627,415.98 |
+| IDOL/USDT:USDT | +15.29% | $9,842,706.72 |
+| ONE/USDT:USDT | +6.94% | $23,599,353.90 |
+| ESPORTS/USDT:USDT | +5.72% | $1,155,971.32 |
+| BTW/USDT:USDT | +2.66% | $5,652,318.93 |
+| AIN/USDT:USDT | +1.53% | $10,345,475.49 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIN/USDT:USDT | below_1h_threshold | +2.32% | +2.32% |
-| BTW/USDT:USDT | below_1h_threshold | +2.17% | +2.16% |
-| CLANKER/USDT:USDT | below_1h_threshold | +1.98% | +1.98% |
-| ARIA/USDT:USDT | below_1h_threshold | +1.84% | +1.83% |
-| BLESS/USDT:USDT | below_1h_threshold | +1.49% | +1.48% |
+| BTW/USDT:USDT | below_1h_threshold | +2.66% | +2.65% |
+| AIN/USDT:USDT | below_1h_threshold | +1.61% | +1.60% |
+| DASH/USDT:USDT | below_1h_threshold | +1.37% | +1.36% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.34% | +1.33% |
+| CLANKER/USDT:USDT | below_1h_threshold | +1.12% | +1.11% |
 
 ## 7. 次に見るべき不足
 
