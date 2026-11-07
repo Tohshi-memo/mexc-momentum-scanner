@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-07T18:01:22.162752+00:00
+- generated_at: 2026-11-07T18:06:19.832675+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18393**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-07T18:01:06.974295+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=75809.4
+- 更新: 2026-11-07T18:06:06.687294+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=75812.0
 - Funnel: target 1089 → liquid 119 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IDOL/USDT:USDT | +16.45% | $13,947,288.72 |
-| ONE/USDT:USDT | +11.52% | $26,027,446.61 |
-| ESPORTS/USDT:USDT | +5.97% | $1,208,337.05 |
-| BTW/USDT:USDT | +5.67% | $5,467,977.07 |
-| ARIA/USDT:USDT | +5.24% | $1,683,950.81 |
+| IDOL/USDT:USDT | +13.28% | $14,110,091.37 |
+| ONE/USDT:USDT | +9.39% | $26,356,679.09 |
+| BTW/USDT:USDT | +6.43% | $5,502,070.88 |
+| ESPORTS/USDT:USDT | +6.39% | $1,209,787.03 |
+| ARIA/USDT:USDT | +6.25% | $1,694,710.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
 | SNXX/USDT:USDT | below_1h_threshold | +1.53% | +1.53% |
+| ARIA/USDT:USDT | below_1h_threshold | +1.17% | +1.17% |
 | KORU/USDT:USDT | below_1h_threshold | +0.86% | +0.86% |
+| BTW/USDT:USDT | below_1h_threshold | +0.73% | +0.72% |
 | SNDKSTOCK/USDT:USDT | below_1h_threshold | +0.64% | +0.64% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.57% | +0.57% |
-| MUU/USDT:USDT | below_1h_threshold | +0.51% | +0.51% |
 
 ## 7. 次に見るべき不足
 
