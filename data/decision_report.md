@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-08T07:36:24.264870+00:00
+- generated_at: 2026-11-08T07:41:20.485756+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18417**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-08T07:36:10.192253+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=75841.0
+- 更新: 2026-11-08T07:41:08.317218+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=75849.9
 - Funnel: target 1089 → liquid 105 → pre 50 → checked 50 → surge 3 → strict 1
 - Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.6 >= 65=1, 4h RSI 78.2 >= 65=1
+- Strict後reject: 4h RSI 78.9 >= 65=1, 4h RSI 79.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLAUDIA/USDT:USDT | +317.33% | $10,109,219.65 |
-| KOMA/USDT:USDT | +44.59% | $1,127,435.09 |
-| JCT/USDT:USDT | +11.84% | $2,599,376.50 |
-| BTW/USDT:USDT | +11.40% | $6,344,211.34 |
-| ARIA/USDT:USDT | +10.51% | $1,826,074.15 |
+| CLAUDIA/USDT:USDT | +290.29% | $10,257,154.88 |
+| KOMA/USDT:USDT | +43.48% | $1,133,856.98 |
+| BTW/USDT:USDT | +11.57% | $6,363,919.31 |
+| ARIA/USDT:USDT | +9.76% | $1,836,504.45 |
+| AIOT/USDT:USDT | +8.74% | $2,416,815.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +4.46% | +4.41% |
-| AIOT/USDT:USDT | below_1h_threshold | +3.36% | +3.31% |
-| KOMA/USDT:USDT | below_1h_threshold | +2.94% | +2.89% |
-| ARIA/USDT:USDT | below_1h_threshold | +1.33% | +1.28% |
-| ARB/USDT:USDT | below_1h_threshold | +1.00% | +0.95% |
+| BTW/USDT:USDT | below_1h_threshold | +4.68% | +4.62% |
+| AIOT/USDT:USDT | below_1h_threshold | +3.48% | +3.41% |
+| KOMA/USDT:USDT | below_1h_threshold | +2.16% | +2.10% |
+| MET/USDT:USDT | below_1h_threshold | +0.93% | +0.87% |
+| USELESS/USDT:USDT | below_1h_threshold | +0.88% | +0.81% |
 
 ## 7. 次に見るべき不足
 
