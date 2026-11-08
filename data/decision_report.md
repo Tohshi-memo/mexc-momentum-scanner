@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-08T09:16:29.678140+00:00
+- generated_at: 2026-11-08T09:21:16.874130+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18424**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-08T09:16:16.255933+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=75850.0
-- Funnel: target 1089 → liquid 102 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.7 >= 65=1, 4h RSI 83.2 >= 65=1
+- 更新: 2026-11-08T09:21:08.064957+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=75853.9
+- Funnel: target 1089 → liquid 102 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 79.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLAUDIA/USDT:USDT | +294.22% | $11,480,759.74 |
-| KOMA/USDT:USDT | +34.71% | $1,229,385.59 |
-| JCT/USDT:USDT | +20.91% | $3,137,620.61 |
-| ICNT/USDT:USDT | +16.29% | $3,963,444.94 |
-| AIOT/USDT:USDT | +12.38% | $2,619,965.67 |
+| CLAUDIA/USDT:USDT | +292.57% | $11,552,180.55 |
+| KOMA/USDT:USDT | +34.22% | $1,235,087.48 |
+| JCT/USDT:USDT | +19.27% | $3,178,311.21 |
+| ICNT/USDT:USDT | +15.46% | $4,047,627.42 |
+| AIOT/USDT:USDT | +13.36% | $2,629,321.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IDOL/USDT:USDT | below_1h_threshold | +3.86% | +3.93% |
-| KOMA/USDT:USDT | below_1h_threshold | +2.38% | +2.45% |
-| JCT/USDT:USDT | below_1h_threshold | +2.03% | +2.10% |
-| SPX500/USDT:USDT | below_1h_threshold | +0.13% | +0.20% |
-| AIOT/USDT:USDT | below_1h_threshold | +0.11% | +0.18% |
+| IDOL/USDT:USDT | below_1h_threshold | +3.22% | +3.28% |
+| ICNT/USDT:USDT | below_1h_threshold | +2.98% | +3.04% |
+| KOMA/USDT:USDT | below_1h_threshold | +1.96% | +2.03% |
+| AIOT/USDT:USDT | below_1h_threshold | +1.03% | +1.09% |
+| JCT/USDT:USDT | below_1h_threshold | +0.79% | +0.85% |
 
 ## 7. 次に見るべき不足
 
