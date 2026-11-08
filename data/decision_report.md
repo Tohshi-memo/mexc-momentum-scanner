@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-08T03:11:21.588359+00:00
+- generated_at: 2026-11-08T03:16:26.471292+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18403**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6561件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6562件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000431 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-08T03:11:08.671500+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=75828.8
-- Funnel: target 1089 → liquid 111 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-08T03:16:13.061969+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=75888.9
+- Funnel: target 1089 → liquid 111 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.7 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLAUDIA/USDT:USDT | +160.67% | $7,308,597.13 |
-| BTW/USDT:USDT | +10.55% | $6,411,351.51 |
-| LYN/USDT:USDT | +9.08% | $1,147,667.37 |
-| MET/USDT:USDT | +4.83% | $1,440,769.45 |
-| USELESS/USDT:USDT | +4.83% | $2,084,283.46 |
+| CLAUDIA/USDT:USDT | +153.39% | $7,321,277.33 |
+| BTW/USDT:USDT | +10.68% | $6,435,272.74 |
+| LYN/USDT:USDT | +10.18% | $1,150,057.23 |
+| MET/USDT:USDT | +5.64% | $1,455,062.90 |
+| USELESS/USDT:USDT | +5.12% | $2,095,366.16 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| USELESS/USDT:USDT | below_1h_threshold | +1.20% | +1.10% |
-| BTW/USDT:USDT | below_1h_threshold | +0.96% | +0.87% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +0.95% | +0.86% |
-| INJ/USDT:USDT | below_1h_threshold | +0.94% | +0.85% |
-| BLESS/USDT:USDT | below_1h_threshold | +0.90% | +0.80% |
+| MET/USDT:USDT | below_1h_threshold | +1.53% | +1.35% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.47% | +1.30% |
+| ARIA/USDT:USDT | below_1h_threshold | +1.38% | +1.21% |
+| INJ/USDT:USDT | below_1h_threshold | +1.15% | +0.98% |
+| LYN/USDT:USDT | below_1h_threshold | +1.04% | +0.87% |
 
 ## 7. 次に見るべき不足
 
