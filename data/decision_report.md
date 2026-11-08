@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-08T13:11:31.547835+00:00
+- generated_at: 2026-11-08T13:16:16.625444+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18462**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-08T13:11:13.258236+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=76020.9
-- Funnel: target 1089 → liquid 103 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-08T13:16:07.104526+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.18% price=76081.4
+- Funnel: target 1089 → liquid 103 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLAUDIA/USDT:USDT | +391.26% | $13,782,777.49 |
-| JCT/USDT:USDT | +311.50% | $19,424,768.46 |
-| HOT/USDT:USDT | +29.62% | $2,249,047.11 |
-| AIOT/USDT:USDT | +13.36% | $3,115,935.04 |
-| Q/USDT:USDT | +12.30% | $1,786,988.50 |
+| CLAUDIA/USDT:USDT | +380.09% | $13,836,688.65 |
+| JCT/USDT:USDT | +260.35% | $20,160,569.24 |
+| HOT/USDT:USDT | +25.34% | $2,327,010.50 |
+| AIOT/USDT:USDT | +15.95% | $3,147,482.64 |
+| Q/USDT:USDT | +9.78% | $1,801,975.76 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HOT/USDT:USDT | below_1h_threshold | +4.61% | +4.51% |
-| BTW/USDT:USDT | below_1h_threshold | +1.07% | +0.97% |
-| USELESS/USDT:USDT | below_1h_threshold | +0.70% | +0.60% |
-| ARB/USDT:USDT | below_1h_threshold | +0.56% | +0.46% |
-| LIT/USDT:USDT | below_1h_threshold | +0.55% | +0.45% |
+| KOMA/USDT:USDT | below_1h_threshold | +4.61% | +4.43% |
+| CLAUDIA/USDT:USDT | below_1h_threshold | +4.53% | +4.35% |
+| AIOT/USDT:USDT | below_1h_threshold | +1.99% | +1.81% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.41% | +1.24% |
+| HOT/USDT:USDT | below_1h_threshold | +1.15% | +0.97% |
 
 ## 7. 次に見るべき不足
 
