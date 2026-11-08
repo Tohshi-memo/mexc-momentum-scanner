@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-08T18:36:24.571952+00:00
+- generated_at: 2026-11-08T18:41:21.105512+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18474**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-08T18:36:11.463545+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.26% price=75910.4
+- 更新: 2026-11-08T18:41:10.285145+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.29% price=75931.9
 - Funnel: target 1089 → liquid 106 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JCT/USDT:USDT | +31.99% | $35,888,433.02 |
-| AIOT/USDT:USDT | +17.77% | $4,919,606.49 |
-| SOXL/USDT:USDT | +2.63% | $8,190,503.60 |
-| KORU/USDT:USDT | +2.57% | $1,360,165.44 |
-| SNDKSTOCK/USDT:USDT | +2.02% | $4,134,962.79 |
+| JCT/USDT:USDT | +37.88% | $36,142,075.96 |
+| AIOT/USDT:USDT | +17.67% | $4,957,479.06 |
+| SOXL/USDT:USDT | +2.72% | $8,327,787.49 |
+| KORU/USDT:USDT | +2.71% | $1,360,460.51 |
+| SNDKSTOCK/USDT:USDT | +2.16% | $4,141,918.58 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIOT/USDT:USDT | below_1h_threshold | +3.64% | +3.38% |
-| PONS/USDT:USDT | below_1h_threshold | +3.48% | +3.22% |
-| USELESS/USDT:USDT | below_1h_threshold | +2.00% | +1.74% |
-| BTW/USDT:USDT | below_1h_threshold | +1.81% | +1.55% |
-| VVV/USDT:USDT | below_1h_threshold | +1.68% | +1.42% |
+| JCT/USDT:USDT | below_1h_threshold | +4.55% | +4.27% |
+| PONS/USDT:USDT | below_1h_threshold | +3.93% | +3.65% |
+| AIOT/USDT:USDT | below_1h_threshold | +3.69% | +3.40% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.62% | +2.33% |
+| VVV/USDT:USDT | below_1h_threshold | +2.03% | +1.75% |
 
 ## 7. 次に見るべき不足
 
