@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-08T06:26:22.507385+00:00
+- generated_at: 2026-11-08T06:31:20.913136+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18409**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-08T06:26:09.373865+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=75798.1
-- Funnel: target 1089 → liquid 106 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.6 >= 65=1
+- 更新: 2026-11-08T06:31:07.446435+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=75819.5
+- Funnel: target 1089 → liquid 106 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 71.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLAUDIA/USDT:USDT | +175.58% | $8,273,148.74 |
-| MET/USDT:USDT | +6.61% | $1,686,133.58 |
-| BTW/USDT:USDT | +5.41% | $6,229,844.03 |
-| AIOT/USDT:USDT | +5.20% | $2,250,806.59 |
-| ARIA/USDT:USDT | +4.52% | $1,746,133.79 |
+| CLAUDIA/USDT:USDT | +181.06% | $8,304,135.31 |
+| MET/USDT:USDT | +6.12% | $1,693,094.46 |
+| AIOT/USDT:USDT | +5.85% | $2,275,474.18 |
+| BTW/USDT:USDT | +5.12% | $6,239,853.53 |
+| ARIA/USDT:USDT | +4.51% | $1,747,095.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ARIA/USDT:USDT | below_1h_threshold | +2.06% | +2.06% |
-| AIOT/USDT:USDT | below_1h_threshold | +1.70% | +1.70% |
-| MET/USDT:USDT | below_1h_threshold | +0.98% | +0.98% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +0.93% | +0.94% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.89% | +0.89% |
+| AIOT/USDT:USDT | below_1h_threshold | +2.28% | +2.25% |
+| ARIA/USDT:USDT | below_1h_threshold | +2.26% | +2.23% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +1.11% | +1.08% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +0.93% | +0.91% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.89% | +0.86% |
 
 ## 7. 次に見るべき不足
 
