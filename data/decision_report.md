@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-08T08:56:31.410867+00:00
+- generated_at: 2026-11-08T09:01:20.152836+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18424**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-08T08:56:15.159598+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=75894.0
-- Funnel: target 1089 → liquid 104 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.0 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-08T09:01:07.097319+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=75900.3
+- Funnel: target 1089 → liquid 100 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLAUDIA/USDT:USDT | +263.10% | $11,213,078.01 |
-| KOMA/USDT:USDT | +32.38% | $1,298,065.98 |
-| JCT/USDT:USDT | +19.77% | $3,049,355.20 |
-| AIOT/USDT:USDT | +12.36% | $2,562,180.05 |
-| ICNT/USDT:USDT | +8.08% | $3,833,824.63 |
+| CLAUDIA/USDT:USDT | +266.31% | $11,270,019.95 |
+| KOMA/USDT:USDT | +32.29% | $1,219,270.81 |
+| JCT/USDT:USDT | +18.23% | $2,986,574.05 |
+| AIOT/USDT:USDT | +12.68% | $2,567,290.86 |
+| ICNT/USDT:USDT | +9.04% | $3,805,883.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIOT/USDT:USDT | below_1h_threshold | +2.90% | +2.96% |
-| Q/USDT:USDT | below_1h_threshold | +2.68% | +2.74% |
-| USELESS/USDT:USDT | below_1h_threshold | +1.40% | +1.46% |
-| KAS/USDT:USDT | below_1h_threshold | +0.58% | +0.64% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +0.57% | +0.63% |
+| AIOT/USDT:USDT | below_1h_threshold | +0.81% | +0.81% |
+| ICNT/USDT:USDT | below_1h_threshold | +0.69% | +0.69% |
+| KOMA/USDT:USDT | below_1h_threshold | +0.54% | +0.54% |
+| ONE/USDT:USDT | below_1h_threshold | +0.46% | +0.46% |
+| CLAUDIA/USDT:USDT | below_1h_threshold | +0.44% | +0.44% |
 
 ## 7. 次に見るべき不足
 
