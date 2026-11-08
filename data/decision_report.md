@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-08T17:31:19.789918+00:00
+- generated_at: 2026-11-08T17:36:12.011811+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18470**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-08T17:31:07.285697+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=75648.3
+- 更新: 2026-11-08T17:36:03.905891+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=75664.1
 - Funnel: target 1089 → liquid 103 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.7 >= 65=1
+- Strict後reject: 4h RSI 84.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JCT/USDT:USDT | +26.74% | $31,311,886.27 |
-| AIOT/USDT:USDT | +6.34% | $4,476,665.66 |
-| Q/USDT:USDT | +1.41% | $2,352,113.10 |
-| KOMA/USDT:USDT | +1.39% | $1,212,953.13 |
-| SKYAI/USDT:USDT | +0.67% | $1,236,476.89 |
+| JCT/USDT:USDT | +27.15% | $31,800,343.89 |
+| AIOT/USDT:USDT | +6.71% | $4,534,556.41 |
+| KOMA/USDT:USDT | +1.28% | $1,213,702.40 |
+| Q/USDT:USDT | +0.98% | $2,360,284.29 |
+| SOXS/USDT:USDT | +0.42% | $2,086,781.29 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IDOL/USDT:USDT | below_1h_threshold | +2.15% | +2.27% |
-| BLESS/USDT:USDT | below_1h_threshold | +0.94% | +1.06% |
-| MET/USDT:USDT | below_1h_threshold | +0.60% | +0.72% |
-| PEPE/USDT:USDT | below_1h_threshold | +0.46% | +0.58% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.28% | +0.40% |
+| BLESS/USDT:USDT | below_1h_threshold | +0.80% | +0.90% |
+| MET/USDT:USDT | below_1h_threshold | +0.73% | +0.83% |
+| BCH/USDT:USDT | below_1h_threshold | +0.62% | +0.72% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.28% | +0.38% |
+| ICP/USDT:USDT | below_1h_threshold | +0.25% | +0.36% |
 
 ## 7. 次に見るべき不足
 
