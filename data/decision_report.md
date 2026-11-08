@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-08T03:31:29.631465+00:00
+- generated_at: 2026-11-08T03:36:17.067648+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18403**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-08T03:31:16.503510+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=75841.4
-- Funnel: target 1089 → liquid 112 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.5 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-08T03:36:06.424810+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=75823.0
+- Funnel: target 1089 → liquid 112 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLAUDIA/USDT:USDT | +150.97% | $7,390,188.08 |
-| BTW/USDT:USDT | +10.33% | $6,489,795.32 |
-| LYN/USDT:USDT | +8.57% | $1,158,051.79 |
-| MET/USDT:USDT | +5.15% | $1,473,902.14 |
-| ARIA/USDT:USDT | +4.58% | $1,760,175.15 |
+| CLAUDIA/USDT:USDT | +159.22% | $7,408,813.92 |
+| BTW/USDT:USDT | +10.18% | $6,515,827.81 |
+| LYN/USDT:USDT | +9.00% | $1,160,994.82 |
+| MET/USDT:USDT | +6.06% | $1,478,889.41 |
+| ARIA/USDT:USDT | +4.84% | $1,776,082.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MET/USDT:USDT | below_1h_threshold | +1.06% | +0.95% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +1.05% | +0.94% |
-| ARIA/USDT:USDT | below_1h_threshold | +0.93% | +0.82% |
-| BTW/USDT:USDT | below_1h_threshold | +0.67% | +0.56% |
-| DASH/USDT:USDT | below_1h_threshold | +0.66% | +0.55% |
+| MET/USDT:USDT | below_1h_threshold | +1.93% | +1.85% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +1.36% | +1.27% |
+| ARIA/USDT:USDT | below_1h_threshold | +1.19% | +1.10% |
+| ZEC/USDT:USDT | below_1h_threshold | +0.93% | +0.84% |
+| DASH/USDT:USDT | below_1h_threshold | +0.81% | +0.72% |
 
 ## 7. 次に見るべき不足
 
