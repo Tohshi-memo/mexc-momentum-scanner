@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-08T15:46:24.700369+00:00
+- generated_at: 2026-11-08T15:51:21.064418+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18464**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-08T15:46:11.137070+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=76048.5
+- 更新: 2026-11-08T15:51:10.310319+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=76026.9
 - Funnel: target 1089 → liquid 104 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 88.3 >= 65=1
+- Strict後reject: 4h RSI 88.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLAUDIA/USDT:USDT | +325.24% | $15,044,597.84 |
-| JCT/USDT:USDT | +216.25% | $27,505,174.40 |
-| AIOT/USDT:USDT | +28.91% | $3,388,215.19 |
-| SKYAI/USDT:USDT | +19.07% | $1,184,030.81 |
-| HOT/USDT:USDT | +19.01% | $4,300,351.05 |
+| CLAUDIA/USDT:USDT | +319.95% | $15,088,732.63 |
+| JCT/USDT:USDT | +221.84% | $27,591,826.93 |
+| AIOT/USDT:USDT | +27.71% | $3,426,346.23 |
+| SKYAI/USDT:USDT | +19.24% | $1,187,505.79 |
+| HOT/USDT:USDT | +18.79% | $4,319,777.39 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ICNT/USDT:USDT | below_1h_threshold | +3.36% | +3.31% |
-| DASH/USDT:USDT | below_1h_threshold | +1.41% | +1.36% |
-| LSK/USDT:USDT | below_1h_threshold | +1.39% | +1.33% |
-| FLOKI/USDT:USDT | below_1h_threshold | +0.80% | +0.75% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +0.59% | +0.54% |
+| ICNT/USDT:USDT | below_1h_threshold | +3.56% | +3.53% |
+| DASH/USDT:USDT | below_1h_threshold | +1.76% | +1.73% |
+| FLOKI/USDT:USDT | below_1h_threshold | +0.75% | +0.73% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +0.59% | +0.57% |
+| INJ/USDT:USDT | below_1h_threshold | +0.58% | +0.55% |
 
 ## 7. 次に見るべき不足
 
