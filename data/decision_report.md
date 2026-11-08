@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-08T20:41:33.955682+00:00
+- generated_at: 2026-11-08T20:46:15.262461+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18484**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-08T20:41:17.178409+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=75774.9
-- Funnel: target 1089 → liquid 107 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.7 >= 65=1, 4h RSI 86.5 >= 65=1
+- 更新: 2026-11-08T20:46:04.739610+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=75800.0
+- Funnel: target 1089 → liquid 107 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 74.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JCT/USDT:USDT | +42.87% | $46,820,623.94 |
-| CLAUDIA/USDT:USDT | +13.75% | $14,779,728.74 |
-| AIOT/USDT:USDT | +9.86% | $5,590,704.77 |
-| ICNT/USDT:USDT | +3.40% | $2,764,907.68 |
-| BTW/USDT:USDT | +2.32% | $5,985,317.73 |
+| JCT/USDT:USDT | +39.32% | $47,129,801.93 |
+| CLAUDIA/USDT:USDT | +7.33% | $14,817,060.50 |
+| AIOT/USDT:USDT | +6.15% | $5,617,326.56 |
+| ICNT/USDT:USDT | +3.87% | $2,767,459.64 |
+| BTW/USDT:USDT | +2.34% | $5,991,672.18 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ARIA/USDT:USDT | below_1h_threshold | +4.07% | +4.23% |
-| ICNT/USDT:USDT | below_1h_threshold | +2.35% | +2.51% |
-| KORU/USDT:USDT | below_1h_threshold | +0.56% | +0.72% |
-| MET/USDT:USDT | below_1h_threshold | +0.49% | +0.64% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.25% | +0.41% |
+| ARIA/USDT:USDT | below_1h_threshold | +3.88% | +4.00% |
+| JCT/USDT:USDT | below_1h_threshold | +3.35% | +3.48% |
+| ICNT/USDT:USDT | below_1h_threshold | +2.49% | +2.61% |
+| MET/USDT:USDT | below_1h_threshold | +0.65% | +0.77% |
+| KORU/USDT:USDT | below_1h_threshold | +0.56% | +0.68% |
 
 ## 7. 次に見るべき不足
 
