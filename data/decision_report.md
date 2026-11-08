@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-08T19:41:09.593794+00:00
+- generated_at: 2026-11-08T19:46:17.553734+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18476**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-08T19:41:00.070078+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=75840.4
+- 更新: 2026-11-08T19:46:06.405897+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=75885.8
 - Funnel: target 1089 → liquid 107 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JCT/USDT:USDT | +33.32% | $39,004,108.96 |
-| AIOT/USDT:USDT | +11.31% | $5,282,626.97 |
-| KORU/USDT:USDT | +3.14% | $1,360,955.07 |
-| BTW/USDT:USDT | +3.03% | $6,245,793.13 |
-| SOXL/USDT:USDT | +2.67% | $8,472,415.64 |
+| JCT/USDT:USDT | +32.63% | $39,126,322.28 |
+| AIOT/USDT:USDT | +11.56% | $5,287,728.64 |
+| BTW/USDT:USDT | +3.46% | $6,265,604.22 |
+| KORU/USDT:USDT | +3.43% | $1,361,305.73 |
+| SOXL/USDT:USDT | +2.59% | $8,476,145.66 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXL/USDT:USDT | below_1h_threshold | +2.99% | +3.09% |
-| KORU/USDT:USDT | below_1h_threshold | +1.99% | +2.09% |
-| BTW/USDT:USDT | below_1h_threshold | +1.92% | +2.02% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.90% | +2.00% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +1.45% | +1.54% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.99% | +3.03% |
+| BTW/USDT:USDT | below_1h_threshold | +2.34% | +2.37% |
+| KORU/USDT:USDT | below_1h_threshold | +1.99% | +2.03% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.90% | +1.94% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +1.45% | +1.48% |
 
 ## 7. 次に見るべき不足
 
