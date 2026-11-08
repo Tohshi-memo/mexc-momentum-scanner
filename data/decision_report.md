@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-08T01:06:20.954093+00:00
+- generated_at: 2026-11-08T01:11:09.022398+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18401**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-08T01:06:07.763287+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=75772.1
+- 更新: 2026-11-08T01:10:59.513645+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=75775.1
 - Funnel: target 1089 → liquid 115 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLAUDIA/USDT:USDT | +158.15% | $6,599,536.07 |
-| BTW/USDT:USDT | +9.25% | $6,255,209.24 |
-| ESPORTS/USDT:USDT | +7.56% | $1,241,816.87 |
-| USELESS/USDT:USDT | +4.79% | $1,952,791.30 |
-| AERO/USDT:USDT | +4.53% | $1,173,711.89 |
+| CLAUDIA/USDT:USDT | +153.64% | $6,631,530.82 |
+| BTW/USDT:USDT | +10.00% | $6,288,708.50 |
+| ESPORTS/USDT:USDT | +7.71% | $1,246,608.47 |
+| USELESS/USDT:USDT | +4.72% | $1,955,195.90 |
+| UAI/USDT:USDT | +4.58% | $7,941,064.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CLAUDIA/USDT:USDT | below_1h_threshold | +2.51% | +2.51% |
-| ONE/USDT:USDT | below_1h_threshold | +1.15% | +1.15% |
-| LYN/USDT:USDT | below_1h_threshold | +0.70% | +0.70% |
-| DASH/USDT:USDT | below_1h_threshold | +0.19% | +0.19% |
-| VVV/USDT:USDT | below_1h_threshold | +0.18% | +0.18% |
+| CLAUDIA/USDT:USDT | below_1h_threshold | +2.55% | +2.55% |
+| UAI/USDT:USDT | below_1h_threshold | +2.44% | +2.44% |
+| AIOT/USDT:USDT | below_1h_threshold | +1.61% | +1.61% |
+| UNI/USDT:USDT | below_1h_threshold | +0.38% | +0.38% |
+| LYN/USDT:USDT | below_1h_threshold | +0.35% | +0.35% |
 
 ## 7. 次に見るべき不足
 
