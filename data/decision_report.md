@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-09T01:46:18.672808+00:00
+- generated_at: 2026-11-09T01:51:26.196494+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18495**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-09T01:46:04.260269+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=75185.4
+- 更新: 2026-11-09T01:51:13.152194+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=75198.8
 - Funnel: target 1089 → liquid 128 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JCT/USDT:USDT | +4.45% | $63,289,192.53 |
-| AIOT/USDT:USDT | +3.01% | $6,406,428.84 |
-| SILVER/USDT:USDT | +2.71% | $59,398,943.72 |
-| BTW/USDT:USDT | +2.28% | $5,233,606.47 |
-| MET/USDT:USDT | +2.24% | $1,173,931.11 |
+| SILVER/USDT:USDT | +2.77% | $61,955,137.79 |
+| AIOT/USDT:USDT | +2.60% | $6,412,579.06 |
+| MET/USDT:USDT | +2.40% | $1,175,236.78 |
+| BTW/USDT:USDT | +2.28% | $5,239,468.91 |
+| AIN/USDT:USDT | +2.14% | $2,224,772.18 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KORU/USDT:USDT | below_1h_threshold | +2.70% | +2.74% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +2.49% | +2.52% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.47% | +2.51% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +1.82% | +1.85% |
-| DRAM/USDT:USDT | below_1h_threshold | +1.74% | +1.78% |
+| KORU/USDT:USDT | below_1h_threshold | +2.70% | +2.72% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +2.49% | +2.50% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.47% | +2.49% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +1.82% | +1.84% |
+| DRAM/USDT:USDT | below_1h_threshold | +1.74% | +1.76% |
 
 ## 7. 次に見るべき不足
 
