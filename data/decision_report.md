@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-09T13:21:26.165918+00:00
+- generated_at: 2026-11-09T13:26:19.846202+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18526**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-09T13:21:13.104175+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.36% price=74627.9
+- 更新: 2026-11-09T13:26:06.871121+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.35% price=74630.0
 - Funnel: target 1094 → liquid 139 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ON/USDT:USDT | +43.59% | $3,054,466.52 |
-| PIEVERSE/USDT:USDT | +18.31% | $2,447,150.52 |
-| IDOL/USDT:USDT | +12.02% | $2,229,682.25 |
-| ANSEM/USDT:USDT | +10.22% | $1,150,499.56 |
-| ARB/USDT:USDT | +8.86% | $22,440,887.72 |
+| ON/USDT:USDT | +43.49% | $3,151,386.43 |
+| PIEVERSE/USDT:USDT | +18.13% | $2,493,575.53 |
+| IDOL/USDT:USDT | +12.41% | $2,234,915.16 |
+| ANSEM/USDT:USDT | +10.42% | $1,152,153.30 |
+| RITUAL/USDT:USDT | +10.21% | $1,645,910.96 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
+| MUU/USDT:USDT | below_1h_threshold | +4.29% | +4.64% |
 | SOXL/USDT:USDT | below_1h_threshold | +3.28% | +3.63% |
+| AVAX/USDT:USDT | below_1h_threshold | +2.31% | +2.66% |
 | NGAS/USDT:USDT | below_1h_threshold | +1.97% | +2.33% |
-| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +1.19% | +1.55% |
-| RAY/USDT:USDT | below_1h_threshold | +1.13% | +1.49% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.01% | +1.37% |
+| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +1.19% | +1.54% |
 
 ## 7. 次に見るべき不足
 
