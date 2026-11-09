@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-09T21:41:11.839089+00:00
+- generated_at: 2026-11-09T21:46:30.345321+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18555**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-09T21:41:03.786376+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=74837.3
+- 更新: 2026-11-09T21:46:17.213838+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=74832.0
 - Funnel: target 1094 → liquid 157 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| INIT/USDT:USDT | +47.80% | $2,008,566.30 |
-| NIUBI/USDT:USDT | +29.41% | $1,023,182.35 |
-| ON/USDT:USDT | +14.77% | $5,221,788.43 |
-| JCT/USDT:USDT | +12.63% | $40,290,183.98 |
-| RITUAL/USDT:USDT | +7.78% | $1,890,553.32 |
+| INIT/USDT:USDT | +49.22% | $2,060,209.97 |
+| NIUBI/USDT:USDT | +32.81% | $1,033,912.42 |
+| ON/USDT:USDT | +14.37% | $5,228,592.54 |
+| JCT/USDT:USDT | +12.24% | $40,326,677.60 |
+| RITUAL/USDT:USDT | +8.12% | $1,891,423.74 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| INIT/USDT:USDT | below_1h_threshold | +3.55% | +3.56% |
-| ON/USDT:USDT | below_1h_threshold | +3.37% | +3.38% |
-| INTW/USDT:USDT | below_1h_threshold | +1.71% | +1.72% |
-| BR/USDT:USDT | below_1h_threshold | +1.61% | +1.62% |
-| CBRSSTOCK/USDT:USDT | below_1h_threshold | +1.21% | +1.22% |
+| INIT/USDT:USDT | below_1h_threshold | +4.07% | +4.09% |
+| ON/USDT:USDT | below_1h_threshold | +3.19% | +3.21% |
+| INTW/USDT:USDT | below_1h_threshold | +1.71% | +1.73% |
+| CBRSSTOCK/USDT:USDT | below_1h_threshold | +1.21% | +1.23% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.04% | +1.05% |
 
 ## 7. 次に見るべき不足
 
