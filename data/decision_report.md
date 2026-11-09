@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-09T16:46:27.787676+00:00
+- generated_at: 2026-11-09T16:51:29.827968+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18546**
 
@@ -70,9 +70,9 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-09T16:46:12.640803+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.86% price=74848.7
-- Funnel: target 1094 → liquid 151 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-11-09T16:51:14.558723+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.77% price=74918.4
+- Funnel: target 1094 → liquid 152 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ON/USDT:USDT | +11.43% | $4,813,985.28 |
-| JCT/USDT:USDT | +4.39% | $57,063,138.04 |
-| SOXS/USDT:USDT | +3.11% | $23,848,550.13 |
-| RITUAL/USDT:USDT | +2.70% | $1,702,799.08 |
-| EDGE/USDT:USDT | +2.63% | $2,676,983.70 |
+| ON/USDT:USDT | +10.22% | $4,856,927.83 |
+| JCT/USDT:USDT | +3.62% | $57,172,074.44 |
+| RITUAL/USDT:USDT | +3.29% | $1,704,204.43 |
+| MRNASTOCK/USDT:USDT | +2.72% | $2,514,782.77 |
+| SOXS/USDT:USDT | +2.06% | $23,960,129.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JCT/USDT:USDT | below_1h_threshold | +4.27% | +5.14% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +3.02% | +3.88% |
-| DELTAELECSTOCK/USDT:USDT | below_1h_threshold | +2.93% | +3.79% |
-| RITUAL/USDT:USDT | below_1h_threshold | +2.71% | +3.57% |
-| EDGE/USDT:USDT | below_1h_threshold | +2.63% | +3.49% |
+| JCT/USDT:USDT | below_1h_threshold | +3.58% | +4.35% |
+| RITUAL/USDT:USDT | below_1h_threshold | +3.25% | +4.02% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +3.02% | +3.79% |
+| KORU/USDT:USDT | below_1h_threshold | +2.96% | +3.73% |
+| DELTAELECSTOCK/USDT:USDT | below_1h_threshold | +2.93% | +3.70% |
 
 ## 7. 次に見るべき不足
 
