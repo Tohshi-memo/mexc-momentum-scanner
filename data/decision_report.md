@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-09T15:02:02.670007+00:00
+- generated_at: 2026-11-09T15:07:25.152336+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18532**
 
@@ -63,38 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6702件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6703件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000284 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-09T15:01:32.047116+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=74782.0
-- Funnel: target 1094 → liquid 144 → pre 50 → checked 50 → surge 9 → strict 9
-- Surge前reject: below_1h_threshold=41, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-09T15:06:50.362331+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=74769.7
+- Funnel: target 1094 → liquid 145 → pre 50 → checked 50 → surge 10 → strict 10
+- Surge前reject: below_1h_threshold=40, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PIEVERSE/USDT:USDT | +22.42% | $3,516,721.78 |
-| RITUAL/USDT:USDT | +17.37% | $1,680,537.17 |
-| EDGE/USDT:USDT | +17.01% | $1,453,247.70 |
-| SOXL/USDT:USDT | +14.50% | $360,914,127.39 |
-| MVLL/USDT:USDT | +14.12% | $1,808,765.34 |
+| PIEVERSE/USDT:USDT | +22.48% | $3,536,878.95 |
+| RITUAL/USDT:USDT | +19.91% | $1,685,129.20 |
+| EDGE/USDT:USDT | +15.78% | $1,576,763.25 |
+| SOXL/USDT:USDT | +13.50% | $373,195,004.98 |
+| MVLL/USDT:USDT | +13.43% | $1,855,294.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +4.94% | +5.06% |
-| TESLA/USDT:USDT | below_1h_threshold | +4.90% | +5.02% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +4.86% | +4.97% |
-| SNOWSTOCK/USDT:USDT | below_1h_threshold | +4.68% | +4.79% |
-| DRAM/USDT:USDT | below_1h_threshold | +4.31% | +4.43% |
+| TESLA/USDT:USDT | below_1h_threshold | +4.90% | +5.04% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +4.86% | +4.99% |
+| SNOWSTOCK/USDT:USDT | below_1h_threshold | +4.68% | +4.81% |
+| DRAM/USDT:USDT | below_1h_threshold | +4.31% | +4.45% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +4.21% | +4.35% |
 
 ## 7. 次に見るべき不足
 
