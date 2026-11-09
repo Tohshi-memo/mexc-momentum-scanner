@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-09T03:16:18.461331+00:00
+- generated_at: 2026-11-09T03:21:12.612186+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18496**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-09T03:16:07.659063+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.49% price=74882.0
+- 更新: 2026-11-09T03:21:04.390490+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.36% price=74981.6
 - Funnel: target 1089 → liquid 131 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ANSEM/USDT:USDT | +14.92% | $1,014,889.28 |
-| AIN/USDT:USDT | +4.13% | $2,253,188.21 |
-| JASMY/USDT:USDT | +2.64% | $1,513,492.82 |
-| MET/USDT:USDT | +2.37% | $1,082,214.37 |
-| AMDSTOCK/USDT:USDT | +2.32% | $2,095,279.02 |
+| ANSEM/USDT:USDT | +14.72% | $1,015,459.61 |
+| JASMY/USDT:USDT | +3.26% | $1,517,103.58 |
+| MET/USDT:USDT | +3.00% | $1,086,541.42 |
+| AIN/USDT:USDT | +2.69% | $2,262,444.03 |
+| AMDSTOCK/USDT:USDT | +2.61% | $2,100,588.51 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXL/USDT:USDT | below_1h_threshold | +3.73% | +4.22% |
-| MUU/USDT:USDT | below_1h_threshold | +2.87% | +3.35% |
-| AIOT/USDT:USDT | below_1h_threshold | +2.84% | +3.32% |
-| SNXX/USDT:USDT | below_1h_threshold | +2.80% | +3.29% |
-| KORU/USDT:USDT | below_1h_threshold | +2.17% | +2.66% |
+| SOXL/USDT:USDT | below_1h_threshold | +3.73% | +4.08% |
+| AIOT/USDT:USDT | below_1h_threshold | +2.90% | +3.25% |
+| MUU/USDT:USDT | below_1h_threshold | +2.87% | +3.22% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.80% | +3.16% |
+| KORU/USDT:USDT | below_1h_threshold | +2.17% | +2.53% |
 
 ## 7. 次に見るべき不足
 
