@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-09T07:11:23.155109+00:00
+- generated_at: 2026-11-09T07:16:29.120696+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18504**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-09T07:11:09.965062+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.23% price=74101.6
-- Funnel: target 1089 → liquid 134 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-11-09T07:16:15.253157+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.42% price=73965.0
+- Funnel: target 1089 → liquid 135 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ANSEM/USDT:USDT | +13.49% | $1,077,401.94 |
-| AIOT/USDT:USDT | +10.93% | $6,655,346.11 |
-| DELTAELECSTOCK/USDT:USDT | +7.48% | $1,614,632.33 |
-| PIEVERSE/USDT:USDT | +6.36% | $1,258,526.25 |
-| SOXS/USDT:USDT | +4.70% | $12,774,211.61 |
+| ANSEM/USDT:USDT | +13.49% | $1,077,756.89 |
+| AIOT/USDT:USDT | +10.65% | $6,672,357.36 |
+| DELTAELECSTOCK/USDT:USDT | +7.23% | $1,614,980.93 |
+| PIEVERSE/USDT:USDT | +5.81% | $1,263,347.92 |
+| SOXS/USDT:USDT | +4.99% | $12,868,530.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIOT/USDT:USDT | below_1h_threshold | +2.69% | +2.93% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.40% | +1.63% |
-| HOT/USDT:USDT | below_1h_threshold | +1.30% | +1.54% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.14% | +1.37% |
-| BTW/USDT:USDT | below_1h_threshold | +0.79% | +1.03% |
+| AIOT/USDT:USDT | below_1h_threshold | +2.41% | +2.82% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.40% | +1.82% |
+| HOT/USDT:USDT | below_1h_threshold | +1.01% | +1.42% |
+| SKYAI/USDT:USDT | below_1h_threshold | +0.61% | +1.03% |
+| BTW/USDT:USDT | below_1h_threshold | +0.52% | +0.94% |
 
 ## 7. 次に見るべき不足
 
