@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-09T10:31:40.178308+00:00
+- generated_at: 2026-11-09T10:36:28.477738+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18516**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6678件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6679件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_10PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000197 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-09T10:31:21.175995+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=74196.0
-- Funnel: target 1089 → liquid 140 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.7 >= 65=1
+- 更新: 2026-11-09T10:36:13.186341+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.20% price=74106.6
+- Funnel: target 1089 → liquid 140 → pre 50 → checked 50 → surge 3 → strict 2
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 80.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RITUAL/USDT:USDT | +40.59% | $1,485,142.25 |
-| ON/USDT:USDT | +35.45% | $1,162,948.49 |
-| IDOL/USDT:USDT | +11.42% | $2,720,382.71 |
-| PIEVERSE/USDT:USDT | +10.12% | $1,367,737.51 |
-| ANSEM/USDT:USDT | +9.20% | $1,139,213.24 |
+| RITUAL/USDT:USDT | +40.31% | $1,495,069.52 |
+| ON/USDT:USDT | +33.48% | $1,187,573.18 |
+| IDOL/USDT:USDT | +11.73% | $2,729,213.76 |
+| PIEVERSE/USDT:USDT | +10.58% | $1,369,362.80 |
+| ANSEM/USDT:USDT | +9.20% | $1,143,001.05 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RSR/USDT:USDT | below_1h_threshold | +2.61% | +2.69% |
-| SOXL/USDT:USDT | below_1h_threshold | +2.54% | +2.62% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +2.26% | +2.34% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +1.54% | +1.62% |
-| ANSEM/USDT:USDT | below_1h_threshold | +1.33% | +1.41% |
+| AIOT/USDT:USDT | below_1h_threshold | +2.76% | +2.96% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +2.69% | +2.89% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.54% | +2.74% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +1.54% | +1.74% |
+| ANSEM/USDT:USDT | below_1h_threshold | +1.33% | +1.53% |
 
 ## 7. 次に見るべき不足
 
