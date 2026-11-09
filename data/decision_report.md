@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-09T14:41:27.540339+00:00
+- generated_at: 2026-11-09T14:46:25.900974+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18531**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-09T14:41:13.291070+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.45% price=74360.1
-- Funnel: target 1094 → liquid 143 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.1 >= 65=1, 4h RSI 66.3 >= 65=1
+- 更新: 2026-11-09T14:46:12.375042+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=74661.7
+- Funnel: target 1094 → liquid 144 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 69.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RITUAL/USDT:USDT | +25.19% | $1,706,835.11 |
-| PIEVERSE/USDT:USDT | +22.65% | $3,138,670.59 |
-| EDGE/USDT:USDT | +17.98% | $1,268,751.98 |
-| JCT/USDT:USDT | +13.46% | $59,700,870.49 |
-| ANSEM/USDT:USDT | +9.81% | $1,162,705.32 |
+| RITUAL/USDT:USDT | +21.26% | $1,710,274.28 |
+| PIEVERSE/USDT:USDT | +20.62% | $3,235,906.30 |
+| EDGE/USDT:USDT | +18.55% | $1,314,428.75 |
+| MVLL/USDT:USDT | +12.05% | $1,477,617.81 |
+| JCT/USDT:USDT | +11.67% | $59,793,198.11 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIOT/USDT:USDT | below_1h_threshold | +3.83% | +4.28% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +2.64% | +3.09% |
-| JASMY/USDT:USDT | below_1h_threshold | +1.91% | +2.36% |
-| EDGE/USDT:USDT | below_1h_threshold | +1.85% | +2.30% |
-| DELTAELECSTOCK/USDT:USDT | below_1h_threshold | +1.68% | +2.13% |
+| RITUAL/USDT:USDT | below_1h_threshold | +4.87% | +4.91% |
+| JCT/USDT:USDT | below_1h_threshold | +4.87% | +4.91% |
+| JASMY/USDT:USDT | below_1h_threshold | +2.10% | +2.14% |
+| EDGE/USDT:USDT | below_1h_threshold | +2.08% | +2.13% |
+| DELTAELECSTOCK/USDT:USDT | below_1h_threshold | +1.68% | +1.73% |
 
 ## 7. 次に見るべき不足
 
