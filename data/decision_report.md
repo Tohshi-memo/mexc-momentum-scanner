@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-09T04:56:20.852854+00:00
+- generated_at: 2026-11-09T05:01:17.366977+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18497**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-09T04:56:08.595385+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=74760.0
-- Funnel: target 1089 → liquid 133 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.1 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-09T05:01:04.887975+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=74765.0
+- Funnel: target 1089 → liquid 130 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ANSEM/USDT:USDT | +15.74% | $1,044,453.45 |
-| DELTAELECSTOCK/USDT:USDT | +8.23% | $1,369,259.33 |
-| PIEVERSE/USDT:USDT | +5.72% | $1,103,697.41 |
-| RSR/USDT:USDT | +3.49% | $1,050,042.35 |
-| MET/USDT:USDT | +2.83% | $1,042,331.13 |
+| ANSEM/USDT:USDT | +15.74% | $1,038,612.31 |
+| DELTAELECSTOCK/USDT:USDT | +7.98% | $1,365,370.23 |
+| PIEVERSE/USDT:USDT | +6.13% | $1,125,496.69 |
+| ARB/USDT:USDT | +2.54% | $20,024,309.92 |
+| SILVER/USDT:USDT | +2.32% | $80,656,209.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HOT/USDT:USDT | below_1h_threshold | +3.26% | +3.34% |
-| AIN/USDT:USDT | below_1h_threshold | +2.41% | +2.49% |
-| SOXS/USDT:USDT | below_1h_threshold | +2.06% | +2.14% |
-| BLESS/USDT:USDT | below_1h_threshold | +1.71% | +1.79% |
-| JASMY/USDT:USDT | below_1h_threshold | +1.23% | +1.31% |
+| USELESS/USDT:USDT | below_1h_threshold | +0.53% | +0.57% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.42% | +0.47% |
+| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +0.35% | +0.39% |
+| TESLA/USDT:USDT | below_1h_threshold | +0.34% | +0.39% |
+| AVGOSTOCK/USDT:USDT | below_1h_threshold | +0.27% | +0.32% |
 
 ## 7. 次に見るべき不足
 
