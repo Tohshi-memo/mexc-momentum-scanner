@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-09T04:41:27.588885+00:00
+- generated_at: 2026-11-09T04:46:08.603364+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18496**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6655件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6656件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000387 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-09T04:41:16.563197+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=74913.8
-- Funnel: target 1089 → liquid 132 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-09T04:45:59.359629+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=74945.0
+- Funnel: target 1089 → liquid 133 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 73.0 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ANSEM/USDT:USDT | +15.13% | $1,041,531.62 |
-| DELTAELECSTOCK/USDT:USDT | +8.10% | $1,368,317.89 |
-| RSR/USDT:USDT | +4.50% | $1,047,182.87 |
-| MET/USDT:USDT | +3.99% | $1,038,718.22 |
-| SILVER/USDT:USDT | +2.53% | $79,879,397.75 |
+| ANSEM/USDT:USDT | +17.38% | $1,042,982.07 |
+| DELTAELECSTOCK/USDT:USDT | +8.20% | $1,368,651.26 |
+| PIEVERSE/USDT:USDT | +5.43% | $1,015,548.84 |
+| RSR/USDT:USDT | +4.56% | $1,048,378.63 |
+| MET/USDT:USDT | +3.53% | $1,041,566.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +2.06% | +1.93% |
-| MET/USDT:USDT | below_1h_threshold | +1.61% | +1.48% |
-| RSR/USDT:USDT | below_1h_threshold | +1.32% | +1.20% |
-| AIN/USDT:USDT | below_1h_threshold | +1.21% | +1.08% |
-| JASMY/USDT:USDT | below_1h_threshold | +1.17% | +1.04% |
+| AIN/USDT:USDT | below_1h_threshold | +3.24% | +3.07% |
+| ANSEM/USDT:USDT | below_1h_threshold | +1.59% | +1.42% |
+| RSR/USDT:USDT | below_1h_threshold | +1.44% | +1.27% |
+| JASMY/USDT:USDT | below_1h_threshold | +1.37% | +1.20% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.16% | +0.99% |
 
 ## 7. 次に見るべき不足
 
