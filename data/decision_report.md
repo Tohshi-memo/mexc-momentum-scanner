@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-09T01:56:23.070778+00:00
+- generated_at: 2026-11-09T02:01:16.098110+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18495**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-09T01:56:09.821216+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=75105.0
-- Funnel: target 1089 → liquid 129 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-11-09T02:01:06.006569+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=75127.5
+- Funnel: target 1089 → liquid 128 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIOT/USDT:USDT | +2.83% | $6,415,433.39 |
-| SILVER/USDT:USDT | +2.75% | $62,483,507.78 |
-| MET/USDT:USDT | +2.60% | $1,177,531.39 |
-| PEPE/USDT:USDT | +1.97% | $72,744,417.77 |
-| XAU/USDT:USDT | +1.65% | $195,325,452.77 |
+| MET/USDT:USDT | +3.00% | $1,096,733.33 |
+| SILVER/USDT:USDT | +2.55% | $62,583,444.95 |
+| AIOT/USDT:USDT | +2.46% | $6,353,776.82 |
+| SOXS/USDT:USDT | +1.83% | $6,372,790.73 |
+| XAU/USDT:USDT | +1.56% | $195,000,399.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +2.49% | +2.63% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.47% | +2.61% |
-| PEPE/USDT:USDT | below_1h_threshold | +2.08% | +2.23% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +1.82% | +1.96% |
-| DRAM/USDT:USDT | below_1h_threshold | +1.74% | +1.88% |
+| TSMSTOCK/USDT:USDT | below_1h_threshold | +1.23% | +1.23% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +1.11% | +1.11% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.86% | +0.86% |
+| DRAM/USDT:USDT | below_1h_threshold | +0.66% | +0.67% |
+| MSFTSTOCK/USDT:USDT | below_1h_threshold | +0.63% | +0.63% |
 
 ## 7. 次に見るべき不足
 
