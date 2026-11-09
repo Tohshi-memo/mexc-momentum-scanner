@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-09T23:46:17.958641+00:00
+- generated_at: 2026-11-09T23:51:25.002994+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18563**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-09T23:46:08.005818+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=75170.1
+- 更新: 2026-11-09T23:51:11.506305+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=75258.1
 - Funnel: target 1094 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| INIT/USDT:USDT | +45.72% | $3,166,289.80 |
-| NIUBI/USDT:USDT | +26.93% | $1,254,779.17 |
-| ON/USDT:USDT | +14.30% | $5,348,870.07 |
-| CLAUDIA/USDT:USDT | +8.70% | $1,147,517.11 |
-| JCT/USDT:USDT | +6.81% | $32,281,283.48 |
+| INIT/USDT:USDT | +45.33% | $3,185,027.41 |
+| NIUBI/USDT:USDT | +30.65% | $1,259,839.05 |
+| ON/USDT:USDT | +14.17% | $5,350,763.76 |
+| CLAUDIA/USDT:USDT | +9.28% | $1,151,633.65 |
+| JCT/USDT:USDT | +7.39% | $32,306,094.78 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIN/USDT:USDT | below_1h_threshold | +4.38% | +4.49% |
-| INIT/USDT:USDT | below_1h_threshold | +3.95% | +4.07% |
-| NIUBI/USDT:USDT | below_1h_threshold | +1.23% | +1.35% |
-| SILVER/USDT:USDT | below_1h_threshold | +0.15% | +0.26% |
-| TRX/USDT:USDT | below_1h_threshold | +0.12% | +0.23% |
+| NIUBI/USDT:USDT | below_1h_threshold | +4.20% | +4.20% |
+| INIT/USDT:USDT | below_1h_threshold | +3.70% | +3.70% |
+| AIN/USDT:USDT | below_1h_threshold | +3.25% | +3.24% |
+| JCT/USDT:USDT | below_1h_threshold | +0.16% | +0.15% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +0.14% | +0.14% |
 
 ## 7. 次に見るべき不足
 
