@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-09T11:46:33.202671+00:00
+- generated_at: 2026-11-09T11:51:30.608217+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18520**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-09T11:46:19.750789+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.54% price=74527.9
-- Funnel: target 1090 → liquid 141 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.9 >= 65=1, 4h RSI 81.2 >= 65=1
+- 更新: 2026-11-09T11:51:16.678962+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.50% price=74496.5
+- Funnel: target 1093 → liquid 141 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 81.8 >= 65=1, 4h RSI 79.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ON/USDT:USDT | +42.40% | $1,748,527.29 |
-| RITUAL/USDT:USDT | +30.65% | $1,625,862.43 |
-| PIEVERSE/USDT:USDT | +17.56% | $1,585,311.78 |
-| IDOL/USDT:USDT | +11.78% | $2,887,238.34 |
-| ANSEM/USDT:USDT | +8.58% | $1,147,393.73 |
+| ON/USDT:USDT | +40.33% | $1,796,661.16 |
+| RITUAL/USDT:USDT | +30.89% | $1,640,866.38 |
+| PIEVERSE/USDT:USDT | +19.54% | $1,665,544.58 |
+| IDOL/USDT:USDT | +12.61% | $2,895,632.92 |
+| ANSEM/USDT:USDT | +8.17% | $1,147,796.43 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| USELESS/USDT:USDT | below_relative_strength | +5.28% | +4.74% |
-| AKE/USDT:USDT | below_1h_threshold | +3.27% | +2.73% |
-| SKYAI/USDT:USDT | below_1h_threshold | +2.56% | +2.02% |
-| ON/USDT:USDT | below_1h_threshold | +2.39% | +1.85% |
-| STRK/USDT:USDT | below_1h_threshold | +1.75% | +1.20% |
+| USELESS/USDT:USDT | below_1h_threshold | +4.88% | +4.38% |
+| IDOL/USDT:USDT | below_1h_threshold | +2.39% | +1.89% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.28% | +1.78% |
+| STRK/USDT:USDT | below_1h_threshold | +1.72% | +1.22% |
+| AKE/USDT:USDT | below_1h_threshold | +1.51% | +1.01% |
 
 ## 7. 次に見るべき不足
 
