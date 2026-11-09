@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-09T05:51:23.465696+00:00
+- generated_at: 2026-11-09T05:56:25.546080+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18502**
 
@@ -70,31 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-09T05:51:10.315740+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.38% price=74514.5
-- Funnel: target 1089 → liquid 134 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-09T05:56:11.656484+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.37% price=74521.6
+- Funnel: target 1089 → liquid 134 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ANSEM/USDT:USDT | +13.29% | $1,058,684.95 |
-| DELTAELECSTOCK/USDT:USDT | +9.28% | $1,537,308.63 |
-| PIEVERSE/USDT:USDT | +7.01% | $1,204,497.20 |
-| AIN/USDT:USDT | +6.66% | $1,854,048.26 |
-| AIOT/USDT:USDT | +5.78% | $6,552,684.94 |
+| ANSEM/USDT:USDT | +13.70% | $1,059,473.78 |
+| DELTAELECSTOCK/USDT:USDT | +9.13% | $1,554,123.52 |
+| PIEVERSE/USDT:USDT | +6.67% | $1,206,825.37 |
+| AIOT/USDT:USDT | +5.92% | $6,568,594.48 |
+| AIN/USDT:USDT | +5.66% | $1,857,941.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIOT/USDT:USDT | below_1h_threshold | +4.93% | +5.31% |
-| RSR/USDT:USDT | below_1h_threshold | +0.87% | +1.25% |
-| PEPE/USDT:USDT | below_1h_threshold | +0.76% | +1.14% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.42% | +0.80% |
-| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +0.35% | +0.73% |
+| AIOT/USDT:USDT | below_1h_threshold | +4.95% | +5.32% |
+| AIN/USDT:USDT | below_1h_threshold | +4.58% | +4.95% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.42% | +0.79% |
+| PEPE/USDT:USDT | below_1h_threshold | +0.39% | +0.77% |
+| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +0.35% | +0.72% |
 
 ## 7. 次に見るべき不足
 
