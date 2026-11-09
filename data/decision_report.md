@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-09T07:31:22.627246+00:00
+- generated_at: 2026-11-09T07:36:14.875213+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18504**
 
@@ -70,31 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-09T07:31:07.581819+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.51% price=73898.1
-- Funnel: target 1089 → liquid 135 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-09T07:36:04.348014+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.33% price=74030.0
+- Funnel: target 1089 → liquid 137 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ANSEM/USDT:USDT | +13.90% | $1,084,016.78 |
-| HOT/USDT:USDT | +8.93% | $7,551,551.59 |
-| DELTAELECSTOCK/USDT:USDT | +7.95% | $1,616,217.66 |
-| AIOT/USDT:USDT | +7.94% | $6,794,938.32 |
-| PIEVERSE/USDT:USDT | +6.54% | $1,284,206.64 |
+| ANSEM/USDT:USDT | +12.06% | $1,088,544.45 |
+| AIOT/USDT:USDT | +11.36% | $6,826,603.79 |
+| DELTAELECSTOCK/USDT:USDT | +7.11% | $1,617,183.87 |
+| PIEVERSE/USDT:USDT | +6.71% | $1,296,422.06 |
+| SOXS/USDT:USDT | +6.28% | $13,058,283.90 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +3.13% | +3.64% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.40% | +1.91% |
-| AIOT/USDT:USDT | below_1h_threshold | +0.44% | +0.95% |
-| AAPLSTOCK/USDT:USDT | below_1h_threshold | +0.22% | +0.73% |
-| MSFTSTOCK/USDT:USDT | below_1h_threshold | +0.20% | +0.70% |
+| HOT/USDT:USDT | below_1h_threshold | +3.91% | +4.24% |
+| AIOT/USDT:USDT | below_1h_threshold | +3.05% | +3.38% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.40% | +1.73% |
+| BLESS/USDT:USDT | below_1h_threshold | +0.69% | +1.02% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +0.26% | +0.59% |
 
 ## 7. 次に見るべき不足
 
