@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-09T02:56:09.166751+00:00
+- generated_at: 2026-11-09T03:01:19.789965+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18496**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-09T02:55:59.725963+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.15% price=75240.7
-- Funnel: target 1089 → liquid 131 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-11-09T03:01:06.544508+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=75243.8
+- Funnel: target 1089 → liquid 130 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ANSEM/USDT:USDT | +17.17% | $1,009,971.79 |
-| AIN/USDT:USDT | +4.65% | $2,237,041.27 |
-| JASMY/USDT:USDT | +3.56% | $1,483,085.20 |
-| MET/USDT:USDT | +3.49% | $1,111,458.10 |
-| AMDSTOCK/USDT:USDT | +2.31% | $1,997,418.19 |
+| ANSEM/USDT:USDT | +17.79% | $1,005,062.69 |
+| AIN/USDT:USDT | +4.12% | $2,218,641.44 |
+| MET/USDT:USDT | +3.76% | $1,071,862.76 |
+| JASMY/USDT:USDT | +3.59% | $1,453,546.36 |
+| RSR/USDT:USDT | +2.25% | $1,030,617.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ANSEM/USDT:USDT | below_1h_threshold | +3.43% | +3.28% |
-| AIN/USDT:USDT | below_1h_threshold | +3.11% | +2.97% |
-| JASMY/USDT:USDT | below_1h_threshold | +2.05% | +1.90% |
-| RSR/USDT:USDT | below_1h_threshold | +1.30% | +1.15% |
-| TSMSTOCK/USDT:USDT | below_1h_threshold | +1.23% | +1.08% |
+| SOXL/USDT:USDT | below_1h_threshold | +3.73% | +3.73% |
+| MUU/USDT:USDT | below_1h_threshold | +2.87% | +2.87% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.80% | +2.81% |
+| KORU/USDT:USDT | below_1h_threshold | +2.17% | +2.18% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.64% | +1.65% |
 
 ## 7. 次に見るべき不足
 
