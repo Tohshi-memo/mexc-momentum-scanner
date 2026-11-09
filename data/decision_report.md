@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-09T04:16:15.331501+00:00
+- generated_at: 2026-11-09T04:21:31.668405+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18496**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-09T04:16:04.604097+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.21% price=74973.3
+- 更新: 2026-11-09T04:21:20.787621+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.20% price=74969.6
 - Funnel: target 1089 → liquid 132 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ANSEM/USDT:USDT | +17.17% | $1,030,744.22 |
-| DELTAELECSTOCK/USDT:USDT | +9.53% | $1,343,254.44 |
-| MET/USDT:USDT | +3.49% | $1,030,493.25 |
-| RSR/USDT:USDT | +3.14% | $1,030,965.23 |
-| SILVER/USDT:USDT | +2.27% | $77,485,361.63 |
+| ANSEM/USDT:USDT | +17.79% | $1,031,733.64 |
+| DELTAELECSTOCK/USDT:USDT | +9.41% | $1,353,712.92 |
+| RSR/USDT:USDT | +3.44% | $1,031,481.23 |
+| MET/USDT:USDT | +2.97% | $1,031,411.85 |
+| SILVER/USDT:USDT | +2.40% | $77,586,801.81 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HOT/USDT:USDT | below_1h_threshold | +2.83% | +2.62% |
-| SOXS/USDT:USDT | below_1h_threshold | +2.06% | +1.85% |
-| ANSEM/USDT:USDT | below_1h_threshold | +1.42% | +1.21% |
-| AIN/USDT:USDT | below_1h_threshold | +1.31% | +1.10% |
-| MET/USDT:USDT | below_1h_threshold | +1.10% | +0.89% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.06% | +1.86% |
+| ANSEM/USDT:USDT | below_1h_threshold | +1.77% | +1.57% |
+| AIN/USDT:USDT | below_1h_threshold | +1.73% | +1.53% |
+| DELTAELECSTOCK/USDT:USDT | below_1h_threshold | +0.95% | +0.75% |
+| BLESS/USDT:USDT | below_1h_threshold | +0.65% | +0.44% |
 
 ## 7. 次に見るべき不足
 
