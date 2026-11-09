@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-09T15:37:13.954361+00:00
+- generated_at: 2026-11-09T15:42:25.123821+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18537**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6708件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6709件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000384 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-09T15:36:40.323584+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.39% price=75163.2
-- Funnel: target 1094 → liquid 148 → pre 50 → checked 49 → surge 10 → strict 9
-- Surge前reject: below_1h_threshold=37, below_relative_strength=2, invalid_ohlcv=0, errors=1
-- Strict後reject: 4h RSI 81.2 >= 65=1
+- 更新: 2026-11-09T15:41:48.100423+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.55% price=75282.1
+- Funnel: target 1094 → liquid 148 → pre 50 → checked 50 → surge 12 → strict 10
+- Surge前reject: below_1h_threshold=36, below_relative_strength=2, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 82.0 >= 65=1, 4h RSI 85.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PIEVERSE/USDT:USDT | +28.84% | $4,155,808.76 |
-| EDGE/USDT:USDT | +25.49% | $1,861,839.56 |
-| MVLL/USDT:USDT | +17.45% | $2,158,789.64 |
-| SOXL/USDT:USDT | +17.09% | $426,378,764.40 |
-| ANSEM/USDT:USDT | +13.70% | $1,170,733.13 |
+| PIEVERSE/USDT:USDT | +31.14% | $4,254,199.63 |
+| EDGE/USDT:USDT | +27.70% | $1,966,969.81 |
+| MVLL/USDT:USDT | +18.02% | $2,196,812.32 |
+| RITUAL/USDT:USDT | +17.58% | $1,701,097.76 |
+| SOXL/USDT:USDT | +17.01% | $433,210,383.03 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| INTW/USDT:USDT | below_relative_strength | +5.14% | +4.75% |
-| TQQQ/USDT:USDT | below_relative_strength | +5.07% | +4.68% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +4.94% | +4.55% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +4.93% | +4.54% |
-| TESLA/USDT:USDT | below_1h_threshold | +4.90% | +4.51% |
+| INTW/USDT:USDT | below_relative_strength | +5.14% | +4.59% |
+| TQQQ/USDT:USDT | below_relative_strength | +5.07% | +4.52% |
+| TESLA/USDT:USDT | below_1h_threshold | +4.90% | +4.35% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +4.86% | +4.31% |
+| SNOWSTOCK/USDT:USDT | below_1h_threshold | +4.68% | +4.13% |
 
 ## 7. 次に見るべき不足
 
