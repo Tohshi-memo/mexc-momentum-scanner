@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-09T16:16:25.362409+00:00
+- generated_at: 2026-11-09T16:21:24.067805+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18544**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-09T16:16:11.971840+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.46% price=75154.9
+- 更新: 2026-11-09T16:21:10.944839+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.61% price=75040.0
 - Funnel: target 1094 → liquid 150 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RITUAL/USDT:USDT | +4.82% | $1,686,616.20 |
-| CLAUDIA/USDT:USDT | +2.36% | $2,411,017.59 |
-| SOXS/USDT:USDT | +1.83% | $21,267,369.91 |
-| PIEVERSE/USDT:USDT | +1.38% | $5,375,461.52 |
-| MRNASTOCK/USDT:USDT | +1.24% | $2,375,675.29 |
+| SOXS/USDT:USDT | +3.20% | $22,828,068.07 |
+| CLAUDIA/USDT:USDT | +2.07% | $2,413,071.07 |
+| RITUAL/USDT:USDT | +1.46% | $1,694,114.82 |
+| SQQQ/USDT:USDT | +1.42% | $1,493,783.19 |
+| UVXY/USDT:USDT | +1.23% | $1,377,154.18 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RITUAL/USDT:USDT | below_1h_threshold | +4.83% | +5.29% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +3.02% | +3.48% |
-| MUU/USDT:USDT | below_1h_threshold | +3.01% | +3.47% |
-| DELTAELECSTOCK/USDT:USDT | below_1h_threshold | +2.93% | +3.38% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +2.43% | +2.88% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +3.02% | +3.63% |
+| DELTAELECSTOCK/USDT:USDT | below_1h_threshold | +2.93% | +3.54% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +2.43% | +3.04% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +2.36% | +2.97% |
+| CLAUDIA/USDT:USDT | below_1h_threshold | +2.07% | +2.68% |
 
 ## 7. 次に見るべき不足
 
