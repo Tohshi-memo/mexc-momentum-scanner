@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-09T14:36:37.022242+00:00
+- generated_at: 2026-11-09T14:41:27.540339+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18531**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-09T14:36:20.607513+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=74652.2
-- Funnel: target 1094 → liquid 140 → pre 50 → checked 50 → surge 2 → strict 0
+- 更新: 2026-11-09T14:41:13.291070+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.45% price=74360.1
+- Funnel: target 1094 → liquid 143 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.5 >= 65=1, 4h RSI 69.9 >= 65=1
+- Strict後reject: 4h RSI 76.1 >= 65=1, 4h RSI 66.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RITUAL/USDT:USDT | +23.75% | $1,694,274.30 |
-| PIEVERSE/USDT:USDT | +22.76% | $3,058,725.80 |
-| EDGE/USDT:USDT | +16.77% | $1,207,033.27 |
-| JCT/USDT:USDT | +11.27% | $59,575,427.26 |
-| ANSEM/USDT:USDT | +9.40% | $1,162,288.97 |
+| RITUAL/USDT:USDT | +25.19% | $1,706,835.11 |
+| PIEVERSE/USDT:USDT | +22.65% | $3,138,670.59 |
+| EDGE/USDT:USDT | +17.98% | $1,268,751.98 |
+| JCT/USDT:USDT | +13.46% | $59,700,870.49 |
+| ANSEM/USDT:USDT | +9.81% | $1,162,705.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JCT/USDT:USDT | below_1h_threshold | +4.39% | +4.45% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +3.05% | +3.10% |
-| JASMY/USDT:USDT | below_1h_threshold | +2.05% | +2.10% |
-| DELTAELECSTOCK/USDT:USDT | below_1h_threshold | +1.68% | +1.74% |
-| NGAS/USDT:USDT | below_1h_threshold | +1.37% | +1.43% |
+| AIOT/USDT:USDT | below_1h_threshold | +3.83% | +4.28% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +2.64% | +3.09% |
+| JASMY/USDT:USDT | below_1h_threshold | +1.91% | +2.36% |
+| EDGE/USDT:USDT | below_1h_threshold | +1.85% | +2.30% |
+| DELTAELECSTOCK/USDT:USDT | below_1h_threshold | +1.68% | +2.13% |
 
 ## 7. 次に見るべき不足
 
