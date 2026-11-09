@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-09T01:11:22.369338+00:00
+- generated_at: 2026-11-09T01:16:16.852874+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18494**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-09T01:11:09.320746+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=75243.3
+- 更新: 2026-11-09T01:16:05.939484+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.19% price=75070.2
 - Funnel: target 1089 → liquid 127 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JCT/USDT:USDT | +12.67% | $62,057,854.28 |
-| SOXS/USDT:USDT | +3.47% | $5,843,095.13 |
-| SILVER/USDT:USDT | +2.34% | $49,158,410.27 |
-| AIN/USDT:USDT | +2.10% | $2,187,242.44 |
-| BLESS/USDT:USDT | +2.02% | $1,109,111.32 |
+| JCT/USDT:USDT | +13.22% | $62,152,917.28 |
+| SOXS/USDT:USDT | +6.30% | $5,913,666.96 |
+| SILVER/USDT:USDT | +2.21% | $51,246,197.35 |
+| AIN/USDT:USDT | +2.09% | $2,188,393.58 |
+| BLESS/USDT:USDT | +2.00% | $1,112,566.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JCT/USDT:USDT | below_1h_threshold | +2.76% | +2.72% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.47% | +2.43% |
-| DRAM/USDT:USDT | below_1h_threshold | +1.74% | +1.70% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.33% | +1.29% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.01% | +0.97% |
+| JCT/USDT:USDT | below_1h_threshold | +3.78% | +3.97% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.33% | +1.52% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.01% | +1.20% |
+| TSMSTOCK/USDT:USDT | below_1h_threshold | +0.69% | +0.88% |
+| TESLA/USDT:USDT | below_1h_threshold | +0.69% | +0.88% |
 
 ## 7. 次に見るべき不足
 
