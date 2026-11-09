@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-09T03:51:19.938267+00:00
+- generated_at: 2026-11-09T03:56:28.471021+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18496**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-09T03:51:08.920309+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.35% price=74987.0
-- Funnel: target 1089 → liquid 132 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-09T03:56:14.711908+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.48% price=74884.9
+- Funnel: target 1089 → liquid 132 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ANSEM/USDT:USDT | +15.33% | $1,025,298.82 |
-| DELTAELECSTOCK/USDT:USDT | +7.85% | $1,175,592.67 |
-| RSR/USDT:USDT | +2.55% | $1,046,638.06 |
-| SILVER/USDT:USDT | +2.40% | $77,163,002.97 |
-| MET/USDT:USDT | +2.34% | $1,101,004.61 |
+| ANSEM/USDT:USDT | +15.95% | $1,025,862.85 |
+| DELTAELECSTOCK/USDT:USDT | +8.85% | $1,277,263.72 |
+| RSR/USDT:USDT | +2.90% | $1,046,953.06 |
+| MET/USDT:USDT | +2.24% | $1,101,625.32 |
+| SILVER/USDT:USDT | +2.21% | $77,434,610.61 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXL/USDT:USDT | below_1h_threshold | +3.73% | +4.08% |
-| MUU/USDT:USDT | below_1h_threshold | +2.87% | +3.21% |
-| SNXX/USDT:USDT | below_1h_threshold | +2.80% | +3.15% |
-| KORU/USDT:USDT | below_1h_threshold | +2.17% | +2.52% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.64% | +1.99% |
+| AIOT/USDT:USDT | below_1h_threshold | +4.57% | +5.05% |
+| SOXL/USDT:USDT | below_1h_threshold | +3.73% | +4.21% |
+| MUU/USDT:USDT | below_1h_threshold | +2.87% | +3.35% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.80% | +3.29% |
+| KORU/USDT:USDT | below_1h_threshold | +2.17% | +2.65% |
 
 ## 7. 次に見るべき不足
 
