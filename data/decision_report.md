@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-09T09:56:24.737859+00:00
+- generated_at: 2026-11-09T10:01:18.638467+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18513**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-09T09:56:12.680829+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.27% price=74321.2
-- Funnel: target 1089 → liquid 139 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.8 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-09T10:01:10.260037+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=74268.7
+- Funnel: target 1089 → liquid 139 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RITUAL/USDT:USDT | +43.86% | $1,487,200.43 |
-| IDOL/USDT:USDT | +10.44% | $2,746,311.75 |
-| ANSEM/USDT:USDT | +7.56% | $1,137,540.42 |
-| AIOT/USDT:USDT | +7.35% | $7,516,560.93 |
-| PIEVERSE/USDT:USDT | +6.83% | $1,395,362.15 |
+| RITUAL/USDT:USDT | +44.26% | $1,377,625.86 |
+| IDOL/USDT:USDT | +12.38% | $2,613,284.83 |
+| ANSEM/USDT:USDT | +8.38% | $1,135,058.68 |
+| PIEVERSE/USDT:USDT | +7.61% | $1,331,510.21 |
+| AIOT/USDT:USDT | +6.33% | $7,242,331.92 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| USELESS/USDT:USDT | below_1h_threshold | +2.91% | +3.18% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +1.92% | +2.19% |
-| RENDER/USDT:USDT | below_1h_threshold | +1.90% | +2.17% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.89% | +2.16% |
-| AVGOSTOCK/USDT:USDT | below_1h_threshold | +1.76% | +2.03% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.54% | +2.52% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +1.54% | +1.52% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +0.86% | +0.84% |
+| AVGOSTOCK/USDT:USDT | below_1h_threshold | +0.59% | +0.57% |
+| ANSEM/USDT:USDT | below_1h_threshold | +0.57% | +0.55% |
 
 ## 7. 次に見るべき不足
 
