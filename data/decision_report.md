@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-09T22:51:31.549486+00:00
+- generated_at: 2026-11-09T22:56:25.080645+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18560**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-09T22:51:13.758344+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.27% price=75209.5
+- 更新: 2026-11-09T22:56:10.130548+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.32% price=75243.2
 - Funnel: target 1094 → liquid 154 → pre 50 → checked 50 → surge 2 → strict 2
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| INIT/USDT:USDT | +42.04% | $2,866,162.52 |
-| NIUBI/USDT:USDT | +29.10% | $1,124,710.51 |
-| ON/USDT:USDT | +16.44% | $5,318,316.58 |
-| CLAUDIA/USDT:USDT | +12.51% | $1,215,766.41 |
-| RITUAL/USDT:USDT | +7.95% | $1,892,985.35 |
+| INIT/USDT:USDT | +42.16% | $2,877,166.96 |
+| NIUBI/USDT:USDT | +23.21% | $1,134,081.49 |
+| ON/USDT:USDT | +15.84% | $5,318,891.40 |
+| CLAUDIA/USDT:USDT | +15.15% | $1,220,897.54 |
+| RITUAL/USDT:USDT | +7.51% | $1,893,354.66 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KORU/USDT:USDT | below_1h_threshold | +2.71% | +2.44% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.66% | +1.38% |
-| RITUAL/USDT:USDT | below_1h_threshold | +1.46% | +1.19% |
-| AKE/USDT:USDT | below_1h_threshold | +1.34% | +1.06% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.30% | +1.02% |
+| KORU/USDT:USDT | below_1h_threshold | +2.71% | +2.39% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.44% | +2.12% |
+| AKE/USDT:USDT | below_1h_threshold | +1.74% | +1.42% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.66% | +1.34% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.30% | +0.98% |
 
 ## 7. 次に見るべき不足
 
