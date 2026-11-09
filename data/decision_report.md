@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-09T16:11:11.471440+00:00
+- generated_at: 2026-11-09T16:16:25.362409+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18544**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-09T16:11:03.529517+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.52% price=75108.1
-- Funnel: target 1094 → liquid 148 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-11-09T16:16:11.971840+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.46% price=75154.9
+- Funnel: target 1094 → liquid 150 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLAUDIA/USDT:USDT | +4.78% | $2,403,854.72 |
-| SOXS/USDT:USDT | +2.37% | $21,095,669.08 |
-| PIEVERSE/USDT:USDT | +1.85% | $5,310,458.87 |
-| HNT/USDT:USDT | +1.52% | $1,419,427.08 |
-| UVXY/USDT:USDT | +1.33% | $1,373,499.48 |
+| RITUAL/USDT:USDT | +4.82% | $1,686,616.20 |
+| CLAUDIA/USDT:USDT | +2.36% | $2,411,017.59 |
+| SOXS/USDT:USDT | +1.83% | $21,267,369.91 |
+| PIEVERSE/USDT:USDT | +1.38% | $5,375,461.52 |
+| MRNASTOCK/USDT:USDT | +1.24% | $2,375,675.29 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CLAUDIA/USDT:USDT | below_1h_threshold | +4.66% | +5.18% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +3.02% | +3.54% |
-| MUU/USDT:USDT | below_1h_threshold | +3.01% | +3.53% |
-| DELTAELECSTOCK/USDT:USDT | below_1h_threshold | +2.93% | +3.45% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +2.36% | +2.88% |
+| RITUAL/USDT:USDT | below_1h_threshold | +4.83% | +5.29% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +3.02% | +3.48% |
+| MUU/USDT:USDT | below_1h_threshold | +3.01% | +3.47% |
+| DELTAELECSTOCK/USDT:USDT | below_1h_threshold | +2.93% | +3.38% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +2.43% | +2.88% |
 
 ## 7. 次に見るべき不足
 
