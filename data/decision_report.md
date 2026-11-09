@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-09T01:31:16.393116+00:00
+- generated_at: 2026-11-09T01:36:15.588822+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18494**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-09T01:31:03.433558+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.59% price=74765.9
+- 更新: 2026-11-09T01:36:02.882399+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.35% price=74950.1
 - Funnel: target 1089 → liquid 128 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JCT/USDT:USDT | +8.47% | $62,395,932.85 |
-| SOXS/USDT:USDT | +6.16% | $6,189,047.08 |
-| SILVER/USDT:USDT | +1.90% | $52,496,788.46 |
-| ARIA/USDT:USDT | +1.77% | $1,163,519.68 |
-| AIOT/USDT:USDT | +1.69% | $6,384,025.28 |
+| JCT/USDT:USDT | +9.49% | $62,502,962.09 |
+| SOXS/USDT:USDT | +5.39% | $6,267,530.72 |
+| AIOT/USDT:USDT | +3.82% | $6,390,168.06 |
+| SILVER/USDT:USDT | +2.28% | $52,725,376.92 |
+| ARIA/USDT:USDT | +1.85% | $1,164,074.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.47% | +3.06% |
-| DRAM/USDT:USDT | below_1h_threshold | +1.74% | +2.34% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.01% | +1.61% |
-| TSMSTOCK/USDT:USDT | below_1h_threshold | +0.69% | +1.28% |
-| TESLA/USDT:USDT | below_1h_threshold | +0.69% | +1.28% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.47% | +2.82% |
+| AIOT/USDT:USDT | below_1h_threshold | +1.97% | +2.32% |
+| DRAM/USDT:USDT | below_1h_threshold | +1.74% | +2.09% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.01% | +1.36% |
+| AGT/USDT:USDT | below_1h_threshold | +0.94% | +1.29% |
 
 ## 7. 次に見るべき不足
 
