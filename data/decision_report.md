@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-09T16:26:42.429880+00:00
+- generated_at: 2026-11-09T16:31:26.013751+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18545**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-09T16:26:24.181252+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.75% price=74932.6
+- 更新: 2026-11-09T16:31:15.113476+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.83% price=74872.1
 - Funnel: target 1094 → liquid 150 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ON/USDT:USDT | +5.81% | $4,596,580.05 |
-| SOXS/USDT:USDT | +3.32% | $23,055,102.34 |
-| EDGE/USDT:USDT | +3.15% | $2,468,553.38 |
-| PIEVERSE/USDT:USDT | +2.85% | $5,665,914.80 |
-| MRNASTOCK/USDT:USDT | +1.89% | $2,427,694.63 |
+| ON/USDT:USDT | +6.08% | $4,678,906.12 |
+| SOXS/USDT:USDT | +4.04% | $23,187,541.73 |
+| EDGE/USDT:USDT | +2.34% | $2,508,228.79 |
+| MRNASTOCK/USDT:USDT | +1.98% | $2,460,658.77 |
+| PIEVERSE/USDT:USDT | +1.66% | $5,782,132.55 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EDGE/USDT:USDT | below_1h_threshold | +3.06% | +3.81% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +3.02% | +3.77% |
-| DELTAELECSTOCK/USDT:USDT | below_1h_threshold | +2.93% | +3.68% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +2.71% | +3.47% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +2.36% | +3.12% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +3.02% | +3.85% |
+| DELTAELECSTOCK/USDT:USDT | below_1h_threshold | +2.93% | +3.76% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +2.36% | +3.20% |
+| EDGE/USDT:USDT | below_1h_threshold | +2.34% | +3.18% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +1.90% | +2.73% |
 
 ## 7. 次に見るべき不足
 
