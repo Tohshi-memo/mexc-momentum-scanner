@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-09T08:26:29.918014+00:00
+- generated_at: 2026-11-09T08:31:29.978922+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18507**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-09T08:26:15.993174+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.49% price=74203.8
-- Funnel: target 1089 → liquid 139 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.7 >= 65=1, 4h RSI 86.5 >= 65=1
+- 更新: 2026-11-09T08:31:15.899990+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.42% price=74150.0
+- Funnel: target 1089 → liquid 140 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 87.6 >= 65=1, 4h RSI 66.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RITUAL/USDT:USDT | +44.73% | $1,170,879.39 |
-| AIOT/USDT:USDT | +13.73% | $7,002,396.97 |
-| PIEVERSE/USDT:USDT | +7.84% | $1,303,197.78 |
-| IDOL/USDT:USDT | +7.19% | $2,679,899.08 |
-| ANSEM/USDT:USDT | +6.54% | $1,120,327.53 |
+| RITUAL/USDT:USDT | +48.01% | $1,178,646.98 |
+| AIOT/USDT:USDT | +15.89% | $7,032,277.31 |
+| PIEVERSE/USDT:USDT | +7.41% | $1,307,817.05 |
+| ANSEM/USDT:USDT | +6.74% | $1,123,728.20 |
+| IDOL/USDT:USDT | +5.97% | $2,688,388.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +3.91% | +3.42% |
-| AIOT/USDT:USDT | below_1h_threshold | +2.95% | +2.46% |
-| SKYAI/USDT:USDT | below_1h_threshold | +2.65% | +2.16% |
-| AGT/USDT:USDT | below_1h_threshold | +2.32% | +1.83% |
-| PEPE/USDT:USDT | below_1h_threshold | +2.25% | +1.76% |
+| AIOT/USDT:USDT | below_relative_strength | +5.41% | +4.99% |
+| SOXS/USDT:USDT | below_1h_threshold | +3.91% | +3.50% |
+| AGT/USDT:USDT | below_1h_threshold | +2.60% | +2.18% |
+| RSR/USDT:USDT | below_1h_threshold | +2.28% | +1.87% |
+| JASMY/USDT:USDT | below_1h_threshold | +1.92% | +1.51% |
 
 ## 7. 次に見るべき不足
 
