@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-09T16:36:38.909227+00:00
+- generated_at: 2026-11-09T16:41:36.219965+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18545**
 
@@ -70,31 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-09T16:36:23.668483+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.63% price=75021.4
-- Funnel: target 1094 → liquid 150 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-09T16:41:22.855451+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.86% price=74852.9
+- Funnel: target 1094 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ON/USDT:USDT | +7.88% | $4,734,454.31 |
-| SOXS/USDT:USDT | +5.21% | $23,252,214.76 |
-| EDGE/USDT:USDT | +3.20% | $2,579,120.72 |
-| PIEVERSE/USDT:USDT | +2.18% | $5,826,947.80 |
-| MRNASTOCK/USDT:USDT | +2.00% | $2,468,730.22 |
+| SOXS/USDT:USDT | +4.33% | $23,642,218.75 |
+| ON/USDT:USDT | +3.94% | $4,769,845.02 |
+| MRNASTOCK/USDT:USDT | +2.35% | $2,476,019.67 |
+| RITUAL/USDT:USDT | +2.32% | $1,702,002.79 |
+| SQQQ/USDT:USDT | +1.58% | $1,687,457.85 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EDGE/USDT:USDT | below_1h_threshold | +3.20% | +3.84% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +3.02% | +3.65% |
-| DELTAELECSTOCK/USDT:USDT | below_1h_threshold | +2.93% | +3.56% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +2.23% | +2.87% |
-| RITUAL/USDT:USDT | below_1h_threshold | +1.62% | +2.25% |
+| ON/USDT:USDT | below_1h_threshold | +3.94% | +4.80% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +3.02% | +3.88% |
+| DELTAELECSTOCK/USDT:USDT | below_1h_threshold | +2.93% | +3.78% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +2.36% | +3.22% |
+| RITUAL/USDT:USDT | below_1h_threshold | +2.18% | +3.04% |
 
 ## 7. 次に見るべき不足
 
