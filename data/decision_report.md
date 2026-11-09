@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-09T22:11:28.912756+00:00
+- generated_at: 2026-11-09T22:16:12.407741+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18558**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-09T22:11:15.902899+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=75007.7
+- 更新: 2026-11-09T22:16:04.383878+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=75110.9
 - Funnel: target 1094 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| INIT/USDT:USDT | +46.96% | $2,486,854.19 |
-| NIUBI/USDT:USDT | +25.07% | $1,075,291.08 |
-| ON/USDT:USDT | +17.98% | $5,249,545.83 |
-| JCT/USDT:USDT | +10.50% | $34,092,695.80 |
-| BR/USDT:USDT | +4.65% | $1,674,991.06 |
+| INIT/USDT:USDT | +47.96% | $2,514,254.16 |
+| NIUBI/USDT:USDT | +21.05% | $1,083,544.39 |
+| ON/USDT:USDT | +18.31% | $5,259,522.31 |
+| JCT/USDT:USDT | +11.11% | $34,134,526.96 |
+| HOT/USDT:USDT | +4.70% | $2,692,900.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KORU/USDT:USDT | below_1h_threshold | +2.71% | +2.71% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +2.59% | +2.59% |
-| SNXX/USDT:USDT | below_1h_threshold | +2.44% | +2.43% |
-| CRWVSTOCK/USDT:USDT | below_1h_threshold | +2.22% | +2.22% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.66% | +1.65% |
+| KORU/USDT:USDT | below_1h_threshold | +2.71% | +2.57% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.44% | +2.30% |
+| CRWVSTOCK/USDT:USDT | below_1h_threshold | +2.22% | +2.08% |
+| ON/USDT:USDT | below_1h_threshold | +1.90% | +1.76% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +1.78% | +1.64% |
 
 ## 7. 次に見るべき不足
 
