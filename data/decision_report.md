@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-09T14:06:21.913845+00:00
+- generated_at: 2026-11-09T14:11:26.606676+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18528**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6690件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6691件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000297 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-09T14:06:08.509443+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=74614.1
+- 更新: 2026-11-09T14:11:12.814885+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.26% price=74499.3
 - Funnel: target 1094 → liquid 139 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.1 >= 65=1
+- Strict後reject: 4h RSI 70.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ON/USDT:USDT | +24.62% | $3,672,990.14 |
-| PIEVERSE/USDT:USDT | +19.78% | $2,707,295.02 |
-| EDGE/USDT:USDT | +17.19% | $1,058,572.75 |
-| RITUAL/USDT:USDT | +16.31% | $1,667,065.18 |
-| JCT/USDT:USDT | +15.69% | $58,217,410.32 |
+| ON/USDT:USDT | +23.06% | $3,734,644.63 |
+| PIEVERSE/USDT:USDT | +20.17% | $2,735,274.85 |
+| EDGE/USDT:USDT | +17.41% | $1,073,996.10 |
+| RITUAL/USDT:USDT | +16.48% | $1,668,770.79 |
+| IDOL/USDT:USDT | +11.36% | $2,207,099.23 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DELTAELECSTOCK/USDT:USDT | below_1h_threshold | +1.68% | +1.79% |
-| NGAS/USDT:USDT | below_1h_threshold | +1.37% | +1.48% |
-| EDGE/USDT:USDT | below_1h_threshold | +1.30% | +1.41% |
-| ANSEM/USDT:USDT | below_1h_threshold | +1.12% | +1.23% |
-| RITUAL/USDT:USDT | below_1h_threshold | +0.67% | +0.78% |
+| JCT/USDT:USDT | below_1h_threshold | +2.63% | +2.89% |
+| DELTAELECSTOCK/USDT:USDT | below_1h_threshold | +1.68% | +1.94% |
+| NGAS/USDT:USDT | below_1h_threshold | +1.37% | +1.63% |
+| EDGE/USDT:USDT | below_1h_threshold | +1.33% | +1.59% |
+| PEPE/USDT:USDT | below_1h_threshold | +0.86% | +1.12% |
 
 ## 7. 次に見るべき不足
 
