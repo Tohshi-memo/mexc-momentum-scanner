@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-09T14:21:20.928206+00:00
+- generated_at: 2026-11-09T14:26:16.619764+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18529**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6691件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6693件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000236 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-09T14:21:09.995901+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=74627.9
-- Funnel: target 1094 → liquid 139 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.9 >= 65=1
+- 更新: 2026-11-09T14:26:07.504750+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.19% price=74550.0
+- Funnel: target 1094 → liquid 139 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 74.7 >= 65=1, 4h RSI 66.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RITUAL/USDT:USDT | +19.75% | $1,677,016.64 |
-| PIEVERSE/USDT:USDT | +19.62% | $2,863,937.77 |
-| EDGE/USDT:USDT | +17.80% | $1,135,165.64 |
-| JCT/USDT:USDT | +12.35% | $59,002,930.10 |
-| ON/USDT:USDT | +10.21% | $3,859,772.70 |
+| RITUAL/USDT:USDT | +23.05% | $1,683,344.37 |
+| PIEVERSE/USDT:USDT | +20.75% | $2,905,085.90 |
+| EDGE/USDT:USDT | +17.44% | $1,174,205.93 |
+| JCT/USDT:USDT | +12.85% | $59,180,570.84 |
+| ON/USDT:USDT | +11.04% | $3,898,133.79 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JCT/USDT:USDT | below_1h_threshold | +4.96% | +5.05% |
-| RITUAL/USDT:USDT | below_1h_threshold | +3.65% | +3.74% |
-| EDGE/USDT:USDT | below_1h_threshold | +1.77% | +1.86% |
-| DELTAELECSTOCK/USDT:USDT | below_1h_threshold | +1.68% | +1.77% |
-| JASMY/USDT:USDT | below_1h_threshold | +1.51% | +1.60% |
+| AIOT/USDT:USDT | below_1h_threshold | +4.68% | +4.88% |
+| DELTAELECSTOCK/USDT:USDT | below_1h_threshold | +1.68% | +1.88% |
+| NGAS/USDT:USDT | below_1h_threshold | +1.37% | +1.56% |
+| EDGE/USDT:USDT | below_1h_threshold | +1.33% | +1.52% |
+| JASMY/USDT:USDT | below_1h_threshold | +1.32% | +1.51% |
 
 ## 7. 次に見るべき不足
 
