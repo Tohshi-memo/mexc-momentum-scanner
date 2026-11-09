@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-09T17:21:49.718509+00:00
+- generated_at: 2026-11-09T17:26:14.971435+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18547**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-09T17:21:35.958264+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.36% price=74765.2
+- 更新: 2026-11-09T17:26:06.740325+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.33% price=74786.8
 - Funnel: target 1094 → liquid 152 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ON/USDT:USDT | +12.29% | $4,998,034.03 |
-| RITUAL/USDT:USDT | +7.17% | $1,682,692.43 |
-| JCT/USDT:USDT | +4.35% | $55,646,600.45 |
-| AIOT/USDT:USDT | +2.94% | $5,848,507.26 |
-| MRNASTOCK/USDT:USDT | +2.42% | $2,633,649.66 |
+| ON/USDT:USDT | +11.16% | $5,008,006.68 |
+| RITUAL/USDT:USDT | +8.52% | $1,687,845.77 |
+| JCT/USDT:USDT | +5.88% | $55,704,527.01 |
+| AIOT/USDT:USDT | +2.80% | $5,849,352.01 |
+| MRNASTOCK/USDT:USDT | +2.45% | $2,634,822.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +3.24% | +3.60% |
-| SOXS/USDT:USDT | below_1h_threshold | +2.07% | +2.43% |
-| LIT/USDT:USDT | below_1h_threshold | +1.50% | +1.86% |
-| AKE/USDT:USDT | below_1h_threshold | +1.43% | +1.79% |
-| SNXX/USDT:USDT | below_1h_threshold | +1.07% | +1.43% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +3.24% | +3.57% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.07% | +2.40% |
+| JCT/USDT:USDT | below_1h_threshold | +2.03% | +2.36% |
+| LIT/USDT:USDT | below_1h_threshold | +1.77% | +2.10% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.07% | +1.40% |
 
 ## 7. 次に見るべき不足
 
