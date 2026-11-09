@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-09T05:01:17.366977+00:00
+- generated_at: 2026-11-09T05:06:22.994517+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18497**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-09T05:01:04.887975+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=74765.0
+- 更新: 2026-11-09T05:06:09.819547+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=74699.9
 - Funnel: target 1089 → liquid 130 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ANSEM/USDT:USDT | +15.74% | $1,038,612.31 |
-| DELTAELECSTOCK/USDT:USDT | +7.98% | $1,365,370.23 |
-| PIEVERSE/USDT:USDT | +6.13% | $1,125,496.69 |
-| ARB/USDT:USDT | +2.54% | $20,024,309.92 |
-| SILVER/USDT:USDT | +2.32% | $80,656,209.10 |
+| ANSEM/USDT:USDT | +15.74% | $1,041,253.64 |
+| DELTAELECSTOCK/USDT:USDT | +7.48% | $1,368,669.24 |
+| PIEVERSE/USDT:USDT | +6.39% | $1,131,923.02 |
+| AIOT/USDT:USDT | +3.70% | $6,425,513.24 |
+| ARB/USDT:USDT | +2.38% | $20,114,222.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| USELESS/USDT:USDT | below_1h_threshold | +0.53% | +0.57% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.42% | +0.47% |
-| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +0.35% | +0.39% |
-| TESLA/USDT:USDT | below_1h_threshold | +0.34% | +0.39% |
-| AVGOSTOCK/USDT:USDT | below_1h_threshold | +0.27% | +0.32% |
+| AIOT/USDT:USDT | below_1h_threshold | +2.69% | +2.83% |
+| HOT/USDT:USDT | below_1h_threshold | +2.05% | +2.19% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.21% | +1.35% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.42% | +0.56% |
+| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +0.35% | +0.48% |
 
 ## 7. 次に見るべき不足
 
