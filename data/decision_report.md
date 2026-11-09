@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-09T02:46:07.539018+00:00
+- generated_at: 2026-11-09T02:51:15.401308+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18496**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-09T02:45:58.514198+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.39% price=75423.3
+- 更新: 2026-11-09T02:51:02.508144+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=75236.3
 - Funnel: target 1089 → liquid 131 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ANSEM/USDT:USDT | +17.58% | $1,005,425.08 |
-| JASMY/USDT:USDT | +4.13% | $1,450,728.77 |
-| MET/USDT:USDT | +3.89% | $1,109,459.76 |
-| SOXL/USDT:USDT | +3.22% | $86,951,370.34 |
-| SNXX/USDT:USDT | +3.07% | $2,278,786.55 |
+| ANSEM/USDT:USDT | +17.79% | $1,008,312.48 |
+| AIN/USDT:USDT | +3.86% | $2,214,289.70 |
+| JASMY/USDT:USDT | +3.73% | $1,477,436.69 |
+| MET/USDT:USDT | +3.36% | $1,111,161.36 |
+| SILVER/USDT:USDT | +2.42% | $75,363,466.67 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ANSEM/USDT:USDT | below_1h_threshold | +3.79% | +3.40% |
-| JASMY/USDT:USDT | below_1h_threshold | +2.58% | +2.19% |
-| RSR/USDT:USDT | below_1h_threshold | +2.18% | +1.79% |
-| RENDER/USDT:USDT | below_1h_threshold | +1.40% | +1.01% |
-| TSMSTOCK/USDT:USDT | below_1h_threshold | +1.23% | +0.84% |
+| ANSEM/USDT:USDT | below_1h_threshold | +3.79% | +3.65% |
+| AIN/USDT:USDT | below_1h_threshold | +2.32% | +2.18% |
+| JASMY/USDT:USDT | below_1h_threshold | +2.13% | +1.99% |
+| ANTHROPIC/USDT:USDT | below_1h_threshold | +1.63% | +1.49% |
+| RSR/USDT:USDT | below_1h_threshold | +1.30% | +1.16% |
 
 ## 7. 次に見るべき不足
 
