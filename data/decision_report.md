@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-09T08:56:28.934363+00:00
+- generated_at: 2026-11-09T09:01:22.795377+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18510**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-09T08:56:12.746104+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.93% price=74529.6
-- Funnel: target 1089 → liquid 140 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.5 >= 65=1, 4h RSI 65.6 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-09T09:01:09.832648+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=74509.0
+- Funnel: target 1089 → liquid 139 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RITUAL/USDT:USDT | +54.57% | $1,315,781.09 |
-| AIOT/USDT:USDT | +15.10% | $7,239,042.50 |
-| PIEVERSE/USDT:USDT | +8.26% | $1,326,154.58 |
-| ANSEM/USDT:USDT | +6.74% | $1,131,674.46 |
-| IDOL/USDT:USDT | +5.17% | $2,730,891.44 |
+| RITUAL/USDT:USDT | +49.16% | $1,295,701.94 |
+| AIOT/USDT:USDT | +14.83% | $7,134,168.96 |
+| PIEVERSE/USDT:USDT | +9.05% | $1,291,642.54 |
+| ANSEM/USDT:USDT | +6.95% | $1,127,510.72 |
+| DELTAELECSTOCK/USDT:USDT | +4.78% | $1,646,565.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIOT/USDT:USDT | below_1h_threshold | +4.25% | +3.31% |
-| QNT/USDT:USDT | below_1h_threshold | +4.19% | +3.25% |
-| AGT/USDT:USDT | below_1h_threshold | +4.04% | +3.11% |
-| SOXS/USDT:USDT | below_1h_threshold | +3.91% | +2.98% |
-| RENDER/USDT:USDT | below_1h_threshold | +3.79% | +2.86% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +1.92% | +1.94% |
+| AVGOSTOCK/USDT:USDT | below_1h_threshold | +1.76% | +1.78% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.60% | +1.62% |
+| TSMSTOCK/USDT:USDT | below_1h_threshold | +1.53% | +1.55% |
+| RITUAL/USDT:USDT | below_1h_threshold | +1.08% | +1.10% |
 
 ## 7. 次に見るべき不足
 
