@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-09T20:36:31.307643+00:00
+- generated_at: 2026-11-09T20:41:02.292058+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18554**
 
