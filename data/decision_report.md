@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-09T01:36:15.588822+00:00
+- generated_at: 2026-11-09T01:41:27.072646+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18494**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6652件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6653件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000414 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-09T01:36:02.882399+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.35% price=74950.1
-- Funnel: target 1089 → liquid 128 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-09T01:41:15.134479+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.45% price=74873.7
+- Funnel: target 1089 → liquid 128 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.8 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JCT/USDT:USDT | +9.49% | $62,502,962.09 |
-| SOXS/USDT:USDT | +5.39% | $6,267,530.72 |
-| AIOT/USDT:USDT | +3.82% | $6,390,168.06 |
-| SILVER/USDT:USDT | +2.28% | $52,725,376.92 |
-| ARIA/USDT:USDT | +1.85% | $1,164,074.38 |
+| JCT/USDT:USDT | +18.75% | $62,925,852.49 |
+| SOXS/USDT:USDT | +3.87% | $6,321,938.53 |
+| SILVER/USDT:USDT | +2.52% | $53,189,449.78 |
+| AIOT/USDT:USDT | +2.27% | $6,403,068.05 |
+| ARIA/USDT:USDT | +2.06% | $1,164,621.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.47% | +2.82% |
-| AIOT/USDT:USDT | below_1h_threshold | +1.97% | +2.32% |
-| DRAM/USDT:USDT | below_1h_threshold | +1.74% | +2.09% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.01% | +1.36% |
-| AGT/USDT:USDT | below_1h_threshold | +0.94% | +1.29% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +2.49% | +2.94% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.47% | +2.92% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +1.82% | +2.27% |
+| DRAM/USDT:USDT | below_1h_threshold | +1.74% | +2.19% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.33% | +1.78% |
 
 ## 7. 次に見るべき不足
 
