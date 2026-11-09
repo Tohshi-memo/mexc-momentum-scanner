@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-09T11:31:14.055265+00:00
+- generated_at: 2026-11-09T11:36:26.888996+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18518**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6680件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6681件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000237 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-09T11:31:05.084703+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.48% price=74483.8
-- Funnel: target 1089 → liquid 141 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.6 >= 65=1
+- 更新: 2026-11-09T11:36:14.157224+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.73% price=74665.5
+- Funnel: target 1089 → liquid 141 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 80.8 >= 65=1, 4h RSI 80.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ON/USDT:USDT | +42.40% | $1,653,302.79 |
-| RITUAL/USDT:USDT | +27.10% | $1,535,979.16 |
-| PIEVERSE/USDT:USDT | +16.24% | $1,468,977.64 |
-| ANSEM/USDT:USDT | +10.42% | $1,145,908.06 |
-| IDOL/USDT:USDT | +9.77% | $2,814,410.37 |
+| ON/USDT:USDT | +42.19% | $1,698,743.57 |
+| RITUAL/USDT:USDT | +30.79% | $1,555,316.91 |
+| PIEVERSE/USDT:USDT | +15.79% | $1,494,769.02 |
+| IDOL/USDT:USDT | +14.55% | $2,845,209.64 |
+| ANSEM/USDT:USDT | +9.61% | $1,146,272.86 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RITUAL/USDT:USDT | below_1h_threshold | +3.47% | +2.99% |
-| USELESS/USDT:USDT | below_1h_threshold | +3.26% | +2.78% |
-| ON/USDT:USDT | below_1h_threshold | +2.54% | +2.05% |
-| ANSEM/USDT:USDT | below_1h_threshold | +2.47% | +1.98% |
-| SKYAI/USDT:USDT | below_1h_threshold | +2.37% | +1.88% |
+| USELESS/USDT:USDT | below_relative_strength | +5.21% | +4.48% |
+| IDOL/USDT:USDT | below_1h_threshold | +4.25% | +3.52% |
+| AKE/USDT:USDT | below_1h_threshold | +2.58% | +1.85% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.48% | +1.75% |
+| ON/USDT:USDT | below_1h_threshold | +2.46% | +1.73% |
 
 ## 7. 次に見るべき不足
 
