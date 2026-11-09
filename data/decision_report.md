@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-09T15:07:25.152336+00:00
+- generated_at: 2026-11-09T15:12:13.680935+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18532**
 
@@ -70,31 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-09T15:06:50.362331+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=74769.7
-- Funnel: target 1094 → liquid 145 → pre 50 → checked 50 → surge 10 → strict 10
-- Surge前reject: below_1h_threshold=40, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-09T15:11:40.862782+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.16% price=74987.6
+- Funnel: target 1094 → liquid 146 → pre 50 → checked 50 → surge 9 → strict 9
+- Surge前reject: below_1h_threshold=39, below_relative_strength=2, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PIEVERSE/USDT:USDT | +22.48% | $3,536,878.95 |
-| RITUAL/USDT:USDT | +19.91% | $1,685,129.20 |
-| EDGE/USDT:USDT | +15.78% | $1,576,763.25 |
-| SOXL/USDT:USDT | +13.50% | $373,195,004.98 |
-| MVLL/USDT:USDT | +13.43% | $1,855,294.28 |
+| PIEVERSE/USDT:USDT | +22.71% | $3,581,905.40 |
+| RITUAL/USDT:USDT | +20.48% | $1,686,934.85 |
+| MVLL/USDT:USDT | +16.64% | $1,944,486.50 |
+| SOXL/USDT:USDT | +16.03% | $389,272,753.79 |
+| EDGE/USDT:USDT | +15.84% | $1,591,176.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TESLA/USDT:USDT | below_1h_threshold | +4.90% | +5.04% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +4.86% | +4.99% |
-| SNOWSTOCK/USDT:USDT | below_1h_threshold | +4.68% | +4.81% |
-| DRAM/USDT:USDT | below_1h_threshold | +4.31% | +4.45% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +4.21% | +4.35% |
+| INTW/USDT:USDT | below_relative_strength | +5.14% | +4.98% |
+| TQQQ/USDT:USDT | below_relative_strength | +5.07% | +4.91% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +4.94% | +4.78% |
+| TESLA/USDT:USDT | below_1h_threshold | +4.90% | +4.75% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +4.86% | +4.70% |
 
 ## 7. 次に見るべき不足
 
