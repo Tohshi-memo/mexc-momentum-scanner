@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-09T13:31:15.512325+00:00
+- generated_at: 2026-11-09T13:36:14.193003+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18527**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-09T13:31:04.008205+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=74765.3
+- 更新: 2026-11-09T13:36:04.517639+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.31% price=74660.1
 - Funnel: target 1094 → liquid 139 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ON/USDT:USDT | +39.08% | $3,210,705.61 |
-| PIEVERSE/USDT:USDT | +19.32% | $2,515,358.37 |
-| RITUAL/USDT:USDT | +15.11% | $1,648,442.19 |
-| IDOL/USDT:USDT | +12.21% | $2,245,490.95 |
-| ANSEM/USDT:USDT | +11.45% | $1,153,661.36 |
+| ON/USDT:USDT | +33.22% | $3,293,947.20 |
+| PIEVERSE/USDT:USDT | +19.35% | $2,546,114.16 |
+| IDOL/USDT:USDT | +12.72% | $2,253,152.92 |
+| RITUAL/USDT:USDT | +11.25% | $1,650,554.27 |
+| ANSEM/USDT:USDT | +10.63% | $1,154,021.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MUU/USDT:USDT | below_1h_threshold | +4.29% | +4.46% |
-| AVAX/USDT:USDT | below_1h_threshold | +3.59% | +3.76% |
-| SOXL/USDT:USDT | below_1h_threshold | +3.28% | +3.45% |
-| NGAS/USDT:USDT | below_1h_threshold | +1.97% | +2.14% |
-| USELESS/USDT:USDT | below_1h_threshold | +1.39% | +1.57% |
+| AVAX/USDT:USDT | below_1h_threshold | +4.71% | +5.03% |
+| MUU/USDT:USDT | below_1h_threshold | +4.29% | +4.60% |
+| SOXL/USDT:USDT | below_1h_threshold | +3.28% | +3.59% |
+| NGAS/USDT:USDT | below_1h_threshold | +1.97% | +2.28% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.61% | +1.92% |
 
 ## 7. 次に見るべき不足
 
