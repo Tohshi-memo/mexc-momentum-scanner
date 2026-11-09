@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-09T08:06:27.046873+00:00
+- generated_at: 2026-11-09T08:11:11.419112+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18505**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6666件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6667件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000327 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-09T08:06:11.202985+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=73783.2
+- 更新: 2026-11-09T08:11:02.727023+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=73863.4
 - Funnel: target 1089 → liquid 137 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.0 >= 65=1
+- Strict後reject: 4h RSI 66.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RITUAL/USDT:USDT | +43.65% | $1,076,875.26 |
-| AIOT/USDT:USDT | +13.79% | $6,866,898.10 |
-| ANSEM/USDT:USDT | +6.74% | $1,105,297.32 |
-| PIEVERSE/USDT:USDT | +6.44% | $1,285,211.20 |
-| SOXS/USDT:USDT | +5.34% | $13,501,260.78 |
+| RITUAL/USDT:USDT | +41.79% | $1,092,272.12 |
+| AIOT/USDT:USDT | +13.15% | $6,892,373.84 |
+| PIEVERSE/USDT:USDT | +6.81% | $1,286,140.68 |
+| ANSEM/USDT:USDT | +6.13% | $1,110,400.89 |
+| DELTAELECSTOCK/USDT:USDT | +5.34% | $1,644,692.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +3.91% | +3.99% |
-| AIOT/USDT:USDT | below_1h_threshold | +2.83% | +2.90% |
-| IDOL/USDT:USDT | below_1h_threshold | +2.23% | +2.31% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.26% | +1.33% |
-| RENDER/USDT:USDT | below_1h_threshold | +0.72% | +0.80% |
+| RITUAL/USDT:USDT | below_1h_threshold | +4.91% | +4.88% |
+| SOXS/USDT:USDT | below_1h_threshold | +3.91% | +3.88% |
+| AIOT/USDT:USDT | below_1h_threshold | +2.43% | +2.40% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.09% | +1.06% |
+| BLESS/USDT:USDT | below_1h_threshold | +0.51% | +0.48% |
 
 ## 7. 次に見るべき不足
 
