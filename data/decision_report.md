@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-10T03:06:29.437987+00:00
+- generated_at: 2026-11-10T03:11:12.424622+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18574**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-10T03:06:13.640597+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=74728.9
-- Funnel: target 1094 → liquid 150 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-10T03:11:01.848994+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=74802.9
+- Funnel: target 1094 → liquid 150 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIUBI/USDT:USDT | +60.06% | $1,881,691.47 |
-| INIT/USDT:USDT | +24.38% | $4,343,918.09 |
-| CLAUDIA/USDT:USDT | +12.15% | $1,049,296.25 |
-| ZHIPUSTOCK/USDT:USDT | +11.48% | $1,331,438.28 |
-| BR/USDT:USDT | +11.15% | $2,246,056.23 |
+| NIUBI/USDT:USDT | +55.41% | $1,885,894.95 |
+| INIT/USDT:USDT | +25.79% | $4,382,106.63 |
+| ZHIPUSTOCK/USDT:USDT | +11.09% | $1,341,572.81 |
+| BR/USDT:USDT | +10.77% | $2,262,064.99 |
+| CLAUDIA/USDT:USDT | +10.36% | $1,051,291.53 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +2.68% | +2.83% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +2.64% | +2.80% |
-| IDOL/USDT:USDT | below_1h_threshold | +1.66% | +1.81% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.07% | +1.22% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.89% | +1.04% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +3.79% | +3.85% |
+| NIUBI/USDT:USDT | below_1h_threshold | +3.72% | +3.77% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +2.68% | +2.74% |
+| IDOL/USDT:USDT | below_1h_threshold | +1.18% | +1.24% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.07% | +1.12% |
 
 ## 7. 次に見るべき不足
 
