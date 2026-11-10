@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-10T09:41:23.370069+00:00
+- generated_at: 2026-11-10T09:46:13.893226+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18590**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-10T09:41:10.228758+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.47% price=74351.2
+- 更新: 2026-11-10T09:46:03.406675+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.34% price=74447.1
 - Funnel: target 1094 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| INIT/USDT:USDT | +64.34% | $13,158,849.72 |
-| ONE/USDT:USDT | +22.33% | $5,917,983.05 |
-| ARIA/USDT:USDT | +10.44% | $1,282,218.33 |
-| ZHIPUSTOCK/USDT:USDT | +10.11% | $1,536,018.05 |
-| NIUBI/USDT:USDT | +9.90% | $2,329,889.52 |
+| INIT/USDT:USDT | +64.51% | $13,218,374.76 |
+| ONE/USDT:USDT | +21.67% | $5,952,031.73 |
+| NIUBI/USDT:USDT | +12.38% | $2,331,933.95 |
+| ZHIPUSTOCK/USDT:USDT | +10.16% | $1,536,868.15 |
+| ARIA/USDT:USDT | +9.74% | $1,285,392.87 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIN/USDT:USDT | below_1h_threshold | +4.12% | +4.59% |
-| SOXL/USDT:USDT | below_1h_threshold | +2.85% | +3.31% |
-| INIT/USDT:USDT | below_1h_threshold | +2.09% | +2.55% |
-| MUU/USDT:USDT | below_1h_threshold | +1.43% | +1.89% |
-| KORU/USDT:USDT | below_1h_threshold | +1.04% | +1.51% |
+| AIN/USDT:USDT | below_1h_threshold | +4.23% | +4.57% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.85% | +3.19% |
+| INIT/USDT:USDT | below_1h_threshold | +1.56% | +1.90% |
+| MUU/USDT:USDT | below_1h_threshold | +1.43% | +1.77% |
+| NIUBI/USDT:USDT | below_1h_threshold | +1.11% | +1.45% |
 
 ## 7. 次に見るべき不足
 
