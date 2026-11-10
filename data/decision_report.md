@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-10T15:22:03.961938+00:00
+- generated_at: 2026-11-10T15:27:07.765154+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18608**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6781件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6782件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000303 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-10T15:21:39.464840+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.23% price=74544.5
-- Funnel: target 1099 → liquid 149 → pre 50 → checked 50 → surge 8 → strict 6
-- Surge前reject: below_1h_threshold=42, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.3 >= 65=1, 4h RSI 70.3 >= 65=1
+- 更新: 2026-11-10T15:26:41.448591+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=74426.1
+- Funnel: target 1099 → liquid 149 → pre 50 → checked 50 → surge 9 → strict 7
+- Surge前reject: below_1h_threshold=41, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 74.2 >= 65=1, 4h RSI 69.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| INIT/USDT:USDT | +88.65% | $27,341,205.22 |
-| ARIA/USDT:USDT | +20.10% | $2,674,519.19 |
-| ONE/USDT:USDT | +16.19% | $9,753,056.19 |
-| ZHIPUSTOCK/USDT:USDT | +11.64% | $1,637,384.44 |
-| BR/USDT:USDT | +11.57% | $3,782,268.64 |
+| INIT/USDT:USDT | +92.04% | $27,595,091.85 |
+| ARIA/USDT:USDT | +18.54% | $2,692,262.49 |
+| ONE/USDT:USDT | +16.38% | $9,785,244.44 |
+| BR/USDT:USDT | +12.05% | $3,784,652.55 |
+| ZHIPUSTOCK/USDT:USDT | +11.52% | $1,637,699.36 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +4.68% | +4.45% |
-| BTW/USDT:USDT | below_1h_threshold | +4.45% | +4.22% |
-| SNOWSTOCK/USDT:USDT | below_1h_threshold | +3.76% | +3.53% |
-| TSMSTOCK/USDT:USDT | below_1h_threshold | +3.36% | +3.12% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +3.05% | +2.82% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +4.68% | +4.61% |
+| BTW/USDT:USDT | below_1h_threshold | +4.60% | +4.53% |
+| SNOWSTOCK/USDT:USDT | below_1h_threshold | +3.76% | +3.69% |
+| TSMSTOCK/USDT:USDT | below_1h_threshold | +3.36% | +3.28% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +1.99% | +1.92% |
 
 ## 7. 次に見るべき不足
 
