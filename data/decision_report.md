@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-10T00:01:24.181901+00:00
+- generated_at: 2026-11-10T00:06:13.795473+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18564**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-10T00:01:13.076229+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=75339.3
+- 更新: 2026-11-10T00:06:05.352641+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=75319.9
 - Funnel: target 1094 → liquid 152 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIUBI/USDT:USDT | +50.77% | $1,295,852.17 |
-| INIT/USDT:USDT | +41.60% | $3,400,664.82 |
-| ON/USDT:USDT | +13.77% | $5,346,116.18 |
-| JCT/USDT:USDT | +5.75% | $30,007,602.86 |
-| CLAUDIA/USDT:USDT | +5.70% | $1,070,795.86 |
+| NIUBI/USDT:USDT | +56.65% | $1,331,496.92 |
+| INIT/USDT:USDT | +44.69% | $3,445,979.52 |
+| ON/USDT:USDT | +13.77% | $5,348,219.32 |
+| JCT/USDT:USDT | +6.30% | $30,078,526.92 |
+| HOT/USDT:USDT | +3.84% | $2,801,673.89 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MVLL/USDT:USDT | below_1h_threshold | +1.23% | +1.21% |
-| CLAUDIA/USDT:USDT | below_1h_threshold | +1.19% | +1.17% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.16% | +1.15% |
-| INTW/USDT:USDT | below_1h_threshold | +1.00% | +0.99% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +0.88% | +0.86% |
+| NIUBI/USDT:USDT | below_1h_threshold | +3.27% | +3.28% |
+| AIN/USDT:USDT | below_1h_threshold | +1.69% | +1.70% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +1.57% | +1.58% |
+| MVLL/USDT:USDT | below_1h_threshold | +1.23% | +1.24% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.16% | +1.17% |
 
 ## 7. 次に見るべき不足
 
