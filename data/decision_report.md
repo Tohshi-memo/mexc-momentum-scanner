@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-10T08:01:25.478288+00:00
+- generated_at: 2026-11-10T08:06:23.599034+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18587**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-10T08:01:09.951857+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=74766.1
+- 更新: 2026-11-10T08:06:10.314041+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=74820.1
 - Funnel: target 1094 → liquid 145 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| INIT/USDT:USDT | +63.61% | $11,294,895.77 |
-| ON/USDT:USDT | +28.87% | $5,754,980.32 |
-| ARIA/USDT:USDT | +13.70% | $1,038,493.86 |
-| NIUBI/USDT:USDT | +12.07% | $2,245,906.81 |
-| CLAUDIA/USDT:USDT | +11.48% | $1,008,274.94 |
+| INIT/USDT:USDT | +67.92% | $11,440,755.02 |
+| ON/USDT:USDT | +27.27% | $5,766,926.70 |
+| NIUBI/USDT:USDT | +18.26% | $2,256,271.46 |
+| CLAUDIA/USDT:USDT | +13.20% | $1,009,835.65 |
+| ONE/USDT:USDT | +12.80% | $4,602,677.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ARIA/USDT:USDT | below_1h_threshold | +1.84% | +1.89% |
-| IDOL/USDT:USDT | below_1h_threshold | +0.66% | +0.71% |
-| NVIDIA/USDT:USDT | below_1h_threshold | +0.60% | +0.66% |
-| ON/USDT:USDT | below_1h_threshold | +0.57% | +0.63% |
-| KORU/USDT:USDT | below_1h_threshold | +0.39% | +0.45% |
+| NIUBI/USDT:USDT | below_1h_threshold | +4.10% | +4.08% |
+| ONE/USDT:USDT | below_1h_threshold | +2.28% | +2.26% |
+| CLAUDIA/USDT:USDT | below_1h_threshold | +1.31% | +1.29% |
+| INIT/USDT:USDT | below_1h_threshold | +0.79% | +0.77% |
+| SOXL/USDT:USDT | below_1h_threshold | +0.68% | +0.66% |
 
 ## 7. 次に見るべき不足
 
