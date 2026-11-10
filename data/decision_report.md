@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-10T12:56:22.955922+00:00
+- generated_at: 2026-11-10T13:01:21.982566+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18597**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-10T12:56:09.751597+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=74345.0
-- Funnel: target 1099 → liquid 146 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.9 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-10T13:01:08.847893+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=74310.0
+- Funnel: target 1099 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| INIT/USDT:USDT | +55.22% | $17,697,891.49 |
-| ONE/USDT:USDT | +25.23% | $9,236,047.43 |
-| ARIA/USDT:USDT | +14.01% | $2,461,899.80 |
-| ZHIPUSTOCK/USDT:USDT | +9.91% | $1,586,880.23 |
-| BR/USDT:USDT | +8.31% | $3,424,008.94 |
+| INIT/USDT:USDT | +52.43% | $17,758,609.52 |
+| ONE/USDT:USDT | +25.72% | $9,008,866.56 |
+| ARIA/USDT:USDT | +13.50% | $2,475,039.45 |
+| BR/USDT:USDT | +10.35% | $3,413,122.24 |
+| ZHIPUSTOCK/USDT:USDT | +10.00% | $1,589,641.17 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ONE/USDT:USDT | below_1h_threshold | +2.53% | +2.59% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +2.15% | +2.21% |
-| BR/USDT:USDT | below_1h_threshold | +2.11% | +2.17% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +1.77% | +1.83% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +1.51% | +1.57% |
+| BR/USDT:USDT | below_1h_threshold | +0.91% | +0.98% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.76% | +0.82% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +0.46% | +0.53% |
+| AAPLSTOCK/USDT:USDT | below_1h_threshold | +0.34% | +0.41% |
+| MSFTSTOCK/USDT:USDT | below_1h_threshold | +0.24% | +0.31% |
 
 ## 7. 次に見るべき不足
 
