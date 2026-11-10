@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-10T02:26:17.674767+00:00
+- generated_at: 2026-11-10T02:31:24.040392+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18570**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-10T02:26:06.961895+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.29% price=74828.8
+- 更新: 2026-11-10T02:31:10.752271+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.29% price=74828.1
 - Funnel: target 1094 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,11 +79,11 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIUBI/USDT:USDT | +63.46% | $1,822,491.69 |
-| INIT/USDT:USDT | +51.45% | $4,078,896.18 |
-| CLAUDIA/USDT:USDT | +16.36% | $1,079,026.77 |
-| ON/USDT:USDT | +11.63% | $5,431,555.94 |
-| ZHIPUSTOCK/USDT:USDT | +11.36% | $1,293,271.26 |
+| NIUBI/USDT:USDT | +58.51% | $1,835,493.15 |
+| INIT/USDT:USDT | +53.13% | $4,089,238.01 |
+| CLAUDIA/USDT:USDT | +13.68% | $1,081,173.48 |
+| ZHIPUSTOCK/USDT:USDT | +13.47% | $1,389,187.26 |
+| HOT/USDT:USDT | +11.42% | $2,903,625.42 |
 
 ### Near Miss
 
@@ -91,9 +91,9 @@
 |---|---|---:|---:|
 | ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +4.46% | +4.75% |
 | DELTAELECSTOCK/USDT:USDT | below_1h_threshold | +3.59% | +3.88% |
-| NIUBI/USDT:USDT | below_1h_threshold | +3.34% | +3.63% |
-| GRAM/USDT:USDT | below_1h_threshold | +2.10% | +2.39% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +1.74% | +2.03% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +2.74% | +3.03% |
+| GRAM/USDT:USDT | below_1h_threshold | +1.91% | +2.20% |
+| HOT/USDT:USDT | below_1h_threshold | +1.25% | +1.54% |
 
 ## 7. 次に見るべき不足
 
