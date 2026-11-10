@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-10T12:46:37.979414+00:00
+- generated_at: 2026-11-10T12:51:28.302465+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18597**
 
@@ -70,30 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-10T12:46:27.065482+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.24% price=74214.4
-- Funnel: target 1099 → liquid 146 → pre 50 → checked 49 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=1
+- 更新: 2026-11-10T12:51:17.302090+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=74326.5
+- Funnel: target 1099 → liquid 146 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 68.3 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| INIT/USDT:USDT | +50.71% | $17,527,439.49 |
-| ONE/USDT:USDT | +23.49% | $9,192,662.18 |
-| ARIA/USDT:USDT | +11.70% | $2,397,097.19 |
-| ZHIPUSTOCK/USDT:USDT | +9.61% | $1,585,008.39 |
-| BR/USDT:USDT | +7.91% | $3,395,911.63 |
+| INIT/USDT:USDT | +52.19% | $17,612,402.56 |
+| ONE/USDT:USDT | +24.91% | $9,211,087.48 |
+| ARIA/USDT:USDT | +12.60% | $2,442,098.22 |
+| ZHIPUSTOCK/USDT:USDT | +9.86% | $1,586,487.76 |
+| BR/USDT:USDT | +8.31% | $3,403,054.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| INIT/USDT:USDT | below_1h_threshold | +4.50% | +4.73% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +2.15% | +2.38% |
-| BR/USDT:USDT | below_1h_threshold | +1.73% | +1.97% |
-| GRAM/USDT:USDT | below_1h_threshold | +1.39% | +1.63% |
-| NGAS/USDT:USDT | below_1h_threshold | +1.23% | +1.46% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +2.15% | +2.23% |
+| BR/USDT:USDT | below_1h_threshold | +2.11% | +2.20% |
+| ONE/USDT:USDT | below_1h_threshold | +2.03% | +2.12% |
+| GRAM/USDT:USDT | below_1h_threshold | +1.58% | +1.66% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +1.24% | +1.33% |
 
 ## 7. 次に見るべき不足
 
