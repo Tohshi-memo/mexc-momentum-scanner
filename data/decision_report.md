@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-10T01:21:25.680530+00:00
+- generated_at: 2026-11-10T01:26:26.385091+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18568**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-10T01:21:12.532333+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=75108.5
+- 更新: 2026-11-10T01:26:13.210590+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=75080.4
 - Funnel: target 1094 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIUBI/USDT:USDT | +54.17% | $1,726,656.35 |
-| INIT/USDT:USDT | +49.42% | $3,855,881.83 |
-| ON/USDT:USDT | +10.02% | $5,403,742.31 |
-| HOT/USDT:USDT | +7.31% | $2,825,364.98 |
-| CLAUDIA/USDT:USDT | +5.29% | $1,058,390.93 |
+| INIT/USDT:USDT | +51.56% | $3,869,358.68 |
+| NIUBI/USDT:USDT | +46.13% | $1,741,725.30 |
+| ON/USDT:USDT | +10.16% | $5,406,765.11 |
+| HOT/USDT:USDT | +7.12% | $2,833,299.21 |
+| DELTAELECSTOCK/USDT:USDT | +5.18% | $1,906,569.77 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +2.59% | +2.51% |
-| CLAUDIA/USDT:USDT | below_1h_threshold | +1.26% | +1.18% |
-| SILVER/USDT:USDT | below_1h_threshold | +0.70% | +0.62% |
-| BR/USDT:USDT | below_1h_threshold | +0.66% | +0.59% |
-| NGAS/USDT:USDT | below_1h_threshold | +0.56% | +0.49% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.59% | +2.55% |
+| CLAUDIA/USDT:USDT | below_1h_threshold | +1.23% | +1.19% |
+| SQQQ/USDT:USDT | below_1h_threshold | +0.94% | +0.90% |
+| JUP/USDT:USDT | below_1h_threshold | +0.75% | +0.71% |
+| SILVER/USDT:USDT | below_1h_threshold | +0.71% | +0.68% |
 
 ## 7. 次に見るべき不足
 
