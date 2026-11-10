@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-10T08:36:21.120393+00:00
+- generated_at: 2026-11-10T08:41:29.808393+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18589**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-10T08:36:09.388499+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.43% price=74482.4
+- 更新: 2026-11-10T08:41:14.159574+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.38% price=74523.1
 - Funnel: target 1094 → liquid 147 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| INIT/USDT:USDT | +59.85% | $12,155,601.81 |
-| ON/USDT:USDT | +25.60% | $5,835,302.68 |
-| ONE/USDT:USDT | +19.25% | $5,145,935.30 |
-| NIUBI/USDT:USDT | +17.02% | $2,288,795.65 |
-| ARIA/USDT:USDT | +12.21% | $1,224,450.50 |
+| INIT/USDT:USDT | +58.65% | $12,246,400.07 |
+| ONE/USDT:USDT | +22.04% | $5,288,745.50 |
+| ON/USDT:USDT | +21.72% | $5,850,164.80 |
+| NIUBI/USDT:USDT | +16.40% | $2,289,506.92 |
+| ARIA/USDT:USDT | +10.60% | $1,235,302.47 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIUBI/USDT:USDT | below_1h_threshold | +3.28% | +3.71% |
-| AIOT/USDT:USDT | below_1h_threshold | +1.74% | +2.17% |
-| BR/USDT:USDT | below_1h_threshold | +1.49% | +1.92% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +1.29% | +1.72% |
-| IDOL/USDT:USDT | below_1h_threshold | +1.22% | +1.65% |
+| NIUBI/USDT:USDT | below_1h_threshold | +3.01% | +3.38% |
+| AIOT/USDT:USDT | below_1h_threshold | +1.84% | +2.21% |
+| BR/USDT:USDT | below_1h_threshold | +1.81% | +2.18% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +1.38% | +1.75% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +1.33% | +1.70% |
 
 ## 7. 次に見るべき不足
 
