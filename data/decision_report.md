@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-10T21:56:14.853246+00:00
+- generated_at: 2026-11-10T22:01:25.329352+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18628**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-10T21:56:05.629491+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=73814.6
-- Funnel: target 1099 → liquid 155 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-11-10T22:01:14.605912+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=73866.0
+- Funnel: target 1099 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| USELESS/USDT:USDT | +6.75% | $3,023,967.95 |
-| MUU/USDT:USDT | +4.69% | $14,489,131.00 |
-| INJ/USDT:USDT | +4.66% | $17,047,459.33 |
-| GRAM/USDT:USDT | +4.64% | $2,461,279.20 |
-| RKLBSTOCK/USDT:USDT | +4.54% | $1,809,701.30 |
+| USELESS/USDT:USDT | +7.08% | $2,967,923.10 |
+| GRAM/USDT:USDT | +4.73% | $2,388,100.23 |
+| INJ/USDT:USDT | +4.70% | $16,396,645.22 |
+| RKLBSTOCK/USDT:USDT | +4.56% | $1,177,715.52 |
+| MUU/USDT:USDT | +4.42% | $14,468,573.75 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RKLBSTOCK/USDT:USDT | below_1h_threshold | +4.93% | +4.85% |
-| MUU/USDT:USDT | below_1h_threshold | +3.20% | +3.13% |
-| USELESS/USDT:USDT | below_1h_threshold | +3.03% | +2.96% |
-| CRWVSTOCK/USDT:USDT | below_1h_threshold | +2.97% | +2.89% |
-| LIT/USDT:USDT | below_1h_threshold | +2.47% | +2.39% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.22% | +1.15% |
+| TQQQ/USDT:USDT | below_1h_threshold | +0.71% | +0.64% |
+| AAOISTOCK/USDT:USDT | below_1h_threshold | +0.56% | +0.50% |
+| TSMSTOCK/USDT:USDT | below_1h_threshold | +0.52% | +0.46% |
+| MVLL/USDT:USDT | below_1h_threshold | +0.48% | +0.42% |
 
 ## 7. 次に見るべき不足
 
