@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-10T22:46:18.439937+00:00
+- generated_at: 2026-11-10T22:51:20.617239+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18629**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-10T22:46:08.334255+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=73695.2
-- Funnel: target 1099 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-11-10T22:51:11.619503+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=73764.7
+- Funnel: target 1099 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| USELESS/USDT:USDT | +6.70% | $3,119,585.19 |
-| ICP/USDT:USDT | +5.27% | $2,610,337.42 |
-| MUU/USDT:USDT | +4.49% | $14,477,920.56 |
-| RKLBSTOCK/USDT:USDT | +4.07% | $1,184,602.30 |
-| GRAM/USDT:USDT | +4.00% | $2,437,890.45 |
+| USELESS/USDT:USDT | +6.43% | $3,137,002.48 |
+| ICP/USDT:USDT | +6.03% | $2,692,471.22 |
+| MUU/USDT:USDT | +4.69% | $14,478,329.92 |
+| RKLBSTOCK/USDT:USDT | +4.10% | $1,184,950.68 |
+| GRAM/USDT:USDT | +3.91% | $2,438,680.18 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ARIA/USDT:USDT | below_1h_threshold | +4.86% | +5.03% |
-| AKE/USDT:USDT | below_1h_threshold | +4.25% | +4.42% |
-| ICP/USDT:USDT | below_1h_threshold | +2.04% | +2.21% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.22% | +1.38% |
-| ONE/USDT:USDT | below_1h_threshold | +1.16% | +1.33% |
+| ARIA/USDT:USDT | below_1h_threshold | +3.82% | +3.90% |
+| AKE/USDT:USDT | below_1h_threshold | +3.27% | +3.35% |
+| ICP/USDT:USDT | below_1h_threshold | +2.74% | +2.82% |
+| IDOL/USDT:USDT | below_1h_threshold | +1.71% | +1.79% |
+| ONE/USDT:USDT | below_1h_threshold | +1.53% | +1.60% |
 
 ## 7. 次に見るべき不足
 
