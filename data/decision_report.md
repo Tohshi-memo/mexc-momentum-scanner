@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-10T20:51:32.228259+00:00
+- generated_at: 2026-11-10T20:56:27.858870+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18628**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-10T20:51:16.719765+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.51% price=73813.2
+- 更新: 2026-11-10T20:56:17.063391+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.51% price=73809.1
 - Funnel: target 1099 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RKLBSTOCK/USDT:USDT | +4.95% | $1,836,221.12 |
-| AIN/USDT:USDT | +3.92% | $1,646,704.94 |
-| UAI/USDT:USDT | +3.74% | $5,178,980.82 |
-| USELESS/USDT:USDT | +3.70% | $2,905,140.26 |
-| MUU/USDT:USDT | +3.66% | $15,107,084.99 |
+| RKLBSTOCK/USDT:USDT | +5.86% | $1,838,919.52 |
+| MUU/USDT:USDT | +4.07% | $15,117,886.94 |
+| SNXX/USDT:USDT | +3.88% | $24,396,708.20 |
+| AIN/USDT:USDT | +3.87% | $1,647,614.16 |
+| USELESS/USDT:USDT | +3.39% | $2,906,444.81 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UAI/USDT:USDT | below_1h_threshold | +4.00% | +3.49% |
-| AIN/USDT:USDT | below_1h_threshold | +2.38% | +1.87% |
-| SPX/USDT:USDT | below_1h_threshold | +2.16% | +1.65% |
-| LIT/USDT:USDT | below_1h_threshold | +1.61% | +1.10% |
-| JUP/USDT:USDT | below_1h_threshold | +1.58% | +1.07% |
+| UAI/USDT:USDT | below_1h_threshold | +3.25% | +2.74% |
+| AIN/USDT:USDT | below_1h_threshold | +2.44% | +1.93% |
+| GRAM/USDT:USDT | below_1h_threshold | +1.99% | +1.49% |
+| SPX/USDT:USDT | below_1h_threshold | +1.87% | +1.36% |
+| LIT/USDT:USDT | below_1h_threshold | +1.55% | +1.05% |
 
 ## 7. 次に見るべき不足
 
