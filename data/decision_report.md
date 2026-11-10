@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-10T14:56:30.262706+00:00
+- generated_at: 2026-11-10T15:02:26.569828+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18607**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6767件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6781件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000311 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-10T14:56:12.607938+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.86% price=74349.9
-- Funnel: target 1099 → liquid 148 → pre 50 → checked 50 → surge 3 → strict 2
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.3 >= 65=1
+- 更新: 2026-11-10T15:01:50.014266+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.25% price=74561.0
+- Funnel: target 1099 → liquid 147 → pre 50 → checked 50 → surge 14 → strict 11
+- Surge前reject: below_1h_threshold=36, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 74.5 >= 65=1, 4h RSI 70.9 >= 65=1, 4h RSI 68.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| INIT/USDT:USDT | +97.56% | $24,997,700.00 |
-| ONE/USDT:USDT | +17.21% | $9,850,934.10 |
-| ARIA/USDT:USDT | +16.19% | $2,764,609.92 |
-| ZHIPUSTOCK/USDT:USDT | +11.05% | $1,623,491.26 |
-| BR/USDT:USDT | +10.64% | $3,806,698.73 |
+| INIT/USDT:USDT | +93.71% | $25,623,624.91 |
+| ARIA/USDT:USDT | +20.02% | $2,620,520.07 |
+| ONE/USDT:USDT | +19.29% | $9,597,077.41 |
+| ZHIPUSTOCK/USDT:USDT | +11.84% | $1,621,171.18 |
+| NIUBI/USDT:USDT | +11.14% | $2,468,141.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PEPE/USDT:USDT | below_1h_threshold | +4.81% | +3.95% |
-| LIT/USDT:USDT | below_1h_threshold | +4.70% | +3.84% |
-| ARIA/USDT:USDT | below_1h_threshold | +3.17% | +2.31% |
-| SQQQ/USDT:USDT | below_1h_threshold | +2.89% | +2.03% |
-| NEAR/USDT:USDT | below_1h_threshold | +2.37% | +1.51% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +4.68% | +4.43% |
+| TQQQ/USDT:USDT | below_1h_threshold | +3.95% | +3.69% |
+| SNOWSTOCK/USDT:USDT | below_1h_threshold | +3.76% | +3.51% |
+| TSMSTOCK/USDT:USDT | below_1h_threshold | +3.36% | +3.10% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +3.05% | +2.80% |
 
 ## 7. 次に見るべき不足
 
