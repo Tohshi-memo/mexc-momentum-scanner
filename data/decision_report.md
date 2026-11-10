@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-10T06:06:25.264190+00:00
+- generated_at: 2026-11-10T06:11:27.658008+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18584**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-10T06:06:12.017894+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=74713.1
+- 更新: 2026-11-10T06:11:14.544292+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=74680.1
 - Funnel: target 1094 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| INIT/USDT:USDT | +61.98% | $7,967,950.52 |
-| NIUBI/USDT:USDT | +22.29% | $2,125,051.43 |
-| ON/USDT:USDT | +19.98% | $5,433,858.36 |
-| CLAUDIA/USDT:USDT | +12.77% | $1,051,853.73 |
-| ZHIPUSTOCK/USDT:USDT | +10.64% | $1,475,587.93 |
+| INIT/USDT:USDT | +59.65% | $8,088,275.79 |
+| NIUBI/USDT:USDT | +27.55% | $2,128,556.97 |
+| ON/USDT:USDT | +19.58% | $5,444,299.19 |
+| CLAUDIA/USDT:USDT | +11.89% | $1,054,207.79 |
+| ZHIPUSTOCK/USDT:USDT | +10.52% | $1,488,827.75 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ON/USDT:USDT | below_1h_threshold | +2.92% | +3.02% |
-| KORU/USDT:USDT | below_1h_threshold | +2.66% | +2.76% |
-| TSMSTOCK/USDT:USDT | below_1h_threshold | +1.54% | +1.64% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.99% | +1.09% |
-| EWY/USDT:USDT | below_1h_threshold | +0.86% | +0.96% |
+| NIUBI/USDT:USDT | below_1h_threshold | +3.27% | +3.41% |
+| KORU/USDT:USDT | below_1h_threshold | +2.66% | +2.81% |
+| ON/USDT:USDT | below_1h_threshold | +2.40% | +2.55% |
+| TSMSTOCK/USDT:USDT | below_1h_threshold | +1.54% | +1.68% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.99% | +1.13% |
 
 ## 7. 次に見るべき不足
 
