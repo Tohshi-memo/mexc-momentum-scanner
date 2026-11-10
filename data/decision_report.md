@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-10T00:56:12.262199+00:00
+- generated_at: 2026-11-10T01:01:10.527298+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18568**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-10T00:56:01.675330+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.48% price=74967.7
-- Funnel: target 1094 → liquid 152 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.6 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-10T01:01:01.628491+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=75095.7
+- Funnel: target 1094 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIUBI/USDT:USDT | +67.80% | $1,632,053.46 |
-| INIT/USDT:USDT | +55.48% | $3,739,439.49 |
-| ON/USDT:USDT | +13.56% | $5,385,319.49 |
-| CLAUDIA/USDT:USDT | +8.89% | $1,105,195.73 |
-| HOT/USDT:USDT | +6.69% | $2,847,440.26 |
+| NIUBI/USDT:USDT | +70.89% | $1,645,442.31 |
+| INIT/USDT:USDT | +50.82% | $3,756,275.19 |
+| ON/USDT:USDT | +13.36% | $5,379,955.27 |
+| HOT/USDT:USDT | +6.57% | $2,813,477.71 |
+| CLAUDIA/USDT:USDT | +4.78% | $1,049,151.35 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CLAUDIA/USDT:USDT | below_1h_threshold | +4.09% | +4.57% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +3.32% | +3.80% |
-| HOT/USDT:USDT | below_1h_threshold | +2.98% | +3.46% |
-| AIN/USDT:USDT | below_1h_threshold | +1.45% | +1.92% |
-| PI/USDT:USDT | below_1h_threshold | +1.42% | +1.90% |
+| NIUBI/USDT:USDT | below_1h_threshold | +1.47% | +1.42% |
+| AIOT/USDT:USDT | below_1h_threshold | +1.09% | +1.03% |
+| NGAS/USDT:USDT | below_1h_threshold | +0.56% | +0.50% |
+| CLAUDIA/USDT:USDT | below_1h_threshold | +0.55% | +0.49% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +0.50% | +0.45% |
 
 ## 7. 次に見るべき不足
 
