@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-10T11:21:28.293663+00:00
+- generated_at: 2026-11-10T11:26:28.592510+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18596**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-10T11:21:14.667594+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=74189.4
+- 更新: 2026-11-10T11:26:15.337051+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=74235.0
 - Funnel: target 1094 → liquid 147 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.9 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| INIT/USDT:USDT | +52.79% | $14,879,706.08 |
-| ONE/USDT:USDT | +26.03% | $8,335,793.59 |
-| ARIA/USDT:USDT | +21.68% | $1,532,152.28 |
-| NIUBI/USDT:USDT | +20.12% | $2,434,829.66 |
-| ZHIPUSTOCK/USDT:USDT | +12.55% | $1,554,810.96 |
+| INIT/USDT:USDT | +56.71% | $14,997,386.96 |
+| NIUBI/USDT:USDT | +26.62% | $2,438,675.09 |
+| ONE/USDT:USDT | +24.46% | $8,428,347.76 |
+| ARIA/USDT:USDT | +17.59% | $1,601,934.05 |
+| ZHIPUSTOCK/USDT:USDT | +12.39% | $1,561,614.00 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +2.92% | +2.93% |
-| AIN/USDT:USDT | below_1h_threshold | +2.14% | +2.15% |
-| BR/USDT:USDT | below_1h_threshold | +1.32% | +1.33% |
-| IDOL/USDT:USDT | below_1h_threshold | +0.84% | +0.86% |
-| SQQQ/USDT:USDT | below_1h_threshold | +0.70% | +0.72% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.92% | +2.87% |
+| AIN/USDT:USDT | below_1h_threshold | +2.52% | +2.47% |
+| ARIA/USDT:USDT | below_1h_threshold | +1.85% | +1.80% |
+| INIT/USDT:USDT | below_1h_threshold | +1.79% | +1.74% |
+| BR/USDT:USDT | below_1h_threshold | +1.63% | +1.58% |
 
 ## 7. 次に見るべき不足
 
