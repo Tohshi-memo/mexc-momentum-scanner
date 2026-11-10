@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-10T15:56:47.826154+00:00
+- generated_at: 2026-11-10T16:01:31.401337+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18614**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-10T15:56:26.045798+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -1.65% price=73146.4
-- Funnel: target 1099 → liquid 157 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.8 >= 65=1, 4h RSI 67.0 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-10T16:01:17.882396+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.20% price=73324.2
+- Funnel: target 1099 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| INIT/USDT:USDT | +91.78% | $28,908,404.56 |
-| ONE/USDT:USDT | +22.08% | $10,106,125.31 |
-| ARIA/USDT:USDT | +20.22% | $2,809,681.28 |
-| BR/USDT:USDT | +12.83% | $3,945,582.73 |
-| ZHIPUSTOCK/USDT:USDT | +10.38% | $1,642,065.62 |
+| CAP/USDT:USDT | +2.37% | $1,084,847.73 |
+| PONS/USDT:USDT | +1.48% | $1,157,318.61 |
+| USELESS/USDT:USDT | +1.45% | $2,546,932.77 |
+| AKE/USDT:USDT | +1.37% | $14,811,817.25 |
+| NIUBI/USDT:USDT | +1.30% | $2,462,644.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +4.76% | +6.41% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +4.68% | +6.33% |
-| SNOWSTOCK/USDT:USDT | below_1h_threshold | +3.76% | +5.41% |
-| TSMSTOCK/USDT:USDT | below_1h_threshold | +3.36% | +5.00% |
-| ONE/USDT:USDT | below_1h_threshold | +2.95% | +4.60% |
+| CAP/USDT:USDT | below_1h_threshold | +2.40% | +2.21% |
+| AKE/USDT:USDT | below_1h_threshold | +1.85% | +1.66% |
+| PONS/USDT:USDT | below_1h_threshold | +1.48% | +1.29% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.46% | +1.26% |
+| NIUBI/USDT:USDT | below_1h_threshold | +1.31% | +1.11% |
 
 ## 7. 次に見るべき不足
 
