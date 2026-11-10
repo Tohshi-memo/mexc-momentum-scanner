@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-10T15:02:26.569828+00:00
+- generated_at: 2026-11-10T15:07:29.486955+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18607**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-10T15:01:50.014266+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.25% price=74561.0
-- Funnel: target 1099 → liquid 147 → pre 50 → checked 50 → surge 14 → strict 11
-- Surge前reject: below_1h_threshold=36, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.5 >= 65=1, 4h RSI 70.9 >= 65=1, 4h RSI 68.4 >= 65=1
+- 更新: 2026-11-10T15:06:54.046126+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.31% price=74603.0
+- Funnel: target 1099 → liquid 147 → pre 50 → checked 50 → surge 12 → strict 10
+- Surge前reject: below_1h_threshold=38, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 74.1 >= 65=1, 4h RSI 70.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| INIT/USDT:USDT | +93.71% | $25,623,624.91 |
-| ARIA/USDT:USDT | +20.02% | $2,620,520.07 |
-| ONE/USDT:USDT | +19.29% | $9,597,077.41 |
-| ZHIPUSTOCK/USDT:USDT | +11.84% | $1,621,171.18 |
-| NIUBI/USDT:USDT | +11.14% | $2,468,141.52 |
+| INIT/USDT:USDT | +97.63% | $25,928,230.95 |
+| ARIA/USDT:USDT | +18.36% | $2,638,423.79 |
+| ONE/USDT:USDT | +17.41% | $9,646,616.21 |
+| ZHIPUSTOCK/USDT:USDT | +11.98% | $1,636,271.25 |
+| BR/USDT:USDT | +11.83% | $3,756,632.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +4.68% | +4.43% |
-| TQQQ/USDT:USDT | below_1h_threshold | +3.95% | +3.69% |
-| SNOWSTOCK/USDT:USDT | below_1h_threshold | +3.76% | +3.51% |
-| TSMSTOCK/USDT:USDT | below_1h_threshold | +3.36% | +3.10% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +3.05% | +2.80% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +4.68% | +4.37% |
+| TQQQ/USDT:USDT | below_1h_threshold | +3.95% | +3.64% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +3.80% | +3.49% |
+| SNOWSTOCK/USDT:USDT | below_1h_threshold | +3.76% | +3.45% |
+| TSMSTOCK/USDT:USDT | below_1h_threshold | +3.36% | +3.05% |
 
 ## 7. 次に見るべき不足
 
