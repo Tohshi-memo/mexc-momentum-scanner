@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-10T07:21:18.446180+00:00
+- generated_at: 2026-11-10T07:26:29.833587+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18585**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6745件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6746件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000314 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-10T07:21:07.865589+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=74717.2
-- Funnel: target 1094 → liquid 150 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-10T07:26:14.359308+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.19% price=74767.6
+- Funnel: target 1094 → liquid 150 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| INIT/USDT:USDT | +73.42% | $9,841,121.87 |
-| ON/USDT:USDT | +27.67% | $5,634,498.70 |
-| CLAUDIA/USDT:USDT | +13.62% | $1,027,627.76 |
-| NIUBI/USDT:USDT | +13.00% | $2,214,914.49 |
-| ZHIPUSTOCK/USDT:USDT | +9.24% | $1,548,308.60 |
+| INIT/USDT:USDT | +72.94% | $9,987,700.66 |
+| ON/USDT:USDT | +27.74% | $5,649,519.68 |
+| NIUBI/USDT:USDT | +13.31% | $2,219,268.52 |
+| CLAUDIA/USDT:USDT | +11.49% | $1,028,536.70 |
+| ZHIPUSTOCK/USDT:USDT | +9.40% | $1,550,066.78 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| INIT/USDT:USDT | below_1h_threshold | +3.70% | +3.58% |
-| CLAUDIA/USDT:USDT | below_1h_threshold | +2.71% | +2.59% |
-| IDOL/USDT:USDT | below_1h_threshold | +2.62% | +2.49% |
-| SOXS/USDT:USDT | below_1h_threshold | +2.03% | +1.91% |
-| PI/USDT:USDT | below_1h_threshold | +1.22% | +1.10% |
+| ONE/USDT:USDT | below_1h_threshold | +3.50% | +3.32% |
+| INIT/USDT:USDT | below_1h_threshold | +3.47% | +3.28% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.03% | +1.84% |
+| PI/USDT:USDT | below_1h_threshold | +1.57% | +1.39% |
+| CLAUDIA/USDT:USDT | below_1h_threshold | +0.81% | +0.62% |
 
 ## 7. 次に見るべき不足
 
