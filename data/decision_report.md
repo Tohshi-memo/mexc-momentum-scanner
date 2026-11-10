@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-10T17:56:24.450565+00:00
+- generated_at: 2026-11-10T18:01:32.344558+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18625**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-10T17:56:09.286816+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.49% price=73200.6
-- Funnel: target 1099 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-10T18:01:18.869294+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=73240.9
+- Funnel: target 1099 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| INIT/USDT:USDT | +8.01% | $36,574,418.94 |
-| BTW/USDT:USDT | +4.14% | $4,243,213.24 |
-| AIN/USDT:USDT | +4.07% | $1,657,822.98 |
-| RKLBSTOCK/USDT:USDT | +2.40% | $1,768,820.68 |
-| NGAS/USDT:USDT | +1.76% | $2,981,511.06 |
+| INIT/USDT:USDT | +8.12% | $37,230,097.94 |
+| BTW/USDT:USDT | +5.43% | $4,208,251.46 |
+| AIN/USDT:USDT | +2.41% | $1,615,509.11 |
+| RKLBSTOCK/USDT:USDT | +2.06% | $1,764,131.41 |
+| NGAS/USDT:USDT | +2.02% | $2,742,048.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_relative_strength | +5.44% | +4.96% |
-| SOXS/USDT:USDT | below_1h_threshold | +3.00% | +2.51% |
-| INIT/USDT:USDT | below_1h_threshold | +2.64% | +2.15% |
-| USELESS/USDT:USDT | below_1h_threshold | +2.61% | +2.13% |
-| PEPE/USDT:USDT | below_1h_threshold | +2.26% | +1.78% |
+| RKLBSTOCK/USDT:USDT | below_1h_threshold | +1.46% | +1.48% |
+| ON/USDT:USDT | below_1h_threshold | +1.03% | +1.05% |
+| AVGOSTOCK/USDT:USDT | below_1h_threshold | +0.99% | +1.01% |
+| BTW/USDT:USDT | below_1h_threshold | +0.53% | +0.54% |
+| BMNRSTOCK/USDT:USDT | below_1h_threshold | +0.40% | +0.42% |
 
 ## 7. 次に見るべき不足
 
