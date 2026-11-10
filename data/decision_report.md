@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-10T16:31:31.149777+00:00
+- generated_at: 2026-11-10T16:36:27.438132+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18615**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-10T16:31:17.792819+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=73178.5
+- 更新: 2026-11-10T16:36:16.424133+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.45% price=72850.0
 - Funnel: target 1099 → liquid 154 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.1 >= 65=1
+- Strict後reject: 4h RSI 78.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| INIT/USDT:USDT | +6.89% | $31,850,697.08 |
-| ON/USDT:USDT | +4.31% | $2,635,384.60 |
-| JCT/USDT:USDT | +3.35% | $23,601,310.03 |
-| MUU/USDT:USDT | +1.93% | $14,547,576.02 |
-| AKE/USDT:USDT | +1.68% | $15,330,201.17 |
+| INIT/USDT:USDT | +5.96% | $32,161,177.81 |
+| ON/USDT:USDT | +4.31% | $2,641,047.82 |
+| AKE/USDT:USDT | +2.81% | $15,406,236.18 |
+| JCT/USDT:USDT | +2.76% | $23,651,742.23 |
+| MVLL/USDT:USDT | +2.37% | $3,779,275.03 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ON/USDT:USDT | below_1h_threshold | +4.32% | +4.32% |
-| JCT/USDT:USDT | below_1h_threshold | +2.71% | +2.71% |
-| AKE/USDT:USDT | below_1h_threshold | +1.68% | +1.68% |
-| PONS/USDT:USDT | below_1h_threshold | +1.28% | +1.28% |
-| XMR/USDT:USDT | below_1h_threshold | +1.27% | +1.27% |
+| ON/USDT:USDT | below_1h_threshold | +4.32% | +4.77% |
+| AKE/USDT:USDT | below_1h_threshold | +2.81% | +3.27% |
+| JCT/USDT:USDT | below_1h_threshold | +2.77% | +3.22% |
+| UAI/USDT:USDT | below_1h_threshold | +1.25% | +1.70% |
+| XMR/USDT:USDT | below_1h_threshold | +0.96% | +1.41% |
 
 ## 7. 次に見るべき不足
 
