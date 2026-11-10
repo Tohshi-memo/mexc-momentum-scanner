@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-10T03:46:18.037195+00:00
+- generated_at: 2026-11-10T03:51:09.234042+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18575**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-10T03:46:06.931043+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.53% price=74450.0
-- Funnel: target 1094 → liquid 151 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.8 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-10T03:51:00.656966+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.46% price=74500.0
+- Funnel: target 1094 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIUBI/USDT:USDT | +47.67% | $1,922,309.93 |
-| INIT/USDT:USDT | +34.22% | $4,539,006.44 |
-| ON/USDT:USDT | +9.75% | $5,431,521.97 |
-| ZHIPUSTOCK/USDT:USDT | +9.66% | $1,402,817.97 |
-| CLAUDIA/USDT:USDT | +8.27% | $1,077,132.26 |
+| NIUBI/USDT:USDT | +49.84% | $1,931,210.01 |
+| INIT/USDT:USDT | +32.80% | $4,564,557.75 |
+| ZHIPUSTOCK/USDT:USDT | +9.90% | $1,405,831.70 |
+| ON/USDT:USDT | +8.68% | $5,437,020.23 |
+| BR/USDT:USDT | +7.27% | $2,392,016.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +2.68% | +3.21% |
-| PI/USDT:USDT | below_1h_threshold | +1.24% | +1.76% |
-| AIN/USDT:USDT | below_1h_threshold | +1.07% | +1.60% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.07% | +1.60% |
-| ATOM/USDT:USDT | below_1h_threshold | +0.80% | +1.33% |
+| INIT/USDT:USDT | below_1h_threshold | +4.25% | +4.71% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +2.68% | +3.14% |
+| PI/USDT:USDT | below_1h_threshold | +1.45% | +1.91% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.07% | +1.53% |
+| AIN/USDT:USDT | below_1h_threshold | +0.98% | +1.43% |
 
 ## 7. 次に見るべき不足
 
