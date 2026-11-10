@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-10T20:06:26.733750+00:00
+- generated_at: 2026-11-10T20:11:38.567996+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18626**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-10T20:06:13.708149+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=73311.9
+- 更新: 2026-11-10T20:11:25.224375+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=73396.6
 - Funnel: target 1099 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MERL/USDT:USDT | +8.43% | $1,039,682.70 |
-| INJ/USDT:USDT | +3.66% | $15,920,902.45 |
-| INIT/USDT:USDT | +3.30% | $43,268,967.58 |
-| USELESS/USDT:USDT | +3.23% | $2,809,488.35 |
-| ON/USDT:USDT | +3.18% | $1,805,346.88 |
+| MERL/USDT:USDT | +9.86% | $1,123,000.30 |
+| INJ/USDT:USDT | +4.00% | $15,953,921.53 |
+| USELESS/USDT:USDT | +3.89% | $2,837,880.70 |
+| ON/USDT:USDT | +3.28% | $1,805,904.83 |
+| NGAS/USDT:USDT | +2.81% | $2,338,083.98 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIN/USDT:USDT | below_1h_threshold | +0.76% | +0.93% |
-| UAI/USDT:USDT | below_1h_threshold | +0.75% | +0.92% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.69% | +0.86% |
-| AAOISTOCK/USDT:USDT | below_1h_threshold | +0.65% | +0.82% |
-| SNXX/USDT:USDT | below_1h_threshold | +0.60% | +0.77% |
+| AIN/USDT:USDT | below_1h_threshold | +1.15% | +1.21% |
+| SOXL/USDT:USDT | below_1h_threshold | +0.69% | +0.75% |
+| AAOISTOCK/USDT:USDT | below_1h_threshold | +0.65% | +0.70% |
+| SNXX/USDT:USDT | below_1h_threshold | +0.60% | +0.65% |
+| AVGOSTOCK/USDT:USDT | below_1h_threshold | +0.57% | +0.63% |
 
 ## 7. 次に見るべき不足
 
