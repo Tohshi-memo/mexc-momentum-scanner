@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-10T10:21:16.869322+00:00
+- generated_at: 2026-11-10T10:26:22.147431+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18593**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6751件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6752件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000384 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-10T10:21:04.822567+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.28% price=74273.4
-- Funnel: target 1094 → liquid 149 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-10T10:26:08.976648+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.27% price=74282.3
+- Funnel: target 1094 → liquid 149 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| INIT/USDT:USDT | +65.16% | $13,690,223.78 |
-| ONE/USDT:USDT | +20.95% | $6,685,048.12 |
-| NIUBI/USDT:USDT | +20.12% | $2,371,082.99 |
-| ARIA/USDT:USDT | +11.25% | $1,279,471.06 |
-| ZHIPUSTOCK/USDT:USDT | +9.86% | $1,537,134.76 |
+| INIT/USDT:USDT | +56.60% | $13,779,497.36 |
+| ONE/USDT:USDT | +30.60% | $6,943,184.88 |
+| NIUBI/USDT:USDT | +24.14% | $2,380,817.81 |
+| ZHIPUSTOCK/USDT:USDT | +9.74% | $1,537,639.90 |
+| ARIA/USDT:USDT | +9.30% | $1,286,753.26 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ONE/USDT:USDT | below_1h_threshold | +2.10% | +2.39% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.70% | +1.98% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.76% | +1.04% |
-| INIT/USDT:USDT | below_1h_threshold | +0.71% | +0.99% |
-| AIOT/USDT:USDT | below_1h_threshold | +0.70% | +0.98% |
+| CRWVSTOCK/USDT:USDT | below_1h_threshold | +2.19% | +2.46% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.70% | +1.97% |
+| AIOT/USDT:USDT | below_1h_threshold | +1.10% | +1.37% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.76% | +1.03% |
+| HOT/USDT:USDT | below_1h_threshold | +0.73% | +1.01% |
 
 ## 7. 次に見るべき不足
 
