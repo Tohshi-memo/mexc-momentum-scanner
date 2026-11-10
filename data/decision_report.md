@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-10T18:31:22.405094+00:00
+- generated_at: 2026-11-10T18:36:29.202694+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18625**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-10T18:31:10.503242+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=73293.7
+- 更新: 2026-11-10T18:36:15.863513+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.20% price=73400.3
 - Funnel: target 1099 → liquid 154 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.7 >= 65=1
+- Strict後reject: 4h RSI 81.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| INIT/USDT:USDT | +16.34% | $38,660,769.95 |
-| AIN/USDT:USDT | +4.06% | $1,655,373.12 |
-| NGAS/USDT:USDT | +2.37% | $2,762,352.11 |
-| XRP/USDT:USDT | +2.12% | $312,810,359.10 |
-| INJ/USDT:USDT | +1.92% | $15,654,770.17 |
+| INIT/USDT:USDT | +17.04% | $39,169,149.72 |
+| BTW/USDT:USDT | +6.05% | $5,083,623.52 |
+| AIN/USDT:USDT | +3.36% | $1,660,481.91 |
+| INJ/USDT:USDT | +2.90% | $15,927,967.33 |
+| XRP/USDT:USDT | +2.59% | $314,202,757.70 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| INJ/USDT:USDT | below_1h_threshold | +1.64% | +1.58% |
-| ON/USDT:USDT | below_1h_threshold | +1.59% | +1.54% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.50% | +1.45% |
-| RKLBSTOCK/USDT:USDT | below_1h_threshold | +1.46% | +1.41% |
-| USELESS/USDT:USDT | below_1h_threshold | +1.12% | +1.06% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.67% | +2.47% |
+| INJ/USDT:USDT | below_1h_threshold | +2.58% | +2.38% |
+| NEAR/USDT:USDT | below_1h_threshold | +1.93% | +1.73% |
+| ARIA/USDT:USDT | below_1h_threshold | +1.91% | +1.71% |
+| RKLBSTOCK/USDT:USDT | below_1h_threshold | +1.46% | +1.26% |
 
 ## 7. 次に見るべき不足
 
