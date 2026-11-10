@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-10T17:01:32.298802+00:00
+- generated_at: 2026-11-10T17:06:44.982023+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18621**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-10T17:01:18.895837+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=72940.0
+- 更新: 2026-11-10T17:06:31.581989+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=72926.6
 - Funnel: target 1099 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| INIT/USDT:USDT | +3.52% | $34,026,622.00 |
-| AIN/USDT:USDT | +2.73% | $1,557,082.04 |
-| SOXS/USDT:USDT | +2.56% | $37,109,557.00 |
-| CAP/USDT:USDT | +2.23% | $1,164,461.83 |
-| NGAS/USDT:USDT | +1.93% | $2,877,845.27 |
+| AIN/USDT:USDT | +3.93% | $1,562,898.70 |
+| INIT/USDT:USDT | +3.45% | $34,171,944.70 |
+| ON/USDT:USDT | +3.09% | $2,076,547.54 |
+| SOXS/USDT:USDT | +2.75% | $37,191,809.70 |
+| NGAS/USDT:USDT | +2.40% | $2,880,192.20 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +3.00% | +2.87% |
-| NGAS/USDT:USDT | below_1h_threshold | +2.00% | +1.86% |
-| UKOIL/USDT:USDT | below_1h_threshold | +1.31% | +1.18% |
-| SQQQ/USDT:USDT | below_1h_threshold | +1.18% | +1.05% |
-| USOIL/USDT:USDT | below_1h_threshold | +1.14% | +1.01% |
+| SOXS/USDT:USDT | below_1h_threshold | +3.00% | +2.89% |
+| NGAS/USDT:USDT | below_1h_threshold | +2.00% | +1.88% |
+| UAI/USDT:USDT | below_1h_threshold | +1.49% | +1.38% |
+| UKOIL/USDT:USDT | below_1h_threshold | +1.31% | +1.20% |
+| SQQQ/USDT:USDT | below_1h_threshold | +1.18% | +1.07% |
 
 ## 7. 次に見るべき不足
 
