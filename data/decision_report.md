@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-10T09:16:30.338871+00:00
+- generated_at: 2026-11-10T09:21:18.972481+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18590**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-10T09:16:16.798242+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.52% price=74310.2
+- 更新: 2026-11-10T09:21:10.023896+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.48% price=74341.2
 - Funnel: target 1094 → liquid 148 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| INIT/USDT:USDT | +66.71% | $12,700,459.32 |
-| ONE/USDT:USDT | +20.35% | $5,645,059.69 |
-| ON/USDT:USDT | +14.50% | $5,765,935.30 |
-| ARIA/USDT:USDT | +10.78% | $1,253,413.57 |
-| ZHIPUSTOCK/USDT:USDT | +9.79% | $1,534,008.36 |
+| INIT/USDT:USDT | +69.19% | $12,754,287.76 |
+| ONE/USDT:USDT | +21.46% | $5,669,588.08 |
+| ARIA/USDT:USDT | +11.01% | $1,257,300.18 |
+| ON/USDT:USDT | +10.69% | $5,775,746.92 |
+| ZHIPUSTOCK/USDT:USDT | +9.90% | $1,534,313.98 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| INIT/USDT:USDT | below_1h_threshold | +3.32% | +3.84% |
-| KORU/USDT:USDT | below_1h_threshold | +1.04% | +1.57% |
-| AIOT/USDT:USDT | below_1h_threshold | +0.97% | +1.49% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +0.89% | +1.42% |
-| NVIDIA/USDT:USDT | below_1h_threshold | +0.87% | +1.39% |
+| INIT/USDT:USDT | below_1h_threshold | +4.93% | +5.41% |
+| AIN/USDT:USDT | below_1h_threshold | +1.35% | +1.83% |
+| KORU/USDT:USDT | below_1h_threshold | +1.04% | +1.52% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +0.89% | +1.37% |
+| NVIDIA/USDT:USDT | below_1h_threshold | +0.87% | +1.35% |
 
 ## 7. 次に見るべき不足
 
