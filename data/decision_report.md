@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-11T02:26:26.724147+00:00
+- generated_at: 2026-11-11T02:31:19.797218+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18635**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-11T02:26:13.672843+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=73445.9
+- 更新: 2026-11-11T02:31:06.822090+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.43% price=73254.6
 - Funnel: target 1099 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FLOAT/USDT:USDT | +13.80% | $1,003,461.97 |
-| CRWVSTOCK/USDT:USDT | +11.35% | $5,739,853.08 |
-| MUU/USDT:USDT | +10.91% | $14,966,762.86 |
-| SOXL/USDT:USDT | +10.67% | $660,294,669.93 |
-| MVLL/USDT:USDT | +9.09% | $4,174,911.82 |
+| FLOAT/USDT:USDT | +14.82% | $1,007,609.11 |
+| CRWVSTOCK/USDT:USDT | +11.72% | $5,741,477.43 |
+| MUU/USDT:USDT | +11.33% | $14,967,075.98 |
+| SOXL/USDT:USDT | +11.07% | $660,750,420.06 |
+| MVLL/USDT:USDT | +9.69% | $4,175,241.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CRWVSTOCK/USDT:USDT | below_1h_threshold | +4.23% | +4.41% |
-| JCT/USDT:USDT | below_1h_threshold | +3.33% | +3.51% |
-| MUU/USDT:USDT | below_1h_threshold | +2.63% | +2.80% |
-| SOXL/USDT:USDT | below_1h_threshold | +2.62% | +2.80% |
-| MVLL/USDT:USDT | below_1h_threshold | +2.04% | +2.21% |
+| CRWVSTOCK/USDT:USDT | below_1h_threshold | +4.23% | +4.67% |
+| JCT/USDT:USDT | below_1h_threshold | +3.01% | +3.44% |
+| MUU/USDT:USDT | below_1h_threshold | +2.63% | +3.06% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.62% | +3.06% |
+| MVLL/USDT:USDT | below_1h_threshold | +2.04% | +2.47% |
 
 ## 7. 次に見るべき不足
 
