@@ -4,7 +4,7 @@
   "initial_capital": 100.0,
   "balance": 117.6114169450822,
   "started_at": "2026-07-11T08:56:50.346675+00:00",
-  "updated_at": "2026-11-11T19:41:31.146696+00:00",
+  "updated_at": "2026-11-11T19:46:22.481613+00:00",
   "high_watermark": 128.08262302711162,
   "max_drawdown_pct": 8.205992703625467,
   "loss_streak": 0,
@@ -284595,7 +284595,7 @@
     "reason": "selected_by_causal_log_growth",
     "causal_score": 0.00016093773028392792,
     "robust_score": 0.00016093773028392792,
-    "causal_history_count": 18695,
+    "causal_history_count": 18696,
     "fast": {
       "strategy": "LIMIT_9PCT_LONG",
       "direction": "long",
@@ -284668,11 +284668,6 @@
     },
     "alternatives": [
       {
-        "strategy": "LIMIT_2PCT_LONG",
-        "direction": "long",
-        "causal_score": 0.00015235872910622262
-      },
-      {
         "strategy": "LIMIT_8PCT",
         "direction": "short",
         "causal_score": 0.00012567676719742827
@@ -284683,9 +284678,14 @@
         "causal_score": 0.0001159278623783108
       },
       {
+        "strategy": "LIMIT_2PCT_LONG",
+        "direction": "long",
+        "causal_score": 9.635417485248905e-05
+      },
+      {
         "strategy": "LIMIT_5PCT",
         "direction": "short",
-        "causal_score": 9.285380850891864e-05
+        "causal_score": 8.84139106745684e-05
       }
     ]
   },
