@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-11T22:21:25.665201+00:00
+- generated_at: 2026-11-11T22:26:26.593742+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18700**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-11T22:21:12.230311+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=74461.1
+- 更新: 2026-11-11T22:26:13.147737+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=74355.8
 - Funnel: target 1103 → liquid 144 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIN/USDT:USDT | +16.59% | $1,671,367.47 |
-| Q/USDT:USDT | +11.03% | $3,214,627.17 |
-| SOXS/USDT:USDT | +4.65% | $46,676,101.72 |
-| ETHFI/USDT:USDT | +3.14% | $3,196,256.51 |
-| ICP/USDT:USDT | +2.85% | $6,676,766.59 |
+| AIN/USDT:USDT | +16.64% | $1,679,446.08 |
+| Q/USDT:USDT | +9.48% | $3,225,650.98 |
+| SOXS/USDT:USDT | +4.53% | $46,735,992.92 |
+| NIGHT/USDT:USDT | +2.71% | $1,345,318.04 |
+| ETHFI/USDT:USDT | +2.65% | $3,225,668.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZEC/USDT:USDT | below_1h_threshold | +1.90% | +1.76% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +1.13% | +0.99% |
-| AGT/USDT:USDT | below_1h_threshold | +1.08% | +0.94% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +0.93% | +0.79% |
-| BEAT/USDT:USDT | below_1h_threshold | +0.91% | +0.77% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +1.13% | +1.13% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.08% | +1.08% |
+| ZEC/USDT:USDT | below_1h_threshold | +0.96% | +0.96% |
+| XMR/USDT:USDT | below_1h_threshold | +0.64% | +0.64% |
+| AGT/USDT:USDT | below_1h_threshold | +0.50% | +0.50% |
 
 ## 7. 次に見るべき不足
 
