@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-11T19:06:29.817269+00:00
+- generated_at: 2026-11-11T19:11:29.113887+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18697**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-11T19:06:16.392918+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.18% price=74323.4
-- Funnel: target 1103 → liquid 145 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-11-11T19:11:18.083509+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.28% price=74251.0
+- Funnel: target 1103 → liquid 146 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIN/USDT:USDT | +13.05% | $1,111,479.33 |
-| Q/USDT:USDT | +9.48% | $2,166,334.45 |
-| ARIA/USDT:USDT | +7.38% | $9,541,123.37 |
-| FLOAT/USDT:USDT | +4.24% | $1,259,190.42 |
-| GRAM/USDT:USDT | +2.51% | $3,273,853.84 |
+| AIN/USDT:USDT | +14.41% | $1,141,791.67 |
+| Q/USDT:USDT | +11.11% | $2,170,691.65 |
+| ARIA/USDT:USDT | +7.72% | $9,547,924.68 |
+| FLOAT/USDT:USDT | +2.87% | $1,260,780.01 |
+| ETHFI/USDT:USDT | +2.79% | $2,978,721.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ARIA/USDT:USDT | below_1h_threshold | +2.73% | +2.91% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +1.16% | +1.34% |
-| MUU/USDT:USDT | below_1h_threshold | +0.52% | +0.70% |
-| FLOAT/USDT:USDT | below_1h_threshold | +0.40% | +0.57% |
-| PLTRSTOCK/USDT:USDT | below_1h_threshold | +0.38% | +0.56% |
+| ARIA/USDT:USDT | below_1h_threshold | +3.17% | +3.44% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +1.16% | +1.44% |
+| AIN/USDT:USDT | below_1h_threshold | +0.93% | +1.21% |
+| PLTRSTOCK/USDT:USDT | below_1h_threshold | +0.38% | +0.66% |
+| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +0.26% | +0.53% |
 
 ## 7. 次に見るべき不足
 
