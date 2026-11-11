@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-11T18:16:25.617138+00:00
+- generated_at: 2026-11-11T18:21:29.859242+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18696**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-11T18:16:14.646409+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=74415.7
+- 更新: 2026-11-11T18:21:16.236338+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=74470.2
 - Funnel: target 1103 → liquid 143 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FLOAT/USDT:USDT | +15.06% | $1,259,893.59 |
-| AIN/USDT:USDT | +12.56% | $1,091,097.98 |
-| Q/USDT:USDT | +11.88% | $1,882,348.36 |
-| BEAT/USDT:USDT | +4.73% | $2,373,697.29 |
-| UAI/USDT:USDT | +4.22% | $2,462,167.15 |
+| FLOAT/USDT:USDT | +14.93% | $1,260,993.52 |
+| AIN/USDT:USDT | +11.51% | $1,097,087.07 |
+| Q/USDT:USDT | +10.29% | $1,955,886.91 |
+| BEAT/USDT:USDT | +4.78% | $2,378,414.01 |
+| ARIA/USDT:USDT | +4.71% | $9,567,272.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| Q/USDT:USDT | below_1h_threshold | +2.15% | +2.25% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +1.66% | +1.76% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.49% | +1.58% |
-| AKE/USDT:USDT | below_1h_threshold | +1.17% | +1.27% |
-| SUMIELECSTOCK/USDT:USDT | below_1h_threshold | +0.80% | +0.89% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +1.66% | +1.68% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.61% | +1.64% |
+| AKE/USDT:USDT | below_1h_threshold | +1.13% | +1.16% |
+| SUMIELECSTOCK/USDT:USDT | below_1h_threshold | +0.80% | +0.82% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +0.76% | +0.79% |
 
 ## 7. 次に見るべき不足
 
