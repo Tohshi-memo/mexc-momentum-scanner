@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-11T13:21:21.388821+00:00
+- generated_at: 2026-11-11T13:26:09.073037+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18678**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-11T13:21:08.202796+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=73872.5
+- 更新: 2026-11-11T13:26:00.587806+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=73867.4
 - Funnel: target 1103 → liquid 145 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +128.39% | $13,355,296.62 |
-| ARIA/USDT:USDT | +32.59% | $7,578,244.86 |
-| JCT/USDT:USDT | +22.84% | $21,331,882.99 |
-| MVLL/USDT:USDT | +20.27% | $4,038,422.68 |
-| SNXX/USDT:USDT | +20.05% | $27,677,490.71 |
+| AGT/USDT:USDT | +119.33% | $13,582,599.79 |
+| ARIA/USDT:USDT | +24.92% | $7,686,559.54 |
+| MVLL/USDT:USDT | +21.16% | $4,039,163.33 |
+| SNXX/USDT:USDT | +21.07% | $27,678,211.05 |
+| MUU/USDT:USDT | +20.24% | $13,119,349.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MVLL/USDT:USDT | below_1h_threshold | +1.51% | +1.48% |
-| OPENAI/USDT:USDT | below_1h_threshold | +1.10% | +1.08% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +0.81% | +0.79% |
-| ANTHROPIC/USDT:USDT | below_1h_threshold | +0.79% | +0.77% |
-| SPX/USDT:USDT | below_1h_threshold | +0.69% | +0.67% |
+| OPENAI/USDT:USDT | below_1h_threshold | +1.86% | +1.84% |
+| ANTHROPIC/USDT:USDT | below_1h_threshold | +1.73% | +1.71% |
+| MVLL/USDT:USDT | below_1h_threshold | +1.51% | +1.49% |
+| NIGHT/USDT:USDT | below_1h_threshold | +1.05% | +1.03% |
+| SPX/USDT:USDT | below_1h_threshold | +0.83% | +0.81% |
 
 ## 7. 次に見るべき不足
 
