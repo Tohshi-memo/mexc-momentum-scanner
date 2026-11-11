@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-11T19:31:31.167968+00:00
+- generated_at: 2026-11-11T19:36:12.355208+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18697**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-11T19:31:17.347736+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=74369.0
-- Funnel: target 1103 → liquid 146 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-11-11T19:36:04.407778+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=74393.2
+- Funnel: target 1103 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIN/USDT:USDT | +15.69% | $1,184,203.58 |
-| Q/USDT:USDT | +13.16% | $2,349,909.99 |
-| ARIA/USDT:USDT | +7.23% | $9,604,145.16 |
-| AGT/USDT:USDT | +3.53% | $31,379,165.73 |
-| ETHFI/USDT:USDT | +3.35% | $3,039,817.07 |
+| AIN/USDT:USDT | +16.20% | $1,200,045.07 |
+| Q/USDT:USDT | +12.93% | $2,432,227.56 |
+| ARIA/USDT:USDT | +8.64% | $9,624,525.72 |
+| AGT/USDT:USDT | +3.65% | $31,463,426.55 |
+| ETHFI/USDT:USDT | +2.98% | $3,062,721.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ARIA/USDT:USDT | below_1h_threshold | +2.99% | +3.11% |
-| AIN/USDT:USDT | below_1h_threshold | +2.08% | +2.20% |
-| AGT/USDT:USDT | below_1h_threshold | +1.51% | +1.63% |
-| Q/USDT:USDT | below_1h_threshold | +1.49% | +1.61% |
-| ZRO/USDT:USDT | below_1h_threshold | +1.45% | +1.57% |
+| ARIA/USDT:USDT | below_1h_threshold | +4.03% | +4.12% |
+| AIN/USDT:USDT | below_1h_threshold | +2.55% | +2.63% |
+| AGT/USDT:USDT | below_1h_threshold | +1.77% | +1.85% |
+| ZRO/USDT:USDT | below_1h_threshold | +1.36% | +1.45% |
+| Q/USDT:USDT | below_1h_threshold | +1.28% | +1.37% |
 
 ## 7. 次に見るべき不足
 
