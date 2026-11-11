@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-11T06:16:11.919876+00:00
+- generated_at: 2026-11-11T06:21:09.805911+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18648**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6806件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6807件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000501 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-11T06:16:03.719861+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=73815.7
-- Funnel: target 1099 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-11T06:21:01.448570+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=73813.7
+- Funnel: target 1099 → liquid 153 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JCT/USDT:USDT | +44.07% | $17,899,774.06 |
-| FLOAT/USDT:USDT | +17.87% | $1,101,992.91 |
-| MUU/USDT:USDT | +15.96% | $13,691,186.21 |
-| CRWVSTOCK/USDT:USDT | +15.59% | $5,901,031.57 |
-| SOXL/USDT:USDT | +15.15% | $662,907,978.20 |
+| JCT/USDT:USDT | +51.63% | $18,080,281.81 |
+| FLOAT/USDT:USDT | +20.78% | $1,105,598.37 |
+| MUU/USDT:USDT | +15.96% | $13,691,552.95 |
+| CRWVSTOCK/USDT:USDT | +15.69% | $5,903,933.99 |
+| SOXL/USDT:USDT | +14.82% | $663,197,631.63 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| INTW/USDT:USDT | below_1h_threshold | +2.33% | +2.43% |
+| FLOAT/USDT:USDT | below_1h_threshold | +2.47% | +2.58% |
+| INTW/USDT:USDT | below_1h_threshold | +2.33% | +2.44% |
 | SOXL/USDT:USDT | below_1h_threshold | +2.08% | +2.19% |
-| MUU/USDT:USDT | below_1h_threshold | +2.07% | +2.17% |
+| MUU/USDT:USDT | below_1h_threshold | +2.07% | +2.18% |
 | AXTISTOCK/USDT:USDT | below_1h_threshold | +1.67% | +1.78% |
-| AAOISTOCK/USDT:USDT | below_1h_threshold | +1.62% | +1.73% |
 
 ## 7. 次に見るべき不足
 
