@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-11T16:21:32.932033+00:00
+- generated_at: 2026-11-11T16:26:20.953251+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18691**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-11T16:21:17.067311+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.33% price=74196.5
+- 更新: 2026-11-11T16:26:10.049658+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.42% price=74264.3
 - Funnel: target 1103 → liquid 145 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZEC/USDT:USDT | +1.98% | $2,044,407,291.59 |
-| ZRO/USDT:USDT | +1.81% | $2,555,979.03 |
-| PIEVERSE/USDT:USDT | +1.73% | $3,096,744.22 |
-| USELESS/USDT:USDT | +1.43% | $3,978,661.50 |
-| ETHFI/USDT:USDT | +1.28% | $3,745,750.97 |
+| UAI/USDT:USDT | +3.71% | $2,398,804.59 |
+| ZEC/USDT:USDT | +2.90% | $2,055,232,274.45 |
+| FLOAT/USDT:USDT | +2.73% | $1,185,973.49 |
+| BEAT/USDT:USDT | +2.09% | $2,267,984.58 |
+| VVV/USDT:USDT | +2.07% | $5,024,344.87 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +3.15% | +2.83% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +2.02% | +1.69% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +2.01% | +1.68% |
-| ZEC/USDT:USDT | below_1h_threshold | +1.99% | +1.66% |
-| ZRO/USDT:USDT | below_1h_threshold | +1.82% | +1.49% |
+| UAI/USDT:USDT | below_1h_threshold | +3.71% | +3.30% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +3.15% | +2.73% |
+| ZEC/USDT:USDT | below_1h_threshold | +2.89% | +2.47% |
+| FLOAT/USDT:USDT | below_1h_threshold | +2.74% | +2.32% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.12% | +1.70% |
 
 ## 7. 次に見るべき不足
 
