@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-11T12:41:25.507254+00:00
+- generated_at: 2026-11-11T12:46:10.873998+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18676**
 
@@ -70,32 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-11T12:41:13.743137+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=74030.3
-- Funnel: target 1103 → liquid 147 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.5 >= 65=1
+- 更新: 2026-11-11T12:46:01.871861+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=73955.0
+- Funnel: target 1103 → liquid 147 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +145.71% | $11,994,085.56 |
-| JCT/USDT:USDT | +40.94% | $20,025,630.09 |
-| ARIA/USDT:USDT | +32.15% | $7,523,627.54 |
-| SNXX/USDT:USDT | +21.13% | $27,674,058.88 |
-| MVLL/USDT:USDT | +20.27% | $4,169,418.15 |
+| AGT/USDT:USDT | +147.48% | $12,069,553.57 |
+| JCT/USDT:USDT | +45.74% | $20,200,813.52 |
+| ARIA/USDT:USDT | +27.88% | $7,585,824.23 |
+| SNXX/USDT:USDT | +21.31% | $27,679,152.99 |
+| MVLL/USDT:USDT | +20.47% | $4,170,871.42 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AGT/USDT:USDT | below_1h_threshold | +2.48% | +2.39% |
-| INTW/USDT:USDT | below_1h_threshold | +1.23% | +1.14% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.08% | +0.99% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +0.91% | +0.82% |
-| FET/USDT:USDT | below_1h_threshold | +0.81% | +0.72% |
+| GRAM/USDT:USDT | below_1h_threshold | +4.15% | +4.16% |
+| AGT/USDT:USDT | below_1h_threshold | +3.47% | +3.48% |
+| INTW/USDT:USDT | below_1h_threshold | +1.23% | +1.24% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.08% | +1.09% |
+| FET/USDT:USDT | below_1h_threshold | +1.01% | +1.03% |
 
 ## 7. 次に見るべき不足
 
