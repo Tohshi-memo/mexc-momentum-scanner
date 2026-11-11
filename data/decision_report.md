@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-11T19:01:23.473870+00:00
+- generated_at: 2026-11-11T19:06:29.817269+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18697**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-11T19:01:12.604099+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=74434.5
-- Funnel: target 1103 → liquid 143 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-11-11T19:06:16.392918+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=74323.4
+- Funnel: target 1103 → liquid 145 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIN/USDT:USDT | +12.97% | $1,097,707.65 |
-| Q/USDT:USDT | +11.11% | $2,094,645.41 |
-| FLOAT/USDT:USDT | +4.79% | $1,257,782.50 |
-| ARIA/USDT:USDT | +4.68% | $9,529,683.50 |
-| GRAM/USDT:USDT | +3.02% | $3,272,117.99 |
+| AIN/USDT:USDT | +13.05% | $1,111,479.33 |
+| Q/USDT:USDT | +9.48% | $2,166,334.45 |
+| ARIA/USDT:USDT | +7.38% | $9,541,123.37 |
+| FLOAT/USDT:USDT | +4.24% | $1,259,190.42 |
+| GRAM/USDT:USDT | +2.51% | $3,273,853.84 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +1.16% | +1.19% |
-| FLOAT/USDT:USDT | below_1h_threshold | +0.92% | +0.95% |
-| MUU/USDT:USDT | below_1h_threshold | +0.52% | +0.55% |
-| PLTRSTOCK/USDT:USDT | below_1h_threshold | +0.38% | +0.41% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +0.32% | +0.35% |
+| ARIA/USDT:USDT | below_1h_threshold | +2.73% | +2.91% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +1.16% | +1.34% |
+| MUU/USDT:USDT | below_1h_threshold | +0.52% | +0.70% |
+| FLOAT/USDT:USDT | below_1h_threshold | +0.40% | +0.57% |
+| PLTRSTOCK/USDT:USDT | below_1h_threshold | +0.38% | +0.56% |
 
 ## 7. 次に見るべき不足
 
