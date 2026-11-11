@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-11T03:01:38.308808+00:00
+- generated_at: 2026-11-11T03:06:17.808973+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18637**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-11T03:01:20.492651+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=73613.7
+- 更新: 2026-11-11T03:06:07.024474+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=73714.8
 - Funnel: target 1099 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FLOAT/USDT:USDT | +26.01% | $1,026,499.81 |
-| CRWVSTOCK/USDT:USDT | +15.12% | $5,815,394.36 |
-| MUU/USDT:USDT | +11.26% | $14,563,165.93 |
-| SOXL/USDT:USDT | +11.18% | $659,991,058.89 |
-| KORU/USDT:USDT | +10.55% | $125,949,234.56 |
+| FLOAT/USDT:USDT | +28.05% | $1,033,398.55 |
+| CRWVSTOCK/USDT:USDT | +15.26% | $5,826,547.49 |
+| MUU/USDT:USDT | +12.09% | $14,565,317.84 |
+| SOXL/USDT:USDT | +11.73% | $660,051,225.48 |
+| KORU/USDT:USDT | +11.25% | $125,949,579.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CRWVSTOCK/USDT:USDT | below_1h_threshold | +3.20% | +3.21% |
-| FLOAT/USDT:USDT | below_1h_threshold | +2.84% | +2.84% |
-| KORU/USDT:USDT | below_1h_threshold | +2.05% | +2.05% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +1.32% | +1.32% |
-| SUMIELECSTOCK/USDT:USDT | below_1h_threshold | +1.22% | +1.23% |
+| FLOAT/USDT:USDT | below_1h_threshold | +4.14% | +4.00% |
+| CRWVSTOCK/USDT:USDT | below_1h_threshold | +3.20% | +3.07% |
+| KORU/USDT:USDT | below_1h_threshold | +2.05% | +1.91% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +1.32% | +1.18% |
+| IDOL/USDT:USDT | below_1h_threshold | +1.30% | +1.17% |
 
 ## 7. 次に見るべき不足
 
