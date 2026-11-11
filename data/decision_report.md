@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-11T16:51:49.820856+00:00
+- generated_at: 2026-11-11T16:56:37.970627+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18692**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6858件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6859件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000163 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-11T16:51:31.684874+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.42% price=74269.6
-- Funnel: target 1103 → liquid 146 → pre 50 → checked 50 → surge 7 → strict 1
-- Surge前reject: below_1h_threshold=41, below_relative_strength=2, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.9 >= 65=1, 4h RSI 69.1 >= 65=1, 4h RSI 71.4 >= 65=1, 4h RSI 65.0 >= 65=1, 4h RSI 73.8 >= 65=1, 4h RSI 76.6 >= 65=1
+- 更新: 2026-11-11T16:56:23.486912+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.29% price=74171.5
+- Funnel: target 1103 → liquid 147 → pre 50 → checked 50 → surge 6 → strict 1
+- Surge前reject: below_1h_threshold=43, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.4 >= 65=1, 4h RSI 68.9 >= 65=1, 4h RSI 71.2 >= 65=1, 4h RSI 73.8 >= 65=1, 4h RSI 76.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +6.64% | $5,667,292.53 |
-| ARIA/USDT:USDT | +4.98% | $9,152,334.84 |
-| UAI/USDT:USDT | +3.63% | $2,510,243.22 |
-| FLOAT/USDT:USDT | +3.56% | $1,189,598.82 |
-| ZEC/USDT:USDT | +2.41% | $2,096,721,725.32 |
+| Q/USDT:USDT | +3.83% | $1,221,269.19 |
+| UAI/USDT:USDT | +3.36% | $2,526,333.01 |
+| ARIA/USDT:USDT | +2.95% | $9,179,345.57 |
+| PIEVERSE/USDT:USDT | +2.86% | $3,138,914.67 |
+| BTW/USDT:USDT | +1.87% | $5,720,673.77 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ARIA/USDT:USDT | below_relative_strength | +5.40% | +4.97% |
-| KORU/USDT:USDT | below_relative_strength | +5.26% | +4.83% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +4.49% | +4.07% |
-| INTW/USDT:USDT | below_1h_threshold | +4.33% | +3.91% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +4.24% | +3.81% |
+| KORU/USDT:USDT | below_relative_strength | +5.26% | +4.96% |
+| INTW/USDT:USDT | below_1h_threshold | +4.33% | +4.04% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +4.24% | +3.94% |
+| Q/USDT:USDT | below_1h_threshold | +3.83% | +3.54% |
+| UAI/USDT:USDT | below_1h_threshold | +3.36% | +3.07% |
 
 ## 7. 次に見るべき不足
 
