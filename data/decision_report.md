@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-11T09:56:13.960504+00:00
+- generated_at: 2026-11-11T10:01:18.367063+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18665**
 
@@ -63,39 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6824件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6825件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000289 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-11T09:56:02.393668+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=73654.7
-- Funnel: target 1099 → liquid 154 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.2 >= 65=1, 4h RSI 87.7 >= 65=1
+- 更新: 2026-11-11T10:01:06.061656+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=73771.7
+- Funnel: target 1099 → liquid 148 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +127.24% | $5,250,674.22 |
-| ARIA/USDT:USDT | +27.12% | $4,631,579.43 |
-| SNXX/USDT:USDT | +21.67% | $26,879,673.80 |
-| MUU/USDT:USDT | +18.31% | $13,983,507.05 |
-| SOXL/USDT:USDT | +17.05% | $676,191,053.85 |
+| AGT/USDT:USDT | +126.95% | $5,438,924.86 |
+| ARIA/USDT:USDT | +28.44% | $4,618,041.85 |
+| SNXX/USDT:USDT | +22.59% | $26,881,417.53 |
+| MUU/USDT:USDT | +19.00% | $13,357,738.08 |
+| SOXL/USDT:USDT | +17.82% | $654,154,998.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| Q/USDT:USDT | below_1h_threshold | +2.81% | +2.87% |
-| GRAM/USDT:USDT | below_1h_threshold | +2.33% | +2.39% |
-| RENDER/USDT:USDT | below_1h_threshold | +1.58% | +1.64% |
-| ZRO/USDT:USDT | below_1h_threshold | +1.46% | +1.52% |
-| OPENAI/USDT:USDT | below_1h_threshold | +1.42% | +1.49% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +2.88% | +2.87% |
+| MUU/USDT:USDT | below_1h_threshold | +2.63% | +2.61% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +1.45% | +1.44% |
+| NVIDIA/USDT:USDT | below_1h_threshold | +1.42% | +1.41% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.25% | +1.23% |
 
 ## 7. 次に見るべき不足
 
