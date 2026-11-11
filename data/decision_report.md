@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-11T16:01:24.497141+00:00
+- generated_at: 2026-11-11T16:06:21.974629+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18690**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-11T16:01:11.080073+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=73981.6
+- 更新: 2026-11-11T16:06:09.387764+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=73980.8
 - Funnel: target 1103 → liquid 145 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +1.50% | $5,361,884.50 |
-| FLOAT/USDT:USDT | +0.68% | $1,182,056.50 |
-| AGT/USDT:USDT | +0.61% | $25,173,463.81 |
-| JCT/USDT:USDT | +0.45% | $18,141,884.83 |
-| SOXS/USDT:USDT | +0.38% | $38,676,592.61 |
+| PIEVERSE/USDT:USDT | +1.99% | $3,078,052.98 |
+| SOXS/USDT:USDT | +1.54% | $40,951,373.45 |
+| INIT/USDT:USDT | +1.31% | $56,788,006.51 |
+| FLOAT/USDT:USDT | +1.23% | $1,182,396.17 |
+| ONE/USDT:USDT | +0.94% | $6,636,155.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +1.50% | +1.47% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.91% | +0.87% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +0.78% | +0.74% |
-| FLOAT/USDT:USDT | below_1h_threshold | +0.68% | +0.65% |
-| AGT/USDT:USDT | below_1h_threshold | +0.56% | +0.53% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +2.01% | +1.98% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +2.00% | +1.96% |
+| EWY/USDT:USDT | below_1h_threshold | +1.85% | +1.81% |
+| RKLBSTOCK/USDT:USDT | below_1h_threshold | +1.79% | +1.75% |
+| INIT/USDT:USDT | below_1h_threshold | +1.29% | +1.25% |
 
 ## 7. 次に見るべき不足
 
