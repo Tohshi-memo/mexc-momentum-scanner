@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-11T06:46:19.226905+00:00
+- generated_at: 2026-11-11T06:51:26.380333+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18650**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-11T06:46:08.247161+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.30% price=73675.4
+- 更新: 2026-11-11T06:51:15.249166+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.43% price=73577.1
 - Funnel: target 1099 → liquid 153 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JCT/USDT:USDT | +56.70% | $19,059,465.38 |
-| FLOAT/USDT:USDT | +23.25% | $1,116,975.82 |
-| CRWVSTOCK/USDT:USDT | +15.71% | $5,925,683.96 |
-| MUU/USDT:USDT | +15.20% | $13,693,592.27 |
-| MVLL/USDT:USDT | +15.13% | $4,311,765.98 |
+| JCT/USDT:USDT | +53.74% | $19,194,871.38 |
+| FLOAT/USDT:USDT | +20.63% | $1,117,723.31 |
+| CRWVSTOCK/USDT:USDT | +15.97% | $5,947,590.24 |
+| KORU/USDT:USDT | +14.86% | $127,330,077.21 |
+| MUU/USDT:USDT | +14.78% | $13,696,042.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FLOAT/USDT:USDT | below_1h_threshold | +4.69% | +4.98% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +3.41% | +3.71% |
-| INTW/USDT:USDT | below_1h_threshold | +2.33% | +2.62% |
-| SOXL/USDT:USDT | below_1h_threshold | +2.08% | +2.38% |
-| MUU/USDT:USDT | below_1h_threshold | +2.07% | +2.36% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +3.41% | +3.84% |
+| FLOAT/USDT:USDT | below_1h_threshold | +2.59% | +3.02% |
+| INTW/USDT:USDT | below_1h_threshold | +2.33% | +2.76% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.08% | +2.51% |
+| MUU/USDT:USDT | below_1h_threshold | +2.07% | +2.50% |
 
 ## 7. 次に見るべき不足
 
