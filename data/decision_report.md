@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-11T07:56:16.481753+00:00
+- generated_at: 2026-11-11T08:01:13.797039+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18652**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-11T07:56:05.428370+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.48% price=73943.2
-- Funnel: target 1099 → liquid 153 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.0 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-11T08:01:02.969929+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=74022.6
+- Funnel: target 1099 → liquid 150 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JCT/USDT:USDT | +21.68% | $21,117,453.14 |
-| FLOAT/USDT:USDT | +19.18% | $1,121,722.15 |
-| CRWVSTOCK/USDT:USDT | +16.38% | $5,993,063.57 |
-| MUU/USDT:USDT | +14.92% | $14,008,513.07 |
-| KORU/USDT:USDT | +14.16% | $126,136,359.63 |
+| JCT/USDT:USDT | +21.95% | $20,105,935.42 |
+| FLOAT/USDT:USDT | +20.49% | $1,115,240.47 |
+| CRWVSTOCK/USDT:USDT | +16.67% | $5,986,960.87 |
+| MUU/USDT:USDT | +14.92% | $14,005,966.08 |
+| SNXX/USDT:USDT | +14.47% | $24,898,966.33 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| USELESS/USDT:USDT | below_1h_threshold | +1.71% | +1.22% |
-| SPX/USDT:USDT | below_1h_threshold | +1.61% | +1.12% |
-| AVAX/USDT:USDT | below_1h_threshold | +1.38% | +0.90% |
-| ZRO/USDT:USDT | below_1h_threshold | +1.28% | +0.79% |
-| GRAM/USDT:USDT | below_1h_threshold | +1.22% | +0.74% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.37% | +1.43% |
+| JCT/USDT:USDT | below_1h_threshold | +0.88% | +0.93% |
+| AAOISTOCK/USDT:USDT | below_1h_threshold | +0.73% | +0.79% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +0.72% | +0.78% |
+| BMNRSTOCK/USDT:USDT | below_1h_threshold | +0.66% | +0.71% |
 
 ## 7. 次に見るべき不足
 
