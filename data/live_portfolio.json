@@ -1,6 +1,6 @@
 {
   "initial_capital": 100.0,
-  "balance": 121.12858950825827,
+  "balance": 121.00746091875001,
   "started_at": "2026-06-13T15:13:45.269640+00:00",
   "trades": [
     {
@@ -5504,6 +5504,28 @@
       "strategy_boosters": [
         "daily_RED",
         "1h_green=4",
+        "fundamental_HIGH"
+      ],
+      "strategy_score": 0.0
+    },
+    {
+      "symbol": "JCT/USDT:USDT",
+      "detected_at": "2026-11-11T04:41:16.306170+00:00",
+      "closed_at": "2026-11-11T05:15:37.340134+00:00",
+      "outcome": "SL_HIT",
+      "pnl_pct": -4.0,
+      "sl_pct": 4.0,
+      "risk_pct": 0.1,
+      "notional_usdt": 3.028214737706457,
+      "pnl_usdt": -0.12112858950825828,
+      "balance_before": 121.12858950825827,
+      "balance_after": 121.00746091875001,
+      "strategy_tier": "S",
+      "strategy_direction": "short",
+      "strategy_entry_style": "MARKET",
+      "strategy_boosters": [
+        "daily_RED",
+        "1h_green=3",
         "fundamental_HIGH"
       ],
       "strategy_score": 0.0
