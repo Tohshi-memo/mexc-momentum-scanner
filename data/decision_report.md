@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-12T21:31:26.888492+00:00
+- generated_at: 2026-11-12T21:36:27.226217+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18764**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-12T21:31:13.609960+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.22% price=71576.5
+- 更新: 2026-11-12T21:36:13.739089+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.16% price=71533.7
 - Funnel: target 1105 → liquid 150 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BARD/USDT:USDT | +45.12% | $4,827,297.52 |
-| ARIA/USDT:USDT | +24.78% | $8,089,087.10 |
-| CBRSSTOCK/USDT:USDT | +9.29% | $2,662,256.15 |
-| MAGMA/USDT:USDT | +9.23% | $1,072,543.65 |
-| H/USDT:USDT | +7.31% | $1,993,130.29 |
+| BARD/USDT:USDT | +44.20% | $4,840,692.79 |
+| ARIA/USDT:USDT | +24.95% | $8,123,928.09 |
+| CBRSSTOCK/USDT:USDT | +13.11% | $2,771,123.10 |
+| MAGMA/USDT:USDT | +9.69% | $1,073,541.51 |
+| H/USDT:USDT | +6.63% | $1,994,757.49 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| H/USDT:USDT | below_1h_threshold | +3.28% | +3.06% |
-| ARIA/USDT:USDT | below_1h_threshold | +2.67% | +2.46% |
-| PYTH/USDT:USDT | below_1h_threshold | +2.39% | +2.18% |
-| SPX/USDT:USDT | below_1h_threshold | +2.19% | +1.97% |
-| ETHFI/USDT:USDT | below_1h_threshold | +2.13% | +1.92% |
+| ARIA/USDT:USDT | below_1h_threshold | +2.81% | +2.66% |
+| SPX/USDT:USDT | below_1h_threshold | +2.63% | +2.47% |
+| H/USDT:USDT | below_1h_threshold | +2.54% | +2.38% |
+| PYTH/USDT:USDT | below_1h_threshold | +2.50% | +2.34% |
+| ETHFI/USDT:USDT | below_1h_threshold | +2.31% | +2.15% |
 
 ## 7. 次に見るべき不足
 
