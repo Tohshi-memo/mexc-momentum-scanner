@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-12T12:36:28.298902+00:00
+- generated_at: 2026-11-12T12:41:21.469175+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18735**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-12T12:36:14.935248+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=72923.8
+- 更新: 2026-11-12T12:41:07.829994+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=72916.8
 - Funnel: target 1105 → liquid 145 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOXS/USDT:USDT | +10.57% | $69,247,321.77 |
-| ONE/USDT:USDT | +6.72% | $6,620,364.80 |
-| GRAM/USDT:USDT | +5.62% | $3,433,400.81 |
-| SQQQ/USDT:USDT | +3.77% | $2,148,142.32 |
-| BEAT/USDT:USDT | +2.10% | $2,591,426.39 |
+| SOXS/USDT:USDT | +10.75% | $69,300,553.34 |
+| ONE/USDT:USDT | +7.01% | $6,637,047.76 |
+| GRAM/USDT:USDT | +5.96% | $3,442,170.88 |
+| SQQQ/USDT:USDT | +3.84% | $2,148,418.35 |
+| Q/USDT:USDT | +2.32% | $5,019,305.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ONE/USDT:USDT | below_1h_threshold | +1.86% | +1.87% |
-| GRAM/USDT:USDT | below_1h_threshold | +1.53% | +1.54% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.09% | +1.10% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +0.66% | +0.67% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +0.61% | +0.62% |
+| ONE/USDT:USDT | below_1h_threshold | +2.29% | +2.30% |
+| GRAM/USDT:USDT | below_1h_threshold | +1.86% | +1.88% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.09% | +1.11% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +0.79% | +0.81% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +0.66% | +0.68% |
 
 ## 7. 次に見るべき不足
 
