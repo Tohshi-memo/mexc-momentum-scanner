@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-12T18:46:23.498458+00:00
+- generated_at: 2026-11-12T18:51:27.111597+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18758**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-12T18:46:10.392987+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.20% price=71731.6
+- 更新: 2026-11-12T18:51:15.670859+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.42% price=71575.4
 - Funnel: target 1105 → liquid 154 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.9 >= 65=1
+- Strict後reject: 4h RSI 78.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BARD/USDT:USDT | +55.45% | $2,675,659.61 |
-| H/USDT:USDT | +9.68% | $2,032,445.86 |
-| ARIA/USDT:USDT | +7.52% | $7,002,580.79 |
-| MAGMA/USDT:USDT | +7.25% | $1,004,378.40 |
-| DELTAELECSTOCK/USDT:USDT | +2.84% | $1,391,396.37 |
+| BARD/USDT:USDT | +51.54% | $2,773,094.20 |
+| ARIA/USDT:USDT | +10.97% | $7,045,177.99 |
+| H/USDT:USDT | +10.59% | $2,037,384.02 |
+| MAGMA/USDT:USDT | +7.87% | $1,006,861.00 |
+| SOXS/USDT:USDT | +2.75% | $77,611,214.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| H/USDT:USDT | below_1h_threshold | +2.96% | +3.16% |
-| ARB/USDT:USDT | below_1h_threshold | +2.15% | +2.35% |
-| MUU/USDT:USDT | below_1h_threshold | +1.58% | +1.79% |
-| AR/USDT:USDT | below_1h_threshold | +1.46% | +1.66% |
-| RENDER/USDT:USDT | below_1h_threshold | +1.07% | +1.27% |
+| H/USDT:USDT | below_1h_threshold | +4.20% | +4.62% |
+| AIN/USDT:USDT | below_1h_threshold | +2.89% | +3.32% |
+| ARIA/USDT:USDT | below_1h_threshold | +2.56% | +2.98% |
+| ARB/USDT:USDT | below_1h_threshold | +1.86% | +2.29% |
+| MUU/USDT:USDT | below_1h_threshold | +1.58% | +2.00% |
 
 ## 7. 次に見るべき不足
 
