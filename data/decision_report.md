@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-12T22:26:22.429567+00:00
+- generated_at: 2026-11-12T22:31:37.072634+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18764**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-12T22:26:09.050790+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=71439.9
+- 更新: 2026-11-12T22:31:25.962457+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=71480.0
 - Funnel: target 1105 → liquid 149 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.5 >= 65=1
+- Strict後reject: 4h RSI 77.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BARD/USDT:USDT | +48.10% | $5,044,125.09 |
-| ARIA/USDT:USDT | +28.12% | $8,250,826.80 |
-| CBRSSTOCK/USDT:USDT | +9.98% | $3,117,328.79 |
-| MAGMA/USDT:USDT | +8.93% | $1,085,455.04 |
-| AIN/USDT:USDT | +5.78% | $1,232,456.51 |
+| BARD/USDT:USDT | +48.56% | $5,058,509.30 |
+| ARIA/USDT:USDT | +26.68% | $8,261,696.28 |
+| CBRSSTOCK/USDT:USDT | +10.22% | $3,136,689.36 |
+| MAGMA/USDT:USDT | +9.22% | $1,087,136.71 |
+| AIN/USDT:USDT | +5.72% | $1,232,807.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BARD/USDT:USDT | below_1h_threshold | +3.36% | +3.50% |
-| ARIA/USDT:USDT | below_1h_threshold | +1.41% | +1.54% |
-| MUU/USDT:USDT | below_1h_threshold | +1.21% | +1.35% |
-| ZKSYNC/USDT:USDT | below_1h_threshold | +0.77% | +0.91% |
-| XLM/USDT:USDT | below_1h_threshold | +0.56% | +0.69% |
+| BARD/USDT:USDT | below_1h_threshold | +3.68% | +3.76% |
+| NVDL/USDT:USDT | below_1h_threshold | +1.46% | +1.53% |
+| MUU/USDT:USDT | below_1h_threshold | +1.21% | +1.29% |
+| ZKSYNC/USDT:USDT | below_1h_threshold | +0.84% | +0.92% |
+| MAGMA/USDT:USDT | below_1h_threshold | +0.74% | +0.82% |
 
 ## 7. 次に見るべき不足
 
