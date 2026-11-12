@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-12T00:36:26.216148+00:00
+- generated_at: 2026-11-12T00:41:44.216436+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18711**
 
@@ -63,38 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6869件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6871件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000159 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-12T00:36:11.174582+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=74014.7
-- Funnel: target 1103 → liquid 148 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-12T00:41:23.962532+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=74038.5
+- Funnel: target 1103 → liquid 148 → pre 50 → checked 50 → surge 3 → strict 3
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| Q/USDT:USDT | +10.10% | $3,646,654.59 |
-| AKE/USDT:USDT | +9.41% | $4,846,101.42 |
-| IDOL/USDT:USDT | +8.84% | $1,514,358.36 |
-| SOXS/USDT:USDT | +7.66% | $54,239,250.18 |
-| AGT/USDT:USDT | +4.68% | $34,882,676.62 |
+| IDOL/USDT:USDT | +11.27% | $1,538,821.78 |
+| Q/USDT:USDT | +11.18% | $3,687,158.99 |
+| AKE/USDT:USDT | +8.86% | $4,890,494.46 |
+| SOXS/USDT:USDT | +7.76% | $54,385,508.91 |
+| AMDSTOCK/USDT:USDT | +3.85% | $22,029,298.40 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IDOL/USDT:USDT | below_1h_threshold | +4.55% | +4.50% |
-| Q/USDT:USDT | below_1h_threshold | +4.44% | +4.40% |
-| ZEC/USDT:USDT | below_1h_threshold | +2.55% | +2.51% |
-| AGT/USDT:USDT | below_1h_threshold | +0.84% | +0.79% |
-| AVAX/USDT:USDT | below_1h_threshold | +0.79% | +0.74% |
+| ZEC/USDT:USDT | below_1h_threshold | +3.08% | +3.00% |
+| NIGHT/USDT:USDT | below_1h_threshold | +1.20% | +1.12% |
+| FET/USDT:USDT | below_1h_threshold | +1.08% | +1.00% |
+| AVAX/USDT:USDT | below_1h_threshold | +0.93% | +0.85% |
+| VVV/USDT:USDT | below_1h_threshold | +0.78% | +0.70% |
 
 ## 7. 次に見るべき不足
 
