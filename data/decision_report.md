@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-12T10:11:17.051650+00:00
+- generated_at: 2026-11-12T10:16:21.538557+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18735**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-12T10:11:06.122121+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=73389.5
+- 更新: 2026-11-12T10:16:10.269528+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=73387.9
 - Funnel: target 1103 → liquid 145 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KGEN/USDT:USDT | +10.34% | $3,191,389.69 |
-| SOXS/USDT:USDT | +7.03% | $65,179,230.35 |
-| Q/USDT:USDT | +4.60% | $4,941,743.13 |
-| AKE/USDT:USDT | +4.49% | $7,156,676.46 |
-| GRAM/USDT:USDT | +3.44% | $3,294,792.73 |
+| SOXS/USDT:USDT | +6.83% | $65,181,684.00 |
+| Q/USDT:USDT | +3.94% | $4,962,419.07 |
+| AMDSTOCK/USDT:USDT | +3.46% | $25,057,088.24 |
+| KGEN/USDT:USDT | +3.25% | $3,270,248.74 |
+| AKE/USDT:USDT | +2.83% | $7,212,277.68 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KGEN/USDT:USDT | below_1h_threshold | +2.82% | +2.92% |
+| IDOL/USDT:USDT | below_1h_threshold | +2.75% | +2.85% |
 | NBISSTOCK/USDT:USDT | below_1h_threshold | +2.47% | +2.57% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +1.37% | +1.48% |
 | CBRSSTOCK/USDT:USDT | below_1h_threshold | +1.16% | +1.26% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +0.93% | +1.04% |
-| BTW/USDT:USDT | below_1h_threshold | +0.86% | +0.96% |
+| AVGOSTOCK/USDT:USDT | below_1h_threshold | +0.69% | +0.79% |
 
 ## 7. 次に見るべき不足
 
