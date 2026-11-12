@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-12T15:01:23.019880+00:00
+- generated_at: 2026-11-12T15:06:27.326139+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18737**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6896件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6897件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000312 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-12T15:01:09.508243+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=71556.0
-- Funnel: target 1105 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-12T15:06:13.647090+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.30% price=71393.2
+- Funnel: target 1105 → liquid 150 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NVD/USDT:USDT | +16.46% | $1,321,614.69 |
-| SOXS/USDT:USDT | +7.51% | $78,165,200.30 |
-| GRAM/USDT:USDT | +4.45% | $3,185,158.36 |
-| ONE/USDT:USDT | +4.43% | $6,884,430.50 |
-| AKE/USDT:USDT | +3.62% | $7,954,706.12 |
+| NVD/USDT:USDT | +17.68% | $1,327,516.70 |
+| SOXS/USDT:USDT | +8.57% | $78,257,828.64 |
+| ONE/USDT:USDT | +4.72% | $6,892,057.59 |
+| GRAM/USDT:USDT | +4.70% | $3,200,669.50 |
+| BEAT/USDT:USDT | +3.50% | $2,455,297.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +4.44% | +4.52% |
-| AVGOSTOCK/USDT:USDT | below_1h_threshold | +2.88% | +2.95% |
-| STXSTOCK/USDT:USDT | below_1h_threshold | +2.86% | +2.94% |
-| TQQQ/USDT:USDT | below_1h_threshold | +2.64% | +2.72% |
-| TSMSTOCK/USDT:USDT | below_1h_threshold | +1.84% | +1.91% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +4.44% | +4.74% |
+| AVGOSTOCK/USDT:USDT | below_1h_threshold | +2.88% | +3.18% |
+| STXSTOCK/USDT:USDT | below_1h_threshold | +2.86% | +3.17% |
+| TQQQ/USDT:USDT | below_1h_threshold | +2.64% | +2.95% |
+| TSMSTOCK/USDT:USDT | below_1h_threshold | +1.84% | +2.14% |
 
 ## 7. 次に見るべき不足
 
