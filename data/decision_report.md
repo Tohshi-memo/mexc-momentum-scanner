@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-12T05:11:32.812875+00:00
+- generated_at: 2026-11-12T05:16:26.295443+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18720**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-12T05:11:19.569509+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=73641.9
-- Funnel: target 1103 → liquid 145 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-11-12T05:16:14.940492+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.20% price=73557.3
+- Funnel: target 1103 → liquid 146 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IDOL/USDT:USDT | +13.84% | $6,298,669.99 |
-| SOXS/USDT:USDT | +11.07% | $62,561,005.21 |
-| AGT/USDT:USDT | +7.67% | $36,658,277.18 |
-| Q/USDT:USDT | +4.21% | $4,366,040.85 |
-| SQQQ/USDT:USDT | +3.67% | $2,150,020.00 |
+| IDOL/USDT:USDT | +15.68% | $6,344,058.95 |
+| SOXS/USDT:USDT | +12.04% | $62,613,264.09 |
+| AGT/USDT:USDT | +6.09% | $36,754,347.10 |
+| SQQQ/USDT:USDT | +4.11% | $2,150,342.63 |
+| Q/USDT:USDT | +3.40% | $4,396,592.82 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AGT/USDT:USDT | below_1h_threshold | +1.48% | +1.56% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.45% | +1.54% |
-| Q/USDT:USDT | below_1h_threshold | +1.17% | +1.25% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +0.62% | +0.70% |
-| GRAM/USDT:USDT | below_1h_threshold | +0.51% | +0.59% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.45% | +1.65% |
+| IDOL/USDT:USDT | below_1h_threshold | +1.30% | +1.49% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +0.46% | +0.65% |
+| GRAM/USDT:USDT | below_1h_threshold | +0.43% | +0.62% |
+| Q/USDT:USDT | below_1h_threshold | +0.38% | +0.57% |
 
 ## 7. 次に見るべき不足
 
