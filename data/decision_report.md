@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-12T16:26:23.496558+00:00
+- generated_at: 2026-11-12T16:31:12.230711+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18749**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-12T16:26:09.606950+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.27% price=71877.1
-- Funnel: target 1105 → liquid 150 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.3 >= 65=1
+- 更新: 2026-11-12T16:31:03.014517+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.30% price=71896.7
+- Funnel: target 1105 → liquid 151 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 68.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARIA/USDT:USDT | +5.66% | $6,645,701.08 |
-| DELTAELECSTOCK/USDT:USDT | +2.92% | $1,399,766.41 |
-| NBISSTOCK/USDT:USDT | +2.57% | $22,789,352.85 |
-| FLOAT/USDT:USDT | +2.41% | $1,633,143.32 |
-| INJ/USDT:USDT | +2.32% | $15,297,030.00 |
+| DELTAELECSTOCK/USDT:USDT | +2.67% | $1,400,078.97 |
+| USELESS/USDT:USDT | +2.11% | $2,989,467.35 |
+| INJ/USDT:USDT | +1.82% | $15,328,282.37 |
+| CRWVSTOCK/USDT:USDT | +1.76% | $3,831,204.64 |
+| ZRO/USDT:USDT | +1.75% | $1,955,004.79 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MVLL/USDT:USDT | below_1h_threshold | +3.46% | +3.18% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +3.33% | +3.05% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +2.97% | +2.69% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +2.91% | +2.64% |
-| FLOAT/USDT:USDT | below_1h_threshold | +2.41% | +2.14% |
+| MVLL/USDT:USDT | below_1h_threshold | +3.46% | +3.16% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +3.33% | +3.03% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +2.97% | +2.67% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +2.91% | +2.61% |
+| AAOISTOCK/USDT:USDT | below_1h_threshold | +2.86% | +2.56% |
 
 ## 7. 次に見るべき不足
 
