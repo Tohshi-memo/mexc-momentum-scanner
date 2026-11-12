@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-12T17:51:30.809056+00:00
+- generated_at: 2026-11-12T17:56:25.158756+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18754**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-12T17:51:12.432190+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=71792.7
+- 更新: 2026-11-12T17:56:11.374346+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.29% price=71933.6
 - Funnel: target 1105 → liquid 151 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.0 >= 65=1
+- Strict後reject: 4h RSI 74.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BARD/USDT:USDT | +38.23% | $1,871,557.52 |
-| ARIA/USDT:USDT | +6.04% | $6,995,015.11 |
-| H/USDT:USDT | +4.95% | $1,966,770.43 |
-| DELTAELECSTOCK/USDT:USDT | +2.65% | $1,392,067.54 |
-| NBISSTOCK/USDT:USDT | +1.90% | $23,820,322.67 |
+| BARD/USDT:USDT | +38.00% | $1,936,518.59 |
+| ARIA/USDT:USDT | +4.63% | $7,041,772.20 |
+| H/USDT:USDT | +4.59% | $1,969,113.73 |
+| DELTAELECSTOCK/USDT:USDT | +2.43% | $1,392,428.26 |
+| MRNASTOCK/USDT:USDT | +1.90% | $1,791,799.39 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| H/USDT:USDT | below_1h_threshold | +4.24% | +4.15% |
-| DELTAELECSTOCK/USDT:USDT | below_1h_threshold | +2.71% | +2.61% |
-| SPX/USDT:USDT | below_1h_threshold | +1.50% | +1.41% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.32% | +1.23% |
-| NTAPSTOCK/USDT:USDT | below_1h_threshold | +1.19% | +1.10% |
+| H/USDT:USDT | below_1h_threshold | +4.20% | +3.91% |
+| DELTAELECSTOCK/USDT:USDT | below_1h_threshold | +2.71% | +2.42% |
+| Q/USDT:USDT | below_1h_threshold | +1.59% | +1.30% |
+| SPX/USDT:USDT | below_1h_threshold | +1.35% | +1.06% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.32% | +1.03% |
 
 ## 7. 次に見るべき不足
 
