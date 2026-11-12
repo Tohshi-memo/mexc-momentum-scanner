@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-12T18:21:33.989855+00:00
+- generated_at: 2026-11-12T18:26:29.714385+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18757**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-12T18:21:24.292728+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=71866.7
+- 更新: 2026-11-12T18:26:16.210397+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=71871.9
 - Funnel: target 1105 → liquid 151 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.3 >= 65=1
+- Strict後reject: 4h RSI 78.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BARD/USDT:USDT | +47.76% | $2,217,000.63 |
-| ARIA/USDT:USDT | +11.81% | $6,791,892.66 |
-| H/USDT:USDT | +11.54% | $1,990,612.01 |
-| DELTAELECSTOCK/USDT:USDT | +2.48% | $1,389,648.98 |
-| XLM/USDT:USDT | +2.15% | $23,713,803.92 |
+| BARD/USDT:USDT | +47.64% | $2,268,025.41 |
+| ARIA/USDT:USDT | +13.50% | $6,828,621.74 |
+| H/USDT:USDT | +7.63% | $2,004,730.91 |
+| DELTAELECSTOCK/USDT:USDT | +2.84% | $1,390,073.79 |
+| Q/USDT:USDT | +2.68% | $4,357,769.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| H/USDT:USDT | below_1h_threshold | +4.97% | +4.98% |
-| ARIA/USDT:USDT | below_1h_threshold | +2.91% | +2.92% |
-| MUU/USDT:USDT | below_1h_threshold | +1.58% | +1.60% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.58% | +1.60% |
-| XLM/USDT:USDT | below_1h_threshold | +1.10% | +1.12% |
+| ARIA/USDT:USDT | below_1h_threshold | +4.36% | +4.37% |
+| ARB/USDT:USDT | below_1h_threshold | +1.63% | +1.64% |
+| MUU/USDT:USDT | below_1h_threshold | +1.58% | +1.59% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.58% | +1.59% |
+| XLM/USDT:USDT | below_1h_threshold | +1.56% | +1.57% |
 
 ## 7. 次に見るべき不足
 
