@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-12T17:06:37.222042+00:00
+- generated_at: 2026-11-12T17:11:20.233709+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18751**
 
@@ -63,38 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6911件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6912件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000229 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-12T17:06:21.460395+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=71787.6
-- Funnel: target 1105 → liquid 149 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-12T17:11:08.109603+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=71700.1
+- Funnel: target 1105 → liquid 150 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 76.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| H/USDT:USDT | +6.81% | $1,858,610.64 |
-| AGT/USDT:USDT | +2.85% | $19,048,104.56 |
-| DELTAELECSTOCK/USDT:USDT | +2.62% | $1,388,874.43 |
-| SOXS/USDT:USDT | +1.58% | $75,000,071.01 |
-| GOOGLSTOCK/USDT:USDT | +1.25% | $14,376,356.44 |
+| BARD/USDT:USDT | +43.28% | $1,153,841.48 |
+| H/USDT:USDT | +7.90% | $1,869,504.69 |
+| SOXS/USDT:USDT | +2.70% | $75,594,354.42 |
+| DELTAELECSTOCK/USDT:USDT | +2.51% | $1,389,205.39 |
+| AGT/USDT:USDT | +2.44% | $19,074,563.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DELTAELECSTOCK/USDT:USDT | below_1h_threshold | +2.71% | +2.62% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.32% | +1.24% |
-| NTAPSTOCK/USDT:USDT | below_1h_threshold | +1.19% | +1.11% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +1.10% | +1.01% |
-| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +1.03% | +0.95% |
+| DELTAELECSTOCK/USDT:USDT | below_1h_threshold | +2.71% | +2.74% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.32% | +1.36% |
+| NTAPSTOCK/USDT:USDT | below_1h_threshold | +1.19% | +1.23% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +1.10% | +1.14% |
+| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +1.03% | +1.07% |
 
 ## 7. 次に見るべき不足
 
