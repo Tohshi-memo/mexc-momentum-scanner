@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-12T20:06:15.675989+00:00
+- generated_at: 2026-11-12T20:11:15.759813+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18762**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-12T20:06:04.828195+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=71615.1
+- 更新: 2026-11-12T20:11:06.679187+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=71622.5
 - Funnel: target 1105 → liquid 150 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BARD/USDT:USDT | +49.82% | $4,038,846.10 |
-| ARIA/USDT:USDT | +24.80% | $7,424,941.78 |
-| MAGMA/USDT:USDT | +9.97% | $1,036,590.79 |
-| AIN/USDT:USDT | +8.05% | $1,642,270.67 |
-| USELESS/USDT:USDT | +4.36% | $2,684,533.84 |
+| BARD/USDT:USDT | +48.10% | $4,111,793.20 |
+| ARIA/USDT:USDT | +20.64% | $7,486,405.83 |
+| MAGMA/USDT:USDT | +9.47% | $1,040,442.89 |
+| AIN/USDT:USDT | +7.62% | $1,644,204.30 |
+| USELESS/USDT:USDT | +6.02% | $2,693,931.81 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BARD/USDT:USDT | below_1h_threshold | +4.32% | +4.38% |
-| NGAS/USDT:USDT | below_1h_threshold | +1.44% | +1.51% |
-| AIN/USDT:USDT | below_1h_threshold | +0.83% | +0.90% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.74% | +0.81% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.70% | +0.76% |
+| FLOAT/USDT:USDT | below_1h_threshold | +4.41% | +4.46% |
+| BARD/USDT:USDT | below_1h_threshold | +3.04% | +3.09% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.62% | +1.67% |
+| NGAS/USDT:USDT | below_1h_threshold | +1.44% | +1.50% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.74% | +0.80% |
 
 ## 7. 次に見るべき不足
 
