@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-12T10:01:32.122482+00:00
+- generated_at: 2026-11-12T10:06:19.714211+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18735**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-12T10:01:16.044198+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=73475.5
-- Funnel: target 1103 → liquid 144 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-11-12T10:06:06.146833+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=73461.0
+- Funnel: target 1103 → liquid 145 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KGEN/USDT:USDT | +8.40% | $3,173,961.19 |
-| AKE/USDT:USDT | +7.01% | $7,068,499.87 |
-| SOXS/USDT:USDT | +6.55% | $65,129,818.50 |
-| Q/USDT:USDT | +5.22% | $4,866,808.26 |
-| BEAT/USDT:USDT | +3.70% | $2,566,289.42 |
+| KGEN/USDT:USDT | +9.03% | $3,182,540.90 |
+| SOXS/USDT:USDT | +6.39% | $65,132,118.30 |
+| AKE/USDT:USDT | +5.08% | $7,142,478.72 |
+| Q/USDT:USDT | +4.25% | $4,933,449.19 |
+| GRAM/USDT:USDT | +4.03% | $3,292,151.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +2.47% | +2.45% |
-| CBRSSTOCK/USDT:USDT | below_1h_threshold | +1.16% | +1.15% |
-| AVGOSTOCK/USDT:USDT | below_1h_threshold | +0.69% | +0.67% |
-| BTW/USDT:USDT | below_1h_threshold | +0.57% | +0.56% |
-| TESLA/USDT:USDT | below_1h_threshold | +0.55% | +0.54% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +2.47% | +2.47% |
+| CBRSSTOCK/USDT:USDT | below_1h_threshold | +1.16% | +1.17% |
+| ONE/USDT:USDT | below_1h_threshold | +0.97% | +0.98% |
+| KGEN/USDT:USDT | below_1h_threshold | +0.91% | +0.92% |
+| AVGOSTOCK/USDT:USDT | below_1h_threshold | +0.69% | +0.69% |
 
 ## 7. 次に見るべき不足
 
