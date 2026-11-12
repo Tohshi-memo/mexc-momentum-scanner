@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-12T02:31:30.163482+00:00
+- generated_at: 2026-11-12T02:36:22.147581+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18714**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-12T02:31:16.702795+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.37% price=73959.7
+- 更新: 2026-11-12T02:36:11.002283+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.24% price=73862.8
 - Funnel: target 1103 → liquid 148 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IDOL/USDT:USDT | +36.43% | $2,458,266.11 |
-| SOXS/USDT:USDT | +4.96% | $58,730,639.78 |
-| Q/USDT:USDT | +4.76% | $4,064,064.60 |
-| AMDSTOCK/USDT:USDT | +3.59% | $21,539,215.63 |
-| AGT/USDT:USDT | +3.07% | $35,573,384.97 |
+| IDOL/USDT:USDT | +36.44% | $2,507,183.89 |
+| Q/USDT:USDT | +5.03% | $4,078,504.19 |
+| SOXS/USDT:USDT | +4.69% | $58,777,005.40 |
+| AMDSTOCK/USDT:USDT | +3.45% | $21,563,216.42 |
+| AKE/USDT:USDT | +2.20% | $5,394,058.23 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DELTAELECSTOCK/USDT:USDT | below_1h_threshold | +1.98% | +1.61% |
-| AGT/USDT:USDT | below_1h_threshold | +1.24% | +0.87% |
-| AVAX/USDT:USDT | below_1h_threshold | +1.23% | +0.86% |
-| CBRSSTOCK/USDT:USDT | below_1h_threshold | +1.19% | +0.81% |
-| PI/USDT:USDT | below_1h_threshold | +0.94% | +0.56% |
+| DELTAELECSTOCK/USDT:USDT | below_1h_threshold | +1.98% | +1.74% |
+| CBRSSTOCK/USDT:USDT | below_1h_threshold | +1.19% | +0.95% |
+| AVAX/USDT:USDT | below_1h_threshold | +1.14% | +0.90% |
+| VVV/USDT:USDT | below_1h_threshold | +0.76% | +0.52% |
+| OPENAI/USDT:USDT | below_1h_threshold | +0.74% | +0.50% |
 
 ## 7. 次に見るべき不足
 
