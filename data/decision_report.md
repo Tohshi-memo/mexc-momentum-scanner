@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-12T11:41:32.882936+00:00
+- generated_at: 2026-11-12T11:46:13.981003+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18735**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-12T11:41:19.380374+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.69% price=72926.0
+- 更新: 2026-11-12T11:46:04.685439+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.67% price=72940.0
 - Funnel: target 1105 → liquid 145 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOXS/USDT:USDT | +9.62% | $65,214,349.01 |
-| ONE/USDT:USDT | +6.46% | $6,092,962.77 |
-| GRAM/USDT:USDT | +4.70% | $3,339,961.25 |
-| SQQQ/USDT:USDT | +3.34% | $2,176,076.58 |
-| AKE/USDT:USDT | +2.60% | $7,528,081.64 |
+| SOXS/USDT:USDT | +8.98% | $66,030,191.87 |
+| ONE/USDT:USDT | +5.51% | $6,175,683.65 |
+| GRAM/USDT:USDT | +4.78% | $3,366,881.85 |
+| AKE/USDT:USDT | +3.54% | $7,540,475.63 |
+| SQQQ/USDT:USDT | +3.25% | $2,176,455.25 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +1.27% | +1.96% |
-| GRAM/USDT:USDT | below_1h_threshold | +1.05% | +1.74% |
-| AKE/USDT:USDT | below_1h_threshold | +0.62% | +1.31% |
-| ATOM/USDT:USDT | below_1h_threshold | +0.58% | +1.26% |
-| SQQQ/USDT:USDT | below_1h_threshold | +0.53% | +1.22% |
+| AKE/USDT:USDT | below_1h_threshold | +1.74% | +2.41% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.27% | +1.94% |
+| GRAM/USDT:USDT | below_1h_threshold | +1.13% | +1.80% |
+| JUP/USDT:USDT | below_1h_threshold | +0.70% | +1.37% |
+| ATOM/USDT:USDT | below_1h_threshold | +0.65% | +1.31% |
 
 ## 7. 次に見るべき不足
 
