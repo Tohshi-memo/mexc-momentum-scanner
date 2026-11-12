@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-12T22:01:19.898202+00:00
+- generated_at: 2026-11-12T22:06:21.332869+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18764**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-12T22:01:10.848895+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=71482.2
+- 更新: 2026-11-12T22:06:12.275756+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=71510.5
 - Funnel: target 1105 → liquid 149 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.9 >= 65=1
+- Strict後reject: 4h RSI 78.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BARD/USDT:USDT | +43.62% | $4,892,056.12 |
-| ARIA/USDT:USDT | +26.12% | $8,111,105.36 |
-| CBRSSTOCK/USDT:USDT | +10.37% | $3,035,558.52 |
-| MAGMA/USDT:USDT | +8.41% | $1,075,297.02 |
-| H/USDT:USDT | +6.18% | $1,969,039.46 |
+| BARD/USDT:USDT | +46.61% | $4,908,588.44 |
+| ARIA/USDT:USDT | +28.81% | $8,147,056.32 |
+| CBRSSTOCK/USDT:USDT | +10.89% | $3,045,522.93 |
+| MAGMA/USDT:USDT | +8.88% | $1,077,952.08 |
+| H/USDT:USDT | +6.72% | $1,972,986.39 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NVDL/USDT:USDT | below_1h_threshold | +1.46% | +1.53% |
-| MUU/USDT:USDT | below_1h_threshold | +1.21% | +1.29% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +0.50% | +0.58% |
-| DELTAELECSTOCK/USDT:USDT | below_1h_threshold | +0.27% | +0.34% |
-| NGAS/USDT:USDT | below_1h_threshold | +0.22% | +0.29% |
+| BARD/USDT:USDT | below_1h_threshold | +2.00% | +2.04% |
+| ARIA/USDT:USDT | below_1h_threshold | +1.70% | +1.73% |
+| MUU/USDT:USDT | below_1h_threshold | +1.21% | +1.25% |
+| TIA/USDT:USDT | below_1h_threshold | +1.15% | +1.19% |
+| H/USDT:USDT | below_1h_threshold | +1.03% | +1.06% |
 
 ## 7. 次に見るべき不足
 
