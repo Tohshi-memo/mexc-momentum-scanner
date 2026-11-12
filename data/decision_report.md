@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-12T08:31:29.104376+00:00
+- generated_at: 2026-11-12T08:36:29.610514+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18727**
 
@@ -63,38 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6886件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6887件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000141 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-12T08:31:14.290256+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.18% price=73490.0
-- Funnel: target 1103 → liquid 146 → pre 50 → checked 50 → surge 2 → strict 2
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-12T08:36:11.361828+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.15% price=73509.6
+- Funnel: target 1103 → liquid 146 → pre 50 → checked 50 → surge 3 → strict 3
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KGEN/USDT:USDT | +16.81% | $2,784,805.42 |
-| SOXS/USDT:USDT | +9.28% | $64,141,821.56 |
-| ONE/USDT:USDT | +8.87% | $4,505,538.72 |
-| IDOL/USDT:USDT | +7.19% | $7,294,945.36 |
-| Q/USDT:USDT | +4.06% | $4,864,659.82 |
+| KGEN/USDT:USDT | +16.45% | $2,807,019.77 |
+| ONE/USDT:USDT | +9.08% | $4,571,198.61 |
+| IDOL/USDT:USDT | +9.06% | $7,328,475.42 |
+| SOXS/USDT:USDT | +8.89% | $64,144,415.37 |
+| Q/USDT:USDT | +4.91% | $4,872,571.42 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIN/USDT:USDT | below_1h_threshold | +3.63% | +3.81% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.08% | +1.26% |
-| NIGHT/USDT:USDT | below_1h_threshold | +0.77% | +0.95% |
-| GRAM/USDT:USDT | below_1h_threshold | +0.75% | +0.92% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.60% | +0.77% |
+| AIN/USDT:USDT | below_1h_threshold | +3.09% | +3.24% |
+| NIGHT/USDT:USDT | below_1h_threshold | +1.40% | +1.55% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.36% | +1.51% |
+| GRAM/USDT:USDT | below_1h_threshold | +1.08% | +1.23% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.60% | +0.74% |
 
 ## 7. 次に見るべき不足
 
