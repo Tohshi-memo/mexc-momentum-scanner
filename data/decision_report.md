@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-12T07:26:18.018134+00:00
+- generated_at: 2026-11-12T07:31:25.995651+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18723**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6880件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6881件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000199 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-12T07:26:04.548729+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=73456.8
-- Funnel: target 1103 → liquid 146 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-12T07:31:10.701400+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=73553.8
+- Funnel: target 1103 → liquid 146 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KGEN/USDT:USDT | +27.19% | $2,106,949.61 |
-| SOXS/USDT:USDT | +9.87% | $65,912,159.57 |
-| Q/USDT:USDT | +9.17% | $4,601,367.54 |
-| AGT/USDT:USDT | +5.44% | $37,789,763.68 |
-| SQQQ/USDT:USDT | +3.82% | $2,137,793.51 |
+| KGEN/USDT:USDT | +28.92% | $2,160,500.41 |
+| SOXS/USDT:USDT | +9.62% | $65,915,209.09 |
+| Q/USDT:USDT | +9.09% | $4,628,490.14 |
+| AGT/USDT:USDT | +5.43% | $37,804,910.17 |
+| SQQQ/USDT:USDT | +3.67% | $2,152,115.21 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GRAM/USDT:USDT | below_1h_threshold | +2.29% | +2.34% |
-| Q/USDT:USDT | below_1h_threshold | +1.99% | +2.04% |
-| NIGHT/USDT:USDT | below_1h_threshold | +1.69% | +1.74% |
-| AGT/USDT:USDT | below_1h_threshold | +1.44% | +1.49% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +1.04% | +1.09% |
+| IDOL/USDT:USDT | below_1h_threshold | +2.76% | +2.68% |
+| Q/USDT:USDT | below_1h_threshold | +1.92% | +1.83% |
+| GRAM/USDT:USDT | below_1h_threshold | +1.70% | +1.61% |
+| AGT/USDT:USDT | below_1h_threshold | +1.40% | +1.32% |
+| NIGHT/USDT:USDT | below_1h_threshold | +1.08% | +1.00% |
 
 ## 7. 次に見るべき不足
 
