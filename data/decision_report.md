@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-12T07:41:23.899782+00:00
+- generated_at: 2026-11-12T07:46:25.330315+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18723**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-12T07:41:10.777558+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=73578.1
+- 更新: 2026-11-12T07:46:09.456943+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=73536.5
 - Funnel: target 1103 → liquid 146 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KGEN/USDT:USDT | +23.12% | $2,329,051.19 |
-| Q/USDT:USDT | +9.94% | $4,662,168.12 |
-| SOXS/USDT:USDT | +9.73% | $66,090,572.24 |
-| SQQQ/USDT:USDT | +3.67% | $2,166,907.11 |
-| AGT/USDT:USDT | +2.35% | $37,931,502.93 |
+| KGEN/USDT:USDT | +23.19% | $2,395,903.53 |
+| SOXS/USDT:USDT | +10.52% | $66,383,028.28 |
+| Q/USDT:USDT | +7.08% | $4,699,997.37 |
+| SQQQ/USDT:USDT | +3.99% | $2,167,250.53 |
+| AMDSTOCK/USDT:USDT | +1.56% | $23,348,410.14 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| Q/USDT:USDT | below_1h_threshold | +2.31% | +2.20% |
-| GRAM/USDT:USDT | below_1h_threshold | +1.95% | +1.84% |
-| NIGHT/USDT:USDT | below_1h_threshold | +1.63% | +1.51% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +1.04% | +0.93% |
-| UKOIL/USDT:USDT | below_1h_threshold | +1.00% | +0.88% |
+| GRAM/USDT:USDT | below_1h_threshold | +1.87% | +1.81% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +1.04% | +0.98% |
+| UKOIL/USDT:USDT | below_1h_threshold | +1.00% | +0.94% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.94% | +0.89% |
+| NIGHT/USDT:USDT | below_1h_threshold | +0.93% | +0.87% |
 
 ## 7. 次に見るべき不足
 
