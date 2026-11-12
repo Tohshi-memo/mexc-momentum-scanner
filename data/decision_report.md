@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-12T16:56:12.707317+00:00
+- generated_at: 2026-11-12T17:01:28.423269+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18751**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-12T16:56:04.332718+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.18% price=71808.2
-- Funnel: target 1105 → liquid 152 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-11-12T17:01:14.892276+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=71766.7
+- Funnel: target 1105 → liquid 148 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DELTAELECSTOCK/USDT:USDT | +2.70% | $1,401,802.93 |
-| FLOAT/USDT:USDT | +2.41% | $1,642,856.68 |
-| AGT/USDT:USDT | +2.28% | $21,725,310.93 |
-| NTAPSTOCK/USDT:USDT | +1.37% | $1,049,234.96 |
-| MRNASTOCK/USDT:USDT | +1.36% | $1,988,993.22 |
+| AGT/USDT:USDT | +3.84% | $19,026,674.84 |
+| H/USDT:USDT | +3.13% | $1,848,805.99 |
+| DELTAELECSTOCK/USDT:USDT | +3.03% | $1,388,490.19 |
+| FLOAT/USDT:USDT | +2.14% | $1,633,180.36 |
+| ZRO/USDT:USDT | +1.37% | $1,920,105.54 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +2.97% | +2.79% |
-| FLOAT/USDT:USDT | below_1h_threshold | +2.95% | +2.77% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +2.91% | +2.73% |
-| AGT/USDT:USDT | below_1h_threshold | +2.43% | +2.25% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +1.38% | +1.20% |
+| DELTAELECSTOCK/USDT:USDT | below_1h_threshold | +2.71% | +2.65% |
+| H/USDT:USDT | below_1h_threshold | +2.44% | +2.38% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.32% | +1.27% |
+| NTAPSTOCK/USDT:USDT | below_1h_threshold | +1.19% | +1.14% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +1.10% | +1.04% |
 
 ## 7. 次に見るべき不足
 
