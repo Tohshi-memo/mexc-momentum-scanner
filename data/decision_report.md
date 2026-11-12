@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-12T00:16:08.526526+00:00
+- generated_at: 2026-11-12T00:21:13.770923+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18709**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6867件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6868件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000168 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-12T00:16:00.157182+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.19% price=73840.4
-- Funnel: target 1103 → liquid 148 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-12T00:21:02.433258+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=73967.2
+- Funnel: target 1103 → liquid 148 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIN/USDT:USDT | +14.30% | $1,919,648.92 |
-| SOXS/USDT:USDT | +8.55% | $54,168,585.00 |
-| IDOL/USDT:USDT | +6.29% | $1,464,787.26 |
-| Q/USDT:USDT | +5.49% | $3,576,370.07 |
-| AMDSTOCK/USDT:USDT | +3.80% | $21,815,839.77 |
+| SOXS/USDT:USDT | +7.80% | $54,202,841.05 |
+| Q/USDT:USDT | +6.46% | $3,602,899.05 |
+| IDOL/USDT:USDT | +6.15% | $1,467,349.07 |
+| AMDSTOCK/USDT:USDT | +4.15% | $21,889,927.78 |
+| AKE/USDT:USDT | +3.74% | $4,688,871.79 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IDOL/USDT:USDT | below_1h_threshold | +2.10% | +2.29% |
-| ZEC/USDT:USDT | below_1h_threshold | +0.89% | +1.08% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +0.60% | +0.79% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.56% | +0.75% |
-| ANTHROPIC/USDT:USDT | below_1h_threshold | +0.41% | +0.60% |
+| ZEC/USDT:USDT | below_1h_threshold | +2.03% | +2.04% |
+| IDOL/USDT:USDT | below_1h_threshold | +1.91% | +1.93% |
+| Q/USDT:USDT | below_1h_threshold | +0.99% | +1.01% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +0.60% | +0.62% |
+| VVV/USDT:USDT | below_1h_threshold | +0.55% | +0.57% |
 
 ## 7. 次に見るべき不足
 
