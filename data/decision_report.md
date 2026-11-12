@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-12T19:11:42.628089+00:00
+- generated_at: 2026-11-12T19:16:34.929726+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18758**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-12T19:11:29.344917+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=71615.5
+- 更新: 2026-11-12T19:16:21.473947+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=71630.9
 - Funnel: target 1105 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BARD/USDT:USDT | +51.43% | $3,106,988.20 |
-| ARIA/USDT:USDT | +14.19% | $6,997,418.36 |
-| MAGMA/USDT:USDT | +9.63% | $1,015,048.88 |
-| H/USDT:USDT | +6.22% | $1,974,330.01 |
-| ARB/USDT:USDT | +2.96% | $18,265,996.70 |
+| BARD/USDT:USDT | +49.71% | $3,158,833.81 |
+| ARIA/USDT:USDT | +13.88% | $7,022,120.33 |
+| MAGMA/USDT:USDT | +9.49% | $1,018,500.68 |
+| H/USDT:USDT | +4.95% | $1,981,850.04 |
+| ARB/USDT:USDT | +3.00% | $18,318,653.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ARIA/USDT:USDT | below_1h_threshold | +1.15% | +1.30% |
-| SQQQ/USDT:USDT | below_1h_threshold | +0.94% | +1.10% |
-| BARD/USDT:USDT | below_1h_threshold | +0.92% | +1.08% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.77% | +0.93% |
-| JUP/USDT:USDT | below_1h_threshold | +0.49% | +0.65% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.10% | +1.24% |
+| ICP/USDT:USDT | below_1h_threshold | +1.10% | +1.24% |
+| SQQQ/USDT:USDT | below_1h_threshold | +0.94% | +1.08% |
+| AIN/USDT:USDT | below_1h_threshold | +0.92% | +1.05% |
+| ARIA/USDT:USDT | below_1h_threshold | +0.87% | +1.01% |
 
 ## 7. 次に見るべき不足
 
