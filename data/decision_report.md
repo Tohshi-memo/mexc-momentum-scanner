@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-12T20:36:28.972431+00:00
+- generated_at: 2026-11-12T20:41:13.442398+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18763**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-12T20:36:15.277010+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.29% price=71452.8
+- 更新: 2026-11-12T20:41:04.638494+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.25% price=71480.6
 - Funnel: target 1105 → liquid 150 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BARD/USDT:USDT | +43.97% | $4,408,014.02 |
-| ARIA/USDT:USDT | +25.67% | $7,680,717.60 |
-| MAGMA/USDT:USDT | +9.96% | $1,051,677.08 |
-| AIN/USDT:USDT | +7.43% | $1,652,962.71 |
-| USELESS/USDT:USDT | +5.02% | $2,784,788.61 |
+| BARD/USDT:USDT | +44.08% | $4,426,578.70 |
+| ARIA/USDT:USDT | +21.48% | $7,761,127.50 |
+| MAGMA/USDT:USDT | +9.61% | $1,053,152.77 |
+| AIN/USDT:USDT | +7.10% | $1,653,890.68 |
+| USELESS/USDT:USDT | +5.12% | $2,804,639.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| OPENAI/USDT:USDT | below_1h_threshold | +1.65% | +1.95% |
-| NGAS/USDT:USDT | below_1h_threshold | +1.44% | +1.73% |
-| JUP/USDT:USDT | below_1h_threshold | +0.79% | +1.08% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.74% | +1.04% |
-| ARIA/USDT:USDT | below_1h_threshold | +0.71% | +1.00% |
+| H/USDT:USDT | below_1h_threshold | +2.05% | +2.30% |
+| OPENAI/USDT:USDT | below_1h_threshold | +1.49% | +1.74% |
+| NGAS/USDT:USDT | below_1h_threshold | +1.44% | +1.70% |
+| JUP/USDT:USDT | below_1h_threshold | +0.83% | +1.08% |
+| PYTH/USDT:USDT | below_1h_threshold | +0.78% | +1.03% |
 
 ## 7. 次に見るべき不足
 
