@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-12T09:41:19.485851+00:00
+- generated_at: 2026-11-12T09:46:29.174983+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18734**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-12T09:41:08.652429+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.19% price=73422.6
+- 更新: 2026-11-12T09:46:17.919975+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.26% price=73370.8
 - Funnel: target 1103 → liquid 145 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +9.37% | $6,757,212.28 |
-| KGEN/USDT:USDT | +9.20% | $3,104,180.27 |
-| SOXS/USDT:USDT | +6.33% | $66,030,889.54 |
-| Q/USDT:USDT | +5.07% | $4,949,240.48 |
-| IDOL/USDT:USDT | +4.75% | $7,588,469.40 |
+| KGEN/USDT:USDT | +10.58% | $3,116,375.48 |
+| AKE/USDT:USDT | +9.49% | $6,868,852.44 |
+| SOXS/USDT:USDT | +6.69% | $66,102,666.68 |
+| Q/USDT:USDT | +5.45% | $4,965,255.76 |
+| GRAM/USDT:USDT | +3.86% | $3,387,759.63 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZRO/USDT:USDT | below_1h_threshold | +1.08% | +1.27% |
-| GRAM/USDT:USDT | below_1h_threshold | +0.98% | +1.17% |
-| VVV/USDT:USDT | below_1h_threshold | +0.82% | +1.01% |
-| AVAX/USDT:USDT | below_1h_threshold | +0.81% | +1.00% |
-| AVGOSTOCK/USDT:USDT | below_1h_threshold | +0.79% | +0.98% |
+| GRAM/USDT:USDT | below_1h_threshold | +1.39% | +1.65% |
+| ZRO/USDT:USDT | below_1h_threshold | +0.98% | +1.24% |
+| AVGOSTOCK/USDT:USDT | below_1h_threshold | +0.79% | +1.05% |
+| BEAT/USDT:USDT | below_1h_threshold | +0.78% | +1.04% |
+| VVV/USDT:USDT | below_1h_threshold | +0.74% | +1.00% |
 
 ## 7. 次に見るべき不足
 
