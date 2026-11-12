@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-12T22:56:18.683129+00:00
+- generated_at: 2026-11-12T23:01:20.594727+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18764**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-12T22:56:09.881757+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=71420.8
-- Funnel: target 1105 → liquid 150 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-12T23:01:10.010308+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=71289.5
+- Funnel: target 1105 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BARD/USDT:USDT | +38.34% | $5,248,516.95 |
-| ARIA/USDT:USDT | +28.10% | $8,323,679.81 |
-| CBRSSTOCK/USDT:USDT | +11.84% | $3,239,595.23 |
-| MAGMA/USDT:USDT | +7.74% | $1,093,082.39 |
-| AIN/USDT:USDT | +5.90% | $1,238,142.42 |
+| BARD/USDT:USDT | +38.00% | $5,275,241.88 |
+| ARIA/USDT:USDT | +30.10% | $8,270,775.32 |
+| CBRSSTOCK/USDT:USDT | +12.32% | $3,217,161.75 |
+| MAGMA/USDT:USDT | +8.24% | $1,084,740.43 |
+| AIN/USDT:USDT | +6.05% | $1,067,672.89 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ARIA/USDT:USDT | below_1h_threshold | +1.51% | +1.67% |
-| TIA/USDT:USDT | below_1h_threshold | +1.45% | +1.62% |
-| Q/USDT:USDT | below_1h_threshold | +1.24% | +1.40% |
-| XLM/USDT:USDT | below_1h_threshold | +1.23% | +1.39% |
-| MUU/USDT:USDT | below_1h_threshold | +1.21% | +1.37% |
+| CBRSSTOCK/USDT:USDT | below_1h_threshold | +1.62% | +1.76% |
+| ARIA/USDT:USDT | below_1h_threshold | +1.35% | +1.49% |
+| NGAS/USDT:USDT | below_1h_threshold | +0.35% | +0.49% |
+| DELTAELECSTOCK/USDT:USDT | below_1h_threshold | +0.27% | +0.41% |
+| INJ/USDT:USDT | below_1h_threshold | +0.13% | +0.28% |
 
 ## 7. 次に見るべき不足
 
