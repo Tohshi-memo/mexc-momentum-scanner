@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-12T16:36:37.045097+00:00
+- generated_at: 2026-11-12T16:41:28.285868+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18751**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-12T16:36:18.087002+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=71783.8
-- Funnel: target 1105 → liquid 151 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.8 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-12T16:41:15.097812+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=71650.1
+- Funnel: target 1105 → liquid 152 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +5.32% | $21,479,417.98 |
-| DELTAELECSTOCK/USDT:USDT | +2.37% | $1,400,419.35 |
-| INJ/USDT:USDT | +1.38% | $15,385,710.99 |
-| TRUMPOFFICIAL/USDT:USDT | +1.37% | $3,188,798.84 |
-| PYTH/USDT:USDT | +1.24% | $1,925,465.98 |
+| AGT/USDT:USDT | +4.15% | $21,588,672.27 |
+| DELTAELECSTOCK/USDT:USDT | +2.97% | $1,400,787.07 |
+| SOXS/USDT:USDT | +1.34% | $77,168,233.43 |
+| NVD/USDT:USDT | +1.24% | $1,477,367.50 |
+| TRUMPOFFICIAL/USDT:USDT | +1.19% | $3,190,067.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MVLL/USDT:USDT | below_1h_threshold | +3.46% | +3.31% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +2.97% | +2.82% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +2.91% | +2.77% |
-| INJ/USDT:USDT | below_1h_threshold | +1.37% | +1.23% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +1.29% | +1.14% |
+| AGT/USDT:USDT | below_1h_threshold | +4.16% | +4.20% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +2.91% | +2.95% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +1.19% | +1.24% |
+| PYTH/USDT:USDT | below_1h_threshold | +1.01% | +1.05% |
+| INJ/USDT:USDT | below_1h_threshold | +0.99% | +1.04% |
 
 ## 7. 次に見るべき不足
 
