@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-12T01:31:15.115214+00:00
+- generated_at: 2026-11-12T01:36:06.984318+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18711**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-12T01:31:04.491963+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.58% price=73621.0
+- 更新: 2026-11-12T01:35:58.951529+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.47% price=73702.1
 - Funnel: target 1103 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IDOL/USDT:USDT | +8.99% | $1,708,702.93 |
-| SOXS/USDT:USDT | +7.96% | $55,772,232.06 |
-| Q/USDT:USDT | +6.85% | $4,051,297.09 |
-| AKE/USDT:USDT | +5.59% | $5,200,966.32 |
-| SQQQ/USDT:USDT | +3.10% | $2,285,767.42 |
+| IDOL/USDT:USDT | +9.60% | $1,722,632.09 |
+| Q/USDT:USDT | +7.66% | $4,060,918.29 |
+| AKE/USDT:USDT | +7.13% | $5,211,693.43 |
+| SOXS/USDT:USDT | +6.78% | $55,855,046.19 |
+| AMDSTOCK/USDT:USDT | +3.36% | $22,036,607.54 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +0.87% | +1.45% |
-| UAI/USDT:USDT | below_1h_threshold | +0.78% | +1.36% |
-| NGAS/USDT:USDT | below_1h_threshold | +0.59% | +1.16% |
-| GRAM/USDT:USDT | below_1h_threshold | +0.51% | +1.09% |
-| PLTRSTOCK/USDT:USDT | below_1h_threshold | +0.45% | +1.03% |
+| AKE/USDT:USDT | below_1h_threshold | +2.41% | +2.88% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +1.97% | +2.44% |
+| UAI/USDT:USDT | below_1h_threshold | +1.40% | +1.87% |
+| GRAM/USDT:USDT | below_1h_threshold | +0.59% | +1.06% |
+| NGAS/USDT:USDT | below_1h_threshold | +0.59% | +1.06% |
 
 ## 7. 次に見るべき不足
 
