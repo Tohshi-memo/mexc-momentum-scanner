@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-13T11:01:20.533156+00:00
+- generated_at: 2026-11-13T11:06:29.970669+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18812**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-13T11:01:07.166511+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=69282.4
+- 更新: 2026-11-13T11:06:16.682610+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=69316.2
 - Funnel: target 1084 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +124.45% | $20,235,480.52 |
-| BARD/USDT:USDT | +75.66% | $15,922,087.06 |
-| ARIA/USDT:USDT | +33.39% | $9,965,554.68 |
-| KOR/USDT:USDT | +26.96% | $1,826,910.19 |
-| GANG/USDT:USDT | +14.75% | $1,258,897.99 |
+| AKE/USDT:USDT | +124.35% | $20,474,253.18 |
+| BARD/USDT:USDT | +74.16% | $16,020,380.24 |
+| ARIA/USDT:USDT | +33.74% | $9,973,141.69 |
+| KOR/USDT:USDT | +26.66% | $1,829,316.60 |
+| DODO/USDT:USDT | +15.13% | $1,011,200.74 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MUU/USDT:USDT | below_1h_threshold | +1.64% | +1.66% |
-| NVIDIA/USDT:USDT | below_1h_threshold | +0.91% | +0.93% |
-| TESLA/USDT:USDT | below_1h_threshold | +0.67% | +0.69% |
-| DODO/USDT:USDT | below_1h_threshold | +0.63% | +0.65% |
-| GANG/USDT:USDT | below_1h_threshold | +0.38% | +0.41% |
+| Q/USDT:USDT | below_1h_threshold | +2.38% | +2.36% |
+| MUU/USDT:USDT | below_1h_threshold | +1.64% | +1.61% |
+| DODO/USDT:USDT | below_1h_threshold | +1.04% | +1.02% |
+| NVIDIA/USDT:USDT | below_1h_threshold | +0.91% | +0.88% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +0.84% | +0.82% |
 
 ## 7. 次に見るべき不足
 
