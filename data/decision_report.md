@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-13T00:36:20.035190+00:00
+- generated_at: 2026-11-13T00:41:23.852732+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18772**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-13T00:36:05.657758+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.41% price=71130.6
-- Funnel: target 1105 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-11-13T00:41:10.618644+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.75% price=70889.8
+- Funnel: target 1105 → liquid 150 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOR/USDT:USDT | +79.39% | $1,250,340.98 |
-| BARD/USDT:USDT | +42.59% | $6,106,134.43 |
-| ARIA/USDT:USDT | +27.60% | $8,488,225.83 |
-| PLAY/USDT:USDT | +17.09% | $1,400,129.39 |
-| CBRSSTOCK/USDT:USDT | +11.92% | $3,404,961.06 |
+| KOR/USDT:USDT | +77.27% | $1,260,138.59 |
+| BARD/USDT:USDT | +42.02% | $6,122,546.80 |
+| ARIA/USDT:USDT | +27.36% | $8,516,338.05 |
+| PLAY/USDT:USDT | +15.67% | $1,453,740.06 |
+| CBRSSTOCK/USDT:USDT | +11.63% | $3,405,798.11 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MUU/USDT:USDT | below_1h_threshold | +2.61% | +3.02% |
-| KORU/USDT:USDT | below_1h_threshold | +2.42% | +2.83% |
-| SNXX/USDT:USDT | below_1h_threshold | +2.10% | +2.51% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +2.09% | +2.50% |
-| BARD/USDT:USDT | below_1h_threshold | +1.80% | +2.21% |
+| MUU/USDT:USDT | below_1h_threshold | +2.61% | +3.36% |
+| KORU/USDT:USDT | below_1h_threshold | +2.42% | +3.17% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.13% | +2.88% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +2.09% | +2.84% |
+| DRAM/USDT:USDT | below_1h_threshold | +1.77% | +2.52% |
 
 ## 7. 次に見るべき不足
 
