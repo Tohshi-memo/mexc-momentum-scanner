@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-13T03:01:05.221378+00:00
+- generated_at: 2026-11-13T03:06:09.277737+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18777**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-13T03:00:57.326879+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=70246.9
+- 更新: 2026-11-13T03:06:01.081704+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=70279.1
 - Funnel: target 1105 → liquid 150 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOR/USDT:USDT | +57.27% | $1,447,402.18 |
-| BARD/USDT:USDT | +49.13% | $7,683,771.31 |
-| ARIA/USDT:USDT | +34.60% | $8,746,487.26 |
-| GANG/USDT:USDT | +19.04% | $1,100,771.20 |
-| PLAY/USDT:USDT | +14.89% | $1,991,506.03 |
+| KOR/USDT:USDT | +56.36% | $1,449,965.06 |
+| BARD/USDT:USDT | +49.02% | $7,718,793.43 |
+| ARIA/USDT:USDT | +35.14% | $8,771,146.20 |
+| GANG/USDT:USDT | +17.50% | $1,109,581.91 |
+| PLAY/USDT:USDT | +15.67% | $1,998,666.11 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AR/USDT:USDT | below_1h_threshold | +0.40% | +0.34% |
-| PONS/USDT:USDT | below_1h_threshold | +0.26% | +0.21% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.25% | +0.19% |
-| ICP/USDT:USDT | below_1h_threshold | +0.23% | +0.18% |
-| PLAY/USDT:USDT | below_1h_threshold | +0.23% | +0.17% |
+| PLAY/USDT:USDT | below_1h_threshold | +0.90% | +0.81% |
+| USELESS/USDT:USDT | below_1h_threshold | +0.70% | +0.60% |
+| AR/USDT:USDT | below_1h_threshold | +0.66% | +0.56% |
+| BLESS/USDT:USDT | below_1h_threshold | +0.52% | +0.42% |
+| PYTH/USDT:USDT | below_1h_threshold | +0.49% | +0.39% |
 
 ## 7. 次に見るべき不足
 
