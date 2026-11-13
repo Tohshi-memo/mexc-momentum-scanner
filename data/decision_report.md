@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-11-13T22:01:32.029935+00:00
+- generated_at: 2026-11-13T22:06:32.696949+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **18869**
+- closed shadow trades: **18870**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=18869, expectancy=+0.02%
+- 全期間 MARKET基準: n=18870, expectancy=+0.02%
 - 直近20件 MARKET基準: n=20, expectancy=+0.20%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,763.10** / 初期 $100.00 (+1663.10%)
-- 確定: 7290件 (Win 2100 / Loss 2337 / Flat 2853) / skip 8140件
+- 確定: 7290件 (Win 2100 / Loss 2337 / Flat 2853) / skip 8141件
 - 成長率目線: 平均log +0.000394 / 幾何平均 +0.039% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_7PCT` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: SHELL/USDT:USDT `LIMIT_7PCT` EXPIRED account +0.00% 残高後 $1,763.10
@@ -55,23 +55,23 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$416.29** / 初期 $100.00 (+316.29%)
-- 確定: 4877件 (Win 1309 / Loss 1078 / Flat 2490) / skip 7403件
+- 確定: 4878件 (Win 1309 / Loss 1078 / Flat 2491) / skip 7403件
 - 成長率目線: 平均log +0.000292 / 幾何平均 +0.029% per trade / maxDD +4.29%
 - 次の候補: `LIMIT_7PCT` (selected_by_robust_growth_score) / robust_score +0.1705 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: KOR/USDT:USDT `LIMIT_7PCT` EXPIRED account +0.00% 残高後 $416.29
+- 最新: ARIA/USDT:USDT `LIMIT_8PCT` EXPIRED account +0.00% 残高後 $416.29
 
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
 - 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7030件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000463 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000458 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-13T22:01:18.646728+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=68387.7
+- 更新: 2026-11-13T22:06:19.555933+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.16% price=68259.1
 - Funnel: target 1084 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SHELL/USDT:USDT | +82.41% | $2,856,568.71 |
-| AKE/USDT:USDT | +18.27% | $65,884,401.94 |
-| H/USDT:USDT | +7.03% | $1,492,198.05 |
-| LAB/USDT:USDT | +5.80% | $1,058,435.65 |
-| NIGHT/USDT:USDT | +5.59% | $1,242,768.34 |
+| SHELL/USDT:USDT | +82.23% | $2,873,658.16 |
+| AKE/USDT:USDT | +18.48% | $66,017,429.44 |
+| H/USDT:USDT | +5.55% | $1,495,342.42 |
+| KOR/USDT:USDT | +5.34% | $1,545,647.29 |
+| LAB/USDT:USDT | +5.26% | $1,058,929.73 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FET/USDT:USDT | below_1h_threshold | +0.48% | +0.45% |
-| ALUMINUM/USDT:USDT | below_1h_threshold | +0.36% | +0.33% |
-| ZINC/USDT:USDT | below_1h_threshold | +0.33% | +0.30% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +0.29% | +0.26% |
-| JUP/USDT:USDT | below_1h_threshold | +0.27% | +0.24% |
+| UVXY/USDT:USDT | below_1h_threshold | +3.11% | +3.27% |
+| AKE/USDT:USDT | below_1h_threshold | +0.50% | +0.66% |
+| ALUMINUM/USDT:USDT | below_1h_threshold | +0.36% | +0.52% |
+| ZINC/USDT:USDT | below_1h_threshold | +0.33% | +0.49% |
+| PAXG/USDT:USDT | below_1h_threshold | +0.01% | +0.17% |
 
 ## 7. 次に見るべき不足
 
