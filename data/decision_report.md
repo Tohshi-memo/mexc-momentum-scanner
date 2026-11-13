@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-13T03:46:15.186590+00:00
+- generated_at: 2026-11-13T03:51:20.013587+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18778**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-13T03:46:04.534667+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -1.54% price=69127.9
+- 更新: 2026-11-13T03:51:10.412506+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -1.70% price=69012.9
 - Funnel: target 1105 → liquid 152 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BARD/USDT:USDT | +40.29% | $8,223,526.51 |
-| ARIA/USDT:USDT | +34.46% | $8,937,288.59 |
-| KOR/USDT:USDT | +34.24% | $1,502,197.77 |
-| GANG/USDT:USDT | +17.94% | $1,127,306.28 |
-| CBRSSTOCK/USDT:USDT | +12.40% | $3,510,018.64 |
+| BARD/USDT:USDT | +39.26% | $8,283,709.60 |
+| ARIA/USDT:USDT | +37.39% | $9,034,416.05 |
+| KOR/USDT:USDT | +33.33% | $1,504,860.22 |
+| GANG/USDT:USDT | +18.41% | $1,128,825.14 |
+| CBRSSTOCK/USDT:USDT | +12.30% | $3,510,655.29 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +2.95% | +4.49% |
-| SQQQ/USDT:USDT | below_1h_threshold | +0.87% | +2.41% |
-| H/USDT:USDT | below_1h_threshold | +0.72% | +2.26% |
-| WLFI/USDT:USDT | below_1h_threshold | +0.28% | +1.82% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.25% | +1.79% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.95% | +4.65% |
+| ARIA/USDT:USDT | below_1h_threshold | +1.78% | +3.49% |
+| H/USDT:USDT | below_1h_threshold | +1.10% | +2.81% |
+| SQQQ/USDT:USDT | below_1h_threshold | +0.87% | +2.58% |
+| WLFI/USDT:USDT | below_1h_threshold | +0.28% | +1.98% |
 
 ## 7. 次に見るべき不足
 
