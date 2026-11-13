@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-13T22:11:30.120711+00:00
+- generated_at: 2026-11-13T22:16:26.040132+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18871**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-13T22:11:18.632540+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=68258.4
+- 更新: 2026-11-13T22:16:16.238382+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.40% price=68092.7
 - Funnel: target 1084 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SHELL/USDT:USDT | +81.24% | $2,891,068.49 |
-| AKE/USDT:USDT | +17.40% | $66,180,340.27 |
-| LAB/USDT:USDT | +5.56% | $1,059,265.24 |
-| H/USDT:USDT | +5.12% | $1,501,581.69 |
-| NIGHT/USDT:USDT | +5.05% | $1,251,888.03 |
+| SHELL/USDT:USDT | +76.71% | $2,919,280.39 |
+| AKE/USDT:USDT | +18.39% | $66,317,235.56 |
+| KOR/USDT:USDT | +5.81% | $1,547,098.69 |
+| NIGHT/USDT:USDT | +4.69% | $1,259,339.30 |
+| LAB/USDT:USDT | +4.65% | $1,060,860.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ALUMINUM/USDT:USDT | below_1h_threshold | +0.36% | +0.52% |
-| ZINC/USDT:USDT | below_1h_threshold | +0.33% | +0.49% |
-| UAI/USDT:USDT | below_1h_threshold | +0.13% | +0.29% |
-| USDC/USDT:USDT | below_1h_threshold | +0.00% | +0.16% |
-| PAXG/USDT:USDT | below_1h_threshold | -0.00% | +0.16% |
+| UVXY/USDT:USDT | below_1h_threshold | +3.11% | +3.51% |
+| ALUMINUM/USDT:USDT | below_1h_threshold | +0.36% | +0.76% |
+| AKE/USDT:USDT | below_1h_threshold | +0.35% | +0.75% |
+| ZINC/USDT:USDT | below_1h_threshold | +0.33% | +0.73% |
+| USDC/USDT:USDT | below_1h_threshold | +0.00% | +0.40% |
 
 ## 7. 次に見るべき不足
 
