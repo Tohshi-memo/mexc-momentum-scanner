@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-13T09:26:30.704660+00:00
+- generated_at: 2026-11-13T09:31:40.092757+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18805**
 
@@ -63,38 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6967件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6968件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000161 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-13T09:26:14.211824+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.23% price=68835.1
-- Funnel: target 1086 → liquid 153 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-13T09:31:27.895689+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.33% price=68908.5
+- Funnel: target 1086 → liquid 153 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +83.17% | $15,458,720.31 |
-| BARD/USDT:USDT | +58.89% | $13,892,352.05 |
-| ARIA/USDT:USDT | +41.41% | $9,848,107.47 |
-| KOR/USDT:USDT | +32.12% | $1,812,565.63 |
-| GANG/USDT:USDT | +16.40% | $1,232,143.89 |
+| AKE/USDT:USDT | +85.44% | $15,660,386.38 |
+| BARD/USDT:USDT | +57.86% | $13,985,140.28 |
+| ARIA/USDT:USDT | +41.22% | $9,860,333.46 |
+| KOR/USDT:USDT | +30.90% | $1,814,567.22 |
+| GANG/USDT:USDT | +17.12% | $1,233,207.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_relative_strength | +5.09% | +4.87% |
-| GANG/USDT:USDT | below_1h_threshold | +4.31% | +4.08% |
-| H/USDT:USDT | below_1h_threshold | +2.88% | +2.65% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.91% | +1.69% |
-| Q/USDT:USDT | below_1h_threshold | +0.98% | +0.75% |
+| GANG/USDT:USDT | below_relative_strength | +5.17% | +4.84% |
+| H/USDT:USDT | below_1h_threshold | +3.61% | +3.28% |
+| UAI/USDT:USDT | below_1h_threshold | +2.26% | +1.93% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.91% | +1.58% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.29% | +0.96% |
 
 ## 7. 次に見るべき不足
 
