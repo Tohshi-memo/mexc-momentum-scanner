@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-13T00:56:16.062743+00:00
+- generated_at: 2026-11-13T01:01:23.908296+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18772**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-13T00:56:05.397923+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.45% price=71099.5
-- Funnel: target 1105 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-11-13T01:01:10.868889+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=71067.6
+- Funnel: target 1105 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOR/USDT:USDT | +71.21% | $1,300,659.24 |
-| BARD/USDT:USDT | +43.51% | $6,159,581.98 |
-| ARIA/USDT:USDT | +26.16% | $8,556,688.99 |
-| GANG/USDT:USDT | +13.95% | $1,005,647.51 |
-| CBRSSTOCK/USDT:USDT | +12.76% | $3,415,186.71 |
+| KOR/USDT:USDT | +73.33% | $1,301,345.63 |
+| BARD/USDT:USDT | +43.97% | $6,186,049.64 |
+| ARIA/USDT:USDT | +28.93% | $8,474,334.07 |
+| GANG/USDT:USDT | +16.51% | $1,002,824.92 |
+| CBRSSTOCK/USDT:USDT | +12.64% | $3,408,257.19 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MUU/USDT:USDT | below_1h_threshold | +2.61% | +3.07% |
-| KORU/USDT:USDT | below_1h_threshold | +2.42% | +2.87% |
-| BARD/USDT:USDT | below_1h_threshold | +2.21% | +2.66% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.13% | +2.58% |
-| SNXX/USDT:USDT | below_1h_threshold | +2.10% | +2.55% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +1.46% | +1.51% |
+| CBRSSTOCK/USDT:USDT | below_1h_threshold | +1.09% | +1.14% |
+| BARD/USDT:USDT | below_1h_threshold | +0.89% | +0.93% |
+| KORU/USDT:USDT | below_1h_threshold | +0.71% | +0.76% |
+| GANG/USDT:USDT | below_1h_threshold | +0.47% | +0.52% |
 
 ## 7. 次に見るべき不足
 
