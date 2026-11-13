@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-13T13:41:19.943886+00:00
+- generated_at: 2026-11-13T13:46:12.933209+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18821**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-13T13:41:08.368110+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.91% price=69809.1
+- 更新: 2026-11-13T13:46:01.741808+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.89% price=69793.3
 - Funnel: target 1083 → liquid 151 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +107.94% | $27,739,178.68 |
-| BARD/USDT:USDT | +74.74% | $21,892,375.37 |
-| KOR/USDT:USDT | +24.24% | $1,911,396.48 |
-| KGEN/USDT:USDT | +23.24% | $1,022,752.66 |
-| ARIA/USDT:USDT | +20.92% | $11,055,525.40 |
+| AKE/USDT:USDT | +106.94% | $27,930,230.10 |
+| BARD/USDT:USDT | +74.51% | $21,946,259.82 |
+| KOR/USDT:USDT | +27.57% | $1,914,066.91 |
+| ARIA/USDT:USDT | +20.06% | $11,066,799.09 |
+| KGEN/USDT:USDT | +19.53% | $1,032,684.87 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| INJ/USDT:USDT | below_1h_threshold | +4.86% | +3.95% |
-| ZRO/USDT:USDT | below_1h_threshold | +4.01% | +3.10% |
-| LIT/USDT:USDT | below_1h_threshold | +3.74% | +2.83% |
-| VVV/USDT:USDT | below_1h_threshold | +2.94% | +2.03% |
-| PLAY/USDT:USDT | below_1h_threshold | +2.91% | +2.00% |
+| INJ/USDT:USDT | below_1h_threshold | +4.40% | +3.52% |
+| LIT/USDT:USDT | below_1h_threshold | +3.31% | +2.43% |
+| ZRO/USDT:USDT | below_1h_threshold | +3.09% | +2.20% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.76% | +1.88% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.70% | +1.82% |
 
 ## 7. 次に見るべき不足
 
