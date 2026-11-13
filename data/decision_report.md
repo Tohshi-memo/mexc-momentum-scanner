@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-13T00:46:20.933152+00:00
+- generated_at: 2026-11-13T00:51:17.994114+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18772**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-13T00:46:07.770372+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.75% price=70889.9
+- 更新: 2026-11-13T00:51:06.995371+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.57% price=71018.3
 - Funnel: target 1105 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOR/USDT:USDT | +77.27% | $1,266,485.23 |
-| BARD/USDT:USDT | +42.59% | $6,142,351.96 |
-| ARIA/USDT:USDT | +27.79% | $8,528,692.99 |
-| PLAY/USDT:USDT | +14.63% | $1,464,060.25 |
-| GANG/USDT:USDT | +13.10% | $1,003,509.47 |
+| KOR/USDT:USDT | +68.18% | $1,287,486.61 |
+| BARD/USDT:USDT | +42.93% | $6,150,110.87 |
+| ARIA/USDT:USDT | +27.25% | $8,538,838.36 |
+| PLAY/USDT:USDT | +13.98% | $1,470,045.55 |
+| GANG/USDT:USDT | +12.77% | $1,005,033.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MUU/USDT:USDT | below_1h_threshold | +2.61% | +3.36% |
-| KORU/USDT:USDT | below_1h_threshold | +2.42% | +3.17% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.13% | +2.87% |
-| SNXX/USDT:USDT | below_1h_threshold | +2.10% | +2.85% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +2.09% | +2.84% |
+| MUU/USDT:USDT | below_1h_threshold | +2.61% | +3.18% |
+| KORU/USDT:USDT | below_1h_threshold | +2.42% | +2.99% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.13% | +2.70% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.10% | +2.67% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +2.09% | +2.66% |
 
 ## 7. 次に見るべき不足
 
