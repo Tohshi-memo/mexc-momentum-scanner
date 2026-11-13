@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-13T10:06:31.961365+00:00
+- generated_at: 2026-11-13T10:11:29.572246+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18811**
 
@@ -70,31 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-13T10:06:16.068298+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.19% price=69205.6
-- Funnel: target 1084 → liquid 148 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-13T10:11:16.304364+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.28% price=69270.7
+- Funnel: target 1084 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +129.06% | $18,097,714.70 |
-| BARD/USDT:USDT | +72.56% | $15,027,637.95 |
-| KOR/USDT:USDT | +38.78% | $1,819,155.65 |
-| ARIA/USDT:USDT | +37.42% | $9,933,634.23 |
-| GANG/USDT:USDT | +15.85% | $1,248,047.79 |
+| AKE/USDT:USDT | +125.07% | $18,474,409.47 |
+| BARD/USDT:USDT | +71.18% | $15,129,202.60 |
+| ARIA/USDT:USDT | +37.64% | $9,943,346.44 |
+| KOR/USDT:USDT | +33.03% | $1,821,457.09 |
+| H/USDT:USDT | +16.90% | $1,679,276.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KGEN/USDT:USDT | below_1h_threshold | +1.68% | +1.49% |
-| NVIDIA/USDT:USDT | below_1h_threshold | +1.55% | +1.36% |
-| PEPE/USDT:USDT | below_1h_threshold | +1.44% | +1.25% |
-| AKE/USDT:USDT | below_1h_threshold | +1.23% | +1.04% |
-| H/USDT:USDT | below_1h_threshold | +1.19% | +1.00% |
+| PLAY/USDT:USDT | below_1h_threshold | +2.97% | +2.69% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +2.46% | +2.18% |
+| H/USDT:USDT | below_1h_threshold | +1.90% | +1.62% |
+| Q/USDT:USDT | below_1h_threshold | +1.55% | +1.27% |
+| NVIDIA/USDT:USDT | below_1h_threshold | +1.55% | +1.27% |
 
 ## 7. 次に見るべき不足
 
