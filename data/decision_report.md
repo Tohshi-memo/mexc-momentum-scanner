@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-13T01:46:25.536770+00:00
+- generated_at: 2026-11-13T01:51:30.920642+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18774**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-13T01:46:12.231843+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.19% price=70964.4
-- Funnel: target 1105 → liquid 151 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.1 >= 65=1, 4h RSI 68.2 >= 65=1
+- 更新: 2026-11-13T01:51:17.154535+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.26% price=70916.8
+- Funnel: target 1105 → liquid 151 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 79.4 >= 65=1, 4h RSI 69.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOR/USDT:USDT | +68.18% | $1,372,918.90 |
-| BARD/USDT:USDT | +60.61% | $6,704,951.26 |
-| ARIA/USDT:USDT | +36.68% | $8,652,582.46 |
-| GANG/USDT:USDT | +21.90% | $1,025,041.03 |
-| PLAY/USDT:USDT | +13.60% | $1,751,253.27 |
+| KOR/USDT:USDT | +67.57% | $1,377,846.17 |
+| BARD/USDT:USDT | +62.11% | $6,821,810.05 |
+| ARIA/USDT:USDT | +33.00% | $8,669,067.04 |
+| GANG/USDT:USDT | +25.83% | $1,042,105.49 |
+| CBRSSTOCK/USDT:USDT | +13.78% | $3,470,460.86 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PLAY/USDT:USDT | below_1h_threshold | +4.04% | +4.23% |
-| H/USDT:USDT | below_1h_threshold | +3.48% | +3.67% |
-| PONS/USDT:USDT | below_1h_threshold | +2.21% | +2.41% |
-| CBRSSTOCK/USDT:USDT | below_1h_threshold | +1.09% | +1.28% |
-| USELESS/USDT:USDT | below_1h_threshold | +1.02% | +1.21% |
+| ARIA/USDT:USDT | below_1h_threshold | +3.46% | +3.72% |
+| PLAY/USDT:USDT | below_1h_threshold | +2.97% | +3.23% |
+| H/USDT:USDT | below_1h_threshold | +1.98% | +2.24% |
+| PONS/USDT:USDT | below_1h_threshold | +1.95% | +2.21% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.28% | +1.54% |
 
 ## 7. 次に見るべき不足
 
