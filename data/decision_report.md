@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-13T08:36:21.153507+00:00
+- generated_at: 2026-11-13T08:41:34.627904+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18803**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6962件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6964件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000195 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-13T08:36:08.776496+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.25% price=68726.0
-- Funnel: target 1086 → liquid 155 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-13T08:41:18.248547+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.32% price=68775.3
+- Funnel: target 1086 → liquid 155 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.4 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +60.99% | $14,183,127.53 |
-| BARD/USDT:USDT | +53.61% | $13,102,088.85 |
-| KOR/USDT:USDT | +38.78% | $1,822,136.30 |
-| ARIA/USDT:USDT | +35.51% | $9,707,958.73 |
-| H/USDT:USDT | +13.72% | $1,717,155.01 |
+| AKE/USDT:USDT | +67.62% | $14,421,756.26 |
+| BARD/USDT:USDT | +55.91% | $13,160,949.48 |
+| KOR/USDT:USDT | +40.00% | $1,825,373.05 |
+| ARIA/USDT:USDT | +35.76% | $9,718,076.89 |
+| GANG/USDT:USDT | +16.40% | $1,222,983.95 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BARD/USDT:USDT | below_1h_threshold | +3.24% | +2.99% |
-| GANG/USDT:USDT | below_1h_threshold | +2.90% | +2.65% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.63% | +2.38% |
-| AKE/USDT:USDT | below_1h_threshold | +2.43% | +2.18% |
-| ICP/USDT:USDT | below_1h_threshold | +1.61% | +1.37% |
+| BARD/USDT:USDT | below_1h_threshold | +4.70% | +4.38% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.91% | +2.59% |
+| Q/USDT:USDT | below_1h_threshold | +1.70% | +1.38% |
+| HYPE/USDT:USDT | below_1h_threshold | +1.06% | +0.74% |
+| INJ/USDT:USDT | below_1h_threshold | +1.02% | +0.70% |
 
 ## 7. 次に見るべき不足
 
