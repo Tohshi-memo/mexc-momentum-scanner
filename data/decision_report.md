@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-13T21:36:10.602783+00:00
+- generated_at: 2026-11-13T21:41:22.055497+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18869**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-13T21:36:01.834278+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -1.00% price=68194.1
+- 更新: 2026-11-13T21:41:09.306602+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.99% price=68199.9
 - Funnel: target 1084 → liquid 148 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SHELL/USDT:USDT | +86.08% | $2,776,670.99 |
-| AKE/USDT:USDT | +15.98% | $64,932,724.23 |
-| H/USDT:USDT | +7.94% | $1,501,962.58 |
-| LAB/USDT:USDT | +5.34% | $1,044,909.26 |
-| KOR/USDT:USDT | +4.88% | $1,604,422.22 |
+| SHELL/USDT:USDT | +83.77% | $2,799,292.45 |
+| AKE/USDT:USDT | +20.24% | $65,313,774.12 |
+| H/USDT:USDT | +7.03% | $1,512,769.60 |
+| KOR/USDT:USDT | +6.74% | $1,608,353.50 |
+| LAB/USDT:USDT | +5.53% | $1,052,523.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MUU/USDT:USDT | below_1h_threshold | +2.25% | +3.25% |
+| MUU/USDT:USDT | below_1h_threshold | +2.25% | +3.24% |
+| AKE/USDT:USDT | below_1h_threshold | +1.99% | +2.98% |
 | SNXX/USDT:USDT | below_1h_threshold | +1.77% | +2.76% |
+| ARIA/USDT:USDT | below_1h_threshold | +1.41% | +2.40% |
 | AXTISTOCK/USDT:USDT | below_1h_threshold | +1.31% | +2.30% |
-| KORU/USDT:USDT | below_1h_threshold | +1.19% | +2.19% |
-| AAOISTOCK/USDT:USDT | below_1h_threshold | +0.91% | +1.91% |
 
 ## 7. 次に見るべき不足
 
