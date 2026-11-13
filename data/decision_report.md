@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-13T15:41:42.731665+00:00
+- generated_at: 2026-11-13T15:46:40.463452+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18833**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-13T15:41:28.612700+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -1.25% price=68121.2
-- Funnel: target 1084 → liquid 146 → pre 50 → checked 50 → surge 3 → strict 2
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.0 >= 65=1
+- 更新: 2026-11-13T15:46:25.609072+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -1.01% price=68285.7
+- Funnel: target 1084 → liquid 146 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 83.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +231.09% | $37,043,018.98 |
-| BARD/USDT:USDT | +83.46% | $24,057,884.55 |
-| SOPH/USDT:USDT | +40.68% | $1,084,005.65 |
-| KOR/USDT:USDT | +24.84% | $1,923,241.76 |
-| ARIA/USDT:USDT | +21.70% | $10,084,864.47 |
+| AKE/USDT:USDT | +218.54% | $37,777,671.16 |
+| BARD/USDT:USDT | +83.69% | $24,088,152.91 |
+| SOPH/USDT:USDT | +43.56% | $1,086,987.45 |
+| KOR/USDT:USDT | +25.45% | $1,923,851.97 |
+| ARIA/USDT:USDT | +20.76% | $10,103,140.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SQQQ/USDT:USDT | below_1h_threshold | +3.52% | +4.78% |
-| ARIA/USDT:USDT | below_1h_threshold | +2.27% | +3.53% |
-| METASTOCK/USDT:USDT | below_1h_threshold | +1.46% | +2.72% |
-| PLAY/USDT:USDT | below_1h_threshold | +1.34% | +2.59% |
-| AAPLSTOCK/USDT:USDT | below_1h_threshold | +0.98% | +2.23% |
+| SQQQ/USDT:USDT | below_1h_threshold | +3.52% | +4.54% |
+| PLAY/USDT:USDT | below_1h_threshold | +1.82% | +2.84% |
+| ARIA/USDT:USDT | below_1h_threshold | +1.72% | +2.74% |
+| METASTOCK/USDT:USDT | below_1h_threshold | +1.46% | +2.48% |
+| SOPH/USDT:USDT | below_1h_threshold | +1.15% | +2.17% |
 
 ## 7. 次に見るべき不足
 
