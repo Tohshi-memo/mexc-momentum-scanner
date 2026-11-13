@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-11-13T12:56:26.669085+00:00
+- generated_at: 2026-11-13T13:01:29.529377+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **18819**
+- closed shadow trades: **18820**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=18819, expectancy=+0.02%
+- 全期間 MARKET基準: n=18820, expectancy=+0.02%
 - 直近20件 MARKET基準: n=20, expectancy=-0.40%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -32,8 +32,8 @@
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | LIMIT_3PCT_LONG | 14/20 | 70.0% | +2.80% | **+1.96%** |
-| LIMIT_ATR_LONG | 12/20 | 60.0% | +2.16% | **+1.30%** |
 | LIMIT_1PCT_LONG | 18/20 | 90.0% | +1.34% | **+1.21%** |
+| LIMIT_ATR_LONG | 12/20 | 60.0% | +1.72% | **+1.03%** |
 | LIMIT_FIB1272_LONG | 7/20 | 35.0% | +2.86% | **+1.00%** |
 | LIMIT_4PCT_LONG | 11/20 | 55.0% | +1.45% | **+0.80%** |
 
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,763.10** / 初期 $100.00 (+1663.10%)
-- 確定: 7289件 (Win 2100 / Loss 2337 / Flat 2852) / skip 8091件
+- 確定: 7289件 (Win 2100 / Loss 2337 / Flat 2852) / skip 8092件
 - 成長率目線: 平均log +0.000394 / 幾何平均 +0.039% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_8PCT` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: BARD/USDT:USDT `LIMIT_ATR_LONG` SL_HIT account -0.50% 残高後 $1,763.10
@@ -55,10 +55,10 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$397.44** / 初期 $100.00 (+297.44%)
-- 確定: 4828件 (Win 1300 / Loss 1076 / Flat 2452) / skip 7402件
+- 確定: 4829件 (Win 1300 / Loss 1076 / Flat 2453) / skip 7402件
 - 成長率目線: 平均log +0.000286 / 幾何平均 +0.029% per trade / maxDD +4.29%
 - 次の候補: `LIMIT_8PCT` (selected_by_robust_growth_score) / robust_score +0.1401 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: BARD/USDT:USDT `LIMIT_8PCT` EXPIRED account +0.00% 残高後 $397.44
+- 最新: ARIA/USDT:USDT `LIMIT_8PCT` EXPIRED account +0.00% 残高後 $397.44
 
 ## 5. Causal Adaptive DryRun ($100)
 
@@ -70,31 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-13T12:56:11.064602+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=69218.0
-- Funnel: target 1084 → liquid 152 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-13T13:01:18.090353+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=69107.7
+- Funnel: target 1083 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +116.37% | $26,520,379.44 |
-| BARD/USDT:USDT | +78.64% | $20,659,982.98 |
-| KOR/USDT:USDT | +32.72% | $1,884,459.78 |
-| ARIA/USDT:USDT | +24.12% | $10,823,585.19 |
-| KGEN/USDT:USDT | +20.56% | $1,055,772.87 |
+| AKE/USDT:USDT | +120.94% | $26,539,647.51 |
+| BARD/USDT:USDT | +79.10% | $20,800,593.44 |
+| KOR/USDT:USDT | +32.12% | $1,880,784.50 |
+| GANG/USDT:USDT | +16.81% | $1,058,113.21 |
+| DODO/USDT:USDT | +16.71% | $1,056,630.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KOR/USDT:USDT | below_1h_threshold | +4.50% | +4.61% |
-| INJ/USDT:USDT | below_1h_threshold | +2.90% | +3.01% |
-| AKE/USDT:USDT | below_1h_threshold | +2.48% | +2.58% |
-| QNT/USDT:USDT | below_1h_threshold | +2.32% | +2.42% |
-| DODO/USDT:USDT | below_1h_threshold | +1.41% | +1.51% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.76% | +2.87% |
+| PLAY/USDT:USDT | below_1h_threshold | +0.89% | +0.99% |
+| AKE/USDT:USDT | below_1h_threshold | +0.74% | +0.84% |
+| SQQQ/USDT:USDT | below_1h_threshold | +0.61% | +0.72% |
+| H/USDT:USDT | below_1h_threshold | +0.58% | +0.69% |
 
 ## 7. 次に見るべき不足
 
