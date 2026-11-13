@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-13T04:41:37.624168+00:00
+- generated_at: 2026-11-13T04:46:28.047927+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18781**
 
@@ -70,32 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-13T04:41:23.691461+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.25% price=68755.2
-- Funnel: target 1105 → liquid 152 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.5 >= 65=1
+- 更新: 2026-11-13T04:46:12.753825+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.46% price=68614.3
+- Funnel: target 1105 → liquid 152 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOR/USDT:USDT | +62.72% | $1,572,186.94 |
-| BARD/USDT:USDT | +47.30% | $9,530,336.87 |
-| ARIA/USDT:USDT | +32.29% | $9,287,934.71 |
-| CBRSSTOCK/USDT:USDT | +11.78% | $3,525,728.33 |
-| GANG/USDT:USDT | +10.63% | $1,155,642.55 |
+| KOR/USDT:USDT | +59.39% | $1,586,958.79 |
+| BARD/USDT:USDT | +44.31% | $9,579,104.16 |
+| ARIA/USDT:USDT | +32.24% | $9,296,533.09 |
+| CBRSSTOCK/USDT:USDT | +11.96% | $3,526,176.63 |
+| GANG/USDT:USDT | +10.44% | $1,156,336.51 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +4.10% | +4.36% |
-| MAGMA/USDT:USDT | below_1h_threshold | +2.12% | +2.37% |
-| SQQQ/USDT:USDT | below_1h_threshold | +1.43% | +1.68% |
-| NVD/USDT:USDT | below_1h_threshold | +0.80% | +1.05% |
-| Q/USDT:USDT | below_1h_threshold | +0.30% | +0.55% |
+| SOXS/USDT:USDT | below_1h_threshold | +4.10% | +4.56% |
+| BARD/USDT:USDT | below_1h_threshold | +3.88% | +4.34% |
+| MAGMA/USDT:USDT | below_1h_threshold | +1.86% | +2.32% |
+| SQQQ/USDT:USDT | below_1h_threshold | +1.43% | +1.89% |
+| NVD/USDT:USDT | below_1h_threshold | +0.80% | +1.25% |
 
 ## 7. 次に見るべき不足
 
