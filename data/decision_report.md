@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-13T06:11:14.401138+00:00
+- generated_at: 2026-11-13T06:16:26.223059+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18787**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6945件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6946件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_8PCT` (selected_by_causal_log_growth) / causal_score +0.000175 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-13T06:11:05.410470+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.20% price=68250.0
-- Funnel: target 1105 → liquid 152 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-13T06:16:10.596855+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.35% price=68354.2
+- Funnel: target 1105 → liquid 152 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BARD/USDT:USDT | +45.69% | $10,587,846.26 |
-| ARIA/USDT:USDT | +36.19% | $9,350,679.62 |
-| KOR/USDT:USDT | +32.72% | $1,705,179.06 |
-| AKE/USDT:USDT | +14.10% | $8,250,152.17 |
-| GANG/USDT:USDT | +12.55% | $1,174,357.02 |
+| BARD/USDT:USDT | +48.56% | $10,658,615.36 |
+| KOR/USDT:USDT | +36.36% | $1,712,960.05 |
+| ARIA/USDT:USDT | +36.34% | $9,362,370.38 |
+| AKE/USDT:USDT | +29.37% | $8,438,374.70 |
+| GANG/USDT:USDT | +12.31% | $1,175,374.97 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GANG/USDT:USDT | below_1h_threshold | +2.19% | +1.99% |
-| SOXS/USDT:USDT | below_1h_threshold | +2.17% | +1.97% |
-| Q/USDT:USDT | below_1h_threshold | +1.68% | +1.48% |
-| NVD/USDT:USDT | below_1h_threshold | +1.36% | +1.16% |
-| AKE/USDT:USDT | below_1h_threshold | +1.25% | +1.05% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.17% | +1.82% |
+| Q/USDT:USDT | below_1h_threshold | +2.12% | +1.76% |
+| GANG/USDT:USDT | below_1h_threshold | +1.87% | +1.52% |
+| PEPE/USDT:USDT | below_1h_threshold | +1.82% | +1.47% |
+| H/USDT:USDT | below_1h_threshold | +1.78% | +1.42% |
 
 ## 7. 次に見るべき不足
 
