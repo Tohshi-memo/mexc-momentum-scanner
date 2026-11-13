@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-13T11:56:20.536347+00:00
+- generated_at: 2026-11-13T12:01:27.600335+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18814**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-13T11:56:07.071005+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=69294.0
-- Funnel: target 1084 → liquid 152 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-11-13T12:01:14.001319+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=69339.2
+- Funnel: target 1084 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +114.65% | $24,660,698.57 |
-| BARD/USDT:USDT | +76.00% | $16,575,497.71 |
-| KOR/USDT:USDT | +27.57% | $1,855,267.59 |
-| ARIA/USDT:USDT | +18.87% | $10,361,244.58 |
-| KGEN/USDT:USDT | +18.18% | $1,084,592.52 |
+| AKE/USDT:USDT | +113.34% | $24,530,581.61 |
+| BARD/USDT:USDT | +75.54% | $18,124,460.37 |
+| KOR/USDT:USDT | +28.18% | $1,837,013.86 |
+| GANG/USDT:USDT | +17.28% | $1,258,458.21 |
+| DODO/USDT:USDT | +15.88% | $1,033,084.70 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UAI/USDT:USDT | below_1h_threshold | +4.19% | +4.19% |
-| BEAT/USDT:USDT | below_1h_threshold | +3.17% | +3.17% |
-| MUU/USDT:USDT | below_1h_threshold | +1.64% | +1.64% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.46% | +1.47% |
-| LIT/USDT:USDT | below_1h_threshold | +1.45% | +1.45% |
+| MUU/USDT:USDT | below_1h_threshold | +1.89% | +1.82% |
+| AKE/USDT:USDT | below_1h_threshold | +1.16% | +1.09% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +0.93% | +0.86% |
+| ARIA/USDT:USDT | below_1h_threshold | +0.61% | +0.54% |
+| UAI/USDT:USDT | below_1h_threshold | +0.59% | +0.52% |
 
 ## 7. 次に見るべき不足
 
