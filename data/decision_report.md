@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-13T10:01:20.314669+00:00
+- generated_at: 2026-11-13T10:06:31.961365+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18811**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6972件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 6973件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_8PCT` (selected_by_causal_log_growth) / causal_score +0.000254 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-13T10:01:07.549256+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=69102.9
-- Funnel: target 1084 → liquid 148 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-13T10:06:16.068298+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.19% price=69205.6
+- Funnel: target 1084 → liquid 148 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +128.27% | $17,564,363.31 |
-| BARD/USDT:USDT | +73.24% | $14,897,449.29 |
-| ARIA/USDT:USDT | +40.09% | $9,914,223.42 |
-| KOR/USDT:USDT | +37.87% | $1,817,110.93 |
-| GANG/USDT:USDT | +16.24% | $1,242,772.46 |
+| AKE/USDT:USDT | +129.06% | $18,097,714.70 |
+| BARD/USDT:USDT | +72.56% | $15,027,637.95 |
+| KOR/USDT:USDT | +38.78% | $1,819,155.65 |
+| ARIA/USDT:USDT | +37.42% | $9,933,634.23 |
+| GANG/USDT:USDT | +15.85% | $1,248,047.79 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NVIDIA/USDT:USDT | below_1h_threshold | +1.55% | +1.51% |
-| KGEN/USDT:USDT | below_1h_threshold | +1.12% | +1.08% |
-| PEPE/USDT:USDT | below_1h_threshold | +1.03% | +0.99% |
-| ARIA/USDT:USDT | below_1h_threshold | +0.91% | +0.87% |
-| AKE/USDT:USDT | below_1h_threshold | +0.90% | +0.86% |
+| KGEN/USDT:USDT | below_1h_threshold | +1.68% | +1.49% |
+| NVIDIA/USDT:USDT | below_1h_threshold | +1.55% | +1.36% |
+| PEPE/USDT:USDT | below_1h_threshold | +1.44% | +1.25% |
+| AKE/USDT:USDT | below_1h_threshold | +1.23% | +1.04% |
+| H/USDT:USDT | below_1h_threshold | +1.19% | +1.00% |
 
 ## 7. 次に見るべき不足
 
