@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-13T20:41:41.386118+00:00
+- generated_at: 2026-11-13T20:46:14.200677+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18866**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-13T20:41:28.094005+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.25% price=68863.9
+- 更新: 2026-11-13T20:46:05.487885+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=68937.7
 - Funnel: target 1084 → liquid 148 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SHELL/USDT:USDT | +78.47% | $2,271,425.58 |
-| AKE/USDT:USDT | +20.47% | $62,341,068.78 |
-| H/USDT:USDT | +8.42% | $1,488,345.90 |
-| MVLL/USDT:USDT | +6.42% | $3,725,165.15 |
-| SOXL/USDT:USDT | +5.85% | $732,928,956.21 |
+| SHELL/USDT:USDT | +81.37% | $2,321,118.00 |
+| AKE/USDT:USDT | +17.60% | $62,509,624.24 |
+| H/USDT:USDT | +10.14% | $1,496,543.93 |
+| MVLL/USDT:USDT | +6.63% | $3,725,465.64 |
+| SOXL/USDT:USDT | +6.38% | $733,277,552.09 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNXX/USDT:USDT | below_1h_threshold | +2.12% | +2.37% |
-| CBRSSTOCK/USDT:USDT | below_1h_threshold | +1.44% | +1.69% |
-| AKE/USDT:USDT | below_1h_threshold | +1.21% | +1.46% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.15% | +1.39% |
-| KORU/USDT:USDT | below_1h_threshold | +1.07% | +1.32% |
+| KOR/USDT:USDT | below_1h_threshold | +4.98% | +5.12% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.12% | +2.26% |
+| CBRSSTOCK/USDT:USDT | below_1h_threshold | +1.44% | +1.58% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.15% | +1.29% |
+| KORU/USDT:USDT | below_1h_threshold | +1.07% | +1.21% |
 
 ## 7. 次に見るべき不足
 
