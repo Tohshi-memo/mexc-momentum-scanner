@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-13T09:16:09.930785+00:00
+- generated_at: 2026-11-13T09:21:20.089445+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18804**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-13T09:16:00.897799+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=68798.7
+- 更新: 2026-11-13T09:21:09.230246+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.16% price=68792.9
 - Funnel: target 1086 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +78.05% | $14,810,268.54 |
-| BARD/USDT:USDT | +59.35% | $13,788,949.71 |
-| ARIA/USDT:USDT | +39.01% | $9,782,488.99 |
-| KOR/USDT:USDT | +34.84% | $1,808,118.51 |
-| GANG/USDT:USDT | +15.11% | $1,226,590.49 |
+| AKE/USDT:USDT | +78.08% | $15,029,269.66 |
+| BARD/USDT:USDT | +61.53% | $13,840,085.86 |
+| ARIA/USDT:USDT | +39.43% | $9,818,529.29 |
+| KOR/USDT:USDT | +35.15% | $1,810,638.96 |
+| GANG/USDT:USDT | +17.23% | $1,227,464.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ARIA/USDT:USDT | below_1h_threshold | +4.78% | +4.61% |
-| GANG/USDT:USDT | below_1h_threshold | +3.15% | +2.98% |
-| AKE/USDT:USDT | below_1h_threshold | +2.27% | +2.10% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.91% | +1.74% |
-| H/USDT:USDT | below_1h_threshold | +1.14% | +0.96% |
+| GANG/USDT:USDT | below_1h_threshold | +5.00% | +4.83% |
+| ARIA/USDT:USDT | below_1h_threshold | +4.98% | +4.82% |
+| AKE/USDT:USDT | below_1h_threshold | +2.33% | +2.17% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.91% | +1.75% |
+| H/USDT:USDT | below_1h_threshold | +1.83% | +1.66% |
 
 ## 7. 次に見るべき不足
 
