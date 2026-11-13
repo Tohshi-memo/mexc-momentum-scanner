@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-13T13:21:33.795036+00:00
+- generated_at: 2026-11-13T13:26:26.120217+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18821**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-13T13:21:18.163891+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=69234.2
+- 更新: 2026-11-13T13:26:13.104159+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=69199.5
 - Funnel: target 1083 → liquid 149 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +115.34% | $27,057,293.50 |
-| BARD/USDT:USDT | +75.43% | $21,413,189.17 |
-| KOR/USDT:USDT | +33.93% | $1,889,857.02 |
-| ARIA/USDT:USDT | +23.28% | $10,954,253.93 |
-| KGEN/USDT:USDT | +19.23% | $1,000,223.19 |
+| AKE/USDT:USDT | +113.96% | $27,170,267.66 |
+| BARD/USDT:USDT | +78.64% | $21,583,353.40 |
+| KOR/USDT:USDT | +33.33% | $1,891,729.18 |
+| ARIA/USDT:USDT | +23.27% | $10,980,679.99 |
+| KGEN/USDT:USDT | +18.19% | $1,004,768.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +3.44% | +3.36% |
-| SOXS/USDT:USDT | below_1h_threshold | +2.76% | +2.69% |
-| PLAY/USDT:USDT | below_1h_threshold | +2.40% | +2.32% |
-| Q/USDT:USDT | below_1h_threshold | +2.09% | +2.02% |
-| ICP/USDT:USDT | below_1h_threshold | +0.88% | +0.81% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.96% | +2.93% |
+| Q/USDT:USDT | below_1h_threshold | +2.78% | +2.75% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.76% | +2.74% |
+| PLAY/USDT:USDT | below_1h_threshold | +2.65% | +2.63% |
+| ICP/USDT:USDT | below_1h_threshold | +1.00% | +0.97% |
 
 ## 7. 次に見るべき不足
 
