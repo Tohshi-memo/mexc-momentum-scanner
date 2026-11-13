@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-11-13T11:16:13.352016+00:00
+- generated_at: 2026-11-13T11:21:21.016024+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **18812**
+- closed shadow trades: **18813**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=18812, expectancy=+0.02%
+- 全期間 MARKET基準: n=18813, expectancy=+0.02%
 - 直近20件 MARKET基準: n=20, expectancy=-1.02%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -46,19 +46,19 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$1,807.85** / 初期 $100.00 (+1707.85%)
-- 確定: 7282件 (Win 2100 / Loss 2332 / Flat 2850) / skip 8091件
-- 成長率目線: 平均log +0.000398 / 幾何平均 +0.040% per trade / maxDD +8.46%
+- 残高: **$1,798.81** / 初期 $100.00 (+1698.81%)
+- 確定: 7283件 (Win 2100 / Loss 2333 / Flat 2850) / skip 8091件
+- 成長率目線: 平均log +0.000397 / 幾何平均 +0.040% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_1PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: KGEN/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.50% 残高後 $1,807.85
+- 最新: ARIA/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.50% 残高後 $1,798.81
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$397.44** / 初期 $100.00 (+297.44%)
-- 確定: 4825件 (Win 1300 / Loss 1076 / Flat 2449) / skip 7398件
+- 確定: 4826件 (Win 1300 / Loss 1076 / Flat 2450) / skip 7398件
 - 成長率目線: 平均log +0.000286 / 幾何平均 +0.029% per trade / maxDD +4.29%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: KGEN/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.35% 残高後 $397.44
+- 最新: ARIA/USDT:USDT `LIMIT_6PCT` EXPIRED account +0.00% 残高後 $397.44
 
 ## 5. Causal Adaptive DryRun ($100)
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-13T11:16:03.207306+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=69291.5
+- 更新: 2026-11-13T11:21:08.202433+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=69373.0
 - Funnel: target 1084 → liquid 150 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +120.22% | $20,920,001.80 |
-| BARD/USDT:USDT | +72.10% | $16,162,871.44 |
-| ARIA/USDT:USDT | +32.75% | $9,991,240.64 |
-| KOR/USDT:USDT | +26.06% | $1,836,494.78 |
-| KGEN/USDT:USDT | +19.41% | $1,013,664.18 |
+| AKE/USDT:USDT | +108.39% | $21,297,504.56 |
+| BARD/USDT:USDT | +70.37% | $16,215,751.66 |
+| ARIA/USDT:USDT | +28.42% | $10,014,877.75 |
+| KOR/USDT:USDT | +27.87% | $1,839,255.52 |
+| KGEN/USDT:USDT | +20.37% | $1,023,970.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KGEN/USDT:USDT | below_1h_threshold | +2.51% | +2.52% |
-| MUU/USDT:USDT | below_1h_threshold | +1.64% | +1.65% |
-| DODO/USDT:USDT | below_1h_threshold | +1.63% | +1.64% |
-| PONS/USDT:USDT | below_1h_threshold | +1.29% | +1.30% |
-| MAGMA/USDT:USDT | below_1h_threshold | +1.12% | +1.13% |
+| KGEN/USDT:USDT | below_1h_threshold | +3.43% | +3.32% |
+| GANG/USDT:USDT | below_1h_threshold | +2.71% | +2.60% |
+| DODO/USDT:USDT | below_1h_threshold | +2.26% | +2.15% |
+| MUU/USDT:USDT | below_1h_threshold | +1.64% | +1.53% |
+| PLAY/USDT:USDT | below_1h_threshold | +1.28% | +1.17% |
 
 ## 7. 次に見るべき不足
 
