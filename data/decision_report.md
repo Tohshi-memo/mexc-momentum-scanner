@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-13T14:51:25.270810+00:00
+- generated_at: 2026-11-13T14:56:30.331319+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18825**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-13T14:51:15.143820+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.95% price=68869.5
+- 更新: 2026-11-13T14:56:16.364375+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.93% price=68887.1
 - Funnel: target 1084 → liquid 150 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.2 >= 65=1
+- Strict後reject: 4h RSI 77.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +131.54% | $30,874,798.75 |
-| BARD/USDT:USDT | +82.77% | $23,099,708.76 |
-| SOPH/USDT:USDT | +40.21% | $1,001,162.12 |
-| KOR/USDT:USDT | +24.24% | $1,918,222.27 |
-| ARIA/USDT:USDT | +19.95% | $10,991,460.87 |
+| AKE/USDT:USDT | +133.84% | $31,031,057.43 |
+| BARD/USDT:USDT | +84.27% | $23,226,358.47 |
+| SOPH/USDT:USDT | +40.99% | $1,006,766.02 |
+| KOR/USDT:USDT | +25.75% | $1,919,031.30 |
+| ARIA/USDT:USDT | +18.47% | $11,010,035.53 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BARD/USDT:USDT | below_1h_threshold | +2.91% | +3.87% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.60% | +1.55% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.58% | +1.54% |
-| Q/USDT:USDT | below_1h_threshold | +0.45% | +1.40% |
-| TAO/USDT:USDT | below_1h_threshold | +0.38% | +1.34% |
+| BARD/USDT:USDT | below_1h_threshold | +3.88% | +4.81% |
+| Q/USDT:USDT | below_1h_threshold | +1.37% | +2.30% |
+| KOR/USDT:USDT | below_1h_threshold | +1.22% | +2.15% |
+| PLAY/USDT:USDT | below_1h_threshold | +0.74% | +1.66% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.60% | +1.53% |
 
 ## 7. 次に見るべき不足
 
