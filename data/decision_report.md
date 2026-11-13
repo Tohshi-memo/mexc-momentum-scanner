@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-13T09:51:27.519643+00:00
+- generated_at: 2026-11-13T09:56:28.092892+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18810**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-13T09:51:11.146436+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.36% price=68931.0
-- Funnel: target 1086 → liquid 153 → pre 50 → checked 50 → surge 4 → strict 2
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.8 >= 65=1, 4h RSI 83.5 >= 65=1
+- 更新: 2026-11-13T09:56:14.067477+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.50% price=69020.6
+- Funnel: target 1086 → liquid 153 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 75.0 >= 65=1, 4h RSI 83.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +110.73% | $17,652,005.59 |
-| BARD/USDT:USDT | +78.30% | $14,395,043.98 |
-| ARIA/USDT:USDT | +40.47% | $9,964,477.11 |
-| KOR/USDT:USDT | +35.15% | $1,827,244.14 |
-| GANG/USDT:USDT | +17.99% | $1,243,878.53 |
+| AKE/USDT:USDT | +114.24% | $17,878,581.64 |
+| BARD/USDT:USDT | +80.25% | $14,662,193.23 |
+| ARIA/USDT:USDT | +39.08% | $9,970,664.78 |
+| KOR/USDT:USDT | +37.27% | $1,828,651.31 |
+| GANG/USDT:USDT | +18.41% | $1,245,252.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| Q/USDT:USDT | below_1h_threshold | +2.97% | +2.61% |
-| UAI/USDT:USDT | below_1h_threshold | +2.64% | +2.28% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.40% | +2.04% |
-| H/USDT:USDT | below_1h_threshold | +1.99% | +1.62% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.91% | +1.55% |
+| ARIA/USDT:USDT | below_1h_threshold | +4.72% | +4.22% |
+| Q/USDT:USDT | below_1h_threshold | +3.18% | +2.69% |
+| H/USDT:USDT | below_1h_threshold | +2.84% | +2.34% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.48% | +1.98% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.91% | +1.42% |
 
 ## 7. 次に見るべき不足
 
