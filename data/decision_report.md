@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-14T16:41:25.224197+00:00
+- generated_at: 2026-11-14T16:46:14.887291+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18911**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-14T16:41:12.028878+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.40% price=65449.6
+- 更新: 2026-11-14T16:46:03.708282+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.74% price=65230.9
 - Funnel: target 1071 → liquid 141 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.8 >= 65=1
+- Strict後reject: 4h RSI 67.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOPH/USDT:USDT | +10.98% | $2,784,143.25 |
-| BARD/USDT:USDT | +2.79% | $10,117,276.11 |
-| ARIA/USDT:USDT | +2.03% | $3,116,929.43 |
-| JCT/USDT:USDT | +1.94% | $5,935,939.78 |
-| SOXS/USDT:USDT | +1.27% | $14,029,851.07 |
+| SOPH/USDT:USDT | +15.79% | $2,811,106.51 |
+| ARIA/USDT:USDT | +2.85% | $3,120,474.54 |
+| BARD/USDT:USDT | +2.71% | $10,135,418.55 |
+| DODO/USDT:USDT | +2.19% | $2,126,013.99 |
+| SOXS/USDT:USDT | +1.78% | $14,032,661.40 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BARD/USDT:USDT | below_1h_threshold | +2.97% | +3.37% |
-| ARIA/USDT:USDT | below_1h_threshold | +1.89% | +2.29% |
-| JCT/USDT:USDT | below_1h_threshold | +1.84% | +2.24% |
-| UAI/USDT:USDT | below_1h_threshold | +1.05% | +1.46% |
-| CAP/USDT:USDT | below_1h_threshold | +0.86% | +1.26% |
+| ARIA/USDT:USDT | below_1h_threshold | +2.86% | +3.59% |
+| BARD/USDT:USDT | below_1h_threshold | +2.71% | +3.45% |
+| DODO/USDT:USDT | below_1h_threshold | +2.19% | +2.93% |
+| JCT/USDT:USDT | below_1h_threshold | +1.00% | +1.73% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.85% | +1.59% |
 
 ## 7. 次に見るべき不足
 
