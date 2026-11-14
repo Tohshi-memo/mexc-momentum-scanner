@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-14T11:21:19.796497+00:00
+- generated_at: 2026-11-14T11:26:22.949485+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18892**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-14T11:21:08.036386+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=67282.3
-- Funnel: target 1071 → liquid 139 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.3 >= 65=1, 4h RSI 72.0 >= 65=1
+- 更新: 2026-11-14T11:26:10.322942+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=67218.9
+- Funnel: target 1071 → liquid 140 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 71.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SHELL/USDT:USDT | +41.14% | $4,848,089.88 |
-| AKE/USDT:USDT | +29.60% | $83,702,242.90 |
-| DODO/USDT:USDT | +24.76% | $1,553,310.99 |
-| ARIA/USDT:USDT | +12.02% | $4,205,626.80 |
-| BLESS/USDT:USDT | +5.73% | $1,184,560.70 |
+| SHELL/USDT:USDT | +40.28% | $4,865,758.25 |
+| AKE/USDT:USDT | +29.76% | $83,832,986.08 |
+| DODO/USDT:USDT | +25.69% | $1,559,728.57 |
+| ARIA/USDT:USDT | +12.43% | $4,232,854.42 |
+| BLESS/USDT:USDT | +4.82% | $1,188,416.76 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ARIA/USDT:USDT | below_1h_threshold | +3.94% | +3.91% |
-| SHELL/USDT:USDT | below_1h_threshold | +2.06% | +2.04% |
-| NIGHT/USDT:USDT | below_1h_threshold | +1.05% | +1.03% |
-| JUP/USDT:USDT | below_1h_threshold | +0.97% | +0.95% |
-| AKE/USDT:USDT | below_1h_threshold | +0.84% | +0.82% |
+| BLESS/USDT:USDT | below_1h_threshold | +4.88% | +4.95% |
+| ARIA/USDT:USDT | below_1h_threshold | +4.61% | +4.68% |
+| SHELL/USDT:USDT | below_1h_threshold | +1.44% | +1.51% |
+| DODO/USDT:USDT | below_1h_threshold | +0.86% | +0.93% |
+| JUP/USDT:USDT | below_1h_threshold | +0.77% | +0.85% |
 
 ## 7. 次に見るべき不足
 
