@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-14T08:16:26.831671+00:00
+- generated_at: 2026-11-14T08:21:16.974200+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18881**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-14T08:16:13.123596+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=67244.5
+- 更新: 2026-11-14T08:21:06.000516+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=67204.3
 - Funnel: target 1071 → liquid 140 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SHELL/USDT:USDT | +53.23% | $4,237,466.39 |
-| DODO/USDT:USDT | +25.66% | $1,137,274.09 |
-| AKE/USDT:USDT | +22.72% | $77,434,958.48 |
-| UAI/USDT:USDT | +5.85% | $4,616,823.54 |
-| JCT/USDT:USDT | +5.65% | $6,633,617.89 |
+| SHELL/USDT:USDT | +55.41% | $4,249,947.96 |
+| DODO/USDT:USDT | +25.05% | $1,190,463.34 |
+| AKE/USDT:USDT | +21.20% | $77,522,329.91 |
+| UAI/USDT:USDT | +6.63% | $4,637,182.20 |
+| JCT/USDT:USDT | +4.74% | $6,653,241.74 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DODO/USDT:USDT | below_1h_threshold | +3.82% | +3.65% |
-| JCT/USDT:USDT | below_1h_threshold | +2.65% | +2.49% |
-| SHELL/USDT:USDT | below_1h_threshold | +2.46% | +2.29% |
-| UAI/USDT:USDT | below_1h_threshold | +1.10% | +0.93% |
-| NIGHT/USDT:USDT | below_1h_threshold | +1.06% | +0.90% |
+| SHELL/USDT:USDT | below_1h_threshold | +4.24% | +4.14% |
+| DODO/USDT:USDT | below_1h_threshold | +3.32% | +3.21% |
+| JCT/USDT:USDT | below_1h_threshold | +1.77% | +1.66% |
+| UAI/USDT:USDT | below_1h_threshold | +1.45% | +1.34% |
+| ARIA/USDT:USDT | below_1h_threshold | +1.10% | +0.99% |
 
 ## 7. 次に見るべき不足
 
