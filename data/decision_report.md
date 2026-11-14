@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-14T05:56:27.220848+00:00
+- generated_at: 2026-11-14T06:01:23.607449+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18877**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-14T05:56:11.033990+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=67081.0
-- Funnel: target 1084 → liquid 145 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.1 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-14T06:01:10.234397+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=67230.3
+- Funnel: target 1084 → liquid 144 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SHELL/USDT:USDT | +48.16% | $3,911,600.34 |
-| BERA/USDT:USDT | +18.69% | $1,932,766.90 |
-| AKE/USDT:USDT | +14.72% | $80,198,398.11 |
-| UAI/USDT:USDT | +11.59% | $3,151,427.06 |
-| NIGHT/USDT:USDT | +4.76% | $1,348,933.24 |
+| SHELL/USDT:USDT | +48.02% | $3,913,535.08 |
+| BERA/USDT:USDT | +18.41% | $1,934,026.06 |
+| AKE/USDT:USDT | +16.14% | $79,989,298.90 |
+| UAI/USDT:USDT | +13.80% | $3,152,155.03 |
+| NIGHT/USDT:USDT | +4.94% | $1,320,838.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RENDER/USDT:USDT | below_1h_threshold | +0.33% | +0.29% |
-| ANTHROPIC/USDT:USDT | below_1h_threshold | +0.29% | +0.25% |
-| JUP/USDT:USDT | below_1h_threshold | +0.27% | +0.23% |
-| TRX/USDT:USDT | below_1h_threshold | +0.27% | +0.23% |
-| NIGHT/USDT:USDT | below_1h_threshold | +0.21% | +0.18% |
+| KORU/USDT:USDT | below_1h_threshold | +1.36% | +1.33% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.33% | +1.31% |
+| MUU/USDT:USDT | below_1h_threshold | +1.28% | +1.25% |
+| MVLL/USDT:USDT | below_1h_threshold | +1.01% | +0.98% |
+| SHELL/USDT:USDT | below_1h_threshold | +0.93% | +0.90% |
 
 ## 7. 次に見るべき不足
 
