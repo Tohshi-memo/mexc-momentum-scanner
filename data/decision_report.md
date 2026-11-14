@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-14T05:41:25.989722+00:00
+- generated_at: 2026-11-14T05:46:33.110078+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18877**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-14T05:41:12.190105+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.27% price=66873.1
-- Funnel: target 1084 → liquid 145 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.3 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-14T05:46:19.327496+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.25% price=66885.4
+- Funnel: target 1084 → liquid 145 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SHELL/USDT:USDT | +48.07% | $3,884,516.81 |
-| BERA/USDT:USDT | +20.58% | $1,908,433.38 |
-| AKE/USDT:USDT | +16.76% | $79,628,692.80 |
-| UAI/USDT:USDT | +9.76% | $3,117,055.68 |
-| NIGHT/USDT:USDT | +3.91% | $1,286,490.42 |
+| SHELL/USDT:USDT | +45.26% | $3,898,092.93 |
+| BERA/USDT:USDT | +20.58% | $1,915,275.53 |
+| AKE/USDT:USDT | +14.66% | $79,863,478.30 |
+| UAI/USDT:USDT | +9.81% | $3,135,609.20 |
+| NIGHT/USDT:USDT | +3.84% | $1,327,587.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UAI/USDT:USDT | below_1h_threshold | +3.72% | +3.99% |
-| TRX/USDT:USDT | below_1h_threshold | +0.21% | +0.48% |
-| NVIDIA/USDT:USDT | below_1h_threshold | +0.17% | +0.44% |
-| NAS100/USDT:USDT | below_1h_threshold | +0.14% | +0.42% |
-| STXSTOCK/USDT:USDT | below_1h_threshold | +0.14% | +0.41% |
+| SHELL/USDT:USDT | below_1h_threshold | +4.32% | +4.57% |
+| UAI/USDT:USDT | below_1h_threshold | +3.47% | +3.72% |
+| TRX/USDT:USDT | below_1h_threshold | +0.22% | +0.48% |
+| NVIDIA/USDT:USDT | below_1h_threshold | +0.17% | +0.42% |
+| NAS100/USDT:USDT | below_1h_threshold | +0.14% | +0.40% |
 
 ## 7. 次に見るべき不足
 
