@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-14T09:51:27.987299+00:00
+- generated_at: 2026-11-14T09:56:24.380863+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18886**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-14T09:51:16.880849+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.70% price=67440.1
+- 更新: 2026-11-14T09:56:13.300039+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.69% price=67434.0
 - Funnel: target 1071 → liquid 142 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.3 >= 65=1
+- Strict後reject: 4h RSI 73.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SHELL/USDT:USDT | +48.70% | $4,560,338.39 |
-| AKE/USDT:USDT | +23.55% | $85,753,003.89 |
-| DODO/USDT:USDT | +17.84% | $1,499,332.35 |
-| PIEVERSE/USDT:USDT | +9.32% | $1,028,530.14 |
-| NIGHT/USDT:USDT | +7.06% | $1,429,340.66 |
+| SHELL/USDT:USDT | +51.74% | $4,573,105.93 |
+| AKE/USDT:USDT | +29.22% | $86,056,027.53 |
+| DODO/USDT:USDT | +19.42% | $1,508,402.60 |
+| PIEVERSE/USDT:USDT | +9.32% | $1,031,911.34 |
+| NIGHT/USDT:USDT | +7.04% | $1,431,107.68 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PIEVERSE/USDT:USDT | below_1h_threshold | +4.67% | +3.96% |
-| NIGHT/USDT:USDT | below_1h_threshold | +2.95% | +2.24% |
-| DODO/USDT:USDT | below_1h_threshold | +2.47% | +1.76% |
-| JUP/USDT:USDT | below_1h_threshold | +1.75% | +1.05% |
-| BERA/USDT:USDT | below_1h_threshold | +1.13% | +0.42% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +4.67% | +3.98% |
+| DODO/USDT:USDT | below_1h_threshold | +4.03% | +3.33% |
+| NIGHT/USDT:USDT | below_1h_threshold | +2.95% | +2.25% |
+| JUP/USDT:USDT | below_1h_threshold | +1.83% | +1.14% |
+| BERA/USDT:USDT | below_1h_threshold | +1.22% | +0.53% |
 
 ## 7. 次に見るべき不足
 
