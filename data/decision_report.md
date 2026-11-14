@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-11-14T20:26:22.186083+00:00
+- generated_at: 2026-11-14T20:31:25.634278+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **18920**
+- closed shadow trades: **18921**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.62% / filled 20/20。**
-- 全期間 MARKET基準: n=18920, expectancy=+0.02%
+- 全期間 MARKET基準: n=18921, expectancy=+0.02%
 - 直近20件 MARKET基準: n=20, expectancy=+0.62%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -31,11 +31,11 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_8PCT_LONG | 7/20 | 35.0% | +3.43% | **+1.20%** |
-| LIMIT_7PCT_LONG | 7/20 | 35.0% | +2.81% | **+0.98%** |
 | LIMIT_3PCT_LONG | 14/20 | 70.0% | +1.27% | **+0.89%** |
+| LIMIT_8PCT_LONG | 7/20 | 35.0% | +2.29% | **+0.80%** |
 | LIMIT_ATR_LONG | 12/20 | 60.0% | +1.02% | **+0.61%** |
-| LIMIT_9PCT_LONG | 3/20 | 15.0% | +3.40% | **+0.51%** |
+| LIMIT_7PCT_LONG | 7/20 | 35.0% | +1.52% | **+0.53%** |
+| LIMIT_2PCT_LONG | 14/20 | 70.0% | +0.71% | **+0.50%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,18 +47,18 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,746.38** / 初期 $100.00 (+1646.38%)
-- 確定: 7324件 (Win 2106 / Loss 2344 / Flat 2874) / skip 8157件
-- 成長率目線: 平均log +0.000391 / 幾何平均 +0.039% per trade / maxDD +8.46%
+- 確定: 7325件 (Win 2106 / Loss 2344 / Flat 2875) / skip 8157件
+- 成長率目線: 平均log +0.000390 / 幾何平均 +0.039% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: JCT/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $1,746.38
+- 最新: INIT/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $1,746.38
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$426.80** / 初期 $100.00 (+326.80%)
-- 確定: 4928件 (Win 1316 / Loss 1080 / Flat 2532) / skip 7403件
+- 確定: 4929件 (Win 1316 / Loss 1080 / Flat 2533) / skip 7403件
 - 成長率目線: 平均log +0.000294 / 幾何平均 +0.029% per trade / maxDD +4.29%
-- 次の候補: `LIMIT_9PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0763 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: JCT/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $426.80
+- 次の候補: `LIMIT_2PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0145 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 最新: INIT/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $426.80
 
 ## 5. Causal Adaptive DryRun ($100)
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-14T20:26:09.624222+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.34% price=65472.3
+- 更新: 2026-11-14T20:31:14.332279+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.24% price=65538.1
 - Funnel: target 1071 → liquid 135 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOPH/USDT:USDT | +20.65% | $3,372,335.14 |
-| JCT/USDT:USDT | +9.38% | $5,078,085.40 |
-| BTW/USDT:USDT | +7.87% | $5,466,943.41 |
-| ARIA/USDT:USDT | +3.98% | $2,326,688.93 |
-| PIEVERSE/USDT:USDT | +3.10% | $1,263,129.87 |
+| SOPH/USDT:USDT | +17.89% | $3,380,627.41 |
+| JCT/USDT:USDT | +6.86% | $5,119,322.43 |
+| BTW/USDT:USDT | +6.28% | $5,509,311.29 |
+| ARIA/USDT:USDT | +4.11% | $2,327,359.16 |
+| PIEVERSE/USDT:USDT | +3.36% | $1,270,857.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SHELL/USDT:USDT | below_1h_threshold | +3.28% | +3.62% |
-| UAI/USDT:USDT | below_1h_threshold | +1.05% | +1.39% |
-| BARD/USDT:USDT | below_1h_threshold | +0.83% | +1.17% |
-| CAP/USDT:USDT | below_1h_threshold | +0.54% | +0.88% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +0.32% | +0.66% |
+| SHELL/USDT:USDT | below_1h_threshold | +2.54% | +2.78% |
+| UAI/USDT:USDT | below_1h_threshold | +1.37% | +1.61% |
+| BARD/USDT:USDT | below_1h_threshold | +0.83% | +1.07% |
+| CAP/USDT:USDT | below_1h_threshold | +0.56% | +0.80% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +0.32% | +0.56% |
 
 ## 7. 次に見るべき不足
 
