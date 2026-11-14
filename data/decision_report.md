@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-14T10:21:12.052542+00:00
+- generated_at: 2026-11-14T10:26:18.635560+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18888**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7046件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7047件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000232 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-14T10:21:03.980241+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=67270.6
-- Funnel: target 1071 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-14T10:26:07.588827+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.19% price=67254.0
+- Funnel: target 1071 → liquid 142 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 90.6 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SHELL/USDT:USDT | +39.73% | $4,655,962.31 |
-| AKE/USDT:USDT | +30.62% | $82,804,985.92 |
-| DODO/USDT:USDT | +23.44% | $1,481,365.69 |
-| NIGHT/USDT:USDT | +6.48% | $1,364,574.87 |
-| PIEVERSE/USDT:USDT | +6.30% | $1,037,104.92 |
+| SHELL/USDT:USDT | +38.96% | $4,674,409.32 |
+| AKE/USDT:USDT | +34.02% | $83,062,821.66 |
+| DODO/USDT:USDT | +23.69% | $1,492,163.41 |
+| PIEVERSE/USDT:USDT | +6.90% | $1,040,599.38 |
+| NIGHT/USDT:USDT | +5.72% | $1,377,568.00 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +3.96% | +4.12% |
-| DODO/USDT:USDT | below_1h_threshold | +2.71% | +2.88% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +1.49% | +1.66% |
-| BERA/USDT:USDT | below_1h_threshold | +0.94% | +1.10% |
-| MUU/USDT:USDT | below_1h_threshold | +0.42% | +0.59% |
+| DODO/USDT:USDT | below_1h_threshold | +2.92% | +3.11% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +2.06% | +2.25% |
+| MUU/USDT:USDT | below_1h_threshold | +0.42% | +0.61% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +0.34% | +0.53% |
+| STXSTOCK/USDT:USDT | below_1h_threshold | +0.33% | +0.52% |
 
 ## 7. 次に見るべき不足
 
