@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-14T22:26:18.555372+00:00
+- generated_at: 2026-11-14T22:31:20.569707+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18921**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-14T22:26:08.892669+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.28% price=64249.8
+- 更新: 2026-11-14T22:31:09.408470+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.62% price=64034.1
 - Funnel: target 1071 → liquid 136 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOPH/USDT:USDT | +22.74% | $3,652,933.96 |
-| JCT/USDT:USDT | +6.29% | $5,211,863.36 |
-| INIT/USDT:USDT | +5.05% | $1,912,063.18 |
-| BTW/USDT:USDT | +3.58% | $5,404,903.16 |
-| SHELL/USDT:USDT | +3.28% | $2,868,371.77 |
+| SOPH/USDT:USDT | +22.36% | $3,671,408.06 |
+| JCT/USDT:USDT | +5.97% | $5,218,044.92 |
+| INIT/USDT:USDT | +5.78% | $1,938,101.43 |
+| ARIA/USDT:USDT | +3.08% | $2,296,116.99 |
+| BTW/USDT:USDT | +3.07% | $5,415,757.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| INIT/USDT:USDT | below_1h_threshold | +3.96% | +4.24% |
-| ZEC/USDT:USDT | below_1h_threshold | +2.09% | +2.38% |
-| SOPH/USDT:USDT | below_1h_threshold | +1.69% | +1.98% |
-| SNXX/USDT:USDT | below_1h_threshold | +1.52% | +1.80% |
-| MUU/USDT:USDT | below_1h_threshold | +1.52% | +1.80% |
+| INIT/USDT:USDT | below_1h_threshold | +4.63% | +5.25% |
+| ZEC/USDT:USDT | below_1h_threshold | +1.76% | +2.38% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.52% | +2.14% |
+| MUU/USDT:USDT | below_1h_threshold | +1.52% | +2.14% |
+| SOPH/USDT:USDT | below_1h_threshold | +1.51% | +2.13% |
 
 ## 7. 次に見るべき不足
 
