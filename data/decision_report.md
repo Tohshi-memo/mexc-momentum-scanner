@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-14T06:11:24.465158+00:00
+- generated_at: 2026-11-14T06:16:13.977304+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18878**
 
@@ -70,9 +70,9 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-14T06:11:09.332133+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=67256.1
-- Funnel: target 1084 → liquid 145 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-11-14T06:16:02.404573+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=67259.3
+- Funnel: target 1084 → liquid 146 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SHELL/USDT:USDT | +46.62% | $3,928,575.36 |
-| UAI/USDT:USDT | +20.70% | $3,280,887.91 |
-| BERA/USDT:USDT | +18.41% | $1,961,068.45 |
-| AKE/USDT:USDT | +14.45% | $80,182,143.57 |
-| NIGHT/USDT:USDT | +4.67% | $1,322,099.42 |
+| SHELL/USDT:USDT | +51.11% | $3,939,478.08 |
+| UAI/USDT:USDT | +22.33% | $3,316,349.71 |
+| BERA/USDT:USDT | +18.13% | $1,963,614.70 |
+| AKE/USDT:USDT | +13.31% | $80,267,037.06 |
+| PIEVERSE/USDT:USDT | +5.32% | $1,000,356.97 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KORU/USDT:USDT | below_1h_threshold | +1.36% | +1.30% |
-| SNXX/USDT:USDT | below_1h_threshold | +1.33% | +1.27% |
-| MUU/USDT:USDT | below_1h_threshold | +1.28% | +1.22% |
+| SHELL/USDT:USDT | below_1h_threshold | +3.36% | +3.30% |
+| KORU/USDT:USDT | below_1h_threshold | +1.36% | +1.29% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.33% | +1.26% |
+| MUU/USDT:USDT | below_1h_threshold | +1.28% | +1.21% |
 | MVLL/USDT:USDT | below_1h_threshold | +1.01% | +0.94% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.75% | +0.69% |
 
 ## 7. 次に見るべき不足
 
