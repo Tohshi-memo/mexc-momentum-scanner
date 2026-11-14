@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-14T09:46:16.660934+00:00
+- generated_at: 2026-11-14T09:51:27.987299+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18886**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7044件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7045件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000231 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-14T09:46:05.948576+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.28% price=67155.2
-- Funnel: target 1071 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-14T09:51:16.880849+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.70% price=67440.1
+- Funnel: target 1071 → liquid 142 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 71.3 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SHELL/USDT:USDT | +51.11% | $4,542,392.30 |
-| AKE/USDT:USDT | +26.65% | $85,078,017.60 |
-| DODO/USDT:USDT | +17.74% | $1,483,543.13 |
-| PIEVERSE/USDT:USDT | +9.46% | $1,015,580.42 |
-| NIGHT/USDT:USDT | +6.30% | $1,422,469.61 |
+| SHELL/USDT:USDT | +48.70% | $4,560,338.39 |
+| AKE/USDT:USDT | +23.55% | $85,753,003.89 |
+| DODO/USDT:USDT | +17.84% | $1,499,332.35 |
+| PIEVERSE/USDT:USDT | +9.32% | $1,028,530.14 |
+| NIGHT/USDT:USDT | +7.06% | $1,429,340.66 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PIEVERSE/USDT:USDT | below_relative_strength | +5.04% | +4.76% |
-| DODO/USDT:USDT | below_1h_threshold | +2.62% | +2.34% |
-| NIGHT/USDT:USDT | below_1h_threshold | +2.21% | +1.94% |
-| BERA/USDT:USDT | below_1h_threshold | +0.47% | +0.19% |
-| TESLA/USDT:USDT | below_1h_threshold | +0.18% | -0.10% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +4.67% | +3.96% |
+| NIGHT/USDT:USDT | below_1h_threshold | +2.95% | +2.24% |
+| DODO/USDT:USDT | below_1h_threshold | +2.47% | +1.76% |
+| JUP/USDT:USDT | below_1h_threshold | +1.75% | +1.05% |
+| BERA/USDT:USDT | below_1h_threshold | +1.13% | +0.42% |
 
 ## 7. 次に見るべき不足
 
