@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-14T09:31:19.163489+00:00
+- generated_at: 2026-11-14T09:36:12.994716+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18886**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-14T09:31:10.351207+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.27% price=67150.0
+- 更新: 2026-11-14T09:36:03.218352+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.29% price=67165.9
 - Funnel: target 1071 → liquid 140 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SHELL/USDT:USDT | +46.80% | $4,508,492.57 |
-| DODO/USDT:USDT | +14.69% | $1,451,370.56 |
-| AKE/USDT:USDT | +8.67% | $82,112,374.48 |
-| NIGHT/USDT:USDT | +4.69% | $1,371,620.57 |
-| ARIA/USDT:USDT | +3.53% | $4,331,669.70 |
+| SHELL/USDT:USDT | +49.07% | $4,520,922.89 |
+| DODO/USDT:USDT | +15.73% | $1,453,924.93 |
+| NIGHT/USDT:USDT | +5.67% | $1,397,392.70 |
+| SOXL/USDT:USDT | +2.89% | $663,424,273.06 |
+| AXTISTOCK/USDT:USDT | +2.43% | $1,162,393.86 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BERA/USDT:USDT | below_1h_threshold | +1.41% | +1.14% |
-| NIGHT/USDT:USDT | below_1h_threshold | +0.67% | +0.40% |
-| TESLA/USDT:USDT | below_1h_threshold | +0.18% | -0.09% |
-| XPT/USDT:USDT | below_1h_threshold | +0.12% | -0.15% |
-| SQQQ/USDT:USDT | below_1h_threshold | +0.12% | -0.15% |
+| NIGHT/USDT:USDT | below_1h_threshold | +1.61% | +1.32% |
+| BERA/USDT:USDT | below_1h_threshold | +1.60% | +1.30% |
+| DODO/USDT:USDT | below_1h_threshold | +0.81% | +0.52% |
+| TESLA/USDT:USDT | below_1h_threshold | +0.18% | -0.11% |
+| ANTHROPIC/USDT:USDT | below_1h_threshold | +0.15% | -0.15% |
 
 ## 7. 次に見るべき不足
 
