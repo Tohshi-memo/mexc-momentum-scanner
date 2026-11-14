@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-14T04:51:20.255285+00:00
+- generated_at: 2026-11-14T04:56:19.253753+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18877**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-14T04:51:06.984646+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.54% price=67089.7
+- 更新: 2026-11-14T04:56:08.106404+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.54% price=67088.7
 - Funnel: target 1084 → liquid 146 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SHELL/USDT:USDT | +47.71% | $3,777,656.36 |
-| AKE/USDT:USDT | +20.15% | $78,509,073.08 |
-| BERA/USDT:USDT | +19.73% | $1,760,694.43 |
-| UAI/USDT:USDT | +7.79% | $3,004,179.93 |
-| NIGHT/USDT:USDT | +4.27% | $1,192,741.53 |
+| SHELL/USDT:USDT | +42.90% | $3,788,789.16 |
+| BERA/USDT:USDT | +22.00% | $1,773,895.97 |
+| AKE/USDT:USDT | +20.25% | $78,531,605.02 |
+| UAI/USDT:USDT | +6.11% | $3,015,332.31 |
+| NIGHT/USDT:USDT | +4.33% | $1,193,063.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UAI/USDT:USDT | below_1h_threshold | +3.53% | +2.99% |
-| SHELL/USDT:USDT | below_1h_threshold | +2.07% | +1.53% |
-| NIGHT/USDT:USDT | below_1h_threshold | +1.88% | +1.34% |
-| JUP/USDT:USDT | below_1h_threshold | +0.77% | +0.23% |
-| ARIA/USDT:USDT | below_1h_threshold | +0.71% | +0.17% |
+| NIGHT/USDT:USDT | below_1h_threshold | +1.90% | +1.36% |
+| UAI/USDT:USDT | below_1h_threshold | +1.89% | +1.35% |
+| BERA/USDT:USDT | below_1h_threshold | +1.65% | +1.11% |
+| ARIA/USDT:USDT | below_1h_threshold | +1.18% | +0.64% |
+| JUP/USDT:USDT | below_1h_threshold | +1.01% | +0.47% |
 
 ## 7. 次に見るべき不足
 
