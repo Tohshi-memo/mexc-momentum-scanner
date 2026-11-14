@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-14T17:16:15.546462+00:00
+- generated_at: 2026-11-14T17:21:21.170217+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18913**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-14T17:16:06.512616+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=65220.4
+- 更新: 2026-11-14T17:21:10.202096+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.20% price=65190.8
 - Funnel: target 1071 → liquid 134 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.3 >= 65=1
+- Strict後reject: 4h RSI 71.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOPH/USDT:USDT | +23.24% | $2,826,970.68 |
-| ARIA/USDT:USDT | +4.31% | $2,706,054.91 |
-| PIEVERSE/USDT:USDT | +2.21% | $1,182,508.41 |
-| DODO/USDT:USDT | +1.74% | $2,162,579.87 |
-| BARD/USDT:USDT | +1.69% | $8,299,331.85 |
+| SOPH/USDT:USDT | +24.62% | $2,875,856.50 |
+| ARIA/USDT:USDT | +4.90% | $2,711,690.33 |
+| DODO/USDT:USDT | +4.64% | $2,169,123.30 |
+| BARD/USDT:USDT | +1.78% | $8,303,052.92 |
+| SOXS/USDT:USDT | +1.38% | $10,545,286.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ARIA/USDT:USDT | below_1h_threshold | +1.54% | +1.70% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.37% | +1.52% |
-| BTW/USDT:USDT | below_1h_threshold | +1.19% | +1.34% |
-| EVAA/USDT:USDT | below_1h_threshold | +0.82% | +0.97% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +0.22% | +0.37% |
+| ARIA/USDT:USDT | below_1h_threshold | +2.17% | +2.37% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.37% | +1.57% |
+| EVAA/USDT:USDT | below_1h_threshold | +0.95% | +1.15% |
+| BTW/USDT:USDT | below_1h_threshold | +0.70% | +0.90% |
+| DODO/USDT:USDT | below_1h_threshold | +0.64% | +0.84% |
 
 ## 7. 次に見るべき不足
 
