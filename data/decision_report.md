@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-14T21:01:17.215164+00:00
+- generated_at: 2026-11-14T21:06:11.841948+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18921**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-14T21:01:06.273118+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.26% price=64907.4
+- 更新: 2026-11-14T21:06:03.395354+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=64700.0
 - Funnel: target 1071 → liquid 131 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOPH/USDT:USDT | +17.66% | $3,426,063.10 |
-| BTW/USDT:USDT | +3.88% | $5,376,030.61 |
-| ARIA/USDT:USDT | +3.28% | $2,300,079.50 |
-| JCT/USDT:USDT | +2.83% | $5,071,508.54 |
-| SOXS/USDT:USDT | +2.06% | $4,709,076.89 |
+| SOPH/USDT:USDT | +17.11% | $3,435,006.23 |
+| BTW/USDT:USDT | +5.48% | $5,400,232.82 |
+| JCT/USDT:USDT | +2.56% | $5,095,964.14 |
+| ARIA/USDT:USDT | +2.55% | $2,303,549.80 |
+| SOXS/USDT:USDT | +2.06% | $4,722,329.61 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SHELL/USDT:USDT | below_1h_threshold | +0.88% | +0.62% |
-| SOPH/USDT:USDT | below_1h_threshold | +0.85% | +0.59% |
-| UAI/USDT:USDT | below_1h_threshold | +0.77% | +0.51% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.72% | +0.46% |
-| JCT/USDT:USDT | below_1h_threshold | +0.51% | +0.25% |
+| BTW/USDT:USDT | below_1h_threshold | +1.93% | +1.99% |
+| AGT/USDT:USDT | below_1h_threshold | +0.79% | +0.85% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.72% | +0.78% |
+| SOPH/USDT:USDT | below_1h_threshold | +0.38% | +0.44% |
+| INIT/USDT:USDT | below_1h_threshold | +0.37% | +0.43% |
 
 ## 7. 次に見るべき不足
 
