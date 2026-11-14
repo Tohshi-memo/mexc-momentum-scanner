@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-14T06:56:28.149219+00:00
+- generated_at: 2026-11-14T07:01:25.002653+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18880**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-14T06:56:14.558197+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.20% price=67349.4
-- Funnel: target 1084 → liquid 146 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 89.2 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-14T07:01:11.745342+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=67328.0
+- Funnel: target 1071 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SHELL/USDT:USDT | +44.54% | $4,037,408.29 |
-| UAI/USDT:USDT | +24.40% | $3,944,084.93 |
-| AKE/USDT:USDT | +22.14% | $81,274,670.69 |
-| BERA/USDT:USDT | +9.25% | $2,097,033.71 |
-| PIEVERSE/USDT:USDT | +4.38% | $1,051,540.46 |
+| SHELL/USDT:USDT | +49.79% | $4,039,902.26 |
+| UAI/USDT:USDT | +23.93% | $3,916,886.56 |
+| AKE/USDT:USDT | +21.96% | $78,999,723.52 |
+| BERA/USDT:USDT | +8.40% | $2,098,734.19 |
+| NIGHT/USDT:USDT | +3.42% | $1,311,877.39 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JCT/USDT:USDT | below_1h_threshold | +3.38% | +3.17% |
-| KORU/USDT:USDT | below_1h_threshold | +1.36% | +1.16% |
-| SNXX/USDT:USDT | below_1h_threshold | +1.33% | +1.13% |
-| MUU/USDT:USDT | below_1h_threshold | +1.28% | +1.08% |
-| MVLL/USDT:USDT | below_1h_threshold | +1.01% | +0.81% |
+| SHELL/USDT:USDT | below_1h_threshold | +2.13% | +2.16% |
+| ARIA/USDT:USDT | below_1h_threshold | +0.44% | +0.47% |
+| AKE/USDT:USDT | below_1h_threshold | +0.40% | +0.43% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.26% | +0.29% |
+| STXSTOCK/USDT:USDT | below_1h_threshold | +0.25% | +0.28% |
 
 ## 7. 次に見るべき不足
 
