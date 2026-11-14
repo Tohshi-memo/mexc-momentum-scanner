@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-14T05:51:27.301187+00:00
+- generated_at: 2026-11-14T05:56:27.220848+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18877**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7035件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7036件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000373 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-14T05:51:13.448412+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=66959.6
-- Funnel: target 1084 → liquid 145 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.2 >= 65=1
+- 更新: 2026-11-14T05:56:11.033990+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=67081.0
+- Funnel: target 1084 → liquid 145 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 68.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SHELL/USDT:USDT | +48.02% | $3,904,462.24 |
-| BERA/USDT:USDT | +20.30% | $1,917,678.52 |
-| AKE/USDT:USDT | +15.47% | $80,090,721.81 |
-| UAI/USDT:USDT | +10.20% | $3,138,224.38 |
-| NIGHT/USDT:USDT | +4.02% | $1,344,408.10 |
+| SHELL/USDT:USDT | +48.16% | $3,911,600.34 |
+| BERA/USDT:USDT | +18.69% | $1,932,766.90 |
+| AKE/USDT:USDT | +14.72% | $80,198,398.11 |
+| UAI/USDT:USDT | +11.59% | $3,151,427.06 |
+| NIGHT/USDT:USDT | +4.76% | $1,348,933.24 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UAI/USDT:USDT | below_1h_threshold | +4.09% | +4.23% |
-| TRX/USDT:USDT | below_1h_threshold | +0.25% | +0.39% |
-| NVIDIA/USDT:USDT | below_1h_threshold | +0.17% | +0.31% |
-| NAS100/USDT:USDT | below_1h_threshold | +0.14% | +0.29% |
-| STXSTOCK/USDT:USDT | below_1h_threshold | +0.14% | +0.28% |
+| RENDER/USDT:USDT | below_1h_threshold | +0.33% | +0.29% |
+| ANTHROPIC/USDT:USDT | below_1h_threshold | +0.29% | +0.25% |
+| JUP/USDT:USDT | below_1h_threshold | +0.27% | +0.23% |
+| TRX/USDT:USDT | below_1h_threshold | +0.27% | +0.23% |
+| NIGHT/USDT:USDT | below_1h_threshold | +0.21% | +0.18% |
 
 ## 7. 次に見るべき不足
 
