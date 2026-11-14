@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-14T18:11:09.052684+00:00
+- generated_at: 2026-11-14T18:16:20.420961+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18918**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-14T18:11:00.379527+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=65919.1
+- 更新: 2026-11-14T18:16:06.967685+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=65884.8
 - Funnel: target 1071 → liquid 133 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOPH/USDT:USDT | +21.86% | $3,044,248.99 |
-| INIT/USDT:USDT | +7.89% | $1,588,265.70 |
-| BARD/USDT:USDT | +6.36% | $8,044,086.59 |
-| JCT/USDT:USDT | +5.55% | $4,679,320.77 |
-| DODO/USDT:USDT | +4.19% | $2,206,754.42 |
+| SOPH/USDT:USDT | +22.58% | $3,053,055.69 |
+| BARD/USDT:USDT | +7.71% | $8,121,390.90 |
+| JCT/USDT:USDT | +7.07% | $4,712,764.68 |
+| DODO/USDT:USDT | +4.89% | $2,207,406.51 |
+| INIT/USDT:USDT | +4.74% | $1,620,623.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| INIT/USDT:USDT | below_1h_threshold | +3.53% | +3.47% |
-| BTW/USDT:USDT | below_1h_threshold | +1.85% | +1.80% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.15% | +1.09% |
-| JCT/USDT:USDT | below_1h_threshold | +0.95% | +0.90% |
-| ARIA/USDT:USDT | below_1h_threshold | +0.94% | +0.89% |
+| JCT/USDT:USDT | below_1h_threshold | +2.41% | +2.40% |
+| INIT/USDT:USDT | below_1h_threshold | +2.24% | +2.24% |
+| BARD/USDT:USDT | below_1h_threshold | +1.76% | +1.76% |
+| ARIA/USDT:USDT | below_1h_threshold | +1.65% | +1.65% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.15% | +1.14% |
 
 ## 7. 次に見るべき不足
 
