@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-14T18:21:25.314898+00:00
+- generated_at: 2026-11-14T18:26:28.376170+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18918**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7076件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7077件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000210 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-14T18:21:11.783292+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.35% price=65655.1
-- Funnel: target 1071 → liquid 133 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-14T18:26:12.909114+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=65793.8
+- Funnel: target 1071 → liquid 133 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOPH/USDT:USDT | +21.70% | $3,060,150.09 |
-| INIT/USDT:USDT | +7.06% | $1,641,043.05 |
-| JCT/USDT:USDT | +5.76% | $4,760,316.28 |
-| BARD/USDT:USDT | +5.59% | $8,220,236.90 |
-| DODO/USDT:USDT | +4.70% | $2,212,421.59 |
+| SOPH/USDT:USDT | +22.91% | $3,083,381.86 |
+| INIT/USDT:USDT | +8.19% | $1,669,456.14 |
+| JCT/USDT:USDT | +6.34% | $4,774,361.69 |
+| BARD/USDT:USDT | +6.02% | $8,233,264.07 |
+| BTW/USDT:USDT | +5.58% | $5,507,049.98 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| INIT/USDT:USDT | below_1h_threshold | +3.16% | +3.51% |
-| ARIA/USDT:USDT | below_1h_threshold | +3.03% | +3.38% |
-| BTW/USDT:USDT | below_1h_threshold | +2.20% | +2.54% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.15% | +1.49% |
-| JCT/USDT:USDT | below_1h_threshold | +1.00% | +1.35% |
+| ARIA/USDT:USDT | below_1h_threshold | +4.02% | +4.16% |
+| INIT/USDT:USDT | below_1h_threshold | +3.85% | +3.99% |
+| DODO/USDT:USDT | below_1h_threshold | +1.65% | +1.79% |
+| JCT/USDT:USDT | below_1h_threshold | +1.45% | +1.59% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.15% | +1.28% |
 
 ## 7. 次に見るべき不足
 
