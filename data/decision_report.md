@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-14T08:41:16.583218+00:00
+- generated_at: 2026-11-14T08:46:25.078074+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18881**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-14T08:41:05.256220+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=67063.4
-- Funnel: target 1071 → liquid 142 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.5 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-14T08:46:11.809510+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=67083.6
+- Funnel: target 1071 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SHELL/USDT:USDT | +58.31% | $4,331,905.69 |
-| AKE/USDT:USDT | +24.39% | $78,179,266.34 |
-| DODO/USDT:USDT | +16.98% | $1,337,466.51 |
-| UAI/USDT:USDT | +6.42% | $4,684,018.13 |
-| ARIA/USDT:USDT | +4.43% | $4,442,068.05 |
+| SHELL/USDT:USDT | +55.00% | $4,356,350.81 |
+| AKE/USDT:USDT | +21.14% | $78,413,054.19 |
+| DODO/USDT:USDT | +17.49% | $1,348,672.65 |
+| ARIA/USDT:USDT | +4.59% | $4,453,703.19 |
+| NIGHT/USDT:USDT | +3.95% | $1,362,676.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +2.09% | +2.20% |
-| ARIA/USDT:USDT | below_1h_threshold | +1.63% | +1.74% |
-| UAI/USDT:USDT | below_1h_threshold | +1.53% | +1.63% |
-| NIGHT/USDT:USDT | below_1h_threshold | +0.63% | +0.73% |
-| ANTHROPIC/USDT:USDT | below_1h_threshold | +0.47% | +0.57% |
+| SHELL/USDT:USDT | below_1h_threshold | +3.85% | +3.92% |
+| ARIA/USDT:USDT | below_1h_threshold | +1.66% | +1.73% |
+| NIGHT/USDT:USDT | below_1h_threshold | +0.91% | +0.98% |
+| ANTHROPIC/USDT:USDT | below_1h_threshold | +0.44% | +0.51% |
+| ALUMINUM/USDT:USDT | below_1h_threshold | +0.34% | +0.41% |
 
 ## 7. 次に見るべき不足
 
