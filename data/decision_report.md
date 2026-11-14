@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-14T00:46:17.201921+00:00
+- generated_at: 2026-11-14T00:51:20.904265+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18875**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-14T00:46:07.549219+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=68280.3
+- 更新: 2026-11-14T00:51:08.561594+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=68384.1
 - Funnel: target 1084 → liquid 152 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SHELL/USDT:USDT | +56.27% | $3,458,292.59 |
-| AKE/USDT:USDT | +11.27% | $71,648,837.58 |
-| NIGHT/USDT:USDT | +4.13% | $1,252,035.13 |
-| LAB/USDT:USDT | +3.30% | $1,100,013.09 |
-| KORU/USDT:USDT | +2.74% | $149,198,588.21 |
+| SHELL/USDT:USDT | +57.36% | $3,468,049.73 |
+| AKE/USDT:USDT | +19.13% | $71,964,696.80 |
+| NIGHT/USDT:USDT | +4.22% | $1,257,558.40 |
+| LAB/USDT:USDT | +4.05% | $1,102,095.66 |
+| SOXL/USDT:USDT | +2.60% | $732,905,207.17 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LIT/USDT:USDT | below_1h_threshold | +1.27% | +1.27% |
-| PYTH/USDT:USDT | below_1h_threshold | +0.69% | +0.69% |
-| UVXY/USDT:USDT | below_1h_threshold | +0.53% | +0.53% |
-| JUP/USDT:USDT | below_1h_threshold | +0.45% | +0.45% |
-| TAO/USDT:USDT | below_1h_threshold | +0.45% | +0.45% |
+| LIT/USDT:USDT | below_1h_threshold | +1.60% | +1.45% |
+| PYTH/USDT:USDT | below_1h_threshold | +1.17% | +1.02% |
+| AKE/USDT:USDT | below_1h_threshold | +0.81% | +0.66% |
+| TAO/USDT:USDT | below_1h_threshold | +0.80% | +0.64% |
+| STRK/USDT:USDT | below_1h_threshold | +0.62% | +0.46% |
 
 ## 7. 次に見るべき不足
 
