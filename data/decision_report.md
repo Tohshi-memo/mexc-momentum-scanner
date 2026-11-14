@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-14T22:21:19.087087+00:00
+- generated_at: 2026-11-14T22:26:18.555372+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18921**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-14T22:21:06.882028+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.71% price=63977.9
-- Funnel: target 1071 → liquid 135 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-11-14T22:26:08.892669+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.28% price=64249.8
+- Funnel: target 1071 → liquid 136 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOPH/USDT:USDT | +18.99% | $3,639,046.97 |
-| JCT/USDT:USDT | +6.65% | $5,197,892.58 |
-| BTW/USDT:USDT | +3.82% | $5,397,203.37 |
-| SHELL/USDT:USDT | +3.50% | $2,866,162.17 |
-| INIT/USDT:USDT | +3.34% | $1,902,940.67 |
+| SOPH/USDT:USDT | +22.74% | $3,652,933.96 |
+| JCT/USDT:USDT | +6.29% | $5,211,863.36 |
+| INIT/USDT:USDT | +5.05% | $1,912,063.18 |
+| BTW/USDT:USDT | +3.58% | $5,404,903.16 |
+| SHELL/USDT:USDT | +3.28% | $2,868,371.77 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| INIT/USDT:USDT | below_1h_threshold | +2.26% | +2.97% |
-| SHELL/USDT:USDT | below_1h_threshold | +1.69% | +2.39% |
-| SNXX/USDT:USDT | below_1h_threshold | +1.52% | +2.22% |
-| MUU/USDT:USDT | below_1h_threshold | +1.52% | +2.22% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +1.27% | +1.98% |
+| INIT/USDT:USDT | below_1h_threshold | +3.96% | +4.24% |
+| ZEC/USDT:USDT | below_1h_threshold | +2.09% | +2.38% |
+| SOPH/USDT:USDT | below_1h_threshold | +1.69% | +1.98% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.52% | +1.80% |
+| MUU/USDT:USDT | below_1h_threshold | +1.52% | +1.80% |
 
 ## 7. 次に見るべき不足
 
