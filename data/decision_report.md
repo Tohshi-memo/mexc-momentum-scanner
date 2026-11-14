@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-14T19:01:22.003169+00:00
+- generated_at: 2026-11-14T19:06:19.675214+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18919**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-14T19:01:06.003656+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=65570.6
+- 更新: 2026-11-14T19:06:07.176379+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=65600.1
 - Funnel: target 1071 → liquid 132 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOPH/USDT:USDT | +25.17% | $3,123,314.66 |
-| DODO/USDT:USDT | +7.31% | $2,275,343.14 |
-| INIT/USDT:USDT | +7.21% | $1,704,658.86 |
-| JCT/USDT:USDT | +6.92% | $4,856,171.69 |
-| BTW/USDT:USDT | +4.20% | $5,394,163.58 |
+| SOPH/USDT:USDT | +24.46% | $3,157,468.70 |
+| INIT/USDT:USDT | +8.39% | $1,708,695.72 |
+| JCT/USDT:USDT | +7.13% | $4,863,081.82 |
+| DODO/USDT:USDT | +6.64% | $2,295,421.63 |
+| BTW/USDT:USDT | +5.82% | $5,405,164.53 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +0.39% | +0.32% |
-| JUP/USDT:USDT | below_1h_threshold | +0.31% | +0.24% |
-| JTO/USDT:USDT | below_1h_threshold | +0.25% | +0.18% |
-| ETH/USDT:USDT | below_1h_threshold | +0.22% | +0.16% |
-| STXSTOCK/USDT:USDT | below_1h_threshold | +0.20% | +0.14% |
+| BTW/USDT:USDT | below_1h_threshold | +1.63% | +1.52% |
+| INIT/USDT:USDT | below_1h_threshold | +1.24% | +1.13% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +0.45% | +0.33% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.39% | +0.27% |
+| CAP/USDT:USDT | below_1h_threshold | +0.31% | +0.20% |
 
 ## 7. 次に見るべき不足
 
