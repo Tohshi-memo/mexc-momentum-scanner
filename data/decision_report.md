@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-14T02:46:22.285664+00:00
+- generated_at: 2026-11-14T02:51:26.305649+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18875**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-14T02:46:08.924811+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -1.15% price=67471.1
+- 更新: 2026-11-14T02:51:14.181047+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.83% price=67692.5
 - Funnel: target 1084 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SHELL/USDT:USDT | +51.83% | $3,607,634.67 |
-| AKE/USDT:USDT | +24.86% | $76,103,843.78 |
-| BERA/USDT:USDT | +19.73% | $1,144,283.02 |
-| NIGHT/USDT:USDT | +3.68% | $1,312,989.03 |
-| H/USDT:USDT | +3.54% | $1,526,435.62 |
+| SHELL/USDT:USDT | +51.83% | $3,609,733.46 |
+| AKE/USDT:USDT | +24.23% | $76,164,114.28 |
+| BERA/USDT:USDT | +21.43% | $1,155,075.84 |
+| NIGHT/USDT:USDT | +3.93% | $1,318,102.78 |
+| H/USDT:USDT | +2.96% | $1,527,743.42 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| H/USDT:USDT | below_1h_threshold | +2.56% | +3.72% |
-| NVIDIA/USDT:USDT | below_1h_threshold | +0.69% | +1.85% |
-| MUU/USDT:USDT | below_1h_threshold | +0.67% | +1.82% |
-| UAI/USDT:USDT | below_1h_threshold | +0.55% | +1.70% |
-| TQQQ/USDT:USDT | below_1h_threshold | +0.53% | +1.69% |
+| H/USDT:USDT | below_1h_threshold | +2.09% | +2.92% |
+| NVIDIA/USDT:USDT | below_1h_threshold | +0.69% | +1.52% |
+| MUU/USDT:USDT | below_1h_threshold | +0.67% | +1.50% |
+| UAI/USDT:USDT | below_1h_threshold | +0.57% | +1.40% |
+| TQQQ/USDT:USDT | below_1h_threshold | +0.53% | +1.36% |
 
 ## 7. 次に見るべき不足
 
