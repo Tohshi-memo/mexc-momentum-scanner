@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-14T11:51:24.551376+00:00
+- generated_at: 2026-11-14T11:56:24.701539+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18893**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-14T11:51:12.977758+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=67242.0
+- 更新: 2026-11-14T11:56:10.691251+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=67250.1
 - Funnel: target 1071 → liquid 141 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.4 >= 65=1, 4h RSI 73.7 >= 65=1
+- Strict後reject: 4h RSI 75.5 >= 65=1, 4h RSI 74.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SHELL/USDT:USDT | +36.47% | $4,911,315.38 |
-| DODO/USDT:USDT | +26.63% | $1,695,093.89 |
-| AKE/USDT:USDT | +17.67% | $85,762,179.98 |
-| SOPH/USDT:USDT | +10.37% | $1,680,109.24 |
-| ARIA/USDT:USDT | +9.41% | $4,318,026.42 |
+| SHELL/USDT:USDT | +36.24% | $4,926,365.51 |
+| DODO/USDT:USDT | +26.52% | $1,715,108.98 |
+| AKE/USDT:USDT | +23.46% | $85,998,205.59 |
+| SOPH/USDT:USDT | +10.37% | $1,683,358.31 |
+| ARIA/USDT:USDT | +10.25% | $4,338,556.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DODO/USDT:USDT | below_1h_threshold | +1.52% | +1.56% |
-| ARIA/USDT:USDT | below_1h_threshold | +1.51% | +1.55% |
-| JUP/USDT:USDT | below_1h_threshold | +1.20% | +1.24% |
-| NIGHT/USDT:USDT | below_1h_threshold | +0.73% | +0.77% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +0.28% | +0.32% |
+| ARIA/USDT:USDT | below_1h_threshold | +2.29% | +2.32% |
+| DODO/USDT:USDT | below_1h_threshold | +1.44% | +1.46% |
+| JUP/USDT:USDT | below_1h_threshold | +1.36% | +1.38% |
+| NIGHT/USDT:USDT | below_1h_threshold | +0.90% | +0.92% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +0.45% | +0.48% |
 
 ## 7. 次に見るべき不足
 
