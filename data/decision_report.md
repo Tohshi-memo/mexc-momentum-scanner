@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-14T13:11:12.011674+00:00
+- generated_at: 2026-11-14T13:16:30.985261+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18900**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7059件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7060件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000240 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-14T13:11:03.758502+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.26% price=66795.2
-- Funnel: target 1071 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-14T13:16:17.638842+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.30% price=66771.4
+- Funnel: target 1071 → liquid 142 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOPH/USDT:USDT | +34.25% | $2,077,275.79 |
-| SHELL/USDT:USDT | +31.53% | $5,138,129.25 |
-| DODO/USDT:USDT | +21.79% | $1,856,935.84 |
-| AKE/USDT:USDT | +15.56% | $83,279,559.55 |
-| ARIA/USDT:USDT | +8.13% | $3,669,427.24 |
+| SHELL/USDT:USDT | +36.42% | $5,173,986.18 |
+| SOPH/USDT:USDT | +30.74% | $2,141,043.15 |
+| DODO/USDT:USDT | +22.72% | $1,860,794.18 |
+| AKE/USDT:USDT | +13.16% | $83,435,378.21 |
+| NIGHT/USDT:USDT | +8.22% | $1,693,264.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOPH/USDT:USDT | below_1h_threshold | +2.91% | +3.18% |
-| SHELL/USDT:USDT | below_1h_threshold | +2.18% | +2.44% |
-| AKE/USDT:USDT | below_1h_threshold | +1.12% | +1.38% |
-| NIGHT/USDT:USDT | below_1h_threshold | +0.48% | +0.74% |
-| JUP/USDT:USDT | below_1h_threshold | +0.31% | +0.57% |
+| SOPH/USDT:USDT | below_1h_threshold | +0.90% | +1.20% |
+| NIGHT/USDT:USDT | below_1h_threshold | +0.67% | +0.96% |
+| JUP/USDT:USDT | below_1h_threshold | +0.61% | +0.91% |
+| SQQQ/USDT:USDT | below_1h_threshold | +0.14% | +0.43% |
+| US30/USDT:USDT | below_1h_threshold | +0.03% | +0.33% |
 
 ## 7. 次に見るべき不足
 
