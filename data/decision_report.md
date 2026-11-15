@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-15T18:16:17.266649+00:00
+- generated_at: 2026-11-15T18:21:22.387153+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18976**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-15T18:16:03.983883+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=64549.9
+- 更新: 2026-11-15T18:21:08.998916+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.16% price=64643.2
 - Funnel: target 1066 → liquid 129 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SHELL/USDT:USDT | +23.01% | $1,009,317.23 |
-| AKE/USDT:USDT | +5.01% | $24,898,718.66 |
-| BARD/USDT:USDT | +4.75% | $2,986,720.82 |
-| UAI/USDT:USDT | +3.40% | $1,501,102.61 |
-| AGT/USDT:USDT | +3.32% | $1,731,570.18 |
+| SHELL/USDT:USDT | +24.71% | $1,045,910.57 |
+| AKE/USDT:USDT | +5.87% | $24,966,768.62 |
+| BARD/USDT:USDT | +4.36% | $3,019,222.82 |
+| UAI/USDT:USDT | +3.36% | $1,502,102.15 |
+| AGT/USDT:USDT | +3.25% | $1,740,596.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BARD/USDT:USDT | below_1h_threshold | +2.82% | +2.81% |
-| AKE/USDT:USDT | below_1h_threshold | +1.36% | +1.35% |
-| UAI/USDT:USDT | below_1h_threshold | +0.95% | +0.93% |
-| SHELL/USDT:USDT | below_1h_threshold | +0.80% | +0.79% |
-| KITE/USDT:USDT | below_1h_threshold | +0.38% | +0.37% |
+| SHELL/USDT:USDT | below_1h_threshold | +2.79% | +2.64% |
+| BARD/USDT:USDT | below_1h_threshold | +2.43% | +2.27% |
+| AKE/USDT:USDT | below_1h_threshold | +2.19% | +2.04% |
+| UAI/USDT:USDT | below_1h_threshold | +0.92% | +0.76% |
+| IDOL/USDT:USDT | below_1h_threshold | +0.52% | +0.36% |
 
 ## 7. 次に見るべき不足
 
