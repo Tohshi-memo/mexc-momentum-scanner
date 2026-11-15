@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-15T10:01:24.439655+00:00
+- generated_at: 2026-11-15T10:06:21.073016+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18954**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-15T10:01:08.620997+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=65309.7
+- 更新: 2026-11-15T10:06:07.569864+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.20% price=65443.0
 - Funnel: target 1066 → liquid 136 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| INIT/USDT:USDT | +32.41% | $4,759,240.08 |
-| PIEVERSE/USDT:USDT | +11.10% | $1,885,506.37 |
-| ARIA/USDT:USDT | +10.18% | $2,512,351.45 |
-| ONE/USDT:USDT | +9.69% | $1,444,742.80 |
-| VVV/USDT:USDT | +8.94% | $3,741,555.55 |
+| INIT/USDT:USDT | +31.75% | $4,853,405.73 |
+| JCT/USDT:USDT | +10.69% | $4,462,706.55 |
+| ARIA/USDT:USDT | +10.26% | $2,514,482.56 |
+| PIEVERSE/USDT:USDT | +9.68% | $1,897,422.27 |
+| VVV/USDT:USDT | +9.50% | $3,762,142.86 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KAVA/USDT:USDT | below_1h_threshold | +1.06% | +1.07% |
-| SNXX/USDT:USDT | below_1h_threshold | +1.03% | +1.03% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.77% | +0.78% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.57% | +0.58% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +0.54% | +0.54% |
+| JCT/USDT:USDT | below_1h_threshold | +3.48% | +3.28% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.03% | +0.83% |
+| HYPE/USDT:USDT | below_1h_threshold | +0.83% | +0.64% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.77% | +0.58% |
+| FET/USDT:USDT | below_1h_threshold | +0.68% | +0.48% |
 
 ## 7. 次に見るべき不足
 
