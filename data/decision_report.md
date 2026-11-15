@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-15T11:46:25.482140+00:00
+- generated_at: 2026-11-15T11:51:19.061917+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18958**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-15T11:46:09.612940+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=65466.3
+- 更新: 2026-11-15T11:51:06.115677+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=65441.0
 - Funnel: target 1066 → liquid 139 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| INIT/USDT:USDT | +41.22% | $6,149,683.51 |
-| ARIA/USDT:USDT | +25.74% | $3,278,921.35 |
-| EVAA/USDT:USDT | +24.69% | $14,696,328.05 |
-| ONE/USDT:USDT | +10.27% | $1,614,461.23 |
-| VVV/USDT:USDT | +9.09% | $4,076,972.94 |
+| INIT/USDT:USDT | +43.56% | $6,232,203.77 |
+| ARIA/USDT:USDT | +25.40% | $3,314,315.09 |
+| EVAA/USDT:USDT | +22.39% | $14,748,063.92 |
+| VVV/USDT:USDT | +8.95% | $4,081,124.33 |
+| ONE/USDT:USDT | +8.88% | $1,615,421.54 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| INIT/USDT:USDT | below_1h_threshold | +3.33% | +3.48% |
-| ONE/USDT:USDT | below_1h_threshold | +2.72% | +2.86% |
-| EVAA/USDT:USDT | below_1h_threshold | +2.30% | +2.45% |
-| DODO/USDT:USDT | below_1h_threshold | +1.24% | +1.38% |
-| WLFI/USDT:USDT | below_1h_threshold | +0.81% | +0.95% |
+| INIT/USDT:USDT | below_1h_threshold | +4.95% | +5.14% |
+| ONE/USDT:USDT | below_1h_threshold | +1.39% | +1.57% |
+| DODO/USDT:USDT | below_1h_threshold | +1.24% | +1.42% |
+| WLFI/USDT:USDT | below_1h_threshold | +0.91% | +1.10% |
+| JUP/USDT:USDT | below_1h_threshold | +0.68% | +0.87% |
 
 ## 7. 次に見るべき不足
 
