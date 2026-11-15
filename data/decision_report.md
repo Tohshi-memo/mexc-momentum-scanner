@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-15T04:01:23.240165+00:00
+- generated_at: 2026-11-15T04:06:16.987976+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18929**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-15T04:01:12.379009+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=64861.3
+- 更新: 2026-11-15T04:06:05.811530+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=64720.7
 - Funnel: target 1071 → liquid 136 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SHELL/USDT:USDT | +13.68% | $2,325,696.79 |
-| PIEVERSE/USDT:USDT | +9.82% | $1,591,626.26 |
-| VVV/USDT:USDT | +8.52% | $2,269,706.12 |
-| ARIA/USDT:USDT | +8.16% | $2,387,076.50 |
-| ZEC/USDT:USDT | +3.48% | $1,625,438,880.66 |
+| SHELL/USDT:USDT | +13.68% | $2,330,416.14 |
+| PIEVERSE/USDT:USDT | +9.77% | $1,605,240.72 |
+| VVV/USDT:USDT | +8.73% | $2,274,406.07 |
+| ARIA/USDT:USDT | +8.03% | $2,387,824.14 |
+| SOPH/USDT:USDT | +3.47% | $4,584,093.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SHELL/USDT:USDT | below_1h_threshold | +1.86% | +1.77% |
-| VVV/USDT:USDT | below_1h_threshold | +0.86% | +0.76% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +0.61% | +0.51% |
-| JCT/USDT:USDT | below_1h_threshold | +0.56% | +0.46% |
-| NVIDIA/USDT:USDT | below_1h_threshold | +0.54% | +0.44% |
+| SHELL/USDT:USDT | below_1h_threshold | +1.86% | +1.98% |
+| DODO/USDT:USDT | below_1h_threshold | +1.28% | +1.40% |
+| VVV/USDT:USDT | below_1h_threshold | +1.05% | +1.17% |
+| H/USDT:USDT | below_1h_threshold | +0.90% | +1.02% |
+| BTW/USDT:USDT | below_1h_threshold | +0.61% | +0.73% |
 
 ## 7. 次に見るべき不足
 
