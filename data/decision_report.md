@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-15T20:06:23.129314+00:00
+- generated_at: 2026-11-15T20:11:24.317070+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18983**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-15T20:06:09.667232+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=64808.8
+- 更新: 2026-11-15T20:11:10.439175+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.25% price=64753.6
 - Funnel: target 1066 → liquid 130 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RARE/USDT:USDT | +76.05% | $2,552,615.45 |
-| SHELL/USDT:USDT | +7.84% | $1,693,310.86 |
-| AKE/USDT:USDT | +4.74% | $25,713,961.27 |
-| KITE/USDT:USDT | +4.15% | $1,165,338.97 |
-| AGT/USDT:USDT | +3.76% | $1,760,636.21 |
+| RARE/USDT:USDT | +67.37% | $2,715,164.32 |
+| SHELL/USDT:USDT | +6.26% | $1,699,647.04 |
+| AKE/USDT:USDT | +5.10% | $25,761,746.38 |
+| AGT/USDT:USDT | +3.83% | $1,764,747.20 |
+| KITE/USDT:USDT | +3.76% | $1,175,062.89 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NVIDIA/USDT:USDT | below_1h_threshold | +2.06% | +2.22% |
-| RARE/USDT:USDT | below_1h_threshold | +2.05% | +2.21% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.77% | +1.94% |
-| KORU/USDT:USDT | below_1h_threshold | +1.54% | +1.70% |
-| MUU/USDT:USDT | below_1h_threshold | +1.48% | +1.64% |
+| NVIDIA/USDT:USDT | below_1h_threshold | +2.06% | +2.31% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.77% | +2.02% |
+| KORU/USDT:USDT | below_1h_threshold | +1.54% | +1.79% |
+| MUU/USDT:USDT | below_1h_threshold | +1.48% | +1.73% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.31% | +1.56% |
 
 ## 7. 次に見るべき不足
 
