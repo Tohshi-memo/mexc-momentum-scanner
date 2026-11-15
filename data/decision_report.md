@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-15T07:31:08.811857+00:00
+- generated_at: 2026-11-15T07:36:21.579646+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18934**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-15T07:30:59.286658+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=64354.0
+- 更新: 2026-11-15T07:36:08.054146+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.37% price=64196.7
 - Funnel: target 1066 → liquid 137 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| INIT/USDT:USDT | +12.61% | $2,297,757.78 |
-| PIEVERSE/USDT:USDT | +10.42% | $1,852,934.01 |
-| ARIA/USDT:USDT | +9.25% | $2,623,862.49 |
-| VVV/USDT:USDT | +7.12% | $2,945,963.54 |
-| STRK/USDT:USDT | +3.53% | $2,266,377.15 |
+| INIT/USDT:USDT | +13.97% | $2,319,497.12 |
+| PIEVERSE/USDT:USDT | +10.17% | $1,854,859.45 |
+| ARIA/USDT:USDT | +9.51% | $2,634,234.42 |
+| VVV/USDT:USDT | +7.07% | $2,950,849.25 |
+| STRK/USDT:USDT | +3.24% | $2,270,304.84 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DODO/USDT:USDT | below_1h_threshold | +1.91% | +2.03% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +0.79% | +0.92% |
-| STRK/USDT:USDT | below_1h_threshold | +0.62% | +0.74% |
-| GRAM/USDT:USDT | below_1h_threshold | +0.57% | +0.70% |
-| ZEC/USDT:USDT | below_1h_threshold | +0.44% | +0.56% |
+| DODO/USDT:USDT | below_1h_threshold | +1.91% | +2.28% |
+| INIT/USDT:USDT | below_1h_threshold | +1.40% | +1.77% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +0.56% | +0.93% |
+| GRAM/USDT:USDT | below_1h_threshold | +0.38% | +0.75% |
+| XLV/USDT:USDT | below_1h_threshold | +0.35% | +0.72% |
 
 ## 7. 次に見るべき不足
 
