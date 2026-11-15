@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-15T21:21:11.922911+00:00
+- generated_at: 2026-11-15T21:26:17.251075+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18988**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-15T21:21:03.217749+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.34% price=64881.3
+- 更新: 2026-11-15T21:26:04.826405+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.28% price=64920.8
 - Funnel: target 1066 → liquid 125 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RARE/USDT:USDT | +46.12% | $3,906,462.74 |
-| SHELL/USDT:USDT | +8.59% | $1,748,471.47 |
-| PIEVERSE/USDT:USDT | +6.98% | $2,012,450.70 |
-| SOXL/USDT:USDT | +4.10% | $10,417,655.29 |
-| AKE/USDT:USDT | +3.84% | $25,778,419.75 |
+| RARE/USDT:USDT | +49.06% | $3,960,190.20 |
+| SHELL/USDT:USDT | +8.00% | $1,751,061.07 |
+| PIEVERSE/USDT:USDT | +7.47% | $2,018,388.53 |
+| SOXL/USDT:USDT | +4.05% | $10,426,424.07 |
+| KITE/USDT:USDT | +3.45% | $1,213,570.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KORU/USDT:USDT | below_1h_threshold | +2.07% | +2.41% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +1.29% | +1.63% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.66% | +1.00% |
-| SNXX/USDT:USDT | below_1h_threshold | +0.65% | +0.99% |
-| NVIDIA/USDT:USDT | below_1h_threshold | +0.64% | +0.98% |
+| KORU/USDT:USDT | below_1h_threshold | +2.07% | +2.35% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +1.85% | +2.13% |
+| SOXL/USDT:USDT | below_1h_threshold | +0.66% | +0.94% |
+| SNXX/USDT:USDT | below_1h_threshold | +0.65% | +0.93% |
+| NVIDIA/USDT:USDT | below_1h_threshold | +0.64% | +0.92% |
 
 ## 7. 次に見るべき不足
 
