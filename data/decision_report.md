@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-15T15:01:18.741753+00:00
+- generated_at: 2026-11-15T15:06:18.394216+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18972**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-15T15:01:05.832723+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=64715.3
-- Funnel: target 1066 → liquid 132 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-11-15T15:06:05.126332+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.23% price=64591.5
+- Funnel: target 1066 → liquid 133 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +48.17% | $17,021,331.07 |
-| ARIA/USDT:USDT | +36.12% | $4,238,023.60 |
-| INIT/USDT:USDT | +22.80% | $8,161,164.76 |
-| JCT/USDT:USDT | +8.86% | $7,645,568.39 |
-| VVV/USDT:USDT | +7.81% | $4,182,817.20 |
+| EVAA/USDT:USDT | +41.13% | $17,320,958.59 |
+| ARIA/USDT:USDT | +34.78% | $4,341,041.55 |
+| INIT/USDT:USDT | +21.47% | $8,176,441.32 |
+| JCT/USDT:USDT | +9.96% | $7,678,331.49 |
+| VVV/USDT:USDT | +7.43% | $4,185,440.15 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| INIT/USDT:USDT | below_1h_threshold | +2.02% | +2.06% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.45% | +1.49% |
-| UAI/USDT:USDT | below_1h_threshold | +0.30% | +0.34% |
-| ONE/USDT:USDT | below_1h_threshold | +0.26% | +0.30% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.25% | +0.29% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.45% | +1.68% |
+| INIT/USDT:USDT | below_1h_threshold | +1.24% | +1.47% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +0.80% | +1.03% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.25% | +0.48% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.07% | +0.30% |
 
 ## 7. 次に見るべき不足
 
