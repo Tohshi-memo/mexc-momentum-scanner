@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-15T01:31:26.959813+00:00
+- generated_at: 2026-11-15T01:36:21.702425+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18926**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-15T01:31:10.914639+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -1.40% price=62517.2
+- 更新: 2026-11-15T01:36:09.136829+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -1.60% price=62389.7
 - Funnel: target 1071 → liquid 135 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.6 >= 65=1
+- Strict後reject: 4h RSI 71.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOPH/USDT:USDT | +35.17% | $4,063,314.34 |
-| SHELL/USDT:USDT | +9.74% | $2,374,402.70 |
-| ARIA/USDT:USDT | +6.24% | $2,344,589.81 |
-| JCT/USDT:USDT | +4.61% | $5,051,893.79 |
-| BTW/USDT:USDT | +2.81% | $5,070,953.47 |
+| SOPH/USDT:USDT | +33.95% | $4,106,811.33 |
+| SHELL/USDT:USDT | +7.66% | $2,375,688.91 |
+| ARIA/USDT:USDT | +5.85% | $2,348,128.66 |
+| JCT/USDT:USDT | +4.24% | $5,062,145.05 |
+| BTW/USDT:USDT | +2.57% | $5,082,952.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AGT/USDT:USDT | below_1h_threshold | +2.32% | +3.72% |
-| ARIA/USDT:USDT | below_1h_threshold | +1.58% | +2.97% |
-| BLESS/USDT:USDT | below_1h_threshold | +1.33% | +2.72% |
-| DODO/USDT:USDT | below_1h_threshold | +0.56% | +1.96% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.28% | +1.67% |
+| AGT/USDT:USDT | below_1h_threshold | +1.51% | +3.11% |
+| ARIA/USDT:USDT | below_1h_threshold | +1.25% | +2.84% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.05% | +2.65% |
+| DODO/USDT:USDT | below_1h_threshold | +0.59% | +2.19% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.28% | +1.87% |
 
 ## 7. 次に見るべき不足
 
