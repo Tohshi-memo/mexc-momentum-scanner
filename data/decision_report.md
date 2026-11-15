@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-15T14:36:25.117109+00:00
+- generated_at: 2026-11-15T14:41:19.741357+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18971**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-15T14:36:11.207547+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.75% price=64917.2
+- 更新: 2026-11-15T14:41:10.525230+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -1.07% price=64707.6
 - Funnel: target 1066 → liquid 137 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.5 >= 65=1
+- Strict後reject: 4h RSI 81.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +40.35% | $17,894,266.19 |
-| ARIA/USDT:USDT | +36.71% | $4,225,859.91 |
-| INIT/USDT:USDT | +20.33% | $8,096,835.45 |
-| JCT/USDT:USDT | +10.59% | $7,360,689.18 |
-| IDOL/USDT:USDT | +8.57% | $1,943,217.41 |
+| EVAA/USDT:USDT | +41.35% | $17,988,329.49 |
+| ARIA/USDT:USDT | +36.94% | $4,286,297.77 |
+| INIT/USDT:USDT | +20.30% | $8,131,688.88 |
+| JCT/USDT:USDT | +8.80% | $7,420,472.00 |
+| VVV/USDT:USDT | +8.05% | $4,221,643.19 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UAI/USDT:USDT | below_1h_threshold | +1.22% | +1.97% |
-| ARIA/USDT:USDT | below_1h_threshold | +0.82% | +1.57% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.30% | +1.05% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.23% | +0.98% |
-| NVIDIA/USDT:USDT | below_1h_threshold | +0.22% | +0.97% |
+| ARIA/USDT:USDT | below_1h_threshold | +0.95% | +2.02% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.30% | +1.37% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.23% | +1.30% |
+| NVIDIA/USDT:USDT | below_1h_threshold | +0.22% | +1.29% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.16% | +1.23% |
 
 ## 7. 次に見るべき不足
 
