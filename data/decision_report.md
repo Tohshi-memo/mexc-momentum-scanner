@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-15T11:11:16.141541+00:00
+- generated_at: 2026-11-15T11:16:17.100930+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18957**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-15T11:11:05.388820+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.35% price=65334.4
+- 更新: 2026-11-15T11:16:06.022316+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.39% price=65306.4
 - Funnel: target 1066 → liquid 137 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| INIT/USDT:USDT | +37.45% | $5,796,497.89 |
-| EVAA/USDT:USDT | +22.89% | $14,325,270.35 |
-| ARIA/USDT:USDT | +22.41% | $2,676,009.93 |
-| VVV/USDT:USDT | +9.72% | $3,964,397.22 |
-| ONE/USDT:USDT | +9.11% | $1,581,488.52 |
+| INIT/USDT:USDT | +37.41% | $5,838,519.80 |
+| EVAA/USDT:USDT | +23.03% | $14,357,771.70 |
+| ARIA/USDT:USDT | +21.57% | $2,738,941.03 |
+| VVV/USDT:USDT | +9.99% | $3,983,658.35 |
+| PIEVERSE/USDT:USDT | +8.51% | $1,939,174.81 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ARIA/USDT:USDT | below_1h_threshold | +3.85% | +4.19% |
-| ONE/USDT:USDT | below_1h_threshold | +1.32% | +1.66% |
-| KITE/USDT:USDT | below_1h_threshold | +1.15% | +1.50% |
-| EVAA/USDT:USDT | below_1h_threshold | +0.81% | +1.16% |
-| BLESS/USDT:USDT | below_1h_threshold | +0.68% | +1.03% |
+| ARIA/USDT:USDT | below_1h_threshold | +3.58% | +3.97% |
+| EVAA/USDT:USDT | below_1h_threshold | +1.32% | +1.71% |
+| KITE/USDT:USDT | below_1h_threshold | +1.05% | +1.44% |
+| ONE/USDT:USDT | below_1h_threshold | +0.95% | +1.34% |
+| UAI/USDT:USDT | below_1h_threshold | +0.76% | +1.15% |
 
 ## 7. 次に見るべき不足
 
