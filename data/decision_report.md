@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-15T04:16:20.277776+00:00
+- generated_at: 2026-11-15T04:21:07.889562+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18930**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-15T04:16:09.099224+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.22% price=64937.8
+- 更新: 2026-11-15T04:20:59.421950+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=64854.0
 - Funnel: target 1071 → liquid 136 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SHELL/USDT:USDT | +11.86% | $2,334,176.90 |
-| VVV/USDT:USDT | +11.71% | $2,377,781.33 |
-| PIEVERSE/USDT:USDT | +10.11% | $1,628,528.88 |
-| ARIA/USDT:USDT | +8.51% | $2,395,432.64 |
-| INIT/USDT:USDT | +3.92% | $1,859,714.36 |
+| VVV/USDT:USDT | +11.72% | $2,436,274.30 |
+| SHELL/USDT:USDT | +10.98% | $2,337,456.74 |
+| PIEVERSE/USDT:USDT | +10.25% | $1,649,449.42 |
+| ARIA/USDT:USDT | +9.30% | $2,408,482.03 |
+| INIT/USDT:USDT | +4.00% | $1,859,990.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VVV/USDT:USDT | below_1h_threshold | +3.82% | +3.60% |
-| GPS/USDT:USDT | below_1h_threshold | +1.46% | +1.24% |
-| DODO/USDT:USDT | below_1h_threshold | +1.25% | +1.03% |
-| H/USDT:USDT | below_1h_threshold | +1.21% | +1.00% |
-| INIT/USDT:USDT | below_1h_threshold | +1.03% | +0.82% |
+| VVV/USDT:USDT | below_1h_threshold | +3.60% | +3.51% |
+| H/USDT:USDT | below_1h_threshold | +2.16% | +2.08% |
+| DODO/USDT:USDT | below_1h_threshold | +1.50% | +1.41% |
+| GPS/USDT:USDT | below_1h_threshold | +1.31% | +1.22% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.26% | +1.17% |
 
 ## 7. 次に見るべき不足
 
