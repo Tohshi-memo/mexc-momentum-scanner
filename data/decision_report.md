@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-15T16:36:15.086316+00:00
+- generated_at: 2026-11-15T16:41:12.870647+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18972**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-15T16:36:05.494545+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.23% price=64571.9
+- 更新: 2026-11-15T16:41:04.292477+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.36% price=64488.1
 - Funnel: target 1066 → liquid 134 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JCT/USDT:USDT | +6.67% | $8,436,002.24 |
-| BARD/USDT:USDT | +4.65% | $3,316,193.68 |
-| AKE/USDT:USDT | +3.91% | $26,102,598.65 |
-| SOXL/USDT:USDT | +3.13% | $10,281,948.67 |
-| ARIA/USDT:USDT | +3.04% | $5,118,756.64 |
+| JCT/USDT:USDT | +5.83% | $8,478,771.74 |
+| SOXL/USDT:USDT | +3.46% | $10,318,048.65 |
+| BARD/USDT:USDT | +3.07% | $3,344,699.11 |
+| AKE/USDT:USDT | +2.16% | $26,173,483.19 |
+| SNXX/USDT:USDT | +2.07% | $4,149,118.93 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BARD/USDT:USDT | below_1h_threshold | +4.96% | +5.18% |
-| AKE/USDT:USDT | below_1h_threshold | +3.73% | +3.96% |
-| ARIA/USDT:USDT | below_1h_threshold | +3.10% | +3.33% |
-| USELESS/USDT:USDT | below_1h_threshold | +1.77% | +2.00% |
-| NIGHT/USDT:USDT | below_1h_threshold | +1.66% | +1.89% |
+| BARD/USDT:USDT | below_1h_threshold | +3.07% | +3.43% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +1.95% | +2.31% |
+| AKE/USDT:USDT | below_1h_threshold | +1.66% | +2.02% |
+| KORU/USDT:USDT | below_1h_threshold | +1.55% | +1.91% |
+| NIGHT/USDT:USDT | below_1h_threshold | +1.34% | +1.70% |
 
 ## 7. 次に見るべき不足
 
