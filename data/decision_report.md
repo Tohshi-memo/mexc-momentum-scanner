@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-15T16:21:25.430142+00:00
+- generated_at: 2026-11-15T16:26:23.232506+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18972**
 
@@ -63,15 +63,15 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7133件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7134件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000157 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-15T16:21:09.239969+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.33% price=64506.3
+- 更新: 2026-11-15T16:26:09.601212+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.48% price=64408.1
 - Funnel: target 1066 → liquid 133 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BARD/USDT:USDT | +5.35% | $3,256,520.24 |
-| JCT/USDT:USDT | +4.21% | $8,256,084.79 |
-| AKE/USDT:USDT | +1.89% | $25,884,549.10 |
-| PIEVERSE/USDT:USDT | +1.70% | $2,013,887.88 |
-| INIT/USDT:USDT | +1.28% | $8,396,477.49 |
+| JCT/USDT:USDT | +5.37% | $8,310,614.48 |
+| BARD/USDT:USDT | +3.27% | $3,288,400.10 |
+| AKE/USDT:USDT | +1.61% | $25,922,858.82 |
+| UAI/USDT:USDT | +1.36% | $1,548,031.26 |
+| INIT/USDT:USDT | +1.03% | $8,409,588.11 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JCT/USDT:USDT | below_1h_threshold | +3.99% | +4.32% |
-| AKE/USDT:USDT | below_1h_threshold | +2.03% | +2.36% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +1.70% | +2.03% |
-| KORU/USDT:USDT | below_1h_threshold | +1.55% | +1.88% |
-| INIT/USDT:USDT | below_1h_threshold | +1.28% | +1.61% |
+| BARD/USDT:USDT | below_1h_threshold | +3.47% | +3.95% |
+| AKE/USDT:USDT | below_1h_threshold | +1.69% | +2.17% |
+| KORU/USDT:USDT | below_1h_threshold | +1.55% | +2.03% |
+| UAI/USDT:USDT | below_1h_threshold | +1.37% | +1.85% |
+| PONS/USDT:USDT | below_1h_threshold | +1.01% | +1.49% |
 
 ## 7. 次に見るべき不足
 
