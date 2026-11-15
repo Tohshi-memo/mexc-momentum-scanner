@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-11-15T04:11:23.235690+00:00
+- generated_at: 2026-11-15T04:16:20.277776+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **18929**
+- closed shadow trades: **18930**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +1.57% / filled 20/20。**
-- 全期間 MARKET基準: n=18929, expectancy=+0.02%
+- 全期間 MARKET基準: n=18930, expectancy=+0.02%
 - 直近20件 MARKET基準: n=20, expectancy=+1.57%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -22,10 +22,10 @@
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | MARKET | 20/20 | 100.0% | +1.57% | **+1.57%** |
-| LIMIT_1PCT | 17/20 | 85.0% | +0.76% | **+0.65%** |
-| LIMIT_2PCT | 15/20 | 75.0% | +0.61% | **+0.46%** |
-| LIMIT_ATR | 9/20 | 45.0% | +1.01% | **+0.45%** |
-| LIMIT_5PCT | 9/20 | 45.0% | +0.95% | **+0.43%** |
+| LIMIT_1PCT | 17/20 | 85.0% | +0.82% | **+0.70%** |
+| LIMIT_2PCT | 15/20 | 75.0% | +0.74% | **+0.56%** |
+| LIMIT_7PCT | 3/20 | 15.0% | +2.80% | **+0.42%** |
+| LIMIT_5PCT | 8/20 | 40.0% | +0.95% | **+0.38%** |
 
 ### シャドウ上位 LONG
 
@@ -47,31 +47,31 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,720.31** / 初期 $100.00 (+1620.31%)
-- 確定: 7333件 (Win 2106 / Loss 2347 / Flat 2880) / skip 8157件
+- 確定: 7334件 (Win 2106 / Loss 2347 / Flat 2881) / skip 8157件
 - 成長率目線: 平均log +0.000388 / 幾何平均 +0.039% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: SOPH/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.50% 残高後 $1,720.31
+- 最新: VVV/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $1,720.31
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$428.00** / 初期 $100.00 (+328.00%)
-- 確定: 4937件 (Win 1320 / Loss 1080 / Flat 2537) / skip 7403件
+- 確定: 4938件 (Win 1320 / Loss 1080 / Flat 2538) / skip 7403件
 - 成長率目線: 平均log +0.000294 / 幾何平均 +0.029% per trade / maxDD +4.29%
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0351 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: SOPH/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $428.00
+- 最新: VVV/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $428.00
 
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
 - 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7090件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000208 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000203 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-15T04:11:12.120216+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.19% price=64674.5
+- 更新: 2026-11-15T04:16:09.099224+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.22% price=64937.8
 - Funnel: target 1071 → liquid 136 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SHELL/USDT:USDT | +12.99% | $2,332,866.48 |
-| VVV/USDT:USDT | +10.30% | $2,331,645.69 |
-| PIEVERSE/USDT:USDT | +9.05% | $1,616,631.10 |
-| ARIA/USDT:USDT | +7.52% | $2,392,005.79 |
-| INIT/USDT:USDT | +3.72% | $1,856,126.79 |
+| SHELL/USDT:USDT | +11.86% | $2,334,176.90 |
+| VVV/USDT:USDT | +11.71% | $2,377,781.33 |
+| PIEVERSE/USDT:USDT | +10.11% | $1,628,528.88 |
+| ARIA/USDT:USDT | +8.51% | $2,395,432.64 |
+| INIT/USDT:USDT | +3.92% | $1,859,714.36 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VVV/USDT:USDT | below_1h_threshold | +2.51% | +2.70% |
-| GPS/USDT:USDT | below_1h_threshold | +1.84% | +2.03% |
-| H/USDT:USDT | below_1h_threshold | +1.27% | +1.46% |
-| SHELL/USDT:USDT | below_1h_threshold | +1.24% | +1.43% |
-| DODO/USDT:USDT | below_1h_threshold | +0.81% | +1.00% |
+| VVV/USDT:USDT | below_1h_threshold | +3.82% | +3.60% |
+| GPS/USDT:USDT | below_1h_threshold | +1.46% | +1.24% |
+| DODO/USDT:USDT | below_1h_threshold | +1.25% | +1.03% |
+| H/USDT:USDT | below_1h_threshold | +1.21% | +1.00% |
+| INIT/USDT:USDT | below_1h_threshold | +1.03% | +0.82% |
 
 ## 7. 次に見るべき不足
 
