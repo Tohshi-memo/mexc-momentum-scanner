@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-15T19:21:29.285148+00:00
+- generated_at: 2026-11-15T19:26:23.234397+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18978**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-15T19:21:13.639497+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.46% price=65000.0
+- 更新: 2026-11-15T19:26:11.694168+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.42% price=64970.6
 - Funnel: target 1066 → liquid 129 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SHELL/USDT:USDT | +11.90% | $1,577,036.06 |
-| UAI/USDT:USDT | +4.37% | $1,624,705.87 |
-| AKE/USDT:USDT | +4.27% | $26,006,883.91 |
-| SOXL/USDT:USDT | +3.86% | $10,712,949.17 |
-| BTW/USDT:USDT | +3.36% | $3,965,133.45 |
+| SHELL/USDT:USDT | +10.05% | $1,594,191.06 |
+| AKE/USDT:USDT | +5.22% | $26,082,663.77 |
+| UAI/USDT:USDT | +4.00% | $1,634,507.41 |
+| SOXL/USDT:USDT | +3.64% | $10,779,098.39 |
+| KITE/USDT:USDT | +3.45% | $1,142,260.24 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZRO/USDT:USDT | below_1h_threshold | +1.60% | +1.14% |
-| QNT/USDT:USDT | below_1h_threshold | +1.35% | +0.89% |
-| EIGEN/USDT:USDT | below_1h_threshold | +1.23% | +0.76% |
-| OGN/USDT:USDT | below_1h_threshold | +1.22% | +0.76% |
-| PENGU/USDT:USDT | below_1h_threshold | +1.10% | +0.64% |
+| QNT/USDT:USDT | below_1h_threshold | +1.30% | +0.89% |
+| KITE/USDT:USDT | below_1h_threshold | +1.10% | +0.68% |
+| EIGEN/USDT:USDT | below_1h_threshold | +0.92% | +0.50% |
+| HBAR/USDT:USDT | below_1h_threshold | +0.82% | +0.41% |
+| LDO/USDT:USDT | below_1h_threshold | +0.81% | +0.39% |
 
 ## 7. 次に見るべき不足
 
