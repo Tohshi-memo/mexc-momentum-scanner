@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-15T17:21:25.795147+00:00
+- generated_at: 2026-11-15T17:26:18.211058+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18975**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-15T17:21:11.369196+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=64747.5
+- 更新: 2026-11-15T17:26:07.063949+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.32% price=64884.0
 - Funnel: target 1066 → liquid 131 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JCT/USDT:USDT | +11.58% | $8,932,345.64 |
-| NIGHT/USDT:USDT | +2.65% | $2,702,937.65 |
-| UAI/USDT:USDT | +2.61% | $1,485,304.74 |
-| AKE/USDT:USDT | +2.31% | $25,367,784.24 |
-| SOXL/USDT:USDT | +2.13% | $10,624,058.27 |
+| JCT/USDT:USDT | +11.63% | $9,105,377.06 |
+| UAI/USDT:USDT | +3.00% | $1,489,436.82 |
+| NIGHT/USDT:USDT | +2.92% | $2,729,703.13 |
+| BARD/USDT:USDT | +2.37% | $3,172,072.44 |
+| VVV/USDT:USDT | +2.22% | $4,399,554.14 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JCT/USDT:USDT | below_1h_threshold | +3.90% | +3.79% |
-| SOXL/USDT:USDT | below_1h_threshold | +2.47% | +2.35% |
-| SNXX/USDT:USDT | below_1h_threshold | +2.02% | +1.90% |
-| KORU/USDT:USDT | below_1h_threshold | +1.25% | +1.13% |
-| BLESS/USDT:USDT | below_1h_threshold | +1.12% | +1.00% |
+| JCT/USDT:USDT | below_1h_threshold | +4.56% | +4.23% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.47% | +2.14% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.02% | +1.69% |
+| KITE/USDT:USDT | below_1h_threshold | +1.39% | +1.06% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.28% | +0.96% |
 
 ## 7. 次に見るべき不足
 
