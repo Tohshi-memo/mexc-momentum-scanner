@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-15T00:16:09.366666+00:00
+- generated_at: 2026-11-15T00:21:30.972951+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18922**
 
@@ -70,30 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-15T00:16:00.523249+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.28% price=64311.0
-- Funnel: target 1071 → liquid 135 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-15T00:21:14.858258+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=64182.5
+- Funnel: target 1071 → liquid 135 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOPH/USDT:USDT | +21.25% | $3,804,050.08 |
-| JCT/USDT:USDT | +8.86% | $4,919,757.17 |
-| ARIA/USDT:USDT | +7.17% | $2,242,589.97 |
-| SHELL/USDT:USDT | +6.78% | $2,425,415.65 |
-| BTW/USDT:USDT | +4.84% | $5,225,799.71 |
+| SOPH/USDT:USDT | +20.32% | $3,811,705.46 |
+| ARIA/USDT:USDT | +9.46% | $2,258,080.50 |
+| JCT/USDT:USDT | +8.75% | $4,952,549.01 |
+| SHELL/USDT:USDT | +8.35% | $2,433,007.19 |
+| BTW/USDT:USDT | +5.01% | $5,236,185.77 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SHELL/USDT:USDT | below_1h_threshold | +3.28% | +3.00% |
-| ARIA/USDT:USDT | below_1h_threshold | +3.05% | +2.76% |
-| JCT/USDT:USDT | below_1h_threshold | +2.77% | +2.49% |
-| INIT/USDT:USDT | below_1h_threshold | +2.32% | +2.04% |
-| BTW/USDT:USDT | below_1h_threshold | +2.04% | +1.76% |
+| SHELL/USDT:USDT | below_1h_threshold | +4.84% | +4.76% |
+| JCT/USDT:USDT | below_1h_threshold | +2.72% | +2.64% |
+| BTW/USDT:USDT | below_1h_threshold | +2.14% | +2.06% |
+| INIT/USDT:USDT | below_1h_threshold | +1.89% | +1.81% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.73% | +1.65% |
 
 ## 7. 次に見るべき不足
 
