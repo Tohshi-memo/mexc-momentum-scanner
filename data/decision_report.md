@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-15T07:46:10.021376+00:00
+- generated_at: 2026-11-15T07:51:21.397320+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18934**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-15T07:46:01.283729+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.86% price=63880.5
+- 更新: 2026-11-15T07:51:10.319298+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.89% price=63862.7
 - Funnel: target 1066 → liquid 137 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| INIT/USDT:USDT | +16.17% | $2,427,156.06 |
-| PIEVERSE/USDT:USDT | +9.75% | $1,861,885.08 |
-| ARIA/USDT:USDT | +9.40% | $2,651,280.37 |
-| VVV/USDT:USDT | +6.05% | $2,992,731.20 |
-| JCT/USDT:USDT | +2.98% | $4,878,209.42 |
+| INIT/USDT:USDT | +16.47% | $2,467,391.91 |
+| PIEVERSE/USDT:USDT | +10.37% | $1,867,225.24 |
+| ARIA/USDT:USDT | +9.03% | $2,655,028.05 |
+| VVV/USDT:USDT | +6.35% | $3,024,352.08 |
+| JCT/USDT:USDT | +2.83% | $4,881,438.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| INIT/USDT:USDT | below_1h_threshold | +3.22% | +4.07% |
-| DODO/USDT:USDT | below_1h_threshold | +2.13% | +2.99% |
-| XLV/USDT:USDT | below_1h_threshold | +0.35% | +1.21% |
-| SILVER/USDT:USDT | below_1h_threshold | +0.34% | +1.20% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.34% | +1.20% |
+| EVAA/USDT:USDT | below_1h_threshold | +5.00% | +5.88% |
+| INIT/USDT:USDT | below_1h_threshold | +3.48% | +4.37% |
+| DODO/USDT:USDT | below_1h_threshold | +2.30% | +3.18% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +0.74% | +1.63% |
+| BLESS/USDT:USDT | below_1h_threshold | +0.41% | +1.30% |
 
 ## 7. 次に見るべき不足
 
