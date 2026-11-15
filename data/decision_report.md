@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-15T10:11:21.819312+00:00
+- generated_at: 2026-11-15T10:16:27.181344+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18954**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7113件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7114件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000110 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-15T10:11:10.091077+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.31% price=65516.9
-- Funnel: target 1066 → liquid 136 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-15T10:16:15.904732+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.40% price=65576.0
+- Funnel: target 1066 → liquid 136 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 76.1 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| INIT/USDT:USDT | +33.67% | $4,936,892.93 |
-| ARIA/USDT:USDT | +11.08% | $2,544,130.23 |
-| VVV/USDT:USDT | +9.47% | $3,771,397.17 |
-| JCT/USDT:USDT | +9.12% | $4,495,330.44 |
-| PIEVERSE/USDT:USDT | +9.04% | $1,908,623.15 |
+| INIT/USDT:USDT | +36.77% | $5,015,993.83 |
+| EVAA/USDT:USDT | +14.53% | $13,146,797.24 |
+| ARIA/USDT:USDT | +12.28% | $2,548,801.47 |
+| JCT/USDT:USDT | +10.01% | $4,524,542.20 |
+| VVV/USDT:USDT | +9.15% | $3,788,165.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JCT/USDT:USDT | below_1h_threshold | +1.96% | +1.65% |
-| KAVA/USDT:USDT | below_1h_threshold | +1.39% | +1.08% |
-| HYPE/USDT:USDT | below_1h_threshold | +1.09% | +0.78% |
-| SNXX/USDT:USDT | below_1h_threshold | +1.03% | +0.72% |
-| FET/USDT:USDT | below_1h_threshold | +0.98% | +0.66% |
+| JCT/USDT:USDT | below_1h_threshold | +2.74% | +2.34% |
+| INIT/USDT:USDT | below_1h_threshold | +2.11% | +1.71% |
+| ARIA/USDT:USDT | below_1h_threshold | +2.08% | +1.68% |
+| KAVA/USDT:USDT | below_1h_threshold | +1.18% | +0.78% |
+| JASMY/USDT:USDT | below_1h_threshold | +1.06% | +0.66% |
 
 ## 7. 次に見るべき不足
 
