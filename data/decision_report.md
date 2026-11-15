@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-15T23:06:18.570911+00:00
+- generated_at: 2026-11-15T23:11:19.355991+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18989**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-15T23:06:05.227052+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.18% price=65312.8
-- Funnel: target 1066 → liquid 113 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-11-15T23:11:08.217455+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=65163.9
+- Funnel: target 1066 → liquid 114 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RARE/USDT:USDT | +46.00% | $4,657,312.16 |
-| SHELL/USDT:USDT | +8.98% | $1,711,741.61 |
-| PIEVERSE/USDT:USDT | +7.61% | $2,084,099.81 |
-| SOXL/USDT:USDT | +5.83% | $7,834,310.19 |
-| NBISSTOCK/USDT:USDT | +5.75% | $2,877,413.01 |
+| RARE/USDT:USDT | +44.48% | $4,689,860.41 |
+| SHELL/USDT:USDT | +9.93% | $1,717,105.88 |
+| PIEVERSE/USDT:USDT | +6.77% | $2,088,980.78 |
+| NBISSTOCK/USDT:USDT | +6.02% | $2,923,919.09 |
+| SOXL/USDT:USDT | +5.65% | $7,858,740.41 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PONS/USDT:USDT | below_1h_threshold | +1.89% | +1.70% |
-| SILVER/USDT:USDT | below_1h_threshold | +1.37% | +1.18% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.10% | +0.91% |
-| QNT/USDT:USDT | below_1h_threshold | +0.88% | +0.70% |
-| SHELL/USDT:USDT | below_1h_threshold | +0.80% | +0.62% |
+| SHELL/USDT:USDT | below_1h_threshold | +1.68% | +1.72% |
+| PONS/USDT:USDT | below_1h_threshold | +1.23% | +1.27% |
+| SILVER/USDT:USDT | below_1h_threshold | +1.10% | +1.14% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.10% | +1.14% |
+| ZRO/USDT:USDT | below_1h_threshold | +1.01% | +1.05% |
 
 ## 7. 次に見るべき不足
 
