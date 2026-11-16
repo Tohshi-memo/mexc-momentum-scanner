@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-16T09:51:27.204018+00:00
+- generated_at: 2026-11-16T09:55:08.010208+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19010**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-16T09:51:14.092383+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=64335.1
-- Funnel: target 1066 → liquid 120 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.7 >= 65=1
+- 更新: 2026-11-16T09:54:58.627444+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.17% price=64323.1
+- Funnel: target 1066 → liquid 120 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 73.7 >= 65=1, 4h RSI 79.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RARE/USDT:USDT | +89.67% | $10,823,691.36 |
-| SKR/USDT:USDT | +23.38% | $4,278,428.19 |
-| EVAA/USDT:USDT | +21.73% | $21,316,851.60 |
-| BLESS/USDT:USDT | +14.35% | $2,216,444.29 |
-| JCT/USDT:USDT | +8.38% | $11,198,412.37 |
+| RARE/USDT:USDT | +88.84% | $10,887,213.25 |
+| EVAA/USDT:USDT | +23.15% | $21,456,764.12 |
+| SKR/USDT:USDT | +22.38% | $4,291,095.73 |
+| BLESS/USDT:USDT | +18.31% | $2,243,249.63 |
+| JCT/USDT:USDT | +8.57% | $11,206,997.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_1h_threshold | +3.40% | +3.55% |
-| SHELL/USDT:USDT | below_1h_threshold | +2.36% | +2.51% |
-| EVAA/USDT:USDT | below_1h_threshold | +1.80% | +1.95% |
-| ASTER/USDT:USDT | below_1h_threshold | +0.68% | +0.83% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +0.67% | +0.82% |
+| EVAA/USDT:USDT | below_1h_threshold | +2.99% | +3.16% |
+| SHELL/USDT:USDT | below_1h_threshold | +2.02% | +2.18% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +0.74% | +0.91% |
+| ASTER/USDT:USDT | below_1h_threshold | +0.66% | +0.83% |
+| HYPE/USDT:USDT | below_1h_threshold | +0.65% | +0.82% |
 
 ## 7. 次に見るべき不足
 
