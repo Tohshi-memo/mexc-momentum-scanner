@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-16T10:51:39.340375+00:00
+- generated_at: 2026-11-16T10:56:12.478295+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19013**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-16T10:51:28.919301+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.31% price=64499.2
-- Funnel: target 1069 → liquid 117 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.5 >= 65=1, 4h RSI 84.9 >= 65=1
+- 更新: 2026-11-16T10:56:03.779322+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.29% price=64485.0
+- Funnel: target 1069 → liquid 118 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 84.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RARE/USDT:USDT | +75.70% | $11,969,428.52 |
-| EVAA/USDT:USDT | +36.61% | $23,838,457.66 |
-| BLESS/USDT:USDT | +32.95% | $3,113,503.75 |
-| SKR/USDT:USDT | +15.82% | $4,472,045.43 |
-| JCT/USDT:USDT | +14.08% | $11,328,232.34 |
+| RARE/USDT:USDT | +74.64% | $12,030,237.63 |
+| EVAA/USDT:USDT | +34.06% | $24,052,421.50 |
+| BLESS/USDT:USDT | +32.36% | $3,172,079.34 |
+| SKR/USDT:USDT | +17.25% | $4,478,359.16 |
+| JCT/USDT:USDT | +14.96% | $11,365,787.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JCT/USDT:USDT | below_1h_threshold | +4.18% | +3.86% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.80% | +1.48% |
-| UAI/USDT:USDT | below_1h_threshold | +1.77% | +1.45% |
-| SYRUP/USDT:USDT | below_1h_threshold | +0.88% | +0.57% |
-| SOL/USDT:USDT | below_1h_threshold | +0.86% | +0.55% |
+| JCT/USDT:USDT | below_1h_threshold | +4.77% | +4.48% |
+| EVAA/USDT:USDT | below_1h_threshold | +3.43% | +3.14% |
+| UAI/USDT:USDT | below_1h_threshold | +1.89% | +1.60% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.80% | +1.51% |
+| SYRUP/USDT:USDT | below_1h_threshold | +1.27% | +0.98% |
 
 ## 7. 次に見るべき不足
 
