@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-16T01:21:25.822626+00:00
+- generated_at: 2026-11-16T01:26:14.050398+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18990**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-16T01:21:12.520120+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.19% price=64765.1
-- Funnel: target 1066 → liquid 112 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-11-16T01:26:02.918248+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.29% price=64702.6
+- Funnel: target 1066 → liquid 115 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RARE/USDT:USDT | +45.77% | $5,357,952.66 |
-| SHELL/USDT:USDT | +6.10% | $1,678,649.07 |
-| PIEVERSE/USDT:USDT | +4.14% | $2,110,983.77 |
-| MSTRSTOCK/USDT:USDT | +3.92% | $8,835,306.42 |
-| UAI/USDT:USDT | +3.36% | $1,633,388.51 |
+| RARE/USDT:USDT | +48.59% | $5,385,169.82 |
+| SHELL/USDT:USDT | +6.50% | $1,679,746.46 |
+| PIEVERSE/USDT:USDT | +4.11% | $2,112,047.63 |
+| UAI/USDT:USDT | +3.97% | $1,640,925.00 |
+| EVAA/USDT:USDT | +3.47% | $17,348,664.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KORU/USDT:USDT | below_1h_threshold | +0.65% | +0.84% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.55% | +0.74% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.40% | +0.59% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +0.27% | +0.46% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.27% | +0.46% |
+| RARE/USDT:USDT | below_1h_threshold | +1.94% | +2.23% |
+| KORU/USDT:USDT | below_1h_threshold | +0.65% | +0.94% |
+| SHELL/USDT:USDT | below_1h_threshold | +0.60% | +0.89% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.55% | +0.84% |
+| UAI/USDT:USDT | below_1h_threshold | +0.47% | +0.76% |
 
 ## 7. 次に見るべき不足
 
