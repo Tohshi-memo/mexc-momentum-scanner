@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-16T05:26:16.997672+00:00
+- generated_at: 2026-11-16T05:31:16.888737+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18996**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-16T05:26:06.109806+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=64834.9
+- 更新: 2026-11-16T05:31:07.380400+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=64767.6
 - Funnel: target 1066 → liquid 114 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.3 >= 65=1
+- Strict後reject: 4h RSI 68.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RARE/USDT:USDT | +65.25% | $6,861,633.72 |
-| SKR/USDT:USDT | +29.55% | $1,741,106.52 |
-| SHELL/USDT:USDT | +12.73% | $1,537,948.85 |
-| PIEVERSE/USDT:USDT | +5.22% | $1,959,053.30 |
-| MSTRSTOCK/USDT:USDT | +3.97% | $8,948,093.31 |
+| RARE/USDT:USDT | +69.48% | $6,939,023.37 |
+| SKR/USDT:USDT | +29.34% | $1,757,087.92 |
+| SHELL/USDT:USDT | +12.81% | $1,538,348.62 |
+| PIEVERSE/USDT:USDT | +5.29% | $1,964,606.43 |
+| MSTRSTOCK/USDT:USDT | +3.73% | $8,949,116.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EVAA/USDT:USDT | below_1h_threshold | +1.51% | +1.44% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.36% | +1.29% |
-| ZRO/USDT:USDT | below_1h_threshold | +0.87% | +0.79% |
-| AVAX/USDT:USDT | below_1h_threshold | +0.46% | +0.39% |
-| XPT/USDT:USDT | below_1h_threshold | +0.43% | +0.36% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.36% | +1.39% |
+| BARD/USDT:USDT | below_1h_threshold | +1.09% | +1.12% |
+| ZRO/USDT:USDT | below_1h_threshold | +0.82% | +0.85% |
+| SYRUP/USDT:USDT | below_1h_threshold | +0.29% | +0.32% |
+| ASTER/USDT:USDT | below_1h_threshold | +0.22% | +0.25% |
 
 ## 7. 次に見るべき不足
 
