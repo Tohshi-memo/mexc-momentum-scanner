@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-16T03:56:23.815536+00:00
+- generated_at: 2026-11-16T04:01:14.949837+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18994**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-16T03:56:12.457687+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.21% price=65017.4
-- Funnel: target 1066 → liquid 111 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-11-16T04:01:04.190600+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=65116.7
+- Funnel: target 1066 → liquid 112 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RARE/USDT:USDT | +41.54% | $5,965,252.44 |
-| SHELL/USDT:USDT | +13.91% | $1,569,130.91 |
-| PIEVERSE/USDT:USDT | +5.00% | $2,061,541.10 |
-| MSTRSTOCK/USDT:USDT | +4.72% | $8,854,019.66 |
-| ICP/USDT:USDT | +2.79% | $3,257,194.89 |
+| RARE/USDT:USDT | +40.72% | $5,976,926.12 |
+| SKR/USDT:USDT | +33.09% | $1,397,761.00 |
+| SHELL/USDT:USDT | +12.84% | $1,532,915.78 |
+| PIEVERSE/USDT:USDT | +5.45% | $1,939,292.20 |
+| MSTRSTOCK/USDT:USDT | +4.93% | $8,418,969.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXL/USDT:USDT | below_1h_threshold | +3.39% | +3.59% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +2.16% | +2.37% |
-| ASTER/USDT:USDT | below_1h_threshold | +1.49% | +1.70% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +1.40% | +1.61% |
-| NVIDIA/USDT:USDT | below_1h_threshold | +1.34% | +1.55% |
+| JCT/USDT:USDT | below_1h_threshold | +1.49% | +1.43% |
+| RARE/USDT:USDT | below_1h_threshold | +0.50% | +0.44% |
+| OP/USDT:USDT | below_1h_threshold | +0.42% | +0.36% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +0.38% | +0.32% |
+| VVV/USDT:USDT | below_1h_threshold | +0.37% | +0.31% |
 
 ## 7. 次に見るべき不足
 
