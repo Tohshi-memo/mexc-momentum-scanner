@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-16T08:11:33.144372+00:00
+- generated_at: 2026-11-16T08:16:30.579864+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19001**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-16T08:11:19.402698+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.42% price=64683.8
+- 更新: 2026-11-16T08:16:16.923707+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.42% price=64684.9
 - Funnel: target 1066 → liquid 119 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RARE/USDT:USDT | +61.03% | $8,798,148.48 |
-| SKR/USDT:USDT | +28.16% | $3,653,951.88 |
-| JCT/USDT:USDT | +10.56% | $10,332,070.40 |
-| SHELL/USDT:USDT | +7.92% | $1,529,861.25 |
-| PIEVERSE/USDT:USDT | +6.67% | $1,785,799.55 |
+| RARE/USDT:USDT | +63.73% | $8,856,659.71 |
+| SKR/USDT:USDT | +28.79% | $3,665,019.50 |
+| JCT/USDT:USDT | +13.48% | $10,365,598.87 |
+| EVAA/USDT:USDT | +7.66% | $19,212,877.81 |
+| SHELL/USDT:USDT | +7.09% | $1,534,020.14 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RARE/USDT:USDT | below_1h_threshold | +2.93% | +3.34% |
+| RARE/USDT:USDT | below_1h_threshold | +4.65% | +5.07% |
+| JCT/USDT:USDT | below_1h_threshold | +2.30% | +2.71% |
 | NVIDIA/USDT:USDT | below_1h_threshold | +1.15% | +1.56% |
 | MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.92% | +1.34% |
 | TQQQ/USDT:USDT | below_1h_threshold | +0.75% | +1.17% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +0.57% | +0.98% |
 
 ## 7. 次に見るべき不足
 
