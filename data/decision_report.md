@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-16T12:26:11.898043+00:00
+- generated_at: 2026-11-16T12:31:10.192435+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19017**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-16T12:26:03.287902+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.61% price=64020.2
+- 更新: 2026-11-16T12:31:01.761807+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.81% price=63894.0
 - Funnel: target 1069 → liquid 113 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RARE/USDT:USDT | +87.20% | $13,977,804.13 |
-| BLESS/USDT:USDT | +44.29% | $5,682,903.78 |
-| EVAA/USDT:USDT | +25.13% | $25,979,456.69 |
-| JCT/USDT:USDT | +13.16% | $11,831,376.45 |
-| SKR/USDT:USDT | +12.66% | $5,852,069.79 |
+| RARE/USDT:USDT | +85.21% | $14,096,437.37 |
+| BLESS/USDT:USDT | +41.35% | $5,851,289.74 |
+| EVAA/USDT:USDT | +31.19% | $26,308,617.99 |
+| JCT/USDT:USDT | +13.06% | $11,856,620.29 |
+| SKR/USDT:USDT | +12.46% | $5,854,341.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_1h_threshold | +1.49% | +2.10% |
-| RARE/USDT:USDT | below_1h_threshold | +1.39% | +2.00% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +1.18% | +1.79% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.11% | +1.72% |
-| UAI/USDT:USDT | below_1h_threshold | +0.60% | +1.21% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.11% | +1.91% |
+| ALUMINUM/USDT:USDT | below_1h_threshold | +0.52% | +1.32% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.45% | +1.26% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +0.44% | +1.25% |
+| ZINC/USDT:USDT | below_1h_threshold | +0.27% | +1.08% |
 
 ## 7. 次に見るべき不足
 
