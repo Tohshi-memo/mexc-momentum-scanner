@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-15T23:56:20.045255+00:00
+- generated_at: 2026-11-16T00:01:20.236226+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18989**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-15T23:56:06.709925+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=65185.0
-- Funnel: target 1066 → liquid 115 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-11-16T00:01:08.056060+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=65300.7
+- Funnel: target 1066 → liquid 111 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RARE/USDT:USDT | +46.94% | $4,947,714.54 |
-| SHELL/USDT:USDT | +8.47% | $1,734,668.26 |
-| SOXL/USDT:USDT | +7.12% | $8,119,339.77 |
-| PIEVERSE/USDT:USDT | +6.61% | $2,128,321.77 |
-| SNXX/USDT:USDT | +6.55% | $3,594,159.15 |
+| RARE/USDT:USDT | +45.77% | $4,971,700.51 |
+| SHELL/USDT:USDT | +8.78% | $1,714,812.83 |
+| SOXL/USDT:USDT | +7.56% | $8,192,814.92 |
+| MUU/USDT:USDT | +7.13% | $1,202,134.42 |
+| SNXX/USDT:USDT | +6.79% | $3,578,946.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +1.97% | +1.98% |
-| XPT/USDT:USDT | below_1h_threshold | +1.74% | +1.75% |
-| SILVER/USDT:USDT | below_1h_threshold | +1.68% | +1.69% |
-| WLD/USDT:USDT | below_1h_threshold | +1.12% | +1.13% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.10% | +1.11% |
+| MUU/USDT:USDT | below_1h_threshold | +3.12% | +3.13% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.56% | +2.58% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.01% | +2.02% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.97% | +1.98% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.79% | +1.81% |
 
 ## 7. 次に見るべき不足
 
