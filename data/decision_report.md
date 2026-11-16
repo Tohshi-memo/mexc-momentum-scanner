@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-16T02:21:28.585897+00:00
+- generated_at: 2026-11-16T02:26:19.750362+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18992**
 
@@ -70,31 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-16T02:21:15.315239+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.81% price=65063.6
+- 更新: 2026-11-16T02:26:08.324018+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +1.07% price=65228.3
 - Funnel: target 1066 → liquid 111 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RARE/USDT:USDT | +49.53% | $5,632,713.55 |
-| SHELL/USDT:USDT | +12.17% | $1,613,136.66 |
-| PIEVERSE/USDT:USDT | +5.26% | $2,089,122.74 |
-| BARD/USDT:USDT | +5.05% | $1,782,526.59 |
-| MSTRSTOCK/USDT:USDT | +4.86% | $7,853,567.62 |
+| RARE/USDT:USDT | +45.42% | $5,669,279.81 |
+| SHELL/USDT:USDT | +12.49% | $1,614,340.70 |
+| BARD/USDT:USDT | +6.14% | $1,800,699.89 |
+| PIEVERSE/USDT:USDT | +5.34% | $2,090,142.11 |
+| MSTRSTOCK/USDT:USDT | +5.28% | $7,947,318.89 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SHELL/USDT:USDT | below_1h_threshold | +4.71% | +3.89% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +1.87% | +1.05% |
-| AGT/USDT:USDT | below_1h_threshold | +1.76% | +0.95% |
-| SEI/USDT:USDT | below_1h_threshold | +1.64% | +0.83% |
-| STRK/USDT:USDT | below_1h_threshold | +1.59% | +0.78% |
+| SHELL/USDT:USDT | below_relative_strength | +5.00% | +3.93% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +2.18% | +1.11% |
+| NEAR/USDT:USDT | below_1h_threshold | +2.11% | +1.04% |
+| PONS/USDT:USDT | below_1h_threshold | +2.01% | +0.94% |
+| STRK/USDT:USDT | below_1h_threshold | +1.97% | +0.90% |
 
 ## 7. 次に見るべき不足
 
