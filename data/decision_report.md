@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-16T14:56:27.759786+00:00
+- generated_at: 2026-11-16T15:01:20.538975+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19027**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-16T14:56:16.450580+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +1.72% price=65268.5
-- Funnel: target 1069 → liquid 121 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 93.3 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-16T15:01:10.918903+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.20% price=65012.2
+- Funnel: target 1069 → liquid 117 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLESS/USDT:USDT | +89.29% | $14,471,225.55 |
-| RARE/USDT:USDT | +76.76% | $17,404,525.10 |
-| EVAA/USDT:USDT | +20.24% | $30,339,288.69 |
-| SKR/USDT:USDT | +17.86% | $6,288,756.19 |
-| PIEVERSE/USDT:USDT | +11.47% | $1,682,337.84 |
+| BLESS/USDT:USDT | +88.70% | $14,603,399.43 |
+| RARE/USDT:USDT | +77.23% | $17,438,246.58 |
+| EVAA/USDT:USDT | +18.89% | $28,416,901.29 |
+| SKR/USDT:USDT | +17.69% | $6,269,394.94 |
+| PIEVERSE/USDT:USDT | +11.70% | $1,633,781.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ICP/USDT:USDT | below_relative_strength | +6.24% | +4.52% |
-| SKR/USDT:USDT | below_1h_threshold | +3.07% | +1.35% |
-| FET/USDT:USDT | below_1h_threshold | +3.02% | +1.30% |
-| SYRUP/USDT:USDT | below_1h_threshold | +2.90% | +1.18% |
-| UNI/USDT:USDT | below_1h_threshold | +2.72% | +1.00% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +3.12% | +3.31% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +2.31% | +2.51% |
+| SQQQ/USDT:USDT | below_1h_threshold | +1.08% | +1.28% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.16% | +0.35% |
+| SKR/USDT:USDT | below_1h_threshold | +0.14% | +0.33% |
 
 ## 7. 次に見るべき不足
 
