@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-16T06:06:21.539265+00:00
+- generated_at: 2026-11-16T06:11:34.599224+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **18998**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7157件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7158件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000145 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-16T06:06:12.036715+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=64462.5
-- Funnel: target 1066 → liquid 115 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-16T06:11:21.334552+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=64388.0
+- Funnel: target 1066 → liquid 115 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RARE/USDT:USDT | +58.68% | $7,454,005.59 |
-| SKR/USDT:USDT | +29.76% | $1,959,223.16 |
-| SHELL/USDT:USDT | +13.55% | $1,527,000.92 |
-| PIEVERSE/USDT:USDT | +4.92% | $1,820,153.56 |
-| EVAA/USDT:USDT | +3.40% | $17,949,653.94 |
+| RARE/USDT:USDT | +55.98% | $7,495,430.05 |
+| SKR/USDT:USDT | +29.85% | $1,959,864.18 |
+| SHELL/USDT:USDT | +13.99% | $1,528,950.43 |
+| JCT/USDT:USDT | +6.30% | $9,365,224.24 |
+| PIEVERSE/USDT:USDT | +4.49% | $1,822,532.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JCT/USDT:USDT | below_1h_threshold | +1.93% | +1.90% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.91% | +1.88% |
-| RARE/USDT:USDT | below_1h_threshold | +1.20% | +1.17% |
-| SHELL/USDT:USDT | below_1h_threshold | +1.09% | +1.06% |
-| EVAA/USDT:USDT | below_1h_threshold | +0.92% | +0.89% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.91% | +2.00% |
+| EVAA/USDT:USDT | below_1h_threshold | +1.77% | +1.86% |
+| SHELL/USDT:USDT | below_1h_threshold | +1.30% | +1.39% |
+| BARD/USDT:USDT | below_1h_threshold | +0.70% | +0.79% |
+| SKR/USDT:USDT | below_1h_threshold | +0.51% | +0.60% |
 
 ## 7. 次に見るべき不足
 
