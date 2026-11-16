@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-16T19:56:44.608541+00:00
+- generated_at: 2026-11-16T20:01:32.493769+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19038**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-16T19:56:27.013185+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=65033.1
-- Funnel: target 1069 → liquid 131 → pre 50 → checked 50 → surge 3 → strict 2
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.9 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-16T20:01:18.830633+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=65033.4
+- Funnel: target 1069 → liquid 130 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BULLA/USDT:USDT | +19.97% | $1,291,916.75 |
-| HUMA/USDT:USDT | +12.57% | $1,295,207.05 |
-| UVXY/USDT:USDT | +9.84% | $1,288,484.71 |
-| SOPH/USDT:USDT | +5.28% | $1,933,343.34 |
-| AGT/USDT:USDT | +4.27% | $1,156,532.39 |
+| BULLA/USDT:USDT | +22.58% | $1,303,958.24 |
+| HUMA/USDT:USDT | +13.68% | $1,302,139.59 |
+| UVXY/USDT:USDT | +9.68% | $1,281,942.82 |
+| EVAA/USDT:USDT | +5.45% | $32,845,659.56 |
+| SOPH/USDT:USDT | +5.17% | $1,857,427.42 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOPH/USDT:USDT | below_1h_threshold | +2.52% | +2.50% |
-| HYPE/USDT:USDT | below_1h_threshold | +1.48% | +1.47% |
-| VVV/USDT:USDT | below_1h_threshold | +1.08% | +1.07% |
-| PEPE/USDT:USDT | below_1h_threshold | +0.89% | +0.88% |
-| ZEC/USDT:USDT | below_1h_threshold | +0.73% | +0.72% |
+| UVXY/USDT:USDT | below_1h_threshold | +3.63% | +3.63% |
+| HUMA/USDT:USDT | below_1h_threshold | +1.17% | +1.18% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.14% | +1.14% |
+| IRENSTOCK/USDT:USDT | below_1h_threshold | +0.91% | +0.92% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +0.45% | +0.45% |
 
 ## 7. 次に見るべき不足
 
