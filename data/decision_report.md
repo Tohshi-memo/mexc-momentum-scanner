@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-16T17:06:42.421679+00:00
+- generated_at: 2026-11-16T17:11:12.713323+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19030**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-16T17:06:32.365600+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=64891.3
+- 更新: 2026-11-16T17:11:03.410117+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.17% price=64791.1
 - Funnel: target 1069 → liquid 126 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 94.7 >= 65=1
@@ -81,21 +81,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOPH/USDT:USDT | +11.20% | $1,890,998.23 |
-| BLESS/USDT:USDT | +4.66% | $24,436,597.18 |
-| AGT/USDT:USDT | +4.56% | $1,254,380.04 |
-| PIEVERSE/USDT:USDT | +4.16% | $1,735,094.08 |
-| ARIA/USDT:USDT | +4.12% | $3,107,885.13 |
+| SOPH/USDT:USDT | +8.18% | $1,910,453.65 |
+| ARIA/USDT:USDT | +6.63% | $3,120,222.20 |
+| PIEVERSE/USDT:USDT | +4.63% | $1,740,744.79 |
+| BLESS/USDT:USDT | +4.30% | $24,817,829.33 |
+| AGT/USDT:USDT | +3.93% | $1,257,045.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOPH/USDT:USDT | below_1h_threshold | +4.98% | +5.00% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +2.03% | +2.04% |
-| ARIA/USDT:USDT | below_1h_threshold | +1.68% | +1.69% |
-| AGT/USDT:USDT | below_1h_threshold | +1.35% | +1.37% |
-| ZRO/USDT:USDT | below_1h_threshold | +0.82% | +0.83% |
+| ARIA/USDT:USDT | below_1h_threshold | +4.09% | +4.25% |
+| SOPH/USDT:USDT | below_1h_threshold | +2.14% | +2.30% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +2.03% | +2.20% |
+| ZRO/USDT:USDT | below_1h_threshold | +0.97% | +1.14% |
+| UVXY/USDT:USDT | below_1h_threshold | +0.75% | +0.91% |
 
 ## 7. 次に見るべき不足
 
