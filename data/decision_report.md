@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-16T15:31:25.980684+00:00
+- generated_at: 2026-11-16T15:33:38.407249+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19028**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-16T15:31:11.837075+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -1.24% price=64329.1
-- Funnel: target 1069 → liquid 121 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 93.9 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-16T15:33:24.721760+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -1.43% price=64207.1
+- Funnel: target 1069 → liquid 121 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLESS/USDT:USDT | +99.54% | $16,847,661.63 |
-| RARE/USDT:USDT | +74.53% | $17,868,003.44 |
-| EVAA/USDT:USDT | +18.54% | $29,172,906.44 |
-| SKR/USDT:USDT | +16.60% | $6,350,193.21 |
-| PIEVERSE/USDT:USDT | +13.99% | $1,712,103.26 |
+| BLESS/USDT:USDT | +97.98% | $17,014,148.91 |
+| RARE/USDT:USDT | +76.29% | $17,886,654.66 |
+| EVAA/USDT:USDT | +19.83% | $29,240,708.18 |
+| SKR/USDT:USDT | +16.30% | $6,352,385.51 |
+| PIEVERSE/USDT:USDT | +13.89% | $1,719,712.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +3.12% | +4.36% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +2.31% | +3.56% |
-| NVIDIA/USDT:USDT | below_1h_threshold | +2.10% | +3.35% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +1.70% | +2.95% |
-| SQQQ/USDT:USDT | below_1h_threshold | +1.08% | +2.33% |
+| BLESS/USDT:USDT | below_1h_threshold | +4.64% | +6.07% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +3.12% | +4.55% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +2.31% | +3.75% |
+| NVIDIA/USDT:USDT | below_1h_threshold | +2.10% | +3.54% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +1.34% | +2.78% |
 
 ## 7. 次に見るべき不足
 
