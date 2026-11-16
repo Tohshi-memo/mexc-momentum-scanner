@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-16T15:11:17.445514+00:00
+- generated_at: 2026-11-16T15:16:18.832034+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19028**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-16T15:11:06.457784+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.92% price=64541.7
-- Funnel: target 1069 → liquid 117 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 93.9 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-16T15:16:05.324423+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -1.30% price=64295.4
+- Funnel: target 1069 → liquid 120 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLESS/USDT:USDT | +99.61% | $15,471,958.58 |
-| RARE/USDT:USDT | +80.75% | $17,554,765.60 |
-| EVAA/USDT:USDT | +21.99% | $28,667,074.01 |
-| SKR/USDT:USDT | +16.36% | $6,287,538.51 |
-| PIEVERSE/USDT:USDT | +11.88% | $1,660,030.71 |
+| BLESS/USDT:USDT | +96.62% | $15,776,628.70 |
+| RARE/USDT:USDT | +82.62% | $17,648,659.12 |
+| EVAA/USDT:USDT | +21.21% | $28,734,495.29 |
+| SKR/USDT:USDT | +15.53% | $6,298,189.60 |
+| PIEVERSE/USDT:USDT | +11.42% | $1,663,719.43 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +3.12% | +4.03% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +2.31% | +3.23% |
-| NVIDIA/USDT:USDT | below_1h_threshold | +2.10% | +3.02% |
-| EVAA/USDT:USDT | below_1h_threshold | +1.72% | +2.64% |
-| RARE/USDT:USDT | below_1h_threshold | +1.45% | +2.37% |
+| BLESS/USDT:USDT | below_1h_threshold | +3.99% | +5.28% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +3.12% | +4.41% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +2.31% | +3.61% |
+| RARE/USDT:USDT | below_1h_threshold | +2.30% | +3.60% |
+| NVIDIA/USDT:USDT | below_1h_threshold | +2.10% | +3.40% |
 
 ## 7. 次に見るべき不足
 
