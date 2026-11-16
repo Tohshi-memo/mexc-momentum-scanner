@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-16T20:36:23.540851+00:00
+- generated_at: 2026-11-16T20:41:30.554002+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19040**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-16T20:36:13.368213+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=65074.2
+- 更新: 2026-11-16T20:41:16.867644+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=64964.3
 - Funnel: target 1069 → liquid 132 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.3 >= 65=1
+- Strict後reject: 4h RSI 73.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HUMA/USDT:USDT | +23.38% | $1,463,867.59 |
-| BULLA/USDT:USDT | +22.93% | $1,465,916.70 |
-| SPACE/USDT:USDT | +19.08% | $1,009,902.87 |
-| UVXY/USDT:USDT | +12.02% | $1,360,215.20 |
-| EVAA/USDT:USDT | +4.62% | $33,198,753.47 |
+| BULLA/USDT:USDT | +24.65% | $1,492,850.22 |
+| HUMA/USDT:USDT | +24.38% | $1,507,650.34 |
+| SPACE/USDT:USDT | +19.11% | $1,016,005.48 |
+| UVXY/USDT:USDT | +12.40% | $1,370,463.26 |
+| XPL/USDT:USDT | +4.42% | $2,206,297.42 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UVXY/USDT:USDT | below_1h_threshold | +3.63% | +3.57% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.14% | +1.08% |
-| IRENSTOCK/USDT:USDT | below_1h_threshold | +0.91% | +0.85% |
-| LIT/USDT:USDT | below_1h_threshold | +0.84% | +0.78% |
-| SPACE/USDT:USDT | below_1h_threshold | +0.80% | +0.74% |
+| UVXY/USDT:USDT | below_1h_threshold | +3.63% | +3.74% |
+| BULLA/USDT:USDT | below_1h_threshold | +1.57% | +1.68% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.14% | +1.25% |
+| IRENSTOCK/USDT:USDT | below_1h_threshold | +0.91% | +1.02% |
+| ICP/USDT:USDT | below_1h_threshold | +0.87% | +0.98% |
 
 ## 7. 次に見るべき不足
 
