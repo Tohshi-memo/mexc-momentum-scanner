@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-16T19:06:24.482761+00:00
+- generated_at: 2026-11-16T19:11:29.508420+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19034**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7192件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7193件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000168 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-16T19:06:11.052601+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=64953.3
-- Funnel: target 1069 → liquid 129 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-16T19:11:16.082136+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.22% price=64885.0
+- Funnel: target 1069 → liquid 129 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +9.13% | $32,305,444.52 |
-| BULLA/USDT:USDT | +8.33% | $1,137,248.73 |
-| UVXY/USDT:USDT | +6.91% | $1,183,710.47 |
-| XPL/USDT:USDT | +4.16% | $2,110,496.62 |
-| ICP/USDT:USDT | +3.62% | $6,228,641.40 |
+| BULLA/USDT:USDT | +14.94% | $1,151,699.84 |
+| UVXY/USDT:USDT | +7.23% | $1,187,370.00 |
+| EVAA/USDT:USDT | +6.25% | $32,451,593.03 |
+| SYRUP/USDT:USDT | +3.76% | $1,420,590.04 |
+| XPL/USDT:USDT | +3.38% | $2,120,032.51 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_1h_threshold | +1.51% | +1.62% |
-| EVAA/USDT:USDT | below_1h_threshold | +1.19% | +1.30% |
-| ICP/USDT:USDT | below_1h_threshold | +0.87% | +0.98% |
-| BULLA/USDT:USDT | below_1h_threshold | +0.83% | +0.94% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.72% | +0.83% |
+| HUMA/USDT:USDT | below_1h_threshold | +0.75% | +0.97% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.72% | +0.93% |
+| UVXY/USDT:USDT | below_1h_threshold | +0.71% | +0.93% |
+| SYRUP/USDT:USDT | below_1h_threshold | +0.64% | +0.86% |
+| INIT/USDT:USDT | below_1h_threshold | +0.64% | +0.85% |
 
 ## 7. 次に見るべき不足
 
