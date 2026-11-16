@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-16T21:46:13.499476+00:00
+- generated_at: 2026-11-16T21:51:23.455232+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19041**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-16T21:46:03.439732+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.37% price=65274.2
+- 更新: 2026-11-16T21:51:13.704587+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.49% price=65353.5
 - Funnel: target 1069 → liquid 134 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BULLA/USDT:USDT | +26.99% | $1,726,305.15 |
-| HUMA/USDT:USDT | +24.09% | $1,945,002.20 |
-| SPACE/USDT:USDT | +17.17% | $1,108,583.16 |
-| UVXY/USDT:USDT | +7.23% | $1,457,866.02 |
-| AGT/USDT:USDT | +5.79% | $1,073,807.39 |
+| BULLA/USDT:USDT | +24.44% | $1,738,172.14 |
+| HUMA/USDT:USDT | +23.34% | $1,988,414.72 |
+| SPACE/USDT:USDT | +17.14% | $1,111,273.29 |
+| UVXY/USDT:USDT | +7.34% | $1,458,210.67 |
+| HYPE/USDT:USDT | +5.97% | $46,206,264.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +3.31% | +2.93% |
-| HYPE/USDT:USDT | below_1h_threshold | +2.34% | +1.96% |
-| LIT/USDT:USDT | below_1h_threshold | +2.25% | +1.88% |
-| AGT/USDT:USDT | below_1h_threshold | +2.08% | +1.71% |
-| BARD/USDT:USDT | below_1h_threshold | +1.69% | +1.32% |
+| ARIA/USDT:USDT | below_1h_threshold | +4.35% | +3.86% |
+| NIGHT/USDT:USDT | below_1h_threshold | +4.06% | +3.57% |
+| HYPE/USDT:USDT | below_1h_threshold | +3.35% | +2.85% |
+| SOXS/USDT:USDT | below_1h_threshold | +3.31% | +2.81% |
+| LIT/USDT:USDT | below_1h_threshold | +2.51% | +2.01% |
 
 ## 7. 次に見るべき不足
 
