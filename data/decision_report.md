@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-16T08:31:24.903805+00:00
+- generated_at: 2026-11-16T08:36:33.511539+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19002**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-16T08:31:09.951239+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.68% price=64513.1
+- 更新: 2026-11-16T08:36:20.327243+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.67% price=64521.5
 - Funnel: target 1066 → liquid 120 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RARE/USDT:USDT | +55.75% | $9,062,813.28 |
-| SKR/USDT:USDT | +25.95% | $3,704,778.93 |
-| JCT/USDT:USDT | +14.17% | $10,676,821.87 |
-| EVAA/USDT:USDT | +13.44% | $19,708,064.82 |
-| PIEVERSE/USDT:USDT | +6.75% | $1,823,104.11 |
+| RARE/USDT:USDT | +55.63% | $9,102,584.71 |
+| SKR/USDT:USDT | +26.13% | $3,725,369.06 |
+| EVAA/USDT:USDT | +13.93% | $19,900,685.89 |
+| JCT/USDT:USDT | +9.54% | $10,775,745.59 |
+| PIEVERSE/USDT:USDT | +6.22% | $1,824,866.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JCT/USDT:USDT | below_1h_threshold | +2.92% | +3.60% |
-| EVAA/USDT:USDT | below_1h_threshold | +1.89% | +2.57% |
-| NVIDIA/USDT:USDT | below_1h_threshold | +1.15% | +1.83% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.92% | +1.60% |
-| TQQQ/USDT:USDT | below_1h_threshold | +0.75% | +1.43% |
+| EVAA/USDT:USDT | below_1h_threshold | +2.30% | +2.97% |
+| NVIDIA/USDT:USDT | below_1h_threshold | +1.15% | +1.81% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.92% | +1.59% |
+| TQQQ/USDT:USDT | below_1h_threshold | +0.75% | +1.42% |
+| ANTHROPIC/USDT:USDT | below_1h_threshold | +0.60% | +1.27% |
 
 ## 7. 次に見るべき不足
 
