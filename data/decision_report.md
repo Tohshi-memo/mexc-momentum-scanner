@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-16T14:51:18.085624+00:00
+- generated_at: 2026-11-16T14:56:27.759786+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19027**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-16T14:51:07.312957+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +1.63% price=65212.3
-- Funnel: target 1069 → liquid 120 → pre 50 → checked 50 → surge 1 → strict 0
+- 更新: 2026-11-16T14:56:16.450580+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +1.72% price=65268.5
+- Funnel: target 1069 → liquid 121 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 93.2 >= 65=1
+- Strict後reject: 4h RSI 93.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLESS/USDT:USDT | +89.08% | $14,061,504.32 |
-| RARE/USDT:USDT | +79.81% | $17,356,468.02 |
-| EVAA/USDT:USDT | +18.13% | $30,175,365.25 |
-| SKR/USDT:USDT | +17.48% | $6,284,363.80 |
-| PIEVERSE/USDT:USDT | +11.30% | $1,680,747.88 |
+| BLESS/USDT:USDT | +89.29% | $14,471,225.55 |
+| RARE/USDT:USDT | +76.76% | $17,404,525.10 |
+| EVAA/USDT:USDT | +20.24% | $30,339,288.69 |
+| SKR/USDT:USDT | +17.86% | $6,288,756.19 |
+| PIEVERSE/USDT:USDT | +11.47% | $1,682,337.84 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ICP/USDT:USDT | below_relative_strength | +5.94% | +4.30% |
-| FET/USDT:USDT | below_1h_threshold | +2.94% | +1.31% |
-| UNI/USDT:USDT | below_1h_threshold | +2.76% | +1.13% |
-| ZRO/USDT:USDT | below_1h_threshold | +2.76% | +1.13% |
-| SKR/USDT:USDT | below_1h_threshold | +2.74% | +1.11% |
+| ICP/USDT:USDT | below_relative_strength | +6.24% | +4.52% |
+| SKR/USDT:USDT | below_1h_threshold | +3.07% | +1.35% |
+| FET/USDT:USDT | below_1h_threshold | +3.02% | +1.30% |
+| SYRUP/USDT:USDT | below_1h_threshold | +2.90% | +1.18% |
+| UNI/USDT:USDT | below_1h_threshold | +2.72% | +1.00% |
 
 ## 7. 次に見るべき不足
 
