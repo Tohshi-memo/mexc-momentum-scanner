@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-17T19:51:26.953374+00:00
+- generated_at: 2026-11-17T19:56:31.067790+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19088**
 
@@ -70,9 +70,9 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-17T19:51:11.247115+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=63745.9
-- Funnel: target 1073 → liquid 140 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-11-17T19:56:15.389499+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=63743.5
+- Funnel: target 1073 → liquid 141 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MMT/USDT:USDT | +18.55% | $1,575,545.26 |
-| PENGU/USDT:USDT | +10.74% | $3,057,203.90 |
-| UVXY/USDT:USDT | +7.32% | $2,477,926.88 |
-| PIEVERSE/USDT:USDT | +4.72% | $1,343,745.46 |
-| CSOPSKHYNIX2L/USDT:USDT | +4.02% | $1,044,699.21 |
+| MMT/USDT:USDT | +17.80% | $1,582,501.42 |
+| PENGU/USDT:USDT | +9.29% | $3,400,895.41 |
+| UVXY/USDT:USDT | +9.12% | $2,483,166.74 |
+| PIEVERSE/USDT:USDT | +5.07% | $1,351,498.92 |
+| ASTER/USDT:USDT | +4.32% | $13,844,708.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FARTCOIN/USDT:USDT | below_1h_threshold | +2.19% | +2.19% |
-| BREV/USDT:USDT | below_1h_threshold | +2.16% | +2.16% |
-| LUNC/USDT:USDT | below_1h_threshold | +1.77% | +1.77% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +1.61% | +1.61% |
-| VIRTUAL/USDT:USDT | below_1h_threshold | +1.48% | +1.48% |
+| BREV/USDT:USDT | below_1h_threshold | +2.89% | +2.89% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +2.19% | +2.20% |
+| LUNC/USDT:USDT | below_1h_threshold | +2.02% | +2.02% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +1.95% | +1.95% |
+| ASTER/USDT:USDT | below_1h_threshold | +1.58% | +1.58% |
 
 ## 7. 次に見るべき不足
 
