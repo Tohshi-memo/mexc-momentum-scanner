@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-17T16:16:40.611960+00:00
+- generated_at: 2026-11-17T16:21:18.888091+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19085**
 
@@ -70,30 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-17T16:16:27.197965+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=64119.5
-- Funnel: target 1073 → liquid 137 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-17T16:21:09.500628+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=64022.9
+- Funnel: target 1073 → liquid 138 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.7 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KORU/USDT:USDT | +3.07% | $163,408,796.86 |
-| EVAA/USDT:USDT | +2.89% | $31,976,739.71 |
-| SOXL/USDT:USDT | +2.68% | $920,661,405.20 |
-| AGT/USDT:USDT | +2.45% | $1,684,214.50 |
-| CRWVSTOCK/USDT:USDT | +2.39% | $1,128,745.85 |
+| EVAA/USDT:USDT | +2.37% | $32,082,788.23 |
+| CRWVSTOCK/USDT:USDT | +2.33% | $1,152,854.25 |
+| LONGXIA/USDT:USDT | +2.32% | $4,369,289.51 |
+| UVXY/USDT:USDT | +2.22% | $1,536,063.74 |
+| NBISSTOCK/USDT:USDT | +2.02% | $13,098,578.91 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EVAA/USDT:USDT | below_1h_threshold | +3.02% | +2.97% |
-| AGT/USDT:USDT | below_1h_threshold | +2.45% | +2.40% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +1.62% | +1.56% |
-| RENDER/USDT:USDT | below_1h_threshold | +1.48% | +1.42% |
-| PI/USDT:USDT | below_1h_threshold | +1.46% | +1.40% |
+| EVAA/USDT:USDT | below_1h_threshold | +2.49% | +2.59% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +2.46% | +2.56% |
+| UAI/USDT:USDT | below_1h_threshold | +1.43% | +1.53% |
+| RENDER/USDT:USDT | below_1h_threshold | +1.33% | +1.42% |
+| PI/USDT:USDT | below_1h_threshold | +1.32% | +1.42% |
 
 ## 7. 次に見るべき不足
 
