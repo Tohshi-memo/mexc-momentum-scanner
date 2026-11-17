@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-17T10:31:17.723214+00:00
+- generated_at: 2026-11-17T10:36:16.618458+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19064**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-17T10:31:04.432555+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.20% price=64206.1
+- 更新: 2026-11-17T10:36:05.492848+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=64217.0
 - Funnel: target 1068 → liquid 134 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLAUDIA/USDT:USDT | +56.91% | $1,029,316.19 |
-| LONGXIA/USDT:USDT | +25.87% | $3,693,368.08 |
-| EVAA/USDT:USDT | +21.29% | $37,894,580.47 |
-| LIT/USDT:USDT | +12.61% | $20,229,640.93 |
-| AGT/USDT:USDT | +12.05% | $1,338,104.94 |
+| CLAUDIA/USDT:USDT | +56.14% | $1,035,397.58 |
+| LONGXIA/USDT:USDT | +21.47% | $3,706,270.83 |
+| EVAA/USDT:USDT | +16.99% | $38,169,899.56 |
+| LIT/USDT:USDT | +12.50% | $20,257,066.71 |
+| AGT/USDT:USDT | +11.63% | $1,346,277.81 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +3.88% | +4.08% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +2.60% | +2.80% |
-| LUNC/USDT:USDT | below_1h_threshold | +1.84% | +2.03% |
-| HUMA/USDT:USDT | below_1h_threshold | +1.49% | +1.69% |
-| UVXY/USDT:USDT | below_1h_threshold | +0.98% | +1.18% |
+| SOXS/USDT:USDT | below_1h_threshold | +3.88% | +4.06% |
+| HUMA/USDT:USDT | below_1h_threshold | +1.91% | +2.09% |
+| LUNC/USDT:USDT | below_1h_threshold | +1.44% | +1.62% |
+| UVXY/USDT:USDT | below_1h_threshold | +0.98% | +1.16% |
+| SQQQ/USDT:USDT | below_1h_threshold | +0.59% | +0.77% |
 
 ## 7. 次に見るべき不足
 
