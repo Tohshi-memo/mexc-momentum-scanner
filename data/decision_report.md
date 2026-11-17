@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-17T01:41:26.096600+00:00
+- generated_at: 2026-11-17T01:46:28.419762+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19047**
 
@@ -63,38 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7209件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7210件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000203 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-17T01:41:09.209232+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=64712.1
-- Funnel: target 1069 → liquid 133 → pre 50 → checked 50 → surge 2 → strict 2
+- 更新: 2026-11-17T01:46:14.373902+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.34% price=64827.4
+- Funnel: target 1069 → liquid 133 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 73.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HUMA/USDT:USDT | +20.62% | $2,732,969.75 |
-| BULLA/USDT:USDT | +18.80% | $1,941,214.65 |
-| AIOT/USDT:USDT | +13.04% | $2,088,457.37 |
-| AGT/USDT:USDT | +12.94% | $1,155,012.55 |
-| LIT/USDT:USDT | +12.51% | $18,004,410.70 |
+| HUMA/USDT:USDT | +20.18% | $2,754,054.94 |
+| BULLA/USDT:USDT | +18.45% | $1,942,314.10 |
+| AIOT/USDT:USDT | +14.87% | $2,114,721.00 |
+| LIT/USDT:USDT | +12.50% | $18,073,716.28 |
+| AGT/USDT:USDT | +11.67% | $1,173,833.98 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ARIA/USDT:USDT | below_1h_threshold | +2.81% | +2.65% |
-| LASERTECSTOCK/USDT:USDT | below_1h_threshold | +2.63% | +2.47% |
-| BULLA/USDT:USDT | below_1h_threshold | +2.62% | +2.45% |
-| SOPH/USDT:USDT | below_1h_threshold | +2.36% | +2.20% |
-| ZRO/USDT:USDT | below_1h_threshold | +2.36% | +2.19% |
+| AGT/USDT:USDT | below_1h_threshold | +4.02% | +3.68% |
+| SOPH/USDT:USDT | below_1h_threshold | +3.44% | +3.09% |
+| LASERTECSTOCK/USDT:USDT | below_1h_threshold | +2.63% | +2.29% |
+| ARIA/USDT:USDT | below_1h_threshold | +2.38% | +2.04% |
+| ZRO/USDT:USDT | below_1h_threshold | +2.38% | +2.03% |
 
 ## 7. 次に見るべき不足
 
