@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-17T06:56:41.944820+00:00
+- generated_at: 2026-11-17T07:01:27.594570+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19056**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-17T06:56:19.905396+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.37% price=64534.7
-- Funnel: target 1069 → liquid 135 → pre 50 → checked 50 → surge 3 → strict 2
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.3 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-17T07:01:17.763128+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=64562.8
+- Funnel: target 1069 → liquid 132 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +65.62% | $1,747,797.53 |
-| EVAA/USDT:USDT | +18.97% | $34,509,584.61 |
-| AGT/USDT:USDT | +13.19% | $1,306,724.47 |
-| LIT/USDT:USDT | +12.64% | $19,747,439.64 |
-| ARIA/USDT:USDT | +11.10% | $3,485,337.53 |
+| LONGXIA/USDT:USDT | +67.45% | $1,856,339.85 |
+| EVAA/USDT:USDT | +20.78% | $34,119,710.12 |
+| AGT/USDT:USDT | +14.12% | $1,293,346.99 |
+| LIT/USDT:USDT | +13.22% | $19,519,610.62 |
+| ARIA/USDT:USDT | +10.40% | $3,351,576.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EVAA/USDT:USDT | below_1h_threshold | +4.11% | +4.48% |
-| SOXS/USDT:USDT | below_1h_threshold | +2.67% | +3.04% |
-| JUP/USDT:USDT | below_1h_threshold | +1.67% | +2.04% |
-| ARIA/USDT:USDT | below_1h_threshold | +1.45% | +1.83% |
-| SQQQ/USDT:USDT | below_1h_threshold | +1.04% | +1.41% |
+| UVXY/USDT:USDT | below_1h_threshold | +0.75% | +0.69% |
+| SPACE/USDT:USDT | below_1h_threshold | +0.58% | +0.52% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.42% | +0.36% |
+| NEAR/USDT:USDT | below_1h_threshold | +0.34% | +0.28% |
+| SQQQ/USDT:USDT | below_1h_threshold | +0.31% | +0.25% |
 
 ## 7. 次に見るべき不足
 
