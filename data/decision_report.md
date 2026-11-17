@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-17T16:41:23.454720+00:00
+- generated_at: 2026-11-17T16:46:14.695310+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19086**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-17T16:41:09.735684+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.54% price=63740.0
+- 更新: 2026-11-17T16:46:03.388018+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.51% price=63757.1
 - Funnel: target 1073 → liquid 140 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.3 >= 65=1
+- Strict後reject: 4h RSI 77.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| UVXY/USDT:USDT | +6.66% | $1,689,341.97 |
-| EVAA/USDT:USDT | +2.54% | $32,310,808.92 |
-| CBRSSTOCK/USDT:USDT | +2.08% | $1,446,270.14 |
-| UAI/USDT:USDT | +1.61% | $1,138,787.11 |
-| KORU/USDT:USDT | +1.45% | $169,421,599.76 |
+| UVXY/USDT:USDT | +7.32% | $1,933,795.55 |
+| CBRSSTOCK/USDT:USDT | +2.02% | $1,456,674.55 |
+| UAI/USDT:USDT | +1.89% | $1,139,663.27 |
+| KORU/USDT:USDT | +1.29% | $169,427,790.93 |
+| EVAA/USDT:USDT | +1.21% | $32,370,686.70 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SQQQ/USDT:USDT | below_1h_threshold | +4.26% | +4.79% |
-| EVAA/USDT:USDT | below_1h_threshold | +2.40% | +2.94% |
-| UAI/USDT:USDT | below_1h_threshold | +1.62% | +2.15% |
-| PI/USDT:USDT | below_1h_threshold | +1.14% | +1.67% |
-| RENDER/USDT:USDT | below_1h_threshold | +0.74% | +1.27% |
+| SQQQ/USDT:USDT | below_1h_threshold | +4.26% | +4.77% |
+| UAI/USDT:USDT | below_1h_threshold | +1.89% | +2.40% |
+| PI/USDT:USDT | below_1h_threshold | +1.21% | +1.71% |
+| ARIA/USDT:USDT | below_1h_threshold | +1.15% | +1.66% |
+| EVAA/USDT:USDT | below_1h_threshold | +0.96% | +1.47% |
 
 ## 7. 次に見るべき不足
 
