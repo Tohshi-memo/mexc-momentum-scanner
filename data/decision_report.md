@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-17T23:31:33.359187+00:00
+- generated_at: 2026-11-17T23:36:41.962492+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19100**
 
@@ -63,38 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7264件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7265件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `見送り` (no_strategy_passed_causal_filters) / causal_score n/a / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-17T23:31:23.260256+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.42% price=64975.7
-- Funnel: target 1073 → liquid 142 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=45, below_relative_strength=4, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-17T23:36:27.535346+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.33% price=64917.5
+- Funnel: target 1073 → liquid 142 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=45, below_relative_strength=3, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MMT/USDT:USDT | +19.05% | $1,909,037.08 |
-| SNXX/USDT:USDT | +17.62% | $46,194,237.05 |
-| SOXL/USDT:USDT | +17.07% | $1,201,834,031.52 |
-| MVLL/USDT:USDT | +17.04% | $5,340,546.39 |
-| MUU/USDT:USDT | +16.88% | $36,914,922.76 |
+| MMT/USDT:USDT | +19.21% | $1,912,809.02 |
+| SNXX/USDT:USDT | +17.99% | $46,420,067.74 |
+| SOXL/USDT:USDT | +17.70% | $1,203,295,141.31 |
+| MUU/USDT:USDT | +17.56% | $36,915,418.25 |
+| MVLL/USDT:USDT | +17.38% | $5,343,014.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| USELESS/USDT:USDT | below_relative_strength | +5.35% | +4.93% |
-| MVLL/USDT:USDT | below_relative_strength | +5.12% | +4.70% |
-| KORU/USDT:USDT | below_relative_strength | +5.07% | +4.65% |
-| SNXX/USDT:USDT | below_relative_strength | +5.06% | +4.64% |
-| MUU/USDT:USDT | below_1h_threshold | +4.92% | +4.50% |
+| MVLL/USDT:USDT | below_relative_strength | +5.12% | +4.79% |
+| KORU/USDT:USDT | below_relative_strength | +5.07% | +4.74% |
+| SNXX/USDT:USDT | below_relative_strength | +5.06% | +4.73% |
+| MUU/USDT:USDT | below_1h_threshold | +4.92% | +4.59% |
+| IRENSTOCK/USDT:USDT | below_1h_threshold | +4.88% | +4.55% |
 
 ## 7. 次に見るべき不足
 
