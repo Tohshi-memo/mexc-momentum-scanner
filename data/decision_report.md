@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-17T16:21:18.888091+00:00
+- generated_at: 2026-11-17T16:26:29.747929+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19085**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-17T16:21:09.500628+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=64022.9
+- 更新: 2026-11-17T16:26:16.015461+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=64068.3
 - Funnel: target 1073 → liquid 138 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 72.7 >= 65=1
@@ -81,21 +81,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +2.37% | $32,082,788.23 |
-| CRWVSTOCK/USDT:USDT | +2.33% | $1,152,854.25 |
-| LONGXIA/USDT:USDT | +2.32% | $4,369,289.51 |
-| UVXY/USDT:USDT | +2.22% | $1,536,063.74 |
-| NBISSTOCK/USDT:USDT | +2.02% | $13,098,578.91 |
+| PI/USDT:USDT | +2.46% | $1,071,763.61 |
+| UVXY/USDT:USDT | +2.41% | $1,554,098.70 |
+| UAI/USDT:USDT | +1.73% | $1,136,870.23 |
+| KORU/USDT:USDT | +1.62% | $168,487,219.77 |
+| CRWVSTOCK/USDT:USDT | +1.36% | $1,173,128.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EVAA/USDT:USDT | below_1h_threshold | +2.49% | +2.59% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +2.46% | +2.56% |
-| UAI/USDT:USDT | below_1h_threshold | +1.43% | +1.53% |
-| RENDER/USDT:USDT | below_1h_threshold | +1.33% | +1.42% |
-| PI/USDT:USDT | below_1h_threshold | +1.32% | +1.42% |
+| PI/USDT:USDT | below_1h_threshold | +2.46% | +2.48% |
+| UAI/USDT:USDT | below_1h_threshold | +1.77% | +1.79% |
+| RENDER/USDT:USDT | below_1h_threshold | +1.33% | +1.35% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +0.92% | +0.94% |
+| OP/USDT:USDT | below_1h_threshold | +0.85% | +0.88% |
 
 ## 7. 次に見るべき不足
 
