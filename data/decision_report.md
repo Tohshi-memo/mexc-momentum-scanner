@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-17T04:41:23.362251+00:00
+- generated_at: 2026-11-17T04:46:24.249903+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19052**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-17T04:41:09.744847+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=64982.0
-- Funnel: target 1069 → liquid 132 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-11-17T04:46:10.826166+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=64993.1
+- Funnel: target 1069 → liquid 133 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LIT/USDT:USDT | +15.99% | $19,032,437.17 |
-| HUMA/USDT:USDT | +14.20% | $2,921,764.80 |
-| SPACE/USDT:USDT | +11.88% | $1,382,071.32 |
-| NIGHT/USDT:USDT | +9.88% | $2,000,029.22 |
-| EVAA/USDT:USDT | +9.74% | $33,137,674.50 |
+| LIT/USDT:USDT | +16.30% | $19,070,165.97 |
+| EVAA/USDT:USDT | +13.47% | $33,214,100.54 |
+| HUMA/USDT:USDT | +13.27% | $2,927,235.32 |
+| SPACE/USDT:USDT | +11.38% | $1,384,082.61 |
+| ARIA/USDT:USDT | +10.50% | $3,484,426.24 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SPACE/USDT:USDT | below_1h_threshold | +3.80% | +3.88% |
-| ETHFI/USDT:USDT | below_1h_threshold | +1.35% | +1.42% |
-| LIT/USDT:USDT | below_1h_threshold | +1.15% | +1.22% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +1.04% | +1.11% |
-| INJ/USDT:USDT | below_1h_threshold | +0.64% | +0.71% |
+| EVAA/USDT:USDT | below_1h_threshold | +3.76% | +3.82% |
+| SPACE/USDT:USDT | below_1h_threshold | +2.67% | +2.73% |
+| ETHFI/USDT:USDT | below_1h_threshold | +1.52% | +1.58% |
+| LIT/USDT:USDT | below_1h_threshold | +1.45% | +1.50% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +1.25% | +1.31% |
 
 ## 7. 次に見るべき不足
 
