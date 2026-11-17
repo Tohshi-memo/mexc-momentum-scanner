@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-17T19:36:20.628577+00:00
+- generated_at: 2026-11-17T19:41:27.431751+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19088**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7249件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7250件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000098 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-17T19:36:09.336436+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=63710.0
-- Funnel: target 1073 → liquid 140 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-17T19:41:11.972754+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=63686.6
+- Funnel: target 1073 → liquid 140 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MMT/USDT:USDT | +17.05% | $1,552,842.91 |
-| ARIA/USDT:USDT | +8.20% | $3,967,640.46 |
-| PENGU/USDT:USDT | +7.59% | $2,569,683.65 |
-| UVXY/USDT:USDT | +6.38% | $2,468,834.81 |
-| PIEVERSE/USDT:USDT | +5.31% | $1,318,595.65 |
+| MMT/USDT:USDT | +17.55% | $1,559,061.98 |
+| PENGU/USDT:USDT | +10.05% | $2,805,353.07 |
+| ARIA/USDT:USDT | +7.28% | $4,094,382.17 |
+| UVXY/USDT:USDT | +6.99% | $2,472,863.13 |
+| PIEVERSE/USDT:USDT | +4.74% | $1,324,242.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BREV/USDT:USDT | below_1h_threshold | +4.55% | +4.60% |
-| PENGU/USDT:USDT | below_1h_threshold | +4.28% | +4.33% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +2.18% | +2.23% |
-| LUNC/USDT:USDT | below_1h_threshold | +1.47% | +1.52% |
-| ASTER/USDT:USDT | below_1h_threshold | +1.26% | +1.31% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +1.86% | +1.96% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +1.63% | +1.72% |
+| ASTER/USDT:USDT | below_1h_threshold | +1.19% | +1.28% |
+| LUNC/USDT:USDT | below_1h_threshold | +1.15% | +1.24% |
+| UVXY/USDT:USDT | below_1h_threshold | +1.08% | +1.18% |
 
 ## 7. 次に見るべき不足
 
