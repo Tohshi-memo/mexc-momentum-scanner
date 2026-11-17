@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-17T22:16:28.052773+00:00
+- generated_at: 2026-11-17T22:21:32.755608+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19094**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-17T22:16:16.682527+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=64431.1
+- 更新: 2026-11-17T22:21:19.234723+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.13% price=64413.9
 - Funnel: target 1073 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MMT/USDT:USDT | +15.39% | $1,829,084.86 |
-| BREV/USDT:USDT | +11.63% | $8,754,463.58 |
-| SNXX/USDT:USDT | +11.41% | $43,689,894.73 |
-| MUU/USDT:USDT | +10.67% | $35,362,355.99 |
-| MVLL/USDT:USDT | +10.38% | $5,166,392.87 |
+| MMT/USDT:USDT | +16.05% | $1,836,801.25 |
+| SNXX/USDT:USDT | +12.11% | $43,859,795.59 |
+| MUU/USDT:USDT | +11.50% | $35,365,759.93 |
+| BREV/USDT:USDT | +11.19% | $8,783,031.06 |
+| MVLL/USDT:USDT | +11.17% | $5,185,031.82 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NBISSTOCK/USDT:USDT | below_relative_strength | +5.12% | +4.97% |
-| SNXX/USDT:USDT | below_1h_threshold | +4.75% | +4.59% |
-| MVLL/USDT:USDT | below_1h_threshold | +4.27% | +4.12% |
-| NVDL/USDT:USDT | below_1h_threshold | +4.02% | +3.86% |
-| KORU/USDT:USDT | below_1h_threshold | +3.71% | +3.55% |
+| NBISSTOCK/USDT:USDT | below_relative_strength | +5.12% | +4.99% |
+| SNXX/USDT:USDT | below_1h_threshold | +4.75% | +4.62% |
+| MVLL/USDT:USDT | below_1h_threshold | +4.27% | +4.14% |
+| NVDL/USDT:USDT | below_1h_threshold | +4.02% | +3.89% |
+| KORU/USDT:USDT | below_1h_threshold | +3.71% | +3.58% |
 
 ## 7. 次に見るべき不足
 
