@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-17T01:26:29.350143+00:00
+- generated_at: 2026-11-17T01:31:30.610818+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19046**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-17T01:26:13.617967+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=64599.2
+- 更新: 2026-11-17T01:31:17.220936+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=64544.1
 - Funnel: target 1069 → liquid 133 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BULLA/USDT:USDT | +20.04% | $1,934,630.60 |
-| HUMA/USDT:USDT | +18.48% | $2,694,236.63 |
-| LIT/USDT:USDT | +12.68% | $17,435,192.71 |
-| AIOT/USDT:USDT | +10.91% | $1,970,886.74 |
-| AGT/USDT:USDT | +9.68% | $1,118,766.89 |
+| BULLA/USDT:USDT | +21.07% | $1,936,842.88 |
+| HUMA/USDT:USDT | +18.70% | $2,700,486.64 |
+| AIOT/USDT:USDT | +13.92% | $2,000,935.34 |
+| AGT/USDT:USDT | +11.46% | $1,134,406.87 |
+| LIT/USDT:USDT | +11.23% | $17,525,269.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BULLA/USDT:USDT | below_1h_threshold | +3.69% | +3.70% |
-| ARIA/USDT:USDT | below_1h_threshold | +2.70% | +2.71% |
-| LASERTECSTOCK/USDT:USDT | below_1h_threshold | +2.63% | +2.64% |
-| AGT/USDT:USDT | below_1h_threshold | +2.09% | +2.10% |
-| LIT/USDT:USDT | below_1h_threshold | +1.27% | +1.29% |
+| AGT/USDT:USDT | below_1h_threshold | +4.81% | +4.90% |
+| BULLA/USDT:USDT | below_1h_threshold | +4.58% | +4.68% |
+| ARIA/USDT:USDT | below_1h_threshold | +2.76% | +2.85% |
+| LASERTECSTOCK/USDT:USDT | below_1h_threshold | +2.63% | +2.73% |
+| EVAA/USDT:USDT | below_1h_threshold | +1.25% | +1.34% |
 
 ## 7. 次に見るべき不足
 
