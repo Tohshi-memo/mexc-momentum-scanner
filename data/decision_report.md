@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-17T11:16:24.318001+00:00
+- generated_at: 2026-11-17T11:21:22.925128+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19064**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-17T11:16:13.090276+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.31% price=64286.6
+- 更新: 2026-11-17T11:21:09.352796+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.46% price=64381.2
 - Funnel: target 1069 → liquid 136 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLAUDIA/USDT:USDT | +57.84% | $1,098,483.72 |
-| EVAA/USDT:USDT | +21.47% | $36,432,536.05 |
-| LONGXIA/USDT:USDT | +21.01% | $3,787,409.21 |
-| LIT/USDT:USDT | +13.72% | $18,440,626.77 |
-| AGT/USDT:USDT | +11.80% | $1,365,976.04 |
+| CLAUDIA/USDT:USDT | +62.81% | $1,109,378.68 |
+| LONGXIA/USDT:USDT | +23.97% | $3,794,052.12 |
+| EVAA/USDT:USDT | +20.69% | $36,519,294.38 |
+| LIT/USDT:USDT | +14.25% | $18,503,919.12 |
+| LUNC/USDT:USDT | +12.63% | $1,360,205.47 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HUMA/USDT:USDT | below_1h_threshold | +2.16% | +1.86% |
-| ETHFI/USDT:USDT | below_1h_threshold | +1.53% | +1.23% |
-| LUNC/USDT:USDT | below_1h_threshold | +1.48% | +1.17% |
-| VVV/USDT:USDT | below_1h_threshold | +1.43% | +1.13% |
-| JUP/USDT:USDT | below_1h_threshold | +1.35% | +1.04% |
+| LUNC/USDT:USDT | below_1h_threshold | +3.08% | +2.63% |
+| HUMA/USDT:USDT | below_1h_threshold | +3.07% | +2.61% |
+| CLAUDIA/USDT:USDT | below_1h_threshold | +2.92% | +2.47% |
+| VET/USDT:USDT | below_1h_threshold | +2.06% | +1.61% |
+| ETHFI/USDT:USDT | below_1h_threshold | +1.64% | +1.19% |
 
 ## 7. 次に見るべき不足
 
