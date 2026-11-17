@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-17T01:11:18.909425+00:00
+- generated_at: 2026-11-17T01:16:17.629699+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19046**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-17T01:11:06.054931+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=64633.7
+- 更新: 2026-11-17T01:16:04.077617+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=64612.1
 - Funnel: target 1069 → liquid 133 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HUMA/USDT:USDT | +19.25% | $2,666,439.71 |
-| BULLA/USDT:USDT | +15.49% | $1,918,833.19 |
-| LIT/USDT:USDT | +12.69% | $17,179,505.16 |
-| AGT/USDT:USDT | +9.34% | $1,089,533.08 |
-| SPACE/USDT:USDT | +8.19% | $1,314,306.52 |
+| HUMA/USDT:USDT | +20.55% | $2,671,854.56 |
+| BULLA/USDT:USDT | +15.90% | $1,923,018.23 |
+| LIT/USDT:USDT | +12.97% | $17,217,193.88 |
+| SPACE/USDT:USDT | +9.27% | $1,319,824.01 |
+| AGT/USDT:USDT | +8.79% | $1,096,820.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LASERTECSTOCK/USDT:USDT | below_1h_threshold | +2.63% | +2.59% |
-| ARIA/USDT:USDT | below_1h_threshold | +2.25% | +2.21% |
-| AGT/USDT:USDT | below_1h_threshold | +1.73% | +1.69% |
-| LIT/USDT:USDT | below_1h_threshold | +1.32% | +1.28% |
-| ZRO/USDT:USDT | below_1h_threshold | +0.81% | +0.77% |
+| LASERTECSTOCK/USDT:USDT | below_1h_threshold | +2.63% | +2.62% |
+| ARIA/USDT:USDT | below_1h_threshold | +2.06% | +2.05% |
+| LIT/USDT:USDT | below_1h_threshold | +1.53% | +1.52% |
+| HUMA/USDT:USDT | below_1h_threshold | +1.51% | +1.50% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.38% | +1.37% |
 
 ## 7. 次に見るべき不足
 
