@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-17T03:16:27.359367+00:00
+- generated_at: 2026-11-17T03:21:20.346947+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19049**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-17T03:16:13.899830+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.24% price=64631.1
+- 更新: 2026-11-17T03:21:07.924173+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.42% price=64747.1
 - Funnel: target 1069 → liquid 131 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HUMA/USDT:USDT | +16.66% | $2,821,470.16 |
-| BULLA/USDT:USDT | +14.87% | $1,740,105.43 |
-| LIT/USDT:USDT | +13.16% | $18,439,034.20 |
-| AGT/USDT:USDT | +10.57% | $1,190,747.22 |
-| NIGHT/USDT:USDT | +8.57% | $1,897,997.61 |
+| HUMA/USDT:USDT | +17.27% | $2,823,633.92 |
+| LIT/USDT:USDT | +14.03% | $18,468,073.91 |
+| BULLA/USDT:USDT | +13.77% | $1,741,822.35 |
+| SPACE/USDT:USDT | +11.41% | $1,351,162.58 |
+| AGT/USDT:USDT | +10.40% | $1,204,047.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BULLA/USDT:USDT | below_relative_strength | +5.04% | +4.80% |
-| SPACE/USDT:USDT | below_1h_threshold | +2.49% | +2.25% |
-| NIGHT/USDT:USDT | below_1h_threshold | +2.09% | +1.85% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.80% | +1.56% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.78% | +1.54% |
+| SPACE/USDT:USDT | below_relative_strength | +5.23% | +4.81% |
+| BULLA/USDT:USDT | below_1h_threshold | +4.03% | +3.61% |
+| NIGHT/USDT:USDT | below_1h_threshold | +2.65% | +2.23% |
+| LIT/USDT:USDT | below_1h_threshold | +2.52% | +2.10% |
+| AAVE/USDT:USDT | below_1h_threshold | +1.82% | +1.39% |
 
 ## 7. 次に見るべき不足
 
