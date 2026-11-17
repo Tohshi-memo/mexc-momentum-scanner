@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-17T12:46:43.122330+00:00
+- generated_at: 2026-11-17T12:51:31.113720+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19070**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-17T12:46:27.323855+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=64942.8
+- 更新: 2026-11-17T12:51:13.872177+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=64945.7
 - Funnel: target 1069 → liquid 136 → pre 50 → checked 50 → surge 3 → strict 3
 - Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLAUDIA/USDT:USDT | +51.57% | $1,242,592.87 |
-| EVAA/USDT:USDT | +18.78% | $36,225,805.54 |
-| LONGXIA/USDT:USDT | +14.94% | $3,960,203.10 |
-| LIT/USDT:USDT | +14.89% | $17,484,694.35 |
-| AGT/USDT:USDT | +14.76% | $1,417,716.90 |
+| CLAUDIA/USDT:USDT | +49.03% | $1,249,711.32 |
+| EVAA/USDT:USDT | +15.99% | $36,418,908.58 |
+| LIT/USDT:USDT | +15.80% | $17,616,339.67 |
+| LONGXIA/USDT:USDT | +14.33% | $3,962,330.25 |
+| AGT/USDT:USDT | +14.29% | $1,421,629.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +4.91% | +4.95% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +4.91% | +4.94% |
 | IRENSTOCK/USDT:USDT | below_1h_threshold | +4.26% | +4.30% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +4.11% | +4.15% |
-| EVAA/USDT:USDT | below_1h_threshold | +3.09% | +3.13% |
-| LUNC/USDT:USDT | below_1h_threshold | +2.80% | +2.84% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +4.11% | +4.14% |
+| LIT/USDT:USDT | below_1h_threshold | +1.39% | +1.43% |
+| INJ/USDT:USDT | below_1h_threshold | +1.25% | +1.29% |
 
 ## 7. 次に見るべき不足
 
