@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-17T16:56:28.388990+00:00
+- generated_at: 2026-11-17T17:01:24.602230+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19086**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-17T16:56:14.261632+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.93% price=63489.0
-- Funnel: target 1073 → liquid 141 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.8 >= 65=1, 4h RSI 68.0 >= 65=1
+- 更新: 2026-11-17T17:01:13.485622+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=63631.6
+- Funnel: target 1073 → liquid 138 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 76.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| UVXY/USDT:USDT | +8.27% | $2,086,286.46 |
-| GRAM/USDT:USDT | +3.72% | $1,001,112.05 |
-| ARIA/USDT:USDT | +2.52% | $3,531,913.10 |
-| CBRSSTOCK/USDT:USDT | +1.34% | $1,474,520.57 |
-| UAI/USDT:USDT | +1.12% | $1,148,368.23 |
+| UVXY/USDT:USDT | +6.00% | $2,000,894.77 |
+| ARIA/USDT:USDT | +4.56% | $3,309,847.96 |
+| GRAM/USDT:USDT | +3.52% | $1,006,150.52 |
+| CBRSSTOCK/USDT:USDT | +2.00% | $1,414,250.60 |
+| NBISSTOCK/USDT:USDT | +1.63% | $13,125,378.51 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SQQQ/USDT:USDT | below_1h_threshold | +4.26% | +5.18% |
-| GRAM/USDT:USDT | below_1h_threshold | +3.82% | +4.75% |
-| ARIA/USDT:USDT | below_1h_threshold | +2.52% | +3.45% |
-| UAI/USDT:USDT | below_1h_threshold | +1.43% | +2.36% |
-| BTW/USDT:USDT | below_1h_threshold | +0.67% | +1.60% |
+| CBRSSTOCK/USDT:USDT | below_1h_threshold | +2.06% | +2.19% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +2.00% | +2.13% |
+| CRWVSTOCK/USDT:USDT | below_1h_threshold | +1.65% | +1.79% |
+| MUU/USDT:USDT | below_1h_threshold | +1.51% | +1.64% |
+| KORU/USDT:USDT | below_1h_threshold | +1.30% | +1.43% |
 
 ## 7. 次に見るべき不足
 
