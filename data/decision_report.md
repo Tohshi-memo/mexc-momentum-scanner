@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-17T20:36:18.998737+00:00
+- generated_at: 2026-11-17T20:41:22.599003+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19091**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-17T20:36:08.008595+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.45% price=64015.6
+- 更新: 2026-11-17T20:41:11.601953+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.44% price=64005.3
 - Funnel: target 1073 → liquid 139 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 91.0 >= 65=1
+- Strict後reject: 4h RSI 90.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MMT/USDT:USDT | +17.22% | $1,649,472.47 |
-| BREV/USDT:USDT | +10.22% | $8,096,013.31 |
-| SNXX/USDT:USDT | +6.50% | $41,094,335.21 |
-| UVXY/USDT:USDT | +6.09% | $2,635,591.03 |
-| ASTER/USDT:USDT | +6.07% | $14,457,751.06 |
+| MMT/USDT:USDT | +17.88% | $1,654,618.55 |
+| BREV/USDT:USDT | +8.24% | $8,153,555.38 |
+| UVXY/USDT:USDT | +6.47% | $2,661,402.67 |
+| ASTER/USDT:USDT | +6.28% | $15,121,868.66 |
+| SNXX/USDT:USDT | +6.13% | $41,240,216.79 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UVXY/USDT:USDT | below_1h_threshold | +3.58% | +3.13% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.91% | +1.46% |
-| ASTER/USDT:USDT | below_1h_threshold | +1.85% | +1.40% |
-| CRV/USDT:USDT | below_1h_threshold | +1.41% | +0.96% |
-| IRYS/USDT:USDT | below_1h_threshold | +1.39% | +0.94% |
+| UVXY/USDT:USDT | below_1h_threshold | +3.58% | +3.14% |
+| ASTER/USDT:USDT | below_1h_threshold | +2.15% | +1.71% |
+| NEAR/USDT:USDT | below_1h_threshold | +1.79% | +1.35% |
+| XPL/USDT:USDT | below_1h_threshold | +1.31% | +0.88% |
+| IRYS/USDT:USDT | below_1h_threshold | +1.25% | +0.82% |
 
 ## 7. 次に見るべき不足
 
