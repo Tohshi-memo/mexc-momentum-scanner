@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-17T23:41:52.928954+00:00
+- generated_at: 2026-11-17T23:46:35.010864+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19100**
 
@@ -70,31 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-17T23:41:37.300688+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.58% price=65077.1
-- Funnel: target 1073 → liquid 142 → pre 50 → checked 50 → surge 3 → strict 3
-- Surge前reject: below_1h_threshold=44, below_relative_strength=3, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-17T23:46:20.933642+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.33% price=64914.2
+- Funnel: target 1073 → liquid 142 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=46, below_relative_strength=3, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MMT/USDT:USDT | +20.96% | $1,921,785.03 |
-| SNXX/USDT:USDT | +18.58% | $46,669,032.28 |
-| SOXL/USDT:USDT | +18.49% | $1,203,536,397.35 |
-| MUU/USDT:USDT | +18.16% | $36,926,591.34 |
-| MVLL/USDT:USDT | +17.94% | $5,343,756.71 |
+| MMT/USDT:USDT | +20.13% | $1,923,172.91 |
+| SNXX/USDT:USDT | +17.28% | $46,798,256.96 |
+| MUU/USDT:USDT | +16.80% | $37,075,861.39 |
+| SOXL/USDT:USDT | +16.75% | $1,204,830,755.70 |
+| MVLL/USDT:USDT | +16.59% | $5,350,239.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MVLL/USDT:USDT | below_relative_strength | +5.12% | +4.55% |
-| KORU/USDT:USDT | below_relative_strength | +5.07% | +4.49% |
-| SNXX/USDT:USDT | below_relative_strength | +5.06% | +4.49% |
-| MUU/USDT:USDT | below_1h_threshold | +4.92% | +4.35% |
-| IRENSTOCK/USDT:USDT | below_1h_threshold | +4.88% | +4.31% |
+| MVLL/USDT:USDT | below_relative_strength | +5.12% | +4.80% |
+| KORU/USDT:USDT | below_relative_strength | +5.07% | +4.74% |
+| SNXX/USDT:USDT | below_relative_strength | +5.06% | +4.74% |
+| MUU/USDT:USDT | below_1h_threshold | +4.92% | +4.60% |
+| IRENSTOCK/USDT:USDT | below_1h_threshold | +4.88% | +4.56% |
 
 ## 7. 次に見るべき不足
 
