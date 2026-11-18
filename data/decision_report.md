@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-11-18T13:57:34.671443+00:00
+- generated_at: 2026-11-18T14:01:54.387668+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **19153**
+- closed shadow trades: **19154**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.23% / filled 20/20。**
-- 全期間 MARKET基準: n=19153, expectancy=+0.02%
+- 全期間 MARKET基準: n=19154, expectancy=+0.02%
 - 直近20件 MARKET基準: n=20, expectancy=+0.23%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -24,8 +24,8 @@
 | LIMIT_9PCT | 2/20 | 10.0% | +8.00% | **+0.80%** |
 | LIMIT_8PCT | 3/20 | 15.0% | +4.00% | **+0.60%** |
 | LIMIT_7PCT | 3/20 | 15.0% | +2.27% | **+0.34%** |
+| LIMIT_6PCT | 6/20 | 30.0% | +0.91% | **+0.27%** |
 | MARKET | 20/20 | 100.0% | +0.23% | **+0.23%** |
-| LIMIT_6PCT | 5/20 | 25.0% | +0.71% | **+0.18%** |
 
 ### シャドウ上位 LONG
 
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,668.97** / 初期 $100.00 (+1568.97%)
-- 確定: 7354件 (Win 2109 / Loss 2359 / Flat 2886) / skip 8360件
+- 確定: 7354件 (Win 2109 / Loss 2359 / Flat 2886) / skip 8361件
 - 成長率目線: 平均log +0.000383 / 幾何平均 +0.038% per trade / maxDD +8.46%
 - 次の候補: `MARKET` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: PIEVERSE/USDT:USDT `MARKET` SL_HIT account -0.50% 残高後 $1,668.97
@@ -55,9 +55,9 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$430.70** / 初期 $100.00 (+330.70%)
-- 確定: 5008件 (Win 1335 / Loss 1087 / Flat 2586) / skip 7556件
+- 確定: 5008件 (Win 1335 / Loss 1087 / Flat 2586) / skip 7557件
 - 成長率目線: 平均log +0.000292 / 幾何平均 +0.029% per trade / maxDD +4.29%
-- 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 次の候補: `LIMIT_6PCT` (selected_by_robust_growth_score) / robust_score +0.0317 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: PIEVERSE/USDT:USDT `LIMIT_FIB1272` EXPIRED account +0.00% 残高後 $430.70
 
 ## 5. Causal Adaptive DryRun ($100)
@@ -65,37 +65,35 @@
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
 - 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7314件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000275 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000211 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-18T13:57:17.979036+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.21% price=63919.9
-- Funnel: target 1080 → liquid 144 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 89.1 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-18T14:01:37.889683+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=63924.6
+- Funnel: target 1080 → liquid 140 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MMT/USDT:USDT | +101.66% | $8,347,426.66 |
-| PIPPIN/USDT:USDT | +67.46% | $3,531,298.14 |
-| PIEVERSE/USDT:USDT | +50.52% | $6,051,730.74 |
-| ICNT/USDT:USDT | +44.37% | $5,783,919.54 |
-| IRYS/USDT:USDT | +20.82% | $3,503,414.96 |
+| MMT/USDT:USDT | +101.66% | $8,342,757.71 |
+| PIPPIN/USDT:USDT | +69.38% | $3,540,987.96 |
+| PIEVERSE/USDT:USDT | +56.27% | $6,282,090.50 |
+| ICNT/USDT:USDT | +42.91% | $5,797,858.62 |
+| IRYS/USDT:USDT | +20.12% | $3,511,441.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IRYS/USDT:USDT | below_1h_threshold | +4.50% | +4.72% |
-| ICNT/USDT:USDT | below_1h_threshold | +3.39% | +3.60% |
-| BTW/USDT:USDT | below_1h_threshold | +1.62% | +1.83% |
-| PENGU/USDT:USDT | below_1h_threshold | +0.80% | +1.01% |
-| NIGHT/USDT:USDT | below_1h_threshold | +0.80% | +1.01% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +2.02% | +2.00% |
+| NIGHT/USDT:USDT | below_1h_threshold | +1.01% | +0.99% |
+| SOXL/USDT:USDT | below_1h_threshold | +0.84% | +0.82% |
+| BTW/USDT:USDT | below_1h_threshold | +0.83% | +0.81% |
+| TQQQ/USDT:USDT | below_1h_threshold | +0.63% | +0.60% |
 
 ## 7. 次に見るべき不足
 
