@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-11-18T22:51:29.754860+00:00
+- generated_at: 2026-11-18T22:56:32.204350+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **19163**
+- closed shadow trades: **19164**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +1.10% / filled 20/20。**
-- 全期間 MARKET基準: n=19163, expectancy=+0.02%
+- 全期間 MARKET基準: n=19164, expectancy=+0.02%
 - 直近20件 MARKET基準: n=20, expectancy=+1.10%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -46,32 +46,32 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$1,685.66** / 初期 $100.00 (+1585.66%)
-- 確定: 7355件 (Win 2110 / Loss 2359 / Flat 2886) / skip 8369件
-- 成長率目線: 平均log +0.000384 / 幾何平均 +0.038% per trade / maxDD +8.46%
+- 残高: **$1,702.52** / 初期 $100.00 (+1602.52%)
+- 確定: 7356件 (Win 2111 / Loss 2359 / Flat 2886) / skip 8369件
+- 成長率目線: 平均log +0.000385 / 幾何平均 +0.039% per trade / maxDD +8.46%
 - 次の候補: `MARKET` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: PIPPIN/USDT:USDT `MARKET` TP_HIT account +1.00% 残高後 $1,685.66
+- 最新: BTW/USDT:USDT `MARKET` TP_HIT account +1.00% 残高後 $1,702.52
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$430.70** / 初期 $100.00 (+330.70%)
-- 確定: 5015件 (Win 1335 / Loss 1087 / Flat 2593) / skip 7559件
+- 確定: 5016件 (Win 1335 / Loss 1087 / Flat 2594) / skip 7559件
 - 成長率目線: 平均log +0.000291 / 幾何平均 +0.029% per trade / maxDD +4.29%
 - 次の候補: `LIMIT_6PCT` (selected_by_robust_growth_score) / robust_score +0.0418 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: AKE/USDT:USDT `LIMIT_6PCT` EXPIRED account +0.00% 残高後 $430.70
+- 最新: BTW/USDT:USDT `LIMIT_6PCT` EXPIRED account +0.00% 残高後 $430.70
 
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
 - 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7324件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000221 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000229 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-18T22:51:16.059901+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.32% price=62127.2
+- 更新: 2026-11-18T22:56:20.925560+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=62243.7
 - Funnel: target 1079 → liquid 145 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +18.19% | $1,635,301.97 |
-| HUMA/USDT:USDT | +15.40% | $2,231,856.73 |
-| PHAROS/USDT:USDT | +13.84% | $1,559,102.36 |
-| PIEVERSE/USDT:USDT | +11.05% | $14,321,869.31 |
-| LUNC/USDT:USDT | +6.90% | $1,203,878.05 |
+| VELVET/USDT:USDT | +18.91% | $1,672,077.21 |
+| HUMA/USDT:USDT | +15.82% | $2,244,462.11 |
+| PHAROS/USDT:USDT | +13.26% | $1,585,642.73 |
+| PIEVERSE/USDT:USDT | +10.77% | $14,366,824.46 |
+| LUNC/USDT:USDT | +7.03% | $1,251,552.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BULLA/USDT:USDT | below_1h_threshold | +3.79% | +4.11% |
-| VELVET/USDT:USDT | below_1h_threshold | +2.90% | +3.22% |
-| HUMA/USDT:USDT | below_1h_threshold | +2.83% | +3.15% |
-| LUNC/USDT:USDT | below_1h_threshold | +2.18% | +2.49% |
-| TTWOSTOCK/USDT:USDT | below_1h_threshold | +1.66% | +1.98% |
+| VELVET/USDT:USDT | below_1h_threshold | +3.82% | +3.95% |
+| HUMA/USDT:USDT | below_1h_threshold | +3.21% | +3.34% |
+| LUNC/USDT:USDT | below_1h_threshold | +2.30% | +2.43% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.55% | +1.68% |
+| ANTHROPIC/USDT:USDT | below_1h_threshold | +1.28% | +1.41% |
 
 ## 7. 次に見るべき不足
 
