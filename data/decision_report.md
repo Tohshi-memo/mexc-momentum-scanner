@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-18T10:56:50.327218+00:00
+- generated_at: 2026-11-18T11:01:28.462853+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19140**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-18T10:56:30.299691+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.41% price=64358.4
-- Funnel: target 1080 → liquid 147 → pre 50 → checked 50 → surge 5 → strict 1
-- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 92.0 >= 65=1, 4h RSI 65.5 >= 65=1, 4h RSI 80.2 >= 65=1, 4h RSI 80.8 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-18T11:01:14.815612+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=64317.8
+- Funnel: target 1080 → liquid 145 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MMT/USDT:USDT | +107.48% | $6,608,171.51 |
-| PIPPIN/USDT:USDT | +95.23% | $2,496,043.47 |
-| ICNT/USDT:USDT | +40.68% | $4,493,606.35 |
-| PIEVERSE/USDT:USDT | +20.73% | $2,378,486.12 |
-| IRYS/USDT:USDT | +18.66% | $2,113,634.52 |
+| MMT/USDT:USDT | +108.15% | $6,637,054.18 |
+| PIPPIN/USDT:USDT | +92.48% | $2,526,540.97 |
+| ICNT/USDT:USDT | +40.81% | $4,519,977.05 |
+| PIEVERSE/USDT:USDT | +23.43% | $2,299,451.69 |
+| CLAUDIA/USDT:USDT | +16.89% | $1,068,668.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +4.33% | +4.74% |
-| MMT/USDT:USDT | below_1h_threshold | +4.26% | +4.67% |
-| SOXL/USDT:USDT | below_1h_threshold | +2.06% | +2.47% |
-| MVLL/USDT:USDT | below_1h_threshold | +1.99% | +2.40% |
-| IRYS/USDT:USDT | below_1h_threshold | +1.92% | +2.32% |
+| CLAUDIA/USDT:USDT | below_1h_threshold | +2.41% | +2.44% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +0.80% | +0.83% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +0.43% | +0.46% |
+| ARIA/USDT:USDT | below_1h_threshold | +0.38% | +0.42% |
+| ICNT/USDT:USDT | below_1h_threshold | +0.31% | +0.34% |
 
 ## 7. 次に見るべき不足
 
