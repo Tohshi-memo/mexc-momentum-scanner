@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-18T16:36:21.644258+00:00
+- generated_at: 2026-11-18T16:41:29.469118+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19156**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-18T16:36:11.765170+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -1.02% price=62451.9
-- Funnel: target 1080 → liquid 145 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-11-18T16:41:15.567280+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -1.15% price=62370.5
+- Funnel: target 1080 → liquid 146 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +4.66% | $13,193,855.32 |
-| SOXS/USDT:USDT | +3.05% | $52,898,090.90 |
-| PIPPIN/USDT:USDT | +2.47% | $4,158,652.76 |
-| PIEVERSE/USDT:USDT | +1.91% | $10,870,921.48 |
-| NGAS/USDT:USDT | +1.33% | $1,201,397.14 |
+| EVAA/USDT:USDT | +4.70% | $13,230,693.49 |
+| SOXS/USDT:USDT | +4.31% | $53,536,764.88 |
+| PIPPIN/USDT:USDT | +2.91% | $4,180,424.87 |
+| PIEVERSE/USDT:USDT | +2.06% | $10,893,338.74 |
+| SQQQ/USDT:USDT | +1.77% | $7,260,478.31 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EVAA/USDT:USDT | below_1h_threshold | +4.67% | +5.69% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +2.53% | +3.55% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +1.94% | +2.96% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.90% | +2.91% |
-| UVXY/USDT:USDT | below_1h_threshold | +1.57% | +2.59% |
+| EVAA/USDT:USDT | below_1h_threshold | +4.70% | +5.85% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +2.70% | +3.84% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +1.94% | +3.09% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.90% | +3.04% |
+| UVXY/USDT:USDT | below_1h_threshold | +1.57% | +2.71% |
 
 ## 7. 次に見るべき不足
 
