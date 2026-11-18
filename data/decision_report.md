@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-18T17:26:36.486618+00:00
+- generated_at: 2026-11-18T17:31:33.167274+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19159**
 
@@ -70,9 +70,9 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-18T17:26:21.274759+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.79% price=63229.7
-- Funnel: target 1080 → liquid 144 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-11-18T17:31:17.435607+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.78% price=63222.5
+- Funnel: target 1080 → liquid 145 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HUMA/USDT:USDT | +14.38% | $1,184,432.89 |
-| EVAA/USDT:USDT | +6.32% | $12,814,190.19 |
-| BLESS/USDT:USDT | +4.87% | $20,251,805.45 |
-| ZRO/USDT:USDT | +3.53% | $2,191,223.89 |
-| LONGXIA/USDT:USDT | +3.30% | $1,373,300.44 |
+| HUMA/USDT:USDT | +14.19% | $1,237,564.81 |
+| EVAA/USDT:USDT | +6.29% | $12,855,868.55 |
+| BLESS/USDT:USDT | +4.88% | $20,476,964.05 |
+| SNXX/USDT:USDT | +4.16% | $46,297,022.81 |
+| ZRO/USDT:USDT | +3.69% | $2,218,716.91 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LONGXIA/USDT:USDT | below_1h_threshold | +4.63% | +3.84% |
-| BLESS/USDT:USDT | below_1h_threshold | +4.01% | +3.22% |
-| ZRO/USDT:USDT | below_1h_threshold | +3.16% | +2.37% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +2.85% | +2.06% |
-| PONS/USDT:USDT | below_1h_threshold | +2.80% | +2.01% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +4.28% | +3.49% |
+| BLESS/USDT:USDT | below_1h_threshold | +3.97% | +3.19% |
+| ZRO/USDT:USDT | below_1h_threshold | +3.33% | +2.54% |
+| PONS/USDT:USDT | below_1h_threshold | +2.71% | +1.93% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.63% | +1.85% |
 
 ## 7. 次に見るべき不足
 
