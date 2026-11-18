@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-18T23:41:20.159464+00:00
+- generated_at: 2026-11-18T23:46:15.845413+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19164**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7324件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7325件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000229 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-18T23:41:09.256881+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +1.15% price=62942.5
-- Funnel: target 1079 → liquid 144 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-18T23:46:07.002354+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +1.23% price=62990.9
+- Funnel: target 1079 → liquid 144 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 90.1 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +25.33% | $2,111,062.83 |
-| PHAROS/USDT:USDT | +15.33% | $1,646,278.12 |
-| HUMA/USDT:USDT | +12.22% | $2,316,790.93 |
-| PIEVERSE/USDT:USDT | +10.33% | $15,044,859.40 |
-| LUNC/USDT:USDT | +10.32% | $1,322,855.13 |
+| VELVET/USDT:USDT | +27.39% | $2,244,105.40 |
+| PHAROS/USDT:USDT | +16.41% | $1,675,977.37 |
+| LUNC/USDT:USDT | +11.69% | $1,349,960.93 |
+| HUMA/USDT:USDT | +11.30% | $2,322,100.41 |
+| PIEVERSE/USDT:USDT | +11.10% | $15,069,421.20 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_relative_strength | +5.50% | +4.35% |
-| ZRO/USDT:USDT | below_1h_threshold | +3.49% | +2.34% |
-| LUNC/USDT:USDT | below_1h_threshold | +3.32% | +2.17% |
-| JUP/USDT:USDT | below_1h_threshold | +3.04% | +1.89% |
-| NEAR/USDT:USDT | below_1h_threshold | +2.82% | +1.67% |
+| LUNC/USDT:USDT | below_1h_threshold | +4.65% | +3.42% |
+| ZRO/USDT:USDT | below_1h_threshold | +3.69% | +2.46% |
+| JUP/USDT:USDT | below_1h_threshold | +3.63% | +2.40% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +3.36% | +2.13% |
+| PONS/USDT:USDT | below_1h_threshold | +3.26% | +2.03% |
 
 ## 7. 次に見るべき不足
 
