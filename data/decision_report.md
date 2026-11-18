@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-18T04:26:21.416534+00:00
+- generated_at: 2026-11-18T04:31:15.342547+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19112**
 
@@ -70,30 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-18T04:26:07.941032+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=64497.8
-- Funnel: target 1073 → liquid 145 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-18T04:31:03.283661+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=64521.1
+- Funnel: target 1073 → liquid 145 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ICNT/USDT:USDT | +23.43% | $1,671,245.00 |
-| MMT/USDT:USDT | +21.46% | $2,354,198.16 |
-| CSOPSKHYNIX2L/USDT:USDT | +14.36% | $1,016,020.41 |
-| MUU/USDT:USDT | +13.24% | $33,934,598.19 |
-| SNXX/USDT:USDT | +12.97% | $49,276,986.14 |
+| ICNT/USDT:USDT | +23.69% | $1,704,043.76 |
+| MMT/USDT:USDT | +22.79% | $2,356,882.16 |
+| CSOPSKHYNIX2L/USDT:USDT | +15.07% | $1,016,449.51 |
+| LONGXIA/USDT:USDT | +14.01% | $5,225,749.77 |
+| MUU/USDT:USDT | +13.62% | $34,269,700.88 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +4.22% | +4.11% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +4.11% | +4.00% |
-| CSOPSKHYNIX2L/USDT:USDT | below_1h_threshold | +3.29% | +3.18% |
-| ICNT/USDT:USDT | below_1h_threshold | +2.64% | +2.53% |
-| KORU/USDT:USDT | below_1h_threshold | +2.11% | +2.00% |
+| CSOPSKHYNIX2L/USDT:USDT | below_1h_threshold | +3.29% | +3.15% |
+| ICNT/USDT:USDT | below_1h_threshold | +2.75% | +2.60% |
+| BTW/USDT:USDT | below_1h_threshold | +2.18% | +2.03% |
+| KORU/USDT:USDT | below_1h_threshold | +2.11% | +1.96% |
+| MURATASTOCK/USDT:USDT | below_1h_threshold | +1.69% | +1.54% |
 
 ## 7. 次に見るべき不足
 
