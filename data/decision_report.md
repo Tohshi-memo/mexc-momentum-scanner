@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-18T16:46:31.176201+00:00
+- generated_at: 2026-11-18T16:51:20.983854+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19157**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-18T16:46:14.559185+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -1.00% price=62466.1
-- Funnel: target 1080 → liquid 146 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.6 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-18T16:51:09.968926+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.89% price=62536.4
+- Funnel: target 1080 → liquid 146 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +5.49% | $13,285,527.20 |
-| SOXS/USDT:USDT | +3.90% | $53,555,006.81 |
-| PIEVERSE/USDT:USDT | +2.25% | $10,934,263.15 |
-| SQQQ/USDT:USDT | +1.84% | $7,315,479.47 |
-| NGAS/USDT:USDT | +1.66% | $1,254,992.53 |
+| EVAA/USDT:USDT | +4.46% | $13,345,044.73 |
+| SOXS/USDT:USDT | +3.24% | $53,630,433.78 |
+| PIEVERSE/USDT:USDT | +2.47% | $10,961,590.39 |
+| NGAS/USDT:USDT | +2.07% | $1,263,909.01 |
+| MMT/USDT:USDT | +1.98% | $9,536,118.73 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PIEVERSE/USDT:USDT | below_1h_threshold | +2.20% | +3.20% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.90% | +2.89% |
-| UVXY/USDT:USDT | below_1h_threshold | +1.57% | +2.56% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +1.43% | +2.43% |
-| SQQQ/USDT:USDT | below_1h_threshold | +0.95% | +1.95% |
+| EVAA/USDT:USDT | below_1h_threshold | +4.47% | +5.35% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +2.62% | +3.51% |
+| MMT/USDT:USDT | below_1h_threshold | +2.19% | +3.07% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.90% | +2.78% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +1.76% | +2.65% |
 
 ## 7. 次に見るべき不足
 
