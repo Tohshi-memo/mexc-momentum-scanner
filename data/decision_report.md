@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-18T14:33:28.271913+00:00
+- generated_at: 2026-11-18T14:36:22.234622+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19155**
 
@@ -39,9 +39,9 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$120.76** / 初期 $100.00 (+20.76%)
-- 確定トレード: 280件 (TP 100 / SL 172 / EXP 8)
-- 最新: MVLL/USDT:USDT SL_HIT PnL -4.00% 残高後 $120.76
+- 残高: **$121.01** / 初期 $100.00 (+21.01%)
+- 確定トレード: 281件 (TP 101 / SL 172 / EXP 8)
+- 最新: SNXX/USDT:USDT TP_HIT PnL +8.00% 残高後 $121.01
 - 最新戦略メタ: tier=S, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-18T14:33:16.977050+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=63883.0
-- Funnel: target 1080 → liquid 142 → pre 50 → checked 48 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=2
+- 更新: 2026-11-18T14:36:09.562853+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.57% price=63546.5
+- Funnel: target 1080 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MMT/USDT:USDT | +100.66% | $8,553,072.11 |
-| PIPPIN/USDT:USDT | +70.30% | $3,797,825.10 |
-| PIEVERSE/USDT:USDT | +56.36% | $7,458,329.91 |
-| ICNT/USDT:USDT | +45.53% | $5,987,387.70 |
-| IRYS/USDT:USDT | +20.61% | $3,684,058.06 |
+| MMT/USDT:USDT | +97.67% | $8,591,309.05 |
+| PIPPIN/USDT:USDT | +64.43% | $3,829,798.12 |
+| PIEVERSE/USDT:USDT | +54.78% | $7,609,542.63 |
+| ICNT/USDT:USDT | +45.15% | $5,995,107.61 |
+| IRYS/USDT:USDT | +18.38% | $3,698,690.93 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EVAA/USDT:USDT | below_1h_threshold | +4.58% | +4.62% |
-| BLESS/USDT:USDT | below_1h_threshold | +2.59% | +2.63% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +2.35% | +2.39% |
-| ICNT/USDT:USDT | below_1h_threshold | +1.26% | +1.30% |
-| BTW/USDT:USDT | below_1h_threshold | +1.15% | +1.19% |
+| EVAA/USDT:USDT | below_1h_threshold | +4.60% | +5.17% |
+| BLESS/USDT:USDT | below_1h_threshold | +3.39% | +3.96% |
+| ICNT/USDT:USDT | below_1h_threshold | +1.14% | +1.71% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +1.05% | +1.62% |
+| BTW/USDT:USDT | below_1h_threshold | +1.00% | +1.57% |
 
 ## 7. 次に見るべき不足
 
