@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-18T11:56:45.161059+00:00
+- generated_at: 2026-11-18T12:01:16.281137+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19145**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-18T11:56:25.080100+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=64249.7
-- Funnel: target 1080 → liquid 146 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.9 >= 65=1, 4h RSI 66.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-18T12:01:07.475197+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=64188.0
+- Funnel: target 1080 → liquid 144 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MMT/USDT:USDT | +109.31% | $7,233,518.68 |
-| PIPPIN/USDT:USDT | +83.40% | $3,021,670.87 |
-| ICNT/USDT:USDT | +36.09% | $4,978,613.82 |
-| IRYS/USDT:USDT | +25.48% | $2,551,328.46 |
-| CLAUDIA/USDT:USDT | +22.35% | $1,104,612.82 |
+| MMT/USDT:USDT | +110.14% | $7,152,498.14 |
+| PIPPIN/USDT:USDT | +80.20% | $3,037,377.96 |
+| ICNT/USDT:USDT | +36.73% | $4,985,704.57 |
+| IRYS/USDT:USDT | +24.72% | $2,964,379.00 |
+| CLAUDIA/USDT:USDT | +23.00% | $1,007,364.67 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIGHT/USDT:USDT | below_1h_threshold | +4.41% | +4.56% |
-| USELESS/USDT:USDT | below_1h_threshold | +2.01% | +2.15% |
-| PONS/USDT:USDT | below_1h_threshold | +1.02% | +1.16% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +0.95% | +1.09% |
-| KAVA/USDT:USDT | below_1h_threshold | +0.68% | +0.82% |
+| IRYS/USDT:USDT | below_1h_threshold | +0.79% | +0.81% |
+| BTW/USDT:USDT | below_1h_threshold | +0.41% | +0.44% |
+| ARIA/USDT:USDT | below_1h_threshold | +0.35% | +0.38% |
+| BLESS/USDT:USDT | below_1h_threshold | +0.31% | +0.34% |
+| ICNT/USDT:USDT | below_1h_threshold | +0.25% | +0.28% |
 
 ## 7. 次に見るべき不足
 
