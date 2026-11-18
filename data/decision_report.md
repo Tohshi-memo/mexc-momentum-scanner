@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-18T15:56:28.643997+00:00
+- generated_at: 2026-11-18T16:01:28.018168+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19156**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-18T15:56:17.634467+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.69% price=63197.4
-- Funnel: target 1080 → liquid 148 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-11-18T16:01:14.418760+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=63092.2
+- Funnel: target 1080 → liquid 143 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MMT/USDT:USDT | +99.91% | $9,322,178.72 |
-| PIPPIN/USDT:USDT | +65.26% | $4,074,109.83 |
-| PIEVERSE/USDT:USDT | +57.31% | $10,284,957.23 |
-| ICNT/USDT:USDT | +40.38% | $6,620,336.22 |
-| ZIL/USDT:USDT | +27.27% | $1,114,942.71 |
+| BLESS/USDT:USDT | +1.08% | $20,261,527.26 |
+| EVAA/USDT:USDT | +0.55% | $12,837,313.88 |
+| ZRO/USDT:USDT | +0.32% | $2,082,515.97 |
+| LUNC/USDT:USDT | +0.18% | $1,535,726.21 |
+| PIPPIN/USDT:USDT | +0.16% | $4,079,290.26 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EVAA/USDT:USDT | below_1h_threshold | +2.66% | +3.35% |
-| BTW/USDT:USDT | below_1h_threshold | +2.59% | +3.28% |
-| TTWOSTOCK/USDT:USDT | below_1h_threshold | +2.36% | +3.05% |
-| JCT/USDT:USDT | below_1h_threshold | +1.73% | +2.42% |
-| UVXY/USDT:USDT | below_1h_threshold | +1.59% | +2.29% |
+| UVXY/USDT:USDT | below_1h_threshold | +1.57% | +1.57% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.08% | +1.09% |
+| SQQQ/USDT:USDT | below_1h_threshold | +0.95% | +0.96% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.66% | +0.67% |
+| EVAA/USDT:USDT | below_1h_threshold | +0.56% | +0.56% |
 
 ## 7. 次に見るべき不足
 
