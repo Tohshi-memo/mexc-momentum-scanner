@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-18T06:36:24.609351+00:00
+- generated_at: 2026-11-18T06:41:11.952866+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19122**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-18T06:36:13.187294+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=64648.1
+- 更新: 2026-11-18T06:41:03.256466+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=64647.4
 - Funnel: target 1073 → liquid 146 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MMT/USDT:USDT | +88.10% | $3,665,732.18 |
-| ICNT/USDT:USDT | +28.66% | $2,570,946.15 |
-| MUU/USDT:USDT | +14.08% | $33,723,107.53 |
-| SNXX/USDT:USDT | +13.15% | $49,720,358.87 |
-| CSOPSKHYNIX2L/USDT:USDT | +12.89% | $1,031,023.79 |
+| MMT/USDT:USDT | +87.93% | $3,698,541.87 |
+| ICNT/USDT:USDT | +29.27% | $2,589,710.27 |
+| MUU/USDT:USDT | +14.15% | $33,723,445.19 |
+| SNXX/USDT:USDT | +13.45% | $49,850,127.21 |
+| CSOPSKHYNIX2L/USDT:USDT | +13.02% | $1,031,368.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CLAUDIA/USDT:USDT | below_1h_threshold | +4.34% | +4.34% |
-| ICNT/USDT:USDT | below_1h_threshold | +4.13% | +4.14% |
-| MMT/USDT:USDT | below_1h_threshold | +3.51% | +3.51% |
+| ICNT/USDT:USDT | below_1h_threshold | +4.55% | +4.55% |
+| IRYS/USDT:USDT | below_1h_threshold | +3.36% | +3.36% |
 | ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +3.24% | +3.25% |
-| ARIA/USDT:USDT | below_1h_threshold | +2.75% | +2.76% |
+| CLAUDIA/USDT:USDT | below_1h_threshold | +3.24% | +3.25% |
+| MMT/USDT:USDT | below_1h_threshold | +2.92% | +2.92% |
 
 ## 7. 次に見るべき不足
 
