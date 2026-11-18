@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-18T11:41:27.876498+00:00
+- generated_at: 2026-11-18T11:46:15.665634+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19144**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-18T11:41:16.809745+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.24% price=64184.2
+- 更新: 2026-11-18T11:46:07.129929+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.32% price=64137.1
 - Funnel: target 1080 → liquid 145 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.1 >= 65=1
+- Strict後reject: 4h RSI 78.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MMT/USDT:USDT | +109.65% | $7,136,582.12 |
-| PIPPIN/USDT:USDT | +84.32% | $2,950,608.57 |
-| ICNT/USDT:USDT | +35.62% | $4,893,022.93 |
-| IRYS/USDT:USDT | +27.50% | $2,420,373.57 |
-| PIEVERSE/USDT:USDT | +23.96% | $2,595,219.30 |
+| MMT/USDT:USDT | +110.39% | $7,172,093.27 |
+| PIPPIN/USDT:USDT | +82.12% | $2,978,005.76 |
+| ICNT/USDT:USDT | +35.49% | $4,923,831.85 |
+| IRYS/USDT:USDT | +26.04% | $2,450,724.54 |
+| PIEVERSE/USDT:USDT | +20.33% | $2,633,786.61 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CLAUDIA/USDT:USDT | below_1h_threshold | +3.75% | +3.99% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +2.45% | +2.69% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +1.23% | +1.47% |
-| USELESS/USDT:USDT | below_1h_threshold | +0.96% | +1.21% |
-| BLESS/USDT:USDT | below_1h_threshold | +0.77% | +1.02% |
+| CLAUDIA/USDT:USDT | below_1h_threshold | +4.75% | +5.07% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +1.84% | +2.15% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.25% | +1.56% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.11% | +1.42% |
+| MMT/USDT:USDT | below_1h_threshold | +0.96% | +1.28% |
 
 ## 7. 次に見るべき不足
 
