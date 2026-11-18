@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-18T10:16:36.134716+00:00
+- generated_at: 2026-11-18T10:21:28.468974+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19137**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-18T10:16:22.679721+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=64567.0
+- 更新: 2026-11-18T10:21:14.609627+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=64508.6
 - Funnel: target 1073 → liquid 145 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 91.5 >= 65=1
+- Strict後reject: 4h RSI 91.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MMT/USDT:USDT | +104.24% | $6,174,311.69 |
-| PIPPIN/USDT:USDT | +88.81% | $1,867,058.94 |
-| ICNT/USDT:USDT | +36.73% | $4,218,329.50 |
-| IRYS/USDT:USDT | +20.47% | $1,718,628.48 |
-| PIEVERSE/USDT:USDT | +16.52% | $2,000,306.40 |
+| MMT/USDT:USDT | +103.82% | $6,228,134.42 |
+| PIPPIN/USDT:USDT | +91.38% | $1,979,661.39 |
+| ICNT/USDT:USDT | +36.43% | $4,265,369.08 |
+| IRYS/USDT:USDT | +18.52% | $1,740,935.97 |
+| PIEVERSE/USDT:USDT | +17.94% | $2,032,186.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IRYS/USDT:USDT | below_1h_threshold | +3.59% | +3.68% |
-| MMT/USDT:USDT | below_1h_threshold | +2.59% | +2.68% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +2.46% | +2.55% |
-| SOXL/USDT:USDT | below_1h_threshold | +2.06% | +2.15% |
-| MVLL/USDT:USDT | below_1h_threshold | +1.99% | +2.08% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +3.65% | +3.82% |
+| MMT/USDT:USDT | below_1h_threshold | +2.63% | +2.81% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.06% | +2.24% |
+| MVLL/USDT:USDT | below_1h_threshold | +1.99% | +2.17% |
+| IRYS/USDT:USDT | below_1h_threshold | +1.92% | +2.09% |
 
 ## 7. 次に見るべき不足
 
