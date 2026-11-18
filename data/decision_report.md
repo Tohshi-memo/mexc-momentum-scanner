@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-18T03:41:35.781428+00:00
+- generated_at: 2026-11-18T03:46:15.063355+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19112**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-18T03:41:22.227033+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.32% price=64500.0
+- 更新: 2026-11-18T03:46:04.062381+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.28% price=64477.5
 - Funnel: target 1073 → liquid 146 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ICNT/USDT:USDT | +19.82% | $1,557,157.08 |
-| MMT/USDT:USDT | +19.05% | $2,221,436.48 |
-| BREV/USDT:USDT | +12.92% | $10,700,678.83 |
-| MUU/USDT:USDT | +11.80% | $33,937,974.76 |
-| LONGXIA/USDT:USDT | +11.61% | $5,133,232.26 |
+| ICNT/USDT:USDT | +20.04% | $1,559,608.61 |
+| MMT/USDT:USDT | +19.80% | $2,222,313.36 |
+| MUU/USDT:USDT | +11.73% | $33,938,253.40 |
+| BREV/USDT:USDT | +11.46% | $10,715,337.90 |
+| CSOPSKHYNIX2L/USDT:USDT | +11.17% | $1,149,279.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_1h_threshold | +3.89% | +3.57% |
-| AXIS/USDT:USDT | below_1h_threshold | +2.31% | +1.99% |
-| USELESS/USDT:USDT | below_1h_threshold | +1.69% | +1.37% |
-| MVLL/USDT:USDT | below_1h_threshold | +1.65% | +1.33% |
-| MMT/USDT:USDT | below_1h_threshold | +1.49% | +1.17% |
+| BLESS/USDT:USDT | below_1h_threshold | +4.52% | +4.23% |
+| AXIS/USDT:USDT | below_1h_threshold | +3.52% | +3.23% |
+| MMT/USDT:USDT | below_1h_threshold | +2.06% | +1.77% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.85% | +1.56% |
+| MVLL/USDT:USDT | below_1h_threshold | +1.65% | +1.37% |
 
 ## 7. 次に見るべき不足
 
