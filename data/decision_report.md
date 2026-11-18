@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-18T21:16:26.819581+00:00
+- generated_at: 2026-11-18T21:21:23.674193+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19163**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-18T21:16:15.607368+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.25% price=62452.8
-- Funnel: target 1080 → liquid 144 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-11-18T21:21:11.026322+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=62550.2
+- Funnel: target 1080 → liquid 145 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PHAROS/USDT:USDT | +12.47% | $1,350,193.76 |
-| HUMA/USDT:USDT | +10.56% | $2,087,476.15 |
-| BLESS/USDT:USDT | +6.26% | $21,305,838.07 |
-| PIEVERSE/USDT:USDT | +5.92% | $12,485,951.40 |
-| ARIA/USDT:USDT | +5.80% | $3,192,993.26 |
+| PHAROS/USDT:USDT | +13.40% | $1,368,614.54 |
+| HUMA/USDT:USDT | +11.08% | $2,093,786.43 |
+| PIEVERSE/USDT:USDT | +5.77% | $12,504,070.89 |
+| ZRO/USDT:USDT | +5.38% | $2,667,557.99 |
+| EVAA/USDT:USDT | +5.26% | $12,980,776.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNXX/USDT:USDT | below_1h_threshold | +2.36% | +2.61% |
-| MUU/USDT:USDT | below_1h_threshold | +2.04% | +2.29% |
-| AAOISTOCK/USDT:USDT | below_1h_threshold | +1.87% | +2.12% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +1.57% | +1.82% |
-| ZKC/USDT:USDT | below_1h_threshold | +1.12% | +1.37% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.36% | +2.46% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.15% | +2.25% |
+| MUU/USDT:USDT | below_1h_threshold | +2.04% | +2.13% |
+| AAOISTOCK/USDT:USDT | below_1h_threshold | +1.87% | +1.97% |
+| ZKC/USDT:USDT | below_1h_threshold | +1.87% | +1.96% |
 
 ## 7. 次に見るべき不足
 
