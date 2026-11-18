@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-18T19:31:18.564094+00:00
+- generated_at: 2026-11-18T19:36:23.266805+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19163**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-18T19:31:07.434632+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.45% price=62866.1
-- Funnel: target 1080 → liquid 143 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-11-18T19:36:09.825205+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.64% price=62748.5
+- Funnel: target 1080 → liquid 144 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HUMA/USDT:USDT | +12.30% | $1,823,497.38 |
-| PIPPIN/USDT:USDT | +10.06% | $5,286,671.11 |
-| BLESS/USDT:USDT | +6.95% | $21,288,062.80 |
-| EVAA/USDT:USDT | +6.57% | $12,919,988.95 |
-| ARIA/USDT:USDT | +6.35% | $4,092,844.04 |
+| HUMA/USDT:USDT | +9.27% | $1,889,051.27 |
+| PIPPIN/USDT:USDT | +8.96% | $5,317,607.31 |
+| BLESS/USDT:USDT | +7.20% | $21,307,870.03 |
+| EVAA/USDT:USDT | +6.99% | $12,947,778.12 |
+| ARIA/USDT:USDT | +6.11% | $4,097,044.79 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PLTRSTOCK/USDT:USDT | below_1h_threshold | +1.78% | +2.24% |
-| AVGOSTOCK/USDT:USDT | below_1h_threshold | +1.31% | +1.76% |
-| KORU/USDT:USDT | below_1h_threshold | +1.13% | +1.58% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.05% | +1.50% |
-| TQQQ/USDT:USDT | below_1h_threshold | +1.03% | +1.48% |
+| PLTRSTOCK/USDT:USDT | below_1h_threshold | +1.78% | +2.42% |
+| AVGOSTOCK/USDT:USDT | below_1h_threshold | +1.31% | +1.95% |
+| KORU/USDT:USDT | below_1h_threshold | +1.13% | +1.76% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.05% | +1.69% |
+| MSFTSTOCK/USDT:USDT | below_1h_threshold | +1.04% | +1.68% |
 
 ## 7. 次に見るべき不足
 
