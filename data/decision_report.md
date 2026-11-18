@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-18T11:46:15.665634+00:00
+- generated_at: 2026-11-18T11:51:24.337507+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19144**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-18T11:46:07.129929+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.32% price=64137.1
-- Funnel: target 1080 → liquid 145 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.8 >= 65=1
+- 更新: 2026-11-18T11:51:12.682686+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.25% price=64179.0
+- Funnel: target 1080 → liquid 146 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 79.2 >= 65=1, 4h RSI 66.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MMT/USDT:USDT | +110.39% | $7,172,093.27 |
-| PIPPIN/USDT:USDT | +82.12% | $2,978,005.76 |
-| ICNT/USDT:USDT | +35.49% | $4,923,831.85 |
-| IRYS/USDT:USDT | +26.04% | $2,450,724.54 |
-| PIEVERSE/USDT:USDT | +20.33% | $2,633,786.61 |
+| MMT/USDT:USDT | +110.73% | $7,198,694.81 |
+| PIPPIN/USDT:USDT | +84.14% | $3,001,042.04 |
+| ICNT/USDT:USDT | +34.97% | $4,944,844.50 |
+| IRYS/USDT:USDT | +25.76% | $2,487,951.42 |
+| CLAUDIA/USDT:USDT | +21.59% | $1,102,890.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CLAUDIA/USDT:USDT | below_1h_threshold | +4.75% | +5.07% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +1.84% | +2.15% |
-| BLESS/USDT:USDT | below_1h_threshold | +1.25% | +1.56% |
-| USELESS/USDT:USDT | below_1h_threshold | +1.11% | +1.42% |
-| MMT/USDT:USDT | below_1h_threshold | +0.96% | +1.28% |
+| NIGHT/USDT:USDT | below_1h_threshold | +4.21% | +4.46% |
+| BLESS/USDT:USDT | below_1h_threshold | +2.98% | +3.23% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.04% | +2.29% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +1.90% | +2.15% |
+| MMT/USDT:USDT | below_1h_threshold | +1.32% | +1.57% |
 
 ## 7. 次に見るべき不足
 
