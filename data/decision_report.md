@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-18T10:41:29.028675+00:00
+- generated_at: 2026-11-18T10:46:33.096811+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19139**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7302件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7303件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000095 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-18T10:41:14.626607+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.57% price=64252.4
-- Funnel: target 1073 → liquid 147 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 91.8 >= 65=1, 4h RSI 66.7 >= 65=1, 4h RSI 80.4 >= 65=1
+- 更新: 2026-11-18T10:46:20.366833+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.54% price=64270.0
+- Funnel: target 1077 → liquid 147 → pre 50 → checked 50 → surge 4 → strict 0
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 91.8 >= 65=1, 4h RSI 66.8 >= 65=1, 4h RSI 89.9 >= 65=1, 4h RSI 79.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MMT/USDT:USDT | +108.81% | $6,408,797.10 |
-| PIPPIN/USDT:USDT | +91.29% | $2,343,336.81 |
-| ICNT/USDT:USDT | +37.81% | $4,357,839.85 |
-| CLAUDIA/USDT:USDT | +23.60% | $1,126,736.94 |
-| IRYS/USDT:USDT | +21.30% | $1,967,483.02 |
+| MMT/USDT:USDT | +110.73% | $6,464,142.25 |
+| PIPPIN/USDT:USDT | +92.85% | $2,388,110.43 |
+| ICNT/USDT:USDT | +40.00% | $4,383,559.52 |
+| CLAUDIA/USDT:USDT | +24.76% | $1,139,657.25 |
+| PIEVERSE/USDT:USDT | +19.98% | $2,307,135.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MMT/USDT:USDT | below_1h_threshold | +4.85% | +5.42% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +4.42% | +4.99% |
-| IRYS/USDT:USDT | below_1h_threshold | +4.31% | +4.88% |
-| ICNT/USDT:USDT | below_1h_threshold | +2.59% | +3.16% |
-| BTW/USDT:USDT | below_1h_threshold | +2.49% | +3.06% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +4.85% | +5.39% |
+| ICNT/USDT:USDT | below_1h_threshold | +4.31% | +4.86% |
+| IRYS/USDT:USDT | below_1h_threshold | +2.69% | +3.24% |
+| BTW/USDT:USDT | below_1h_threshold | +2.58% | +3.12% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.06% | +2.60% |
 
 ## 7. 次に見るべき不足
 
