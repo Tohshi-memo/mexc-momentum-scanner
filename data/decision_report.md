@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-18T10:46:33.096811+00:00
+- generated_at: 2026-11-18T10:51:40.117368+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19139**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7303件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7304件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000095 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-18T10:46:20.366833+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.54% price=64270.0
-- Funnel: target 1077 → liquid 147 → pre 50 → checked 50 → surge 4 → strict 0
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 91.8 >= 65=1, 4h RSI 66.8 >= 65=1, 4h RSI 89.9 >= 65=1, 4h RSI 79.6 >= 65=1
+- 更新: 2026-11-18T10:51:22.329493+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.36% price=64391.9
+- Funnel: target 1078 → liquid 147 → pre 50 → checked 50 → surge 6 → strict 2
+- Surge前reject: below_1h_threshold=44, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 91.7 >= 65=1, 4h RSI 90.4 >= 65=1, 4h RSI 79.8 >= 65=1, 4h RSI 80.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MMT/USDT:USDT | +110.73% | $6,464,142.25 |
-| PIPPIN/USDT:USDT | +92.85% | $2,388,110.43 |
-| ICNT/USDT:USDT | +40.00% | $4,383,559.52 |
-| CLAUDIA/USDT:USDT | +24.76% | $1,139,657.25 |
-| PIEVERSE/USDT:USDT | +19.98% | $2,307,135.50 |
+| MMT/USDT:USDT | +115.80% | $6,537,966.42 |
+| PIPPIN/USDT:USDT | +92.85% | $2,447,178.09 |
+| ICNT/USDT:USDT | +41.11% | $4,453,241.69 |
+| PIEVERSE/USDT:USDT | +20.74% | $2,342,183.71 |
+| CLAUDIA/USDT:USDT | +18.32% | $1,149,913.17 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LONGXIA/USDT:USDT | below_1h_threshold | +4.85% | +5.39% |
-| ICNT/USDT:USDT | below_1h_threshold | +4.31% | +4.86% |
-| IRYS/USDT:USDT | below_1h_threshold | +2.69% | +3.24% |
-| BTW/USDT:USDT | below_1h_threshold | +2.58% | +3.12% |
-| SOXL/USDT:USDT | below_1h_threshold | +2.06% | +2.60% |
+| BTW/USDT:USDT | below_1h_threshold | +2.53% | +2.89% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.06% | +2.42% |
+| MVLL/USDT:USDT | below_1h_threshold | +1.99% | +2.35% |
+| NVDL/USDT:USDT | below_1h_threshold | +1.87% | +2.22% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.56% | +1.92% |
 
 ## 7. 次に見るべき不足
 
