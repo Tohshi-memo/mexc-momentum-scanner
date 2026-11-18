@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-18T12:46:26.427758+00:00
+- generated_at: 2026-11-18T12:51:22.351224+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19150**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-18T12:46:12.715807+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.32% price=64001.6
-- Funnel: target 1080 → liquid 147 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.8 >= 65=1
+- 更新: 2026-11-18T12:51:10.796790+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.30% price=64011.1
+- Funnel: target 1080 → liquid 147 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 87.0 >= 65=1, 4h RSI 81.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MMT/USDT:USDT | +109.73% | $7,650,405.54 |
-| PIPPIN/USDT:USDT | +74.61% | $3,274,557.20 |
-| ICNT/USDT:USDT | +42.10% | $5,215,383.73 |
-| PIEVERSE/USDT:USDT | +37.72% | $4,194,052.87 |
-| IRYS/USDT:USDT | +18.24% | $3,241,550.08 |
+| MMT/USDT:USDT | +105.49% | $7,758,596.04 |
+| PIPPIN/USDT:USDT | +76.62% | $3,287,194.58 |
+| ICNT/USDT:USDT | +44.67% | $5,287,654.24 |
+| PIEVERSE/USDT:USDT | +40.21% | $4,280,268.29 |
+| IRYS/USDT:USDT | +19.56% | $3,246,011.97 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ICNT/USDT:USDT | below_1h_threshold | +4.12% | +4.44% |
-| BTW/USDT:USDT | below_1h_threshold | +2.35% | +2.67% |
-| UVXY/USDT:USDT | below_1h_threshold | +2.17% | +2.49% |
-| BLESS/USDT:USDT | below_1h_threshold | +1.60% | +1.92% |
-| ARIA/USDT:USDT | below_1h_threshold | +1.10% | +1.41% |
+| BTW/USDT:USDT | below_1h_threshold | +3.98% | +4.29% |
+| UVXY/USDT:USDT | below_1h_threshold | +2.17% | +2.47% |
+| ARIA/USDT:USDT | below_1h_threshold | +2.14% | +2.45% |
+| KAVA/USDT:USDT | below_1h_threshold | +1.21% | +1.51% |
+| BLESS/USDT:USDT | below_1h_threshold | +0.59% | +0.90% |
 
 ## 7. 次に見るべき不足
 
