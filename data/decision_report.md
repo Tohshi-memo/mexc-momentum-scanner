@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-18T17:46:26.890018+00:00
+- generated_at: 2026-11-18T17:51:24.946597+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19159**
 
@@ -63,38 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7320件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7321件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000238 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-18T17:46:13.594083+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.66% price=63148.0
-- Funnel: target 1080 → liquid 146 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-18T17:51:09.507259+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.54% price=63067.5
+- Funnel: target 1080 → liquid 146 → pre 50 → checked 50 → surge 3 → strict 2
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 81.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HUMA/USDT:USDT | +10.20% | $1,386,789.04 |
-| EVAA/USDT:USDT | +7.46% | $12,998,060.78 |
-| BLESS/USDT:USDT | +6.34% | $20,826,557.04 |
-| PIPPIN/USDT:USDT | +5.00% | $4,313,923.01 |
-| PIEVERSE/USDT:USDT | +4.76% | $11,506,812.80 |
+| PIPPIN/USDT:USDT | +14.24% | $4,369,669.71 |
+| HUMA/USDT:USDT | +11.70% | $1,410,422.60 |
+| EVAA/USDT:USDT | +7.33% | $13,038,342.42 |
+| BLESS/USDT:USDT | +6.59% | $20,918,465.99 |
+| ZKC/USDT:USDT | +2.88% | $1,147,037.20 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_relative_strength | +5.40% | +4.74% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +4.42% | +3.76% |
-| SOXS/USDT:USDT | below_1h_threshold | +3.17% | +2.51% |
-| ZRO/USDT:USDT | below_1h_threshold | +2.89% | +2.23% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +2.64% | +1.97% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +3.78% | +3.24% |
+| SOXS/USDT:USDT | below_1h_threshold | +3.17% | +2.64% |
+| ZRO/USDT:USDT | below_1h_threshold | +2.49% | +1.96% |
+| NGAS/USDT:USDT | below_1h_threshold | +2.27% | +1.73% |
+| ZKC/USDT:USDT | below_1h_threshold | +2.21% | +1.68% |
 
 ## 7. 次に見るべき不足
 
