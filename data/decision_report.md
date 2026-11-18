@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-18T22:11:14.884609+00:00
+- generated_at: 2026-11-18T22:16:15.133392+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19163**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-18T22:11:06.126369+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=62373.5
+- 更新: 2026-11-18T22:16:04.149725+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=62373.8
 - Funnel: target 1079 → liquid 144 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +16.45% | $1,231,692.15 |
-| PHAROS/USDT:USDT | +15.30% | $1,512,649.76 |
-| PIEVERSE/USDT:USDT | +10.95% | $13,565,154.53 |
-| HUMA/USDT:USDT | +10.60% | $2,147,304.38 |
-| EVAA/USDT:USDT | +6.91% | $12,948,014.58 |
+| VELVET/USDT:USDT | +16.29% | $1,295,775.05 |
+| PHAROS/USDT:USDT | +14.44% | $1,521,772.71 |
+| HUMA/USDT:USDT | +11.63% | $2,152,911.80 |
+| PIEVERSE/USDT:USDT | +9.61% | $13,595,422.92 |
+| EVAA/USDT:USDT | +6.67% | $12,979,523.87 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +1.67% | +1.59% |
 | TTWOSTOCK/USDT:USDT | below_1h_threshold | +1.66% | +1.58% |
 | SOXS/USDT:USDT | below_1h_threshold | +1.55% | +1.48% |
-| EVAA/USDT:USDT | below_1h_threshold | +1.17% | +1.09% |
-| ARIA/USDT:USDT | below_1h_threshold | +0.70% | +0.62% |
+| VELVET/USDT:USDT | below_1h_threshold | +1.42% | +1.34% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +1.00% | +0.92% |
+| EVAA/USDT:USDT | below_1h_threshold | +0.94% | +0.86% |
 
 ## 7. 次に見るべき不足
 
