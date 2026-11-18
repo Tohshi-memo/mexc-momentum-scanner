@@ -4,7 +4,7 @@
   "initial_capital": 100.0,
   "balance": 117.6114169450822,
   "started_at": "2026-07-11T08:56:50.346675+00:00",
-  "updated_at": "2026-11-18T07:01:21.457197+00:00",
+  "updated_at": "2026-11-18T07:06:20.374424+00:00",
   "high_watermark": 128.08262302711162,
   "max_drawdown_pct": 8.205992703625467,
   "loss_streak": 0,
@@ -285289,9 +285289,9 @@
     "strategy": "LIMIT_9PCT_LONG",
     "direction": "long",
     "reason": "selected_by_causal_log_growth",
-    "causal_score": 0.00011596737844849734,
-    "robust_score": 0.00011596737844849734,
-    "causal_history_count": 19123,
+    "causal_score": 0.00011780648813924404,
+    "robust_score": 0.00011780648813924404,
+    "causal_history_count": 19125,
     "fast": {
       "strategy": "LIMIT_9PCT_LONG",
       "direction": "long",
@@ -285324,14 +285324,14 @@
       "strategy": "LIMIT_9PCT_LONG",
       "direction": "long",
       "total": 200,
-      "filled": 35,
-      "fill_rate": 0.175,
-      "avg_pnl_pct": 1.3093406593406598,
-      "effective_ev_pct": 0.22913461538461544,
-      "avg_log_return": 0.00010227462735569328,
-      "geometric_return_pct": 0.010227985758359814,
-      "avg_account_return_pct": 0.010254326923076915,
-      "max_drawdown_pct": 0.6981646428121137,
+      "filled": 34,
+      "fill_rate": 0.17,
+      "avg_pnl_pct": 1.4699095022624438,
+      "effective_ev_pct": 0.24988461538461545,
+      "avg_log_return": 0.00011103229254972514,
+      "geometric_return_pct": 0.011103845686277758,
+      "avg_account_return_pct": 0.011129326923076914,
+      "max_drawdown_pct": 0.6981646428121118,
       "max_loss_streak": 4
     },
     "long": {
@@ -285364,9 +285364,14 @@
     },
     "alternatives": [
       {
-        "strategy": "LIMIT_7PCT",
+        "strategy": "MARKET",
         "direction": "short",
-        "causal_score": 9.174921174929646e-05
+        "causal_score": 4.8917032556761756e-05
+      },
+      {
+        "strategy": "LIMIT_5PCT",
+        "direction": "short",
+        "causal_score": 2.8773579138092104e-05
       }
     ]
   },
