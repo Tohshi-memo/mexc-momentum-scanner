@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-18T18:56:34.757078+00:00
+- generated_at: 2026-11-18T19:01:24.127369+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19161**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-18T18:56:20.548438+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=63155.1
-- Funnel: target 1080 → liquid 145 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.3 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-18T19:01:13.236791+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.23% price=63003.2
+- Funnel: target 1080 → liquid 143 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HUMA/USDT:USDT | +16.61% | $1,692,871.98 |
-| PIPPIN/USDT:USDT | +15.84% | $5,075,091.86 |
-| EVAA/USDT:USDT | +6.92% | $13,004,789.46 |
-| BLESS/USDT:USDT | +6.22% | $22,099,218.42 |
-| PIEVERSE/USDT:USDT | +5.44% | $11,904,656.22 |
+| HUMA/USDT:USDT | +15.98% | $1,705,027.56 |
+| PIPPIN/USDT:USDT | +15.18% | $5,120,475.35 |
+| EVAA/USDT:USDT | +6.32% | $12,691,248.97 |
+| BLESS/USDT:USDT | +6.28% | $20,798,667.21 |
+| ARIA/USDT:USDT | +5.14% | $3,960,314.87 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HUMA/USDT:USDT | below_1h_threshold | +4.25% | +4.13% |
-| ARIA/USDT:USDT | below_1h_threshold | +3.53% | +3.40% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +2.50% | +2.38% |
-| CRWVSTOCK/USDT:USDT | below_1h_threshold | +2.40% | +2.28% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +2.23% | +2.11% |
+| PLTRSTOCK/USDT:USDT | below_1h_threshold | +1.78% | +2.02% |
+| KORU/USDT:USDT | below_1h_threshold | +1.13% | +1.36% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.05% | +1.29% |
+| MSFTSTOCK/USDT:USDT | below_1h_threshold | +1.04% | +1.28% |
+| TQQQ/USDT:USDT | below_1h_threshold | +1.03% | +1.27% |
 
 ## 7. 次に見るべき不足
 
