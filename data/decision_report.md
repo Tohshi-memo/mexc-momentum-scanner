@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-18T21:51:30.613128+00:00
+- generated_at: 2026-11-18T21:56:19.779745+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19163**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-18T21:51:19.299258+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.38% price=62374.2
+- 更新: 2026-11-18T21:56:08.849815+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.46% price=62324.0
 - Funnel: target 1080 → liquid 146 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +15.84% | $1,086,038.90 |
-| PHAROS/USDT:USDT | +13.33% | $1,464,259.28 |
-| HUMA/USDT:USDT | +11.13% | $2,134,148.96 |
-| PIEVERSE/USDT:USDT | +9.45% | $13,049,067.17 |
-| ZRO/USDT:USDT | +6.12% | $2,741,018.28 |
+| VELVET/USDT:USDT | +15.56% | $1,111,471.01 |
+| PHAROS/USDT:USDT | +14.82% | $1,486,038.63 |
+| HUMA/USDT:USDT | +12.05% | $2,138,520.58 |
+| PIEVERSE/USDT:USDT | +9.50% | $13,126,526.27 |
+| EVAA/USDT:USDT | +5.95% | $13,106,834.35 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +2.74% | +3.11% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +2.65% | +3.02% |
-| LUNC/USDT:USDT | below_1h_threshold | +2.01% | +2.39% |
-| AAOISTOCK/USDT:USDT | below_1h_threshold | +1.87% | +2.25% |
-| VVV/USDT:USDT | below_1h_threshold | +1.83% | +2.21% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +2.82% | +3.27% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.50% | +2.95% |
+| HUMA/USDT:USDT | below_1h_threshold | +1.89% | +2.34% |
+| AAOISTOCK/USDT:USDT | below_1h_threshold | +1.87% | +2.33% |
+| LUNC/USDT:USDT | below_1h_threshold | +1.69% | +2.14% |
 
 ## 7. 次に見るべき不足
 
