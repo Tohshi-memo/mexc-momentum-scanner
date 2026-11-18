@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-18T09:16:22.565722+00:00
+- generated_at: 2026-11-18T09:21:13.642586+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19133**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-18T09:16:09.089306+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=64678.4
-- Funnel: target 1073 → liquid 146 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-11-18T09:21:03.530219+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=64657.2
+- Funnel: target 1073 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MMT/USDT:USDT | +106.65% | $5,523,850.20 |
-| PIPPIN/USDT:USDT | +53.43% | $1,161,684.45 |
-| ICNT/USDT:USDT | +20.34% | $3,886,536.05 |
-| ARIA/USDT:USDT | +15.90% | $5,439,662.10 |
-| SNXX/USDT:USDT | +15.09% | $48,933,127.63 |
+| MMT/USDT:USDT | +108.48% | $5,604,392.35 |
+| PIPPIN/USDT:USDT | +54.35% | $1,174,226.44 |
+| ICNT/USDT:USDT | +23.51% | $3,953,627.02 |
+| ARIA/USDT:USDT | +16.66% | $5,459,254.35 |
+| SNXX/USDT:USDT | +16.13% | $49,207,244.20 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IRYS/USDT:USDT | below_1h_threshold | +2.34% | +2.30% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +2.19% | +2.16% |
-| MMT/USDT:USDT | below_1h_threshold | +2.14% | +2.11% |
-| ZKSYNC/USDT:USDT | below_1h_threshold | +0.79% | +0.76% |
-| NEAR/USDT:USDT | below_1h_threshold | +0.57% | +0.54% |
+| MMT/USDT:USDT | below_1h_threshold | +3.13% | +3.13% |
+| IRYS/USDT:USDT | below_1h_threshold | +2.72% | +2.72% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +2.62% | +2.62% |
+| BLESS/USDT:USDT | below_1h_threshold | +2.58% | +2.58% |
+| CLAUDIA/USDT:USDT | below_1h_threshold | +0.76% | +0.76% |
 
 ## 7. 次に見るべき不足
 
