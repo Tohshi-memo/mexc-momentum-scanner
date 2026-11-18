@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-18T01:51:29.151787+00:00
+- generated_at: 2026-11-18T01:56:33.426006+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19111**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-18T01:51:11.105234+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.54% price=64418.2
+- 更新: 2026-11-18T01:56:17.551294+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.57% price=64399.0
 - Funnel: target 1073 → liquid 143 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ICNT/USDT:USDT | +17.21% | $1,209,942.51 |
-| MMT/USDT:USDT | +13.47% | $2,094,454.02 |
-| MUU/USDT:USDT | +13.17% | $36,594,164.93 |
-| LONGXIA/USDT:USDT | +12.25% | $4,942,518.53 |
-| SNXX/USDT:USDT | +11.89% | $48,410,546.27 |
+| ICNT/USDT:USDT | +17.76% | $1,232,284.37 |
+| MMT/USDT:USDT | +16.30% | $2,106,602.65 |
+| CLAUDIA/USDT:USDT | +13.48% | $1,769,390.66 |
+| MUU/USDT:USDT | +12.41% | $36,602,280.42 |
+| LONGXIA/USDT:USDT | +12.11% | $4,953,439.63 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LONGXIA/USDT:USDT | below_1h_threshold | +3.24% | +3.78% |
-| ARIA/USDT:USDT | below_1h_threshold | +2.68% | +3.22% |
-| CSOPSKHYNIX2L/USDT:USDT | below_1h_threshold | +2.61% | +3.15% |
-| MURATASTOCK/USDT:USDT | below_1h_threshold | +2.12% | +2.66% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.80% | +2.34% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +3.18% | +3.75% |
+| ARIA/USDT:USDT | below_1h_threshold | +3.04% | +3.61% |
+| CSOPSKHYNIX2L/USDT:USDT | below_1h_threshold | +2.61% | +3.18% |
+| MURATASTOCK/USDT:USDT | below_1h_threshold | +2.12% | +2.69% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.80% | +2.37% |
 
 ## 7. 次に見るべき不足
 
