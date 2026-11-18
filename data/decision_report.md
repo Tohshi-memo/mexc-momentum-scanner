@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-18T16:21:21.981089+00:00
+- generated_at: 2026-11-18T16:26:22.015953+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19156**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-18T16:21:08.127651+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -1.20% price=62338.8
+- 更新: 2026-11-18T16:26:08.775952+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.83% price=62571.7
 - Funnel: target 1080 → liquid 144 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +4.11% | $13,051,273.04 |
-| SOXS/USDT:USDT | +4.04% | $51,998,691.96 |
-| UVXY/USDT:USDT | +2.58% | $3,209,282.75 |
-| SQQQ/USDT:USDT | +2.03% | $7,000,805.92 |
-| PIEVERSE/USDT:USDT | +1.30% | $10,742,723.61 |
+| EVAA/USDT:USDT | +4.49% | $13,097,263.19 |
+| SOXS/USDT:USDT | +3.03% | $52,182,160.26 |
+| PIEVERSE/USDT:USDT | +1.51% | $10,815,605.25 |
+| MMT/USDT:USDT | +1.23% | $9,443,384.34 |
+| SQQQ/USDT:USDT | +1.17% | $7,077,385.89 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EVAA/USDT:USDT | below_1h_threshold | +3.94% | +5.14% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.90% | +3.09% |
-| UVXY/USDT:USDT | below_1h_threshold | +1.57% | +2.76% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +1.42% | +2.62% |
-| ARIA/USDT:USDT | below_1h_threshold | +1.35% | +2.55% |
+| EVAA/USDT:USDT | below_1h_threshold | +4.48% | +5.31% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.90% | +2.72% |
+| UVXY/USDT:USDT | below_1h_threshold | +1.57% | +2.40% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +1.52% | +2.35% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.20% | +2.03% |
 
 ## 7. 次に見るべき不足
 
