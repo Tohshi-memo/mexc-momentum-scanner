@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-18T16:16:19.212683+00:00
+- generated_at: 2026-11-18T16:21:21.981089+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19156**
 
@@ -39,9 +39,9 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$121.01** / 初期 $100.00 (+21.01%)
-- 確定トレード: 281件 (TP 101 / SL 172 / EXP 8)
-- 最新: SNXX/USDT:USDT TP_HIT PnL +8.00% 残高後 $121.01
+- 残高: **$121.25** / 初期 $100.00 (+21.25%)
+- 確定トレード: 282件 (TP 102 / SL 172 / EXP 8)
+- 最新: KORU/USDT:USDT TP_HIT PnL +8.00% 残高後 $121.25
 - 最新戦略メタ: tier=S, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-18T16:16:07.893613+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.48% price=62789.5
+- 更新: 2026-11-18T16:21:08.127651+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -1.20% price=62338.8
 - Funnel: target 1080 → liquid 144 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +2.89% | $13,015,034.35 |
-| PIEVERSE/USDT:USDT | +2.42% | $10,663,326.69 |
-| SOXS/USDT:USDT | +2.40% | $51,463,218.12 |
-| BTW/USDT:USDT | +1.38% | $4,667,485.48 |
-| UVXY/USDT:USDT | +1.17% | $3,192,113.27 |
+| EVAA/USDT:USDT | +4.11% | $13,051,273.04 |
+| SOXS/USDT:USDT | +4.04% | $51,998,691.96 |
+| UVXY/USDT:USDT | +2.58% | $3,209,282.75 |
+| SQQQ/USDT:USDT | +2.03% | $7,000,805.92 |
+| PIEVERSE/USDT:USDT | +1.30% | $10,742,723.61 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EVAA/USDT:USDT | below_1h_threshold | +2.89% | +3.38% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +2.42% | +2.91% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.90% | +2.38% |
-| UVXY/USDT:USDT | below_1h_threshold | +1.57% | +2.05% |
-| BTW/USDT:USDT | below_1h_threshold | +1.35% | +1.83% |
+| EVAA/USDT:USDT | below_1h_threshold | +3.94% | +5.14% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.90% | +3.09% |
+| UVXY/USDT:USDT | below_1h_threshold | +1.57% | +2.76% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +1.42% | +2.62% |
+| ARIA/USDT:USDT | below_1h_threshold | +1.35% | +2.55% |
 
 ## 7. 次に見るべき不足
 
