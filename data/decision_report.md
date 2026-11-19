@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-19T02:16:13.076732+00:00
+- generated_at: 2026-11-19T02:21:19.386090+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19175**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-19T02:16:03.490144+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=62822.9
+- 更新: 2026-11-19T02:21:07.078095+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=62769.2
 - Funnel: target 1079 → liquid 140 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IRYS/USDT:USDT | +40.05% | $6,856,241.01 |
-| VELVET/USDT:USDT | +23.01% | $4,085,190.05 |
-| HUMA/USDT:USDT | +17.32% | $2,486,277.79 |
-| PHAROS/USDT:USDT | +16.56% | $2,015,546.73 |
-| LUNC/USDT:USDT | +16.48% | $1,808,532.74 |
+| IRYS/USDT:USDT | +43.24% | $7,008,995.34 |
+| VELVET/USDT:USDT | +25.08% | $4,107,212.52 |
+| HUMA/USDT:USDT | +18.94% | $2,498,941.35 |
+| LUNC/USDT:USDT | +15.73% | $1,819,501.94 |
+| PHAROS/USDT:USDT | +11.84% | $2,025,637.17 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +3.80% | +3.79% |
-| VELVET/USDT:USDT | below_1h_threshold | +3.27% | +3.27% |
-| BLESS/USDT:USDT | below_1h_threshold | +2.79% | +2.79% |
-| LUNC/USDT:USDT | below_1h_threshold | +2.13% | +2.12% |
-| IRYS/USDT:USDT | below_1h_threshold | +1.82% | +1.81% |
+| VELVET/USDT:USDT | below_1h_threshold | +5.00% | +5.08% |
+| BTW/USDT:USDT | below_1h_threshold | +4.88% | +4.96% |
+| IRYS/USDT:USDT | below_1h_threshold | +4.40% | +4.47% |
+| BLESS/USDT:USDT | below_1h_threshold | +3.39% | +3.47% |
+| VVV/USDT:USDT | below_1h_threshold | +1.63% | +1.70% |
 
 ## 7. 次に見るべき不足
 
