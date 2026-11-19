@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-19T00:41:21.523780+00:00
+- generated_at: 2026-11-19T00:46:33.863361+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19167**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-19T00:41:11.221668+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=63087.3
+- 更新: 2026-11-19T00:46:19.294344+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.24% price=63187.3
 - Funnel: target 1080 → liquid 143 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.8 >= 65=1
+- Strict後reject: 4h RSI 79.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +18.80% | $3,541,786.82 |
-| PHAROS/USDT:USDT | +15.69% | $1,786,039.32 |
-| HUMA/USDT:USDT | +13.42% | $2,367,269.29 |
-| LUNC/USDT:USDT | +12.39% | $1,437,022.56 |
-| IRYS/USDT:USDT | +11.47% | $4,680,573.43 |
+| VELVET/USDT:USDT | +20.86% | $3,594,559.38 |
+| PHAROS/USDT:USDT | +13.99% | $1,794,950.15 |
+| HUMA/USDT:USDT | +13.62% | $2,367,704.48 |
+| IRYS/USDT:USDT | +13.04% | $4,729,383.69 |
+| LUNC/USDT:USDT | +11.82% | $1,466,015.03 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNXX/USDT:USDT | below_1h_threshold | +4.85% | +4.77% |
-| MVLL/USDT:USDT | below_1h_threshold | +4.47% | +4.39% |
-| MUU/USDT:USDT | below_1h_threshold | +4.01% | +3.93% |
-| CSOPSKHYNIX2L/USDT:USDT | below_1h_threshold | +3.27% | +3.19% |
-| KORU/USDT:USDT | below_1h_threshold | +2.95% | +2.87% |
+| SNXX/USDT:USDT | below_1h_threshold | +4.85% | +4.61% |
+| MVLL/USDT:USDT | below_1h_threshold | +4.47% | +4.23% |
+| MUU/USDT:USDT | below_1h_threshold | +4.01% | +3.77% |
+| CSOPSKHYNIX2L/USDT:USDT | below_1h_threshold | +3.27% | +3.03% |
+| KORU/USDT:USDT | below_1h_threshold | +2.95% | +2.72% |
 
 ## 7. 次に見るべき不足
 
