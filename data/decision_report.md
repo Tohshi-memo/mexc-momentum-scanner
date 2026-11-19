@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-19T16:41:32.169678+00:00
+- generated_at: 2026-11-19T16:46:36.571028+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19204**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-19T16:41:19.915630+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.34% price=63289.8
+- 更新: 2026-11-19T16:46:22.556704+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=63094.1
 - Funnel: target 1084 → liquid 150 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.8 >= 65=1
+- Strict後reject: 4h RSI 87.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ICNT/USDT:USDT | +6.70% | $4,396,898.95 |
-| ANTHROPIC/USDT:USDT | +6.19% | $39,262,097.31 |
-| MMT/USDT:USDT | +4.54% | $8,733,939.18 |
-| AMDSTOCK/USDT:USDT | +2.54% | $23,193,600.20 |
-| MRNASTOCK/USDT:USDT | +2.45% | $1,436,809.85 |
+| ICNT/USDT:USDT | +7.04% | $4,440,881.78 |
+| ANTHROPIC/USDT:USDT | +6.23% | $40,162,312.31 |
+| MMT/USDT:USDT | +3.41% | $8,796,578.92 |
+| IRYS/USDT:USDT | +2.80% | $11,541,602.28 |
+| AMDSTOCK/USDT:USDT | +2.14% | $23,342,137.85 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MMT/USDT:USDT | below_1h_threshold | +4.33% | +3.99% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.20% | +1.87% |
-| BTW/USDT:USDT | below_1h_threshold | +2.19% | +1.86% |
-| IRYS/USDT:USDT | below_1h_threshold | +2.09% | +1.76% |
-| ENA/USDT:USDT | below_1h_threshold | +1.47% | +1.13% |
+| MMT/USDT:USDT | below_1h_threshold | +3.34% | +3.31% |
+| IRYS/USDT:USDT | below_1h_threshold | +2.81% | +2.78% |
+| BTW/USDT:USDT | below_1h_threshold | +2.27% | +2.24% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.99% | +1.96% |
+| PHAROS/USDT:USDT | below_1h_threshold | +1.94% | +1.91% |
 
 ## 7. 次に見るべき不足
 
