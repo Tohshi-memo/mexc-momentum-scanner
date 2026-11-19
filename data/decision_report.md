@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-19T00:56:19.328230+00:00
+- generated_at: 2026-11-19T01:01:34.611383+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19168**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-19T00:56:09.997161+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.29% price=63216.6
-- Funnel: target 1080 → liquid 143 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.1 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-19T01:01:24.970531+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=63179.2
+- Funnel: target 1079 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +23.42% | $3,719,470.23 |
-| IRYS/USDT:USDT | +18.55% | $4,854,474.17 |
-| PHAROS/USDT:USDT | +14.68% | $1,816,211.06 |
-| HUMA/USDT:USDT | +14.44% | $2,371,272.85 |
-| LUNC/USDT:USDT | +13.22% | $1,509,219.47 |
+| VELVET/USDT:USDT | +22.96% | $3,760,791.82 |
+| IRYS/USDT:USDT | +22.02% | $4,907,525.26 |
+| PHAROS/USDT:USDT | +18.24% | $1,777,436.72 |
+| LUNC/USDT:USDT | +14.02% | $1,524,281.72 |
+| HUMA/USDT:USDT | +13.88% | $2,376,874.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNXX/USDT:USDT | below_1h_threshold | +4.85% | +4.56% |
-| MVLL/USDT:USDT | below_1h_threshold | +4.47% | +4.18% |
-| MUU/USDT:USDT | below_1h_threshold | +4.01% | +3.72% |
-| CSOPSKHYNIX2L/USDT:USDT | below_1h_threshold | +3.27% | +2.98% |
-| HUMA/USDT:USDT | below_1h_threshold | +2.98% | +2.69% |
+| CSOPSKHYNIX2L/USDT:USDT | below_1h_threshold | +4.39% | +4.37% |
+| KORU/USDT:USDT | below_1h_threshold | +3.99% | +3.96% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.63% | +2.60% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +2.49% | +2.46% |
+| MVLL/USDT:USDT | below_1h_threshold | +2.30% | +2.27% |
 
 ## 7. 次に見るべき不足
 
