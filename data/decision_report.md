@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-19T17:16:32.983735+00:00
+- generated_at: 2026-11-19T17:21:20.024306+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19211**
 
@@ -70,9 +70,9 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-19T17:16:17.334663+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.56% price=62399.3
-- Funnel: target 1084 → liquid 147 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-11-19T17:21:08.750370+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.62% price=62366.4
+- Funnel: target 1084 → liquid 148 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOXS/USDT:USDT | +9.62% | $44,328,540.29 |
-| UVXY/USDT:USDT | +8.38% | $1,959,613.12 |
-| ICNT/USDT:USDT | +6.50% | $4,340,392.75 |
-| MMT/USDT:USDT | +5.57% | $8,561,879.29 |
-| SQQQ/USDT:USDT | +5.21% | $7,503,141.22 |
+| SOXS/USDT:USDT | +9.15% | $44,753,050.33 |
+| UVXY/USDT:USDT | +7.63% | $2,001,991.56 |
+| ICNT/USDT:USDT | +6.22% | $4,355,410.18 |
+| MMT/USDT:USDT | +5.57% | $8,703,614.17 |
+| SQQQ/USDT:USDT | +4.75% | $7,784,948.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UVXY/USDT:USDT | below_1h_threshold | +3.77% | +4.33% |
-| SQQQ/USDT:USDT | below_1h_threshold | +3.04% | +3.61% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +1.36% | +1.92% |
-| MMT/USDT:USDT | below_1h_threshold | +1.19% | +1.76% |
-| NAORIS/USDT:USDT | below_1h_threshold | +0.64% | +1.20% |
+| UVXY/USDT:USDT | below_1h_threshold | +3.77% | +4.39% |
+| SQQQ/USDT:USDT | below_1h_threshold | +3.04% | +3.66% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +1.36% | +1.97% |
+| MMT/USDT:USDT | below_1h_threshold | +1.30% | +1.92% |
+| NIGHT/USDT:USDT | below_1h_threshold | +1.00% | +1.62% |
 
 ## 7. 次に見るべき不足
 
