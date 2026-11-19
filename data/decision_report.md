@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-19T21:01:11.444810+00:00
+- generated_at: 2026-11-19T21:06:22.628439+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19217**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-19T21:01:03.004323+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=62094.9
+- 更新: 2026-11-19T21:06:09.475786+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.39% price=61854.3
 - Funnel: target 1084 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RARE/USDT:USDT | +21.63% | $1,323,827.47 |
-| SKY/USDT:USDT | +14.79% | $3,494,332.67 |
-| UVXY/USDT:USDT | +13.53% | $2,413,476.03 |
-| SOXS/USDT:USDT | +11.53% | $49,607,627.10 |
-| BTW/USDT:USDT | +8.20% | $5,964,432.15 |
+| RARE/USDT:USDT | +22.63% | $1,388,592.58 |
+| SKY/USDT:USDT | +15.27% | $3,568,444.61 |
+| SOXS/USDT:USDT | +12.77% | $49,814,432.63 |
+| UVXY/USDT:USDT | +12.64% | $2,417,417.81 |
+| SQQQ/USDT:USDT | +8.30% | $11,572,596.58 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UVXY/USDT:USDT | below_1h_threshold | +2.47% | +2.47% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.59% | +1.60% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +0.97% | +0.97% |
-| SQQQ/USDT:USDT | below_1h_threshold | +0.80% | +0.80% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.36% | +0.36% |
+| UVXY/USDT:USDT | below_1h_threshold | +2.47% | +2.86% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.59% | +1.98% |
+| SKY/USDT:USDT | below_1h_threshold | +1.18% | +1.57% |
+| EVAA/USDT:USDT | below_1h_threshold | +1.06% | +1.45% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +0.97% | +1.36% |
 
 ## 7. 次に見るべき不足
 
