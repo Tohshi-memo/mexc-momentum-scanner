@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-11-19T13:36:25.278847+00:00
+- generated_at: 2026-11-19T13:41:30.843497+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **19197**
+- closed shadow trades: **19198**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=19197, expectancy=+0.02%
+- 全期間 MARKET基準: n=19198, expectancy=+0.02%
 - 直近20件 MARKET基準: n=20, expectancy=-0.40%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -24,8 +24,8 @@
 | LIMIT_5PCT | 6/20 | 30.0% | +0.95% | **+0.29%** |
 | LIMIT_6PCT | 2/20 | 10.0% | +1.89% | **+0.19%** |
 | LIMIT_4PCT | 14/20 | 70.0% | +0.00% | **+0.00%** |
-| LIMIT_FIB1272 | 8/20 | 40.0% | -0.39% | **-0.16%** |
-| MARKET | 20/20 | 100.0% | -0.40% | **-0.40%** |
+| LIMIT_FIB1272 | 7/20 | 35.0% | -0.47% | **-0.17%** |
+| LIMIT_BB3S | 3/15 | 20.0% | -1.88% | **-0.38%** |
 
 ### シャドウ上位 LONG
 
@@ -47,15 +47,15 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,701.50** / 初期 $100.00 (+1601.50%)
-- 確定: 7380件 (Win 2119 / Loss 2375 / Flat 2886) / skip 8378件
+- 確定: 7380件 (Win 2119 / Loss 2375 / Flat 2886) / skip 8379件
 - 成長率目線: 平均log +0.000384 / 幾何平均 +0.038% per trade / maxDD +8.46%
-- 次の候補: `LIMIT_6PCT` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
+- 次の候補: `LIMIT_8PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: VELVET/USDT:USDT `MARKET` SL_HIT account -0.50% 残高後 $1,701.50
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$430.70** / 初期 $100.00 (+330.70%)
-- 確定: 5023件 (Win 1335 / Loss 1087 / Flat 2601) / skip 7585件
+- 確定: 5023件 (Win 1335 / Loss 1087 / Flat 2601) / skip 7586件
 - 成長率目線: 平均log +0.000291 / 幾何平均 +0.029% per trade / maxDD +4.29%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: SOXL/USDT:USDT `LIMIT_6PCT` EXPIRED account +0.00% 残高後 $430.70
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7356件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7357件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000158 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-19T13:36:11.591554+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.27% price=63677.0
+- 更新: 2026-11-19T13:41:12.349613+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.21% price=63712.0
 - Funnel: target 1084 → liquid 148 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.8 >= 65=1
+- Strict後reject: 4h RSI 74.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BITO/USDT:USDT | +101.19% | $1,991,080.88 |
-| NAORIS/USDT:USDT | +49.75% | $1,411,633.14 |
-| VELVET/USDT:USDT | +34.10% | $9,250,204.21 |
-| IRYS/USDT:USDT | +31.82% | $10,861,236.31 |
-| EVAA/USDT:USDT | +25.11% | $15,045,090.52 |
+| BITO/USDT:USDT | +100.83% | $1,996,921.13 |
+| NAORIS/USDT:USDT | +48.76% | $1,417,144.15 |
+| VELVET/USDT:USDT | +34.36% | $9,338,010.96 |
+| IRYS/USDT:USDT | +32.86% | $10,873,485.50 |
+| EVAA/USDT:USDT | +27.53% | $15,172,778.73 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +2.97% | +3.24% |
-| IRYS/USDT:USDT | below_1h_threshold | +1.88% | +2.15% |
-| LUNC/USDT:USDT | below_1h_threshold | +1.51% | +1.78% |
-| RIVER/USDT:USDT | below_1h_threshold | +1.16% | +1.43% |
-| OPENAI/USDT:USDT | below_1h_threshold | +0.85% | +1.12% |
+| BTW/USDT:USDT | below_1h_threshold | +4.42% | +4.63% |
+| IRYS/USDT:USDT | below_1h_threshold | +2.69% | +2.90% |
+| RIVER/USDT:USDT | below_1h_threshold | +1.80% | +2.01% |
+| LUNC/USDT:USDT | below_1h_threshold | +1.20% | +1.42% |
+| OPENAI/USDT:USDT | below_1h_threshold | +0.99% | +1.20% |
 
 ## 7. 次に見るべき不足
 
