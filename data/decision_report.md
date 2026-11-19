@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-19T12:46:16.710581+00:00
+- generated_at: 2026-11-19T12:51:26.191703+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19196**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-19T12:46:07.889700+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.19% price=63795.2
+- 更新: 2026-11-19T12:51:16.171644+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=63889.6
 - Funnel: target 1084 → liquid 147 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.6 >= 65=1
+- Strict後reject: 4h RSI 76.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BITO/USDT:USDT | +100.59% | $1,908,194.12 |
-| NAORIS/USDT:USDT | +46.91% | $1,281,774.24 |
-| VELVET/USDT:USDT | +30.85% | $8,645,326.01 |
-| IRYS/USDT:USDT | +29.21% | $11,169,905.77 |
-| LUNC/USDT:USDT | +17.30% | $5,524,404.96 |
+| BITO/USDT:USDT | +101.19% | $1,920,845.68 |
+| NAORIS/USDT:USDT | +48.76% | $1,291,808.87 |
+| VELVET/USDT:USDT | +33.76% | $8,757,166.94 |
+| IRYS/USDT:USDT | +29.44% | $11,184,313.88 |
+| EVAA/USDT:USDT | +17.21% | $15,064,264.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IRYS/USDT:USDT | below_1h_threshold | +2.77% | +2.96% |
-| PEPE/USDT:USDT | below_1h_threshold | +1.99% | +2.18% |
-| ANTHROPIC/USDT:USDT | below_1h_threshold | +1.31% | +1.50% |
-| MUU/USDT:USDT | below_1h_threshold | +1.30% | +1.49% |
-| MVLL/USDT:USDT | below_1h_threshold | +1.24% | +1.43% |
+| IRYS/USDT:USDT | below_1h_threshold | +2.81% | +2.86% |
+| PEPE/USDT:USDT | below_1h_threshold | +2.08% | +2.12% |
+| ANTHROPIC/USDT:USDT | below_1h_threshold | +1.31% | +1.35% |
+| MUU/USDT:USDT | below_1h_threshold | +1.30% | +1.35% |
+| NAORIS/USDT:USDT | below_1h_threshold | +1.26% | +1.30% |
 
 ## 7. 次に見るべき不足
 
