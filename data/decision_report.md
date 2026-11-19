@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-19T08:01:25.311405+00:00
+- generated_at: 2026-11-19T08:06:22.257937+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19187**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-19T08:01:13.810912+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=63680.4
+- 更新: 2026-11-19T08:06:08.719046+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.15% price=63613.8
 - Funnel: target 1081 → liquid 145 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BITO/USDT:USDT | +100.47% | $1,028,026.00 |
-| IRYS/USDT:USDT | +32.86% | $10,558,081.36 |
-| BTW/USDT:USDT | +31.55% | $4,702,680.86 |
-| VELVET/USDT:USDT | +23.25% | $5,373,238.49 |
-| ARIA/USDT:USDT | +15.57% | $2,206,705.91 |
+| BITO/USDT:USDT | +99.76% | $1,033,238.29 |
+| IRYS/USDT:USDT | +34.49% | $10,630,073.59 |
+| BTW/USDT:USDT | +32.08% | $4,811,776.44 |
+| VELVET/USDT:USDT | +23.88% | $5,383,167.27 |
+| ARIA/USDT:USDT | +15.45% | $2,215,023.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CSOPSKHYNIX2L/USDT:USDT | below_1h_threshold | +1.02% | +1.07% |
-| SNXX/USDT:USDT | below_1h_threshold | +0.83% | +0.87% |
-| LUNC/USDT:USDT | below_1h_threshold | +0.80% | +0.84% |
-| KORU/USDT:USDT | below_1h_threshold | +0.76% | +0.80% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +0.73% | +0.77% |
+| LUNC/USDT:USDT | below_1h_threshold | +1.32% | +1.47% |
+| CSOPSKHYNIX2L/USDT:USDT | below_1h_threshold | +1.02% | +1.17% |
+| SNXX/USDT:USDT | below_1h_threshold | +0.83% | +0.98% |
+| KORU/USDT:USDT | below_1h_threshold | +0.76% | +0.91% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +0.73% | +0.88% |
 
 ## 7. 次に見るべき不足
 
