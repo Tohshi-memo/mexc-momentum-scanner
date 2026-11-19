@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-19T02:06:20.381213+00:00
+- generated_at: 2026-11-19T02:11:15.996653+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19175**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-19T02:06:07.320033+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=62756.8
+- 更新: 2026-11-19T02:11:04.931984+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.17% price=62713.0
 - Funnel: target 1079 → liquid 140 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IRYS/USDT:USDT | +35.53% | $6,652,984.07 |
-| PHAROS/USDT:USDT | +20.67% | $1,983,022.32 |
-| VELVET/USDT:USDT | +18.35% | $4,055,889.98 |
-| HUMA/USDT:USDT | +15.76% | $2,474,682.06 |
-| LUNC/USDT:USDT | +13.79% | $1,768,712.49 |
+| IRYS/USDT:USDT | +38.14% | $6,748,777.95 |
+| VELVET/USDT:USDT | +21.47% | $4,071,946.43 |
+| PHAROS/USDT:USDT | +17.83% | $2,004,195.40 |
+| HUMA/USDT:USDT | +17.56% | $2,480,115.14 |
+| LUNC/USDT:USDT | +14.54% | $1,786,359.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PHAROS/USDT:USDT | below_1h_threshold | +3.97% | +4.06% |
-| BTW/USDT:USDT | below_1h_threshold | +2.31% | +2.41% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +1.56% | +1.66% |
-| ANTHROPIC/USDT:USDT | below_1h_threshold | +0.72% | +0.82% |
-| EVAA/USDT:USDT | below_1h_threshold | +0.61% | +0.71% |
+| BTW/USDT:USDT | below_1h_threshold | +2.43% | +2.60% |
+| VELVET/USDT:USDT | below_1h_threshold | +1.98% | +2.15% |
+| PHAROS/USDT:USDT | below_1h_threshold | +1.56% | +1.73% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.42% | +1.59% |
+| IRYS/USDT:USDT | below_1h_threshold | +0.72% | +0.89% |
 
 ## 7. 次に見るべき不足
 
