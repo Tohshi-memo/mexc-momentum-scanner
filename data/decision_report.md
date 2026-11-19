@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-19T02:26:23.688530+00:00
+- generated_at: 2026-11-19T02:31:35.389688+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19175**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-19T02:26:13.739237+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=62782.7
-- Funnel: target 1079 → liquid 140 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.1 >= 65=1
+- 更新: 2026-11-19T02:31:25.329596+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.31% price=62625.9
+- Funnel: target 1079 → liquid 141 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 83.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IRYS/USDT:USDT | +42.20% | $7,093,132.45 |
-| VELVET/USDT:USDT | +26.93% | $4,129,264.08 |
-| HUMA/USDT:USDT | +19.54% | $2,505,541.06 |
-| LUNC/USDT:USDT | +15.29% | $1,822,495.41 |
-| ZRO/USDT:USDT | +9.09% | $3,115,610.79 |
+| IRYS/USDT:USDT | +33.56% | $7,278,281.36 |
+| VELVET/USDT:USDT | +27.13% | $4,155,911.02 |
+| HUMA/USDT:USDT | +17.89% | $2,513,122.33 |
+| LUNC/USDT:USDT | +15.62% | $1,827,565.70 |
+| ZRO/USDT:USDT | +8.75% | $3,130,563.41 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_1h_threshold | +4.63% | +4.68% |
-| IRYS/USDT:USDT | below_1h_threshold | +3.47% | +3.52% |
-| VVV/USDT:USDT | below_1h_threshold | +1.68% | +1.74% |
-| PONS/USDT:USDT | below_1h_threshold | +1.39% | +1.45% |
-| HUMA/USDT:USDT | below_1h_threshold | +1.32% | +1.38% |
+| BTW/USDT:USDT | below_1h_threshold | +4.52% | +4.83% |
+| BLESS/USDT:USDT | below_1h_threshold | +3.86% | +4.17% |
+| VVV/USDT:USDT | below_1h_threshold | +2.18% | +2.49% |
+| LUNC/USDT:USDT | below_1h_threshold | +1.45% | +1.76% |
+| ANTHROPIC/USDT:USDT | below_1h_threshold | +1.24% | +1.54% |
 
 ## 7. 次に見るべき不足
 
