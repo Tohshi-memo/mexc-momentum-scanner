@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-19T16:01:42.954576+00:00
+- generated_at: 2026-11-19T16:06:39.209381+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19202**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-19T16:01:25.005404+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=63113.7
+- 更新: 2026-11-19T16:06:21.080240+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=63014.5
 - Funnel: target 1084 → liquid 145 → pre 50 → checked 50 → surge 2 → strict 2
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PIPPIN/USDT:USDT | +0.66% | $2,577,156.46 |
-| SOXS/USDT:USDT | +0.49% | $43,466,003.85 |
-| AKE/USDT:USDT | +0.39% | $7,319,961.89 |
-| GRASS/USDT:USDT | +0.27% | $1,383,069.27 |
-| JCT/USDT:USDT | +0.25% | $1,614,241.73 |
+| ANTHROPIC/USDT:USDT | +1.22% | $33,109,382.14 |
+| MMT/USDT:USDT | +1.10% | $7,914,326.78 |
+| BTW/USDT:USDT | +1.07% | $5,867,557.37 |
+| ICNT/USDT:USDT | +0.97% | $4,240,041.88 |
+| VELVET/USDT:USDT | +0.77% | $10,728,322.61 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SQQQ/USDT:USDT | below_1h_threshold | +4.85% | +4.80% |
-| MMT/USDT:USDT | below_1h_threshold | +1.28% | +1.23% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +0.66% | +0.60% |
-| AKE/USDT:USDT | below_1h_threshold | +0.39% | +0.33% |
-| VELVET/USDT:USDT | below_1h_threshold | +0.30% | +0.25% |
+| TTWOSTOCK/USDT:USDT | below_1h_threshold | +1.45% | +1.55% |
+| ANTHROPIC/USDT:USDT | below_1h_threshold | +1.22% | +1.32% |
+| MMT/USDT:USDT | below_1h_threshold | +1.21% | +1.31% |
+| BTW/USDT:USDT | below_1h_threshold | +1.03% | +1.12% |
+| ICNT/USDT:USDT | below_1h_threshold | +0.98% | +1.08% |
 
 ## 7. 次に見るべき不足
 
