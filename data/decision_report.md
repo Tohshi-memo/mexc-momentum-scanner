@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-19T23:16:22.881510+00:00
+- generated_at: 2026-11-19T23:21:25.478406+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19221**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7380件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7381件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000231 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-19T23:16:08.998825+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.20% price=62015.1
-- Funnel: target 1084 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-19T23:21:12.233744+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=62073.9
+- Funnel: target 1084 → liquid 149 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RARE/USDT:USDT | +20.27% | $2,128,506.57 |
-| SOXS/USDT:USDT | +14.04% | $47,473,352.36 |
-| SKY/USDT:USDT | +13.58% | $4,702,337.87 |
-| UVXY/USDT:USDT | +12.77% | $2,670,675.02 |
-| HUMA/USDT:USDT | +11.82% | $1,335,034.71 |
+| RARE/USDT:USDT | +19.72% | $2,140,435.32 |
+| HUMA/USDT:USDT | +14.33% | $1,346,950.14 |
+| SOXS/USDT:USDT | +13.48% | $47,503,639.53 |
+| SKY/USDT:USDT | +13.17% | $4,738,062.22 |
+| UVXY/USDT:USDT | +11.66% | $2,699,640.20 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HUMA/USDT:USDT | below_1h_threshold | +3.34% | +3.54% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +0.75% | +0.95% |
-| AAPLSTOCK/USDT:USDT | below_1h_threshold | +0.62% | +0.82% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +0.54% | +0.74% |
-| BTW/USDT:USDT | below_1h_threshold | +0.42% | +0.63% |
+| BTW/USDT:USDT | below_1h_threshold | +0.64% | +0.75% |
+| AAPLSTOCK/USDT:USDT | below_1h_threshold | +0.62% | +0.73% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +0.58% | +0.69% |
+| NIGHT/USDT:USDT | below_1h_threshold | +0.43% | +0.54% |
+| DOT/USDT:USDT | below_1h_threshold | +0.39% | +0.50% |
 
 ## 7. 次に見るべき不足
 
