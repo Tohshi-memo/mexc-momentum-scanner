@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-19T13:16:14.508376+00:00
+- generated_at: 2026-11-19T13:21:20.017998+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19196**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7354件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7355件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000166 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-19T13:16:03.431484+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=63744.5
-- Funnel: target 1084 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-19T13:21:06.652441+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.19% price=63724.7
+- Funnel: target 1084 → liquid 147 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BITO/USDT:USDT | +101.67% | $1,960,364.46 |
-| NAORIS/USDT:USDT | +49.57% | $1,340,673.36 |
-| IRYS/USDT:USDT | +33.15% | $10,726,711.56 |
-| VELVET/USDT:USDT | +32.25% | $9,029,702.56 |
-| EVAA/USDT:USDT | +19.62% | $14,383,080.51 |
+| BITO/USDT:USDT | +100.95% | $1,964,492.73 |
+| NAORIS/USDT:USDT | +37.20% | $1,373,030.79 |
+| IRYS/USDT:USDT | +33.56% | $10,746,802.41 |
+| VELVET/USDT:USDT | +33.53% | $9,070,636.87 |
+| EVAA/USDT:USDT | +20.42% | $14,521,886.33 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HUMA/USDT:USDT | below_1h_threshold | +3.97% | +4.13% |
-| IRYS/USDT:USDT | below_1h_threshold | +2.87% | +3.03% |
-| EVAA/USDT:USDT | below_1h_threshold | +2.54% | +2.70% |
-| BTW/USDT:USDT | below_1h_threshold | +1.45% | +1.61% |
-| RIVER/USDT:USDT | below_1h_threshold | +0.82% | +0.98% |
+| IRYS/USDT:USDT | below_1h_threshold | +3.27% | +3.46% |
+| BTW/USDT:USDT | below_1h_threshold | +3.24% | +3.43% |
+| EVAA/USDT:USDT | below_1h_threshold | +3.17% | +3.36% |
+| RIVER/USDT:USDT | below_1h_threshold | +1.26% | +1.45% |
+| OPENAI/USDT:USDT | below_1h_threshold | +0.72% | +0.91% |
 
 ## 7. 次に見るべき不足
 
