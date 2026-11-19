@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-11-19T11:21:17.200288+00:00
+- generated_at: 2026-11-19T11:26:26.497860+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **19194**
+- closed shadow trades: **19195**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=19194, expectancy=+0.02%
+- 全期間 MARKET基準: n=19195, expectancy=+0.02%
 - 直近20件 MARKET基準: n=20, expectancy=-0.40%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -31,7 +31,7 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_BB3S_LONG | 4/6 | 66.7% | +3.39% | **+2.26%** |
+| LIMIT_BB3S_LONG | 3/5 | 60.0% | +5.85% | **+3.51%** |
 | LIMIT_1PCT_LONG | 16/20 | 80.0% | +1.46% | **+1.17%** |
 | LIMIT_3PCT_LONG | 12/20 | 60.0% | +1.80% | **+1.08%** |
 | LIMIT_2PCT_LONG | 14/20 | 70.0% | +1.46% | **+1.02%** |
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,701.50** / 初期 $100.00 (+1601.50%)
-- 確定: 7380件 (Win 2119 / Loss 2375 / Flat 2886) / skip 8375件
+- 確定: 7380件 (Win 2119 / Loss 2375 / Flat 2886) / skip 8376件
 - 成長率目線: 平均log +0.000384 / 幾何平均 +0.038% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_6PCT` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: VELVET/USDT:USDT `MARKET` SL_HIT account -0.50% 残高後 $1,701.50
@@ -55,7 +55,7 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$430.70** / 初期 $100.00 (+330.70%)
-- 確定: 5023件 (Win 1335 / Loss 1087 / Flat 2601) / skip 7582件
+- 確定: 5023件 (Win 1335 / Loss 1087 / Flat 2601) / skip 7583件
 - 成長率目線: 平均log +0.000291 / 幾何平均 +0.029% per trade / maxDD +4.29%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: SOXL/USDT:USDT `LIMIT_6PCT` EXPIRED account +0.00% 残高後 $430.70
@@ -65,13 +65,13 @@
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
 - 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7352件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000114 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000167 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-19T11:21:06.041033+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=63734.0
+- 更新: 2026-11-19T11:26:14.903213+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=63783.1
 - Funnel: target 1084 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BITO/USDT:USDT | +101.07% | $1,622,049.58 |
-| NAORIS/USDT:USDT | +46.60% | $1,133,847.91 |
-| VELVET/USDT:USDT | +29.56% | $7,258,519.46 |
-| IRYS/USDT:USDT | +28.40% | $10,899,232.12 |
-| ICNT/USDT:USDT | +25.86% | $5,168,334.94 |
+| BITO/USDT:USDT | +100.71% | $1,651,679.70 |
+| NAORIS/USDT:USDT | +46.19% | $1,138,666.58 |
+| VELVET/USDT:USDT | +28.56% | $7,435,477.36 |
+| IRYS/USDT:USDT | +28.17% | $10,920,406.34 |
+| ICNT/USDT:USDT | +26.77% | $5,185,765.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +3.50% | +3.54% |
-| EVAA/USDT:USDT | below_1h_threshold | +2.33% | +2.37% |
-| CRWVSTOCK/USDT:USDT | below_1h_threshold | +1.53% | +1.57% |
-| MUU/USDT:USDT | below_1h_threshold | +1.52% | +1.56% |
-| KORU/USDT:USDT | below_1h_threshold | +1.46% | +1.50% |
+| BTW/USDT:USDT | below_1h_threshold | +3.62% | +3.58% |
+| EVAA/USDT:USDT | below_1h_threshold | +2.66% | +2.63% |
+| CRWVSTOCK/USDT:USDT | below_1h_threshold | +1.53% | +1.50% |
+| MUU/USDT:USDT | below_1h_threshold | +1.52% | +1.49% |
+| KORU/USDT:USDT | below_1h_threshold | +1.46% | +1.42% |
 
 ## 7. 次に見るべき不足
 
