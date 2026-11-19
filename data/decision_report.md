@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-19T15:11:26.780399+00:00
+- generated_at: 2026-11-19T15:16:24.212284+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19199**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-19T15:11:12.955304+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=63559.9
+- 更新: 2026-11-19T15:16:12.948678+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=63456.1
 - Funnel: target 1084 → liquid 145 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BITO/USDT:USDT | +100.83% | $2,282,111.71 |
-| NAORIS/USDT:USDT | +48.62% | $1,476,290.30 |
-| EVAA/USDT:USDT | +36.03% | $16,908,705.93 |
-| VELVET/USDT:USDT | +35.27% | $10,237,804.47 |
-| IRYS/USDT:USDT | +31.13% | $10,891,223.01 |
+| BITO/USDT:USDT | +100.59% | $2,284,581.94 |
+| NAORIS/USDT:USDT | +48.40% | $1,478,955.09 |
+| EVAA/USDT:USDT | +37.06% | $17,009,527.38 |
+| VELVET/USDT:USDT | +33.73% | $10,292,467.62 |
+| IRYS/USDT:USDT | +31.13% | $10,946,471.70 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +3.22% | +3.17% |
-| ARIA/USDT:USDT | below_1h_threshold | +3.16% | +3.11% |
-| MUU/USDT:USDT | below_1h_threshold | +3.01% | +2.96% |
-| SNXX/USDT:USDT | below_1h_threshold | +2.95% | +2.90% |
-| PLTRSTOCK/USDT:USDT | below_1h_threshold | +2.73% | +2.67% |
+| ARIA/USDT:USDT | below_1h_threshold | +4.90% | +5.01% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +3.22% | +3.33% |
+| MUU/USDT:USDT | below_1h_threshold | +3.01% | +3.12% |
+| IRYS/USDT:USDT | below_1h_threshold | +3.00% | +3.11% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.95% | +3.06% |
 
 ## 7. 次に見るべき不足
 
