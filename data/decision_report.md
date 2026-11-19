@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-19T04:21:22.712898+00:00
+- generated_at: 2026-11-19T04:26:22.424252+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19178**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-19T04:21:13.010982+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.26% price=63345.5
+- 更新: 2026-11-19T04:26:08.863911+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.29% price=63366.3
 - Funnel: target 1080 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IRYS/USDT:USDT | +32.00% | $9,087,483.91 |
-| VELVET/USDT:USDT | +23.23% | $4,492,011.92 |
-| LUNC/USDT:USDT | +20.36% | $2,207,327.91 |
-| HUMA/USDT:USDT | +15.22% | $2,601,128.70 |
-| BTW/USDT:USDT | +14.15% | $4,170,553.58 |
+| IRYS/USDT:USDT | +30.84% | $9,128,704.32 |
+| VELVET/USDT:USDT | +22.37% | $4,502,256.79 |
+| LUNC/USDT:USDT | +21.99% | $2,224,360.35 |
+| HUMA/USDT:USDT | +14.08% | $2,604,047.78 |
+| BTW/USDT:USDT | +12.33% | $4,220,222.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CSOPSKHYNIX2L/USDT:USDT | below_1h_threshold | +3.12% | +2.86% |
-| KORU/USDT:USDT | below_1h_threshold | +3.09% | +2.83% |
-| LUNC/USDT:USDT | below_1h_threshold | +2.88% | +2.62% |
-| BTW/USDT:USDT | below_1h_threshold | +2.87% | +2.61% |
-| BULLA/USDT:USDT | below_1h_threshold | +2.84% | +2.58% |
+| LUNC/USDT:USDT | below_1h_threshold | +4.43% | +4.14% |
+| CSOPSKHYNIX2L/USDT:USDT | below_1h_threshold | +3.12% | +2.83% |
+| KORU/USDT:USDT | below_1h_threshold | +3.09% | +2.80% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.33% | +2.04% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.27% | +1.98% |
 
 ## 7. 次に見るべき不足
 
