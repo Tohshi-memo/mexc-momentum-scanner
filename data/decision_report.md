@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-19T16:36:33.430131+00:00
+- generated_at: 2026-11-19T16:41:32.169678+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19204**
 
@@ -63,38 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7369件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7370件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000115 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-19T16:36:15.690236+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=63052.6
-- Funnel: target 1084 → liquid 149 → pre 50 → checked 50 → surge 2 → strict 2
+- 更新: 2026-11-19T16:41:19.915630+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.34% price=63289.8
+- Funnel: target 1084 → liquid 150 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 87.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ANTHROPIC/USDT:USDT | +5.59% | $38,317,824.24 |
-| ICNT/USDT:USDT | +4.49% | $4,356,603.94 |
-| MMT/USDT:USDT | +2.86% | $8,624,217.65 |
-| MRNASTOCK/USDT:USDT | +2.01% | $1,429,644.50 |
-| BEAT/USDT:USDT | +1.71% | $1,220,500.41 |
+| ICNT/USDT:USDT | +6.70% | $4,396,898.95 |
+| ANTHROPIC/USDT:USDT | +6.19% | $39,262,097.31 |
+| MMT/USDT:USDT | +4.54% | $8,733,939.18 |
+| AMDSTOCK/USDT:USDT | +2.54% | $23,193,600.20 |
+| MRNASTOCK/USDT:USDT | +2.45% | $1,436,809.85 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ICNT/USDT:USDT | below_1h_threshold | +4.52% | +4.56% |
-| MMT/USDT:USDT | below_1h_threshold | +3.34% | +3.38% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.71% | +1.75% |
-| IRYS/USDT:USDT | below_1h_threshold | +1.57% | +1.61% |
-| TTWOSTOCK/USDT:USDT | below_1h_threshold | +1.45% | +1.49% |
+| MMT/USDT:USDT | below_1h_threshold | +4.33% | +3.99% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.20% | +1.87% |
+| BTW/USDT:USDT | below_1h_threshold | +2.19% | +1.86% |
+| IRYS/USDT:USDT | below_1h_threshold | +2.09% | +1.76% |
+| ENA/USDT:USDT | below_1h_threshold | +1.47% | +1.13% |
 
 ## 7. 次に見るべき不足
 
