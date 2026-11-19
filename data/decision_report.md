@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-19T09:41:21.732297+00:00
+- generated_at: 2026-11-19T09:46:21.196816+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19190**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-19T09:41:08.330908+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.18% price=63820.3
+- 更新: 2026-11-19T09:46:07.473093+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.24% price=63858.5
 - Funnel: target 1081 → liquid 146 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BITO/USDT:USDT | +102.27% | $1,310,625.25 |
-| IRYS/USDT:USDT | +33.91% | $11,199,823.21 |
-| VELVET/USDT:USDT | +29.05% | $5,753,269.40 |
-| ICNT/USDT:USDT | +23.00% | $5,391,296.28 |
-| LUNC/USDT:USDT | +21.44% | $4,623,704.07 |
+| BITO/USDT:USDT | +101.19% | $1,312,556.02 |
+| IRYS/USDT:USDT | +34.60% | $11,215,368.73 |
+| VELVET/USDT:USDT | +30.30% | $5,776,220.95 |
+| ICNT/USDT:USDT | +23.15% | $5,409,666.66 |
+| LUNC/USDT:USDT | +22.48% | $4,641,219.91 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ICNT/USDT:USDT | below_1h_threshold | +4.33% | +4.15% |
-| LUNC/USDT:USDT | below_1h_threshold | +3.15% | +2.97% |
-| EVAA/USDT:USDT | below_1h_threshold | +3.00% | +2.82% |
-| STRK/USDT:USDT | below_1h_threshold | +2.56% | +2.38% |
-| VELVET/USDT:USDT | below_1h_threshold | +1.59% | +1.41% |
+| ICNT/USDT:USDT | below_1h_threshold | +4.74% | +4.50% |
+| LUNC/USDT:USDT | below_1h_threshold | +4.20% | +3.96% |
+| STRK/USDT:USDT | below_1h_threshold | +2.62% | +2.38% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.58% | +2.34% |
+| EVAA/USDT:USDT | below_1h_threshold | +2.05% | +1.81% |
 
 ## 7. 次に見るべき不足
 
