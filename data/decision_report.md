@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-19T16:06:39.209381+00:00
+- generated_at: 2026-11-19T16:11:32.067010+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19202**
 
@@ -70,9 +70,9 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-19T16:06:21.080240+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=63014.5
-- Funnel: target 1084 → liquid 145 → pre 50 → checked 50 → surge 2 → strict 2
+- 更新: 2026-11-19T16:11:17.197861+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=63125.4
+- Funnel: target 1084 → liquid 146 → pre 50 → checked 50 → surge 2 → strict 2
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ANTHROPIC/USDT:USDT | +1.22% | $33,109,382.14 |
-| MMT/USDT:USDT | +1.10% | $7,914,326.78 |
-| BTW/USDT:USDT | +1.07% | $5,867,557.37 |
-| ICNT/USDT:USDT | +0.97% | $4,240,041.88 |
-| VELVET/USDT:USDT | +0.77% | $10,728,322.61 |
+| AKE/USDT:USDT | +4.47% | $7,539,158.54 |
+| ICNT/USDT:USDT | +3.05% | $4,263,566.96 |
+| ANTHROPIC/USDT:USDT | +2.47% | $33,777,548.76 |
+| BTW/USDT:USDT | +1.90% | $5,889,302.08 |
+| AMDSTOCK/USDT:USDT | +1.38% | $20,547,050.05 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TTWOSTOCK/USDT:USDT | below_1h_threshold | +1.45% | +1.55% |
-| ANTHROPIC/USDT:USDT | below_1h_threshold | +1.22% | +1.32% |
-| MMT/USDT:USDT | below_1h_threshold | +1.21% | +1.31% |
-| BTW/USDT:USDT | below_1h_threshold | +1.03% | +1.12% |
-| ICNT/USDT:USDT | below_1h_threshold | +0.98% | +1.08% |
+| SQQQ/USDT:USDT | below_1h_threshold | +4.85% | +4.78% |
+| AKE/USDT:USDT | below_1h_threshold | +4.62% | +4.55% |
+| ICNT/USDT:USDT | below_1h_threshold | +3.06% | +2.98% |
+| ANTHROPIC/USDT:USDT | below_1h_threshold | +2.46% | +2.38% |
+| BTW/USDT:USDT | below_1h_threshold | +1.93% | +1.85% |
 
 ## 7. 次に見るべき不足
 
