@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-19T03:31:25.306716+00:00
+- generated_at: 2026-11-19T03:36:17.005793+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19176**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-19T03:31:11.469891+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.58% price=62925.0
+- 更新: 2026-11-19T03:36:06.026898+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.67% price=62986.8
 - Funnel: target 1080 → liquid 140 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IRYS/USDT:USDT | +41.73% | $7,823,106.73 |
-| VELVET/USDT:USDT | +19.94% | $4,356,382.22 |
-| LUNC/USDT:USDT | +19.81% | $1,991,121.05 |
-| HUMA/USDT:USDT | +19.37% | $2,546,179.42 |
-| ZRO/USDT:USDT | +8.87% | $3,132,496.25 |
+| IRYS/USDT:USDT | +41.85% | $7,877,538.73 |
+| LUNC/USDT:USDT | +19.81% | $1,999,319.95 |
+| HUMA/USDT:USDT | +18.87% | $2,547,466.84 |
+| VELVET/USDT:USDT | +18.48% | $4,364,450.42 |
+| ZRO/USDT:USDT | +9.09% | $3,134,376.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IRYS/USDT:USDT | below_1h_threshold | +4.42% | +3.85% |
-| BTW/USDT:USDT | below_1h_threshold | +3.44% | +2.86% |
-| LUNC/USDT:USDT | below_1h_threshold | +1.74% | +1.16% |
-| HUMA/USDT:USDT | below_1h_threshold | +1.60% | +1.02% |
-| BULLA/USDT:USDT | below_1h_threshold | +1.56% | +0.98% |
+| IRYS/USDT:USDT | below_relative_strength | +5.02% | +4.35% |
+| BTW/USDT:USDT | below_1h_threshold | +2.86% | +2.18% |
+| PONS/USDT:USDT | below_1h_threshold | +1.75% | +1.08% |
+| LUNC/USDT:USDT | below_1h_threshold | +1.63% | +0.95% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.52% | +0.84% |
 
 ## 7. 次に見るべき不足
 
