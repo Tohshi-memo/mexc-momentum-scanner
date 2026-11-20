@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-20T15:11:32.641930+00:00
+- generated_at: 2026-11-20T15:16:36.800258+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19248**
 
@@ -70,9 +70,9 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-20T15:11:14.958153+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -1.10% price=61067.2
-- Funnel: target 1087 → liquid 154 → pre 50 → checked 50 → surge 2 → strict 2
+- 更新: 2026-11-20T15:16:18.541825+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -1.62% price=60744.7
+- Funnel: target 1087 → liquid 156 → pre 50 → checked 50 → surge 2 → strict 2
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KERNEL/USDT:USDT | +37.91% | $1,377,190.89 |
-| SOXS/USDT:USDT | +24.48% | $70,974,450.10 |
-| BLESS/USDT:USDT | +20.53% | $18,810,366.11 |
-| HUMA/USDT:USDT | +20.08% | $1,524,455.67 |
-| CYBER/USDT:USDT | +16.99% | $2,181,680.78 |
+| KERNEL/USDT:USDT | +38.27% | $1,387,228.14 |
+| SOXS/USDT:USDT | +26.20% | $71,127,112.24 |
+| HUMA/USDT:USDT | +21.35% | $1,541,097.95 |
+| BLESS/USDT:USDT | +20.17% | $18,852,356.40 |
+| CYBER/USDT:USDT | +17.34% | $2,184,598.91 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +4.74% | +5.84% |
-| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +4.08% | +5.18% |
-| MSFTSTOCK/USDT:USDT | below_1h_threshold | +2.89% | +4.00% |
-| TESLA/USDT:USDT | below_1h_threshold | +2.30% | +3.40% |
-| KERNEL/USDT:USDT | below_1h_threshold | +1.11% | +2.21% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +4.74% | +6.36% |
+| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +4.08% | +5.70% |
+| MSFTSTOCK/USDT:USDT | below_1h_threshold | +2.89% | +4.52% |
+| TESLA/USDT:USDT | below_1h_threshold | +2.30% | +3.93% |
+| KERNEL/USDT:USDT | below_1h_threshold | +1.44% | +3.07% |
 
 ## 7. 次に見るべき不足
 
