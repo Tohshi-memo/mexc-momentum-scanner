@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-20T05:36:22.470255+00:00
+- generated_at: 2026-11-20T05:41:24.017962+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19229**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7387件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7388件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000085 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-20T05:36:08.754464+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.15% price=61585.8
-- Funnel: target 1084 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-20T05:41:09.137609+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.28% price=61662.7
+- Funnel: target 1084 → liquid 156 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOXS/USDT:USDT | +19.82% | $53,292,311.55 |
-| BARD/USDT:USDT | +18.75% | $1,588,702.22 |
-| UVXY/USDT:USDT | +16.77% | $3,598,656.91 |
-| BLESS/USDT:USDT | +15.63% | $8,686,631.92 |
-| HUMA/USDT:USDT | +12.76% | $1,483,687.47 |
+| BARD/USDT:USDT | +20.87% | $1,598,211.39 |
+| SOXS/USDT:USDT | +19.98% | $53,471,627.60 |
+| UVXY/USDT:USDT | +16.99% | $3,599,555.17 |
+| BLESS/USDT:USDT | +15.43% | $8,721,193.93 |
+| HUMA/USDT:USDT | +12.64% | $1,486,721.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +3.05% | +2.89% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +2.62% | +2.46% |
-| HUMA/USDT:USDT | below_1h_threshold | +2.16% | +2.01% |
-| UVXY/USDT:USDT | below_1h_threshold | +1.91% | +1.76% |
-| BARD/USDT:USDT | below_1h_threshold | +1.72% | +1.56% |
+| BARD/USDT:USDT | below_1h_threshold | +3.54% | +3.26% |
+| SOXS/USDT:USDT | below_1h_threshold | +3.05% | +2.77% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +2.88% | +2.60% |
+| HUMA/USDT:USDT | below_1h_threshold | +1.97% | +1.69% |
+| UVXY/USDT:USDT | below_1h_threshold | +1.91% | +1.64% |
 
 ## 7. 次に見るべき不足
 
