@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-20T12:31:22.114910+00:00
+- generated_at: 2026-11-20T12:36:07.766112+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19243**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-20T12:31:06.700502+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.44% price=61515.1
+- 更新: 2026-11-20T12:35:58.446082+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.29% price=61606.4
 - Funnel: target 1087 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOXS/USDT:USDT | +22.08% | $64,445,813.35 |
-| CYBER/USDT:USDT | +20.02% | $1,960,749.74 |
-| UVXY/USDT:USDT | +16.63% | $4,303,613.74 |
-| BLESS/USDT:USDT | +16.15% | $17,018,687.15 |
-| EVAA/USDT:USDT | +15.44% | $27,636,163.94 |
+| SOXS/USDT:USDT | +21.55% | $65,047,381.62 |
+| CYBER/USDT:USDT | +18.73% | $1,967,010.91 |
+| BLESS/USDT:USDT | +17.86% | $17,070,732.43 |
+| UVXY/USDT:USDT | +16.23% | $4,313,398.77 |
+| ICNT/USDT:USDT | +14.73% | $5,031,080.96 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UVXY/USDT:USDT | below_1h_threshold | +3.19% | +3.63% |
-| ICNT/USDT:USDT | below_1h_threshold | +2.50% | +2.94% |
-| BLESS/USDT:USDT | below_1h_threshold | +1.58% | +2.02% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +1.40% | +1.84% |
-| SQQQ/USDT:USDT | below_1h_threshold | +1.02% | +1.46% |
+| ICNT/USDT:USDT | below_1h_threshold | +3.43% | +3.72% |
+| BLESS/USDT:USDT | below_1h_threshold | +3.19% | +3.48% |
+| UVXY/USDT:USDT | below_1h_threshold | +3.19% | +3.48% |
+| SQQQ/USDT:USDT | below_1h_threshold | +1.02% | +1.31% |
+| HUMA/USDT:USDT | below_1h_threshold | +0.90% | +1.19% |
 
 ## 7. 次に見るべき不足
 
