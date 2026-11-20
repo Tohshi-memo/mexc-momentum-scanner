@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-20T19:51:35.941445+00:00
+- generated_at: 2026-11-20T19:56:26.284130+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19264**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-20T19:51:20.144769+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.20% price=58495.5
+- 更新: 2026-11-20T19:56:14.410199+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.29% price=58545.4
 - Funnel: target 1087 → liquid 166 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +27.59% | $24,990,476.89 |
-| DCTY/USDT:USDT | +9.41% | $1,886,151.32 |
-| RARE/USDT:USDT | +9.30% | $6,923,389.27 |
-| SKDD/USDT:USDT | +7.86% | $1,037,653.33 |
-| PIEVERSE/USDT:USDT | +7.72% | $4,091,259.84 |
+| AKE/USDT:USDT | +27.04% | $25,005,928.11 |
+| RARE/USDT:USDT | +9.85% | $6,950,397.69 |
+| DCTY/USDT:USDT | +8.07% | $1,894,277.19 |
+| SKDD/USDT:USDT | +7.98% | $1,039,647.55 |
+| PIEVERSE/USDT:USDT | +7.60% | $4,097,304.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ANTHROPIC/USDT:USDT | below_1h_threshold | +2.60% | +2.40% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +1.73% | +1.53% |
-| NGAS/USDT:USDT | below_1h_threshold | +1.70% | +1.49% |
-| BLESS/USDT:USDT | below_1h_threshold | +1.63% | +1.42% |
-| JUP/USDT:USDT | below_1h_threshold | +1.21% | +1.01% |
+| ANTHROPIC/USDT:USDT | below_1h_threshold | +2.60% | +2.31% |
+| VVV/USDT:USDT | below_1h_threshold | +2.33% | +2.05% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +1.73% | +1.45% |
+| NGAS/USDT:USDT | below_1h_threshold | +1.70% | +1.41% |
+| JUP/USDT:USDT | below_1h_threshold | +1.39% | +1.10% |
 
 ## 7. 次に見るべき不足
 
