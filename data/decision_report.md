@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-11-20T10:11:15.715808+00:00
+- generated_at: 2026-11-20T10:16:25.563627+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **19236**
+- closed shadow trades: **19237**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=19236, expectancy=+0.02%
+- 全期間 MARKET基準: n=19237, expectancy=+0.02%
 - 直近20件 MARKET基準: n=20, expectancy=+0.15%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,701.37** / 初期 $100.00 (+1601.37%)
-- 確定: 7386件 (Win 2122 / Loss 2378 / Flat 2886) / skip 8411件
+- 確定: 7386件 (Win 2122 / Loss 2378 / Flat 2886) / skip 8412件
 - 成長率目線: 平均log +0.000384 / 幾何平均 +0.038% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_BB3S_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: HUMA/USDT:USDT `MARKET_LONG` EXPIRED account +0.50% 残高後 $1,701.37
@@ -55,10 +55,10 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$439.95** / 初期 $100.00 (+339.95%)
-- 確定: 5060件 (Win 1350 / Loss 1087 / Flat 2623) / skip 7587件
+- 確定: 5061件 (Win 1350 / Loss 1087 / Flat 2624) / skip 7587件
 - 成長率目線: 平均log +0.000293 / 幾何平均 +0.029% per trade / maxDD +4.29%
 - 次の候補: `LIMIT_5PCT` (selected_by_robust_growth_score) / robust_score -0.0024 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: IRYS/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $439.95
+- 最新: PIPPIN/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $439.95
 
 ## 5. Causal Adaptive DryRun ($100)
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-20T10:11:04.902052+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.20% price=61734.8
+- 更新: 2026-11-20T10:16:14.040584+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.26% price=61772.0
 - Funnel: target 1084 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CYBER/USDT:USDT | +34.94% | $1,341,702.22 |
-| SOXS/USDT:USDT | +22.17% | $61,313,970.77 |
-| BTW/USDT:USDT | +15.79% | $4,436,302.37 |
-| UVXY/USDT:USDT | +14.06% | $3,967,755.01 |
-| SQQQ/USDT:USDT | +11.86% | $11,831,949.86 |
+| CYBER/USDT:USDT | +35.88% | $1,358,092.27 |
+| SOXS/USDT:USDT | +22.59% | $61,360,079.41 |
+| BTW/USDT:USDT | +16.93% | $4,464,945.24 |
+| UVXY/USDT:USDT | +14.01% | $4,025,044.74 |
+| RARE/USDT:USDT | +12.72% | $3,707,657.20 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_1h_threshold | +4.12% | +3.92% |
-| SOXS/USDT:USDT | below_1h_threshold | +3.79% | +3.58% |
-| UVXY/USDT:USDT | below_1h_threshold | +3.42% | +3.22% |
-| IRYS/USDT:USDT | below_1h_threshold | +2.75% | +2.55% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +2.46% | +2.26% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +4.42% | +4.15% |
+| BLESS/USDT:USDT | below_1h_threshold | +3.81% | +3.55% |
+| SOXS/USDT:USDT | below_1h_threshold | +3.79% | +3.52% |
+| RARE/USDT:USDT | below_1h_threshold | +3.76% | +3.50% |
+| UVXY/USDT:USDT | below_1h_threshold | +3.42% | +3.16% |
 
 ## 7. 次に見るべき不足
 
