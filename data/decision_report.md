@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-20T15:21:36.761970+00:00
+- generated_at: 2026-11-20T15:26:37.807385+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19248**
 
@@ -70,31 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-20T15:21:20.753944+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -2.15% price=60418.9
-- Funnel: target 1087 → liquid 158 → pre 50 → checked 50 → surge 2 → strict 2
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-20T15:26:21.162150+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -2.64% price=60120.0
+- Funnel: target 1087 → liquid 158 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KERNEL/USDT:USDT | +37.02% | $1,400,048.50 |
-| SOXS/USDT:USDT | +28.83% | $71,727,049.31 |
-| HUMA/USDT:USDT | +21.37% | $1,557,982.11 |
-| BLESS/USDT:USDT | +20.59% | $18,931,442.31 |
-| CYBER/USDT:USDT | +16.45% | $2,198,510.40 |
+| SOXS/USDT:USDT | +31.92% | $72,346,062.73 |
+| KERNEL/USDT:USDT | +31.80% | $1,417,495.07 |
+| UVXY/USDT:USDT | +20.05% | $5,312,173.83 |
+| BLESS/USDT:USDT | +19.24% | $19,042,746.94 |
+| HUMA/USDT:USDT | +19.05% | $1,576,676.77 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +4.74% | +6.89% |
-| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +4.08% | +6.23% |
-| AMZNSTOCK/USDT:USDT | below_1h_threshold | +3.05% | +5.20% |
-| MSFTSTOCK/USDT:USDT | below_1h_threshold | +2.89% | +5.04% |
-| TESLA/USDT:USDT | below_1h_threshold | +2.30% | +4.45% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +4.74% | +7.37% |
+| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +4.08% | +6.71% |
+| AMZNSTOCK/USDT:USDT | below_1h_threshold | +3.05% | +5.69% |
+| MSFTSTOCK/USDT:USDT | below_1h_threshold | +2.89% | +5.53% |
+| TESLA/USDT:USDT | below_1h_threshold | +2.30% | +4.94% |
 
 ## 7. 次に見るべき不足
 
