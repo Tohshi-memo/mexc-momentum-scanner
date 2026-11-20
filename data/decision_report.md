@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-11-20T14:01:19.533662+00:00
+- generated_at: 2026-11-20T14:06:09.727225+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **19244**
+- closed shadow trades: **19245**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=19244, expectancy=+0.02%
+- 全期間 MARKET基準: n=19245, expectancy=+0.02%
 - 直近20件 MARKET基準: n=20, expectancy=+0.20%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -24,8 +24,8 @@
 | LIMIT_5PCT | 5/20 | 25.0% | +0.95% | **+0.24%** |
 | MARKET | 20/20 | 100.0% | +0.20% | **+0.20%** |
 | LIMIT_4PCT | 13/20 | 65.0% | +0.00% | **+0.00%** |
-| LIMIT_BB3S | 5/17 | 29.4% | -0.48% | **-0.14%** |
 | LIMIT_FIB1272 | 10/20 | 50.0% | -0.49% | **-0.24%** |
+| LIMIT_2PCT | 15/20 | 75.0% | -0.63% | **-0.47%** |
 
 ### シャドウ上位 LONG
 
@@ -46,16 +46,16 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$1,709.79** / 初期 $100.00 (+1609.79%)
-- 確定: 7391件 (Win 2125 / Loss 2380 / Flat 2886) / skip 8414件
-- 成長率目線: 平均log +0.000384 / 幾何平均 +0.038% per trade / maxDD +8.46%
+- 残高: **$1,701.24** / 初期 $100.00 (+1601.24%)
+- 確定: 7392件 (Win 2125 / Loss 2381 / Flat 2886) / skip 8414件
+- 成長率目線: 平均log +0.000383 / 幾何平均 +0.038% per trade / maxDD +8.46%
 - 次の候補: `MARKET_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: KERNEL/USDT:USDT `MARKET_LONG` EXPIRED account +0.50% 残高後 $1,709.79
+- 最新: KERNEL/USDT:USDT `MARKET_LONG` SL_HIT account -0.50% 残高後 $1,701.24
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$440.57** / 初期 $100.00 (+340.57%)
-- 確定: 5068件 (Win 1352 / Loss 1087 / Flat 2629) / skip 7587件
+- 確定: 5069件 (Win 1352 / Loss 1087 / Flat 2630) / skip 7587件
 - 成長率目線: 平均log +0.000293 / 幾何平均 +0.029% per trade / maxDD +4.29%
 - 次の候補: `LIMIT_5PCT` (selected_by_robust_growth_score) / robust_score -0.0021 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: KERNEL/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $440.57
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-20T14:01:11.126639+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=61870.9
+- 更新: 2026-11-20T14:05:59.504717+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=61794.7
 - Funnel: target 1087 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KERNEL/USDT:USDT | +43.40% | $1,179,798.37 |
-| CYBER/USDT:USDT | +21.57% | $2,054,119.62 |
-| SOXS/USDT:USDT | +19.89% | $68,106,747.87 |
-| UVXY/USDT:USDT | +17.30% | $4,724,802.62 |
-| BLESS/USDT:USDT | +17.16% | $17,830,028.68 |
+| KERNEL/USDT:USDT | +41.61% | $1,199,110.29 |
+| CYBER/USDT:USDT | +21.47% | $2,065,224.31 |
+| SOXS/USDT:USDT | +19.16% | $68,694,700.21 |
+| BLESS/USDT:USDT | +18.84% | $18,008,739.72 |
+| UVXY/USDT:USDT | +16.68% | $4,738,721.05 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +0.89% | +0.87% |
-| BTW/USDT:USDT | below_1h_threshold | +0.80% | +0.78% |
-| ALUMINUM/USDT:USDT | below_1h_threshold | +0.65% | +0.63% |
-| BEAT/USDT:USDT | below_1h_threshold | +0.45% | +0.43% |
-| IRYS/USDT:USDT | below_1h_threshold | +0.38% | +0.35% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.71% | +1.81% |
+| IRYS/USDT:USDT | below_1h_threshold | +1.36% | +1.46% |
+| HUMA/USDT:USDT | below_1h_threshold | +1.27% | +1.37% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +0.89% | +0.99% |
+| ALUMINUM/USDT:USDT | below_1h_threshold | +0.65% | +0.75% |
 
 ## 7. 次に見るべき不足
 
