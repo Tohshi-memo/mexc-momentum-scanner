@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-11-20T14:46:40.210392+00:00
+- generated_at: 2026-11-20T14:51:16.315416+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **19246**
+- closed shadow trades: **19247**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=19246, expectancy=+0.02%
+- 全期間 MARKET基準: n=19247, expectancy=+0.02%
 - 直近20件 MARKET基準: n=20, expectancy=+0.20%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -46,55 +46,56 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$1,718.26** / 初期 $100.00 (+1618.26%)
-- 確定: 7393件 (Win 2126 / Loss 2381 / Flat 2886) / skip 8414件
-- 成長率目線: 平均log +0.000385 / 幾何平均 +0.038% per trade / maxDD +8.46%
+- 残高: **$1,709.67** / 初期 $100.00 (+1609.67%)
+- 確定: 7394件 (Win 2126 / Loss 2382 / Flat 2886) / skip 8414件
+- 成長率目線: 平均log +0.000384 / 幾何平均 +0.038% per trade / maxDD +8.46%
 - 次の候補: `MARKET_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: RARE/USDT:USDT `MARKET_LONG` TP_HIT account +1.00% 残高後 $1,718.26
+- 最新: RARE/USDT:USDT `MARKET_LONG` SL_HIT account -0.50% 残高後 $1,709.67
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$440.88** / 初期 $100.00 (+340.88%)
-- 確定: 5070件 (Win 1353 / Loss 1087 / Flat 2630) / skip 7587件
+- 確定: 5071件 (Win 1353 / Loss 1087 / Flat 2631) / skip 7587件
 - 成長率目線: 平均log +0.000293 / 幾何平均 +0.029% per trade / maxDD +4.29%
 - 次の候補: `LIMIT_5PCT` (selected_by_robust_growth_score) / robust_score -0.0019 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: RARE/USDT:USDT `LIMIT_5PCT` SL_HIT account +0.07% 残高後 $440.88
+- 最新: RARE/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $440.88
 
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7408件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7409件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000227 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000184 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-20T14:46:24.441287+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.72% price=61414.4
-- Funnel: target 1087 → liquid 157 → pre 50 → checked 50 → surge 2 → strict 2
+- 更新: 2026-11-20T14:51:04.008505+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.77% price=61383.0
+- Funnel: target 1087 → liquid 157 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 66.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KERNEL/USDT:USDT | +38.34% | $1,329,000.86 |
-| SOXS/USDT:USDT | +24.85% | $71,636,795.04 |
-| BLESS/USDT:USDT | +19.84% | $18,618,441.30 |
-| HUMA/USDT:USDT | +19.74% | $1,453,741.71 |
-| CYBER/USDT:USDT | +19.48% | $2,143,468.57 |
+| KERNEL/USDT:USDT | +39.37% | $1,339,421.94 |
+| SOXS/USDT:USDT | +25.10% | $71,904,729.17 |
+| HUMA/USDT:USDT | +21.83% | $1,461,930.67 |
+| CYBER/USDT:USDT | +20.02% | $2,147,652.29 |
+| BLESS/USDT:USDT | +19.51% | $18,680,936.39 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HUMA/USDT:USDT | below_1h_threshold | +4.63% | +5.34% |
-| BLESS/USDT:USDT | below_1h_threshold | +2.47% | +3.19% |
-| SKY/USDT:USDT | below_1h_threshold | +1.84% | +2.55% |
-| EVAA/USDT:USDT | below_1h_threshold | +0.91% | +1.63% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +0.89% | +1.60% |
+| BTW/USDT:USDT | below_1h_threshold | +4.04% | +4.81% |
+| BLESS/USDT:USDT | below_1h_threshold | +2.28% | +3.04% |
+| SKY/USDT:USDT | below_1h_threshold | +0.94% | +1.71% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +0.89% | +1.66% |
+| ALUMINUM/USDT:USDT | below_1h_threshold | +0.65% | +1.42% |
 
 ## 7. 次に見るべき不足
 
