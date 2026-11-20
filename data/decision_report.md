@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-20T18:46:34.020333+00:00
+- generated_at: 2026-11-20T18:51:34.400528+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19259**
 
@@ -70,9 +70,9 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-20T18:46:17.714842+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.81% price=58658.5
-- Funnel: target 1087 → liquid 160 → pre 50 → checked 50 → surge 2 → strict 1
+- 更新: 2026-11-20T18:51:20.665945+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -1.52% price=58242.6
+- Funnel: target 1087 → liquid 161 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI n/a=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -81,21 +81,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +27.77% | $24,928,879.94 |
-| PIEVERSE/USDT:USDT | +5.89% | $4,022,645.55 |
-| SOXS/USDT:USDT | +5.35% | $87,603,788.08 |
-| MMT/USDT:USDT | +5.13% | $5,422,771.87 |
-| NIGHT/USDT:USDT | +5.09% | $1,114,145.73 |
+| AKE/USDT:USDT | +31.64% | $24,980,798.39 |
+| PIEVERSE/USDT:USDT | +5.87% | $4,029,896.01 |
+| NIGHT/USDT:USDT | +5.26% | $1,120,803.70 |
+| OPENAI/USDT:USDT | +5.07% | $2,980,475.76 |
+| SOXS/USDT:USDT | +4.87% | $87,838,165.09 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +3.42% | +4.24% |
-| OPENAI/USDT:USDT | below_1h_threshold | +1.90% | +2.71% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.82% | +2.63% |
-| NIGHT/USDT:USDT | below_1h_threshold | +1.59% | +2.41% |
-| UVXY/USDT:USDT | below_1h_threshold | +1.49% | +2.31% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.62% | +4.13% |
+| OPENAI/USDT:USDT | below_1h_threshold | +1.85% | +3.37% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.82% | +3.34% |
+| NIGHT/USDT:USDT | below_1h_threshold | +1.78% | +3.30% |
+| NEAR/USDT:USDT | below_1h_threshold | +1.71% | +3.23% |
 
 ## 7. 次に見るべき不足
 
