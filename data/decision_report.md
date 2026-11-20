@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-20T04:21:22.916717+00:00
+- generated_at: 2026-11-20T04:26:17.017240+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19229**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-20T04:21:12.914878+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.64% price=61728.3
-- Funnel: target 1084 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-11-20T04:26:03.164006+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.67% price=61710.9
+- Funnel: target 1084 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BARD/USDT:USDT | +19.57% | $1,149,518.02 |
-| SOXS/USDT:USDT | +16.46% | $52,417,475.17 |
-| UVXY/USDT:USDT | +14.55% | $3,267,346.11 |
-| HUMA/USDT:USDT | +13.51% | $1,492,890.99 |
-| RARE/USDT:USDT | +12.09% | $3,293,252.07 |
+| BARD/USDT:USDT | +20.04% | $1,182,771.78 |
+| SOXS/USDT:USDT | +17.17% | $52,690,815.26 |
+| UVXY/USDT:USDT | +14.55% | $3,268,137.22 |
+| RARE/USDT:USDT | +12.81% | $3,300,936.46 |
+| HUMA/USDT:USDT | +12.62% | $1,502,336.05 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PIEVERSE/USDT:USDT | below_1h_threshold | +1.69% | +2.33% |
-| BTW/USDT:USDT | below_1h_threshold | +0.70% | +1.34% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +0.15% | +0.79% |
-| BITO/USDT:USDT | below_1h_threshold | +0.12% | +0.76% |
-| SPY/USDT:USDT | below_1h_threshold | +0.09% | +0.73% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +2.00% | +2.66% |
+| BTW/USDT:USDT | below_1h_threshold | +1.98% | +2.65% |
+| RARE/USDT:USDT | below_1h_threshold | +0.65% | +1.32% |
+| EVAA/USDT:USDT | below_1h_threshold | +0.31% | +0.97% |
+| NGAS/USDT:USDT | below_1h_threshold | +0.22% | +0.89% |
 
 ## 7. 次に見るべき不足
 
