@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-20T23:21:26.736723+00:00
+- generated_at: 2026-11-20T23:26:24.598947+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19272**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-20T23:21:16.898080+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.20% price=59012.7
-- Funnel: target 1087 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-11-20T23:26:13.525252+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.20% price=59014.8
+- Funnel: target 1087 → liquid 163 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +23.09% | $25,995,007.57 |
-| PIEVERSE/USDT:USDT | +15.73% | $4,116,594.76 |
-| MMT/USDT:USDT | +10.80% | $3,855,196.69 |
-| BLESS/USDT:USDT | +9.24% | $21,240,188.82 |
-| CAD/USDT:USDT | +7.17% | $1,484,968.01 |
+| AKE/USDT:USDT | +21.62% | $26,020,383.78 |
+| PIEVERSE/USDT:USDT | +14.79% | $4,126,458.01 |
+| MMT/USDT:USDT | +10.26% | $3,866,470.02 |
+| BLESS/USDT:USDT | +9.87% | $21,354,444.62 |
+| CAD/USDT:USDT | +9.84% | $1,485,159.68 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EVAA/USDT:USDT | below_1h_threshold | +3.49% | +3.69% |
-| AKE/USDT:USDT | below_1h_threshold | +2.55% | +2.75% |
-| BTW/USDT:USDT | below_1h_threshold | +1.52% | +1.72% |
+| EVAA/USDT:USDT | below_1h_threshold | +2.81% | +3.01% |
+| AKE/USDT:USDT | below_1h_threshold | +1.44% | +1.64% |
 | ANTHROPIC/USDT:USDT | below_1h_threshold | +1.41% | +1.61% |
-| RARE/USDT:USDT | below_1h_threshold | +1.28% | +1.49% |
+| BTW/USDT:USDT | below_1h_threshold | +1.32% | +1.52% |
+| RARE/USDT:USDT | below_1h_threshold | +1.21% | +1.41% |
 
 ## 7. 次に見るべき不足
 
