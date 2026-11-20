@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-20T11:51:22.404086+00:00
+- generated_at: 2026-11-20T11:56:26.803414+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19241**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7401件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7402件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000200 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-20T11:51:08.690864+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.41% price=61770.8
-- Funnel: target 1084 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-20T11:56:10.968418+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.39% price=61782.2
+- Funnel: target 1084 → liquid 157 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOXS/USDT:USDT | +22.49% | $64,552,540.88 |
-| CYBER/USDT:USDT | +22.46% | $1,703,770.02 |
-| BLESS/USDT:USDT | +19.72% | $16,066,560.43 |
-| EVAA/USDT:USDT | +16.90% | $26,950,616.53 |
-| UVXY/USDT:USDT | +14.77% | $4,162,718.09 |
+| CYBER/USDT:USDT | +24.90% | $1,714,880.85 |
+| BLESS/USDT:USDT | +22.88% | $16,200,412.87 |
+| SOXS/USDT:USDT | +22.22% | $64,566,172.38 |
+| EVAA/USDT:USDT | +16.00% | $27,067,689.71 |
+| UVXY/USDT:USDT | +14.50% | $4,171,610.03 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_1h_threshold | +4.69% | +5.10% |
-| ICNT/USDT:USDT | below_1h_threshold | +1.58% | +1.99% |
-| EVAA/USDT:USDT | below_1h_threshold | +1.40% | +1.81% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +1.18% | +1.59% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.89% | +1.30% |
+| ICNT/USDT:USDT | below_1h_threshold | +1.90% | +2.30% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +1.18% | +1.57% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.89% | +1.28% |
+| EVAA/USDT:USDT | below_1h_threshold | +0.78% | +1.17% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.68% | +1.07% |
 
 ## 7. 次に見るべき不足
 
