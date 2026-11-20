@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-20T02:46:33.085436+00:00
+- generated_at: 2026-11-20T02:51:24.037949+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19229**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-20T02:46:19.460196+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.18% price=61662.9
+- 更新: 2026-11-20T02:51:10.501636+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.19% price=61669.1
 - Funnel: target 1083 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOXS/USDT:USDT | +18.30% | $50,687,240.76 |
-| UVXY/USDT:USDT | +14.72% | $3,073,382.36 |
-| RARE/USDT:USDT | +13.00% | $3,229,204.63 |
-| HUMA/USDT:USDT | +10.93% | $1,513,822.94 |
-| SQQQ/USDT:USDT | +9.77% | $11,901,574.13 |
+| SOXS/USDT:USDT | +18.40% | $50,691,258.81 |
+| UVXY/USDT:USDT | +15.43% | $3,081,167.01 |
+| RARE/USDT:USDT | +13.00% | $3,244,590.46 |
+| HUMA/USDT:USDT | +11.56% | $1,520,445.74 |
+| SKY/USDT:USDT | +10.28% | $5,028,910.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +1.99% | +1.81% |
-| EVAA/USDT:USDT | below_1h_threshold | +1.21% | +1.02% |
-| COPPER/USDT:USDT | below_1h_threshold | +1.15% | +0.97% |
-| UVXY/USDT:USDT | below_1h_threshold | +0.91% | +0.72% |
-| SQQQ/USDT:USDT | below_1h_threshold | +0.76% | +0.57% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.99% | +1.80% |
+| EVAA/USDT:USDT | below_1h_threshold | +1.80% | +1.61% |
+| COPPER/USDT:USDT | below_1h_threshold | +1.24% | +1.05% |
+| LUNC/USDT:USDT | below_1h_threshold | +1.16% | +0.96% |
+| UVXY/USDT:USDT | below_1h_threshold | +0.91% | +0.71% |
 
 ## 7. 次に見るべき不足
 
