@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-20T07:41:16.064814+00:00
+- generated_at: 2026-11-20T07:46:24.343035+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19233**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-20T07:41:04.713129+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.55% price=61689.2
-- Funnel: target 1084 → liquid 157 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.2 >= 65=1, 4h RSI 88.1 >= 65=1
+- 更新: 2026-11-20T07:46:14.212287+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.45% price=61749.6
+- Funnel: target 1084 → liquid 157 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 71.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLESS/USDT:USDT | +24.79% | $12,699,906.51 |
-| ICNT/USDT:USDT | +21.43% | $6,148,086.02 |
-| SOXS/USDT:USDT | +20.12% | $55,223,675.62 |
-| BARD/USDT:USDT | +19.57% | $2,228,466.80 |
-| RARE/USDT:USDT | +14.27% | $3,491,300.88 |
+| BLESS/USDT:USDT | +25.34% | $12,973,729.08 |
+| SOXS/USDT:USDT | +19.24% | $55,257,952.13 |
+| BARD/USDT:USDT | +19.10% | $2,233,559.04 |
+| ICNT/USDT:USDT | +18.68% | $6,269,571.73 |
+| BTW/USDT:USDT | +15.11% | $6,037,453.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +1.84% | +2.38% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +1.32% | +1.87% |
-| RARE/USDT:USDT | below_1h_threshold | +1.29% | +1.84% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +0.84% | +1.39% |
-| RAVE/USDT:USDT | below_1h_threshold | +0.60% | +1.15% |
+| BTW/USDT:USDT | below_1h_threshold | +3.01% | +3.46% |
+| ICNT/USDT:USDT | below_1h_threshold | +2.90% | +3.36% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +1.82% | +2.28% |
+| EVAA/USDT:USDT | below_1h_threshold | +1.49% | +1.94% |
+| RARE/USDT:USDT | below_1h_threshold | +1.13% | +1.58% |
 
 ## 7. 次に見るべき不足
 
