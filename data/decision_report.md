@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-20T08:41:28.730496+00:00
+- generated_at: 2026-11-20T08:46:23.306186+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19235**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-20T08:41:15.322284+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=61904.1
+- 更新: 2026-11-20T08:46:09.508151+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.12% price=61896.6
 - Funnel: target 1084 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOXS/USDT:USDT | +17.80% | $57,162,143.53 |
-| ICNT/USDT:USDT | +14.96% | $6,397,731.05 |
-| BTW/USDT:USDT | +13.15% | $5,621,482.82 |
-| BARD/USDT:USDT | +12.38% | $4,244,122.71 |
-| BLESS/USDT:USDT | +12.24% | $13,630,961.02 |
+| SOXS/USDT:USDT | +18.95% | $57,173,329.50 |
+| ICNT/USDT:USDT | +14.03% | $6,428,326.05 |
+| BTW/USDT:USDT | +12.79% | $5,634,272.78 |
+| BARD/USDT:USDT | +12.02% | $4,261,008.58 |
+| UVXY/USDT:USDT | +11.26% | $3,791,512.39 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NAORIS/USDT:USDT | below_1h_threshold | +3.29% | +3.16% |
-| JTO/USDT:USDT | below_1h_threshold | +1.27% | +1.14% |
-| ALGO/USDT:USDT | below_1h_threshold | +1.05% | +0.92% |
-| APT/USDT:USDT | below_1h_threshold | +1.01% | +0.87% |
-| ALUMINUM/USDT:USDT | below_1h_threshold | +0.86% | +0.73% |
+| NAORIS/USDT:USDT | below_1h_threshold | +2.17% | +2.04% |
+| EVAA/USDT:USDT | below_1h_threshold | +1.88% | +1.76% |
+| JTO/USDT:USDT | below_1h_threshold | +1.11% | +0.99% |
+| NIGHT/USDT:USDT | below_1h_threshold | +1.01% | +0.89% |
+| APT/USDT:USDT | below_1h_threshold | +0.96% | +0.84% |
 
 ## 7. 次に見るべき不足
 
