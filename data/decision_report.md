@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-20T16:01:26.555963+00:00
+- generated_at: 2026-11-20T16:06:25.199315+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19251**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-20T16:01:13.997767+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.25% price=59295.0
-- Funnel: target 1087 → liquid 161 → pre 50 → checked 50 → surge 3 → strict 0
+- 更新: 2026-11-20T16:06:15.311769+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.60% price=59088.5
+- Funnel: target 1087 → liquid 162 → pre 50 → checked 50 → surge 3 → strict 0
 - Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.6 >= 65=1, 4h RSI 76.7 >= 65=1, 4h RSI 75.0 >= 65=1
+- Strict後reject: 4h RSI 75.3 >= 65=1, 4h RSI 77.1 >= 65=1, 4h RSI 75.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +0.89% | $2,991,809.89 |
-| UVXY/USDT:USDT | +0.59% | $5,535,523.87 |
-| SPX/USDT:USDT | +0.46% | $1,824,699.41 |
-| BLESS/USDT:USDT | +0.45% | $19,374,055.54 |
-| BTW/USDT:USDT | +0.45% | $4,101,619.66 |
+| SOXS/USDT:USDT | +2.25% | $69,225,084.99 |
+| UVXY/USDT:USDT | +2.11% | $5,579,616.97 |
+| MMT/USDT:USDT | +1.51% | $7,076,097.22 |
+| SQQQ/USDT:USDT | +1.46% | $10,535,125.94 |
+| AKE/USDT:USDT | +1.30% | $21,831,638.24 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +0.89% | +1.15% |
-| AKE/USDT:USDT | below_1h_threshold | +0.62% | +0.87% |
-| SPX/USDT:USDT | below_1h_threshold | +0.58% | +0.83% |
-| JCT/USDT:USDT | below_1h_threshold | +0.46% | +0.71% |
-| BLESS/USDT:USDT | below_1h_threshold | +0.46% | +0.71% |
+| AKE/USDT:USDT | below_1h_threshold | +1.88% | +2.48% |
+| MMT/USDT:USDT | below_1h_threshold | +1.40% | +2.00% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +1.11% | +1.71% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +0.97% | +1.57% |
+| LIT/USDT:USDT | below_1h_threshold | +0.79% | +1.39% |
 
 ## 7. 次に見るべき不足
 
