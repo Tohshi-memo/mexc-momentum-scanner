@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-20T14:26:29.817665+00:00
+- generated_at: 2026-11-20T14:31:32.845498+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19245**
 
@@ -70,32 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-20T14:26:13.188394+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.33% price=62061.1
-- Funnel: target 1087 → liquid 156 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.2 >= 65=1
+- 更新: 2026-11-20T14:31:19.647733+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.36% price=62082.0
+- Funnel: target 1087 → liquid 156 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KERNEL/USDT:USDT | +38.11% | $1,276,918.44 |
-| HUMA/USDT:USDT | +20.96% | $1,389,414.19 |
-| BLESS/USDT:USDT | +19.94% | $18,357,854.64 |
-| CYBER/USDT:USDT | +19.68% | $2,110,525.40 |
-| SOXS/USDT:USDT | +17.77% | $69,568,612.50 |
+| KERNEL/USDT:USDT | +38.78% | $1,287,467.48 |
+| SOXS/USDT:USDT | +22.20% | $69,758,479.90 |
+| CYBER/USDT:USDT | +19.58% | $2,117,901.78 |
+| BLESS/USDT:USDT | +18.92% | $18,436,721.95 |
+| HUMA/USDT:USDT | +18.91% | $1,414,581.42 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PIPPIN/USDT:USDT | below_1h_threshold | +2.83% | +2.50% |
-| BLESS/USDT:USDT | below_1h_threshold | +2.64% | +2.32% |
-| RARE/USDT:USDT | below_1h_threshold | +1.74% | +1.41% |
-| ICNT/USDT:USDT | below_1h_threshold | +1.29% | +0.97% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.25% | +0.92% |
+| HUMA/USDT:USDT | below_relative_strength | +5.01% | +4.65% |
+| SKY/USDT:USDT | below_1h_threshold | +1.86% | +1.50% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.70% | +1.34% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +1.60% | +1.24% |
+| ICNT/USDT:USDT | below_1h_threshold | +1.25% | +0.89% |
 
 ## 7. 次に見るべき不足
 
