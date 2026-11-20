@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-20T15:51:28.059080+00:00
+- generated_at: 2026-11-20T15:56:25.828711+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19251**
 
@@ -70,9 +70,9 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-20T15:51:11.900223+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -3.37% price=59667.5
-- Funnel: target 1087 → liquid 163 → pre 50 → checked 50 → surge 2 → strict 2
+- 更新: 2026-11-20T15:56:10.733415+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -3.41% price=59643.2
+- Funnel: target 1087 → liquid 164 → pre 50 → checked 50 → surge 2 → strict 2
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOXS/USDT:USDT | +33.53% | $74,721,387.12 |
-| KERNEL/USDT:USDT | +28.07% | $1,489,896.85 |
-| UVXY/USDT:USDT | +18.54% | $5,697,509.27 |
-| HUMA/USDT:USDT | +17.53% | $1,646,835.19 |
-| EVAA/USDT:USDT | +16.63% | $29,650,641.12 |
+| SOXS/USDT:USDT | +33.12% | $75,166,044.52 |
+| KERNEL/USDT:USDT | +28.94% | $1,496,643.86 |
+| UVXY/USDT:USDT | +19.43% | $5,737,720.22 |
+| EVAA/USDT:USDT | +17.35% | $30,036,311.06 |
+| HUMA/USDT:USDT | +16.51% | $1,665,653.33 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +4.74% | +8.10% |
-| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +4.08% | +7.45% |
-| AMZNSTOCK/USDT:USDT | below_1h_threshold | +3.05% | +6.42% |
-| MSFTSTOCK/USDT:USDT | below_1h_threshold | +2.89% | +6.26% |
-| TESLA/USDT:USDT | below_1h_threshold | +2.30% | +5.67% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +4.74% | +8.14% |
+| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +4.08% | +7.49% |
+| AMZNSTOCK/USDT:USDT | below_1h_threshold | +3.05% | +6.46% |
+| MSFTSTOCK/USDT:USDT | below_1h_threshold | +2.89% | +6.30% |
+| EVAA/USDT:USDT | below_1h_threshold | +2.68% | +6.08% |
 
 ## 7. 次に見るべき不足
 
