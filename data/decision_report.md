@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-11-20T16:11:28.386549+00:00
+- generated_at: 2026-11-20T16:16:36.855858+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **19251**
+- closed shadow trades: **19252**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +1.40% / filled 20/20。**
-- 全期間 MARKET基準: n=19251, expectancy=+0.02%
+- 全期間 MARKET基準: n=19252, expectancy=+0.02%
 - 直近20件 MARKET基準: n=20, expectancy=+1.40%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -23,9 +23,9 @@
 |---|---:|---:|---:|---:|
 | MARKET | 20/20 | 100.0% | +1.40% | **+1.40%** |
 | LIMIT_2PCT | 15/20 | 75.0% | +0.56% | **+0.42%** |
-| LIMIT_5PCT | 4/20 | 20.0% | +0.95% | **+0.19%** |
+| LIMIT_5PCT | 3/20 | 15.0% | +0.95% | **+0.14%** |
+| LIMIT_1PCT | 15/20 | 75.0% | -0.25% | **-0.19%** |
 | LIMIT_4PCT | 11/20 | 55.0% | -0.36% | **-0.20%** |
-| LIMIT_1PCT | 15/20 | 75.0% | -0.32% | **-0.24%** |
 
 ### シャドウ上位 LONG
 
@@ -46,32 +46,32 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$1,692.57** / 初期 $100.00 (+1592.57%)
-- 確定: 7398件 (Win 2127 / Loss 2385 / Flat 2886) / skip 8414件
-- 成長率目線: 平均log +0.000382 / 幾何平均 +0.038% per trade / maxDD +8.46%
+- 残高: **$1,701.03** / 初期 $100.00 (+1601.03%)
+- 確定: 7399件 (Win 2128 / Loss 2385 / Flat 2886) / skip 8414件
+- 成長率目線: 平均log +0.000383 / 幾何平均 +0.038% per trade / maxDD +8.46%
 - 次の候補: `MARKET_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: EVAA/USDT:USDT `MARKET_LONG` SL_HIT account -0.50% 残高後 $1,692.57
+- 最新: AKE/USDT:USDT `MARKET_LONG` EXPIRED account +0.50% 残高後 $1,701.03
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$440.88** / 初期 $100.00 (+340.88%)
-- 確定: 5075件 (Win 1353 / Loss 1087 / Flat 2635) / skip 7587件
+- 確定: 5076件 (Win 1353 / Loss 1087 / Flat 2636) / skip 7587件
 - 成長率目線: 平均log +0.000292 / 幾何平均 +0.029% per trade / maxDD +4.29%
 - 次の候補: `LIMIT_5PCT` (selected_by_robust_growth_score) / robust_score -0.0072 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: EVAA/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $440.88
+- 最新: AKE/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $440.88
 
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7416件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7417件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000084 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000113 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-20T16:11:16.899119+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=59354.0
+- 更新: 2026-11-20T16:16:18.258112+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.48% price=59731.1
 - Funnel: target 1087 → liquid 162 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +9.10% | $22,075,043.16 |
-| TRUMPOFFICIAL/USDT:USDT | +2.17% | $5,522,124.83 |
-| JCT/USDT:USDT | +2.16% | $2,956,326.51 |
-| HUMA/USDT:USDT | +2.13% | $1,658,563.07 |
-| ZRO/USDT:USDT | +2.12% | $2,225,225.97 |
+| AKE/USDT:USDT | +14.22% | $22,176,224.95 |
+| SNXX/USDT:USDT | +4.19% | $53,037,672.48 |
+| HUMA/USDT:USDT | +4.10% | $1,674,490.41 |
+| USELESS/USDT:USDT | +2.85% | $2,013,683.54 |
+| PONS/USDT:USDT | +2.79% | $1,527,293.05 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HUMA/USDT:USDT | below_1h_threshold | +2.42% | +2.58% |
-| JCT/USDT:USDT | below_1h_threshold | +2.17% | +2.32% |
-| ZRO/USDT:USDT | below_1h_threshold | +2.13% | +2.28% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +2.06% | +2.21% |
-| NIGHT/USDT:USDT | below_1h_threshold | +2.02% | +2.17% |
+| HUMA/USDT:USDT | below_1h_threshold | +4.11% | +3.63% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.86% | +2.38% |
+| JCT/USDT:USDT | below_1h_threshold | +2.69% | +2.21% |
+| PONS/USDT:USDT | below_1h_threshold | +2.38% | +1.90% |
+| NIGHT/USDT:USDT | below_1h_threshold | +2.22% | +1.73% |
 
 ## 7. 次に見るべき不足
 
