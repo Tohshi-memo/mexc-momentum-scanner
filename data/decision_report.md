@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-20T08:26:22.153642+00:00
+- generated_at: 2026-11-20T08:31:23.250892+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19234**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-20T08:26:08.553688+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=61889.2
+- 更新: 2026-11-20T08:31:09.597275+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.28% price=61996.3
 - Funnel: target 1084 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLESS/USDT:USDT | +23.97% | $13,033,841.34 |
-| SOXS/USDT:USDT | +17.87% | $57,020,790.05 |
-| ICNT/USDT:USDT | +17.71% | $6,277,291.69 |
-| BTW/USDT:USDT | +14.05% | $5,569,293.43 |
-| BARD/USDT:USDT | +12.61% | $4,222,722.39 |
+| BLESS/USDT:USDT | +21.35% | $13,122,660.64 |
+| SOXS/USDT:USDT | +17.38% | $57,074,703.22 |
+| ICNT/USDT:USDT | +17.27% | $6,288,111.81 |
+| BTW/USDT:USDT | +14.37% | $5,579,857.19 |
+| BARD/USDT:USDT | +12.50% | $4,233,756.25 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ICNT/USDT:USDT | below_1h_threshold | +1.89% | +1.79% |
-| APT/USDT:USDT | below_1h_threshold | +0.88% | +0.78% |
-| ALUMINUM/USDT:USDT | below_1h_threshold | +0.86% | +0.75% |
-| LEAD/USDT:USDT | below_1h_threshold | +0.53% | +0.42% |
-| RAVE/USDT:USDT | below_1h_threshold | +0.51% | +0.40% |
+| ICNT/USDT:USDT | below_1h_threshold | +1.58% | +1.30% |
+| APT/USDT:USDT | below_1h_threshold | +1.30% | +1.02% |
+| ALUMINUM/USDT:USDT | below_1h_threshold | +0.86% | +0.58% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +0.80% | +0.52% |
+| OP/USDT:USDT | below_1h_threshold | +0.72% | +0.44% |
 
 ## 7. 次に見るべき不足
 
