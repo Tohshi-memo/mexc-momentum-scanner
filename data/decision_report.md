@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-20T05:31:21.500516+00:00
+- generated_at: 2026-11-20T05:36:22.470255+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19229**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-20T05:31:08.534400+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.19% price=61611.0
+- 更新: 2026-11-20T05:36:08.754464+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=61585.8
 - Funnel: target 1084 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOXS/USDT:USDT | +19.69% | $53,272,724.79 |
-| BARD/USDT:USDT | +19.57% | $1,565,924.12 |
-| UVXY/USDT:USDT | +16.41% | $3,586,314.73 |
-| BLESS/USDT:USDT | +13.39% | $8,595,497.04 |
-| RARE/USDT:USDT | +12.27% | $3,380,430.93 |
+| SOXS/USDT:USDT | +19.82% | $53,292,311.55 |
+| BARD/USDT:USDT | +18.75% | $1,588,702.22 |
+| UVXY/USDT:USDT | +16.77% | $3,598,656.91 |
+| BLESS/USDT:USDT | +15.63% | $8,686,631.92 |
+| HUMA/USDT:USDT | +12.76% | $1,483,687.47 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +3.05% | +2.85% |
-| BARD/USDT:USDT | below_1h_threshold | +2.42% | +2.23% |
-| UVXY/USDT:USDT | below_1h_threshold | +1.91% | +1.72% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +1.83% | +1.64% |
-| SQQQ/USDT:USDT | below_1h_threshold | +1.64% | +1.45% |
+| SOXS/USDT:USDT | below_1h_threshold | +3.05% | +2.89% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +2.62% | +2.46% |
+| HUMA/USDT:USDT | below_1h_threshold | +2.16% | +2.01% |
+| UVXY/USDT:USDT | below_1h_threshold | +1.91% | +1.76% |
+| BARD/USDT:USDT | below_1h_threshold | +1.72% | +1.56% |
 
 ## 7. 次に見るべき不足
 
