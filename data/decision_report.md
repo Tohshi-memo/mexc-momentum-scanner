@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-20T18:16:27.915837+00:00
+- generated_at: 2026-11-20T18:21:26.130643+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19258**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-20T18:16:15.005670+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.43% price=58887.3
+- 更新: 2026-11-20T18:21:13.194885+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=59205.6
 - Funnel: target 1087 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +26.82% | $24,546,281.73 |
-| SOXS/USDT:USDT | +5.98% | $85,058,647.52 |
-| NIGHT/USDT:USDT | +4.67% | $1,080,320.63 |
-| OPENAI/USDT:USDT | +4.62% | $2,802,994.15 |
-| SQQQ/USDT:USDT | +3.86% | $7,795,464.03 |
+| AKE/USDT:USDT | +27.10% | $24,603,932.24 |
+| NIGHT/USDT:USDT | +5.02% | $1,090,360.37 |
+| OPENAI/USDT:USDT | +4.67% | $2,809,753.58 |
+| SOXS/USDT:USDT | +4.47% | $85,966,022.08 |
+| BTW/USDT:USDT | +4.11% | $3,997,938.60 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PIEVERSE/USDT:USDT | below_1h_threshold | +3.11% | +3.53% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.82% | +2.25% |
-| UVXY/USDT:USDT | below_1h_threshold | +1.49% | +1.92% |
-| OPENAI/USDT:USDT | below_1h_threshold | +1.41% | +1.84% |
-| JUP/USDT:USDT | below_1h_threshold | +1.25% | +1.68% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +3.90% | +3.78% |
+| INJ/USDT:USDT | below_1h_threshold | +2.18% | +2.06% |
+| JUP/USDT:USDT | below_1h_threshold | +1.88% | +1.77% |
+| RENDER/USDT:USDT | below_1h_threshold | +1.84% | +1.73% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.82% | +1.71% |
 
 ## 7. 次に見るべき不足
 
