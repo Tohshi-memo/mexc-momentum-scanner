@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-20T04:41:16.332113+00:00
+- generated_at: 2026-11-20T04:46:20.226905+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19229**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7386件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7387件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000085 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-20T04:41:05.060486+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -1.12% price=61429.9
-- Funnel: target 1084 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-20T04:46:06.731153+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -1.08% price=61452.6
+- Funnel: target 1084 → liquid 156 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOXS/USDT:USDT | +18.12% | $52,826,660.17 |
-| UVXY/USDT:USDT | +15.43% | $3,351,352.05 |
-| BARD/USDT:USDT | +14.97% | $1,354,635.47 |
-| RARE/USDT:USDT | +13.00% | $3,340,565.94 |
-| BLESS/USDT:USDT | +11.82% | $9,057,251.63 |
+| SOXS/USDT:USDT | +18.14% | $52,841,168.44 |
+| UVXY/USDT:USDT | +15.52% | $3,408,506.52 |
+| BARD/USDT:USDT | +14.15% | $1,373,489.20 |
+| BTW/USDT:USDT | +13.36% | $6,124,588.87 |
+| RARE/USDT:USDT | +13.00% | $3,342,595.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PIEVERSE/USDT:USDT | below_1h_threshold | +4.09% | +5.21% |
-| BTW/USDT:USDT | below_1h_threshold | +1.63% | +2.75% |
-| RARE/USDT:USDT | below_1h_threshold | +0.73% | +1.85% |
-| TESLA/USDT:USDT | below_1h_threshold | +0.45% | +1.57% |
-| ICNT/USDT:USDT | below_1h_threshold | +0.33% | +1.45% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +3.51% | +4.60% |
+| RARE/USDT:USDT | below_1h_threshold | +0.65% | +1.73% |
+| EVAA/USDT:USDT | below_1h_threshold | +0.64% | +1.73% |
+| ICNT/USDT:USDT | below_1h_threshold | +0.51% | +1.60% |
+| TESLA/USDT:USDT | below_1h_threshold | +0.45% | +1.53% |
 
 ## 7. 次に見るべき不足
 
