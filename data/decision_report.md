@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-20T07:46:24.343035+00:00
+- generated_at: 2026-11-20T07:51:26.577350+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19233**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-20T07:46:14.212287+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.45% price=61749.6
+- 更新: 2026-11-20T07:51:12.598023+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.37% price=61802.9
 - Funnel: target 1084 → liquid 157 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.7 >= 65=1
+- Strict後reject: 4h RSI 72.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLESS/USDT:USDT | +25.34% | $12,973,729.08 |
-| SOXS/USDT:USDT | +19.24% | $55,257,952.13 |
-| BARD/USDT:USDT | +19.10% | $2,233,559.04 |
-| ICNT/USDT:USDT | +18.68% | $6,269,571.73 |
-| BTW/USDT:USDT | +15.11% | $6,037,453.64 |
+| BLESS/USDT:USDT | +23.89% | $13,259,554.88 |
+| SOXS/USDT:USDT | +18.51% | $56,881,110.09 |
+| BARD/USDT:USDT | +15.91% | $2,255,935.28 |
+| ICNT/USDT:USDT | +15.88% | $6,293,274.29 |
+| BTW/USDT:USDT | +14.12% | $6,064,225.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +3.01% | +3.46% |
-| ICNT/USDT:USDT | below_1h_threshold | +2.90% | +3.36% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +1.82% | +2.28% |
-| EVAA/USDT:USDT | below_1h_threshold | +1.49% | +1.94% |
-| RARE/USDT:USDT | below_1h_threshold | +1.13% | +1.58% |
+| BTW/USDT:USDT | below_1h_threshold | +2.13% | +2.49% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +0.92% | +1.28% |
+| RARE/USDT:USDT | below_1h_threshold | +0.73% | +1.09% |
+| OP/USDT:USDT | below_1h_threshold | +0.64% | +1.01% |
+| ICNT/USDT:USDT | below_1h_threshold | +0.60% | +0.97% |
 
 ## 7. 次に見るべき不足
 
