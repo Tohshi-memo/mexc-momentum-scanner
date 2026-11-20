@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-20T21:11:25.466875+00:00
+- generated_at: 2026-11-20T21:16:28.992396+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19269**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-20T21:11:14.056943+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=58370.0
+- 更新: 2026-11-20T21:16:16.254004+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.24% price=58297.1
 - Funnel: target 1087 → liquid 162 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.1 >= 65=1
+- Strict後reject: 4h RSI 82.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +33.49% | $25,214,163.17 |
-| UVXY/USDT:USDT | +14.00% | $6,733,972.12 |
-| PIEVERSE/USDT:USDT | +13.77% | $4,178,623.42 |
-| SKDD/USDT:USDT | +7.78% | $1,028,127.33 |
-| SQQQ/USDT:USDT | +7.06% | $6,079,191.99 |
+| AKE/USDT:USDT | +32.73% | $25,255,926.09 |
+| PIEVERSE/USDT:USDT | +14.22% | $4,186,438.94 |
+| UVXY/USDT:USDT | +11.22% | $6,785,261.12 |
+| BTW/USDT:USDT | +7.07% | $3,886,337.37 |
+| SKDD/USDT:USDT | +6.88% | $1,030,112.47 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +3.48% | +3.59% |
-| SOXS/USDT:USDT | below_1h_threshold | +3.25% | +3.37% |
-| SQQQ/USDT:USDT | below_1h_threshold | +2.38% | +2.49% |
-| ANTHROPIC/USDT:USDT | below_1h_threshold | +1.82% | +1.93% |
-| SKDD/USDT:USDT | below_1h_threshold | +1.80% | +1.91% |
+| SOXS/USDT:USDT | below_1h_threshold | +3.25% | +3.49% |
+| AKE/USDT:USDT | below_1h_threshold | +2.89% | +3.13% |
+| SQQQ/USDT:USDT | below_1h_threshold | +2.38% | +2.61% |
+| ANTHROPIC/USDT:USDT | below_1h_threshold | +1.82% | +2.06% |
+| JCT/USDT:USDT | below_1h_threshold | +1.82% | +2.05% |
 
 ## 7. 次に見るべき不足
 
