@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-11-20T02:01:18.742033+00:00
+- generated_at: 2026-11-20T02:06:10.510185+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **19228**
+- closed shadow trades: **19229**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=19228, expectancy=+0.02%
+- 全期間 MARKET基準: n=19229, expectancy=+0.02%
 - 直近20件 MARKET基準: n=20, expectancy=-0.45%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -31,11 +31,11 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
+| LIMIT_6PCT_LONG | 9/20 | 45.0% | +1.45% | **+0.65%** |
 | LIMIT_5PCT_LONG | 10/20 | 50.0% | +1.31% | **+0.65%** |
-| LIMIT_6PCT_LONG | 9/20 | 45.0% | +1.25% | **+0.56%** |
 | LIMIT_4PCT_LONG | 10/20 | 50.0% | +0.91% | **+0.45%** |
 | LIMIT_7PCT_LONG | 7/20 | 35.0% | +1.24% | **+0.43%** |
-| LIMIT_10PCT_LONG | 2/20 | 10.0% | +2.22% | **+0.22%** |
+| MARKET_LONG | 20/20 | 100.0% | +0.20% | **+0.20%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,701.37** / 初期 $100.00 (+1601.37%)
-- 確定: 7386件 (Win 2122 / Loss 2378 / Flat 2886) / skip 8403件
+- 確定: 7386件 (Win 2122 / Loss 2378 / Flat 2886) / skip 8404件
 - 成長率目線: 平均log +0.000384 / 幾何平均 +0.038% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_BB3S_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: HUMA/USDT:USDT `MARKET_LONG` EXPIRED account +0.50% 残高後 $1,701.37
@@ -55,10 +55,10 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$439.33** / 初期 $100.00 (+339.33%)
-- 確定: 5052件 (Win 1348 / Loss 1087 / Flat 2617) / skip 7587件
+- 確定: 5053件 (Win 1348 / Loss 1087 / Flat 2618) / skip 7587件
 - 成長率目線: 平均log +0.000293 / 幾何平均 +0.029% per trade / maxDD +4.29%
 - 次の候補: `LIMIT_5PCT` (selected_by_robust_growth_score) / robust_score -0.0026 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: HUMA/USDT:USDT `LIMIT_5PCT` SL_HIT account +0.07% 残高後 $439.33
+- 最新: IRYS/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $439.33
 
 ## 5. Causal Adaptive DryRun ($100)
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-20T02:01:06.423568+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=61589.1
+- 更新: 2026-11-20T02:05:58.557938+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=61557.3
 - Funnel: target 1084 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOXS/USDT:USDT | +17.86% | $49,306,649.95 |
-| RARE/USDT:USDT | +15.18% | $3,183,867.86 |
-| HUMA/USDT:USDT | +14.17% | $1,455,707.61 |
-| RAVE/USDT:USDT | +13.44% | $1,049,566.43 |
-| UVXY/USDT:USDT | +13.30% | $2,998,733.95 |
+| SOXS/USDT:USDT | +17.56% | $49,372,503.85 |
+| RARE/USDT:USDT | +15.81% | $3,193,175.13 |
+| HUMA/USDT:USDT | +14.06% | $1,465,545.03 |
+| RAVE/USDT:USDT | +12.92% | $1,052,914.99 |
+| UVXY/USDT:USDT | +12.64% | $2,999,269.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +1.99% | +1.93% |
-| UVXY/USDT:USDT | below_1h_threshold | +0.91% | +0.84% |
-| SQQQ/USDT:USDT | below_1h_threshold | +0.76% | +0.69% |
-| ONDO/USDT:USDT | below_1h_threshold | +0.34% | +0.28% |
-| WIF/USDT:USDT | below_1h_threshold | +0.31% | +0.25% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.99% | +1.98% |
+| SKY/USDT:USDT | below_1h_threshold | +1.14% | +1.13% |
+| ICNT/USDT:USDT | below_1h_threshold | +0.91% | +0.90% |
+| UVXY/USDT:USDT | below_1h_threshold | +0.91% | +0.90% |
+| SQQQ/USDT:USDT | below_1h_threshold | +0.76% | +0.74% |
 
 ## 7. 次に見るべき不足
 
