@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-20T23:36:33.472912+00:00
+- generated_at: 2026-11-20T23:41:30.614349+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19272**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-20T23:36:21.054691+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.20% price=59014.7
+- 更新: 2026-11-20T23:41:20.921526+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.22% price=58999.4
 - Funnel: target 1086 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +19.90% | $26,073,940.73 |
-| PIEVERSE/USDT:USDT | +16.67% | $4,158,676.00 |
-| MMT/USDT:USDT | +10.30% | $3,885,777.79 |
-| BLESS/USDT:USDT | +9.40% | $21,427,489.47 |
-| UVXY/USDT:USDT | +6.87% | $6,811,145.07 |
+| AKE/USDT:USDT | +19.00% | $26,090,347.74 |
+| PIEVERSE/USDT:USDT | +16.91% | $4,167,277.79 |
+| MMT/USDT:USDT | +10.02% | $3,890,797.67 |
+| BLESS/USDT:USDT | +9.56% | $21,447,970.66 |
+| UVXY/USDT:USDT | +7.24% | $6,812,797.74 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EVAA/USDT:USDT | below_1h_threshold | +3.14% | +3.34% |
-| BTW/USDT:USDT | below_1h_threshold | +2.34% | +2.53% |
-| ANTHROPIC/USDT:USDT | below_1h_threshold | +1.41% | +1.61% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +1.28% | +1.48% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.28% | +1.48% |
+| EVAA/USDT:USDT | below_1h_threshold | +2.70% | +2.92% |
+| ANTHROPIC/USDT:USDT | below_1h_threshold | +1.41% | +1.63% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +1.28% | +1.51% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +1.26% | +1.49% |
+| VVV/USDT:USDT | below_1h_threshold | +1.21% | +1.43% |
 
 ## 7. 次に見るべき不足
 
