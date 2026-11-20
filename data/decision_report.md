@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-20T14:31:32.845498+00:00
+- generated_at: 2026-11-20T14:36:26.311928+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19245**
 
@@ -63,38 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7406件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7407件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000200 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-20T14:31:19.647733+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.36% price=62082.0
+- 更新: 2026-11-20T14:36:11.504167+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=61868.5
 - Funnel: target 1087 → liquid 156 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KERNEL/USDT:USDT | +38.78% | $1,287,467.48 |
-| SOXS/USDT:USDT | +22.20% | $69,758,479.90 |
-| CYBER/USDT:USDT | +19.58% | $2,117,901.78 |
-| BLESS/USDT:USDT | +18.92% | $18,436,721.95 |
-| HUMA/USDT:USDT | +18.91% | $1,414,581.42 |
+| KERNEL/USDT:USDT | +40.52% | $1,301,421.35 |
+| SOXS/USDT:USDT | +25.30% | $70,230,547.63 |
+| BLESS/USDT:USDT | +20.11% | $18,469,047.98 |
+| CYBER/USDT:USDT | +19.13% | $2,130,696.66 |
+| HUMA/USDT:USDT | +18.90% | $1,434,549.73 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HUMA/USDT:USDT | below_relative_strength | +5.01% | +4.65% |
-| SKY/USDT:USDT | below_1h_threshold | +1.86% | +1.50% |
-| BLESS/USDT:USDT | below_1h_threshold | +1.70% | +1.34% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +1.60% | +1.24% |
-| ICNT/USDT:USDT | below_1h_threshold | +1.25% | +0.89% |
+| BTW/USDT:USDT | below_1h_threshold | +4.94% | +4.92% |
+| HUMA/USDT:USDT | below_1h_threshold | +3.86% | +3.84% |
+| BLESS/USDT:USDT | below_1h_threshold | +2.96% | +2.94% |
+| SKY/USDT:USDT | below_1h_threshold | +1.90% | +1.89% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +1.82% | +1.80% |
 
 ## 7. 次に見るべき不足
 
