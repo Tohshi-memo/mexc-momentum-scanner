@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-20T06:51:29.669705+00:00
+- generated_at: 2026-11-20T06:56:19.307806+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19230**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-20T06:51:11.395817+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=61939.2
+- 更新: 2026-11-20T06:56:05.878255+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.20% price=62021.0
 - Funnel: target 1084 → liquid 157 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLESS/USDT:USDT | +25.51% | $9,602,939.53 |
-| BARD/USDT:USDT | +19.69% | $2,016,888.30 |
-| SOXS/USDT:USDT | +19.04% | $54,954,035.35 |
-| ICNT/USDT:USDT | +15.73% | $5,965,521.56 |
-| UVXY/USDT:USDT | +14.90% | $3,686,772.72 |
+| BLESS/USDT:USDT | +26.82% | $9,793,575.70 |
+| BARD/USDT:USDT | +19.57% | $2,048,739.84 |
+| SOXS/USDT:USDT | +18.33% | $55,003,268.47 |
+| ICNT/USDT:USDT | +16.24% | $5,986,071.28 |
+| RARE/USDT:USDT | +13.63% | $3,435,093.84 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IRYS/USDT:USDT | below_1h_threshold | +4.08% | +4.01% |
-| ICNT/USDT:USDT | below_1h_threshold | +2.95% | +2.89% |
-| CRV/USDT:USDT | below_1h_threshold | +1.10% | +1.04% |
-| KAS/USDT:USDT | below_1h_threshold | +0.65% | +0.58% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +0.64% | +0.57% |
+| IRYS/USDT:USDT | below_1h_threshold | +3.98% | +3.78% |
+| ICNT/USDT:USDT | below_1h_threshold | +3.50% | +3.30% |
+| RARE/USDT:USDT | below_1h_threshold | +1.38% | +1.18% |
+| CRV/USDT:USDT | below_1h_threshold | +1.00% | +0.80% |
+| LDO/USDT:USDT | below_1h_threshold | +0.83% | +0.63% |
 
 ## 7. 次に見るべき不足
 
