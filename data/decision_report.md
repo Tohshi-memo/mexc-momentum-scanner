@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-20T23:11:28.138802+00:00
+- generated_at: 2026-11-20T23:16:24.226131+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19272**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-20T23:11:18.323316+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=59110.0
+- 更新: 2026-11-20T23:16:14.338072+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=59091.5
 - Funnel: target 1087 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +23.86% | $25,959,999.29 |
-| PIEVERSE/USDT:USDT | +16.16% | $4,098,155.78 |
-| MMT/USDT:USDT | +11.82% | $3,832,542.89 |
-| BLESS/USDT:USDT | +8.48% | $21,114,263.85 |
-| LUNC/USDT:USDT | +7.49% | $1,541,053.73 |
+| AKE/USDT:USDT | +23.39% | $25,976,975.78 |
+| PIEVERSE/USDT:USDT | +15.76% | $4,111,757.07 |
+| MMT/USDT:USDT | +11.12% | $3,837,950.41 |
+| BLESS/USDT:USDT | +8.97% | $21,180,591.26 |
+| LUNC/USDT:USDT | +7.11% | $1,557,475.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +3.19% | +3.23% |
-| EVAA/USDT:USDT | below_1h_threshold | +2.85% | +2.88% |
-| ANTHROPIC/USDT:USDT | below_1h_threshold | +1.41% | +1.45% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +0.96% | +1.00% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +0.76% | +0.80% |
+| EVAA/USDT:USDT | below_1h_threshold | +3.17% | +3.24% |
+| AKE/USDT:USDT | below_1h_threshold | +2.79% | +2.86% |
+| BTW/USDT:USDT | below_1h_threshold | +1.78% | +1.85% |
+| ANTHROPIC/USDT:USDT | below_1h_threshold | +1.41% | +1.48% |
+| VVV/USDT:USDT | below_1h_threshold | +1.00% | +1.07% |
 
 ## 7. 次に見るべき不足
 
