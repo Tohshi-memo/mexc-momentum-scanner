@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-20T10:56:34.303946+00:00
+- generated_at: 2026-11-20T11:01:22.821453+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19240**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-20T10:56:18.587997+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.65% price=62011.1
-- Funnel: target 1084 → liquid 160 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=46, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.8 >= 65=1, 4h RSI 69.2 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-20T11:01:12.868227+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=62070.0
+- Funnel: target 1084 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CYBER/USDT:USDT | +31.80% | $1,523,592.91 |
-| SOXS/USDT:USDT | +22.10% | $62,403,847.48 |
-| BTW/USDT:USDT | +15.74% | $4,691,801.16 |
-| EVAA/USDT:USDT | +15.13% | $24,935,929.91 |
-| BLESS/USDT:USDT | +13.83% | $15,303,646.18 |
+| CYBER/USDT:USDT | +30.11% | $1,538,304.61 |
+| SOXS/USDT:USDT | +21.16% | $61,284,577.08 |
+| BLESS/USDT:USDT | +15.23% | $15,138,456.65 |
+| EVAA/USDT:USDT | +14.94% | $24,830,498.58 |
+| BTW/USDT:USDT | +13.88% | $4,448,447.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EVAA/USDT:USDT | below_relative_strength | +5.11% | +4.46% |
-| SOXS/USDT:USDT | below_1h_threshold | +3.79% | +3.13% |
-| UVXY/USDT:USDT | below_1h_threshold | +3.42% | +2.77% |
-| ICNT/USDT:USDT | below_1h_threshold | +3.22% | +2.57% |
-| HUMA/USDT:USDT | below_1h_threshold | +2.40% | +1.75% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +1.18% | +1.11% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.89% | +0.82% |
+| BLESS/USDT:USDT | below_1h_threshold | +0.88% | +0.81% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.68% | +0.61% |
+| ZINC/USDT:USDT | below_1h_threshold | +0.56% | +0.48% |
 
 ## 7. 次に見るべき不足
 
