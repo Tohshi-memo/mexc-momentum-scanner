@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-20T00:51:31.269494+00:00
+- generated_at: 2026-11-20T00:56:24.970823+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19227**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-20T00:51:19.548901+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=62003.1
+- 更新: 2026-11-20T00:56:11.287088+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=61988.9
 - Funnel: target 1084 → liquid 152 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RARE/USDT:USDT | +25.36% | $2,988,770.28 |
-| SOXS/USDT:USDT | +16.96% | $49,213,277.95 |
-| HUMA/USDT:USDT | +14.70% | $1,398,084.71 |
-| UVXY/USDT:USDT | +14.50% | $2,893,693.37 |
-| SKY/USDT:USDT | +12.16% | $4,848,025.80 |
+| RARE/USDT:USDT | +23.18% | $3,016,567.64 |
+| SOXS/USDT:USDT | +17.66% | $49,248,836.35 |
+| HUMA/USDT:USDT | +14.52% | $1,400,898.27 |
+| UVXY/USDT:USDT | +14.19% | $2,902,020.08 |
+| SKY/USDT:USDT | +11.41% | $4,857,251.43 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RARE/USDT:USDT | below_1h_threshold | +4.36% | +4.29% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +2.88% | +2.81% |
-| IRYS/USDT:USDT | below_1h_threshold | +2.38% | +2.31% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.68% | +1.61% |
-| HUMA/USDT:USDT | below_1h_threshold | +1.01% | +0.94% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +3.26% | +3.21% |
+| RARE/USDT:USDT | below_1h_threshold | +2.83% | +2.78% |
+| IRYS/USDT:USDT | below_1h_threshold | +2.79% | +2.74% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.68% | +1.63% |
+| HUMA/USDT:USDT | below_1h_threshold | +0.89% | +0.84% |
 
 ## 7. 次に見るべき不足
 
