@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-20T15:31:37.267429+00:00
+- generated_at: 2026-11-20T15:36:25.806476+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19248**
 
@@ -70,31 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-20T15:31:25.444794+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -2.19% price=60395.9
-- Funnel: target 1087 → liquid 159 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-20T15:36:09.921378+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -2.58% price=60153.2
+- Funnel: target 1087 → liquid 159 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KERNEL/USDT:USDT | +32.72% | $1,438,269.39 |
-| SOXS/USDT:USDT | +31.73% | $72,751,375.76 |
-| HUMA/USDT:USDT | +20.63% | $1,582,057.59 |
-| BLESS/USDT:USDT | +19.63% | $19,117,748.25 |
-| UVXY/USDT:USDT | +19.03% | $5,373,393.42 |
+| SOXS/USDT:USDT | +33.02% | $73,199,710.06 |
+| KERNEL/USDT:USDT | +31.34% | $1,455,634.28 |
+| BLESS/USDT:USDT | +19.79% | $19,199,758.20 |
+| HUMA/USDT:USDT | +18.84% | $1,601,285.39 |
+| UVXY/USDT:USDT | +18.50% | $5,441,211.21 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +4.74% | +6.92% |
-| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +4.08% | +6.27% |
-| AMZNSTOCK/USDT:USDT | below_1h_threshold | +3.05% | +5.24% |
-| MSFTSTOCK/USDT:USDT | below_1h_threshold | +2.89% | +5.08% |
-| TESLA/USDT:USDT | below_1h_threshold | +2.30% | +4.49% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +4.74% | +7.32% |
+| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +4.08% | +6.66% |
+| AMZNSTOCK/USDT:USDT | below_1h_threshold | +3.05% | +5.63% |
+| EVAA/USDT:USDT | below_1h_threshold | +3.01% | +5.59% |
+| MSFTSTOCK/USDT:USDT | below_1h_threshold | +2.89% | +5.48% |
 
 ## 7. 次に見るべき不足
 
