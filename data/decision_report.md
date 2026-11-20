@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-20T18:41:32.991960+00:00
+- generated_at: 2026-11-20T18:46:34.020333+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19259**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-20T18:41:16.736660+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.38% price=58915.8
+- 更新: 2026-11-20T18:46:17.714842+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.81% price=58658.5
 - Funnel: target 1087 → liquid 160 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI n/a=1
@@ -81,21 +81,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +29.86% | $24,852,290.81 |
-| NIGHT/USDT:USDT | +5.29% | $1,113,378.11 |
-| MMT/USDT:USDT | +5.25% | $5,417,197.89 |
-| PIEVERSE/USDT:USDT | +5.14% | $4,001,373.70 |
-| OPENAI/USDT:USDT | +4.26% | $2,950,940.93 |
+| AKE/USDT:USDT | +27.77% | $24,928,879.94 |
+| PIEVERSE/USDT:USDT | +5.89% | $4,022,645.55 |
+| SOXS/USDT:USDT | +5.35% | $87,603,788.08 |
+| MMT/USDT:USDT | +5.13% | $5,422,771.87 |
+| NIGHT/USDT:USDT | +5.09% | $1,114,145.73 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +3.04% | +3.42% |
-| PENGU/USDT:USDT | below_1h_threshold | +2.03% | +2.41% |
-| RIVER/USDT:USDT | below_1h_threshold | +1.97% | +2.35% |
-| NIGHT/USDT:USDT | below_1h_threshold | +1.88% | +2.26% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.82% | +2.20% |
+| VELVET/USDT:USDT | below_1h_threshold | +3.42% | +4.24% |
+| OPENAI/USDT:USDT | below_1h_threshold | +1.90% | +2.71% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.82% | +2.63% |
+| NIGHT/USDT:USDT | below_1h_threshold | +1.59% | +2.41% |
+| UVXY/USDT:USDT | below_1h_threshold | +1.49% | +2.31% |
 
 ## 7. 次に見るべき不足
 
