@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-20T09:21:10.636534+00:00
+- generated_at: 2026-11-20T09:26:21.514635+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19236**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-20T09:21:01.559704+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=61707.5
+- 更新: 2026-11-20T09:26:09.018091+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=61727.4
 - Funnel: target 1084 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CYBER/USDT:USDT | +44.03% | $1,004,994.28 |
-| SOXS/USDT:USDT | +21.32% | $58,211,670.00 |
-| BLESS/USDT:USDT | +13.74% | $14,344,675.98 |
-| BTW/USDT:USDT | +13.49% | $4,632,037.22 |
-| UVXY/USDT:USDT | +13.44% | $3,836,185.80 |
+| CYBER/USDT:USDT | +40.50% | $1,060,344.96 |
+| SOXS/USDT:USDT | +21.13% | $58,616,901.54 |
+| BTW/USDT:USDT | +14.89% | $4,642,668.19 |
+| UVXY/USDT:USDT | +13.39% | $3,849,215.17 |
+| BLESS/USDT:USDT | +12.26% | $14,378,787.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PIPPIN/USDT:USDT | below_1h_threshold | +4.51% | +4.66% |
-| BLESS/USDT:USDT | below_1h_threshold | +3.26% | +3.41% |
-| EVAA/USDT:USDT | below_1h_threshold | +2.70% | +2.85% |
-| CYBER/USDT:USDT | below_1h_threshold | +1.68% | +1.83% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.00% | +1.16% |
+| EVAA/USDT:USDT | below_1h_threshold | +2.49% | +2.60% |
+| BLESS/USDT:USDT | below_1h_threshold | +2.04% | +2.16% |
+| SKY/USDT:USDT | below_1h_threshold | +1.38% | +1.50% |
+| BTW/USDT:USDT | below_1h_threshold | +1.33% | +1.45% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.00% | +1.12% |
 
 ## 7. 次に見るべき不足
 
