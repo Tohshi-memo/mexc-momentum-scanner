@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-20T15:41:33.527497+00:00
+- generated_at: 2026-11-20T15:46:24.024772+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19249**
 
@@ -63,38 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7411件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7412件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000150 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-20T15:41:17.682048+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -2.68% price=60091.1
-- Funnel: target 1087 → liquid 160 → pre 50 → checked 50 → surge 2 → strict 2
+- 更新: 2026-11-20T15:46:10.146086+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -3.22% price=59761.0
+- Funnel: target 1087 → liquid 161 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 83.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOXS/USDT:USDT | +32.86% | $73,567,091.23 |
-| KERNEL/USDT:USDT | +31.63% | $1,460,660.21 |
-| BLESS/USDT:USDT | +20.21% | $19,251,422.41 |
-| UVXY/USDT:USDT | +18.81% | $5,580,129.88 |
-| EVAA/USDT:USDT | +17.21% | $27,864,221.68 |
+| SOXS/USDT:USDT | +35.56% | $73,894,200.22 |
+| KERNEL/USDT:USDT | +28.33% | $1,473,832.03 |
+| EVAA/USDT:USDT | +26.15% | $28,828,397.09 |
+| UVXY/USDT:USDT | +20.62% | $5,628,439.68 |
+| BLESS/USDT:USDT | +17.73% | $19,345,246.35 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +4.74% | +7.42% |
-| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +4.08% | +6.76% |
-| AMZNSTOCK/USDT:USDT | below_1h_threshold | +3.05% | +5.73% |
-| MSFTSTOCK/USDT:USDT | below_1h_threshold | +2.89% | +5.58% |
-| EVAA/USDT:USDT | below_1h_threshold | +2.35% | +5.04% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +4.74% | +7.95% |
+| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +4.08% | +7.29% |
+| AMZNSTOCK/USDT:USDT | below_1h_threshold | +3.05% | +6.27% |
+| MSFTSTOCK/USDT:USDT | below_1h_threshold | +2.89% | +6.11% |
+| TESLA/USDT:USDT | below_1h_threshold | +2.30% | +5.52% |
 
 ## 7. 次に見るべき不足
 
