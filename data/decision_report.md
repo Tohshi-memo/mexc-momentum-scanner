@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-20T20:56:30.534644+00:00
+- generated_at: 2026-11-20T21:01:28.370219+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19269**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-20T20:56:14.429674+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.43% price=58279.6
-- Funnel: target 1087 → liquid 165 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.1 >= 65=1
+- 更新: 2026-11-20T21:01:14.564397+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=58438.8
+- Funnel: target 1087 → liquid 161 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 82.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +29.02% | $25,243,986.48 |
-| UVXY/USDT:USDT | +19.50% | $6,772,547.51 |
-| PIEVERSE/USDT:USDT | +12.73% | $4,254,112.91 |
-| SOXS/USDT:USDT | +11.70% | $93,414,353.74 |
-| SKDD/USDT:USDT | +11.00% | $1,068,894.28 |
+| AKE/USDT:USDT | +28.55% | $25,095,157.33 |
+| UVXY/USDT:USDT | +13.08% | $6,664,068.94 |
+| PIEVERSE/USDT:USDT | +12.18% | $4,150,294.57 |
+| SKDD/USDT:USDT | +9.89% | $1,023,402.66 |
+| SOXS/USDT:USDT | +9.11% | $90,339,023.97 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +3.40% | +3.83% |
-| SKDD/USDT:USDT | below_1h_threshold | +3.22% | +3.65% |
-| BLESS/USDT:USDT | below_1h_threshold | +2.92% | +3.34% |
-| SQQQ/USDT:USDT | below_1h_threshold | +2.71% | +3.14% |
-| BARD/USDT:USDT | below_1h_threshold | +2.66% | +3.09% |
+| SOXS/USDT:USDT | below_1h_threshold | +3.25% | +3.25% |
+| SQQQ/USDT:USDT | below_1h_threshold | +2.38% | +2.37% |
+| ANTHROPIC/USDT:USDT | below_1h_threshold | +1.82% | +1.81% |
+| SKDD/USDT:USDT | below_1h_threshold | +1.80% | +1.79% |
+| CYBER/USDT:USDT | below_1h_threshold | +1.48% | +1.47% |
 
 ## 7. 次に見るべき不足
 
