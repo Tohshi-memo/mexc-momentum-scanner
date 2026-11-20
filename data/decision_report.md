@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-20T14:06:09.727225+00:00
+- generated_at: 2026-11-20T14:11:22.805002+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19245**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-20T14:05:59.504717+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=61794.7
+- 更新: 2026-11-20T14:11:08.977815+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=61928.5
 - Funnel: target 1087 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KERNEL/USDT:USDT | +41.61% | $1,199,110.29 |
-| CYBER/USDT:USDT | +21.47% | $2,065,224.31 |
-| SOXS/USDT:USDT | +19.16% | $68,694,700.21 |
-| BLESS/USDT:USDT | +18.84% | $18,008,739.72 |
-| UVXY/USDT:USDT | +16.68% | $4,738,721.05 |
+| KERNEL/USDT:USDT | +40.39% | $1,219,806.22 |
+| CYBER/USDT:USDT | +23.75% | $2,075,888.43 |
+| HUMA/USDT:USDT | +20.08% | $1,285,259.55 |
+| BLESS/USDT:USDT | +18.75% | $18,075,175.17 |
+| SOXS/USDT:USDT | +18.03% | $69,172,917.86 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_1h_threshold | +1.71% | +1.81% |
-| IRYS/USDT:USDT | below_1h_threshold | +1.36% | +1.46% |
-| HUMA/USDT:USDT | below_1h_threshold | +1.27% | +1.37% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +0.89% | +0.99% |
-| ALUMINUM/USDT:USDT | below_1h_threshold | +0.65% | +0.75% |
+| HUMA/USDT:USDT | below_1h_threshold | +4.93% | +4.81% |
+| BTW/USDT:USDT | below_1h_threshold | +2.98% | +2.86% |
+| CYBER/USDT:USDT | below_1h_threshold | +1.88% | +1.76% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.63% | +1.51% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.13% | +1.02% |
 
 ## 7. 次に見るべき不足
 
