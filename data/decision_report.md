@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-20T10:41:22.424545+00:00
+- generated_at: 2026-11-20T10:46:30.283362+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19240**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7399件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7400件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000163 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-20T10:41:09.949513+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.98% price=62215.1
-- Funnel: target 1084 → liquid 160 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.3 >= 65=1, 4h RSI 69.4 >= 65=1
+- 更新: 2026-11-20T10:46:18.128225+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +1.05% price=62257.0
+- Funnel: target 1084 → liquid 160 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=46, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.1 >= 65=1, 4h RSI 69.3 >= 65=1, 4h RSI 79.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CYBER/USDT:USDT | +31.46% | $1,484,969.39 |
-| SOXS/USDT:USDT | +20.07% | $62,157,545.63 |
-| BTW/USDT:USDT | +16.40% | $4,644,193.12 |
-| BLESS/USDT:USDT | +13.36% | $15,145,747.11 |
-| EVAA/USDT:USDT | +12.76% | $24,144,641.88 |
+| CYBER/USDT:USDT | +31.80% | $1,494,871.54 |
+| SOXS/USDT:USDT | +20.24% | $62,320,428.71 |
+| BTW/USDT:USDT | +16.01% | $4,659,976.14 |
+| EVAA/USDT:USDT | +14.52% | $24,460,160.79 |
+| BLESS/USDT:USDT | +13.25% | $15,181,433.98 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_relative_strength | +5.58% | +4.59% |
-| ICNT/USDT:USDT | below_1h_threshold | +4.62% | +3.63% |
-| SOXS/USDT:USDT | below_1h_threshold | +3.79% | +2.80% |
-| UVXY/USDT:USDT | below_1h_threshold | +3.42% | +2.44% |
-| EVAA/USDT:USDT | below_1h_threshold | +2.95% | +1.97% |
+| BLESS/USDT:USDT | below_relative_strength | +5.47% | +4.42% |
+| EVAA/USDT:USDT | below_1h_threshold | +4.60% | +3.55% |
+| SOXS/USDT:USDT | below_1h_threshold | +3.79% | +2.74% |
+| UVXY/USDT:USDT | below_1h_threshold | +3.42% | +2.37% |
+| SQQQ/USDT:USDT | below_1h_threshold | +2.11% | +1.06% |
 
 ## 7. 次に見るべき不足
 
