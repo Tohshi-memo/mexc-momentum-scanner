@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-21T01:36:22.880420+00:00
+- generated_at: 2026-11-21T01:41:27.553754+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19274**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-21T01:36:10.470643+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=58900.0
-- Funnel: target 1086 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-11-21T01:41:17.751052+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=58949.2
+- Funnel: target 1086 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +19.26% | $26,518,100.32 |
-| PIEVERSE/USDT:USDT | +17.74% | $4,147,202.73 |
-| BLESS/USDT:USDT | +12.06% | $21,842,586.54 |
-| MMT/USDT:USDT | +12.03% | $3,912,065.78 |
-| VVV/USDT:USDT | +8.01% | $3,556,400.20 |
+| AKE/USDT:USDT | +19.96% | $26,528,888.02 |
+| PIEVERSE/USDT:USDT | +16.92% | $4,158,633.81 |
+| BLESS/USDT:USDT | +12.46% | $21,906,559.83 |
+| MMT/USDT:USDT | +12.19% | $3,913,037.14 |
+| VVV/USDT:USDT | +7.26% | $3,604,180.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VVV/USDT:USDT | below_1h_threshold | +2.16% | +2.32% |
-| BLESS/USDT:USDT | below_1h_threshold | +1.66% | +1.82% |
-| EVAA/USDT:USDT | below_1h_threshold | +1.35% | +1.51% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +0.80% | +0.96% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +0.77% | +0.93% |
+| BLESS/USDT:USDT | below_1h_threshold | +2.11% | +2.19% |
+| VVV/USDT:USDT | below_1h_threshold | +1.45% | +1.53% |
+| EVAA/USDT:USDT | below_1h_threshold | +0.86% | +0.94% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +0.80% | +0.88% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +0.33% | +0.41% |
 
 ## 7. 次に見るべき不足
 
