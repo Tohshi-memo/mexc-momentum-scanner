@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-21T20:06:37.721815+00:00
+- generated_at: 2026-11-21T20:11:22.426468+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19332**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7495件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7496件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000356 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-21T20:06:21.654715+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=60320.3
-- Funnel: target 1086 → liquid 131 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-21T20:11:12.681117+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=60384.7
+- Funnel: target 1086 → liquid 132 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 73.9 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLAUDIA/USDT:USDT | +35.37% | $1,632,129.50 |
-| IDOL/USDT:USDT | +35.03% | $3,805,477.30 |
-| BLESS/USDT:USDT | +15.45% | $56,528,281.42 |
-| PIEVERSE/USDT:USDT | +14.68% | $5,418,503.24 |
-| SKYAI/USDT:USDT | +8.02% | $1,161,864.26 |
+| CLAUDIA/USDT:USDT | +42.10% | $1,677,336.29 |
+| IDOL/USDT:USDT | +34.08% | $3,876,071.73 |
+| PIEVERSE/USDT:USDT | +13.72% | $5,436,684.86 |
+| BLESS/USDT:USDT | +13.70% | $56,644,601.81 |
+| SKYAI/USDT:USDT | +7.45% | $1,167,146.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CLAUDIA/USDT:USDT | below_1h_threshold | +4.69% | +4.70% |
-| IDOL/USDT:USDT | below_1h_threshold | +4.27% | +4.28% |
-| BTW/USDT:USDT | below_1h_threshold | +1.30% | +1.31% |
-| BLESS/USDT:USDT | below_1h_threshold | +1.08% | +1.08% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +0.82% | +0.82% |
+| IDOL/USDT:USDT | below_1h_threshold | +3.93% | +3.83% |
+| BTW/USDT:USDT | below_1h_threshold | +1.12% | +1.02% |
+| DODO/USDT:USDT | below_1h_threshold | +0.87% | +0.77% |
+| AAPLSTOCK/USDT:USDT | below_1h_threshold | +0.47% | +0.37% |
+| ZRO/USDT:USDT | below_1h_threshold | +0.39% | +0.29% |
 
 ## 7. 次に見るべき不足
 
