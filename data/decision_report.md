@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-21T06:06:26.728515+00:00
+- generated_at: 2026-11-21T06:11:19.716795+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19280**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-21T06:06:16.812361+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=55748.9
+- 更新: 2026-11-21T06:11:10.492990+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=55729.2
 - Funnel: target 1086 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLESS/USDT:USDT | +16.17% | $24,052,739.61 |
-| PIEVERSE/USDT:USDT | +13.63% | $3,984,487.78 |
-| UVXY/USDT:USDT | +11.29% | $6,243,342.63 |
-| RARE/USDT:USDT | +8.83% | $5,567,023.98 |
-| SQQQ/USDT:USDT | +6.84% | $5,351,828.26 |
+| BLESS/USDT:USDT | +16.92% | $24,118,522.36 |
+| PIEVERSE/USDT:USDT | +13.42% | $3,987,380.69 |
+| UVXY/USDT:USDT | +10.96% | $6,243,996.67 |
+| RARE/USDT:USDT | +7.50% | $5,592,453.76 |
+| SQQQ/USDT:USDT | +6.80% | $5,352,152.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RARE/USDT:USDT | below_1h_threshold | +2.05% | +2.09% |
-| UVXY/USDT:USDT | below_1h_threshold | +1.42% | +1.46% |
-| BTW/USDT:USDT | below_1h_threshold | +0.60% | +0.63% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +0.46% | +0.50% |
-| AVGOSTOCK/USDT:USDT | below_1h_threshold | +0.45% | +0.49% |
+| JCT/USDT:USDT | below_1h_threshold | +1.54% | +1.61% |
+| UVXY/USDT:USDT | below_1h_threshold | +1.42% | +1.49% |
+| RARE/USDT:USDT | below_1h_threshold | +0.81% | +0.88% |
+| BTW/USDT:USDT | below_1h_threshold | +0.75% | +0.82% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +0.46% | +0.53% |
 
 ## 7. 次に見るべき不足
 
