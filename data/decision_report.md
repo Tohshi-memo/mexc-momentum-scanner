@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-21T00:01:16.535734+00:00
+- generated_at: 2026-11-21T00:06:26.699640+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19272**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-21T00:01:05.692502+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=58935.0
+- 更新: 2026-11-21T00:06:16.573265+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=58878.4
 - Funnel: target 1086 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +20.49% | $26,128,660.94 |
-| PIEVERSE/USDT:USDT | +15.81% | $4,112,452.54 |
-| MMT/USDT:USDT | +10.63% | $3,811,614.22 |
-| BLESS/USDT:USDT | +8.95% | $21,421,307.38 |
-| UVXY/USDT:USDT | +7.28% | $6,651,118.28 |
+| AKE/USDT:USDT | +20.19% | $26,148,051.89 |
+| PIEVERSE/USDT:USDT | +16.16% | $4,126,331.23 |
+| MMT/USDT:USDT | +9.85% | $3,819,452.82 |
+| BLESS/USDT:USDT | +8.90% | $21,476,272.32 |
+| UVXY/USDT:USDT | +6.42% | $6,663,617.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +1.44% | +1.41% |
-| MMT/USDT:USDT | below_1h_threshold | +0.94% | +0.90% |
-| BTW/USDT:USDT | below_1h_threshold | +0.49% | +0.45% |
-| IRYS/USDT:USDT | below_1h_threshold | +0.37% | +0.33% |
-| RIVER/USDT:USDT | below_1h_threshold | +0.32% | +0.29% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.44% | +1.50% |
+| IRYS/USDT:USDT | below_1h_threshold | +0.60% | +0.66% |
+| EVAA/USDT:USDT | below_1h_threshold | +0.51% | +0.57% |
+| BLESS/USDT:USDT | below_1h_threshold | +0.38% | +0.44% |
+| SQQQ/USDT:USDT | below_1h_threshold | +0.25% | +0.31% |
 
 ## 7. 次に見るべき不足
 
