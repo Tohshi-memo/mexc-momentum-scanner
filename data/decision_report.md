@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-21T20:21:25.571765+00:00
+- generated_at: 2026-11-21T20:26:26.823754+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19333**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7497件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7498件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000359 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-21T20:21:11.899997+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=60294.2
-- Funnel: target 1086 → liquid 134 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.7 >= 65=1
+- 更新: 2026-11-21T20:26:16.009551+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=60385.9
+- Funnel: target 1086 → liquid 134 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 73.4 >= 65=1, 4h RSI 92.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLAUDIA/USDT:USDT | +43.21% | $1,727,725.89 |
-| IDOL/USDT:USDT | +33.04% | $4,034,487.37 |
-| PIEVERSE/USDT:USDT | +14.87% | $5,478,949.78 |
-| BLESS/USDT:USDT | +12.13% | $56,882,072.11 |
-| SKYAI/USDT:USDT | +6.56% | $1,178,754.90 |
+| CLAUDIA/USDT:USDT | +40.33% | $1,744,235.71 |
+| IDOL/USDT:USDT | +36.11% | $4,140,087.23 |
+| PIEVERSE/USDT:USDT | +14.58% | $5,509,892.93 |
+| BLESS/USDT:USDT | +13.70% | $57,020,096.36 |
+| SKYAI/USDT:USDT | +8.05% | $1,182,394.16 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IDOL/USDT:USDT | below_1h_threshold | +3.34% | +3.40% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +1.10% | +1.16% |
-| NEAR/USDT:USDT | below_1h_threshold | +0.59% | +0.64% |
-| BTW/USDT:USDT | below_1h_threshold | +0.58% | +0.63% |
-| BEAT/USDT:USDT | below_1h_threshold | +0.48% | +0.53% |
+| ZRO/USDT:USDT | below_1h_threshold | +0.86% | +0.76% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +0.78% | +0.68% |
+| NEAR/USDT:USDT | below_1h_threshold | +0.66% | +0.56% |
+| LIT/USDT:USDT | below_1h_threshold | +0.48% | +0.37% |
+| BEAT/USDT:USDT | below_1h_threshold | +0.45% | +0.35% |
 
 ## 7. 次に見るべき不足
 
