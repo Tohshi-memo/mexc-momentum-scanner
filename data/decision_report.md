@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-21T13:52:03.672011+00:00
+- generated_at: 2026-11-21T13:58:10.398954+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19309**
 
@@ -70,31 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-21T13:51:47.143728+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +3.11% price=60662.7
+- 更新: 2026-11-21T13:57:56.214302+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +2.90% price=60537.1
 - Funnel: target 1086 → liquid 155 → pre 50 → checked 50 → surge 2 → strict 2
-- Surge前reject: below_1h_threshold=46, below_relative_strength=2, invalid_ohlcv=0, errors=0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLAUDIA/USDT:USDT | +55.88% | $1,134,472.94 |
-| RARE/USDT:USDT | +18.76% | $7,922,227.02 |
-| VVV/USDT:USDT | +17.91% | $4,697,349.10 |
-| DODO/USDT:USDT | +17.45% | $1,252,094.30 |
-| IDOL/USDT:USDT | +15.85% | $1,478,492.09 |
+| CLAUDIA/USDT:USDT | +52.27% | $1,146,695.09 |
+| DODO/USDT:USDT | +17.88% | $1,260,771.64 |
+| RARE/USDT:USDT | +17.74% | $7,943,102.32 |
+| VVV/USDT:USDT | +17.46% | $4,731,635.48 |
+| IDOL/USDT:USDT | +15.56% | $1,491,068.61 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UNI/USDT:USDT | below_relative_strength | +5.79% | +2.68% |
-| ETHFI/USDT:USDT | below_relative_strength | +5.46% | +2.35% |
-| NEAR/USDT:USDT | below_1h_threshold | +4.29% | +1.18% |
-| ZEC/USDT:USDT | below_1h_threshold | +4.01% | +0.90% |
-| RENDER/USDT:USDT | below_1h_threshold | +3.74% | +0.63% |
+| UNI/USDT:USDT | below_relative_strength | +5.12% | +2.23% |
+| ETHFI/USDT:USDT | below_1h_threshold | +4.69% | +1.80% |
+| ZEC/USDT:USDT | below_1h_threshold | +4.05% | +1.15% |
+| JCT/USDT:USDT | below_1h_threshold | +3.97% | +1.07% |
+| QNT/USDT:USDT | below_1h_threshold | +3.96% | +1.07% |
 
 ## 7. 次に見るべき不足
 
