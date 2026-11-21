@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-21T01:21:13.930904+00:00
+- generated_at: 2026-11-21T01:26:14.644555+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19274**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-21T01:21:02.917201+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=59088.4
+- 更新: 2026-11-21T01:26:03.466067+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=59095.4
 - Funnel: target 1086 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +18.29% | $26,467,588.45 |
-| PIEVERSE/USDT:USDT | +18.06% | $4,121,155.07 |
-| MMT/USDT:USDT | +12.07% | $3,833,889.62 |
-| BLESS/USDT:USDT | +10.57% | $21,752,541.45 |
-| UVXY/USDT:USDT | +7.06% | $6,567,876.29 |
+| AKE/USDT:USDT | +19.76% | $26,490,174.51 |
+| PIEVERSE/USDT:USDT | +18.09% | $4,138,075.69 |
+| MMT/USDT:USDT | +12.40% | $3,838,134.16 |
+| BLESS/USDT:USDT | +11.41% | $21,785,060.14 |
+| BARD/USDT:USDT | +7.34% | $6,739,570.88 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PIPPIN/USDT:USDT | below_1h_threshold | +1.31% | +1.16% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +1.00% | +0.85% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +0.80% | +0.64% |
-| EVAA/USDT:USDT | below_1h_threshold | +0.69% | +0.53% |
-| VVV/USDT:USDT | below_1h_threshold | +0.53% | +0.37% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.58% | +1.41% |
+| VVV/USDT:USDT | below_1h_threshold | +1.58% | +1.41% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +1.06% | +0.89% |
+| BARD/USDT:USDT | below_1h_threshold | +0.97% | +0.80% |
+| CYBER/USDT:USDT | below_1h_threshold | +0.89% | +0.72% |
 
 ## 7. 次に見るべき不足
 
