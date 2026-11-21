@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-21T06:01:23.890462+00:00
+- generated_at: 2026-11-21T06:06:26.728515+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19280**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-21T06:01:14.045644+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=55775.9
+- 更新: 2026-11-21T06:06:16.812361+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=55748.9
 - Funnel: target 1086 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLESS/USDT:USDT | +16.13% | $23,840,613.05 |
-| PIEVERSE/USDT:USDT | +13.30% | $3,968,621.01 |
-| UVXY/USDT:USDT | +11.29% | $6,242,183.87 |
-| SQQQ/USDT:USDT | +6.73% | $5,351,520.44 |
-| RARE/USDT:USDT | +6.72% | $5,545,997.90 |
+| BLESS/USDT:USDT | +16.17% | $24,052,739.61 |
+| PIEVERSE/USDT:USDT | +13.63% | $3,984,487.78 |
+| UVXY/USDT:USDT | +11.29% | $6,243,342.63 |
+| RARE/USDT:USDT | +8.83% | $5,567,023.98 |
+| SQQQ/USDT:USDT | +6.84% | $5,351,828.26 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UVXY/USDT:USDT | below_1h_threshold | +1.42% | +1.41% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +0.46% | +0.45% |
-| ALUMINUM/USDT:USDT | below_1h_threshold | +0.42% | +0.41% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.42% | +0.40% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +0.39% | +0.38% |
+| RARE/USDT:USDT | below_1h_threshold | +2.05% | +2.09% |
+| UVXY/USDT:USDT | below_1h_threshold | +1.42% | +1.46% |
+| BTW/USDT:USDT | below_1h_threshold | +0.60% | +0.63% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +0.46% | +0.50% |
+| AVGOSTOCK/USDT:USDT | below_1h_threshold | +0.45% | +0.49% |
 
 ## 7. 次に見るべき不足
 
