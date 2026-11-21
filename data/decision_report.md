@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-11-21T11:41:13.964610+00:00
+- generated_at: 2026-11-21T11:46:21.408905+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **19300**
+- closed shadow trades: **19301**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=19300, expectancy=+0.02%
+- 全期間 MARKET基準: n=19301, expectancy=+0.02%
 - 直近20件 MARKET基準: n=20, expectancy=-0.40%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -32,8 +32,8 @@
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | LIMIT_BB3S_LONG | 3/3 | 100.0% | +5.38% | **+5.38%** |
-| LIMIT_ATR_LONG | 10/20 | 50.0% | +4.46% | **+2.23%** |
-| LIMIT_5PCT_LONG | 8/20 | 40.0% | +3.61% | **+1.44%** |
+| LIMIT_ATR_LONG | 10/20 | 50.0% | +4.15% | **+2.08%** |
+| LIMIT_5PCT_LONG | 8/20 | 40.0% | +3.71% | **+1.48%** |
 | LIMIT_1PCT_LONG | 18/20 | 90.0% | +1.52% | **+1.37%** |
 | LIMIT_2PCT_LONG | 15/20 | 75.0% | +1.77% | **+1.33%** |
 
@@ -47,18 +47,18 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,659.48** / 初期 $100.00 (+1559.48%)
-- 確定: 7443件 (Win 2136 / Loss 2398 / Flat 2909) / skip 8418件
+- 確定: 7444件 (Win 2136 / Loss 2398 / Flat 2910) / skip 8418件
 - 成長率目線: 平均log +0.000377 / 幾何平均 +0.038% per trade / maxDD +9.04%
 - 次の候補: `LIMIT_ATR_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: BLESS/USDT:USDT `LIMIT_FIB1272` EXPIRED account +0.00% 残高後 $1,659.48
+- 最新: CLAUDIA/USDT:USDT `LIMIT_8PCT_LONG` EXPIRED account +0.00% 残高後 $1,659.48
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$448.56** / 初期 $100.00 (+348.56%)
-- 確定: 5105件 (Win 1359 / Loss 1091 / Flat 2655) / skip 7606件
+- 確定: 5106件 (Win 1359 / Loss 1091 / Flat 2656) / skip 7606件
 - 成長率目線: 平均log +0.000294 / 幾何平均 +0.029% per trade / maxDD +4.29%
-- 次の候補: `LIMIT_FIB1272` (selected_by_robust_growth_score) / robust_score -0.0008 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: BLESS/USDT:USDT `LIMIT_FIB1272` EXPIRED account +0.00% 残高後 $448.56
+- 次の候補: `LIMIT_FIB1272` (selected_by_robust_growth_score) / robust_score -0.0009 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 最新: CLAUDIA/USDT:USDT `LIMIT_FIB1272` EXPIRED account +0.00% 残高後 $448.56
 
 ## 5. Causal Adaptive DryRun ($100)
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-21T11:41:05.213319+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.45% price=58169.5
+- 更新: 2026-11-21T11:46:04.942539+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.37% price=58126.5
 - Funnel: target 1086 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLAUDIA/USDT:USDT | +40.95% | $1,032,722.95 |
-| BTW/USDT:USDT | +18.41% | $4,790,769.46 |
-| RARE/USDT:USDT | +14.85% | $6,366,946.74 |
-| LAB/USDT:USDT | +12.33% | $1,050,764.95 |
-| VVV/USDT:USDT | +10.74% | $4,192,097.54 |
+| CLAUDIA/USDT:USDT | +35.56% | $1,041,652.60 |
+| BTW/USDT:USDT | +17.12% | $4,830,322.64 |
+| RARE/USDT:USDT | +12.74% | $6,396,349.84 |
+| LAB/USDT:USDT | +12.63% | $1,053,182.23 |
+| PIEVERSE/USDT:USDT | +11.75% | $4,008,786.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RARE/USDT:USDT | below_relative_strength | +5.00% | +4.56% |
-| LAB/USDT:USDT | below_1h_threshold | +3.14% | +2.70% |
-| AAVE/USDT:USDT | below_1h_threshold | +1.82% | +1.37% |
-| PI/USDT:USDT | below_1h_threshold | +1.65% | +1.21% |
-| UNI/USDT:USDT | below_1h_threshold | +1.61% | +1.16% |
+| LAB/USDT:USDT | below_1h_threshold | +3.41% | +3.04% |
+| RARE/USDT:USDT | below_1h_threshold | +3.07% | +2.70% |
+| AAVE/USDT:USDT | below_1h_threshold | +1.99% | +1.62% |
+| TAO/USDT:USDT | below_1h_threshold | +1.79% | +1.42% |
+| UNI/USDT:USDT | below_1h_threshold | +1.77% | +1.39% |
 
 ## 7. 次に見るべき不足
 
