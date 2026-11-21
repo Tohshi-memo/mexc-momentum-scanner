@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-21T14:06:17.444651+00:00
+- generated_at: 2026-11-21T14:11:25.876921+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19309**
 
@@ -70,30 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-21T14:06:06.507777+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=60545.2
-- Funnel: target 1086 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-21T14:11:12.486890+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.35% price=60312.8
+- Funnel: target 1086 → liquid 151 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLAUDIA/USDT:USDT | +57.05% | $1,150,131.86 |
-| RARE/USDT:USDT | +19.93% | $7,957,351.62 |
-| IDOL/USDT:USDT | +19.27% | $1,522,037.79 |
-| PIEVERSE/USDT:USDT | +17.35% | $4,026,229.30 |
-| VVV/USDT:USDT | +16.90% | $4,698,298.95 |
+| CLAUDIA/USDT:USDT | +66.66% | $1,159,974.22 |
+| RARE/USDT:USDT | +21.65% | $8,054,298.73 |
+| IDOL/USDT:USDT | +19.38% | $1,543,327.47 |
+| PIEVERSE/USDT:USDT | +16.57% | $4,047,815.41 |
+| VVV/USDT:USDT | +16.21% | $4,759,285.36 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PIEVERSE/USDT:USDT | below_1h_threshold | +1.80% | +1.77% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +1.76% | +1.72% |
-| CLAUDIA/USDT:USDT | below_1h_threshold | +1.69% | +1.65% |
-| RIVER/USDT:USDT | below_1h_threshold | +1.27% | +1.23% |
-| BR/USDT:USDT | below_1h_threshold | +1.26% | +1.22% |
+| RARE/USDT:USDT | below_1h_threshold | +2.64% | +2.98% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +1.76% | +2.11% |
+| BR/USDT:USDT | below_1h_threshold | +1.50% | +1.84% |
+| ANTHROPIC/USDT:USDT | below_1h_threshold | +1.24% | +1.58% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +1.13% | +1.47% |
 
 ## 7. 次に見るべき不足
 
