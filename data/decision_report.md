@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-21T17:36:30.057153+00:00
+- generated_at: 2026-11-21T17:41:24.207000+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19326**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-21T17:36:17.294190+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=60082.9
+- 更新: 2026-11-21T17:41:13.050386+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=59983.2
 - Funnel: target 1086 → liquid 138 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.2 >= 65=1
+- Strict後reject: 4h RSI 71.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLAUDIA/USDT:USDT | +38.65% | $1,772,251.09 |
-| PIEVERSE/USDT:USDT | +12.72% | $4,727,043.64 |
-| DODO/USDT:USDT | +6.06% | $1,510,889.84 |
-| NIGHT/USDT:USDT | +5.93% | $1,132,325.55 |
-| IDOL/USDT:USDT | +5.66% | $1,896,275.95 |
+| CLAUDIA/USDT:USDT | +34.41% | $1,805,385.92 |
+| PIEVERSE/USDT:USDT | +13.01% | $4,774,247.99 |
+| NIGHT/USDT:USDT | +6.09% | $1,138,411.33 |
+| IDOL/USDT:USDT | +5.58% | $1,914,124.67 |
+| BARD/USDT:USDT | +5.34% | $3,983,094.29 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIGHT/USDT:USDT | below_1h_threshold | +4.51% | +4.43% |
-| EVAA/USDT:USDT | below_1h_threshold | +2.28% | +2.19% |
-| IDOL/USDT:USDT | below_1h_threshold | +2.18% | +2.10% |
-| LUNC/USDT:USDT | below_1h_threshold | +1.53% | +1.45% |
-| BLESS/USDT:USDT | below_1h_threshold | +1.41% | +1.32% |
+| NIGHT/USDT:USDT | below_1h_threshold | +4.67% | +4.75% |
+| BLESS/USDT:USDT | below_1h_threshold | +2.56% | +2.64% |
+| EVAA/USDT:USDT | below_1h_threshold | +1.94% | +2.02% |
+| IDOL/USDT:USDT | below_1h_threshold | +1.90% | +1.98% |
+| AKE/USDT:USDT | below_1h_threshold | +1.86% | +1.94% |
 
 ## 7. 次に見るべき不足
 
