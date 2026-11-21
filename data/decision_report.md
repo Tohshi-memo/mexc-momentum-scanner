@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-21T12:11:25.819016+00:00
+- generated_at: 2026-11-21T12:16:27.690562+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19301**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7461件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7462件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000150 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-21T12:11:12.359432+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=58154.0
-- Funnel: target 1086 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-21T12:16:14.228726+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.30% price=58358.4
+- Funnel: target 1086 → liquid 155 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLAUDIA/USDT:USDT | +37.00% | $1,041,950.85 |
-| BTW/USDT:USDT | +18.61% | $4,695,528.68 |
-| VVV/USDT:USDT | +11.72% | $4,183,741.85 |
-| RARE/USDT:USDT | +11.25% | $7,123,983.94 |
-| PIEVERSE/USDT:USDT | +11.08% | $3,913,740.81 |
+| CLAUDIA/USDT:USDT | +36.29% | $1,042,544.10 |
+| BTW/USDT:USDT | +17.56% | $4,710,476.03 |
+| RARE/USDT:USDT | +14.15% | $7,149,095.31 |
+| VVV/USDT:USDT | +12.57% | $4,186,679.58 |
+| LAB/USDT:USDT | +11.58% | $1,026,960.42 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +3.41% | +3.46% |
-| EVAA/USDT:USDT | below_1h_threshold | +2.29% | +2.34% |
-| CLAUDIA/USDT:USDT | below_1h_threshold | +2.12% | +2.16% |
-| PI/USDT:USDT | below_1h_threshold | +1.31% | +1.36% |
-| UVXY/USDT:USDT | below_1h_threshold | +0.65% | +0.70% |
+| EVAA/USDT:USDT | below_1h_threshold | +1.74% | +1.43% |
+| CLAUDIA/USDT:USDT | below_1h_threshold | +1.43% | +1.13% |
+| RARE/USDT:USDT | below_1h_threshold | +1.32% | +1.02% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.25% | +0.94% |
+| VVV/USDT:USDT | below_1h_threshold | +0.81% | +0.51% |
 
 ## 7. 次に見るべき不足
 
