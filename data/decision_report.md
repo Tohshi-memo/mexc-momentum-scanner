@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-21T03:21:25.846778+00:00
+- generated_at: 2026-11-21T03:26:23.889952+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19275**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-21T03:21:12.602662+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.39% price=58344.0
-- Funnel: target 1086 → liquid 155 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI n/a=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-21T03:26:10.160243+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.35% price=58367.7
+- Funnel: target 1086 → liquid 155 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +11.70% | $26,829,966.05 |
-| BLESS/USDT:USDT | +11.29% | $22,496,062.74 |
-| PIEVERSE/USDT:USDT | +11.23% | $4,160,121.40 |
-| UVXY/USDT:USDT | +7.69% | $6,456,726.93 |
-| MMT/USDT:USDT | +6.81% | $3,929,869.49 |
+| AKE/USDT:USDT | +12.30% | $26,835,592.32 |
+| PIEVERSE/USDT:USDT | +11.45% | $4,161,740.27 |
+| BLESS/USDT:USDT | +11.17% | $22,518,196.61 |
+| MMT/USDT:USDT | +7.88% | $3,955,533.33 |
+| UVXY/USDT:USDT | +7.61% | $6,457,225.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BARD/USDT:USDT | below_1h_threshold | +1.44% | +1.84% |
-| RARE/USDT:USDT | below_1h_threshold | +1.36% | +1.76% |
-| BLESS/USDT:USDT | below_1h_threshold | +1.35% | +1.75% |
-| EVAA/USDT:USDT | below_1h_threshold | +0.84% | +1.23% |
-| BTW/USDT:USDT | below_1h_threshold | +0.71% | +1.10% |
+| RARE/USDT:USDT | below_1h_threshold | +1.82% | +2.17% |
+| BARD/USDT:USDT | below_1h_threshold | +1.78% | +2.13% |
+| EVAA/USDT:USDT | below_1h_threshold | +1.26% | +1.61% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.24% | +1.59% |
+| UVXY/USDT:USDT | below_1h_threshold | +0.67% | +1.02% |
 
 ## 7. 次に見るべき不足
 
