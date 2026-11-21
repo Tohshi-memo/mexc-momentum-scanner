@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-21T14:02:27.870917+00:00
+- generated_at: 2026-11-21T14:06:17.444651+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19309**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-21T14:02:18.674973+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=60577.4
+- 更新: 2026-11-21T14:06:06.507777+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=60545.2
 - Funnel: target 1086 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLAUDIA/USDT:USDT | +57.47% | $1,145,201.36 |
-| IDOL/USDT:USDT | +19.96% | $1,499,374.13 |
-| RARE/USDT:USDT | +19.46% | $7,897,172.48 |
-| VVV/USDT:USDT | +17.69% | $4,680,487.00 |
-| DODO/USDT:USDT | +17.24% | $1,263,255.94 |
+| CLAUDIA/USDT:USDT | +57.05% | $1,150,131.86 |
+| RARE/USDT:USDT | +19.93% | $7,957,351.62 |
+| IDOL/USDT:USDT | +19.27% | $1,522,037.79 |
+| PIEVERSE/USDT:USDT | +17.35% | $4,026,229.30 |
+| VVV/USDT:USDT | +16.90% | $4,698,298.95 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CLAUDIA/USDT:USDT | below_1h_threshold | +1.96% | +1.87% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +1.76% | +1.67% |
-| ANTHROPIC/USDT:USDT | below_1h_threshold | +1.24% | +1.15% |
-| RARE/USDT:USDT | below_1h_threshold | +1.06% | +0.96% |
-| EVAA/USDT:USDT | below_1h_threshold | +0.97% | +0.88% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +1.80% | +1.77% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +1.76% | +1.72% |
+| CLAUDIA/USDT:USDT | below_1h_threshold | +1.69% | +1.65% |
+| RIVER/USDT:USDT | below_1h_threshold | +1.27% | +1.23% |
+| BR/USDT:USDT | below_1h_threshold | +1.26% | +1.22% |
 
 ## 7. 次に見るべき不足
 
