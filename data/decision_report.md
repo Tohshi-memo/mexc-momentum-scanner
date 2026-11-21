@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-21T06:51:28.034042+00:00
+- generated_at: 2026-11-21T06:56:24.732508+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19282**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7440件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7441件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000157 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-21T06:51:11.736953+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +3.51% price=57723.0
-- Funnel: target 1086 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=45, below_relative_strength=5, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-21T06:56:11.143877+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +3.51% price=57725.1
+- Funnel: target 1086 → liquid 162 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=2, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 71.3 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLESS/USDT:USDT | +28.66% | $25,518,253.35 |
-| PIEVERSE/USDT:USDT | +15.13% | $4,111,095.45 |
-| BTW/USDT:USDT | +12.29% | $4,103,141.81 |
-| VVV/USDT:USDT | +9.82% | $3,834,963.58 |
-| UVXY/USDT:USDT | +9.47% | $6,263,211.15 |
+| BLESS/USDT:USDT | +31.37% | $25,937,001.90 |
+| PIEVERSE/USDT:USDT | +13.85% | $4,119,067.81 |
+| BTW/USDT:USDT | +12.97% | $4,128,456.93 |
+| VVV/USDT:USDT | +9.66% | $3,851,112.55 |
+| UVXY/USDT:USDT | +9.51% | $6,263,735.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_relative_strength | +8.44% | +4.93% |
-| VVV/USDT:USDT | below_relative_strength | +8.03% | +4.53% |
-| BTW/USDT:USDT | below_relative_strength | +7.02% | +3.51% |
-| ETH/USDT:USDT | below_relative_strength | +5.85% | +2.34% |
-| TAO/USDT:USDT | below_relative_strength | +5.73% | +2.22% |
+| VVV/USDT:USDT | below_relative_strength | +7.88% | +4.37% |
+| BTW/USDT:USDT | below_relative_strength | +7.54% | +4.03% |
+| TAO/USDT:USDT | below_1h_threshold | +4.81% | +1.30% |
+| SOL/USDT:USDT | below_1h_threshold | +4.10% | +0.59% |
+| DOGE/USDT:USDT | below_1h_threshold | +4.02% | +0.51% |
 
 ## 7. 次に見るべき不足
 
