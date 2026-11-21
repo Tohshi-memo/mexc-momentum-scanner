@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-21T22:01:13.463133+00:00
+- generated_at: 2026-11-21T22:06:29.068359+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19338**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-21T22:01:02.943983+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=60440.5
+- 更新: 2026-11-21T22:06:15.371136+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.45% price=60178.5
 - Funnel: target 1086 → liquid 122 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IDOL/USDT:USDT | +54.02% | $6,075,282.50 |
-| CLAUDIA/USDT:USDT | +32.52% | $1,837,085.15 |
-| PIEVERSE/USDT:USDT | +15.02% | $5,411,378.79 |
-| SKYAI/USDT:USDT | +9.95% | $1,212,598.87 |
-| BLESS/USDT:USDT | +6.90% | $57,572,353.66 |
+| IDOL/USDT:USDT | +54.21% | $6,107,637.37 |
+| CLAUDIA/USDT:USDT | +30.47% | $1,841,632.72 |
+| PIEVERSE/USDT:USDT | +14.38% | $5,438,838.41 |
+| SKYAI/USDT:USDT | +9.49% | $1,216,360.70 |
+| BLESS/USDT:USDT | +6.59% | $57,610,640.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXL/USDT:USDT | below_1h_threshold | +0.76% | +0.77% |
-| AKE/USDT:USDT | below_1h_threshold | +0.61% | +0.62% |
-| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +0.51% | +0.53% |
-| CLAUDIA/USDT:USDT | below_1h_threshold | +0.42% | +0.43% |
-| DODO/USDT:USDT | below_1h_threshold | +0.39% | +0.40% |
+| SOXL/USDT:USDT | below_1h_threshold | +0.76% | +1.20% |
+| IDOL/USDT:USDT | below_1h_threshold | +0.54% | +0.99% |
+| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +0.51% | +0.96% |
+| ANTHROPIC/USDT:USDT | below_1h_threshold | +0.33% | +0.78% |
+| AKE/USDT:USDT | below_1h_threshold | +0.32% | +0.77% |
 
 ## 7. 次に見るべき不足
 
