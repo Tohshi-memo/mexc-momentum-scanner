@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-21T09:01:28.393121+00:00
+- generated_at: 2026-11-21T09:06:18.877737+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19291**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-21T09:01:13.725901+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=57750.0
+- 更新: 2026-11-21T09:06:08.890223+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.16% price=57870.0
 - Funnel: target 1086 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLESS/USDT:USDT | +66.64% | $27,496,855.01 |
-| CLAUDIA/USDT:USDT | +37.55% | $1,005,478.28 |
-| BTW/USDT:USDT | +17.26% | $4,292,438.69 |
-| PIEVERSE/USDT:USDT | +15.98% | $4,196,030.84 |
-| EVAA/USDT:USDT | +10.44% | $34,937,830.41 |
+| BLESS/USDT:USDT | +69.65% | $27,966,301.50 |
+| CLAUDIA/USDT:USDT | +40.58% | $1,006,552.16 |
+| BTW/USDT:USDT | +19.48% | $4,340,306.02 |
+| PIEVERSE/USDT:USDT | +15.56% | $4,202,555.95 |
+| EVAA/USDT:USDT | +10.38% | $35,026,116.16 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +2.01% | +2.06% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.24% | +1.29% |
-| ALUMINUM/USDT:USDT | below_1h_threshold | +0.41% | +0.46% |
-| ZINC/USDT:USDT | below_1h_threshold | +0.27% | +0.32% |
-| SQQQ/USDT:USDT | below_1h_threshold | +0.21% | +0.26% |
+| BTW/USDT:USDT | below_1h_threshold | +1.92% | +1.76% |
+| CLAUDIA/USDT:USDT | below_1h_threshold | +1.80% | +1.64% |
+| AKE/USDT:USDT | below_1h_threshold | +1.48% | +1.33% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.24% | +1.08% |
+| MMT/USDT:USDT | below_1h_threshold | +1.22% | +1.06% |
 
 ## 7. 次に見るべき不足
 
