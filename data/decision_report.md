@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-21T02:41:21.709344+00:00
+- generated_at: 2026-11-21T02:46:21.184926+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19274**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-21T02:41:09.607280+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.54% price=58678.5
+- 更新: 2026-11-21T02:46:08.147575+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.64% price=58617.9
 - Funnel: target 1086 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PIEVERSE/USDT:USDT | +12.83% | $4,126,052.39 |
-| AKE/USDT:USDT | +12.69% | $26,700,621.09 |
-| MMT/USDT:USDT | +8.70% | $3,965,094.50 |
-| BLESS/USDT:USDT | +8.46% | $22,475,545.38 |
-| UVXY/USDT:USDT | +6.46% | $6,516,686.89 |
+| AKE/USDT:USDT | +16.09% | $26,789,149.02 |
+| PIEVERSE/USDT:USDT | +13.40% | $4,140,242.25 |
+| BLESS/USDT:USDT | +9.02% | $22,489,593.31 |
+| MMT/USDT:USDT | +8.66% | $3,976,082.28 |
+| UVXY/USDT:USDT | +6.35% | $6,528,803.41 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKDD/USDT:USDT | below_1h_threshold | +0.61% | +1.15% |
-| LPT/USDT:USDT | below_1h_threshold | +0.20% | +0.74% |
-| SKY/USDT:USDT | below_1h_threshold | +0.14% | +0.67% |
-| SQQQ/USDT:USDT | below_1h_threshold | +0.13% | +0.67% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.03% | +0.57% |
+| SKDD/USDT:USDT | below_1h_threshold | +0.61% | +1.25% |
+| BTW/USDT:USDT | below_1h_threshold | +0.48% | +1.13% |
+| SKY/USDT:USDT | below_1h_threshold | +0.25% | +0.89% |
+| SQQQ/USDT:USDT | below_1h_threshold | +0.13% | +0.77% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.03% | +0.67% |
 
 ## 7. 次に見るべき不足
 
