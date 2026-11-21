@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-21T11:46:21.408905+00:00
+- generated_at: 2026-11-21T11:51:12.484713+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19301**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-21T11:46:04.942539+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.37% price=58126.5
+- 更新: 2026-11-21T11:51:01.228951+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.38% price=58133.8
 - Funnel: target 1086 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLAUDIA/USDT:USDT | +35.56% | $1,041,652.60 |
-| BTW/USDT:USDT | +17.12% | $4,830,322.64 |
-| RARE/USDT:USDT | +12.74% | $6,396,349.84 |
-| LAB/USDT:USDT | +12.63% | $1,053,182.23 |
-| PIEVERSE/USDT:USDT | +11.75% | $4,008,786.30 |
+| CLAUDIA/USDT:USDT | +36.44% | $1,043,207.51 |
+| BTW/USDT:USDT | +17.42% | $4,888,266.36 |
+| LAB/USDT:USDT | +13.16% | $1,057,248.67 |
+| PIEVERSE/USDT:USDT | +11.92% | $4,034,854.48 |
+| RARE/USDT:USDT | +11.88% | $6,417,057.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LAB/USDT:USDT | below_1h_threshold | +3.41% | +3.04% |
-| RARE/USDT:USDT | below_1h_threshold | +3.07% | +2.70% |
-| AAVE/USDT:USDT | below_1h_threshold | +1.99% | +1.62% |
-| TAO/USDT:USDT | below_1h_threshold | +1.79% | +1.42% |
-| UNI/USDT:USDT | below_1h_threshold | +1.77% | +1.39% |
+| LAB/USDT:USDT | below_1h_threshold | +3.90% | +3.51% |
+| RARE/USDT:USDT | below_1h_threshold | +2.29% | +1.90% |
+| TAO/USDT:USDT | below_1h_threshold | +2.00% | +1.62% |
+| AAVE/USDT:USDT | below_1h_threshold | +1.79% | +1.40% |
+| ORDI/USDT:USDT | below_1h_threshold | +1.76% | +1.38% |
 
 ## 7. 次に見るべき不足
 
