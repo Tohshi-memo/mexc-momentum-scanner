@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-21T09:31:08.404298+00:00
+- generated_at: 2026-11-21T09:36:17.109816+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19292**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-21T09:30:59.882165+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.32% price=57961.8
+- 更新: 2026-11-21T09:36:05.869907+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.32% price=57961.7
 - Funnel: target 1086 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLAUDIA/USDT:USDT | +40.55% | $1,012,187.54 |
-| BTW/USDT:USDT | +18.05% | $4,526,997.62 |
-| BLESS/USDT:USDT | +18.02% | $34,060,168.59 |
-| PIEVERSE/USDT:USDT | +15.21% | $4,259,149.96 |
-| LAB/USDT:USDT | +10.39% | $1,059,923.87 |
+| CLAUDIA/USDT:USDT | +38.57% | $1,012,692.79 |
+| BLESS/USDT:USDT | +17.09% | $34,656,415.76 |
+| PIEVERSE/USDT:USDT | +15.96% | $4,285,663.61 |
+| BTW/USDT:USDT | +13.06% | $4,653,289.34 |
+| LAB/USDT:USDT | +10.49% | $1,063,693.15 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LAB/USDT:USDT | below_1h_threshold | +2.57% | +2.25% |
-| AKE/USDT:USDT | below_1h_threshold | +2.23% | +1.91% |
-| XPL/USDT:USDT | below_1h_threshold | +1.99% | +1.67% |
-| CLAUDIA/USDT:USDT | below_1h_threshold | +1.78% | +1.47% |
+| LAB/USDT:USDT | below_1h_threshold | +2.66% | +2.34% |
+| XPL/USDT:USDT | below_1h_threshold | +2.06% | +1.74% |
 | PENGU/USDT:USDT | below_1h_threshold | +1.77% | +1.45% |
+| KAS/USDT:USDT | below_1h_threshold | +1.72% | +1.40% |
+| AERO/USDT:USDT | below_1h_threshold | +1.70% | +1.38% |
 
 ## 7. 次に見るべき不足
 
