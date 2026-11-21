@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-21T14:36:24.156668+00:00
+- generated_at: 2026-11-21T14:41:20.761911+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19310**
 
@@ -70,32 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-21T14:36:11.543344+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.27% price=60356.9
-- Funnel: target 1086 → liquid 153 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.0 >= 65=1
+- 更新: 2026-11-21T14:41:06.775033+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.41% price=60274.0
+- Funnel: target 1086 → liquid 153 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLAUDIA/USDT:USDT | +54.34% | $1,201,959.52 |
-| IDOL/USDT:USDT | +26.09% | $1,643,814.64 |
-| RARE/USDT:USDT | +20.01% | $8,343,715.79 |
-| VVV/USDT:USDT | +17.91% | $4,904,942.09 |
-| DODO/USDT:USDT | +17.33% | $1,334,640.24 |
+| CLAUDIA/USDT:USDT | +59.98% | $1,209,389.89 |
+| IDOL/USDT:USDT | +22.79% | $1,655,090.54 |
+| RARE/USDT:USDT | +19.85% | $8,366,711.29 |
+| VVV/USDT:USDT | +18.20% | $4,928,341.49 |
+| DODO/USDT:USDT | +17.15% | $1,337,468.58 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +1.76% | +2.04% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.55% | +1.82% |
-| RARE/USDT:USDT | below_1h_threshold | +1.45% | +1.72% |
-| ANTHROPIC/USDT:USDT | below_1h_threshold | +1.24% | +1.51% |
-| JCT/USDT:USDT | below_1h_threshold | +1.01% | +1.28% |
+| CLAUDIA/USDT:USDT | below_1h_threshold | +3.31% | +3.72% |
+| IDOL/USDT:USDT | below_1h_threshold | +3.16% | +3.57% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +2.46% | +2.87% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.34% | +2.75% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +1.76% | +2.17% |
 
 ## 7. 次に見るべき不足
 
