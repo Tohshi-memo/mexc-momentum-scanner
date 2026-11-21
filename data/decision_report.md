@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-21T02:06:07.099049+00:00
+- generated_at: 2026-11-21T02:11:26.602982+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19274**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-21T02:05:58.600933+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=59033.9
+- 更新: 2026-11-21T02:11:13.071479+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=59003.6
 - Funnel: target 1086 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +19.36% | $26,464,480.57 |
-| PIEVERSE/USDT:USDT | +16.87% | $4,040,465.23 |
-| MMT/USDT:USDT | +9.32% | $3,844,103.49 |
-| VVV/USDT:USDT | +7.65% | $3,548,087.36 |
-| BLESS/USDT:USDT | +6.59% | $21,976,063.59 |
+| AKE/USDT:USDT | +19.54% | $26,481,349.00 |
+| PIEVERSE/USDT:USDT | +16.89% | $4,048,690.93 |
+| MMT/USDT:USDT | +9.93% | $3,851,532.34 |
+| BLESS/USDT:USDT | +7.49% | $22,072,808.65 |
+| VVV/USDT:USDT | +7.40% | $3,553,119.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IRYS/USDT:USDT | below_1h_threshold | +1.11% | +1.05% |
-| AKE/USDT:USDT | below_1h_threshold | +0.87% | +0.81% |
-| SKDD/USDT:USDT | below_1h_threshold | +0.61% | +0.54% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +0.47% | +0.40% |
-| PI/USDT:USDT | below_1h_threshold | +0.40% | +0.33% |
+| PI/USDT:USDT | below_1h_threshold | +1.21% | +1.19% |
+| AKE/USDT:USDT | below_1h_threshold | +1.06% | +1.04% |
+| EVAA/USDT:USDT | below_1h_threshold | +0.79% | +0.78% |
+| SKDD/USDT:USDT | below_1h_threshold | +0.61% | +0.60% |
+| BARD/USDT:USDT | below_1h_threshold | +0.33% | +0.32% |
 
 ## 7. 次に見るべき不足
 
