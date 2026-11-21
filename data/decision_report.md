@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-21T11:06:16.235904+00:00
+- generated_at: 2026-11-21T11:11:07.150801+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19297**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-21T11:06:06.409789+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=57930.3
+- 更新: 2026-11-21T11:10:58.827743+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=57963.2
 - Funnel: target 1086 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLAUDIA/USDT:USDT | +39.36% | $1,023,147.16 |
-| BLESS/USDT:USDT | +28.71% | $42,023,866.39 |
-| BTW/USDT:USDT | +15.48% | $4,655,435.80 |
-| PIEVERSE/USDT:USDT | +12.41% | $3,842,465.89 |
-| RARE/USDT:USDT | +11.88% | $6,187,635.30 |
+| CLAUDIA/USDT:USDT | +39.51% | $1,023,828.32 |
+| BLESS/USDT:USDT | +24.89% | $42,300,747.29 |
+| BTW/USDT:USDT | +15.84% | $4,665,510.86 |
+| PIEVERSE/USDT:USDT | +11.87% | $3,849,392.69 |
+| RARE/USDT:USDT | +11.57% | $6,192,766.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RARE/USDT:USDT | below_1h_threshold | +2.64% | +2.61% |
-| JCT/USDT:USDT | below_1h_threshold | +1.87% | +1.83% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.80% | +0.77% |
-| ALUMINUM/USDT:USDT | below_1h_threshold | +0.42% | +0.38% |
-| PI/USDT:USDT | below_1h_threshold | +0.36% | +0.33% |
+| JCT/USDT:USDT | below_1h_threshold | +2.35% | +2.26% |
+| RARE/USDT:USDT | below_1h_threshold | +2.00% | +1.91% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.80% | +0.71% |
+| AAVE/USDT:USDT | below_1h_threshold | +0.71% | +0.62% |
+| BCH/USDT:USDT | below_1h_threshold | +0.67% | +0.58% |
 
 ## 7. 次に見るべき不足
 
