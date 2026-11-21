@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-21T14:31:19.778765+00:00
+- generated_at: 2026-11-21T14:36:24.156668+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19310**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7472件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7473件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000227 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-21T14:31:06.775058+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.28% price=60352.6
-- Funnel: target 1086 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-21T14:36:11.543344+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.27% price=60356.9
+- Funnel: target 1086 → liquid 153 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 83.0 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLAUDIA/USDT:USDT | +54.57% | $1,198,035.53 |
-| RARE/USDT:USDT | +22.75% | $8,305,494.37 |
-| IDOL/USDT:USDT | +22.16% | $1,624,117.54 |
-| VVV/USDT:USDT | +16.65% | $4,866,439.42 |
-| PIEVERSE/USDT:USDT | +14.99% | $4,094,041.97 |
+| CLAUDIA/USDT:USDT | +54.34% | $1,201,959.52 |
+| IDOL/USDT:USDT | +26.09% | $1,643,814.64 |
+| RARE/USDT:USDT | +20.01% | $8,343,715.79 |
+| VVV/USDT:USDT | +17.91% | $4,904,942.09 |
+| DODO/USDT:USDT | +17.33% | $1,334,640.24 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RARE/USDT:USDT | below_1h_threshold | +3.23% | +3.51% |
-| IDOL/USDT:USDT | below_1h_threshold | +2.81% | +3.09% |
-| USELESS/USDT:USDT | below_1h_threshold | +2.29% | +2.57% |
-| JCT/USDT:USDT | below_1h_threshold | +2.07% | +2.35% |
 | AXTISTOCK/USDT:USDT | below_1h_threshold | +1.76% | +2.04% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.55% | +1.82% |
+| RARE/USDT:USDT | below_1h_threshold | +1.45% | +1.72% |
+| ANTHROPIC/USDT:USDT | below_1h_threshold | +1.24% | +1.51% |
+| JCT/USDT:USDT | below_1h_threshold | +1.01% | +1.28% |
 
 ## 7. 次に見るべき不足
 
