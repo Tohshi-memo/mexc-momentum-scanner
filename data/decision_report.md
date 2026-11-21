@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-21T17:56:38.577948+00:00
+- generated_at: 2026-11-21T18:01:12.624159+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19328**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-21T17:56:17.244446+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=60008.3
-- Funnel: target 1086 → liquid 138 → pre 50 → checked 50 → surge 3 → strict 2
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.6 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-21T18:01:01.429169+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=60065.4
+- Funnel: target 1086 → liquid 135 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLAUDIA/USDT:USDT | +31.32% | $1,860,809.12 |
-| PIEVERSE/USDT:USDT | +11.48% | $5,124,889.10 |
-| NIGHT/USDT:USDT | +7.69% | $1,231,105.18 |
-| IDOL/USDT:USDT | +5.80% | $1,967,642.77 |
-| DODO/USDT:USDT | +5.52% | $1,523,671.40 |
+| CLAUDIA/USDT:USDT | +29.56% | $1,609,182.29 |
+| PIEVERSE/USDT:USDT | +11.65% | $5,049,004.89 |
+| NIGHT/USDT:USDT | +7.17% | $1,216,850.39 |
+| IDOL/USDT:USDT | +5.85% | $1,953,000.86 |
+| BTW/USDT:USDT | +5.70% | $5,224,776.25 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_1h_threshold | +3.22% | +3.26% |
-| TIA/USDT:USDT | below_1h_threshold | +2.11% | +2.15% |
-| IDOL/USDT:USDT | below_1h_threshold | +2.05% | +2.09% |
-| QNT/USDT:USDT | below_1h_threshold | +1.59% | +1.63% |
-| EVAA/USDT:USDT | below_1h_threshold | +1.43% | +1.47% |
+| SKYAI/USDT:USDT | below_1h_threshold | +0.70% | +0.67% |
+| BLESS/USDT:USDT | below_1h_threshold | +0.55% | +0.52% |
+| NIGHT/USDT:USDT | below_1h_threshold | +0.53% | +0.50% |
+| DODO/USDT:USDT | below_1h_threshold | +0.49% | +0.47% |
+| ANTHROPIC/USDT:USDT | below_1h_threshold | +0.26% | +0.23% |
 
 ## 7. 次に見るべき不足
 
