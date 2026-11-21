@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-21T15:56:40.117878+00:00
+- generated_at: 2026-11-21T16:01:17.678894+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19316**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-21T15:56:18.581548+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.66% price=59916.8
-- Funnel: target 1086 → liquid 150 → pre 50 → checked 50 → surge 3 → strict 2
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-21T16:01:06.220622+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=59917.0
+- Funnel: target 1086 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLAUDIA/USDT:USDT | +64.78% | $1,328,489.99 |
-| DCTY/USDT:USDT | +32.91% | $1,077,370.51 |
-| IDOL/USDT:USDT | +28.05% | $1,746,363.65 |
-| SKYAI/USDT:USDT | +23.28% | $1,057,371.88 |
-| VVV/USDT:USDT | +17.35% | $5,344,408.05 |
+| BLESS/USDT:USDT | +2.63% | $53,064,623.20 |
+| SKYAI/USDT:USDT | +0.83% | $1,053,014.96 |
+| PIEVERSE/USDT:USDT | +0.49% | $4,041,099.06 |
+| CRCLSTOCK/USDT:USDT | +0.34% | $36,195,331.26 |
+| EVAA/USDT:USDT | +0.32% | $29,284,301.68 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EVAA/USDT:USDT | below_1h_threshold | +2.57% | +3.23% |
-| BTW/USDT:USDT | below_1h_threshold | +2.13% | +2.79% |
-| SOXS/USDT:USDT | below_1h_threshold | +2.12% | +2.78% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +1.09% | +1.75% |
-| USELESS/USDT:USDT | below_1h_threshold | +0.71% | +1.37% |
+| BLESS/USDT:USDT | below_1h_threshold | +2.63% | +2.62% |
+| SKYAI/USDT:USDT | below_1h_threshold | +0.80% | +0.79% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +0.69% | +0.68% |
+| MMT/USDT:USDT | below_1h_threshold | +0.23% | +0.22% |
+| ENA/USDT:USDT | below_1h_threshold | +0.20% | +0.19% |
 
 ## 7. 次に見るべき不足
 
