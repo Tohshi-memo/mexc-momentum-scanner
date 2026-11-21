@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-21T06:41:09.566572+00:00
+- generated_at: 2026-11-21T06:46:20.778070+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19281**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-21T06:41:01.258365+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +1.61% price=56665.1
+- 更新: 2026-11-21T06:46:07.415549+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +2.36% price=57084.3
 - Funnel: target 1086 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLESS/USDT:USDT | +21.80% | $24,907,307.92 |
-| PIEVERSE/USDT:USDT | +15.23% | $4,065,905.80 |
-| UVXY/USDT:USDT | +10.59% | $6,248,409.14 |
-| BTW/USDT:USDT | +9.11% | $4,027,425.66 |
-| RARE/USDT:USDT | +7.42% | $5,629,953.33 |
+| BLESS/USDT:USDT | +23.32% | $25,044,484.63 |
+| PIEVERSE/USDT:USDT | +15.56% | $4,105,938.74 |
+| BTW/USDT:USDT | +10.78% | $4,047,017.33 |
+| UVXY/USDT:USDT | +9.69% | $6,261,636.32 |
+| RARE/USDT:USDT | +6.56% | $5,639,067.75 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +3.98% | +2.37% |
-| VVV/USDT:USDT | below_1h_threshold | +2.75% | +1.14% |
-| BLESS/USDT:USDT | below_1h_threshold | +2.44% | +0.83% |
-| BARD/USDT:USDT | below_1h_threshold | +2.38% | +0.77% |
-| AKE/USDT:USDT | below_1h_threshold | +2.19% | +0.58% |
+| BTW/USDT:USDT | below_relative_strength | +5.65% | +3.29% |
+| VVV/USDT:USDT | below_1h_threshold | +4.48% | +2.12% |
+| TAO/USDT:USDT | below_1h_threshold | +3.96% | +1.60% |
+| BLESS/USDT:USDT | below_1h_threshold | +3.77% | +1.41% |
+| SOL/USDT:USDT | below_1h_threshold | +3.64% | +1.28% |
 
 ## 7. 次に見るべき不足
 
