@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-21T02:26:21.790937+00:00
+- generated_at: 2026-11-21T02:31:23.149955+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19274**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-21T02:26:10.540867+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=58923.8
+- 更新: 2026-11-21T02:31:12.164239+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.23% price=58862.1
 - Funnel: target 1086 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +15.37% | $26,611,401.52 |
-| PIEVERSE/USDT:USDT | +12.53% | $4,089,218.44 |
-| MMT/USDT:USDT | +10.39% | $3,874,494.07 |
-| BLESS/USDT:USDT | +9.43% | $22,174,972.17 |
-| VVV/USDT:USDT | +6.90% | $3,566,113.91 |
+| AKE/USDT:USDT | +14.34% | $26,636,013.50 |
+| PIEVERSE/USDT:USDT | +13.18% | $4,098,775.29 |
+| MMT/USDT:USDT | +12.77% | $3,922,561.93 |
+| VVV/USDT:USDT | +7.03% | $3,578,001.12 |
+| BLESS/USDT:USDT | +6.71% | $22,251,120.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PI/USDT:USDT | below_1h_threshold | +1.07% | +1.19% |
-| LPT/USDT:USDT | below_1h_threshold | +0.89% | +1.01% |
-| RARE/USDT:USDT | below_1h_threshold | +0.83% | +0.96% |
-| MMT/USDT:USDT | below_1h_threshold | +0.75% | +0.87% |
-| OGN/USDT:USDT | below_1h_threshold | +0.69% | +0.81% |
+| MMT/USDT:USDT | below_1h_threshold | +2.02% | +2.25% |
+| RARE/USDT:USDT | below_1h_threshold | +1.36% | +1.59% |
+| LPT/USDT:USDT | below_1h_threshold | +0.69% | +0.92% |
+| SKDD/USDT:USDT | below_1h_threshold | +0.61% | +0.84% |
+| PI/USDT:USDT | below_1h_threshold | +0.49% | +0.72% |
 
 ## 7. 次に見るべき不足
 
