@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-21T08:36:20.425981+00:00
+- generated_at: 2026-11-21T08:41:24.306374+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19289**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-21T08:36:06.973836+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.87% price=57461.6
-- Funnel: target 1086 → liquid 160 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.3 >= 65=1
+- 更新: 2026-11-21T08:41:10.367139+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.46% price=57699.2
+- Funnel: target 1086 → liquid 160 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 78.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLESS/USDT:USDT | +58.22% | $26,867,337.63 |
-| CLAUDIA/USDT:USDT | +35.33% | $1,000,122.97 |
-| PIEVERSE/USDT:USDT | +15.27% | $4,304,293.74 |
-| BTW/USDT:USDT | +15.07% | $4,283,049.34 |
-| UVXY/USDT:USDT | +10.62% | $6,127,564.74 |
+| BLESS/USDT:USDT | +58.32% | $27,160,979.61 |
+| CLAUDIA/USDT:USDT | +39.89% | $1,005,818.59 |
+| BTW/USDT:USDT | +16.30% | $4,335,904.50 |
+| PIEVERSE/USDT:USDT | +15.47% | $4,307,948.69 |
+| UVXY/USDT:USDT | +10.07% | $6,128,052.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LAB/USDT:USDT | below_1h_threshold | +3.61% | +4.48% |
-| EVAA/USDT:USDT | below_1h_threshold | +2.71% | +3.58% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.81% | +2.68% |
-| UVXY/USDT:USDT | below_1h_threshold | +0.47% | +1.34% |
-| SQQQ/USDT:USDT | below_1h_threshold | +0.41% | +1.28% |
+| LAB/USDT:USDT | below_1h_threshold | +3.92% | +4.38% |
+| H/USDT:USDT | below_1h_threshold | +3.05% | +3.51% |
+| EVAA/USDT:USDT | below_1h_threshold | +2.67% | +3.13% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.81% | +2.27% |
+| UVXY/USDT:USDT | below_1h_threshold | +0.47% | +0.93% |
 
 ## 7. 次に見るべき不足
 
