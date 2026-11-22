@@ -1,31 +1,31 @@
 # Decision Report
 
-- generated_at: 2026-11-22T09:11:26.581563+00:00
+- generated_at: 2026-11-22T09:16:17.470788+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **19372**
+- closed shadow trades: **19373**
 
 ## 1. 今日の判断
 
-- 結論: **MARKET SHORTは実行候補。直近EV +0.81% / filled 20/20。**
-- 全期間 MARKET基準: n=19372, expectancy=+0.02%
-- 直近20件 MARKET基準: n=20, expectancy=+0.81%
+- 結論: **MARKET SHORTは実行候補。直近EV +0.52% / filled 20/20。**
+- 全期間 MARKET基準: n=19373, expectancy=+0.02%
+- 直近20件 MARKET基準: n=20, expectancy=+0.52%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
 ### 実行可能ランキング (現executorで正確に測れるもの)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | +0.81% | **+0.81%** |
+| MARKET | 20/20 | 100.0% | +0.52% | **+0.52%** |
 
 ### シャドウ上位 SHORT (まだ実行に直結しない候補を含む)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_BB3S | 11/20 | 55.0% | +2.64% | **+1.45%** |
-| LIMIT_1PCT | 20/20 | 100.0% | +1.06% | **+1.06%** |
-| MARKET | 20/20 | 100.0% | +0.81% | **+0.81%** |
-| LIMIT_2PCT | 16/20 | 80.0% | +0.91% | **+0.73%** |
+| LIMIT_BB3S | 10/19 | 52.6% | +2.63% | **+1.39%** |
+| LIMIT_1PCT | 20/20 | 100.0% | +0.78% | **+0.78%** |
+| LIMIT_2PCT | 17/20 | 85.0% | +0.74% | **+0.63%** |
 | LIMIT_7PCT | 3/20 | 15.0% | +4.00% | **+0.60%** |
+| MARKET | 20/20 | 100.0% | +0.52% | **+0.52%** |
 
 ### シャドウ上位 LONG
 
@@ -34,7 +34,7 @@
 | LIMIT_9PCT_LONG | 5/20 | 25.0% | +2.84% | **+0.71%** |
 | LIMIT_4PCT_LONG | 13/20 | 65.0% | +1.05% | **+0.68%** |
 | LIMIT_8PCT_LONG | 8/20 | 40.0% | +1.50% | **+0.60%** |
-| LIMIT_ATR_LONG | 12/20 | 60.0% | +0.95% | **+0.57%** |
+| LIMIT_ATR_LONG | 11/20 | 55.0% | +1.08% | **+0.59%** |
 | LIMIT_FIB1272_LONG | 9/20 | 45.0% | +0.81% | **+0.37%** |
 
 ## 2. $100 Live Portfolio
@@ -46,32 +46,32 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$1,776.95** / 初期 $100.00 (+1676.95%)
-- 確定: 7482件 (Win 2149 / Loss 2409 / Flat 2924) / skip 8451件
-- 成長率目線: 平均log +0.000385 / 幾何平均 +0.038% per trade / maxDD +9.04%
-- 次の候補: `LIMIT_ATR_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: IRYS/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account -0.06% 残高後 $1,776.95
+- 残高: **$1,786.99** / 初期 $100.00 (+1686.99%)
+- 確定: 7483件 (Win 2150 / Loss 2409 / Flat 2924) / skip 8451件
+- 成長率目線: 平均log +0.000385 / 幾何平均 +0.039% per trade / maxDD +9.04%
+- 次の候補: `LIMIT_BB3S_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
+- 最新: PIEVERSE/USDT:USDT `LIMIT_BB3S_LONG` EXPIRED account +0.56% 残高後 $1,786.99
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$449.57** / 初期 $100.00 (+349.57%)
-- 確定: 5136件 (Win 1366 / Loss 1105 / Flat 2665) / skip 7647件
+- 確定: 5137件 (Win 1366 / Loss 1105 / Flat 2666) / skip 7647件
 - 成長率目線: 平均log +0.000293 / 幾何平均 +0.029% per trade / maxDD +4.29%
 - 次の候補: `LIMIT_6PCT` (selected_by_robust_growth_score) / robust_score +0.0653 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: BLESS/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.35% 残高後 $449.57
+- 最新: PIEVERSE/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $449.57
 
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
 - 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7530件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000363 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000359 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-22T09:11:10.066651+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=59676.8
+- 更新: 2026-11-22T09:16:02.703709+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=59702.4
 - Funnel: target 1086 → liquid 104 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLAUDIA/USDT:USDT | +49.00% | $2,446,649.73 |
-| PIEVERSE/USDT:USDT | +42.62% | $10,234,506.18 |
-| BLESS/USDT:USDT | +13.49% | $53,065,116.46 |
-| BTW/USDT:USDT | +12.45% | $5,378,536.86 |
-| MMT/USDT:USDT | +8.65% | $1,714,765.08 |
+| CLAUDIA/USDT:USDT | +49.69% | $2,455,294.05 |
+| PIEVERSE/USDT:USDT | +44.67% | $10,552,526.91 |
+| BLESS/USDT:USDT | +13.53% | $53,386,300.41 |
+| BTW/USDT:USDT | +12.37% | $5,408,669.80 |
+| VVV/USDT:USDT | +7.59% | $8,123,592.87 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MMT/USDT:USDT | below_1h_threshold | +4.64% | +4.80% |
-| SOXL/USDT:USDT | below_1h_threshold | +3.23% | +3.40% |
-| MUU/USDT:USDT | below_1h_threshold | +2.19% | +2.35% |
-| KORU/USDT:USDT | below_1h_threshold | +2.05% | +2.21% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.69% | +1.86% |
+| SKYAI/USDT:USDT | below_1h_threshold | +4.96% | +5.08% |
+| SOXL/USDT:USDT | below_1h_threshold | +3.23% | +3.36% |
+| MMT/USDT:USDT | below_1h_threshold | +3.02% | +3.14% |
+| MUU/USDT:USDT | below_1h_threshold | +2.19% | +2.31% |
+| KORU/USDT:USDT | below_1h_threshold | +2.05% | +2.17% |
 
 ## 7. 次に見るべき不足
 
