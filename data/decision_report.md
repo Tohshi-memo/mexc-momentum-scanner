@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-22T20:51:15.201471+00:00
+- generated_at: 2026-11-22T20:56:12.557805+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19403**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-22T20:51:05.121293+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.22% price=60841.8
+- 更新: 2026-11-22T20:56:01.147835+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.30% price=60890.4
 - Funnel: target 1086 → liquid 104 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BULLA/USDT:USDT | +13.81% | $1,605,283.97 |
-| ELSA/USDT:USDT | +3.61% | $1,193,497.54 |
-| BEAT/USDT:USDT | +2.99% | $2,542,505.45 |
-| BLESS/USDT:USDT | +2.47% | $43,228,054.05 |
-| PYTH/USDT:USDT | +2.37% | $1,011,939.16 |
+| BULLA/USDT:USDT | +13.97% | $1,612,485.03 |
+| ELSA/USDT:USDT | +3.57% | $1,195,135.33 |
+| BEAT/USDT:USDT | +2.81% | $2,543,286.70 |
+| PYTH/USDT:USDT | +2.57% | $1,013,953.60 |
+| WLD/USDT:USDT | +2.44% | $13,488,601.20 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_1h_threshold | +4.96% | +4.74% |
-| BULLA/USDT:USDT | below_1h_threshold | +2.44% | +2.22% |
-| VELVET/USDT:USDT | below_1h_threshold | +1.58% | +1.36% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +1.40% | +1.18% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.67% | +0.45% |
+| BLESS/USDT:USDT | below_1h_threshold | +3.64% | +3.34% |
+| BULLA/USDT:USDT | below_1h_threshold | +2.58% | +2.28% |
+| VELVET/USDT:USDT | below_1h_threshold | +1.91% | +1.61% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +1.57% | +1.27% |
+| AKE/USDT:USDT | below_1h_threshold | +0.68% | +0.38% |
 
 ## 7. 次に見るべき不足
 
