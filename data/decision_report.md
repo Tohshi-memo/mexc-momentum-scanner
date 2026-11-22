@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-22T18:51:21.643307+00:00
+- generated_at: 2026-11-22T18:56:19.539265+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19400**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-22T18:51:11.764858+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=60700.5
+- 更新: 2026-11-22T18:56:08.515896+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=60808.5
 - Funnel: target 1086 → liquid 105 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BULLA/USDT:USDT | +20.45% | $1,291,397.15 |
-| ELSA/USDT:USDT | +5.26% | $1,064,366.62 |
-| BEAT/USDT:USDT | +4.59% | $2,373,639.57 |
-| ENSO/USDT:USDT | +2.34% | $1,204,216.25 |
-| VVV/USDT:USDT | +2.17% | $7,389,007.99 |
+| BULLA/USDT:USDT | +17.80% | $1,302,361.52 |
+| ELSA/USDT:USDT | +4.82% | $1,066,275.05 |
+| BEAT/USDT:USDT | +4.23% | $2,383,939.98 |
+| ENSO/USDT:USDT | +2.98% | $1,205,854.59 |
+| ICP/USDT:USDT | +2.05% | $4,983,973.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BULLA/USDT:USDT | below_1h_threshold | +4.09% | +4.25% |
-| VVV/USDT:USDT | below_1h_threshold | +2.18% | +2.35% |
-| ELSA/USDT:USDT | below_1h_threshold | +2.02% | +2.18% |
-| VELVET/USDT:USDT | below_1h_threshold | +1.86% | +2.03% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.10% | +1.26% |
+| VVV/USDT:USDT | below_1h_threshold | +1.99% | +1.98% |
+| VELVET/USDT:USDT | below_1h_threshold | +1.82% | +1.81% |
+| BULLA/USDT:USDT | below_1h_threshold | +1.79% | +1.78% |
+| ELSA/USDT:USDT | below_1h_threshold | +1.58% | +1.57% |
+| ICP/USDT:USDT | below_1h_threshold | +1.22% | +1.21% |
 
 ## 7. 次に見るべき不足
 
