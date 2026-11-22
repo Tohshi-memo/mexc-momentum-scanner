@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-22T16:36:24.538816+00:00
+- generated_at: 2026-11-22T16:41:24.534392+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19397**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-22T16:36:12.888184+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.67% price=61273.6
+- 更新: 2026-11-22T16:41:11.712010+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.66% price=61265.9
 - Funnel: target 1086 → liquid 101 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BEAT/USDT:USDT | +4.14% | $1,472,094.17 |
-| PIEVERSE/USDT:USDT | +3.65% | $31,381,513.97 |
-| BLESS/USDT:USDT | +3.41% | $37,884,309.80 |
-| NIGHT/USDT:USDT | +2.92% | $2,157,487.33 |
-| VELVET/USDT:USDT | +1.15% | $1,367,398.79 |
+| DCTY/USDT:USDT | +5.29% | $1,741,201.20 |
+| BEAT/USDT:USDT | +4.63% | $1,494,198.97 |
+| NIGHT/USDT:USDT | +2.71% | $2,168,514.34 |
+| BLESS/USDT:USDT | +2.22% | $38,100,637.21 |
+| INJ/USDT:USDT | +1.23% | $15,627,709.76 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +4.00% | +3.32% |
-| BLESS/USDT:USDT | below_1h_threshold | +3.66% | +2.98% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +3.54% | +2.87% |
-| NIGHT/USDT:USDT | below_1h_threshold | +2.96% | +2.29% |
-| MMT/USDT:USDT | below_1h_threshold | +1.28% | +0.61% |
+| DCTY/USDT:USDT | below_relative_strength | +5.29% | +4.63% |
+| BEAT/USDT:USDT | below_1h_threshold | +4.73% | +4.07% |
+| NIGHT/USDT:USDT | below_1h_threshold | +2.71% | +2.05% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.79% | +1.13% |
+| INJ/USDT:USDT | below_1h_threshold | +1.23% | +0.57% |
 
 ## 7. 次に見るべき不足
 
