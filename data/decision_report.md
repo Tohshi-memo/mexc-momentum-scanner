@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-22T03:56:10.160222+00:00
+- generated_at: 2026-11-22T04:01:22.339155+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19356**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-22T03:56:00.709290+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.32% price=59286.4
-- Funnel: target 1086 → liquid 119 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-11-22T04:01:10.010347+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=59373.9
+- Funnel: target 1086 → liquid 114 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLAUDIA/USDT:USDT | +22.49% | $2,121,956.33 |
-| DCTY/USDT:USDT | +16.17% | $1,648,323.07 |
-| BLESS/USDT:USDT | +13.32% | $57,887,314.50 |
-| PIEVERSE/USDT:USDT | +13.29% | $5,936,712.74 |
-| SKYAI/USDT:USDT | +11.32% | $1,509,262.18 |
+| CLAUDIA/USDT:USDT | +24.72% | $2,102,741.81 |
+| DCTY/USDT:USDT | +18.86% | $1,590,102.74 |
+| BLESS/USDT:USDT | +15.65% | $57,500,714.88 |
+| PIEVERSE/USDT:USDT | +13.56% | $5,758,736.03 |
+| SKYAI/USDT:USDT | +11.78% | $1,506,562.67 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_1h_threshold | +2.78% | +3.10% |
-| SPX/USDT:USDT | below_1h_threshold | +0.86% | +1.17% |
-| ETHFI/USDT:USDT | below_1h_threshold | +0.81% | +1.13% |
-| BARD/USDT:USDT | below_1h_threshold | +0.53% | +0.85% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +0.19% | +0.50% |
+| CLAUDIA/USDT:USDT | below_1h_threshold | +0.85% | +0.78% |
+| IRYS/USDT:USDT | below_1h_threshold | +0.63% | +0.57% |
+| BLESS/USDT:USDT | below_1h_threshold | +0.51% | +0.44% |
+| VVV/USDT:USDT | below_1h_threshold | +0.49% | +0.43% |
+| DODO/USDT:USDT | below_1h_threshold | +0.40% | +0.33% |
 
 ## 7. 次に見るべき不足
 
