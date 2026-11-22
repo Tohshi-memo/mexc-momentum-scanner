@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-22T21:46:18.771097+00:00
+- generated_at: 2026-11-22T21:51:17.858077+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19405**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-22T21:46:07.387211+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.20% price=61009.2
+- 更新: 2026-11-22T21:51:04.778215+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.18% price=61000.0
 - Funnel: target 1086 → liquid 105 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BULLA/USDT:USDT | +11.42% | $1,641,800.47 |
-| WLD/USDT:USDT | +2.86% | $14,064,475.45 |
-| BEAT/USDT:USDT | +2.85% | $2,544,924.30 |
-| BTW/USDT:USDT | +2.72% | $3,966,112.38 |
-| ETHFI/USDT:USDT | +2.58% | $2,157,894.84 |
+| BULLA/USDT:USDT | +11.42% | $1,645,121.80 |
+| BEAT/USDT:USDT | +3.42% | $2,556,217.00 |
+| ARIA/USDT:USDT | +2.68% | $1,016,700.29 |
+| BTW/USDT:USDT | +2.62% | $3,992,629.37 |
+| WLD/USDT:USDT | +2.61% | $14,141,581.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +1.63% | +1.43% |
-| LIT/USDT:USDT | below_1h_threshold | +1.29% | +1.09% |
-| ETC/USDT:USDT | below_1h_threshold | +1.27% | +1.08% |
-| ENSO/USDT:USDT | below_1h_threshold | +1.22% | +1.02% |
-| BULLA/USDT:USDT | below_1h_threshold | +1.16% | +0.96% |
+| DGAI/USDT:USDT | below_1h_threshold | +1.88% | +1.70% |
+| BTW/USDT:USDT | below_1h_threshold | +1.53% | +1.35% |
+| ENSO/USDT:USDT | below_1h_threshold | +1.37% | +1.19% |
+| LIT/USDT:USDT | below_1h_threshold | +1.35% | +1.16% |
+| NIGHT/USDT:USDT | below_1h_threshold | +1.31% | +1.13% |
 
 ## 7. 次に見るべき不足
 
