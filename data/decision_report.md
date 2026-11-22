@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-22T12:31:23.438176+00:00
+- generated_at: 2026-11-22T12:36:21.293295+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19386**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-22T12:31:09.387366+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.55% price=60697.7
+- 更新: 2026-11-22T12:36:07.787161+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.77% price=60567.2
 - Funnel: target 1086 → liquid 109 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLAUDIA/USDT:USDT | +43.45% | $2,681,109.43 |
-| BLESS/USDT:USDT | +25.16% | $35,549,165.51 |
-| PIEVERSE/USDT:USDT | +22.80% | $22,751,682.07 |
-| DCTY/USDT:USDT | +19.59% | $1,776,773.52 |
-| VELVET/USDT:USDT | +17.97% | $1,188,128.87 |
+| CLAUDIA/USDT:USDT | +44.08% | $2,684,626.06 |
+| BLESS/USDT:USDT | +24.55% | $35,725,033.34 |
+| DCTY/USDT:USDT | +23.80% | $1,781,570.03 |
+| VELVET/USDT:USDT | +18.38% | $1,190,883.91 |
+| BR/USDT:USDT | +12.45% | $1,247,076.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +2.07% | +2.63% |
-| DODO/USDT:USDT | below_1h_threshold | +1.53% | +2.09% |
-| BLESS/USDT:USDT | below_1h_threshold | +1.40% | +1.95% |
-| CLAUDIA/USDT:USDT | below_1h_threshold | +1.34% | +1.89% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.21% | +1.77% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.51% | +3.28% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.06% | +2.83% |
+| CLAUDIA/USDT:USDT | below_1h_threshold | +1.78% | +2.55% |
+| DODO/USDT:USDT | below_1h_threshold | +1.69% | +2.46% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.02% | +1.79% |
 
 ## 7. 次に見るべき不足
 
