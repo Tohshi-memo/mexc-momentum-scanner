@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-22T18:06:21.097126+00:00
+- generated_at: 2026-11-22T18:11:13.590046+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19400**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-22T18:06:11.034366+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=60831.4
+- 更新: 2026-11-22T18:11:05.054305+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=60687.4
 - Funnel: target 1086 → liquid 103 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BULLA/USDT:USDT | +16.68% | $1,035,710.47 |
-| BEAT/USDT:USDT | +4.64% | $2,216,645.77 |
-| NIGHT/USDT:USDT | +3.83% | $2,123,348.57 |
-| DGAI/USDT:USDT | +3.74% | $1,888,553.75 |
-| ENSO/USDT:USDT | +3.11% | $1,183,178.38 |
+| BULLA/USDT:USDT | +16.09% | $1,070,407.64 |
+| BEAT/USDT:USDT | +4.38% | $2,275,979.66 |
+| ELSA/USDT:USDT | +4.00% | $1,024,841.51 |
+| NIGHT/USDT:USDT | +3.50% | $2,127,789.33 |
+| ENSO/USDT:USDT | +3.33% | $1,185,979.91 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXL/USDT:USDT | below_1h_threshold | +1.10% | +1.04% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.08% | +1.02% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.01% | +0.96% |
-| VVV/USDT:USDT | below_1h_threshold | +0.71% | +0.65% |
-| ICP/USDT:USDT | below_1h_threshold | +0.56% | +0.51% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.10% | +1.28% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.08% | +1.26% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.01% | +1.20% |
+| ELSA/USDT:USDT | below_1h_threshold | +0.77% | +0.95% |
+| ZRO/USDT:USDT | below_1h_threshold | +0.77% | +0.95% |
 
 ## 7. 次に見るべき不足
 
