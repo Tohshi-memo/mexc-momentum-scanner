@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-22T19:21:17.223172+00:00
+- generated_at: 2026-11-22T19:26:19.732652+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19403**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-22T19:21:05.135347+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=60689.2
-- Funnel: target 1086 → liquid 102 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-11-22T19:26:07.037669+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=60702.6
+- Funnel: target 1086 → liquid 103 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BULLA/USDT:USDT | +12.22% | $1,421,001.18 |
-| BEAT/USDT:USDT | +4.44% | $2,388,530.63 |
-| WLD/USDT:USDT | +2.31% | $13,294,581.74 |
-| ETHFI/USDT:USDT | +2.26% | $2,144,995.47 |
-| ENSO/USDT:USDT | +2.10% | $1,197,117.57 |
+| BULLA/USDT:USDT | +12.75% | $1,446,945.40 |
+| BEAT/USDT:USDT | +4.66% | $2,393,340.73 |
+| ELSA/USDT:USDT | +3.77% | $1,143,270.91 |
+| ENSO/USDT:USDT | +2.48% | $1,197,448.04 |
+| WLD/USDT:USDT | +2.18% | $13,330,352.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JUP/USDT:USDT | below_1h_threshold | +0.81% | +0.89% |
-| WLD/USDT:USDT | below_1h_threshold | +0.80% | +0.88% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.75% | +0.83% |
-| ETHFI/USDT:USDT | below_1h_threshold | +0.50% | +0.58% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +0.43% | +0.51% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.06% | +1.12% |
+| JUP/USDT:USDT | below_1h_threshold | +0.90% | +0.95% |
+| BTW/USDT:USDT | below_1h_threshold | +0.79% | +0.84% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +0.75% | +0.80% |
+| WLD/USDT:USDT | below_1h_threshold | +0.67% | +0.73% |
 
 ## 7. 次に見るべき不足
 
