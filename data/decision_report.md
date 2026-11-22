@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-22T14:51:21.583614+00:00
+- generated_at: 2026-11-22T14:56:27.427569+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19394**
 
@@ -63,38 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7554件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7555件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000374 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-22T14:51:06.751518+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.22% price=60850.1
-- Funnel: target 1086 → liquid 106 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-22T14:56:14.024703+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.32% price=60909.8
+- Funnel: target 1086 → liquid 106 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLAUDIA/USDT:USDT | +37.69% | $2,742,861.73 |
-| BLESS/USDT:USDT | +37.63% | $36,789,335.87 |
-| DGAI/USDT:USDT | +26.10% | $1,239,720.34 |
-| PIEVERSE/USDT:USDT | +20.68% | $29,630,051.50 |
-| VELVET/USDT:USDT | +14.50% | $1,344,074.84 |
+| BLESS/USDT:USDT | +47.85% | $37,097,393.08 |
+| CLAUDIA/USDT:USDT | +42.56% | $2,751,033.48 |
+| DGAI/USDT:USDT | +28.11% | $1,249,764.83 |
+| PIEVERSE/USDT:USDT | +20.18% | $29,769,645.86 |
+| VELVET/USDT:USDT | +15.02% | $1,345,306.97 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CLAUDIA/USDT:USDT | below_1h_threshold | +1.66% | +1.43% |
-| MMT/USDT:USDT | below_1h_threshold | +1.57% | +1.35% |
-| BTW/USDT:USDT | below_1h_threshold | +1.33% | +1.11% |
-| BR/USDT:USDT | below_1h_threshold | +1.27% | +1.04% |
-| VVV/USDT:USDT | below_1h_threshold | +1.23% | +1.01% |
+| CLAUDIA/USDT:USDT | below_relative_strength | +5.23% | +4.91% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.39% | +1.06% |
+| VELVET/USDT:USDT | below_1h_threshold | +1.31% | +0.98% |
+| VVV/USDT:USDT | below_1h_threshold | +1.14% | +0.81% |
+| BR/USDT:USDT | below_1h_threshold | +1.03% | +0.70% |
 
 ## 7. 次に見るべき不足
 
