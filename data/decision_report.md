@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-22T11:31:24.395611+00:00
+- generated_at: 2026-11-22T11:36:17.976703+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19382**
 
@@ -63,15 +63,15 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7540件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7541件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000275 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-22T11:31:07.737620+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=60949.2
+- 更新: 2026-11-22T11:36:04.527850+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.25% price=61000.0
 - Funnel: target 1086 → liquid 106 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PIEVERSE/USDT:USDT | +47.14% | $19,568,534.52 |
-| CLAUDIA/USDT:USDT | +44.46% | $2,621,815.47 |
-| DCTY/USDT:USDT | +19.38% | $1,726,153.45 |
-| BLESS/USDT:USDT | +17.95% | $39,913,015.43 |
-| VELVET/USDT:USDT | +14.59% | $1,132,814.66 |
+| PIEVERSE/USDT:USDT | +46.53% | $19,785,568.67 |
+| CLAUDIA/USDT:USDT | +43.65% | $2,626,519.91 |
+| DCTY/USDT:USDT | +22.77% | $1,733,296.70 |
+| BLESS/USDT:USDT | +17.06% | $39,986,615.43 |
+| VELVET/USDT:USDT | +14.22% | $1,139,504.93 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DCTY/USDT:USDT | below_1h_threshold | +4.74% | +4.57% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.06% | +0.89% |
-| INJ/USDT:USDT | below_1h_threshold | +0.55% | +0.38% |
-| TESLA/USDT:USDT | below_1h_threshold | +0.51% | +0.34% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +0.50% | +0.33% |
+| BLESS/USDT:USDT | below_1h_threshold | +4.22% | +3.97% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.14% | +0.88% |
+| NIGHT/USDT:USDT | below_1h_threshold | +0.96% | +0.71% |
+| ZEC/USDT:USDT | below_1h_threshold | +0.71% | +0.45% |
+| INJ/USDT:USDT | below_1h_threshold | +0.69% | +0.44% |
 
 ## 7. 次に見るべき不足
 
