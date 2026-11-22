@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-22T19:56:20.951451+00:00
+- generated_at: 2026-11-22T20:01:22.379159+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19403**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-22T19:56:07.401188+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=60708.7
-- Funnel: target 1086 → liquid 105 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-11-22T20:01:11.169456+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=60709.2
+- Funnel: target 1086 → liquid 102 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BULLA/USDT:USDT | +12.43% | $1,504,879.56 |
-| ELSA/USDT:USDT | +4.12% | $1,176,827.17 |
-| BEAT/USDT:USDT | +3.75% | $2,442,541.95 |
-| BTW/USDT:USDT | +2.50% | $3,996,920.38 |
-| VVV/USDT:USDT | +2.40% | $7,463,679.30 |
+| BULLA/USDT:USDT | +10.25% | $1,483,103.25 |
+| ELSA/USDT:USDT | +4.37% | $1,172,913.86 |
+| BEAT/USDT:USDT | +3.85% | $2,437,488.84 |
+| BTW/USDT:USDT | +2.69% | $3,914,334.64 |
+| ETHFI/USDT:USDT | +2.38% | $2,004,683.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CLAUDIA/USDT:USDT | below_1h_threshold | +3.47% | +3.52% |
-| BTW/USDT:USDT | below_1h_threshold | +2.97% | +3.02% |
-| USELESS/USDT:USDT | below_1h_threshold | +1.54% | +1.59% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.49% | +1.54% |
-| JUP/USDT:USDT | below_1h_threshold | +0.99% | +1.03% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.67% | +0.67% |
+| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +0.19% | +0.19% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.14% | +0.14% |
+| NVIDIA/USDT:USDT | below_1h_threshold | +0.11% | +0.11% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +0.09% | +0.09% |
 
 ## 7. 次に見るべき不足
 
