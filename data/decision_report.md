@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-22T17:01:22.101965+00:00
+- generated_at: 2026-11-22T17:06:18.994789+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19398**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-22T17:01:08.307137+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=61190.1
-- Funnel: target 1086 → liquid 98 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-11-22T17:06:06.192813+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.54% price=60892.7
+- Funnel: target 1086 → liquid 99 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DCTY/USDT:USDT | +5.51% | $1,665,697.63 |
-| BEAT/USDT:USDT | +3.34% | $1,613,765.34 |
-| NIGHT/USDT:USDT | +2.90% | $2,156,922.11 |
-| ENSO/USDT:USDT | +2.61% | $1,158,207.30 |
-| ETHFI/USDT:USDT | +1.99% | $1,908,900.79 |
+| BEAT/USDT:USDT | +5.81% | $1,656,787.19 |
+| DCTY/USDT:USDT | +5.06% | $1,667,036.79 |
+| NIGHT/USDT:USDT | +2.88% | $2,171,956.63 |
+| ENSO/USDT:USDT | +2.08% | $1,160,852.21 |
+| ETHFI/USDT:USDT | +1.63% | $1,923,162.15 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KORU/USDT:USDT | below_1h_threshold | +1.58% | +1.63% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.62% | +0.67% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +0.50% | +0.55% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.49% | +0.55% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.46% | +0.51% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.23% | +2.77% |
+| KORU/USDT:USDT | below_1h_threshold | +1.58% | +2.12% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.49% | +1.03% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.46% | +1.00% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.32% | +0.86% |
 
 ## 7. 次に見るべき不足
 
