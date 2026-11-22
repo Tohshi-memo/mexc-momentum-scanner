@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-22T10:06:22.192195+00:00
+- generated_at: 2026-11-22T10:11:12.386615+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19375**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-22T10:06:11.084503+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=60997.2
+- 更新: 2026-11-22T10:11:02.485920+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=61076.1
 - Funnel: target 1086 → liquid 105 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PIEVERSE/USDT:USDT | +64.05% | $14,558,422.88 |
-| CLAUDIA/USDT:USDT | +47.39% | $2,520,905.95 |
-| BTW/USDT:USDT | +15.22% | $5,145,493.42 |
-| BLESS/USDT:USDT | +14.38% | $44,926,215.58 |
-| MMT/USDT:USDT | +12.48% | $1,869,085.98 |
+| PIEVERSE/USDT:USDT | +65.24% | $14,792,131.76 |
+| CLAUDIA/USDT:USDT | +48.61% | $2,526,625.67 |
+| BTW/USDT:USDT | +16.17% | $5,162,244.41 |
+| BLESS/USDT:USDT | +14.17% | $44,968,855.94 |
+| MMT/USDT:USDT | +12.06% | $1,882,032.43 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +2.29% | +2.46% |
-| KORU/USDT:USDT | below_1h_threshold | +1.44% | +1.61% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.24% | +1.41% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.12% | +1.29% |
-| DCTY/USDT:USDT | below_1h_threshold | +1.05% | +1.22% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +2.29% | +2.33% |
+| DCTY/USDT:USDT | below_1h_threshold | +1.73% | +1.77% |
+| KORU/USDT:USDT | below_1h_threshold | +1.44% | +1.48% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.24% | +1.28% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.12% | +1.16% |
 
 ## 7. 次に見るべき不足
 
