@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-22T11:41:34.537286+00:00
+- generated_at: 2026-11-22T11:46:29.469725+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19383**
 
@@ -70,9 +70,9 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-22T11:41:14.138864+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.29% price=61018.7
-- Funnel: target 1086 → liquid 107 → pre 50 → checked 50 → surge 2 → strict 2
+- 更新: 2026-11-22T11:46:11.602785+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.22% price=60979.5
+- Funnel: target 1086 → liquid 108 → pre 50 → checked 50 → surge 2 → strict 2
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PIEVERSE/USDT:USDT | +55.63% | $20,154,883.33 |
-| CLAUDIA/USDT:USDT | +43.30% | $2,631,977.27 |
-| DCTY/USDT:USDT | +27.85% | $1,741,912.86 |
-| BLESS/USDT:USDT | +18.82% | $40,191,182.26 |
-| VELVET/USDT:USDT | +14.61% | $1,142,815.78 |
+| PIEVERSE/USDT:USDT | +52.41% | $20,403,417.78 |
+| CLAUDIA/USDT:USDT | +41.81% | $2,640,226.49 |
+| DCTY/USDT:USDT | +24.53% | $1,747,066.56 |
+| BLESS/USDT:USDT | +20.82% | $40,326,798.75 |
+| VELVET/USDT:USDT | +14.22% | $1,145,063.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIGHT/USDT:USDT | below_1h_threshold | +1.38% | +1.09% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.14% | +0.85% |
-| INJ/USDT:USDT | below_1h_threshold | +0.55% | +0.26% |
-| ZRO/USDT:USDT | below_1h_threshold | +0.54% | +0.25% |
-| TESLA/USDT:USDT | below_1h_threshold | +0.51% | +0.22% |
+| NIGHT/USDT:USDT | below_1h_threshold | +2.71% | +2.49% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +0.81% | +0.59% |
+| ZRO/USDT:USDT | below_1h_threshold | +0.66% | +0.44% |
+| TESLA/USDT:USDT | below_1h_threshold | +0.51% | +0.29% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +0.50% | +0.28% |
 
 ## 7. 次に見るべき不足
 
