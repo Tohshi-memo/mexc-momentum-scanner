@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-22T08:06:22.829304+00:00
+- generated_at: 2026-11-22T08:11:25.964821+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19365**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-22T08:06:07.723023+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=59073.3
-- Funnel: target 1086 → liquid 105 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-22T08:11:15.853316+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=59180.0
+- Funnel: target 1086 → liquid 105 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLAUDIA/USDT:USDT | +42.44% | $2,229,100.07 |
-| PIEVERSE/USDT:USDT | +29.46% | $7,656,627.22 |
-| SKYAI/USDT:USDT | +26.52% | $1,912,960.18 |
-| BLESS/USDT:USDT | +21.41% | $56,046,295.08 |
-| DCTY/USDT:USDT | +12.12% | $1,681,773.97 |
+| CLAUDIA/USDT:USDT | +36.38% | $2,245,377.77 |
+| PIEVERSE/USDT:USDT | +31.71% | $7,823,897.98 |
+| BLESS/USDT:USDT | +24.34% | $56,233,950.22 |
+| SKYAI/USDT:USDT | +24.23% | $1,938,507.14 |
+| BTW/USDT:USDT | +9.47% | $5,479,620.75 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +2.18% | +2.30% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +1.54% | +1.66% |
-| BLESS/USDT:USDT | below_1h_threshold | +1.53% | +1.65% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.42% | +0.54% |
-| RENDER/USDT:USDT | below_1h_threshold | +0.38% | +0.50% |
+| BLESS/USDT:USDT | below_1h_threshold | +3.41% | +3.35% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +3.25% | +3.19% |
+| CLAUDIA/USDT:USDT | below_1h_threshold | +2.28% | +2.22% |
+| DODO/USDT:USDT | below_1h_threshold | +1.21% | +1.15% |
+| IRYS/USDT:USDT | below_1h_threshold | +1.14% | +1.08% |
 
 ## 7. 次に見るべき不足
 
