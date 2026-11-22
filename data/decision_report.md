@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-22T08:41:34.013340+00:00
+- generated_at: 2026-11-22T08:46:26.451121+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19367**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-22T08:41:21.213786+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +1.55% price=60059.3
-- Funnel: target 1086 → liquid 106 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.2 >= 65=1
+- 更新: 2026-11-22T08:46:12.192598+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +1.00% price=59734.5
+- Funnel: target 1086 → liquid 107 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 73.1 >= 65=1, 4h RSI 75.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLAUDIA/USDT:USDT | +40.73% | $2,300,047.17 |
-| PIEVERSE/USDT:USDT | +39.47% | $9,467,253.46 |
-| BLESS/USDT:USDT | +28.75% | $57,277,132.34 |
-| SKYAI/USDT:USDT | +15.74% | $2,135,989.74 |
-| BTW/USDT:USDT | +13.01% | $5,614,138.42 |
+| CLAUDIA/USDT:USDT | +46.72% | $2,320,844.09 |
+| PIEVERSE/USDT:USDT | +38.43% | $9,583,866.87 |
+| BLESS/USDT:USDT | +25.01% | $57,440,013.04 |
+| BTW/USDT:USDT | +13.42% | $5,622,227.96 |
+| SKYAI/USDT:USDT | +12.27% | $2,150,434.29 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CLAUDIA/USDT:USDT | below_relative_strength | +6.28% | +4.73% |
-| BTW/USDT:USDT | below_1h_threshold | +3.85% | +2.30% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +2.83% | +1.28% |
-| TIA/USDT:USDT | below_1h_threshold | +2.41% | +0.86% |
-| VVV/USDT:USDT | below_1h_threshold | +2.37% | +0.83% |
+| BTW/USDT:USDT | below_1h_threshold | +4.65% | +3.66% |
+| BLESS/USDT:USDT | below_1h_threshold | +4.17% | +3.18% |
+| ETHFI/USDT:USDT | below_1h_threshold | +2.62% | +1.63% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +2.40% | +1.40% |
+| TIA/USDT:USDT | below_1h_threshold | +2.25% | +1.25% |
 
 ## 7. 次に見るべき不足
 
