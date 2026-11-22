@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-22T15:11:23.989104+00:00
+- generated_at: 2026-11-22T15:16:24.142070+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19394**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-22T15:11:14.112535+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=60874.1
+- 更新: 2026-11-22T15:16:14.740783+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=60886.1
 - Funnel: target 1086 → liquid 102 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLESS/USDT:USDT | +45.98% | $35,607,967.99 |
-| CLAUDIA/USDT:USDT | +44.12% | $2,675,418.84 |
-| DGAI/USDT:USDT | +28.06% | $1,281,627.27 |
-| PIEVERSE/USDT:USDT | +22.53% | $29,825,497.57 |
-| VELVET/USDT:USDT | +14.06% | $1,340,427.85 |
+| BLESS/USDT:USDT | +46.01% | $35,748,861.42 |
+| CLAUDIA/USDT:USDT | +45.52% | $2,683,835.89 |
+| DGAI/USDT:USDT | +29.96% | $1,305,873.36 |
+| PIEVERSE/USDT:USDT | +21.89% | $29,953,813.12 |
+| VELVET/USDT:USDT | +14.66% | $1,343,848.87 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PIEVERSE/USDT:USDT | below_1h_threshold | +1.25% | +1.29% |
-| BTW/USDT:USDT | below_1h_threshold | +1.22% | +1.27% |
-| SKYAI/USDT:USDT | below_1h_threshold | +0.87% | +0.91% |
-| CLAUDIA/USDT:USDT | below_1h_threshold | +0.64% | +0.69% |
-| VVV/USDT:USDT | below_1h_threshold | +0.63% | +0.68% |
+| DCTY/USDT:USDT | below_1h_threshold | +2.77% | +2.80% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.85% | +1.87% |
+| BTW/USDT:USDT | below_1h_threshold | +1.65% | +1.67% |
+| CLAUDIA/USDT:USDT | below_1h_threshold | +1.62% | +1.65% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.58% | +1.60% |
 
 ## 7. 次に見るべき不足
 
