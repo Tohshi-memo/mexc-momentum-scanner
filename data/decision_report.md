@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-22T22:21:11.902313+00:00
+- generated_at: 2026-11-22T22:26:16.489308+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19405**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-22T22:21:00.867485+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=60908.9
+- 更新: 2026-11-22T22:26:03.938253+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.26% price=60769.7
 - Funnel: target 1086 → liquid 102 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BULLA/USDT:USDT | +14.93% | $1,655,563.39 |
-| ARIA/USDT:USDT | +3.79% | $1,054,630.73 |
-| BTW/USDT:USDT | +3.75% | $3,961,652.73 |
-| BEAT/USDT:USDT | +3.41% | $2,625,172.07 |
-| VVV/USDT:USDT | +2.33% | $7,591,149.96 |
+| BULLA/USDT:USDT | +15.14% | $1,663,222.64 |
+| BTW/USDT:USDT | +4.73% | $3,968,212.92 |
+| BEAT/USDT:USDT | +3.27% | $2,631,680.40 |
+| ARIA/USDT:USDT | +3.24% | $1,062,535.13 |
+| PIEVERSE/USDT:USDT | +2.56% | $31,267,613.54 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BULLA/USDT:USDT | below_1h_threshold | +2.95% | +2.98% |
-| DGAI/USDT:USDT | below_1h_threshold | +1.40% | +1.43% |
-| BTW/USDT:USDT | below_1h_threshold | +1.13% | +1.16% |
-| ARIA/USDT:USDT | below_1h_threshold | +0.77% | +0.80% |
-| VELVET/USDT:USDT | below_1h_threshold | +0.76% | +0.79% |
+| BULLA/USDT:USDT | below_1h_threshold | +3.14% | +3.40% |
+| BTW/USDT:USDT | below_1h_threshold | +2.08% | +2.34% |
+| DGAI/USDT:USDT | below_1h_threshold | +1.73% | +1.99% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +1.40% | +1.66% |
+| VELVET/USDT:USDT | below_1h_threshold | +0.81% | +1.07% |
 
 ## 7. 次に見るべき不足
 
