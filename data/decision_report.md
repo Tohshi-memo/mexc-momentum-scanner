@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-22T02:16:15.501333+00:00
+- generated_at: 2026-11-22T02:21:20.920708+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19355**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-22T02:16:02.546100+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=60010.1
+- 更新: 2026-11-22T02:21:07.247966+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.37% price=59868.0
 - Funnel: target 1086 → liquid 119 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DCTY/USDT:USDT | +46.19% | $1,502,895.29 |
-| CLAUDIA/USDT:USDT | +24.63% | $2,021,584.51 |
-| BTW/USDT:USDT | +14.66% | $5,600,873.04 |
-| PIEVERSE/USDT:USDT | +13.33% | $5,689,966.00 |
-| BLESS/USDT:USDT | +12.07% | $57,208,853.46 |
+| DCTY/USDT:USDT | +38.94% | $1,516,377.69 |
+| CLAUDIA/USDT:USDT | +23.12% | $2,023,172.63 |
+| BTW/USDT:USDT | +14.71% | $5,611,118.01 |
+| PIEVERSE/USDT:USDT | +13.13% | $5,707,501.49 |
+| BLESS/USDT:USDT | +12.01% | $57,333,791.31 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DCTY/USDT:USDT | below_1h_threshold | +4.73% | +4.86% |
-| ENSO/USDT:USDT | below_1h_threshold | +2.74% | +2.87% |
-| IRYS/USDT:USDT | below_1h_threshold | +1.42% | +1.55% |
-| BTW/USDT:USDT | below_1h_threshold | +0.71% | +0.84% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +0.61% | +0.74% |
+| IRYS/USDT:USDT | below_1h_threshold | +1.32% | +1.68% |
+| ENSO/USDT:USDT | below_1h_threshold | +1.06% | +1.43% |
+| BTW/USDT:USDT | below_1h_threshold | +0.83% | +1.20% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +0.40% | +0.76% |
+| KORU/USDT:USDT | below_1h_threshold | +0.39% | +0.76% |
 
 ## 7. 次に見るべき不足
 
