@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-22T17:26:18.838255+00:00
+- generated_at: 2026-11-22T17:31:06.093509+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19399**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-22T17:26:07.752651+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.65% price=60825.9
+- 更新: 2026-11-22T17:30:57.568047+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.60% price=60855.0
 - Funnel: target 1086 → liquid 101 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BEAT/USDT:USDT | +7.92% | $1,957,594.14 |
-| ENSO/USDT:USDT | +3.42% | $1,169,737.20 |
-| NIGHT/USDT:USDT | +2.90% | $2,195,260.76 |
-| ELSA/USDT:USDT | +2.29% | $1,000,282.80 |
-| ETHFI/USDT:USDT | +2.05% | $1,950,766.65 |
+| BEAT/USDT:USDT | +8.33% | $1,994,389.23 |
+| NIGHT/USDT:USDT | +3.17% | $2,202,951.83 |
+| ENSO/USDT:USDT | +2.89% | $1,170,599.82 |
+| BLESS/USDT:USDT | +2.37% | $39,765,273.28 |
+| ETHFI/USDT:USDT | +2.28% | $1,958,243.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +4.34% | +4.98% |
-| KORU/USDT:USDT | below_1h_threshold | +1.58% | +2.23% |
-| DGAI/USDT:USDT | below_1h_threshold | +1.15% | +1.80% |
-| ENSO/USDT:USDT | below_1h_threshold | +1.03% | +1.68% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.49% | +1.14% |
+| BEAT/USDT:USDT | below_1h_threshold | +4.53% | +5.13% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.92% | +2.52% |
+| KORU/USDT:USDT | below_1h_threshold | +1.58% | +2.18% |
+| DGAI/USDT:USDT | below_1h_threshold | +1.13% | +1.73% |
+| ENSO/USDT:USDT | below_1h_threshold | +0.66% | +1.26% |
 
 ## 7. 次に見るべき不足
 
