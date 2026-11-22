@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-22T11:11:25.504523+00:00
+- generated_at: 2026-11-22T11:16:14.452453+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19382**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-22T11:11:09.292567+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=60918.0
+- 更新: 2026-11-22T11:16:02.513454+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.16% price=60945.1
 - Funnel: target 1086 → liquid 106 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PIEVERSE/USDT:USDT | +57.56% | $18,718,021.58 |
-| CLAUDIA/USDT:USDT | +45.80% | $2,604,786.00 |
-| VELVET/USDT:USDT | +16.66% | $1,111,346.13 |
-| BLESS/USDT:USDT | +12.96% | $39,657,622.43 |
-| BTW/USDT:USDT | +9.84% | $5,039,481.44 |
+| PIEVERSE/USDT:USDT | +52.97% | $18,960,736.27 |
+| CLAUDIA/USDT:USDT | +43.75% | $2,609,400.24 |
+| VELVET/USDT:USDT | +15.98% | $1,117,473.54 |
+| BLESS/USDT:USDT | +13.81% | $39,754,635.71 |
+| DCTY/USDT:USDT | +10.67% | $1,718,985.25 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PUMPFUN/USDT:USDT | below_1h_threshold | +0.98% | +0.86% |
-| NIGHT/USDT:USDT | below_1h_threshold | +0.87% | +0.75% |
-| CLAUDIA/USDT:USDT | below_1h_threshold | +0.70% | +0.58% |
-| INJ/USDT:USDT | below_1h_threshold | +0.51% | +0.39% |
-| TESLA/USDT:USDT | below_1h_threshold | +0.51% | +0.39% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.51% | +1.34% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.35% | +1.19% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.02% | +0.85% |
+| NIGHT/USDT:USDT | below_1h_threshold | +0.98% | +0.82% |
+| ENA/USDT:USDT | below_1h_threshold | +0.70% | +0.54% |
 
 ## 7. 次に見るべき不足
 
