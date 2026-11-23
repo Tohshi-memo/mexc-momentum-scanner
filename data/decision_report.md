@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-23T15:57:23.157504+00:00
+- generated_at: 2026-11-23T16:01:33.874619+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19507**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-23T15:57:05.016811+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=62820.4
-- Funnel: target 1088 → liquid 145 → pre 50 → checked 50 → surge 13 → strict 1
-- Surge前reject: below_1h_threshold=37, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.1 >= 65=2, 4h RSI 77.4 >= 65=1, 4h RSI 68.4 >= 65=1, 4h RSI 74.1 >= 65=1, 4h RSI 68.7 >= 65=1, 4h RSI 71.1 >= 65=1, 4h RSI 70.6 >= 65=1, 4h RSI 74.6 >= 65=1, 4h RSI 68.8 >= 65=1, 4h RSI 65.3 >= 65=1, 4h RSI 79.8 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-23T16:01:23.674085+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=62862.3
+- Funnel: target 1088 → liquid 144 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SI/USDT:USDT | +83.12% | $2,857,832.96 |
-| NVDL/USDT:USDT | +50.61% | $6,453,579.55 |
-| PROM/USDT:USDT | +47.51% | $2,017,531.92 |
-| ELSA/USDT:USDT | +31.44% | $2,884,885.50 |
-| MVLL/USDT:USDT | +27.24% | $1,950,446.04 |
+| ARIA/USDT:USDT | +2.21% | $7,662,898.16 |
+| SI/USDT:USDT | +1.85% | $2,855,593.48 |
+| ZHIPUSTOCK/USDT:USDT | +0.97% | $5,416,986.85 |
+| SKHYNIXSTOCK/USDT:USDT | +0.51% | $414,711,093.05 |
+| KAS/USDT:USDT | +0.46% | $2,302,361.24 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TSMSTOCK/USDT:USDT | below_1h_threshold | +4.99% | +5.05% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +4.89% | +4.96% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +4.63% | +4.70% |
-| KORU/USDT:USDT | below_1h_threshold | +4.45% | +4.52% |
-| ELSA/USDT:USDT | below_1h_threshold | +3.95% | +4.02% |
+| MUU/USDT:USDT | below_1h_threshold | +3.10% | +3.11% |
+| SI/USDT:USDT | below_1h_threshold | +2.60% | +2.61% |
+| ARIA/USDT:USDT | below_1h_threshold | +1.74% | +1.75% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +1.43% | +1.44% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.43% | +1.44% |
 
 ## 7. 次に見るべき不足
 
