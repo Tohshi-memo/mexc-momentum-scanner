@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-23T05:11:22.895961+00:00
+- generated_at: 2026-11-23T05:16:28.360879+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19418**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-23T05:11:09.303332+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=61151.6
+- 更新: 2026-11-23T05:16:14.184580+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=61209.0
 - Funnel: target 1086 → liquid 116 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SI/USDT:USDT | +54.92% | $1,561,745.71 |
-| ELSA/USDT:USDT | +18.49% | $1,786,030.59 |
-| ARIA/USDT:USDT | +13.57% | $1,540,512.22 |
-| BULLA/USDT:USDT | +11.47% | $2,524,770.48 |
-| ZHIPUSTOCK/USDT:USDT | +9.50% | $3,824,799.54 |
+| SI/USDT:USDT | +61.77% | $1,569,880.99 |
+| ELSA/USDT:USDT | +19.94% | $1,795,591.87 |
+| ARIA/USDT:USDT | +15.02% | $1,556,754.96 |
+| BULLA/USDT:USDT | +10.52% | $2,535,790.59 |
+| IDOL/USDT:USDT | +8.65% | $2,172,321.78 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MUU/USDT:USDT | below_1h_threshold | +1.51% | +1.62% |
-| UVXY/USDT:USDT | below_1h_threshold | +1.31% | +1.42% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +1.20% | +1.31% |
-| ARIA/USDT:USDT | below_1h_threshold | +0.97% | +1.08% |
-| ICP/USDT:USDT | below_1h_threshold | +0.85% | +0.96% |
+| ARIA/USDT:USDT | below_1h_threshold | +2.64% | +2.65% |
+| MUU/USDT:USDT | below_1h_threshold | +1.51% | +1.53% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +1.32% | +1.33% |
+| UVXY/USDT:USDT | below_1h_threshold | +1.31% | +1.32% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +1.15% | +1.17% |
 
 ## 7. 次に見るべき不足
 
