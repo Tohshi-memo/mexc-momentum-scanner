@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-23T20:06:32.878465+00:00
+- generated_at: 2026-11-23T20:11:31.874288+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19528**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-23T20:06:19.107481+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=61198.3
+- 更新: 2026-11-23T20:11:17.983398+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.15% price=61141.4
 - Funnel: target 1088 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NVD/USDT:USDT | +14.71% | $2,090,644.56 |
-| CYS/USDT:USDT | +14.69% | $1,851,099.75 |
-| ARIA/USDT:USDT | +14.41% | $9,234,812.49 |
-| PIEVERSE/USDT:USDT | +9.93% | $9,798,696.88 |
-| SKDD/USDT:USDT | +6.55% | $1,433,688.64 |
+| NVD/USDT:USDT | +19.21% | $2,102,725.11 |
+| CYS/USDT:USDT | +16.15% | $1,889,544.97 |
+| ARIA/USDT:USDT | +13.58% | $9,242,362.73 |
+| PIEVERSE/USDT:USDT | +8.77% | $9,867,431.37 |
+| SKDD/USDT:USDT | +7.83% | $1,434,659.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CYS/USDT:USDT | below_1h_threshold | +1.90% | +1.95% |
-| ACE/USDT:USDT | below_1h_threshold | +1.55% | +1.61% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +1.04% | +1.09% |
-| SUMIELECSTOCK/USDT:USDT | below_1h_threshold | +0.94% | +1.00% |
-| DGAI/USDT:USDT | below_1h_threshold | +0.94% | +1.00% |
+| CYS/USDT:USDT | below_1h_threshold | +3.19% | +3.34% |
+| DGAI/USDT:USDT | below_1h_threshold | +2.09% | +2.24% |
+| ACE/USDT:USDT | below_1h_threshold | +1.54% | +1.69% |
+| SUMIELECSTOCK/USDT:USDT | below_1h_threshold | +0.94% | +1.09% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +0.83% | +0.98% |
 
 ## 7. 次に見るべき不足
 
