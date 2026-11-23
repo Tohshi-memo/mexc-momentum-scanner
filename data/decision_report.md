@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-23T03:21:26.784246+00:00
+- generated_at: 2026-11-23T03:26:20.922350+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19413**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-23T03:21:13.050328+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +1.53% price=61514.7
-- Funnel: target 1086 → liquid 114 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-23T03:26:07.192195+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +1.65% price=61588.0
+- Funnel: target 1086 → liquid 115 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=2, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SI/USDT:USDT | +42.00% | $1,466,050.66 |
-| BULLA/USDT:USDT | +14.45% | $2,461,458.02 |
-| ELSA/USDT:USDT | +12.87% | $1,480,361.64 |
-| ZHIPUSTOCK/USDT:USDT | +9.86% | $2,825,663.56 |
-| ARIA/USDT:USDT | +7.01% | $1,394,749.03 |
+| SI/USDT:USDT | +44.85% | $1,471,696.94 |
+| BULLA/USDT:USDT | +15.35% | $2,466,385.40 |
+| ELSA/USDT:USDT | +14.08% | $1,493,932.32 |
+| ZHIPUSTOCK/USDT:USDT | +9.76% | $2,892,211.91 |
+| ARIA/USDT:USDT | +6.96% | $1,396,357.36 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IDOL/USDT:USDT | below_1h_threshold | +4.43% | +2.90% |
-| ELSA/USDT:USDT | below_1h_threshold | +4.13% | +2.60% |
-| ARIA/USDT:USDT | below_1h_threshold | +3.54% | +2.01% |
-| BEAT/USDT:USDT | below_1h_threshold | +3.44% | +1.91% |
-| BLESS/USDT:USDT | below_1h_threshold | +3.30% | +1.77% |
+| ELSA/USDT:USDT | below_relative_strength | +5.17% | +3.52% |
+| IDOL/USDT:USDT | below_relative_strength | +5.06% | +3.41% |
+| JUP/USDT:USDT | below_1h_threshold | +3.66% | +2.01% |
+| BLESS/USDT:USDT | below_1h_threshold | +3.61% | +1.96% |
+| ARIA/USDT:USDT | below_1h_threshold | +3.61% | +1.96% |
 
 ## 7. 次に見るべき不足
 
