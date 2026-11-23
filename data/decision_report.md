@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-23T22:11:31.336492+00:00
+- generated_at: 2026-11-23T22:16:19.804085+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19529**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-23T22:11:17.777890+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=61226.6
+- 更新: 2026-11-23T22:16:09.608961+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=61200.0
 - Funnel: target 1088 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CYS/USDT:USDT | +19.86% | $2,541,107.65 |
-| ARIA/USDT:USDT | +17.86% | $9,600,265.80 |
-| NVD/USDT:USDT | +16.81% | $2,326,315.19 |
-| PIEVERSE/USDT:USDT | +7.58% | $9,981,489.65 |
-| MMT/USDT:USDT | +5.18% | $2,409,278.60 |
+| CYS/USDT:USDT | +20.02% | $2,583,921.86 |
+| ARIA/USDT:USDT | +17.16% | $9,615,374.83 |
+| NVD/USDT:USDT | +16.51% | $2,326,676.54 |
+| PIEVERSE/USDT:USDT | +7.42% | $10,005,040.74 |
+| ONE/USDT:USDT | +5.00% | $1,211,882.29 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CYS/USDT:USDT | below_1h_threshold | +3.09% | +3.23% |
-| KORU/USDT:USDT | below_1h_threshold | +1.38% | +1.51% |
-| CRWVSTOCK/USDT:USDT | below_1h_threshold | +1.28% | +1.42% |
-| TSMSTOCK/USDT:USDT | below_1h_threshold | +1.17% | +1.30% |
-| ARIA/USDT:USDT | below_1h_threshold | +1.05% | +1.18% |
+| CYS/USDT:USDT | below_1h_threshold | +3.30% | +3.48% |
+| KORU/USDT:USDT | below_1h_threshold | +1.38% | +1.56% |
+| CRWVSTOCK/USDT:USDT | below_1h_threshold | +1.28% | +1.46% |
+| TSMSTOCK/USDT:USDT | below_1h_threshold | +1.17% | +1.34% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +1.03% | +1.21% |
 
 ## 7. 次に見るべき不足
 
