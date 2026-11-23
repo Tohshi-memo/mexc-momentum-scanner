@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-23T01:06:21.771685+00:00
+- generated_at: 2026-11-23T01:11:15.332592+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19409**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-23T01:06:11.806831+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.52% price=60995.9
+- 更新: 2026-11-23T01:11:04.328318+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.65% price=60915.3
 - Funnel: target 1086 → liquid 108 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SI/USDT:USDT | +51.41% | $1,332,718.05 |
-| BULLA/USDT:USDT | +12.80% | $2,213,387.11 |
-| ARIA/USDT:USDT | +5.07% | $1,359,499.68 |
-| ENSO/USDT:USDT | +4.14% | $1,264,302.33 |
-| BEAT/USDT:USDT | +4.07% | $2,680,719.32 |
+| SI/USDT:USDT | +52.02% | $1,335,979.50 |
+| BULLA/USDT:USDT | +12.64% | $2,219,521.79 |
+| ENSO/USDT:USDT | +4.58% | $1,267,055.78 |
+| ELSA/USDT:USDT | +3.81% | $1,298,693.14 |
+| ARIA/USDT:USDT | +3.81% | $1,362,040.18 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNXX/USDT:USDT | below_1h_threshold | +3.27% | +3.79% |
-| BULLA/USDT:USDT | below_1h_threshold | +3.06% | +3.58% |
-| ELSA/USDT:USDT | below_1h_threshold | +1.88% | +2.40% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.67% | +2.19% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.35% | +1.87% |
+| SNXX/USDT:USDT | below_1h_threshold | +3.27% | +3.92% |
+| ELSA/USDT:USDT | below_1h_threshold | +2.85% | +3.50% |
+| BULLA/USDT:USDT | below_1h_threshold | +2.72% | +3.37% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.67% | +2.33% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.35% | +2.00% |
 
 ## 7. 次に見るべき不足
 
