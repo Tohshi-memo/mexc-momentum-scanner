@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-23T05:06:24.708914+00:00
+- generated_at: 2026-11-23T05:11:22.895961+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19418**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-23T05:06:08.882709+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=61241.5
+- 更新: 2026-11-23T05:11:09.303332+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=61151.6
 - Funnel: target 1086 → liquid 116 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SI/USDT:USDT | +55.56% | $1,555,956.61 |
-| ELSA/USDT:USDT | +19.20% | $1,766,933.35 |
-| ARIA/USDT:USDT | +12.48% | $1,508,179.34 |
-| BULLA/USDT:USDT | +11.68% | $2,519,092.40 |
-| ZHIPUSTOCK/USDT:USDT | +10.66% | $3,692,879.21 |
+| SI/USDT:USDT | +54.92% | $1,561,745.71 |
+| ELSA/USDT:USDT | +18.49% | $1,786,030.59 |
+| ARIA/USDT:USDT | +13.57% | $1,540,512.22 |
+| BULLA/USDT:USDT | +11.47% | $2,524,770.48 |
+| ZHIPUSTOCK/USDT:USDT | +9.50% | $3,824,799.54 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MUU/USDT:USDT | below_1h_threshold | +1.51% | +1.47% |
-| UVXY/USDT:USDT | below_1h_threshold | +1.31% | +1.27% |
-| YAGEOSTOCK/USDT:USDT | below_1h_threshold | +0.74% | +0.70% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.74% | +0.70% |
-| AIGENSYN/USDT:USDT | below_1h_threshold | +0.71% | +0.67% |
+| MUU/USDT:USDT | below_1h_threshold | +1.51% | +1.62% |
+| UVXY/USDT:USDT | below_1h_threshold | +1.31% | +1.42% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +1.20% | +1.31% |
+| ARIA/USDT:USDT | below_1h_threshold | +0.97% | +1.08% |
+| ICP/USDT:USDT | below_1h_threshold | +0.85% | +0.96% |
 
 ## 7. 次に見るべき不足
 
