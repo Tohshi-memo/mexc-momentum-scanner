@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-23T12:56:36.744229+00:00
+- generated_at: 2026-11-23T13:01:14.564786+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19445**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-23T12:56:19.972467+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.30% price=61216.6
-- Funnel: target 1088 → liquid 120 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.2 >= 65=1, 4h RSI 79.9 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-23T13:01:04.890989+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=61323.9
+- Funnel: target 1088 → liquid 119 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SI/USDT:USDT | +76.69% | $2,417,521.78 |
-| BULLA/USDT:USDT | +41.07% | $3,467,345.34 |
-| ARIA/USDT:USDT | +34.99% | $4,670,812.70 |
-| EVAA/USDT:USDT | +26.82% | $43,092,301.31 |
-| PROM/USDT:USDT | +25.79% | $1,148,395.65 |
+| SI/USDT:USDT | +79.91% | $2,417,820.30 |
+| BULLA/USDT:USDT | +41.71% | $3,371,083.57 |
+| ARIA/USDT:USDT | +35.51% | $4,644,918.59 |
+| EVAA/USDT:USDT | +28.68% | $39,113,231.84 |
+| PROM/USDT:USDT | +28.15% | $1,129,921.68 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MUBARAK/USDT:USDT | below_1h_threshold | +4.41% | +4.72% |
-| BLESS/USDT:USDT | below_1h_threshold | +2.48% | +2.78% |
-| QNT/USDT:USDT | below_1h_threshold | +1.78% | +2.09% |
-| 1000BONK/USDT:USDT | below_1h_threshold | +0.56% | +0.86% |
-| LIT/USDT:USDT | below_1h_threshold | +0.42% | +0.72% |
+| UNITREE/USDT:USDT | below_1h_threshold | +0.55% | +0.51% |
+| EVAA/USDT:USDT | below_1h_threshold | +0.51% | +0.47% |
+| SUMIELECSTOCK/USDT:USDT | below_1h_threshold | +0.37% | +0.33% |
+| ALGO/USDT:USDT | below_1h_threshold | +0.34% | +0.29% |
+| SILVER/USDT:USDT | below_1h_threshold | +0.26% | +0.22% |
 
 ## 7. 次に見るべき不足
 
