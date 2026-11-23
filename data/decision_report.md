@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-23T17:31:56.489080+00:00
+- generated_at: 2026-11-23T17:36:38.106061+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19517**
 
@@ -70,31 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-23T17:31:33.753577+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.90% price=61656.4
-- Funnel: target 1088 → liquid 147 → pre 50 → checked 50 → surge 3 → strict 3
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-23T17:36:21.648367+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.85% price=61686.9
+- Funnel: target 1088 → liquid 147 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CYS/USDT:USDT | +11.91% | $1,085,821.68 |
-| NVD/USDT:USDT | +11.71% | $1,686,546.59 |
-| PIEVERSE/USDT:USDT | +10.64% | $9,734,209.94 |
-| ACE/USDT:USDT | +8.03% | $12,653,252.47 |
-| DGAI/USDT:USDT | +5.44% | $1,157,318.74 |
+| PIEVERSE/USDT:USDT | +12.33% | $9,778,361.73 |
+| CYS/USDT:USDT | +11.29% | $1,107,299.58 |
+| NVD/USDT:USDT | +10.21% | $1,709,053.44 |
+| ACE/USDT:USDT | +6.63% | $12,681,349.71 |
+| DGAI/USDT:USDT | +6.32% | $1,166,624.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UVXY/USDT:USDT | below_1h_threshold | +2.80% | +3.70% |
-| DGAI/USDT:USDT | below_1h_threshold | +2.78% | +3.68% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +1.97% | +2.87% |
-| BTW/USDT:USDT | below_1h_threshold | +1.96% | +2.86% |
-| NGAS/USDT:USDT | below_1h_threshold | +1.15% | +2.05% |
+| DGAI/USDT:USDT | below_1h_threshold | +3.64% | +4.49% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +3.48% | +4.33% |
+| ACE/USDT:USDT | below_1h_threshold | +3.43% | +4.28% |
+| UVXY/USDT:USDT | below_1h_threshold | +2.80% | +3.65% |
+| BTW/USDT:USDT | below_1h_threshold | +2.40% | +3.25% |
 
 ## 7. 次に見るべき不足
 
