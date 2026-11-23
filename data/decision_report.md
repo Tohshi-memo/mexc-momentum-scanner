@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-23T12:36:34.955912+00:00
+- generated_at: 2026-11-23T12:41:34.362972+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19445**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-23T12:36:18.476486+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=61298.0
-- Funnel: target 1088 → liquid 120 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.4 >= 65=1
+- 更新: 2026-11-23T12:41:18.113333+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.28% price=61231.7
+- Funnel: target 1088 → liquid 120 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 76.4 >= 65=1, 4h RSI 80.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SI/USDT:USDT | +71.94% | $2,377,881.59 |
-| BULLA/USDT:USDT | +41.39% | $3,436,306.83 |
-| ARIA/USDT:USDT | +35.91% | $4,608,507.27 |
-| EVAA/USDT:USDT | +31.07% | $42,511,881.45 |
-| PROM/USDT:USDT | +23.84% | $1,081,221.48 |
+| SI/USDT:USDT | +76.94% | $2,393,627.07 |
+| BULLA/USDT:USDT | +41.49% | $3,446,901.60 |
+| ARIA/USDT:USDT | +36.12% | $4,634,883.71 |
+| EVAA/USDT:USDT | +28.55% | $42,614,575.20 |
+| PROM/USDT:USDT | +27.78% | $1,109,526.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ELSA/USDT:USDT | below_1h_threshold | +4.34% | +4.51% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +2.10% | +2.27% |
-| QNT/USDT:USDT | below_1h_threshold | +1.49% | +1.66% |
-| LIT/USDT:USDT | below_1h_threshold | +1.40% | +1.57% |
-| JUP/USDT:USDT | below_1h_threshold | +0.91% | +1.08% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +2.06% | +2.34% |
+| QNT/USDT:USDT | below_1h_threshold | +1.87% | +2.15% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.72% | +2.00% |
+| LIT/USDT:USDT | below_1h_threshold | +0.80% | +1.08% |
+| JUP/USDT:USDT | below_1h_threshold | +0.79% | +1.07% |
 
 ## 7. 次に見るべき不足
 
