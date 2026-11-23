@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-23T01:56:17.145618+00:00
+- generated_at: 2026-11-23T02:01:26.263855+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19409**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7568件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7569件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000170 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-23T01:56:05.899461+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.78% price=60839.9
-- Funnel: target 1086 → liquid 114 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-23T02:01:12.460816+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=60856.8
+- Funnel: target 1086 → liquid 113 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SI/USDT:USDT | +53.48% | $1,372,930.29 |
-| ZHIPUSTOCK/USDT:USDT | +11.09% | $1,939,610.58 |
-| ELSA/USDT:USDT | +5.02% | $1,320,765.54 |
-| PIEVERSE/USDT:USDT | +3.60% | $31,534,293.06 |
-| VVV/USDT:USDT | +3.11% | $6,349,611.22 |
+| SI/USDT:USDT | +52.49% | $1,375,623.98 |
+| ZHIPUSTOCK/USDT:USDT | +11.07% | $1,993,197.34 |
+| BULLA/USDT:USDT | +7.91% | $2,332,281.19 |
+| ELSA/USDT:USDT | +7.40% | $1,317,422.43 |
+| AIGENSYN/USDT:USDT | +3.98% | $1,102,149.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ELSA/USDT:USDT | below_1h_threshold | +4.03% | +4.80% |
-| SNXX/USDT:USDT | below_1h_threshold | +3.27% | +4.04% |
-| AIGENSYN/USDT:USDT | below_1h_threshold | +3.18% | +3.96% |
-| SI/USDT:USDT | below_1h_threshold | +2.21% | +2.98% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.67% | +2.45% |
+| BULLA/USDT:USDT | below_1h_threshold | +2.63% | +2.61% |
+| ELSA/USDT:USDT | below_1h_threshold | +0.86% | +0.83% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +0.78% | +0.76% |
+| AAPLSTOCK/USDT:USDT | below_1h_threshold | +0.62% | +0.60% |
+| TSMSTOCK/USDT:USDT | below_1h_threshold | +0.57% | +0.55% |
 
 ## 7. 次に見るべき不足
 
