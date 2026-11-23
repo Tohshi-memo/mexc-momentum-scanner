@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-23T12:26:33.692697+00:00
+- generated_at: 2026-11-23T12:31:28.774963+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19445**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7605件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7606件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000149 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-23T12:26:23.405399+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.24% price=61252.3
-- Funnel: target 1088 → liquid 119 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.6 >= 65=1
+- 更新: 2026-11-23T12:31:16.230131+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=61326.2
+- Funnel: target 1088 → liquid 120 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 76.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SI/USDT:USDT | +79.02% | $2,354,958.46 |
-| BULLA/USDT:USDT | +42.08% | $3,373,464.36 |
-| ARIA/USDT:USDT | +35.87% | $4,515,503.35 |
-| EVAA/USDT:USDT | +31.54% | $42,129,028.61 |
-| ELSA/USDT:USDT | +17.80% | $2,627,526.52 |
+| SI/USDT:USDT | +78.72% | $2,359,001.86 |
+| BULLA/USDT:USDT | +39.58% | $3,413,148.97 |
+| ARIA/USDT:USDT | +36.59% | $4,552,773.16 |
+| EVAA/USDT:USDT | +31.90% | $42,193,952.20 |
+| PROM/USDT:USDT | +25.96% | $1,058,487.40 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MUBARAK/USDT:USDT | below_1h_threshold | +1.05% | +1.29% |
-| ELSA/USDT:USDT | below_1h_threshold | +0.96% | +1.20% |
-| QNT/USDT:USDT | below_1h_threshold | +0.84% | +1.09% |
-| IDOL/USDT:USDT | below_1h_threshold | +0.83% | +1.07% |
-| ETHFI/USDT:USDT | below_1h_threshold | +0.66% | +0.90% |
+| ELSA/USDT:USDT | below_1h_threshold | +2.76% | +2.88% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +2.31% | +2.44% |
+| QNT/USDT:USDT | below_1h_threshold | +1.52% | +1.64% |
+| IDOL/USDT:USDT | below_1h_threshold | +0.97% | +1.09% |
+| LIT/USDT:USDT | below_1h_threshold | +0.87% | +0.99% |
 
 ## 7. 次に見るべき不足
 
