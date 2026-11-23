@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-23T12:51:30.847672+00:00
+- generated_at: 2026-11-23T12:56:36.744229+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19445**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-23T12:51:16.050925+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.26% price=61243.1
+- 更新: 2026-11-23T12:56:19.972467+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.30% price=61216.6
 - Funnel: target 1088 → liquid 120 → pre 50 → checked 50 → surge 3 → strict 1
 - Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.4 >= 65=1, 4h RSI 79.8 >= 65=1
+- Strict後reject: 4h RSI 76.2 >= 65=1, 4h RSI 79.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SI/USDT:USDT | +77.23% | $2,414,379.67 |
-| BULLA/USDT:USDT | +41.97% | $3,459,897.72 |
-| ARIA/USDT:USDT | +35.72% | $4,653,742.43 |
-| EVAA/USDT:USDT | +29.70% | $42,920,025.99 |
-| PROM/USDT:USDT | +26.63% | $1,143,182.93 |
+| SI/USDT:USDT | +76.69% | $2,417,521.78 |
+| BULLA/USDT:USDT | +41.07% | $3,467,345.34 |
+| ARIA/USDT:USDT | +34.99% | $4,670,812.70 |
+| EVAA/USDT:USDT | +26.82% | $43,092,301.31 |
+| PROM/USDT:USDT | +25.79% | $1,148,395.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MUBARAK/USDT:USDT | below_1h_threshold | +2.61% | +2.87% |
-| QNT/USDT:USDT | below_1h_threshold | +1.62% | +1.88% |
-| BLESS/USDT:USDT | below_1h_threshold | +1.60% | +1.86% |
-| 1000BONK/USDT:USDT | below_1h_threshold | +0.70% | +0.96% |
-| LIT/USDT:USDT | below_1h_threshold | +0.55% | +0.81% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +4.41% | +4.72% |
+| BLESS/USDT:USDT | below_1h_threshold | +2.48% | +2.78% |
+| QNT/USDT:USDT | below_1h_threshold | +1.78% | +2.09% |
+| 1000BONK/USDT:USDT | below_1h_threshold | +0.56% | +0.86% |
+| LIT/USDT:USDT | below_1h_threshold | +0.42% | +0.72% |
 
 ## 7. 次に見るべき不足
 
