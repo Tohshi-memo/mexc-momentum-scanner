@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-23T11:56:32.833712+00:00
+- generated_at: 2026-11-23T12:01:43.216158+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19444**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-23T11:56:16.561263+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=61345.4
-- Funnel: target 1088 → liquid 120 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.8 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-23T12:01:29.777811+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=61350.9
+- Funnel: target 1088 → liquid 119 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SI/USDT:USDT | +90.45% | $2,304,901.77 |
-| ARIA/USDT:USDT | +35.16% | $4,387,802.99 |
-| BULLA/USDT:USDT | +32.94% | $3,359,156.58 |
-| EVAA/USDT:USDT | +30.65% | $44,882,069.18 |
-| UNITREE/USDT:USDT | +17.33% | $1,275,383.31 |
+| SI/USDT:USDT | +91.78% | $2,311,310.89 |
+| ARIA/USDT:USDT | +36.12% | $4,386,623.06 |
+| BULLA/USDT:USDT | +32.67% | $3,306,869.15 |
+| EVAA/USDT:USDT | +30.63% | $41,676,269.15 |
+| ELSA/USDT:USDT | +17.49% | $2,568,120.67 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_1h_threshold | +4.83% | +4.92% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +3.49% | +3.58% |
-| ALGO/USDT:USDT | below_1h_threshold | +3.10% | +3.19% |
-| EVAA/USDT:USDT | below_1h_threshold | +2.04% | +2.12% |
-| ARIA/USDT:USDT | below_1h_threshold | +1.85% | +1.94% |
+| BULLA/USDT:USDT | below_1h_threshold | +1.01% | +1.09% |
+| ELSA/USDT:USDT | below_1h_threshold | +0.99% | +1.07% |
+| ARIA/USDT:USDT | below_1h_threshold | +0.51% | +0.59% |
+| KAS/USDT:USDT | below_1h_threshold | +0.37% | +0.45% |
+| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +0.31% | +0.39% |
 
 ## 7. 次に見るべき不足
 
