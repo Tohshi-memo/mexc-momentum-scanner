@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-23T08:06:30.527227+00:00
+- generated_at: 2026-11-23T08:11:31.985580+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19428**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-23T08:06:17.271405+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=61394.0
-- Funnel: target 1086 → liquid 117 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.9 >= 65=1, 4h RSI 79.8 >= 65=1
+- 更新: 2026-11-23T08:11:21.970760+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=61476.0
+- Funnel: target 1086 → liquid 118 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 73.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SI/USDT:USDT | +90.25% | $1,791,941.64 |
-| BULLA/USDT:USDT | +30.76% | $2,748,400.78 |
-| EVAA/USDT:USDT | +29.17% | $45,370,654.01 |
-| ARIA/USDT:USDT | +26.42% | $2,365,857.37 |
-| ELSA/USDT:USDT | +17.80% | $2,194,232.66 |
+| SI/USDT:USDT | +87.82% | $1,813,645.45 |
+| BULLA/USDT:USDT | +30.18% | $2,774,487.69 |
+| EVAA/USDT:USDT | +28.33% | $45,754,212.29 |
+| ARIA/USDT:USDT | +24.82% | $2,391,511.25 |
+| ELSA/USDT:USDT | +17.70% | $2,208,521.85 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EVAA/USDT:USDT | below_1h_threshold | +4.06% | +4.12% |
-| ARIA/USDT:USDT | below_1h_threshold | +1.24% | +1.30% |
-| VELVET/USDT:USDT | below_1h_threshold | +0.92% | +0.98% |
-| JUP/USDT:USDT | below_1h_threshold | +0.70% | +0.76% |
-| BEAT/USDT:USDT | below_1h_threshold | +0.66% | +0.72% |
+| SI/USDT:USDT | below_1h_threshold | +4.63% | +4.56% |
+| EVAA/USDT:USDT | below_1h_threshold | +3.05% | +2.98% |
+| JUP/USDT:USDT | below_1h_threshold | +1.12% | +1.04% |
+| QNT/USDT:USDT | below_1h_threshold | +0.74% | +0.67% |
+| KAS/USDT:USDT | below_1h_threshold | +0.67% | +0.59% |
 
 ## 7. 次に見るべき不足
 
