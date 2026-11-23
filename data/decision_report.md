@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-23T12:31:28.774963+00:00
+- generated_at: 2026-11-23T12:36:34.955912+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19445**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-23T12:31:16.230131+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=61326.2
+- 更新: 2026-11-23T12:36:18.476486+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.17% price=61298.0
 - Funnel: target 1088 → liquid 120 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.1 >= 65=1
+- Strict後reject: 4h RSI 76.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SI/USDT:USDT | +78.72% | $2,359,001.86 |
-| BULLA/USDT:USDT | +39.58% | $3,413,148.97 |
-| ARIA/USDT:USDT | +36.59% | $4,552,773.16 |
-| EVAA/USDT:USDT | +31.90% | $42,193,952.20 |
-| PROM/USDT:USDT | +25.96% | $1,058,487.40 |
+| SI/USDT:USDT | +71.94% | $2,377,881.59 |
+| BULLA/USDT:USDT | +41.39% | $3,436,306.83 |
+| ARIA/USDT:USDT | +35.91% | $4,608,507.27 |
+| EVAA/USDT:USDT | +31.07% | $42,511,881.45 |
+| PROM/USDT:USDT | +23.84% | $1,081,221.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ELSA/USDT:USDT | below_1h_threshold | +2.76% | +2.88% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +2.31% | +2.44% |
-| QNT/USDT:USDT | below_1h_threshold | +1.52% | +1.64% |
-| IDOL/USDT:USDT | below_1h_threshold | +0.97% | +1.09% |
-| LIT/USDT:USDT | below_1h_threshold | +0.87% | +0.99% |
+| ELSA/USDT:USDT | below_1h_threshold | +4.34% | +4.51% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +2.10% | +2.27% |
+| QNT/USDT:USDT | below_1h_threshold | +1.49% | +1.66% |
+| LIT/USDT:USDT | below_1h_threshold | +1.40% | +1.57% |
+| JUP/USDT:USDT | below_1h_threshold | +0.91% | +1.08% |
 
 ## 7. 次に見るべき不足
 
