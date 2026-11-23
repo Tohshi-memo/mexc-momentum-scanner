@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-23T17:01:46.602652+00:00
+- generated_at: 2026-11-23T17:06:53.190448+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19511**
 
@@ -70,9 +70,9 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-23T17:01:34.915037+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=62178.7
-- Funnel: target 1088 → liquid 144 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-11-23T17:06:36.784622+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.52% price=61891.9
+- Funnel: target 1088 → liquid 145 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PIEVERSE/USDT:USDT | +8.26% | $9,522,962.84 |
-| NVD/USDT:USDT | +8.10% | $1,616,720.94 |
-| SI/USDT:USDT | +7.95% | $2,946,551.07 |
-| UVXY/USDT:USDT | +2.63% | $4,702,292.47 |
-| DGAI/USDT:USDT | +2.57% | $1,116,617.25 |
+| NVD/USDT:USDT | +11.11% | $1,629,392.28 |
+| PIEVERSE/USDT:USDT | +9.30% | $9,541,455.55 |
+| SI/USDT:USDT | +8.09% | $2,952,549.39 |
+| UVXY/USDT:USDT | +2.88% | $4,763,006.18 |
+| DGAI/USDT:USDT | +2.78% | $1,118,982.79 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UVXY/USDT:USDT | below_1h_threshold | +2.80% | +2.86% |
-| SI/USDT:USDT | below_1h_threshold | +1.59% | +1.65% |
-| NGAS/USDT:USDT | below_1h_threshold | +1.15% | +1.21% |
-| YAGEOSTOCK/USDT:USDT | below_1h_threshold | +0.92% | +0.98% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +0.90% | +0.96% |
+| UVXY/USDT:USDT | below_1h_threshold | +2.80% | +3.32% |
+| NGAS/USDT:USDT | below_1h_threshold | +1.15% | +1.68% |
+| YAGEOSTOCK/USDT:USDT | below_1h_threshold | +0.92% | +1.44% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +0.90% | +1.42% |
+| MUU/USDT:USDT | below_1h_threshold | +0.83% | +1.35% |
 
 ## 7. 次に見るべき不足
 
