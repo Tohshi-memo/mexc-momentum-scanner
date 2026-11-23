@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-23T23:41:29.774965+00:00
+- generated_at: 2026-11-23T23:46:20.192924+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19544**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-23T23:41:13.515216+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=61260.1
+- 更新: 2026-11-23T23:46:06.536863+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=61165.6
 - Funnel: target 1088 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CYS/USDT:USDT | +19.82% | $2,916,513.55 |
-| ARIA/USDT:USDT | +18.02% | $9,732,577.03 |
-| NVD/USDT:USDT | +17.11% | $2,350,014.51 |
-| MMT/USDT:USDT | +9.94% | $2,482,273.53 |
-| PIEVERSE/USDT:USDT | +9.27% | $10,014,176.35 |
+| CYS/USDT:USDT | +17.70% | $2,930,671.16 |
+| NVD/USDT:USDT | +17.41% | $2,350,643.72 |
+| ARIA/USDT:USDT | +17.30% | $9,749,216.19 |
+| MMT/USDT:USDT | +9.94% | $2,487,304.31 |
+| PIEVERSE/USDT:USDT | +8.83% | $10,035,668.63 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MMT/USDT:USDT | below_1h_threshold | +3.51% | +3.44% |
-| KORU/USDT:USDT | below_1h_threshold | +2.48% | +2.42% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +1.11% | +1.05% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.07% | +1.00% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.90% | +0.83% |
+| MMT/USDT:USDT | below_1h_threshold | +3.75% | +3.84% |
+| KORU/USDT:USDT | below_1h_threshold | +2.48% | +2.58% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +1.11% | +1.21% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.07% | +1.16% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.90% | +0.99% |
 
 ## 7. 次に見るべき不足
 
