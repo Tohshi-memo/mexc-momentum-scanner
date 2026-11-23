@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-11-23T10:11:30.232674+00:00
+- generated_at: 2026-11-23T10:16:28.564127+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **19438**
+- closed shadow trades: **19439**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=19438, expectancy=+0.02%
+- 全期間 MARKET基準: n=19439, expectancy=+0.02%
 - 直近20件 MARKET基準: n=20, expectancy=-1.14%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -31,7 +31,7 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_1PCT_LONG | 19/20 | 95.0% | +1.55% | **+1.47%** |
+| LIMIT_1PCT_LONG | 18/20 | 90.0% | +1.36% | **+1.22%** |
 | MARKET_LONG | 20/20 | 100.0% | +1.20% | **+1.20%** |
 | LIMIT_6PCT_LONG | 8/20 | 40.0% | +2.85% | **+1.14%** |
 | LIMIT_FIB1272_LONG | 8/20 | 40.0% | +2.66% | **+1.06%** |
@@ -47,55 +47,53 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,881.22** / 初期 $100.00 (+1781.22%)
-- 確定: 7536件 (Win 2165 / Loss 2424 / Flat 2947) / skip 8463件
+- 確定: 7537件 (Win 2165 / Loss 2424 / Flat 2948) / skip 8463件
 - 成長率目線: 平均log +0.000389 / 幾何平均 +0.039% per trade / maxDD +9.04%
 - 次の候補: `LIMIT_FIB1272_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: EVAA/USDT:USDT `LIMIT_FIB1272_LONG` EXPIRED account +0.00% 残高後 $1,881.22
+- 最新: ARIA/USDT:USDT `LIMIT_FIB1272_LONG` EXPIRED account +0.00% 残高後 $1,881.22
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$466.74** / 初期 $100.00 (+366.74%)
-- 確定: 5200件 (Win 1385 / Loss 1117 / Flat 2698) / skip 7649件
+- 確定: 5201件 (Win 1385 / Loss 1117 / Flat 2699) / skip 7649件
 - 成長率目線: 平均log +0.000296 / 幾何平均 +0.030% per trade / maxDD +4.29%
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0600 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: EVAA/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $466.74
+- 最新: ARIA/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $466.74
 
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
 - 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7600件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000159 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000151 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-23T10:11:16.189431+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=61353.3
-- Funnel: target 1086 → liquid 116 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.4 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-23T10:16:12.264910+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=61368.7
+- Funnel: target 1086 → liquid 116 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SI/USDT:USDT | +70.06% | $2,158,438.36 |
-| BULLA/USDT:USDT | +42.34% | $3,103,565.96 |
-| ARIA/USDT:USDT | +32.99% | $3,126,708.03 |
-| ELSA/USDT:USDT | +27.41% | $2,397,890.89 |
-| EVAA/USDT:USDT | +26.89% | $45,607,422.33 |
+| SI/USDT:USDT | +68.48% | $2,164,917.45 |
+| BULLA/USDT:USDT | +36.50% | $3,132,724.26 |
+| ARIA/USDT:USDT | +32.35% | $3,230,096.01 |
+| EVAA/USDT:USDT | +27.07% | $45,672,536.24 |
+| ELSA/USDT:USDT | +26.69% | $2,411,177.41 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.56% | +1.65% |
-| ANTHROPIC/USDT:USDT | below_1h_threshold | +1.10% | +1.20% |
-| NVIDIA/USDT:USDT | below_1h_threshold | +0.94% | +1.03% |
-| KAS/USDT:USDT | below_1h_threshold | +0.74% | +0.84% |
-| ZRO/USDT:USDT | below_1h_threshold | +0.71% | +0.80% |
+| BULLA/USDT:USDT | below_1h_threshold | +3.17% | +3.24% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.56% | +1.63% |
+| ANTHROPIC/USDT:USDT | below_1h_threshold | +1.10% | +1.17% |
+| NVIDIA/USDT:USDT | below_1h_threshold | +0.94% | +1.01% |
+| ZRO/USDT:USDT | below_1h_threshold | +0.88% | +0.95% |
 
 ## 7. 次に見るべき不足
 
