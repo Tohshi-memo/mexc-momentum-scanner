@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-23T13:21:24.507794+00:00
+- generated_at: 2026-11-23T13:26:20.699044+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19446**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7606件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7607件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000149 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-23T13:21:10.583600+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=61236.3
-- Funnel: target 1088 → liquid 119 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-23T13:26:09.325994+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=61260.0
+- Funnel: target 1088 → liquid 119 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 81.2 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SI/USDT:USDT | +87.77% | $2,459,575.28 |
-| BULLA/USDT:USDT | +41.23% | $3,407,647.59 |
-| ARIA/USDT:USDT | +39.64% | $4,937,589.82 |
-| EVAA/USDT:USDT | +29.21% | $39,382,181.81 |
-| PROM/USDT:USDT | +26.33% | $1,178,402.53 |
+| SI/USDT:USDT | +100.09% | $2,477,323.72 |
+| ARIA/USDT:USDT | +41.32% | $5,005,057.61 |
+| BULLA/USDT:USDT | +41.07% | $3,417,171.19 |
+| EVAA/USDT:USDT | +28.31% | $39,462,337.25 |
+| PROM/USDT:USDT | +26.99% | $1,183,072.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SI/USDT:USDT | below_1h_threshold | +3.12% | +3.22% |
-| ARIA/USDT:USDT | below_1h_threshold | +3.07% | +3.17% |
-| EVAA/USDT:USDT | below_1h_threshold | +1.20% | +1.30% |
-| KAS/USDT:USDT | below_1h_threshold | +1.00% | +1.10% |
-| ETHFI/USDT:USDT | below_1h_threshold | +0.80% | +0.90% |
+| ARIA/USDT:USDT | below_1h_threshold | +4.47% | +4.53% |
+| ALGO/USDT:USDT | below_1h_threshold | +1.91% | +1.97% |
+| KAS/USDT:USDT | below_1h_threshold | +1.14% | +1.21% |
+| PENGU/USDT:USDT | below_1h_threshold | +0.62% | +0.68% |
+| HYPE/USDT:USDT | below_1h_threshold | +0.60% | +0.67% |
 
 ## 7. 次に見るべき不足
 
