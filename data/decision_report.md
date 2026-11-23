@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-22T23:56:27.745205+00:00
+- generated_at: 2026-11-23T00:01:16.432565+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19407**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-22T23:56:11.287920+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.34% price=61293.5
-- Funnel: target 1086 → liquid 109 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.0 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-23T00:01:06.621334+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=61289.1
+- Funnel: target 1086 → liquid 108 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SI/USDT:USDT | +58.33% | $1,212,447.15 |
-| BULLA/USDT:USDT | +27.31% | $1,953,383.36 |
-| ARIA/USDT:USDT | +4.87% | $1,269,356.65 |
-| SNXX/USDT:USDT | +4.08% | $1,224,683.88 |
-| VVV/USDT:USDT | +3.76% | $7,171,592.88 |
+| SI/USDT:USDT | +59.82% | $1,217,562.08 |
+| BULLA/USDT:USDT | +28.00% | $1,968,825.16 |
+| ARIA/USDT:USDT | +4.48% | $1,265,207.11 |
+| SNXX/USDT:USDT | +4.13% | $1,221,835.28 |
+| VVV/USDT:USDT | +3.88% | $6,566,519.24 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LIT/USDT:USDT | below_1h_threshold | +2.52% | +2.18% |
-| SILVER/USDT:USDT | below_1h_threshold | +1.95% | +1.61% |
-| XPT/USDT:USDT | below_1h_threshold | +1.57% | +1.23% |
-| ELSA/USDT:USDT | below_1h_threshold | +1.55% | +1.21% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.36% | +1.02% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +2.18% | +2.10% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.79% | +1.71% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.61% | +1.52% |
+| MUU/USDT:USDT | below_1h_threshold | +1.54% | +1.45% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +1.48% | +1.40% |
 
 ## 7. 次に見るべき不足
 
