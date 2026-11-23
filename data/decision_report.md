@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-23T18:01:39.413838+00:00
+- generated_at: 2026-11-23T18:06:33.853865+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19521**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-23T18:01:25.940747+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=61608.1
+- 更新: 2026-11-23T18:06:18.070949+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=61585.2
 - Funnel: target 1088 → liquid 148 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NVD/USDT:USDT | +21.92% | $1,781,507.38 |
-| CYS/USDT:USDT | +12.69% | $1,208,722.47 |
-| PIEVERSE/USDT:USDT | +11.82% | $9,510,889.02 |
-| ONE/USDT:USDT | +10.43% | $1,020,368.66 |
-| DGAI/USDT:USDT | +7.63% | $1,077,007.07 |
+| NVD/USDT:USDT | +22.22% | $1,792,701.62 |
+| CYS/USDT:USDT | +10.54% | $1,237,681.74 |
+| PIEVERSE/USDT:USDT | +10.21% | $9,558,653.78 |
+| ACE/USDT:USDT | +8.94% | $12,740,298.16 |
+| ONE/USDT:USDT | +6.83% | $1,051,825.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKDD/USDT:USDT | below_1h_threshold | +2.86% | +2.92% |
-| SOXS/USDT:USDT | below_1h_threshold | +2.07% | +2.14% |
-| ONE/USDT:USDT | below_1h_threshold | +1.96% | +2.02% |
-| ANTHROPIC/USDT:USDT | below_1h_threshold | +1.80% | +1.86% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.88% | +0.94% |
+| ACE/USDT:USDT | below_1h_threshold | +3.58% | +3.68% |
+| SKDD/USDT:USDT | below_1h_threshold | +2.86% | +2.95% |
+| SI/USDT:USDT | below_1h_threshold | +2.23% | +2.33% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.07% | +2.17% |
+| ANTHROPIC/USDT:USDT | below_1h_threshold | +1.80% | +1.90% |
 
 ## 7. 次に見るべき不足
 
