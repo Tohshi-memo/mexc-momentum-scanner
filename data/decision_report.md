@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-23T15:02:22.149798+00:00
+- generated_at: 2026-11-23T15:07:01.002360+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19497**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-23T15:01:47.636860+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=62940.0
-- Funnel: target 1088 → liquid 138 → pre 50 → checked 50 → surge 9 → strict 2
-- Surge前reject: below_1h_threshold=41, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.7 >= 65=1, 4h RSI 76.8 >= 65=1, 4h RSI 68.8 >= 65=1, 4h RSI 69.9 >= 65=1, 4h RSI 68.5 >= 65=1, 4h RSI 67.7 >= 65=1, 4h RSI 79.4 >= 65=1
+- 更新: 2026-11-23T15:06:42.287523+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.63% price=63258.3
+- Funnel: target 1088 → liquid 138 → pre 50 → checked 50 → surge 7 → strict 1
+- Surge前reject: below_1h_threshold=41, below_relative_strength=2, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 66.1 >= 65=1, 4h RSI 76.8 >= 65=1, 4h RSI 69.1 >= 65=1, 4h RSI 69.7 >= 65=1, 4h RSI 68.9 >= 65=1, 4h RSI 67.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SI/USDT:USDT | +97.67% | $2,738,082.72 |
-| NVDL/USDT:USDT | +50.26% | $5,909,606.91 |
-| PROM/USDT:USDT | +42.59% | $1,637,540.56 |
-| MVLL/USDT:USDT | +26.78% | $1,410,980.01 |
-| SOXL/USDT:USDT | +26.40% | $540,330,257.77 |
+| SI/USDT:USDT | +96.93% | $2,747,104.84 |
+| NVDL/USDT:USDT | +49.29% | $6,024,812.03 |
+| PROM/USDT:USDT | +43.58% | $1,660,943.96 |
+| MVLL/USDT:USDT | +27.00% | $1,494,787.68 |
+| ELSA/USDT:USDT | +26.72% | $2,765,043.86 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TSMSTOCK/USDT:USDT | below_1h_threshold | +4.99% | +4.86% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +4.89% | +4.77% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +4.63% | +4.51% |
-| KORU/USDT:USDT | below_1h_threshold | +4.45% | +4.33% |
-| DRAM/USDT:USDT | below_1h_threshold | +3.45% | +3.33% |
+| MUU/USDT:USDT | below_relative_strength | +5.56% | +4.93% |
+| NVIDIA/USDT:USDT | below_relative_strength | +5.50% | +4.87% |
+| TSMSTOCK/USDT:USDT | below_1h_threshold | +4.99% | +4.36% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +4.89% | +4.27% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +4.63% | +4.00% |
 
 ## 7. 次に見るべき不足
 
