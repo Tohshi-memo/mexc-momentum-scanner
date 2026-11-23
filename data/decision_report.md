@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-23T15:47:21.855448+00:00
+- generated_at: 2026-11-23T15:52:12.500896+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19507**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-23T15:47:02.075698+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=62790.6
-- Funnel: target 1088 → liquid 143 → pre 50 → checked 50 → surge 13 → strict 1
-- Surge前reject: below_1h_threshold=37, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.7 >= 65=1, 4h RSI 77.6 >= 65=1, 4h RSI 67.9 >= 65=1, 4h RSI 74.1 >= 65=1, 4h RSI 68.2 >= 65=1, 4h RSI 70.5 >= 65=1, 4h RSI 71.9 >= 65=1, 4h RSI 74.7 >= 65=1, 4h RSI 69.3 >= 65=1, 4h RSI 66.6 >= 65=1, 4h RSI 65.7 >= 65=1, 4h RSI 79.9 >= 65=1
+- 更新: 2026-11-23T15:51:53.313222+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=62870.9
+- Funnel: target 1088 → liquid 144 → pre 50 → checked 50 → surge 12 → strict 1
+- Surge前reject: below_1h_threshold=38, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 66.7 >= 65=1, 4h RSI 77.9 >= 65=1, 4h RSI 67.6 >= 65=1, 4h RSI 73.9 >= 65=1, 4h RSI 68.7 >= 65=1, 4h RSI 71.8 >= 65=1, 4h RSI 74.2 >= 65=1, 4h RSI 70.0 >= 65=1, 4h RSI 67.2 >= 65=1, 4h RSI 65.8 >= 65=1, 4h RSI 80.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SI/USDT:USDT | +83.77% | $2,840,335.64 |
-| NVDL/USDT:USDT | +50.08% | $6,381,529.87 |
-| PROM/USDT:USDT | +46.00% | $1,963,747.15 |
-| ELSA/USDT:USDT | +31.18% | $2,870,397.08 |
-| MUU/USDT:USDT | +28.54% | $22,959,614.05 |
+| SI/USDT:USDT | +85.84% | $2,849,205.57 |
+| NVDL/USDT:USDT | +52.28% | $6,412,922.54 |
+| PROM/USDT:USDT | +48.26% | $1,991,919.40 |
+| ELSA/USDT:USDT | +31.68% | $2,877,263.03 |
+| SOXL/USDT:USDT | +29.57% | $751,794,197.53 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TSMSTOCK/USDT:USDT | below_1h_threshold | +4.99% | +5.10% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +4.89% | +5.01% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +4.63% | +4.75% |
-| KORU/USDT:USDT | below_1h_threshold | +4.45% | +4.57% |
-| ELSA/USDT:USDT | below_1h_threshold | +3.89% | +4.01% |
+| TSMSTOCK/USDT:USDT | below_1h_threshold | +4.99% | +4.97% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +4.89% | +4.88% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +4.63% | +4.62% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +4.60% | +4.59% |
+| BULLA/USDT:USDT | below_1h_threshold | +4.59% | +4.58% |
 
 ## 7. 次に見るべき不足
 
