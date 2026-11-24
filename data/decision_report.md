@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-24T02:56:22.492341+00:00
+- generated_at: 2026-11-24T03:01:19.572501+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19549**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-24T02:56:08.462552+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -1.58% price=60099.2
-- Funnel: target 1088 → liquid 157 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.8 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-24T03:01:05.932096+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=60148.9
+- Funnel: target 1088 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KIMCHI/USDT:USDT | +30.55% | $1,182,818.27 |
-| NVD/USDT:USDT | +18.01% | $2,481,768.94 |
-| ARIA/USDT:USDT | +17.55% | $9,906,325.35 |
-| CYS/USDT:USDT | +16.41% | $4,054,336.34 |
-| MMT/USDT:USDT | +15.80% | $2,941,162.77 |
+| KIMCHI/USDT:USDT | +29.35% | $1,182,776.94 |
+| CYS/USDT:USDT | +18.20% | $4,064,841.66 |
+| ARIA/USDT:USDT | +18.07% | $9,873,030.62 |
+| NVD/USDT:USDT | +18.01% | $2,475,542.69 |
+| MMT/USDT:USDT | +16.79% | $2,924,611.36 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NVD/USDT:USDT | below_1h_threshold | +4.46% | +6.04% |
-| SKDD/USDT:USDT | below_1h_threshold | +3.65% | +5.23% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.54% | +3.12% |
-| MMT/USDT:USDT | below_1h_threshold | +1.43% | +3.00% |
-| LEAD/USDT:USDT | below_1h_threshold | +0.90% | +2.48% |
+| KIMCHI/USDT:USDT | below_1h_threshold | +1.11% | +0.97% |
+| SKDD/USDT:USDT | below_1h_threshold | +0.96% | +0.82% |
+| KORU/USDT:USDT | below_1h_threshold | +0.93% | +0.79% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.78% | +0.64% |
+| SQQQ/USDT:USDT | below_1h_threshold | +0.72% | +0.57% |
 
 ## 7. 次に見るべき不足
 
