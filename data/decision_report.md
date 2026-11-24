@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-24T20:02:18.853626+00:00
+- generated_at: 2026-11-24T20:06:22.969005+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19576**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-24T20:02:04.599462+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=59647.1
+- 更新: 2026-11-24T20:06:13.970924+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=59642.9
 - Funnel: target 1092 → liquid 146 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KIMCHI/USDT:USDT | +10.71% | $1,652,140.25 |
-| ANSEM/USDT:USDT | +10.29% | $1,242,069.20 |
-| IRYS/USDT:USDT | +5.19% | $1,577,738.65 |
-| ACE/USDT:USDT | +4.23% | $1,405,126.39 |
-| BLESS/USDT:USDT | +4.18% | $40,473,193.34 |
+| ANSEM/USDT:USDT | +9.80% | $1,243,215.67 |
+| KIMCHI/USDT:USDT | +7.39% | $1,654,391.06 |
+| IRYS/USDT:USDT | +5.00% | $1,580,506.04 |
+| ACE/USDT:USDT | +4.59% | $1,409,866.44 |
+| SOXL/USDT:USDT | +4.21% | $1,566,987,772.35 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ANSEM/USDT:USDT | below_1h_threshold | +0.62% | +0.63% |
-| ANTHROPIC/USDT:USDT | below_1h_threshold | +0.48% | +0.48% |
-| KIMCHI/USDT:USDT | below_1h_threshold | +0.23% | +0.24% |
-| BLESS/USDT:USDT | below_1h_threshold | +0.18% | +0.19% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +0.15% | +0.15% |
+| PEPE/USDT:USDT | below_1h_threshold | +0.54% | +0.56% |
+| ANTHROPIC/USDT:USDT | below_1h_threshold | +0.48% | +0.49% |
+| PENGU/USDT:USDT | below_1h_threshold | +0.43% | +0.44% |
+| WLD/USDT:USDT | below_1h_threshold | +0.26% | +0.27% |
+| ETC/USDT:USDT | below_1h_threshold | +0.23% | +0.24% |
 
 ## 7. 次に見るべき不足
 
