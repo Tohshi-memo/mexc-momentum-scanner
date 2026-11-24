@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-24T22:21:26.917670+00:00
+- generated_at: 2026-11-24T22:26:28.415397+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19581**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7743件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7744件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000057 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-24T22:21:13.176066+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.22% price=59997.9
-- Funnel: target 1092 → liquid 145 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-24T22:26:12.223044+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.16% price=59965.9
+- Funnel: target 1092 → liquid 145 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GUA/USDT:USDT | +20.06% | $1,538,820.37 |
-| BTW/USDT:USDT | +7.66% | $3,296,077.84 |
-| SNXX/USDT:USDT | +7.32% | $41,009,694.33 |
-| SOXL/USDT:USDT | +6.06% | $1,564,833,523.16 |
-| IRYS/USDT:USDT | +5.71% | $1,571,403.67 |
+| GUA/USDT:USDT | +24.78% | $1,568,716.06 |
+| BTW/USDT:USDT | +7.50% | $3,321,981.44 |
+| SNXX/USDT:USDT | +7.38% | $41,010,253.03 |
+| ANSEM/USDT:USDT | +6.39% | $1,297,701.57 |
+| SOXL/USDT:USDT | +6.16% | $1,565,003,852.54 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ANSEM/USDT:USDT | below_1h_threshold | +2.75% | +2.54% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +2.21% | +1.99% |
-| VVV/USDT:USDT | below_1h_threshold | +1.96% | +1.74% |
-| BTW/USDT:USDT | below_1h_threshold | +1.21% | +0.99% |
-| AVGOSTOCK/USDT:USDT | below_1h_threshold | +1.06% | +0.84% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +2.21% | +2.04% |
+| VVV/USDT:USDT | below_1h_threshold | +1.62% | +1.46% |
+| ACE/USDT:USDT | below_1h_threshold | +1.09% | +0.93% |
+| BTW/USDT:USDT | below_1h_threshold | +1.07% | +0.90% |
+| AVGOSTOCK/USDT:USDT | below_1h_threshold | +1.06% | +0.89% |
 
 ## 7. 次に見るべき不足
 
