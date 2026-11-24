@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-24T19:01:12.646032+00:00
+- generated_at: 2026-11-24T19:06:28.139061+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19576**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-24T19:01:03.570165+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=59860.0
+- 更新: 2026-11-24T19:06:14.124912+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=59763.0
 - Funnel: target 1092 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ANSEM/USDT:USDT | +16.88% | $1,194,824.73 |
-| KIMCHI/USDT:USDT | +13.58% | $1,643,029.82 |
-| BLESS/USDT:USDT | +8.30% | $40,159,052.33 |
-| SNXX/USDT:USDT | +6.53% | $43,681,659.46 |
-| SOXL/USDT:USDT | +6.44% | $1,513,517,446.00 |
+| ANSEM/USDT:USDT | +14.59% | $1,199,397.09 |
+| KIMCHI/USDT:USDT | +14.15% | $1,645,368.41 |
+| BLESS/USDT:USDT | +9.28% | $40,320,672.48 |
+| ACE/USDT:USDT | +5.63% | $1,684,617.12 |
+| SNXX/USDT:USDT | +5.49% | $43,802,368.17 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ANSEM/USDT:USDT | below_1h_threshold | +2.27% | +2.25% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.69% | +0.67% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.62% | +0.60% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +0.36% | +0.34% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.33% | +0.31% |
+| KIMCHI/USDT:USDT | below_1h_threshold | +0.73% | +0.87% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.69% | +0.83% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.62% | +0.77% |
+| ANSEM/USDT:USDT | below_1h_threshold | +0.47% | +0.61% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +0.36% | +0.50% |
 
 ## 7. 次に見るべき不足
 
