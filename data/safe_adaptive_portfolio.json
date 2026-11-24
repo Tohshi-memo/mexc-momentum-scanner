@@ -2,12 +2,12 @@
   "mode": "safe_adaptive_dry_run",
   "enabled": true,
   "initial_capital": 100.0,
-  "balance": 2009.5691137291153,
+  "balance": 1999.5212681604698,
   "started_at": "2026-05-06T08:22:19.867267+00:00",
-  "updated_at": "2026-11-24T16:46:29.771747+00:00",
+  "updated_at": "2026-11-24T16:51:24.435220+00:00",
   "high_watermark": 2082.2658199672774,
   "max_drawdown_pct": 9.039405567254098,
-  "loss_streak": 4,
+  "loss_streak": 5,
   "cooldown_until": "2026-11-23T20:55:54.456025+00:00",
   "daily_pnl_usdt": {
     "2026-05-06": -2.495118139464748,
@@ -211,7 +211,7 @@
     "2026-11-21": 102.35669920447255,
     "2026-11-22": 22.44372513811298,
     "2026-11-23": 228.71615267770053,
-    "2026-11-24": -11.004395139313939
+    "2026-11-24": -21.052240707959516
   },
   "trades": [
     {
@@ -365301,6 +365301,54 @@
         "max_drawdown_pct": 57.96465200656697,
         "max_loss_streak": 27
       }
+    },
+    {
+      "key": "KIMCHI/USDT:USDT|2026-11-24T15:31:19.070436+00:00",
+      "symbol": "KIMCHI/USDT:USDT",
+      "detected_at": "2026-11-24T15:31:19.070436+00:00",
+      "closed_at": "2026-11-24T16:50:43.936606+00:00",
+      "strategy": "MARKET",
+      "direction": "short",
+      "outcome": "SL_HIT",
+      "filled": true,
+      "pnl_pct": -4.0000000000000036,
+      "sl_pct": 4.0000000000000036,
+      "risk_pct": 0.5,
+      "account_return_pct": -0.5,
+      "log_return": -0.005012541823544175,
+      "pnl_usdt": -10.047845568645577,
+      "balance_before": 2009.5691137291153,
+      "balance_after": 1999.5212681604698,
+      "drawdown_after_pct": 3.973774674364479,
+      "selector_reason": "selected_by_recent_avg_log_return",
+      "selector_recent": {
+        "strategy": "MARKET",
+        "direction": "short",
+        "total": 50,
+        "filled": 50,
+        "fill_rate": 1.0,
+        "avg_pnl_pct": 0.7880783983187257,
+        "effective_ev_pct": 0.7880783983187257,
+        "avg_log_return": 0.0010180392575500463,
+        "geometric_return_pct": 0.10185576354098114,
+        "avg_account_return_pct": 0.10368625475747481,
+        "max_drawdown_pct": 1.5146011528628105,
+        "max_loss_streak": 3
+      },
+      "selector_all": {
+        "strategy": "MARKET",
+        "direction": "short",
+        "total": 19565,
+        "filled": 19565,
+        "fill_rate": 1.0,
+        "avg_pnl_pct": 0.018678788236972138,
+        "effective_ev_pct": 0.018678788236972138,
+        "avg_log_return": 3.206411904160581e-06,
+        "geometric_return_pct": 0.00032064170447654305,
+        "avg_account_return_pct": 0.0026973854029206565,
+        "max_drawdown_pct": 57.96465200656697,
+        "max_loss_streak": 27
+      }
     }
   ],
   "skipped": [
@@ -441026,6 +441074,7 @@
     "KIMCHI/USDT:USDT|2026-11-24T04:26:12.570822+00:00",
     "KIMCHI/USDT:USDT|2026-11-24T08:16:07.455263+00:00",
     "KIMCHI/USDT:USDT|2026-11-24T08:26:15.791065+00:00",
+    "KIMCHI/USDT:USDT|2026-11-24T15:31:19.070436+00:00",
     "KIOXIASTOCK/USDT:USDT|2026-07-21T01:21:10.119762+00:00",
     "KIOXIASTOCK/USDT:USDT|2026-07-21T04:01:06.151365+00:00",
     "KIOXIASTOCK/USDT:USDT|2026-07-29T00:26:45.566897+00:00",
@@ -448301,7 +448350,7 @@
     "strategy": "MARKET",
     "direction": "short",
     "reason": "selected_by_recent_avg_log_return",
-    "history_count": 19567,
+    "history_count": 19568,
     "recent_count": 50,
     "recent": {
       "strategy": "MARKET",
@@ -448309,25 +448358,25 @@
       "total": 50,
       "filled": 50,
       "fill_rate": 1.0,
-      "avg_pnl_pct": 0.6793699919853846,
-      "effective_ev_pct": 0.6793699919853846,
-      "avg_log_return": 0.0008736460418118667,
-      "geometric_return_pct": 0.0874027781675446,
-      "avg_account_return_pct": 0.0896810079416752,
-      "max_drawdown_pct": 2.496993006363006,
+      "avg_pnl_pct": 0.5811471081498527,
+      "effective_ev_pct": 0.5811471081498527,
+      "avg_log_return": 0.0007120199961489061,
+      "geometric_return_pct": 0.07122735425595383,
+      "avg_account_return_pct": 0.07353406009117781,
+      "max_drawdown_pct": 2.984508041331156,
       "max_loss_streak": 4
     },
     "all": {
       "strategy": "MARKET",
       "direction": "short",
-      "total": 19567,
-      "filled": 19567,
+      "total": 19568,
+      "filled": 19568,
       "fill_rate": 1.0,
-      "avg_pnl_pct": 0.018365099050267078,
-      "effective_ev_pct": 0.018365099050267078,
-      "avg_log_return": 2.693737683743173e-06,
-      "geometric_return_pct": 0.00026937413117877895,
-      "avg_account_return_pct": 0.0026460032405653754,
+      "avg_pnl_pct": 0.01815974515109239,
+      "effective_ev_pct": 0.01815974515109239,
+      "avg_log_return": 2.4374398729690505e-06,
+      "geometric_return_pct": 0.00024374428435613993,
+      "avg_account_return_pct": 0.002620316098126671,
       "max_drawdown_pct": 58.41140846075884,
       "max_loss_streak": 24
     },
@@ -448352,14 +448401,14 @@
         "all": {
           "strategy": "LIMIT_5PCT",
           "direction": "short",
-          "total": 19509,
+          "total": 19510,
           "filled": 6904,
-          "fill_rate": 0.3538879491516736,
+          "fill_rate": 0.35386981035366477,
           "avg_pnl_pct": 0.5185811474158566,
-          "effective_ev_pct": 0.1835196187277192,
-          "avg_log_return": 0.00022890789750366772,
-          "geometric_return_pct": 0.02289340989156674,
-          "avg_account_return_pct": 0.02313503141946283,
+          "effective_ev_pct": 0.18351021228903505,
+          "avg_log_return": 0.00022889616465397505,
+          "geometric_return_pct": 0.022892236338001304,
+          "avg_account_return_pct": 0.02313384561569966,
           "max_drawdown_pct": 10.945274979732094,
           "max_loss_streak": 7
         }
@@ -448367,13 +448416,13 @@
     ]
   },
   "summary": {
-    "trade_count": 7606,
+    "trade_count": 7607,
     "wins": 2191,
-    "losses": 2447,
+    "losses": 2448,
     "flat": 2968,
-    "avg_log_return": 0.00039449190386603076,
-    "geometric_return_pct": 0.03945697260301362,
-    "return_pct": 1909.5691137291155
+    "avg_log_return": 0.0003937811067413548,
+    "geometric_return_pct": 0.03938586486991191,
+    "return_pct": 1899.5212681604698
   },
   "config": {
     "enabled": true,
