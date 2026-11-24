@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-24T03:51:18.977641+00:00
+- generated_at: 2026-11-24T03:56:18.761327+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19550**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-24T03:51:09.361295+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.31% price=60250.3
+- 更新: 2026-11-24T03:56:07.363909+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.34% price=60268.2
 - Funnel: target 1088 → liquid 157 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 88.2 >= 65=1
+- Strict後reject: 4h RSI 88.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KIMCHI/USDT:USDT | +28.45% | $1,211,600.22 |
-| NVD/USDT:USDT | +19.81% | $2,498,257.78 |
-| MMT/USDT:USDT | +19.78% | $3,139,996.53 |
-| ARIA/USDT:USDT | +18.56% | $10,055,971.12 |
-| CYS/USDT:USDT | +18.46% | $4,432,788.17 |
+| KIMCHI/USDT:USDT | +31.45% | $1,214,131.62 |
+| MMT/USDT:USDT | +22.18% | $3,178,576.27 |
+| NVD/USDT:USDT | +20.42% | $2,498,766.10 |
+| ARIA/USDT:USDT | +18.35% | $10,072,740.54 |
+| CYS/USDT:USDT | +15.51% | $4,464,049.82 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MMT/USDT:USDT | below_1h_threshold | +2.55% | +2.24% |
-| LUNC/USDT:USDT | below_1h_threshold | +1.96% | +1.65% |
-| SKDD/USDT:USDT | below_1h_threshold | +0.96% | +0.65% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.94% | +0.63% |
-| KORU/USDT:USDT | below_1h_threshold | +0.93% | +0.62% |
+| MMT/USDT:USDT | below_1h_threshold | +4.30% | +3.96% |
+| KIMCHI/USDT:USDT | below_1h_threshold | +2.76% | +2.42% |
+| LUNC/USDT:USDT | below_1h_threshold | +2.13% | +1.78% |
+| SKDD/USDT:USDT | below_1h_threshold | +0.96% | +0.62% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.94% | +0.60% |
 
 ## 7. 次に見るべき不足
 
