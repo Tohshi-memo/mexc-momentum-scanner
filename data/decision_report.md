@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-24T05:46:34.860359+00:00
+- generated_at: 2026-11-24T05:51:33.294776+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19556**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-24T05:46:20.159337+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.55% price=60686.6
-- Funnel: target 1088 → liquid 157 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 91.7 >= 65=1, 4h RSI 66.2 >= 65=1
+- 更新: 2026-11-24T05:51:18.928990+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.42% price=60609.9
+- Funnel: target 1088 → liquid 157 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 91.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KIMCHI/USDT:USDT | +39.86% | $1,287,459.14 |
-| MMT/USDT:USDT | +32.18% | $3,823,861.72 |
-| LISTA/USDT:USDT | +28.06% | $1,527,690.23 |
-| ARIA/USDT:USDT | +23.69% | $10,142,244.85 |
-| CYS/USDT:USDT | +15.75% | $4,751,102.94 |
+| KIMCHI/USDT:USDT | +37.46% | $1,289,508.43 |
+| MMT/USDT:USDT | +30.03% | $3,947,014.82 |
+| LISTA/USDT:USDT | +28.42% | $1,547,048.83 |
+| ARIA/USDT:USDT | +21.65% | $10,172,997.24 |
+| NVD/USDT:USDT | +15.01% | $2,505,176.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ARIA/USDT:USDT | below_1h_threshold | +3.99% | +3.44% |
-| KIMCHI/USDT:USDT | below_1h_threshold | +3.62% | +3.07% |
-| VET/USDT:USDT | below_1h_threshold | +2.19% | +1.64% |
-| ARB/USDT:USDT | below_1h_threshold | +1.87% | +1.32% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +1.79% | +1.24% |
+| BULLA/USDT:USDT | below_relative_strength | +5.16% | +4.74% |
+| ARIA/USDT:USDT | below_1h_threshold | +2.33% | +1.91% |
+| VET/USDT:USDT | below_1h_threshold | +1.97% | +1.54% |
+| KIMCHI/USDT:USDT | below_1h_threshold | +1.84% | +1.41% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +1.68% | +1.26% |
 
 ## 7. 次に見るべき不足
 
