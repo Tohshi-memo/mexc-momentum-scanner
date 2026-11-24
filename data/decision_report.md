@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-24T15:41:58.897831+00:00
+- generated_at: 2026-11-24T15:46:33.341129+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19567**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-24T15:41:48.269009+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.90% price=59864.5
-- Funnel: target 1092 → liquid 155 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.2 >= 65=1
+- 更新: 2026-11-24T15:46:18.994165+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -1.08% price=59752.2
+- Funnel: target 1092 → liquid 156 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 71.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NVD/USDT:USDT | +33.63% | $2,412,130.69 |
-| AIOT/USDT:USDT | +30.12% | $4,128,313.93 |
-| LISTA/USDT:USDT | +26.71% | $4,231,653.39 |
-| SOXS/USDT:USDT | +23.70% | $136,480,556.05 |
-| SKDD/USDT:USDT | +22.27% | $1,302,229.99 |
+| NVD/USDT:USDT | +34.83% | $2,416,290.65 |
+| AIOT/USDT:USDT | +29.28% | $4,141,054.43 |
+| SOXS/USDT:USDT | +25.38% | $136,570,041.49 |
+| LISTA/USDT:USDT | +25.26% | $4,261,968.37 |
+| SKDD/USDT:USDT | +23.27% | $1,309,431.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LISTA/USDT:USDT | below_1h_threshold | +4.57% | +5.47% |
-| PLTRSTOCK/USDT:USDT | below_1h_threshold | +4.36% | +5.26% |
-| CYS/USDT:USDT | below_1h_threshold | +4.33% | +5.23% |
-| AAOISTOCK/USDT:USDT | below_1h_threshold | +3.85% | +4.74% |
-| AIOT/USDT:USDT | below_1h_threshold | +2.89% | +3.79% |
+| PLTRSTOCK/USDT:USDT | below_1h_threshold | +4.36% | +5.45% |
+| AAOISTOCK/USDT:USDT | below_1h_threshold | +3.85% | +4.93% |
+| LISTA/USDT:USDT | below_1h_threshold | +3.38% | +4.46% |
+| AVGOSTOCK/USDT:USDT | below_1h_threshold | +2.68% | +3.77% |
+| CYS/USDT:USDT | below_1h_threshold | +2.46% | +3.54% |
 
 ## 7. 次に見るべき不足
 
