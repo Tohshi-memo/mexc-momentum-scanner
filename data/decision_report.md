@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-24T20:46:27.843517+00:00
+- generated_at: 2026-11-24T20:51:28.676651+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19576**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-24T20:46:14.014054+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=59600.5
+- 更新: 2026-11-24T20:51:14.788570+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.12% price=59719.9
 - Funnel: target 1092 → liquid 148 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KIMCHI/USDT:USDT | +9.82% | $1,672,724.43 |
-| ANSEM/USDT:USDT | +6.78% | $1,267,252.55 |
-| IRYS/USDT:USDT | +6.23% | $1,605,601.26 |
-| SNXX/USDT:USDT | +5.16% | $42,423,284.01 |
-| BTW/USDT:USDT | +5.12% | $3,146,130.78 |
+| KIMCHI/USDT:USDT | +10.39% | $1,673,235.75 |
+| SNXX/USDT:USDT | +7.25% | $42,758,190.35 |
+| IRYS/USDT:USDT | +5.78% | $1,609,609.34 |
+| BTW/USDT:USDT | +5.36% | $3,160,606.79 |
+| ANSEM/USDT:USDT | +5.22% | $1,268,192.70 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZRO/USDT:USDT | below_1h_threshold | +1.70% | +1.79% |
-| BTW/USDT:USDT | below_1h_threshold | +1.53% | +1.61% |
-| OPENAI/USDT:USDT | below_1h_threshold | +1.47% | +1.56% |
-| CC/USDT:USDT | below_1h_threshold | +1.28% | +1.36% |
-| QNT/USDT:USDT | below_1h_threshold | +1.26% | +1.34% |
+| ZRO/USDT:USDT | below_1h_threshold | +2.07% | +1.96% |
+| CC/USDT:USDT | below_1h_threshold | +1.94% | +1.82% |
+| BTW/USDT:USDT | below_1h_threshold | +1.81% | +1.69% |
+| PHAROS/USDT:USDT | below_1h_threshold | +1.64% | +1.52% |
+| QNT/USDT:USDT | below_1h_threshold | +1.45% | +1.34% |
 
 ## 7. 次に見るべき不足
 
