@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-24T16:11:46.503935+00:00
+- generated_at: 2026-11-24T16:16:41.253973+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19568**
 
@@ -70,9 +70,9 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-24T16:11:30.702436+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=59769.8
-- Funnel: target 1092 → liquid 148 → pre 50 → checked 50 → surge 2 → strict 2
+- 更新: 2026-11-24T16:16:26.766350+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.34% price=59490.1
+- Funnel: target 1092 → liquid 149 → pre 50 → checked 50 → surge 2 → strict 2
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PIEVERSE/USDT:USDT | +2.47% | $6,211,910.38 |
-| SNXX/USDT:USDT | +1.96% | $46,344,935.32 |
-| MMT/USDT:USDT | +1.30% | $6,576,644.47 |
-| VVV/USDT:USDT | +0.98% | $3,938,004.28 |
-| SNDKSTOCK/USDT:USDT | +0.83% | $124,631,619.07 |
+| SOXS/USDT:USDT | +1.91% | $115,348,801.98 |
+| UVXY/USDT:USDT | +1.90% | $2,789,428.12 |
+| PIEVERSE/USDT:USDT | +1.61% | $6,222,635.58 |
+| ANSEM/USDT:USDT | +1.17% | $1,083,939.15 |
+| NVD/USDT:USDT | +1.11% | $1,982,121.54 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NVD/USDT:USDT | below_1h_threshold | +3.94% | +3.81% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +2.64% | +2.52% |
-| MMT/USDT:USDT | below_1h_threshold | +1.30% | +1.17% |
-| VVV/USDT:USDT | below_1h_threshold | +0.99% | +0.86% |
-| ICNT/USDT:USDT | below_1h_threshold | +0.53% | +0.40% |
+| NVD/USDT:USDT | below_1h_threshold | +3.94% | +4.28% |
+| SQQQ/USDT:USDT | below_1h_threshold | +3.64% | +3.98% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +1.76% | +2.11% |
+| ANSEM/USDT:USDT | below_1h_threshold | +1.32% | +1.66% |
+| KIMCHI/USDT:USDT | below_1h_threshold | +1.15% | +1.49% |
 
 ## 7. 次に見るべき不足
 
