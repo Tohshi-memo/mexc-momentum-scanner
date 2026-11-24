@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-24T21:36:34.644415+00:00
+- generated_at: 2026-11-24T21:41:37.742768+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19579**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-24T21:36:22.631228+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.27% price=59926.5
-- Funnel: target 1092 → liquid 146 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 93.5 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-24T21:41:27.909646+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.19% price=59880.0
+- Funnel: target 1092 → liquid 146 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GUA/USDT:USDT | +32.11% | $1,341,001.64 |
-| KIMCHI/USDT:USDT | +8.03% | $1,674,856.97 |
-| SNXX/USDT:USDT | +6.20% | $41,823,822.97 |
-| IRYS/USDT:USDT | +6.04% | $1,589,696.74 |
-| ACE/USDT:USDT | +5.22% | $1,349,095.19 |
+| GUA/USDT:USDT | +29.89% | $1,362,930.02 |
+| KIMCHI/USDT:USDT | +7.78% | $1,675,302.38 |
+| SNXX/USDT:USDT | +5.62% | $41,824,158.19 |
+| IRYS/USDT:USDT | +5.52% | $1,593,555.32 |
+| ACE/USDT:USDT | +5.50% | $1,354,202.16 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NVDL/USDT:USDT | below_1h_threshold | +3.74% | +3.47% |
-| ANTHROPIC/USDT:USDT | below_1h_threshold | +2.66% | +2.39% |
-| SNXX/USDT:USDT | below_1h_threshold | +2.63% | +2.36% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +2.12% | +1.85% |
-| NVIDIA/USDT:USDT | below_1h_threshold | +1.60% | +1.33% |
+| NVDL/USDT:USDT | below_1h_threshold | +3.74% | +3.54% |
+| ANTHROPIC/USDT:USDT | below_1h_threshold | +2.66% | +2.47% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.63% | +2.44% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +2.14% | +1.94% |
+| GUA/USDT:USDT | below_1h_threshold | +1.83% | +1.64% |
 
 ## 7. 次に見るべき不足
 
