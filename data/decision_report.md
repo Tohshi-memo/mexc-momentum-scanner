@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-24T15:31:30.604977+00:00
+- generated_at: 2026-11-24T15:36:38.250813+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19567**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7727件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7729件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000064 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-24T15:31:18.225440+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.87% price=59882.7
-- Funnel: target 1092 → liquid 154 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.7 >= 65=1
+- 更新: 2026-11-24T15:36:22.897546+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.66% price=60010.1
+- Funnel: target 1092 → liquid 155 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.6 >= 65=1, 4h RSI 85.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NVD/USDT:USDT | +34.83% | $2,405,308.28 |
-| AIOT/USDT:USDT | +27.25% | $4,074,366.25 |
-| KIMCHI/USDT:USDT | +25.52% | $1,513,199.26 |
-| LISTA/USDT:USDT | +25.24% | $4,156,739.05 |
-| SOXS/USDT:USDT | +24.11% | $135,828,693.39 |
+| NVD/USDT:USDT | +34.23% | $2,409,244.83 |
+| AIOT/USDT:USDT | +28.38% | $4,102,141.67 |
+| LISTA/USDT:USDT | +27.60% | $4,202,565.21 |
+| SOXS/USDT:USDT | +23.89% | $136,434,674.88 |
+| SKDD/USDT:USDT | +21.98% | $1,291,099.29 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PLTRSTOCK/USDT:USDT | below_1h_threshold | +4.36% | +5.23% |
-| CYS/USDT:USDT | below_1h_threshold | +3.92% | +4.78% |
-| AAOISTOCK/USDT:USDT | below_1h_threshold | +3.85% | +4.71% |
-| LISTA/USDT:USDT | below_1h_threshold | +3.58% | +4.45% |
-| AVGOSTOCK/USDT:USDT | below_1h_threshold | +2.68% | +3.55% |
+| PLTRSTOCK/USDT:USDT | below_1h_threshold | +4.36% | +5.02% |
+| CYS/USDT:USDT | below_1h_threshold | +3.95% | +4.61% |
+| AAOISTOCK/USDT:USDT | below_1h_threshold | +3.85% | +4.50% |
+| AVGOSTOCK/USDT:USDT | below_1h_threshold | +2.68% | +3.34% |
+| KIMCHI/USDT:USDT | below_1h_threshold | +2.60% | +3.26% |
 
 ## 7. 次に見るべき不足
 
