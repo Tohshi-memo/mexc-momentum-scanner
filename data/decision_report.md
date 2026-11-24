@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-24T23:11:31.634243+00:00
+- generated_at: 2026-11-24T23:16:18.082580+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19582**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-24T23:11:21.628655+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=60000.0
+- 更新: 2026-11-24T23:16:07.285842+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=60016.0
 - Funnel: target 1092 → liquid 145 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GUA/USDT:USDT | +25.35% | $1,652,004.98 |
-| BTW/USDT:USDT | +13.15% | $3,618,498.96 |
-| ACE/USDT:USDT | +9.12% | $1,288,789.85 |
-| SNXX/USDT:USDT | +8.10% | $40,828,808.83 |
-| KIMCHI/USDT:USDT | +7.84% | $1,031,978.26 |
+| GUA/USDT:USDT | +27.26% | $1,661,155.78 |
+| BTW/USDT:USDT | +10.90% | $3,676,947.49 |
+| ACE/USDT:USDT | +7.96% | $1,295,743.46 |
+| KIMCHI/USDT:USDT | +7.65% | $1,032,286.38 |
+| SNXX/USDT:USDT | +6.99% | $40,832,968.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +3.71% | +3.66% |
-| KORU/USDT:USDT | below_1h_threshold | +2.17% | +2.12% |
-| ACE/USDT:USDT | below_1h_threshold | +1.88% | +1.82% |
-| AKE/USDT:USDT | below_1h_threshold | +1.69% | +1.63% |
-| NVDL/USDT:USDT | below_1h_threshold | +1.47% | +1.41% |
+| GUA/USDT:USDT | below_1h_threshold | +3.01% | +2.93% |
+| KORU/USDT:USDT | below_1h_threshold | +2.17% | +2.09% |
+| NVDL/USDT:USDT | below_1h_threshold | +1.47% | +1.38% |
+| MUU/USDT:USDT | below_1h_threshold | +1.45% | +1.37% |
+| BTW/USDT:USDT | below_1h_threshold | +1.43% | +1.35% |
 
 ## 7. 次に見るべき不足
 
