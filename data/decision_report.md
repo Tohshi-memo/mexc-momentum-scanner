@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-24T01:16:29.930478+00:00
+- generated_at: 2026-11-24T01:21:27.521190+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19546**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7705件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7706件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `見送り` (no_strategy_passed_causal_filters) / causal_score n/a / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-24T01:16:16.058629+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.31% price=61493.3
-- Funnel: target 1088 → liquid 159 → pre 50 → checked 49 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=1
+- 更新: 2026-11-24T01:21:13.418007+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.38% price=61534.8
+- Funnel: target 1088 → liquid 160 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 77.6 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KIMCHI/USDT:USDT | +52.40% | $1,078,746.80 |
-| ARIA/USDT:USDT | +19.80% | $9,778,877.97 |
-| CYS/USDT:USDT | +15.11% | $3,426,048.21 |
-| NVD/USDT:USDT | +14.71% | $2,450,709.19 |
-| MMT/USDT:USDT | +11.93% | $2,567,949.26 |
+| KIMCHI/USDT:USDT | +56.90% | $1,083,643.97 |
+| ARIA/USDT:USDT | +19.06% | $9,792,483.77 |
+| NVD/USDT:USDT | +15.31% | $2,451,233.97 |
+| CYS/USDT:USDT | +15.17% | $3,443,478.13 |
+| MMT/USDT:USDT | +12.03% | $2,571,042.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KIMCHI/USDT:USDT | below_1h_threshold | +3.15% | +2.84% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +3.09% | +2.78% |
-| SUMIELECSTOCK/USDT:USDT | below_1h_threshold | +3.06% | +2.75% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +2.40% | +2.09% |
-| ARIA/USDT:USDT | below_1h_threshold | +2.08% | +1.78% |
+| SUMIELECSTOCK/USDT:USDT | below_1h_threshold | +3.06% | +2.68% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +2.40% | +2.03% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +2.40% | +2.02% |
+| ATOM/USDT:USDT | below_1h_threshold | +1.88% | +1.51% |
+| NVDL/USDT:USDT | below_1h_threshold | +1.85% | +1.48% |
 
 ## 7. 次に見るべき不足
 
