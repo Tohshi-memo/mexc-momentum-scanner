@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-24T19:46:36.964300+00:00
+- generated_at: 2026-11-24T19:51:38.806644+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19576**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-24T19:46:23.199355+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=59785.8
+- 更新: 2026-11-24T19:51:28.663687+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.22% price=59716.4
 - Funnel: target 1092 → liquid 148 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KIMCHI/USDT:USDT | +14.85% | $1,660,827.99 |
-| ANSEM/USDT:USDT | +11.22% | $1,236,263.60 |
-| SOXL/USDT:USDT | +7.47% | $1,572,527,669.98 |
-| BTW/USDT:USDT | +5.69% | $2,999,681.49 |
-| ACE/USDT:USDT | +5.40% | $1,700,943.46 |
+| KIMCHI/USDT:USDT | +14.28% | $1,662,471.42 |
+| ANSEM/USDT:USDT | +11.76% | $1,237,211.53 |
+| SOXL/USDT:USDT | +6.83% | $1,580,244,154.90 |
+| ACE/USDT:USDT | +5.10% | $1,703,526.73 |
+| IRYS/USDT:USDT | +4.93% | $1,653,367.36 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LISTA/USDT:USDT | below_1h_threshold | +2.94% | +3.04% |
-| BTW/USDT:USDT | below_1h_threshold | +2.31% | +2.42% |
-| IRYS/USDT:USDT | below_1h_threshold | +1.89% | +1.99% |
-| KIMCHI/USDT:USDT | below_1h_threshold | +1.35% | +1.46% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +1.08% | +1.19% |
+| LISTA/USDT:USDT | below_1h_threshold | +2.44% | +2.66% |
+| IRYS/USDT:USDT | below_1h_threshold | +1.57% | +1.79% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +1.08% | +1.30% |
+| KIMCHI/USDT:USDT | below_1h_threshold | +0.84% | +1.06% |
+| BTW/USDT:USDT | below_1h_threshold | +0.80% | +1.02% |
 
 ## 7. 次に見るべき不足
 
