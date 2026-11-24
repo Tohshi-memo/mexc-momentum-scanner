@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-24T20:21:19.880079+00:00
+- generated_at: 2026-11-24T20:26:26.129205+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19576**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-24T20:21:06.935464+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=59687.3
+- 更新: 2026-11-24T20:26:12.299044+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=59692.2
 - Funnel: target 1092 → liquid 146 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ANSEM/USDT:USDT | +10.34% | $1,255,780.82 |
-| KIMCHI/USDT:USDT | +6.05% | $1,660,083.91 |
-| IRYS/USDT:USDT | +5.26% | $1,590,337.77 |
-| ACE/USDT:USDT | +4.52% | $1,420,204.91 |
-| MVLL/USDT:USDT | +4.23% | $3,893,112.77 |
+| ANSEM/USDT:USDT | +10.00% | $1,256,958.27 |
+| KIMCHI/USDT:USDT | +7.84% | $1,661,550.44 |
+| IRYS/USDT:USDT | +5.58% | $1,591,661.77 |
+| ACE/USDT:USDT | +4.50% | $1,426,237.18 |
+| SOXL/USDT:USDT | +3.86% | $1,592,390,784.75 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ANSEM/USDT:USDT | below_1h_threshold | +1.07% | +1.01% |
-| ZRO/USDT:USDT | below_1h_threshold | +0.94% | +0.88% |
-| OPENAI/USDT:USDT | below_1h_threshold | +0.76% | +0.70% |
-| ANTHROPIC/USDT:USDT | below_1h_threshold | +0.48% | +0.42% |
-| LTC/USDT:USDT | below_1h_threshold | +0.39% | +0.33% |
+| OPENAI/USDT:USDT | below_1h_threshold | +1.11% | +1.04% |
+| AKE/USDT:USDT | below_1h_threshold | +0.96% | +0.89% |
+| ZRO/USDT:USDT | below_1h_threshold | +0.95% | +0.88% |
+| ANTHROPIC/USDT:USDT | below_1h_threshold | +0.48% | +0.41% |
+| PEPE/USDT:USDT | below_1h_threshold | +0.36% | +0.29% |
 
 ## 7. 次に見るべき不足
 
