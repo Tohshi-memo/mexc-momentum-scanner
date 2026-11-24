@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-24T14:51:31.811556+00:00
+- generated_at: 2026-11-24T14:56:15.004114+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19567**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-24T14:51:22.109762+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.68% price=60395.0
+- 更新: 2026-11-24T14:56:05.211973+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.54% price=60310.0
 - Funnel: target 1092 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NVD/USDT:USDT | +29.42% | $2,658,126.42 |
-| AIOT/USDT:USDT | +21.57% | $3,804,615.52 |
-| LISTA/USDT:USDT | +19.83% | $3,989,566.56 |
-| MMT/USDT:USDT | +19.67% | $6,875,994.78 |
-| KIMCHI/USDT:USDT | +18.91% | $1,513,576.89 |
+| NVD/USDT:USDT | +30.33% | $2,679,669.58 |
+| AIOT/USDT:USDT | +27.21% | $3,886,903.18 |
+| KIMCHI/USDT:USDT | +20.12% | $1,514,343.15 |
+| LISTA/USDT:USDT | +18.33% | $4,028,629.91 |
+| ARIA/USDT:USDT | +18.21% | $8,816,413.66 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BULLA/USDT:USDT | below_1h_threshold | +2.85% | +2.17% |
-| BTW/USDT:USDT | below_1h_threshold | +2.60% | +1.92% |
-| MMT/USDT:USDT | below_1h_threshold | +2.37% | +1.69% |
-| UVXY/USDT:USDT | below_1h_threshold | +2.32% | +1.64% |
-| SOXS/USDT:USDT | below_1h_threshold | +2.18% | +1.50% |
+| UVXY/USDT:USDT | below_1h_threshold | +2.32% | +1.78% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.18% | +1.64% |
+| BULLA/USDT:USDT | below_1h_threshold | +2.16% | +1.62% |
+| AAOISTOCK/USDT:USDT | below_1h_threshold | +1.80% | +1.26% |
+| NVD/USDT:USDT | below_1h_threshold | +1.65% | +1.11% |
 
 ## 7. 次に見るべき不足
 
