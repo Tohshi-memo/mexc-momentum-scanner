@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-24T16:56:32.329050+00:00
+- generated_at: 2026-11-24T17:01:29.915343+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19570**
 
@@ -70,31 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-24T16:56:16.084415+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.24% price=59552.1
-- Funnel: target 1092 → liquid 151 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-24T17:01:16.412816+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=59433.0
+- Funnel: target 1092 → liquid 146 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KIMCHI/USDT:USDT | +12.24% | $1,536,309.21 |
-| SNXX/USDT:USDT | +4.11% | $49,220,768.27 |
-| BLESS/USDT:USDT | +3.38% | $44,823,856.02 |
-| RKLBSTOCK/USDT:USDT | +1.84% | $1,095,814.71 |
-| IRYS/USDT:USDT | +1.81% | $1,787,791.41 |
+| KIMCHI/USDT:USDT | +10.58% | $1,530,578.32 |
+| ANSEM/USDT:USDT | +6.97% | $1,105,359.08 |
+| SNXX/USDT:USDT | +3.92% | $44,511,949.36 |
+| BLESS/USDT:USDT | +2.90% | $42,470,420.47 |
+| CYS/USDT:USDT | +2.22% | $5,609,035.81 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NVD/USDT:USDT | below_1h_threshold | +3.94% | +4.17% |
-| BLESS/USDT:USDT | below_1h_threshold | +3.38% | +3.62% |
-| IRYS/USDT:USDT | below_1h_threshold | +1.88% | +2.12% |
-| ACE/USDT:USDT | below_1h_threshold | +1.42% | +1.66% |
-| VVV/USDT:USDT | below_1h_threshold | +1.29% | +1.53% |
+| SNXX/USDT:USDT | below_1h_threshold | +3.40% | +3.34% |
+| NVD/USDT:USDT | below_1h_threshold | +2.00% | +1.95% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.47% | +1.41% |
+| CYS/USDT:USDT | below_1h_threshold | +1.16% | +1.10% |
+| TSMSTOCK/USDT:USDT | below_1h_threshold | +1.01% | +0.95% |
 
 ## 7. 次に見るべき不足
 
