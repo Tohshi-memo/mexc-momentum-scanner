@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-24T19:16:33.798065+00:00
+- generated_at: 2026-11-24T19:21:33.309088+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19576**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7738件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7740件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000058 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-24T19:16:19.929346+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.18% price=59955.4
-- Funnel: target 1092 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-24T19:21:18.534891+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=59936.7
+- Funnel: target 1092 → liquid 148 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 87.7 >= 65=1, 4h RSI 66.3 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KIMCHI/USDT:USDT | +13.83% | $1,647,727.42 |
-| ANSEM/USDT:USDT | +12.88% | $1,210,848.98 |
-| BLESS/USDT:USDT | +9.04% | $40,581,303.04 |
-| SOXL/USDT:USDT | +7.82% | $1,530,056,528.21 |
-| SNXX/USDT:USDT | +6.47% | $43,806,078.93 |
+| ANSEM/USDT:USDT | +16.15% | $1,214,151.28 |
+| KIMCHI/USDT:USDT | +13.07% | $1,648,253.60 |
+| BTW/USDT:USDT | +9.91% | $2,832,988.90 |
+| BLESS/USDT:USDT | +8.67% | $40,700,305.26 |
+| SOXL/USDT:USDT | +8.49% | $1,537,344,137.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IRYS/USDT:USDT | below_1h_threshold | +2.39% | +2.21% |
-| BTW/USDT:USDT | below_1h_threshold | +1.78% | +1.60% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +0.96% | +0.78% |
-| PEPE/USDT:USDT | below_1h_threshold | +0.73% | +0.55% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.69% | +0.51% |
+| IRYS/USDT:USDT | below_1h_threshold | +4.59% | +4.45% |
+| ANSEM/USDT:USDT | below_1h_threshold | +1.84% | +1.69% |
+| PEPE/USDT:USDT | below_1h_threshold | +1.04% | +0.89% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +0.96% | +0.81% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +0.91% | +0.76% |
 
 ## 7. 次に見るべき不足
 
