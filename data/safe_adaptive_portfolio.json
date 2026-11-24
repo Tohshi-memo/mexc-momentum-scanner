@@ -2,12 +2,12 @@
   "mode": "safe_adaptive_dry_run",
   "enabled": true,
   "initial_capital": 100.0,
-  "balance": 2020.422470998641,
+  "balance": 2040.6266957086275,
   "started_at": "2026-05-06T08:22:19.867267+00:00",
-  "updated_at": "2026-11-24T04:31:12.067596+00:00",
+  "updated_at": "2026-11-24T04:36:28.028715+00:00",
   "high_watermark": 2082.2658199672774,
   "max_drawdown_pct": 9.039405567254098,
-  "loss_streak": 2,
+  "loss_streak": 0,
   "cooldown_until": "2026-11-23T20:55:54.456025+00:00",
   "daily_pnl_usdt": {
     "2026-05-06": -2.495118139464748,
@@ -211,7 +211,7 @@
     "2026-11-21": 102.35669920447255,
     "2026-11-22": 22.44372513811298,
     "2026-11-23": 228.71615267770053,
-    "2026-11-24": -0.1510378697879986
+    "2026-11-24": 20.053186840198414
   },
   "trades": [
     {
@@ -364533,6 +364533,54 @@
         "max_drawdown_pct": 57.96465200656697,
         "max_loss_streak": 27
       }
+    },
+    {
+      "key": "KIMCHI/USDT:USDT|2026-11-24T04:26:12.570822+00:00",
+      "symbol": "KIMCHI/USDT:USDT",
+      "detected_at": "2026-11-24T04:26:12.570822+00:00",
+      "closed_at": "2026-11-24T04:35:49.337871+00:00",
+      "strategy": "MARKET",
+      "direction": "short",
+      "outcome": "TP_HIT",
+      "filled": true,
+      "pnl_pct": 7.999999999999995,
+      "sl_pct": 3.9999999999999973,
+      "risk_pct": 0.5,
+      "account_return_pct": 1.0,
+      "log_return": 0.009950330853168092,
+      "pnl_usdt": 20.204224709986413,
+      "balance_before": 2020.422470998641,
+      "balance_after": 2040.6266957086275,
+      "drawdown_after_pct": 1.9997026248696828,
+      "selector_reason": "selected_by_recent_avg_log_return",
+      "selector_recent": {
+        "strategy": "MARKET",
+        "direction": "short",
+        "total": 50,
+        "filled": 50,
+        "fill_rate": 1.0,
+        "avg_pnl_pct": 1.2205566729748611,
+        "effective_ev_pct": 1.2205566729748611,
+        "avg_log_return": 0.0016165541646185415,
+        "geometric_return_pct": 0.16178614926627422,
+        "avg_account_return_pct": 0.16368625475747456,
+        "max_drawdown_pct": 1.9850499375000237,
+        "max_loss_streak": 4
+      },
+      "selector_all": {
+        "strategy": "MARKET",
+        "direction": "short",
+        "total": 19551,
+        "filled": 19551,
+        "fill_rate": 1.0,
+        "avg_pnl_pct": 0.018487570551703743,
+        "effective_ev_pct": 0.018487570551703743,
+        "avg_log_return": 2.9714424352186505e-06,
+        "geometric_return_pct": 0.00029714468499086877,
+        "avg_account_return_pct": 0.0026737427961814044,
+        "max_drawdown_pct": 57.96465200656697,
+        "max_loss_streak": 27
+      }
     }
   ],
   "skipped": [
@@ -440249,6 +440297,7 @@
     "KIMCHI/USDT:USDT|2026-10-26T21:36:18.327885+00:00",
     "KIMCHI/USDT:USDT|2026-11-24T01:21:13.804234+00:00",
     "KIMCHI/USDT:USDT|2026-11-24T04:16:11.522014+00:00",
+    "KIMCHI/USDT:USDT|2026-11-24T04:26:12.570822+00:00",
     "KIOXIASTOCK/USDT:USDT|2026-07-21T01:21:10.119762+00:00",
     "KIOXIASTOCK/USDT:USDT|2026-07-21T04:01:06.151365+00:00",
     "KIOXIASTOCK/USDT:USDT|2026-07-29T00:26:45.566897+00:00",
@@ -447517,20 +447566,20 @@
     "strategy": "LIMIT_BB3S_LONG",
     "direction": "long",
     "reason": "selected_by_recent_avg_log_return",
-    "history_count": 19551,
+    "history_count": 19552,
     "recent_count": 50,
     "recent": {
       "strategy": "LIMIT_BB3S_LONG",
       "direction": "long",
-      "total": 12,
-      "filled": 11,
-      "fill_rate": 0.9166666666666666,
-      "avg_pnl_pct": 0.6121568519187082,
-      "effective_ev_pct": 0.5611437809254824,
-      "avg_log_return": 0.0008613046626885689,
-      "geometric_return_pct": 0.08616756920649671,
-      "avg_account_return_pct": 0.08788591358755392,
-      "max_drawdown_pct": 2.223229750023472,
+      "total": 11,
+      "filled": 10,
+      "fill_rate": 0.9090909090909091,
+      "avg_pnl_pct": 0.32263436254038985,
+      "effective_ev_pct": 0.29330396594580893,
+      "avg_log_return": 0.00028158980852366225,
+      "geometric_return_pct": 0.02816294586553969,
+      "avg_account_return_pct": 0.02983529742253657,
+      "max_drawdown_pct": 2.223229750023484,
       "max_loss_streak": 5
     },
     "all": {
@@ -447550,13 +447599,13 @@
     "alternatives": []
   },
   "summary": {
-    "trade_count": 7590,
-    "wins": 2186,
+    "trade_count": 7591,
+    "wins": 2187,
     "losses": 2436,
     "flat": 2968,
-    "avg_log_return": 0.0003960331655597074,
-    "geometric_return_pct": 0.039611159704722176,
-    "return_pct": 1920.4224709986408
+    "avg_log_return": 0.00039729180048101,
+    "geometric_return_pct": 0.039737073132095624,
+    "return_pct": 1940.6266957086273
   },
   "config": {
     "enabled": true,
