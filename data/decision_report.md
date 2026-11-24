@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-24T05:26:22.902454+00:00
+- generated_at: 2026-11-24T05:31:19.504114+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19554**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-24T05:26:08.820893+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.41% price=60601.4
-- Funnel: target 1088 → liquid 157 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.9 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-24T05:31:05.829751+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.60% price=60716.8
+- Funnel: target 1088 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KIMCHI/USDT:USDT | +32.88% | $1,273,228.60 |
-| MMT/USDT:USDT | +22.60% | $3,487,156.37 |
-| ARIA/USDT:USDT | +22.52% | $10,082,473.59 |
-| LISTA/USDT:USDT | +20.82% | $1,432,427.18 |
-| NVD/USDT:USDT | +18.31% | $2,499,957.82 |
+| KIMCHI/USDT:USDT | +33.93% | $1,276,250.21 |
+| ARIA/USDT:USDT | +23.11% | $10,091,232.74 |
+| LISTA/USDT:USDT | +21.62% | $1,438,800.91 |
+| MMT/USDT:USDT | +21.35% | $3,516,144.77 |
+| NVD/USDT:USDT | +18.01% | $2,502,173.16 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LISTA/USDT:USDT | below_1h_threshold | +4.15% | +3.75% |
-| ARIA/USDT:USDT | below_1h_threshold | +3.13% | +2.72% |
-| MMT/USDT:USDT | below_1h_threshold | +2.45% | +2.04% |
-| VET/USDT:USDT | below_1h_threshold | +1.37% | +0.96% |
-| SKDD/USDT:USDT | below_1h_threshold | +0.93% | +0.52% |
+| LISTA/USDT:USDT | below_1h_threshold | +4.84% | +4.24% |
+| BULLA/USDT:USDT | below_1h_threshold | +4.01% | +3.41% |
+| ARIA/USDT:USDT | below_1h_threshold | +3.56% | +2.96% |
+| VET/USDT:USDT | below_1h_threshold | +1.66% | +1.06% |
+| MMT/USDT:USDT | below_1h_threshold | +1.40% | +0.80% |
 
 ## 7. 次に見るべき不足
 
