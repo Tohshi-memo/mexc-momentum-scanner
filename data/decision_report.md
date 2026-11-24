@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-24T03:41:21.378698+00:00
+- generated_at: 2026-11-24T03:46:18.142954+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19550**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7708件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7709件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `見送り` (no_strategy_passed_causal_filters) / causal_score n/a / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-24T03:41:07.576741+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.46% price=60341.8
-- Funnel: target 1088 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-24T03:46:06.707356+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.38% price=60289.9
+- Funnel: target 1088 → liquid 157 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 88.4 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KIMCHI/USDT:USDT | +26.42% | $1,208,202.85 |
-| NVD/USDT:USDT | +19.81% | $2,497,375.18 |
-| CYS/USDT:USDT | +19.54% | $4,331,321.49 |
-| ARIA/USDT:USDT | +18.76% | $10,041,455.14 |
-| MMT/USDT:USDT | +16.37% | $3,082,295.10 |
+| KIMCHI/USDT:USDT | +24.92% | $1,209,214.86 |
+| CYS/USDT:USDT | +19.60% | $4,385,288.78 |
+| NVD/USDT:USDT | +19.51% | $2,497,770.21 |
+| MMT/USDT:USDT | +18.62% | $3,098,049.99 |
+| ARIA/USDT:USDT | +17.59% | $10,049,832.86 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LISTA/USDT:USDT | below_1h_threshold | +4.88% | +4.41% |
-| LUNC/USDT:USDT | below_1h_threshold | +1.84% | +1.38% |
-| ONE/USDT:USDT | below_1h_threshold | +1.51% | +1.04% |
-| SKDD/USDT:USDT | below_1h_threshold | +0.96% | +0.50% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.94% | +0.48% |
+| LUNC/USDT:USDT | below_1h_threshold | +1.77% | +1.39% |
+| MMT/USDT:USDT | below_1h_threshold | +1.43% | +1.06% |
+| CYS/USDT:USDT | below_1h_threshold | +1.42% | +1.05% |
+| SKDD/USDT:USDT | below_1h_threshold | +0.96% | +0.58% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.94% | +0.57% |
 
 ## 7. 次に見るべき不足
 
