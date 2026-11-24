@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-24T17:56:29.453440+00:00
+- generated_at: 2026-11-24T18:01:34.809730+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19574**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7734件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7737件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `見送り` (no_strategy_passed_causal_filters) / causal_score n/a / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-24T17:56:15.599330+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +1.00% price=59992.7
-- Funnel: target 1092 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-24T18:01:16.431134+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=60095.5
+- Funnel: target 1092 → liquid 146 → pre 50 → checked 50 → surge 3 → strict 3
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KIMCHI/USDT:USDT | +15.49% | $1,602,212.55 |
-| SOXL/USDT:USDT | +6.35% | $1,521,543,332.93 |
-| SNXX/USDT:USDT | +5.88% | $46,887,769.97 |
-| ANSEM/USDT:USDT | +5.41% | $1,180,112.83 |
-| MVLL/USDT:USDT | +4.64% | $3,620,845.95 |
+| KIMCHI/USDT:USDT | +17.92% | $1,603,607.97 |
+| ANSEM/USDT:USDT | +7.27% | $1,173,847.46 |
+| SOXL/USDT:USDT | +6.76% | $1,467,834,627.27 |
+| SNXX/USDT:USDT | +6.20% | $44,924,851.47 |
+| MVLL/USDT:USDT | +4.99% | $3,594,309.54 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KIMCHI/USDT:USDT | below_1h_threshold | +4.08% | +3.08% |
-| SNXX/USDT:USDT | below_1h_threshold | +3.40% | +2.40% |
-| LISTA/USDT:USDT | below_1h_threshold | +3.24% | +2.24% |
-| VVV/USDT:USDT | below_1h_threshold | +2.52% | +1.52% |
-| ACE/USDT:USDT | below_1h_threshold | +2.44% | +1.44% |
+| INTW/USDT:USDT | below_1h_threshold | +4.72% | +4.70% |
+| NVDL/USDT:USDT | below_1h_threshold | +4.06% | +4.04% |
+| MUU/USDT:USDT | below_1h_threshold | +3.82% | +3.81% |
+| SNXX/USDT:USDT | below_1h_threshold | +3.29% | +3.27% |
+| TQQQ/USDT:USDT | below_1h_threshold | +3.28% | +3.26% |
 
 ## 7. 次に見るべき不足
 
