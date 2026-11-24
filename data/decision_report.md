@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-24T18:21:46.664110+00:00
+- generated_at: 2026-11-24T18:26:42.287525+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19575**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-24T18:21:29.793328+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=59989.8
+- 更新: 2026-11-24T18:26:21.612487+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=60022.8
 - Funnel: target 1092 → liquid 146 → pre 50 → checked 50 → surge 3 → strict 3
 - Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KIMCHI/USDT:USDT | +16.32% | $1,626,456.34 |
-| ANSEM/USDT:USDT | +7.12% | $1,184,559.68 |
-| BLESS/USDT:USDT | +6.73% | $40,883,490.63 |
-| SNXX/USDT:USDT | +5.94% | $45,416,677.10 |
-| SOXL/USDT:USDT | +5.58% | $1,500,062,183.87 |
+| KIMCHI/USDT:USDT | +16.90% | $1,628,624.72 |
+| SNXX/USDT:USDT | +7.32% | $45,418,612.18 |
+| SOXL/USDT:USDT | +7.18% | $1,509,448,462.07 |
+| ANSEM/USDT:USDT | +7.17% | $1,185,359.74 |
+| ACE/USDT:USDT | +7.15% | $2,455,776.41 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| INTW/USDT:USDT | below_1h_threshold | +4.72% | +4.88% |
-| MUU/USDT:USDT | below_1h_threshold | +3.82% | +3.98% |
-| BLESS/USDT:USDT | below_1h_threshold | +3.52% | +3.68% |
-| SNXX/USDT:USDT | below_1h_threshold | +3.29% | +3.45% |
-| TQQQ/USDT:USDT | below_1h_threshold | +3.28% | +3.44% |
+| INTW/USDT:USDT | below_1h_threshold | +4.72% | +4.82% |
+| NVDL/USDT:USDT | below_1h_threshold | +4.06% | +4.17% |
+| BLESS/USDT:USDT | below_1h_threshold | +4.01% | +4.12% |
+| MUU/USDT:USDT | below_1h_threshold | +3.82% | +3.93% |
+| ACE/USDT:USDT | below_1h_threshold | +3.67% | +3.77% |
 
 ## 7. 次に見るべき不足
 
