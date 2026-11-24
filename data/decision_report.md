@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-24T22:41:29.123201+00:00
+- generated_at: 2026-11-24T22:46:34.884376+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19582**
 
@@ -63,38 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7745件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7746件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000057 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-24T22:41:13.403086+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.27% price=60029.3
-- Funnel: target 1092 → liquid 146 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-24T22:46:20.507985+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.31% price=60052.5
+- Funnel: target 1092 → liquid 146 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GUA/USDT:USDT | +25.19% | $1,599,930.20 |
-| ANSEM/USDT:USDT | +10.00% | $1,306,927.39 |
-| BTW/USDT:USDT | +9.23% | $3,465,639.86 |
-| KIMCHI/USDT:USDT | +8.48% | $1,373,049.61 |
-| SNXX/USDT:USDT | +7.97% | $41,017,241.63 |
+| GUA/USDT:USDT | +24.13% | $1,612,080.79 |
+| KIMCHI/USDT:USDT | +12.69% | $1,375,641.58 |
+| BTW/USDT:USDT | +10.07% | $3,497,082.93 |
+| ANSEM/USDT:USDT | +8.88% | $1,308,399.12 |
+| SNXX/USDT:USDT | +7.84% | $41,025,785.31 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ETHFI/USDT:USDT | below_1h_threshold | +3.47% | +3.20% |
-| KIMCHI/USDT:USDT | below_1h_threshold | +3.09% | +2.82% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +2.69% | +2.42% |
-| BTW/USDT:USDT | below_1h_threshold | +2.68% | +2.41% |
-| VVV/USDT:USDT | below_1h_threshold | +2.27% | +2.00% |
+| BTW/USDT:USDT | below_1h_threshold | +3.44% | +3.13% |
+| ETHFI/USDT:USDT | below_1h_threshold | +3.03% | +2.73% |
+| VVV/USDT:USDT | below_1h_threshold | +2.40% | +2.09% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +2.27% | +1.96% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +2.21% | +1.90% |
 
 ## 7. 次に見るべき不足
 
