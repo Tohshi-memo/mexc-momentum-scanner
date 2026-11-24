@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-24T04:26:28.453551+00:00
+- generated_at: 2026-11-24T04:31:18.141738+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19553**
 
@@ -63,39 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7711件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7712件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000058 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-24T04:26:12.072640+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.28% price=60476.1
-- Funnel: target 1088 → liquid 158 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.3 >= 65=1
+- 更新: 2026-11-24T04:31:05.178215+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.29% price=60485.8
+- Funnel: target 1088 → liquid 158 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KIMCHI/USDT:USDT | +46.39% | $1,238,800.72 |
-| MMT/USDT:USDT | +21.92% | $3,262,200.92 |
-| NVD/USDT:USDT | +19.51% | $2,495,956.55 |
-| ARIA/USDT:USDT | +19.08% | $10,077,269.20 |
-| LISTA/USDT:USDT | +18.06% | $1,338,440.29 |
+| KIMCHI/USDT:USDT | +40.16% | $1,246,845.24 |
+| ARIA/USDT:USDT | +21.08% | $10,081,806.03 |
+| MMT/USDT:USDT | +20.09% | $3,291,686.04 |
+| NVD/USDT:USDT | +18.91% | $2,496,433.96 |
+| LISTA/USDT:USDT | +17.53% | $1,343,776.15 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ACE/USDT:USDT | below_1h_threshold | +3.67% | +3.39% |
-| KORU/USDT:USDT | below_1h_threshold | +2.54% | +2.26% |
-| ARB/USDT:USDT | below_1h_threshold | +1.77% | +1.50% |
-| NVD/USDT:USDT | below_1h_threshold | +1.52% | +1.24% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.27% | +0.99% |
+| ARIA/USDT:USDT | below_1h_threshold | +2.63% | +2.33% |
+| KORU/USDT:USDT | below_1h_threshold | +2.54% | +2.24% |
+| ARB/USDT:USDT | below_1h_threshold | +1.58% | +1.29% |
+| NVD/USDT:USDT | below_1h_threshold | +1.52% | +1.22% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.27% | +0.98% |
 
 ## 7. 次に見るべき不足
 
