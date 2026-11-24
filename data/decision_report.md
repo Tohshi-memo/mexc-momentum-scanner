@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-24T16:31:36.436674+00:00
+- generated_at: 2026-11-24T16:36:35.298146+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19568**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-24T16:31:20.473918+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.33% price=59500.0
+- 更新: 2026-11-24T16:36:18.004101+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.50% price=59393.0
 - Funnel: target 1092 → liquid 150 → pre 50 → checked 50 → surge 2 → strict 2
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SNXX/USDT:USDT | +2.09% | $48,045,785.73 |
-| KIMCHI/USDT:USDT | +1.91% | $1,519,755.58 |
-| BLESS/USDT:USDT | +1.66% | $44,203,110.77 |
-| PHAROS/USDT:USDT | +1.37% | $1,009,646.20 |
-| LISTA/USDT:USDT | +1.22% | $4,702,486.32 |
+| EVAA/USDT:USDT | +2.34% | $23,418,147.52 |
+| BLESS/USDT:USDT | +2.02% | $44,261,958.42 |
+| MMT/USDT:USDT | +1.86% | $6,669,087.26 |
+| KIMCHI/USDT:USDT | +1.72% | $1,520,066.02 |
+| SOXS/USDT:USDT | +1.27% | $118,974,848.68 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NVD/USDT:USDT | below_1h_threshold | +3.94% | +4.26% |
-| SQQQ/USDT:USDT | below_1h_threshold | +3.64% | +3.97% |
-| KIMCHI/USDT:USDT | below_1h_threshold | +1.91% | +2.24% |
-| BLESS/USDT:USDT | below_1h_threshold | +1.62% | +1.95% |
-| LISTA/USDT:USDT | below_1h_threshold | +1.59% | +1.91% |
+| NVD/USDT:USDT | below_1h_threshold | +3.94% | +4.44% |
+| SQQQ/USDT:USDT | below_1h_threshold | +3.64% | +4.14% |
+| EVAA/USDT:USDT | below_1h_threshold | +2.29% | +2.79% |
+| BLESS/USDT:USDT | below_1h_threshold | +2.13% | +2.63% |
+| MMT/USDT:USDT | below_1h_threshold | +1.87% | +2.37% |
 
 ## 7. 次に見るべき不足
 
