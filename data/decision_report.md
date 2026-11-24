@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-24T10:26:21.479548+00:00
+- generated_at: 2026-11-24T10:31:23.692546+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19562**
 
@@ -70,31 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-24T10:26:09.957624+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=59927.8
-- Funnel: target 1089 → liquid 160 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-24T10:31:11.777343+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.25% price=59819.7
+- Funnel: target 1089 → liquid 160 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 87.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KIMCHI/USDT:USDT | +28.45% | $1,473,807.07 |
-| NVD/USDT:USDT | +27.92% | $2,561,235.09 |
-| AIOT/USDT:USDT | +25.68% | $1,757,501.58 |
-| ARIA/USDT:USDT | +23.68% | $9,947,108.25 |
-| MMT/USDT:USDT | +22.50% | $6,445,623.83 |
+| KIMCHI/USDT:USDT | +28.97% | $1,476,006.93 |
+| NVD/USDT:USDT | +28.52% | $2,563,910.74 |
+| AIOT/USDT:USDT | +26.52% | $1,789,097.63 |
+| ARIA/USDT:USDT | +24.35% | $10,003,262.64 |
+| MMT/USDT:USDT | +21.35% | $6,469,878.70 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LISTA/USDT:USDT | below_1h_threshold | +4.52% | +4.59% |
-| SOXS/USDT:USDT | below_1h_threshold | +3.51% | +3.57% |
-| NVD/USDT:USDT | below_1h_threshold | +2.42% | +2.49% |
-| UVXY/USDT:USDT | below_1h_threshold | +2.02% | +2.08% |
-| SKDD/USDT:USDT | below_1h_threshold | +1.85% | +1.91% |
+| SOXS/USDT:USDT | below_1h_threshold | +3.51% | +3.75% |
+| AIOT/USDT:USDT | below_1h_threshold | +2.51% | +2.76% |
+| NVD/USDT:USDT | below_1h_threshold | +2.42% | +2.67% |
+| UVXY/USDT:USDT | below_1h_threshold | +2.02% | +2.26% |
+| SKDD/USDT:USDT | below_1h_threshold | +1.85% | +2.09% |
 
 ## 7. 次に見るべき不足
 
