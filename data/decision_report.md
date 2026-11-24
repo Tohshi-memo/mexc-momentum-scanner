@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-24T07:46:17.465453+00:00
+- generated_at: 2026-11-24T07:51:29.578818+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19559**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-24T07:46:04.377173+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=60447.2
+- 更新: 2026-11-24T07:51:15.325353+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.15% price=60351.5
 - Funnel: target 1089 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MMT/USDT:USDT | +42.28% | $4,967,311.02 |
-| KIMCHI/USDT:USDT | +33.63% | $1,325,254.61 |
-| ARIA/USDT:USDT | +27.58% | $9,976,268.67 |
-| NVD/USDT:USDT | +26.12% | $2,538,984.82 |
-| LISTA/USDT:USDT | +17.20% | $2,107,361.01 |
+| MMT/USDT:USDT | +41.60% | $5,029,800.30 |
+| KIMCHI/USDT:USDT | +36.18% | $1,326,462.54 |
+| ARIA/USDT:USDT | +27.74% | $10,001,786.95 |
+| NVD/USDT:USDT | +20.12% | $2,540,282.17 |
+| LISTA/USDT:USDT | +17.76% | $2,119,114.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MMT/USDT:USDT | below_1h_threshold | +2.89% | +2.88% |
-| ARIA/USDT:USDT | below_1h_threshold | +2.37% | +2.36% |
-| NVD/USDT:USDT | below_1h_threshold | +1.84% | +1.83% |
-| BULLA/USDT:USDT | below_1h_threshold | +1.82% | +1.81% |
-| LUNC/USDT:USDT | below_1h_threshold | +1.82% | +1.81% |
+| MMT/USDT:USDT | below_1h_threshold | +2.73% | +2.89% |
+| ARIA/USDT:USDT | below_1h_threshold | +2.49% | +2.65% |
+| LUNC/USDT:USDT | below_1h_threshold | +2.00% | +2.15% |
+| NVD/USDT:USDT | below_1h_threshold | +1.84% | +1.99% |
+| KIMCHI/USDT:USDT | below_1h_threshold | +1.80% | +1.95% |
 
 ## 7. 次に見るべき不足
 
