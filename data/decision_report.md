@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-24T09:41:15.849749+00:00
+- generated_at: 2026-11-24T09:46:26.667679+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19561**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-24T09:41:04.241959+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=60197.8
+- 更新: 2026-11-24T09:46:12.451939+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=60156.9
 - Funnel: target 1089 → liquid 159 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.8 >= 65=1
+- Strict後reject: 4h RSI 72.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARIA/USDT:USDT | +27.65% | $9,971,351.07 |
-| NVD/USDT:USDT | +25.52% | $2,560,994.41 |
-| MMT/USDT:USDT | +22.03% | $6,336,231.29 |
-| KIMCHI/USDT:USDT | +21.92% | $1,424,570.54 |
-| AIOT/USDT:USDT | +21.04% | $1,123,488.09 |
+| ARIA/USDT:USDT | +28.67% | $10,017,639.05 |
+| NVD/USDT:USDT | +26.12% | $2,562,009.72 |
+| AIOT/USDT:USDT | +23.26% | $1,187,107.66 |
+| KIMCHI/USDT:USDT | +21.54% | $1,426,569.91 |
+| MMT/USDT:USDT | +21.03% | $6,354,973.26 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +4.63% | +4.68% |
-| UVXY/USDT:USDT | below_1h_threshold | +3.25% | +3.29% |
-| SKDD/USDT:USDT | below_1h_threshold | +2.85% | +2.89% |
-| SQQQ/USDT:USDT | below_1h_threshold | +2.78% | +2.82% |
-| NVD/USDT:USDT | below_1h_threshold | +2.74% | +2.78% |
+| SOXS/USDT:USDT | below_1h_threshold | +4.63% | +4.74% |
+| UVXY/USDT:USDT | below_1h_threshold | +3.25% | +3.36% |
+| SKDD/USDT:USDT | below_1h_threshold | +2.85% | +2.96% |
+| SQQQ/USDT:USDT | below_1h_threshold | +2.78% | +2.88% |
+| NVD/USDT:USDT | below_1h_threshold | +2.74% | +2.84% |
 
 ## 7. 次に見るべき不足
 
