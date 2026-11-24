@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-24T23:36:25.889746+00:00
+- generated_at: 2026-11-24T23:41:29.125049+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19582**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-24T23:36:11.896289+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.26% price=59809.7
+- 更新: 2026-11-24T23:41:15.250013+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.24% price=59820.9
 - Funnel: target 1092 → liquid 145 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GUA/USDT:USDT | +24.25% | $1,696,007.37 |
-| BTW/USDT:USDT | +10.07% | $3,820,896.98 |
-| ANSEM/USDT:USDT | +7.95% | $1,313,385.20 |
-| ACE/USDT:USDT | +7.62% | $1,310,727.56 |
-| IRYS/USDT:USDT | +6.43% | $1,549,924.36 |
+| GUA/USDT:USDT | +23.72% | $1,699,587.33 |
+| BTW/USDT:USDT | +10.29% | $3,844,991.53 |
+| ACE/USDT:USDT | +8.02% | $1,310,969.84 |
+| ANSEM/USDT:USDT | +7.46% | $1,314,156.52 |
+| IRYS/USDT:USDT | +6.88% | $1,552,283.29 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KORU/USDT:USDT | below_1h_threshold | +2.17% | +2.43% |
-| IRYS/USDT:USDT | below_1h_threshold | +1.49% | +1.75% |
-| SNXX/USDT:USDT | below_1h_threshold | +1.42% | +1.68% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +1.41% | +1.67% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.38% | +1.64% |
+| KORU/USDT:USDT | below_1h_threshold | +2.17% | +2.42% |
+| IRYS/USDT:USDT | below_1h_threshold | +1.92% | +2.16% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.42% | +1.66% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +1.41% | +1.65% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.39% | +1.63% |
 
 ## 7. 次に見るべき不足
 
