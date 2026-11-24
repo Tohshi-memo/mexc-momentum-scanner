@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-24T19:31:40.197640+00:00
+- generated_at: 2026-11-24T19:36:14.884408+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19576**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-24T19:31:29.955888+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=59837.4
-- Funnel: target 1092 → liquid 148 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.4 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-24T19:36:05.540832+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=59862.9
+- Funnel: target 1092 → liquid 148 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ANSEM/USDT:USDT | +16.44% | $1,226,319.77 |
-| KIMCHI/USDT:USDT | +13.26% | $1,653,586.26 |
-| BLESS/USDT:USDT | +8.22% | $41,002,192.75 |
-| SOXL/USDT:USDT | +7.72% | $1,549,838,805.22 |
-| BTW/USDT:USDT | +7.25% | $2,908,488.52 |
+| KIMCHI/USDT:USDT | +12.30% | $1,654,141.96 |
+| ANSEM/USDT:USDT | +11.46% | $1,230,190.30 |
+| BLESS/USDT:USDT | +7.98% | $41,099,449.60 |
+| SOXL/USDT:USDT | +7.91% | $1,557,840,423.16 |
+| BTW/USDT:USDT | +6.89% | $2,929,096.82 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +3.71% | +3.73% |
-| IRYS/USDT:USDT | below_1h_threshold | +3.02% | +3.04% |
-| ANSEM/USDT:USDT | below_1h_threshold | +2.05% | +2.07% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +1.08% | +1.10% |
-| PEPE/USDT:USDT | below_1h_threshold | +0.79% | +0.80% |
+| LISTA/USDT:USDT | below_1h_threshold | +4.62% | +4.60% |
+| IRYS/USDT:USDT | below_1h_threshold | +3.46% | +3.44% |
+| BTW/USDT:USDT | below_1h_threshold | +2.87% | +2.85% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +1.08% | +1.06% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.69% | +0.66% |
 
 ## 7. 次に見るべき不足
 
