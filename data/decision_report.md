@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-24T19:26:31.128830+00:00
+- generated_at: 2026-11-24T19:31:40.197640+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19576**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-24T19:26:16.219368+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=59866.0
-- Funnel: target 1092 → liquid 148 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.6 >= 65=1, 4h RSI 87.6 >= 65=1
+- 更新: 2026-11-24T19:31:29.955888+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=59837.4
+- Funnel: target 1092 → liquid 148 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 87.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ANSEM/USDT:USDT | +17.17% | $1,223,234.88 |
-| KIMCHI/USDT:USDT | +12.56% | $1,651,909.19 |
-| BTW/USDT:USDT | +10.55% | $2,862,990.36 |
-| BLESS/USDT:USDT | +10.15% | $40,828,928.85 |
-| SOXL/USDT:USDT | +7.98% | $1,540,874,638.44 |
+| ANSEM/USDT:USDT | +16.44% | $1,226,319.77 |
+| KIMCHI/USDT:USDT | +13.26% | $1,653,586.26 |
+| BLESS/USDT:USDT | +8.22% | $41,002,192.75 |
+| SOXL/USDT:USDT | +7.72% | $1,549,838,805.22 |
+| BTW/USDT:USDT | +7.25% | $2,908,488.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ANSEM/USDT:USDT | below_1h_threshold | +2.82% | +2.79% |
-| IRYS/USDT:USDT | below_1h_threshold | +2.20% | +2.17% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +0.96% | +0.93% |
-| PEPE/USDT:USDT | below_1h_threshold | +0.87% | +0.84% |
-| FET/USDT:USDT | below_1h_threshold | +0.75% | +0.72% |
+| BTW/USDT:USDT | below_1h_threshold | +3.71% | +3.73% |
+| IRYS/USDT:USDT | below_1h_threshold | +3.02% | +3.04% |
+| ANSEM/USDT:USDT | below_1h_threshold | +2.05% | +2.07% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +1.08% | +1.10% |
+| PEPE/USDT:USDT | below_1h_threshold | +0.79% | +0.80% |
 
 ## 7. 次に見るべき不足
 
