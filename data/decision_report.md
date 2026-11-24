@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-24T17:41:29.383557+00:00
+- generated_at: 2026-11-24T17:46:27.630113+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19574**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-24T17:41:16.279195+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +1.07% price=60033.6
+- 更新: 2026-11-24T17:46:14.570724+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +1.10% price=60054.1
 - Funnel: target 1092 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KIMCHI/USDT:USDT | +11.54% | $1,590,460.44 |
-| SOXL/USDT:USDT | +7.53% | $1,497,655,977.72 |
-| SNXX/USDT:USDT | +6.79% | $46,209,685.09 |
-| ANSEM/USDT:USDT | +6.05% | $1,173,020.83 |
-| MVLL/USDT:USDT | +5.47% | $3,569,749.96 |
+| KIMCHI/USDT:USDT | +9.50% | $1,594,804.02 |
+| SOXL/USDT:USDT | +8.10% | $1,508,716,215.18 |
+| SNXX/USDT:USDT | +7.84% | $46,211,279.70 |
+| ANSEM/USDT:USDT | +7.36% | $1,176,269.36 |
+| MVLL/USDT:USDT | +5.80% | $3,588,537.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNXX/USDT:USDT | below_1h_threshold | +3.40% | +2.33% |
-| VVV/USDT:USDT | below_1h_threshold | +3.14% | +2.07% |
-| CYS/USDT:USDT | below_1h_threshold | +2.78% | +1.71% |
-| ACE/USDT:USDT | below_1h_threshold | +2.48% | +1.41% |
-| VIRTUAL/USDT:USDT | below_1h_threshold | +2.43% | +1.36% |
+| SNXX/USDT:USDT | below_1h_threshold | +3.40% | +2.29% |
+| VVV/USDT:USDT | below_1h_threshold | +2.60% | +1.50% |
+| LUNC/USDT:USDT | below_1h_threshold | +2.47% | +1.37% |
+| ZRO/USDT:USDT | below_1h_threshold | +2.30% | +1.20% |
+| ACE/USDT:USDT | below_1h_threshold | +2.29% | +1.19% |
 
 ## 7. 次に見るべき不足
 
