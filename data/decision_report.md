@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-24T16:51:35.917950+00:00
+- generated_at: 2026-11-24T16:56:32.329050+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19570**
 
@@ -70,9 +70,9 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-24T16:51:17.000214+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=59643.2
-- Funnel: target 1092 → liquid 150 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-11-24T16:56:16.084415+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.24% price=59552.1
+- Funnel: target 1092 → liquid 151 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KIMCHI/USDT:USDT | +9.31% | $1,530,450.87 |
-| SNXX/USDT:USDT | +5.22% | $49,035,769.62 |
-| BLESS/USDT:USDT | +4.33% | $44,691,544.08 |
-| SOXL/USDT:USDT | +2.39% | $1,527,863,518.21 |
-| IRYS/USDT:USDT | +2.33% | $1,785,973.65 |
+| KIMCHI/USDT:USDT | +12.24% | $1,536,309.21 |
+| SNXX/USDT:USDT | +4.11% | $49,220,768.27 |
+| BLESS/USDT:USDT | +3.38% | $44,823,856.02 |
+| RKLBSTOCK/USDT:USDT | +1.84% | $1,095,814.71 |
+| IRYS/USDT:USDT | +1.81% | $1,787,791.41 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_1h_threshold | +4.38% | +4.47% |
-| NVD/USDT:USDT | below_1h_threshold | +3.94% | +4.02% |
-| IRYS/USDT:USDT | below_1h_threshold | +2.40% | +2.49% |
-| VVV/USDT:USDT | below_1h_threshold | +1.53% | +1.62% |
-| PHAROS/USDT:USDT | below_1h_threshold | +1.48% | +1.56% |
+| NVD/USDT:USDT | below_1h_threshold | +3.94% | +4.17% |
+| BLESS/USDT:USDT | below_1h_threshold | +3.38% | +3.62% |
+| IRYS/USDT:USDT | below_1h_threshold | +1.88% | +2.12% |
+| ACE/USDT:USDT | below_1h_threshold | +1.42% | +1.66% |
+| VVV/USDT:USDT | below_1h_threshold | +1.29% | +1.53% |
 
 ## 7. 次に見るべき不足
 
