@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-24T01:01:19.494757+00:00
+- generated_at: 2026-11-24T01:06:17.208940+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19545**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-24T01:01:06.813397+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=61313.9
+- 更新: 2026-11-24T01:06:06.154201+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=61410.1
 - Funnel: target 1088 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KIMCHI/USDT:USDT | +49.39% | $1,067,896.78 |
-| ARIA/USDT:USDT | +17.65% | $9,676,380.41 |
-| NVD/USDT:USDT | +14.41% | $2,407,593.86 |
-| CYS/USDT:USDT | +14.01% | $3,381,727.38 |
-| MMT/USDT:USDT | +11.61% | $2,529,485.52 |
+| KIMCHI/USDT:USDT | +48.94% | $1,069,823.21 |
+| NVD/USDT:USDT | +21.92% | $2,431,924.12 |
+| ARIA/USDT:USDT | +20.03% | $9,692,066.60 |
+| CYS/USDT:USDT | +13.59% | $3,400,970.83 |
+| MMT/USDT:USDT | +12.08% | $2,547,344.16 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SUMIELECSTOCK/USDT:USDT | below_1h_threshold | +3.06% | +3.04% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +2.40% | +2.38% |
-| YAGEOSTOCK/USDT:USDT | below_1h_threshold | +1.70% | +1.69% |
-| TQQQ/USDT:USDT | below_1h_threshold | +1.31% | +1.30% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.24% | +1.22% |
+| SUMIELECSTOCK/USDT:USDT | below_1h_threshold | +3.06% | +2.88% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +2.40% | +2.22% |
+| ARIA/USDT:USDT | below_1h_threshold | +2.21% | +2.04% |
+| NVDL/USDT:USDT | below_1h_threshold | +1.85% | +1.68% |
+| YAGEOSTOCK/USDT:USDT | below_1h_threshold | +1.70% | +1.53% |
 
 ## 7. 次に見るべき不足
 
