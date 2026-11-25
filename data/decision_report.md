@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-25T07:51:29.054271+00:00
+- generated_at: 2026-11-25T07:56:21.681419+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19599**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-25T07:51:15.676154+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.75% price=58760.0
-- Funnel: target 1092 → liquid 143 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.3 >= 65=1, 4h RSI 74.7 >= 65=1
+- 更新: 2026-11-25T07:56:10.405122+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.94% price=58650.0
+- Funnel: target 1092 → liquid 143 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 73.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BIGTIME/USDT:USDT | +56.26% | $2,368,718.25 |
-| BTW/USDT:USDT | +23.47% | $5,503,356.01 |
-| OPG/USDT:USDT | +22.91% | $2,358,634.04 |
-| GUA/USDT:USDT | +19.06% | $2,246,832.09 |
-| PHAROS/USDT:USDT | +10.64% | $1,373,054.94 |
+| BIGTIME/USDT:USDT | +56.70% | $2,388,944.48 |
+| OPG/USDT:USDT | +23.71% | $2,371,540.42 |
+| BTW/USDT:USDT | +20.66% | $5,551,440.54 |
+| GUA/USDT:USDT | +20.03% | $2,249,610.57 |
+| PHAROS/USDT:USDT | +10.71% | $1,409,456.25 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GUA/USDT:USDT | below_1h_threshold | +3.26% | +4.01% |
-| LUNC/USDT:USDT | below_1h_threshold | +2.80% | +3.55% |
-| BIGTIME/USDT:USDT | below_1h_threshold | +1.64% | +2.40% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.20% | +1.96% |
-| ACE/USDT:USDT | below_1h_threshold | +0.69% | +1.44% |
+| GUA/USDT:USDT | below_1h_threshold | +4.10% | +5.04% |
+| BTW/USDT:USDT | below_1h_threshold | +2.88% | +3.82% |
+| LUNC/USDT:USDT | below_1h_threshold | +2.73% | +3.67% |
+| BIGTIME/USDT:USDT | below_1h_threshold | +1.68% | +2.62% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.20% | +2.14% |
 
 ## 7. 次に見るべき不足
 
