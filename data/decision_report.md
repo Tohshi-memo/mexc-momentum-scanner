@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-25T08:06:24.865506+00:00
+- generated_at: 2026-11-25T08:11:18.508640+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19600**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-25T08:06:08.429408+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.21% price=58833.2
+- 更新: 2026-11-25T08:11:08.367286+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.25% price=58856.2
 - Funnel: target 1092 → liquid 140 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BIGTIME/USDT:USDT | +49.43% | $2,876,590.65 |
-| BTW/USDT:USDT | +23.47% | $5,574,707.73 |
-| OPG/USDT:USDT | +21.68% | $2,373,310.03 |
-| GUA/USDT:USDT | +17.84% | $2,257,964.16 |
-| PHAROS/USDT:USDT | +9.80% | $1,430,166.43 |
+| BIGTIME/USDT:USDT | +50.63% | $2,899,059.42 |
+| BTW/USDT:USDT | +22.77% | $5,612,789.25 |
+| OPG/USDT:USDT | +22.40% | $2,385,687.71 |
+| GUA/USDT:USDT | +17.43% | $2,261,560.01 |
+| PHAROS/USDT:USDT | +9.70% | $1,448,297.39 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +1.56% | +1.35% |
-| BTW/USDT:USDT | below_1h_threshold | +1.49% | +1.28% |
-| SQQQ/USDT:USDT | below_1h_threshold | +1.02% | +0.81% |
-| MONAD/USDT:USDT | below_1h_threshold | +0.86% | +0.65% |
-| BLUR/USDT:USDT | below_1h_threshold | +0.84% | +0.63% |
+| MONAD/USDT:USDT | below_1h_threshold | +2.86% | +2.61% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.56% | +1.31% |
+| IRYS/USDT:USDT | below_1h_threshold | +1.07% | +0.82% |
+| SQQQ/USDT:USDT | below_1h_threshold | +1.02% | +0.77% |
+| BLUR/USDT:USDT | below_1h_threshold | +0.85% | +0.60% |
 
 ## 7. 次に見るべき不足
 
