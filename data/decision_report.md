@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-25T15:16:14.419528+00:00
+- generated_at: 2026-11-25T15:21:32.573112+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19611**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-25T15:16:04.763202+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.55% price=57890.6
-- Funnel: target 1097 → liquid 148 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-11-25T15:21:22.397710+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.81% price=57738.0
+- Funnel: target 1097 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOR/USDT:USDT | +92.46% | $1,397,112.76 |
-| BIGTIME/USDT:USDT | +52.13% | $7,822,098.37 |
-| MANTRA/USDT:USDT | +35.21% | $1,231,930.61 |
-| BTW/USDT:USDT | +25.01% | $7,455,312.62 |
-| MMT/USDT:USDT | +23.77% | $3,043,863.04 |
+| KOR/USDT:USDT | +87.57% | $1,408,221.69 |
+| BIGTIME/USDT:USDT | +52.85% | $7,853,325.54 |
+| MANTRA/USDT:USDT | +35.87% | $1,239,641.12 |
+| BTW/USDT:USDT | +24.98% | $7,480,007.44 |
+| MMT/USDT:USDT | +22.60% | $3,076,636.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PIEVERSE/USDT:USDT | below_1h_threshold | +3.47% | +4.02% |
-| MMT/USDT:USDT | below_1h_threshold | +2.63% | +3.17% |
-| KOR/USDT:USDT | below_1h_threshold | +2.61% | +3.15% |
-| UVXY/USDT:USDT | below_1h_threshold | +1.96% | +2.50% |
-| METASTOCK/USDT:USDT | below_1h_threshold | +1.27% | +1.82% |
+| BLESS/USDT:USDT | below_1h_threshold | +4.30% | +5.11% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +3.88% | +4.69% |
+| UVXY/USDT:USDT | below_1h_threshold | +1.96% | +2.77% |
+| MMT/USDT:USDT | below_1h_threshold | +1.69% | +2.50% |
+| EVAA/USDT:USDT | below_1h_threshold | +1.42% | +2.23% |
 
 ## 7. 次に見るべき不足
 
