@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-25T08:51:21.955757+00:00
+- generated_at: 2026-11-25T08:56:19.614326+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19601**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-25T08:51:09.151274+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +1.12% price=59370.0
+- 更新: 2026-11-25T08:56:06.912115+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +1.11% price=59363.1
 - Funnel: target 1092 → liquid 140 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BIGTIME/USDT:USDT | +58.05% | $3,132,873.48 |
-| OPG/USDT:USDT | +26.46% | $2,465,211.84 |
-| BTW/USDT:USDT | +24.11% | $5,848,156.79 |
-| GUA/USDT:USDT | +18.81% | $2,289,742.41 |
-| BLUR/USDT:USDT | +9.02% | $1,112,029.51 |
+| BIGTIME/USDT:USDT | +58.23% | $3,174,848.09 |
+| OPG/USDT:USDT | +26.17% | $2,469,694.17 |
+| BTW/USDT:USDT | +24.06% | $5,873,689.74 |
+| GUA/USDT:USDT | +19.34% | $2,293,434.29 |
+| BLUR/USDT:USDT | +8.50% | $1,114,275.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| OPG/USDT:USDT | below_1h_threshold | +3.44% | +2.32% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +2.50% | +1.38% |
-| BIGTIME/USDT:USDT | below_1h_threshold | +2.25% | +1.12% |
-| BTW/USDT:USDT | below_1h_threshold | +2.02% | +0.89% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.56% | +0.44% |
+| OPG/USDT:USDT | below_1h_threshold | +3.20% | +2.09% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +2.59% | +1.48% |
+| BIGTIME/USDT:USDT | below_1h_threshold | +2.53% | +1.42% |
+| BTW/USDT:USDT | below_1h_threshold | +1.97% | +0.86% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.56% | +0.45% |
 
 ## 7. 次に見るべき不足
 
