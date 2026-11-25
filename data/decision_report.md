@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-25T23:01:29.564706+00:00
+- generated_at: 2026-11-25T23:06:23.888752+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19650**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-25T23:01:19.395388+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=59990.1
+- 更新: 2026-11-25T23:06:14.449882+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=59983.0
 - Funnel: target 1097 → liquid 152 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MANTRA/USDT:USDT | +30.83% | $3,708,551.17 |
-| BULLA/USDT:USDT | +30.79% | $1,270,369.35 |
-| SOXL/USDT:USDT | +23.14% | $1,886,521,072.83 |
-| INTW/USDT:USDT | +17.59% | $1,500,476.68 |
-| KOR/USDT:USDT | +17.45% | $1,841,018.71 |
+| BULLA/USDT:USDT | +32.57% | $1,277,728.29 |
+| MANTRA/USDT:USDT | +30.11% | $3,717,368.49 |
+| SOXL/USDT:USDT | +23.18% | $1,887,793,113.04 |
+| KOR/USDT:USDT | +18.25% | $1,841,543.96 |
+| INTW/USDT:USDT | +17.14% | $1,500,800.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXL/USDT:USDT | below_1h_threshold | +1.97% | +2.14% |
-| NVDL/USDT:USDT | below_1h_threshold | +1.93% | +2.10% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +1.92% | +2.09% |
-| SNXX/USDT:USDT | below_1h_threshold | +1.52% | +1.69% |
-| MVLL/USDT:USDT | below_1h_threshold | +1.26% | +1.42% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.97% | +2.15% |
+| NVDL/USDT:USDT | below_1h_threshold | +1.93% | +2.11% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +1.92% | +2.10% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.52% | +1.70% |
+| MVLL/USDT:USDT | below_1h_threshold | +1.26% | +1.44% |
 
 ## 7. 次に見るべき不足
 
