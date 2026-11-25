@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-25T01:21:22.571978+00:00
+- generated_at: 2026-11-25T01:26:25.582765+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19585**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-25T01:21:08.546467+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.34% price=59432.2
+- 更新: 2026-11-25T01:26:15.465524+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.32% price=59439.8
 - Funnel: target 1092 → liquid 143 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GUA/USDT:USDT | +15.96% | $1,856,060.86 |
-| IRYS/USDT:USDT | +14.10% | $1,709,501.64 |
-| BTW/USDT:USDT | +13.39% | $4,102,763.82 |
-| ACE/USDT:USDT | +7.24% | $1,286,246.76 |
-| SNXX/USDT:USDT | +4.90% | $41,831,630.95 |
+| GUA/USDT:USDT | +19.37% | $1,867,083.34 |
+| IRYS/USDT:USDT | +14.29% | $1,719,674.70 |
+| BTW/USDT:USDT | +13.27% | $4,115,420.72 |
+| ACE/USDT:USDT | +6.74% | $1,287,140.85 |
+| SNXX/USDT:USDT | +5.16% | $41,920,019.79 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IRYS/USDT:USDT | below_1h_threshold | +4.34% | +4.67% |
-| OPENAI/USDT:USDT | below_1h_threshold | +0.53% | +0.86% |
-| PEPE/USDT:USDT | below_1h_threshold | +0.37% | +0.71% |
-| ZEC/USDT:USDT | below_1h_threshold | +0.36% | +0.70% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.16% | +0.49% |
+| IRYS/USDT:USDT | below_1h_threshold | +4.40% | +4.72% |
+| ANSEM/USDT:USDT | below_1h_threshold | +1.45% | +1.77% |
+| PEPE/USDT:USDT | below_1h_threshold | +0.50% | +0.82% |
+| OPENAI/USDT:USDT | below_1h_threshold | +0.40% | +0.72% |
+| ZEC/USDT:USDT | below_1h_threshold | +0.25% | +0.57% |
 
 ## 7. 次に見るべき不足
 
