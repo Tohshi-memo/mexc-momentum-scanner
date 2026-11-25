@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-25T00:16:28.230411+00:00
+- generated_at: 2026-11-25T00:21:21.799472+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19584**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-25T00:16:17.739576+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.51% price=59496.1
+- 更新: 2026-11-25T00:21:11.832476+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.52% price=59488.0
 - Funnel: target 1092 → liquid 143 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GUA/USDT:USDT | +23.03% | $1,756,123.54 |
-| BTW/USDT:USDT | +11.73% | $3,940,679.65 |
-| ACE/USDT:USDT | +7.97% | $1,285,398.62 |
-| IRYS/USDT:USDT | +5.78% | $1,572,588.07 |
-| PIEVERSE/USDT:USDT | +3.71% | $4,308,617.31 |
+| GUA/USDT:USDT | +22.66% | $1,759,370.54 |
+| BTW/USDT:USDT | +12.17% | $3,959,832.29 |
+| ACE/USDT:USDT | +8.11% | $1,287,561.27 |
+| IRYS/USDT:USDT | +5.26% | $1,573,368.85 |
+| PIEVERSE/USDT:USDT | +3.85% | $4,310,267.41 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +0.82% | +1.33% |
-| BLESS/USDT:USDT | below_1h_threshold | +0.57% | +1.08% |
-| PHAROS/USDT:USDT | below_1h_threshold | +0.40% | +0.91% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.04% | +0.55% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.02% | +0.53% |
+| BTW/USDT:USDT | below_1h_threshold | +1.06% | +1.58% |
+| PHAROS/USDT:USDT | below_1h_threshold | +1.05% | +1.58% |
+| BLESS/USDT:USDT | below_1h_threshold | +0.56% | +1.09% |
+| SOL/USDT:USDT | below_1h_threshold | +0.11% | +0.64% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.04% | +0.56% |
 
 ## 7. 次に見るべき不足
 
