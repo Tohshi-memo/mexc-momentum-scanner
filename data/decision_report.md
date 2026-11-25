@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-25T09:56:34.365865+00:00
+- generated_at: 2026-11-25T10:01:29.846197+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19601**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-25T09:56:17.301497+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.68% price=58995.0
-- Funnel: target 1092 → liquid 140 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 88.3 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-25T10:01:15.762338+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=59084.0
+- Funnel: target 1092 → liquid 139 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BIGTIME/USDT:USDT | +66.68% | $4,130,200.17 |
-| OPG/USDT:USDT | +26.54% | $2,527,530.88 |
-| BTW/USDT:USDT | +24.24% | $6,213,585.37 |
-| GUA/USDT:USDT | +16.52% | $2,325,626.17 |
-| SOXS/USDT:USDT | +10.47% | $85,134,981.24 |
+| BIGTIME/USDT:USDT | +65.13% | $4,625,320.92 |
+| OPG/USDT:USDT | +27.04% | $2,548,183.31 |
+| BTW/USDT:USDT | +24.06% | $6,153,882.00 |
+| GUA/USDT:USDT | +18.99% | $2,326,094.78 |
+| SOXS/USDT:USDT | +10.31% | $81,070,160.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| USOIL/USDT:USDT | below_1h_threshold | +1.84% | +2.52% |
-| UKOIL/USDT:USDT | below_1h_threshold | +1.71% | +2.39% |
-| OPG/USDT:USDT | below_1h_threshold | +0.93% | +1.61% |
-| ALUMINUM/USDT:USDT | below_1h_threshold | +0.81% | +1.49% |
-| ANTHROPIC/USDT:USDT | below_1h_threshold | +0.74% | +1.42% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.84% | +2.80% |
+| SQQQ/USDT:USDT | below_1h_threshold | +1.64% | +1.60% |
+| GUA/USDT:USDT | below_1h_threshold | +0.77% | +0.73% |
+| ACE/USDT:USDT | below_1h_threshold | +0.54% | +0.50% |
+| OPG/USDT:USDT | below_1h_threshold | +0.40% | +0.36% |
 
 ## 7. 次に見るべき不足
 
