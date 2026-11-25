@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-25T06:11:15.857202+00:00
+- generated_at: 2026-11-25T06:16:09.042323+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19596**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-25T06:11:04.279756+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.25% price=59285.0
+- 更新: 2026-11-25T06:15:59.921186+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.30% price=59310.8
 - Funnel: target 1092 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BIGTIME/USDT:USDT | +54.02% | $1,461,645.89 |
-| OPG/USDT:USDT | +27.62% | $1,834,464.56 |
-| BTW/USDT:USDT | +15.70% | $4,891,849.30 |
-| GUA/USDT:USDT | +13.23% | $2,114,892.96 |
-| ANSEM/USDT:USDT | +9.22% | $1,430,062.52 |
+| BIGTIME/USDT:USDT | +57.24% | $1,491,450.51 |
+| OPG/USDT:USDT | +25.16% | $1,902,175.51 |
+| BTW/USDT:USDT | +15.99% | $4,901,975.40 |
+| GUA/USDT:USDT | +12.36% | $2,120,252.67 |
+| ANSEM/USDT:USDT | +8.83% | $1,431,545.40 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIOT/USDT:USDT | below_1h_threshold | +2.85% | +2.60% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.62% | +1.37% |
-| BIGTIME/USDT:USDT | below_1h_threshold | +1.49% | +1.23% |
-| BTW/USDT:USDT | below_1h_threshold | +1.42% | +1.16% |
-| ARIA/USDT:USDT | below_1h_threshold | +1.10% | +0.85% |
+| BIGTIME/USDT:USDT | below_1h_threshold | +3.31% | +3.02% |
+| AIOT/USDT:USDT | below_1h_threshold | +2.76% | +2.46% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.62% | +1.32% |
+| PEPE/USDT:USDT | below_1h_threshold | +1.58% | +1.29% |
+| BTW/USDT:USDT | below_1h_threshold | +1.34% | +1.05% |
 
 ## 7. 次に見るべき不足
 
