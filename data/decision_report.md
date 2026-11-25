@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-25T11:01:29.414333+00:00
+- generated_at: 2026-11-25T11:06:24.860267+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19604**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-25T11:01:14.208868+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=58879.4
+- 更新: 2026-11-25T11:06:10.894665+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=58806.1
 - Funnel: target 1097 → liquid 137 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BIGTIME/USDT:USDT | +55.15% | $5,465,201.37 |
-| OPG/USDT:USDT | +26.75% | $2,627,214.31 |
-| BTW/USDT:USDT | +23.64% | $6,617,122.46 |
-| GUA/USDT:USDT | +22.06% | $2,411,043.03 |
-| BLUR/USDT:USDT | +19.68% | $1,340,986.97 |
+| BIGTIME/USDT:USDT | +57.98% | $5,492,407.07 |
+| OPG/USDT:USDT | +25.96% | $2,652,238.05 |
+| BTW/USDT:USDT | +24.47% | $6,646,482.48 |
+| GUA/USDT:USDT | +22.41% | $2,414,567.12 |
+| BLUR/USDT:USDT | +19.46% | $1,346,801.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GUA/USDT:USDT | below_1h_threshold | +0.57% | +0.56% |
-| MMT/USDT:USDT | below_1h_threshold | +0.56% | +0.56% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +0.34% | +0.33% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +0.25% | +0.25% |
-| BTW/USDT:USDT | below_1h_threshold | +0.24% | +0.23% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +1.83% | +1.95% |
+| MONAD/USDT:USDT | below_1h_threshold | +1.11% | +1.23% |
+| BTW/USDT:USDT | below_1h_threshold | +0.92% | +1.04% |
+| BIGTIME/USDT:USDT | below_1h_threshold | +0.82% | +0.94% |
+| GUA/USDT:USDT | below_1h_threshold | +0.75% | +0.87% |
 
 ## 7. 次に見るべき不足
 
