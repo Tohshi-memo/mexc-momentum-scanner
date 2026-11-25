@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-11-25T17:11:26.826622+00:00
+- generated_at: 2026-11-25T17:16:34.862273+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **19616**
+- closed shadow trades: **19617**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +1.30% / filled 20/20。**
-- 全期間 MARKET基準: n=19616, expectancy=+0.02%
+- 全期間 MARKET基準: n=19617, expectancy=+0.02%
 - 直近20件 MARKET基準: n=20, expectancy=+1.30%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -22,19 +22,19 @@
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | MARKET | 20/20 | 100.0% | +1.30% | **+1.30%** |
-| LIMIT_1PCT | 16/20 | 80.0% | +0.41% | **+0.32%** |
 | LIMIT_6PCT | 4/20 | 20.0% | +0.42% | **+0.08%** |
 | LIMIT_9PCT | 2/20 | 10.0% | +0.29% | **+0.03%** |
 | LIMIT_8PCT | 2/20 | 10.0% | -0.15% | **-0.01%** |
+| LIMIT_7PCT | 2/20 | 10.0% | -0.60% | **-0.06%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_FIB1618_LONG | 5/20 | 25.0% | +1.90% | **+0.47%** |
+| LIMIT_8PCT_LONG | 8/20 | 40.0% | +1.50% | **+0.60%** |
+| LIMIT_FIB1618_LONG | 4/20 | 20.0% | +2.28% | **+0.46%** |
 | LIMIT_10PCT_LONG | 4/20 | 20.0% | +2.11% | **+0.42%** |
-| LIMIT_9PCT_LONG | 6/20 | 30.0% | +1.40% | **+0.42%** |
-| LIMIT_8PCT_LONG | 8/20 | 40.0% | +0.50% | **+0.20%** |
+| LIMIT_9PCT_LONG | 5/20 | 25.0% | +1.46% | **+0.36%** |
 | LIMIT_4PCT_LONG | 13/20 | 65.0% | +0.19% | **+0.12%** |
 
 ## 2. $100 Live Portfolio
@@ -47,15 +47,15 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,988.31** / 初期 $100.00 (+1888.31%)
-- 確定: 7612件 (Win 2191 / Loss 2450 / Flat 2971) / skip 8565件
+- 確定: 7612件 (Win 2191 / Loss 2450 / Flat 2971) / skip 8566件
 - 成長率目線: 平均log +0.000393 / 幾何平均 +0.039% per trade / maxDD +9.04%
-- 次の候補: `LIMIT_9PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
+- 次の候補: `MARKET` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: KOR/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $1,988.31
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$467.28** / 初期 $100.00 (+367.28%)
-- 確定: 5220件 (Win 1389 / Loss 1124 / Flat 2707) / skip 7807件
+- 確定: 5220件 (Win 1389 / Loss 1124 / Flat 2707) / skip 7808件
 - 成長率目線: 平均log +0.000295 / 幾何平均 +0.030% per trade / maxDD +4.29%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: KIMCHI/USDT:USDT `LIMIT_FIB1272` SL_HIT account -0.09% 残高後 $467.28
@@ -70,31 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-25T17:11:13.206375+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +1.13% price=59247.5
-- Funnel: target 1097 → liquid 150 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-25T17:16:18.424726+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +1.52% price=59476.0
+- Funnel: target 1097 → liquid 150 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOR/USDT:USDT | +27.55% | $1,620,842.33 |
-| MONAD/USDT:USDT | +8.78% | $1,355,312.48 |
-| BLUR/USDT:USDT | +8.12% | $2,260,809.89 |
-| SOXL/USDT:USDT | +7.20% | $1,632,147,679.65 |
-| BIGTIME/USDT:USDT | +7.12% | $8,430,982.33 |
+| KOR/USDT:USDT | +21.01% | $1,641,177.21 |
+| MONAD/USDT:USDT | +8.87% | $1,404,618.01 |
+| SOXL/USDT:USDT | +8.45% | $1,657,060,739.33 |
+| BLUR/USDT:USDT | +8.17% | $2,275,515.82 |
+| BIGTIME/USDT:USDT | +7.99% | $8,448,608.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VVV/USDT:USDT | below_1h_threshold | +3.14% | +2.01% |
-| MONAD/USDT:USDT | below_1h_threshold | +3.05% | +1.92% |
-| OPG/USDT:USDT | below_1h_threshold | +2.52% | +1.38% |
-| RIVER/USDT:USDT | below_1h_threshold | +2.38% | +1.25% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +2.32% | +1.18% |
+| VVV/USDT:USDT | below_1h_threshold | +3.73% | +2.21% |
+| RIVER/USDT:USDT | below_1h_threshold | +3.32% | +1.80% |
+| MONAD/USDT:USDT | below_1h_threshold | +3.14% | +1.62% |
+| KOR/USDT:USDT | below_1h_threshold | +2.83% | +1.30% |
+| PONS/USDT:USDT | below_1h_threshold | +2.78% | +1.26% |
 
 ## 7. 次に見るべき不足
 
