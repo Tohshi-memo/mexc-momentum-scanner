@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-24T23:56:20.037809+00:00
+- generated_at: 2026-11-25T00:01:18.826760+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19582**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-24T23:56:06.432680+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.25% price=59817.6
-- Funnel: target 1092 → liquid 145 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-11-25T00:01:07.326634+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=59766.6
+- Funnel: target 1092 → liquid 143 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GUA/USDT:USDT | +24.72% | $1,736,603.18 |
-| BTW/USDT:USDT | +10.63% | $3,916,284.23 |
-| ACE/USDT:USDT | +8.32% | $1,312,621.74 |
-| IRYS/USDT:USDT | +7.14% | $1,562,586.50 |
-| ANSEM/USDT:USDT | +6.00% | $1,316,556.99 |
+| GUA/USDT:USDT | +24.82% | $1,734,345.14 |
+| BTW/USDT:USDT | +10.56% | $3,852,146.28 |
+| ACE/USDT:USDT | +8.40% | $1,274,452.06 |
+| IRYS/USDT:USDT | +7.40% | $1,524,890.67 |
+| ANSEM/USDT:USDT | +5.90% | $1,313,674.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KORU/USDT:USDT | below_1h_threshold | +2.17% | +2.42% |
-| IRYS/USDT:USDT | below_1h_threshold | +2.11% | +2.35% |
-| NVDL/USDT:USDT | below_1h_threshold | +1.47% | +1.71% |
-| SNXX/USDT:USDT | below_1h_threshold | +1.42% | +1.66% |
-| ACE/USDT:USDT | below_1h_threshold | +1.41% | +1.66% |
+| GUA/USDT:USDT | below_1h_threshold | +0.43% | +0.49% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.33% | +0.39% |
+| LIT/USDT:USDT | below_1h_threshold | +0.12% | +0.18% |
+| BLESS/USDT:USDT | below_1h_threshold | +0.10% | +0.16% |
+| ACE/USDT:USDT | below_1h_threshold | +0.09% | +0.15% |
 
 ## 7. 次に見るべき不足
 
