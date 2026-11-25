@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-25T16:46:29.887419+00:00
+- generated_at: 2026-11-25T16:51:34.251261+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19614**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-25T16:46:15.103580+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.21% price=58193.4
+- 更新: 2026-11-25T16:51:17.846115+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=58345.0
 - Funnel: target 1097 → liquid 151 → pre 50 → checked 50 → surge 2 → strict 2
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MONAD/USDT:USDT | +5.07% | $1,389,170.42 |
-| LISTA/USDT:USDT | +3.32% | $4,660,672.97 |
-| BLUR/USDT:USDT | +3.13% | $2,213,782.09 |
-| OPG/USDT:USDT | +2.91% | $3,321,899.81 |
-| JCT/USDT:USDT | +2.46% | $1,004,300.40 |
+| MONAD/USDT:USDT | +5.65% | $1,401,435.26 |
+| LISTA/USDT:USDT | +4.11% | $4,686,665.01 |
+| BIGTIME/USDT:USDT | +3.90% | $8,188,290.48 |
+| JCT/USDT:USDT | +3.58% | $1,009,772.32 |
+| OPG/USDT:USDT | +3.40% | $3,333,091.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KOR/USDT:USDT | below_1h_threshold | +3.33% | +3.54% |
-| LISTA/USDT:USDT | below_1h_threshold | +3.32% | +3.53% |
-| SQQQ/USDT:USDT | below_1h_threshold | +3.25% | +3.46% |
-| BLUR/USDT:USDT | below_1h_threshold | +3.14% | +3.35% |
-| OPG/USDT:USDT | below_1h_threshold | +2.92% | +3.13% |
+| LISTA/USDT:USDT | below_1h_threshold | +4.11% | +4.06% |
+| BIGTIME/USDT:USDT | below_1h_threshold | +3.75% | +3.70% |
+| JCT/USDT:USDT | below_1h_threshold | +3.74% | +3.68% |
+| OPG/USDT:USDT | below_1h_threshold | +3.41% | +3.35% |
+| BLUR/USDT:USDT | below_1h_threshold | +3.00% | +2.94% |
 
 ## 7. 次に見るべき不足
 
