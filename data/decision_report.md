@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-25T09:11:32.678932+00:00
+- generated_at: 2026-11-25T09:16:23.481828+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19601**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-25T09:11:18.806912+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.38% price=59175.4
+- 更新: 2026-11-25T09:16:09.429736+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.57% price=59062.2
 - Funnel: target 1092 → liquid 138 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BIGTIME/USDT:USDT | +65.30% | $3,748,917.41 |
-| OPG/USDT:USDT | +24.87% | $2,484,074.87 |
-| BTW/USDT:USDT | +24.13% | $5,874,770.51 |
-| GUA/USDT:USDT | +16.71% | $2,301,592.69 |
-| SOXS/USDT:USDT | +8.96% | $80,425,930.96 |
+| BIGTIME/USDT:USDT | +64.79% | $3,788,105.00 |
+| OPG/USDT:USDT | +25.81% | $2,487,843.77 |
+| BTW/USDT:USDT | +24.06% | $5,899,159.80 |
+| GUA/USDT:USDT | +16.05% | $2,312,415.15 |
+| SOXS/USDT:USDT | +9.55% | $81,193,455.36 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BIGTIME/USDT:USDT | below_1h_threshold | +4.45% | +4.83% |
-| ANSEM/USDT:USDT | below_1h_threshold | +2.16% | +2.54% |
-| USOIL/USDT:USDT | below_1h_threshold | +1.84% | +2.22% |
-| UKOIL/USDT:USDT | below_1h_threshold | +1.71% | +2.09% |
-| ALUMINUM/USDT:USDT | below_1h_threshold | +0.81% | +1.19% |
+| BIGTIME/USDT:USDT | below_1h_threshold | +4.17% | +4.74% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.84% | +2.41% |
+| UKOIL/USDT:USDT | below_1h_threshold | +1.71% | +2.28% |
+| ANSEM/USDT:USDT | below_1h_threshold | +0.96% | +1.53% |
+| ALUMINUM/USDT:USDT | below_1h_threshold | +0.81% | +1.38% |
 
 ## 7. 次に見るべき不足
 
