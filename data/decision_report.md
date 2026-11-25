@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-25T06:36:19.193027+00:00
+- generated_at: 2026-11-25T06:41:16.629687+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19596**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-25T06:36:09.418928+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=59038.4
+- 更新: 2026-11-25T06:41:07.646266+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=59191.6
 - Funnel: target 1092 → liquid 142 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 88.8 >= 65=1
+- Strict後reject: 4h RSI 88.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BIGTIME/USDT:USDT | +73.34% | $1,831,614.56 |
-| OPG/USDT:USDT | +27.19% | $2,103,088.75 |
-| BTW/USDT:USDT | +15.69% | $4,966,810.83 |
-| GUA/USDT:USDT | +13.17% | $2,134,095.65 |
-| ANSEM/USDT:USDT | +9.27% | $1,434,310.06 |
+| BIGTIME/USDT:USDT | +64.25% | $1,889,261.56 |
+| OPG/USDT:USDT | +26.39% | $2,109,659.70 |
+| BTW/USDT:USDT | +15.83% | $4,985,572.25 |
+| GUA/USDT:USDT | +13.33% | $2,136,451.20 |
+| BLUR/USDT:USDT | +8.95% | $1,061,467.58 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MONAD/USDT:USDT | below_1h_threshold | +3.70% | +3.86% |
-| ACE/USDT:USDT | below_1h_threshold | +3.11% | +3.27% |
-| XPL/USDT:USDT | below_1h_threshold | +2.03% | +2.19% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.62% | +1.79% |
-| ZKSYNC/USDT:USDT | below_1h_threshold | +1.29% | +1.45% |
+| MONAD/USDT:USDT | below_1h_threshold | +4.20% | +4.10% |
+| ACE/USDT:USDT | below_1h_threshold | +2.56% | +2.46% |
+| XPL/USDT:USDT | below_1h_threshold | +2.18% | +2.09% |
+| ZKSYNC/USDT:USDT | below_1h_threshold | +1.83% | +1.73% |
+| BLUR/USDT:USDT | below_1h_threshold | +1.76% | +1.66% |
 
 ## 7. 次に見るべき不足
 
