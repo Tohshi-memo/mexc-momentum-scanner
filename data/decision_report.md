@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-25T04:16:20.912727+00:00
+- generated_at: 2026-11-25T04:21:18.092683+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19592**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-25T04:16:10.783600+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=59316.2
+- 更新: 2026-11-25T04:21:07.918859+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=59340.2
 - Funnel: target 1092 → liquid 143 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| OPG/USDT:USDT | +27.48% | $1,352,707.19 |
-| ANSEM/USDT:USDT | +20.35% | $1,409,711.11 |
-| BTW/USDT:USDT | +15.57% | $4,600,359.58 |
-| IRYS/USDT:USDT | +9.22% | $2,028,094.28 |
-| GUA/USDT:USDT | +9.04% | $2,020,739.89 |
+| OPG/USDT:USDT | +27.26% | $1,369,702.05 |
+| ANSEM/USDT:USDT | +19.27% | $1,411,389.24 |
+| BTW/USDT:USDT | +16.44% | $4,615,950.11 |
+| GUA/USDT:USDT | +9.48% | $2,027,030.07 |
+| BLUR/USDT:USDT | +8.80% | $1,103,868.51 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +4.17% | +4.30% |
-| ANSEM/USDT:USDT | below_1h_threshold | +3.70% | +3.83% |
-| SNXX/USDT:USDT | below_1h_threshold | +2.74% | +2.87% |
-| TSMSTOCK/USDT:USDT | below_1h_threshold | +2.68% | +2.81% |
-| NVDL/USDT:USDT | below_1h_threshold | +1.65% | +1.78% |
+| BTW/USDT:USDT | below_1h_threshold | +4.96% | +5.05% |
+| ANSEM/USDT:USDT | below_1h_threshold | +2.86% | +2.95% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.74% | +2.83% |
+| TSMSTOCK/USDT:USDT | below_1h_threshold | +2.68% | +2.77% |
+| NVDL/USDT:USDT | below_1h_threshold | +1.65% | +1.74% |
 
 ## 7. 次に見るべき不足
 
