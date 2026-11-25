@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-25T09:41:19.168687+00:00
+- generated_at: 2026-11-25T09:46:21.789049+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19601**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7761件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7762件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000405 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-25T09:41:08.954163+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.90% price=58863.8
-- Funnel: target 1092 → liquid 139 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-25T09:46:08.303512+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.85% price=58893.9
+- Funnel: target 1092 → liquid 139 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BIGTIME/USDT:USDT | +65.97% | $4,034,473.98 |
-| OPG/USDT:USDT | +26.10% | $2,510,553.99 |
-| BTW/USDT:USDT | +23.95% | $6,046,041.49 |
-| GUA/USDT:USDT | +15.80% | $2,322,861.07 |
-| SOXS/USDT:USDT | +10.95% | $83,969,306.19 |
+| BIGTIME/USDT:USDT | +64.81% | $4,068,935.62 |
+| OPG/USDT:USDT | +25.38% | $2,514,605.47 |
+| BTW/USDT:USDT | +23.60% | $6,117,841.44 |
+| GUA/USDT:USDT | +15.24% | $2,324,001.74 |
+| SOXS/USDT:USDT | +11.18% | $84,822,388.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MMT/USDT:USDT | below_1h_threshold | +4.85% | +5.75% |
-| BIGTIME/USDT:USDT | below_1h_threshold | +4.61% | +5.51% |
-| USOIL/USDT:USDT | below_1h_threshold | +1.84% | +2.74% |
-| UKOIL/USDT:USDT | below_1h_threshold | +1.71% | +2.61% |
-| BLUR/USDT:USDT | below_1h_threshold | +1.07% | +1.97% |
+| BIGTIME/USDT:USDT | below_1h_threshold | +4.02% | +4.87% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.84% | +2.69% |
+| UKOIL/USDT:USDT | below_1h_threshold | +1.71% | +2.56% |
+| ALUMINUM/USDT:USDT | below_1h_threshold | +0.81% | +1.66% |
+| ANTHROPIC/USDT:USDT | below_1h_threshold | +0.74% | +1.59% |
 
 ## 7. 次に見るべき不足
 
