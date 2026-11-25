@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-25T12:16:33.648266+00:00
+- generated_at: 2026-11-25T12:21:17.997070+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19606**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-25T12:16:20.965496+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=58560.0
+- 更新: 2026-11-25T12:21:05.236496+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.17% price=58512.0
 - Funnel: target 1097 → liquid 143 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BIGTIME/USDT:USDT | +65.47% | $6,295,642.18 |
-| BTW/USDT:USDT | +24.69% | $6,925,519.66 |
-| GUA/USDT:USDT | +24.28% | $2,469,254.82 |
-| OPG/USDT:USDT | +21.02% | $2,825,141.40 |
-| BLUR/USDT:USDT | +19.38% | $1,435,652.90 |
+| BIGTIME/USDT:USDT | +63.07% | $6,311,568.26 |
+| GUA/USDT:USDT | +26.72% | $2,474,974.62 |
+| BTW/USDT:USDT | +24.53% | $6,970,966.91 |
+| OPG/USDT:USDT | +20.95% | $2,846,791.54 |
+| BLUR/USDT:USDT | +20.55% | $1,436,959.31 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UVXY/USDT:USDT | below_1h_threshold | +3.88% | +3.97% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +2.80% | +2.89% |
-| BIGTIME/USDT:USDT | below_1h_threshold | +2.13% | +2.22% |
-| SQQQ/USDT:USDT | below_1h_threshold | +1.42% | +1.51% |
-| ARIA/USDT:USDT | below_1h_threshold | +1.36% | +1.45% |
+| UVXY/USDT:USDT | below_1h_threshold | +3.88% | +4.06% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +2.79% | +2.97% |
+| GUA/USDT:USDT | below_1h_threshold | +2.58% | +2.76% |
+| ARIA/USDT:USDT | below_1h_threshold | +2.56% | +2.73% |
+| BLUR/USDT:USDT | below_1h_threshold | +1.81% | +1.98% |
 
 ## 7. 次に見るべき不足
 
