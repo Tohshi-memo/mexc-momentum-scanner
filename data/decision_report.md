@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-25T18:27:33.577776+00:00
+- generated_at: 2026-11-25T18:32:30.906644+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19625**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-25T18:26:51.367291+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.15% price=59665.7
+- 更新: 2026-11-25T18:31:50.896466+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=59603.9
 - Funnel: target 1097 → liquid 151 → pre 50 → checked 50 → surge 12 → strict 12
 - Surge前reject: below_1h_threshold=38, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOXL/USDT:USDT | +15.66% | $1,788,373,614.33 |
-| KOR/USDT:USDT | +14.35% | $1,742,137.55 |
-| KORU/USDT:USDT | +12.65% | $93,926,418.51 |
-| MVLL/USDT:USDT | +11.67% | $4,678,822.91 |
-| INTW/USDT:USDT | +11.32% | $1,379,540.62 |
+| KOR/USDT:USDT | +17.10% | $1,745,351.77 |
+| SOXL/USDT:USDT | +15.47% | $1,807,567,938.38 |
+| KORU/USDT:USDT | +12.47% | $94,631,211.98 |
+| BLUR/USDT:USDT | +12.21% | $2,533,895.34 |
+| MVLL/USDT:USDT | +11.57% | $4,720,497.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ANTHROPIC/USDT:USDT | below_1h_threshold | +4.29% | +4.14% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +4.26% | +4.11% |
-| IRENSTOCK/USDT:USDT | below_1h_threshold | +4.12% | +3.97% |
-| CRWVSTOCK/USDT:USDT | below_1h_threshold | +4.02% | +3.87% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +3.87% | +3.72% |
+| ANTHROPIC/USDT:USDT | below_1h_threshold | +4.29% | +4.25% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +4.26% | +4.21% |
+| IRENSTOCK/USDT:USDT | below_1h_threshold | +4.12% | +4.08% |
+| CRWVSTOCK/USDT:USDT | below_1h_threshold | +4.02% | +3.98% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +3.87% | +3.82% |
 
 ## 7. 次に見るべき不足
 
