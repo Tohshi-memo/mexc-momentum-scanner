@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-25T17:36:23.480471+00:00
+- generated_at: 2026-11-25T17:41:30.975421+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19618**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7782件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7783件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000132 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-25T17:36:09.349371+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +1.58% price=59510.1
-- Funnel: target 1097 → liquid 152 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=2, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-25T17:41:14.191617+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +1.68% price=59569.9
+- Funnel: target 1097 → liquid 152 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOR/USDT:USDT | +12.05% | $1,682,591.98 |
-| MONAD/USDT:USDT | +10.92% | $1,418,533.67 |
-| SOXL/USDT:USDT | +9.15% | $1,753,464,963.56 |
-| KORU/USDT:USDT | +8.29% | $92,169,734.18 |
-| BIGTIME/USDT:USDT | +7.95% | $8,635,482.29 |
+| KOR/USDT:USDT | +18.94% | $1,697,297.39 |
+| MONAD/USDT:USDT | +13.17% | $1,429,668.98 |
+| SOXL/USDT:USDT | +9.04% | $1,776,397,347.56 |
+| BLUR/USDT:USDT | +8.85% | $2,380,382.50 |
+| KORU/USDT:USDT | +8.44% | $94,327,047.20 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VVV/USDT:USDT | below_relative_strength | +5.67% | +4.09% |
-| MONAD/USDT:USDT | below_relative_strength | +5.18% | +3.59% |
-| RIVER/USDT:USDT | below_1h_threshold | +4.53% | +2.94% |
-| ZEC/USDT:USDT | below_1h_threshold | +4.31% | +2.73% |
-| PONS/USDT:USDT | below_1h_threshold | +3.87% | +2.29% |
+| VVV/USDT:USDT | below_relative_strength | +5.39% | +3.70% |
+| ZEC/USDT:USDT | below_1h_threshold | +4.93% | +3.24% |
+| PONS/USDT:USDT | below_1h_threshold | +4.35% | +2.67% |
+| RIVER/USDT:USDT | below_1h_threshold | +4.19% | +2.50% |
+| CRV/USDT:USDT | below_1h_threshold | +3.97% | +2.28% |
 
 ## 7. 次に見るべき不足
 
