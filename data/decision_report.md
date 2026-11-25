@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-25T20:06:26.145354+00:00
+- generated_at: 2026-11-25T20:11:37.226017+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19644**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-25T20:06:14.537502+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=59906.4
+- 更新: 2026-11-25T20:11:22.875546+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=59960.0
 - Funnel: target 1097 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOXL/USDT:USDT | +22.01% | $1,889,205,111.33 |
-| MANTRA/USDT:USDT | +21.85% | $2,953,564.24 |
-| KOR/USDT:USDT | +20.55% | $1,805,966.72 |
-| KORU/USDT:USDT | +16.58% | $102,740,400.53 |
-| RAM/USDT:USDT | +16.19% | $1,062,351.94 |
+| MANTRA/USDT:USDT | +24.79% | $2,984,502.23 |
+| SOXL/USDT:USDT | +21.31% | $1,898,160,138.92 |
+| KOR/USDT:USDT | +19.97% | $1,806,779.32 |
+| KORU/USDT:USDT | +16.27% | $103,404,967.89 |
+| RAM/USDT:USDT | +15.84% | $1,071,105.42 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNXX/USDT:USDT | below_1h_threshold | +2.74% | +2.67% |
-| MUU/USDT:USDT | below_1h_threshold | +2.65% | +2.57% |
-| BMNRSTOCK/USDT:USDT | below_1h_threshold | +2.05% | +1.97% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +2.03% | +1.95% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.94% | +1.86% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.74% | +2.58% |
+| MUU/USDT:USDT | below_1h_threshold | +2.65% | +2.48% |
+| BMNRSTOCK/USDT:USDT | below_1h_threshold | +2.05% | +1.88% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +2.03% | +1.86% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.94% | +1.77% |
 
 ## 7. 次に見るべき不足
 
