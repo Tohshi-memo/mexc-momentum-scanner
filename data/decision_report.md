@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-25T21:56:28.967809+00:00
+- generated_at: 2026-11-25T22:01:28.142448+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19648**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-25T21:56:14.906539+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=60267.0
-- Funnel: target 1097 → liquid 154 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.8 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-25T22:01:18.007905+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=60146.6
+- Funnel: target 1097 → liquid 152 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BULLA/USDT:USDT | +29.87% | $1,122,945.40 |
-| MANTRA/USDT:USDT | +24.45% | $3,349,992.64 |
-| SOXL/USDT:USDT | +23.07% | $1,888,345,135.80 |
-| KOR/USDT:USDT | +19.40% | $1,829,369.51 |
-| INTW/USDT:USDT | +17.06% | $1,512,875.24 |
+| BULLA/USDT:USDT | +30.09% | $1,113,734.51 |
+| MANTRA/USDT:USDT | +25.29% | $3,357,721.25 |
+| KOR/USDT:USDT | +23.99% | $1,828,555.39 |
+| SOXL/USDT:USDT | +22.52% | $1,885,831,584.05 |
+| INTW/USDT:USDT | +16.69% | $1,497,124.74 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| INTW/USDT:USDT | below_1h_threshold | +3.62% | +3.58% |
-| VVV/USDT:USDT | below_1h_threshold | +3.58% | +3.53% |
-| SOXL/USDT:USDT | below_1h_threshold | +3.19% | +3.14% |
-| MVLL/USDT:USDT | below_1h_threshold | +3.15% | +3.10% |
-| SSV/USDT:USDT | below_1h_threshold | +2.96% | +2.91% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.31% | +0.42% |
+| BMNRSTOCK/USDT:USDT | below_1h_threshold | +0.30% | +0.41% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +0.23% | +0.34% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +0.16% | +0.27% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.08% | +0.19% |
 
 ## 7. 次に見るべき不足
 
