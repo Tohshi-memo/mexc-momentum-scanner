@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-25T07:21:13.159081+00:00
+- generated_at: 2026-11-25T07:26:21.995014+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19598**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7758件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7759件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000391 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-25T07:21:04.482827+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.22% price=59076.8
-- Funnel: target 1092 → liquid 140 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.0 >= 65=1
+- 更新: 2026-11-25T07:26:12.172953+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.34% price=59005.1
+- Funnel: target 1092 → liquid 140 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 73.5 >= 65=1, 4h RSI 71.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BIGTIME/USDT:USDT | +53.02% | $2,195,240.43 |
-| OPG/USDT:USDT | +21.46% | $2,251,389.97 |
-| GUA/USDT:USDT | +20.87% | $2,176,734.24 |
-| BTW/USDT:USDT | +20.01% | $5,206,523.92 |
-| PHAROS/USDT:USDT | +11.52% | $1,282,054.82 |
+| BIGTIME/USDT:USDT | +56.48% | $2,213,248.28 |
+| OPG/USDT:USDT | +21.97% | $2,298,816.13 |
+| GUA/USDT:USDT | +21.47% | $2,182,756.51 |
+| BTW/USDT:USDT | +21.37% | $5,304,583.85 |
+| PHAROS/USDT:USDT | +10.73% | $1,290,180.26 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GUA/USDT:USDT | below_1h_threshold | +4.83% | +5.05% |
-| BTW/USDT:USDT | below_1h_threshold | +2.34% | +2.56% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.20% | +1.42% |
-| ALGO/USDT:USDT | below_1h_threshold | +0.64% | +0.86% |
-| IRYS/USDT:USDT | below_1h_threshold | +0.38% | +0.60% |
+| BTW/USDT:USDT | below_1h_threshold | +3.48% | +3.82% |
+| BIGTIME/USDT:USDT | below_1h_threshold | +1.44% | +1.78% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.20% | +1.54% |
+| ANSEM/USDT:USDT | below_1h_threshold | +0.41% | +0.75% |
+| SQQQ/USDT:USDT | below_1h_threshold | +0.26% | +0.60% |
 
 ## 7. 次に見るべき不足
 
