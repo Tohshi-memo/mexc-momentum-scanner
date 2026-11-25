@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-25T01:51:32.159641+00:00
+- generated_at: 2026-11-25T01:56:24.888434+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19586**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-25T01:51:16.073424+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.66% price=59241.6
+- 更新: 2026-11-25T01:56:10.940139+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.60% price=59276.3
 - Funnel: target 1092 → liquid 146 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GUA/USDT:USDT | +21.25% | $1,889,024.90 |
-| IRYS/USDT:USDT | +17.28% | $2,025,439.98 |
-| BTW/USDT:USDT | +13.71% | $4,205,278.29 |
-| ACE/USDT:USDT | +5.91% | $1,296,035.31 |
-| OPENAI/USDT:USDT | +3.90% | $1,105,775.97 |
+| GUA/USDT:USDT | +18.71% | $1,891,930.85 |
+| IRYS/USDT:USDT | +17.60% | $2,034,193.06 |
+| BTW/USDT:USDT | +14.73% | $4,225,927.49 |
+| ACE/USDT:USDT | +6.28% | $1,296,276.03 |
+| ANTHROPIC/USDT:USDT | +4.16% | $72,452,878.14 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +1.74% | +2.40% |
-| XPD/USDT:USDT | below_1h_threshold | +1.01% | +1.66% |
-| ANSEM/USDT:USDT | below_1h_threshold | +0.92% | +1.57% |
-| COPPER/USDT:USDT | below_1h_threshold | +0.62% | +1.28% |
-| SQQQ/USDT:USDT | below_1h_threshold | +0.49% | +1.14% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.74% | +2.34% |
+| XPD/USDT:USDT | below_1h_threshold | +1.25% | +1.85% |
+| BTW/USDT:USDT | below_1h_threshold | +0.88% | +1.47% |
+| COPPER/USDT:USDT | below_1h_threshold | +0.70% | +1.29% |
+| OPENAI/USDT:USDT | below_1h_threshold | +0.56% | +1.15% |
 
 ## 7. 次に見るべき不足
 
