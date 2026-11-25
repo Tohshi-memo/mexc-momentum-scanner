@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-25T09:01:15.931720+00:00
+- generated_at: 2026-11-25T09:06:17.956430+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19601**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-25T09:01:05.638307+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.21% price=59272.6
+- 更新: 2026-11-25T09:06:06.548930+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.22% price=59269.4
 - Funnel: target 1092 → liquid 138 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BIGTIME/USDT:USDT | +56.41% | $3,588,067.38 |
-| OPG/USDT:USDT | +25.67% | $2,466,869.84 |
-| BTW/USDT:USDT | +22.99% | $5,771,215.89 |
-| GUA/USDT:USDT | +19.28% | $2,291,399.61 |
-| BLUR/USDT:USDT | +8.29% | $1,142,637.27 |
+| BIGTIME/USDT:USDT | +65.40% | $3,679,158.77 |
+| OPG/USDT:USDT | +25.59% | $2,479,311.13 |
+| BTW/USDT:USDT | +23.81% | $5,810,328.60 |
+| GUA/USDT:USDT | +18.84% | $2,294,766.70 |
+| BLUR/USDT:USDT | +8.25% | $1,144,512.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
+| BIGTIME/USDT:USDT | below_1h_threshold | +4.67% | +4.89% |
 | USOIL/USDT:USDT | below_1h_threshold | +1.84% | +2.06% |
-| UKOIL/USDT:USDT | below_1h_threshold | +1.71% | +1.92% |
-| ANTHROPIC/USDT:USDT | below_1h_threshold | +0.74% | +0.95% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +0.73% | +0.94% |
-| US30/USDT:USDT | below_1h_threshold | +0.25% | +0.46% |
+| UKOIL/USDT:USDT | below_1h_threshold | +1.71% | +1.93% |
+| ANSEM/USDT:USDT | below_1h_threshold | +1.58% | +1.80% |
+| MONAD/USDT:USDT | below_1h_threshold | +0.85% | +1.07% |
 
 ## 7. 次に見るべき不足
 
