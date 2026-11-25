@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-25T15:26:26.672279+00:00
+- generated_at: 2026-11-25T15:31:17.437386+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19611**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-25T15:26:16.480359+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.45% price=57950.2
+- 更新: 2026-11-25T15:31:06.201280+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.38% price=57990.3
 - Funnel: target 1097 → liquid 149 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.1 >= 65=1
+- Strict後reject: 4h RSI 77.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOR/USDT:USDT | +83.29% | $1,424,184.33 |
-| BIGTIME/USDT:USDT | +53.19% | $7,873,519.09 |
-| MANTRA/USDT:USDT | +42.23% | $1,282,639.89 |
-| BTW/USDT:USDT | +25.00% | $7,493,272.55 |
-| MMT/USDT:USDT | +24.16% | $3,101,713.32 |
+| KOR/USDT:USDT | +83.91% | $1,428,095.34 |
+| BIGTIME/USDT:USDT | +52.87% | $7,880,738.08 |
+| MANTRA/USDT:USDT | +42.11% | $1,318,326.47 |
+| BTW/USDT:USDT | +24.90% | $7,562,489.34 |
+| MMT/USDT:USDT | +24.64% | $3,125,602.82 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_1h_threshold | +3.47% | +3.92% |
-| MMT/USDT:USDT | below_1h_threshold | +2.99% | +3.43% |
-| UVXY/USDT:USDT | below_1h_threshold | +1.96% | +2.40% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +1.92% | +2.37% |
-| METASTOCK/USDT:USDT | below_1h_threshold | +1.27% | +1.72% |
+| MMT/USDT:USDT | below_1h_threshold | +3.20% | +3.58% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +2.18% | +2.56% |
+| UVXY/USDT:USDT | below_1h_threshold | +1.96% | +2.33% |
+| METASTOCK/USDT:USDT | below_1h_threshold | +1.27% | +1.65% |
+| ANTHROPIC/USDT:USDT | below_1h_threshold | +1.23% | +1.60% |
 
 ## 7. 次に見るべき不足
 
