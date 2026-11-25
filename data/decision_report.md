@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-25T10:46:36.883321+00:00
+- generated_at: 2026-11-25T10:51:38.204928+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19602**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-25T10:46:19.958857+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.23% price=58924.4
-- Funnel: target 1097 → liquid 142 → pre 50 → checked 50 → surge 4 → strict 2
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.2 >= 65=1, 4h RSI 72.7 >= 65=1
+- 更新: 2026-11-25T10:51:19.763459+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.25% price=58914.1
+- Funnel: target 1097 → liquid 142 → pre 50 → checked 50 → surge 3 → strict 2
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 71.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BIGTIME/USDT:USDT | +55.77% | $5,019,822.87 |
-| OPG/USDT:USDT | +27.19% | $2,621,292.10 |
-| BTW/USDT:USDT | +24.56% | $6,595,841.04 |
-| GUA/USDT:USDT | +24.47% | $2,401,422.56 |
-| BLUR/USDT:USDT | +19.06% | $1,294,405.71 |
+| BIGTIME/USDT:USDT | +58.23% | $5,045,767.91 |
+| OPG/USDT:USDT | +26.90% | $2,629,423.69 |
+| BTW/USDT:USDT | +24.56% | $6,653,059.32 |
+| GUA/USDT:USDT | +22.66% | $2,406,488.23 |
+| BLUR/USDT:USDT | +18.68% | $1,329,410.03 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +2.84% | +3.07% |
-| PHAROS/USDT:USDT | below_1h_threshold | +1.96% | +2.19% |
-| SQQQ/USDT:USDT | below_1h_threshold | +1.64% | +1.87% |
-| VVV/USDT:USDT | below_1h_threshold | +1.40% | +1.63% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +1.38% | +1.61% |
+| GUA/USDT:USDT | below_1h_threshold | +4.37% | +4.62% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.84% | +3.09% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +2.06% | +2.31% |
+| SQQQ/USDT:USDT | below_1h_threshold | +1.64% | +1.89% |
+| PHAROS/USDT:USDT | below_1h_threshold | +1.49% | +1.74% |
 
 ## 7. 次に見るべき不足
 
