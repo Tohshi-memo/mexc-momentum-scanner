@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-25T15:01:31.175500+00:00
+- generated_at: 2026-11-25T15:06:34.848861+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19611**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-25T15:01:21.102841+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.19% price=58100.0
+- 更新: 2026-11-25T15:06:22.141474+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=58261.7
 - Funnel: target 1097 → liquid 148 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOR/USDT:USDT | +85.33% | $1,371,054.22 |
-| BIGTIME/USDT:USDT | +54.59% | $7,759,829.77 |
-| MANTRA/USDT:USDT | +34.38% | $1,205,963.00 |
-| BTW/USDT:USDT | +24.79% | $7,385,319.17 |
-| BLUR/USDT:USDT | +20.44% | $1,875,562.91 |
+| KOR/USDT:USDT | +86.35% | $1,378,832.56 |
+| BIGTIME/USDT:USDT | +53.24% | $7,784,261.37 |
+| MANTRA/USDT:USDT | +36.28% | $1,216,134.98 |
+| BTW/USDT:USDT | +24.97% | $7,400,828.95 |
+| MMT/USDT:USDT | +24.16% | $2,925,416.89 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UVXY/USDT:USDT | below_1h_threshold | +1.96% | +2.14% |
-| METASTOCK/USDT:USDT | below_1h_threshold | +1.27% | +1.46% |
-| ANTHROPIC/USDT:USDT | below_1h_threshold | +1.23% | +1.42% |
-| USOIL/USDT:USDT | below_1h_threshold | +1.10% | +1.29% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.95% | +1.14% |
+| MMT/USDT:USDT | below_1h_threshold | +2.95% | +2.86% |
+| UVXY/USDT:USDT | below_1h_threshold | +1.96% | +1.87% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +1.27% | +1.18% |
+| METASTOCK/USDT:USDT | below_1h_threshold | +1.27% | +1.18% |
+| ANTHROPIC/USDT:USDT | below_1h_threshold | +1.23% | +1.14% |
 
 ## 7. 次に見るべき不足
 
