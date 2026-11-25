@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-25T20:26:17.089021+00:00
+- generated_at: 2026-11-25T20:31:35.386119+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19644**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-25T20:26:07.972334+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.20% price=59982.1
+- 更新: 2026-11-25T20:31:20.897151+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=59827.9
 - Funnel: target 1097 → liquid 155 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.3 >= 65=1
+- Strict後reject: 4h RSI 70.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MANTRA/USDT:USDT | +21.43% | $3,024,055.48 |
-| SOXL/USDT:USDT | +21.27% | $1,915,064,789.53 |
-| KOR/USDT:USDT | +17.22% | $1,810,146.17 |
-| INTW/USDT:USDT | +16.13% | $1,536,603.40 |
-| KORU/USDT:USDT | +16.05% | $104,169,818.25 |
+| MANTRA/USDT:USDT | +21.93% | $3,042,657.97 |
+| SOXL/USDT:USDT | +19.21% | $1,923,386,862.61 |
+| KOR/USDT:USDT | +17.10% | $1,812,904.70 |
+| KORU/USDT:USDT | +15.02% | $104,709,296.43 |
+| RAM/USDT:USDT | +14.74% | $1,092,185.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NEAR/USDT:USDT | below_1h_threshold | +3.77% | +3.57% |
-| SNXX/USDT:USDT | below_1h_threshold | +2.74% | +2.54% |
-| MUU/USDT:USDT | below_1h_threshold | +2.65% | +2.44% |
-| BMNRSTOCK/USDT:USDT | below_1h_threshold | +2.05% | +1.85% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +2.03% | +1.83% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.74% | +2.80% |
+| MUU/USDT:USDT | below_1h_threshold | +2.65% | +2.70% |
+| BMNRSTOCK/USDT:USDT | below_1h_threshold | +2.05% | +2.10% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +2.03% | +2.08% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.94% | +1.99% |
 
 ## 7. 次に見るべき不足
 
