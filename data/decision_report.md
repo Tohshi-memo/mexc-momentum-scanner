@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-25T02:41:25.218859+00:00
+- generated_at: 2026-11-25T02:46:20.968832+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19589**
 
@@ -39,9 +39,9 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$121.73** / 初期 $100.00 (+21.73%)
-- 確定トレード: 287件 (TP 105 / SL 174 / EXP 8)
-- 最新: BLESS/USDT:USDT TP_HIT PnL +8.00% 残高後 $121.73
+- 残高: **$121.61** / 初期 $100.00 (+21.61%)
+- 確定トレード: 288件 (TP 105 / SL 175 / EXP 8)
+- 最新: SOXS/USDT:USDT SL_HIT PnL -4.00% 残高後 $121.61
 - 最新戦略メタ: tier=S, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-25T02:41:11.912701+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=59263.0
+- 更新: 2026-11-25T02:46:06.235328+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=59230.6
 - Funnel: target 1092 → liquid 144 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| OPG/USDT:USDT | +22.40% | $1,086,290.58 |
-| GUA/USDT:USDT | +14.30% | $1,936,196.80 |
-| BTW/USDT:USDT | +13.40% | $4,205,963.49 |
-| ANSEM/USDT:USDT | +11.81% | $1,347,924.81 |
-| IRYS/USDT:USDT | +11.76% | $2,116,976.33 |
+| OPG/USDT:USDT | +22.69% | $1,098,409.35 |
+| GUA/USDT:USDT | +15.24% | $1,945,027.89 |
+| BTW/USDT:USDT | +14.08% | $4,225,535.83 |
+| IRYS/USDT:USDT | +11.63% | $2,122,744.49 |
+| ANSEM/USDT:USDT | +9.71% | $1,351,285.15 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ACE/USDT:USDT | below_1h_threshold | +3.72% | +3.69% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.65% | +1.62% |
-| LEAD/USDT:USDT | below_1h_threshold | +1.16% | +1.13% |
-| ETHFI/USDT:USDT | below_1h_threshold | +1.00% | +0.97% |
-| SQQQ/USDT:USDT | below_1h_threshold | +0.93% | +0.90% |
+| ACE/USDT:USDT | below_1h_threshold | +3.45% | +3.47% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.65% | +1.67% |
+| LEAD/USDT:USDT | below_1h_threshold | +1.16% | +1.18% |
+| SQQQ/USDT:USDT | below_1h_threshold | +0.93% | +0.95% |
+| ETHFI/USDT:USDT | below_1h_threshold | +0.80% | +0.83% |
 
 ## 7. 次に見るべき不足
 
