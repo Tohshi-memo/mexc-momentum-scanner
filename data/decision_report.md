@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-25T03:01:13.076685+00:00
+- generated_at: 2026-11-25T03:06:21.792169+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19590**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-25T03:01:02.742651+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=59157.1
-- Funnel: target 1092 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-11-25T03:06:11.552083+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.21% price=59081.1
+- Funnel: target 1092 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| OPG/USDT:USDT | +23.13% | $1,123,919.17 |
-| GUA/USDT:USDT | +14.89% | $1,964,567.84 |
-| BTW/USDT:USDT | +13.53% | $4,216,370.65 |
-| IRYS/USDT:USDT | +12.15% | $1,997,482.40 |
-| ANSEM/USDT:USDT | +11.22% | $1,361,779.21 |
+| OPG/USDT:USDT | +22.98% | $1,133,634.76 |
+| GUA/USDT:USDT | +14.58% | $1,976,843.59 |
+| BTW/USDT:USDT | +13.65% | $4,227,061.25 |
+| BLUR/USDT:USDT | +12.94% | $1,008,900.33 |
+| IRYS/USDT:USDT | +12.28% | $2,018,723.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +3.56% | +3.64% |
-| SQQQ/USDT:USDT | below_1h_threshold | +1.65% | +1.73% |
-| GUA/USDT:USDT | below_1h_threshold | +0.60% | +0.69% |
-| NANYATECHSTOCK/USDT:USDT | below_1h_threshold | +0.36% | +0.44% |
-| ANSEM/USDT:USDT | below_1h_threshold | +0.09% | +0.17% |
+| SOXS/USDT:USDT | below_1h_threshold | +3.56% | +3.77% |
+| SQQQ/USDT:USDT | below_1h_threshold | +1.65% | +1.86% |
+| BLUR/USDT:USDT | below_1h_threshold | +0.49% | +0.70% |
+| NANYATECHSTOCK/USDT:USDT | below_1h_threshold | +0.36% | +0.57% |
+| ACE/USDT:USDT | below_1h_threshold | +0.34% | +0.55% |
 
 ## 7. 次に見るべき不足
 
