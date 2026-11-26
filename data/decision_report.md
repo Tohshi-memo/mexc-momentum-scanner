@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-26T10:31:36.725125+00:00
+- generated_at: 2026-11-26T10:36:29.708685+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19684**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7847件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7848件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000194 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-26T10:31:23.574754+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=60822.2
+- 更新: 2026-11-26T10:36:15.332722+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.26% price=60753.2
 - Funnel: target 1097 → liquid 151 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.2 >= 65=1
+- Strict後reject: 4h RSI 90.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BULLA/USDT:USDT | +69.87% | $3,143,900.64 |
-| SI/USDT:USDT | +53.31% | $1,472,124.93 |
-| KOR/USDT:USDT | +41.33% | $1,941,551.04 |
-| SOXL/USDT:USDT | +29.54% | $1,639,113,514.05 |
-| INIT/USDT:USDT | +28.60% | $1,627,000.77 |
+| BULLA/USDT:USDT | +78.29% | $3,250,141.06 |
+| SI/USDT:USDT | +53.50% | $1,473,864.84 |
+| KOR/USDT:USDT | +41.79% | $1,943,845.86 |
+| SOXL/USDT:USDT | +29.22% | $1,639,323,508.39 |
+| SSV/USDT:USDT | +25.50% | $1,979,479.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ELSA/USDT:USDT | below_1h_threshold | +2.81% | +2.96% |
-| SI/USDT:USDT | below_1h_threshold | +1.57% | +1.71% |
-| ZRO/USDT:USDT | below_1h_threshold | +1.39% | +1.53% |
-| BULLA/USDT:USDT | below_1h_threshold | +1.19% | +1.34% |
-| SEI/USDT:USDT | below_1h_threshold | +0.98% | +1.13% |
+| INIT/USDT:USDT | below_1h_threshold | +3.27% | +3.53% |
+| ELSA/USDT:USDT | below_1h_threshold | +2.40% | +2.65% |
+| SI/USDT:USDT | below_1h_threshold | +1.73% | +1.99% |
+| ZRO/USDT:USDT | below_1h_threshold | +1.69% | +1.95% |
+| SEI/USDT:USDT | below_1h_threshold | +1.10% | +1.35% |
 
 ## 7. 次に見るべき不足
 
