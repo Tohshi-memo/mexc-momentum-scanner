@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-26T19:06:09.672154+00:00
+- generated_at: 2026-11-26T19:11:12.159369+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19719**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-26T19:05:59.322299+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=60481.9
+- 更新: 2026-11-26T19:11:00.802696+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=60501.1
 - Funnel: target 1097 → liquid 128 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +15.26% | $7,283,959.77 |
-| NES/USDT:USDT | +8.41% | $1,283,443.76 |
-| AIOT/USDT:USDT | +5.28% | $1,249,773.66 |
-| SEI/USDT:USDT | +5.25% | $8,357,027.51 |
-| MMT/USDT:USDT | +4.82% | $6,559,750.33 |
+| AKE/USDT:USDT | +17.70% | $7,478,500.16 |
+| NES/USDT:USDT | +9.60% | $1,291,277.04 |
+| SEI/USDT:USDT | +5.25% | $8,435,670.60 |
+| ZRO/USDT:USDT | +4.34% | $2,156,463.32 |
+| FET/USDT:USDT | +4.15% | $3,393,697.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MMT/USDT:USDT | below_1h_threshold | +2.55% | +2.52% |
-| INIT/USDT:USDT | below_1h_threshold | +1.83% | +1.79% |
-| ZRO/USDT:USDT | below_1h_threshold | +0.76% | +0.72% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +0.75% | +0.71% |
-| BTW/USDT:USDT | below_1h_threshold | +0.72% | +0.68% |
+| AKE/USDT:USDT | below_1h_threshold | +1.86% | +1.79% |
+| NES/USDT:USDT | below_1h_threshold | +1.44% | +1.37% |
+| ZRO/USDT:USDT | below_1h_threshold | +1.33% | +1.26% |
+| FET/USDT:USDT | below_1h_threshold | +1.01% | +0.94% |
+| INIT/USDT:USDT | below_1h_threshold | +1.00% | +0.93% |
 
 ## 7. 次に見るべき不足
 
