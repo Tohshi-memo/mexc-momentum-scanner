@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-26T14:46:31.029774+00:00
+- generated_at: 2026-11-26T14:51:15.089403+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19698**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-26T14:46:19.315367+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=60766.7
+- 更新: 2026-11-26T14:51:05.672565+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=60801.5
 - Funnel: target 1097 → liquid 147 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 93.3 >= 65=1
+- Strict後reject: 4h RSI 93.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BULLA/USDT:USDT | +90.76% | $7,105,269.08 |
-| SI/USDT:USDT | +73.01% | $1,817,927.18 |
-| NES/USDT:USDT | +49.17% | $1,147,993.93 |
-| INIT/USDT:USDT | +48.06% | $4,724,058.13 |
-| SSV/USDT:USDT | +47.87% | $2,482,745.65 |
+| BULLA/USDT:USDT | +89.35% | $7,148,790.10 |
+| SI/USDT:USDT | +71.21% | $1,820,589.72 |
+| INIT/USDT:USDT | +50.05% | $4,798,716.52 |
+| NES/USDT:USDT | +47.46% | $1,148,972.03 |
+| SSV/USDT:USDT | +44.06% | $2,531,608.15 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| INIT/USDT:USDT | below_1h_threshold | +2.24% | +2.37% |
-| WIF/USDT:USDT | below_1h_threshold | +1.35% | +1.48% |
-| NES/USDT:USDT | below_1h_threshold | +0.70% | +0.83% |
-| HBAR/USDT:USDT | below_1h_threshold | +0.67% | +0.80% |
-| MOVE/USDT:USDT | below_1h_threshold | +0.55% | +0.68% |
+| INIT/USDT:USDT | below_1h_threshold | +3.62% | +3.69% |
+| WIF/USDT:USDT | below_1h_threshold | +0.98% | +1.05% |
+| HBAR/USDT:USDT | below_1h_threshold | +0.58% | +0.65% |
+| IRENSTOCK/USDT:USDT | below_1h_threshold | +0.30% | +0.37% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.18% | +0.25% |
 
 ## 7. 次に見るべき不足
 
