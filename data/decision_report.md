@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-26T04:26:15.219266+00:00
+- generated_at: 2026-11-26T04:31:14.433005+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19671**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7830件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7831件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000052 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-26T04:26:05.582316+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.44% price=61021.9
-- Funnel: target 1097 → liquid 155 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-26T04:31:05.556578+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.47% price=61042.7
+- Funnel: target 1097 → liquid 155 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 68.2 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SI/USDT:USDT | +58.75% | $1,156,695.55 |
-| BULLA/USDT:USDT | +39.55% | $1,536,262.55 |
-| SOXL/USDT:USDT | +31.52% | $1,830,912,714.17 |
-| MVLL/USDT:USDT | +25.00% | $5,104,901.38 |
-| SNXX/USDT:USDT | +23.93% | $31,545,976.76 |
+| SI/USDT:USDT | +64.46% | $1,187,006.48 |
+| BULLA/USDT:USDT | +40.66% | $1,541,796.75 |
+| SOXL/USDT:USDT | +31.29% | $1,830,980,010.96 |
+| MVLL/USDT:USDT | +24.69% | $5,105,255.58 |
+| SNXX/USDT:USDT | +23.53% | $31,547,396.39 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_relative_strength | +5.09% | +4.66% |
-| SI/USDT:USDT | below_1h_threshold | +3.55% | +3.11% |
-| BULLA/USDT:USDT | below_1h_threshold | +2.39% | +1.96% |
-| MUU/USDT:USDT | below_1h_threshold | +1.74% | +1.30% |
-| SEI/USDT:USDT | below_1h_threshold | +1.70% | +1.26% |
+| BTW/USDT:USDT | below_1h_threshold | +5.00% | +4.53% |
+| BULLA/USDT:USDT | below_1h_threshold | +3.10% | +2.63% |
+| MUU/USDT:USDT | below_1h_threshold | +1.74% | +1.27% |
+| JCT/USDT:USDT | below_1h_threshold | +1.28% | +0.81% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.15% | +0.68% |
 
 ## 7. 次に見るべき不足
 
