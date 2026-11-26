@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-26T20:11:14.058224+00:00
+- generated_at: 2026-11-26T20:16:07.630647+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19723**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-26T20:11:05.247292+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=60719.2
+- 更新: 2026-11-26T20:15:58.871106+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=60706.0
 - Funnel: target 1097 → liquid 123 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +17.70% | $9,445,194.88 |
-| NES/USDT:USDT | +14.75% | $1,361,936.92 |
-| SEI/USDT:USDT | +5.46% | $9,584,916.33 |
-| BLUR/USDT:USDT | +5.09% | $1,264,365.39 |
-| FET/USDT:USDT | +4.06% | $3,695,841.52 |
+| AKE/USDT:USDT | +17.77% | $9,514,556.80 |
+| NES/USDT:USDT | +14.99% | $1,368,285.28 |
+| SEI/USDT:USDT | +5.01% | $9,801,095.85 |
+| INIT/USDT:USDT | +4.09% | $8,445,225.25 |
+| BLUR/USDT:USDT | +4.02% | $1,267,070.97 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SEI/USDT:USDT | below_1h_threshold | +1.55% | +1.52% |
-| HYPE/USDT:USDT | below_1h_threshold | +1.15% | +1.11% |
-| BLUR/USDT:USDT | below_1h_threshold | +0.94% | +0.91% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.83% | +0.79% |
-| ETHFI/USDT:USDT | below_1h_threshold | +0.61% | +0.57% |
+| SEI/USDT:USDT | below_1h_threshold | +1.20% | +1.19% |
+| INIT/USDT:USDT | below_1h_threshold | +1.00% | +0.99% |
+| ETHFI/USDT:USDT | below_1h_threshold | +0.99% | +0.98% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.83% | +0.82% |
+| HYPE/USDT:USDT | below_1h_threshold | +0.79% | +0.78% |
 
 ## 7. 次に見るべき不足
 
