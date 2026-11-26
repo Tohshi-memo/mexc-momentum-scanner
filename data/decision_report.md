@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-26T11:31:21.453552+00:00
+- generated_at: 2026-11-26T11:36:25.081974+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19689**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-26T11:31:11.058610+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.22% price=60625.3
-- Funnel: target 1097 → liquid 152 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.0 >= 65=1, 4h RSI 69.3 >= 65=1
+- 更新: 2026-11-26T11:36:11.050040+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.24% price=60635.0
+- Funnel: target 1097 → liquid 152 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BULLA/USDT:USDT | +83.59% | $3,936,160.43 |
-| SI/USDT:USDT | +64.52% | $1,542,315.16 |
-| INIT/USDT:USDT | +35.65% | $2,143,669.00 |
-| KOR/USDT:USDT | +35.36% | $1,858,327.01 |
-| SOXL/USDT:USDT | +29.22% | $1,600,501,480.67 |
+| BULLA/USDT:USDT | +83.89% | $3,981,980.15 |
+| SI/USDT:USDT | +69.10% | $1,560,269.61 |
+| KOR/USDT:USDT | +35.24% | $1,860,641.81 |
+| INIT/USDT:USDT | +31.35% | $2,214,805.63 |
+| SOXL/USDT:USDT | +29.89% | $1,600,604,340.91 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ELSA/USDT:USDT | below_1h_threshold | +3.83% | +3.60% |
-| BULLA/USDT:USDT | below_1h_threshold | +1.77% | +1.55% |
-| SEI/USDT:USDT | below_1h_threshold | +1.72% | +1.50% |
-| FET/USDT:USDT | below_1h_threshold | +0.88% | +0.65% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +0.80% | +0.57% |
+| INIT/USDT:USDT | below_1h_threshold | +4.78% | +4.54% |
+| ELSA/USDT:USDT | below_1h_threshold | +2.24% | +2.00% |
+| BULLA/USDT:USDT | below_1h_threshold | +1.95% | +1.71% |
+| SEI/USDT:USDT | below_1h_threshold | +1.92% | +1.68% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +1.53% | +1.29% |
 
 ## 7. 次に見るべき不足
 
