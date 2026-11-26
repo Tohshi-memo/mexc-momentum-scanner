@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-26T22:26:06.005670+00:00
+- generated_at: 2026-11-26T22:31:13.137588+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19736**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-26T22:25:57.218018+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.31% price=60601.3
+- 更新: 2026-11-26T22:31:01.704082+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.38% price=60563.1
 - Funnel: target 1097 → liquid 117 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BULLA/USDT:USDT | +32.20% | $12,659,927.93 |
-| NES/USDT:USDT | +13.24% | $1,200,092.04 |
-| INIT/USDT:USDT | +8.92% | $9,601,761.05 |
-| AKE/USDT:USDT | +7.16% | $11,198,123.42 |
-| TRB/USDT:USDT | +6.89% | $1,044,144.37 |
+| BULLA/USDT:USDT | +33.34% | $12,686,136.07 |
+| NES/USDT:USDT | +11.76% | $1,204,090.56 |
+| INIT/USDT:USDT | +9.59% | $9,618,495.64 |
+| AKE/USDT:USDT | +6.88% | $11,205,220.31 |
+| TRB/USDT:USDT | +6.34% | $1,079,727.67 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MMT/USDT:USDT | below_1h_threshold | +2.09% | +2.40% |
-| NES/USDT:USDT | below_1h_threshold | +1.88% | +2.19% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.63% | +1.95% |
-| BULLA/USDT:USDT | below_1h_threshold | +1.27% | +1.59% |
-| TRB/USDT:USDT | below_1h_threshold | +0.88% | +1.20% |
+| BULLA/USDT:USDT | below_1h_threshold | +2.11% | +2.49% |
+| MMT/USDT:USDT | below_1h_threshold | +2.04% | +2.42% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.63% | +2.01% |
+| MUU/USDT:USDT | below_1h_threshold | +0.82% | +1.20% |
+| NES/USDT:USDT | below_1h_threshold | +0.66% | +1.04% |
 
 ## 7. 次に見るべき不足
 
