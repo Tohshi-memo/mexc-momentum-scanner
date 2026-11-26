@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-26T19:01:09.449330+00:00
+- generated_at: 2026-11-26T19:06:09.672154+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19719**
 
@@ -39,9 +39,9 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$121.73** / 初期 $100.00 (+21.73%)
-- 確定トレード: 290件 (TP 106 / SL 176 / EXP 8)
-- 最新: MONAD/USDT:USDT TP_HIT PnL +8.00% 残高後 $121.73
+- 残高: **$121.68** / 初期 $100.00 (+21.68%)
+- 確定トレード: 291件 (TP 106 / SL 176 / EXP 9)
+- 最新: AXTISTOCK/USDT:USDT EXPIRED PnL -1.62% 残高後 $121.68
 - 最新戦略メタ: tier=S, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-26T19:00:59.291942+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=60454.1
+- 更新: 2026-11-26T19:05:59.322299+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=60481.9
 - Funnel: target 1097 → liquid 128 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +15.55% | $7,157,722.76 |
-| NES/USDT:USDT | +8.13% | $1,281,123.64 |
-| SEI/USDT:USDT | +5.79% | $8,276,478.17 |
-| AIOT/USDT:USDT | +5.41% | $1,232,984.95 |
-| WIF/USDT:USDT | +4.66% | $1,824,648.37 |
+| AKE/USDT:USDT | +15.26% | $7,283,959.77 |
+| NES/USDT:USDT | +8.41% | $1,283,443.76 |
+| AIOT/USDT:USDT | +5.28% | $1,249,773.66 |
+| SEI/USDT:USDT | +5.25% | $8,357,027.51 |
+| MMT/USDT:USDT | +4.82% | $6,559,750.33 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| INIT/USDT:USDT | below_1h_threshold | +0.91% | +0.92% |
-| BTW/USDT:USDT | below_1h_threshold | +0.41% | +0.42% |
-| AAVE/USDT:USDT | below_1h_threshold | +0.21% | +0.22% |
-| NEAR/USDT:USDT | below_1h_threshold | +0.16% | +0.17% |
-| ZRO/USDT:USDT | below_1h_threshold | +0.14% | +0.15% |
+| MMT/USDT:USDT | below_1h_threshold | +2.55% | +2.52% |
+| INIT/USDT:USDT | below_1h_threshold | +1.83% | +1.79% |
+| ZRO/USDT:USDT | below_1h_threshold | +0.76% | +0.72% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +0.75% | +0.71% |
+| BTW/USDT:USDT | below_1h_threshold | +0.72% | +0.68% |
 
 ## 7. 次に見るべき不足
 
