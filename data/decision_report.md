@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-26T15:16:21.450099+00:00
+- generated_at: 2026-11-26T15:21:27.943097+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19699**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-26T15:16:11.757940+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.85% price=60188.9
+- 更新: 2026-11-26T15:21:16.628827+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.62% price=60327.9
 - Funnel: target 1097 → liquid 139 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BULLA/USDT:USDT | +72.20% | $7,687,888.12 |
-| SI/USDT:USDT | +65.13% | $1,860,767.49 |
-| NES/USDT:USDT | +46.89% | $1,173,779.65 |
-| INIT/USDT:USDT | +46.31% | $5,043,774.55 |
-| SSV/USDT:USDT | +37.52% | $2,644,297.40 |
+| BULLA/USDT:USDT | +74.61% | $7,745,346.86 |
+| SI/USDT:USDT | +62.93% | $1,864,830.84 |
+| INIT/USDT:USDT | +49.81% | $5,103,266.57 |
+| NES/USDT:USDT | +48.54% | $1,178,849.40 |
+| SSV/USDT:USDT | +34.58% | $2,669,803.75 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JCT/USDT:USDT | below_1h_threshold | +0.39% | +1.24% |
-| TQQQ/USDT:USDT | below_1h_threshold | +0.09% | +0.94% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +0.07% | +0.92% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +0.05% | +0.90% |
-| PLTRSTOCK/USDT:USDT | below_1h_threshold | +0.03% | +0.88% |
+| INIT/USDT:USDT | below_1h_threshold | +1.39% | +2.02% |
+| JCT/USDT:USDT | below_1h_threshold | +0.65% | +1.28% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +0.42% | +1.04% |
+| TQQQ/USDT:USDT | below_1h_threshold | +0.09% | +0.71% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +0.05% | +0.67% |
 
 ## 7. 次に見るべき不足
 
