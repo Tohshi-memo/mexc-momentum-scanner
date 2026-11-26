@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-26T00:56:17.094149+00:00
+- generated_at: 2026-11-26T01:01:36.354325+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19659**
 
@@ -63,16 +63,16 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7820件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7821件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000343 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-26T00:56:05.758145+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=60472.7
-- Funnel: target 1097 → liquid 155 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-11-26T01:01:19.480952+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=60464.8
+- Funnel: target 1097 → liquid 154 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BULLA/USDT:USDT | +34.13% | $1,378,450.17 |
-| SOXL/USDT:USDT | +30.43% | $1,908,157,819.63 |
-| SNXX/USDT:USDT | +26.74% | $34,563,324.11 |
-| MANTRA/USDT:USDT | +25.98% | $4,031,427.93 |
-| MVLL/USDT:USDT | +23.43% | $5,175,754.99 |
+| BULLA/USDT:USDT | +34.32% | $1,375,776.31 |
+| SOXL/USDT:USDT | +29.65% | $1,892,304,074.64 |
+| MANTRA/USDT:USDT | +26.09% | $4,032,757.41 |
+| SNXX/USDT:USDT | +25.46% | $33,834,431.01 |
+| MVLL/USDT:USDT | +23.31% | $5,147,011.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JCT/USDT:USDT | below_1h_threshold | +3.80% | +3.73% |
-| VVV/USDT:USDT | below_1h_threshold | +3.52% | +3.45% |
-| MANTRA/USDT:USDT | below_1h_threshold | +2.96% | +2.89% |
-| MONAD/USDT:USDT | below_1h_threshold | +2.26% | +2.19% |
-| IRENSTOCK/USDT:USDT | below_1h_threshold | +2.01% | +1.94% |
+| MVLL/USDT:USDT | below_1h_threshold | +3.70% | +3.75% |
+| RAM/USDT:USDT | below_1h_threshold | +3.43% | +3.48% |
+| SOXL/USDT:USDT | below_1h_threshold | +3.18% | +3.24% |
+| MUU/USDT:USDT | below_1h_threshold | +3.14% | +3.19% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +2.94% | +2.99% |
 
 ## 7. 次に見るべき不足
 
