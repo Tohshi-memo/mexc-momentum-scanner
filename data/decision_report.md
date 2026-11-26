@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-26T23:11:22.433001+00:00
+- generated_at: 2026-11-26T23:16:18.218094+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19737**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-26T23:11:06.777712+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=60431.6
+- 更新: 2026-11-26T23:16:08.111074+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=60440.2
 - Funnel: target 1097 → liquid 117 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BULLA/USDT:USDT | +28.00% | $12,932,015.88 |
-| NES/USDT:USDT | +10.78% | $1,131,102.65 |
-| INIT/USDT:USDT | +10.25% | $9,791,919.42 |
-| TRB/USDT:USDT | +5.77% | $1,224,084.08 |
-| AKE/USDT:USDT | +5.73% | $11,128,933.92 |
+| BULLA/USDT:USDT | +29.67% | $13,004,835.59 |
+| NES/USDT:USDT | +10.38% | $1,137,752.48 |
+| INIT/USDT:USDT | +9.36% | $9,811,905.76 |
+| AKE/USDT:USDT | +6.02% | $11,155,251.23 |
+| TRB/USDT:USDT | +5.71% | $1,227,923.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +3.57% | +3.73% |
-| SQQQ/USDT:USDT | below_1h_threshold | +0.70% | +0.85% |
-| INIT/USDT:USDT | below_1h_threshold | +0.52% | +0.68% |
-| JUP/USDT:USDT | below_1h_threshold | +0.08% | +0.24% |
-| WLFI/USDT:USDT | below_1h_threshold | +0.07% | +0.22% |
+| SOXS/USDT:USDT | below_1h_threshold | +3.57% | +3.71% |
+| SQQQ/USDT:USDT | below_1h_threshold | +0.70% | +0.84% |
+| BTW/USDT:USDT | below_1h_threshold | +0.11% | +0.25% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.09% | +0.22% |
+| WLFI/USDT:USDT | below_1h_threshold | +0.07% | +0.21% |
 
 ## 7. 次に見るべき不足
 
