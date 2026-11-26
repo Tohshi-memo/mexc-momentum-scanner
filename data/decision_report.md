@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-26T13:31:48.455472+00:00
+- generated_at: 2026-11-26T13:36:34.347850+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19695**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7857件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7858件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000215 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-26T13:31:33.579086+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=60825.4
-- Funnel: target 1097 → liquid 150 → pre 50 → checked 49 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=1
-- Strict後reject: 4h RSI 91.5 >= 65=1, 4h RSI 83.6 >= 65=1, 4h RSI 65.1 >= 65=1
+- 更新: 2026-11-26T13:36:20.663417+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=60817.2
+- Funnel: target 1097 → liquid 152 → pre 50 → checked 50 → surge 4 → strict 1
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 83.9 >= 65=1, 4h RSI 91.4 >= 65=1, 4h RSI 72.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BULLA/USDT:USDT | +95.06% | $6,046,625.55 |
-| SI/USDT:USDT | +69.92% | $1,722,760.56 |
-| NES/USDT:USDT | +54.07% | $1,078,818.01 |
-| INIT/USDT:USDT | +51.74% | $3,563,759.75 |
-| SSV/USDT:USDT | +33.97% | $2,235,354.01 |
+| BULLA/USDT:USDT | +93.69% | $6,120,750.38 |
+| SI/USDT:USDT | +69.00% | $1,726,413.94 |
+| NES/USDT:USDT | +54.52% | $1,081,165.86 |
+| INIT/USDT:USDT | +53.28% | $3,713,082.16 |
+| SSV/USDT:USDT | +33.46% | $2,244,031.26 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ELSA/USDT:USDT | below_1h_threshold | +4.22% | +4.18% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +1.26% | +1.22% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.78% | +0.74% |
-| ZRO/USDT:USDT | below_1h_threshold | +0.65% | +0.61% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.64% | +0.60% |
+| ELSA/USDT:USDT | below_1h_threshold | +3.58% | +3.55% |
+| EVAA/USDT:USDT | below_1h_threshold | +2.21% | +2.19% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.26% | +1.23% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +1.26% | +1.23% |
+| SOXL/USDT:USDT | below_1h_threshold | +0.78% | +0.75% |
 
 ## 7. 次に見るべき不足
 
