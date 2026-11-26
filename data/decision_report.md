@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-26T01:36:30.718298+00:00
+- generated_at: 2026-11-26T01:41:27.372650+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19663**
 
@@ -70,9 +70,9 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-26T01:36:14.958232+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.31% price=60681.0
-- Funnel: target 1097 → liquid 157 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-11-26T01:41:13.179461+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.33% price=60695.0
+- Funnel: target 1097 → liquid 158 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SI/USDT:USDT | +52.83% | $1,011,968.29 |
-| BULLA/USDT:USDT | +35.51% | $1,415,802.21 |
-| SOXL/USDT:USDT | +30.04% | $1,905,415,175.91 |
-| MANTRA/USDT:USDT | +29.65% | $4,228,972.38 |
-| MVLL/USDT:USDT | +23.76% | $5,161,803.48 |
+| SI/USDT:USDT | +54.96% | $1,019,636.71 |
+| BULLA/USDT:USDT | +35.58% | $1,420,233.27 |
+| SOXL/USDT:USDT | +29.65% | $1,905,533,657.38 |
+| MANTRA/USDT:USDT | +29.15% | $4,235,649.08 |
+| SNXX/USDT:USDT | +23.93% | $34,356,494.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PIEVERSE/USDT:USDT | below_1h_threshold | +4.65% | +4.35% |
-| MVLL/USDT:USDT | below_1h_threshold | +3.70% | +3.39% |
-| RAM/USDT:USDT | below_1h_threshold | +3.43% | +3.12% |
-| SOXL/USDT:USDT | below_1h_threshold | +3.18% | +2.88% |
-| MUU/USDT:USDT | below_1h_threshold | +3.14% | +2.84% |
+| MVLL/USDT:USDT | below_1h_threshold | +3.70% | +3.37% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +3.46% | +3.13% |
+| RAM/USDT:USDT | below_1h_threshold | +3.43% | +3.10% |
+| SOXL/USDT:USDT | below_1h_threshold | +3.18% | +2.86% |
+| TAIYOYUDENSTOCK/USDT:USDT | below_1h_threshold | +3.16% | +2.83% |
 
 ## 7. 次に見るべき不足
 
