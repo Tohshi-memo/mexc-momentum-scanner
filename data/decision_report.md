@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-26T08:26:23.774771+00:00
+- generated_at: 2026-11-26T08:31:24.244489+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19677**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7839件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7840件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000057 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-26T08:26:12.206863+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.25% price=60650.0
-- Funnel: target 1097 → liquid 152 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-26T08:31:12.366463+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.32% price=60689.8
+- Funnel: target 1097 → liquid 152 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BULLA/USDT:USDT | +57.69% | $2,399,438.39 |
-| SI/USDT:USDT | +54.77% | $1,435,239.86 |
-| KOR/USDT:USDT | +29.16% | $1,788,985.67 |
-| SOXL/USDT:USDT | +28.13% | $1,752,246,670.03 |
-| ELSA/USDT:USDT | +26.42% | $1,358,987.01 |
+| BULLA/USDT:USDT | +59.40% | $2,417,046.86 |
+| SI/USDT:USDT | +54.29% | $1,437,931.23 |
+| KOR/USDT:USDT | +33.86% | $1,808,835.57 |
+| SOXL/USDT:USDT | +28.68% | $1,752,303,359.63 |
+| SSV/USDT:USDT | +22.51% | $1,829,416.92 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KOR/USDT:USDT | below_relative_strength | +5.14% | +4.89% |
-| MOVE/USDT:USDT | below_1h_threshold | +3.51% | +3.26% |
-| BULLA/USDT:USDT | below_1h_threshold | +1.86% | +1.61% |
-| NVDL/USDT:USDT | below_1h_threshold | +1.47% | +1.22% |
-| FET/USDT:USDT | below_1h_threshold | +1.08% | +0.83% |
+| MOVE/USDT:USDT | below_1h_threshold | +2.78% | +2.47% |
+| BULLA/USDT:USDT | below_1h_threshold | +2.58% | +2.26% |
+| NVDL/USDT:USDT | below_1h_threshold | +1.47% | +1.16% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.04% | +0.72% |
+| SEI/USDT:USDT | below_1h_threshold | +0.97% | +0.65% |
 
 ## 7. 次に見るべき不足
 
