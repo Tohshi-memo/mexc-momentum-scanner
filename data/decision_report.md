@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-26T21:01:26.800154+00:00
+- generated_at: 2026-11-26T21:06:16.824589+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19729**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-26T21:01:14.866274+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=60776.0
+- 更新: 2026-11-26T21:06:03.453856+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=60782.6
 - Funnel: target 1097 → liquid 118 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SI/USDT:USDT | +11.35% | $1,807,910.88 |
-| INIT/USDT:USDT | +10.99% | $8,858,962.26 |
-| NES/USDT:USDT | +10.38% | $1,336,808.49 |
-| AKE/USDT:USDT | +9.03% | $10,498,291.41 |
-| ZRO/USDT:USDT | +5.27% | $2,246,260.03 |
+| INIT/USDT:USDT | +11.79% | $8,941,083.47 |
+| SI/USDT:USDT | +10.67% | $1,813,493.21 |
+| AKE/USDT:USDT | +10.25% | $10,620,180.05 |
+| NES/USDT:USDT | +10.21% | $1,340,732.63 |
+| ZRO/USDT:USDT | +5.53% | $2,325,960.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| INIT/USDT:USDT | below_1h_threshold | +2.63% | +2.57% |
-| SI/USDT:USDT | below_1h_threshold | +0.81% | +0.75% |
-| ZRO/USDT:USDT | below_1h_threshold | +0.44% | +0.38% |
-| SSV/USDT:USDT | below_1h_threshold | +0.28% | +0.22% |
-| ZEC/USDT:USDT | below_1h_threshold | +0.28% | +0.21% |
+| INIT/USDT:USDT | below_1h_threshold | +3.41% | +3.34% |
+| MANTRA/USDT:USDT | below_1h_threshold | +1.32% | +1.25% |
+| SYRUP/USDT:USDT | below_1h_threshold | +0.80% | +0.73% |
+| ZRO/USDT:USDT | below_1h_threshold | +0.75% | +0.67% |
+| SOXL/USDT:USDT | below_1h_threshold | +0.51% | +0.44% |
 
 ## 7. 次に見るべき不足
 
