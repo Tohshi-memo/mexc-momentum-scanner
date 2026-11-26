@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-26T21:36:25.079749+00:00
+- generated_at: 2026-11-26T21:41:27.874736+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19732**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-26T21:36:13.105351+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.30% price=60920.5
+- 更新: 2026-11-26T21:41:13.970101+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.24% price=60886.0
 - Funnel: target 1097 → liquid 120 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.2 >= 65=1
+- Strict後reject: 4h RSI 67.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| INIT/USDT:USDT | +10.80% | $9,288,655.32 |
-| NES/USDT:USDT | +10.05% | $1,354,463.82 |
-| BULLA/USDT:USDT | +8.93% | $12,012,042.70 |
-| AKE/USDT:USDT | +8.10% | $10,860,355.38 |
-| MANTRA/USDT:USDT | +5.11% | $3,210,478.49 |
+| INIT/USDT:USDT | +11.63% | $9,331,079.46 |
+| BULLA/USDT:USDT | +9.95% | $12,088,562.26 |
+| NES/USDT:USDT | +9.80% | $1,354,825.84 |
+| AKE/USDT:USDT | +8.02% | $10,867,653.44 |
+| ZRO/USDT:USDT | +5.11% | $2,354,287.42 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MANTRA/USDT:USDT | below_1h_threshold | +4.21% | +3.91% |
-| SSV/USDT:USDT | below_1h_threshold | +2.30% | +2.00% |
-| INIT/USDT:USDT | below_1h_threshold | +2.15% | +1.85% |
-| BIGTIME/USDT:USDT | below_1h_threshold | +1.63% | +1.33% |
-| SKY/USDT:USDT | below_1h_threshold | +1.51% | +1.21% |
+| MANTRA/USDT:USDT | below_1h_threshold | +3.92% | +3.68% |
+| INIT/USDT:USDT | below_1h_threshold | +3.19% | +2.95% |
+| SSV/USDT:USDT | below_1h_threshold | +2.37% | +2.13% |
+| BIGTIME/USDT:USDT | below_1h_threshold | +1.68% | +1.44% |
+| SKY/USDT:USDT | below_1h_threshold | +1.66% | +1.42% |
 
 ## 7. 次に見るべき不足
 
