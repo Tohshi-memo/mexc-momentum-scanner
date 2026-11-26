@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-25T23:56:27.043161+00:00
+- generated_at: 2026-11-26T00:01:23.958645+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19653**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-25T23:56:15.370498+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.70% price=60510.0
-- Funnel: target 1097 → liquid 152 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.4 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-26T00:01:10.258055+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=60430.0
+- Funnel: target 1097 → liquid 152 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BULLA/USDT:USDT | +31.76% | $1,348,200.11 |
-| SOXL/USDT:USDT | +26.07% | $1,896,278,761.04 |
-| MANTRA/USDT:USDT | +23.99% | $3,857,227.59 |
-| GUA/USDT:USDT | +19.91% | $1,394,382.94 |
-| SNXX/USDT:USDT | +19.37% | $35,349,796.09 |
+| BULLA/USDT:USDT | +32.20% | $1,331,186.77 |
+| SOXL/USDT:USDT | +26.22% | $1,894,018,147.31 |
+| MANTRA/USDT:USDT | +21.70% | $3,874,950.43 |
+| SNXX/USDT:USDT | +19.77% | $34,166,418.32 |
+| MVLL/USDT:USDT | +19.14% | $5,162,377.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MMT/USDT:USDT | below_1h_threshold | +2.38% | +1.68% |
-| ZEC/USDT:USDT | below_1h_threshold | +2.34% | +1.64% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.97% | +1.28% |
-| NVDL/USDT:USDT | below_1h_threshold | +1.93% | +1.24% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +1.92% | +1.22% |
+| IRENSTOCK/USDT:USDT | below_1h_threshold | +2.01% | +2.01% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.78% | +1.78% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.43% | +1.43% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +1.35% | +1.35% |
+| RAM/USDT:USDT | below_1h_threshold | +1.16% | +1.15% |
 
 ## 7. 次に見るべき不足
 
