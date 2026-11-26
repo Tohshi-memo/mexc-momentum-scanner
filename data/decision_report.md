@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-26T00:41:22.823955+00:00
+- generated_at: 2026-11-26T00:46:21.006265+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19659**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-26T00:41:09.326734+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.44% price=60694.4
+- 更新: 2026-11-26T00:46:07.444645+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.27% price=60590.1
 - Funnel: target 1097 → liquid 154 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BULLA/USDT:USDT | +33.54% | $1,364,570.76 |
-| SOXL/USDT:USDT | +30.70% | $1,901,423,764.31 |
-| MANTRA/USDT:USDT | +25.60% | $4,015,135.73 |
-| SNXX/USDT:USDT | +24.65% | $34,200,990.70 |
-| MVLL/USDT:USDT | +23.09% | $5,172,198.13 |
+| BULLA/USDT:USDT | +33.69% | $1,365,530.89 |
+| SOXL/USDT:USDT | +29.89% | $1,903,834,523.49 |
+| MANTRA/USDT:USDT | +26.13% | $4,019,175.12 |
+| SNXX/USDT:USDT | +24.25% | $34,418,217.19 |
+| MVLL/USDT:USDT | +22.69% | $5,173,016.09 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JCT/USDT:USDT | below_1h_threshold | +4.28% | +3.84% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +4.11% | +3.67% |
-| MANTRA/USDT:USDT | below_1h_threshold | +2.59% | +2.15% |
-| KOR/USDT:USDT | below_1h_threshold | +2.08% | +1.64% |
-| VVV/USDT:USDT | below_1h_threshold | +2.07% | +1.63% |
+| JCT/USDT:USDT | below_1h_threshold | +3.80% | +3.53% |
+| VVV/USDT:USDT | below_1h_threshold | +3.11% | +2.85% |
+| MANTRA/USDT:USDT | below_1h_threshold | +3.03% | +2.76% |
+| IRENSTOCK/USDT:USDT | below_1h_threshold | +2.01% | +1.74% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.78% | +1.51% |
 
 ## 7. 次に見るべき不足
 
