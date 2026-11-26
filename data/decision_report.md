@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-26T00:01:23.958645+00:00
+- generated_at: 2026-11-26T00:06:12.186895+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19653**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-26T00:01:10.258055+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=60430.0
+- 更新: 2026-11-26T00:06:02.629702+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=60383.3
 - Funnel: target 1097 → liquid 152 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BULLA/USDT:USDT | +32.20% | $1,331,186.77 |
-| SOXL/USDT:USDT | +26.22% | $1,894,018,147.31 |
-| MANTRA/USDT:USDT | +21.70% | $3,874,950.43 |
-| SNXX/USDT:USDT | +19.77% | $34,166,418.32 |
-| MVLL/USDT:USDT | +19.14% | $5,162,377.59 |
+| BULLA/USDT:USDT | +33.72% | $1,339,646.96 |
+| MANTRA/USDT:USDT | +26.32% | $3,902,071.25 |
+| SOXL/USDT:USDT | +26.22% | $1,894,595,431.70 |
+| SNXX/USDT:USDT | +19.61% | $34,167,298.86 |
+| MVLL/USDT:USDT | +19.12% | $5,163,270.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IRENSTOCK/USDT:USDT | below_1h_threshold | +2.01% | +2.01% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.78% | +1.78% |
-| SNXX/USDT:USDT | below_1h_threshold | +1.43% | +1.43% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +1.35% | +1.35% |
-| RAM/USDT:USDT | below_1h_threshold | +1.16% | +1.15% |
+| MANTRA/USDT:USDT | below_1h_threshold | +3.96% | +4.04% |
+| IRENSTOCK/USDT:USDT | below_1h_threshold | +2.01% | +2.08% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.78% | +1.85% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.43% | +1.50% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +1.35% | +1.43% |
 
 ## 7. 次に見るべき不足
 
