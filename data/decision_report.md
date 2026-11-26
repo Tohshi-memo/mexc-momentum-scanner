@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-26T23:51:21.455443+00:00
+- generated_at: 2026-11-26T23:56:21.542294+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19738**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7896件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7897件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000202 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-26T23:51:07.726945+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=60494.0
-- Funnel: target 1097 → liquid 119 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-26T23:56:08.013353+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=60541.0
+- Funnel: target 1097 → liquid 119 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BULLA/USDT:USDT | +31.40% | $13,182,000.41 |
-| NES/USDT:USDT | +11.31% | $1,146,391.26 |
-| INIT/USDT:USDT | +8.93% | $9,968,828.42 |
-| AKE/USDT:USDT | +8.60% | $11,336,116.24 |
-| BLUR/USDT:USDT | +5.78% | $1,096,659.30 |
+| BULLA/USDT:USDT | +27.80% | $13,198,934.20 |
+| NES/USDT:USDT | +11.07% | $1,146,705.62 |
+| INIT/USDT:USDT | +8.69% | $9,980,189.40 |
+| AKE/USDT:USDT | +8.02% | $11,348,186.25 |
+| BLUR/USDT:USDT | +5.54% | $1,097,830.76 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +3.57% | +3.62% |
-| AKE/USDT:USDT | below_1h_threshold | +2.09% | +2.14% |
-| ZRO/USDT:USDT | below_1h_threshold | +1.00% | +1.05% |
-| SQQQ/USDT:USDT | below_1h_threshold | +0.70% | +0.75% |
-| BULLA/USDT:USDT | below_1h_threshold | +0.68% | +0.73% |
+| SOXS/USDT:USDT | below_1h_threshold | +3.57% | +3.54% |
+| AKE/USDT:USDT | below_1h_threshold | +1.55% | +1.52% |
+| SYRUP/USDT:USDT | below_1h_threshold | +0.95% | +0.92% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +0.74% | +0.71% |
+| SQQQ/USDT:USDT | below_1h_threshold | +0.70% | +0.67% |
 
 ## 7. 次に見るべき不足
 
