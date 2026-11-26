@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-26T09:06:37.333059+00:00
+- generated_at: 2026-11-26T09:11:20.993429+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19681**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-26T09:06:20.251732+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=60906.0
-- Funnel: target 1097 → liquid 150 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.2 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-26T09:11:11.607709+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=60806.6
+- Funnel: target 1097 → liquid 150 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BULLA/USDT:USDT | +59.74% | $2,562,610.31 |
-| SI/USDT:USDT | +50.57% | $1,446,608.78 |
-| KOR/USDT:USDT | +43.05% | $1,869,086.58 |
-| SOXL/USDT:USDT | +30.35% | $1,710,214,529.07 |
-| SSV/USDT:USDT | +28.60% | $1,909,115.77 |
+| BULLA/USDT:USDT | +60.14% | $2,577,030.30 |
+| SI/USDT:USDT | +53.33% | $1,448,080.82 |
+| KOR/USDT:USDT | +38.92% | $1,874,823.20 |
+| SOXL/USDT:USDT | +29.65% | $1,710,318,786.87 |
+| SSV/USDT:USDT | +27.99% | $1,915,747.35 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SSV/USDT:USDT | below_1h_threshold | +1.60% | +1.58% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.60% | +1.58% |
-| SNXX/USDT:USDT | below_1h_threshold | +1.45% | +1.43% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +1.11% | +1.09% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +0.86% | +0.84% |
+| KOR/USDT:USDT | below_1h_threshold | +2.45% | +2.59% |
+| SI/USDT:USDT | below_1h_threshold | +1.99% | +2.13% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +1.69% | +1.83% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.60% | +1.74% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.45% | +1.59% |
 
 ## 7. 次に見るべき不足
 
