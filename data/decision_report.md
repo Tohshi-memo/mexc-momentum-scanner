@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-27T13:21:22.680722+00:00
+- generated_at: 2026-11-27T13:26:14.322562+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19775**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7935件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7936件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000185 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-27T13:21:11.057664+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.52% price=61285.0
+- 更新: 2026-11-27T13:26:05.244271+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.26% price=61447.1
 - Funnel: target 1101 → liquid 127 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.2 >= 65=1
+- Strict後reject: 4h RSI 72.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +80.14% | $3,073,531.92 |
-| BULLA/USDT:USDT | +53.94% | $13,623,233.66 |
-| HAEDAL/USDT:USDT | +36.23% | $2,086,794.28 |
-| PONS/USDT:USDT | +24.57% | $2,586,326.27 |
-| LISTA/USDT:USDT | +20.65% | $3,873,707.27 |
+| PORTAL/USDT:USDT | +76.62% | $3,123,048.67 |
+| BULLA/USDT:USDT | +51.68% | $13,635,917.39 |
+| HAEDAL/USDT:USDT | +33.79% | $2,094,978.62 |
+| PONS/USDT:USDT | +25.82% | $2,628,656.87 |
+| LISTA/USDT:USDT | +22.36% | $3,890,766.85 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +3.63% | +4.15% |
-| SNXX/USDT:USDT | below_1h_threshold | +1.89% | +2.42% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.78% | +2.31% |
-| HAEDAL/USDT:USDT | below_1h_threshold | +1.78% | +2.30% |
-| BULLA/USDT:USDT | below_1h_threshold | +1.58% | +2.10% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.89% | +2.15% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.78% | +2.04% |
+| KORU/USDT:USDT | below_1h_threshold | +1.43% | +1.69% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +1.23% | +1.49% |
+| PONS/USDT:USDT | below_1h_threshold | +1.10% | +1.36% |
 
 ## 7. 次に見るべき不足
 
