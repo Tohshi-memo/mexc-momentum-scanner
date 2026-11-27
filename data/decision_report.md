@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-27T11:06:21.442651+00:00
+- generated_at: 2026-11-27T11:11:19.638853+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19769**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-27T11:06:07.964692+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.22% price=61501.1
+- 更新: 2026-11-27T11:11:09.558567+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=61572.2
 - Funnel: target 1098 → liquid 127 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +70.37% | $1,144,931.59 |
-| BULLA/USDT:USDT | +53.35% | $14,691,338.61 |
-| HAEDAL/USDT:USDT | +34.90% | $1,759,723.21 |
-| PONS/USDT:USDT | +22.28% | $2,005,054.95 |
-| LISTA/USDT:USDT | +16.00% | $3,466,843.19 |
+| PORTAL/USDT:USDT | +69.57% | $1,212,292.49 |
+| BULLA/USDT:USDT | +47.53% | $14,765,237.01 |
+| HAEDAL/USDT:USDT | +35.29% | $1,763,709.79 |
+| PONS/USDT:USDT | +21.14% | $2,031,286.97 |
+| LISTA/USDT:USDT | +18.07% | $3,497,492.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNXX/USDT:USDT | below_1h_threshold | +2.87% | +3.09% |
-| MUU/USDT:USDT | below_1h_threshold | +2.47% | +2.69% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.65% | +1.87% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.61% | +1.82% |
-| KORU/USDT:USDT | below_1h_threshold | +1.32% | +1.53% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.87% | +2.97% |
+| MUU/USDT:USDT | below_1h_threshold | +2.47% | +2.57% |
+| LISTA/USDT:USDT | below_1h_threshold | +1.66% | +1.76% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.65% | +1.75% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.61% | +1.71% |
 
 ## 7. 次に見るべき不足
 
