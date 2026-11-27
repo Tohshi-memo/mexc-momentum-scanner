@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-27T10:06:16.838007+00:00
+- generated_at: 2026-11-27T10:11:11.196482+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19769**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-27T10:06:03.151667+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=61621.4
+- 更新: 2026-11-27T10:11:02.054670+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=61652.0
 - Funnel: target 1098 → liquid 125 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BULLA/USDT:USDT | +55.24% | $15,015,541.97 |
-| HAEDAL/USDT:USDT | +36.06% | $1,711,212.73 |
-| PONS/USDT:USDT | +23.42% | $1,803,791.10 |
-| LISTA/USDT:USDT | +20.88% | $3,265,578.99 |
-| ZHIPUSTOCK/USDT:USDT | +14.36% | $5,797,031.32 |
+| BULLA/USDT:USDT | +54.21% | $15,075,942.03 |
+| HAEDAL/USDT:USDT | +35.40% | $1,719,242.16 |
+| LISTA/USDT:USDT | +25.43% | $3,310,516.47 |
+| PONS/USDT:USDT | +23.42% | $1,853,224.47 |
+| VELVET/USDT:USDT | +14.49% | $1,688,498.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FET/USDT:USDT | below_1h_threshold | +0.63% | +0.59% |
-| SNXX/USDT:USDT | below_1h_threshold | +0.58% | +0.53% |
-| JUP/USDT:USDT | below_1h_threshold | +0.28% | +0.24% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +0.25% | +0.20% |
-| BEAT/USDT:USDT | below_1h_threshold | +0.18% | +0.14% |
+| LISTA/USDT:USDT | below_1h_threshold | +3.30% | +3.21% |
+| SNXX/USDT:USDT | below_1h_threshold | +0.58% | +0.48% |
+| FET/USDT:USDT | below_1h_threshold | +0.47% | +0.38% |
+| LIT/USDT:USDT | below_1h_threshold | +0.42% | +0.33% |
+| CFX/USDT:USDT | below_1h_threshold | +0.35% | +0.26% |
 
 ## 7. 次に見るべき不足
 
