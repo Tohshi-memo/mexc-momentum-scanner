@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-27T19:11:18.362815+00:00
+- generated_at: 2026-11-27T19:16:15.382255+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19801**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-27T19:11:06.858168+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=59823.7
+- 更新: 2026-11-27T19:16:04.167158+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=59829.9
 - Funnel: target 1101 → liquid 139 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +42.40% | $9,837,759.16 |
-| VELVET/USDT:USDT | +12.29% | $4,262,195.39 |
-| PIEVERSE/USDT:USDT | +11.84% | $6,705,327.67 |
-| SSV/USDT:USDT | +6.15% | $1,969,351.03 |
-| BTW/USDT:USDT | +6.15% | $7,321,858.77 |
+| PORTAL/USDT:USDT | +42.59% | $9,880,773.29 |
+| PIEVERSE/USDT:USDT | +12.25% | $6,730,857.91 |
+| VELVET/USDT:USDT | +7.97% | $4,333,969.56 |
+| SSV/USDT:USDT | +5.27% | $1,970,006.10 |
+| BTW/USDT:USDT | +5.01% | $7,371,993.82 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EVAA/USDT:USDT | below_1h_threshold | +0.90% | +1.01% |
-| PEPE/USDT:USDT | below_1h_threshold | +0.53% | +0.64% |
-| CRV/USDT:USDT | below_1h_threshold | +0.46% | +0.57% |
-| INJ/USDT:USDT | below_1h_threshold | +0.44% | +0.56% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +0.39% | +0.50% |
+| CRV/USDT:USDT | below_1h_threshold | +0.86% | +0.96% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +0.73% | +0.84% |
+| RIVER/USDT:USDT | below_1h_threshold | +0.63% | +0.74% |
+| PEPE/USDT:USDT | below_1h_threshold | +0.61% | +0.72% |
+| INJ/USDT:USDT | below_1h_threshold | +0.52% | +0.62% |
 
 ## 7. 次に見るべき不足
 
