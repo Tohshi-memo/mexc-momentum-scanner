@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-27T11:26:33.974374+00:00
+- generated_at: 2026-11-27T11:31:16.594392+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19771**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-27T11:26:17.292386+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=61636.6
-- Funnel: target 1098 → liquid 127 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.9 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-27T11:31:06.496293+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=61645.8
+- Funnel: target 1098 → liquid 127 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +74.05% | $1,359,981.99 |
-| BULLA/USDT:USDT | +64.01% | $15,054,922.17 |
-| HAEDAL/USDT:USDT | +33.79% | $1,798,363.31 |
-| PONS/USDT:USDT | +20.22% | $2,126,024.09 |
-| LISTA/USDT:USDT | +19.68% | $3,600,410.70 |
+| PORTAL/USDT:USDT | +76.54% | $1,445,870.32 |
+| BULLA/USDT:USDT | +54.96% | $15,137,898.79 |
+| HAEDAL/USDT:USDT | +36.01% | $1,801,514.56 |
+| PONS/USDT:USDT | +20.91% | $2,129,078.88 |
+| LISTA/USDT:USDT | +20.27% | $3,608,384.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LISTA/USDT:USDT | below_1h_threshold | +3.38% | +3.38% |
-| SNXX/USDT:USDT | below_1h_threshold | +2.87% | +2.87% |
-| PORTAL/USDT:USDT | below_1h_threshold | +2.60% | +2.59% |
-| LUNC/USDT:USDT | below_1h_threshold | +2.55% | +2.55% |
-| MUU/USDT:USDT | below_1h_threshold | +2.47% | +2.47% |
+| LISTA/USDT:USDT | below_1h_threshold | +3.89% | +3.87% |
+| PORTAL/USDT:USDT | below_1h_threshold | +3.87% | +3.85% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.87% | +2.85% |
+| LUNC/USDT:USDT | below_1h_threshold | +2.49% | +2.47% |
+| MUU/USDT:USDT | below_1h_threshold | +2.47% | +2.45% |
 
 ## 7. 次に見るべき不足
 
