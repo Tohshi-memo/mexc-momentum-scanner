@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-27T06:56:30.023288+00:00
+- generated_at: 2026-11-27T07:01:22.491962+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19766**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-27T06:56:13.841350+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=61715.0
-- Funnel: target 1098 → liquid 122 → pre 50 → checked 50 → surge 3 → strict 2
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.2 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-11-27T07:01:09.596684+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=61615.2
+- Funnel: target 1098 → liquid 120 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BULLA/USDT:USDT | +57.95% | $15,890,067.42 |
-| LISTA/USDT:USDT | +19.64% | $2,384,274.54 |
-| ZHIPUSTOCK/USDT:USDT | +18.50% | $5,994,607.75 |
-| VELVET/USDT:USDT | +15.20% | $1,504,909.50 |
-| BIGTIME/USDT:USDT | +14.63% | $3,041,314.62 |
+| BULLA/USDT:USDT | +56.03% | $15,652,658.85 |
+| LISTA/USDT:USDT | +17.88% | $2,343,566.03 |
+| ZHIPUSTOCK/USDT:USDT | +17.49% | $5,669,904.65 |
+| VELVET/USDT:USDT | +15.15% | $1,483,826.64 |
+| BIGTIME/USDT:USDT | +13.95% | $2,955,565.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXL/USDT:USDT | below_1h_threshold | +3.59% | +3.65% |
-| VELVET/USDT:USDT | below_1h_threshold | +3.22% | +3.28% |
-| ANTHROPIC/USDT:USDT | below_1h_threshold | +2.59% | +2.64% |
-| KORU/USDT:USDT | below_1h_threshold | +2.21% | +2.27% |
-| SNXX/USDT:USDT | below_1h_threshold | +2.21% | +2.27% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +2.20% | +2.31% |
+| WLD/USDT:USDT | below_1h_threshold | +0.40% | +0.50% |
+| ANTHROPIC/USDT:USDT | below_1h_threshold | +0.23% | +0.33% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.13% | +0.24% |
+| ATOM/USDT:USDT | below_1h_threshold | +0.08% | +0.19% |
 
 ## 7. 次に見るべき不足
 
