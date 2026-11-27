@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-27T17:51:28.524681+00:00
+- generated_at: 2026-11-27T17:56:14.064448+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19796**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-27T17:51:16.381100+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.48% price=59640.2
-- Funnel: target 1101 → liquid 143 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.3 >= 65=1, 4h RSI 78.7 >= 65=1
+- 更新: 2026-11-27T17:56:04.913288+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.38% price=59700.1
+- Funnel: target 1101 → liquid 144 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 80.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +41.67% | $8,540,409.74 |
-| VELVET/USDT:USDT | +9.45% | $3,710,453.86 |
-| PIEVERSE/USDT:USDT | +5.09% | $6,121,270.24 |
-| SSV/USDT:USDT | +4.82% | $2,214,031.98 |
-| BTW/USDT:USDT | +3.48% | $7,247,717.49 |
+| PORTAL/USDT:USDT | +43.02% | $8,593,146.71 |
+| VELVET/USDT:USDT | +10.24% | $3,734,680.35 |
+| PIEVERSE/USDT:USDT | +5.73% | $6,133,855.07 |
+| MRNASTOCK/USDT:USDT | +3.81% | $1,008,440.58 |
+| SSV/USDT:USDT | +3.60% | $2,217,817.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EVAA/USDT:USDT | below_1h_threshold | +3.92% | +4.40% |
-| CRWVSTOCK/USDT:USDT | below_1h_threshold | +2.53% | +3.02% |
-| ANTHROPIC/USDT:USDT | below_1h_threshold | +1.99% | +2.48% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.76% | +2.24% |
-| AAOISTOCK/USDT:USDT | below_1h_threshold | +1.55% | +2.03% |
+| BTW/USDT:USDT | below_1h_threshold | +4.96% | +5.35% |
+| EVAA/USDT:USDT | below_1h_threshold | +3.76% | +4.14% |
+| CRWVSTOCK/USDT:USDT | below_1h_threshold | +2.53% | +2.92% |
+| ANTHROPIC/USDT:USDT | below_1h_threshold | +1.99% | +2.38% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +1.94% | +2.33% |
 
 ## 7. 次に見るべき不足
 
