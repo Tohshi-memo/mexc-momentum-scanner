@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-11-27T00:01:15.892838+00:00
+- generated_at: 2026-11-27T00:06:13.548624+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **19738**
+- closed shadow trades: **19739**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +1.40% / filled 20/20。**
-- 全期間 MARKET基準: n=19738, expectancy=+0.02%
+- 全期間 MARKET基準: n=19739, expectancy=+0.02%
 - 直近20件 MARKET基準: n=20, expectancy=+1.40%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -22,10 +22,10 @@
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | MARKET | 20/20 | 100.0% | +1.40% | **+1.40%** |
+| LIMIT_ATR | 11/20 | 55.0% | +1.55% | **+0.85%** |
 | LIMIT_8PCT | 2/20 | 10.0% | +8.00% | **+0.80%** |
 | LIMIT_10PCT | 2/20 | 10.0% | +8.00% | **+0.80%** |
 | LIMIT_9PCT | 2/20 | 10.0% | +8.00% | **+0.80%** |
-| LIMIT_ATR | 11/20 | 55.0% | +1.43% | **+0.79%** |
 
 ### シャドウ上位 LONG
 
@@ -47,53 +47,53 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,948.16** / 初期 $100.00 (+1848.16%)
-- 確定: 7639件 (Win 2199 / Loss 2459 / Flat 2981) / skip 8660件
+- 確定: 7639件 (Win 2199 / Loss 2459 / Flat 2981) / skip 8661件
 - 成長率目線: 平均log +0.000389 / 幾何平均 +0.039% per trade / maxDD +9.04%
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: BULLA/USDT:USDT `MARKET` SL_HIT account -0.50% 残高後 $1,948.16
 
 ## 4. Robust Adaptive DryRun ($100)
 
-- 残高: **$466.23** / 初期 $100.00 (+366.23%)
-- 確定: 5262件 (Win 1402 / Loss 1129 / Flat 2731) / skip 7887件
+- 残高: **$466.56** / 初期 $100.00 (+366.56%)
+- 確定: 5263件 (Win 1403 / Loss 1129 / Flat 2731) / skip 7887件
 - 成長率目線: 平均log +0.000293 / 幾何平均 +0.029% per trade / maxDD +4.29%
-- 次の候補: `LIMIT_5PCT` (selected_by_robust_growth_score) / robust_score -0.0058 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: SSV/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $466.23
+- 次の候補: `LIMIT_5PCT` (selected_by_robust_growth_score) / robust_score -0.0034 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 最新: SI/USDT:USDT `LIMIT_5PCT` SL_HIT account +0.07% 残高後 $466.56
 
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
 - 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7897件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000202 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000198 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-27T00:01:02.311567+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=60551.6
-- Funnel: target 1097 → liquid 118 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-11-27T00:06:01.960377+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=60601.8
+- Funnel: target 1097 → liquid 119 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BULLA/USDT:USDT | +30.49% | $13,179,195.45 |
-| NES/USDT:USDT | +11.36% | $1,086,378.45 |
-| INIT/USDT:USDT | +8.82% | $9,976,446.43 |
-| AKE/USDT:USDT | +7.67% | $11,254,299.61 |
-| BLUR/USDT:USDT | +5.39% | $1,088,214.80 |
+| BULLA/USDT:USDT | +30.42% | $13,206,888.12 |
+| NES/USDT:USDT | +10.50% | $1,086,829.86 |
+| VELVET/USDT:USDT | +8.58% | $1,004,112.03 |
+| INIT/USDT:USDT | +7.00% | $9,982,581.25 |
+| AKE/USDT:USDT | +6.59% | $11,296,655.16 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BULLA/USDT:USDT | below_1h_threshold | +1.88% | +1.87% |
-| MANTRA/USDT:USDT | below_1h_threshold | +0.96% | +0.95% |
-| BLUR/USDT:USDT | below_1h_threshold | +0.41% | +0.40% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.32% | +0.31% |
-| INIT/USDT:USDT | below_1h_threshold | +0.30% | +0.28% |
+| SI/USDT:USDT | below_1h_threshold | +3.79% | +3.69% |
+| BULLA/USDT:USDT | below_1h_threshold | +2.45% | +2.36% |
+| ZRO/USDT:USDT | below_1h_threshold | +0.83% | +0.74% |
+| BLUR/USDT:USDT | below_1h_threshold | +0.79% | +0.70% |
+| INJ/USDT:USDT | below_1h_threshold | +0.73% | +0.63% |
 
 ## 7. 次に見るべき不足
 
