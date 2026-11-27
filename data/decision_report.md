@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-27T13:16:17.169845+00:00
+- generated_at: 2026-11-27T13:21:22.680722+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19775**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-27T13:16:06.411251+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.27% price=61442.0
+- 更新: 2026-11-27T13:21:11.057664+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.52% price=61285.0
 - Funnel: target 1101 → liquid 127 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.0 >= 65=1
+- Strict後reject: 4h RSI 78.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +81.74% | $3,044,817.09 |
-| BULLA/USDT:USDT | +53.14% | $13,615,933.79 |
-| HAEDAL/USDT:USDT | +34.40% | $2,069,223.71 |
-| PONS/USDT:USDT | +23.88% | $2,577,836.47 |
-| LISTA/USDT:USDT | +20.64% | $3,857,546.62 |
+| PORTAL/USDT:USDT | +80.14% | $3,073,531.92 |
+| BULLA/USDT:USDT | +53.94% | $13,623,233.66 |
+| HAEDAL/USDT:USDT | +36.23% | $2,086,794.28 |
+| PONS/USDT:USDT | +24.57% | $2,586,326.27 |
+| LISTA/USDT:USDT | +20.65% | $3,873,707.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +3.84% | +4.11% |
-| SNXX/USDT:USDT | below_1h_threshold | +1.89% | +2.16% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.78% | +2.05% |
-| KORU/USDT:USDT | below_1h_threshold | +1.43% | +1.70% |
-| BULLA/USDT:USDT | below_1h_threshold | +1.28% | +1.55% |
+| VELVET/USDT:USDT | below_1h_threshold | +3.63% | +4.15% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.89% | +2.42% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.78% | +2.31% |
+| HAEDAL/USDT:USDT | below_1h_threshold | +1.78% | +2.30% |
+| BULLA/USDT:USDT | below_1h_threshold | +1.58% | +2.10% |
 
 ## 7. 次に見るべき不足
 
