@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-27T14:21:22.439278+00:00
+- generated_at: 2026-11-27T14:26:34.166794+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19782**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-27T14:21:10.932241+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=61411.7
+- 更新: 2026-11-27T14:26:24.018404+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.16% price=61338.6
 - Funnel: target 1101 → liquid 128 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +91.59% | $3,868,489.91 |
-| BULLA/USDT:USDT | +50.91% | $12,811,323.98 |
-| HAEDAL/USDT:USDT | +32.02% | $2,124,702.05 |
-| PONS/USDT:USDT | +24.68% | $3,044,669.09 |
-| BTW/USDT:USDT | +22.28% | $5,767,214.53 |
+| PORTAL/USDT:USDT | +84.06% | $3,922,617.44 |
+| BULLA/USDT:USDT | +48.97% | $12,823,928.70 |
+| HAEDAL/USDT:USDT | +31.46% | $2,130,623.83 |
+| PONS/USDT:USDT | +24.45% | $3,051,145.32 |
+| BTW/USDT:USDT | +19.90% | $5,995,680.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +3.84% | +3.88% |
-| PORTAL/USDT:USDT | below_1h_threshold | +1.83% | +1.87% |
-| LUNC/USDT:USDT | below_1h_threshold | +1.60% | +1.64% |
-| BULLA/USDT:USDT | below_1h_threshold | +0.53% | +0.57% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +0.51% | +0.55% |
+| BTW/USDT:USDT | below_1h_threshold | +2.23% | +2.38% |
+| LUNC/USDT:USDT | below_1h_threshold | +0.91% | +1.06% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +0.51% | +0.67% |
+| BIGTIME/USDT:USDT | below_1h_threshold | +0.48% | +0.64% |
+| SILVER/USDT:USDT | below_1h_threshold | +0.16% | +0.32% |
 
 ## 7. 次に見るべき不足
 
