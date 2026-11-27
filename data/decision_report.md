@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-27T12:21:12.730759+00:00
+- generated_at: 2026-11-27T12:26:16.566018+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19774**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-27T12:21:02.879917+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=61640.3
+- 更新: 2026-11-27T12:26:05.212487+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=61578.3
 - Funnel: target 1098 → liquid 126 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +97.11% | $2,455,737.21 |
-| BULLA/USDT:USDT | +50.79% | $14,759,473.75 |
-| HAEDAL/USDT:USDT | +33.96% | $2,034,568.66 |
-| PONS/USDT:USDT | +25.14% | $2,345,638.54 |
-| LISTA/USDT:USDT | +20.60% | $3,574,299.66 |
+| PORTAL/USDT:USDT | +96.71% | $2,538,723.49 |
+| BULLA/USDT:USDT | +51.50% | $14,777,242.23 |
+| HAEDAL/USDT:USDT | +36.06% | $2,038,885.87 |
+| PONS/USDT:USDT | +24.91% | $2,351,891.20 |
+| LISTA/USDT:USDT | +21.41% | $3,642,614.09 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PONS/USDT:USDT | below_1h_threshold | +1.86% | +1.84% |
-| PORTAL/USDT:USDT | below_1h_threshold | +1.65% | +1.63% |
-| VELVET/USDT:USDT | below_1h_threshold | +1.46% | +1.45% |
-| LISTA/USDT:USDT | below_1h_threshold | +1.46% | +1.44% |
-| ZEC/USDT:USDT | below_1h_threshold | +0.50% | +0.48% |
+| LISTA/USDT:USDT | below_1h_threshold | +2.26% | +2.35% |
+| PONS/USDT:USDT | below_1h_threshold | +1.67% | +1.76% |
+| PORTAL/USDT:USDT | below_1h_threshold | +1.40% | +1.49% |
+| VELVET/USDT:USDT | below_1h_threshold | +1.35% | +1.44% |
+| TRB/USDT:USDT | below_1h_threshold | +0.52% | +0.60% |
 
 ## 7. 次に見るべき不足
 
