@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-27T05:31:16.260053+00:00
+- generated_at: 2026-11-27T05:36:24.032093+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19761**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-27T05:31:04.486705+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.82% price=61892.5
+- 更新: 2026-11-27T05:36:11.093677+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.73% price=61839.4
 - Funnel: target 1098 → liquid 122 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BULLA/USDT:USDT | +50.79% | $15,680,299.23 |
-| BIGTIME/USDT:USDT | +19.56% | $2,877,430.77 |
-| SNXX/USDT:USDT | +15.60% | $4,240,399.16 |
-| KORU/USDT:USDT | +12.19% | $22,462,865.24 |
-| ZHIPUSTOCK/USDT:USDT | +12.11% | $4,869,943.51 |
+| BULLA/USDT:USDT | +50.79% | $15,696,671.19 |
+| BIGTIME/USDT:USDT | +17.84% | $2,896,740.00 |
+| SNXX/USDT:USDT | +16.19% | $4,246,426.09 |
+| KORU/USDT:USDT | +13.14% | $22,781,007.78 |
+| SOXL/USDT:USDT | +12.14% | $204,299,737.20 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LISTA/USDT:USDT | below_1h_threshold | +2.36% | +1.54% |
-| SILVER/USDT:USDT | below_1h_threshold | +2.14% | +1.32% |
-| COPPER/USDT:USDT | below_1h_threshold | +1.95% | +1.13% |
-| XPT/USDT:USDT | below_1h_threshold | +1.39% | +0.58% |
-| XPD/USDT:USDT | below_1h_threshold | +1.19% | +0.37% |
+| LISTA/USDT:USDT | below_1h_threshold | +3.05% | +2.32% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.79% | +1.06% |
+| SILVER/USDT:USDT | below_1h_threshold | +1.77% | +1.04% |
+| COPPER/USDT:USDT | below_1h_threshold | +1.58% | +0.85% |
+| XPD/USDT:USDT | below_1h_threshold | +1.35% | +0.62% |
 
 ## 7. 次に見るべき不足
 
