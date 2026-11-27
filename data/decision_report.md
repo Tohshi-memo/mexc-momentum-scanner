@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-27T15:41:30.738215+00:00
+- generated_at: 2026-11-27T15:46:23.334248+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19785**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-27T15:41:18.630178+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +1.38% price=59994.7
-- Funnel: target 1101 → liquid 141 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 94.2 >= 65=1
+- 更新: 2026-11-27T15:46:08.988604+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +1.57% price=60109.9
+- Funnel: target 1101 → liquid 142 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 94.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +109.28% | $4,938,114.66 |
-| BULLA/USDT:USDT | +51.57% | $12,153,410.36 |
-| HAEDAL/USDT:USDT | +31.63% | $2,184,110.11 |
-| SNXX/USDT:USDT | +20.59% | $20,188,392.22 |
-| PONS/USDT:USDT | +20.11% | $3,728,894.26 |
+| PORTAL/USDT:USDT | +108.72% | $5,010,089.99 |
+| BULLA/USDT:USDT | +51.04% | $12,167,516.27 |
+| HAEDAL/USDT:USDT | +32.29% | $2,187,768.54 |
+| SNXX/USDT:USDT | +23.08% | $20,663,841.76 |
+| PONS/USDT:USDT | +21.37% | $3,744,110.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +4.84% | +3.46% |
-| PONS/USDT:USDT | below_1h_threshold | +3.65% | +2.27% |
-| ZEC/USDT:USDT | below_1h_threshold | +2.83% | +1.45% |
-| FET/USDT:USDT | below_1h_threshold | +2.26% | +0.88% |
-| ENA/USDT:USDT | below_1h_threshold | +2.26% | +0.88% |
+| VELVET/USDT:USDT | below_relative_strength | +5.50% | +3.92% |
+| PONS/USDT:USDT | below_1h_threshold | +4.33% | +2.76% |
+| ZEC/USDT:USDT | below_1h_threshold | +2.68% | +1.10% |
+| ENA/USDT:USDT | below_1h_threshold | +2.29% | +0.71% |
+| FET/USDT:USDT | below_1h_threshold | +2.10% | +0.52% |
 
 ## 7. 次に見るべき不足
 
