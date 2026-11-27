@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-27T16:41:43.071472+00:00
+- generated_at: 2026-11-27T16:46:37.190918+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19791**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-27T16:41:23.142617+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.44% price=60347.5
-- Funnel: target 1101 → liquid 142 → pre 50 → checked 50 → surge 5 → strict 2
-- Surge前reject: below_1h_threshold=43, below_relative_strength=2, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 96.2 >= 65=1, 4h RSI 79.5 >= 65=1, 4h RSI 76.8 >= 65=1
+- 更新: 2026-11-27T16:46:19.717621+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.34% price=60290.0
+- Funnel: target 1101 → liquid 142 → pre 50 → checked 50 → surge 6 → strict 3
+- Surge前reject: below_1h_threshold=42, below_relative_strength=2, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 96.4 >= 65=1, 4h RSI 79.4 >= 65=1, 4h RSI 76.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +19.83% | $6,618,163.19 |
-| VELVET/USDT:USDT | +8.03% | $3,069,622.15 |
-| SSV/USDT:USDT | +6.68% | $2,306,399.31 |
-| PIEVERSE/USDT:USDT | +5.25% | $6,072,966.91 |
-| LISTA/USDT:USDT | +3.24% | $4,011,738.45 |
+| PORTAL/USDT:USDT | +25.32% | $6,727,734.45 |
+| VELVET/USDT:USDT | +8.38% | $3,131,871.47 |
+| SSV/USDT:USDT | +6.60% | $2,310,712.90 |
+| PIEVERSE/USDT:USDT | +5.27% | $6,107,321.73 |
+| LISTA/USDT:USDT | +3.75% | $4,021,549.81 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXL/USDT:USDT | below_relative_strength | +5.28% | +4.84% |
-| PIEVERSE/USDT:USDT | below_relative_strength | +5.25% | +4.81% |
-| ANTHROPIC/USDT:USDT | below_1h_threshold | +4.96% | +4.52% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +3.61% | +3.17% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +3.34% | +2.90% |
+| SOXL/USDT:USDT | below_relative_strength | +5.28% | +4.94% |
+| PIEVERSE/USDT:USDT | below_relative_strength | +5.27% | +4.93% |
+| ANTHROPIC/USDT:USDT | below_1h_threshold | +4.96% | +4.62% |
+| LISTA/USDT:USDT | below_1h_threshold | +3.68% | +3.33% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +3.61% | +3.26% |
 
 ## 7. 次に見るべき不足
 
