@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-27T02:41:32.150490+00:00
+- generated_at: 2026-11-27T02:46:31.198910+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19750**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-27T02:41:17.834976+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +1.47% price=61600.0
-- Funnel: target 1097 → liquid 121 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=45, below_relative_strength=2, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.5 >= 65=1, 4h RSI 74.0 >= 65=1
+- 更新: 2026-11-27T02:46:16.422790+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +1.09% price=61370.5
+- Funnel: target 1097 → liquid 122 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=46, below_relative_strength=2, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 80.7 >= 65=1, 4h RSI 74.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BULLA/USDT:USDT | +87.94% | $14,606,649.21 |
-| BIGTIME/USDT:USDT | +26.51% | $2,782,530.28 |
-| MANTRA/USDT:USDT | +13.23% | $2,319,436.81 |
-| AKE/USDT:USDT | +12.97% | $9,314,686.41 |
-| VELVET/USDT:USDT | +11.28% | $1,168,575.62 |
+| BULLA/USDT:USDT | +88.69% | $14,651,724.69 |
+| BIGTIME/USDT:USDT | +28.26% | $2,824,960.82 |
+| AKE/USDT:USDT | +12.68% | $9,341,758.53 |
+| VELVET/USDT:USDT | +10.72% | $1,171,592.91 |
+| MANTRA/USDT:USDT | +9.65% | $2,327,896.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZEC/USDT:USDT | below_relative_strength | +5.77% | +4.31% |
-| SNXX/USDT:USDT | below_relative_strength | +5.17% | +3.71% |
-| AKE/USDT:USDT | below_1h_threshold | +4.31% | +2.84% |
-| UNI/USDT:USDT | below_1h_threshold | +4.04% | +2.57% |
-| SOXL/USDT:USDT | below_1h_threshold | +3.83% | +2.36% |
+| ZEC/USDT:USDT | below_relative_strength | +5.23% | +4.14% |
+| SNXX/USDT:USDT | below_relative_strength | +5.17% | +4.08% |
+| AKE/USDT:USDT | below_1h_threshold | +4.17% | +3.09% |
+| SOXL/USDT:USDT | below_1h_threshold | +3.83% | +2.74% |
+| MUU/USDT:USDT | below_1h_threshold | +3.81% | +2.72% |
 
 ## 7. 次に見るべき不足
 
