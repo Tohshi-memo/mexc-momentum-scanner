@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-27T01:01:23.183190+00:00
+- generated_at: 2026-11-27T01:06:28.648709+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19739**
 
@@ -39,9 +39,9 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$121.68** / 初期 $100.00 (+21.68%)
-- 確定トレード: 291件 (TP 106 / SL 176 / EXP 9)
-- 最新: AXTISTOCK/USDT:USDT EXPIRED PnL -1.62% 残高後 $121.68
+- 残高: **$121.76** / 初期 $100.00 (+21.76%)
+- 確定トレード: 292件 (TP 106 / SL 176 / EXP 10)
+- 最新: SNXX/USDT:USDT EXPIRED PnL +2.62% 残高後 $121.76
 - 最新戦略メタ: tier=S, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-27T01:01:09.715085+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=60720.0
+- 更新: 2026-11-27T01:06:17.146625+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=60716.3
 - Funnel: target 1097 → liquid 120 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BULLA/USDT:USDT | +18.36% | $13,456,546.50 |
-| NES/USDT:USDT | +10.01% | $1,047,178.53 |
-| VELVET/USDT:USDT | +9.60% | $1,043,759.33 |
-| MANTRA/USDT:USDT | +7.03% | $2,515,112.84 |
-| ZRO/USDT:USDT | +6.30% | $3,146,615.11 |
+| BULLA/USDT:USDT | +20.10% | $13,468,150.52 |
+| NES/USDT:USDT | +10.54% | $1,047,602.97 |
+| VELVET/USDT:USDT | +9.92% | $1,058,874.04 |
+| BIGTIME/USDT:USDT | +6.16% | $2,091,534.63 |
+| ZRO/USDT:USDT | +6.14% | $3,165,416.47 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
+| BIGTIME/USDT:USDT | below_1h_threshold | +2.47% | +2.39% |
+| BULLA/USDT:USDT | below_1h_threshold | +1.57% | +1.48% |
 | KORU/USDT:USDT | below_1h_threshold | +1.35% | +1.26% |
-| TQQQ/USDT:USDT | below_1h_threshold | +0.74% | +0.65% |
-| NEAR/USDT:USDT | below_1h_threshold | +0.36% | +0.27% |
-| CFX/USDT:USDT | below_1h_threshold | +0.35% | +0.26% |
-| BIGTIME/USDT:USDT | below_1h_threshold | +0.35% | +0.26% |
+| ELSA/USDT:USDT | below_1h_threshold | +0.78% | +0.69% |
+| NES/USDT:USDT | below_1h_threshold | +0.74% | +0.66% |
 
 ## 7. 次に見るべき不足
 
