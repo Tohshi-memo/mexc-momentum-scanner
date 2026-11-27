@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-27T01:46:14.983118+00:00
+- generated_at: 2026-11-27T01:51:15.270177+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19739**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-27T01:46:05.130237+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=60674.1
+- 更新: 2026-11-27T01:51:05.877938+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=60682.1
 - Funnel: target 1097 → liquid 121 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.9 >= 65=1
+- Strict後reject: 4h RSI 65.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BIGTIME/USDT:USDT | +14.81% | $2,213,315.88 |
-| BULLA/USDT:USDT | +14.67% | $13,595,473.57 |
-| NES/USDT:USDT | +11.85% | $1,061,648.96 |
-| VELVET/USDT:USDT | +11.32% | $1,106,036.32 |
-| MANTRA/USDT:USDT | +6.94% | $2,551,001.84 |
+| BULLA/USDT:USDT | +12.89% | $13,606,922.23 |
+| VELVET/USDT:USDT | +10.79% | $1,108,854.61 |
+| BIGTIME/USDT:USDT | +9.41% | $2,274,071.60 |
+| NES/USDT:USDT | +9.35% | $1,062,744.61 |
+| AKE/USDT:USDT | +7.52% | $10,407,725.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ONE/USDT:USDT | below_1h_threshold | +2.92% | +2.91% |
-| NES/USDT:USDT | below_1h_threshold | +1.94% | +1.92% |
-| SYRUP/USDT:USDT | below_1h_threshold | +1.72% | +1.71% |
-| VELVET/USDT:USDT | below_1h_threshold | +1.46% | +1.44% |
-| KORU/USDT:USDT | below_1h_threshold | +1.35% | +1.33% |
+| ONE/USDT:USDT | below_1h_threshold | +2.91% | +2.89% |
+| AKE/USDT:USDT | below_1h_threshold | +1.90% | +1.88% |
+| SILVER/USDT:USDT | below_1h_threshold | +1.61% | +1.59% |
+| SYRUP/USDT:USDT | below_1h_threshold | +1.55% | +1.53% |
+| KORU/USDT:USDT | below_1h_threshold | +1.35% | +1.32% |
 
 ## 7. 次に見るべき不足
 
