@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-27T01:36:23.881080+00:00
+- generated_at: 2026-11-27T01:41:19.180565+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19739**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7897件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7898件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000198 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-27T01:36:09.717939+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=60687.8
-- Funnel: target 1097 → liquid 121 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-27T01:41:08.926081+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=60652.5
+- Funnel: target 1097 → liquid 121 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 69.2 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NES/USDT:USDT | +11.44% | $1,059,638.99 |
-| VELVET/USDT:USDT | +10.83% | $1,095,550.97 |
-| BULLA/USDT:USDT | +10.36% | $13,556,304.28 |
-| MANTRA/USDT:USDT | +6.94% | $2,541,391.85 |
-| ZRO/USDT:USDT | +6.92% | $3,372,388.98 |
+| BULLA/USDT:USDT | +14.53% | $13,586,647.50 |
+| BIGTIME/USDT:USDT | +13.77% | $2,167,925.17 |
+| NES/USDT:USDT | +12.30% | $1,060,488.51 |
+| VELVET/USDT:USDT | +11.64% | $1,103,633.87 |
+| MANTRA/USDT:USDT | +7.86% | $2,547,622.82 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ONE/USDT:USDT | below_1h_threshold | +3.36% | +3.32% |
-| VELVET/USDT:USDT | below_1h_threshold | +1.69% | +1.66% |
-| NES/USDT:USDT | below_1h_threshold | +1.60% | +1.57% |
-| SYRUP/USDT:USDT | below_1h_threshold | +1.58% | +1.55% |
-| KORU/USDT:USDT | below_1h_threshold | +1.35% | +1.31% |
+| ONE/USDT:USDT | below_1h_threshold | +2.63% | +2.65% |
+| NES/USDT:USDT | below_1h_threshold | +2.31% | +2.33% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.09% | +2.12% |
+| SYRUP/USDT:USDT | below_1h_threshold | +1.58% | +1.61% |
+| AKE/USDT:USDT | below_1h_threshold | +1.43% | +1.45% |
 
 ## 7. 次に見るべき不足
 
