@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-27T17:26:33.055241+00:00
+- generated_at: 2026-11-27T17:31:17.438614+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19795**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-27T17:26:22.466732+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.40% price=59690.5
+- 更新: 2026-11-27T17:31:08.407336+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.56% price=59593.1
 - Funnel: target 1101 → liquid 141 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 78.4 >= 65=1
@@ -81,21 +81,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +43.21% | $8,004,606.48 |
-| VELVET/USDT:USDT | +7.06% | $3,467,821.49 |
-| PIEVERSE/USDT:USDT | +4.92% | $6,052,960.88 |
-| SSV/USDT:USDT | +4.36% | $2,200,839.53 |
-| MOVE/USDT:USDT | +3.73% | $1,439,242.88 |
+| PORTAL/USDT:USDT | +45.66% | $8,065,659.64 |
+| VELVET/USDT:USDT | +5.71% | $3,524,370.73 |
+| PIEVERSE/USDT:USDT | +4.64% | $6,065,373.71 |
+| SSV/USDT:USDT | +4.25% | $2,204,692.41 |
+| BTW/USDT:USDT | +3.58% | $7,138,828.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +4.58% | +4.98% |
-| CRWVSTOCK/USDT:USDT | below_1h_threshold | +2.53% | +2.93% |
-| ANTHROPIC/USDT:USDT | below_1h_threshold | +1.99% | +2.39% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.76% | +2.16% |
-| PORTAL/USDT:USDT | below_1h_threshold | +1.58% | +1.98% |
+| EVAA/USDT:USDT | below_1h_threshold | +4.33% | +4.89% |
+| VELVET/USDT:USDT | below_1h_threshold | +3.50% | +4.06% |
+| PORTAL/USDT:USDT | below_1h_threshold | +3.24% | +3.80% |
+| CRWVSTOCK/USDT:USDT | below_1h_threshold | +2.53% | +3.10% |
+| ANTHROPIC/USDT:USDT | below_1h_threshold | +1.99% | +2.55% |
 
 ## 7. 次に見るべき不足
 
