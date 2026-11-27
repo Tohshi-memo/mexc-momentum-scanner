@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-27T04:31:12.987395+00:00
+- generated_at: 2026-11-27T04:36:28.523721+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19759**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-27T04:31:03.897414+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=61457.6
+- 更新: 2026-11-27T04:36:18.287187+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.29% price=61571.5
 - Funnel: target 1097 → liquid 123 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BULLA/USDT:USDT | +51.09% | $15,506,903.12 |
-| BIGTIME/USDT:USDT | +22.85% | $2,999,051.28 |
-| ONE/USDT:USDT | +15.65% | $1,461,172.60 |
-| VELVET/USDT:USDT | +12.93% | $1,345,812.21 |
-| SNXX/USDT:USDT | +12.26% | $3,944,897.42 |
+| BULLA/USDT:USDT | +56.38% | $15,565,807.39 |
+| BIGTIME/USDT:USDT | +22.93% | $3,002,178.15 |
+| SNXX/USDT:USDT | +13.57% | $3,945,275.94 |
+| VELVET/USDT:USDT | +13.03% | $1,353,535.18 |
+| ONE/USDT:USDT | +12.44% | $1,479,596.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ONE/USDT:USDT | below_1h_threshold | +4.05% | +3.94% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +3.36% | +3.26% |
-| SNXX/USDT:USDT | below_1h_threshold | +2.70% | +2.59% |
-| KORU/USDT:USDT | below_1h_threshold | +2.32% | +2.21% |
-| BIGTIME/USDT:USDT | below_1h_threshold | +1.58% | +1.47% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +3.36% | +3.07% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.70% | +2.41% |
+| KORU/USDT:USDT | below_1h_threshold | +2.32% | +2.02% |
+| BIGTIME/USDT:USDT | below_1h_threshold | +1.64% | +1.35% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.54% | +1.25% |
 
 ## 7. 次に見るべき不足
 
