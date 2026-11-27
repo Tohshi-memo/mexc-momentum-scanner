@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-27T01:21:17.969083+00:00
+- generated_at: 2026-11-27T01:26:10.824183+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19739**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-27T01:21:05.239458+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=60749.5
-- Funnel: target 1097 → liquid 120 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-11-27T01:25:59.440671+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.13% price=60744.4
+- Funnel: target 1097 → liquid 121 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BULLA/USDT:USDT | +18.09% | $13,491,883.52 |
-| NES/USDT:USDT | +12.09% | $1,054,510.52 |
-| VELVET/USDT:USDT | +10.60% | $1,083,667.87 |
-| ZRO/USDT:USDT | +6.84% | $3,358,634.56 |
-| MANTRA/USDT:USDT | +5.90% | $2,534,386.84 |
+| BULLA/USDT:USDT | +18.61% | $13,500,423.08 |
+| NES/USDT:USDT | +11.27% | $1,055,104.66 |
+| VELVET/USDT:USDT | +11.02% | $1,085,745.24 |
+| ZRO/USDT:USDT | +6.71% | $3,362,865.44 |
+| ONE/USDT:USDT | +6.19% | $1,018,917.03 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NES/USDT:USDT | below_1h_threshold | +2.16% | +2.02% |
-| BIGTIME/USDT:USDT | below_1h_threshold | +1.76% | +1.62% |
-| SYRUP/USDT:USDT | below_1h_threshold | +1.43% | +1.29% |
-| KORU/USDT:USDT | below_1h_threshold | +1.35% | +1.21% |
-| VELVET/USDT:USDT | below_1h_threshold | +1.13% | +0.99% |
+| ONE/USDT:USDT | below_1h_threshold | +3.22% | +3.09% |
+| BIGTIME/USDT:USDT | below_1h_threshold | +1.60% | +1.48% |
+| VELVET/USDT:USDT | below_1h_threshold | +1.52% | +1.39% |
+| SYRUP/USDT:USDT | below_1h_threshold | +1.44% | +1.31% |
+| NES/USDT:USDT | below_1h_threshold | +1.42% | +1.29% |
 
 ## 7. 次に見るべき不足
 
