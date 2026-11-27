@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-27T02:56:18.964500+00:00
+- generated_at: 2026-11-27T03:01:24.104077+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19750**
 
@@ -63,39 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7910件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7911件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000155 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-27T02:56:09.704919+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +1.04% price=61341.0
-- Funnel: target 1097 → liquid 122 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=45, below_relative_strength=3, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.0 >= 65=1, 4h RSI 74.3 >= 65=1
+- 更新: 2026-11-27T03:01:09.992625+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=61334.9
+- Funnel: target 1097 → liquid 120 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BULLA/USDT:USDT | +81.95% | $14,744,445.42 |
-| BIGTIME/USDT:USDT | +26.33% | $2,965,155.35 |
-| AKE/USDT:USDT | +10.89% | $9,399,583.84 |
-| ONE/USDT:USDT | +10.83% | $1,206,438.05 |
-| VELVET/USDT:USDT | +10.34% | $1,196,745.27 |
+| BULLA/USDT:USDT | +83.22% | $14,718,336.61 |
+| BIGTIME/USDT:USDT | +26.51% | $2,879,410.14 |
+| ONE/USDT:USDT | +12.88% | $1,220,376.91 |
+| AKE/USDT:USDT | +11.25% | $8,853,754.94 |
+| VELVET/USDT:USDT | +10.77% | $1,174,128.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZEC/USDT:USDT | below_relative_strength | +5.39% | +4.35% |
-| SNXX/USDT:USDT | below_relative_strength | +5.17% | +4.13% |
-| NES/USDT:USDT | below_relative_strength | +5.02% | +3.98% |
-| SKY/USDT:USDT | below_1h_threshold | +4.09% | +3.05% |
-| SOXL/USDT:USDT | below_1h_threshold | +3.83% | +2.79% |
+| SOXL/USDT:USDT | below_1h_threshold | +4.18% | +4.11% |
+| MUU/USDT:USDT | below_1h_threshold | +3.27% | +3.21% |
+| KORU/USDT:USDT | below_1h_threshold | +2.91% | +2.84% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +2.68% | +2.61% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +2.43% | +2.37% |
 
 ## 7. 次に見るべき不足
 
