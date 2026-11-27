@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-27T06:51:25.804946+00:00
+- generated_at: 2026-11-27T06:56:30.023288+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19766**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-27T06:51:09.537482+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.18% price=61639.3
+- 更新: 2026-11-27T06:56:13.841350+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=61715.0
 - Funnel: target 1098 → liquid 122 → pre 50 → checked 50 → surge 3 → strict 2
 - Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.9 >= 65=1
+- Strict後reject: 4h RSI 68.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BULLA/USDT:USDT | +58.15% | $15,878,688.94 |
-| LISTA/USDT:USDT | +18.33% | $2,336,968.45 |
-| ZHIPUSTOCK/USDT:USDT | +18.14% | $5,937,847.62 |
-| BIGTIME/USDT:USDT | +14.76% | $3,038,304.54 |
-| VELVET/USDT:USDT | +14.60% | $1,502,207.14 |
+| BULLA/USDT:USDT | +57.95% | $15,890,067.42 |
+| LISTA/USDT:USDT | +19.64% | $2,384,274.54 |
+| ZHIPUSTOCK/USDT:USDT | +18.50% | $5,994,607.75 |
+| VELVET/USDT:USDT | +15.20% | $1,504,909.50 |
+| BIGTIME/USDT:USDT | +14.63% | $3,041,314.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXL/USDT:USDT | below_1h_threshold | +3.59% | +3.77% |
-| VELVET/USDT:USDT | below_1h_threshold | +2.64% | +2.83% |
-| ANTHROPIC/USDT:USDT | below_1h_threshold | +2.59% | +2.77% |
-| KORU/USDT:USDT | below_1h_threshold | +2.21% | +2.40% |
-| SNXX/USDT:USDT | below_1h_threshold | +2.21% | +2.39% |
+| SOXL/USDT:USDT | below_1h_threshold | +3.59% | +3.65% |
+| VELVET/USDT:USDT | below_1h_threshold | +3.22% | +3.28% |
+| ANTHROPIC/USDT:USDT | below_1h_threshold | +2.59% | +2.64% |
+| KORU/USDT:USDT | below_1h_threshold | +2.21% | +2.27% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.21% | +2.27% |
 
 ## 7. 次に見るべき不足
 
