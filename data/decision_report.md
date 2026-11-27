@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-27T21:41:20.359774+00:00
+- generated_at: 2026-11-27T21:46:24.131370+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19801**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-27T21:41:09.008955+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=59823.6
+- 更新: 2026-11-27T21:46:10.231426+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=59790.1
 - Funnel: target 1101 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +44.78% | $11,006,727.82 |
-| SKY/USDT:USDT | +14.30% | $2,034,098.57 |
-| VELVET/USDT:USDT | +8.18% | $5,316,268.54 |
-| BTW/USDT:USDT | +5.47% | $7,850,443.66 |
-| PIEVERSE/USDT:USDT | +4.55% | $7,030,478.24 |
+| PORTAL/USDT:USDT | +45.37% | $11,023,472.12 |
+| SKY/USDT:USDT | +14.65% | $2,114,319.93 |
+| VELVET/USDT:USDT | +7.11% | $5,337,097.40 |
+| BTW/USDT:USDT | +5.85% | $7,892,214.24 |
+| PIEVERSE/USDT:USDT | +4.55% | $7,053,867.11 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKY/USDT:USDT | below_1h_threshold | +3.08% | +2.99% |
-| ZRO/USDT:USDT | below_1h_threshold | +1.41% | +1.32% |
-| RIVER/USDT:USDT | below_1h_threshold | +1.02% | +0.94% |
-| MVLL/USDT:USDT | below_1h_threshold | +0.94% | +0.85% |
-| ETHFI/USDT:USDT | below_1h_threshold | +0.90% | +0.82% |
+| SKY/USDT:USDT | below_1h_threshold | +3.37% | +3.34% |
+| ZRO/USDT:USDT | below_1h_threshold | +1.54% | +1.51% |
+| ETHFI/USDT:USDT | below_1h_threshold | +1.30% | +1.27% |
+| MVLL/USDT:USDT | below_1h_threshold | +0.94% | +0.91% |
+| SEI/USDT:USDT | below_1h_threshold | +0.74% | +0.71% |
 
 ## 7. 次に見るべき不足
 
