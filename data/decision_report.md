@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-28T04:31:33.284433+00:00
+- generated_at: 2026-11-28T04:36:16.024016+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19820**
 
@@ -70,31 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-28T04:31:14.137017+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=59984.0
-- Funnel: target 1101 → liquid 140 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.0 >= 65=1
+- 更新: 2026-11-28T04:36:04.470003+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=59984.7
+- Funnel: target 1101 → liquid 140 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CFG/USDT:USDT | +18.31% | $1,366,993.90 |
-| EVAA/USDT:USDT | +16.02% | $23,672,144.53 |
-| SKY/USDT:USDT | +12.02% | $3,856,851.65 |
-| BTW/USDT:USDT | +8.80% | $9,476,501.90 |
-| VELVET/USDT:USDT | +5.90% | $5,935,330.11 |
+| CFG/USDT:USDT | +19.75% | $1,376,911.45 |
+| EVAA/USDT:USDT | +14.75% | $23,788,056.62 |
+| SKY/USDT:USDT | +12.24% | $3,870,726.37 |
+| BTW/USDT:USDT | +8.07% | $9,494,306.94 |
+| ACE/USDT:USDT | +5.66% | $3,632,573.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SEI/USDT:USDT | below_1h_threshold | +1.39% | +1.42% |
-| ETHFI/USDT:USDT | below_1h_threshold | +0.80% | +0.83% |
+| VELVET/USDT:USDT | below_1h_threshold | +3.94% | +3.97% |
+| SEI/USDT:USDT | below_1h_threshold | +1.02% | +1.05% |
+| ETHFI/USDT:USDT | below_1h_threshold | +0.78% | +0.80% |
 | SOXL/USDT:USDT | below_1h_threshold | +0.66% | +0.69% |
-| BTW/USDT:USDT | below_1h_threshold | +0.66% | +0.68% |
 | ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +0.62% | +0.65% |
 
 ## 7. 次に見るべき不足
