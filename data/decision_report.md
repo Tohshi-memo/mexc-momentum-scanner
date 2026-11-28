@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-28T19:16:19.571203+00:00
+- generated_at: 2026-11-28T19:21:32.161179+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19857**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-28T19:16:08.109124+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.28% price=59289.0
+- 更新: 2026-11-28T19:21:16.721516+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.28% price=59290.2
 - Funnel: target 1101 → liquid 109 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,20 +79,20 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +23.79% | $45,644,933.48 |
-| LISTA/USDT:USDT | +12.41% | $2,557,513.89 |
-| INIT/USDT:USDT | +6.18% | $2,214,267.14 |
-| IDOL/USDT:USDT | +5.20% | $1,827,099.48 |
-| AKE/USDT:USDT | +3.56% | $5,147,493.68 |
+| EVAA/USDT:USDT | +23.74% | $45,837,375.67 |
+| LISTA/USDT:USDT | +12.46% | $2,616,356.05 |
+| INIT/USDT:USDT | +5.92% | $2,220,153.22 |
+| IDOL/USDT:USDT | +5.13% | $1,827,552.54 |
+| PORTAL/USDT:USDT | +3.67% | $8,398,882.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +1.71% | +1.99% |
-| EVAA/USDT:USDT | below_1h_threshold | +1.19% | +1.47% |
+| AKE/USDT:USDT | below_1h_threshold | +1.53% | +1.80% |
+| EVAA/USDT:USDT | below_1h_threshold | +1.14% | +1.42% |
 | SNXX/USDT:USDT | below_1h_threshold | +1.00% | +1.28% |
-| INIT/USDT:USDT | below_1h_threshold | +0.98% | +1.26% |
+| LISTA/USDT:USDT | below_1h_threshold | +0.89% | +1.17% |
 | KORU/USDT:USDT | below_1h_threshold | +0.89% | +1.17% |
 
 ## 7. 次に見るべき不足
