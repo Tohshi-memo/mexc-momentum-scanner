@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-28T06:06:16.178552+00:00
+- generated_at: 2026-11-28T06:11:19.599758+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19823**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-28T06:06:02.928391+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=59665.3
+- 更新: 2026-11-28T06:11:05.647917+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=59691.7
 - Funnel: target 1101 → liquid 138 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +25.94% | $22,864,331.94 |
-| BTW/USDT:USDT | +16.55% | $10,276,935.31 |
-| CFG/USDT:USDT | +9.88% | $1,573,676.45 |
-| SKY/USDT:USDT | +9.26% | $4,037,886.33 |
-| VELVET/USDT:USDT | +4.46% | $5,976,363.88 |
+| EVAA/USDT:USDT | +26.72% | $23,177,708.07 |
+| BTW/USDT:USDT | +17.83% | $10,378,378.95 |
+| CFG/USDT:USDT | +9.83% | $1,577,507.61 |
+| SKY/USDT:USDT | +9.67% | $4,038,636.29 |
+| MRNASTOCK/USDT:USDT | +3.56% | $1,025,452.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EVAA/USDT:USDT | below_1h_threshold | +3.82% | +3.90% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +0.70% | +0.78% |
-| BTW/USDT:USDT | below_1h_threshold | +0.14% | +0.22% |
-| STX/USDT:USDT | below_1h_threshold | +0.11% | +0.19% |
-| ETHFI/USDT:USDT | below_1h_threshold | +0.02% | +0.10% |
+| EVAA/USDT:USDT | below_1h_threshold | +4.52% | +4.55% |
+| BTW/USDT:USDT | below_1h_threshold | +1.24% | +1.28% |
+| ARIA/USDT:USDT | below_1h_threshold | +0.18% | +0.22% |
+| LIT/USDT:USDT | below_1h_threshold | +0.18% | +0.22% |
+| SILVER/USDT:USDT | below_1h_threshold | -0.02% | +0.01% |
 
 ## 7. 次に見るべき不足
 
