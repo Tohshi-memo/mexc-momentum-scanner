@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-28T07:31:23.017679+00:00
+- generated_at: 2026-11-28T07:36:03.246120+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19827**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-28T07:31:09.004859+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=59700.0
+- 更新: 2026-11-28T07:35:54.935948+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=59737.3
 - Funnel: target 1101 → liquid 136 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +27.18% | $25,111,241.40 |
-| BTW/USDT:USDT | +23.74% | $12,891,908.11 |
-| SKY/USDT:USDT | +8.65% | $4,100,548.79 |
-| CFG/USDT:USDT | +6.01% | $1,638,403.96 |
-| ACE/USDT:USDT | +5.32% | $3,723,128.51 |
+| EVAA/USDT:USDT | +25.72% | $25,299,083.42 |
+| BTW/USDT:USDT | +22.81% | $12,933,919.47 |
+| SKY/USDT:USDT | +9.19% | $4,107,903.72 |
+| CFG/USDT:USDT | +6.67% | $1,642,547.22 |
+| VELVET/USDT:USDT | +6.18% | $5,981,328.90 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNXX/USDT:USDT | below_1h_threshold | +0.84% | +0.88% |
-| ETHFI/USDT:USDT | below_1h_threshold | +0.76% | +0.80% |
-| SEI/USDT:USDT | below_1h_threshold | +0.73% | +0.77% |
-| TAO/USDT:USDT | below_1h_threshold | +0.53% | +0.57% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +0.53% | +0.57% |
+| BLESS/USDT:USDT | below_1h_threshold | +2.34% | +2.31% |
+| VELVET/USDT:USDT | below_1h_threshold | +1.08% | +1.06% |
+| SNXX/USDT:USDT | below_1h_threshold | +0.84% | +0.82% |
+| SKY/USDT:USDT | below_1h_threshold | +0.72% | +0.70% |
+| TAO/USDT:USDT | below_1h_threshold | +0.69% | +0.67% |
 
 ## 7. 次に見るべき不足
 
