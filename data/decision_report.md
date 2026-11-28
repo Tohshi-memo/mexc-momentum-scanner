@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-28T13:36:21.316980+00:00
+- generated_at: 2026-11-28T13:41:26.635714+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19842**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-28T13:36:09.228820+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=59213.6
-- Funnel: target 1101 → liquid 135 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.7 >= 65=1, 4h RSI 72.7 >= 65=1
+- 更新: 2026-11-28T13:41:12.516133+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.20% price=59056.4
+- Funnel: target 1101 → liquid 135 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 75.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +58.43% | $41,840,834.84 |
-| BTW/USDT:USDT | +40.57% | $19,189,210.86 |
-| IDOL/USDT:USDT | +34.62% | $1,577,317.43 |
-| ACE/USDT:USDT | +34.06% | $6,354,192.69 |
-| LAB/USDT:USDT | +21.10% | $1,191,017.54 |
+| EVAA/USDT:USDT | +59.46% | $41,954,862.21 |
+| BTW/USDT:USDT | +41.41% | $19,236,184.18 |
+| IDOL/USDT:USDT | +35.48% | $1,582,716.13 |
+| ACE/USDT:USDT | +33.89% | $6,382,131.20 |
+| TAG/USDT:USDT | +21.26% | $3,131,788.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IDOL/USDT:USDT | below_1h_threshold | +3.14% | +3.08% |
-| SKY/USDT:USDT | below_1h_threshold | +2.02% | +1.96% |
-| CFG/USDT:USDT | below_1h_threshold | +1.82% | +1.76% |
-| LISTA/USDT:USDT | below_1h_threshold | +1.82% | +1.76% |
-| BTW/USDT:USDT | below_1h_threshold | +1.28% | +1.22% |
+| SSV/USDT:USDT | below_1h_threshold | +4.79% | +5.00% |
+| IDOL/USDT:USDT | below_1h_threshold | +3.80% | +4.00% |
+| BTW/USDT:USDT | below_1h_threshold | +2.21% | +2.41% |
+| SKY/USDT:USDT | below_1h_threshold | +1.71% | +1.91% |
+| CFG/USDT:USDT | below_1h_threshold | +1.22% | +1.43% |
 
 ## 7. 次に見るべき不足
 
