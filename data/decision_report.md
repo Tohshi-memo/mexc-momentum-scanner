@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-28T20:41:18.162889+00:00
+- generated_at: 2026-11-28T20:46:22.869792+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19859**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-28T20:41:08.033582+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=59229.1
+- 更新: 2026-11-28T20:46:09.925547+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=59247.9
 - Funnel: target 1101 → liquid 107 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +26.54% | $49,195,050.64 |
-| LISTA/USDT:USDT | +6.35% | $3,071,131.56 |
-| IDOL/USDT:USDT | +4.05% | $1,854,372.22 |
-| BCH/USDT:USDT | +1.83% | $1,672,249.05 |
-| PIEVERSE/USDT:USDT | +1.62% | $4,417,009.90 |
+| EVAA/USDT:USDT | +27.41% | $49,392,433.92 |
+| LISTA/USDT:USDT | +6.03% | $3,074,595.44 |
+| IDOL/USDT:USDT | +3.62% | $1,855,531.87 |
+| AKE/USDT:USDT | +1.92% | $5,081,478.94 |
+| BCH/USDT:USDT | +1.77% | $1,674,060.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PONS/USDT:USDT | below_1h_threshold | +0.89% | +1.04% |
-| BCH/USDT:USDT | below_1h_threshold | +0.44% | +0.59% |
-| SNXX/USDT:USDT | below_1h_threshold | +0.42% | +0.57% |
-| LDO/USDT:USDT | below_1h_threshold | +0.39% | +0.54% |
-| IDOL/USDT:USDT | below_1h_threshold | +0.38% | +0.54% |
+| BCH/USDT:USDT | below_1h_threshold | +0.44% | +0.56% |
+| SNXX/USDT:USDT | below_1h_threshold | +0.42% | +0.54% |
+| LDO/USDT:USDT | below_1h_threshold | +0.34% | +0.46% |
+| KORU/USDT:USDT | below_1h_threshold | +0.30% | +0.42% |
+| PONS/USDT:USDT | below_1h_threshold | +0.30% | +0.42% |
 
 ## 7. 次に見るべき不足
 
