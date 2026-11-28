@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-11-28T06:01:27.568637+00:00
+- generated_at: 2026-11-28T06:06:16.178552+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **19822**
+- closed shadow trades: **19823**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.30% / filled 20/20。**
-- 全期間 MARKET基準: n=19822, expectancy=+0.02%
+- 全期間 MARKET基準: n=19823, expectancy=+0.02%
 - 直近20件 MARKET基準: n=20, expectancy=+0.30%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -21,8 +21,8 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
+| LIMIT_ATR | 10/20 | 50.0% | +2.53% | **+1.27%** |
 | LIMIT_5PCT | 8/20 | 40.0% | +2.98% | **+1.19%** |
-| LIMIT_ATR | 11/20 | 55.0% | +2.14% | **+1.17%** |
 | LIMIT_4PCT | 11/20 | 55.0% | +1.82% | **+1.00%** |
 | LIMIT_FIB1272 | 6/20 | 30.0% | +2.49% | **+0.75%** |
 | LIMIT_6PCT | 3/20 | 15.0% | +4.00% | **+0.60%** |
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,955.30** / 初期 $100.00 (+1855.30%)
-- 確定: 7650件 (Win 2201 / Loss 2462 / Flat 2987) / skip 8733件
+- 確定: 7650件 (Win 2201 / Loss 2462 / Flat 2987) / skip 8734件
 - 成長率目線: 平均log +0.000389 / 幾何平均 +0.039% per trade / maxDD +9.04%
 - 次の候補: `LIMIT_1PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: ACE/USDT:USDT `LIMIT_BB3S_LONG` EXPIRED account -0.30% 残高後 $1,955.30
@@ -55,23 +55,23 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$460.06** / 初期 $100.00 (+360.06%)
-- 確定: 5297件 (Win 1410 / Loss 1141 / Flat 2746) / skip 7936件
+- 確定: 5298件 (Win 1410 / Loss 1141 / Flat 2747) / skip 7936件
 - 成長率目線: 平均log +0.000288 / 幾何平均 +0.029% per trade / maxDD +4.29%
-- 次の候補: `LIMIT_1PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0531 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: PORTAL/USDT:USDT `LIMIT_6PCT` SL_HIT account -0.35% 残高後 $460.06
+- 次の候補: `LIMIT_1PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0679 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 最新: EVAA/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $460.06
 
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
 - 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7981件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000174 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000136 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-28T06:01:13.453607+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=59741.7
+- 更新: 2026-11-28T06:06:02.928391+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=59665.3
 - Funnel: target 1101 → liquid 138 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +21.54% | $22,672,417.94 |
-| BTW/USDT:USDT | +17.11% | $10,213,953.51 |
-| CFG/USDT:USDT | +10.38% | $1,563,212.57 |
-| SKY/USDT:USDT | +9.63% | $4,031,370.51 |
-| VELVET/USDT:USDT | +4.35% | $5,971,872.01 |
+| EVAA/USDT:USDT | +25.94% | $22,864,331.94 |
+| BTW/USDT:USDT | +16.55% | $10,276,935.31 |
+| CFG/USDT:USDT | +9.88% | $1,573,676.45 |
+| SKY/USDT:USDT | +9.26% | $4,037,886.33 |
+| VELVET/USDT:USDT | +4.46% | $5,976,363.88 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +0.61% | +0.56% |
-| EVAA/USDT:USDT | below_1h_threshold | +0.23% | +0.18% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +0.20% | +0.15% |
-| STX/USDT:USDT | below_1h_threshold | +0.11% | +0.07% |
-| BCH/USDT:USDT | below_1h_threshold | +0.09% | +0.04% |
+| EVAA/USDT:USDT | below_1h_threshold | +3.82% | +3.90% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +0.70% | +0.78% |
+| BTW/USDT:USDT | below_1h_threshold | +0.14% | +0.22% |
+| STX/USDT:USDT | below_1h_threshold | +0.11% | +0.19% |
+| ETHFI/USDT:USDT | below_1h_threshold | +0.02% | +0.10% |
 
 ## 7. 次に見るべき不足
 
