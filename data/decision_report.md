@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-28T02:36:20.351652+00:00
+- generated_at: 2026-11-28T02:41:25.663072+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19813**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-28T02:36:07.531856+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.27% price=59998.0
+- 更新: 2026-11-28T02:41:11.721680+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.22% price=60028.5
 - Funnel: target 1101 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +45.84% | $14,509,993.88 |
-| ACE/USDT:USDT | +11.98% | $3,410,255.85 |
-| SKY/USDT:USDT | +11.41% | $3,754,855.99 |
-| BTW/USDT:USDT | +7.82% | $9,090,436.08 |
-| VELVET/USDT:USDT | +5.09% | $5,763,757.55 |
+| PORTAL/USDT:USDT | +43.28% | $14,558,900.18 |
+| SKY/USDT:USDT | +11.32% | $3,759,142.53 |
+| ACE/USDT:USDT | +11.31% | $3,442,755.92 |
+| BTW/USDT:USDT | +8.50% | $9,105,708.67 |
+| STX/USDT:USDT | +4.86% | $1,169,943.79 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PIEVERSE/USDT:USDT | below_1h_threshold | +1.16% | +1.42% |
-| BTW/USDT:USDT | below_1h_threshold | +0.87% | +1.14% |
-| ARIA/USDT:USDT | below_1h_threshold | +0.55% | +0.82% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +0.48% | +0.75% |
-| NVIDIA/USDT:USDT | below_1h_threshold | +0.45% | +0.72% |
+| BTW/USDT:USDT | below_1h_threshold | +1.49% | +1.71% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +1.11% | +1.33% |
+| ARIA/USDT:USDT | below_1h_threshold | +0.68% | +0.89% |
+| NVIDIA/USDT:USDT | below_1h_threshold | +0.45% | +0.67% |
+| XPD/USDT:USDT | below_1h_threshold | +0.42% | +0.63% |
 
 ## 7. 次に見るべき不足
 
