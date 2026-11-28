@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-28T06:46:29.634418+00:00
+- generated_at: 2026-11-28T06:51:27.803028+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19823**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7983件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7984件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000136 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-28T06:46:12.968231+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.18% price=59821.0
+- 更新: 2026-11-28T06:51:13.559084+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.20% price=59832.7
 - Funnel: target 1101 → liquid 139 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.3 >= 65=1
+- Strict後reject: 4h RSI 87.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +30.84% | $24,257,746.22 |
-| BTW/USDT:USDT | +24.85% | $11,531,816.20 |
-| SKY/USDT:USDT | +8.63% | $4,058,172.78 |
-| CFG/USDT:USDT | +8.15% | $1,602,009.14 |
-| ACE/USDT:USDT | +4.69% | $3,699,534.78 |
+| BTW/USDT:USDT | +26.07% | $11,680,124.09 |
+| EVAA/USDT:USDT | +25.56% | $24,465,713.16 |
+| CFG/USDT:USDT | +8.51% | $1,605,044.54 |
+| SKY/USDT:USDT | +8.39% | $4,058,925.31 |
+| VELVET/USDT:USDT | +4.81% | $6,061,677.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZRO/USDT:USDT | below_1h_threshold | +1.31% | +1.13% |
-| LIT/USDT:USDT | below_1h_threshold | +0.98% | +0.80% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +0.90% | +0.72% |
-| NEAR/USDT:USDT | below_1h_threshold | +0.73% | +0.55% |
-| BCH/USDT:USDT | below_1h_threshold | +0.66% | +0.48% |
+| EVAA/USDT:USDT | below_1h_threshold | +3.58% | +3.38% |
+| ZRO/USDT:USDT | below_1h_threshold | +1.36% | +1.16% |
+| LIT/USDT:USDT | below_1h_threshold | +1.19% | +0.99% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.05% | +0.85% |
+| NEAR/USDT:USDT | below_1h_threshold | +0.86% | +0.66% |
 
 ## 7. 次に見るべき不足
 
