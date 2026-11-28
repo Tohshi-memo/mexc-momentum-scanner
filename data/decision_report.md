@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-28T18:16:26.187013+00:00
+- generated_at: 2026-11-28T18:21:26.409650+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19857**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-28T18:16:12.723839+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=59396.0
+- 更新: 2026-11-28T18:21:12.471966+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=59415.8
 - Funnel: target 1101 → liquid 112 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +23.75% | $42,773,782.29 |
-| LISTA/USDT:USDT | +10.26% | $2,182,736.63 |
-| PORTAL/USDT:USDT | +6.73% | $9,336,978.72 |
-| IDOL/USDT:USDT | +4.26% | $1,813,372.87 |
-| PIEVERSE/USDT:USDT | +2.76% | $5,266,776.30 |
+| EVAA/USDT:USDT | +20.88% | $43,194,469.34 |
+| LISTA/USDT:USDT | +9.15% | $2,221,287.22 |
+| PORTAL/USDT:USDT | +7.14% | $9,356,448.54 |
+| IDOL/USDT:USDT | +4.34% | $1,815,737.12 |
+| THE/USDT:USDT | +3.51% | $1,081,212.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EVAA/USDT:USDT | below_1h_threshold | +1.13% | +1.09% |
-| THE/USDT:USDT | below_1h_threshold | +0.96% | +0.92% |
-| IDOL/USDT:USDT | below_1h_threshold | +0.79% | +0.75% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +0.48% | +0.44% |
-| LISTA/USDT:USDT | below_1h_threshold | +0.44% | +0.40% |
+| THE/USDT:USDT | below_1h_threshold | +2.91% | +2.84% |
+| TAG/USDT:USDT | below_1h_threshold | +1.47% | +1.40% |
+| IDOL/USDT:USDT | below_1h_threshold | +0.90% | +0.83% |
+| WIF/USDT:USDT | below_1h_threshold | +0.58% | +0.51% |
+| AKE/USDT:USDT | below_1h_threshold | +0.55% | +0.48% |
 
 ## 7. 次に見るべき不足
 
