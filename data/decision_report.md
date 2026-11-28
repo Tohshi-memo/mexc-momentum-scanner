@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-28T16:41:22.639060+00:00
+- generated_at: 2026-11-28T16:46:21.910333+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19853**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 8015件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 8016件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000186 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-28T16:41:11.180273+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=59398.2
-- Funnel: target 1101 → liquid 119 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-28T16:46:09.788262+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=59457.9
+- Funnel: target 1101 → liquid 119 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +3.85% | $5,809,019.69 |
-| ACE/USDT:USDT | +3.77% | $7,257,154.59 |
-| LISTA/USDT:USDT | +3.50% | $1,540,468.20 |
-| IDOL/USDT:USDT | +1.69% | $1,788,827.57 |
-| EVAA/USDT:USDT | +1.14% | $37,655,938.32 |
+| LISTA/USDT:USDT | +6.03% | $1,596,400.41 |
+| VELVET/USDT:USDT | +4.11% | $5,820,711.87 |
+| ACE/USDT:USDT | +3.95% | $7,268,408.38 |
+| AKE/USDT:USDT | +3.20% | $5,316,935.83 |
+| IDOL/USDT:USDT | +2.30% | $1,795,050.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +4.62% | +4.74% |
-| ACE/USDT:USDT | below_1h_threshold | +3.82% | +3.94% |
-| LISTA/USDT:USDT | below_1h_threshold | +3.50% | +3.61% |
-| IDOL/USDT:USDT | below_1h_threshold | +1.70% | +1.81% |
-| EVAA/USDT:USDT | below_1h_threshold | +1.18% | +1.29% |
+| VELVET/USDT:USDT | below_1h_threshold | +4.10% | +4.11% |
+| ACE/USDT:USDT | below_1h_threshold | +4.00% | +4.01% |
+| AKE/USDT:USDT | below_1h_threshold | +2.84% | +2.85% |
+| IDOL/USDT:USDT | below_1h_threshold | +2.10% | +2.11% |
+| EVAA/USDT:USDT | below_1h_threshold | +1.12% | +1.13% |
 
 ## 7. 次に見るべき不足
 
