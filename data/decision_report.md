@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-28T01:31:23.728657+00:00
+- generated_at: 2026-11-28T01:36:30.691089+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19810**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7969件
+- 確定: 3310件 (Win 959 / Loss 1303 / Flat 1048) / pending 0件 / skip 7970件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000097 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET` EXPIRED account +0.03% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-28T01:31:09.835890+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.41% price=60113.7
-- Funnel: target 1101 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-11-28T01:36:13.216956+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.51% price=60172.9
+- Funnel: target 1101 → liquid 141 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +42.59% | $13,056,383.79 |
-| ACE/USDT:USDT | +15.57% | $3,083,337.94 |
-| SKY/USDT:USDT | +14.02% | $3,494,986.38 |
-| VELVET/USDT:USDT | +10.24% | $5,642,607.70 |
-| BTW/USDT:USDT | +8.22% | $8,873,651.57 |
+| PORTAL/USDT:USDT | +45.59% | $13,093,416.21 |
+| ACE/USDT:USDT | +15.78% | $3,106,812.77 |
+| SKY/USDT:USDT | +14.11% | $3,499,072.62 |
+| VELVET/USDT:USDT | +10.75% | $5,651,989.48 |
+| BTW/USDT:USDT | +8.47% | $8,936,844.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZEC/USDT:USDT | below_1h_threshold | +1.79% | +1.39% |
-| PORTAL/USDT:USDT | below_1h_threshold | +1.27% | +0.86% |
-| VELVET/USDT:USDT | below_1h_threshold | +1.25% | +0.84% |
-| RENDER/USDT:USDT | below_1h_threshold | +1.23% | +0.82% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +0.93% | +0.52% |
+| PORTAL/USDT:USDT | below_1h_threshold | +3.19% | +2.68% |
+| ZEC/USDT:USDT | below_1h_threshold | +2.74% | +2.23% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.47% | +0.96% |
+| NEAR/USDT:USDT | below_1h_threshold | +1.33% | +0.82% |
+| RENDER/USDT:USDT | below_1h_threshold | +1.23% | +0.72% |
 
 ## 7. 次に見るべき不足
 
