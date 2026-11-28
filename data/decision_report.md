@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-28T03:41:21.199707+00:00
+- generated_at: 2026-11-28T03:46:25.326320+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19816**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-28T03:41:09.333048+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=59936.0
+- 更新: 2026-11-28T03:46:09.527362+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=59930.1
 - Funnel: target 1101 → liquid 139 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKY/USDT:USDT | +12.00% | $3,786,767.32 |
-| EVAA/USDT:USDT | +11.59% | $23,647,897.37 |
-| ACE/USDT:USDT | +7.39% | $3,595,369.61 |
-| BTW/USDT:USDT | +6.76% | $9,394,252.13 |
-| SOXL/USDT:USDT | +4.72% | $843,528,418.55 |
+| SKY/USDT:USDT | +12.19% | $3,793,435.04 |
+| EVAA/USDT:USDT | +10.63% | $23,809,976.71 |
+| ACE/USDT:USDT | +7.28% | $3,597,090.22 |
+| BTW/USDT:USDT | +7.21% | $9,407,093.66 |
+| SOXL/USDT:USDT | +4.81% | $843,611,144.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PIEVERSE/USDT:USDT | below_1h_threshold | +1.03% | +1.04% |
-| NEAR/USDT:USDT | below_1h_threshold | +0.56% | +0.57% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +0.56% | +0.56% |
-| ICP/USDT:USDT | below_1h_threshold | +0.55% | +0.55% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.50% | +0.51% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +0.94% | +0.96% |
+| ICP/USDT:USDT | below_1h_threshold | +0.60% | +0.61% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +0.56% | +0.57% |
+| SOXL/USDT:USDT | below_1h_threshold | +0.50% | +0.52% |
+| ANTHROPIC/USDT:USDT | below_1h_threshold | +0.34% | +0.36% |
 
 ## 7. 次に見るべき不足
 
