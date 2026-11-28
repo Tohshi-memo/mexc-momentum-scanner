@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-28T02:46:34.684614+00:00
+- generated_at: 2026-11-28T02:51:25.862065+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19813**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-28T02:46:23.111297+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.34% price=59955.0
-- Funnel: target 1101 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-11-28T02:51:11.835456+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.37% price=59933.4
+- Funnel: target 1101 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +31.28% | $14,632,133.90 |
-| ACE/USDT:USDT | +11.34% | $3,449,995.56 |
-| SKY/USDT:USDT | +10.91% | $3,770,510.13 |
-| BTW/USDT:USDT | +7.94% | $9,155,598.22 |
-| STX/USDT:USDT | +4.86% | $1,172,268.49 |
+| SKY/USDT:USDT | +10.61% | $3,772,501.83 |
+| ACE/USDT:USDT | +10.23% | $3,486,627.02 |
+| PORTAL/USDT:USDT | +7.02% | $14,817,950.10 |
+| BTW/USDT:USDT | +6.87% | $9,184,227.17 |
+| STX/USDT:USDT | +4.62% | $1,172,648.98 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +0.97% | +1.31% |
-| ARIA/USDT:USDT | below_1h_threshold | +0.59% | +0.93% |
-| SEI/USDT:USDT | below_1h_threshold | +0.47% | +0.81% |
-| NVIDIA/USDT:USDT | below_1h_threshold | +0.45% | +0.79% |
-| XPD/USDT:USDT | below_1h_threshold | +0.41% | +0.75% |
+| NVIDIA/USDT:USDT | below_1h_threshold | +0.45% | +0.82% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +0.41% | +0.79% |
+| XPD/USDT:USDT | below_1h_threshold | +0.39% | +0.76% |
+| KORU/USDT:USDT | below_1h_threshold | +0.35% | +0.72% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.35% | +0.72% |
 
 ## 7. 次に見るべき不足
 
