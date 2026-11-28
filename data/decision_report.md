@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-28T10:11:09.971012+00:00
+- generated_at: 2026-11-28T10:16:19.526619+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19838**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-28T10:11:00.633755+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.31% price=59380.0
+- 更新: 2026-11-28T10:16:08.313445+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.24% price=59420.1
 - Funnel: target 1101 → liquid 136 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +44.25% | $34,173,281.12 |
-| TAG/USDT:USDT | +37.81% | $2,620,883.37 |
-| IDOL/USDT:USDT | +34.34% | $1,238,460.16 |
-| BTW/USDT:USDT | +30.78% | $14,896,148.18 |
-| ACE/USDT:USDT | +25.44% | $4,309,683.81 |
+| EVAA/USDT:USDT | +47.68% | $34,589,547.58 |
+| TAG/USDT:USDT | +36.04% | $2,659,866.77 |
+| IDOL/USDT:USDT | +33.76% | $1,262,440.06 |
+| BTW/USDT:USDT | +29.77% | $14,962,738.19 |
+| ACE/USDT:USDT | +22.05% | $4,349,213.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ACE/USDT:USDT | below_1h_threshold | +4.01% | +4.32% |
-| TAG/USDT:USDT | below_1h_threshold | +1.14% | +1.44% |
-| LISTA/USDT:USDT | below_1h_threshold | +1.06% | +1.37% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +0.90% | +1.21% |
-| CFG/USDT:USDT | below_1h_threshold | +0.52% | +0.83% |
+| LISTA/USDT:USDT | below_1h_threshold | +1.68% | +1.92% |
+| ACE/USDT:USDT | below_1h_threshold | +1.14% | +1.38% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +1.05% | +1.29% |
+| ZRO/USDT:USDT | below_1h_threshold | +1.00% | +1.24% |
+| SKY/USDT:USDT | below_1h_threshold | +0.89% | +1.13% |
 
 ## 7. 次に見るべき不足
 
