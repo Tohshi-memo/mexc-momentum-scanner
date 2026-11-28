@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-28T07:01:21.646384+00:00
+- generated_at: 2026-11-28T07:06:15.101251+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19825**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-28T07:01:06.541997+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=59742.4
+- 更新: 2026-11-28T07:06:03.717082+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.15% price=59635.0
 - Funnel: target 1101 → liquid 136 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +30.71% | $24,125,069.37 |
-| BTW/USDT:USDT | +25.40% | $12,067,109.06 |
-| CFG/USDT:USDT | +9.45% | $1,607,654.30 |
-| SKY/USDT:USDT | +8.50% | $4,065,878.63 |
-| VELVET/USDT:USDT | +5.42% | $5,952,323.77 |
+| EVAA/USDT:USDT | +30.77% | $24,295,333.48 |
+| BTW/USDT:USDT | +26.53% | $12,237,993.61 |
+| SKY/USDT:USDT | +7.63% | $4,067,740.98 |
+| CFG/USDT:USDT | +7.51% | $1,613,816.83 |
+| ACE/USDT:USDT | +5.07% | $3,689,458.49 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNXX/USDT:USDT | below_1h_threshold | +0.84% | +0.81% |
-| EVAA/USDT:USDT | below_1h_threshold | +0.61% | +0.58% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +0.53% | +0.50% |
-| MUU/USDT:USDT | below_1h_threshold | +0.38% | +0.34% |
-| ANTHROPIC/USDT:USDT | below_1h_threshold | +0.37% | +0.34% |
+| EVAA/USDT:USDT | below_1h_threshold | +0.89% | +1.04% |
+| SNXX/USDT:USDT | below_1h_threshold | +0.84% | +0.99% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +0.53% | +0.68% |
+| MUU/USDT:USDT | below_1h_threshold | +0.38% | +0.52% |
+| ANTHROPIC/USDT:USDT | below_1h_threshold | +0.37% | +0.52% |
 
 ## 7. 次に見るべき不足
 
