@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-28T17:06:25.772058+00:00
+- generated_at: 2026-11-28T17:11:30.774076+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19854**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-28T17:06:11.933986+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=59544.6
+- 更新: 2026-11-28T17:11:18.480420+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=59560.8
 - Funnel: target 1101 → liquid 116 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +11.55% | $37,872,026.24 |
-| LISTA/USDT:USDT | +5.55% | $1,843,734.68 |
-| ACE/USDT:USDT | +4.52% | $7,323,957.40 |
-| INIT/USDT:USDT | +3.22% | $2,368,599.49 |
-| IDOL/USDT:USDT | +2.97% | $1,783,128.83 |
+| EVAA/USDT:USDT | +12.30% | $38,136,024.54 |
+| LISTA/USDT:USDT | +6.17% | $1,877,290.60 |
+| ACE/USDT:USDT | +3.28% | $7,348,138.28 |
+| INIT/USDT:USDT | +3.13% | $2,374,638.05 |
+| VELVET/USDT:USDT | +3.06% | $5,189,123.16 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PORTAL/USDT:USDT | below_1h_threshold | +1.29% | +1.31% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +1.06% | +1.07% |
-| LISTA/USDT:USDT | below_1h_threshold | +0.97% | +0.99% |
-| ACE/USDT:USDT | below_1h_threshold | +0.83% | +0.85% |
-| AKE/USDT:USDT | below_1h_threshold | +0.72% | +0.74% |
+| PORTAL/USDT:USDT | below_1h_threshold | +2.24% | +2.23% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +1.94% | +1.93% |
+| LISTA/USDT:USDT | below_1h_threshold | +1.63% | +1.62% |
+| LAB/USDT:USDT | below_1h_threshold | +0.89% | +0.88% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +0.69% | +0.69% |
 
 ## 7. 次に見るべき不足
 
