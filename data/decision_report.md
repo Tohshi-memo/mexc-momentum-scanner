@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-28T01:51:22.378241+00:00
+- generated_at: 2026-11-28T01:56:26.975143+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19811**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-28T01:51:08.411534+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.49% price=60161.6
+- 更新: 2026-11-28T01:56:12.658539+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.52% price=60179.3
 - Funnel: target 1101 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +43.65% | $13,158,686.84 |
-| ACE/USDT:USDT | +14.09% | $3,207,849.54 |
-| SKY/USDT:USDT | +13.58% | $3,506,401.06 |
-| VELVET/USDT:USDT | +9.73% | $5,683,970.82 |
-| BTW/USDT:USDT | +7.80% | $8,998,774.73 |
+| PORTAL/USDT:USDT | +43.79% | $13,169,622.12 |
+| ACE/USDT:USDT | +14.55% | $3,218,607.56 |
+| SKY/USDT:USDT | +14.32% | $3,507,136.71 |
+| VELVET/USDT:USDT | +9.45% | $5,692,273.19 |
+| BTW/USDT:USDT | +7.73% | $9,021,551.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZEC/USDT:USDT | below_1h_threshold | +2.29% | +1.80% |
-| PORTAL/USDT:USDT | below_1h_threshold | +1.74% | +1.25% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +1.60% | +1.12% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.50% | +1.02% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.23% | +0.74% |
+| ZEC/USDT:USDT | below_1h_threshold | +2.96% | +2.44% |
+| PORTAL/USDT:USDT | below_1h_threshold | +2.07% | +1.56% |
+| NEAR/USDT:USDT | below_1h_threshold | +1.53% | +1.01% |
+| ETHFI/USDT:USDT | below_1h_threshold | +1.52% | +1.00% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.50% | +0.99% |
 
 ## 7. 次に見るべき不足
 
