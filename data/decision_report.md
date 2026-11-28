@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-28T02:16:20.166974+00:00
+- generated_at: 2026-11-28T02:21:18.500223+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19813**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-28T02:16:05.896081+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=60171.8
-- Funnel: target 1101 → liquid 140 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-11-28T02:21:08.374889+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=60127.3
+- Funnel: target 1101 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +54.04% | $14,192,595.14 |
-| ACE/USDT:USDT | +13.16% | $3,353,052.41 |
-| SKY/USDT:USDT | +12.91% | $3,530,376.24 |
-| BTW/USDT:USDT | +7.62% | $8,993,854.54 |
-| VELVET/USDT:USDT | +5.36% | $5,717,662.24 |
+| PORTAL/USDT:USDT | +46.03% | $14,283,652.46 |
+| SKY/USDT:USDT | +12.67% | $3,555,926.78 |
+| ACE/USDT:USDT | +11.96% | $3,395,503.42 |
+| BTW/USDT:USDT | +7.68% | $9,003,225.66 |
+| VELVET/USDT:USDT | +5.32% | $5,732,870.67 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PORTAL/USDT:USDT | below_1h_threshold | +0.65% | +0.63% |
-| BTW/USDT:USDT | below_1h_threshold | +0.63% | +0.61% |
-| ETHFI/USDT:USDT | below_1h_threshold | +0.57% | +0.54% |
-| LTC/USDT:USDT | below_1h_threshold | +0.38% | +0.36% |
-| SSV/USDT:USDT | below_1h_threshold | +0.37% | +0.35% |
+| ARIA/USDT:USDT | below_1h_threshold | +1.43% | +1.49% |
+| ETHFI/USDT:USDT | below_1h_threshold | +0.84% | +0.89% |
+| SSV/USDT:USDT | below_1h_threshold | +0.75% | +0.80% |
+| BTW/USDT:USDT | below_1h_threshold | +0.72% | +0.77% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +0.48% | +0.54% |
 
 ## 7. 次に見るべき不足
 
