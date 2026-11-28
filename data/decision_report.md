@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-28T22:11:17.023326+00:00
+- generated_at: 2026-11-28T22:16:21.355358+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19861**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-28T22:11:05.767515+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=59241.7
+- 更新: 2026-11-28T22:16:09.593398+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=59285.3
 - Funnel: target 1101 → liquid 104 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +29.82% | $52,214,463.90 |
-| IDOL/USDT:USDT | +5.55% | $1,853,397.09 |
-| LISTA/USDT:USDT | +4.57% | $3,407,193.59 |
-| VELVET/USDT:USDT | +4.30% | $3,360,279.03 |
-| OP/USDT:USDT | +3.47% | $1,830,917.38 |
+| EVAA/USDT:USDT | +29.21% | $52,387,101.75 |
+| IDOL/USDT:USDT | +6.38% | $1,858,781.11 |
+| LISTA/USDT:USDT | +4.55% | $3,417,482.47 |
+| VELVET/USDT:USDT | +4.13% | $3,361,476.05 |
+| FARTCOIN/USDT:USDT | +2.97% | $3,904,627.86 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLUR/USDT:USDT | below_1h_threshold | +1.39% | +1.45% |
-| OP/USDT:USDT | below_1h_threshold | +1.14% | +1.19% |
-| EVAA/USDT:USDT | below_1h_threshold | +0.98% | +1.03% |
-| IDOL/USDT:USDT | below_1h_threshold | +0.81% | +0.87% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +0.80% | +0.85% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +3.42% | +3.40% |
+| IDOL/USDT:USDT | below_1h_threshold | +1.61% | +1.59% |
+| ASTER/USDT:USDT | below_1h_threshold | +1.00% | +0.98% |
+| BLUR/USDT:USDT | below_1h_threshold | +0.93% | +0.91% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +0.67% | +0.65% |
 
 ## 7. 次に見るべき不足
 
