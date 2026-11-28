@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-11-28T03:01:17.654882+00:00
+- generated_at: 2026-11-28T03:06:14.005698+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **19813**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-11-28T03:01:06.214549+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=59939.1
+- 更新: 2026-11-28T03:06:04.834767+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=59958.6
 - Funnel: target 1101 → liquid 139 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKY/USDT:USDT | +12.15% | $3,737,739.30 |
-| ACE/USDT:USDT | +10.21% | $3,487,482.07 |
-| BTW/USDT:USDT | +7.30% | $9,034,029.79 |
-| STX/USDT:USDT | +4.59% | $1,115,272.09 |
-| VELVET/USDT:USDT | +4.51% | $5,734,889.51 |
+| SKY/USDT:USDT | +12.58% | $3,757,150.48 |
+| ACE/USDT:USDT | +10.21% | $3,497,007.30 |
+| BTW/USDT:USDT | +7.84% | $9,045,384.84 |
+| VELVET/USDT:USDT | +5.31% | $5,751,030.00 |
+| SOXL/USDT:USDT | +4.75% | $842,519,756.23 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +1.03% | +1.03% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +0.56% | +0.56% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.50% | +0.50% |
-| BTW/USDT:USDT | below_1h_threshold | +0.39% | +0.39% |
-| ANTHROPIC/USDT:USDT | below_1h_threshold | +0.34% | +0.34% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.07% | +2.04% |
+| ARIA/USDT:USDT | below_1h_threshold | +0.84% | +0.81% |
+| SEI/USDT:USDT | below_1h_threshold | +0.84% | +0.80% |
+| BTW/USDT:USDT | below_1h_threshold | +0.83% | +0.80% |
+| ZRO/USDT:USDT | below_1h_threshold | +0.65% | +0.62% |
 
 ## 7. 次に見るべき不足
 
